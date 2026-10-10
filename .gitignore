@@ -8,6 +8,7 @@ data/lexical_minimum.sqlite3
 *.pyc
 .venv/
 data/tts_cache/
+data/tts_offline/
 data/progress.sqlite3-shm
 data/progress.sqlite3-wal
 data/openrussian.sqlite3-shm

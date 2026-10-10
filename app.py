@@ -19,7 +19,9 @@ import re
 import secrets
 import sqlite3
 import sys
+import subprocess
 import threading
+import time
 import unicodedata
 import webbrowser
 from collections import Counter, defaultdict
@@ -41,7 +43,7 @@ from updater import Updater, UpdateError
 from vocab_lessons import UNGRADED_TYPES, VOCAB_UNIT_PREFIX, VocabLessonStore
 
 
-APP_VERSION = "1.5.0"
+APP_VERSION = "1.5.1"
 UNIT_COMPLETION_THRESHOLD = 0.75
 # Domínio cumulativo: um exercício é considerado "dominado" se o aluno atingiu
 # QUALQUER um destes patamares (nota mínima, nº de tentativas que bateram essa
@@ -712,10 +714,13 @@ class TTSService:
     }
     DIALOGUE_RATE = "-6%"
 
+    EDGE_RETRY_SECONDS = 300
+
     def __init__(self, cache_dir: Path):
         self.cache_dir = cache_dir
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self._lock = threading.Lock()
+        self._edge_down_until = 0.0
 
     def audio_for(self, text: str, course_id: str = "russian", mode: str = "target", speaker: str = "") -> Path:
         cleaned = re.sub(r"\s+", " ", text).strip()
@@ -741,7 +746,10 @@ class TTSService:
         target = self.cache_dir / f"{digest}.mp3"
         if target.exists() and target.stat().st_size > 0:
             return target
-        if edge_tts is None:
+        offline_ok = mode != "lesson" and voice.startswith("ru-") and sys.platform == "win32"
+        if edge_tts is None or (offline_ok and time.monotonic() < self._edge_down_until):
+            if offline_ok:
+                return self._offline_audio(cleaned)
             raise RuntimeError("edge-tts não está instalado; execute o aplicativo pelo run.sh.")
         temporary = target.with_suffix(f".{secrets.token_hex(6)}.tmp")
         with self._lock:
@@ -751,8 +759,47 @@ class TTSService:
             try:
                 communicate.save_sync(str(temporary))
                 temporary.replace(target)
+                self._edge_down_until = 0.0
+            except Exception:
+                # A Microsoft já recusou conexões do edge-tts de uma hora para outra (erro 403).
+                # Em vez de falhar, o russo cai na voz offline do Windows e o Edge fica de lado por um tempo.
+                if not offline_ok:
+                    raise
+                self._edge_down_until = time.monotonic() + self.EDGE_RETRY_SECONDS
+                return self._offline_audio(cleaned)
             finally:
                 temporary.unlink(missing_ok=True)
+        return target
+
+    def _offline_audio(self, text: str) -> Path:
+        """Voz russa instalada no Windows (SAPI). Fica em pasta própria para nunca se misturar ao cache do Edge."""
+        folder = self.cache_dir.parent / "tts_offline"
+        folder.mkdir(parents=True, exist_ok=True)
+        target = folder / f"{hashlib.sha256(text.encode('utf-8')).hexdigest()}.wav"
+        if target.exists() and target.stat().st_size > 0:
+            return target
+        temporary = target.with_suffix(f".{secrets.token_hex(6)}.tmp")
+        script = (
+            "Add-Type -AssemblyName System.Speech;"
+            "$s = New-Object System.Speech.Synthesis.SpeechSynthesizer;"
+            "$v = $s.GetInstalledVoices() | Where-Object { $_.VoiceInfo.Culture.Name -eq 'ru-RU' } | Select-Object -First 1;"
+            "if (-not $v) { exit 3 };"
+            "$s.SelectVoice($v.VoiceInfo.Name); $s.Rate = -1;"
+            "$s.SetOutputToWaveFile($env:RUSSO_TTS_OUT); $s.Speak($env:RUSSO_TTS_TEXT); $s.Dispose()"
+        )
+        env = {**os.environ, "RUSSO_TTS_TEXT": text, "RUSSO_TTS_OUT": str(temporary)}
+        try:
+            result = subprocess.run(
+                ["powershell.exe", "-NoProfile", "-NonInteractive", "-Command", script],
+                env=env, capture_output=True, timeout=30, creationflags=0x08000000,  # CREATE_NO_WINDOW
+            )
+            if result.returncode == 3:
+                raise RuntimeError("O Windows não tem uma voz em russo instalada (Configurações > Hora e idioma > Fala).")
+            if result.returncode != 0 or not temporary.exists() or temporary.stat().st_size == 0:
+                raise RuntimeError("A voz offline do Windows falhou.")
+            temporary.replace(target)
+        finally:
+            temporary.unlink(missing_ok=True)
         return target
 
 
@@ -1683,9 +1730,11 @@ class AppHandler(BaseHTTPRequestHandler):
     def send_audio(self, path: Path) -> None:
         raw = path.read_bytes()
         self.send_response(HTTPStatus.OK)
-        self.send_header("Content-Type", "audio/mpeg")
+        offline = path.suffix == ".wav"
+        self.send_header("Content-Type", "audio/wav" if offline else "audio/mpeg")
         self.send_header("Content-Length", str(len(raw)))
-        self.send_header("Cache-Control", "public, max-age=31536000, immutable")
+        # A voz offline é provisória: o navegador não deve guardá-la para sempre.
+        self.send_header("Cache-Control", "no-store" if offline else "public, max-age=31536000, immutable")
         self.end_headers()
         try:
             self.wfile.write(raw)
