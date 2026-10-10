@@ -25,7 +25,7 @@ from pathlib import Path
 from typing import Callable
 
 # "dono/repositorio" no GitHub. Pode ser sobrescrito pela variável RUSSO_UPDATE_REPO.
-GITHUB_REPO = os.environ.get("RUSSO_UPDATE_REPO", "")
+GITHUB_REPO = os.environ.get("RUSSO_UPDATE_REPO", "VitorGRM/russotrainer")
 ASSET_SUFFIX = "-windows.zip"
 EXE_NAME = "RussoTrainer.exe"
 USER_AGENT = "RussoTrainer-updater"

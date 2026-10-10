@@ -22,6 +22,11 @@ if ($SeedFrom) {
         & $Python -c "import sqlite3,sys; s=sqlite3.connect(sys.argv[1]); d=sqlite3.connect(sys.argv[2]); s.backup(d); d.close(); s.close()" "$SeedFrom\data\progress.sqlite3" $db
         Write-Host "Progresso copiado."
     }
+    # Índice do Лексический минимум: fica fora do release público, então vem da sua pasta local.
+    if (Test-Path "$SeedFrom\data\lexical_minimum.sqlite3") {
+        Copy-Item "$SeedFrom\data\lexical_minimum.sqlite3" "$userData\lexical_minimum.sqlite3" -Force
+        Write-Host "Índice do léxico mínimo copiado."
+    }
     if ((Test-Path "$SeedFrom\data\tts_cache") -and -not (Test-Path "$userData\tts_cache")) {
         robocopy "$SeedFrom\data\tts_cache" "$userData\tts_cache" /E /NFL /NDL /NJH /NJS /NP | Out-Null
         Write-Host "Cache de áudio copiado."

@@ -65,7 +65,12 @@ VOCAB_LESSONS_DIR = DATA_DIR / "vocab_lessons"
 EXPORT_DIR = Path(os.environ.get("RUSSO_EXPORT_DIR", str(USER_DIR / "exports")))
 DB_PATH = Path(os.environ.get("RUSSO_DB_PATH", str(USER_DIR / "data" / "progress.sqlite3")))
 DICTIONARY_PATH = DATA_DIR / "openrussian.sqlite3"
-LEXICAL_MINIMUM_PATH = DATA_DIR / "lexical_minimum.sqlite3"
+# O índice do Лексический минимум vem de um livro e não é publicado no release do GitHub:
+# no .exe ele fica em %APPDATA% (copiado pela instalação), onde as atualizações não mexem.
+LEXICAL_MINIMUM_PATH = next(
+    (path for path in (USER_DIR / "data" / "lexical_minimum.sqlite3", DATA_DIR / "lexical_minimum.sqlite3") if path.exists()),
+    DATA_DIR / "lexical_minimum.sqlite3",
+)
 COURSE_LEXICON_PATH = DATA_DIR / "course_lexicon.json"
 TTS_CACHE_DIR = USER_DIR / "data" / "tts_cache"
 

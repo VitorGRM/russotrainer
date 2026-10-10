@@ -14,7 +14,6 @@ datas = [
     (str(ROOT / "data" / "course_lexicon.json"), "data"),
     (str(ROOT / "data" / "prefix_verbs.json"), "data"),
     (str(ROOT / "data" / "openrussian.sqlite3"), "data"),
-    (str(ROOT / "data" / "lexical_minimum.sqlite3"), "data"),
     (str(ROOT / "third_party"), "third_party"),
 ]
 binaries = []
