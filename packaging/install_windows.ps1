@@ -1,4 +1,4 @@
-# Instala dist\RussoTrainer em %LOCALAPPDATA%\RussoTrainer\app e cria o atalho na área de trabalho.
+﻿# Instala dist\RussoTrainer em %LOCALAPPDATA%\RussoTrainer\app e cria o atalho na área de trabalho.
 # -SeedFrom copia (uma vez) o progresso e o cache de áudio de uma pasta russotrainer existente.
 param(
     [string]$SeedFrom = "",
@@ -34,7 +34,7 @@ if ($SeedFrom) {
 }
 
 $shell = New-Object -ComObject WScript.Shell
-$link = $shell.CreateShortcut("$([Environment]::GetFolderPath('Desktop'))\Русский тренажёр.lnk")
+$link = $shell.CreateShortcut("$([Environment]::GetFolderPath('Desktop'))\Russo Trainer.lnk")
 $link.TargetPath = "$install\RussoTrainer.exe"
 $link.WorkingDirectory = $install
 $link.Description = "Treinador local de russo (TRKI-II)"

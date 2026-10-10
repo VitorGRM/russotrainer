@@ -1,4 +1,4 @@
-# Gera dist\RussoTrainer\ e dist\RussoTrainer-v<versão>-windows.zip (o arquivo que vai no release do GitHub).
+﻿# Gera dist\RussoTrainer\ e dist\RussoTrainer-v<versão>-windows.zip (o arquivo que vai no release do GitHub).
 param([string]$Python = "$env:LOCALAPPDATA\RussoTrainerBuild\venv\Scripts\python.exe")
 $ErrorActionPreference = "Stop"
 $root = Split-Path $PSScriptRoot -Parent

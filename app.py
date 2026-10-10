@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
-"""LinguaLab — servidor local, corretor e registro pedagógico multilíngue.
+﻿#!/usr/bin/env python3
+"""LinguaLab â€” servidor local, corretor e registro pedagÃ³gico multilÃ­ngue.
 
-A interface e a persistência usam a biblioteca padrão. O áudio usa edge-tts.
-O conteúdo fica em data/units/*.json; respostas em data/progress.sqlite3.
+A interface e a persistÃªncia usam a biblioteca padrÃ£o. O Ã¡udio usa edge-tts.
+O conteÃºdo fica em data/units/*.json; respostas em data/progress.sqlite3.
 """
 
 from __future__ import annotations
@@ -35,7 +35,7 @@ from urllib.parse import parse_qs, unquote, urlparse
 
 try:
     import edge_tts
-except ImportError:  # O run.sh instala; fallback permite diagnóstico legível.
+except ImportError:  # O run.sh instala; fallback permite diagnÃ³stico legÃ­vel.
     edge_tts = None
 
 from sessions import SessionStore, unit_session_order
@@ -43,17 +43,17 @@ from updater import Updater, UpdateError
 from vocab_lessons import UNGRADED_TYPES, VOCAB_UNIT_PREFIX, VocabLessonStore
 
 
-APP_VERSION = "1.5.1"
+APP_VERSION = "1.5.2"
 UNIT_COMPLETION_THRESHOLD = 0.75
-# Domínio cumulativo: um exercício é considerado "dominado" se o aluno atingiu
-# QUALQUER um destes patamares (nota mínima, nº de tentativas que bateram essa
-# nota). Isto recompensa quem acerta "quase certo" com consistência tanto
-# quanto quem acerta de primeira com nota alta — em vez de exigir nota máxima
-# numa única tentativa.
+# DomÃ­nio cumulativo: um exercÃ­cio Ã© considerado "dominado" se o aluno atingiu
+# QUALQUER um destes patamares (nota mÃ­nima, nÂº de tentativas que bateram essa
+# nota). Isto recompensa quem acerta "quase certo" com consistÃªncia tanto
+# quanto quem acerta de primeira com nota alta â€” em vez de exigir nota mÃ¡xima
+# numa Ãºnica tentativa.
 MASTERY_TIERS: list[tuple[float, int]] = [(0.75, 1), (0.60, 3), (0.50, 5)]
 FROZEN = bool(getattr(sys, "frozen", False))
-# No .exe, o conteúdo (somente leitura) vem empacotado; o que o aluno gera fica em
-# %APPDATA%\RussoTrainer para sobreviver às atualizações. Em desenvolvimento nada muda.
+# No .exe, o conteÃºdo (somente leitura) vem empacotado; o que o aluno gera fica em
+# %APPDATA%\RussoTrainer para sobreviver Ã s atualizaÃ§Ãµes. Em desenvolvimento nada muda.
 BASE_DIR = Path(getattr(sys, "_MEIPASS", "") or Path(__file__).resolve().parent)
 USER_DIR = Path(os.environ.get("APPDATA") or Path.home()) / "RussoTrainer" if FROZEN else BASE_DIR
 STATIC_DIR = BASE_DIR / "static"
@@ -65,8 +65,8 @@ VOCAB_LESSONS_DIR = DATA_DIR / "vocab_lessons"
 EXPORT_DIR = Path(os.environ.get("RUSSO_EXPORT_DIR", str(USER_DIR / "exports")))
 DB_PATH = Path(os.environ.get("RUSSO_DB_PATH", str(USER_DIR / "data" / "progress.sqlite3")))
 DICTIONARY_PATH = DATA_DIR / "openrussian.sqlite3"
-# O índice do Лексический минимум vem de um livro e não é publicado no release do GitHub:
-# no .exe ele fica em %APPDATA% (copiado pela instalação), onde as atualizações não mexem.
+# O Ã­ndice do Ð›ÐµÐºÑÐ¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼ vem de um livro e nÃ£o Ã© publicado no release do GitHub:
+# no .exe ele fica em %APPDATA% (copiado pela instalaÃ§Ã£o), onde as atualizaÃ§Ãµes nÃ£o mexem.
 LEXICAL_MINIMUM_PATH = next(
     (path for path in (USER_DIR / "data" / "lexical_minimum.sqlite3", DATA_DIR / "lexical_minimum.sqlite3") if path.exists()),
     DATA_DIR / "lexical_minimum.sqlite3",
@@ -75,9 +75,9 @@ COURSE_LEXICON_PATH = DATA_DIR / "course_lexicon.json"
 TTS_CACHE_DIR = USER_DIR / "data" / "tts_cache"
 
 COURSES = [
-    {"id": "russian", "name": "Russo", "native_name": "Русский", "level": "ТРКИ-II · B2", "mark": "Я", "available": True},
-    {"id": "kazakh", "name": "Cazaque", "native_name": "Қазақ тілі", "level": "Em preparação", "mark": "Қ", "available": False},
-    {"id": "romanian", "name": "Romeno", "native_name": "Română", "level": "CEFR · A1", "mark": "Ă", "available": True},
+    {"id": "russian", "name": "Russo", "native_name": "Ð ÑƒÑÑÐºÐ¸Ð¹", "level": "Ð¢Ð ÐšÐ˜-II Â· B2", "mark": "Ð¯", "available": True},
+    {"id": "kazakh", "name": "Cazaque", "native_name": "ÒšÐ°Ð·Ð°Ò› Ñ‚Ñ–Ð»Ñ–", "level": "Em preparaÃ§Ã£o", "mark": "Òš", "available": False},
+    {"id": "romanian", "name": "Romeno", "native_name": "RomÃ¢nÄƒ", "level": "CEFR Â· A1", "mark": "Ä‚", "available": True},
 ]
 
 
@@ -90,12 +90,12 @@ def iso(dt: datetime | None = None) -> str:
 
 
 def session_exercises(items: list[dict], publicizer) -> list[dict]:
-    """Prepara alternativas sem expor o gabarito e equilibra sua posição.
+    """Prepara alternativas sem expor o gabarito e equilibra sua posiÃ§Ã£o.
 
-    Um simples ``shuffle`` independente pode, por acaso, pôr várias respostas
-    seguidas na mesma coluna. Aqui cada bloco de N questões usa todas as N
-    posições em ordem aleatória antes de repetir uma delas. Os distratores
-    também são embaralhados, portanto não há uma sequência fixa para decorar.
+    Um simples ``shuffle`` independente pode, por acaso, pÃ´r vÃ¡rias respostas
+    seguidas na mesma coluna. Aqui cada bloco de N questÃµes usa todas as N
+    posiÃ§Ãµes em ordem aleatÃ³ria antes de repetir uma delas. Os distratores
+    tambÃ©m sÃ£o embaralhados, portanto nÃ£o hÃ¡ uma sequÃªncia fixa para decorar.
     """
     position_bags: dict[int, list[int]] = {}
     last_positions: dict[int, int] = {}
@@ -128,24 +128,24 @@ def session_exercises(items: list[dict], publicizer) -> list[dict]:
 
 
 SPOKEN_REPLACEMENTS = [
-    (r"«([^»]*)»", r"\1"),
-    (r"[“”\"]", ""),
-    (r"\s*→\s*", " vira "),
-    (r"\s*×\s*", " contra "),
-    (r"\s*↔\s*", " e "),
-    (r"\s*—\s*", ", "),
-    (r"\s*–\s*", ", "),
-    (r"(?<=[а-яёА-ЯЁa-zA-Z])\s*/\s*(?=[а-яёА-ЯЁa-zA-Z-])", " ou "),
+    (r"Â«([^Â»]*)Â»", r"\1"),
+    (r"[â€œâ€\"]", ""),
+    (r"\s*â†’\s*", " vira "),
+    (r"\s*Ã—\s*", " contra "),
+    (r"\s*â†”\s*", " e "),
+    (r"\s*â€”\s*", ", "),
+    (r"\s*â€“\s*", ", "),
+    (r"(?<=[Ð°-ÑÑ‘Ð-Ð¯Ða-zA-Z])\s*/\s*(?=[Ð°-ÑÑ‘Ð-Ð¯Ða-zA-Z-])", " ou "),
     (r"\(([^()]{1,60})\)", r", \1,"),
-    (r"\bTRKI[- ]?II\b", "Térki dois"),
-    (r"\bТРКИ[- ]?II\b", "Térki dois"),
-    (r"\bB2\b", "bê dois"),
-    (r"\bB1\b", "bê um"),
-    (r"\bA1\b", "á um"),
-    (r"\bA2\b", "á dois"),
-    (r"\bPT\b", "português"),
+    (r"\bTRKI[- ]?II\b", "TÃ©rki dois"),
+    (r"\bÐ¢Ð ÐšÐ˜[- ]?II\b", "TÃ©rki dois"),
+    (r"\bB2\b", "bÃª dois"),
+    (r"\bB1\b", "bÃª um"),
+    (r"\bA1\b", "Ã¡ um"),
+    (r"\bA2\b", "Ã¡ dois"),
+    (r"\bPT\b", "portuguÃªs"),
     (r"\bRU\b", "russo"),
-    (r"(?<![\wа-яёА-ЯЁ])-(?=[а-яёА-ЯЁ])", ""),
+    (r"(?<![\wÐ°-ÑÑ‘Ð-Ð¯Ð])-(?=[Ð°-ÑÑ‘Ð-Ð¯Ð])", ""),
     (r"\s*;\s*", ". "),
     (r"\s*:\s*", ", "),
     (r"\s*\.{3,}\s*", ". "),
@@ -158,9 +158,9 @@ SPOKEN_REPLACEMENTS = [
 def spoken_text(text: str) -> str:
     """Adapta um texto escrito para leitura em voz alta.
 
-    Setas, barras, aspas tipográficas e abreviações de nível viram palavras
-    faladas; travessões viram pausas curtas. Sem isso a voz lê "-ому/-ему"
-    como uma sequência ininteligível de símbolos.
+    Setas, barras, aspas tipogrÃ¡ficas e abreviaÃ§Ãµes de nÃ­vel viram palavras
+    faladas; travessÃµes viram pausas curtas. Sem isso a voz lÃª "-Ð¾Ð¼Ñƒ/-ÐµÐ¼Ñƒ"
+    como uma sequÃªncia ininteligÃ­vel de sÃ­mbolos.
     """
     result = str(text or "")
     for pattern, replacement in SPOKEN_REPLACEMENTS:
@@ -169,17 +169,17 @@ def spoken_text(text: str) -> str:
 
 
 def lesson_script(unit: dict, block_index: int | None = None) -> str:
-    """Monta o roteiro falado da explicação de gramática de uma unidade.
+    """Monta o roteiro falado da explicaÃ§Ã£o de gramÃ¡tica de uma unidade.
 
-    Cada bloco de ``grammar`` pode trazer ``audio_script`` — a versão escrita
+    Cada bloco de ``grammar`` pode trazer ``audio_script`` â€” a versÃ£o escrita
     para o ouvido, com exemplos lidos por extenso. Sem esse campo, o roteiro
-    cai para o texto escrito (título + parágrafos + exemplos), que continua
-    inteligível depois de passar por ``spoken_text``.
+    cai para o texto escrito (tÃ­tulo + parÃ¡grafos + exemplos), que continua
+    inteligÃ­vel depois de passar por ``spoken_text``.
     """
     blocks = unit.get("grammar") or []
     if block_index is not None:
         if block_index < 0 or block_index >= len(blocks):
-            raise ValueError("Bloco de gramática inexistente nesta unidade.")
+            raise ValueError("Bloco de gramÃ¡tica inexistente nesta unidade.")
         selected = [blocks[block_index]]
         parts: list[str] = []
     else:
@@ -188,7 +188,7 @@ def lesson_script(unit: dict, block_index: int | None = None) -> str:
         if unit.get("description"):
             parts.append(str(unit["description"]))
     if not selected:
-        raise ValueError("Esta unidade ainda não tem explicação de gramática.")
+        raise ValueError("Esta unidade ainda nÃ£o tem explicaÃ§Ã£o de gramÃ¡tica.")
     for block in selected:
         script = block.get("audio_script")
         if script:
@@ -201,21 +201,21 @@ def lesson_script(unit: dict, block_index: int | None = None) -> str:
             russian = example.get("ru", "")
             portuguese = example.get("pt", "")
             if russian:
-                parts.append(f"Exemplo: {russian}. Em português: {portuguese}.")
+                parts.append(f"Exemplo: {russian}. Em portuguÃªs: {portuguese}.")
     return " ".join(part.strip() for part in parts if str(part).strip())
 
 
 def normalize_answer(value: object) -> str:
-    """Normalização tolerante a caixa, espaços, ё/е e pontuação final."""
+    """NormalizaÃ§Ã£o tolerante a caixa, espaÃ§os, Ñ‘/Ðµ e pontuaÃ§Ã£o final."""
     text = unicodedata.normalize("NFC", str(value or "")).strip().lower()
-    text = text.replace("ё", "е")
+    text = text.replace("Ñ‘", "Ðµ")
     text = re.sub(r"\s+", " ", text)
-    text = re.sub(r"[.!?…]+$", "", text).strip()
+    text = re.sub(r"[.!?â€¦]+$", "", text).strip()
     return text
 
 
 def edit_distance(left: str, right: str) -> int:
-    """Distância de Levenshtein com memória linear."""
+    """DistÃ¢ncia de Levenshtein com memÃ³ria linear."""
     if len(left) < len(right):
         left, right = right, left
     previous = list(range(len(right) + 1))
@@ -232,17 +232,17 @@ def edit_distance(left: str, right: str) -> int:
 
 
 def partial_score(answer: str, expected: str) -> tuple[float, str, str]:
-    """Calcula crédito parcial sem aceitar uma regência trocada como correta."""
+    """Calcula crÃ©dito parcial sem aceitar uma regÃªncia trocada como correta."""
     given = normalize_answer(answer)
     target = normalize_answer(expected)
     if given == target:
         return 1.0, "correct", "Resposta exata."
     if not given or not target:
-        return 0.0, "wrong", "Resposta ausente ou incompatível."
+        return 0.0, "wrong", "Resposta ausente ou incompatÃ­vel."
 
     given_tokens = given.split()
     target_tokens = target.split()
-    critical = {"к", "от", "с", "в", "на", "за", "из", "по", "для"}
+    critical = {"Ðº", "Ð¾Ñ‚", "Ñ", "Ð²", "Ð½Ð°", "Ð·Ð°", "Ð¸Ð·", "Ð¿Ð¾", "Ð´Ð»Ñ"}
     critical_given = [token for token in given_tokens if token in critical]
     critical_target = [token for token in target_tokens if token in critical]
     regency_changed = critical_given != critical_target
@@ -250,22 +250,22 @@ def partial_score(answer: str, expected: str) -> tuple[float, str, str]:
     distance = edit_distance(given, target)
 
     if len(target_tokens) == 1 and len(target) <= 3:
-        return 0.0, "wrong", "Em respostas curtas, outra preposição muda a regência."
+        return 0.0, "wrong", "Em respostas curtas, outra preposiÃ§Ã£o muda a regÃªncia."
     if regency_changed and ratio >= 0.62:
-        return 0.5, "partial", "A maior parte está reconhecível, mas a preposição/regência mudou."
+        return 0.5, "partial", "A maior parte estÃ¡ reconhecÃ­vel, mas a preposiÃ§Ã£o/regÃªncia mudou."
     if distance == 1 and ratio >= 0.88:
-        return 0.85, "minor_error", "Há apenas um provável erro pequeno de digitação ou ortografia."
+        return 0.85, "minor_error", "HÃ¡ apenas um provÃ¡vel erro pequeno de digitaÃ§Ã£o ou ortografia."
     if ratio >= 0.90:
-        return 0.75, "partial", "A construção está próxima, mas há um provável erro de forma ou terminação."
+        return 0.75, "partial", "A construÃ§Ã£o estÃ¡ prÃ³xima, mas hÃ¡ um provÃ¡vel erro de forma ou terminaÃ§Ã£o."
     if ratio >= 0.78:
-        return 0.65, "partial", "A estrutura principal está próxima; revise formas ou terminações."
+        return 0.65, "partial", "A estrutura principal estÃ¡ prÃ³xima; revise formas ou terminaÃ§Ãµes."
     if ratio >= 0.62:
-        return 0.4, "partial", "Há elementos corretos, mas a resposta ainda precisa de revisão importante."
-    return 0.0, "wrong", "A resposta diverge da construção esperada."
+        return 0.4, "partial", "HÃ¡ elementos corretos, mas a resposta ainda precisa de revisÃ£o importante."
+    return 0.0, "wrong", "A resposta diverge da construÃ§Ã£o esperada."
 
 
 def mastery_having_sql() -> str:
-    """HAVING que marca um exercício como dominado por qualquer patamar de MASTERY_TIERS."""
+    """HAVING que marca um exercÃ­cio como dominado por qualquer patamar de MASTERY_TIERS."""
     clauses = [
         f"SUM(CASE WHEN COALESCE(score, is_correct) >= {min_score} THEN 1 ELSE 0 END) >= {min_count}"
         for min_score, min_count in MASTERY_TIERS
@@ -299,9 +299,9 @@ class ContentStore:
             for exercise in unit["exercises"]:
                 ex_id = exercise.get("id")
                 if not ex_id:
-                    raise ValueError(f"{path.name}: exercício sem id")
+                    raise ValueError(f"{path.name}: exercÃ­cio sem id")
                 if ex_id in exercises:
-                    raise ValueError(f"ID de exercício duplicado: {ex_id}")
+                    raise ValueError(f"ID de exercÃ­cio duplicado: {ex_id}")
                 exercise.setdefault("tags", [])
                 exercise.setdefault("difficulty", 1)
                 exercise.setdefault("stage", "practice")
@@ -321,18 +321,18 @@ class ContentStore:
         self.vocab.load()
         for ex_id, exercise in self.vocab.exercises.items():
             if ex_id in exercises:
-                raise ValueError(f"ID de exercício duplicado: {ex_id}")
+                raise ValueError(f"ID de exercÃ­cio duplicado: {ex_id}")
             exercises[ex_id] = exercise
             exercise_unit[ex_id] = self.vocab.exercise_unit[ex_id]
         self.exercises = exercises
         self.exercise_unit = exercise_unit
 
     def _load_prefix_module(self, exercises: dict, exercise_unit: dict) -> dict:
-        """Módulo autônomo de verbos com prefixo (página "Prefixos", só russo).
+        """MÃ³dulo autÃ´nomo de verbos com prefixo (pÃ¡gina "Prefixos", sÃ³ russo).
 
-        Não entra em self.units: fica fora da trilha "Estudar" e da cadeia de
-        travamento. Os exercícios, porém, entram em self.exercises para que
-        /api/answer, a revisão espaçada e o histórico funcionem normalmente.
+        NÃ£o entra em self.units: fica fora da trilha "Estudar" e da cadeia de
+        travamento. Os exercÃ­cios, porÃ©m, entram em self.exercises para que
+        /api/answer, a revisÃ£o espaÃ§ada e o histÃ³rico funcionem normalmente.
         """
         if not PREFIX_VERBS_PATH.exists():
             return {}
@@ -350,9 +350,9 @@ class ContentStore:
         for exercise in module.get("exercises", []):
             ex_id = exercise.get("id")
             if not ex_id:
-                raise ValueError("prefix_verbs.json: exercício sem id")
+                raise ValueError("prefix_verbs.json: exercÃ­cio sem id")
             if ex_id in exercises:
-                raise ValueError(f"ID de exercício duplicado: {ex_id}")
+                raise ValueError(f"ID de exercÃ­cio duplicado: {ex_id}")
             if exercise.get("stage") not in stage_ids:
                 raise ValueError(f"prefix_verbs.json: {ex_id} referencia stage inexistente")
             exercise.setdefault("tags", [])
@@ -387,7 +387,7 @@ class ContentStore:
         return {key: value for key, value in exercise.items() if key not in hidden}
 
     def module_unit_ids(self, course_id: str) -> set[str]:
-        """IDs internos dos módulos fora da trilha (Prefixos, Terminações, Vocabulário)."""
+        """IDs internos dos mÃ³dulos fora da trilha (Prefixos, TerminaÃ§Ãµes, VocabulÃ¡rio)."""
         if course_id not in ("", "russian"):
             return set()
         ids = {"lexical_minimum_morphology", "lexical_minimum_vocabulary", PREFIX_VERBS_UNIT_ID}
@@ -412,7 +412,7 @@ class ContentStore:
 
 
 class LexicalMinimumStore:
-    """Inventário TRKI-II e exercícios gerados a partir das formas do OpenRussian."""
+    """InventÃ¡rio TRKI-II e exercÃ­cios gerados a partir das formas do OpenRussian."""
 
     def __init__(self, path: Path):
         self.path = path
@@ -432,15 +432,15 @@ class LexicalMinimumStore:
         return {word for word in words if word not in cls.STOPWORDS_EN and len(word) > 2}
 
     def _vocabulary_options(self, conn: sqlite3.Connection, row: sqlite3.Row) -> list[str]:
-        """Distratores da mesma classe e com final parecido, sem sinônimos.
+        """Distratores da mesma classe e com final parecido, sem sinÃ´nimos.
 
-        O inventário original sorteava distratores ao acaso: «блины» aparecia
-        contra «недавно, никогда, шестнадцать», e a classe gramatical entregava
-        a resposta. Aqui os candidatos têm a mesma classe (ou, sem classe, o
-        mesmo final), comprimento próximo e raiz diferente; palavras cuja
-        tradução inglesa compartilha um termo com a resposta são descartadas
-        para não criar duas alternativas corretas. A escolha é determinística
-        por cartão, para que a revisão espaçada mostre o mesmo conjunto.
+        O inventÃ¡rio original sorteava distratores ao acaso: Â«Ð±Ð»Ð¸Ð½Ñ‹Â» aparecia
+        contra Â«Ð½ÐµÐ´Ð°Ð²Ð½Ð¾, Ð½Ð¸ÐºÐ¾Ð³Ð´Ð°, ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒÂ», e a classe gramatical entregava
+        a resposta. Aqui os candidatos tÃªm a mesma classe (ou, sem classe, o
+        mesmo final), comprimento prÃ³ximo e raiz diferente; palavras cuja
+        traduÃ§Ã£o inglesa compartilha um termo com a resposta sÃ£o descartadas
+        para nÃ£o criar duas alternativas corretas. A escolha Ã© determinÃ­stica
+        por cartÃ£o, para que a revisÃ£o espaÃ§ada mostre o mesmo conjunto.
         """
         cached = self._vocab_options.get(row["id"])
         if cached:
@@ -566,9 +566,9 @@ class LexicalMinimumStore:
             target += f", {row['target_gender']}"
         label = "substantivo" if row["pos"] == "noun" else "adjetivo"
         explanation = (
-            f"{row['display_lemma']} → {row['answer']}: base «{row['stem']}» + "
-            f"terminação «{row['ending']}». {row['case_ru']}, {target}. "
-            f"Fonte lexical: página {row['source_page']} do Лексический минимум ТРКИ-II."
+            f"{row['display_lemma']} â†’ {row['answer']}: base Â«{row['stem']}Â» + "
+            f"terminaÃ§Ã£o Â«{row['ending']}Â». {row['case_ru']}, {target}. "
+            f"Fonte lexical: pÃ¡gina {row['source_page']} do Ð›ÐµÐºÑÐ¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼ Ð¢Ð ÐšÐ˜-II."
         )
         return {
             "id": row["id"],
@@ -576,13 +576,13 @@ class LexicalMinimumStore:
             "type": "choice",
             "stage": "practice",
             "difficulty": 2,
-            "instruction": f"Escolha a flexão correta deste {label}.",
-            "prompt": f"Qual é a forma de «{row['display_lemma']}» em {row['case_ru']} ({target})?",
+            "instruction": f"Escolha a flexÃ£o correta deste {label}.",
+            "prompt": f"Qual Ã© a forma de Â«{row['display_lemma']}Â» em {row['case_ru']} ({target})?",
             "options": json.loads(row["options_json"]),
             "answer": row["answer"],
             "explanation": explanation,
             "tags": [
-                f"lexeme:{row['lemma']}", "Лексический минимум TRKI-II", "terminações",
+                f"lexeme:{row['lemma']}", "Ð›ÐµÐºÑÐ¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼ TRKI-II", "terminaÃ§Ãµes",
                 row["pos"], row["case_ru"], row["number_ru"],
             ],
             "lemma": row["lemma"],
@@ -604,22 +604,22 @@ class LexicalMinimumStore:
             "type": "choice",
             "stage": "recognition",
             "difficulty": 2,
-            "instruction": "Escolha a palavra russa correspondente ao significado em inglês.",
-            "prompt": f"Qual palavra russa corresponde a “{row['translation_en']}”?",
+            "instruction": "Escolha a palavra russa correspondente ao significado em inglÃªs.",
+            "prompt": f"Qual palavra russa corresponde a â€œ{row['translation_en']}â€?",
             "options": options,
             "answer": row["display_lemma"],
             "explanation": (
-                f"{row['display_lemma']} — {row['translation_en']}. "
-                f"Fonte lexical: página {row['source_page']} do Лексический минимум ТРКИ-II."
+                f"{row['display_lemma']} â€” {row['translation_en']}. "
+                f"Fonte lexical: pÃ¡gina {row['source_page']} do Ð›ÐµÐºÑÐ¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼ Ð¢Ð ÐšÐ˜-II."
             ),
-            "tags": [f"lexeme:{row['lemma']}", "Лексический минимум TRKI-II", "vocabulário B2"],
+            "tags": [f"lexeme:{row['lemma']}", "Ð›ÐµÐºÑÐ¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼ TRKI-II", "vocabulÃ¡rio B2"],
             "lemma": row["lemma"],
             "display_lemma": row["display_lemma"],
             "translation_en": row["translation_en"],
             "source_page": row["source_page"],
         }
 class DictionaryStore:
-    """Consulta formas flexionadas no índice local do OpenRussian."""
+    """Consulta formas flexionadas no Ã­ndice local do OpenRussian."""
 
     POS_LABELS = {
         "noun": "substantivo",
@@ -634,9 +634,9 @@ class DictionaryStore:
 
     @staticmethod
     def normalize_word(value: str) -> str:
-        text = unicodedata.normalize("NFC", value).lower().replace("ё", "е")
-        text = text.replace("'", "").replace("´", "").replace("*", "")
-        return re.sub(r"[^а-я-]", "", text)
+        text = unicodedata.normalize("NFC", value).lower().replace("Ñ‘", "Ðµ")
+        text = text.replace("'", "").replace("Â´", "").replace("*", "")
+        return re.sub(r"[^Ð°-Ñ-]", "", text)
 
     def lookup(self, word: str) -> dict:
         form = self.normalize_word(word)
@@ -649,7 +649,7 @@ class DictionaryStore:
                 """
                 SELECT e.lemma, e.accented, e.pos, e.translations_en,
                        e.gender, e.aspect, e.partner,
-                       GROUP_CONCAT(f.grammar, ' · ') AS grammar
+                       GROUP_CONCAT(f.grammar, ' Â· ') AS grammar
                 FROM form_index f
                 JOIN entries e ON e.id = f.entry_id
                 WHERE f.form = ?
@@ -683,21 +683,21 @@ class DictionaryStore:
             "normalized": form,
             "available": True,
             "entries": entries,
-            "source": "OpenRussian (CC BY-SA 4.0) + glossário português do curso",
+            "source": "OpenRussian (CC BY-SA 4.0) + glossÃ¡rio portuguÃªs do curso",
         }
 
 
 class TTSService:
-    """Gera MP3 com edge-tts e mantém cache por texto/voz.
+    """Gera MP3 com edge-tts e mantÃ©m cache por texto/voz.
 
     Dois modos:
 
-    - ``target``  → voz nativa do idioma estudado, ritmo lento (-12%), textos
-      curtos (frases de exercício, alternativas, palavras do dicionário);
-    - ``lesson``  → voz multilíngue em português do Brasil, ritmo levemente
-      reduzido (-6%), textos longos (a explicação de gramática da unidade).
-      A voz multilíngue pronuncia os exemplos em russo dentro da narração em
-      português sem trocar de motor, que é o que torna possível uma "aula
+    - ``target``  â†’ voz nativa do idioma estudado, ritmo lento (-12%), textos
+      curtos (frases de exercÃ­cio, alternativas, palavras do dicionÃ¡rio);
+    - ``lesson``  â†’ voz multilÃ­ngue em portuguÃªs do Brasil, ritmo levemente
+      reduzido (-6%), textos longos (a explicaÃ§Ã£o de gramÃ¡tica da unidade).
+      A voz multilÃ­ngue pronuncia os exemplos em russo dentro da narraÃ§Ã£o em
+      portuguÃªs sem trocar de motor, que Ã© o que torna possÃ­vel uma "aula
       falada" com exemplos reais.
     """
 
@@ -708,7 +708,7 @@ class TTSService:
     }
     LESSON_VOICE = "pt-BR-ThalitaMultilingualNeural"
     LESSON_MAX_CHARS = 7000
-    # Vozes dos diálogos russos. Só há duas vozes neurais russas no edge-tts;
+    # Vozes dos diÃ¡logos russos. SÃ³ hÃ¡ duas vozes neurais russas no edge-tts;
     # a terceira e a quarta pessoa usam a mesma voz com outro tom, o que basta
     # para o ouvido separar os falantes numa cena.
     DIALOGUE_VOICES = {
@@ -735,7 +735,7 @@ class TTSService:
             cleaned = spoken_text(cleaned)
         elif speaker and course_id == "russian":
             if speaker not in self.DIALOGUE_VOICES:
-                raise ValueError("Voz de diálogo desconhecida.")
+                raise ValueError("Voz de diÃ¡logo desconhecida.")
             voice, pitch = self.DIALOGUE_VOICES[speaker]
             rate, limit = self.DIALOGUE_RATE, 800
         else:
@@ -743,9 +743,9 @@ class TTSService:
             rate, limit = "-12%", 800
         if not voice:
             raise ValueError("Curso sem voz TTS configurada.")
-        if not cleaned or len(cleaned) > limit or not re.search(r"[A-Za-zÀ-žА-Яа-яЁёӘәҒғҚқҢңӨөҰұҮүҺһІі]", cleaned):
-            raise ValueError(f"O texto de áudio deve conter texto legível e ter até {limit} caracteres.")
-        # O tom só entra na chave quando difere do padrão: o cache antigo continua válido.
+        if not cleaned or len(cleaned) > limit or not re.search(r"[A-Za-zÃ€-Å¾Ð-Ð¯Ð°-ÑÐÑ‘Ó˜Ó™Ò’Ò“ÒšÒ›Ò¢Ò£Ó¨Ó©Ò°Ò±Ò®Ò¯ÒºÒ»Ð†Ñ–]", cleaned):
+            raise ValueError(f"O texto de Ã¡udio deve conter texto legÃ­vel e ter atÃ© {limit} caracteres.")
+        # O tom sÃ³ entra na chave quando difere do padrÃ£o: o cache antigo continua vÃ¡lido.
         key = f"{voice}|{rate}|{cleaned}" if pitch == "+0Hz" else f"{voice}|{rate}|{pitch}|{cleaned}"
         digest = hashlib.sha256(key.encode("utf-8")).hexdigest()
         target = self.cache_dir / f"{digest}.mp3"
@@ -755,7 +755,7 @@ class TTSService:
         if edge_tts is None or (offline_ok and time.monotonic() < self._edge_down_until):
             if offline_ok:
                 return self._offline_audio(cleaned)
-            raise RuntimeError("edge-tts não está instalado; execute o aplicativo pelo run.sh.")
+            raise RuntimeError("edge-tts nÃ£o estÃ¡ instalado; execute o aplicativo pelo run.sh.")
         temporary = target.with_suffix(f".{secrets.token_hex(6)}.tmp")
         with self._lock:
             if target.exists() and target.stat().st_size > 0:
@@ -766,7 +766,7 @@ class TTSService:
                 temporary.replace(target)
                 self._edge_down_until = 0.0
             except Exception:
-                # A Microsoft já recusou conexões do edge-tts de uma hora para outra (erro 403).
+                # A Microsoft jÃ¡ recusou conexÃµes do edge-tts de uma hora para outra (erro 403).
                 # Em vez de falhar, o russo cai na voz offline do Windows e o Edge fica de lado por um tempo.
                 if not offline_ok:
                     raise
@@ -777,7 +777,7 @@ class TTSService:
         return target
 
     def _offline_audio(self, text: str) -> Path:
-        """Voz russa instalada no Windows (SAPI). Fica em pasta própria para nunca se misturar ao cache do Edge."""
+        """Voz russa instalada no Windows (SAPI). Fica em pasta prÃ³pria para nunca se misturar ao cache do Edge."""
         folder = self.cache_dir.parent / "tts_offline"
         folder.mkdir(parents=True, exist_ok=True)
         target = folder / f"{hashlib.sha256(text.encode('utf-8')).hexdigest()}.wav"
@@ -799,7 +799,7 @@ class TTSService:
                 env=env, capture_output=True, timeout=30, creationflags=0x08000000,  # CREATE_NO_WINDOW
             )
             if result.returncode == 3:
-                raise RuntimeError("O Windows não tem uma voz em russo instalada (Configurações > Hora e idioma > Fala).")
+                raise RuntimeError("O Windows nÃ£o tem uma voz em russo instalada (ConfiguraÃ§Ãµes > Hora e idioma > Fala).")
             if result.returncode != 0 or not temporary.exists() or temporary.stat().st_size == 0:
                 raise RuntimeError("A voz offline do Windows falhou.")
             temporary.replace(target)
@@ -1057,7 +1057,7 @@ class Database:
         elif score < 1:
             repetitions = 0
             ease = max(1.3, ease - 0.08)
-            interval = 0.25  # seis horas: reconheceu parte, mas ainda não dominou
+            interval = 0.25  # seis horas: reconheceu parte, mas ainda nÃ£o dominou
         else:
             repetitions += 1
             base_intervals = [1, 3, 7, 14, 30, 60, 120]
@@ -1138,12 +1138,12 @@ class Database:
             )
 
     def reconcile_unit_completion(self) -> None:
-        """Reaplica a regra de conclusão a todas as unidades.
+        """Reaplica a regra de conclusÃ£o a todas as unidades.
 
-        Necessário porque `_maybe_complete_unit` só roda ao salvar uma nova
-        tentativa: sem isto, mudar MASTERY_TIERS/UNIT_COMPLETION_THRESHOLD não
-        destrava quem já tinha nota suficiente sob a regra nova mas não
-        respondeu mais nada desde então.
+        NecessÃ¡rio porque `_maybe_complete_unit` sÃ³ roda ao salvar uma nova
+        tentativa: sem isto, mudar MASTERY_TIERS/UNIT_COMPLETION_THRESHOLD nÃ£o
+        destrava quem jÃ¡ tinha nota suficiente sob a regra nova mas nÃ£o
+        respondeu mais nada desde entÃ£o.
         """
         with self._lock, self.connect() as conn:
             for unit in self.content.units:
@@ -1154,11 +1154,11 @@ class Database:
             completed_ids = {
                 row["unit_id"] for row in conn.execute("SELECT unit_id FROM unit_completion")
             }
-            # "Dominado" = domínio cumulativo (ver MASTERY_TIERS): nota alta numa
-            # tentativa conta tanto quanto nota média repetida várias vezes. Um erro
-            # isolado numa revisão espaçada posterior não faz o exercício "regredir"
-            # e travar o desbloqueio da próxima unidade, pois olhamos o histórico
-            # inteiro de tentativas, não só a última.
+            # "Dominado" = domÃ­nio cumulativo (ver MASTERY_TIERS): nota alta numa
+            # tentativa conta tanto quanto nota mÃ©dia repetida vÃ¡rias vezes. Um erro
+            # isolado numa revisÃ£o espaÃ§ada posterior nÃ£o faz o exercÃ­cio "regredir"
+            # e travar o desbloqueio da prÃ³xima unidade, pois olhamos o histÃ³rico
+            # inteiro de tentativas, nÃ£o sÃ³ a Ãºltima.
             cleared_ids = {
                 row["exercise_id"]
                 for row in conn.execute(
@@ -1176,8 +1176,8 @@ class Database:
         units = [unit for unit in self.content.units if not course_id or unit.get("course_id") == course_id]
         for unit in units:
             unit_course = unit.get("course_id", "russian")
-            # Unidades de order 0 (diagnóstico) ficam sempre disponíveis, fora da trilha
-            # sequencial: não são bloqueadas nem servem de pré-requisito para as demais.
+            # Unidades de order 0 (diagnÃ³stico) ficam sempre disponÃ­veis, fora da trilha
+            # sequencial: nÃ£o sÃ£o bloqueadas nem servem de prÃ©-requisito para as demais.
             standalone = unit.get("order", 999) == 0
             gradable = [ex for ex in unit["exercises"] if ex.get("type") != "open_text"]
             total = len(gradable)
@@ -1196,7 +1196,7 @@ class Database:
         return result
 
     def prefix_progress(self) -> dict:
-        """Domínio por prefixo no módulo "Verbos com prefixo".
+        """DomÃ­nio por prefixo no mÃ³dulo "Verbos com prefixo".
 
         Mesma regra cumulativa de MASTERY_TIERS usada na trilha. Retorna
         {stage_id: {"total", "cleared"}} mais um total geral.
@@ -1246,11 +1246,11 @@ class Database:
             }
 
     def vocab_progress(self) -> dict[str, dict]:
-        """Domínio por lição de vocabulário (mesma regra cumulativa da trilha).
+        """DomÃ­nio por liÃ§Ã£o de vocabulÃ¡rio (mesma regra cumulativa da trilha).
 
-        Além dos exercícios, conta quantas das oito construções já estão
-        firmes: uma construção conta quando suas tarefas de forma e de contexto
-        (form, cloze, build) atingiram o patamar de domínio.
+        AlÃ©m dos exercÃ­cios, conta quantas das oito construÃ§Ãµes jÃ¡ estÃ£o
+        firmes: uma construÃ§Ã£o conta quando suas tarefas de forma e de contexto
+        (form, cloze, build) atingiram o patamar de domÃ­nio.
         """
         cleared = self.cleared_exercise_ids()
         with self.connect() as conn:
@@ -1471,9 +1471,9 @@ class Database:
         if self.content.prefix_module:
             unit_titles[PREFIX_VERBS_UNIT_ID] = self.content.prefix_module.get("title", "Verbos com prefixo")
         for lesson in self.content.vocab.lessons:
-            unit_titles[lesson["unit_key"]] = f"Vocabulário · {lesson['title']}"
-        unit_titles.setdefault("lexical_minimum_morphology", "Terminações · flexão")
-        unit_titles.setdefault("lexical_minimum_vocabulary", "Terminações · cobertura lexical")
+            unit_titles[lesson["unit_key"]] = f"VocabulÃ¡rio Â· {lesson['title']}"
+        unit_titles.setdefault("lexical_minimum_morphology", "TerminaÃ§Ãµes Â· flexÃ£o")
+        unit_titles.setdefault("lexical_minimum_vocabulary", "TerminaÃ§Ãµes Â· cobertura lexical")
         for unit_id, values in by_unit.items():
             count = values["attempts"]
             unit_stats.append({
@@ -1542,31 +1542,31 @@ class Database:
             writer.writerows(attempts)
 
         lines = [
-            "# Relatório atual — Русский тренажёр",
+            "# RelatÃ³rio atual â€” Ð ÑƒÑÑÐºÐ¸Ð¹ Ñ‚Ñ€ÐµÐ½Ð°Ð¶Ñ‘Ñ€",
             "",
             f"Gerado em: {summary['generated_at']}",
             f"Tentativas: {summary['total_attempts']}",
-            f"Precisão geral: {summary['accuracy'] if summary['accuracy'] is not None else '—'}%",
-            f"Precisão sem consulta: {summary['sc_accuracy'] if summary['sc_accuracy'] is not None else '—'}%",
-            f"Revisões vencidas: {summary['due_count']}",
-            f"Léxico TRKI-II visto: {summary['lexical_coverage']['seen']} / {summary['lexical_coverage']['total']} ({summary['lexical_coverage']['seen_percent']}%)",
-            f"Léxico TRKI-II dominado: {summary['lexical_coverage']['mastered']} ({summary['lexical_coverage']['mastered_percent']}%)",
-            f"Produções pendentes de correção: {summary['pending_writing']}",
-            f"Problemas de conteúdo sinalizados: {summary['open_reports']}",
+            f"PrecisÃ£o geral: {summary['accuracy'] if summary['accuracy'] is not None else 'â€”'}%",
+            f"PrecisÃ£o sem consulta: {summary['sc_accuracy'] if summary['sc_accuracy'] is not None else 'â€”'}%",
+            f"RevisÃµes vencidas: {summary['due_count']}",
+            f"LÃ©xico TRKI-II visto: {summary['lexical_coverage']['seen']} / {summary['lexical_coverage']['total']} ({summary['lexical_coverage']['seen_percent']}%)",
+            f"LÃ©xico TRKI-II dominado: {summary['lexical_coverage']['mastered']} ({summary['lexical_coverage']['mastered_percent']}%)",
+            f"ProduÃ§Ãµes pendentes de correÃ§Ã£o: {summary['pending_writing']}",
+            f"Problemas de conteÃºdo sinalizados: {summary['open_reports']}",
             "",
-            "## Domínio por etiqueta",
+            "## DomÃ­nio por etiqueta",
             "",
         ]
         if summary["by_tag"]:
             for item in summary["by_tag"]:
                 lines.append(
-                    f"- {item['tag']}: domínio {item['mastery']}%, "
+                    f"- {item['tag']}: domÃ­nio {item['mastery']}%, "
                     f"exatos {item['correct']}, parciais {item['partial']}, tentativas {item['attempts']}"
                 )
         else:
-            lines.append("Ainda não há respostas.")
+            lines.append("Ainda nÃ£o hÃ¡ respostas.")
         active_sessions = self.sessions.active()
-        lines += ["", "## Sessões em andamento (podem ser retomadas)", ""]
+        lines += ["", "## SessÃµes em andamento (podem ser retomadas)", ""]
         if active_sessions:
             for session in active_sessions:
                 lines.append(
@@ -1574,32 +1574,32 @@ class Database:
                     f"{session['total']}, {session['answered']} respostas, salva em {session['updated_at']}"
                 )
         else:
-            lines.append("Nenhuma sessão interrompida.")
+            lines.append("Nenhuma sessÃ£o interrompida.")
         lines += ["", "## Erros recentes", ""]
         if summary["recent_errors"]:
             for item in summary["recent_errors"][:10]:
                 lines += [
-                    f"- **{item['exercise_id']}** — {item['prompt']}",
+                    f"- **{item['exercise_id']}** â€” {item['prompt']}",
                     f"  - Resposta: {item['answer']}",
                     f"  - Esperado: {item['expected']}",
-                    f"  - Categoria: {item['category'] or 'não classificado'}",
-                    f"  - Crédito: {round(float(item['score']) * 100)}% ({item['verdict']})",
+                    f"  - Categoria: {item['category'] or 'nÃ£o classificado'}",
+                    f"  - CrÃ©dito: {round(float(item['score']) * 100)}% ({item['verdict']})",
                 ]
         else:
-            lines.append("Ainda não há erros registrados.")
+            lines.append("Ainda nÃ£o hÃ¡ erros registrados.")
         (EXPORT_DIR / "relatorio_atual.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-        report_lines = ["# Problemas de conteúdo sinalizados", ""]
+        report_lines = ["# Problemas de conteÃºdo sinalizados", ""]
         if reports:
             for report in reports:
                 report_lines += [
-                    f"## #{report['id']} · {report['exercise_id']}",
+                    f"## #{report['id']} Â· {report['exercise_id']}",
                     "",
                     f"- Data: {report['created_at']}",
                     f"- Unidade: {report['unit_id']}",
                     f"- Motivo: {report['reason']}",
                     f"- Enunciado: {report['prompt_snapshot']}",
-                    f"- Observação: {report['note'] or 'sem observação'}",
+                    f"- ObservaÃ§Ã£o: {report['note'] or 'sem observaÃ§Ã£o'}",
                     "",
                 ]
         else:
@@ -1612,7 +1612,7 @@ def grade(exercise: dict, payload: dict) -> dict:
     answer = payload.get("answer", "")
 
     if exercise_type in UNGRADED_TYPES:
-        raise ValueError("Este cartão é de apresentação e não é corrigido.")
+        raise ValueError("Este cartÃ£o Ã© de apresentaÃ§Ã£o e nÃ£o Ã© corrigido.")
 
     if exercise_type == "open_text":
         text = str(answer).strip()
@@ -1622,9 +1622,9 @@ def grade(exercise: dict, payload: dict) -> dict:
             "score": None,
             "verdict": "pending_review",
             "correct_answer": None,
-            "message": "Produção salva para correção posterior.",
+            "message": "ProduÃ§Ã£o salva para correÃ§Ã£o posterior.",
             "explanation": exercise.get("review_notes", ""),
-            "word_count": len(re.findall(r"[\wА-Яа-яЁё-]+", text, flags=re.UNICODE)),
+            "word_count": len(re.findall(r"[\wÐ-Ð¯Ð°-ÑÐÑ‘-]+", text, flags=re.UNICODE)),
         }
 
     if exercise_type == "match_pairs":
@@ -1646,14 +1646,14 @@ def grade(exercise: dict, payload: dict) -> dict:
         score = matched / total
         correct = matched == total and len(given) == total
         verdict = "correct" if correct else "partial" if matched else "wrong"
-        correct_answer = "; ".join(f"{pair['left']} — {pair['right']}" for pair in pairs)
+        correct_answer = "; ".join(f"{pair['left']} â€” {pair['right']}" for pair in pairs)
         return {
             "is_correct": correct,
             "is_partial": 0 < score < 1,
             "score": score,
             "verdict": verdict,
             "correct_answer": correct_answer,
-            "message": "Correto." if correct else "Quase." if score > 0 else "Ainda não.",
+            "message": "Correto." if correct else "Quase." if score > 0 else "Ainda nÃ£o.",
             "proximity_note": f"{matched}/{total} pares corretos.",
             "explanation": exercise.get("explanation", ""),
             "correct_pairs": [{"left": pair["left"], "right": pair["right"]} for pair in pairs],
@@ -1672,7 +1672,7 @@ def grade(exercise: dict, payload: dict) -> dict:
             "score": score,
             "verdict": "correct" if correct else "partial" if score else "wrong",
             "correct_answer": exercise.get("back") or exercise.get("answer", ""),
-            "message": "Autoavaliação registrada.",
+            "message": "AutoavaliaÃ§Ã£o registrada.",
             "explanation": exercise.get("explanation", ""),
         }
 
@@ -1681,8 +1681,8 @@ def grade(exercise: dict, payload: dict) -> dict:
     if exercise.get("answer") is not None:
         valid.insert(0, str(exercise["answer"]))
     canonical = valid[0] if valid else ""
-    # Um cartão de morfologia pode ser apresentado sem alternativas. Nesse
-    # modo, um deslize de terminação recebe crédito parcial em vez de ser
+    # Um cartÃ£o de morfologia pode ser apresentado sem alternativas. Nesse
+    # modo, um deslize de terminaÃ§Ã£o recebe crÃ©dito parcial em vez de ser
     # tratado como uma escolha objetiva completamente errada.
     displayed_as_input = payload.get("response_format") == "input"
     is_objective = not displayed_as_input and (exercise_type in ("choice", "reading", "dialogue") or (
@@ -1692,7 +1692,7 @@ def grade(exercise: dict, payload: dict) -> dict:
         correct = any(normalize_answer(answer_text) == normalize_answer(item) for item in valid)
         score = 1.0 if correct else 0.0
         verdict = "correct" if correct else "wrong"
-        proximity_note = "Resposta exata." if correct else "A alternativa escolhida muda a construção ou o sentido."
+        proximity_note = "Resposta exata." if correct else "A alternativa escolhida muda a construÃ§Ã£o ou o sentido."
     else:
         comparisons = [(*partial_score(answer_text, item), item) for item in valid]
         score, verdict, proximity_note, closest = max(comparisons, key=lambda item: item[0]) if comparisons else (0.0, "wrong", "Sem gabarito.", canonical)
@@ -1704,7 +1704,7 @@ def grade(exercise: dict, payload: dict) -> dict:
         "score": score,
         "verdict": verdict,
         "correct_answer": canonical,
-        "message": "Correto." if correct else "Quase." if score > 0 else "Ainda não.",
+        "message": "Correto." if correct else "Quase." if score > 0 else "Ainda nÃ£o.",
         "proximity_note": proximity_note,
         "explanation": exercise.get("explanation", ""),
         "feedback": exercise.get("feedback", ""),
@@ -1738,19 +1738,19 @@ class AppHandler(BaseHTTPRequestHandler):
         offline = path.suffix == ".wav"
         self.send_header("Content-Type", "audio/wav" if offline else "audio/mpeg")
         self.send_header("Content-Length", str(len(raw)))
-        # A voz offline é provisória: o navegador não deve guardá-la para sempre.
+        # A voz offline Ã© provisÃ³ria: o navegador nÃ£o deve guardÃ¡-la para sempre.
         self.send_header("Cache-Control", "no-store" if offline else "public, max-age=31536000, immutable")
         self.end_headers()
         try:
             self.wfile.write(raw)
         except (BrokenPipeError, ConnectionResetError):
-            # O navegador cancelou o áudio (troca de fala, "Parar", próxima tela).
+            # O navegador cancelou o Ã¡udio (troca de fala, "Parar", prÃ³xima tela).
             pass
 
     def read_json(self) -> dict:
         length = int(self.headers.get("Content-Length", "0"))
         if length > 2_000_000:
-            raise ValueError("Corpo da requisição grande demais")
+            raise ValueError("Corpo da requisiÃ§Ã£o grande demais")
         raw = self.rfile.read(length)
         return json.loads(raw.decode("utf-8")) if raw else {}
 
@@ -1773,7 +1773,7 @@ class AppHandler(BaseHTTPRequestHandler):
             ex_id = str(payload.get("exercise_id", ""))
             exercise = self.app.exercise(ex_id)
             if not exercise:
-                self.send_json({"error": "Exercício não encontrado"}, HTTPStatus.NOT_FOUND)
+                self.send_json({"error": "ExercÃ­cio nÃ£o encontrado"}, HTTPStatus.NOT_FOUND)
                 return
             try:
                 result = grade(exercise, payload)
@@ -1797,7 +1797,7 @@ class AppHandler(BaseHTTPRequestHandler):
             ex_id = str(payload.get("exercise_id", ""))
             exercise = self.app.exercise(ex_id)
             if not exercise:
-                self.send_json({"error": "Exercício não encontrado"}, HTTPStatus.NOT_FOUND)
+                self.send_json({"error": "ExercÃ­cio nÃ£o encontrado"}, HTTPStatus.NOT_FOUND)
                 return
             report_id = self.app.db.save_content_report(payload, exercise)
             self.send_json({"ok": True, "report_id": report_id})
@@ -1807,7 +1807,7 @@ class AppHandler(BaseHTTPRequestHandler):
             try:
                 self.app.content.load()
                 self.send_json({"ok": True, "count": len(self.app.content.exercises)})
-            except Exception as exc:  # conteúdo local: devolver erro legível
+            except Exception as exc:  # conteÃºdo local: devolver erro legÃ­vel
                 self.send_json({"error": str(exc)}, 400)
             return
 
@@ -1829,10 +1829,10 @@ class AppHandler(BaseHTTPRequestHandler):
             return
 
         if parsed.path == "/api/update/apply":
-            # Impede que outra página aberta no navegador dispare a atualização.
+            # Impede que outra pÃ¡gina aberta no navegador dispare a atualizaÃ§Ã£o.
             origin = self.headers.get("Origin")
             if origin and urlparse(origin).netloc != self.headers.get("Host"):
-                self.send_json({"error": "Origem não permitida."}, HTTPStatus.FORBIDDEN)
+                self.send_json({"error": "Origem nÃ£o permitida."}, HTTPStatus.FORBIDDEN)
                 return
             try:
                 self.app.updater.start_apply()
@@ -1850,7 +1850,7 @@ class AppHandler(BaseHTTPRequestHandler):
             })
             return
 
-        self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
+        self.send_json({"error": "Endpoint nÃ£o encontrado"}, HTTPStatus.NOT_FOUND)
 
     def handle_api_get(self, path: str, query: dict[str, list[str]]) -> None:
         if path == "/api/update/check":
@@ -1911,15 +1911,15 @@ class AppHandler(BaseHTTPRequestHandler):
                 items = [item for item in items if item.get("type") == "open_text"]
             elif mode == "study":
                 items = [item for item in items if item.get("type") != "open_text"]
-            # O módulo "Prefixos" tem página própria: nunca vaza para uma
-            # sessão genérica de "Estudar" sem unidade escolhida.
+            # O mÃ³dulo "Prefixos" tem pÃ¡gina prÃ³pria: nunca vaza para uma
+            # sessÃ£o genÃ©rica de "Estudar" sem unidade escolhida.
             if not unit_id and mode not in {"review", "difficult"}:
                 items = [
                     item for item in items
                     if item["unit_id"] != PREFIX_VERBS_UNIT_ID
                     and not (item["unit_id"].startswith(VOCAB_UNIT_PREFIX) and mode != "writing")
                 ]
-            # Cartões de apresentação não têm correção: nunca entram em revisão.
+            # CartÃµes de apresentaÃ§Ã£o nÃ£o tÃªm correÃ§Ã£o: nunca entram em revisÃ£o.
             items = [item for item in items if item.get("type") not in UNGRADED_TYPES]
             self.send_json({
                 "exercises": session_exercises(items, self.app.content.public_exercise),
@@ -1934,7 +1934,7 @@ class AppHandler(BaseHTTPRequestHandler):
         if path == "/api/session/get":
             row = self.app.db.sessions.row(query.get("key", [""])[0])
             if not row:
-                self.send_json({"error": "Sessão não encontrada ou já concluída."}, HTTPStatus.NOT_FOUND)
+                self.send_json({"error": "SessÃ£o nÃ£o encontrada ou jÃ¡ concluÃ­da."}, HTTPStatus.NOT_FOUND)
                 return
             self.send_json(self.app.rebuild_session(row))
             return
@@ -1960,7 +1960,7 @@ class AppHandler(BaseHTTPRequestHandler):
             store = self.app.content.vocab
             lesson = store.lessons_by_id.get(query.get("id", [""])[0])
             if not lesson:
-                self.send_json({"error": "Lição não encontrada."}, HTTPStatus.NOT_FOUND)
+                self.send_json({"error": "LiÃ§Ã£o nÃ£o encontrada."}, HTTPStatus.NOT_FOUND)
                 return
             self.send_json({
                 "lesson": store.public_lesson(lesson, with_dialogue=True),
@@ -1973,7 +1973,7 @@ class AppHandler(BaseHTTPRequestHandler):
             lesson_id = query.get("id", [""])[0]
             part = query.get("part", ["all"])[0]
             if lesson_id not in store.lessons_by_id:
-                self.send_json({"error": "Lição não encontrada."}, HTTPStatus.NOT_FOUND)
+                self.send_json({"error": "LiÃ§Ã£o nÃ£o encontrada."}, HTTPStatus.NOT_FOUND)
                 return
             self.send_json({
                 "exercises": session_exercises(store.session(lesson_id, part), self.app.content.public_exercise),
@@ -2049,7 +2049,7 @@ class AppHandler(BaseHTTPRequestHandler):
             )
             if kind == "morphology" and response_type == "input":
                 # O gabarito continua apenas no servidor. O POST /api/answer
-                # corrige pelo exercício original, identificado pelo mesmo ID.
+                # corrige pelo exercÃ­cio original, identificado pelo mesmo ID.
                 exercises = [
                     {
                         **exercise,
@@ -2069,7 +2069,7 @@ class AppHandler(BaseHTTPRequestHandler):
             ex_id = query.get("id", [""])[0]
             exercise = self.app.exercise(ex_id)
             if not exercise:
-                self.send_json({"error": "Exercício não encontrado"}, 404)
+                self.send_json({"error": "ExercÃ­cio nÃ£o encontrado"}, 404)
                 return
             self.send_json(self.app.content.reveal(exercise))
             return
@@ -2105,7 +2105,7 @@ class AppHandler(BaseHTTPRequestHandler):
                 self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
                 return
             except Exception as exc:
-                self.send_json({"error": f"Não foi possível gerar o áudio: {exc}"}, HTTPStatus.SERVICE_UNAVAILABLE)
+                self.send_json({"error": f"NÃ£o foi possÃ­vel gerar o Ã¡udio: {exc}"}, HTTPStatus.SERVICE_UNAVAILABLE)
                 return
             self.send_audio(audio_path)
             return
@@ -2115,12 +2115,12 @@ class AppHandler(BaseHTTPRequestHandler):
             block_raw = query.get("block", ["all"])[0]
             unit = self.app.content.units_by_id.get(unit_id)
             if not unit:
-                self.send_json({"error": "Unidade não encontrada."}, HTTPStatus.NOT_FOUND)
+                self.send_json({"error": "Unidade nÃ£o encontrada."}, HTTPStatus.NOT_FOUND)
                 return
             try:
                 block_index = None if block_raw in ("", "all") else int(block_raw)
             except ValueError:
-                self.send_json({"error": "Índice de bloco inválido."}, HTTPStatus.BAD_REQUEST)
+                self.send_json({"error": "Ãndice de bloco invÃ¡lido."}, HTTPStatus.BAD_REQUEST)
                 return
             try:
                 script = lesson_script(unit, block_index)
@@ -2129,12 +2129,12 @@ class AppHandler(BaseHTTPRequestHandler):
                 self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
                 return
             except Exception as exc:
-                self.send_json({"error": f"Não foi possível gerar o áudio: {exc}"}, HTTPStatus.SERVICE_UNAVAILABLE)
+                self.send_json({"error": f"NÃ£o foi possÃ­vel gerar o Ã¡udio: {exc}"}, HTTPStatus.SERVICE_UNAVAILABLE)
                 return
             self.send_audio(audio_path)
             return
 
-        self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
+        self.send_json({"error": "Endpoint nÃ£o encontrado"}, HTTPStatus.NOT_FOUND)
 
     def serve_static(self, path: str) -> None:
         path = unquote(path)
@@ -2185,11 +2185,11 @@ class AppServer(ThreadingHTTPServer):
         return self.content.public_exercise(exercise)
 
     def rebuild_session(self, row: dict) -> dict:
-        """Reconstrói a fila de uma sessão salva, sem gabarito.
+        """ReconstrÃ³i a fila de uma sessÃ£o salva, sem gabarito.
 
-        As alternativas voltam na mesma ordem em que o aluno as viu. Exercícios
-        que não existem mais (conteúdo editado desde então) são descartados e
-        o ponto de retomada é recalculado.
+        As alternativas voltam na mesma ordem em que o aluno as viu. ExercÃ­cios
+        que nÃ£o existem mais (conteÃºdo editado desde entÃ£o) sÃ£o descartados e
+        o ponto de retomada Ã© recalculado.
         """
         payload = row["payload"]
         resume = int(row["resume_index"])
@@ -2211,7 +2211,7 @@ class AppServer(ThreadingHTTPServer):
                 public.update(type="input", options=[], instruction="Produza a forma completa sem olhar alternativas.")
             if entry.get("retry"):
                 public["retry"] = True
-                public["phase"] = "↻ RECUPERAR DE NOVO"
+                public["phase"] = "â†» RECUPERAR DE NOVO"
             exercises.append(public)
             statuses.append(payload["status"][index] if index < len(payload["status"]) else "new")
         resume = max(0, min(len(exercises), resume - dropped_before))
@@ -2229,10 +2229,10 @@ class AppServer(ThreadingHTTPServer):
         }
 
     def progress_map(self, scope: str) -> dict | None:
-        """Mapa pergunta a pergunta de uma unidade ou lição de vocabulário.
+        """Mapa pergunta a pergunta de uma unidade ou liÃ§Ã£o de vocabulÃ¡rio.
 
-        Cada célula traz o último resultado, o número de tentativas e se o
-        item já está dominado (mesma regra cumulativa da trilha).
+        Cada cÃ©lula traz o Ãºltimo resultado, o nÃºmero de tentativas e se o
+        item jÃ¡ estÃ¡ dominado (mesma regra cumulativa da trilha).
         """
         kind, _, ident = scope.partition(":")
         entries: list[tuple[dict, str]] = []
@@ -2292,7 +2292,7 @@ def already_running(url: str) -> bool:
     try:
         with urllib.request.urlopen(f"{url}/api/update/status", timeout=1.5) as response:
             return "phase" in json.load(response)
-    except Exception:  # noqa: BLE001 - qualquer falha significa "não há servidor nosso nessa porta"
+    except Exception:  # noqa: BLE001 - qualquer falha significa "nÃ£o hÃ¡ servidor nosso nessa porta"
         return False
 
 
@@ -2309,14 +2309,14 @@ def main() -> None:
 
     url = f"http://{args.host}:{args.port}"
     if already_running(url):
-        # Segundo clique no atalho: só traz a página de volta ao navegador.
-        print(f"LinguaLab já está aberto em {url}")
+        # Segundo clique no atalho: sÃ³ traz a pÃ¡gina de volta ao navegador.
+        print(f"LinguaLab jÃ¡ estÃ¡ aberto em {url}")
         if not args.no_browser:
             webbrowser.open(url)
         return
 
     server = AppServer((args.host, args.port), AppHandler)
-    print(f"LinguaLab disponível em {url}")
+    print(f"LinguaLab disponÃ­vel em {url}")
     print("Feche esta janela (ou pressione Ctrl+C) para encerrar." if FROZEN else "Pressione Ctrl+C para encerrar.")
     if not args.no_browser:
         threading.Timer(0.7, lambda: webbrowser.open(url)).start()
