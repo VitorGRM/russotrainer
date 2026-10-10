@@ -1,0 +1,580 @@
+{
+  "id": "v12",
+  "unit_id": "u12_roditelnyi",
+  "order": 12,
+  "title": "Отпуск по средствам",
+  "theme": "Um casal planeja férias, duração e orçamento",
+  "description": "Um casal planeja férias, duração e orçamento. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Анна": "f",
+    "Илья": "m"
+  },
+  "dialogue": {
+    "title": "Отпуск по средствам",
+    "setting": "Um casal planeja férias, duração e orçamento",
+    "lines": [
+      {
+        "speaker": "Анна",
+        "ru": "На сайте нет свободного номера на пятницу. Может, поедем позже?",
+        "pt": "No site, não há quarto disponível para sexta-feira. Talvez possamos ir mais tarde?"
+      },
+      {
+        "speaker": "Илья",
+        "ru": "У меня есть несколько свободных дней в августе.",
+        "pt": "Tenho alguns dias disponíveis em agosto."
+      },
+      {
+        "speaker": "Анна",
+        "ru": "Я боюсь сильного шторма, поэтому не хочу ехать на остров.",
+        "pt": "Tenho medo de uma forte tempestade, por isso não quero ir para uma ilha."
+      },
+      {
+        "speaker": "Илья",
+        "ru": "Тогда выберем озеро. Мы сможем достичь поставленной цели: спокойно отдохнуть.",
+        "pt": "Então vamos escolher um lago. Poderemos alcançar a meta estabelecida: descansar com tranquilidade."
+      },
+      {
+        "speaker": "Анна",
+        "ru": "Нужно избегать лишних расходов и готовить завтрак самим.",
+        "pt": "Precisamos evitar despesas desnecessárias e preparar o café da manhã nós mesmos."
+      },
+      {
+        "speaker": "Илья",
+        "ru": "Можно остаться в течение всей недели, если найдём недорогой дом.",
+        "pt": "Podemos ficar ao longo da semana inteira se encontrarmos uma casa barata."
+      },
+      {
+        "speaker": "Анна",
+        "ru": "Сейчас нам не хватает денег на дорогую гостиницу.",
+        "pt": "Agora falta dinheiro para pagarmos um hotel caro."
+      },
+      {
+        "speaker": "Илья",
+        "ru": "Что касается нашего бюджета, я предлагаю сначала оплатить дорогу.",
+        "pt": "Quanto ao nosso orçamento, proponho pagar primeiro o transporte."
+      },
+      {
+        "speaker": "Анна",
+        "ru": "Во время отпуска я хочу отключить рабочий телефон.",
+        "pt": "Durante as férias, quero desligar o telefone de trabalho."
+      },
+      {
+        "speaker": "Илья",
+        "ru": "Договорились. Завтра проверим дома у озера, а билеты купим после этого.",
+        "pt": "Combinado. Amanhã vamos conferir as casas perto do lago e depois comprar as passagens."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "O que o casal procura conciliar?",
+      "options": [
+        "Descanso tranquilo e despesas controladas.",
+        "Uma viagem de trabalho e um hotel caro.",
+        "Uma visita à ilha e um curso de verão.",
+        "Passeios pela cidade e compras de roupas."
+      ],
+      "answer": "Descanso tranquilo e despesas controladas.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "нет",
+      "tag": "нет / не было",
+      "head": "нет / не было",
+      "regency": "нет кого? чего? / не было кого? чего?",
+      "case": "родительный падеж",
+      "pt": "não há quarto disponível",
+      "chunk": "нет свободного номера",
+      "chunk_pt": "não há quarto disponível",
+      "chunk_wrong": [
+        "нет свободный номер",
+        "нет свободному номеру",
+        "нет свободным номером"
+      ],
+      "form_note": "Ausência: нет e не было + родительный падеж; não mantenha a forma de sujeito de «há».",
+      "trap": "Ausência: нет e не было + родительный падеж; não mantenha a forma de sujeito de «há».",
+      "example": {
+        "ru": "В гостинице не было горячей воды.",
+        "pt": "Não havia água quente no hotel.",
+        "extra": "воду",
+        "note": "Ausência: нет e не было + родительный падеж; não mantenha a forma de sujeito de «há»."
+      },
+      "cloze": {
+        "ru": "На этой неделе в кассе ___.",
+        "answer": "нет дешёвых билетов",
+        "wrong": [
+          "нет дешёвые билеты",
+          "нет дешёвым билетам",
+          "нет дешёвыми билетами"
+        ],
+        "pt": "Nesta semana, não há passagens baratas na bilheteria.",
+        "note": "Ausência: нет e не было + родительный падеж; não mantenha a forma de sujeito de «há»."
+      },
+      "hear": {
+        "ru": "У туристов не было обратных билетов.",
+        "pt": "Os turistas não tinham passagens de volta.",
+        "wrong": [
+          "Os turistas tinham passagens de volta.",
+          "Os turistas não terão passagens de volta.",
+          "Os turistas não têm passagens de volta."
+        ],
+        "note": "Ausência: нет e не было + родительный падеж; não mantenha a forma de sujeito de «há»."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "несколько",
+      "tag": "много / несколько",
+      "head": "много / несколько",
+      "regency": "много чего? / несколько чего?",
+      "case": "родительный падеж",
+      "pt": "alguns dias disponíveis",
+      "chunk": "несколько свободных дней",
+      "chunk_pt": "alguns dias disponíveis",
+      "chunk_wrong": [
+        "несколько свободные дни",
+        "несколько свободным дням",
+        "несколько свободными днями"
+      ],
+      "form_note": "много e несколько pedem родительный падеж plural para substantivos contáveis.",
+      "trap": "много e несколько pedem родительный падеж plural para substantivos contáveis.",
+      "example": {
+        "ru": "Мы провели у моря несколько недель.",
+        "pt": "Passamos algumas semanas à beira-mar.",
+        "extra": "неделями",
+        "note": "много e несколько pedem родительный падеж plural para substantivos contáveis."
+      },
+      "cloze": {
+        "ru": "На вокзале стоит ___.",
+        "answer": "много туристов",
+        "wrong": [
+          "много туристы",
+          "много туристам",
+          "много туристами"
+        ],
+        "pt": "Há muitos turistas na estação.",
+        "note": "много e несколько pedem родительный падеж plural para substantivos contáveis."
+      },
+      "hear": {
+        "ru": "Семья провела в деревне несколько дней.",
+        "pt": "A família passou alguns dias na aldeia.",
+        "wrong": [
+          "A família passará alguns dias na aldeia.",
+          "A família não passou alguns dias na aldeia.",
+          "A família passa alguns dias na aldeia."
+        ],
+        "note": "много e несколько pedem родительный падеж plural para substantivos contáveis."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "бояться",
+      "tag": "бояться",
+      "head": "бояться",
+      "regency": "бояться кого? чего?",
+      "case": "родительный падеж",
+      "pt": "ter medo de uma forte tempestade",
+      "chunk": "бояться сильного шторма",
+      "chunk_pt": "ter medo de uma forte tempestade",
+      "chunk_wrong": [
+        "бояться сильному шторму",
+        "бояться сильным штормом",
+        "бояться сильный шторм"
+      ],
+      "form_note": "бояться кого? чего? usa родительный падеж sem preposição; evite traduzir «de» por от.",
+      "trap": "бояться кого? чего? usa родительный падеж sem preposição; evite traduzir «de» por от.",
+      "example": {
+        "ru": "Ребёнок боится высоты.",
+        "pt": "A criança tem medo de altura.",
+        "extra": "высоту",
+        "note": "бояться кого? чего? usa родительный падеж sem preposição; evite traduzir «de» por от."
+      },
+      "cloze": {
+        "ru": "Не надо бояться ___.",
+        "answer": "долгой поездки",
+        "wrong": [
+          "долгую поездку",
+          "долгой поездке",
+          "долгой поездкой"
+        ],
+        "pt": "Não é preciso ter medo de uma viagem longa.",
+        "note": "бояться кого? чего? usa родительный падеж sem preposição; evite traduzir «de» por от."
+      },
+      "hear": {
+        "ru": "Туристка боялась ночного перелёта.",
+        "pt": "A turista tinha medo do voo noturno.",
+        "wrong": [
+          "A turista terá medo do voo noturno.",
+          "A turista não tinha medo do voo noturno.",
+          "A turista tem medo do voo noturno."
+        ],
+        "note": "бояться кого? чего? usa родительный падеж sem preposição; evite traduzir «de» por от."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "достигать",
+      "tag": "достигать / достичь",
+      "head": "достигать / достичь",
+      "regency": "достигать / достичь чего?",
+      "case": "родительный падеж",
+      "pt": "alcançar a meta estabelecida",
+      "chunk": "достичь поставленной цели",
+      "chunk_pt": "alcançar a meta estabelecida",
+      "chunk_wrong": [
+        "достичь поставленную цель",
+        "достичь поставленной целью",
+        "достичь поставленной целями"
+      ],
+      "form_note": "достичь чего? usa родительный падеж; достигать é processo, достичь é resultado.",
+      "trap": "достичь чего? usa родительный падеж; достигать é processo, достичь é resultado.",
+      "example": {
+        "ru": "Команда достигла нужного результата.",
+        "pt": "A equipe alcançou o resultado necessário.",
+        "extra": "результат",
+        "note": "достичь чего? usa родительный падеж; достигать é processo, достичь é resultado."
+      },
+      "cloze": {
+        "ru": "За год удалось достичь ___.",
+        "answer": "финансовой независимости",
+        "wrong": [
+          "финансовую независимость",
+          "финансовой независимостью",
+          "финансовая независимость"
+        ],
+        "pt": "Em um ano, foi possível alcançar a independência financeira.",
+        "note": "достичь чего? usa родительный падеж; достигать é processo, достичь é resultado."
+      },
+      "hear": {
+        "ru": "Пара достигла своей цели к августу.",
+        "pt": "O casal alcançou sua meta até agosto.",
+        "wrong": [
+          "O casal alcançará sua meta até agosto.",
+          "O casal não alcançou sua meta até agosto.",
+          "O casal alcança sua meta em agosto."
+        ],
+        "note": "достичь чего? usa родительный падеж; достигать é processo, достичь é resultado."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "избегать",
+      "tag": "избегать / избежать",
+      "head": "избегать / избежать",
+      "regency": "избегать / избежать кого? чего?",
+      "case": "родительный падеж",
+      "pt": "evitar despesas desnecessárias",
+      "chunk": "избегать лишних расходов",
+      "chunk_pt": "evitar despesas desnecessárias",
+      "chunk_wrong": [
+        "избегать лишние расходы",
+        "избегать лишним расходам",
+        "избегать лишними расходами"
+      ],
+      "form_note": "избегать чего? não segue o objeto direto português; избежать indica que o risco foi evitado.",
+      "trap": "избегать чего? não segue o objeto direto português; избежать indica que o risco foi evitado.",
+      "example": {
+        "ru": "Водитель избежал серьёзной аварии.",
+        "pt": "O motorista evitou um acidente grave.",
+        "extra": "аварию",
+        "note": "избегать чего? não segue o objeto direto português; избежать indica que o risco foi evitado."
+      },
+      "cloze": {
+        "ru": "В отпуске мы стараемся избегать ___.",
+        "answer": "шумных курортов",
+        "wrong": [
+          "шумные курорты",
+          "шумным курортам",
+          "шумными курортами"
+        ],
+        "pt": "Nas férias, procuramos evitar destinos turísticos barulhentos.",
+        "note": "избегать чего? não segue o objeto direto português; избежать indica que o risco foi evitado."
+      },
+      "hear": {
+        "ru": "Мы избежали дополнительных расходов.",
+        "pt": "Evitamos despesas adicionais.",
+        "wrong": [
+          "Evitaremos despesas adicionais.",
+          "Não evitamos despesas adicionais.",
+          "Evitávamos despesas adicionais."
+        ],
+        "note": "избегать чего? não segue o objeto direto português; избежать indica que o risco foi evitado."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "время",
+      "tag": "во время / в течение",
+      "head": "во время / в течение",
+      "regency": "во время чего? / в течение чего?",
+      "case": "родительный падеж",
+      "pt": "ao longo da semana inteira",
+      "chunk": "в течение всей недели",
+      "chunk_pt": "ao longo da semana inteira",
+      "chunk_wrong": [
+        "в течение всю неделю",
+        "в течение всей неделей",
+        "в течении всей недели"
+      ],
+      "form_note": "во время situa um acontecimento; в течение mede um intervalo. A preposição composta termina em -е, não em -и.",
+      "trap": "во время situa um acontecimento; в течение mede um intervalo. A preposição composta termina em -е, não em -и.",
+      "example": {
+        "ru": "Во время экскурсии пошёл дождь.",
+        "pt": "Durante a excursão, começou a chover.",
+        "extra": "экскурсию",
+        "note": "во время situa um acontecimento; в течение mede um intervalo. A preposição composta termina em -е, não em -и."
+      },
+      "cloze": {
+        "ru": "Мы будем отдыхать ___.",
+        "answer": "в течение двух недель",
+        "wrong": [
+          "в течение две недели",
+          "в течение двум неделям",
+          "в течении двух недель"
+        ],
+        "pt": "Vamos descansar ao longo de duas semanas.",
+        "note": "во время situa um acontecimento; в течение mede um intervalo. A preposição composta termina em -е, não em -и."
+      },
+      "hear": {
+        "ru": "Во время отпуска Анна не работала.",
+        "pt": "Durante as férias, Anna não trabalhou.",
+        "wrong": [
+          "Durante as férias, Anna trabalhou.",
+          "Durante as férias, Anna não trabalhará.",
+          "Durante as férias, Anna não trabalha."
+        ],
+        "note": "во время situa um acontecimento; в течение mede um intervalo. A preposição composta termina em -е, não em -и."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "хватать",
+      "tag": "не хватать",
+      "head": "не хватать",
+      "regency": "не хватать кому? чего?",
+      "case": "дательный падеж + родительный падеж",
+      "pt": "faltar dinheiro à família",
+      "chunk": "не хватать семье денег",
+      "chunk_pt": "faltar dinheiro à família",
+      "chunk_wrong": [
+        "не хватать семью денег",
+        "не хватать семье деньги",
+        "не хватать семьёй денег"
+      ],
+      "form_note": "Quem sente a falta: кому? em дательный падеж. O que falta: чего? em родительный падеж.",
+      "trap": "Quem sente a falta: кому? em дательный падеж. O que falta: чего? em родительный падеж.",
+      "example": {
+        "ru": "Мне не хватает времени на отдых.",
+        "pt": "Falta tempo para eu descansar.",
+        "extra": "время",
+        "note": "Quem sente a falta: кому? em дательный падеж. O que falta: чего? em родительный падеж."
+      },
+      "cloze": {
+        "ru": "На дорогой отель нам ___.",
+        "answer": "не хватает денег",
+        "wrong": [
+          "не хватает деньги",
+          "не хватает деньгам",
+          "не хватает деньгами"
+        ],
+        "pt": "Falta dinheiro para pagarmos um hotel caro.",
+        "note": "Quem sente a falta: кому? em дательный падеж. O que falta: чего? em родительный падеж."
+      },
+      "hear": {
+        "ru": "Сестре не хватило денег на билет.",
+        "pt": "Faltou dinheiro para a irmã comprar a passagem.",
+        "wrong": [
+          "Faltou dinheiro para o irmão comprar a passagem.",
+          "Não faltou dinheiro para a irmã comprar a passagem.",
+          "Faltará dinheiro para a irmã comprar a passagem."
+        ],
+        "note": "Quem sente a falta: кому? em дательный падеж. O que falta: чего? em родительный падеж."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "касаться",
+      "tag": "касаться",
+      "head": "касаться",
+      "regency": "касаться кого? чего? / что касается чего?",
+      "case": "родительный падеж",
+      "pt": "dizer respeito ao nosso orçamento",
+      "chunk": "касаться нашего бюджета",
+      "chunk_pt": "dizer respeito ao nosso orçamento",
+      "chunk_wrong": [
+        "касаться наш бюджет",
+        "касаться нашему бюджету",
+        "касаться нашим бюджетом"
+      ],
+      "form_note": "касаться чего? e что касается чего? usam родительный падеж; não copie «a» do português.",
+      "trap": "касаться чего? e что касается чего? usam родительный падеж; não copie «a» do português.",
+      "example": {
+        "ru": "Этот вопрос касается страховки.",
+        "pt": "Esta questão diz respeito ao seguro.",
+        "extra": "страховку",
+        "note": "касаться чего? e что касается чего? usam родительный падеж; não copie «a» do português."
+      },
+      "cloze": {
+        "ru": "Что касается ___, мы уже всё решили.",
+        "answer": "летнего маршрута",
+        "wrong": [
+          "летний маршрут",
+          "летнему маршруту",
+          "летним маршрутом"
+        ],
+        "pt": "Quanto ao roteiro de verão, já decidimos tudo.",
+        "note": "касаться чего? e что касается чего? usam родительный падеж; não copie «a» do português."
+      },
+      "hear": {
+        "ru": "Изменения касались стоимости жилья.",
+        "pt": "As mudanças diziam respeito ao custo da hospedagem.",
+        "wrong": [
+          "As mudanças não diziam respeito ao custo da hospedagem.",
+          "As mudanças dirão respeito ao custo da hospedagem.",
+          "O custo da hospedagem dizia respeito às mudanças."
+        ],
+        "note": "касаться чего? e что касается чего? usam родительный падеж; não copie «a» do português."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Por que Anna rejeita a ilha?",
+      "options": [
+        "Tem medo de uma tempestade forte.",
+        "Não tem nenhum dia livre em agosto.",
+        "Precisa trabalhar durante toda a viagem.",
+        "Não encontrou passagens para amanhã."
+      ],
+      "answer": "Tem medo de uma tempestade forte.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "Qual despesa Ilya propõe pagar primeiro?",
+      "options": [
+        "O transporte até o destino escolhido.",
+        "A hospedagem em uma ilha distante.",
+        "As refeições em um restaurante local.",
+        "O seguro de um telefone de trabalho."
+      ],
+      "answer": "O transporte até o destino escolhido.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "свободного номера",
+      "wrong": [
+        "свободный номер",
+        "свободному номеру",
+        "свободным номером"
+      ],
+      "note": "Ausência: нет e не было + родительный падеж; não mantenha a forma de sujeito de «há»."
+    },
+    {
+      "line": 1,
+      "gap": "свободных дней",
+      "wrong": [
+        "свободные дни",
+        "свободным дням",
+        "свободными днями"
+      ],
+      "note": "много e несколько pedem родительный падеж plural para substantivos contáveis."
+    },
+    {
+      "line": 2,
+      "gap": "сильного шторма",
+      "wrong": [
+        "сильный шторм",
+        "сильному шторму",
+        "сильным штормом"
+      ],
+      "note": "бояться кого? чего? usa родительный падеж sem preposição; evite traduzir «de» por от."
+    },
+    {
+      "line": 7,
+      "gap": "нашего бюджета",
+      "wrong": [
+        "наш бюджет",
+        "нашему бюджету",
+        "нашим бюджетом"
+      ],
+      "note": "касаться чего? e что касается чего? usam родительный падеж; não copie «a» do português."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "нет свободного номера",
+        "right": "não há quarto disponível"
+      },
+      {
+        "left": "несколько свободных дней",
+        "right": "alguns dias disponíveis"
+      },
+      {
+        "left": "бояться сильного шторма",
+        "right": "ter medo de uma forte tempestade"
+      },
+      {
+        "left": "достичь поставленной цели",
+        "right": "alcançar a meta estabelecida"
+      },
+      {
+        "left": "избегать лишних расходов",
+        "right": "evitar despesas desnecessárias"
+      },
+      {
+        "left": "в течение всей недели",
+        "right": "ao longo da semana inteira"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Анна",
+      "you": "Илья",
+      "ru": "Есть свободный номер в гостинице?",
+      "prompt": "Responda que não há quarto disponível.",
+      "answer": "Нет свободного номера.",
+      "wrong": [
+        "Нет свободный номер.",
+        "Нет свободному номеру.",
+        "Нет свободным номером."
+      ],
+      "explanation": "Ausência: нет e не было + родительный падеж; não mantenha a forma de sujeito de «há»."
+    },
+    {
+      "speaker": "Илья",
+      "you": "Анна",
+      "ru": "Сколько свободного времени у нас в августе?",
+      "prompt": "Responda quantos dias estão disponíveis.",
+      "answer": "У нас несколько свободных дней.",
+      "wrong": [
+        "У нас несколько свободные дни.",
+        "У нас несколько свободным дням.",
+        "У нас несколько свободными днями."
+      ],
+      "explanation": "много e несколько pedem родительный падеж plural para substantivos contáveis."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva a um amigo um plano de férias que respeite um orçamento limitado. Explique duração, riscos e prioridades.",
+    "use": [
+      "нет / не было",
+      "много / несколько",
+      "бояться",
+      "достигать / достичь",
+      "избегать / избежать"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: нет кого? чего? / не было кого? чего?; много чего? / несколько чего?; бояться кого? чего?; достигать / достичь чего?; избегать / избежать кого? чего?; во время чего? / в течение чего?; не хватать кому? чего?; касаться кого? чего? / что касается чего?."
+  }
+}

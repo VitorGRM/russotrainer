@@ -1,0 +1,701 @@
+{
+  "id": "u10_smi_kosvennaya_rech",
+  "order": 10,
+  "title": "СМИ и общество: косвенная речь",
+  "description": "Sistematiza a transformação de discurso direto em indireto (что, ли, palavras interrogativas, чтобы) sem calcar o backshift do português, no vocabulário de mídia e opinião pública.",
+  "estimated_minutes": 44,
+  "objectives": [
+    "manter o tempo verbal original no discurso indireto, sem backshift",
+    "usar ли logo após o verbo em perguntas sim/não e manter a palavra interrogativa nas demais",
+    "transformar pedidos e ordens com чтобы + passado",
+    "produzir освещать, воздействовать на, доверие к, ссылаться на, реагировать на e распространять com a regência correta"
+  ],
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Косвенная речь: afirmações e perguntas",
+      "paragraphs": [
+        "Ao contrário do português, o russo NÃO recua o tempo verbal no discurso indireto: o tempo permanece o mesmo da fala original, relativo ao momento em que ela foi dita. «Я приеду завтра», — сказал он. → Он сказал, что приедет завтра (futuro mantido, só a pessoa muda de я para приедет/3ª pessoa). Afirmações usam que + oração; o tempo e o aspecto do verbo original não mudam.",
+        "Perguntas sim/não (sem palavra interrogativa) usam ли, colocado logo depois do verbo questionado, sem que: «Вы читали эту статью?» → Она спросила, читал ли я эту статью. Perguntas com palavra interrogativa (когда, где, почему, кто, что...) simplesmente mantêm essa palavra no lugar de que/ли: «Когда откроется выставка?» → Он спросил, когда откроется выставка."
+      ],
+      "audio_script": "Discurso indireto — косвенная речь. E aqui vai a melhor notícia do curso inteiro para quem fala português. O russo NÃO recua o tempo verbal. Em português, quando dizemos «ele disse que ia viajar», o verbo da subordinada recua para o imperfeito. Em russo isso não acontece. O verbo guarda o tempo REAL do evento, em relação ao momento em que a frase foi dita. Он сказал: «Я приеду завтра». Vira: Он сказал, что приедет завтра. Приедет continua no futuro, mesmo com сказал no passado, porque a chegada ainda não aconteceu. Isso é uma simplificação enorme, e vale confiar nela. O que muda, então? Só os pronomes e os possessivos. Я vira он ou она. Мой vira его ou её. Вы, quando é a pessoa de quem se fala, vira он. Agora, os três tipos de frase. Tipo um: afirmação. Introduz-se com что, e pronto. Он сказал, что работа закончена. Tipo dois: pergunta COM palavra interrogativa — почему, где, когда, кто, какой. A palavra interrogativa é mantida e passa a funcionar como conjunção. Он спросил, почему статью не опубликовали. Nada de что aqui. Tipo três: pergunta SEM palavra interrogativa, ou seja, pergunta de sim ou não. Aqui entra a partícula ли, e ela tem uma posição fixa: vem logo DEPOIS da palavra sobre a qual se pergunta, geralmente o verbo. Он спросил, читал ли я эту книгу. E aqui está a armadilha mais séria desta unidade, porque é um decalque direto do português. Nós dizemos «ele perguntou SE eu tinha lido». E «se» em russo parece ser если. Mas если é o «se» de condição, e NUNCA introduz pergunta indireta. Он спросил, если я читал está errado. O correto é читал ли я. Guarde assim: если é o «se» do talvez; ли é o «se» da pergunta.",
+      "examples": [
+        {
+          "ru": "Он сказал, что приедет завтра.",
+          "pt": "Ele disse que virá amanhã.",
+          "note": "Sem recuo de tempo: приедет continua futuro."
+        },
+        {
+          "ru": "Редактор спросил, прошёл ли материал проверку.",
+          "pt": "O editor perguntou se o material tinha passado pela revisão.",
+          "note": "Pergunta sim/não → ли depois do verbo."
+        },
+        {
+          "ru": "Читатели спросили, почему статью не опубликовали.",
+          "pt": "Os leitores perguntaram por que o artigo não foi publicado.",
+          "note": "Palavra interrogativa mantida, sem что."
+        },
+        {
+          "ru": "Она спросила, читал ли я эту книгу.",
+          "pt": "Ela perguntou se eu tinha lido esse livro.",
+          "note": "Nunca «если» aqui."
+        }
+      ],
+      "pitfalls": [
+        "Usar «если» para «se» de pergunta indireta: если é só condicional; a pergunta usa ли.",
+        "Recuar o tempo verbal como em português: em russo o tempo é o real do evento.",
+        "Colocar ли no começo da subordinada: ли vem depois da palavra questionada."
+      ]
+    },
+    {
+      "title": "Косвенная речь: pedidos e ordens",
+      "paragraphs": [
+        "Pedidos e ordens (imperativo na fala direta) tornam-se чтобы + verbo no passado, qualquer que seja o tempo do original — essa é a única estrutura em que o verbo muda de forma obrigatoriamente: «Приходите вовремя!» → Он сказал, чтобы мы пришли вовремя. Como quem pede e quem deveria executar o pedido são sempre pessoas diferentes nesse uso, чтобы aqui é sempre seguido de um verbo conjugado no passado, nunca de um infinitivo.",
+        "Vocabulário deste tema: освещать/осветить кого? что? (cobrir um evento na mídia); воздействовать на кого? что? (exercer efeito sobre, винительный падеж); доверие к кому? чему? (confiança em, дательный падеж); ссылаться/сослаться на кого? что? (citar, referir-se a uma fonte); реагировать/отреагировать на кого? что?; распространять/распространить кого? что?."
+      ],
+      "audio_script": "Falta o quarto tipo de frase no discurso indireto, e é o que mais aparece em textos de imprensa: pedidos e ordens. Na fala direta, um pedido ou uma ordem vem no imperativo. Не публикуйте непроверенную информацию! Não publiquem informação não verificada. No discurso indireto, o imperativo desaparece completamente. Ele é substituído por чтобы mais o verbo no PASSADO. Главный редактор потребовал, чтобы журналисты не публиковали непроверенную информацию. Repare bem: não é presente, não é infinitivo, não é imperativo. É passado. E esse passado não significa passado nenhum — é uma forma gramatical exigida por чтобы quando há mudança de sujeito. Essa é uma das estruturas mais estranhas do russo para quem chega do português, então vale repetir a fórmula: чтобы mais sujeito mais verbo no passado. чтобы журналисты не публиковали. чтобы он пришёл. чтобы вы позвонили. Os verbos que introduzem esse tipo de frase são попросить, потребовать, предложить, приказать e посоветовать. Existe uma alternativa mais curta quando o sujeito é o mesmo: чтобы some e entra o infinitivo. Он попросил меня прийти. Ele me pediu para vir. Mas quando o sujeito da subordinada é diferente e precisa aparecer, чтобы mais passado é obrigatório. E note também que o aspecto do imperativo original se preserva. Uma proibição no imperativo negativo é imperfectiva — не публикуйте — e continua imperfectiva no indireto: не публиковали.",
+      "examples": [
+        {
+          "ru": "Редактор потребовал, чтобы журналисты проверили информацию.",
+          "pt": "O editor exigiu que os jornalistas verificassem a informação.",
+          "note": "чтобы + passado, com mudança de sujeito."
+        },
+        {
+          "ru": "Он попросил меня прийти пораньше.",
+          "pt": "Ele me pediu para chegar mais cedo.",
+          "note": "Sujeito recuperável → infinitivo, sem чтобы."
+        },
+        {
+          "ru": "Она посоветовала, чтобы мы не спешили с публикацией.",
+          "pt": "Ela aconselhou que não nos apressássemos com a publicação.",
+          "note": "Imperfectivo preservado do imperativo negativo."
+        }
+      ],
+      "pitfalls": [
+        "Usar presente depois de чтобы: «чтобы он приходит» está errado — é sempre passado.",
+        "Manter o imperativo no discurso indireto: o imperativo não sobrevive à transformação."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Discurso direto → discurso indireto",
+    "columns": [
+      "Fala direta",
+      "Conectivo no discurso indireto",
+      "Exemplo"
+    ],
+    "rows": [
+      [
+        "Afirmação",
+        "что + mesmo tempo verbal do original",
+        "Он сказал, что приедет завтра."
+      ],
+      [
+        "Pergunta sim/não",
+        "verbo + ли (ли logo após o verbo)",
+        "Он спросил, приду ли я."
+      ],
+      [
+        "Pergunta com palavra interrogativa",
+        "mantém a palavra (когда, где, почему...)",
+        "Он спросил, когда я приеду."
+      ],
+      [
+        "Pedido / ordem (imperativo)",
+        "чтобы + verbo no passado",
+        "Он сказал, чтобы мы пришли вовремя."
+      ]
+    ],
+    "note": "O tempo verbal nunca recua por causa do discurso indireto; só чтобы exige obrigatoriamente uma forma de passado."
+  },
+  "reference": [
+    {
+      "construction": "освещать / осветить",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "cobrir, dar cobertura a (um evento)",
+      "example": "освещать событие в прямом эфире"
+    },
+    {
+      "construction": "воздействовать на",
+      "question": "на кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "exercer efeito sobre",
+      "example": "воздействовать на общественное мнение"
+    },
+    {
+      "construction": "доверие к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "confiança em",
+      "example": "доверие к независимым источникам"
+    },
+    {
+      "construction": "ссылаться / сослаться на",
+      "question": "на кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "referir-se a, citar (uma fonte)",
+      "example": "ссылаться на анонимный источник"
+    },
+    {
+      "construction": "реагировать / отреагировать на",
+      "question": "на кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "reagir a",
+      "example": "реагировать на критику"
+    },
+    {
+      "construction": "распространять / распространить",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "difundir, espalhar",
+      "example": "распространять недостоверную информацию"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u10-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "освещать / осветить",
+      "back": "освещать/осветить кого? что?",
+      "explanation": "Sem preposição; винительный падеж.",
+      "tags": [
+        "освещать",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u10-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "воздействовать",
+      "back": "воздействовать на кого? что?",
+      "explanation": "на + винительный падеж.",
+      "tags": [
+        "воздействовать на",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u10-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "доверие",
+      "back": "доверие к кому? чему?",
+      "explanation": "к + дательный падеж.",
+      "tags": [
+        "доверие к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u10-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "ссылаться / сослаться",
+      "back": "ссылаться/сослаться на кого? что?",
+      "explanation": "на + винительный падеж.",
+      "tags": [
+        "ссылаться на",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u10-e05",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "реагировать / отреагировать",
+      "back": "реагировать/отреагировать на кого? что?",
+      "explanation": "на + винительный падеж.",
+      "tags": [
+        "реагировать на",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u10-e06",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "распространять / распространить",
+      "back": "распространять/распространить кого? что?",
+      "explanation": "Sem preposição; винительный падеж.",
+      "tags": [
+        "распространять",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u10-e07",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 3,
+      "prompt": "Прямая речь: «Я опубликую статью завтра». Косвенная речь: Журналист сказал, что ___ статью завтра.",
+      "options": [
+        "опубликует",
+        "опубликовал",
+        "публикует",
+        "опубликовать"
+      ],
+      "answer": "опубликует",
+      "explanation": "o tempo futuro do original é mantido; só a pessoa muda de я para 3ª pessoa (опубликует).",
+      "tags": [
+        "косвенная речь",
+        "estrutura B2",
+        "sem backshift"
+      ]
+    },
+    {
+      "id": "u10-e08",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 3,
+      "prompt": "Прямая речь: «Вы читали эту статью?» Косвенная речь: Она спросила, читал ___ я эту статью.",
+      "options": [
+        "ли",
+        "что",
+        "чтобы",
+        "когда"
+      ],
+      "answer": "ли",
+      "explanation": "pergunta sim/não sem palavra interrogativa: ли logo após o verbo, sem что.",
+      "tags": [
+        "косвенная речь",
+        "ли",
+        "pergunta sim/não"
+      ]
+    },
+    {
+      "id": "u10-e09",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 2,
+      "prompt": "Прямая речь: «Когда откроется выставка?» Косвенная речь: Он спросил, ___ откроется выставка.",
+      "options": [
+        "когда",
+        "что",
+        "ли",
+        "чтобы"
+      ],
+      "answer": "когда",
+      "explanation": "perguntas com palavra interrogativa mantêm essa palavra, sem que nem ли.",
+      "tags": [
+        "косвенная речь",
+        "palavra interrogativa"
+      ]
+    },
+    {
+      "id": "u10-e10",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 3,
+      "prompt": "Прямая речь: «Проверьте факты перед публикацией!» Косвенная речь: Редактор сказал, ___ мы проверили факты перед публикацией.",
+      "options": [
+        "чтобы",
+        "что",
+        "ли",
+        "когда"
+      ],
+      "answer": "чтобы",
+      "explanation": "pedidos e ordens tornam-se чтобы + passado.",
+      "tags": [
+        "косвенная речь",
+        "чтобы",
+        "pedido ou ordem"
+      ]
+    },
+    {
+      "id": "u10-e11",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 3,
+      "prompt": "Начальник попросил, чтобы журналисты ___ материал к пятнице.",
+      "options": [
+        "подготовили",
+        "подготовят",
+        "готовят",
+        "подготовить"
+      ],
+      "answer": "подготовили",
+      "explanation": "чтобы exige o verbo no passado quando o sujeito da subordinada é diferente do sujeito principal.",
+      "tags": [
+        "косвенная речь",
+        "чтобы",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u10-e12",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 3,
+      "prompt": "Прямая речь: «Я представлю доклад на конференции». Косвенная речь: Учёный сказал, что ___ доклад на конференции.",
+      "options": [
+        "представит",
+        "представил",
+        "представляет",
+        "представить"
+      ],
+      "answer": "представит",
+      "explanation": "futuro perfectivo mantido, só a pessoa muda: я представлю → он представит.",
+      "tags": [
+        "косвенная речь",
+        "estrutura B2",
+        "sem backshift"
+      ]
+    },
+    {
+      "id": "u10-e13",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta no discurso indireto.",
+      "prompt": "«Мы уже отправили пресс-релиз» → Пресс-секретарь сказал, что они уже ___.",
+      "explanation": "Diferentemente do português, o russo NÃO recua o tempo verbal no discurso indireto: o passado da fala direta continua passado. Só o pronome muda (мы → они), e o passado plural não varia por pessoa: отправили serve para мы, вы e они.",
+      "tags": [
+        "косвенная речь",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "отправили",
+        "отправят",
+        "отправляли",
+        "отправило"
+      ],
+      "answer": "отправили"
+    },
+    {
+      "id": "u10-e14",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta da pergunta indireta.",
+      "prompt": "«Материал прошёл проверку?» → Редактор спросил, ___ материал проверку.",
+      "explanation": "Pergunta sem palavra interrogativa (sim/não) vira ли no discurso indireto, e ли se coloca logo DEPOIS da palavra questionada: прошёл ли. Usar «что» aqui transformaria a pergunta em afirmação.",
+      "tags": [
+        "косвенная речь",
+        "ли",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "прошёл ли",
+        "ли прошёл",
+        "что прошёл",
+        "прошёл что"
+      ],
+      "answer": "прошёл ли"
+    },
+    {
+      "id": "u10-e15",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 1,
+      "instruction": "Escolha a palavra correta na pergunta indireta.",
+      "prompt": "«Почему статью не опубликовали?» → Читатели спросили, ___ статью не опубликовали.",
+      "explanation": "Quando a fala direta já tem palavra interrogativa (почему, где, когда, кто, какой…), ela é mantida e faz o papel de conjunção. ли só entra quando NÃO há palavra interrogativa.",
+      "tags": [
+        "косвенная речь",
+        "palavra interrogativa",
+        "múltipla escolha"
+      ],
+      "options": [
+        "почему",
+        "что",
+        "ли",
+        "чтобы"
+      ],
+      "answer": "почему"
+    },
+    {
+      "id": "u10-e16",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta depois de чтобы.",
+      "prompt": "«Не публикуйте непроверенную информацию!» → Главный редактор потребовал, чтобы журналисты ___ непроверенную информацию.",
+      "explanation": "Ordem e pedido no discurso indireto viram чтобы + PASSADO (nunca presente nem infinitivo com sujeito próprio): чтобы журналисты не публиковали. O aspecto imperfectivo da proibição também se mantém.",
+      "tags": [
+        "косвенная речь",
+        "чтобы",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "не публиковали",
+        "не публикуют",
+        "не опубликуют",
+        "не публиковать"
+      ],
+      "answer": "не публиковали"
+    },
+    {
+      "id": "u10-e17",
+      "type": "choice",
+      "stage": "reported_speech",
+      "difficulty": 3,
+      "instruction": "Escolha a transformação correta para discurso indireto.",
+      "prompt": "Журналист спросил политика: «Почему вы приняли это решение?»",
+      "explanation": "Duas mudanças e só duas: почему é mantido como conjunção, e o pronome de tratamento вы passa à 3ª pessoa он (com o verbo concordando: приняли → принял). O tempo verbal não recua.",
+      "tags": [
+        "косвенная речь",
+        "produção",
+        "transformação",
+        "múltipla escolha"
+      ],
+      "options": [
+        "Журналист спросил политика, почему он принял это решение.",
+        "Журналист спросил политика, почему вы приняли это решение.",
+        "Журналист спросил политика, что он принял это решение.",
+        "Журналист спросил политика, почему ли он принял это решение."
+      ],
+      "answer": "Журналист спросил политика, почему он принял это решение."
+    },
+    {
+      "id": "u10-e18",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase mantém a lógica temporal do discurso indireto?",
+      "explanation": "Como o russo não recua tempos, o verbo da subordinada guarda o tempo REAL do evento em relação ao momento da fala. завтра é futuro → опубликует, mesmo que o verbo principal (сказал) esteja no passado.",
+      "tags": [
+        "косвенная речь",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Журналист сказал, что он опубликует статью завтра.",
+        "Журналист сказал, что он опубликовал статью завтра.",
+        "Журналист сказал, что он публиковал статью завтра.",
+        "Журналист сказал, что он опубликовать статью завтра."
+      ],
+      "answer": "Журналист сказал, что он опубликует статью завтра."
+    },
+    {
+      "id": "u10-e19",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase transforma corretamente uma pergunta de sim/não?",
+      "explanation": "Pergunta sim/não → ли depois do verbo: читал ли я. «что» introduz afirmação, «если» é condicional («se» de condição) e nunca funciona como «se» de pergunta indireta — esse é um decalque direto do português.",
+      "tags": [
+        "косвенная речь",
+        "ли",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Она спросила, читал ли я эту книгу.",
+        "Она спросила, что я читал эту книгу.",
+        "Она спросила, ли я читал эту книгу.",
+        "Она спросила, если я читал эту книгу."
+      ],
+      "answer": "Она спросила, читал ли я эту книгу."
+    },
+    {
+      "id": "u10-e20",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase em discurso indireto.",
+      "tokens": [
+        "Он",
+        "сказал,",
+        "что",
+        "приедет",
+        "завтра",
+        "утром"
+      ],
+      "answer": "Он сказал, что приедет завтра утром",
+      "explanation": "afirmação: что + tempo verbal mantido (futuro).",
+      "tags": [
+        "косвенная речь",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u10-e21",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com um pedido em discurso indireto.",
+      "tokens": [
+        "Начальник",
+        "попросил,",
+        "чтобы",
+        "мы",
+        "подготовили",
+        "отчёт",
+        "к",
+        "пятнице"
+      ],
+      "answer": "Начальник попросил, чтобы мы подготовили отчёт к пятнице",
+      "explanation": "pedido: чтобы + verbo no passado.",
+      "tags": [
+        "косвенная речь",
+        "чтобы",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u10-e22",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a construção russa ao significado correspondente.",
+      "pairs": [
+        {
+          "left": "освещать событие",
+          "right": "cobrir um evento (na mídia)"
+        },
+        {
+          "left": "воздействовать на мнение",
+          "right": "exercer efeito sobre a opinião"
+        },
+        {
+          "left": "доверие к источникам",
+          "right": "confiança nas fontes"
+        },
+        {
+          "left": "ссылаться на источник",
+          "right": "citar/referir-se a uma fonte"
+        },
+        {
+          "left": "реагировать на критику",
+          "right": "reagir à crítica"
+        },
+        {
+          "left": "распространять информацию",
+          "right": "difundir informação"
+        }
+      ],
+      "explanation": "Vocabulário-chave de mídia e opinião pública.",
+      "tags": [
+        "СМИ",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u10-e23",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Não abra com «Я считаю, что». Use pelo menos uma frase em discurso indireto (что, ли ou palavra interrogativa) e pelo menos duas unidades da lista.",
+      "prompt": "«СМИ формируют общественное мнение или просто отражают его?»\n\nUnidades: воздействовать на · доверие к · ссылаться на",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Verificar se o discurso indireto manteve o tempo verbal correto. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "косвенная речь",
+        "ТРКИ-II"
+      ]
+    },
+    {
+      "id": "u10-e24",
+      "type": "open_text",
+      "stage": "micro_writing",
+      "difficulty": 2,
+      "instruction": "Escreva 2–3 frases em russo contando o que alguém lhe disse ou perguntou recentemente. Use discurso indireto.",
+      "prompt": "Tema: разговор, который вы недавно слышали\nUse: сказал, что · спросил, ли/palavra interrogativa",
+      "review_notes": "Verificar se o tempo verbal foi mantido corretamente e se ли/palavra interrogativa foram usados sem que.",
+      "tags": [
+        "produção escrita",
+        "косвенная речь"
+      ]
+    },
+    {
+      "id": "u10-e25",
+      "type": "reading",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Compare título, fonte e conteúdo; escolha a reformulação fiel.",
+      "context": "Заголовок: «Учёные доказали, что телефоны разрушают память». В самой статье исследователь говорит, что полученные данные пока позволяют говорить только о возможной связи. Он подчёркивает, что эксперимент проводился на небольшой группе и что выводы необходимо проверить.",
+      "prompt": "Como relatar a posição do pesquisador sem distorcê-la?",
+      "options": [
+        "Исследователь отметил, что данные указывают лишь на возможную связь и требуют проверки.",
+        "Исследователь доказал, что телефоны неизбежно разрушают память каждого человека.",
+        "Исследователь сообщил, будто эксперимент охватил всё население.",
+        "Исследователь отказался обсуждать результаты эксперимента."
+      ],
+      "answer": "Исследователь отметил, что данные указывают лишь на возможную связь и требуют проверки.",
+      "explanation": "A alternativa preserva cautela, tamanho limitado da amostra e necessidade de verificação.",
+      "tags": [
+        "leitura",
+        "mídia",
+        "discurso indireto",
+        "pensamento crítico"
+      ]
+    },
+    {
+      "id": "u10-e26",
+      "type": "listening",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Ouça uma fala direta e escolha o relato indireto fiel.",
+      "prompt": "Como o jornalista deve relatar a pergunta?",
+      "audio_text": "Журналист спросил эксперта: «Можно ли доверять этим данным и кто проводил исследование?»",
+      "options": [
+        "Журналист спросил эксперта, можно ли доверять этим данным и кто проводил исследование.",
+        "Журналист сказал эксперту, что данным нельзя доверять.",
+        "Журналист спросил, что можно ли доверять данным.",
+        "Журналист сообщил, будто сам проводил исследование."
+      ],
+      "answer": "Журналист спросил эксперта, можно ли доверять этим данным и кто проводил исследование.",
+      "explanation": "Pergunta sim/não usa ли; pergunta com кто mantém a palavra interrogativa; não se acrescenta что.",
+      "tags": [
+        "аудирование",
+        "косвенная речь",
+        "ли"
+      ]
+    },
+    {
+      "id": "u10-e27",
+      "type": "listening",
+      "response_type": "input",
+      "stage": "noticing",
+      "difficulty": 3,
+      "instruction": "Ditado de discurso indireto: digite a frase inteira.",
+      "prompt": "Escreva exatamente a frase ouvida.",
+      "audio_text": "Редактор спросил, проверил ли журналист источник информации.",
+      "answer": "Редактор спросил, проверил ли журналист источник информации.",
+      "explanation": "ли aparece depois do elemento focalizado pelo sim/não: проверил ли журналист....",
+      "tags": [
+        "аудирование",
+        "ditado",
+        "косвенная речь",
+        "ли"
+      ]
+    }
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 1 «Прямая и косвенная речь» · Кузьмина, Прямая и косвенная речь"
+}

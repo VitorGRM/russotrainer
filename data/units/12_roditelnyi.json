@@ -1,0 +1,767 @@
+{
+  "id": "u12_roditelnyi",
+  "order": 12,
+  "title": "Родительный падеж: posse, ausência e quantidade",
+  "description": "Sistematiza o caso mais frequente do russo: de quem, de quê, quanto, quantos — e o genitivo plural, a tabela mais difícil da língua.",
+  "estimated_minutes": 34,
+  "objectives": [
+    "reconhecer as seis funções do родительный падеж sem traduzir",
+    "formar o genitivo plural dos quatro tipos de substantivo",
+    "aplicar a regra dos numerais 2-4 × 5 e mais"
+  ],
+  "source_note": "Red Kalinka, «Russian cases», Genitive case · Кузьмина, «Русская грамматика в таблицах», Родительный падеж e Родительный множественного числа · Kagan/Kudyma/Miller, Глава 1-2",
+  "grammar": [
+    {
+      "title": "Seis funções, uma pergunta: кого? чего?",
+      "paragraphs": [
+        "O родительный падеж é o caso mais frequente do russo — mais que o acusativo, mais que o nominativo em textos escritos. Ele cobre seis funções que em português são feitas por meios diferentes: (1) posse e relação entre substantivos: книга брата (o livro do irmão), центр города; (2) ausência e negação: нет времени, не было денег; (3) quantidade: много работы, несколько лет, пять книг; (4) origem e afastamento com из, от, с: приехать из Москвы; (5) complemento de verbos como бояться, желать, достичь, избегать, требовать; (6) datas: пятого мая, в начале года.",
+        "As preposições que exigem родительный são as mais numerosas do russo: без, для, до, из, из-за, из-под, кроме, около, от, после, против, с (origem), у, вместо, вокруг, во время, в течение, в результате, среди, мимо, начиная с. Vale decorar essa lista como bloco: se a preposição está aqui, o caso já está decidido antes de você olhar o substantivo.",
+        "Uma função merece destaque porque não tem paralelo em português: у + родительный para posse. У меня есть время literalmente é «junto de mim há tempo». Na negação, o objeto também vai para o genitivo: У меня нет времени. Repare que есть some e нет entra, e o substantivo troca de caso — três mudanças de uma vez."
+      ],
+      "audio_script": "Родительный падеж, o genitivo. Vamos começar por um dado que costuma surpreender: em textos escritos, o genitivo é o caso MAIS frequente do russo. Mais frequente que o acusativo, mais que o nominativo. Isso significa que cada erro de genitivo aparece muitas vezes por página. Vale investir aqui. Ele tem seis funções, e a pergunta é sempre a mesma: кого? чего? Função um: posse e relação entre dois substantivos. Книга брата, o livro do irmão. Центр города, o centro da cidade. Sempre que em português você usaria «de» ligando dois substantivos, o russo usa genitivo sem preposição nenhuma. Função dois: ausência e negação. Нет времени. Не было денег. Не будет проблем. Função três: quantidade. Много работы. Несколько лет. Пять книг. Função quatro: origem e afastamento, com as preposições из, от e с. Приехать из Москвы. Função cinco: complemento de certos verbos. Бояться, ter medo. Желать, desejar. Достичь, alcançar. Избегать, evitar. Требовать, exigir. E função seis: datas. Пятого мая. В начале года. Agora a lista de preposições, e ela é a maior do russo. Ouça e repita: без, для, до, из, из-за, из-под, кроме, около, от, после, против, с com sentido de origem, у, вместо, вокруг, во время, в течение, в результате, среди, мимо. Decore essa lista como bloco. Se a preposição está aí, o caso já está decidido antes mesmo de você olhar o substantivo. Para terminar, uma construção que não tem paralelo nenhum em português: у mais genitivo para expressar posse. У меня есть время. Literalmente: junto de mim há tempo. É assim que o russo diz «eu tenho tempo». E na negação acontecem três mudanças ao mesmo tempo, então preste atenção. У меня нет времени. Есть desaparece. Нет entra. E время, que estava no nominativo, vai para o genitivo: времени. Três mudanças numa frase de três palavras. Vale praticar essa até sair automática.",
+      "examples": [
+        {
+          "ru": "Это книга моего старшего брата.",
+          "pt": "Este é o livro do meu irmão mais velho.",
+          "note": "Posse: dois substantivos ligados por genitivo, sem preposição."
+        },
+        {
+          "ru": "У меня нет свободного времени.",
+          "pt": "Não tenho tempo livre.",
+          "note": "есть → нет, e o objeto vai ao genitivo."
+        },
+        {
+          "ru": "Он приехал из Москвы после конференции.",
+          "pt": "Ele veio de Moscou depois da conferência.",
+          "note": "из e после, duas preposições de genitivo."
+        },
+        {
+          "ru": "Во время экзамена нельзя пользоваться телефоном.",
+          "pt": "Durante o exame não se pode usar o telefone.",
+          "note": "во время + genitivo."
+        }
+      ],
+      "pitfalls": [
+        "Manter o nominativo depois de нет: «у меня нет время» está errado; é нет времени.",
+        "Usar «из» para tudo: se o par da palavra é на (на работе), a origem é с работы, não из работы."
+      ]
+    },
+    {
+      "title": "Как formar: singular fácil, plural difícil",
+      "paragraphs": [
+        "No singular o genitivo é simples. Masculinos em consoante e neutros em -о fazem -а: стол → стола, окно → окна. Masculinos em -й/-ь e neutros em -е fazem -я: музей → музея, учитель → учителя, поле → поля. Femininos em -а fazem -ы (ou -и depois de г, к, х, ж, ч, ш, щ): книга → книги, работа → работы. Femininos em -я fazem -и: неделя → недели. Femininos em -ь fazem -и: дверь → двери. Adjetivos: masculino/neutro -ого/-его, feminino -ой/-ей.",
+        "O genitivo plural é a tabela mais difícil do russo, e a lógica dela é inversa à do resto da língua: quanto mais o nominativo singular tem terminação, menos o genitivo plural tem. Masculinos em consoante ganham -ов: столов, факторов. Masculinos em -й ganham -ев/-ёв: музеев. Masculinos em -ь e os terminados em ж, ч, ш, щ ganham -ей: учителей, врачей, товарищей. Neutros em -о e femininos em -а PERDEM a terminação e ficam com terminação zero: окно → окон, книга → книг, студентка → студенток (com vogal móvel -о- inserida). Femininos em -я viram -ь: неделя → недель. Palavras em -ия e -ие viram -ий: аудитория → аудиторий, здание → зданий. Femininos em -ь ganham -ей: дверь → дверей. Adjetivos, sempre: -ых/-их.",
+        "A vogal móvel merece atenção porque não é opcional: quando a perda da terminação deixaria duas ou três consoantes no fim da palavra, o russo insere -о- ou -е-. студентка → студенток, окно → окон, сестра → сестёр, деревня → деревень. Não existe regra que preveja se será -о- ou -е- em todos os casos, mas há uma tendência confiável: depois de ж, ч, ш, щ e de consoante branda entra -е-; nos demais, -о-."
+      ],
+      "audio_script": "Agora as formas. E aqui a notícia é dividida: o singular é fácil, o plural é a tabela mais difícil do russo inteiro. Começando pelo singular. Masculinos terminados em consoante e neutros terminados em о fazem а. стол vira стола. окно vira окна. Masculinos terminados em й ou em sinal brando, e neutros terminados em е, fazem я. музей vira музея. учитель vira учителя. поле vira поля. Femininos em а fazem ы. работа vira работы. Mas atenção à regra ortográfica: depois de г, к, х, ж, ч, ш e щ entra и, não ы. Por isso книга vira книги, e não книгы. Femininos em я fazem и: неделя vira недели. Femininos em sinal brando também fazem и: дверь vira двери. Adjetivos no singular: masculino e neutro terminam em ого ou его. Feminino termina em ой ou ей. Agora o genitivo plural, e vale ouvir esta parte várias vezes. A lógica dele é INVERSA à do resto da língua: quanto mais terminação a palavra tem no nominativo singular, MENOS terminação ela tem no genitivo plural. Masculinos em consoante ganham ов. стол vira столов. фактор vira факторов. Masculinos em й ganham ев ou ёв. музей vira музеев. Masculinos em sinal brando, e também os terminados em ж, ч, ш e щ, ganham ей. учитель vira учителей. врач vira врачей. товарищ vira товарищей. E agora o grupo que assusta: neutros em о e femininos em а PERDEM a terminação. Ficam com terminação zero. окно vira окон. книга vira книг. работа vira работ. Femininos em я viram sinal brando: неделя vira недель. Palavras terminadas em ия e ие viram ий: аудитория vira аудиторий, здание vira зданий. Femininos em sinal brando ganham ей: дверь vira дверей. E os adjetivos, felizmente, têm uma forma só: ых ou их. Sempre. Uma última peça: a vogal móvel. Quando tirar a terminação deixaria duas ou três consoantes empilhadas no fim da palavra, o russo insere um о ou um е para quebrar o grupo. студентка vira студенток. сестра vira сестёр. деревня vira деревень. Não existe regra perfeita para saber se entra о ou е, mas há uma tendência confiável: depois de ж, ч, ш, щ e de consoante branda entra е; nos demais casos, entra о.",
+      "examples": [
+        {
+          "ru": "В городе много новых зданий и старых улиц.",
+          "pt": "Na cidade há muitos prédios novos e ruas antigas.",
+          "note": "здание → зданий (-ие → -ий); улица → улиц (terminação zero)."
+        },
+        {
+          "ru": "У нас нет свободных мест для студентов.",
+          "pt": "Não temos vagas livres para estudantes.",
+          "note": "место → мест (zero); студент → студентов (-ов)."
+        },
+        {
+          "ru": "Он написал несколько статей для международных журналов.",
+          "pt": "Ele escreveu vários artigos para revistas internacionais.",
+          "note": "статья → статей; журнал → журналов."
+        },
+        {
+          "ru": "В группе пять студенток и восемь преподавателей.",
+          "pt": "No grupo há cinco alunas e oito professores.",
+          "note": "студентка → студенток (vogal móvel); преподаватель → преподавателей."
+        }
+      ],
+      "pitfalls": [
+        "Escrever «книгы»: depois de г nunca vem ы — é книги.",
+        "Acrescentar terminação a neutros em -о e femininos em -а no plural: окно → окон, não «оконов».",
+        "Esquecer a vogal móvel: «студенток», não «студентк»."
+      ]
+    },
+    {
+      "title": "Quantidade: a regra dos numerais que muda tudo",
+      "paragraphs": [
+        "Depois de palavras de quantidade indefinida — много, мало, немного, несколько, сколько, столько, больше, меньше — o substantivo vai obrigatoriamente ao genitivo. Contável vai ao genitivo plural: много книг, несколько лет. Incontável vai ao genitivo singular: много работы, мало времени. A escolha entre plural e singular é do substantivo, não do numeral.",
+        "Com numerais a regra é mais fina e é uma das mais testadas em exame. O numeral 1 (один, одна, одно) concorda como adjetivo e o substantivo fica no nominativo: один студент. Os numerais 2, 3 e 4 (два/две, три, четыре) pedem genitivo SINGULAR: два студента, три книги, четыре года. De 5 em diante, e também para 11, 12, 13 e 14, pede-se genitivo PLURAL: пять студентов, двенадцать лет.",
+        "O que decide, em números compostos, é o ÚLTIMO algarismo: 21 termina em 1 → двадцать один студент (nominativo); 22 termina em 2 → двадцать два студента (genitivo singular); 25 → двадцать пять студентов (genitivo plural). As únicas exceções são 11 a 14, que pedem genitivo plural apesar de terminarem em 1-4: одиннадцать студентов. Guardar essa exceção resolve o erro mais comum de todos."
+      ],
+      "audio_script": "Terceira parte: quantidade. E esta é a regra que mais cai em exame, então vamos com calma. Primeiro, quantidade indefinida. Много, мало, немного, несколько, сколько, столько, больше, меньше. Depois de qualquer uma dessas, o substantivo vai obrigatoriamente ao genitivo. Se a palavra é contável, vai ao genitivo PLURAL: много книг, несколько лет, сколько студентов. Se a palavra é incontável, vai ao genitivo SINGULAR: много работы, мало времени, немного денег. Repare que quem decide entre singular e plural é o substantivo, não a palavra de quantidade. Agora os numerais, e aqui está a regra fina. O número um, один, одна, одно, concorda como adjetivo, e o substantivo fica no NOMINATIVO. Один студент. Одна книга. Os números dois, três e quatro pedem genitivo SINGULAR. Два студента. Три книги. Четыре года. E note que dois tem duas formas: два para masculino e neutro, две para feminino. Два студента, две книги. De cinco em diante, genitivo PLURAL. Пять студентов. Двадцать книг. Сто лет. E agora a parte que decide tudo nos números compostos: o que manda é o ÚLTIMO algarismo. Vinte e um termina em um, então: двадцать один студент, no nominativo. Vinte e dois termina em dois, então: двадцать два студента, genitivo singular. Vinte e cinco termina em cinco, então: двадцать пять студентов, genitivo plural. Mas existe uma exceção, e é a exceção que todo mundo erra: os números de onze a quatorze. Eles terminam em um, dois, três e quatro, mas pedem genitivo PLURAL. Одиннадцать студентов. Двенадцать лет. Четырнадцать книг. Por quê? Porque onze, em russo antigo, significava «um sobre dez» — o um ali não é o último elemento de verdade. Guarde a exceção onze a quatorze e você resolve o erro mais comum de todo o sistema numérico russo.",
+      "examples": [
+        {
+          "ru": "В библиотеке много интересных книг.",
+          "pt": "Na biblioteca há muitos livros interessantes.",
+          "note": "много + genitivo plural."
+        },
+        {
+          "ru": "У нас мало свободного времени.",
+          "pt": "Temos pouco tempo livre.",
+          "note": "мало + genitivo singular (incontável)."
+        },
+        {
+          "ru": "Он прожил в этом городе двадцать два года.",
+          "pt": "Ele morou nesta cidade vinte e dois anos.",
+          "note": "Termina em 2 → genitivo singular: года."
+        },
+        {
+          "ru": "Он прожил в этом городе двенадцать лет.",
+          "pt": "Ele morou nesta cidade doze anos.",
+          "note": "11-14 → genitivo plural: лет, apesar de terminar em 2."
+        }
+      ],
+      "pitfalls": [
+        "Usar genitivo singular com 11-14: é двенадцать лет, não «двенадцать года».",
+        "Esquecer que 2 tem duas formas: два студента (masc.) mas две книги (fem.).",
+        "Usar plural com «мало» de incontável: мало времени, não «мало времён»."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Родительный падеж — terminações",
+    "columns": [
+      "Grupo",
+      "Singular",
+      "Plural",
+      "Exemplo"
+    ],
+    "rows": [
+      [
+        "Masculino em consoante",
+        "-а",
+        "-ов",
+        "фактор → фактора → факторов"
+      ],
+      [
+        "Masculino em -й",
+        "-я",
+        "-ев / -ёв",
+        "музей → музея → музеев"
+      ],
+      [
+        "Masculino em -ь / ж,ч,ш,щ",
+        "-я / -а",
+        "-ей",
+        "учитель → учителя → учителей · врач → врача → врачей"
+      ],
+      [
+        "Neutro em -о",
+        "-а",
+        "∅ (zero)",
+        "окно → окна → окон"
+      ],
+      [
+        "Neutro em -е / -ие",
+        "-я",
+        "-ей / -ий",
+        "поле → поля → полей · здание → здания → зданий"
+      ],
+      [
+        "Feminino em -а",
+        "-ы (-и após г,к,х,ж,ч,ш,щ)",
+        "∅ (zero)",
+        "книга → книги → книг"
+      ],
+      [
+        "Feminino em -я / -ия",
+        "-и",
+        "-ь / -ий",
+        "неделя → недели → недель · аудитория → аудиторий"
+      ],
+      [
+        "Feminino em -ь",
+        "-и",
+        "-ей",
+        "дверь → двери → дверей"
+      ],
+      [
+        "Adjetivo",
+        "-ого/-его · -ой/-ей",
+        "-ых / -их",
+        "новый → нового / новой → новых"
+      ]
+    ],
+    "note": "Regra dos numerais: 1 → именительный · 2, 3, 4 → родительный singular · 5 e mais → родительный plural · 11-14 sempre plural. Em números compostos manda o último algarismo."
+  },
+  "reference": [
+    {
+      "construction": "нет / не было / не будет",
+      "question": "кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "não há / não havia / não haverá",
+      "example": "у меня нет свободного времени"
+    },
+    {
+      "construction": "много / мало / несколько",
+      "question": "кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "muito / pouco / alguns",
+      "example": "несколько интересных статей"
+    },
+    {
+      "construction": "бояться",
+      "question": "кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ter medo de",
+      "example": "бояться перемен"
+    },
+    {
+      "construction": "достигать / достичь",
+      "question": "кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "alcançar, atingir",
+      "example": "достичь высоких результатов"
+    },
+    {
+      "construction": "избегать / избежать",
+      "question": "кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "evitar",
+      "example": "избежать серьёзных ошибок"
+    },
+    {
+      "construction": "во время / в течение",
+      "question": "кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "durante / ao longo de",
+      "example": "в течение последних лет"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u12-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "нет / не было / не будет",
+      "back": "нет кого? чего? — родительный падеж",
+      "explanation": "Na negação de existência o substantivo sai do именительный e vai ao родительный: есть время → нет времени.",
+      "tags": [
+        "нет + родительный",
+        "родительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u12-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "бояться",
+      "back": "бояться кого? чего? — родительный падеж",
+      "explanation": "бояться перемен, бояться ошибок. Sem preposição.",
+      "tags": [
+        "бояться",
+        "родительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u12-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "достигать / достичь",
+      "back": "достичь кого? чего? — родительный падеж",
+      "explanation": "достичь цели, достичь результатов. Em português «alcançar» não leva preposição; em russo o caso já faz esse trabalho.",
+      "tags": [
+        "достигать",
+        "родительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u12-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "избегать / избежать",
+      "back": "избежать кого? чего? — родительный падеж",
+      "explanation": "избегать конфликтов, избежать ошибок.",
+      "tags": [
+        "избегать",
+        "родительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u12-e05",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 1,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "У нас нет ___. (свободное время)",
+      "options": [
+        "свободного времени",
+        "свободное время",
+        "свободному времени",
+        "свободным временем"
+      ],
+      "answer": "свободного времени",
+      "explanation": "нет exige родительный падеж. время é neutro irregular: время → времени. O adjetivo neutro faz -ого: свободного.",
+      "tags": [
+        "нет + родительный",
+        "родительный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u12-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha o genitivo plural correto.",
+      "prompt": "В городе построили много новых ___. (здание)",
+      "options": [
+        "зданий",
+        "зданиев",
+        "зданьев",
+        "зданей"
+      ],
+      "answer": "зданий",
+      "explanation": "Substantivos neutros em -ие fazem genitivo plural em -ий: здание → зданий. O mesmo vale para femininos em -ия: аудитория → аудиторий.",
+      "tags": [
+        "genitivo plural",
+        "родительный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u12-e07",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha o genitivo plural correto.",
+      "prompt": "В группе учится несколько ___. (студентка)",
+      "options": [
+        "студенток",
+        "студентк",
+        "студентков",
+        "студентки"
+      ],
+      "answer": "студенток",
+      "explanation": "Femininos em -а perdem a terminação no genitivo plural (terminação zero). Como isso deixaria «студентк», entra a vogal móvel -о-: студенток.",
+      "tags": [
+        "genitivo plural",
+        "vogal móvel",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u12-e08",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha o genitivo plural correto.",
+      "prompt": "На конференции выступили десять ___. (врач)",
+      "options": [
+        "врачей",
+        "врачов",
+        "врача",
+        "врачи"
+      ],
+      "answer": "врачей",
+      "explanation": "Masculinos terminados em ж, ч, ш, щ fazem genitivo plural em -ей, não em -ов: врачей, товарищей, карандашей.",
+      "tags": [
+        "genitivo plural",
+        "родительный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u12-e09",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma exigida pelo numeral.",
+      "prompt": "Он прожил в этом городе двадцать два ___. (год)",
+      "options": [
+        "года",
+        "лет",
+        "год",
+        "годов"
+      ],
+      "answer": "года",
+      "explanation": "Em números compostos manda o último algarismo: 22 termina em 2 → родительный singular (года). Só a partir de 5 se usa o plural, e para «ano» o plural supletivo é лет.",
+      "tags": [
+        "numerais",
+        "родительный падеж",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u12-e10",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a forma exigida pelo numeral.",
+      "prompt": "Он прожил в этом городе двенадцать ___. (год)",
+      "options": [
+        "лет",
+        "года",
+        "год",
+        "годы"
+      ],
+      "answer": "лет",
+      "explanation": "Exceção obrigatória: 11, 12, 13 e 14 pedem родительный PLURAL, apesar de terminarem em 1-4. E o genitivo plural de год é supletivo: лет, não «годов».",
+      "tags": [
+        "numerais",
+        "родительный падеж",
+        "exceção"
+      ]
+    },
+    {
+      "id": "u12-e11",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "В библиотеке работают ___. (две / двое + сотрудница)",
+      "options": [
+        "две сотрудницы",
+        "два сотрудницы",
+        "две сотрудниц",
+        "две сотрудница"
+      ],
+      "answer": "две сотрудницы",
+      "explanation": "Com feminino usa-se две (não два), e 2 pede родительный singular: сотрудницы. Duas decisões independentes na mesma palavra.",
+      "tags": [
+        "numerais",
+        "родительный падеж",
+        "gênero"
+      ]
+    },
+    {
+      "id": "u12-e12",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta depois de «мало».",
+      "prompt": "У студентов сейчас мало ___. (время)",
+      "options": [
+        "времени",
+        "времена",
+        "время",
+        "временем"
+      ],
+      "answer": "времени",
+      "explanation": "Palavras de quantidade pedem родительный; como время é incontável, vai ao родительный SINGULAR: времени. Contável iria ao plural (мало книг).",
+      "tags": [
+        "quantidade",
+        "родительный падеж",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u12-e13",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a preposição e o caso corretos.",
+      "prompt": "Он вернулся ___ поздно вечером. (работа)",
+      "options": [
+        "с работы",
+        "из работы",
+        "от работы",
+        "с работой"
+      ],
+      "answer": "с работы",
+      "explanation": "O par de на работу é с работы: в anda com из, на anda com с. A origem sempre pede родительный падеж.",
+      "tags": [
+        "origem",
+        "родительный падеж",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u12-e14",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Компания смогла избежать ___. (серьёзные финансовые потери)",
+      "options": [
+        "серьёзных финансовых потерь",
+        "серьёзные финансовые потери",
+        "серьёзным финансовым потерям",
+        "серьёзными финансовыми потерями"
+      ],
+      "answer": "серьёзных финансовых потерь",
+      "explanation": "избегать / избежать кого? чего? → родительный падеж plural: adjetivo -ых, e потеря (fem. em -я) faz потерь.",
+      "tags": [
+        "избегать",
+        "родительный падеж",
+        "genitivo plural"
+      ]
+    },
+    {
+      "id": "u12-e15",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 2,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase expressa corretamente a ausência?",
+      "options": [
+        "В этом районе нет хорошей школы.",
+        "В этом районе нет хорошая школа.",
+        "В этом районе не есть хорошей школы.",
+        "В этом районе нет хорошую школу."
+      ],
+      "answer": "В этом районе нет хорошей школы.",
+      "explanation": "нет substitui есть (não se diz «не есть») e o que não existe vai ao родительный: хорошей школы. É a construção negativa mais frequente do russo.",
+      "tags": [
+        "нет + родительный",
+        "родительный падеж",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u12-e16",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase usa corretamente as preposições de genitivo?",
+      "options": [
+        "В течение последних лет город изменился до неузнаваемости.",
+        "В течении последних лет город изменился до неузнаваемости.",
+        "В течение последним годам город изменился до неузнаваемости.",
+        "В течение последние годы город изменился до неузнаваемости."
+      ],
+      "answer": "В течение последних лет город изменился до неузнаваемости.",
+      "explanation": "в течение (com Е final) é preposição e exige родительный: последних лет. Escrito «в течении» seria o substantivo течение no prepositivo — outra palavra, outro sentido (в течении реки, na corrente do rio).",
+      "tags": [
+        "в течение",
+        "родительный падеж",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u12-e17",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«У неё нет ни времени, ни желания заниматься этим проектом.»",
+      "options": [
+        "Ela não tem nem tempo nem vontade de se ocupar desse projeto.",
+        "Ela tem tempo, mas não tem vontade de trabalhar nesse projeto.",
+        "Ela não teve tempo de terminar esse projeto.",
+        "Ela quer se ocupar do projeto, mas não tem tempo."
+      ],
+      "answer": "Ela não tem nem tempo nem vontade de se ocupar desse projeto.",
+      "explanation": "A correlação ни… ни… nega os dois elementos, e ambos ficam no родительный por causa de нет: ни времени, ни желания.",
+      "tags": [
+        "ни… ни…",
+        "родительный падеж",
+        "significado"
+      ]
+    },
+    {
+      "id": "u12-e18",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 3,
+      "instruction": "Escolha o genitivo plural correto.",
+      "prompt": "Мы получили ответы от нескольких ___. (иностранный университет)",
+      "options": [
+        "иностранных университетов",
+        "иностранные университеты",
+        "иностранным университетам",
+        "иностранных университетах"
+      ],
+      "answer": "иностранных университетов",
+      "explanation": "несколько exige родительный plural; adjetivo -ых, masculino em consoante -ов. A opção «университетах» é предложный e não combina com несколько.",
+      "tags": [
+        "quantidade",
+        "genitivo plural",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u12-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "По данным последнего опроса, у большинства молодых специалистов нет собственного жилья. Многие из них снимают квартиру вместе с друзьями, потому что у них мало денег и почти нет свободного времени на поиск более дешёвого варианта. В течение последних пяти лет цены на аренду выросли почти на сорок процентов, и это создаёт серьёзные трудности для тех, кто только начинает карьеру. Однако, несмотря на эти проблемы, большинство опрошенных не хотят возвращаться в родной город: они боятся потерять возможности, которых нет в провинции.",
+      "prompt": "Segundo o texto, por que a maioria não quer voltar à cidade natal?",
+      "options": [
+        "Porque tem medo de perder oportunidades que não existem no interior.",
+        "Porque o aluguel no interior é mais caro.",
+        "Porque não tem dinheiro para a passagem.",
+        "Porque já comprou casa própria na capital."
+      ],
+      "answer": "Porque tem medo de perder oportunidades que não existem no interior.",
+      "explanation": "«они боятся потерять возможности, которых нет в провинции» — бояться + infinitivo, e «которых нет» usa родительный depois de нет.",
+      "tags": [
+        "родительный падеж",
+        "leitura",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u12-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto acima novamente e responda.",
+      "context": "По данным последнего опроса, у большинства молодых специалистов нет собственного жилья. Многие из них снимают квартиру вместе с друзьями, потому что у них мало денег и почти нет свободного времени на поиск более дешёвого варианта. В течение последних пяти лет цены на аренду выросли почти на сорок процентов, и это создаёт серьёзные трудности для тех, кто только начинает карьеру.",
+      "prompt": "Qual trecho do texto NÃO está no родительный падеж?",
+      "options": [
+        "цены на аренду",
+        "собственного жилья",
+        "свободного времени",
+        "последних пяти лет"
+      ],
+      "answer": "цены на аренду",
+      "explanation": "«на аренду» é винительный падеж (на + acusativo, indicando o alvo do preço). Os outros três são родительный: depois de нет, de мало e de в течение.",
+      "tags": [
+        "родительный падеж",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u12-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "К сожалению, у нас нет ни времени, ни достаточного количества сотрудников для этого проекта.",
+      "prompt": "O que falta, segundo o áudio?",
+      "options": [
+        "Tempo e um número suficiente de funcionários.",
+        "Dinheiro e equipamento.",
+        "Tempo, mas os funcionários são suficientes.",
+        "Funcionários, mas o prazo é confortável."
+      ],
+      "answer": "Tempo e um número suficiente de funcionários.",
+      "explanation": "«ни времени, ни достаточного количества сотрудников» — dois genitivos coordenados por ни… ни… depois de нет.",
+      "tags": [
+        "нет + родительный",
+        "audição",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u12-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "В течение последних двенадцати лет университет открыл несколько новых факультетов.",
+      "prompt": "Quanto tempo levou o processo, segundo o áudio?",
+      "options": [
+        "Doze anos.",
+        "Dois anos.",
+        "Vinte anos.",
+        "Alguns meses."
+      ],
+      "answer": "Doze anos.",
+      "explanation": "«двенадцати лет» — двенадцать está no родительный (двенадцати) porque в течение o exige, e лет é o genitivo plural supletivo de год.",
+      "tags": [
+        "numerais",
+        "audição",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u12-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase usando нет + родительный падеж.",
+      "tokens": [
+        "В",
+        "нашем",
+        "районе",
+        "нет",
+        "ни",
+        "одной",
+        "хорошей",
+        "школы"
+      ],
+      "answer": "В нашем районе нет ни одной хорошей школы",
+      "explanation": "ни одной reforça a negação e mantém o родительный: ни одной хорошей школы.",
+      "tags": [
+        "нет + родительный",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u12-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a construção russa ao significado.",
+      "pairs": [
+        {
+          "left": "бояться перемен",
+          "right": "ter medo de mudanças"
+        },
+        {
+          "left": "достичь результатов",
+          "right": "alcançar resultados"
+        },
+        {
+          "left": "избежать конфликта",
+          "right": "evitar um conflito"
+        },
+        {
+          "left": "в течение года",
+          "right": "ao longo de um ano"
+        },
+        {
+          "left": "во время встречи",
+          "right": "durante a reunião"
+        },
+        {
+          "left": "вместо ответа",
+          "right": "em vez de uma resposta"
+        }
+      ],
+      "explanation": "As seis construções pedem родительный падеж: quatro por preposição, duas por regência do verbo.",
+      "tags": [
+        "родительный падеж",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u12-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 80–100 palavras em russo. Use pelo menos quatro construções da lista.",
+      "prompt": "«Чего не хватает в вашем городе?» (O que falta na sua cidade?)\n\nUnidades: нет + родительный · мало / много · в течение · из-за того, что · несколько · достичь",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "родительный падеж",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

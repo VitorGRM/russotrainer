@@ -1,0 +1,709 @@
+{
+  "id": "u08_rabota_kotoryi",
+  "order": 8,
+  "title": "Работа: который em orações relativas",
+  "description": "Introduz который com concordância de gênero/número e caso pela função na oração subordinada, no vocabulário de трудоустройство, contratação e gestão.",
+  "estimated_minutes": 42,
+  "objectives": [
+    "escolher a forma de который pela função dentro da oração subordinada, não pelo papel do antecedente na oração principal",
+    "posicionar a preposição imediatamente antes de который",
+    "reconhecer который no родительный падеж como equivalente de «cujo»",
+    "produzir руководить, справляться с, обеспечивать, отвечать за, нанимать e уволить com a regência certa"
+  ],
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Который: concordância e caso",
+      "paragraphs": [
+        "который introduz uma oração relativa e substitui um substantivo já mencionado (o antecedente). Ele concorda em gênero e número com esse antecedente, mas o caso depende exclusivamente da função que который exerce dentro da própria oração subordinada — não do papel do antecedente na oração principal. Em Компания, которая предлагает гибкий график, компания é feminino singular e которая é sujeito da subordinada: nominativo. Em Директор, которого мы встретили на конференции, директор continua masculino singular, mas которого é objeto direto da subordinada (animado): винительный падеж.",
+        "Quando a oração relativa precisa de preposição, ela fica colada a который, dentro da própria oração subordinada: Фирма, в которой он работает (não «которой... в»). A vírgula antes de который é obrigatória, e depois dela também, se a oração relativa não terminar o período."
+      ],
+      "audio_script": "Который é o pronome relativo do russo — o equivalente de que, o qual, quem. E ele é, na prática, o divisor de águas entre um russo de nível intermediário e um russo de nível avançado, porque sem ele você só consegue produzir frases curtas e justapostas. A boa notícia é que который se declina exatamente como um adjetivo comum, do tipo новый. который, которого, которому, которым, о котором. Nenhuma forma nova para decorar. A dificuldade não é a declinação. É saber qual forma escolher, e para isso existe uma regra em duas perguntas. Pergunta um: qual é o gênero e o número? Isso vem do substantivo ANTES da vírgula, o antecedente. Pergunta dois: qual é o caso? Isso vem do verbo ou da preposição DEPOIS da vírgula, dentro da oração relativa. Repito, porque aqui está noventa por cento dos erros: gênero e número vêm de fora; o caso vem de dentro. Vamos a um exemplo. Человек, с которым я познакомился, оказался начальником. Человек é masculino singular — isso fixa o gênero. Dentro da relativa, познакомиться pede с mais instrumental — isso fixa o caso. Masculino singular no instrumental é которым. Outro exemplo. Фирма, которую он основал, теперь известна. Фирма é feminino — gênero. Dentro da relativa, фирма é objeto direto de основал, então acusativo — caso. Feminino acusativo é которую. Uma última observação sobre pontuação, porque em russo ela é obrigatória e não opcional: a oração com который é SEMPRE separada por vírgula. Não existe relativa restritiva sem vírgula, como em português.",
+      "examples": [
+        {
+          "ru": "Человек, с которым я познакомился на собеседовании, оказался начальником.",
+          "pt": "A pessoa com quem me apresentei na entrevista acabou sendo o chefe.",
+          "note": "Gênero de человек; caso de познакомиться с."
+        },
+        {
+          "ru": "Фирма, которую он основал, теперь известна во всей стране.",
+          "pt": "A firma que ele fundou hoje é conhecida no país inteiro.",
+          "note": "Gênero de фирма; caso de objeto direto."
+        },
+        {
+          "ru": "Проект, над которым мы работаем, закончится в мае.",
+          "pt": "O projeto no qual trabalhamos termina em maio.",
+          "note": "работать НАД + instrumental."
+        },
+        {
+          "ru": "Компания, в которой он работает, расширяется.",
+          "pt": "A empresa em que ele trabalha está se expandindo.",
+          "note": "работать В + prepositivo: которой."
+        }
+      ],
+      "pitfalls": [
+        "Fazer который concordar em caso com o antecedente: o caso vem sempre da oração de dentro.",
+        "Esquecer a vírgula antes de который — em russo ela é obrigatória."
+      ]
+    },
+    {
+      "title": "Который no genitivo: equivalente de «cujo»",
+      "paragraphs": [
+        "No родительный падеж, который seguido de um substantivo funciona como o «cujo» português: Специалист, стаж которого превышает десять лет — o especialista, cujo tempo de serviço ultrapassa dez anos. который concorda com o possuidor (specialista, masculino), e o substantivo possuído (стаж) permanece na função que tem na oração, sem mudar de caso por causa de который.",
+        "No vocabulário de trabalho, atenção a regências que o português não sugere: руководить кем? чем? (sem preposição, творительный падеж) — dirigir, chefiar; справляться/справиться с кем? чем? — dar conta de; обеспечивать/обеспечить кого? (винительный) чем? (творительный) — prover alguém de algo; отвечать/ответить за кого? что? — ser responsável por."
+      ],
+      "audio_script": "Agora o uso de который que corresponde ao português «cujo», e que costuma travar o aluno na hora de escrever. Em português a gente diz: o especialista CUJO tempo de serviço passa de dez anos. Em russo não existe uma palavra separada para cujo. Usa-se который no genitivo, e a ordem das palavras muda. Специалист, стаж которого превышает десять лет. Repare na ordem: primeiro vem a coisa possuída, стаж, e só depois vem которого. É o inverso do português, onde o «cujo» vem antes do substantivo. Essa inversão é o erro número um aqui. E existe uma segunda armadilha, ainda mais sutil. Duas palavras, dois casos independentes. которого fica no genitivo porque marca posse, e concorda em gênero com o POSSUIDOR — специалист, masculino. Já стаж fica no caso que a oração interna exigir. No nosso exemplo, стаж é sujeito de превышает, então fica no nominativo. Vamos ver um caso em que стаж muda. Специалист, опыт которого мы ценим… Aqui опыт é objeto direto de ценим, então vai para o acusativo. E которого continua igual, porque a posse não mudou. Resumo prático: которого, которой e которых nunca mudam de caso — são sempre genitivo. Quem muda é a palavra ao lado.",
+      "examples": [
+        {
+          "ru": "Специалист, стаж которого превышает десять лет, легко нашёл работу.",
+          "pt": "O especialista, cujo tempo de serviço passa de dez anos, achou emprego facilmente.",
+          "note": "Ordem invertida: стаж vem antes de которого."
+        },
+        {
+          "ru": "Компания, сотрудники которой работают удалённо, сократила расходы.",
+          "pt": "A empresa cujos funcionários trabalham remotamente cortou despesas.",
+          "note": "которой = feminino (компания), no genitivo de posse."
+        },
+        {
+          "ru": "Это фирма, продукцию которой знают во всём мире.",
+          "pt": "Esta é a firma cujos produtos são conhecidos no mundo inteiro.",
+          "note": "продукцию no acusativo (objeto de знают); которой permanece genitivo."
+        }
+      ],
+      "pitfalls": [
+        "Colocar которого antes do substantivo possuído, imitando a ordem do «cujo» português.",
+        "Fazer которого concordar com a coisa possuída em vez de com o possuidor."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Declinação de который",
+    "columns": [
+      "Падеж",
+      "Мужской",
+      "Женский",
+      "Средний",
+      "Множественное"
+    ],
+    "rows": [
+      [
+        "Именительный (кто? что?)",
+        "который",
+        "которая",
+        "которое",
+        "которые"
+      ],
+      [
+        "Родительный (кого? чего?)",
+        "которого",
+        "которой",
+        "которого",
+        "которых"
+      ],
+      [
+        "Дательный (кому? чему?)",
+        "которому",
+        "которой",
+        "которому",
+        "которым"
+      ],
+      [
+        "Винительный (кого? что?)",
+        "который / которого*",
+        "которую",
+        "которое",
+        "которые / которых*"
+      ],
+      [
+        "Творительный (кем? чем?)",
+        "которым",
+        "которой",
+        "которым",
+        "которыми"
+      ],
+      [
+        "Предложный (о ком? о чём?)",
+        "котором",
+        "которой",
+        "котором",
+        "которых"
+      ]
+    ],
+    "note": "*A forma animada (которого/которых) no винительный падеж aparece quando который substitui uma pessoa, não uma coisa."
+  },
+  "reference": [
+    {
+      "construction": "руководить",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "dirigir, chefiar",
+      "example": "руководить отделом продаж"
+    },
+    {
+      "construction": "справляться / справиться с",
+      "question": "с кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "dar conta de, lidar com",
+      "example": "справиться с новыми обязанностями"
+    },
+    {
+      "construction": "обеспечивать / обеспечить",
+      "question": "кого? + чем?",
+      "case": "ВИНИТЕЛЬНЫЙ + ТВОРИТЕЛЬНЫЙ",
+      "meaning": "prover alguém de algo",
+      "example": "обеспечить сотрудников всем необходимым"
+    },
+    {
+      "construction": "отвечать / ответить за",
+      "question": "за кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ser responsável por",
+      "example": "отвечать за качество работы"
+    },
+    {
+      "construction": "нанимать / нанять",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "contratar",
+      "example": "нанять опытного специалиста"
+    },
+    {
+      "construction": "увольнять / уволить",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "demitir",
+      "example": "уволить сотрудника за нарушение"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u08-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "руководить",
+      "back": "руководить кем? чем?",
+      "explanation": "Sem preposição; творительный падеж direto.",
+      "tags": [
+        "руководить",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u08-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "справляться / справиться",
+      "back": "справляться/справиться с кем? чем?",
+      "explanation": "с + творительный падеж.",
+      "tags": [
+        "справляться с",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u08-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "обеспечивать / обеспечить",
+      "back": "обеспечивать/обеспечить кого? + чем?",
+      "explanation": "duplo complemento: pessoa no винительный, o que se fornece no творительный.",
+      "tags": [
+        "обеспечивать",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u08-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "отвечать / ответить за",
+      "back": "отвечать/ответить за кого? что?",
+      "explanation": "за + винительный падеж.",
+      "tags": [
+        "отвечать за",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u08-e05",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "нанимать / нанять",
+      "back": "нанимать/нанять кого? что?",
+      "explanation": "Sem preposição; винительный падеж.",
+      "tags": [
+        "нанимать",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u08-e06",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "увольнять / уволить",
+      "back": "увольнять/уволить кого? что?",
+      "explanation": "Sem preposição; винительный падеж.",
+      "tags": [
+        "увольнять",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u08-e07",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "prompt": "Это компания, ___ предлагает гибкий график работы.",
+      "options": [
+        "которая",
+        "которую",
+        "которой",
+        "которых"
+      ],
+      "answer": "которая",
+      "explanation": "компания (feminino) é sujeito da subordinada: именительный падеж — которая.",
+      "tags": [
+        "который",
+        "concordância",
+        "именительный падеж"
+      ]
+    },
+    {
+      "id": "u08-e08",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "prompt": "Директор, ___ мы встретили на конференции, оказался очень открытым человеком.",
+      "options": [
+        "который",
+        "которого",
+        "которому",
+        "которым"
+      ],
+      "answer": "которого",
+      "explanation": "мы встретили кого? — который é objeto direto animado da subordinada: винительный падеж.",
+      "tags": [
+        "который",
+        "concordância",
+        "винительный падеж"
+      ]
+    },
+    {
+      "id": "u08-e09",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "prompt": "Фирма, в ___ он работает, занимается разработкой программного обеспечения.",
+      "options": [
+        "которая",
+        "которой",
+        "которую",
+        "которых"
+      ],
+      "answer": "которой",
+      "explanation": "работать где? в чём? — предложный падеж, feminino: в которой.",
+      "tags": [
+        "который",
+        "concordância",
+        "предложный падеж"
+      ]
+    },
+    {
+      "id": "u08-e10",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "prompt": "Коллеги, с ___ я работаю уже пять лет, стали для меня почти семьёй.",
+      "options": [
+        "которых",
+        "которым",
+        "которыми",
+        "которые"
+      ],
+      "answer": "которыми",
+      "explanation": "работать с кем? — творительный падеж plural: с которыми.",
+      "tags": [
+        "который",
+        "concordância",
+        "творительный падеж"
+      ]
+    },
+    {
+      "id": "u08-e11",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "prompt": "Проект, ___ она руководит, должен завершиться в конце года.",
+      "options": [
+        "который",
+        "которого",
+        "которым",
+        "котором"
+      ],
+      "answer": "которым",
+      "explanation": "руководить чем? — творительный падеж, masculino: которым.",
+      "tags": [
+        "который",
+        "руководить",
+        "творительный падеж"
+      ]
+    },
+    {
+      "id": "u08-e12",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "prompt": "Вакансия, о ___ он узнал случайно, оказалась именно тем, что он искал.",
+      "options": [
+        "которая",
+        "которую",
+        "которой",
+        "которых"
+      ],
+      "answer": "которой",
+      "explanation": "узнать о ком? о чём? — предложный падеж, feminino: о которой.",
+      "tags": [
+        "который",
+        "concordância",
+        "предложный падеж"
+      ]
+    },
+    {
+      "id": "u08-e13",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta de который.",
+      "prompt": "Компания, в ___ он мечтал попасть, наконец пригласила его на собеседование.",
+      "explanation": "Duas perguntas em sequência: (1) о que который substitui? компания, feminino singular; (2) que caso a oração interna exige? попасть responde куда? → в + винительный падеж. Feminino винительный = которую.",
+      "tags": [
+        "который",
+        "винительный падеж",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "которую",
+        "которой",
+        "которая",
+        "которого"
+      ],
+      "answer": "которую"
+    },
+    {
+      "id": "u08-e14",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta de который.",
+      "prompt": "Работодатель, ___ он отправил резюме, пригласил его на собеседование через неделю.",
+      "explanation": "который retoma работодатель (masculino) e, dentro da relativa, é o destinatário de отправить: отправить резюме КОМУ? → дательный падеж, sem preposição: которому.",
+      "tags": [
+        "который",
+        "дательный падеж",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "которому",
+        "которого",
+        "которым",
+        "который"
+      ],
+      "answer": "которому"
+    },
+    {
+      "id": "u08-e15",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta de который.",
+      "prompt": "Компания, у ___ нет свободных вакансий, отказала всем кандидатам.",
+      "explanation": "A preposição у sempre exige родительный падеж; компания é feminino, e o родительный feminino de который é которой. A construção «у X нет Y» é a negação de posse padrão.",
+      "tags": [
+        "который",
+        "родительный падеж",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "которой",
+        "которая",
+        "которую",
+        "которого"
+      ],
+      "answer": "которой"
+    },
+    {
+      "id": "u08-e16",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta de который (equivalente a «cujo»).",
+      "prompt": "Специалист, стаж ___ превышает десять лет, легко нашёл новую работу.",
+      "explanation": "«Cujo» em russo é который no родительный падеж, colocado DEPOIS do substantivo possuído: стаж которого. E atenção: который concorda com o possuidor (специалист, masculino), enquanto стаж guarda o caso que a oração interna exige — aqui, именительный, por ser sujeito de превышает.",
+      "tags": [
+        "который",
+        "родительный падеж",
+        "cujo",
+        "múltipla escolha"
+      ],
+      "options": [
+        "которого",
+        "которому",
+        "которым",
+        "который"
+      ],
+      "answer": "которого"
+    },
+    {
+      "id": "u08-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase usa который com a concordância certa?",
+      "explanation": "Gênero e número vêm do antecedente (человек, masculino singular); o caso vem do verbo interno: познакомиться С кем? → творительный падеж = которым.",
+      "tags": [
+        "который",
+        "concordância",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Человек, с которым я познакомился на собеседовании, оказался будущим начальником.",
+        "Человек, с которая я познакомился на собеседовании, оказался будущим начальником.",
+        "Человек, с которого я познакомился на собеседовании, оказался будущим начальником.",
+        "Человек, с которому я познакомился на собеседовании, оказался будущим начальником."
+      ],
+      "answer": "Человек, с которым я познакомился на собеседовании, оказался будущим начальником."
+    },
+    {
+      "id": "u08-e18",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase usa который com a concordância certa?",
+      "explanation": "фирма é feminino, e dentro da relativa é o objeto direto de основал (основать кого? что?) → винительный падеж: которую. A opção «которая» seria sujeito, mas o sujeito ali já é он.",
+      "tags": [
+        "который",
+        "concordância",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Фирма, которую он основал десять лет назад, теперь известна во всей стране.",
+        "Фирма, который он основал десять лет назад, теперь известна во всей стране.",
+        "Фирма, которой он основал десять лет назад, теперь известна во всей стране.",
+        "Фирма, которая он основал десять лет назад, теперь известна во всей стране."
+      ],
+      "answer": "Фирма, которую он основал десять лет назад, теперь известна во всей стране."
+    },
+    {
+      "id": "u08-e19",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com uma oração relativa.",
+      "tokens": [
+        "Собеседование,",
+        "которое",
+        "он",
+        "прошёл",
+        "успешно,",
+        "длилось",
+        "почти",
+        "час"
+      ],
+      "answer": "Собеседование, которое он прошёл успешно, длилось почти час",
+      "explanation": "пройти что? собеседование (neutro); которое no винительный падеж coincide com o nominativo, inanimado.",
+      "tags": [
+        "который",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u08-e20",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com uma oração relativa.",
+      "tokens": [
+        "Работодатель,",
+        "которому",
+        "понравилось",
+        "моё",
+        "резюме,",
+        "предложил",
+        "мне",
+        "встречу"
+      ],
+      "answer": "Работодатель, которому понравилось моё резюме, предложил мне встречу",
+      "explanation": "понравиться кому? — дательный падеж: работодателю → которому.",
+      "tags": [
+        "который",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u08-e21",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a construção russa ao significado correspondente.",
+      "pairs": [
+        {
+          "left": "нанять сотрудника",
+          "right": "contratar um funcionário"
+        },
+        {
+          "left": "уволить сотрудника",
+          "right": "demitir um funcionário"
+        },
+        {
+          "left": "справиться с задачей",
+          "right": "dar conta de uma tarefa"
+        },
+        {
+          "left": "руководить отделом",
+          "right": "chefiar um departamento"
+        },
+        {
+          "left": "отвечать за качество",
+          "right": "ser responsável pela qualidade"
+        },
+        {
+          "left": "обеспечить всем необходимым",
+          "right": "prover de tudo o que é necessário"
+        }
+      ],
+      "explanation": "Vocabulário-chave de contratação e gestão de equipe.",
+      "tags": [
+        "работа",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u08-e22",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Não abra com «Я считаю, что». Use который pelo menos duas vezes com formas diferentes, além de pelo menos três unidades da lista.",
+      "prompt": "«Гибкий график или строгий офисный режим: что лучше для продуктивности?»\n\nUnidades: который · руководить · справляться с · однако · с одной стороны / с другой стороны",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência (especialmente которое/которая/которого conforme a função), léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "который",
+        "ТРКИ-II",
+        "estrutura B2"
+      ]
+    },
+    {
+      "id": "u08-e23",
+      "type": "open_text",
+      "stage": "micro_writing",
+      "difficulty": 2,
+      "instruction": "Escreva 2–3 frases em russo descrevendo um emprego (real ou imaginário). Use который pelo menos uma vez.",
+      "prompt": "Tema: работа моей мечты\nUse: который · обеспечивать · отвечать за",
+      "review_notes": "Verificar concordância de который em gênero/número e se o caso corresponde à função na oração subordinada.",
+      "tags": [
+        "produção escrita",
+        "который",
+        "обеспечивать",
+        "отвечать за"
+      ]
+    },
+    {
+      "id": "u08-e24",
+      "type": "reading",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Leia o anúncio e selecione o candidato que realmente cumpre os requisitos.",
+      "context": "Компания ищет руководителя проекта, который сможет отвечать за международную команду и справляться с несколькими задачами одновременно. Кандидату, которого пригласят на собеседование, необходимо показать опыт работы с клиентами. Компания обеспечивает сотрудников оборудованием, но не предоставляет жильё.",
+      "prompt": "Quem corresponde melhor à vaga?",
+      "options": [
+        "Uma pessoa com experiência com clientes e capacidade de coordenar várias tarefas.",
+        "Uma pessoa sem experiência que precisa obrigatoriamente de moradia da empresa.",
+        "Um especialista que evita responsabilidade por equipes internacionais.",
+        "Um candidato interessado apenas em receber equipamento próprio."
+      ],
+      "answer": "Uma pessoa com experiência com clientes e capacidade de coordenar várias tarefas.",
+      "explanation": "A resposta integra dois requisitos; жильё é explicitamente algo que a empresa não fornece.",
+      "tags": [
+        "leitura",
+        "trabalho",
+        "который"
+      ]
+    },
+    {
+      "id": "u08-e25",
+      "type": "listening",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Ouça um trecho de entrevista e identifique a relação entre as pessoas.",
+      "prompt": "Quem é Serguei?",
+      "audio_text": "Сергей — руководитель, с которым я работаю уже три года. Он отвечает за проект, которым раньше руководила наша коллега Анна, и хорошо справляется с новой командой.",
+      "options": [
+        "O chefe com quem a falante trabalha e que agora responde pelo projeto.",
+        "Um candidato que será demitido antes de assumir o projeto.",
+        "O cliente para quem Anna enviou um currículo.",
+        "Um colega sem relação com a equipe atual."
+      ],
+      "answer": "O chefe com quem a falante trabalha e que agora responde pelo projeto.",
+      "explanation": "с которым retoma Сергей; проект, которым... usa творительный porque руководить кем? чем?.",
+      "tags": [
+        "аудирование",
+        "который",
+        "руководить"
+      ]
+    },
+    {
+      "id": "u08-e26",
+      "type": "listening",
+      "response_type": "input",
+      "stage": "noticing",
+      "difficulty": 3,
+      "instruction": "Ditado de oração relativa: digite a frase completa.",
+      "prompt": "Escreva exatamente a frase ouvida.",
+      "audio_text": "Работодатель, которому я отправил резюме, пригласил меня на собеседование.",
+      "answer": "Работодатель, которому я отправил резюме, пригласил меня на собеседование.",
+      "explanation": "которому está no дательный падеж porque enviar algo a alguém: отправить кому?.",
+      "tags": [
+        "аудирование",
+        "ditado",
+        "который",
+        "дательный падеж"
+      ]
+    }
+  ],
+  "source_note": "Kagan/Kudyma/Miller, «Russian: From Intermediate to Advanced», Глава 2 «Работа и жизнь» · Кузьмина, Склонение местоимения КОТОРЫЙ"
+}

@@ -1,0 +1,244 @@
+{
+  "id": "v04",
+  "unit_id": "u04_aspecto_movimento",
+  "order": 4,
+  "title": "Переезжаем за город?",
+  "theme": "Переезды и дорога",
+  "description": "Um casal que já se mudou quatro vezes pensa em ir morar fora da cidade. Oito construções de movimento: где? куда? откуда?, o aspecto de переезжать/переехать e менять/сменить, meios de transporte e prazos.",
+  "speakers": {"Ольга": "f", "Павел": "m"},
+  "dialogue": {
+    "title": "Последний переезд",
+    "setting": "Pavel e Olga, casados há dez anos, conversam à noite sobre sair de Moscou.",
+    "lines": [
+      {"speaker": "Павел", "ru": "Оля, помнишь, сколько раз мы переезжали за последние десять лет?", "pt": "Olia, lembra quantas vezes nos mudamos nos últimos dez anos?"},
+      {"speaker": "Ольга", "ru": "Четыре раза! И каждый раз я говорила: всё, это последний переезд.", "pt": "Quatro vezes! E toda vez eu dizia: chega, esta é a última mudança."},
+      {"speaker": "Павел", "ru": "А теперь я серьёзно предлагаю переехать за город. Насовсем.", "pt": "E agora estou propondo a sério que a gente se mude para fora da cidade. De vez."},
+      {"speaker": "Ольга", "ru": "За город? А как ты будешь добираться до офиса?", "pt": "Para fora da cidade? E como você vai chegar ao escritório?"},
+      {"speaker": "Павел", "ru": "На электричке. Сорок минут — и я на работе. Зато по выходным не надо будет возвращаться с дачи в пробках.", "pt": "De trem suburbano. Quarenta minutos e estou no trabalho. Em compensação, nos fins de semana não vamos mais voltar da casa de campo no engarrafamento."},
+      {"speaker": "Ольга", "ru": "Это аргумент. Но я не хочу уезжать из Москвы только ради воздуха. Моя работа здесь.", "pt": "É um argumento. Mas não quero ir embora de Moscou só por causa do ar. Meu trabalho é aqui."},
+      {"speaker": "Павел", "ru": "Ты же давно хотела сменить профессию. Дизайнеры спокойно работают удалённо.", "pt": "Mas você queria mudar de profissão há tempos. Designers trabalham remotamente sem problema."},
+      {"speaker": "Ольга", "ru": "Хм. Хорошо, давай перенесём разговор на выходные. Съездим, посмотрим дома и решим.", "pt": "Hum. Tudo bem, vamos deixar a conversa para o fim de semana. Vamos lá, vemos as casas e decidimos."},
+      {"speaker": "Павел", "ru": "Договорились. Только в этот раз мы переедем один раз — и навсегда.", "pt": "Combinado. Só que desta vez vamos nos mudar uma vez — e para sempre."}
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "O que Pavel propõe?",
+      "options": [
+        "Mudar-se de vez para fora da cidade.",
+        "Comprar uma casa de campo para as férias.",
+        "Mudar-se para um apartamento maior no centro.",
+        "Trocar de emprego e morar em outra cidade."
+      ],
+      "answer": "Mudar-se de vez para fora da cidade.",
+      "explanation": "«предлагаю переехать за город. Насовсем»."
+    }
+  ],
+  "items": [
+    {
+      "key": "zagorod",
+      "lemma": "город",
+      "tag": "за городом / за город",
+      "head": "за городом · за город",
+      "regency": "где? → за городом (творительный) · куда? → за город (винительный) · откуда? → из-за города",
+      "case": "творительный × винительный",
+      "pt": "fora da cidade (onde? / para onde?)",
+      "chunk": "переехать за город",
+      "chunk_pt": "mudar-se para fora da cidade",
+      "chunk_wrong": ["переехать за городом", "переехать из-за города", "переехать в город"],
+      "form_note": "Movimento (куда?) → за + винительный. Localização (где?) → за + творительный.",
+      "trap": "O português usa «fora da cidade» para onde e para onde. O russo separa: где? за городом / куда? за город / откуда? из-за города.",
+      "example": {"ru": "Летом мы живём за городом, у бабушки.", "pt": "No verão moramos fora da cidade, na casa da avó.", "extra": "город", "note": "живём где? → за городом (творительный)."},
+      "cloze": {"ru": "Многие москвичи проводят выходные ___.", "answer": "за городом", "wrong": ["за город", "из-за города", "за городе"], "pt": "Muitos moscovitas passam os fins de semana fora da cidade.", "note": "проводить где? → за городом."},
+      "hear": {"ru": "Раньше они жили за городом, а теперь снимают квартиру в центре.", "pt": "Antes moravam fora da cidade; agora alugam um apartamento no centro.", "wrong": ["Antes moravam no centro; agora moram fora da cidade.", "Moram fora da cidade e querem alugar um apartamento no centro.", "Antes moravam fora da cidade; agora compraram um apartamento no centro."], "note": "раньше жили (passado) × теперь снимают (presente, alugar)."}
+    },
+    {
+      "key": "vernutsya",
+      "lemma": "возвращаться",
+      "tag": "вернуться с / из",
+      "head": "возвращаться / вернуться с · из",
+      "regency": "откуда? с чего? (дача, работа, концерт) · из чего? (город, школа) · от кого?",
+      "case": "родительный падеж",
+      "pt": "voltar de",
+      "chunk": "вернуться с дачи",
+      "chunk_pt": "voltar da casa de campo",
+      "chunk_wrong": ["вернуться из дачи", "вернуться с дачей", "вернуться от дачи"],
+      "form_note": "с/из espelham на/в: на даче → с дачи; в городе → из города. De uma pessoa: от (от бабушки).",
+      "trap": "O «de» português não diz qual preposição usar. Pergunte-se onde a pessoa estava: на работе → с работы; в школе → из школы.",
+      "example": {"ru": "Отец вернулся с работы поздно вечером.", "pt": "O pai voltou do trabalho tarde da noite.", "extra": "работе", "note": "на работе → с работы (родительный)."},
+      "cloze": {"ru": "Дети вернулись ___ усталые, но довольные.", "answer": "с экскурсии", "wrong": ["из экскурсии", "с экскурсией", "на экскурсию"], "pt": "As crianças voltaram da excursão cansadas, mas contentes.", "note": "на экскурсии → с экскурсии."},
+      "hear": {"ru": "Мы вернулись из Италии, а они — с Байкала.", "pt": "Nós voltamos da Itália, e eles, do Baikal.", "wrong": ["Nós voltamos do Baikal, e eles, da Itália.", "Nós vamos para a Itália, e eles, para o Baikal.", "Nós voltamos da Itália, e eles ainda estão no Baikal."], "note": "в Италии → из Италии; на Байкале → с Байкала."}
+    },
+    {
+      "key": "uekhat",
+      "lemma": "уезжать",
+      "tag": "уезжать / уехать",
+      "head": "уезжать / уехать",
+      "regency": "откуда? из / с чего? · куда? в / на что?",
+      "case": "родительный + винительный",
+      "pt": "ir embora, partir (de um lugar)",
+      "chunk": "уехать из Москвы",
+      "chunk_pt": "ir embora de Moscou",
+      "chunk_wrong": ["уехать с Москвы", "уехать от Москвы", "уехать в Москву"],
+      "form_note": "у- = afastar-se: уехал = não está mais aqui. при- = chegar: приехал = está aqui.",
+      "trap": "Cidade é в → из: уехать из Москвы. «с Москвы» é erro frequente, até de nativos, mas é não padrão.",
+      "example": {"ru": "Он уехал в командировку на неделю.", "pt": "Ele viajou a trabalho por uma semana.", "extra": "командировке", "note": "куда? → в командировку (винительный); на неделю = por quanto tempo planejado."},
+      "cloze": {"ru": "Каждое лето семья уезжает ___.", "answer": "из города на юг", "wrong": ["с города на юг", "из города в юг", "от города на юг"], "pt": "Todo verão a família sai da cidade rumo ao sul.", "note": "из города (родительный); на юг (direção cardeal com на)."},
+      "hear": {"ru": "Когда я приехал, она уже уехала.", "pt": "Quando eu cheguei, ela já tinha ido embora.", "wrong": ["Quando ela chegou, eu já tinha ido embora.", "Quando eu cheguei, ela ainda não tinha chegado.", "Quando eu fui embora, ela já tinha chegado."], "note": "приехал = cheguei; уехала = foi embora. Quem faz o quê: я приехал, она уехала."}
+    },
+    {
+      "key": "pereezzhat",
+      "lemma": "переезжать",
+      "tag": "переезжать / переехать",
+      "head": "переезжать / переехать",
+      "regency": "откуда? куда? · несовершенный: repetição, processo · совершенный: uma mudança concluída",
+      "case": "aspecto",
+      "pt": "mudar-se (de casa, de cidade)",
+      "chunk": "часто переезжать",
+      "chunk_pt": "mudar-se com frequência",
+      "chunk_wrong": ["часто переехать", "часто уезжать", "часто приезжать"],
+      "form_note": "Repetição (часто, каждый год, четыре раза como série) → несовершенный.",
+      "trap": "Cada mudança terminou, mas a série é apresentada como repetição: «мы четыре раза переезжали». Uma mudança concreta: «в 2020 году мы переехали».",
+      "example": {"ru": "В детстве я часто переезжал из города в город.", "pt": "Na infância eu me mudava com frequência de cidade em cidade.", "extra": "переехал", "note": "часто → несовершенный: переезжал."},
+      "cloze": {"ru": "В прошлом году наш офис наконец ___ в центр.", "answer": "переехал", "wrong": ["переезжал", "переедет", "переезжает"], "pt": "No ano passado nosso escritório finalmente se mudou para o centro.", "note": "Uma mudança concreta e concluída (наконец, в прошлом году) → совершенный."},
+      "hear": {"ru": "Они переезжали три раза, пока не купили свою квартиру.", "pt": "Eles se mudaram três vezes até comprarem o próprio apartamento.", "wrong": ["Eles se mudaram três vezes depois de comprarem o próprio apartamento.", "Eles compraram três apartamentos e se mudaram uma vez.", "Eles vão se mudar três vezes até comprarem o próprio apartamento."], "note": "пока не купили = até comprarem; переезжали = série de mudanças."}
+    },
+    {
+      "key": "smenit",
+      "lemma": "менять",
+      "tag": "менять / сменить",
+      "head": "менять / сменить",
+      "regency": "что? · несовершенный: trocar várias vezes · совершенный: trocar uma vez",
+      "case": "винительный падеж",
+      "pt": "trocar, mudar (de algo)",
+      "chunk": "сменить профессию",
+      "chunk_pt": "mudar de profissão",
+      "chunk_wrong": ["сменить профессией", "сменить с профессии", "смениться профессией"],
+      "form_note": "Objeto direto: сменить работу, квартиру, профессию.",
+      "trap": "«Mudar DE profissão» tem preposição em português; em russo, não: сменить профессию.",
+      "example": {"ru": "За пять лет она три раза меняла работу.", "pt": "Em cinco anos ela trocou de emprego três vezes.", "extra": "сменила", "note": "Série de trocas → несовершенный: меняла."},
+      "cloze": {"ru": "После сорока лет он решился ___ и стал учителем.", "answer": "сменить профессию", "wrong": ["менять профессию", "сменить профессией", "смениться профессией"], "pt": "Depois dos quarenta ele teve coragem de mudar de profissão e virou professor.", "note": "Uma troca única, com resultado → сменить."},
+      "hear": {"ru": "Мы сменили квартиру, но не район.", "pt": "Trocamos de apartamento, mas não de bairro.", "wrong": ["Trocamos de bairro, mas não de apartamento.", "Não trocamos nem de apartamento nem de bairro.", "Vamos trocar de apartamento, mas não de bairro."], "note": "сменили = passado perfectivo; «но не район» nega só o bairro."}
+    },
+    {
+      "key": "perenesti",
+      "lemma": "переносить",
+      "tag": "перенести на",
+      "head": "переносить / перенести",
+      "regency": "что? на когда? (на + винительный) · с чего? на что?",
+      "case": "винительный падеж",
+      "pt": "adiar, remarcar; transferir",
+      "chunk": "перенести встречу на пятницу",
+      "chunk_pt": "remarcar a reunião para sexta",
+      "chunk_wrong": ["перенести встречу в пятницу", "перенести встречу к пятнице", "перенести встречей на пятницу"],
+      "form_note": "A nova data vem com на + винительный: на завтра, на следующую неделю.",
+      "trap": "в пятницу = na sexta (quando algo acontece). Para onde a data vai → на пятницу.",
+      "example": {"ru": "Из-за дождя концерт перенесли на воскресенье.", "pt": "Por causa da chuva, o show foi remarcado para domingo.", "extra": "воскресенья", "note": "перенести на что? → на воскресенье (винительный = nominativo, neutro)."},
+      "cloze": {"ru": "Экзамен пришлось перенести ___.", "answer": "на следующую неделю", "wrong": ["в следующую неделю", "на следующей неделе", "к следующей неделе"], "pt": "Foi preciso adiar a prova para a semana seguinte.", "note": "на + винительный: на следующую неделю."},
+      "hear": {"ru": "Врач перенёс мой приём с понедельника на среду.", "pt": "O médico remarcou minha consulta de segunda para quarta.", "wrong": ["O médico remarcou minha consulta de quarta para segunda.", "O médico cancelou minha consulta de segunda.", "O médico vai me atender na segunda e na quarta."], "note": "с понедельника (de) → на среду (para)."}
+    },
+    {
+      "key": "dobiratsya",
+      "lemma": "добираться",
+      "tag": "добираться до",
+      "head": "добираться / добраться до",
+      "regency": "до кого? чего? · на чём? · за сколько?",
+      "case": "родительный падеж",
+      "pt": "chegar a (com esforço, com deslocamento)",
+      "chunk": "добраться до центра",
+      "chunk_pt": "chegar até o centro",
+      "chunk_wrong": ["добраться до центру", "добраться к центру", "добраться до центре"],
+      "form_note": "до + родительный marca o ponto final do trajeto.",
+      "trap": "«Chegar ao centro» puxa в ou к. Com добираться, o normal é до + родительный: добраться до дома, до вокзала.",
+      "example": {"ru": "Как лучше добраться до аэропорта?", "pt": "Qual é a melhor forma de chegar ao aeroporto?", "extra": "аэропорту", "note": "до аэропорта: родительный masculino."},
+      "cloze": {"ru": "Зимой до этой деревни можно добраться только ___.", "answer": "на вертолёте", "wrong": ["с вертолётом", "на вертолёт", "по вертолёту"], "pt": "No inverno só se chega a esta aldeia de helicóptero.", "note": "Meio de transporte: на + предложный."},
+      "hear": {"ru": "До работы я добираюсь за час, а жена — за двадцать минут.", "pt": "Eu levo uma hora para chegar ao trabalho; minha esposa, vinte minutos.", "wrong": ["Minha esposa leva uma hora para chegar ao trabalho; eu, vinte minutos.", "Eu levava uma hora para chegar ao trabalho; agora levo vinte minutos.", "Eu trabalho uma hora por dia, e minha esposa, vinte minutos."], "note": "за час = em (quanto tempo); o sujeito da segunda parte é жена."}
+    },
+    {
+      "key": "ekhat_na",
+      "lemma": "ехать",
+      "tag": "ехать на чём",
+      "head": "ехать / ездить на чём?",
+      "regency": "на чём? → на + предложный (транспорт)",
+      "case": "предложный падеж",
+      "pt": "ir de (meio de transporte)",
+      "chunk": "ехать на электричке",
+      "chunk_pt": "ir de trem suburbano",
+      "chunk_wrong": ["ехать с электричкой", "ехать на электричку", "ехать в электричку"],
+      "form_note": "Meio de transporte: на + предложный. на электричку (винительный) seria o destino: ir pegar o trem.",
+      "trap": "«Ir de trem» não tem de/с: ехать на поезде, на машине, на метро. «с машиной» = levando o carro junto.",
+      "example": {"ru": "Мой отец всю жизнь ездил на работу на велосипеде.", "pt": "Meu pai foi para o trabalho de bicicleta a vida toda.", "extra": "велосипед", "note": "на работу (куда?, винительный) + на велосипеде (на чём?, предложный)."},
+      "cloze": {"ru": "Туристы решили ехать до Казани ___.", "answer": "на ночном поезде", "wrong": ["с ночным поездом", "на ночной поезд", "ночного поезда"], "pt": "Os turistas decidiram ir até Kazan de trem noturno.", "note": "на чём? → на ночном поезде (предложный)."},
+      "hear": {"ru": "Он поехал на такси, а мы пошли пешком.", "pt": "Ele foi de táxi, e nós fomos a pé.", "wrong": ["Nós fomos de táxi, e ele foi a pé.", "Ele foi pegar um táxi, e nós fomos junto.", "Ele vai de táxi, e nós vamos a pé."], "note": "он поехал на такси; мы пошли пешком. Passado (поехал, пошли)."}
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Como Pavel pretende ir ao escritório?",
+      "options": [
+        "De trem suburbano, uns quarenta minutos.",
+        "De carro, uma hora e meia.",
+        "De ônibus, vinte minutos.",
+        "Vai trabalhar de casa todos os dias."
+      ],
+      "answer": "De trem suburbano, uns quarenta minutos.",
+      "explanation": "«На электричке. Сорок минут — и я на работе»."
+    },
+    {
+      "prompt": "Por que Olga hesita?",
+      "options": [
+        "O trabalho dela é em Moscou.",
+        "Ela não gosta de casas de campo.",
+        "Eles já se mudaram este ano.",
+        "Ela quer mudar de profissão antes."
+      ],
+      "answer": "O trabalho dela é em Moscou.",
+      "explanation": "«я не хочу уезжать из Москвы только ради воздуха. Моя работа здесь». Mudar de profissão é ideia do Pavel."
+    }
+  ],
+  "reconstruct": [
+    {"line": 0, "gap": "переезжали", "wrong": ["переехали", "уезжали", "приезжали"], "note": "Série de mudanças → несовершенный: переезжали."},
+    {"line": 2, "gap": "переехать за город", "wrong": ["переехать за городом", "переезжать за город", "переехать из-за города"], "note": "Uma mudança definitiva (насовсем) → переехать; куда? → за город."},
+    {"line": 3, "gap": "добираться до офиса", "wrong": ["добираться до офису", "добираться на офис", "добираться к офису"], "note": "добираться до + родительный."},
+    {"line": 7, "gap": "перенесём разговор на выходные", "wrong": ["перенесём разговор в выходные", "переносим разговор на выходных", "перенесём разговор к выходным"], "note": "перенести что? на когда? → на выходные (винительный plural)."}
+  ],
+  "match": {
+    "instruction": "Onde? Para onde? De onde? Relacione cada forma ao sentido.",
+    "prompt": "A preposição e o caso mudam a direção.",
+    "pairs": [
+      {"left": "за городом", "right": "fora da cidade (onde)"},
+      {"left": "за город", "right": "para fora da cidade"},
+      {"left": "из-за города", "right": "de fora da cidade"},
+      {"left": "на даче", "right": "na casa de campo"},
+      {"left": "на дачу", "right": "para a casa de campo"},
+      {"left": "с дачи", "right": "da casa de campo"}
+    ],
+    "explanation": "где? за + творительный, на + предложный; куда? за / на + винительный; откуда? из-за, с + родительный."
+  },
+  "replies": [
+    {
+      "speaker": "Ольга",
+      "you": "Павел",
+      "ru": "Ты во сколько сегодня вернёшься из офиса?",
+      "prompt": "Olga pergunta a que horas você volta hoje. Responda que volta do trabalho até as oito.",
+      "answer": "Вернусь с работы к восьми.",
+      "wrong": ["Вернусь из работы к восьми.", "Вернусь с работой к восьми.", "Вернулся с работы к восьми."],
+      "explanation": "на работе → с работы. A pergunta é sobre hoje (futuro): вернусь, não вернулся."
+    },
+    {
+      "speaker": "Павел",
+      "you": "Ольга",
+      "ru": "Ну что, в субботу едем смотреть дома?",
+      "prompt": "Pavel confirma a visita de sábado. Aceite, mas diga que vão de trem, não de carro.",
+      "answer": "Давай, но поедем на электричке, а не на машине.",
+      "wrong": ["Давай, но поедем с электричкой, а не с машиной.", "Давай, но поедем на электричку, а не на машину.", "Давай, но поедем по электричке, а не по машине."],
+      "explanation": "Meio de transporte: на + предложный — на электричке, на машине."
+    }
+  ],
+  "writing": {
+    "prompt": "Conte a história das mudanças da sua família: quantas vezes se mudaram, de onde para onde, e qual foi a mudança mais importante.",
+    "use": ["переезжать / переехать", "за городом / за город", "вернуться с / из", "уехать из", "добираться до"],
+    "words": "50–70",
+    "notes": "Verificar aspecto (série × evento único), где/куда/откуда (за городом/за город/из-за города, с/из), до + родительный, на + предложный para transporte."
+  }
+}

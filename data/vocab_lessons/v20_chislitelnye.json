@@ -1,0 +1,580 @@
+{
+  "id": "v20",
+  "unit_id": "u20_chislitelnye",
+  "order": 20,
+  "title": "Экономика в цифрах",
+  "theme": "Uma jornalista e um economista explicam dados fictícios de um boletim econômico",
+  "description": "Uma jornalista e um economista explicam dados fictícios de um boletim econômico. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Ведущая": "f",
+    "Экономист": "m"
+  },
+  "dialogue": {
+    "title": "Экономика в цифрах",
+    "setting": "Uma jornalista e um economista explicam dados fictícios de um boletim econômico",
+    "lines": [
+      {
+        "speaker": "Ведущая",
+        "ru": "В нашем учебном обзоре расходы на жильё составляют двадцать процентов бюджета.",
+        "pt": "Em nosso boletim didático, as despesas de moradia correspondem a vinte por cento do orçamento."
+      },
+      {
+        "speaker": "Экономист",
+        "ru": "За год они успели достичь высокого уровня, особенно в крупных городах.",
+        "pt": "Ao longo do ano, elas chegaram a um nível elevado, principalmente nas grandes cidades."
+      },
+      {
+        "speaker": "Ведущая",
+        "ru": "При этом доходы смогли увеличиться на десять процентов. Этого достаточно?",
+        "pt": "Ao mesmo tempo, a renda pôde aumentar em dez por cento. Isso é suficiente?"
+      },
+      {
+        "speaker": "Экономист",
+        "ru": "Не всегда. Безработица должна снизиться до трёх процентов, чтобы ситуация улучшилась.",
+        "pt": "Nem sempre. O desemprego precisa cair até três por cento para que a situação melhore."
+      },
+      {
+        "speaker": "Ведущая",
+        "ru": "А число заказов у небольшой фирмы смогло увеличиться в три раза.",
+        "pt": "E o número de pedidos de uma pequena empresa pôde aumentar para três vezes o valor inicial."
+      },
+      {
+        "speaker": "Экономист",
+        "ru": "Да, но рост может приходиться на долю услуг, а не промышленности.",
+        "pt": "Sim, mas o crescimento pode corresponder à parcela dos serviços, e não da indústria."
+      },
+      {
+        "speaker": "Ведущая",
+        "ru": "Семьи продолжают тратить деньги на образование, несмотря на рост цен.",
+        "pt": "As famílias continuam gastando dinheiro com educação, apesar do aumento de preços."
+      },
+      {
+        "speaker": "Экономист",
+        "ru": "В этой модели на одного студента уходит в среднем пять тысяч рублей в месяц.",
+        "pt": "Neste modelo, gasta-se, em média, cinco mil rublos por mês por estudante."
+      },
+      {
+        "speaker": "Ведущая",
+        "ru": "Значит, нельзя судить о каждой семье только по среднему показателю?",
+        "pt": "Então não podemos julgar cada família apenas pela média?"
+      },
+      {
+        "speaker": "Экономист",
+        "ru": "Именно. Среднее скрывает различия; нужно сравнивать группы и реальные расходы.",
+        "pt": "Exatamente. A média esconde diferenças; é preciso comparar grupos e despesas reais."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual cuidado o economista recomenda?",
+      "options": [
+        "Comparar grupos, pois a média esconde diferenças.",
+        "Usar apenas a média para avaliar cada família.",
+        "Confundir o aumento com o valor final da taxa.",
+        "Tomar o setor industrial como único setor ativo."
+      ],
+      "answer": "Comparar grupos, pois a média esconde diferenças.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "составлять",
+      "tag": "составлять / составить",
+      "head": "составлять / составить",
+      "regency": "составлять сколько? / составить что?",
+      "case": "винительный падеж",
+      "pt": "corresponder a vinte por cento",
+      "chunk": "составлять двадцать процентов",
+      "chunk_pt": "corresponder a vinte por cento",
+      "chunk_wrong": [
+        "составлять двадцати процентов",
+        "составлять двадцати процентам",
+        "составлять двадцатью процентами"
+      ],
+      "form_note": "составлять descreve o valor ou a proporção; составить também significa elaborar algo, como составить план.",
+      "trap": "составлять descreve o valor ou a proporção; составить também significa elaborar algo, como составить план.",
+      "example": {
+        "ru": "Расходы составили половину бюджета.",
+        "pt": "As despesas corresponderam à metade do orçamento.",
+        "extra": "половиной",
+        "note": "составлять descreve o valor ou a proporção; составить também significa elaborar algo, como составить план."
+      },
+      "cloze": {
+        "ru": "Доля транспорта составляет ___.",
+        "answer": "треть бюджета",
+        "wrong": [
+          "третью бюджета",
+          "трети бюджетом",
+          "треть бюджет"
+        ],
+        "pt": "A parcela do transporte corresponde a um terço do orçamento.",
+        "note": "составлять descreve o valor ou a proporção; составить também significa elaborar algo, como составить план."
+      },
+      "hear": {
+        "ru": "Расходы семьи составили тридцать тысяч рублей.",
+        "pt": "As despesas da família somaram trinta mil rublos.",
+        "wrong": [
+          "As despesas da família somarão trinta mil rublos.",
+          "As despesas da família não somaram trinta mil rublos.",
+          "As receitas da família somaram trinta mil rublos."
+        ],
+        "note": "составлять descreve o valor ou a proporção; составить também significa elaborar algo, como составить план."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "достигать",
+      "tag": "достигать / достичь уровня",
+      "head": "достигать / достичь уровня",
+      "regency": "достигать / достичь чего?",
+      "case": "родительный падеж",
+      "pt": "atingir um nível elevado",
+      "chunk": "достичь высокого уровня",
+      "chunk_pt": "atingir um nível elevado",
+      "chunk_wrong": [
+        "достичь высокий уровень",
+        "достичь высокому уровню",
+        "достичь высоким уровнем"
+      ],
+      "form_note": "O nível atingido usa достигать чего? + родительный падеж, incluindo o numeral declinado.",
+      "trap": "O nível atingido usa достигать чего? + родительный падеж, incluindo o numeral declinado.",
+      "example": {
+        "ru": "Инфляция достигла пяти процентов.",
+        "pt": "A inflação atingiu cinco por cento.",
+        "extra": "процентам",
+        "note": "O nível atingido usa достигать чего? + родительный падеж, incluindo o numeral declinado."
+      },
+      "cloze": {
+        "ru": "Доходы достигли ___.",
+        "answer": "прежнего уровня",
+        "wrong": [
+          "прежний уровень",
+          "прежнему уровню",
+          "прежним уровнем"
+        ],
+        "pt": "A renda atingiu o nível anterior.",
+        "note": "O nível atingido usa достигать чего? + родительный падеж, incluindo o numeral declinado."
+      },
+      "hear": {
+        "ru": "Цена достигла двух тысяч рублей.",
+        "pt": "O preço atingiu dois mil rublos.",
+        "wrong": [
+          "O preço atingirá dois mil rublos.",
+          "O preço não atingiu dois mil rublos.",
+          "O desconto atingiu dois mil rublos."
+        ],
+        "note": "O nível atingido usa достигать чего? + родительный падеж, incluindo o numeral declinado."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "увеличиваться",
+      "tag": "увеличиться на",
+      "head": "увеличиться на",
+      "regency": "увеличиться на сколько?",
+      "case": "винительный падеж",
+      "pt": "aumentar em dez por cento",
+      "chunk": "увеличиться на десять процентов",
+      "chunk_pt": "aumentar em dez por cento",
+      "chunk_wrong": [
+        "увеличиться на десяти процентов",
+        "увеличиться на десяти процентам",
+        "увеличиться на десятью процентами"
+      ],
+      "form_note": "на сколько? mede a variação; до скольких? marca o valor final. Não troque aumento relativo por nível atingido.",
+      "trap": "на сколько? mede a variação; до скольких? marca o valor final. Não troque aumento relativo por nível atingido.",
+      "example": {
+        "ru": "Производство увеличилось на четверть.",
+        "pt": "A produção aumentou em um quarto.",
+        "extra": "четверти",
+        "note": "на сколько? mede a variação; до скольких? marca o valor final. Não troque aumento relativo por nível atingido."
+      },
+      "cloze": {
+        "ru": "Число заказов увеличилось ___.",
+        "answer": "на двести единиц",
+        "wrong": [
+          "на двухсот единиц",
+          "на двумстам единицам",
+          "на двумястами единицами"
+        ],
+        "pt": "O número de pedidos aumentou em duzentas unidades.",
+        "note": "на сколько? mede a variação; до скольких? marca o valor final. Não troque aumento relativo por nível atingido."
+      },
+      "hear": {
+        "ru": "Доход семьи увеличился на пять процентов.",
+        "pt": "A renda da família aumentou em cinco por cento.",
+        "wrong": [
+          "A renda da família aumentará em cinco por cento.",
+          "A renda da família não aumentou em cinco por cento.",
+          "A renda da família aumentou até cinco por cento."
+        ],
+        "note": "на сколько? mede a variação; до скольких? marca o valor final. Não troque aumento relativo por nível atingido."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "снижаться",
+      "tag": "снизиться до",
+      "head": "снизиться до",
+      "regency": "снизиться до скольких?",
+      "case": "родительный падеж",
+      "pt": "cair até três por cento",
+      "chunk": "снизиться до трёх процентов",
+      "chunk_pt": "cair até três por cento",
+      "chunk_wrong": [
+        "снизиться до три процента",
+        "снизиться до трём процентам",
+        "снизиться до тремя процентами"
+      ],
+      "form_note": "до скольких? é o nível final e usa родительный падеж; на сколько? seria o tamanho da redução.",
+      "trap": "до скольких? é o nível final e usa родительный падеж; на сколько? seria o tamanho da redução.",
+      "example": {
+        "ru": "Цена снизилась до ста рублей.",
+        "pt": "O preço caiu até cem rublos.",
+        "extra": "рублям",
+        "note": "до скольких? é o nível final e usa родительный падеж; на сколько? seria o tamanho da redução."
+      },
+      "cloze": {
+        "ru": "Безработица снизилась ___.",
+        "answer": "до четырёх процентов",
+        "wrong": [
+          "до четыре процента",
+          "до четырём процентам",
+          "до четырьмя процентами"
+        ],
+        "pt": "O desemprego caiu até quatro por cento.",
+        "note": "до скольких? é o nível final e usa родительный падеж; на сколько? seria o tamanho da redução."
+      },
+      "hear": {
+        "ru": "Ставка снизилась до шести процентов.",
+        "pt": "A taxa caiu até seis por cento.",
+        "wrong": [
+          "A taxa cairá até seis por cento.",
+          "A taxa não caiu até seis por cento.",
+          "A taxa caiu em seis por cento."
+        ],
+        "note": "до скольких? é o nível final e usa родительный падеж; на сколько? seria o tamanho da redução."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "раз",
+      "tag": "в … раза / раз",
+      "head": "в … раза / раз",
+      "regency": "увеличиться в сколько раз?",
+      "case": "винительный падеж",
+      "pt": "aumentar para três vezes o valor inicial",
+      "chunk": "увеличиться в три раза",
+      "chunk_pt": "aumentar para três vezes o valor inicial",
+      "chunk_wrong": [
+        "увеличиться в трёх раз",
+        "увеличиться в трём разам",
+        "увеличиться в тремя разами"
+      ],
+      "form_note": "2–4: раза; 5 e mais: раз. в три раза significa valor final triplo, não aumento de apenas três unidades.",
+      "trap": "2–4: раза; 5 e mais: раз. в три раза significa valor final triplo, não aumento de apenas três unidades.",
+      "example": {
+        "ru": "Продажи выросли в пять раз.",
+        "pt": "As vendas aumentaram para cinco vezes o valor inicial.",
+        "extra": "разами",
+        "note": "2–4: раза; 5 e mais: раз. в три раза significa valor final triplo, não aumento de apenas três unidades."
+      },
+      "cloze": {
+        "ru": "Прибыль выросла ___.",
+        "answer": "в два раза",
+        "wrong": [
+          "в двух раз",
+          "в двум разам",
+          "в двумя разами"
+        ],
+        "pt": "O lucro aumentou para duas vezes o valor inicial.",
+        "note": "2–4: раза; 5 e mais: раз. в три раза significa valor final triplo, não aumento de apenas três unidades."
+      },
+      "hear": {
+        "ru": "Расходы выросли в четыре раза, а доходы в два.",
+        "pt": "As despesas quadruplicaram, e a renda duplicou.",
+        "wrong": [
+          "As despesas duplicaram, e a renda quadruplicou.",
+          "As despesas quadruplicarão, e a renda duplicará.",
+          "As despesas não quadruplicaram, e a renda duplicou."
+        ],
+        "note": "2–4: раза; 5 e mais: раз. в три раза significa valor final triplo, não aumento de apenas três unidades."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "приходиться",
+      "tag": "приходиться на долю",
+      "head": "приходиться на долю",
+      "regency": "приходиться на что? / на долю кого? чего?",
+      "case": "винительный падеж / родительный падеж",
+      "pt": "corresponder à parcela dos serviços",
+      "chunk": "приходиться на долю услуг",
+      "chunk_pt": "corresponder à parcela dos serviços",
+      "chunk_wrong": [
+        "приходиться на доле услуг",
+        "приходиться на долей услуг",
+        "приходиться на долю услугам"
+      ],
+      "form_note": "на что? marca a parcela atribuída; em на долю чего?, долю fica no винительный падеж e o setor no родительный падеж.",
+      "trap": "на что? marca a parcela atribuída; em на долю чего?, долю fica no винительный падеж e o setor no родительный падеж.",
+      "example": {
+        "ru": "На экспорт приходится половина продукции.",
+        "pt": "Metade da produção corresponde às exportações.",
+        "extra": "экспорте",
+        "note": "на что? marca a parcela atribuída; em на долю чего?, долю fica no винительный падеж e o setor no родительный падеж."
+      },
+      "cloze": {
+        "ru": "Треть расходов приходится ___.",
+        "answer": "на оплату жилья",
+        "wrong": [
+          "на оплате жилья",
+          "на оплатой жилья",
+          "на оплаты жилья"
+        ],
+        "pt": "Um terço das despesas corresponde ao pagamento da moradia.",
+        "note": "на что? marca a parcela atribuída; em на долю чего?, долю fica no винительный падеж e o setor no родительный падеж."
+      },
+      "hear": {
+        "ru": "На транспорт приходилась четверть расходов семьи.",
+        "pt": "Um quarto das despesas da família correspondia ao transporte.",
+        "wrong": [
+          "Um quarto das despesas da família corresponderá ao transporte.",
+          "Um quarto das despesas da família não correspondia ao transporte.",
+          "Um quarto da renda da família correspondia ao transporte."
+        ],
+        "note": "на что? marca a parcela atribuída; em на долю чего?, долю fica no винительный падеж e o setor no родительный падеж."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "тратить",
+      "tag": "тратить / потратить на",
+      "head": "тратить / потратить на",
+      "regency": "тратить / потратить что? на что?",
+      "case": "винительный падеж",
+      "pt": "gastar dinheiro com educação",
+      "chunk": "тратить деньги на образование",
+      "chunk_pt": "gastar dinheiro com educação",
+      "chunk_wrong": [
+        "тратить деньги на образовании",
+        "тратить деньги на образования",
+        "тратить деньги на образованием"
+      ],
+      "form_note": "тратить на что? indica o destino do gasto; não use с por causa de «gastar com».",
+      "trap": "тратить на что? indica o destino do gasto; não use с por causa de «gastar com».",
+      "example": {
+        "ru": "Мы потратили премию на ремонт.",
+        "pt": "Gastamos o bônus com a reforma.",
+        "extra": "ремонте",
+        "note": "тратить на что? indica o destino do gasto; não use с por causa de «gastar com»."
+      },
+      "cloze": {
+        "ru": "Семья тратит много денег ___.",
+        "answer": "на свежие продукты",
+        "wrong": [
+          "на свежих продуктах",
+          "на свежих продуктов",
+          "на свежими продуктами"
+        ],
+        "pt": "A família gasta muito dinheiro com alimentos frescos.",
+        "note": "тратить на что? indica o destino do gasto; não use с por causa de «gastar com»."
+      },
+      "hear": {
+        "ru": "Мать потратила деньги на обучение сына.",
+        "pt": "A mãe gastou dinheiro com a formação do filho.",
+        "wrong": [
+          "O filho gastou dinheiro com a formação da mãe.",
+          "A mãe não gastou dinheiro com a formação do filho.",
+          "A mãe gastará dinheiro com a formação do filho."
+        ],
+        "note": "тратить на что? indica o destino do gasto; não use с por causa de «gastar com»."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "средний",
+      "tag": "в среднем",
+      "head": "в среднем",
+      "regency": "в среднем сколько?",
+      "case": "устойчивое выражение",
+      "pt": "em média cinco mil",
+      "chunk": "в среднем пять тысяч",
+      "chunk_pt": "em média cinco mil",
+      "chunk_wrong": [
+        "в среднее пять тысяч",
+        "в среднего пять тысяч",
+        "в среднему пять тысяч"
+      ],
+      "form_note": "в среднем é uma expressão fixa; não flexione a palavra pela quantidade que vem depois.",
+      "trap": "в среднем é uma expressão fixa; não flexione a palavra pela quantidade que vem depois.",
+      "example": {
+        "ru": "В среднем дорога занимает час.",
+        "pt": "Em média, o trajeto leva uma hora.",
+        "extra": "среднее",
+        "note": "в среднем é uma expressão fixa; não flexione a palavra pela quantidade que vem depois."
+      },
+      "cloze": {
+        "ru": "Семья зарабатывает ___ сорок тысяч рублей.",
+        "answer": "в среднем",
+        "wrong": [
+          "в среднее",
+          "в среднего",
+          "в среднему"
+        ],
+        "pt": "A família ganha, em média, quarenta mil rublos.",
+        "note": "в среднем é uma expressão fixa; não flexione a palavra pela quantidade que vem depois."
+      },
+      "hear": {
+        "ru": "В среднем отец тратил на дорогу час в день.",
+        "pt": "Em média, o pai gastava uma hora por dia no trajeto.",
+        "wrong": [
+          "Em média, o pai gastará uma hora por dia no trajeto.",
+          "Em média, o pai não gastava uma hora por dia no trajeto.",
+          "Em média, o filho gastava uma hora por dia no trajeto."
+        ],
+        "note": "в среднем é uma expressão fixa; não flexione a palavra pela quantidade que vem depois."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Qual foi o aumento da renda no boletim?",
+      "options": [
+        "A renda aumentou em dez por cento.",
+        "A renda caiu até dez por cento.",
+        "A renda aumentou para dez vezes o valor.",
+        "A renda caiu em três por cento."
+      ],
+      "answer": "A renda aumentou em dez por cento.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "A que se referem os cinco mil rublos?",
+      "options": [
+        "Ao gasto médio mensal por estudante no modelo.",
+        "Ao custo total anual de todos os estudantes.",
+        "Ao salário mensal mínimo de um economista.",
+        "Ao aluguel diário de cada família do modelo."
+      ],
+      "answer": "Ao gasto médio mensal por estudante no modelo.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "двадцать процентов",
+      "wrong": [
+        "двадцати процентов",
+        "двадцати процентам",
+        "двадцатью процентами"
+      ],
+      "note": "составлять descreve o valor ou a proporção; составить também significa elaborar algo, como составить план."
+    },
+    {
+      "line": 2,
+      "gap": "на десять процентов",
+      "wrong": [
+        "на десяти процентов",
+        "на десяти процентам",
+        "на десятью процентами"
+      ],
+      "note": "на сколько? mede a variação; до скольких? marca o valor final. Não troque aumento relativo por nível atingido."
+    },
+    {
+      "line": 3,
+      "gap": "до трёх процентов",
+      "wrong": [
+        "до три процента",
+        "до трём процентам",
+        "до тремя процентами"
+      ],
+      "note": "до скольких? é o nível final e usa родительный падеж; на сколько? seria o tamanho da redução."
+    },
+    {
+      "line": 7,
+      "gap": "в среднем",
+      "wrong": [
+        "в среднее",
+        "в среднего",
+        "в среднему"
+      ],
+      "note": "в среднем é uma expressão fixa; não flexione a palavra pela quantidade que vem depois."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "составлять двадцать процентов",
+        "right": "corresponder a vinte por cento"
+      },
+      {
+        "left": "достичь высокого уровня",
+        "right": "atingir um nível elevado"
+      },
+      {
+        "left": "увеличиться на десять процентов",
+        "right": "aumentar em dez por cento"
+      },
+      {
+        "left": "снизиться до трёх процентов",
+        "right": "cair até três por cento"
+      },
+      {
+        "left": "увеличиться в три раза",
+        "right": "aumentar para três vezes o valor inicial"
+      },
+      {
+        "left": "приходиться на долю услуг",
+        "right": "corresponder à parcela dos serviços"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Ведущая",
+      "you": "Экономист",
+      "ru": "Какую долю бюджета могут занимать эти расходы?",
+      "prompt": "Informe a proporção dos gastos.",
+      "answer": "Они могут составлять двадцать процентов.",
+      "wrong": [
+        "Они могут составлять двадцати процентов.",
+        "Они могут составлять двадцати процентам.",
+        "Они могут составлять двадцатью процентами."
+      ],
+      "explanation": "составлять descreve o valor ou a proporção; составить também significa elaborar algo, como составить план."
+    },
+    {
+      "speaker": "Экономист",
+      "you": "Ведущая",
+      "ru": "Какой результат может показать этот показатель?",
+      "prompt": "Informe o nível que o indicador pode atingir.",
+      "answer": "Он может достичь высокого уровня.",
+      "wrong": [
+        "Он может достичь высокий уровень.",
+        "Он может достичь высокому уровню.",
+        "Он может достичь высоким уровнем."
+      ],
+      "explanation": "O nível atingido usa достигать чего? + родительный падеж, incluindo o numeral declinado."
+    }
+  ],
+  "writing": {
+    "prompt": "Comente um orçamento fictício. Informe proporção, variação e média, deixando claro quando o número é aumento e quando é nível final.",
+    "use": [
+      "составлять / составить",
+      "достигать / достичь уровня",
+      "увеличиться на",
+      "снизиться до",
+      "в … раза / раз"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: составлять сколько? / составить что?; достигать / достичь чего?; увеличиться на сколько?; снизиться до скольких?; увеличиться в сколько раз?; приходиться на что? / на долю кого? чего?; тратить / потратить что? на что?; в среднем сколько?."
+  }
+}

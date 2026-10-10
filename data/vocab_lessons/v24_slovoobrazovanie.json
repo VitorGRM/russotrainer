@@ -1,0 +1,580 @@
+{
+  "id": "v24",
+  "unit_id": "u24_slovoobrazovanie",
+  "order": 24,
+  "title": "Семинар: проверяем гипотезу",
+  "theme": "Dois pesquisadores discutem uma apresentação em um seminário universitário",
+  "description": "Dois pesquisadores discutem uma apresentação em um seminário universitário. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Ольга": "f",
+    "Антон": "m"
+  },
+  "dialogue": {
+    "title": "Семинар: проверяем гипотезу",
+    "setting": "Dois pesquisadores discutem uma apresentação em um seminário universitário",
+    "lines": [
+      {
+        "speaker": "Ольга",
+        "ru": "Не стоит недооценивать сложность задачи: данных пока мало.",
+        "pt": "Não vale a pena subestimar a complexidade da tarefa: ainda há poucos dados."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "И нельзя переоценивать свои возможности. Нам нужна помощь другой лаборатории.",
+        "pt": "E não se pode superestimar a própria capacidade. Precisamos da ajuda de outro laboratório."
+      },
+      {
+        "speaker": "Ольга",
+        "ru": "Новые результаты могут противоречить исходной гипотезе.",
+        "pt": "Os resultados novos podem contradizer a hipótese inicial."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "Поэтому мы будем сотрудничать с местным институтом и повторим опыт.",
+        "pt": "Por isso vamos colaborar com o instituto local e repetir o experimento."
+      },
+      {
+        "speaker": "Ольга",
+        "ru": "Такая проверка должна предшествовать важному открытию.",
+        "pt": "Essa conferência deve preceder uma descoberta importante."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "А в докладе не надо злоупотреблять сложными терминами: аудитория разная.",
+        "pt": "E na apresentação não devemos abusar de termos complexos: o público é variado."
+      },
+      {
+        "speaker": "Ольга",
+        "ru": "Если новая модель будет превосходить прежние результаты, покажем сравнение на графике.",
+        "pt": "Se o modelo novo superar os resultados anteriores, mostraremos a comparação em um gráfico."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "Это поможет уменьшить недоверие к новому методу.",
+        "pt": "Isso ajudará a reduzir a desconfiança do método novo."
+      },
+      {
+        "speaker": "Ольга",
+        "ru": "Сначала повторим опыт, затем подготовим график и только после этого напишем вывод.",
+        "pt": "Primeiro repetiremos o experimento, depois prepararemos o gráfico e só então escreveremos a conclusão."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "Я свяжусь с институтом сегодня, а ты уточни условия эксперимента.",
+        "pt": "Vou entrar em contato com o instituto hoje, e você confira as condições do experimento."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual é a prioridade dos pesquisadores?",
+      "options": [
+        "Repetir o experimento antes de formular a conclusão.",
+        "Publicar a hipótese sem comparar os resultados.",
+        "Usar termos difíceis para impressionar o público.",
+        "Recusar ajuda de todos os outros laboratórios."
+      ],
+      "answer": "Repetir o experimento antes de formular a conclusão.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "недооценивать",
+      "tag": "недооценивать",
+      "head": "недооценивать",
+      "regency": "недооценивать кого? что?",
+      "case": "винительный падеж",
+      "pt": "subestimar a complexidade da tarefa",
+      "chunk": "недооценивать сложность задачи",
+      "chunk_pt": "subestimar a complexidade da tarefa",
+      "chunk_wrong": [
+        "недооценивать сложности задачи",
+        "недооценивать сложностью задачи",
+        "недооценивать сложность задаче"
+      ],
+      "form_note": "недо- sinaliza avaliação abaixo do necessário; недооценивать что? continua transitivo.",
+      "trap": "недо- sinaliza avaliação abaixo do necessário; недооценивать что? continua transitivo.",
+      "example": {
+        "ru": "Мы недооценили роль переводчика.",
+        "pt": "Subestimamos o papel do tradutor.",
+        "extra": "роли",
+        "note": "недо- sinaliza avaliação abaixo do necessário; недооценивать что? continua transitivo."
+      },
+      "cloze": {
+        "ru": "Нельзя недооценивать ___.",
+        "answer": "влияние среды",
+        "wrong": [
+          "влиянию среды",
+          "влиянием среды",
+          "влияния среде"
+        ],
+        "pt": "Não se pode subestimar a influência do ambiente.",
+        "note": "недо- sinaliza avaliação abaixo do necessário; недооценивать что? continua transitivo."
+      },
+      "hear": {
+        "ru": "Преподаватель недооценил подготовку студентки.",
+        "pt": "O professor subestimou a preparação da estudante.",
+        "wrong": [
+          "A estudante subestimou a preparação do professor.",
+          "O professor não subestimou a preparação da estudante.",
+          "O professor subestimará a preparação da estudante."
+        ],
+        "note": "недо- sinaliza avaliação abaixo do necessário; недооценивать что? continua transitivo."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "переоценивать",
+      "tag": "переоценивать",
+      "head": "переоценивать",
+      "regency": "переоценивать кого? что?",
+      "case": "винительный падеж",
+      "pt": "superestimar a própria capacidade",
+      "chunk": "переоценивать свои возможности",
+      "chunk_pt": "superestimar a própria capacidade",
+      "chunk_wrong": [
+        "переоценивать своим возможностям",
+        "переоценивать своими возможностями",
+        "переоценивать своих возможностях"
+      ],
+      "form_note": "переоценивать no contraste com недооценивать significa avaliar acima do real; a raiz mantém objeto direto.",
+      "trap": "переоценивать no contraste com недооценивать significa avaliar acima do real; a raiz mantém objeto direto.",
+      "example": {
+        "ru": "Он переоценил значение одной статьи.",
+        "pt": "Ele superestimou a importância de um artigo.",
+        "extra": "значением",
+        "note": "переоценивать no contraste com недооценивать significa avaliar acima do real; a raiz mantém objeto direto."
+      },
+      "cloze": {
+        "ru": "Не стоит переоценивать ___.",
+        "answer": "роль руководителя",
+        "wrong": [
+          "роли руководителю",
+          "роль руководителем",
+          "роль руководителю"
+        ],
+        "pt": "Não vale a pena superestimar o papel do coordenador.",
+        "note": "переоценивать no contraste com недооценивать significa avaliar acima do real; a raiz mantém objeto direto."
+      },
+      "hear": {
+        "ru": "Студент переоценил помощь научного руководителя.",
+        "pt": "O estudante superestimou a ajuda do orientador.",
+        "wrong": [
+          "O orientador superestimou a ajuda do estudante.",
+          "O estudante não superestimou a ajuda do orientador.",
+          "O estudante superestimará a ajuda do orientador."
+        ],
+        "note": "переоценивать no contraste com недооценивать significa avaliar acima do real; a raiz mantém objeto direto."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "противоречить",
+      "tag": "противоречить",
+      "head": "противоречить",
+      "regency": "противоречить кому? чему?",
+      "case": "дательный падеж",
+      "pt": "contradizer a hipótese inicial",
+      "chunk": "противоречить исходной гипотезе",
+      "chunk_pt": "contradizer a hipótese inicial",
+      "chunk_wrong": [
+        "противоречить исходную гипотезу",
+        "противоречить исходной гипотезой",
+        "противоречить исходной гипотезы"
+      ],
+      "form_note": "противоречить чему? pede дательный падеж sem preposição, ao contrário do objeto direto em português.",
+      "trap": "противоречить чему? pede дательный падеж sem preposição, ao contrário do objeto direto em português.",
+      "example": {
+        "ru": "Эти цифры противоречат нашему выводу.",
+        "pt": "Estes números contradizem nossa conclusão.",
+        "extra": "вывод",
+        "note": "противоречить чему? pede дательный падеж sem preposição, ao contrário do objeto direto em português."
+      },
+      "cloze": {
+        "ru": "Данные не должны противоречить ___.",
+        "answer": "доказанным фактам",
+        "wrong": [
+          "доказанные факты",
+          "доказанных фактов",
+          "доказанными фактами"
+        ],
+        "pt": "Os dados não devem contradizer fatos comprovados.",
+        "note": "противоречить чему? pede дательный падеж sem preposição, ao contrário do objeto direto em português."
+      },
+      "hear": {
+        "ru": "Ответ студента противоречил объяснению преподавателя.",
+        "pt": "A resposta do estudante contradizia a explicação do professor.",
+        "wrong": [
+          "A explicação do professor contradizia a resposta do estudante.",
+          "A resposta do estudante não contradizia a explicação do professor.",
+          "A resposta do estudante contradirá a explicação do professor."
+        ],
+        "note": "противоречить чему? pede дательный падеж sem preposição, ao contrário do objeto direto em português."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "сотрудничать",
+      "tag": "сотрудничать с",
+      "head": "сотрудничать с",
+      "regency": "сотрудничать с кем? чем?",
+      "case": "творительный падеж",
+      "pt": "colaborar com o instituto local",
+      "chunk": "сотрудничать с местным институтом",
+      "chunk_pt": "colaborar com o instituto local",
+      "chunk_wrong": [
+        "сотрудничать с местного института",
+        "сотрудничать с местному институту",
+        "сотрудничать с местный институт"
+      ],
+      "form_note": "сотрудничать с кем? чем? usa с + творительный падеж; não copie o caso de противоречить.",
+      "trap": "сотрудничать с кем? чем? usa с + творительный падеж; não copie o caso de противоречить.",
+      "example": {
+        "ru": "Лаборатория сотрудничает с музеем.",
+        "pt": "O laboratório colabora com o museu.",
+        "extra": "музею",
+        "note": "сотрудничать с кем? чем? usa с + творительный падеж; não copie o caso de противоречить."
+      },
+      "cloze": {
+        "ru": "Мы будем сотрудничать ___.",
+        "answer": "с зарубежной командой",
+        "wrong": [
+          "с зарубежную команду",
+          "с зарубежной команды",
+          "с зарубежной команде"
+        ],
+        "pt": "Vamos colaborar com a equipe estrangeira.",
+        "note": "сотрудничать с кем? чем? usa с + творительный падеж; não copie o caso de противоречить."
+      },
+      "hear": {
+        "ru": "Университет сотрудничал с городской библиотекой.",
+        "pt": "A universidade colaborava com a biblioteca municipal.",
+        "wrong": [
+          "A universidade colaborará com a biblioteca municipal.",
+          "A universidade não colaborava com a biblioteca municipal.",
+          "A universidade colabora com a biblioteca municipal."
+        ],
+        "note": "сотрудничать с кем? чем? usa с + творительный падеж; não copie o caso de противоречить."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "предшествовать",
+      "tag": "предшествовать",
+      "head": "предшествовать",
+      "regency": "предшествовать кому? чему?",
+      "case": "дательный падеж",
+      "pt": "preceder uma descoberta importante",
+      "chunk": "предшествовать важному открытию",
+      "chunk_pt": "preceder uma descoberta importante",
+      "chunk_wrong": [
+        "предшествовать важное открытие",
+        "предшествовать важного открытия",
+        "предшествовать важным открытием"
+      ],
+      "form_note": "O evento posterior recebe дательный падеж; o evento anterior é o sujeito de предшествовать.",
+      "trap": "O evento posterior recebe дательный падеж; o evento anterior é o sujeito de предшествовать.",
+      "example": {
+        "ru": "Эксперименту предшествовала долгая подготовка.",
+        "pt": "Uma longa preparação precedeu o experimento.",
+        "extra": "эксперимент",
+        "note": "O evento posterior recebe дательный падеж; o evento anterior é o sujeito de предшествовать."
+      },
+      "cloze": {
+        "ru": "Обсуждение должно предшествовать ___.",
+        "answer": "окончательному решению",
+        "wrong": [
+          "окончательное решение",
+          "окончательного решения",
+          "окончательным решением"
+        ],
+        "pt": "A discussão deve preceder a decisão final.",
+        "note": "O evento posterior recebe дательный падеж; o evento anterior é o sujeito de предшествовать."
+      },
+      "hear": {
+        "ru": "Проверка предшествовала публикации отчёта.",
+        "pt": "A conferência precedeu a publicação do relatório.",
+        "wrong": [
+          "A publicação do relatório precedeu a conferência.",
+          "A conferência não precedeu a publicação do relatório.",
+          "A conferência precederá a publicação do relatório."
+        ],
+        "note": "O evento posterior recebe дательный падеж; o evento anterior é o sujeito de предшествовать."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "злоупотреблять",
+      "tag": "злоупотреблять",
+      "head": "злоупотреблять",
+      "regency": "злоупотреблять чем?",
+      "case": "творительный падеж",
+      "pt": "abusar de termos complexos",
+      "chunk": "злоупотреблять сложными терминами",
+      "chunk_pt": "abusar de termos complexos",
+      "chunk_wrong": [
+        "злоупотреблять сложные термины",
+        "злоупотреблять сложных терминов",
+        "злоупотреблять сложным терминам"
+      ],
+      "form_note": "злоупотреблять чем? usa творительный падеж sem preposição; não transfira «abusar de».",
+      "trap": "злоупотреблять чем? usa творительный падеж sem preposição; não transfira «abusar de».",
+      "example": {
+        "ru": "Не злоупотребляйте доверием коллег.",
+        "pt": "Não abuse da confiança dos colegas.",
+        "extra": "доверие",
+        "note": "злоупотреблять чем? usa творительный падеж sem preposição; não transfira «abusar de»."
+      },
+      "cloze": {
+        "ru": "Автор не должен злоупотреблять ___.",
+        "answer": "длинными цитатами",
+        "wrong": [
+          "длинные цитаты",
+          "длинных цитат",
+          "длинным цитатам"
+        ],
+        "pt": "O autor não deve abusar de citações longas.",
+        "note": "злоупотреблять чем? usa творительный падеж sem preposição; não transfira «abusar de»."
+      },
+      "hear": {
+        "ru": "Докладчик злоупотреблял специальными терминами.",
+        "pt": "O palestrante abusava de termos técnicos.",
+        "wrong": [
+          "O palestrante abusará de termos técnicos.",
+          "O palestrante não abusava de termos técnicos.",
+          "O palestrante abusa de termos técnicos."
+        ],
+        "note": "злоупотреблять чем? usa творительный падеж sem preposição; não transfira «abusar de»."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "превосходить",
+      "tag": "превосходить",
+      "head": "превосходить",
+      "regency": "превосходить кого? что? в чём?",
+      "case": "винительный падеж",
+      "pt": "superar os resultados anteriores",
+      "chunk": "превосходить прежние результаты",
+      "chunk_pt": "superar os resultados anteriores",
+      "chunk_wrong": [
+        "превосходить прежним результатам",
+        "превосходить прежними результатами",
+        "превосходить прежних результатах"
+      ],
+      "form_note": "превосходить кого? что? leva objeto direto; o critério pode vir em в чём? ou по чему?.",
+      "trap": "превосходить кого? что? leva objeto direto; o critério pode vir em в чём? ou по чему?.",
+      "example": {
+        "ru": "Новая модель превосходит старую по точности.",
+        "pt": "O modelo novo supera o antigo em precisão.",
+        "extra": "старой",
+        "note": "превосходить кого? что? leva objeto direto; o critério pode vir em в чём? ou по чему?."
+      },
+      "cloze": {
+        "ru": "Эта система превосходит ___.",
+        "answer": "обычный прибор",
+        "wrong": [
+          "обычному прибору",
+          "обычным прибором",
+          "обычном приборе"
+        ],
+        "pt": "Este sistema supera o aparelho comum.",
+        "note": "превосходить кого? что? leva objeto direto; o critério pode vir em в чём? ou по чему?."
+      },
+      "hear": {
+        "ru": "Результат дочери превосходил результат сына.",
+        "pt": "O resultado da filha superava o resultado do filho.",
+        "wrong": [
+          "O resultado do filho superava o resultado da filha.",
+          "O resultado da filha não superava o resultado do filho.",
+          "O resultado da filha superará o resultado do filho."
+        ],
+        "note": "превосходить кого? что? leva objeto direto; o critério pode vir em в чём? ou по чему?."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "недоверие",
+      "tag": "недоверие к",
+      "head": "недоверие к",
+      "regency": "недоверие к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "desconfiança do método novo",
+      "chunk": "недоверие к новому методу",
+      "chunk_pt": "desconfiança do método novo",
+      "chunk_wrong": [
+        "недоверие к новый метод",
+        "недоверие к нового метода",
+        "недоверие к новым методом"
+      ],
+      "form_note": "O alvo de недоверие usa к + дательный падеж; não copie «desconfiança de» com от.",
+      "trap": "O alvo de недоверие usa к + дательный падеж; não copie «desconfiança de» com от.",
+      "example": {
+        "ru": "У жителей возникло недоверие к обещаниям.",
+        "pt": "Os moradores passaram a desconfiar das promessas.",
+        "extra": "обещания",
+        "note": "O alvo de недоверие usa к + дательный падеж; não copie «desconfiança de» com от."
+      },
+      "cloze": {
+        "ru": "Он объяснил своё недоверие ___.",
+        "answer": "к непроверенной информации",
+        "wrong": [
+          "к непроверенную информацию",
+          "к непроверенной информацией",
+          "к непроверенная информация"
+        ],
+        "pt": "Ele explicou sua desconfiança de informações não verificadas.",
+        "note": "O alvo de недоверие usa к + дательный падеж; não copie «desconfiança de» com от."
+      },
+      "hear": {
+        "ru": "У студентов было недоверие к выводам профессора.",
+        "pt": "Os estudantes desconfiavam das conclusões do professor.",
+        "wrong": [
+          "O professor desconfiava das conclusões dos estudantes.",
+          "Os estudantes não desconfiavam das conclusões do professor.",
+          "Os estudantes desconfiarão das conclusões do professor."
+        ],
+        "note": "O alvo de недоверие usa к + дательный падеж; não copie «desconfiança de» com от."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Por que evitar termos complexos em excesso?",
+      "options": [
+        "O público do seminário é variado.",
+        "O relatório não pode conter nenhum termo.",
+        "O instituto pediu que não haja gráficos.",
+        "Os resultados ainda não foram publicados."
+      ],
+      "answer": "O público do seminário é variado.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "Quem entrará em contato com o instituto?",
+      "options": [
+        "Anton, enquanto Olga confere as condições.",
+        "Olga, enquanto Anton escreve a conclusão.",
+        "Anton, depois de Olga publicar o gráfico.",
+        "Olga, depois de Anton recusar a parceria."
+      ],
+      "answer": "Anton, enquanto Olga confere as condições.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "сложность задачи",
+      "wrong": [
+        "сложности задачи",
+        "сложностью задачи",
+        "сложность задаче"
+      ],
+      "note": "недо- sinaliza avaliação abaixo do necessário; недооценивать что? continua transitivo."
+    },
+    {
+      "line": 2,
+      "gap": "исходной гипотезе",
+      "wrong": [
+        "исходную гипотезу",
+        "исходной гипотезой",
+        "исходной гипотезы"
+      ],
+      "note": "противоречить чему? pede дательный падеж sem preposição, ao contrário do objeto direto em português."
+    },
+    {
+      "line": 3,
+      "gap": "с местным институтом",
+      "wrong": [
+        "с местного института",
+        "с местному институту",
+        "с местный институт"
+      ],
+      "note": "сотрудничать с кем? чем? usa с + творительный падеж; não copie o caso de противоречить."
+    },
+    {
+      "line": 7,
+      "gap": "к новому методу",
+      "wrong": [
+        "к новый метод",
+        "к нового метода",
+        "к новым методом"
+      ],
+      "note": "O alvo de недоверие usa к + дательный падеж; não copie «desconfiança de» com от."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "недооценивать сложность задачи",
+        "right": "subestimar a complexidade da tarefa"
+      },
+      {
+        "left": "переоценивать свои возможности",
+        "right": "superestimar a própria capacidade"
+      },
+      {
+        "left": "противоречить исходной гипотезе",
+        "right": "contradizer a hipótese inicial"
+      },
+      {
+        "left": "сотрудничать с местным институтом",
+        "right": "colaborar com o instituto local"
+      },
+      {
+        "left": "предшествовать важному открытию",
+        "right": "preceder uma descoberta importante"
+      },
+      {
+        "left": "злоупотреблять сложными терминами",
+        "right": "abusar de termos complexos"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Ольга",
+      "you": "Антон",
+      "ru": "Какой риск есть, если мы спешим с этой задачей?",
+      "prompt": "Responda sobre subestimar a tarefa.",
+      "answer": "Можно недооценивать сложность задачи.",
+      "wrong": [
+        "Можно недооценивать сложности задачи.",
+        "Можно недооценивать сложностью задачи.",
+        "Можно недооценивать сложность задаче."
+      ],
+      "explanation": "недо- sinaliza avaliação abaixo do necessário; недооценивать что? continua transitivo."
+    },
+    {
+      "speaker": "Антон",
+      "you": "Ольга",
+      "ru": "Чем опасна работа без помощи другой лаборатории?",
+      "prompt": "Responda sobre superestimar a capacidade própria.",
+      "answer": "Можно переоценивать свои возможности.",
+      "wrong": [
+        "Можно переоценивать своим возможностям.",
+        "Можно переоценивать своими возможностями.",
+        "Можно переоценивать своих возможностях."
+      ],
+      "explanation": "переоценивать no contraste com недооценивать significa avaliar acima do real; a raiz mantém objeto direto."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva um comentário crítico sobre um projeto acadêmico fictício. Distinga subestimação e superestimação e explique a ordem de verificação.",
+    "use": [
+      "недооценивать",
+      "переоценивать",
+      "противоречить",
+      "сотрудничать с",
+      "предшествовать"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: недооценивать кого? что?; переоценивать кого? что?; противоречить кому? чему?; сотрудничать с кем? чем?; предшествовать кому? чему?; злоупотреблять чем?; превосходить кого? что? в чём?; недоверие к кому? чему?."
+  }
+}

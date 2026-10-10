@@ -1,0 +1,745 @@
+{
+  "id": "u17_vozvratnye",
+  "order": 17,
+  "title": "Возвратные глаголы: os sete valores de -ся",
+  "description": "Молодёжь и общество: por que начинать e начинаться não são o mesmo verbo, e o que -ся faz quando não significa «a si mesmo».",
+  "estimated_minutes": 32,
+  "objectives": [
+    "distinguir o par transitivo × intransitivo (начинать / начинаться)",
+    "reconhecer os valores recíproco, passivo e impessoal de -ся",
+    "aplicar a regra: verbo em -ся nunca leva objeto direto"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 6 «Молодёжь и общество» (Возвратные глаголы) · Кузьмина, Глаголы с частицей -СЯ · Red Kalinka, reflexive verbs",
+  "grammar": [
+    {
+      "title": "-ся não é «a si mesmo»",
+      "paragraphs": [
+        "A partícula -ся (que vira -сь depois de vogal) vem historicamente de себя, «a si mesmo», mas hoje esse é apenas um dos seus sete valores — e nem sequer o mais frequente. Valor 1, reflexivo verdadeiro: мыться (lavar-se), одеваться (vestir-se), бриться (barbear-se). Aqui, e só aqui, -ся significa mesmo «a si próprio». Valor 2, recíproco: встречаться (encontrar-se um com o outro), договариваться (chegar a um acordo), ссориться (brigar), обниматься. O sentido é «um ao outro», e por isso esses verbos costumam vir com с + творительный: встречаться с друзьями.",
+        "Valor 3, e é o mais importante para escrever bem: par intransitivo. Muitos verbos transitivos ganham -ся e passam a descrever o mesmo evento sem agente. начинать что-то (começar algo) → начинаться (começar, sozinho); открывать → открываться; продолжать → продолжаться; менять → меняться; увеличивать → увеличиваться; заканчивать → заканчиваться. Valor 4, passivo: строится, обсуждается, издаётся — visto na Unidade 9.",
+        "Valor 5: verbos que só existem com -ся e não têm par sem a partícula — бояться, смеяться, надеяться, нравиться, стараться, улыбаться, гордиться, сомневаться, оставаться, случаться, появляться, заниматься, нуждаться. Não adianta procurar «боять»: não existe. Valor 6, propriedade permanente: Собака кусается (o cachorro morde, é da natureza dele). Valor 7, impessoal: Мне не спится (não consigo dormir), Ему хочется отдохнуть — construções em que o sujeito lógico vai ao дательный падеж."
+      ],
+      "audio_script": "Возвратные глаголы, os verbos com a partícula ся. E o primeiro passo é desfazer um mal-entendido. A partícula ся, que vira сь depois de vogal, vem historicamente da palavra себя, que significa «a si mesmo». Mas hoje esse é apenas um dos sete valores dela, e nem sequer é o mais frequente. Vamos aos sete. Valor um: reflexivo verdadeiro. Мыться, lavar-se. Одеваться, vestir-se. Бриться, barbear-se. Aqui, e só aqui, ся significa realmente «a si próprio». Valor dois: recíproco. Встречаться, encontrar-se um com o outro. Договариваться, chegar a um acordo. Ссориться, brigar. Обниматься, abraçar-se. O sentido é «um ao outro», e por isso esses verbos costumam vir acompanhados de с mais instrumental: встречаться с друзьями. Valor três, e este é o mais importante de todos para escrever bem, então preste bastante atenção. Muitos verbos transitivos ganham ся e passam a descrever o mesmo evento, mas sem agente. Начинать что-то, começar alguma coisa, vira начинаться, começar sozinho. Открывать vira открываться. Продолжать vira продолжаться. Менять vira меняться. Увеличивать vira увеличиваться. Заканчивать vira заканчиваться. Valor quatro: passivo. Строится, обсуждается, издаётся. Você já viu isso na unidade nove. Valor cinco: verbos que só existem com ся e não têm par sem a partícula. Бояться, смеяться, надеяться, нравиться, стараться, улыбаться, гордиться, сомневаться, оставаться, случаться, появляться, заниматься, нуждаться. Não adianta procurar «боять» no dicionário: não existe. Valor seis: propriedade permanente. Собака кусается. O cachorro morde — não agora, mas por natureza. Крапива жжётся. A urtiga queima. É uma característica, não um evento. E valor sete: construções impessoais. Мне не спится, não consigo dormir. Ему хочется отдохнуть, ele está com vontade de descansar. Repare que nessas o sujeito lógico vai para o dativo: мне, ему. Não existe nominativo nenhum na frase.",
+      "examples": [
+        {
+          "ru": "Молодёжь всё чаще встречается онлайн, а не в кафе.",
+          "pt": "Os jovens se encontram cada vez mais on-line, e não em cafés.",
+          "note": "Valor recíproco: um com o outro."
+        },
+        {
+          "ru": "Отношение общества к субкультурам постепенно меняется.",
+          "pt": "A atitude da sociedade em relação às subculturas muda aos poucos.",
+          "note": "Valor intransitivo: ninguém está mudando — a coisa muda."
+        },
+        {
+          "ru": "Он боится, что не найдёт работу после университета.",
+          "pt": "Ele tem medo de não achar emprego depois da universidade.",
+          "note": "Valor 5: бояться só existe com -ся."
+        },
+        {
+          "ru": "Мне почему-то не работается сегодня.",
+          "pt": "Não estou conseguindo trabalhar hoje, sei lá por quê.",
+          "note": "Valor impessoal: o sujeito lógico vai ao dativo (мне)."
+        }
+      ],
+      "pitfalls": [
+        "Traduzir -ся sempre por «se»: смеяться é «rir», não «rir-se de si».",
+        "Procurar a forma sem -ся de бояться, нравиться, стараться: ela não existe."
+      ]
+    },
+    {
+      "title": "начинать × начинаться: o par que decide a frase",
+      "paragraphs": [
+        "Este é o ponto que mais gera erro em texto escrito por falantes de português, porque em português os dois verbos têm a mesma forma. «Eu começo a aula» e «a aula começa» usam «começar» nos dois casos. Em russo são dois verbos diferentes: начинать exige um objeto direto no винительный падеж (Преподаватель начинает урок), enquanto начинаться não aceita objeto nenhum e tem como sujeito a própria coisa que começa (Урок начинается в девять).",
+        "A regra é absoluta e vale para todos os verbos em -ся, sem exceção: verbo com -ся NUNCA leva objeto direto no acusativo. Se você escreveu um acusativo depois de um verbo em -ся, há um erro. Essa checagem sozinha resolve a maior parte dos problemas: «Урок начинается занятие» é impossível; «Собрание продолжается дискуссию» é impossível.",
+        "Os pares mais frequentes em texto de nível B2: начинать/начинаться, заканчивать/заканчиваться, продолжать/продолжаться, открывать/открываться, закрывать/закрываться, менять/меняться, изменять/изменяться, увеличивать/увеличиваться, уменьшать/уменьшаться, улучшать/улучшаться, развивать/развиваться, собирать/собираться. Repare que quase todos aparecem em textos sobre sociedade e estatística — «ситуация улучшается», «число студентов увеличивается» — justamente porque nesses textos não há um agente identificado."
+      ],
+      "audio_script": "Segunda parte, e este é o ponto que mais gera erro em texto escrito por quem fala português. O motivo é simples: em português nós usamos a mesma palavra nos dois casos. Eu começo a aula. A aula começa. É «começar» nas duas frases. Em russo são dois verbos diferentes, e trocá-los produz uma frase impossível. Начинать exige um objeto direto no acusativo. Преподаватель начинает урок. O professor começa a aula. Начинаться não aceita objeto nenhum, e o sujeito dele é a própria coisa que começa. Урок начинается в девять. A aula começa às nove. E agora a regra que resolve isso de uma vez por todas, e ela é absoluta, sem exceção nenhuma em russo: verbo com ся NUNCA leva objeto direto no acusativo. Nunca. Se você escreveu um acusativo depois de um verbo em ся, há um erro na frase. Essa única checagem elimina a maior parte dos problemas. Урок начинается занятие é impossível. Собрание продолжается дискуссию é impossível. Vamos à lista dos pares mais frequentes em texto de nível bê dois. Ouça em pares: начинать e начинаться. заканчивать e заканчиваться. продолжать e продолжаться. открывать e открываться. закрывать e закрываться. менять e меняться. изменять e изменяться. увеличивать e увеличиваться. уменьшать e уменьшаться. улучшать e улучшаться. развивать e развиваться. собирать e собираться. E aqui vai uma observação que ajuda a lembrar por que isso importa tanto. Quase todos esses verbos aparecem em textos sobre sociedade e estatística, na forma com ся. Ситуация улучшается. Число студентов увеличивается. Уровень безработицы снижается. Por quê? Porque nesses textos não há um agente identificado. Ninguém está melhorando a situação: ela melhora. É exatamente para isso que a forma em ся existe.",
+      "examples": [
+        {
+          "ru": "Преподаватель начинает занятие ровно в девять.",
+          "pt": "O professor começa a aula pontualmente às nove.",
+          "note": "Transitivo: занятие é objeto direto no acusativo."
+        },
+        {
+          "ru": "Занятие начинается ровно в девять.",
+          "pt": "A aula começa pontualmente às nove.",
+          "note": "Intransitivo: занятие é o sujeito, e não há objeto."
+        },
+        {
+          "ru": "Число молодых безработных постепенно увеличивается.",
+          "pt": "O número de jovens desempregados aumenta gradualmente.",
+          "note": "Sem agente identificado → forma em -ся."
+        },
+        {
+          "ru": "Правительство увеличивает расходы на образование.",
+          "pt": "O governo aumenta os gastos com educação.",
+          "note": "Com agente → forma transitiva, com objeto no acusativo."
+        }
+      ],
+      "pitfalls": [
+        "Escrever objeto direto depois de verbo em -ся: «занятие начинается урок» é impossível.",
+        "Usar a forma transitiva sem objeto: «ситуация улучшает» está incompleto — falta dizer o quê."
+      ]
+    },
+    {
+      "title": "Regências que só existem com -ся",
+      "paragraphs": [
+        "Vários verbos em -ся trazem regências fixas que já apareceram no curso e que vale reunir aqui, porque juntas cobrem boa parte do vocabulário sobre juventude e sociedade. Com творительный падеж sem preposição: заниматься чем? (ocupar-se de), интересоваться чем? (interessar-se por), гордиться чем? (orgulhar-se de), пользоваться чем? (usar, servir-se de), являться кем? (ser, formal).",
+        "Com с + творительный: встречаться с кем? (encontrar-se com), знакомиться с кем? (conhecer), соглашаться с кем? (concordar com), справляться с чем? (dar conta de), сталкиваться с чем? (deparar-se com), договариваться с кем? о чём? (combinar com alguém sobre algo). Com в + предложный: нуждаться в чём?, разбираться в чём?, сомневаться в чём?, участвовать в чём?.",
+        "E dois grupos menores mas muito frequentes: с к + дательный — относиться к кому? чему? (tratar, ter uma atitude em relação a), готовиться к чему?, обращаться к кому?; e com от + родительный — отказываться от чего?, избавляться от чего?, отличаться от кого? чего? (diferenciar-se de). Note que относиться é especialmente útil em texto argumentativo: Молодёжь по-разному относится к политике."
+      ],
+      "audio_script": "Terceira parte: as regências que andam junto com os verbos em ся. Vale reunir todas aqui, porque juntas elas cobrem boa parte do vocabulário sobre juventude e sociedade. Primeiro grupo: instrumental sem preposição nenhuma. Заниматься чем, ocupar-se de. Интересоваться чем, interessar-se por. Гордиться чем, orgulhar-se de. Пользоваться чем, usar, servir-se de. Являться кем, ser, em registro formal. Segundo grupo: с mais instrumental. Встречаться с кем, encontrar-se com. Знакомиться с кем, conhecer alguém. Соглашаться с кем, concordar com. Справляться с чем, dar conta de. Сталкиваться с чем, deparar-se com. E договариваться с кем о чём, combinar com alguém sobre alguma coisa. Repare que esse último tem duas regências ao mesmo tempo, e é assim que ele aparece na vida real. Terceiro grupo: в mais prepositivo. Нуждаться в чём. Разбираться в чём. Сомневаться в чём. Участвовать в чём. Quarto grupo: к mais dativo. Относиться к кому, чему — tratar alguém de certo modo, ter uma atitude em relação a algo. Готовиться к чему. Обращаться к кому. E quinto grupo: от mais genitivo. Отказываться от чего. Избавляться от чего. Отличаться от кого, чего — diferenciar-se de. Se você tiver que guardar um único verbo desta lista, guarde относиться, porque ele é a ferramenta principal para escrever sobre opinião e atitude num texto argumentativo. Молодёжь по-разному относится к политике. Os jovens têm atitudes diferentes em relação à política. E note que относиться nunca leva acusativo: é sempre к mais dativo.",
+      "examples": [
+        {
+          "ru": "Молодёжь по-разному относится к политике.",
+          "pt": "Os jovens têm atitudes diferentes em relação à política.",
+          "note": "относиться К + дательный, nunca acusativo."
+        },
+        {
+          "ru": "Современные подростки почти не отличаются от своих сверстников за границей.",
+          "pt": "Os adolescentes de hoje quase não se diferenciam dos seus pares no exterior.",
+          "note": "отличаться ОТ + родительный."
+        },
+        {
+          "ru": "Они договорились с организаторами о новой дате.",
+          "pt": "Eles combinaram com os organizadores uma nova data.",
+          "note": "договариваться С кем + О чём: duas regências no mesmo verbo."
+        },
+        {
+          "ru": "Она пользуется этой программой каждый день.",
+          "pt": "Ela usa esse programa todos os dias.",
+          "note": "пользоваться + instrumental puro, sem preposição."
+        }
+      ],
+      "pitfalls": [
+        "Dizer «относиться что-то»: относиться sempre pede к + дательный.",
+        "Usar acusativo com пользоваться: é пользоваться программой, não «программу»."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Os sete valores de -ся",
+    "columns": [
+      "Valor",
+      "O que -ся faz",
+      "Exemplos"
+    ],
+    "rows": [
+      [
+        "1. Reflexivo",
+        "a ação volta ao sujeito",
+        "мыться · одеваться · бриться"
+      ],
+      [
+        "2. Recíproco",
+        "um ao outro (com с + твор.)",
+        "встречаться · договариваться · ссориться"
+      ],
+      [
+        "3. Intransitivo",
+        "o mesmo evento sem agente",
+        "начинаться · меняться · увеличиваться"
+      ],
+      [
+        "4. Passivo",
+        "o sujeito sofre a ação (processo)",
+        "дом строится · вопрос обсуждается"
+      ],
+      [
+        "5. Só com -ся",
+        "não existe forma sem a partícula",
+        "бояться · нравиться · стараться · заниматься"
+      ],
+      [
+        "6. Propriedade",
+        "característica permanente",
+        "собака кусается · крапива жжётся"
+      ],
+      [
+        "7. Impessoal",
+        "sujeito lógico no дательный",
+        "мне не спится · ему хочется отдохнуть"
+      ]
+    ],
+    "note": "Regra absoluta: verbo em -ся NUNCA leva objeto direto no винительный падеж. Se há acusativo depois de -ся, há erro."
+  },
+  "reference": [
+    {
+      "construction": "относиться к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ter uma atitude em relação a",
+      "example": "по-разному относиться к политике"
+    },
+    {
+      "construction": "отличаться от",
+      "question": "от кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "diferenciar-se de",
+      "example": "отличаться от предыдущего поколения"
+    },
+    {
+      "construction": "договариваться с … о …",
+      "question": "с кем? о чём?",
+      "case": "ТВОР. + ПРЕДЛ.",
+      "meaning": "combinar com alguém sobre algo",
+      "example": "договориться с коллегами о встрече"
+    },
+    {
+      "construction": "пользоваться",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "usar, servir-se de",
+      "example": "пользоваться социальными сетями"
+    },
+    {
+      "construction": "начинаться / заканчиваться",
+      "question": "—",
+      "case": "БЕЗ ДОПОЛНЕНИЯ",
+      "meaning": "começar / terminar (sem agente)",
+      "example": "занятие начинается в девять"
+    },
+    {
+      "construction": "стараться",
+      "question": "+ инфинитив",
+      "case": "—",
+      "meaning": "esforçar-se por, procurar fazer",
+      "example": "стараться понять чужую точку зрения"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u17-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "начинать × начинаться",
+      "back": "начинать что? (com objeto) · начинаться (sem objeto, sujeito é a coisa)",
+      "explanation": "Преподаватель начинает урок × Урок начинается в девять.",
+      "tags": [
+        "-ся",
+        "transitivo/intransitivo",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u17-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "относиться",
+      "back": "относиться к кому? чему? — дательный падеж",
+      "explanation": "относиться к политике, к людям, к работе. Nunca acusativo.",
+      "tags": [
+        "относиться к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u17-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "отличаться",
+      "back": "отличаться от кого? чего? — родительный падеж",
+      "explanation": "отличаться от других, от предыдущего поколения.",
+      "tags": [
+        "отличаться от",
+        "родительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u17-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "Regra absoluta de -ся",
+      "back": "Verbo em -ся NUNCA leva objeto direto no винительный падеж",
+      "explanation": "Se há acusativo depois de um verbo em -ся, há erro. Vale para todos, sem exceção.",
+      "tags": [
+        "-ся",
+        "sintaxe",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u17-e05",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 1,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Концерт ___ в восемь вечера.",
+      "options": [
+        "начинается",
+        "начинает",
+        "начинают",
+        "начал"
+      ],
+      "answer": "начинается",
+      "explanation": "концерт é a coisa que começa, não quem começa algo → forma intransitiva начинаться. «начинает» exigiria um objeto: начинает что?",
+      "tags": [
+        "начинаться",
+        "-ся",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u17-e06",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Организаторы ___ фестиваль новым спектаклем.",
+      "options": [
+        "открывают",
+        "открываются",
+        "открылись",
+        "открытие"
+      ],
+      "answer": "открывают",
+      "explanation": "Há um agente (организаторы) e um objeto direto (фестиваль) → forma transitiva открывать. A forma em -ся não aceitaria «фестиваль» no acusativo.",
+      "tags": [
+        "открывать/открываться",
+        "-ся",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u17-e07",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Государство ___ расходы на образование, поэтому число стипендий ___.",
+      "options": [
+        "увеличивает … увеличивается",
+        "увеличивается … увеличивает",
+        "увеличивает … увеличивает",
+        "увеличивается … увеличивается"
+      ],
+      "answer": "увеличивает … увеличивается",
+      "explanation": "Na primeira oração há agente e objeto (государство увеличивает расходы) → transitivo. Na segunda, o número aumenta por si → intransitivo em -ся.",
+      "tags": [
+        "-ся",
+        "transitivo/intransitivo",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u17-e08",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase respeita a regra do objeto direto?",
+      "options": [
+        "Ситуация на рынке труда постепенно меняется.",
+        "Ситуация на рынке труда постепенно меняет.",
+        "Ситуация на рынке труда постепенно меняется рынок.",
+        "Ситуация на рынке труда постепенно изменяет себя."
+      ],
+      "answer": "Ситуация на рынке труда постепенно меняется.",
+      "explanation": "меняться é intransitivo e não aceita objeto. «меняет» ficaria incompleto (mudar o quê?) e «изменяет себя» é um calco do português que não se usa em russo neste sentido.",
+      "tags": [
+        "-ся",
+        "análise de erro",
+        "sintaxe"
+      ]
+    },
+    {
+      "id": "u17-e09",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha o valor de -ся nesta frase.",
+      "prompt": "«Мы договорились встретиться в субботу.»",
+      "options": [
+        "Recíproco: um combina com o outro.",
+        "Reflexivo: cada um combina consigo mesmo.",
+        "Passivo: alguém foi combinado.",
+        "Impessoal: não há sujeito."
+      ],
+      "answer": "Recíproco: um combina com o outro.",
+      "explanation": "договориться e встретиться são recíprocos: exigem duas partes. Por isso costumam vir com с + творительный (договориться с кем-то).",
+      "tags": [
+        "-ся",
+        "valor recíproco",
+        "significado"
+      ]
+    },
+    {
+      "id": "u17-e10",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Мне сегодня совсем не работается.»",
+      "options": [
+        "Hoje eu simplesmente não consigo trabalhar.",
+        "Hoje eu não trabalho.",
+        "Hoje ninguém trabalha comigo.",
+        "Hoje meu trabalho não funciona."
+      ],
+      "answer": "Hoje eu simplesmente não consigo trabalhar.",
+      "explanation": "Construção impessoal com -ся: o sujeito lógico vai ao дательный (мне) e o verbo fica na 3ª pessoa neutra. Ela expressa uma disposição que não depende da vontade.",
+      "tags": [
+        "-ся",
+        "impessoal",
+        "significado"
+      ]
+    },
+    {
+      "id": "u17-e11",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Современная молодёжь мало ___ традиционной политикой.",
+      "options": [
+        "интересуется",
+        "интересует",
+        "интересуют",
+        "интересная"
+      ],
+      "answer": "интересуется",
+      "explanation": "интересоваться чем? (quem se interessa) × интересовать кого? (o que desperta interesse). Aqui o sujeito é quem se interessa, e o complemento está no творительный.",
+      "tags": [
+        "интересоваться",
+        "-ся",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u17-e12",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Нынешнее поколение сильно ___ предыдущего.",
+      "options": [
+        "отличается от",
+        "отличается с",
+        "отличает от",
+        "различает от"
+      ],
+      "answer": "отличается от",
+      "explanation": "отличаться ОТ + родительный падеж. A forma sem -ся (отличать) significa «distinguir uma coisa da outra» e exige objeto direto.",
+      "tags": [
+        "отличаться от",
+        "родительный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u17-e13",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Многие подростки скептически ___ рекламе в социальных сетях.",
+      "options": [
+        "относятся к",
+        "относят к",
+        "относятся на",
+        "относятся с"
+      ],
+      "answer": "относятся к",
+      "explanation": "относиться К кому? чему? → дательный падеж (к рекламе). É a construção padrão para expressar atitude e opinião num texto argumentativo.",
+      "tags": [
+        "относиться к",
+        "дательный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u17-e14",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Почти все студенты ___ электронными библиотеками.",
+      "options": [
+        "пользуются",
+        "пользуют",
+        "используются",
+        "польза"
+      ],
+      "answer": "пользуются",
+      "explanation": "пользоваться + творительный падеж, sem preposição. Compare com использовать, que é transitivo e pede acusativo: использовать электронные библиотеки.",
+      "tags": [
+        "пользоваться",
+        "творительный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u17-e15",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha a frase correta.",
+      "prompt": "Qual frase usa corretamente нравиться?",
+      "options": [
+        "Молодым людям нравится эта музыка.",
+        "Молодые люди нравятся эту музыку.",
+        "Молодые люди нравится эта музыка.",
+        "Молодым людям нравятся эту музыку."
+      ],
+      "answer": "Молодым людям нравится эта музыка.",
+      "explanation": "Em нравиться, quem gosta vai ao дательный (молодым людям) e a coisa que agrada é o SUJEITO, no именительный (эта музыка) — por isso o verbo concorda com ela: нравится (singular).",
+      "tags": [
+        "нравиться",
+        "дательный падеж",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u17-e16",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Они давно ___ и до сих пор поддерживают связь. (познакомиться)",
+      "options": [
+        "познакомились",
+        "познакомили",
+        "познакомилось",
+        "познакомится"
+      ],
+      "answer": "познакомились",
+      "explanation": "Valor recíproco: eles se conheceram um ao outro → познакомились (plural, com -сь depois de vogal). A forma sem -ся, познакомили, significaria «apresentaram alguém a alguém».",
+      "tags": [
+        "-ся",
+        "recíproco",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u17-e17",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Проблема безработицы среди молодёжи обсуждается уже несколько лет.»",
+      "options": [
+        "O problema do desemprego entre os jovens vem sendo discutido há vários anos.",
+        "O problema do desemprego entre os jovens discutiu vários anos.",
+        "Os jovens discutem o desemprego há vários anos.",
+        "O desemprego entre os jovens foi resolvido há vários anos."
+      ],
+      "answer": "O problema do desemprego entre os jovens vem sendo discutido há vários anos.",
+      "explanation": "обсуждается é o valor passivo de -ся: processo em curso, sem agente identificado. É a forma padrão em texto jornalístico e acadêmico.",
+      "tags": [
+        "-ся",
+        "passivo",
+        "significado"
+      ]
+    },
+    {
+      "id": "u17-e18",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase usa корректно os verbos em -ся?",
+      "options": [
+        "Он занимается спортом, гордится результатами и не боится трудностей.",
+        "Он занимает спортом, гордит результатами и не боит трудностей.",
+        "Он занимается спорт, гордится результаты и не боится трудности.",
+        "Он занимается со спортом, гордится с результатами и не боится от трудностей."
+      ],
+      "answer": "Он занимается спортом, гордится результатами и не боится трудностей.",
+      "explanation": "Três verbos, três regências: заниматься e гордиться pedem творительный puro (спортом, результатами); бояться pede родительный (трудностей). Nenhum deles aceita acusativo, e nenhum leva preposição.",
+      "tags": [
+        "-ся",
+        "regência",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u17-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Социологи отмечают, что нынешнее поколение заметно отличается от предыдущего. Молодые люди меньше интересуются традиционной политикой, но активно занимаются волонтёрством и экологическими проектами. Число тех, кто участвует в таких инициативах, увеличивается каждый год. Многие подростки скептически относятся к рекламе и почти не доверяют официальным источникам: они предпочитают проверять информацию сами. Однако специалисты предупреждают, что ситуация меняется быстрее, чем успевают появляться исследования.",
+      "prompt": "O que os jovens fazem em vez de se interessar por política tradicional, segundo o texto?",
+      "options": [
+        "Dedicam-se ao voluntariado e a projetos ecológicos.",
+        "Assistem a mais publicidade nas redes sociais.",
+        "Confiam nas fontes oficiais de informação.",
+        "Participam de campanhas eleitorais."
+      ],
+      "answer": "Dedicam-se ao voluntariado e a projetos ecológicos.",
+      "explanation": "«активно занимаются волонтёрством и экологическими проектами» — заниматься + творительный падеж.",
+      "tags": [
+        "-ся",
+        "leitura",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u17-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Число тех, кто участвует в таких инициативах, увеличивается каждый год. Многие подростки скептически относятся к рекламе. Однако специалисты предупреждают, что ситуация меняется быстрее, чем успевают появляться исследования.",
+      "prompt": "Por que o texto usa «увеличивается» e «меняется» em vez de «увеличивает» e «меняет»?",
+      "options": [
+        "Porque não há agente: o número aumenta e a situação muda por si mesmos.",
+        "Porque as formas em -ся são mais formais.",
+        "Porque os verbos estão no passado.",
+        "Porque o sujeito é plural."
+      ],
+      "answer": "Porque não há agente: o número aumenta e a situação muda por si mesmos.",
+      "explanation": "As formas transitivas exigiriam objeto direto e um agente identificado. Como o texto descreve tendências sem responsável, a forma em -ся é obrigatória.",
+      "tags": [
+        "-ся",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u17-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Собрание начинается в шесть, но организаторы начинают подготовку уже в четыре.",
+      "prompt": "Qual é a diferença entre os dois verbos do áudio?",
+      "options": [
+        "O primeiro não tem agente (a reunião começa); o segundo tem agente e objeto (os organizadores começam a preparação).",
+        "Os dois verbos são idênticos, apenas repetidos.",
+        "O primeiro é passado e o segundo é futuro.",
+        "O primeiro é passivo e o segundo é reflexivo."
+      ],
+      "answer": "O primeiro não tem agente (a reunião começa); o segundo tem agente e objeto (os organizadores começam a preparação).",
+      "explanation": "начинается (sem objeto, sujeito = собрание) × начинают подготовку (com agente e objeto direto). O par transitivo/intransitivo na mesma frase.",
+      "tags": [
+        "-ся",
+        "audição",
+        "transitivo/intransitivo"
+      ]
+    },
+    {
+      "id": "u17-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Мы договорились с коллегами о том, чтобы встретиться в пятницу и обсудить новый проект.",
+      "prompt": "O que foi combinado, segundo o áudio?",
+      "options": [
+        "Encontrar-se na sexta e discutir o novo projeto.",
+        "Adiar o projeto para a sexta-feira.",
+        "Discutir o projeto sem os colegas.",
+        "Cancelar o encontro de sexta."
+      ],
+      "answer": "Encontrar-se na sexta e discutir o novo projeto.",
+      "explanation": "договориться С кем? (с коллегами, творительный) О чём? (о том, чтобы…, предложный). Duas regências no mesmo verbo recíproco.",
+      "tags": [
+        "договариваться",
+        "-ся",
+        "audição"
+      ]
+    },
+    {
+      "id": "u17-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase contrastando a forma transitiva e a forma em -ся.",
+      "tokens": [
+        "Университет",
+        "меняет",
+        "программу",
+        "и",
+        "отношение",
+        "студентов",
+        "тоже",
+        "меняется"
+      ],
+      "answer": "Университет меняет программу и отношение студентов тоже меняется",
+      "explanation": "меняет tem agente e objeto (университет меняет программу); меняется não tem objeto e o sujeito é a própria coisa que muda.",
+      "tags": [
+        "-ся",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u17-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione o verbo em -ся à sua regência.",
+      "pairs": [
+        {
+          "left": "заниматься",
+          "right": "чем? — творительный sem preposição"
+        },
+        {
+          "left": "относиться",
+          "right": "к кому? чему? — дательный"
+        },
+        {
+          "left": "отличаться",
+          "right": "от кого? чего? — родительный"
+        },
+        {
+          "left": "сталкиваться",
+          "right": "с кем? чем? — творительный com с"
+        },
+        {
+          "left": "нуждаться",
+          "right": "в ком? чём? — предложный"
+        },
+        {
+          "left": "бояться",
+          "right": "кого? чего? — родительный sem preposição"
+        }
+      ],
+      "explanation": "Seis verbos em -ся, seis regências diferentes. Nenhum deles aceita objeto direto no винительный падеж.",
+      "tags": [
+        "-ся",
+        "regência",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u17-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Use pelo menos quatro verbos em -ся, incluindo um par transitivo/intransitivo em contraste.",
+      "prompt": "«Чем сегодняшняя молодёжь отличается от поколения ваших родителей?» (Em que a juventude de hoje difere da geração dos seus pais?)\n\nUnidades: отличаться от · относиться к · интересоваться · заниматься · меняться / менять · увеличиваться · пользоваться",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "возвратные глаголы",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

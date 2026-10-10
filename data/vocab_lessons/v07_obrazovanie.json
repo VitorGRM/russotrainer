@@ -1,0 +1,240 @@
+{
+  "id": "v07",
+  "unit_id": "u07_obrazovanie",
+  "order": 7,
+  "title": "Куда поступать?",
+  "theme": "Образование",
+  "description": "Katia se prepara para o vestibular e pede conselhos ao irmão mais velho. Oito construções do mundo universitário: поступить в/на, подать документы, готовиться к, сдавать × сдать, разбираться в, успевать по, учиться на, окончить.",
+  "speakers": {"Катя": "f", "Андрей": "m"},
+  "dialogue": {
+    "title": "Разговор на кухне",
+    "setting": "Katia, 17 anos, conversa com o irmão Andrei, que já se formou em Economia.",
+    "lines": [
+      {"speaker": "Андрей", "ru": "Катя, ты уже решила, куда будешь поступать?", "pt": "Katia, você já decidiu onde vai prestar vestibular?"},
+      {"speaker": "Катя", "ru": "Хочу поступить в МГУ, на факультет журналистики. Но конкурс огромный, поэтому подам документы ещё в два вуза.", "pt": "Quero entrar na MGU, no curso de Jornalismo. Mas a concorrência é enorme, por isso vou me inscrever em mais duas universidades."},
+      {"speaker": "Андрей", "ru": "А как ты готовишься к экзаменам? С репетитором?", "pt": "E como você está se preparando para as provas? Com professor particular?"},
+      {"speaker": "Катя", "ru": "Да, по литературе. По истории я и так хорошо успеваю, а вот в литературе пока плохо разбираюсь.", "pt": "Sim, de literatura. Em história eu já vou bem, mas de literatura ainda entendo pouco."},
+      {"speaker": "Андрей", "ru": "Главное — не паниковать. Я, когда сдавал вступительные, был уверен, что не сдам ни одного экзамена.", "pt": "O principal é não entrar em pânico. Quando eu prestava o vestibular, tinha certeza de que não passaria em nenhuma prova."},
+      {"speaker": "Катя", "ru": "Но ты же всё сдал и поступил с первого раза!", "pt": "Mas você passou em tudo e entrou de primeira!"},
+      {"speaker": "Андрей", "ru": "Поступил. А потом полгода не мог понять, зачем я учусь на экономиста.", "pt": "Entrei. E depois passei meio ano sem entender por que eu estava estudando para ser economista."},
+      {"speaker": "Катя", "ru": "Серьёзно? Ты же окончил университет с красным дипломом.", "pt": "Sério? Você se formou com diploma de honra."},
+      {"speaker": "Андрей", "ru": "Окончил. Но интересно стало только на четвёртом курсе. Так что выбирай то, что тебе нравится, а не то, что престижно.", "pt": "Me formei. Mas só ficou interessante no quarto ano. Então escolha o que você gosta, e não o que é prestigioso."},
+      {"speaker": "Катя", "ru": "Я выбираю журналистику. Значит, остаётся только хорошо подготовиться.", "pt": "Eu escolho Jornalismo. Então só resta me preparar bem."}
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Sobre o que os irmãos conversam?",
+      "options": [
+        "A preparação de Katia para entrar na universidade.",
+        "O novo emprego de Andrei como economista.",
+        "Os problemas de Katia com o professor particular.",
+        "A transferência de Andrei para outro curso."
+      ],
+      "answer": "A preparação de Katia para entrar na universidade.",
+      "explanation": "поступать, экзамены, репетитор, подготовиться: é a conversa sobre o vestibular de Katia."
+    }
+  ],
+  "items": [
+    {
+      "key": "postupit",
+      "lemma": "поступать",
+      "tag": "поступать в / на",
+      "head": "поступать / поступить в · на",
+      "regency": "в + винительный (instituição: в университет) · на + винительный (curso: на факультет, на журналистику)",
+      "case": "винительный падеж",
+      "pt": "ingressar em, entrar (na universidade, num curso)",
+      "chunk": "поступить в университет",
+      "chunk_pt": "entrar na universidade",
+      "chunk_wrong": ["поступить на университет", "поступить в университете", "поступить университет"],
+      "form_note": "Movimento para dentro da instituição → в + винительный; para um curso/faculdade → на + винительный.",
+      "trap": "«Entrar NA universidade» puxa o предложный (в университете). Mas поступить é movimento: куда? → в университет.",
+      "example": {"ru": "Моя сестра поступила на факультет журналистики.", "pt": "Minha irmã entrou no curso de Jornalismo.", "extra": "факультете", "note": "на факультет (куда?, винительный)."},
+      "cloze": {"ru": "Он с детства мечтал поступить ___.", "answer": "в консерваторию", "wrong": ["на консерваторию", "в консерватории", "в консерватория"], "pt": "Desde criança ele sonhava entrar no conservatório.", "note": "Instituição → в + винительный: в консерваторию."},
+      "hear": {"ru": "Она поступила в университет, но не на тот факультет, о котором мечтала.", "pt": "Ela entrou na universidade, mas não no curso com que sonhava.", "wrong": ["Ela entrou no curso com que sonhava, mas em outra universidade.", "Ela não entrou na universidade com que sonhava.", "Ela vai entrar na universidade, no curso com que sonha."], "note": "в университет — sim; на тот факультет — não."}
+    },
+    {
+      "key": "podat",
+      "lemma": "подавать",
+      "tag": "подать документы в",
+      "head": "подавать / подать документы в · на",
+      "regency": "подавать / подать что? куда? (в вуз · на факультет)",
+      "case": "винительный падеж",
+      "pt": "inscrever-se (entregar os documentos)",
+      "chunk": "подать документы в университет",
+      "chunk_pt": "inscrever-se na universidade",
+      "chunk_wrong": ["подать документы на университет", "подать документами в университет", "подать документы для университета"],
+      "form_note": "Mesma lógica de поступить: в + instituição, на + curso.",
+      "trap": "«Inscrever-se» não é «записаться» neste contexto: para vestibular se diz подать документы.",
+      "example": {"ru": "В этом году я подаю документы в три вуза.", "pt": "Este ano vou me inscrever em três universidades.", "extra": "вузах", "note": "в три вуза: в + винительный; вуза = родительный depois de три."},
+      "cloze": {"ru": "Абитуриенты могут подать документы ___ онлайн.", "answer": "в любой вуз", "wrong": ["на любой вуз", "любому вузу", "для любого вуза"], "pt": "Os candidatos podem se inscrever em qualquer universidade pela internet.", "note": "в + винительный masculino inanimado: в любой вуз."},
+      "hear": {"ru": "Я подала документы в три университета, а поступила только в один.", "pt": "Eu me inscrevi em três universidades, mas só entrei em uma.", "wrong": ["Eu me inscrevi em uma universidade e entrei em três cursos.", "Eu entrei em três universidades, mas só me matriculei em uma.", "Vou me inscrever em três universidades para entrar em uma."], "note": "подала (três) × поступила (uma)."}
+    },
+    {
+      "key": "gotovitsya",
+      "lemma": "готовиться",
+      "tag": "готовиться к",
+      "head": "готовиться / подготовиться к",
+      "regency": "готовиться / подготовиться к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "preparar-se para",
+      "chunk": "готовиться к экзамену",
+      "chunk_pt": "preparar-se para a prova",
+      "chunk_wrong": ["готовиться для экзамена", "готовиться на экзамен", "готовиться к экзамене"],
+      "form_note": "к + дательный, nunca для.",
+      "trap": "«Preparar-se PARA» puxa для. Com готовиться, sempre к: готовиться к поездке, к свадьбе.",
+      "example": {"ru": "Всю весну он готовился к олимпиаде.", "pt": "A primavera inteira ele se preparou para a olimpíada.", "extra": "олимпиаду", "note": "к олимпиаде: дательный feminino (-е)."},
+      "cloze": {"ru": "Перед сессией студенты активно готовятся ___.", "answer": "к зачётам и экзаменам", "wrong": ["для зачётов и экзаменов", "на зачёты и экзамены", "к зачётами и экзаменами"], "pt": "Antes do período de provas, os estudantes se preparam intensamente para as avaliações e os exames.", "note": "к + дательный plural: -ам."},
+      "hear": {"ru": "Мы готовились к экзамену вместе, но сдал его только я.", "pt": "Nós nos preparamos juntos para a prova, mas só eu passei.", "wrong": ["Nós nos preparamos juntos para a prova, e os dois passamos.", "Eu me preparei sozinho para a prova, mas só você passou.", "Vamos nos preparar juntos, mas só eu vou fazer a prova."], "note": "готовились вместе; сдал только я."}
+    },
+    {
+      "key": "sdat",
+      "lemma": "сдавать",
+      "tag": "сдавать / сдать",
+      "head": "сдавать / сдать (экзамен)",
+      "regency": "что? · сдавать = prestar (processo) · сдать = passar (resultado)",
+      "case": "aspecto",
+      "pt": "prestar / passar (em exame)",
+      "chunk": "сдать экзамен",
+      "chunk_pt": "passar na prova",
+      "chunk_wrong": ["сдавать экзамен", "сдать экзамену", "сдаться на экзамене"],
+      "form_note": "O par aspectual muda o sentido: сдавать = estar fazendo a prova; сдать = ser aprovado.",
+      "trap": "«Fiz a prova, mas não passei» → сдавал, но не сдал. сдаться = render-se.",
+      "example": {"ru": "Он сдавал экзамен три раза и наконец сдал.", "pt": "Ele fez a prova três vezes e finalmente passou.", "extra": "сдался", "note": "сдавал (tentativas) × сдал (resultado)."},
+      "cloze": {"ru": "Ура! Я ___ экзамен по математике!", "answer": "сдал", "wrong": ["сдавал", "сдался", "сдам"], "pt": "Viva! Passei na prova de matemática!", "note": "Resultado alcançado → совершенный вид: сдал."},
+      "hear": {"ru": "Она сдавала экзамен на права, но не сдала.", "pt": "Ela fez a prova de habilitação, mas não passou.", "wrong": ["Ela passou na prova de habilitação de primeira.", "Ela não chegou a fazer a prova de habilitação.", "Ela vai fazer a prova de habilitação amanhã."], "note": "сдавала (fez) × не сдала (não passou)."}
+    },
+    {
+      "key": "razbiratsya",
+      "lemma": "разбираться",
+      "tag": "разбираться в",
+      "head": "разбираться / разобраться в",
+      "regency": "разбираться / разобраться в ком? чём? · × разобраться с кем? чем? (resolver)",
+      "case": "предложный падеж",
+      "pt": "entender de, dominar (um assunto)",
+      "chunk": "разбираться в технике",
+      "chunk_pt": "entender de aparelhos",
+      "chunk_wrong": ["разбираться с техникой", "разбираться техникой", "разбираться на технике"],
+      "form_note": "разбираться в + предложный = entender de. разобраться с + творительный = resolver, lidar com.",
+      "trap": "«Entender DE» sugere о ou родительный. Com разбираться, sempre в + предложный: разбираться в музыке, в людях.",
+      "example": {"ru": "Мой дедушка отлично разбирается в истории.", "pt": "Meu avô entende muito de história.", "extra": "историей", "note": "в истории: предложный feminino em -ия → -ии."},
+      "cloze": {"ru": "Новый сотрудник пока плохо разбирается ___.", "answer": "в наших правилах", "wrong": ["с нашими правилами", "нашими правилами", "в наши правила"], "pt": "O novo funcionário ainda entende pouco das nossas regras.", "note": "в + предложный plural: в наших правилах."},
+      "hear": {"ru": "Он разбирается в компьютерах лучше, чем в людях.", "pt": "Ele entende mais de computadores do que de pessoas.", "wrong": ["Ele entende mais de pessoas do que de computadores.", "Ele conserta computadores melhor do que ninguém.", "Ele não entende nem de computadores nem de pessoas."], "note": "лучше в компьютерах, чем в людях."}
+    },
+    {
+      "key": "uspevat",
+      "lemma": "успевать",
+      "tag": "успевать по",
+      "head": "успевать по",
+      "regency": "(хорошо / плохо) успевать по чему? (matéria escolar)",
+      "case": "дательный падеж",
+      "pt": "ir bem (ou mal) em (matéria)",
+      "chunk": "хорошо успевать по математике",
+      "chunk_pt": "ir bem em matemática",
+      "chunk_wrong": ["хорошо успевать в математике", "хорошо успевать математику", "хорошо успевать на математике"],
+      "form_note": "Neste sentido escolar: по + дательный. Não confunda com успеть = dar tempo.",
+      "trap": "успевать tem dois sentidos: «dar tempo» (успеть на поезд) e «ir bem na escola» (успевать по химии).",
+      "example": {"ru": "Мой сын плохо успевает по химии.", "pt": "Meu filho vai mal em química.", "extra": "химию", "note": "по химии: дательный feminino em -ия → -ии."},
+      "cloze": {"ru": "Эта студентка хорошо успевает ___.", "answer": "по всем предметам", "wrong": ["во всех предметах", "всем предметам", "на всех предметах"], "pt": "Esta estudante vai bem em todas as matérias.", "note": "по + дательный plural: по всем предметам."},
+      "hear": {"ru": "По физике он успевает, а по русскому — нет.", "pt": "Em física ele vai bem, mas em russo, não.", "wrong": ["Em russo ele vai bem, mas em física, não.", "Ele não tem tempo para estudar física e russo.", "Em física e em russo ele vai igualmente bem."], "note": "по физике — sim; по русскому — нет."}
+    },
+    {
+      "key": "uchitsya_na",
+      "lemma": "учиться",
+      "tag": "учиться на",
+      "head": "учиться на",
+      "regency": "учиться на кого? (futura profissão) · где? в чём? на каком курсе?",
+      "case": "винительный падеж",
+      "pt": "estudar para ser (profissão)",
+      "chunk": "учиться на врача",
+      "chunk_pt": "estudar para ser médico",
+      "chunk_wrong": ["учиться для врача", "учиться на врачом", "учиться врачом"],
+      "form_note": "на + винительный; profissões são animadas: на врача, на юриста (= родительный).",
+      "trap": "«Estudar PARA médico» puxa для. O russo usa на + винительный: учиться на программиста.",
+      "example": {"ru": "Моя подруга учится на переводчика.", "pt": "Minha amiga estuda para ser tradutora.", "extra": "переводчиком", "note": "на переводчика: винительный animado."},
+      "cloze": {"ru": "Кем он будет? Он учится ___.", "answer": "на инженера", "wrong": ["на инженер", "инженером", "для инженера"], "pt": "O que ele vai ser? Ele estuda para ser engenheiro.", "note": "на + винительный animado: на инженера."},
+      "hear": {"ru": "Сначала она училась на юриста, а потом перевелась на экономический.", "pt": "Primeiro ela estudava Direito, depois se transferiu para Economia.", "wrong": ["Primeiro ela estudava Economia, depois se transferiu para Direito.", "Ela é advogada e agora vai estudar Economia.", "Ela estudou Direito e Economia ao mesmo tempo."], "note": "сначала на юриста → потом на экономический."}
+    },
+    {
+      "key": "okonchit",
+      "lemma": "окончить",
+      "tag": "окончить что",
+      "head": "оканчивать / окончить",
+      "regency": "оканчивать / окончить что? (школу, университет, курсы)",
+      "case": "винительный падеж",
+      "pt": "concluir, formar-se (em)",
+      "chunk": "окончить университет",
+      "chunk_pt": "formar-se na universidade",
+      "chunk_wrong": ["окончить в университете", "окончить из университета", "окончиться университетом"],
+      "form_note": "Objeto direto, sem preposição. Coloquialmente também закончить университет.",
+      "trap": "«Formar-se NA universidade» leva a в университете. Em russo a instituição é objeto direto: окончить школу.",
+      "example": {"ru": "Мой отец окончил школу с золотой медалью.", "pt": "Meu pai terminou a escola com medalha de ouro.", "extra": "школе", "note": "окончить что? → школу (винительный)."},
+      "cloze": {"ru": "Когда она ___, она уехала работать в Сибирь.", "answer": "окончила институт", "wrong": ["окончила в институте", "окончилась институтом", "окончила из института"], "pt": "Quando se formou no instituto, ela foi trabalhar na Sibéria.", "note": "окончить что? → институт."},
+      "hear": {"ru": "Он окончил школу в Казани, а университет — в Москве.", "pt": "Ele concluiu a escola em Kazan, e a universidade, em Moscou.", "wrong": ["Ele concluiu a escola em Moscou, e a universidade, em Kazan.", "Ele estudou em Kazan, mas não concluiu a universidade em Moscou.", "Ele vai concluir a universidade em Moscou depois da escola em Kazan."], "note": "школу — в Казани; университет — в Москве."}
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Em que matéria Katia ainda tem dificuldade?",
+      "options": ["Literatura.", "História.", "Matemática.", "Línguas estrangeiras."],
+      "answer": "Literatura.",
+      "explanation": "«в литературе пока плохо разбираюсь». Em história ela vai bem (успеваю)."
+    },
+    {
+      "prompt": "Que conselho Andrei dá à irmã?",
+      "options": [
+        "Escolher o que ela gosta, não o que é prestigioso.",
+        "Escolher o curso mais prestigioso possível.",
+        "Estudar Economia, como ele fez.",
+        "Esperar um ano antes de se inscrever."
+      ],
+      "answer": "Escolher o que ela gosta, não o que é prestigioso.",
+      "explanation": "«выбирай то, что тебе нравится, а не то, что престижно»."
+    }
+  ],
+  "reconstruct": [
+    {"line": 1, "gap": "на факультет журналистики", "wrong": ["в факультет журналистики", "на факультете журналистики", "на факультет журналистикой"], "note": "поступить на + винительный (curso)."},
+    {"line": 2, "gap": "готовишься к экзаменам", "wrong": ["готовишься для экзаменов", "готовишься на экзамены", "готовишься к экзаменах"], "note": "готовиться к + дательный plural."},
+    {"line": 3, "gap": "в литературе", "wrong": ["с литературой", "литературой", "по литературе"], "note": "разбираться в + предложный. по литературе é o que vem com успевать."},
+    {"line": 6, "gap": "учусь на экономиста", "wrong": ["учусь на экономист", "учусь экономистом", "учусь для экономиста"], "note": "учиться на + винительный animado."}
+  ],
+  "match": {
+    "instruction": "Relacione cada verbo ao complemento com a regência certa.",
+    "prompt": "Qual complemento completa cada verbo?",
+    "pairs": [
+      {"left": "поступить", "right": "на исторический факультет"},
+      {"left": "окончить", "right": "школу с медалью"},
+      {"left": "готовиться", "right": "к защите диплома"},
+      {"left": "разбираться", "right": "в современном искусстве"},
+      {"left": "успевать", "right": "по всем предметам"},
+      {"left": "учиться", "right": "в магистратуре"}
+    ],
+    "explanation": "поступить куда? (на + вин.); окончить что?; готовиться к + дат.; разбираться в + предл.; успевать по + дат.; учиться где? (в + предл.)."
+  },
+  "replies": [
+    {
+      "speaker": "Андрей",
+      "you": "Катя",
+      "ru": "А по каким предметам ты успеваешь лучше всего?",
+      "prompt": "Andrei pergunta em quais matérias você vai melhor. Responda: história e estudos sociais.",
+      "answer": "Лучше всего по истории и обществознанию.",
+      "wrong": ["Лучше всего в истории и обществознании.", "Лучше всего историю и обществознание.", "Лучше всего по историей и обществознанием."],
+      "explanation": "успевать по + дательный: по истории, по обществознанию."
+    },
+    {
+      "speaker": "Катя",
+      "you": "Андрей",
+      "ru": "А ты сразу сдал все вступительные?",
+      "prompt": "Katia pergunta se você passou em todas as provas de primeira. Diga que passou em todas, mas prestou história duas vezes.",
+      "answer": "Сдал все, но историю сдавал два раза.",
+      "wrong": ["Сдавал все, но историю сдал два раза.", "Сдал всех, но историю сдавал два раза.", "Сдал все, но историей сдавал два раза."],
+      "explanation": "сдал все (resultado) × историю сдавал два раза (tentativas repetidas)."
+    }
+  ],
+  "writing": {
+    "prompt": "Conte como foi (ou como seria) o seu ingresso na universidade: onde se inscreveu, como se preparou, que provas prestou e se passou.",
+    "use": ["поступить в / на", "готовиться к", "сдавать / сдать", "учиться на", "окончить"],
+    "words": "50–70",
+    "notes": "Verificar в × на com поступить, к + дательный, aspecto сдавать × сдать, на + винительный animado com учиться на, окончить sem preposição."
+  }
+}

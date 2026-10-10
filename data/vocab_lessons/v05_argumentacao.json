@@ -1,0 +1,245 @@
+{
+  "id": "v05",
+  "unit_id": "u05_integracao_b2",
+  "order": 5,
+  "title": "Уезжать или оставаться?",
+  "theme": "Эмиграция: аргументы",
+  "description": "Um programa de rádio discute a emigração com um sociólogo e uma ouvinte. Oito construções argumentativas de nível B2 para ligar causa, comparação, concessão e ponto de vista.",
+  "speakers": {"Ведущая": "f", "Андрей Викторович": "m", "Марина": "f2"},
+  "dialogue": {
+    "title": "Радиоэфир «Тема дня»",
+    "setting": "Programa ao vivo na rádio. A apresentadora entrevista o sociólogo Andrei Viktorovich; uma ouvinte, Marina, liga da Alemanha.",
+    "lines": [
+      {"speaker": "Ведущая", "ru": "Добрый вечер! Сегодня наша тема — переезд в другую страну: новые возможности или серьёзный риск? В студии социолог Андрей Викторович Лебедев.", "pt": "Boa noite! Nosso tema hoje: mudar-se para outro país — novas oportunidades ou um risco sério? No estúdio, o sociólogo Andrei Viktorovich Lebedev."},
+      {"speaker": "Андрей Викторович", "ru": "Добрый вечер. Начну с цифр: по сравнению с прошлым десятилетием молодые специалисты уезжают почти вдвое чаще.", "pt": "Boa noite. Começo pelos números: em comparação com a década passada, os jovens profissionais emigram quase duas vezes mais."},
+      {"speaker": "Ведущая", "ru": "Почему? Что оказывает самое сильное влияние на это решение?", "pt": "Por quê? O que mais influencia essa decisão?"},
+      {"speaker": "Андрей Викторович", "ru": "Одним из главных факторов является зарплата. Но не менее важную роль в решении играет чувство перспективы.", "pt": "Um dos principais fatores é o salário. Mas um papel não menos importante na decisão é o da sensação de ter futuro."},
+      {"speaker": "Ведущая", "ru": "У нас звонок. Марина, вы в эфире!", "pt": "Temos uma ligação. Marina, você está no ar!"},
+      {"speaker": "Марина", "ru": "Здравствуйте. Я пять лет живу в Германии. Несмотря на трудности первого года, я не жалею о переезде.", "pt": "Olá. Moro há cinco anos na Alemanha. Apesar das dificuldades do primeiro ano, não me arrependo da mudança."},
+      {"speaker": "Марина", "ru": "Но хочу сказать: успех зависит не только от языка, но и от поддержки близких.", "pt": "Mas quero dizer: o sucesso depende não só da língua, mas também do apoio das pessoas próximas."},
+      {"speaker": "Андрей Викторович", "ru": "Совершенно согласен. И следует учитывать, что с точки зрения карьеры первые два-три года часто оказываются потерянными.", "pt": "Concordo plenamente. E é preciso levar em conta que, do ponto de vista da carreira, os dois ou três primeiros anos muitas vezes acabam perdidos."},
+      {"speaker": "Ведущая", "ru": "То есть риск всё-таки есть?", "pt": "Então o risco existe, afinal?"},
+      {"speaker": "Андрей Викторович", "ru": "Есть. Но риск — это не аргумент против, а повод хорошо подготовиться.", "pt": "Existe. Mas o risco não é um argumento contra, e sim um motivo para se preparar bem."}
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual é a posição final do sociólogo?",
+      "options": [
+        "Há riscos, mas eles pedem preparação, não desistência.",
+        "Emigrar é um erro para a maioria dos jovens.",
+        "Emigrar não tem riscos para quem fala a língua.",
+        "Os riscos são tão grandes que é melhor ficar."
+      ],
+      "answer": "Há riscos, mas eles pedem preparação, não desistência.",
+      "explanation": "«риск — это не аргумент против, а повод хорошо подготовиться»."
+    }
+  ],
+  "items": [
+    {
+      "key": "okazyvat",
+      "lemma": "влияние",
+      "tag": "оказывать влияние на",
+      "head": "оказывать / оказать влияние на",
+      "regency": "оказывать / оказать влияние на кого? что?",
+      "case": "винительный падеж",
+      "pt": "exercer influência sobre",
+      "chunk": "оказывать влияние на выбор",
+      "chunk_pt": "influenciar a escolha",
+      "chunk_wrong": ["оказывать влияние выбору", "оказывать влиянием на выбор", "оказывать влияние в выбор"],
+      "form_note": "A mesma regência de влиять на: на + винительный.",
+      "trap": "Com o substantivo влияние, o verbo é оказывать (não «делать» nem «иметь» neste padrão formal): оказывать влияние на молодёжь.",
+      "example": {"ru": "Климат оказывает влияние на характер людей.", "pt": "O clima influencia o caráter das pessoas.", "extra": "характеру", "note": "на характер: masculino inanimado, винительный = nominativo."},
+      "cloze": {"ru": "Социальные сети оказывают огромное влияние ___.", "answer": "на молодёжь", "wrong": ["молодёжи", "на молодёжи", "в молодёжь"], "pt": "As redes sociais exercem enorme influência sobre os jovens.", "note": "на + винительный: молодёжь (feminino em -ь, винительный = nominativo)."},
+      "hear": {"ru": "Не только семья оказывает влияние на ребёнка, но и школа.", "pt": "Não é só a família que influencia a criança; a escola também.", "wrong": ["A família influencia a criança mais do que a escola.", "Nem a família nem a escola influenciam a criança.", "A criança influencia tanto a família quanto a escola."], "note": "Sujeitos: семья e школа; на ребёнка = quem é influenciado."}
+    },
+    {
+      "key": "rol",
+      "lemma": "роль",
+      "tag": "играть роль в",
+      "head": "играть роль в",
+      "regency": "играть (важную, ключевую) роль в чём? · для кого? чего?",
+      "case": "предложный падеж",
+      "pt": "ter um papel (em), ser importante (em)",
+      "chunk": "играть важную роль в жизни",
+      "chunk_pt": "ter um papel importante na vida",
+      "chunk_wrong": ["играть важную роль на жизни", "играть важной ролью в жизни", "играть важную роль в жизнь"],
+      "form_note": "роль fica no винительный (objeto de играть); o campo vem com в + предложный.",
+      "trap": "Com negação, роль tende ao родительный: не играет никакой роли.",
+      "example": {"ru": "Язык играет ключевую роль в адаптации.", "pt": "A língua tem papel central na adaptação.", "extra": "адаптацию", "note": "в адаптации: предложный feminino em -ия → -ии."},
+      "cloze": {"ru": "Интернет играет всё большую роль ___.", "answer": "в образовании", "wrong": ["в образование", "на образовании", "образованию"], "pt": "A internet tem um papel cada vez maior na educação.", "note": "в + предложный: в образовании (-ие → -ии)."},
+      "hear": {"ru": "В нашей семье деньги никогда не играли главной роли.", "pt": "Na nossa família, o dinheiro nunca teve o papel principal.", "wrong": ["Na nossa família, o dinheiro sempre teve o papel principal.", "Na nossa família, o dinheiro nunca faltou.", "Na família dele, o dinheiro nunca teve o papel principal."], "note": "никогда не играли = nunca; главной роли = родительный por causa da negação."}
+    },
+    {
+      "key": "odnim_iz",
+      "lemma": "являться",
+      "tag": "одним из … является",
+      "head": "одним из … является",
+      "regency": "одним (одной) из + родительный plural + является + sujeito no nominativo",
+      "case": "творительный + родительный",
+      "pt": "um dos (… ) é",
+      "chunk": "одним из главных факторов является",
+      "chunk_pt": "um dos principais fatores é",
+      "chunk_wrong": ["один из главных факторов является", "одним из главных факторов являются", "одним из главными факторами является"],
+      "form_note": "одним/одной concorda em gênero com o substantivo (фактор → одним, причина → одной); o verbo concorda com o sujeito real, que vem depois.",
+      "trap": "O sujeito é o que vem DEPOIS de является: «Одним из факторов является зарплата» (зарплата = sujeito). Se o sujeito é plural: …являются пробки.",
+      "example": {"ru": "Одним из главных преимуществ города является работа.", "pt": "Uma das principais vantagens da cidade é o trabalho.", "extra": "Один", "note": "преимущество é neutro → одним; работа = sujeito."},
+      "cloze": {"ru": "___ миграции является безработица.", "answer": "Одной из причин", "wrong": ["Одна из причин", "Одной из причины", "Одним из причин"], "pt": "Uma das causas da migração é o desemprego.", "note": "причина é feminino → одной; из + родительный plural: причин."},
+      "hear": {"ru": "Одной из проблем больших городов являются пробки.", "pt": "Um dos problemas das grandes cidades são os engarrafamentos.", "wrong": ["Os engarrafamentos são o único problema das grandes cidades.", "Um dos problemas das cidades pequenas são os engarrafamentos.", "Os engarrafamentos causam muitos problemas nas grandes cidades."], "note": "являются (plural) concorda com пробки, o sujeito."}
+    },
+    {
+      "key": "uchityvat",
+      "lemma": "учитывать",
+      "tag": "следует учитывать",
+      "head": "следует учитывать",
+      "regency": "следует + инфинитив · учитывать / учесть что? · что + oração",
+      "case": "винительный падеж",
+      "pt": "é preciso levar em conta",
+      "chunk": "следует учитывать риски",
+      "chunk_pt": "é preciso levar em conta os riscos",
+      "chunk_wrong": ["следует учитывать рисков", "следует учитывать о рисках", "следует учитываться риски"],
+      "form_note": "учитывать pede objeto direto (винительный) ou что + oração. следует = convém, é preciso (registro formal).",
+      "trap": "Não existe «учитывать о чём-то»: o objeto é direto — учитывать мнение, учитывать, что…",
+      "example": {"ru": "При выборе университета следует учитывать стоимость жизни.", "pt": "Ao escolher a universidade, é preciso levar em conta o custo de vida.", "extra": "стоимости", "note": "учитывать что? → стоимость (винительный = nominativo)."},
+      "cloze": {"ru": "Принимая решение, следует учитывать ___.", "answer": "мнение специалистов", "wrong": ["о мнении специалистов", "мнению специалистов", "на мнение специалистов"], "pt": "Ao tomar a decisão, é preciso levar em conta a opinião dos especialistas.", "note": "Objeto direto: мнение; специалистов = родительный (de quem)."},
+      "hear": {"ru": "Следует учитывать, что не все мигранты находят работу сразу.", "pt": "É preciso considerar que nem todos os migrantes encontram trabalho logo.", "wrong": ["É preciso considerar que todos os migrantes encontram trabalho logo.", "Nenhum migrante encontra trabalho logo, é preciso considerar.", "É preciso considerar que os migrantes não procuram trabalho logo."], "note": "не все = nem todos (não «nenhum»)."}
+    },
+    {
+      "key": "ne_tolko",
+      "lemma": "только",
+      "tag": "не только…, но и",
+      "head": "не только …, но и …",
+      "regency": "paralelismo: a mesma preposição e o mesmo caso nas duas partes",
+      "case": "paralelismo",
+      "pt": "não só …, mas também …",
+      "chunk": "не только от языка, но и от поддержки",
+      "chunk_pt": "não só da língua, mas também do apoio",
+      "chunk_wrong": ["не только от языка, но от поддержки", "не только языка, но и от поддержки", "не только от языка, а и поддержки"],
+      "form_note": "Depois de но и repete-se a preposição e o caso da primeira parte.",
+      "trap": "Em português, «mas também» dispensa repetir a preposição. Em russo, repita: зависит не только от…, но и от…",
+      "example": {"ru": "Переезд меняет не только адрес, но и привычки.", "pt": "A mudança altera não só o endereço, mas também os hábitos.", "extra": "а", "note": "Os dois objetos no винительный: адрес, привычки."},
+      "cloze": {"ru": "Адаптация зависит не только от языка, ___.", "answer": "но и от поддержки близких", "wrong": ["но от поддержки близких", "но и поддержки близких", "а также поддержкой близких"], "pt": "A adaptação depende não só da língua, mas também do apoio das pessoas próximas.", "note": "но и + от + родительный, como na primeira parte."},
+      "hear": {"ru": "Эта программа полезна не только студентам, но и преподавателям.", "pt": "Este programa é útil não só para os alunos, mas também para os professores.", "wrong": ["Este programa é útil para os alunos, mas não para os professores.", "Este programa é útil apenas para os professores.", "Alunos e professores criaram juntos este programa."], "note": "полезен кому? → студентам, преподавателям (дательный)."}
+    },
+    {
+      "key": "nesmotrya",
+      "lemma": "несмотря",
+      "tag": "несмотря на",
+      "head": "несмотря на",
+      "regency": "несмотря на кого? что? · несмотря на то что + oração",
+      "case": "винительный падеж",
+      "pt": "apesar de",
+      "chunk": "несмотря на трудности",
+      "chunk_pt": "apesar das dificuldades",
+      "chunk_wrong": ["несмотря трудности", "несмотря на трудностей", "несмотря от трудностей"],
+      "form_note": "на + винительный. Com oração: несмотря на то что…",
+      "trap": "«Apesar DE» sugere родительный. Mas a preposição é на, e на aqui pede винительный: несмотря на дождь.",
+      "example": {"ru": "Несмотря на дождь, мы пошли гулять.", "pt": "Apesar da chuva, saímos para passear.", "extra": "дождя", "note": "на дождь: винительный = nominativo (inanimado)."},
+      "cloze": {"ru": "___ он не жалеет о переезде.", "answer": "Несмотря на высокие цены", "wrong": ["Несмотря высоких цен", "Несмотря на высоких ценах", "Несмотря на высоким ценам"], "pt": "Apesar dos preços altos, ele não se arrepende da mudança.", "note": "на + винительный plural (inanimado = nominativo): высокие цены."},
+      "hear": {"ru": "Несмотря на то что зарплата выше, она вернулась домой.", "pt": "Apesar de o salário ser mais alto, ela voltou para casa.", "wrong": ["Como o salário era mais alto, ela voltou para casa.", "Apesar de o salário ser mais alto, ela não quis voltar.", "Apesar de o salário ser mais baixo, ela voltou para casa."], "note": "Concessão: o salário maior NÃO a impediu de voltar."}
+    },
+    {
+      "key": "po_sravneniyu",
+      "lemma": "сравнение",
+      "tag": "по сравнению с",
+      "head": "по сравнению с",
+      "regency": "по сравнению с кем? чем?",
+      "case": "творительный падеж",
+      "pt": "em comparação com",
+      "chunk": "по сравнению с прошлым годом",
+      "chunk_pt": "em comparação com o ano passado",
+      "chunk_wrong": ["по сравнению с прошлого года", "по сравнению прошлым годом", "в сравнении на прошлый год"],
+      "form_note": "с + творительный, sempre com a preposição.",
+      "trap": "Não misture com «чем»: больше, чем в прошлом году × больше по сравнению с прошлым годом.",
+      "example": {"ru": "По сравнению с деревней город кажется шумным.", "pt": "Em comparação com a aldeia, a cidade parece barulhenta.", "extra": "деревни", "note": "с деревней: творительный feminino (-ей)."},
+      "cloze": {"ru": "Цены на жильё выросли ___.", "answer": "по сравнению с началом года", "wrong": ["по сравнению с начала года", "по сравнению к началу года", "по сравнению начала года"], "pt": "Os preços da moradia subiram em comparação com o início do ano.", "note": "с началом (творительный neutro); года = родительный."},
+      "hear": {"ru": "По сравнению с братом она гораздо лучше говорит по-английски.", "pt": "Em comparação com o irmão, ela fala inglês muito melhor.", "wrong": ["Em comparação com ela, o irmão fala inglês muito melhor.", "Ela e o irmão falam inglês igualmente bem.", "Ela fala inglês muito melhor do que falava antes."], "note": "с братом = termo de comparação; она = sujeito."}
+    },
+    {
+      "key": "tochka_zreniya",
+      "lemma": "точка",
+      "tag": "с точки зрения",
+      "head": "с точки зрения",
+      "regency": "с точки зрения кого? чего?",
+      "case": "родительный падеж",
+      "pt": "do ponto de vista de",
+      "chunk": "с точки зрения экономики",
+      "chunk_pt": "do ponto de vista da economia",
+      "chunk_wrong": ["с точки зрения экономикой", "с точкой зрения экономики", "на точку зрения экономики"],
+      "form_note": "Expressão fixa: с точки зрения + родительный.",
+      "trap": "É um bloco congelado: não mude точки para точкой, nem troque с por по.",
+      "example": {"ru": "С точки зрения закона, он прав.", "pt": "Do ponto de vista da lei, ele tem razão.", "extra": "закону", "note": "закона: родительный masculino."},
+      "cloze": {"ru": "___ этот план выглядит разумным.", "answer": "С точки зрения бизнеса", "wrong": ["С точки зрения бизнесу", "По точке зрения бизнеса", "С точкой зрения бизнеса"], "pt": "Do ponto de vista dos negócios, este plano parece razoável.", "note": "с точки зрения + родительный: бизнеса."},
+      "hear": {"ru": "С точки зрения родителей, переезд был ошибкой, а с точки зрения детей — нет.", "pt": "Do ponto de vista dos pais, a mudança foi um erro; do ponto de vista dos filhos, não.", "wrong": ["Do ponto de vista dos filhos, a mudança foi um erro; do ponto de vista dos pais, não.", "Pais e filhos concordam que a mudança foi um erro.", "Do ponto de vista dos pais, a mudança foi um acerto; do ponto de vista dos filhos, não."], "note": "Primeiro родителей (erro), depois детей (не ошибка)."}
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Segundo o sociólogo, o que mudou em relação à década anterior?",
+      "options": [
+        "Os jovens profissionais emigram quase duas vezes mais.",
+        "Os jovens profissionais emigram duas vezes menos.",
+        "Os salários no exterior dobraram de valor.",
+        "Metade dos emigrantes voltou para casa."
+      ],
+      "answer": "Os jovens profissionais emigram quase duas vezes mais.",
+      "explanation": "«по сравнению с прошлым десятилетием молодые специалисты уезжают почти вдвое чаще»."
+    },
+    {
+      "prompt": "O que Marina acrescenta à discussão?",
+      "options": [
+        "O sucesso depende também do apoio das pessoas próximas.",
+        "O primeiro ano na Alemanha foi fácil para ela.",
+        "Ela se arrepende de ter emigrado para a Alemanha.",
+        "Sem falar alemão ninguém consegue trabalho lá."
+      ],
+      "answer": "O sucesso depende também do apoio das pessoas próximas.",
+      "explanation": "«успех зависит не только от языка, но и от поддержки близких»."
+    }
+  ],
+  "reconstruct": [
+    {"line": 2, "gap": "влияние на это решение", "wrong": ["влияние этому решению", "влияние на этом решении", "влиянием на это решение"], "note": "оказывать влияние на + винительный."},
+    {"line": 3, "gap": "Одним из главных факторов является", "wrong": ["Один из главных факторов является", "Одним из главных факторов являются", "Одним из главными факторами является"], "note": "одним (творительный) из + родительный plural; является concorda com зарплата."},
+    {"line": 6, "gap": "не только от языка, но и от поддержки", "wrong": ["не только от языка, но от поддержки", "не только языка, но и от поддержки", "не только от языка, а и поддержки"], "note": "Paralelismo: от… но и от…"},
+    {"line": 7, "gap": "с точки зрения карьеры", "wrong": ["с точки зрения карьере", "с точкой зрения карьеры", "по точке зрения карьеры"], "note": "с точки зрения + родительный."}
+  ],
+  "match": {
+    "instruction": "Relacione cada expressão à função que ela cumpre num texto argumentativo.",
+    "prompt": "Para que serve cada conector?",
+    "pairs": [
+      {"left": "несмотря на", "right": "concessão (apesar de)"},
+      {"left": "благодаря", "right": "causa favorável"},
+      {"left": "по сравнению с", "right": "comparação"},
+      {"left": "с точки зрения", "right": "perspectiva, ponto de vista"},
+      {"left": "в конечном счёте", "right": "conclusão"},
+      {"left": "с одной стороны", "right": "introduz o primeiro lado do argumento"}
+    ],
+    "explanation": "Um texto B2 usa conectores com função clara — não como enfeite."
+  },
+  "replies": [
+    {
+      "speaker": "Ведущая",
+      "you": "Андрей Викторович",
+      "ru": "Как вы считаете, язык — главное условие успешной адаптации?",
+      "prompt": "A apresentadora pergunta se a língua é a condição principal. Responda que é importante, mas não a única.",
+      "answer": "Язык играет важную роль, но не единственную.",
+      "wrong": ["Язык играет важной ролью, но не единственной.", "Язык играет важную роль, но не единственной.", "Язык играет в важную роль, но не единственную."],
+      "explanation": "играть роль (винительный): важную роль… не единственную (роль)."
+    },
+    {
+      "speaker": "Марина",
+      "you": "Андрей Викторович",
+      "ru": "А вы бы советовали молодым уезжать?",
+      "prompt": "Marina pergunta se você aconselharia os jovens a emigrar. Diga que sim, mas que é preciso considerar que os primeiros anos serão difíceis.",
+      "answer": "Да, но следует учитывать, что первые годы будут трудными.",
+      "wrong": ["Да, но следует учитывать о том, что первые годы будут трудными.", "Да, но следует учитываться, что первые годы будут трудными.", "Да, но следует учесть на то, что первые годы будут трудными."],
+      "explanation": "учитывать, что + oração (sem preposição, sem -ся)."
+    }
+  ],
+  "writing": {
+    "prompt": "«Переезд в другую страну: новые возможности или серьёзный риск?» Escreva um texto argumentativo com introdução, dois argumentos e conclusão.",
+    "use": ["оказывать влияние на", "одним из … является", "несмотря на", "не только …, но и", "с точки зрения"],
+    "words": "90–110",
+    "notes": "Tarefa pendente da Aula 2. Avaliar como B2 real: conteúdo, organização, coesão (conectores com função), regência (на + вин., с точки зрения + род.), concordância de одним/одной, paralelismo не только… но и, naturalidade."
+  }
+}

@@ -1,0 +1,689 @@
+{
+  "id": "u02_instrumental",
+  "order": 2,
+  "title": "Творительный падеж: pessoas, coisas e definições",
+  "description": "Consolida интересоваться, быть недовольным, сталкиваться e являться, especialmente no plural.",
+  "estimated_minutes": 26,
+  "objectives": [
+    "automatizar кем? чем?",
+    "reconhecer terminações plurais -ыми/-ими e -ами/-ями em contexto (leitura e áudio)",
+    "usar являться de maneira formal e não mecânica"
+  ],
+  "grammar": [
+    {
+      "title": "Тема: миграция, переезд и адаптация",
+      "paragraphs": [
+        "Continuando o Блок 2 «Миграция населения» de «Время обсуждать»: миграция (migração, termo geral) se desdobra em эмиграция — saída de um país (эмиграция из страны) — e иммиграция — entrada em outro (иммиграция в страну). A mesma pessoa pode ser descrita dos dois lados: «Он эмигрировал из страны А и иммигрировал в страну Б». Vocabulário associado: мигрант, эмигрант/эмигрировать, иммигрант/иммигрировать, ПМЖ (постоянное место жительства), гражданство, трудоустройство, безработица, адаптироваться.",
+        "О Лексический минимум ТРКИ-II lista essas palavras com regência; use-o como checklist: адаптироваться к кому? чему?, благодаря кому? чему? (дательный падеж, já visto na unidade anterior) continuam aparecendo ao lado do vocabulário novo de migração."
+      ],
+      "audio_script": "Esta unidade trata de migração, mudança e adaptação — o segundo grande tema do curso. O vocabulário ativo é миграция, мигрант, переселенец, адаптация, интеграция, среда, e o par общество e сообщество. Cuidado com esse último par: общество é a sociedade como um todo, o corpo social. Сообщество é uma comunidade específica, um grupo com identidade própria. Российское общество é a sociedade russa. Научное сообщество é a comunidade científica. Duas palavras que aparecem sempre juntas nos textos de nível bê dois são сталкиваться и справляться. Сталкиваться с трудностями é deparar-se com dificuldades. Справляться с трудностями é dar conta delas, superá-las. As duas pedem a mesma preposição с e o mesmo caso, o instrumental. Guarde as duas juntas, porque elas quase sempre aparecem na mesma frase.",
+      "examples": [
+        {
+          "ru": "Мигранты сталкиваются с языковым барьером.",
+          "pt": "Os migrantes se deparam com a barreira linguística."
+        },
+        {
+          "ru": "Со временем они справляются с новыми условиями.",
+          "pt": "Com o tempo eles dão conta das novas condições."
+        },
+        {
+          "ru": "Научное сообщество изучает эти процессы.",
+          "pt": "A comunidade científica estuda esses processos.",
+          "note": "сообщество = grupo específico; общество = sociedade inteira."
+        }
+      ],
+      "pitfalls": [
+        "Trocar общество por сообщество: «российское сообщество» soa como um clube, não como a sociedade russa."
+      ]
+    },
+    {
+      "title": "Творительный падеж: como se forma",
+      "paragraphs": [
+        "No singular, masculino/neutro trocam consoante final ou -о/-е por -ом/-ем (друг → другом, море → морем); feminino em -а/-я troca por -ой/-ей (подруга → подругой) e em -ь troca por -ью (дверь → дверью). Adjetivos: masculino/neutro -ым/-им (новым, синим), feminino -ой/-ей (новой, синей) — repare que o feminino de adjetivo é igual em дательный e творительный, só o substantivo muda (-е no дательный, -ой/-ью no творительный). No plural, todos os gêneros convergem outra vez: substantivo -ами/-ями, adjetivo -ыми/-ими (новыми друзьями).",
+        "Irregulares úteis: мать → матерью, дочь → дочерью, друзья → друзьями, дети → детьми, люди → людьми. A mesma regra ortográfica da unidade anterior continua valendo: nunca ы, ю, я depois de г, к, х, ж, ч, ш, щ."
+      ],
+      "audio_script": "Agora o творительный падеж, o caso instrumental. Ele responde кем? — por quem, com quem — e чем? — com quê. As terminações, no singular. Masculino e neutro terminam em ом ou ем: другом, окном, музеем, полем. Feminino termina em ой ou ей: подругой, неделей. Feminino em sinal brando termina em ью: дверью, площадью. Essa é a terminação mais estranha do russo inteiro, e vale decorar isolada. Os adjetivos: masculino e neutro terminam em ым ou им — новым, большим, синим. Feminino termina em ой ou ей — новой, синей. Repare que o feminino do adjetivo no instrumental, новой, é idêntico ao feminino no dativo, no genitivo e no prepositivo. Uma forma só cobrindo quatro casos: isso é uma economia enorme de memória, e vale comemorar. No plural, de novo tudo converge: substantivo em ами ou ями, adjetivo em ыми ou ими. Новыми друзьями. Русскими царями. E vale a mesma regra ortográfica de sempre: depois de г, к, х, ж, ч, ш e щ escreve-se и, nunca ы. Por isso большими e não большыми.",
+      "examples": [
+        {
+          "ru": "Он интересуется русской историей.",
+          "pt": "Ele se interessa por história russa.",
+          "note": "интересоваться + instrumental, sem preposição."
+        },
+        {
+          "ru": "Она стала известным специалистом.",
+          "pt": "Ela se tornou uma especialista renomada.",
+          "note": "стать + instrumental."
+        },
+        {
+          "ru": "Мы гордимся своими студентами.",
+          "pt": "Nós nos orgulhamos dos nossos alunos.",
+          "note": "Plural: adjetivo -ими, substantivo -ами."
+        },
+        {
+          "ru": "Он занимается этой проблемой с большим интересом.",
+          "pt": "Ele se ocupa desse problema com grande interesse."
+        }
+      ],
+      "pitfalls": [
+        "Escrever «дверой» em vez de дверью: femininos em ь fazem instrumental em -ью.",
+        "Escrever «большыми»: depois de ш só pode vir и."
+      ]
+    },
+    {
+      "title": "Quando o creativo aparece sem preposição",
+      "paragraphs": [
+        "O творительный падеж tem um uso que confunde falantes de português: como instrumento ou tema, ele aparece SEM preposição — интересоваться кем? чем?, заниматься кем? чем?, гордиться кем? чем?, пользоваться кем? чем?. Não existe «интересоваться О ком-то» em russo; o complemento vai direto ao caso.",
+        "являться кем? чем? é o registro formal de быть para definição, classificação ou papel («Безработица является серьёзной проблемой»); стать кем? чем? marca uma mudança de estado («Она хочет стать врачом»). Use являться em texto argumentativo — não como substituto mecânico de быть em qualquer frase."
+      ],
+      "audio_script": "Terceira parte, e é a mais importante desta unidade: quando o instrumental aparece SEM preposição nenhuma. Em português, quase tudo que é instrumental leva uma preposição: com, por, de. Em russo, não. Existem verbos que engolem a preposição e vão direto ao caso. Vamos aos quatro grupos. Primeiro: verbos de interesse e ocupação. Интересоваться чем? Заниматься чем? Увлекаться чем? Я интересуюсь историей. Não existe preposição aqui. Em português você diria «interesso-me POR história», mas o russo já embutiu o por dentro do caso. Segundo: verbos de sentimento em relação a algo. Гордиться чем? Orgulhar-se de. Восхищаться чем? Admirar. Он гордится своей культурой. De novo, sem preposição. Terceiro: verbos de transformação e identidade. Стать кем? Tornar-se. Являться кем? Ser, em registro formal. Оказаться кем? Revelar-se. Она стала врачом. Это является проблемой. E quarto: o predicativo de работать. Он работает инженером — ele trabalha como engenheiro. Note que em português entra um «como» aí, e em russo não entra nada: só o instrumental. Agora o contraste que decide tudo. Com preposição с, o instrumental significa companhia ou confronto: сталкиваться с проблемой, справляться с задачей, познакомиться с человеком. Sem preposição, o instrumental significa o meio, a ocupação, ou a identidade. Se você aprender a perguntar «esse verbo pede с ou não pede?», metade dos erros de instrumental desaparece.",
+      "examples": [
+        {
+          "ru": "Я интересуюсь миграционными процессами.",
+          "pt": "Interesso-me por processos migratórios.",
+          "note": "Sem preposição: o «por» está dentro do caso."
+        },
+        {
+          "ru": "Он работает переводчиком в министерстве.",
+          "pt": "Ele trabalha como tradutor no ministério.",
+          "note": "Sem «как»: só o instrumental."
+        },
+        {
+          "ru": "Адаптация является главной проблемой мигрантов.",
+          "pt": "A adaptação é o principal problema dos migrantes.",
+          "note": "являться + instrumental no predicativo."
+        },
+        {
+          "ru": "Он познакомился с новыми соседями.",
+          "pt": "Ele conheceu os novos vizinhos.",
+          "note": "Com preposição с: companhia."
+        }
+      ],
+      "pitfalls": [
+        "Acrescentar «с» onde não vai: «интересоваться с историей» é erro. O verbo já pede o caso puro.",
+        "Traduzir «trabalhar COMO engenheiro» com как: em russo é работать инженером, só o instrumental."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Творительный падеж — terminações",
+    "columns": [
+      "Grupo",
+      "Substantivo",
+      "Adjetivo",
+      "Exemplo"
+    ],
+    "rows": [
+      [
+        "Masculino/neutro (consoante, -о, -е)",
+        "-ом / -ем",
+        "-ым / -им",
+        "новым другом · синим морем"
+      ],
+      [
+        "Feminino (-а/-я)",
+        "-ой / -ей",
+        "-ой / -ей",
+        "новой подругой"
+      ],
+      [
+        "Feminino em -ь",
+        "-ью",
+        "—",
+        "синей дверью"
+      ],
+      [
+        "Plural (todos os gêneros)",
+        "-ами / -ями",
+        "-ыми / -ими",
+        "новыми друзьями"
+      ]
+    ],
+    "note": "Sem preposição depois de интересоваться, заниматься, гордиться, пользоваться. Irregulares: мать→матерью, дочь→дочерью, друзья→друзьями, дети→детьми, люди→людьми."
+  },
+  "reference": [
+    {
+      "construction": "интересоваться",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "interessar-se por",
+      "example": "интересоваться современной историей"
+    },
+    {
+      "construction": "быть недовольным",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "estar insatisfeito com",
+      "example": "быть недовольным условиями труда"
+    },
+    {
+      "construction": "сталкиваться / столкнуться с",
+      "question": "с кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "deparar-se com, enfrentar",
+      "example": "столкнуться с бытовыми трудностями"
+    },
+    {
+      "construction": "являться",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "constituir, representar, funcionar como",
+      "example": "являться важным фактором"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u02-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "интересоваться",
+      "back": "интересоваться кем? чем?",
+      "explanation": "Não há preposição; o complemento vai diretamente ao творительный падеж.",
+      "tags": [
+        "интересоваться",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u02-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "сталкиваться / столкнуться",
+      "back": "сталкиваться / столкнуться с кем? чем?",
+      "explanation": "Aprenda o significado contextual: deparar-se com, enfrentar algo.",
+      "tags": [
+        "сталкиваться с",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u02-e03",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Она интересуется ___.\n(современная городская архитектура)",
+      "options": [
+        "современной городской архитектурой",
+        "современную городскую архитектуру",
+        "современной городской архитектуры",
+        "современным городским архитектурам"
+      ],
+      "answer": "современной городской архитектурой",
+      "explanation": "Feminino singular: adjetivos -ой/-ей; substantivo em -а → -ой. As outras opções trocam para винительный, родительный ou дательный plural.",
+      "tags": [
+        "интересоваться",
+        "творительный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u02-e04",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Жители недовольны ___.\n(редкие автобусные рейсы)",
+      "options": [
+        "редкими автобусными рейсами",
+        "редкие автобусные рейсы",
+        "редких автобусных рейсов",
+        "редким автобусным рейсам"
+      ],
+      "answer": "редкими автобусными рейсами",
+      "explanation": "Plural: редкими, автобусными, рейсами. As demais deixam a forma no именительный, родительный ou дательный.",
+      "tags": [
+        "быть недовольным",
+        "творительный падеж",
+        "terminação plural"
+      ]
+    },
+    {
+      "id": "u02-e05",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "При оформлении документов мигранты столкнулись с ___.\n(непонятные административные процедуры)",
+      "options": [
+        "непонятными административными процедурами",
+        "непонятные административные процедуры",
+        "непонятных административных процедур",
+        "непонятным административным процедурам"
+      ],
+      "answer": "непонятными административными процедурами",
+      "explanation": "с кем? чем?; todo o grupo vai ao творительный падеж plural.",
+      "tags": [
+        "сталкиваться с",
+        "творительный падеж",
+        "terminação plural"
+      ]
+    },
+    {
+      "id": "u02-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Высокая аренда является ___.\n(существенный недостаток)",
+      "options": [
+        "существенным недостатком",
+        "существенный недостаток",
+        "существенного недостатка",
+        "существенному недостатку"
+      ],
+      "answer": "существенным недостатком",
+      "explanation": "Masculino singular: существенный → существенным; недостаток → недостатком.",
+      "tags": [
+        "являться",
+        "творительный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u02-e07",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "prompt": "Qual tradução contextual corresponde melhor a «столкнуться с нехваткой жилья»?",
+      "options": [
+        "enfrentar uma escassez de moradia",
+        "interessar-se por moradia",
+        "depender do custo da moradia",
+        "acostumar-se à nova moradia"
+      ],
+      "answer": "enfrentar uma escassez de moradia",
+      "explanation": "столкнуться с frequentemente significa encontrar inesperadamente uma dificuldade ou enfrentá-la.",
+      "tags": [
+        "сталкиваться с",
+        "significado",
+        "vocabulário"
+      ]
+    },
+    {
+      "id": "u02-e08",
+      "type": "choice",
+      "stage": "register",
+      "difficulty": 2,
+      "prompt": "Em qual frase являться é apropriado?",
+      "options": [
+        "Безработица является серьёзной социальной проблемой.",
+        "Мой брат является дома сегодня.",
+        "Я являюсь очень усталым после работы.",
+        "Эта книга является на столе."
+      ],
+      "answer": "Безработица является серьёзной социальной проблемой.",
+      "explanation": "являться funciona bem para definição, classificação, papel, causa ou fator; não substitui быть mecanicamente.",
+      "tags": [
+        "являться",
+        "registro formal",
+        "uso natural"
+      ]
+    },
+    {
+      "id": "u02-e09",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Escolha a frase sem erro de terminação.",
+      "prompt": "Qual frase está correta?",
+      "options": [
+        "Учёные интересуются долгосрочными последствиями климатических изменений.",
+        "Учёные интересуются долгосрочными последствия климатических изменений.",
+        "Учёные интересуются долгосрочные последствия климатических изменений.",
+        "Учёные интересуются долгосрочными последствиям климатических изменений."
+      ],
+      "answer": "Учёные интересуются долгосрочными последствиями климатических изменений.",
+      "explanation": "интересоваться exige творительный падеж no grupo inteiro: последствиями. As demais deixam o substantivo sem declinar, deixam os dois elementos sem declinar, ou usam terminação de дательный падеж por engano.",
+      "tags": [
+        "интересоваться",
+        "творительный падеж",
+        "correção de erro"
+      ]
+    },
+    {
+      "id": "u02-e10",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Escolha a frase sem erro de terminação ou coordenação.",
+      "prompt": "Qual frase está correta?",
+      "options": [
+        "Новые жильцы столкнулись с бытовыми проблемами и сложными правилами регистрации.",
+        "Новые жильцы столкнулись с бытовыми проблемами и сложные правила регистрации.",
+        "Новые жильцы столкнулись с бытовыми проблемами и сложных правил регистрации.",
+        "Новые жильцы столкнулись с бытовыми проблемами и сложными правилами регистрацией."
+      ],
+      "answer": "Новые жильцы столкнулись с бытовыми проблемами и сложными правилами регистрации.",
+      "explanation": "A preposição с rege os dois elementos coordenados: проблемами e правилами (obrigatoriamente творительный). регистрации fica no родительный падеж, pois modifica правилами (regras DE registro) — não deve virar регистрацией.",
+      "tags": [
+        "сталкиваться с",
+        "творительный падеж",
+        "coordenação"
+      ]
+    },
+    {
+      "id": "u02-e11",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte uma definição formal.",
+      "tokens": [
+        "Языковой",
+        "барьер",
+        "является",
+        "одной",
+        "из",
+        "главных",
+        "проблем",
+        "адаптации"
+      ],
+      "answer": "Языковой барьер является одной из главных проблем адаптации",
+      "explanation": "являться чем? → одной; dentro de uma classe: одной из главных проблем.",
+      "tags": [
+        "являться",
+        "творительный падеж",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u02-e12",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte uma frase natural.",
+      "tokens": [
+        "Местные",
+        "жители",
+        "недовольны",
+        "качеством",
+        "питьевой",
+        "воды"
+      ],
+      "answer": "Местные жители недовольны качеством питьевой воды",
+      "explanation": "недовольны чем? качеством; qualidade de quê? воды em родительный падеж.",
+      "tags": [
+        "быть недовольным",
+        "творительный падеж",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u02-e13",
+      "type": "choice",
+      "stage": "active_recall",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta para a combinação.",
+      "prompt": "interessar-se por iniciativas ambientais",
+      "options": [
+        "интересоваться экологическими инициативами",
+        "интересоваться экологические инициативы",
+        "интересоваться об экологических инициативах",
+        "заниматься экологическими инициативами"
+      ],
+      "answer": "интересоваться экологическими инициативами",
+      "explanation": "Sem preposição; творительный падеж plural. интересоваться nunca leva об; заниматься usa o mesmo caso mas significa 'dedicar-se a', não 'interessar-se por'.",
+      "tags": [
+        "интересоваться",
+        "творительный падеж",
+        "recuperação ativa"
+      ]
+    },
+    {
+      "id": "u02-e14",
+      "type": "choice",
+      "stage": "active_recall",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta para a combinação.",
+      "prompt": "enfrentar dificuldades financeiras",
+      "options": [
+        "столкнуться с финансовыми трудностями",
+        "столкнуться финансовыми трудностями",
+        "столкнуться с финансовые трудности",
+        "интересоваться финансовыми трудностями"
+      ],
+      "answer": "столкнуться с финансовыми трудностями",
+      "explanation": "сталкиваться / столкнуться sempre leva a preposição с antes do творительный падеж.",
+      "tags": [
+        "сталкиваться с",
+        "творительный падеж",
+        "recuperação ativa"
+      ]
+    },
+    {
+      "id": "u02-e15",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "prompt": "Qual grupo está inteiramente no творительный падеж plural?",
+      "options": [
+        "новыми культурными нормами",
+        "новым культурным нормам",
+        "новых культурных норм",
+        "новые культурные нормы"
+      ],
+      "answer": "новыми культурными нормами",
+      "explanation": "Adjetivos -ыми e substantivo -ами identificam o творительный падеж plural.",
+      "tags": [
+        "творительный падеж",
+        "terminação plural",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u02-e16",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "prompt": "Complete: «Одним из факторов переезда является…»",
+      "options": [
+        "отсутствие перспектив",
+        "отсутствием перспектив",
+        "к отсутствию перспектив",
+        "с отсутствием перспектив"
+      ],
+      "answer": "отсутствие перспектив",
+      "explanation": "Atenção à estrutura: «одним из факторов» está no творительный porque classifica; o sujeito «отсутствие» permanece no именительный падеж.",
+      "tags": [
+        "являться",
+        "estrutura da frase",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u02-e17",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "быть недовольным",
+      "back": "быть недовольным кем? чем?",
+      "explanation": "O complemento vai diretamente ao творительный падеж.",
+      "tags": [
+        "быть недовольным",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u02-e18",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "являться no uso formal",
+      "back": "являться кем? чем?",
+      "explanation": "Use para definição ou classificação: являться причиной, фактором, проблемой, преимуществом.",
+      "tags": [
+        "являться",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u02-e19",
+      "type": "match_pairs",
+      "stage": "recognition",
+      "difficulty": 2,
+      "instruction": "Relacione cada construção com творительный падеж ao seu significado.",
+      "pairs": [
+        {
+          "left": "интересоваться",
+          "right": "interessar-se por"
+        },
+        {
+          "left": "быть недовольным",
+          "right": "estar insatisfeito com"
+        },
+        {
+          "left": "сталкиваться / столкнуться с",
+          "right": "deparar-se com, enfrentar"
+        },
+        {
+          "left": "являться",
+          "right": "constituir, representar, funcionar como"
+        },
+        {
+          "left": "гордиться",
+          "right": "orgulhar-se de"
+        },
+        {
+          "left": "пользоваться",
+          "right": "usar, servir-se de"
+        }
+      ],
+      "explanation": "Todas regem творительный падеж sem preposição, exceto сталкиваться, que usa с + творительный.",
+      "tags": [
+        "творительный падеж",
+        "regência",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u02-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 2,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Эмиграция из одной страны означает иммиграцию в другую: мигрант сначала сталкивается с новыми административными процедурами, а потом занимается получением гражданства и трудоустройством. Многие мигранты интересуются местной культурой и языком, но некоторые остаются недовольны условиями труда или качеством жилья. Безработица среди новых жителей является распространённой проблемой в первые месяцы после переезда, однако при поддержке местных организаций люди обычно быстро адаптируются.",
+      "prompt": "Segundo o texto, com o que o migrante se depara logo no início?",
+      "options": [
+        "Com novos procedimentos administrativos.",
+        "Com a falta de moradia.",
+        "Com a proibição de trabalhar.",
+        "Com a perda imediata da cidadania."
+      ],
+      "answer": "Com novos procedimentos administrativos.",
+      "explanation": "«мигрант сначала сталкивается с новыми административными процедурами».",
+      "tags": [
+        "творительный падеж",
+        "leitura",
+        "миграция"
+      ]
+    },
+    {
+      "id": "u02-e21",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 2,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Эмиграция из одной страны означает иммиграцию в другую: мигрант сначала сталкивается с новыми административными процедурами, а потом занимается получением гражданства и трудоустройством. Многие мигранты интересуются местной культурой и языком, но некоторые остаются недовольны условиями труда или качеством жилья. Безработица среди новых жителей является распространённой проблемой в первые месяцы после переезда, однако при поддержке местных организаций люди обычно быстро адаптируются.",
+      "prompt": "De acordo com o texto, o que é comum entre os novos moradores nos primeiros meses?",
+      "options": [
+        "O desemprego é um problema frequente.",
+        "Eles ficam ricos rapidamente.",
+        "Eles perdem a cidadania.",
+        "Eles voltam imediatamente ao país de origem."
+      ],
+      "answer": "O desemprego é um problema frequente.",
+      "explanation": "«Безработица... является распространённой проблемой в первые месяцы после переезда».",
+      "tags": [
+        "творительный падеж",
+        "leitura",
+        "миграция"
+      ]
+    },
+    {
+      "id": "u02-e22",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Эмиграция из одной страны означает иммиграцию в другую: мигрант сначала сталкивается с новыми административными процедурами, а потом занимается получением гражданства и трудоустройством. Многие мигранты интересуются местной культурой и языком, но некоторые остаются недовольны условиями труда или качеством жилья. Безработица среди новых жителей является распространённой проблемой в первые месяцы после переезда, однако при поддержке местных организаций люди обычно быстро адаптируются.",
+      "prompt": "Qual trecho do texto está no творительный падеж (кем? чем?) sem preposição?",
+      "options": [
+        "местной культурой и языком",
+        "из одной страны",
+        "среди новых жителей",
+        "в первые месяцы"
+      ],
+      "answer": "местной культурой и языком",
+      "explanation": "интересоваться кем? чем? não leva preposição. «из одной страны» e «среди новых жителей» são родительный падеж; «в первые месяцы» é винительный падеж (expressão de tempo).",
+      "tags": [
+        "творительный падеж",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u02-e23",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Учёные интересуются долгосрочными последствиями изменения климата.",
+      "prompt": "Do que os cientistas se interessam, segundo o áudio?",
+      "options": [
+        "Pelas consequências de longo prazo da mudança climática.",
+        "Pelo financiamento de novas pesquisas.",
+        "Pela mudança de emprego dos colegas.",
+        "Pelas leis de imigração."
+      ],
+      "answer": "Pelas consequências de longo prazo da mudança climática.",
+      "explanation": "интересоваться кем? чем? = «долгосрочными последствиями изменения климата».",
+      "tags": [
+        "интересоваться",
+        "творительный падеж",
+        "audição"
+      ]
+    },
+    {
+      "id": "u02-e24",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Городские власти недовольны качеством общественного транспорта.",
+      "prompt": "O que incomoda as autoridades da cidade, segundo o áudio?",
+      "options": [
+        "A qualidade do transporte público.",
+        "O preço dos imóveis.",
+        "O número de imigrantes.",
+        "A falta de hospitais."
+      ],
+      "answer": "A qualidade do transporte público.",
+      "explanation": "недовольны кем? чем? = «качеством общественного транспорта».",
+      "tags": [
+        "быть недовольным",
+        "творительный падеж",
+        "audição"
+      ]
+    }
+  ],
+  "source_note": "«Время обсуждать», урок 2 (миграция и адаптация) · «Russian Grammar in Tables» (Кузьмина), Творительный падеж · Red Kalinka, Instrumental case",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e pares: usar a estrutura numa produção sua."
+    }
+  ]
+}

@@ -1,0 +1,698 @@
+{
+  "id": "u07_obrazovanie",
+  "order": 7,
+  "title": "Образование: поступление и обучение",
+  "description": "Sistematiza при-, у- e вы- com verbos de movimento e automatiza a regência de поступать, готовиться, разбираться, успевать e сдавать/сдать no tema образование.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "escolher entre приходить/приезжать, уходить/уезжать e выходить/выезжать pelo prefixo e pelo meio de transporte",
+    "produzir поступать в/на com a terminação correta no винительный падеж",
+    "distinguir сдавать (processo) de сдать (resultado)",
+    "usar готовиться к, разбираться в e успевать по sem calcar a regência no português"
+  ],
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Verbos de movimento com при-, у- e вы-",
+      "paragraphs": [
+        "Como visto com пере- (Unidade 4), o prefixo indica a direção do movimento em relação a um ponto de referência, não uma tradução fixa. при- indica aproximação ou chegada: приходить/прийти (a pé) e приезжать/приехать (de veículo) descrevem alguém que chega a um lugar. у- indica afastamento definitivo, sem foco no destino: уходить/уйти e уезжать/уехать descrevem alguém que vai embora. вы- indica um movimento de dentro para fora de um espaço fechado: выходить/выйти e выезжать/выехать descrevem alguém que sai de dentro de algo — uma sala, um prédio, uma cidade.",
+        "A escolha entre a raiz -ходить/-йти (a pé) e -езжать/-ехать (de veículo) depende do meio de transporte, não do prefixo. Иностранные студенты приезжают учиться в Россию (chegam de avião ou trem) — não приходят, porque a distância exige veículo. Já Студенты выходят из аудитории (saem da sala a pé) — não выезжают, porque não há veículo dentro da sala."
+      ],
+      "audio_script": "Vamos aos verbos de movimento com prefixo, começando pelos três mais frequentes: при, у e вы. Já vimos que при indica chegada e у indica saída. Falta o вы, e ele é o mais sutil dos três. вы indica sair de dentro de um espaço fechado, e frequentemente por pouco tempo. Он вышел из аудитории. Ele saiu da sala de aula — e a implicação é que ele volta. Compare com Он ушёл из университета: ele deixou a universidade, e aí a implicação é definitiva. Essa diferença entre sair temporariamente e ir embora de vez não existe em português com um par de prefixos. Nós dizemos «saiu» nos dois casos e deixamos o contexto resolver. O russo marca isso na palavra. Agora uma segunda camada, que é onde está a dificuldade real. Cada prefixo traz uma preposição preferida para o complemento. при combina com из ou с mais genitivo, para a origem: приехать из Москвы, прийти с работы. у combina com в ou на mais acusativo, para o destino: уехать в Москву, уйти на работу. вы combina com из mais genitivo: выйти из дома. E lembre da regra de emparelhamento que já vimos: в anda com из, e на anda com с. Se você diz на работу, então é с работы. Se você diz в университет, então é из университета. Isso vale independentemente do prefixo, e resolve a maior parte dos erros.",
+      "examples": [
+        {
+          "ru": "Он вышел из аудитории на пять минут.",
+          "pt": "Ele saiu da sala por cinco minutos.",
+          "note": "вы- = saída temporária de um espaço fechado."
+        },
+        {
+          "ru": "Он ушёл из университета после второго курса.",
+          "pt": "Ele abandonou a universidade depois do segundo ano.",
+          "note": "у- = afastamento definitivo."
+        },
+        {
+          "ru": "Абитуриенты приехали из разных регионов.",
+          "pt": "Os candidatos vieram de diferentes regiões.",
+          "note": "при- + из + родительный."
+        },
+        {
+          "ru": "Она пришла с занятий и сразу села за учебники.",
+          "pt": "Ela voltou das aulas e sentou-se imediatamente com os livros.",
+          "note": "на занятия ↔ с занятий: o par manda na preposição."
+        }
+      ],
+      "pitfalls": [
+        "Usar уйти quando se quer dizer «saiu por um instante»: nesse caso é выйти.",
+        "Dizer «из работы»: como se diz на работу, a origem é с работы."
+      ]
+    },
+    {
+      "title": "Regência do vocabulário de образование",
+      "paragraphs": [
+        "поступать/поступить tem duas regências conforme o complemento: поступать в кого? что? quando o complemento é a instituição (в университет, в вуз) e поступать на кого? что? quando é o curso, a faculdade ou a vaga (на факультет, на специальность). As duas podem aparecer na mesma frase: Она поступила в университет на факультет журналистики.",
+        "Vários verbos exigem preposições diferentes das que o português sugeriria: готовиться/подготовиться к кому? чему? (preparar-se para, não «para»), разбираться/разобраться в ком? чём? (entender bem de, não «com») e успевать/успеть по чему? (ir bem em uma matéria escolar). Já сдавать/сдать что? não usa preposição. Atenção ao par сдавать/сдать: сдавать экзамен descreve o processo de prestar a prova, sem garantir aprovação; сдать экзамен apresenta o resultado — ser aprovado."
+      ],
+      "audio_script": "Agora a regência do vocabulário de educação, que é o tema desta unidade e cai muito no exame. São seis blocos, e cada um deve ser guardado inteiro. Bloco um: поступать e поступить, entrar numa instituição. Com a instituição, vai в mais acusativo: поступить в университет. Com a faculdade ou o curso, vai на mais acusativo: поступить на филологический факультет, поступить на первый курс. Instituição leva в, faculdade e curso levam на. Não há lógica dedutível aqui: é uso. Bloco dois: готовиться, preparar-se. Vai к mais dativo. Готовиться к экзамену. Em português dizemos preparar-se PARA, e essa pista leva ao erro на экзамен. Ignore a pista portuguesa. Bloco três: разбираться, entender de alguma coisa. Vai в mais prepositivo. Разбираться в математике. Bloco quatro: успевать, ir bem numa matéria. Vai по mais dativo. Успевать по физике. E o mesmo по aparece em экзамен по истории, специалист по экономике, лекция по литературе. Guarde esse по como o marcador de «na área de». Bloco cinco: сдавать e сдать. Aqui há uma armadilha aspectual perfeita. Сдавать экзамен, no incompleto, significa prestar o exame — você está fazendo a prova, o resultado é desconhecido. Сдать экзамен, no completo, significa passar no exame. Он сдавал экзамен три раза e он сдал экзамен são frases muito diferentes, e um russo ouve a diferença imediatamente. E bloco seis: окончить университет, formar-se. Sem preposição nenhuma, acusativo direto. Cuidado para não confundir com закончить, que é terminar qualquer coisa: закончить работу.",
+      "examples": [
+        {
+          "ru": "Она поступила в университет на юридический факультет.",
+          "pt": "Ela entrou na universidade, na faculdade de direito.",
+          "note": "в + instituição, на + faculdade — na mesma frase."
+        },
+        {
+          "ru": "Он готовится к вступительным экзаменам по математике.",
+          "pt": "Ele se prepara para os exames de admissão de matemática.",
+          "note": "готовиться К + dativo, экзамен ПО + dativo."
+        },
+        {
+          "ru": "Он сдавал экзамен три раза и наконец сдал.",
+          "pt": "Ele prestou o exame três vezes e finalmente passou.",
+          "note": "сдавать = prestar; сдать = ser aprovado."
+        },
+        {
+          "ru": "Она хорошо разбирается в статистике.",
+          "pt": "Ela entende bem de estatística.",
+          "note": "разбираться В + prepositivo."
+        }
+      ],
+      "pitfalls": [
+        "Dizer «готовиться на экзамен» por influência do «preparar-se PARA» português: é к экзамену.",
+        "Usar сдать quando se quer dizer só «fazer a prova»: сдать já significa ter passado.",
+        "Dizer «поступить в факультет»: faculdade e curso levam на."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Prefixos при- / у- / вы- com verbos de movimento",
+    "columns": [
+      "Prefixo",
+      "Ideia",
+      "a pé (несов. / сов.)",
+      "de veículo (несов. / сов.)"
+    ],
+    "rows": [
+      [
+        "при-",
+        "chegar, aproximar-se",
+        "приходить / прийти",
+        "приезжать / приехать"
+      ],
+      [
+        "у-",
+        "ir embora, afastar-se",
+        "уходить / уйти",
+        "уезжать / уехать"
+      ],
+      [
+        "вы-",
+        "sair de dentro para fora",
+        "выходить / выйти",
+        "выезжать / выехать"
+      ]
+    ],
+    "note": "A raiz muda conforme o meio de transporte (ходить × ехать), não conforme o prefixo. O prefixo só indica a direção do movimento."
+  },
+  "reference": [
+    {
+      "construction": "поступать / поступить",
+      "question": "в кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ingressar em (instituição)",
+      "example": "поступить в педагогический университет"
+    },
+    {
+      "construction": "поступать / поступить",
+      "question": "на кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ingressar em (curso, faculdade)",
+      "example": "поступить на факультет журналистики"
+    },
+    {
+      "construction": "готовиться / подготовиться",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "preparar-se para",
+      "example": "готовиться к вступительному экзамену"
+    },
+    {
+      "construction": "сдавать / сдать",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "prestar / passar em (exame)",
+      "example": "сдать выпускной экзамен"
+    },
+    {
+      "construction": "разбираться / разобраться",
+      "question": "в ком? чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "entender bem de, dominar",
+      "example": "разбираться в новой программе"
+    },
+    {
+      "construction": "успевать / успеть",
+      "question": "по чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ir bem em (matéria escolar)",
+      "example": "успевать по всем предметам"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u07-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "поступать / поступить",
+      "back": "поступать/поступить в кого? что? · на кого? что?",
+      "explanation": "в университет (instituição); на факультет, на специальность (curso).",
+      "tags": [
+        "поступать в",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u07-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "готовиться / подготовиться",
+      "back": "готовиться/подготовиться к кому? чему?",
+      "explanation": "к + дательный падеж, não «для».",
+      "tags": [
+        "готовиться к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u07-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "разбираться / разобраться",
+      "back": "разбираться/разобраться в ком? чём?",
+      "explanation": "в + предложный падеж; entender bem de um assunto.",
+      "tags": [
+        "разбираться в",
+        "предложный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u07-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "успевать / успеть",
+      "back": "успевать/успеть по чему?",
+      "explanation": "по + дательный падеж; refere-se ao desempenho numa matéria escolar.",
+      "tags": [
+        "успевать по",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u07-e05",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "окончить",
+      "back": "окончить кого? что? (sem preposição)",
+      "explanation": "окончить университет/школу; винительный падеж direto, sem preposição.",
+      "tags": [
+        "окончить",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u07-e06",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "На следующий год моя сестра решила ___ в педагогический университет.",
+      "options": [
+        "поступить",
+        "поступать",
+        "выступить",
+        "наступить"
+      ],
+      "answer": "поступить",
+      "explanation": "решила + infinitivo perfectivo: решила поступить. выступить (discursar) e наступить (chegar/pisar) partilham a raiz -ступ-, mas têm outro sentido.",
+      "tags": [
+        "поступать в",
+        "aspecto",
+        "verbos com -ступ-"
+      ]
+    },
+    {
+      "id": "u07-e07",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "Каждый год тысячи абитуриентов ___ в разные вузы страны.",
+      "options": [
+        "поступают",
+        "поступили",
+        "поступят",
+        "поступить"
+      ],
+      "answer": "поступают",
+      "explanation": "каждый год + fato geral repetido: несовершенный вид no presente.",
+      "tags": [
+        "поступать в",
+        "aspecto",
+        "repetição"
+      ]
+    },
+    {
+      "id": "u07-e08",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "После долгой подготовки он наконец успешно ___ выпускной экзамен.",
+      "options": [
+        "сдал",
+        "сдавал",
+        "сдаёт",
+        "сдавать"
+      ],
+      "answer": "сдал",
+      "explanation": "наконец + resultado obtido: совершенный вид. сдать экзамен = ser aprovado.",
+      "tags": [
+        "сдавать / сдать",
+        "aspecto",
+        "resultado"
+      ]
+    },
+    {
+      "id": "u07-e09",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "На этом курсе студенты обычно долго ___ экзамены, потому что вопросы очень трудные.",
+      "options": [
+        "сдают",
+        "сдали",
+        "сдадут",
+        "сдать"
+      ],
+      "answer": "сдают",
+      "explanation": "обычно descreve o processo repetido de prestar a prova, não garante aprovação: несовершенный вид.",
+      "tags": [
+        "сдавать / сдать",
+        "aspecto",
+        "processo"
+      ]
+    },
+    {
+      "id": "u07-e10",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "prompt": "Иностранные студенты часто ___ учиться в Россию из разных стран.",
+      "options": [
+        "приезжают",
+        "уезжают",
+        "выезжают",
+        "переезжают"
+      ],
+      "answer": "приезжают",
+      "explanation": "chegada de veículo a um destino distante: при- + -езжать.",
+      "tags": [
+        "приезжать",
+        "verbos de movimento",
+        "prefixos"
+      ]
+    },
+    {
+      "id": "u07-e11",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "prompt": "После окончания университета многие выпускники ___ работать за границу.",
+      "options": [
+        "уезжают",
+        "приезжают",
+        "выходят",
+        "поступают"
+      ],
+      "answer": "уезжают",
+      "explanation": "partida definitiva para outro país: у- + -езжать.",
+      "tags": [
+        "уезжать",
+        "verbos de movimento",
+        "prefixos"
+      ]
+    },
+    {
+      "id": "u07-e12",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "prompt": "Преподаватель попросил студентов ненадолго ___ в коридор.",
+      "options": [
+        "выйти",
+        "прийти",
+        "уйти",
+        "приехать"
+      ],
+      "answer": "выйти",
+      "explanation": "saída temporária de dentro da sala para fora: вы- + -йти. ненадолго reforça que não é uma partida definitiva.",
+      "tags": [
+        "выйти",
+        "verbos de movimento",
+        "prefixos"
+      ]
+    },
+    {
+      "id": "u07-e13",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Абитуриент серьёзно готовился ___. (вступительный экзамен)",
+      "explanation": "готовиться К чему? → к + дательный падеж: adjetivo masculino -ому, substantivo -у. Em português diz-se «preparar-se PARA», e é essa a pista que induz ao erro «на экзамен».",
+      "tags": [
+        "готовиться к",
+        "дательный падеж",
+        "terminação singular",
+        "múltipla escolha"
+      ],
+      "instruction": "Escolha a forma correta do grupo entre parênteses.",
+      "options": [
+        "к вступительному экзамену",
+        "к вступительный экзамен",
+        "на вступительный экзамен",
+        "для вступительного экзамена"
+      ],
+      "answer": "к вступительному экзамену"
+    },
+    {
+      "id": "u07-e14",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Он совсем не разбирается ___. (современные образовательные технологии)",
+      "explanation": "разбираться В чём? → предложный падеж plural: adjetivo -ых, substantivo -ях (технология é fem. em -ия). «о + предложный» seria falar sobre, não entender de.",
+      "tags": [
+        "разбираться в",
+        "предложный падеж",
+        "terminação plural",
+        "múltipla escolha"
+      ],
+      "instruction": "Escolha a forma correta do grupo entre parênteses.",
+      "options": [
+        "в современных образовательных технологиях",
+        "в современные образовательные технологии",
+        "с современными образовательными технологиями",
+        "о современных образовательных технологиях"
+      ],
+      "answer": "в современных образовательных технологиях"
+    },
+    {
+      "id": "u07-e15",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Эта студентка хорошо успевает ___. (иностранные языки)",
+      "explanation": "успевать ПО чему? (ir bem numa disciplina) → по + дательный падеж plural: -ым/-ам. A mesma regência aparece em экзамен по истории, специалист по экономике.",
+      "tags": [
+        "успевать по",
+        "дательный падеж",
+        "terminação plural",
+        "múltipla escolha"
+      ],
+      "instruction": "Escolha a forma correta do grupo entre parênteses.",
+      "options": [
+        "по иностранным языкам",
+        "в иностранных языках",
+        "по иностранных языках",
+        "с иностранными языками"
+      ],
+      "answer": "по иностранным языкам"
+    },
+    {
+      "id": "u07-e16",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 1,
+      "prompt": "Абитуриентка мечтает поступить ___. (медицинский университет)",
+      "explanation": "поступать / поступить В что? → винительный падеж (куда?), que para masculino inanimado tem a mesma forma do именительный. Já учиться responde где? e pede предложный: учиться в университете.",
+      "tags": [
+        "поступать в",
+        "винительный падеж",
+        "terminação singular",
+        "múltipla escolha"
+      ],
+      "instruction": "Escolha a forma correta do grupo entre parênteses.",
+      "options": [
+        "в медицинский университет",
+        "в медицинском университете",
+        "на медицинский университет",
+        "к медицинскому университету"
+      ],
+      "answer": "в медицинский университет"
+    },
+    {
+      "id": "u07-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 2,
+      "prompt": "Qual frase usa corretamente готовиться?",
+      "explanation": "Duas regências na mesma frase: готовиться К + дательный (к экзамену) e экзамен ПО + дательный (по истории). A opção 2 mantém a preposição mas esquece a terminação — o erro mais frequente de todos.",
+      "tags": [
+        "готовиться к",
+        "дательный падеж",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Студент серьёзно готовится к экзамену по истории.",
+        "Студент серьёзно готовится к экзамен по истории.",
+        "Студент серьёзно готовится на экзамен по истории.",
+        "Студент серьёзно готовится к экзамену по историю."
+      ],
+      "answer": "Студент серьёзно готовится к экзамену по истории."
+    },
+    {
+      "id": "u07-e18",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase usa corretamente разбираться?",
+      "explanation": "разбираться В ком? чём? → предложный падеж. Note também поступить НА факультет × поступить В университет: факультет e курс levam на, a instituição leva в.",
+      "tags": [
+        "разбираться в",
+        "предложный падеж",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Она поступила на филологический факультет, но пока плохо разбирается в своей специальности.",
+        "Она поступила на филологический факультет, но пока плохо разбирается со своей специальностью.",
+        "Она поступила в филологический факультет, но пока плохо разбирается в своей специальности.",
+        "Она поступила на филологический факультет, но пока плохо разбирается свою специальность."
+      ],
+      "answer": "Она поступила на филологический факультет, но пока плохо разбирается в своей специальности."
+    },
+    {
+      "id": "u07-e19",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte uma frase com as duas regências de поступить.",
+      "tokens": [
+        "После",
+        "школы",
+        "она",
+        "поступила",
+        "в",
+        "педагогический",
+        "университет",
+        "на",
+        "факультет",
+        "иностранных",
+        "языков"
+      ],
+      "answer": "После школы она поступила в педагогический университет на факультет иностранных языков",
+      "explanation": "поступить в университет (instituição) e поступить на факультет (curso) coexistem na mesma frase.",
+      "tags": [
+        "поступать в",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u07-e20",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte uma frase natural.",
+      "tokens": [
+        "Перед",
+        "экзаменом",
+        "студенты",
+        "обычно",
+        "готовятся",
+        "к",
+        "трудным",
+        "вопросам"
+      ],
+      "answer": "Перед экзаменом студенты обычно готовятся к трудным вопросам",
+      "explanation": "готовиться к чему?: к трудным вопросам, дательный падеж plural.",
+      "tags": [
+        "готовиться к",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u07-e21",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a construção russa ao significado correspondente.",
+      "pairs": [
+        {
+          "left": "поступить в университет",
+          "right": "ingressar na universidade"
+        },
+        {
+          "left": "готовиться к экзамену",
+          "right": "preparar-se para a prova"
+        },
+        {
+          "left": "сдать экзамен",
+          "right": "passar no exame (resultado)"
+        },
+        {
+          "left": "сдавать экзамен",
+          "right": "prestar o exame (processo)"
+        },
+        {
+          "left": "разбираться в теме",
+          "right": "entender bem de um assunto"
+        },
+        {
+          "left": "окончить университет",
+          "right": "concluir/formar-se na universidade"
+        }
+      ],
+      "explanation": "O contraste сдать × сдавать é o mesmo de resultado × processo já visto em получить × получать.",
+      "tags": [
+        "образование",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u07-e22",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Não abra com «Я считаю, что». Use pelo menos cinco unidades da lista.",
+      "prompt": "«Стоит ли поступать в университет сразу после школы, или лучше сначала поработать?»\n\nUnidades: поступать в · готовиться к · разбираться в · сдать экзамен · однако · с одной стороны / с другой стороны",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "ТРКИ-II",
+        "estrutura B2"
+      ]
+    },
+    {
+      "id": "u07-e23",
+      "type": "open_text",
+      "stage": "micro_writing",
+      "difficulty": 2,
+      "instruction": "Escreva 2–3 frases em russo. Use as construções indicadas.",
+      "prompt": "Tema: типичный день перед важным экзаменом\nUse: готовиться к · сдавать/сдать · успевать по",
+      "review_notes": "Verificar regência, terminações, escolha correta entre сдавать e сдать conforme o sentido pretendido.",
+      "tags": [
+        "produção escrita",
+        "готовиться к",
+        "сдавать / сдать",
+        "успевать по"
+      ]
+    },
+    {
+      "id": "u07-e24",
+      "type": "reading",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Leia o perfil e faça uma inferência, não uma simples busca de palavra.",
+      "context": "Марина окончила школу с хорошими оценками, но не сразу поступила в университет. Год она работала, чтобы понять, в какой области хочет развиваться. Затем она подготовилась к вступительным экзаменам и поступила на факультет архитектуры. Сейчас Марина хорошо успевает по специальным предметам, хотя ей ещё трудно разбираться в сложных программах.",
+      "prompt": "Por que o ano de trabalho foi importante para Marina?",
+      "options": [
+        "Ele a ajudou a escolher conscientemente a área antes de prestar os exames.",
+        "Ele substituiu a necessidade de fazer exames de ingresso.",
+        "Ele provou que ela já dominava programas complexos.",
+        "Ele a impediu de concluir a escola com boas notas."
+      ],
+      "answer": "Ele a ajudou a escolher conscientemente a área antes de prestar os exames.",
+      "explanation": "O texto diz «чтобы понять, в какой области хочет развиваться»; a resposta exige ligar finalidade e sequência temporal.",
+      "tags": [
+        "leitura",
+        "образование",
+        "inferência"
+      ]
+    },
+    {
+      "id": "u07-e25",
+      "type": "listening",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Ouça um recado acadêmico e identifique a ordem das ações.",
+      "prompt": "O que os candidatos devem fazer primeiro?",
+      "audio_text": "Сначала абитуриентам нужно подать документы, затем подготовиться к собеседованию. Те, кто успешно сдаст письменный экзамен, будут приглашены на факультет в конце июля.",
+      "options": [
+        "Enviar os documentos.",
+        "Comparecer à faculdade no fim de julho.",
+        "Passar primeiro pela entrevista.",
+        "Concluir a universidade."
+      ],
+      "answer": "Enviar os documentos.",
+      "explanation": "сначала marca a primeira ação; затем e в конце июля organizam as etapas seguintes.",
+      "tags": [
+        "аудирование",
+        "образование",
+        "sequência"
+      ]
+    },
+    {
+      "id": "u07-e26",
+      "type": "listening",
+      "response_type": "input",
+      "stage": "noticing",
+      "difficulty": 3,
+      "instruction": "Ditado focalizado: escreva a frase inteira e marque mentalmente as duas regências.",
+      "prompt": "Escreva exatamente a frase ouvida.",
+      "audio_text": "Абитуриент готовится к экзамену и постепенно разбирается в новой программе.",
+      "answer": "Абитуриент готовится к экзамену и постепенно разбирается в новой программе.",
+      "explanation": "готовиться к кому? чему? + разбираться в ком? чём?.",
+      "tags": [
+        "аудирование",
+        "ditado",
+        "готовиться к",
+        "разбираться в"
+      ]
+    }
+  ],
+  "source_note": "Kagan/Kudyma/Miller, «Russian: From Intermediate to Advanced», Глава 1 «Образование и 21 век» · Кузьмина, Глаголы движения с приставками"
+}

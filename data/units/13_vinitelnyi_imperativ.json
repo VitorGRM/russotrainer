@@ -1,0 +1,767 @@
+{
+  "id": "u13_vinitelnyi",
+  "order": 13,
+  "title": "Винительный падеж e o aspecto no imperativo",
+  "description": "Свободное время e образ жизни: objeto direto com animacidade, expressões de tempo com acusativo e a escolha do aspecto ao pedir, convidar e proibir.",
+  "estimated_minutes": 32,
+  "objectives": [
+    "aplicar a regra de animacidade no винительный падеж",
+    "distinguir за час, через час e на неделю",
+    "escolher o aspecto do imperativo conforme pedido, convite ou proibição"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, «Russian: From Intermediate to Advanced», Глава 3 «Свободное время и образ жизни» (Винительный падеж, Вид глагола в императиве) · Кузьмина, Винительный падеж e Формы императива · Red Kalinka, Accusative case",
+  "grammar": [
+    {
+      "title": "Винительный падеж e a regra da animacidade",
+      "paragraphs": [
+        "O винительный падеж responde кого? что? e marca o objeto direto — quem ou o que recebe a ação. Ele também marca destino (куда?) com в e на. A parte fácil: neutros nunca mudam (окно → окно), femininos em -а/-я trocam para -у/-ю (книга → книгу), femininos em -ь nunca mudam (дверь → дверь), adjetivos femininos fazem -ую/-юю (новую, синюю).",
+        "A parte que decide tudo é a animacidade, e ela existe só no masculino singular e em todo o plural. Se o substantivo é INANIMADO, o acusativo é igual ao nominativo: Я читаю журнал. Я читаю журналы. Se é ANIMADO — pessoa ou animal — o acusativo é igual ao GENITIVO: Я вижу брата (não «брат»). Я вижу братьев (não «братья»). O adjetivo acompanha: Я знаю нового студента, Я знаю новых студентов.",
+        "Essa regra não tem paralelo em português e é a fonte de erro número um em textos escritos por estrangeiros. O teste prático é rápido: pergunte «isso respira?». Se respira e é masculino singular ou está no plural, use a forma do genitivo. Cuidado com casos-limite reais do exame: народ e группа são gramaticalmente inanimados apesar de designarem pessoas; já покойник (defunto) e кукла (boneca) são gramaticalmente animados."
+      ],
+      "audio_script": "Винительный падеж, o acusativo. Ele responde кого? что? e faz duas coisas: marca o objeto direto e marca o destino. Vamos primeiro à parte fácil, que é boa parte da tabela. Neutros nunca mudam. окно continua окно. поле continua поле. Femininos terminados em а ou я trocam para у ou ю. книга vira книгу. неделя vira неделю. Femininos terminados em sinal brando também não mudam: дверь continua дверь. Adjetivos femininos fazem ую ou юю: новую, синюю. Agora a parte que decide tudo, e que não tem nenhum paralelo em português: a animacidade. Ela existe só em dois lugares: no masculino singular e em todo o plural. Se o substantivo é INANIMADO, o acusativo é igual ao nominativo. Я читаю журнал. Я читаю журналы. Nada muda. Mas se o substantivo é ANIMADO, ou seja, pessoa ou animal, o acusativo é igual ao GENITIVO. Я вижу брата. Não брат: брата, com a terminação do genitivo. Я вижу братьев. Não братья: братьев. E o adjetivo acompanha o substantivo. Я знаю нового студента. Я знаю новых студентов. O teste prático é rápido e resolve quase tudo. Pergunte a si mesmo: isso respira? Se respira, e se está no masculino singular ou no plural, use a forma do genitivo. Para terminar, três casos-limite que caem em prova e que contrariam a intuição. Народ e группа são gramaticalmente INANIMADOS, mesmo designando pessoas — porque o que conta é a palavra, não o referente. Já покойник, defunto, e кукла, boneca, são gramaticalmente ANIMADOS, mesmo não respirando. A animacidade em russo é uma categoria da gramática, não da biologia.",
+      "examples": [
+        {
+          "ru": "Я читаю интересный журнал.",
+          "pt": "Estou lendo uma revista interessante.",
+          "note": "Inanimado masculino: acusativo = nominativo."
+        },
+        {
+          "ru": "Я хорошо знаю нового преподавателя.",
+          "pt": "Conheço bem o novo professor.",
+          "note": "Animado masculino: acusativo = genitivo (-ого / -я)."
+        },
+        {
+          "ru": "Мы пригласили всех наших друзей.",
+          "pt": "Convidamos todos os nossos amigos.",
+          "note": "Plural animado: acusativo = genitivo (всех, наших, друзей)."
+        },
+        {
+          "ru": "Мы купили новые книги.",
+          "pt": "Compramos livros novos.",
+          "note": "Plural inanimado: acusativo = nominativo."
+        }
+      ],
+      "pitfalls": [
+        "Escrever «я вижу брат»: masculino animado exige a forma do genitivo, брата.",
+        "Aplicar animacidade ao neutro ou ao feminino singular: lá ela não existe.",
+        "Achar que народ é animado por designar pessoas — gramaticalmente ele é inanimado."
+      ]
+    },
+    {
+      "title": "Tempo com acusativo: за час, через час, на неделю",
+      "paragraphs": [
+        "O винительный падеж é o caso principal das expressões de tempo, e três construções muito parecidas significam coisas bem diferentes. Primeira: за + acusativo = o tempo GASTO para completar algo. Он написал статью за два часа — escreveu o artigo em duas horas. Segunda: через + acusativo = o tempo que FALTA até algo acontecer. Он придёт через два часа — ele virá daqui a duas horas. Terceira: на + acusativo = a duração PLANEJADA do resultado. Он уехал на неделю — foi embora por uma semana (e ficará fora uma semana).",
+        "Existe ainda o acusativo de duração sem preposição nenhuma, que descreve quanto tempo o processo durou: Он писал статью два часа — ficou duas horas escrevendo. Compare com за два часа: «за» aponta o resultado atingido (com verbo perfectivo), o acusativo puro aponta o processo (com verbo imperfectivo). O aspecto do verbo e a preposição andam juntos — não se escolhe um sem o outro.",
+        "Outras expressões de tempo no acusativo: dias da semana com в (в понедельник, в среду, в пятницу), repetição com каждый (каждый день, каждую неделю, каждый год) e duração completa com весь (всю ночь, всю неделю, всё лето). Note que в + dia da semana é acusativo, mas в + mês é prepositivo: в понедельник (acusativo) × в январе (prepositivo)."
+      ],
+      "audio_script": "Segunda parte: tempo. O acusativo é o caso principal das expressões temporais em russo, e existem três construções muito parecidas que significam coisas completamente diferentes. Vamos separá-las. Construção um: за mais acusativo. Isso é o tempo GASTO para completar alguma coisa. Он написал статью за два часа. Ele escreveu o artigo EM duas horas. O artigo ficou pronto. Construção dois: через mais acusativo. Isso é o tempo que FALTA até alguma coisa acontecer. Он придёт через два часа. Ele virá DAQUI A duas horas. Repare que em português nós usamos «em» nos dois casos, e é justamente por isso que confundimos. Fiz em duas horas. Chego em duas horas. Duas preposições russas diferentes, за e через. Construção três: на mais acusativo. Isso é a duração PLANEJADA do resultado. Он уехал на неделю. Ele foi embora por uma semana, e vai ficar fora uma semana. E existe ainda uma quarta possibilidade: acusativo puro, sem preposição nenhuma. Он писал статью два часа. Ele passou duas horas escrevendo o artigo. Aqui o foco é o processo, não o resultado. Compare as duas versões, porque a diferença é fina e importante: Он написал статью за два часа — verbo perfectivo, preposição за, resultado atingido. Он писал статью два часа — verbo imperfectivo, sem preposição, processo que durou. O aspecto do verbo e a preposição andam sempre juntos. Você não escolhe um sem o outro. Para fechar, mais três expressões no acusativo. Dias da semana com в: в понедельник, в среду, в пятницу. Repetição com каждый: каждый день, каждую неделю, каждый год. E duração completa com весь: всю ночь, всю неделю, всё лето. Uma pegadinha para terminar: в mais dia da semana é acusativo, mas в mais mês é prepositivo. В понедельник, acusativo. В январе, prepositivo. Mesma preposição, casos diferentes.",
+      "examples": [
+        {
+          "ru": "Он написал статью за два часа.",
+          "pt": "Ele escreveu o artigo em duas horas.",
+          "note": "за + acusativo = tempo gasto, resultado atingido."
+        },
+        {
+          "ru": "Он придёт через два часа.",
+          "pt": "Ele chega daqui a duas horas.",
+          "note": "через + acusativo = tempo que falta."
+        },
+        {
+          "ru": "Он уехал на неделю в Петербург.",
+          "pt": "Ele foi para Petersburgo por uma semana.",
+          "note": "на + acusativo = duração planejada do resultado."
+        },
+        {
+          "ru": "В понедельник у нас встреча, а в январе начинается новый проект.",
+          "pt": "Na segunda temos reunião, e em janeiro começa um novo projeto.",
+          "note": "в + dia da semana = acusativo; в + mês = prepositivo."
+        }
+      ],
+      "pitfalls": [
+        "Trocar за por через: «он придёт за час» significaria que ele chega gastando uma hora, não daqui a uma hora.",
+        "Usar на com o processo: «он писал статью на два часа» está errado; sem preposição é два часа."
+      ]
+    },
+    {
+      "title": "Aspecto no imperativo: pedir, convidar e proibir",
+      "paragraphs": [
+        "No imperativo, o aspecto deixa de ser uma questão de tempo e vira uma questão de pragmática — de como o pedido soa. Perfectivo (Откройте окно! Прочитайте текст! Позвоните мне!) é o pedido normal para uma ação única e concreta, com resultado esperado. Imperfectivo (Открывайте! Читайте! Звоните!) tem três usos: convite ou permissão cordial, ação repetida ou geral, e instrução para começar agora.",
+        "O uso mais importante do imperfectivo é o convite. Проходите! Садитесь! Берите! — todos imperfectivos, e todos soam hospitaleiros. Os equivalentes perfectivos existem (Пройдите, Сядьте, Возьмите) mas soam secos, quase como ordem policial. Um russo que diga «Сядьте!» a um convidado está sendo rude sem querer; «Садитесь, пожалуйста» é o normal. Essa diferença não é gramática opcional, é etiqueta codificada no aspecto.",
+        "Na negação, a regra se inverte de forma limpa e vale decorar: не + IMPERFECTIVO é proibição — Не открывайте окно! (não abra a janela). не + PERFECTIVO é advertência contra um acidente — Не забудьте паспорт! (não vá esquecer o passaporte), Не упадите! (cuidado para não cair), Не опоздайте! (não vá se atrasar). Em português os dois viram «não faça»; em russo a diferença é entre «estou proibindo» e «estou avisando»."
+      ],
+      "audio_script": "Terceira parte, e é a mais útil para conversar: o aspecto no imperativo. No imperativo, o aspecto deixa de ser uma questão de tempo e vira uma questão de etiqueta. De como o pedido soa. O perfectivo é o pedido normal, para uma ação única e concreta, com um resultado esperado. Откройте окно. Прочитайте текст. Позвоните мне завтра. O imperfectivo tem três usos, e o primeiro é o mais importante de todos: convite ou permissão cordial. Проходите. Садитесь. Берите. Todos no imperfectivo, e todos soam hospitaleiros, acolhedores. As versões perfectivas existem: пройдите, сядьте, возьмите. Mas elas soam secas, quase como ordem de policial. Se um russo disser сядьте para um convidado, ele está sendo rude sem perceber. O normal é садитесь, пожалуйста. Isso não é gramática opcional. É etiqueta codificada dentro do aspecto verbal, e um estrangeiro que erre aqui soa agressivo. Os outros dois usos do imperfectivo são: ação repetida ou geral — Всегда проверяйте информацию, sempre verifiquem a informação — e instrução para começar agora: Читайте, comecem a ler. E agora a regra da negação, que se inverte de forma muito limpa. Vale decorar exatamente assim. Не mais IMPERFECTIVO é proibição. Не открывайте окно. Não abra a janela. Estou proibindo. Не mais PERFECTIVO é advertência contra um acidente. Не забудьте паспорт. Não vá esquecer o passaporte. Не упадите. Cuidado para não cair. Не опоздайте. Não vá se atrasar. Em português as duas coisas viram «não faça». Em russo, a diferença é entre estou proibindo e estou avisando. E aqui vai um detalhe que economiza muita confusão: os verbos de advertência mais comuns já vêm no perfectivo por natureza. Не забудьте, не потеряйте, не упадите, не опоздайте, не простудитесь. Se você aprender esses cinco como blocos prontos, resolve a maior parte das situações reais.",
+      "examples": [
+        {
+          "ru": "Проходите, садитесь, пожалуйста!",
+          "pt": "Entre, sente-se, por favor!",
+          "note": "Imperfectivo = convite cordial. Perfectivo aqui soaria rude."
+        },
+        {
+          "ru": "Откройте, пожалуйста, окно.",
+          "pt": "Abra a janela, por favor.",
+          "note": "Perfectivo = pedido concreto único."
+        },
+        {
+          "ru": "Не открывайте окно, здесь холодно.",
+          "pt": "Não abra a janela, está frio aqui.",
+          "note": "Не + imperfectivo = proibição."
+        },
+        {
+          "ru": "Не забудьте паспорт и не опоздайте на регистрацию!",
+          "pt": "Não esqueça o passaporte e não se atrase para o check-in!",
+          "note": "Не + perfectivo = advertência contra acidente."
+        }
+      ],
+      "pitfalls": [
+        "Usar perfectivo em convites: «Сядьте!» a um convidado soa como ordem, não como gentileza.",
+        "Usar не + perfectivo para proibir: «Не откройте окно» soa como «cuidado, não vá abrir sem querer»."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Винительный падеж e imperativo — dois quadros",
+    "columns": [
+      "Categoria",
+      "Forma / regra",
+      "Exemplo",
+      "Observação"
+    ],
+    "rows": [
+      [
+        "Masc. inanimado",
+        "= именительный",
+        "Я читаю журнал",
+        "Nada muda"
+      ],
+      [
+        "Masc. animado",
+        "= родительный",
+        "Я вижу брата / нового студента",
+        "Regra da animacidade"
+      ],
+      [
+        "Neutro",
+        "= именительный",
+        "Я вижу окно",
+        "Animacidade não se aplica"
+      ],
+      [
+        "Feminino -а/-я",
+        "-у / -ю",
+        "Я читаю книгу",
+        "Adjetivo: -ую / -юю"
+      ],
+      [
+        "Feminino -ь",
+        "= именительный",
+        "Я открыл дверь",
+        "Nada muda"
+      ],
+      [
+        "Plural inanimado",
+        "= именительный",
+        "Я купил книги",
+        "—"
+      ],
+      [
+        "Plural animado",
+        "= родительный",
+        "Я знаю новых студентов",
+        "Vale para todos os gêneros"
+      ],
+      [
+        "Imperativo perfectivo",
+        "pedido único / resultado",
+        "Откройте окно!",
+        "Negado = advertência: Не забудьте!"
+      ],
+      [
+        "Imperativo imperfectivo",
+        "convite / repetição / início",
+        "Садитесь! Проходите!",
+        "Negado = proibição: Не открывайте!"
+      ]
+    ],
+    "note": "Tempo no acusativo: за час (gastou) · через час (falta) · на неделю (ficará) · два часа sem preposição (durou)."
+  },
+  "reference": [
+    {
+      "construction": "за + винительный",
+      "question": "за какое время?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "no espaço de (tempo gasto)",
+      "example": "написал статью за два часа"
+    },
+    {
+      "construction": "через + винительный",
+      "question": "через сколько?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "daqui a (tempo que falta)",
+      "example": "придёт через час"
+    },
+    {
+      "construction": "на + винительный",
+      "question": "на какой срок?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "por (duração planejada)",
+      "example": "уехал на неделю"
+    },
+    {
+      "construction": "приглашать / пригласить",
+      "question": "кого? куда?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "convidar alguém para algum lugar",
+      "example": "пригласить друзей на концерт"
+    },
+    {
+      "construction": "посещать / посетить",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "visitar, frequentar",
+      "example": "посетить выставку"
+    },
+    {
+      "construction": "проводить / провести (время)",
+      "question": "что? как?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "passar (o tempo)",
+      "example": "провести выходные за городом"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u13-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "Regra da animacidade",
+      "back": "Masc. singular e TODO plural animados: винительный = родительный",
+      "explanation": "Я вижу брата (não «брат»); Я вижу братьев (não «братья»). Inanimados mantêm a forma do именительный.",
+      "tags": [
+        "animacidade",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u13-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "за час × через час",
+      "back": "за час = gastou uma hora · через час = daqui a uma hora",
+      "explanation": "Em português ambos viram «em uma hora»; em russo são preposições diferentes.",
+      "tags": [
+        "за / через",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u13-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "Не открывайте! × Не забудьте!",
+      "back": "Не + imperfectivo = proibição · Не + perfectivo = advertência",
+      "explanation": "Proibir usa imperfectivo; avisar sobre um acidente possível usa perfectivo.",
+      "tags": [
+        "imperativo",
+        "aspecto",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u13-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "Садитесь! × Сядьте!",
+      "back": "Imperfectivo = convite cordial · perfectivo = ordem seca",
+      "explanation": "Com convidados usa-se sempre o imperfectivo: Проходите, садитесь, берите.",
+      "tags": [
+        "imperativo",
+        "registro",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u13-e05",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 1,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Вчера я встретил ___ на выставке. (старый друг)",
+      "options": [
+        "старого друга",
+        "старый друг",
+        "старому другу",
+        "старым другом"
+      ],
+      "answer": "старого друга",
+      "explanation": "друг é masculino ANIMADO: no винительный usa-se a forma do родительный — старого друга.",
+      "tags": [
+        "animacidade",
+        "винительный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u13-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 1,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Вчера я купил ___ в книжном магазине. (новый словарь)",
+      "options": [
+        "новый словарь",
+        "нового словаря",
+        "новому словарю",
+        "новым словарём"
+      ],
+      "answer": "новый словарь",
+      "explanation": "словарь é masculino INANIMADO: o винительный é igual ao именительный. A animacidade não se aplica aqui.",
+      "tags": [
+        "animacidade",
+        "винительный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u13-e07",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "На вечеринку мы пригласили ___. (все наши коллеги)",
+      "options": [
+        "всех наших коллег",
+        "все наши коллеги",
+        "всем нашим коллегам",
+        "всеми нашими коллегами"
+      ],
+      "answer": "всех наших коллег",
+      "explanation": "No plural a animacidade vale para todos os gêneros: коллеги é animado, então o винительный copia o родительный — всех наших коллег.",
+      "tags": [
+        "animacidade",
+        "винительный падеж",
+        "plural"
+      ]
+    },
+    {
+      "id": "u13-e08",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "В выходные мы посетили ___. (новая выставка)",
+      "options": [
+        "новую выставку",
+        "новой выставки",
+        "новая выставка",
+        "новой выставке"
+      ],
+      "answer": "новую выставку",
+      "explanation": "посетить кого? что? → винительный. Feminino em -а: выставка → выставку; adjetivo feminino: -ую.",
+      "tags": [
+        "посещать",
+        "винительный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u13-e09",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a expressão de tempo correta.",
+      "prompt": "Не волнуйтесь, он позвонит ___. (час)",
+      "options": [
+        "через час",
+        "за час",
+        "на час",
+        "в час"
+      ],
+      "answer": "через час",
+      "explanation": "через + винительный = o tempo que FALTA até o evento. «за час» seria o tempo gasto para realizar algo já concluído.",
+      "tags": [
+        "через",
+        "tempo",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u13-e10",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a expressão de tempo correta.",
+      "prompt": "Он подготовил всю презентацию ___. (один вечер)",
+      "options": [
+        "за один вечер",
+        "через один вечер",
+        "на один вечер",
+        "один вечер"
+      ],
+      "answer": "за один вечер",
+      "explanation": "за + винительный = tempo GASTO até o resultado, e combina com verbo perfectivo (подготовил). «один вечер» sem preposição pediria imperfectivo: готовил один вечер.",
+      "tags": [
+        "за",
+        "tempo",
+        "aspecto"
+      ]
+    },
+    {
+      "id": "u13-e11",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a expressão de tempo correta.",
+      "prompt": "Родители уехали в деревню ___ и вернутся в воскресенье. (неделя)",
+      "options": [
+        "на неделю",
+        "за неделю",
+        "через неделю",
+        "неделю"
+      ],
+      "answer": "на неделю",
+      "explanation": "на + винительный = duração PLANEJADA do resultado da ação (foram e ficarão uma semana). «неделю» sem preposição descreveria a duração do processo de viajar, o que não faz sentido aqui.",
+      "tags": [
+        "на + винительный",
+        "tempo",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u13-e12",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Мы встречаемся ___, а отпуск начинается ___.",
+      "options": [
+        "в пятницу … в июле",
+        "в пятнице … в июле",
+        "в пятницу … в июль",
+        "в пятнице … в июль"
+      ],
+      "answer": "в пятницу … в июле",
+      "explanation": "в + dia da semana é винительный (в пятницу); в + mês é предложный (в июле). Mesma preposição, dois casos — é preciso saber de que tipo é a palavra.",
+      "tags": [
+        "tempo",
+        "винительный падеж",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u13-e13",
+      "type": "choice",
+      "stage": "register",
+      "difficulty": 2,
+      "instruction": "Escolha a forma natural para receber um convidado.",
+      "prompt": "Um colega chega à sua casa. O que você diz?",
+      "options": [
+        "Проходите, садитесь, пожалуйста!",
+        "Пройдите, сядьте, пожалуйста!",
+        "Проходите, сядьте, пожалуйста!",
+        "Пройдите, садитесь, пожалуйста!"
+      ],
+      "answer": "Проходите, садитесь, пожалуйста!",
+      "explanation": "Convite e hospitalidade pedem imperfectivo nos dois verbos. As formas perfectivas (пройдите, сядьте) soam como ordem administrativa, mesmo com пожалуйста.",
+      "tags": [
+        "imperativo",
+        "aspecto",
+        "registro"
+      ]
+    },
+    {
+      "id": "u13-e14",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "instruction": "Escolha o imperativo correto.",
+      "prompt": "Você está com frio e quer que a janela permaneça fechada. O que diz?",
+      "options": [
+        "Не открывайте окно, пожалуйста.",
+        "Не откройте окно, пожалуйста.",
+        "Не открыть окно, пожалуйста.",
+        "Не открывать окно, пожалуйста."
+      ],
+      "answer": "Не открывайте окно, пожалуйста.",
+      "explanation": "Proibição = не + imperfectivo. «Не откройте» soaria como advertência contra abrir por acidente, o que não faz sentido aqui.",
+      "tags": [
+        "imperativo",
+        "negação",
+        "aspecto"
+      ]
+    },
+    {
+      "id": "u13-e15",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 3,
+      "instruction": "Escolha o imperativo correto.",
+      "prompt": "Um amigo vai viajar. Você quer avisá-lo sobre o passaporte.",
+      "options": [
+        "Не забудьте паспорт!",
+        "Не забывайте паспорт!",
+        "Не забыть паспорт!",
+        "Не забывать паспорт!"
+      ],
+      "answer": "Не забудьте паспорт!",
+      "explanation": "Advertência contra um acidente = не + perfectivo. «Не забывайте» proibiria o hábito de esquecer, o que soa estranho num aviso pontual.",
+      "tags": [
+        "imperativo",
+        "negação",
+        "aspecto"
+      ]
+    },
+    {
+      "id": "u13-e16",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "instruction": "Escolha o imperativo correto.",
+      "prompt": "Instrução geral num manual de redação:",
+      "options": [
+        "Всегда проверяйте источники информации.",
+        "Всегда проверьте источники информации.",
+        "Всегда проверить источники информации.",
+        "Всегда не проверьте источники информации."
+      ],
+      "answer": "Всегда проверяйте источники информации.",
+      "explanation": "всегда indica ação repetida e geral → imperativo imperfectivo (проверяйте). O perfectivo serviria para um pedido pontual: Проверьте этот источник.",
+      "tags": [
+        "imperativo",
+        "aspecto",
+        "repetição"
+      ]
+    },
+    {
+      "id": "u13-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase aplica corretamente a animacidade?",
+      "options": [
+        "Мы часто приглашаем друзей и слушаем новые песни.",
+        "Мы часто приглашаем друзья и слушаем новые песни.",
+        "Мы часто приглашаем друзей и слушаем новых песен.",
+        "Мы часто приглашаем друзья и слушаем новых песен."
+      ],
+      "answer": "Мы часто приглашаем друзей и слушаем новые песни.",
+      "explanation": "Dois objetos diretos na mesma frase: друзья é animado → друзей (forma do genitivo); песни é inanimado → песни (forma do nominativo). A regra vale palavra por palavra.",
+      "tags": [
+        "animacidade",
+        "винительный падеж",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u13-e18",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Он сделал перевод за три дня, но ждал ответа три дня.»",
+      "options": [
+        "Ele fez a tradução em três dias, mas esperou a resposta por três dias.",
+        "Ele fez a tradução daqui a três dias e esperou a resposta três dias.",
+        "Ele fez a tradução por três dias e esperou três dias pela resposta.",
+        "Ele terminou a tradução e a resposta no mesmo prazo de três dias."
+      ],
+      "answer": "Ele fez a tradução em três dias, mas esperou a resposta por três dias.",
+      "explanation": "за три дня (com perfectivo сделал) = tempo gasto até o resultado; три дня sem preposição (com imperfectivo ждал) = duração do processo. A mesma expressão temporal, dois papéis.",
+      "tags": [
+        "за / acusativo puro",
+        "aspecto",
+        "significado"
+      ]
+    },
+    {
+      "id": "u13-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Раньше по выходным мы обычно ходили в кино или приглашали друзей домой. Теперь всё изменилось: за последние два года мы стали чаще проводить свободное время на природе. В пятницу вечером мы собираем вещи, а в субботу утром уезжаем за город на все выходные. Возвращаемся в воскресенье вечером. Друзья иногда спрашивают, не скучно ли нам без города, но мы отвечаем: попробуйте сами и не судите заранее.",
+      "prompt": "Quanto tempo eles passam fora da cidade, segundo o texto?",
+      "options": [
+        "O fim de semana inteiro, de sábado de manhã a domingo à noite.",
+        "Apenas o sábado.",
+        "Duas semanas por ano.",
+        "Somente a sexta-feira à noite."
+      ],
+      "answer": "O fim de semana inteiro, de sábado de manhã a domingo à noite.",
+      "explanation": "«в субботу утром уезжаем за город на все выходные… возвращаемся в воскресенье вечером» — на + acusativo (на все выходные) marca a duração planejada.",
+      "tags": [
+        "винительный падеж",
+        "leitura",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u13-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Раньше по выходным мы обычно ходили в кино или приглашали друзей домой. Теперь всё изменилось: за последние два года мы стали чаще проводить свободное время на природе. В пятницу вечером мы собираем вещи, а в субботу утром уезжаем за город на все выходные. Друзья иногда спрашивают, не скучно ли нам без города, но мы отвечаем: попробуйте сами и не судите заранее.",
+      "prompt": "Por que o texto usa «попробуйте» (perfectivo) e «не судите» (imperfectivo)?",
+      "options": [
+        "попробуйте é um convite a uma ação única; не судите é uma proibição geral.",
+        "Os dois são formas do mesmo verbo, apenas variações de estilo.",
+        "попробуйте é proibição e не судите é advertência.",
+        "A escolha é livre: qualquer aspecto serviria nos dois casos."
+      ],
+      "answer": "попробуйте é um convite a uma ação única; не судите é uma proibição geral.",
+      "explanation": "Imperativo afirmativo perfectivo = pedido concreto único (experimentem). Negativo imperfectivo = proibição/instrução geral (não julguem).",
+      "tags": [
+        "imperativo",
+        "aspecto",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u13-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Проходите, пожалуйста, садитесь. Чай будет готов через пять минут.",
+      "prompt": "Qual é a situação do áudio?",
+      "options": [
+        "Alguém recebe uma visita e avisa que o chá fica pronto daqui a cinco minutos.",
+        "Alguém manda a pessoa sair e diz que o chá acabou.",
+        "Alguém explica que preparou o chá em cinco minutos.",
+        "Alguém pede que a pessoa espere cinco minutos do lado de fora."
+      ],
+      "answer": "Alguém recebe uma visita e avisa que o chá fica pronto daqui a cinco minutos.",
+      "explanation": "Проходите e садитесь no imperfectivo = acolhimento; через пять минут = tempo que falta (não tempo gasto).",
+      "tags": [
+        "imperativo",
+        "через",
+        "audição"
+      ]
+    },
+    {
+      "id": "u13-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Не забудьте документы и не опаздывайте на регистрацию: она закрывается за сорок минут до вылета.",
+      "prompt": "Qual é a diferença entre os dois avisos do áudio?",
+      "options": [
+        "O primeiro alerta contra um esquecimento acidental; o segundo proíbe um comportamento habitual.",
+        "Os dois são proibições idênticas, apenas com verbos diferentes.",
+        "O primeiro é um convite; o segundo é uma advertência.",
+        "O primeiro é uma sugestão; o segundo é uma pergunta."
+      ],
+      "answer": "O primeiro alerta contra um esquecimento acidental; o segundo proíbe um comportamento habitual.",
+      "explanation": "Не забудьте é perfectivo (advertência contra acidente pontual); не опаздывайте é imperfectivo (proibição de um hábito). A oposição está no aspecto.",
+      "tags": [
+        "imperativo",
+        "aspecto",
+        "audição"
+      ]
+    },
+    {
+      "id": "u13-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase com винительный падеж de tempo e de objeto.",
+      "tokens": [
+        "В",
+        "субботу",
+        "мы",
+        "пригласили",
+        "всех",
+        "друзей",
+        "на",
+        "новую",
+        "выставку"
+      ],
+      "answer": "В субботу мы пригласили всех друзей на новую выставку",
+      "explanation": "Três acusativos numa frase só: в субботу (tempo), всех друзей (objeto animado, forma do genitivo) e на новую выставку (destino).",
+      "tags": [
+        "винительный падеж",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u13-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a expressão russa ao significado.",
+      "pairs": [
+        {
+          "left": "за два часа",
+          "right": "no espaço de duas horas (tempo gasto)"
+        },
+        {
+          "left": "через два часа",
+          "right": "daqui a duas horas"
+        },
+        {
+          "left": "на два часа",
+          "right": "por duas horas (duração planejada)"
+        },
+        {
+          "left": "два часа",
+          "right": "durante duas horas (processo)"
+        },
+        {
+          "left": "каждые два часа",
+          "right": "a cada duas horas"
+        },
+        {
+          "left": "в два часа",
+          "right": "às duas horas"
+        }
+      ],
+      "explanation": "Cinco das seis usam винительный падеж; o que muda é a preposição, e cada preposição carrega um sentido temporal diferente.",
+      "tags": [
+        "tempo",
+        "винительный падеж",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u13-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 80–100 palavras em russo. Use pelo menos três expressões de tempo com винительный падеж e um imperativo.",
+      "prompt": "«Как вы обычно проводите свободное время? Посоветуйте что-нибудь читателю.» (Como você costuma passar o tempo livre? Aconselhe algo ao leitor.)\n\nUnidades: проводить время · приглашать · за + время · через + время · на + срок · попробуйте / не забудьте",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "винительный падеж",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

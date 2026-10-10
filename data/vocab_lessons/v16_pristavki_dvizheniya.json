@@ -1,0 +1,580 @@
+{
+  "id": "v16",
+  "unit_id": "u16_pristavki_dvizheniya",
+  "order": 16,
+  "title": "Новые соседи за городом",
+  "theme": "Vizinhos de um subúrbio combinam visitas e tarefas após uma mudança",
+  "description": "Vizinhos de um subúrbio combinam visitas e tarefas após uma mudança. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Вера": "f",
+    "Павел": "m"
+  },
+  "dialogue": {
+    "title": "Новые соседи за городом",
+    "setting": "Vizinhos de um subúrbio combinam visitas e tarefas após uma mudança",
+    "lines": [
+      {
+        "speaker": "Вера",
+        "ru": "Я пришла, чтобы помочь соседу с коробками.",
+        "pt": "Vim para ajudar o vizinho com as caixas."
+      },
+      {
+        "speaker": "Павел",
+        "ru": "Спасибо. Мы сняли этот дом, чтобы дети отдохнули летом.",
+        "pt": "Obrigado. Alugamos esta casa para que as crianças descansem no verão."
+      },
+      {
+        "speaker": "Вера",
+        "ru": "Эти доски пригодятся для нового проекта: вы хотите сделать беседку?",
+        "pt": "Estas tábuas vão servir para o novo projeto: vocês querem construir um gazebo?"
+      },
+      {
+        "speaker": "Павел",
+        "ru": "Да. Но сначала нужно пойти за свежим хлебом — магазин скоро закроется.",
+        "pt": "Sim. Mas primeiro é preciso ir buscar pão fresco: a loja fechará em breve."
+      },
+      {
+        "speaker": "Вера",
+        "ru": "Мы тоже живём здесь ради спокойствия семьи.",
+        "pt": "Também moramos aqui pelo bem da tranquilidade da família."
+      },
+      {
+        "speaker": "Павел",
+        "ru": "Нам было непросто переехать из города в деревню. Особенно без машины.",
+        "pt": "Não foi fácil mudar da cidade para a aldeia, principalmente sem carro."
+      },
+      {
+        "speaker": "Вера",
+        "ru": "Завтра можете зайти к новому соседу напротив. Он знает расписание автобусов.",
+        "pt": "Amanhã vocês podem passar na casa do novo vizinho em frente. Ele conhece os horários dos ônibus."
+      },
+      {
+        "speaker": "Павел",
+        "ru": "А как доехать до конечной остановки, где находится рынок?",
+        "pt": "E como chegar de transporte ao ponto final, onde fica o mercado?"
+      },
+      {
+        "speaker": "Вера",
+        "ru": "Сядьте на автобус номер семь. Он ходит каждый час.",
+        "pt": "Peguem o ônibus número sete. Ele passa a cada hora."
+      },
+      {
+        "speaker": "Павел",
+        "ru": "Тогда коробки разберём вечером. Сейчас успеем купить хлеб.",
+        "pt": "Então vamos desfazer as caixas à noite. Agora dará tempo de comprar pão."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual é o assunto principal da conversa?",
+      "options": [
+        "Adaptar a rotina depois da mudança para a aldeia.",
+        "Construir uma estação nova no centro da cidade.",
+        "Vender o carro para financiar uma viagem longa.",
+        "Organizar um festival na escola das crianças."
+      ],
+      "answer": "Adaptar a rotina depois da mudança para a aldeia.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "чтобы",
+      "tag": "чтобы + инфинитив",
+      "head": "чтобы + инфинитив",
+      "regency": "чтобы + инфинитив: зачем?",
+      "case": "инфинитив",
+      "pt": "para ajudar o vizinho",
+      "chunk": "чтобы помочь соседу",
+      "chunk_pt": "para ajudar o vizinho",
+      "chunk_wrong": [
+        "чтобы помог соседу",
+        "чтобы поможет соседу",
+        "чтобы помогаю соседу"
+      ],
+      "form_note": "Com o mesmo sujeito nas duas ações, a finalidade usa чтобы + infinitivo, sem conjugar o segundo verbo.",
+      "trap": "Com o mesmo sujeito nas duas ações, a finalidade usa чтобы + infinitivo, sem conjugar o segundo verbo.",
+      "example": {
+        "ru": "Я вышла раньше, чтобы купить билеты.",
+        "pt": "Saí mais cedo para comprar passagens.",
+        "extra": "покупаю",
+        "note": "Com o mesmo sujeito nas duas ações, a finalidade usa чтобы + infinitivo, sem conjugar o segundo verbo."
+      },
+      "cloze": {
+        "ru": "Я зашёл в банк, ___.",
+        "answer": "чтобы оплатить счёт",
+        "wrong": [
+          "чтобы оплатит счёт",
+          "чтобы оплатил счёт",
+          "чтобы оплачиваю счёт"
+        ],
+        "pt": "Passei no banco para pagar a conta.",
+        "note": "Com o mesmo sujeito nas duas ações, a finalidade usa чтобы + infinitivo, sem conjugar o segundo verbo."
+      },
+      "hear": {
+        "ru": "Мать пришла, чтобы забрать сына.",
+        "pt": "A mãe veio para buscar o filho.",
+        "wrong": [
+          "O filho veio para buscar a mãe.",
+          "A mãe não veio para buscar o filho.",
+          "A mãe virá para buscar o filho."
+        ],
+        "note": "Com o mesmo sujeito nas duas ações, a finalidade usa чтобы + infinitivo, sem conjugar o segundo verbo."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "чтобы",
+      "tag": "чтобы + прошедшее",
+      "head": "чтобы + прошедшее",
+      "regency": "чтобы кто? что сделал?",
+      "case": "прошедшее время",
+      "pt": "para que as crianças descansem",
+      "chunk": "чтобы дети отдохнули",
+      "chunk_pt": "para que as crianças descansem",
+      "chunk_wrong": [
+        "чтобы дети отдохнуть",
+        "чтобы дети отдохнёт",
+        "чтобы дети отдохнём"
+      ],
+      "form_note": "Com sujeitos diferentes, чтобы recebe sujeito e forma de passado; essa forma não indica necessariamente tempo passado.",
+      "trap": "Com sujeitos diferentes, чтобы recebe sujeito e forma de passado; essa forma não indica necessariamente tempo passado.",
+      "example": {
+        "ru": "Я открыл окно, чтобы комната проветрилась.",
+        "pt": "Abri a janela para que o quarto ventilasse.",
+        "extra": "проветриться",
+        "note": "Com sujeitos diferentes, чтобы recebe sujeito e forma de passado; essa forma não indica necessariamente tempo passado."
+      },
+      "cloze": {
+        "ru": "Она позвонила, ___.",
+        "answer": "чтобы брат приехал",
+        "wrong": [
+          "чтобы брат приехать",
+          "чтобы брат приедет",
+          "чтобы брат приезжаю"
+        ],
+        "pt": "Ela telefonou para que o irmão viesse.",
+        "note": "Com sujeitos diferentes, чтобы recebe sujeito e forma de passado; essa forma não indica necessariamente tempo passado."
+      },
+      "hear": {
+        "ru": "Отец купил билеты, чтобы дочь приехала.",
+        "pt": "O pai comprou passagens para que a filha viesse.",
+        "wrong": [
+          "A filha comprou passagens para que o pai viesse.",
+          "O pai não comprou passagens para que a filha viesse.",
+          "O pai comprará passagens para que a filha venha."
+        ],
+        "note": "Com sujeitos diferentes, чтобы recebe sujeito e forma de passado; essa forma não indica necessariamente tempo passado."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "для",
+      "tag": "для",
+      "head": "для",
+      "regency": "для кого? чего?",
+      "case": "родительный падеж",
+      "pt": "para o novo projeto",
+      "chunk": "для нового проекта",
+      "chunk_pt": "para o novo projeto",
+      "chunk_wrong": [
+        "для новый проект",
+        "для новому проекту",
+        "для новым проектом"
+      ],
+      "form_note": "для кого? чего? introduz um destinatário ou finalidade nominal; não coloque infinitivo diretamente depois de для.",
+      "trap": "для кого? чего? introduz um destinatário ou finalidade nominal; não coloque infinitivo diretamente depois de для.",
+      "example": {
+        "ru": "Эта комната предназначена для гостей.",
+        "pt": "Este quarto é destinado aos convidados.",
+        "extra": "гостям",
+        "note": "для кого? чего? introduz um destinatário ou finalidade nominal; não coloque infinitivo diretamente depois de для."
+      },
+      "cloze": {
+        "ru": "Я купил краску ___.",
+        "answer": "для старого забора",
+        "wrong": [
+          "для старый забор",
+          "для старому забору",
+          "для старым забором"
+        ],
+        "pt": "Comprei tinta para a cerca antiga.",
+        "note": "для кого? чего? introduz um destinatário ou finalidade nominal; não coloque infinitivo diretamente depois de для."
+      },
+      "hear": {
+        "ru": "Сосед оставил инструменты для ремонта.",
+        "pt": "O vizinho deixou ferramentas para a reforma.",
+        "wrong": [
+          "O vizinho deixará ferramentas para a reforma.",
+          "O vizinho não deixou ferramentas para a reforma.",
+          "O vizinho deixa ferramentas para a reforma."
+        ],
+        "note": "для кого? чего? introduz um destinatário ou finalidade nominal; não coloque infinitivo diretamente depois de для."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "идти",
+      "tag": "пойти за",
+      "head": "пойти за",
+      "regency": "пойти за кем? чем?",
+      "case": "творительный падеж",
+      "pt": "ir buscar pão fresco",
+      "chunk": "пойти за свежим хлебом",
+      "chunk_pt": "ir buscar pão fresco",
+      "chunk_wrong": [
+        "пойти за свежий хлеб",
+        "пойти за свежего хлеба",
+        "пойти за свежему хлебу"
+      ],
+      "form_note": "Ir buscar algo: пойти за чем? + творительный падеж; за + винительный падеж teria outro valor.",
+      "trap": "Ir buscar algo: пойти за чем? + творительный падеж; за + винительный падеж teria outro valor.",
+      "example": {
+        "ru": "Сестра пошла за лекарством.",
+        "pt": "A irmã foi buscar o remédio.",
+        "extra": "лекарство",
+        "note": "Ir buscar algo: пойти за чем? + творительный падеж; за + винительный падеж teria outro valor."
+      },
+      "cloze": {
+        "ru": "Мне нужно пойти ___.",
+        "answer": "за питьевой водой",
+        "wrong": [
+          "за питьевую воду",
+          "за питьевой воды",
+          "за питьевой воде"
+        ],
+        "pt": "Preciso ir buscar água potável.",
+        "note": "Ir buscar algo: пойти за чем? + творительный падеж; за + винительный падеж teria outro valor."
+      },
+      "hear": {
+        "ru": "Брат пошёл за молоком для бабушки.",
+        "pt": "O irmão foi buscar leite para a avó.",
+        "wrong": [
+          "A avó foi buscar leite para o irmão.",
+          "O irmão não foi buscar leite para a avó.",
+          "O irmão irá buscar leite para a avó."
+        ],
+        "note": "Ir buscar algo: пойти за чем? + творительный падеж; за + винительный падеж teria outro valor."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "ради",
+      "tag": "ради",
+      "head": "ради",
+      "regency": "ради кого? чего?",
+      "case": "родительный падеж",
+      "pt": "pelo bem da tranquilidade da família",
+      "chunk": "ради спокойствия семьи",
+      "chunk_pt": "pelo bem da tranquilidade da família",
+      "chunk_wrong": [
+        "ради спокойствие семьи",
+        "ради спокойствию семьи",
+        "ради спокойствием семьи"
+      ],
+      "form_note": "ради кого? чего? ressalta um motivo valorizado, às vezes com sacrifício; usa родительный падеж.",
+      "trap": "ради кого? чего? ressalta um motivo valorizado, às vezes com sacrifício; usa родительный падеж.",
+      "example": {
+        "ru": "Она отказалась от поездки ради детей.",
+        "pt": "Ela desistiu da viagem pelo bem das crianças.",
+        "extra": "детям",
+        "note": "ради кого? чего? ressalta um motivo valorizado, às vezes com sacrifício; usa родительный падеж."
+      },
+      "cloze": {
+        "ru": "Мы переехали ___.",
+        "answer": "ради чистого воздуха",
+        "wrong": [
+          "ради чистый воздух",
+          "ради чистому воздуху",
+          "ради чистым воздухом"
+        ],
+        "pt": "Nós nos mudamos pelo bem de respirar ar puro.",
+        "note": "ради кого? чего? ressalta um motivo valorizado, às vezes com sacrifício; usa родительный падеж."
+      },
+      "hear": {
+        "ru": "Мать сменила работу ради дочери.",
+        "pt": "A mãe mudou de trabalho pelo bem da filha.",
+        "wrong": [
+          "A filha mudou de trabalho pelo bem da mãe.",
+          "A mãe não mudou de trabalho pelo bem da filha.",
+          "A mãe mudará de trabalho pelo bem da filha."
+        ],
+        "note": "ради кого? чего? ressalta um motivo valorizado, às vezes com sacrifício; usa родительный падеж."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "переезжать",
+      "tag": "переехать из … в …",
+      "head": "переехать из … в …",
+      "regency": "переехать из чего? в что? / откуда? куда?",
+      "case": "родительный падеж + винительный падеж",
+      "pt": "mudar-se da cidade para a aldeia",
+      "chunk": "переехать из города в деревню",
+      "chunk_pt": "mudar-se da cidade para a aldeia",
+      "chunk_wrong": [
+        "переехать из город в деревню",
+        "переехать из города в деревне",
+        "переехать из городом в деревню"
+      ],
+      "form_note": "Origem: из + родительный падеж. Destino: в + винительный падеж. Não mantenha o caso de localização no destino.",
+      "trap": "Origem: из + родительный падеж. Destino: в + винительный падеж. Não mantenha o caso de localização no destino.",
+      "example": {
+        "ru": "Мы переехали из квартиры в дом.",
+        "pt": "Mudamos de um apartamento para uma casa.",
+        "extra": "квартиру",
+        "note": "Origem: из + родительный падеж. Destino: в + винительный падеж. Não mantenha o caso de localização no destino."
+      },
+      "cloze": {
+        "ru": "Семья решила переехать ___.",
+        "answer": "из Москвы в Тулу",
+        "wrong": [
+          "из Москву в Тулу",
+          "из Москвы в Туле",
+          "из Москвой в Тулу"
+        ],
+        "pt": "A família decidiu mudar-se de Moscou para Tula.",
+        "note": "Origem: из + родительный падеж. Destino: в + винительный падеж. Não mantenha o caso de localização no destino."
+      },
+      "hear": {
+        "ru": "Дочь переехала из Казани в Самару.",
+        "pt": "A filha mudou-se de Kazan para Samara.",
+        "wrong": [
+          "A filha mudou-se de Samara para Kazan.",
+          "A filha não se mudou de Kazan para Samara.",
+          "A filha mudará de Kazan para Samara."
+        ],
+        "note": "Origem: из + родительный падеж. Destino: в + винительный падеж. Não mantenha o caso de localização no destino."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "заходить",
+      "tag": "зайти к / в",
+      "head": "зайти к / в",
+      "regency": "зайти к кому? / зайти в что?",
+      "case": "дательный падеж / винительный падеж",
+      "pt": "passar na casa do novo vizinho",
+      "chunk": "зайти к новому соседу",
+      "chunk_pt": "passar na casa do novo vizinho",
+      "chunk_wrong": [
+        "зайти к нового соседа",
+        "зайти к новым соседом",
+        "зайти в нового соседа"
+      ],
+      "form_note": "Pessoa: зайти к кому?. Estabelecimento: зайти в что? ou куда?. A visita é breve, muitas vezes no caminho.",
+      "trap": "Pessoa: зайти к кому?. Estabelecimento: зайти в что? ou куда?. A visita é breve, muitas vezes no caminho.",
+      "example": {
+        "ru": "По дороге я зашёл в аптеку.",
+        "pt": "No caminho, passei na farmácia.",
+        "extra": "аптеке",
+        "note": "Pessoa: зайти к кому?. Estabelecimento: зайти в что? ou куда?. A visita é breve, muitas vezes no caminho."
+      },
+      "cloze": {
+        "ru": "После работы хочу зайти ___.",
+        "answer": "к школьной подруге",
+        "wrong": [
+          "к школьную подругу",
+          "к школьной подругой",
+          "в школьную подругу"
+        ],
+        "pt": "Depois do trabalho, quero passar na casa da amiga da escola.",
+        "note": "Pessoa: зайти к кому?. Estabelecimento: зайти в что? ou куда?. A visita é breve, muitas vezes no caminho."
+      },
+      "hear": {
+        "ru": "Анна зашла к брату перед поездкой.",
+        "pt": "Anna passou na casa do irmão antes da viagem.",
+        "wrong": [
+          "O irmão passou na casa de Anna antes da viagem.",
+          "Anna não passou na casa do irmão antes da viagem.",
+          "Anna passará na casa do irmão antes da viagem."
+        ],
+        "note": "Pessoa: зайти к кому?. Estabelecimento: зайти в что? ou куда?. A visita é breve, muitas vezes no caminho."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "доезжать",
+      "tag": "доехать до",
+      "head": "доехать до",
+      "regency": "доехать до чего?",
+      "case": "родительный падеж",
+      "pt": "chegar de transporte ao ponto final",
+      "chunk": "доехать до конечной остановки",
+      "chunk_pt": "chegar de transporte ao ponto final",
+      "chunk_wrong": [
+        "доехать до конечную остановку",
+        "доехать до конечной остановке",
+        "доехать до конечной остановкой"
+      ],
+      "form_note": "O limite atingido é до чего? + родительный падеж. доехать é chegar até lá de transporte.",
+      "trap": "O limite atingido é до чего? + родительный падеж. доехать é chegar até lá de transporte.",
+      "example": {
+        "ru": "На автобусе мы доехали до озера.",
+        "pt": "De ônibus, chegamos até o lago.",
+        "extra": "озеру",
+        "note": "O limite atingido é до чего? + родительный падеж. доехать é chegar até lá de transporte."
+      },
+      "cloze": {
+        "ru": "Как быстрее доехать ___?",
+        "answer": "до районной больницы",
+        "wrong": [
+          "до районную больницу",
+          "до районной больнице",
+          "до районной больницей"
+        ],
+        "pt": "Como chegar mais rápido de transporte ao hospital do distrito?",
+        "note": "O limite atingido é до чего? + родительный падеж. доехать é chegar até lá de transporte."
+      },
+      "hear": {
+        "ru": "Отец доехал до станции раньше сына.",
+        "pt": "O pai chegou de transporte à estação antes do filho.",
+        "wrong": [
+          "O filho chegou de transporte à estação antes do pai.",
+          "O pai não chegou de transporte à estação antes do filho.",
+          "O pai chegará de transporte à estação antes do filho."
+        ],
+        "note": "O limite atingido é до чего? + родительный падеж. доехать é chegar até lá de transporte."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Para que Pavel alugou a casa?",
+      "options": [
+        "Para que as crianças descansassem no verão.",
+        "Para abrir uma loja de pão com os vizinhos.",
+        "Para construir um mercado no ponto final.",
+        "Para guardar carros dos moradores da cidade."
+      ],
+      "answer": "Para que as crianças descansassem no verão.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "Como chegar ao mercado?",
+      "options": [
+        "De ônibus número sete até o ponto final.",
+        "A pé até o banco ao lado do vizinho novo.",
+        "De carro até a primeira parada da linha sete.",
+        "De ônibus que sai apenas uma vez por semana."
+      ],
+      "answer": "De ônibus número sete até o ponto final.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "чтобы помочь соседу",
+      "wrong": [
+        "чтобы помог соседу",
+        "чтобы поможет соседу",
+        "чтобы помогаю соседу"
+      ],
+      "note": "Com o mesmo sujeito nas duas ações, a finalidade usa чтобы + infinitivo, sem conjugar o segundo verbo."
+    },
+    {
+      "line": 1,
+      "gap": "чтобы дети отдохнули",
+      "wrong": [
+        "чтобы дети отдохнуть",
+        "чтобы дети отдохнёт",
+        "чтобы дети отдохнём"
+      ],
+      "note": "Com sujeitos diferentes, чтобы recebe sujeito e forma de passado; essa forma não indica necessariamente tempo passado."
+    },
+    {
+      "line": 3,
+      "gap": "за свежим хлебом",
+      "wrong": [
+        "за свежий хлеб",
+        "за свежего хлеба",
+        "за свежему хлебу"
+      ],
+      "note": "Ir buscar algo: пойти за чем? + творительный падеж; за + винительный падеж teria outro valor."
+    },
+    {
+      "line": 7,
+      "gap": "до конечной остановки",
+      "wrong": [
+        "до конечную остановку",
+        "до конечной остановке",
+        "до конечной остановкой"
+      ],
+      "note": "O limite atingido é до чего? + родительный падеж. доехать é chegar até lá de transporte."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "чтобы помочь соседу",
+        "right": "para ajudar o vizinho"
+      },
+      {
+        "left": "чтобы дети отдохнули",
+        "right": "para que as crianças descansem"
+      },
+      {
+        "left": "для нового проекта",
+        "right": "para o novo projeto"
+      },
+      {
+        "left": "пойти за свежим хлебом",
+        "right": "ir buscar pão fresco"
+      },
+      {
+        "left": "ради спокойствия семьи",
+        "right": "pelo bem da tranquilidade da família"
+      },
+      {
+        "left": "переехать из города в деревню",
+        "right": "mudar-se da cidade para a aldeia"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Вера",
+      "you": "Павел",
+      "ru": "Зачем ты пришла пораньше?",
+      "prompt": "Responda com uma finalidade e sujeito igual.",
+      "answer": "Чтобы помочь соседу.",
+      "wrong": [
+        "Чтобы помог соседу.",
+        "Чтобы поможет соседу.",
+        "Чтобы помогаю соседу."
+      ],
+      "explanation": "Com o mesmo sujeito nas duas ações, a finalidade usa чтобы + infinitivo, sem conjugar o segundo verbo."
+    },
+    {
+      "speaker": "Павел",
+      "you": "Вера",
+      "ru": "Зачем вы сняли дом за городом?",
+      "prompt": "Responda com finalidade e sujeitos diferentes.",
+      "answer": "Чтобы дети отдохнули.",
+      "wrong": [
+        "Чтобы дети отдохнуть.",
+        "Чтобы дети отдохнёт.",
+        "Чтобы дети отдохнём."
+      ],
+      "explanation": "Com sujeitos diferentes, чтобы recebe sujeito e forma de passado; essa forma não indica necessariamente tempo passado."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva uma mensagem aos novos vizinhos. Explique o motivo da mudança, uma tarefa que você fará e outra que alguém fará.",
+    "use": [
+      "чтобы + инфинитив",
+      "чтобы + прошедшее",
+      "для",
+      "пойти за",
+      "ради"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: чтобы + инфинитив: зачем?; чтобы кто? что сделал?; для кого? чего?; пойти за кем? чем?; ради кого? чего?; переехать из чего? в что? / откуда? куда?; зайти к кому? / зайти в что?; доехать до чего?."
+  }
+}

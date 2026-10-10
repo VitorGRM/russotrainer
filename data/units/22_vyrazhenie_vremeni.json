@@ -1,0 +1,788 @@
+{
+  "id": "u22_vremya",
+  "order": 22,
+  "title": "Expressão do tempo: o sistema inteiro",
+  "description": "Todas as construções temporais do russo num quadro só: quando, quanto tempo, com que frequência, quanto antes e quanto depois.",
+  "estimated_minutes": 32,
+  "objectives": [
+    "escolher a preposição temporal pelo tipo de unidade (dia, mês, semana, ano)",
+    "distinguir duração, prazo e frequência",
+    "usar за … до e через … после para situar um evento em relação a outro"
+  ],
+  "source_note": "Кузьмина, «Русская грамматика в таблицах»: Конструкции времени (когда?) · Red Kalinka, time expressions · Kagan/Kudyma/Miller, Глава 1 «Выражение времени»",
+  "grammar": [
+    {
+      "title": "«Quando?» — a preposição depende da unidade",
+      "paragraphs": [
+        "Não existe uma preposição de tempo em russo: existe uma para cada tipo de unidade, e é preciso saber a que grupo a palavra pertence. Com в + винительный: dias da semana e horas (в понедельник, в среду, в два часа, в это время). Com в + предложный: meses, anos, séculos e períodos da vida (в январе, в 2020 году, в двадцатом веке, в детстве, в молодости). Com на + предложный: semanas, e só semanas (на этой неделе, на прошлой неделе, на следующей неделе).",
+        "Partes do dia e estações não usam preposição nenhuma: vão ao творительный падеж puro — утром, днём, вечером, ночью, весной, летом, осенью, зимой. Essa é uma das poucas formas em que o instrumental sozinho indica tempo, e é totalmente regular. Note a diferença: в этом году (prepositivo, com в) mas этим летом (instrumental, sem preposição).",
+        "Para frequência, use по + дательный PLURAL: по понедельникам (às segundas), по вечерам (à noite, habitualmente), по выходным (nos fins de semana). Ou каждый + винительный: каждый день, каждую неделю, каждое утро. As duas construções são intercambiáveis em muitos contextos, mas по + plural enfatiza mais o hábito estabelecido."
+      ],
+      "audio_script": "Expressão de tempo em russo. E a primeira coisa a entender é que NÃO existe uma preposição de tempo. Existe uma preposição para cada tipo de unidade, e você precisa saber a que grupo cada palavra pertence. Vamos organizar isso de uma vez. Grupo um: в mais acusativo. É para dias da semana e horas. В понедельник. В среду. В два часа. В это время. Grupo dois: в mais prepositivo. É para meses, anos, séculos e períodos da vida. В январе. В две тысячи двадцатом году. В двадцатом веке. В детстве. В молодости. Grupo três: на mais prepositivo. E este grupo tem uma única palavra: semana. На этой неделе. На прошлой неделе. На следующей неделе. Semana é a exceção que precisa ser decorada isolada, porque é a única que usa на. Grupo quatro, e este é bonito: partes do dia e estações do ano não usam preposição NENHUMA. Elas vão ao instrumental puro. Утром, de manhã. Днём, de dia. Вечером, à noite. Ночью, de madrugada. Весной, na primavera. Летом, no verão. Осенью, no outono. Зимой, no inverno. Essa é uma das poucas situações em que o instrumental sozinho indica tempo, e é totalmente regular. E repare no contraste, que é a fonte de erro mais comum aqui: В этом году, com в e prepositivo. Mas этим летом, sem preposição, no instrumental. Ano leva preposição; estação não leva. Por fim, frequência. Existem duas construções. Primeira: по mais dativo PLURAL. По понедельникам, às segundas. По вечерам, à noite habitualmente. По выходным, nos fins de semana. Repare que é sempre plural, mesmo quando em português diríamos no singular. Segunda: каждый mais acusativo. Каждый день. Каждую неделю. Каждое утро. As duas são intercambiáveis em muitos contextos. A diferença é de ênfase: по mais plural soa mais como um hábito estabelecido, uma rotina.",
+      "examples": [
+        {
+          "ru": "В понедельник у нас совещание, а в январе начинается новый проект.",
+          "pt": "Na segunda temos reunião, e em janeiro começa um projeto novo.",
+          "note": "Dia da semana → acusativo; mês → prepositivo."
+        },
+        {
+          "ru": "На прошлой неделе он был в командировке.",
+          "pt": "Na semana passada ele estava em viagem de trabalho.",
+          "note": "Semana é a única unidade com на."
+        },
+        {
+          "ru": "Летом мы обычно уезжаем, а этой зимой останемся дома.",
+          "pt": "No verão costumamos viajar, mas neste inverno ficaremos em casa.",
+          "note": "Estações no instrumental puro, sem preposição."
+        },
+        {
+          "ru": "По вечерам он ходит в спортзал, а по выходным ездит за город.",
+          "pt": "À noite ele vai à academia, e nos fins de semana viaja para fora da cidade.",
+          "note": "по + dativo plural = frequência."
+        }
+      ],
+      "pitfalls": [
+        "Dizer «в неделе»: semana usa на — на этой неделе.",
+        "Pôr preposição nas estações: é летом, não «в летом» nem «в лете».",
+        "Usar singular com по: é по понедельникам, não «по понедельнику»."
+      ]
+    },
+    {
+      "title": "Duração, prazo e limite: за, на, через, к, до",
+      "paragraphs": [
+        "Cinco construções que se confundem porque em português quase todas viram «em» ou «por». за + винительный = o tempo GASTO para completar (Он написал отчёт за два часа). на + винительный = a duração PLANEJADA do resultado (Он уехал на две недели). через + винительный = o tempo que FALTA (Он вернётся через две недели). Acusativo puro, sem preposição = a duração do processo (Он писал отчёт два часа).",
+        "Duas outras são menos ensinadas e muito frequentes em texto B2. к + дательный significa «até certo momento, por volta de» e marca um prazo: К пятнице отчёт должен быть готов (o relatório tem que estar pronto até sexta). К вечеру погода испортилась (ao anoitecer o tempo piorou). до + родительный marca o limite anterior: До конца года осталось два месяца. E перед + творительный significa «logo antes de»: перед началом собрания, перед обедом.",
+        "Para intervalos: с … до + родительный (с девяти до шести — das nove às seis) e с … по + винительный (с понедельника по пятницу — de segunda a sexta, incluindo sexta). A diferença entre до e по é que до exclui o limite e по o inclui — num contrato ou num prazo essa distinção importa. E в течение + родительный marca a extensão total: в течение всего года."
+      ],
+      "audio_script": "Segunda parte: duração, prazo e limite. São cinco construções que se confundem, e o motivo é que em português quase todas viram a preposição «em». Vamos separá-las com cuidado. Primeira: за mais acusativo. É o tempo GASTO para completar alguma coisa. Он написал отчёт за два часа. Ele escreveu o relatório em duas horas. O relatório ficou pronto. Segunda: на mais acusativo. É a duração PLANEJADA do resultado. Он уехал на две недели. Ele viajou por duas semanas, e vai ficar fora duas semanas. Terceira: через mais acusativo. É o tempo que FALTA até algo acontecer. Он вернётся через две недели. Ele volta daqui a duas semanas. Quarta: acusativo puro, sem preposição nenhuma. É a duração do processo. Он писал отчёт два часа. Ele passou duas horas escrevendo. Compare a primeira com a quarta, porque é o par mais fino: за два часа, com verbo perfectivo, resultado atingido. Два часа, com verbo imperfectivo, processo que durou. Agora duas construções que quase nenhum curso ensina, e que são muito frequentes em texto de nível bê dois. К mais dativo significa «até certo momento», «por volta de». Marca um prazo. К пятнице отчёт должен быть готов. Até sexta o relatório tem que estar pronto. К вечеру погода испортилась. Ao anoitecer o tempo piorou. E до mais genitivo marca o limite anterior. До конца года осталось два месяца. Faltam dois meses para o fim do ano. Perto dessas, перед mais instrumental, que significa «logo antes de»: Перед началом собрания. Перед обедом. Para terminar, os intervalos. Existem duas construções e a diferença entre elas é jurídica, quase. С mais до, com genitivo: с девяти до шести, das nove às seis. С mais по, com acusativo: с понедельника по пятницу, de segunda a sexta. E aqui está a diferença que importa: до EXCLUI o limite; по INCLUI o limite. С понедельника по пятницу inclui a sexta. С понедельника до пятницы não inclui. Num contrato ou num prazo de entrega, essa distinção decide um dia inteiro.",
+      "examples": [
+        {
+          "ru": "Он подготовил презентацию за один вечер.",
+          "pt": "Ele preparou a apresentação em uma noite.",
+          "note": "за + acusativo = tempo gasto até o resultado."
+        },
+        {
+          "ru": "К пятнице отчёт должен быть готов.",
+          "pt": "Até sexta o relatório tem que estar pronto.",
+          "note": "к + dativo = prazo."
+        },
+        {
+          "ru": "Магазин работает с девяти до восьми, с понедельника по субботу.",
+          "pt": "A loja funciona das nove às oito, de segunda a sábado.",
+          "note": "с…до (horas, genitivo) e с…по (dias, acusativo, incluindo o último)."
+        },
+        {
+          "ru": "Перед началом переговоров стороны обменялись документами.",
+          "pt": "Antes do início das negociações, as partes trocaram documentos.",
+          "note": "перед + instrumental."
+        }
+      ],
+      "pitfalls": [
+        "Confundir за час (levou uma hora) com через час (daqui a uma hora).",
+        "Achar que до e по são intercambiáveis num intervalo: по inclui o último dia, до não."
+      ]
+    },
+    {
+      "title": "Situar um evento em relação a outro",
+      "paragraphs": [
+        "Duas construções resolvem quase todo texto narrativo e são pouco conhecidas. за … до + родительный = «tanto tempo ANTES de»: За час до начала конференции зал был уже полон (uma hora antes do início, a sala já estava cheia). За неделю до экзамена он перестал спать. E через … после + родительный = «tanto tempo DEPOIS de»: Через год после окончания университета он открыл своё дело.",
+        "Repare na estrutura: o intervalo vem primeiro (за час, через год), depois vem a referência com до ou после + genitivo. É o inverso da ordem portuguesa («uma hora antes do início» tem a mesma ordem, mas «um ano depois de formar-se» é frequentemente dito «depois de um ano»). Manter a ordem russa evita frases confusas.",
+        "Para orações inteiras, o russo tem conjunções temporais precisas: когда (quando), пока (enquanto), как только (assim que), после того как (depois que), перед тем как e до того как (antes que), с тех пор как (desde que), в то время как (enquanto, com contraste). Duas observações úteis: пока + imperfectivo indica simultaneidade (Пока он говорил, все молчали), mas пока не + perfectivo significa «até que» (Ждите, пока он не придёт — espere até que ele chegue), e nesse caso o не NÃO é negação — é parte da conjunção."
+      ],
+      "audio_script": "Terceira parte: como situar um evento em relação a outro. Existem duas construções que resolvem quase todo texto narrativo, e elas são pouco ensinadas. Vale aprender. Primeira: за mais o intervalo, mais до mais genitivo. Significa «tanto tempo ANTES de». За час до начала конференции зал был уже полон. Uma hora antes do início da conferência, a sala já estava cheia. За неделю до экзамена он перестал спать. Uma semana antes da prova ele parou de dormir. Segunda: через mais o intervalo, mais после mais genitivo. Significa «tanto tempo DEPOIS de». Через год после окончания университета он открыл своё дело. Um ano depois de terminar a universidade, ele abriu o próprio negócio. Repare bem na estrutura, porque a ordem importa: primeiro vem o intervalo — за час, через год. Depois vem a referência, com до ou после mais genitivo. Manter essa ordem russa evita frases confusas. Agora, para ligar orações inteiras, o russo tem um conjunto de conjunções temporais bem preciso. Ouça a lista: Когда, quando. Пока, enquanto. Как только, assim que. После того как, depois que. Перед тем как e до того как, antes que. С тех пор как, desde que. В то время как, enquanto, com sentido de contraste. E aqui vão duas observações que valem ouro. Primeira: пока mais imperfectivo indica simultaneidade. Пока он говорил, все молчали. Enquanto ele falava, todos ficaram em silêncio. Segunda, e é a mais surpreendente: пока НЕ mais perfectivo significa «até que». Ждите, пока он не придёт. Espere até que ele chegue. E atenção: esse не NÃO é negação. Ninguém está dizendo que ele não vem. O не faz parte da conjunção. Traduzir ao pé da letra aqui produz o sentido oposto, então guarde пока не como um bloco único, com o significado de «até que».",
+      "examples": [
+        {
+          "ru": "За час до начала конференции зал был уже полон.",
+          "pt": "Uma hora antes do início da conferência, a sala já estava cheia.",
+          "note": "за + intervalo + до + genitivo."
+        },
+        {
+          "ru": "Через год после окончания университета он открыл своё дело.",
+          "pt": "Um ano depois de se formar, ele abriu o próprio negócio.",
+          "note": "через + intervalo + после + genitivo."
+        },
+        {
+          "ru": "Как только он получил ответ, он позвонил родителям.",
+          "pt": "Assim que recebeu a resposta, ele ligou para os pais."
+        },
+        {
+          "ru": "Подождите, пока не закончится собрание.",
+          "pt": "Espere até que a reunião termine.",
+          "note": "пока не = «até que»; o не não é negação."
+        }
+      ],
+      "pitfalls": [
+        "Traduzir «пока не» como negação: «пока он не придёт» significa «até que ele venha», não «enquanto ele não vier a intenção de negar».",
+        "Inverter a ordem em за … до: o intervalo vem primeiro (за час до начала), não depois."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Todas as construções temporais do russo",
+    "columns": [
+      "Pergunta",
+      "Construção",
+      "Exemplo",
+      "Observação"
+    ],
+    "rows": [
+      [
+        "Когда? (dia, hora)",
+        "в + винительный",
+        "в понедельник · в два часа",
+        "—"
+      ],
+      [
+        "Когда? (mês, ano, século)",
+        "в + предложный",
+        "в январе · в 2020 году",
+        "—"
+      ],
+      [
+        "Когда? (semana)",
+        "на + предложный",
+        "на прошлой неделе",
+        "Única unidade com на"
+      ],
+      [
+        "Когда? (parte do dia, estação)",
+        "творительный puro",
+        "утром · вечером · летом",
+        "Sem preposição"
+      ],
+      [
+        "Как часто?",
+        "по + дательный PLURAL · каждый + вин.",
+        "по понедельникам · каждый день",
+        "по sempre no plural"
+      ],
+      [
+        "За какое время?",
+        "за + винительный",
+        "написал за два часа",
+        "Tempo gasto (verbo perfectivo)"
+      ],
+      [
+        "Сколько времени?",
+        "винительный puro",
+        "писал два часа",
+        "Duração do processo (imperfectivo)"
+      ],
+      [
+        "На какой срок?",
+        "на + винительный",
+        "уехал на две недели",
+        "Duração planejada do resultado"
+      ],
+      [
+        "Через сколько?",
+        "через + винительный",
+        "вернётся через час",
+        "Tempo que falta"
+      ],
+      [
+        "К какому сроку?",
+        "к + дательный",
+        "к пятнице · к вечеру",
+        "Prazo"
+      ],
+      [
+        "С какого по какое?",
+        "с … до + род. · с … по + вин.",
+        "с девяти до шести · с понедельника по пятницу",
+        "до exclui, по inclui o limite"
+      ],
+      [
+        "За сколько до?",
+        "за + интервал + до + род.",
+        "за час до начала",
+        "Intervalo vem primeiro"
+      ],
+      [
+        "Через сколько после?",
+        "через + интервал + после + род.",
+        "через год после окончания",
+        "Intervalo vem primeiro"
+      ]
+    ],
+    "note": "Conjunções: когда · пока (enquanto) · пока не (até que — o не não é negação) · как только · после того как · перед тем как · с тех пор как."
+  },
+  "reference": [
+    {
+      "construction": "к + срок",
+      "question": "к какому времени?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "até (prazo)",
+      "example": "к пятнице · к концу года"
+    },
+    {
+      "construction": "перед",
+      "question": "перед чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "logo antes de",
+      "example": "перед началом собрания"
+    },
+    {
+      "construction": "за … до",
+      "question": "за сколько до?",
+      "case": "ВИН. + РОД.",
+      "meaning": "tanto tempo antes de",
+      "example": "за час до вылета"
+    },
+    {
+      "construction": "через … после",
+      "question": "через сколько после?",
+      "case": "ВИН. + РОД.",
+      "meaning": "tanto tempo depois de",
+      "example": "через год после переезда"
+    },
+    {
+      "construction": "с … по",
+      "question": "с какого по какое?",
+      "case": "РОД. + ВИН.",
+      "meaning": "de … a (incluindo o último)",
+      "example": "с понедельника по пятницу"
+    },
+    {
+      "construction": "пока не",
+      "question": "до какого момента?",
+      "case": "—",
+      "meaning": "até que",
+      "example": "ждите, пока он не придёт"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u22-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "в понедельник × в январе × на неделе",
+      "back": "dia → вин. · mês/ano → предл. · semana → на + предл.",
+      "explanation": "Três unidades de tempo, três construções. Semana é a única com на.",
+      "tags": [
+        "tempo",
+        "preposições",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u22-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "утром · вечером · летом",
+      "back": "Partes do dia e estações: творительный SEM preposição",
+      "explanation": "Contraste: в этом году (com в) × этим летом (sem preposição).",
+      "tags": [
+        "tempo",
+        "творительный",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u22-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "за час × через час × на час",
+      "back": "за = gastou · через = falta · на = ficará",
+      "explanation": "Três construções que em português viram «em uma hora» ou «por uma hora».",
+      "tags": [
+        "tempo",
+        "duração",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u22-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 3,
+      "front": "пока не",
+      "back": "= «até que» — o не NÃO é negação",
+      "explanation": "Ждите, пока он не придёт = espere até que ele chegue.",
+      "tags": [
+        "tempo",
+        "conjunções",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u22-e05",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 1,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Совещание перенесли ___. (среда)",
+      "options": [
+        "на среду",
+        "в среде",
+        "на среде",
+        "в среда"
+      ],
+      "answer": "на среду",
+      "explanation": "Adiar PARA uma data usa перенести на + винительный (destino temporal). Se fosse localizar o evento, seria в среду — também acusativo, mas com в.",
+      "tags": [
+        "tempo",
+        "preposições",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u22-e06",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Он защитил диссертацию ___. (прошлый год)",
+      "options": [
+        "в прошлом году",
+        "в прошлый год",
+        "на прошлом году",
+        "прошлым годом"
+      ],
+      "answer": "в прошлом году",
+      "explanation": "Ano usa в + предложный, e год pertence ao segundo prepositivo (году, com -у tônico). «на» seria só para semana.",
+      "tags": [
+        "tempo",
+        "предложный падеж",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u22-e07",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha o par correto.",
+      "prompt": "___ мы отдыхали на море, а ___ вернёмся к работе.",
+      "options": [
+        "Летом … в сентябре",
+        "В лете … в сентябре",
+        "Летом … в сентябрь",
+        "В летом … на сентябре"
+      ],
+      "answer": "Летом … в сентябре",
+      "explanation": "Estação vai ao творительный sem preposição (летом); mês vai a в + предложный (в сентябре). Duas unidades de tempo, duas construções diferentes.",
+      "tags": [
+        "tempo",
+        "contraste",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u22-e08",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a construção de frequência correta.",
+      "prompt": "___ он ходит на курсы русского языка.",
+      "options": [
+        "По вторникам",
+        "По вторнику",
+        "В вторники",
+        "На вторниках"
+      ],
+      "answer": "По вторникам",
+      "explanation": "Frequência habitual usa по + дательный PLURAL: по вторникам, по выходным, по вечерам. O singular não é usado nessa construção.",
+      "tags": [
+        "tempo",
+        "frequência",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u22-e09",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Он подготовил всю презентацию ___ и уехал ___. (один вечер / три дня)",
+      "options": [
+        "за один вечер … на три дня",
+        "на один вечер … за три дня",
+        "через один вечер … на три дня",
+        "за один вечер … через три дня"
+      ],
+      "answer": "за один вечер … на три дня",
+      "explanation": "за + acusativo = tempo gasto até o resultado (подготовил). на + acusativo = duração planejada da ausência (уехал).",
+      "tags": [
+        "tempo",
+        "за/на",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u22-e10",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "___ отчёт должен быть готов и передан руководству. (пятница)",
+      "options": [
+        "К пятнице",
+        "В пятницу",
+        "На пятницу",
+        "До пятницы"
+      ],
+      "answer": "К пятнице",
+      "explanation": "к + дательный marca um PRAZO: até sexta, o mais tardar. «В пятницу» situaria a ação exatamente na sexta; «до пятницы» enfatizaria o intervalo anterior.",
+      "tags": [
+        "tempo",
+        "prazo",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u22-e11",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o intervalo que INCLUI o último dia.",
+      "prompt": "O contrato vale de segunda a sexta, inclusive sexta:",
+      "options": [
+        "с понедельника по пятницу",
+        "с понедельника до пятницы",
+        "с понедельника на пятницу",
+        "от понедельника до пятницы"
+      ],
+      "answer": "с понедельника по пятницу",
+      "explanation": "с … по + винительный INCLUI o último dia; с … до + родительный o EXCLUI. Num contrato essa diferença vale um dia inteiro.",
+      "tags": [
+        "tempo",
+        "intervalos",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u22-e12",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "___ переговоров стороны обменялись документами. (начало)",
+      "options": [
+        "Перед началом",
+        "Перед начало",
+        "До начало",
+        "К началу"
+      ],
+      "answer": "Перед началом",
+      "explanation": "перед + творительный падеж = «logo antes de». началом é o instrumental de начало. до + родительный também existiria (до начала), mas marca todo o intervalo anterior, não o momento imediatamente antes.",
+      "tags": [
+        "tempo",
+        "перед",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u22-e13",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "___ зал был уже полон. (час / начало конференции)",
+      "options": [
+        "За час до начала конференции",
+        "Через час до начала конференции",
+        "За час после начала конференции",
+        "До часа начала конференции"
+      ],
+      "answer": "За час до начала конференции",
+      "explanation": "«Tanto tempo antes de» = за + intervalo (acusativo) + до + referência (genitivo). O intervalo vem sempre primeiro.",
+      "tags": [
+        "tempo",
+        "за … до",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u22-e14",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "___ он открыл собственную компанию. (год / окончание университета)",
+      "options": [
+        "Через год после окончания университета",
+        "За год после окончания университета",
+        "Через год до окончания университета",
+        "После года окончания университета"
+      ],
+      "answer": "Через год после окончания университета",
+      "explanation": "«Tanto tempo depois de» = через + intervalo (acusativo) + после + referência (genitivo). É o espelho exato de «за … до».",
+      "tags": [
+        "tempo",
+        "через … после",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u22-e15",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Подождите, пожалуйста, пока он не вернётся.»",
+      "options": [
+        "Espere, por favor, até que ele volte.",
+        "Espere, por favor, enquanto ele não voltar.",
+        "Espere, por favor, porque ele não vai voltar.",
+        "Não espere: ele não vai voltar."
+      ],
+      "answer": "Espere, por favor, até que ele volte.",
+      "explanation": "пока не + perfectivo significa «até que» e o не não nega nada — é parte da conjunção. Traduzir ao pé da letra produziria o sentido oposto.",
+      "tags": [
+        "tempo",
+        "пока не",
+        "significado"
+      ]
+    },
+    {
+      "id": "u22-e16",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o par correto.",
+      "prompt": "___ он говорил, все молчали; но ___ он не закончил, никто не задавал вопросов.",
+      "options": [
+        "Пока … пока",
+        "Пока не … пока",
+        "Когда … как только",
+        "Пока … как только"
+      ],
+      "answer": "Пока … пока",
+      "explanation": "Os dois são пока, mas com funções diferentes: «пока он говорил» = enquanto (simultaneidade, imperfectivo); «пока он не закончил» = até que (com не + perfectivo). A mesma conjunção cobre os dois sentidos.",
+      "tags": [
+        "tempo",
+        "пока",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u22-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase escolhe corretamente as preposições de tempo?",
+      "options": [
+        "На прошлой неделе, в среду вечером, мы закончили проект за два дня до дедлайна.",
+        "В прошлой неделе, на среду вечером, мы закончили проект через два дня до дедлайна.",
+        "На прошлой неделе, в среде вечером, мы закончили проект за два дня после дедлайна.",
+        "В прошлую неделю, в среду в вечере, мы закончили проект до двух дней дедлайна."
+      ],
+      "answer": "На прошлой неделе, в среду вечером, мы закончили проект за два дня до дедлайна.",
+      "explanation": "Quatro construções numa frase: semana com на + предложный; dia com в + винительный; parte do dia no творительный sem preposição; e o intervalo antes de um evento com за … до.",
+      "tags": [
+        "tempo",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u22-e18",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Он писал отчёт два дня и закончил его за два часа до совещания.»",
+      "options": [
+        "Ele passou dois dias escrevendo o relatório e o terminou duas horas antes da reunião.",
+        "Ele escreveu o relatório em dois dias e o terminou duas horas depois da reunião.",
+        "Ele escreveu o relatório por dois dias e o entregou daqui a duas horas.",
+        "Ele terminou o relatório em dois dias e duas horas."
+      ],
+      "answer": "Ele passou dois dias escrevendo o relatório e o terminou duas horas antes da reunião.",
+      "explanation": "«два дня» sem preposição, com imperfectivo (писал), marca a duração do processo. «за два часа до совещания» situa a conclusão em relação a outro evento.",
+      "tags": [
+        "tempo",
+        "duração",
+        "significado"
+      ]
+    },
+    {
+      "id": "u22-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Наш офис работает с девяти утра до шести вечера, с понедельника по пятницу. По субботам работает только дежурный отдел, а по воскресеньям офис закрыт. Заявки, поданные после пяти часов вечера, обрабатываются на следующий рабочий день. В прошлом году мы сократили срок рассмотрения с двух недель до пяти дней, и теперь клиент получает ответ через пять дней после подачи заявки. За два дня до окончания срока система автоматически отправляет напоминание.",
+      "prompt": "Quando o cliente recebe a resposta, segundo o texto?",
+      "options": [
+        "Cinco dias depois de enviar o pedido.",
+        "Duas semanas depois de enviar o pedido.",
+        "Dois dias depois de enviar o pedido.",
+        "No mesmo dia útil."
+      ],
+      "answer": "Cinco dias depois de enviar o pedido.",
+      "explanation": "«клиент получает ответ через пять дней после подачи заявки» — через + intervalo + после + genitivo situa o evento em relação a outro.",
+      "tags": [
+        "tempo",
+        "leitura",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u22-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Наш офис работает с девяти утра до шести вечера, с понедельника по пятницу. По субботам работает только дежурный отдел. За два дня до окончания срока система автоматически отправляет напоминание.",
+      "prompt": "O escritório funciona na sexta-feira?",
+      "options": [
+        "Sim: «с понедельника по пятницу» inclui a sexta.",
+        "Não: «по пятницу» exclui a sexta.",
+        "Só o plantão funciona na sexta.",
+        "O texto não permite saber."
+      ],
+      "answer": "Sim: «с понедельника по пятницу» inclui a sexta.",
+      "explanation": "с … по + винительный inclui o último elemento. Se fosse «с понедельника до пятницы», a sexta ficaria de fora.",
+      "tags": [
+        "tempo",
+        "intervalos",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u22-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Он подготовил доклад за одну ночь и уехал на конференцию на три дня.",
+      "prompt": "O que foi dito no áudio?",
+      "options": [
+        "Ele preparou a palestra em uma noite e viajou por três dias para a conferência.",
+        "Ele preparou a palestra durante três dias e viajou uma noite.",
+        "Ele vai preparar a palestra daqui a uma noite e ficar três dias fora.",
+        "Ele preparou a palestra por uma noite e voltou em três dias."
+      ],
+      "answer": "Ele preparou a palestra em uma noite e viajou por três dias para a conferência.",
+      "explanation": "за одну ночь = tempo gasto até o resultado; на три дня = duração planejada da ausência.",
+      "tags": [
+        "tempo",
+        "за/на",
+        "audição"
+      ]
+    },
+    {
+      "id": "u22-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "К концу недели ситуация изменилась, и через месяц после переговоров стороны подписали соглашение.",
+      "prompt": "Quando o acordo foi assinado, segundo o áudio?",
+      "options": [
+        "Um mês depois das negociações.",
+        "Um mês antes das negociações.",
+        "No fim da semana das negociações.",
+        "Durante as negociações."
+      ],
+      "answer": "Um mês depois das negociações.",
+      "explanation": "«через месяц после переговоров» — через + intervalo + после + genitivo. E «к концу недели» é um prazo com к + dativo.",
+      "tags": [
+        "tempo",
+        "через … после",
+        "audição"
+      ]
+    },
+    {
+      "id": "u22-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase situando um evento em relação a outro.",
+      "tokens": [
+        "За",
+        "неделю",
+        "до",
+        "экзамена",
+        "она",
+        "перестала",
+        "работать",
+        "по",
+        "вечерам"
+      ],
+      "answer": "За неделю до экзамена она перестала работать по вечерам",
+      "explanation": "Duas construções temporais: за неделю до экзамена (intervalo antes de um evento) e по вечерам (frequência, dativo plural).",
+      "tags": [
+        "tempo",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u22-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Relacione a construção temporal ao significado.",
+      "pairs": [
+        {
+          "left": "за два часа",
+          "right": "no espaço de duas horas (tempo gasto)"
+        },
+        {
+          "left": "через два часа",
+          "right": "daqui a duas horas"
+        },
+        {
+          "left": "на два часа",
+          "right": "por duas horas (duração planejada)"
+        },
+        {
+          "left": "два часа",
+          "right": "durante duas horas (processo)"
+        },
+        {
+          "left": "к двум часам",
+          "right": "até as duas horas (prazo)"
+        },
+        {
+          "left": "за два часа до начала",
+          "right": "duas horas antes do início"
+        }
+      ],
+      "explanation": "Seis construções com a mesma expressão de tempo. O que muda o sentido inteiro é a preposição e o caso.",
+      "tags": [
+        "tempo",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u22-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 80–100 palavras em russo. Use pelo menos cinco construções temporais diferentes.",
+      "prompt": "«Опишите свой обычный рабочий день и один необычный день прошлого года.» (Descreva um dia de trabalho comum e um dia incomum do ano passado.)\n\nUnidades: по утрам / по вечерам · с … до · к + сроку · за … до · через … после · в прошлом году · летом",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "tempo",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

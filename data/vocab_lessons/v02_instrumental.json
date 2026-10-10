@@ -1,0 +1,580 @@
+{
+  "id": "v02",
+  "unit_id": "u02_instrumental",
+  "order": 2,
+  "title": "Собрание жильцов",
+  "theme": "Жизнь в районе",
+  "description": "Numa reunião de moradores, um recém-chegado conversa com a síndica. Oito construções com творительный падеж: interesse, ocupação, insatisfação, dificuldades, definição e papel social.",
+  "speakers": {
+    "Светлана Петровна": "f",
+    "Олег": "m"
+  },
+  "dialogue": {
+    "title": "После собрания",
+    "setting": "Depois da reunião do prédio, Oleg, que se mudou há pouco para o bairro, conversa com Svetlana Petrovna, a síndica.",
+    "lines": [
+      {
+        "speaker": "Олег",
+        "ru": "Светлана Петровна, можно вопрос? Я только в марте переехал в этот район.",
+        "pt": "Svetlana Petrovna, posso fazer uma pergunta? Eu só me mudei para este bairro em março."
+      },
+      {
+        "speaker": "Светлана Петровна",
+        "ru": "Конечно. Я вижу, вы интересуетесь делами дома — это редкость.",
+        "pt": "Claro. Vejo que o senhor se interessa pelos assuntos do prédio — isso é raro."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "Просто жильцы явно недовольны вывозом мусора. Почему никто не жалуется в управу?",
+        "pt": "É que os moradores estão claramente insatisfeitos com a coleta de lixo. Por que ninguém reclama na prefeitura do bairro?"
+      },
+      {
+        "speaker": "Светлана Петровна",
+        "ru": "Жаловались, и не раз. Но каждый раз мы сталкиваемся с одной и той же проблемой: ответственных нет.",
+        "pt": "Já reclamamos, e mais de uma vez. Mas toda vez esbarramos no mesmo problema: não há responsáveis."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "А кто у нас занимается этим вопросом официально?",
+        "pt": "E quem cuida oficialmente dessa questão aqui?"
+      },
+      {
+        "speaker": "Светлана Петровна",
+        "ru": "Формально — управляющая компания. Она и является нашим главным партнёром, хотя партнёр она, мягко говоря, ненадёжный.",
+        "pt": "Formalmente, a administradora. Ela é, de fato, nossa principal parceira, embora seja, para dizer o mínimo, pouco confiável."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "Понятно. А наш двор считается безопасным? Я хочу, чтобы дочь гуляла одна.",
+        "pt": "Entendi. E o nosso pátio é considerado seguro? Quero que minha filha brinque sozinha."
+      },
+      {
+        "speaker": "Светлана Петровна",
+        "ru": "Днём — вполне. Кстати, если хотите помочь, станьте членом совета дома. Нам нужны активные люди.",
+        "pt": "De dia, sim. Aliás, se quiser ajudar, torne-se membro do conselho do prédio. Precisamos de gente ativa."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "С удовольствием. Я могу поделиться опытом: в Самаре я работал юристом в жилищной инспекции.",
+        "pt": "Com prazer. Posso compartilhar minha experiência: em Samara eu trabalhava como advogado na fiscalização habitacional."
+      },
+      {
+        "speaker": "Светлана Петровна",
+        "ru": "Вот это удача! Тогда в четверг приходите на заседание совета.",
+        "pt": "Que sorte! Então venha à reunião do conselho na quinta-feira."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "O que acontece principalmente nesta conversa?",
+      "options": [
+        "Um morador novo se informa sobre os problemas do prédio e decide participar.",
+        "A síndica convida Oleg para trabalhar como advogado da administradora.",
+        "Oleg reclama da síndica por não ter resolvido a questão do lixo.",
+        "Os dois organizam uma reclamação coletiva contra os vizinhos barulhentos."
+      ],
+      "answer": "Um morador novo se informa sobre os problemas do prédio e decide participar.",
+      "explanation": "Oleg pergunta sobre o lixo, o pátio e quem é responsável; no fim aceita entrar no conselho."
+    }
+  ],
+  "items": [
+    {
+      "key": "interesovatsya",
+      "lemma": "интересоваться",
+      "tag": "интересоваться",
+      "head": "интересоваться",
+      "regency": "интересоваться кем? чем?",
+      "case": "творительный падеж",
+      "pt": "interessar-se por",
+      "chunk": "интересоваться местной историей",
+      "chunk_pt": "interessar-se pela história local",
+      "chunk_wrong": [
+        "интересоваться в местной истории",
+        "интересоваться на местную историю",
+        "интересоваться местную историю"
+      ],
+      "form_note": "Sem preposição: o objeto do interesse vai direto para o творительный.",
+      "trap": "«Interessar-se por/em» empurra para в ou на. Em russo não há preposição: интересоваться политикой, музыкой, людьми.",
+      "example": {
+        "ru": "Мой сын давно интересуется космосом.",
+        "pt": "Meu filho se interessa pelo espaço há muito tempo.",
+        "extra": "космос",
+        "note": "интересоваться чем? → космосом (творительный masculino, -ом)."
+      },
+      "cloze": {
+        "ru": "Журналисты всегда интересуются ___.",
+        "answer": "громкими скандалами",
+        "wrong": [
+          "громких скандалов",
+          "в громких скандалах",
+          "громкие скандалы"
+        ],
+        "pt": "Os jornalistas sempre se interessam por escândalos ruidosos.",
+        "note": "Plural do творительный: -ыми / -ами."
+      },
+      "hear": {
+        "ru": "Эта студентка интересуется экологией, а её брат — экономикой.",
+        "pt": "Esta estudante se interessa por ecologia, e o irmão dela, por economia.",
+        "wrong": [
+          "Esta estudante se interessa por economia, e o irmão dela, por ecologia.",
+          "Esta estudante estuda ecologia, e o irmão dela ensina economia.",
+          "Esta estudante se interessava por ecologia, e agora por economia."
+        ],
+        "note": "Quem se interessa por quê: студентка → экологией; брат → экономикой."
+      }
+    },
+    {
+      "key": "zanimatsya",
+      "lemma": "заниматься",
+      "tag": "заниматься",
+      "head": "заниматься",
+      "regency": "заниматься кем? чем?",
+      "case": "творительный падеж",
+      "pt": "ocupar-se de, cuidar de; praticar (esporte), estudar",
+      "chunk": "заниматься этим вопросом",
+      "chunk_pt": "cuidar dessa questão",
+      "chunk_wrong": [
+        "заниматься этого вопроса",
+        "заниматься с этим вопросом",
+        "заниматься этот вопрос"
+      ],
+      "form_note": "заниматься + творительный sem preposição. заниматься с кем? = estudar/treinar com alguém.",
+      "trap": "«Cuidar de algo» não pede de/о: заниматься ремонтом, заниматься детьми. Com с, muda o sentido: заниматься с репетитором = ter aula com o professor particular.",
+      "example": {
+        "ru": "Моя сестра профессионально занимается плаванием.",
+        "pt": "Minha irmã pratica natação profissionalmente.",
+        "extra": "плавание",
+        "note": "заниматься чем? → плаванием (творительный neutro, -ием)."
+      },
+      "cloze": {
+        "ru": "В нашей фирме ___ занимается отдельный отдел.",
+        "answer": "закупками",
+        "wrong": [
+          "закупки",
+          "закупок",
+          "о закупках"
+        ],
+        "pt": "Na nossa firma, um departamento separado cuida das compras.",
+        "note": "заниматься чем? → закупками (творительный plural)."
+      },
+      "hear": {
+        "ru": "Бабушка занимается внуками, пока родители на работе.",
+        "pt": "A avó cuida dos netos enquanto os pais estão no trabalho.",
+        "wrong": [
+          "Os netos cuidam da avó enquanto os pais estão no trabalho.",
+          "A avó estuda com os netos depois que os pais voltam do trabalho.",
+          "A avó cuidava dos netos quando os pais estavam no trabalho."
+        ],
+        "note": "бабушка = sujeito; внуками = творительный (de quem ela cuida); занимается = presente."
+      }
+    },
+    {
+      "key": "nedovolen",
+      "lemma": "недовольный",
+      "tag": "быть недовольным",
+      "head": "быть недовольным / недоволен",
+      "regency": "быть недовольным (недоволен) кем? чем?",
+      "case": "творительный падеж",
+      "pt": "estar insatisfeito com",
+      "chunk": "быть недовольным зарплатой",
+      "chunk_pt": "estar insatisfeito com o salário",
+      "chunk_wrong": [
+        "быть недовольным с зарплатой",
+        "быть недовольным зарплаты",
+        "быть недовольным о зарплате"
+      ],
+      "form_note": "Tanto a forma longa quanto a curta (недоволен, недовольна, недовольны) regem творительный sem preposição.",
+      "trap": "«Insatisfeito com» sugere с. Não há preposição: недоволен зарплатой, недовольна сыном.",
+      "example": {
+        "ru": "Пассажиры недовольны новым расписанием автобусов.",
+        "pt": "Os passageiros estão insatisfeitos com o novo horário dos ônibus.",
+        "extra": "расписания",
+        "note": "недовольны чем? → новым расписанием (творительный neutro)."
+      },
+      "cloze": {
+        "ru": "Директор остался недоволен ___.",
+        "answer": "результатами проверки",
+        "wrong": [
+          "с результатами проверки",
+          "результатов проверки",
+          "результаты проверки"
+        ],
+        "pt": "O diretor ficou insatisfeito com os resultados da inspeção.",
+        "note": "недоволен чем? → результатами (творительный plural); проверки = родительный (de quê)."
+      },
+      "hear": {
+        "ru": "Учительница была недовольна поведением класса.",
+        "pt": "A professora estava insatisfeita com o comportamento da turma.",
+        "wrong": [
+          "A turma estava insatisfeita com o comportamento da professora.",
+          "A professora estava satisfeita com o comportamento da turma.",
+          "A professora vai ficar insatisfeita com o comportamento da turma."
+        ],
+        "note": "учительница (sujeito, feminino: недовольна); поведением класса = творительный + родительный."
+      }
+    },
+    {
+      "key": "stalkivatsya",
+      "lemma": "сталкиваться",
+      "tag": "сталкиваться с",
+      "head": "сталкиваться / столкнуться с",
+      "regency": "сталкиваться / столкнуться с кем? чем?",
+      "case": "творительный падеж",
+      "pt": "deparar-se com, enfrentar",
+      "chunk": "столкнуться с бюрократией",
+      "chunk_pt": "deparar-se com a burocracia",
+      "chunk_wrong": [
+        "столкнуться на бюрократию",
+        "столкнуться с бюрократии",
+        "столкнуться бюрократию"
+      ],
+      "form_note": "с + творительный: столкнуться с трудностями, с нехваткой, с непониманием.",
+      "trap": "«Enfrentar um problema» sugere objeto direto. Em russo o problema vem com с: столкнуться с проблемой.",
+      "example": {
+        "ru": "Молодые семьи часто сталкиваются с нехваткой жилья.",
+        "pt": "Famílias jovens frequentemente enfrentam a falta de moradia.",
+        "extra": "нехватку",
+        "note": "с нехваткой: творительный feminino (-ой); жилья = родительный."
+      },
+      "cloze": {
+        "ru": "В первый день на новой работе я столкнулся ___.",
+        "answer": "с неожиданными трудностями",
+        "wrong": [
+          "с неожиданных трудностей",
+          "на неожиданные трудности",
+          "неожиданными трудностями"
+        ],
+        "pt": "No primeiro dia no novo emprego, deparei-me com dificuldades inesperadas.",
+        "note": "с + творительный plural: -ыми / -ями."
+      },
+      "hear": {
+        "ru": "На границе туристы столкнулись с долгой проверкой документов.",
+        "pt": "Na fronteira, os turistas depararam-se com uma longa verificação de documentos.",
+        "wrong": [
+          "Na fronteira, os turistas evitaram uma longa verificação de documentos.",
+          "Na fronteira, os fiscais depararam-se com turistas sem documentos.",
+          "Na fronteira, os turistas vão enfrentar uma longa verificação de documentos."
+        ],
+        "note": "туристы = sujeito; с долгой проверкой = творительный; столкнулись = passado perfectivo."
+      }
+    },
+    {
+      "key": "yavlyatsya",
+      "lemma": "являться",
+      "tag": "являться",
+      "head": "являться",
+      "regency": "являться кем? чем?",
+      "case": "творительный падеж",
+      "pt": "ser, constituir (registro formal)",
+      "chunk": "являться главной проблемой",
+      "chunk_pt": "ser o principal problema",
+      "chunk_wrong": [
+        "являться главная проблема",
+        "являться главной проблемы",
+        "являться как главная проблема"
+      ],
+      "form_note": "O predicado de являться vai para o творительный; o sujeito continua no nominativo.",
+      "trap": "Não use являться para tudo: é registro formal e escrito. «Isto é minha casa» → Это мой дом, nunca «Это является моим домом».",
+      "example": {
+        "ru": "Высокая аренда является серьёзным недостатком центра.",
+        "pt": "O aluguel alto é uma desvantagem séria do centro.",
+        "extra": "недостаток",
+        "note": "являться чем? → серьёзным недостатком (творительный masculino)."
+      },
+      "cloze": {
+        "ru": "Москва является ___ страны.",
+        "answer": "крупнейшим транспортным узлом",
+        "wrong": [
+          "крупнейший транспортный узел",
+          "крупнейшего транспортного узла",
+          "как крупнейший транспортный узел"
+        ],
+        "pt": "Moscou é o maior entroncamento de transportes do país.",
+        "note": "являться чем? → крупнейшим узлом (творительный); страны = родительный."
+      },
+      "hear": {
+        "ru": "Главной причиной переезда является работа, а не климат.",
+        "pt": "A principal causa da mudança é o trabalho, e não o clima.",
+        "wrong": [
+          "A principal causa da mudança é o clima, e não o trabalho.",
+          "O trabalho é uma causa secundária da mudança, junto com o clima.",
+          "A mudança é a principal causa de problemas no trabalho."
+        ],
+        "note": "Ordem invertida: главной причиной (творительный) + является + работа (nominativo = sujeito)."
+      }
+    },
+    {
+      "key": "stat",
+      "lemma": "становиться",
+      "tag": "становиться / стать",
+      "head": "становиться / стать",
+      "regency": "становиться / стать кем? чем? · каким?",
+      "case": "творительный падеж",
+      "pt": "tornar-se",
+      "chunk": "стать членом совета",
+      "chunk_pt": "tornar-se membro do conselho",
+      "chunk_wrong": [
+        "стать член совета",
+        "стать в член совета",
+        "стать членом совет"
+      ],
+      "form_note": "A nova condição vai para o творительный: стать врачом, стать известным.",
+      "trap": "«Tornar-se» + substantivo não fica no nominativo: стать учитель ✗ → стать учителем ✓.",
+      "example": {
+        "ru": "После переезда город стал для неё родным.",
+        "pt": "Depois da mudança, a cidade se tornou sua casa.",
+        "extra": "родной",
+        "note": "стать каким? → родным (творительный masculino do adjetivo)."
+      },
+      "cloze": {
+        "ru": "Через пять лет этот район стал ___.",
+        "answer": "самым модным местом в городе",
+        "wrong": [
+          "самое модное место в городе",
+          "самого модного места в городе",
+          "самым модным местам в городе"
+        ],
+        "pt": "Em cinco anos, este bairro se tornou o lugar mais badalado da cidade.",
+        "note": "стать чем? → самым модным местом (творительный neutro singular)."
+      },
+      "hear": {
+        "ru": "Его младший брат стал известным архитектором.",
+        "pt": "O irmão mais novo dele tornou-se um arquiteto famoso.",
+        "wrong": [
+          "O irmão mais velho dele tornou-se um arquiteto famoso.",
+          "O irmão mais novo dele queria tornar-se um arquiteto famoso.",
+          "O irmão mais novo dele trabalhou com um arquiteto famoso."
+        ],
+        "note": "младший = mais novo; стал + творительный = resultado alcançado."
+      }
+    },
+    {
+      "key": "schitatsya",
+      "lemma": "считаться",
+      "tag": "считаться",
+      "head": "считаться",
+      "regency": "считаться кем? чем? · каким?",
+      "case": "творительный падеж",
+      "pt": "ser considerado",
+      "chunk": "считаться безопасным районом",
+      "chunk_pt": "ser considerado um bairro seguro",
+      "chunk_wrong": [
+        "считаться как безопасный район",
+        "считаться безопасный район",
+        "считаться безопасного района"
+      ],
+      "form_note": "считаться + творительный. Compare: считать кого? что? + каким? (considerar alguém algo).",
+      "trap": "«Ser considerado como» não leva как: считаться лучшим, не «считаться как лучший».",
+      "example": {
+        "ru": "Этот ресторан считается лучшим в городе.",
+        "pt": "Este restaurante é considerado o melhor da cidade.",
+        "extra": "лучший",
+        "note": "считаться каким? → лучшим (творительный)."
+      },
+      "cloze": {
+        "ru": "Байкал считается ___ в мире.",
+        "answer": "самым глубоким озером",
+        "wrong": [
+          "самое глубокое озеро",
+          "как самое глубокое озеро",
+          "самого глубокого озера"
+        ],
+        "pt": "O Baikal é considerado o lago mais profundo do mundo.",
+        "note": "считаться чем? → самым глубоким озером."
+      },
+      "hear": {
+        "ru": "Раньше эта профессия считалась мужской.",
+        "pt": "Antes, esta profissão era considerada masculina.",
+        "wrong": [
+          "Hoje, esta profissão é considerada masculina.",
+          "Antes, esta profissão era considerada feminina.",
+          "Antes, os homens não consideravam esta profissão."
+        ],
+        "note": "раньше + считалась (passado) + мужской (творительный feminino, concordando com профессия)."
+      }
+    },
+    {
+      "key": "delitsya",
+      "lemma": "делиться",
+      "tag": "делиться чем с кем",
+      "head": "делиться / поделиться",
+      "regency": "делиться / поделиться чем? с кем?",
+      "case": "творительный падеж",
+      "pt": "compartilhar (algo com alguém)",
+      "chunk": "поделиться опытом с коллегами",
+      "chunk_pt": "compartilhar experiência com os colegas",
+      "chunk_wrong": [
+        "поделиться опыт с коллегами",
+        "поделиться опытом коллегам",
+        "поделиться опыта с коллегами"
+      ],
+      "form_note": "O que se compartilha → творительный sem preposição; com quem → с + творительный.",
+      "trap": "Em português «compartilhar algo» é objeto direto. Em russo: поделиться новостью, впечатлениями, секретом.",
+      "example": {
+        "ru": "Она поделилась с нами своими впечатлениями.",
+        "pt": "Ela compartilhou conosco suas impressões.",
+        "extra": "впечатления",
+        "note": "поделиться чем? → впечатлениями; с кем? → с нами."
+      },
+      "cloze": {
+        "ru": "Не бойся поделиться ___ с преподавателем.",
+        "answer": "своими сомнениями",
+        "wrong": [
+          "свои сомнения",
+          "своих сомнений",
+          "о своих сомнениях"
+        ],
+        "pt": "Não tenha medo de compartilhar suas dúvidas com o professor.",
+        "note": "поделиться чем? → своими сомнениями (творительный plural)."
+      },
+      "hear": {
+        "ru": "Сосед поделился со мной рецептом пирога.",
+        "pt": "O vizinho compartilhou comigo a receita da torta.",
+        "wrong": [
+          "Eu compartilhei com o vizinho a receita da torta.",
+          "O vizinho me pediu a receita da torta.",
+          "O vizinho dividiu a torta comigo."
+        ],
+        "note": "сосед = sujeito; со мной = com quem; рецептом = o que foi compartilhado."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Por que os moradores ainda não resolveram o problema do lixo?",
+      "options": [
+        "Sempre esbarram na falta de responsáveis.",
+        "Nunca reclamaram oficialmente.",
+        "A síndica acha que não é problema.",
+        "A administradora já resolveu tudo."
+      ],
+      "answer": "Sempre esbarram na falta de responsáveis.",
+      "explanation": "«каждый раз мы сталкиваемся с одной и той же проблемой: ответственных нет»."
+    },
+    {
+      "prompt": "Por que a síndica acha sorte ter Oleg no conselho?",
+      "options": [
+        "Ele trabalhou como advogado na fiscalização habitacional.",
+        "Ele trabalha agora na administradora do prédio.",
+        "Ele foi síndico de um prédio grande em Samara.",
+        "Ele conhece pessoalmente os funcionários da prefeitura."
+      ],
+      "answer": "Ele trabalhou como advogado na fiscalização habitacional.",
+      "explanation": "«в Самаре я работал юристом в жилищной инспекции» — работать кем? → юристом (творительный)."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 1,
+      "gap": "интересуетесь делами дома",
+      "wrong": [
+        "интересуетесь дела дома",
+        "интересуетесь в делах дома",
+        "интересуетесь делам дома"
+      ],
+      "note": "интересоваться чем? → делами (творительный plural)."
+    },
+    {
+      "line": 3,
+      "gap": "с одной и той же проблемой",
+      "wrong": [
+        "на одну и ту же проблему",
+        "с одной и той же проблемы",
+        "одну и ту же проблему"
+      ],
+      "note": "сталкиваться с чем? → с проблемой."
+    },
+    {
+      "line": 7,
+      "gap": "станьте членом совета дома",
+      "wrong": [
+        "станьте член совета дома",
+        "станьте в члены совета дома",
+        "станьте членам совета дома"
+      ],
+      "note": "стать кем? → членом (творительный)."
+    },
+    {
+      "line": 8,
+      "gap": "работал юристом",
+      "wrong": [
+        "работал юрист",
+        "работал как юриста",
+        "работал юристу"
+      ],
+      "note": "работать кем? → юристом (творительный da função)."
+    }
+  ],
+  "match": {
+    "instruction": "Cada verbo pede um complemento diferente. Relacione.",
+    "prompt": "Qual complemento completa cada verbo?",
+    "pairs": [
+      {
+        "left": "интересоваться",
+        "right": "судьбой старых друзей"
+      },
+      {
+        "left": "работать",
+        "right": "переводчиком в посольстве"
+      },
+      {
+        "left": "поделиться",
+        "right": "впечатлениями с друзьями"
+      },
+      {
+        "left": "столкнуться",
+        "right": "с нехваткой денег"
+      },
+      {
+        "left": "считаться",
+        "right": "одним из лучших районов"
+      },
+      {
+        "left": "заниматься",
+        "right": "спортом три раза в неделю"
+      }
+    ],
+    "explanation": "Todos pedem творительный; o sentido decide o par. Só столкнуться exige с; «с друзьями» é o parceiro de поделиться (com quem)."
+  },
+  "replies": [
+    {
+      "speaker": "Светлана Петровна",
+      "you": "Олег",
+      "ru": "Олег, а чем вы занимаетесь сейчас, после переезда?",
+      "prompt": "A síndica pergunta com o que você trabalha agora.",
+      "answer": "Сейчас я работаю консультантом и занимаюсь жилищным правом.",
+      "wrong": [
+        "Сейчас я работаю консультант и занимаюсь жилищным правом.",
+        "Сейчас я работаю консультантом и занимаюсь жилищное право.",
+        "Сейчас я работаю консультантом и занимаюсь о жилищном праве."
+      ],
+      "explanation": "работать кем? → консультантом; заниматься чем? → жилищным правом. Ambos творительный, sem preposição."
+    },
+    {
+      "speaker": "Олег",
+      "you": "Светлана Петровна",
+      "ru": "А жильцы довольны новой управляющей компанией?",
+      "prompt": "Oleg quer saber se os moradores estão satisfeitos com a nova administradora. Responda que não.",
+      "answer": "Нет, многие недовольны её работой.",
+      "wrong": [
+        "Нет, многие недовольны с её работой.",
+        "Нет, многие недовольны её работы.",
+        "Нет, многие недовольны её работу."
+      ],
+      "explanation": "недоволен чем? → работой (творительный), sem с."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva uma mensagem no grupo de moradores do seu prédio: apresente-se, diga com o que está insatisfeito e proponha uma solução.",
+    "use": [
+      "интересоваться",
+      "быть недовольным",
+      "столкнуться с",
+      "являться",
+      "стать"
+    ],
+    "words": "40–60",
+    "notes": "Verificar творительный sem preposição (интересоваться, недоволен, являться, стать); с + творительный em столкнуться; concordância de недоволен/недовольна."
+  }
+}

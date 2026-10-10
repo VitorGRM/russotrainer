@@ -1,0 +1,762 @@
+{
+  "id": "u15_dvizhenie",
+  "order": 15,
+  "title": "Глаголы движения: идти × ходить",
+  "description": "Семья e vida cotidiana: os pares de movimento sem prefixo, a diferença entre uma ida e uma ida-e-volta, e o que идти significa quando não há movimento nenhum.",
+  "estimated_minutes": 34,
+  "objectives": [
+    "escolher entre verbo unidirecional e multidirecional",
+    "interpretar ходил como «foi e voltou»",
+    "reconhecer os usos figurados de идти e вести"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 4 «Семья и семейные отношения» (Глаголы движения без приставок) · Кузьмина, Глаголы движения: без приставок, употребление, переносное значение",
+  "grammar": [
+    {
+      "title": "Dois verbos para um movimento só",
+      "paragraphs": [
+        "O russo não tem um verbo «ir». Tem dois, e a escolha entre eles é obrigatória em cada frase. Os pares principais: идти/ходить (a pé), ехать/ездить (de veículo), лететь/летать (voar), плыть/плавать (nadar/navegar), бежать/бегать (correr), нести/носить (levar carregando), везти/возить (levar em veículo), вести/водить (levar conduzindo, guiar).",
+        "O primeiro verbo de cada par é UNIDIRECIONAL (определённый): descreve um movimento numa direção, numa ocasião específica, geralmente em andamento. Я иду в магазин — estou indo à loja agora. O segundo é MULTIDIRECIONAL (неопределённый): descreve movimento repetido, habitual, em várias direções, ou a capacidade genérica de se mover assim. Я хожу в магазин каждый день — vou à loja todo dia. Ребёнок уже ходит — a criança já anda.",
+        "Nenhum dos dois é «mais correto». Eles não são sinônimos nem níveis de formalidade: são informações diferentes sobre o mesmo evento. Uma pergunta prática resolve quase tudo: «esta é UMA ida, numa direção, ou é um ir-e-vir?» Uma ida → идти. Ir-e-vir, repetição ou capacidade → ходить."
+      ],
+      "audio_script": "Глаголы движения, os verbos de movimento. E vamos começar pelo fato mais estranho para quem fala português: o russo não tem um verbo «ir». Ele tem dois, e você é obrigado a escolher um deles em cada frase. Não há neutro. Os pares principais são estes. Ouça e repita: идти e ходить, a pé. ехать e ездить, de veículo. лететь e летать, voar. плыть e плавать, nadar ou navegar. бежать e бегать, correr. нести e носить, levar carregando nas mãos. везти e возить, levar dentro de um veículo. вести e водить, levar conduzindo, guiando alguém. O primeiro verbo de cada par é chamado de unidirecional. Ele descreve um movimento numa direção só, numa ocasião específica, e normalmente em andamento. Я иду в магазин. Estou indo à loja, agora, nesse momento. O segundo verbo é o multidirecional. Ele descreve movimento repetido, habitual, em várias direções, ou a capacidade genérica de se mover daquele jeito. Я хожу в магазин каждый день. Vou à loja todo dia. Ребёнок уже ходит. A criança já anda — aqui não há destino nenhum, é a capacidade de andar. E aqui vai o ponto que mais confunde no começo: nenhum dos dois é mais correto que o outro. Eles não são sinônimos, e não são níveis de formalidade. São informações diferentes sobre o mesmo evento, e o ouvinte russo recebe essa informação automaticamente. Uma pergunta prática resolve quase tudo. Pergunte: isso é UMA ida, numa direção? Ou é um ir e vir? Uma ida, идти. Ir e vir, repetição, ou capacidade, ходить.",
+      "examples": [
+        {
+          "ru": "Я иду в аптеку, тебе что-нибудь купить?",
+          "pt": "Estou indo à farmácia, quer que eu compre algo?",
+          "note": "Uma ida, agora, numa direção → идти."
+        },
+        {
+          "ru": "Я хожу в бассейн два раза в неделю.",
+          "pt": "Vou à piscina duas vezes por semana.",
+          "note": "Repetição → ходить."
+        },
+        {
+          "ru": "Наш сын уже ходит и почти бегает.",
+          "pt": "Nosso filho já anda e quase corre.",
+          "note": "Capacidade genérica → multidirecional."
+        },
+        {
+          "ru": "Каждое утро она везёт детей в школу, а по выходным они никуда не ездят.",
+          "pt": "Toda manhã ela leva as crianças à escola, e nos fins de semana não vão a lugar nenhum.",
+          "note": "везёт: trajeto único e dirigido, dentro de uma rotina; ездят: multidirecional."
+        }
+      ],
+      "pitfalls": [
+        "Usar идти para hábitos: «Я иду в бассейн два раза в неделю» está errado — é хожу.",
+        "Achar que ходить é mais informal que идти: eles carregam informações diferentes, não registros diferentes."
+      ]
+    },
+    {
+      "title": "No passado: ходил significa «foi e voltou»",
+      "paragraphs": [
+        "É no passado que a diferença fica mais visível e mais útil. Вчера я ходил в кино significa «ontem fui ao cinema (e voltei)» — o evento inteiro, ida e volta, já encerrado. É a forma normal de contar que você esteve em algum lugar. Вчера я шёл в кино и встретил друга significa «ontem, quando eu ia para o cinema, encontrei um amigo» — aqui o foco está no trajeto em andamento, e o шёл é o pano de fundo para outro evento.",
+        "Por isso ходил e ездил funcionam como equivalentes de «estive em»: Ты когда-нибудь ездил в Россию? (Você já esteve na Rússia?). Он ходил к врачу (Ele foi ao médico — e já voltou). Se você usar шёл ou ехал aqui, um russo vai esperar a continuação da frase: «ele estava indo ao médico… e o quê?».",
+        "O par nesse uso funciona como aspecto, mas não é aspecto: ходил é imperfectivo, e no entanto descreve um evento completo. É por isso que Кузьмина trata os verbos de movimento como um sistema próprio, sobreposto ao dos aspectos. Na prática: para relatar uma visita concluída, use o multidirecional no passado. Para dar o cenário de outro acontecimento, use o unidirecional."
+      ],
+      "audio_script": "Agora o passado, que é onde a diferença fica mais visível e, principalmente, mais útil no dia a dia. Compare estas duas frases com atenção. Вчера я ходил в кино. Ontem eu fui ao cinema — e voltei. O evento inteiro, ida e volta, encerrado. Essa é a forma normal de contar a alguém que você esteve em algum lugar. Agora a outra. Вчера я шёл в кино и встретил друга. Ontem, quando eu ia para o cinema, encontrei um amigo. Aqui o foco está no trajeto em andamento, e o шёл serve de pano de fundo para outro acontecimento. É por isso que ходил e ездил funcionam como o nosso «já estive em». Ты когда-нибудь ездил в Россию? Você já esteve na Rússia? Он ходил к врачу. Ele foi ao médico, e já voltou. Se você usar шёл ou ехал nessas frases, um russo vai ficar esperando a continuação. «Ele estava indo ao médico… e o quê? O que aconteceu no caminho?» Há uma sutileza teórica aqui que vale conhecer, porque explica muita confusão. Ходил é gramaticalmente imperfectivo. E no entanto ele descreve um evento completo, com começo e fim. Isso contraria a definição normal de aspecto — e é justamente por isso que a gramática de Kuzmina trata os verbos de movimento como um sistema próprio, sobreposto ao sistema dos aspectos. Na prática, guarde a regra em duas linhas. Para relatar uma visita já concluída, use o multidirecional no passado: ходил, ездил, летал. Para dar o cenário de outro acontecimento, use o unidirecional: шёл, ехал, летел.",
+      "examples": [
+        {
+          "ru": "Вчера мы ходили к бабушке.",
+          "pt": "Ontem fomos à casa da avó.",
+          "note": "Ida e volta concluída."
+        },
+        {
+          "ru": "Когда я шёл к бабушке, начался дождь.",
+          "pt": "Quando eu ia à casa da avó, começou a chover.",
+          "note": "Trajeto em andamento como pano de fundo."
+        },
+        {
+          "ru": "Ты когда-нибудь ездил на Байкал?",
+          "pt": "Você já esteve no Baikal?",
+          "note": "ездил = «já estive em»."
+        },
+        {
+          "ru": "Мы летели три часа и всё это время говорили о семье.",
+          "pt": "Voamos três horas e o tempo todo falamos sobre a família.",
+          "note": "летели: trajeto único em curso, com duração."
+        }
+      ],
+      "pitfalls": [
+        "Responder «Ты был в Москве?» com «Я ехал в Москву»: o correto é Я ездил в Москву.",
+        "Usar шёл para relatar a visita inteira: шёл só descreve o caminho, não a visita."
+      ]
+    },
+    {
+      "title": "Quando идти não é andar: usos figurados",
+      "paragraphs": [
+        "Os verbos de movimento estão entre os mais produtivos do russo em sentido figurado, e vários usos altamente frequentes não envolvem movimento nenhum. Идти: Идёт дождь / снег (chove / neva). Фильм идёт в кинотеатре (o filme está em cartaz). Время идёт быстро (o tempo passa rápido). Идут переговоры (as negociações estão em curso). Вам идёт это платье (esse vestido lhe cai bem). Часы идут точно (o relógio funciona certo).",
+        "Вести/водить: Он ведёт машину (dirige o carro). Дорога ведёт к озеру (a estrada leva ao lago). Она ведёт переговоры / занятия / дневник (conduz negociações / dá aulas / mantém um diário). Это ведёт к серьёзным последствиям (isso leva a consequências sérias). Este último é o mesmo к + дательный da unidade 1: приводить к e вести к compartilham a regência.",
+        "Носить: Она носит очки (usa óculos) e Он носит фамилию отца (leva o sobrenome do pai). Repare que aqui só existe a forma multidirecional — «она несёт очки» significaria que ela está carregando os óculos na mão neste momento. Nos usos figurados, quase sempre é o multidirecional que se fixou, porque descreve um estado permanente, não um trajeto."
+      ],
+      "audio_script": "Terceira parte, e é a que mais rende em compreensão de texto: os usos figurados. Os verbos de movimento estão entre os mais produtivos do russo em sentido figurado, e vários dos usos mais frequentes não envolvem movimento nenhum. Vamos ao идти. Идёт дождь. Chove. Literalmente, a chuva anda. Идёт снег. Neva. Фильм идёт в кинотеатре. O filme está em cartaz. Время идёт быстро. O tempo passa rápido. Идут переговоры. As negociações estão em curso. Вам идёт это платье. Esse vestido lhe cai bem. Часы идут точно. O relógio funciona certo. Sete usos, e em nenhum deles alguém está andando. Agora вести e водить. Он ведёт машину. Ele dirige o carro. Дорога ведёт к озеру. A estrada leva ao lago. Она ведёт переговоры. Ela conduz as negociações. Ведёт занятия, dá aulas. Ведёт дневник, mantém um diário. E o mais importante para escrever bem: Это ведёт к серьёзным последствиям. Isso leva a consequências sérias. Repare que é exatamente o mesmo к mais dativo que você viu na unidade um com приводить к. Вести к e приводить к compartilham a regência, e são intercambiáveis em muitos contextos argumentativos. Por fim, носить. Она носит очки. Ela usa óculos. Он носит фамилию отца. Ele leva o sobrenome do pai. E aqui há um detalhe que vale notar: nesses usos só existe a forma multidirecional. Она несёт очки significaria que ela está carregando os óculos na mão neste exato momento. Isso não é coincidência. Nos usos figurados quase sempre foi o multidirecional que se fixou, porque ele descreve um estado permanente, e não um trajeto.",
+      "examples": [
+        {
+          "ru": "На улице идёт дождь, поэтому мы остались дома.",
+          "pt": "Está chovendo na rua, por isso ficamos em casa.",
+          "note": "идёт дождь: o uso figurado mais frequente de todos."
+        },
+        {
+          "ru": "Эта политика ведёт к росту неравенства.",
+          "pt": "Essa política leva ao aumento da desigualdade.",
+          "note": "вести к + дательный, igual a приводить к."
+        },
+        {
+          "ru": "Моя сестра носит очки с детства.",
+          "pt": "Minha irmã usa óculos desde a infância.",
+          "note": "носить = usar (estado permanente); нести seria carregar agora."
+        },
+        {
+          "ru": "Время идёт, а отношения в семье не меняются.",
+          "pt": "O tempo passa, mas as relações na família não mudam."
+        }
+      ],
+      "pitfalls": [
+        "Traduzir «está chovendo» com um verbo de chuva: em russo é идёт дождь, com o verbo de movimento.",
+        "Usar несёт para «usar óculos»: o correto é носит."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Pares de movimento sem prefixo",
+    "columns": [
+      "Unidirecional (одна поездка)",
+      "Multidirecional (туда и обратно)",
+      "Sentido",
+      "Uso figurado frequente"
+    ],
+    "rows": [
+      [
+        "идти (иду, идёшь; шёл)",
+        "ходить (хожу, ходишь; ходил)",
+        "ir a pé",
+        "идёт дождь · фильм идёт · время идёт"
+      ],
+      [
+        "ехать (еду, едешь; ехал)",
+        "ездить (езжу, ездишь; ездил)",
+        "ir de veículo",
+        "ездил = «já estive em»"
+      ],
+      [
+        "лететь (лечу, летишь)",
+        "летать (летаю, летаешь)",
+        "voar",
+        "время летит"
+      ],
+      [
+        "плыть (плыву, плывёшь)",
+        "плавать (плаваю)",
+        "nadar, navegar",
+        "плавать = saber nadar"
+      ],
+      [
+        "бежать (бегу, бежишь)",
+        "бегать (бегаю)",
+        "correr",
+        "бегать по утрам"
+      ],
+      [
+        "нести (несу, несёшь; нёс)",
+        "носить (ношу, носишь)",
+        "levar carregando",
+        "носить очки · носить фамилию"
+      ],
+      [
+        "везти (везу, везёшь; вёз)",
+        "возить (вожу, возишь)",
+        "levar em veículo",
+        "везёт (ter sorte: ему везёт)"
+      ],
+      [
+        "вести (веду, ведёшь; вёл)",
+        "водить (вожу, водишь)",
+        "levar conduzindo",
+        "вести машину · вести к последствиям"
+      ]
+    ],
+    "note": "No passado: ходил/ездил = foi e voltou (relato de visita) · шёл/ехал = estava a caminho (cenário de outro evento)."
+  },
+  "reference": [
+    {
+      "construction": "ходить / ездить (passado)",
+      "question": "куда?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ter estado em (ida e volta)",
+      "example": "вчера я ходил к врачу"
+    },
+    {
+      "construction": "идти / ехать (passado)",
+      "question": "куда?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "estar a caminho de",
+      "example": "когда я шёл домой, начался дождь"
+    },
+    {
+      "construction": "вести / привести к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "levar a (consequência)",
+      "example": "это ведёт к серьёзным последствиям"
+    },
+    {
+      "construction": "носить",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "usar (roupa, óculos), levar (sobrenome)",
+      "example": "она носит очки"
+    },
+    {
+      "construction": "везти (безлично)",
+      "question": "кому?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ter sorte",
+      "example": "ему всегда везёт"
+    },
+    {
+      "construction": "заботиться о / ухаживать за",
+      "question": "о ком? · за кем?",
+      "case": "ПРЕДЛОЖНЫЙ / ТВОРИТЕЛЬНЫЙ",
+      "meaning": "cuidar de (preocupação × cuidado físico)",
+      "example": "ухаживать за пожилыми родителями"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u15-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "идти × ходить",
+      "back": "идти = uma ida, agora · ходить = repetição, ida e volta, capacidade",
+      "explanation": "Я иду в магазин (agora) × Я хожу в магазин каждый день (hábito).",
+      "tags": [
+        "движение",
+        "идти/ходить",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u15-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "Вчера я ходил в кино",
+      "back": "= fui ao cinema E VOLTEI (visita concluída)",
+      "explanation": "O multidirecional no passado é a forma normal de dizer «estive em».",
+      "tags": [
+        "движение",
+        "passado",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u15-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "нести × носить",
+      "back": "нести = carregar agora · носить = usar habitualmente (очки, фамилию)",
+      "explanation": "Она несёт сумку (agora) × Она носит очки (sempre).",
+      "tags": [
+        "движение",
+        "нести/носить",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u15-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "вести к",
+      "back": "вести / привести к кому? чему? — дательный падеж",
+      "explanation": "Это ведёт к серьёзным последствиям. Mesma regência de приводить к.",
+      "tags": [
+        "вести к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u15-e05",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 1,
+      "instruction": "Escolha o verbo correto.",
+      "prompt": "— Ты куда? — Я ___ в аптеку, скоро вернусь.",
+      "options": [
+        "иду",
+        "хожу",
+        "шёл",
+        "ходил"
+      ],
+      "answer": "иду",
+      "explanation": "Movimento único, numa direção, acontecendo agora → unidirecional идти. «хожу» descreveria um hábito.",
+      "tags": [
+        "идти/ходить",
+        "движение",
+        "escolha do par"
+      ]
+    },
+    {
+      "id": "u15-e06",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 1,
+      "instruction": "Escolha o verbo correto.",
+      "prompt": "Моя мама ___ в бассейн три раза в неделю.",
+      "options": [
+        "ходит",
+        "идёт",
+        "шла",
+        "пошла"
+      ],
+      "answer": "ходит",
+      "explanation": "«три раза в неделю» marca repetição → multidirecional ходить.",
+      "tags": [
+        "идти/ходить",
+        "repetição",
+        "escolha do par"
+      ]
+    },
+    {
+      "id": "u15-e07",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "instruction": "Escolha o verbo correto.",
+      "prompt": "Ты когда-нибудь ___ в Россию?",
+      "options": [
+        "ездил",
+        "ехал",
+        "едешь",
+        "поедешь"
+      ],
+      "answer": "ездил",
+      "explanation": "«Já esteve na Rússia?» descreve uma viagem completa (ida e volta) → multidirecional no passado: ездил.",
+      "tags": [
+        "ехать/ездить",
+        "passado",
+        "escolha do par"
+      ]
+    },
+    {
+      "id": "u15-e08",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "instruction": "Escolha o verbo correto.",
+      "prompt": "Когда я ___ домой, я встретил старого школьного друга.",
+      "options": [
+        "шёл",
+        "ходил",
+        "хожу",
+        "иду"
+      ],
+      "answer": "шёл",
+      "explanation": "O trajeto serve de cenário para outro evento (встретил) → unidirecional no passado: шёл. «ходил» descreveria a ida e volta inteira, e aí o encontro ficaria sem lugar na frase.",
+      "tags": [
+        "идти/ходить",
+        "passado",
+        "cenário"
+      ]
+    },
+    {
+      "id": "u15-e09",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Вчера мы ___ к бабушке, а когда ___ обратно, попали в пробку.",
+      "options": [
+        "ездили … ехали",
+        "ехали … ездили",
+        "ездили … ездили",
+        "ехали … ехали"
+      ],
+      "answer": "ездили … ехали",
+      "explanation": "A visita inteira é multidirecional (ездили); o trecho de volta, em que outro evento acontece, é unidirecional (ехали). Os dois numa frase só é o padrão mais típico do russo falado.",
+      "tags": [
+        "ехать/ездить",
+        "contraste",
+        "movimento"
+      ]
+    },
+    {
+      "id": "u15-e10",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Каждое утро отец ___ детей в школу на машине.",
+      "options": [
+        "возит",
+        "везёт",
+        "ведёт",
+        "носит"
+      ],
+      "answer": "возит",
+      "explanation": "«каждое утро» é repetição → multidirecional; e como é de carro, o verbo é возить, não водить (conduzir a pé) nem носить (carregar nas mãos).",
+      "tags": [
+        "везти/возить",
+        "repetição",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u15-e11",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha o verbo correto.",
+      "prompt": "Мать ___ ребёнка за руку через дорогу.",
+      "options": [
+        "ведёт",
+        "везёт",
+        "несёт",
+        "водит"
+      ],
+      "answer": "ведёт",
+      "explanation": "вести = levar alguém conduzindo, a pé, segurando. везти seria de veículo; нести seria carregar no colo; водить seria hábito repetido.",
+      "tags": [
+        "вести/водить",
+        "contraste",
+        "movimento"
+      ]
+    },
+    {
+      "id": "u15-e12",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«На улице идёт снег, а время идёт незаметно.»",
+      "options": [
+        "Está nevando lá fora, e o tempo passa sem que se perceba.",
+        "A neve caminha pela rua e o tempo caminha devagar.",
+        "Está nevando lá fora, por isso o tempo parou.",
+        "Alguém anda na neve e não percebe as horas."
+      ],
+      "answer": "Está nevando lá fora, e o tempo passa sem que se perceba.",
+      "explanation": "идёт снег = está nevando; время идёт = o tempo passa. Dois usos figurados de идти na mesma frase, nenhum deles com movimento de pessoa.",
+      "tags": [
+        "uso figurado",
+        "идти",
+        "significado"
+      ]
+    },
+    {
+      "id": "u15-e13",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Постоянные конфликты в семье ___ к разводу.",
+      "options": [
+        "ведут",
+        "везут",
+        "носят",
+        "ходят"
+      ],
+      "answer": "ведут",
+      "explanation": "вести к + дательный падеж é a construção de consequência: ведут к разводу. É a mesma regência de приводить к.",
+      "tags": [
+        "вести к",
+        "дательный падеж",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u15-e14",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Моя бабушка носит очки, а сегодня несёт тяжёлые сумки.»",
+      "options": [
+        "Minha avó usa óculos e hoje está carregando sacolas pesadas.",
+        "Minha avó carrega óculos e hoje usa sacolas pesadas.",
+        "Minha avó comprou óculos e sacolas pesadas hoje.",
+        "Minha avó usa óculos e sacolas pesadas todos os dias."
+      ],
+      "answer": "Minha avó usa óculos e hoje está carregando sacolas pesadas.",
+      "explanation": "носит (multidirecional) = uso habitual, permanente; несёт (unidirecional) = está carregando agora. A oposição do par carrega toda a diferença de sentido.",
+      "tags": [
+        "нести/носить",
+        "uso figurado",
+        "significado"
+      ]
+    },
+    {
+      "id": "u15-e15",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase escolhe corretamente os verbos de movimento?",
+      "options": [
+        "Раньше мы часто ездили на дачу, но в прошлое воскресенье ехали туда последний раз.",
+        "Раньше мы часто ехали на дачу, но в прошлое воскресенье ездили туда последний раз.",
+        "Раньше мы часто ездили на дачу, но в прошлое воскресенье ездили туда последний раз.",
+        "Раньше мы часто ехали на дачу, но в прошлое воскресенье ехали туда последний раз."
+      ],
+      "answer": "Раньше мы часто ездили на дачу, но в прошлое воскресенье ездили туда последний раз.",
+      "explanation": "«часто» exige multidirecional (ездили). E «в прошлое воскресенье… последний раз» descreve uma viagem completa, também multidirecional (ездили). O unidirecional ехали só caberia se a frase continuasse contando o que aconteceu no caminho.",
+      "tags": [
+        "ехать/ездить",
+        "análise de erro",
+        "movimento"
+      ]
+    },
+    {
+      "id": "u15-e16",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a expressão correta.",
+      "prompt": "Не расстраивайся, в следующий раз тебе обязательно ___.",
+      "options": [
+        "повезёт",
+        "поведёт",
+        "походит",
+        "полетит"
+      ],
+      "answer": "повезёт",
+      "explanation": "везти em construção impessoal significa «ter sorte»: мне везёт, ему повезло, тебе повезёт. O beneficiário fica no дательный падеж.",
+      "tags": [
+        "везти",
+        "expressão fixa",
+        "дательный падеж"
+      ]
+    },
+    {
+      "id": "u15-e17",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Она много лет ___ своими пожилыми родителями.",
+      "options": [
+        "ухаживает за",
+        "заботится за",
+        "ухаживает о",
+        "ведёт за"
+      ],
+      "answer": "ухаживает за",
+      "explanation": "ухаживать ЗА кем? → творительный падеж (cuidado físico, prático). Já заботиться pede О ком? → предложный (preocupação, responsabilidade). São duas construções diferentes para «cuidar».",
+      "tags": [
+        "ухаживать за",
+        "творительный падеж",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u15-e18",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta do passado.",
+      "prompt": "Вчера он долго ___ пешком, потому что не было автобусов. (идти)",
+      "options": [
+        "шёл",
+        "ходил",
+        "шла",
+        "идёт"
+      ],
+      "answer": "шёл",
+      "explanation": "O passado de идти é supletivo: шёл, шла, шло, шли. Aqui descreve o trajeto em curso, com duração («долго»), então é o unidirecional.",
+      "tags": [
+        "идти",
+        "passado",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u15-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Раньше наша семья жила в одном доме: бабушка, родители и мы с сестрой. Мама каждое утро возила нас в школу, а вечером папа водил младшую сестру на музыку. По воскресеньям мы ездили за город к дедушке. Теперь всё изменилось: сестра вышла замуж и переехала, я живу в другом городе, и мы ходим друг к другу в гости только по праздникам. Мама говорит, что время идёт слишком быстро, и что раньше семья была ближе.",
+      "prompt": "Com que frequência os irmãos se visitam hoje, segundo o texto?",
+      "options": [
+        "Só nos feriados.",
+        "Todos os domingos.",
+        "Toda manhã.",
+        "Nunca mais se visitaram."
+      ],
+      "answer": "Só nos feriados.",
+      "explanation": "«мы ходим друг к другу в гости только по праздникам» — ходим no multidirecional porque descreve uma rotina repetida.",
+      "tags": [
+        "движение",
+        "leitura",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u15-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Мама каждое утро возила нас в школу, а вечером папа водил младшую сестру на музыку. По воскресеньям мы ездили за город к дедушке. Теперь всё изменилось: мы ходим друг к другу в гости только по праздникам. Мама говорит, что время идёт слишком быстро.",
+      "prompt": "Por que todos os verbos de movimento do texto estão na forma multidirecional?",
+      "options": [
+        "Porque descrevem ações repetidas e habituais, não um trajeto único.",
+        "Porque estão todos no passado.",
+        "Porque o texto é informal.",
+        "Porque nenhum deles indica destino."
+      ],
+      "answer": "Porque descrevem ações repetidas e habituais, não um trajeto único.",
+      "explanation": "каждое утро, вечером, по воскресеньям, по праздникам: todos marcadores de repetição, que exigem возила, водил, ездили, ходим. A exceção é «время идёт», que é uso figurado fixo.",
+      "tags": [
+        "движение",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u15-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Вчера я ходил к врачу, а когда шёл обратно, встретил свою двоюродную сестру.",
+      "prompt": "O que aconteceu, segundo o áudio?",
+      "options": [
+        "Ele foi ao médico e, na volta, encontrou a prima.",
+        "Ele estava indo ao médico quando encontrou a prima.",
+        "Ele encontrou a prima no consultório do médico.",
+        "Ele levou a prima ao médico."
+      ],
+      "answer": "Ele foi ao médico e, na volta, encontrou a prima.",
+      "explanation": "ходил = visita completa; шёл обратно = trajeto de volta em curso, cenário do encontro. Os dois verbos do mesmo par, com papéis diferentes.",
+      "tags": [
+        "идти/ходить",
+        "audição",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u15-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Постоянные ссоры между родителями ведут к тому, что дети становятся замкнутыми.",
+      "prompt": "Qual é a relação expressa no áudio?",
+      "options": [
+        "Brigas constantes entre os pais levam as crianças a se fecharem.",
+        "As crianças fechadas causam brigas entre os pais.",
+        "Os pais brigam porque as crianças são fechadas.",
+        "As brigas dos pais não afetam as crianças."
+      ],
+      "answer": "Brigas constantes entre os pais levam as crianças a se fecharem.",
+      "explanation": "«ведут к тому, что…» é a construção de consequência: вести к + дательный, aqui ligada a uma oração inteira por «к тому, что».",
+      "tags": [
+        "вести к",
+        "consequência",
+        "audição"
+      ]
+    },
+    {
+      "id": "u15-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase contrastando os dois verbos do par.",
+      "tokens": [
+        "Обычно",
+        "мы",
+        "ездим",
+        "на",
+        "дачу",
+        "в",
+        "субботу",
+        "но",
+        "вчера",
+        "ехали",
+        "очень",
+        "долго"
+      ],
+      "answer": "Обычно мы ездим на дачу в субботу но вчера ехали очень долго",
+      "explanation": "обычно puxa o multidirecional (ездим); a viagem específica de ontem, com duração descrita, puxa o unidirecional (ехали).",
+      "tags": [
+        "ехать/ездить",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u15-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a expressão russa ao significado.",
+      "pairs": [
+        {
+          "left": "идёт дождь",
+          "right": "está chovendo"
+        },
+        {
+          "left": "фильм идёт в кинотеатре",
+          "right": "o filme está em cartaz"
+        },
+        {
+          "left": "вам идёт эта рубашка",
+          "right": "essa camisa lhe cai bem"
+        },
+        {
+          "left": "ему всегда везёт",
+          "right": "ele sempre tem sorte"
+        },
+        {
+          "left": "она носит очки",
+          "right": "ela usa óculos"
+        },
+        {
+          "left": "дорога ведёт к озеру",
+          "right": "a estrada leva ao lago"
+        }
+      ],
+      "explanation": "Seis usos figurados de verbos de movimento — nenhum deles descreve alguém se deslocando.",
+      "tags": [
+        "uso figurado",
+        "движение",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u15-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 80–100 palavras em russo. Use pelo menos dois pares de movimento em contraste (um unidirecional e um multidirecional).",
+      "prompt": "«Как проходят выходные в вашей семье — сейчас и раньше?» (Como são os fins de semana na sua família — hoje e antes?)\n\nUnidades: ходить / идти · ездить / ехать · возить · ухаживать за · вести к · время идёт",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "глаголы движения",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

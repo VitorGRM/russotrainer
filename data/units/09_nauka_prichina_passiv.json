@@ -1,0 +1,697 @@
+{
+  "id": "u09_nauka_prichina_passiv",
+  "order": 9,
+  "title": "Наука и технологии: причина, уступка и пассив",
+  "description": "Ensina a ligar causa e concessão a orações inteiras (несмотря на то что, благодаря тому что, из-за того что, хотя) e o passivo com -ся e particípios curtos, no vocabulário de ciência e tecnologia.",
+  "estimated_minutes": 42,
+  "objectives": [
+    "distinguir preposição + substantivo de preposição + forma de то + que oração",
+    "escolher entre passivo com -ся (processo geral) e particípio curto (resultado)",
+    "concordar o particípio curto passivo em gênero e número com o sujeito",
+    "produzir опираться на, способствовать, препятствовать, сопровождаться e заключаться в com a regência correta"
+  ],
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Ligar causa e concessão a uma oração inteira",
+      "paragraphs": [
+        "благодаря, из-за e несмотря на já foram vistos regendo um substantivo (благодаря поддержке, из-за нехватки, несмотря на трудности). Quando a causa ou a concessão é uma oração inteira, e não um substantivo, essas preposições passam a reger o demonstrativo то (declinado no caso que cada uma pede) seguido de что + oração: благодаря тому, что (дательный: тому), из-за того, что (родительный: того), несмотря на то, что (винительный: то, forma igual ao nominativo). хотя (embora) é diferente: já é uma conjunção e liga-se diretamente à oração, sem то nem preposição — Хотя риски были известны, проект получил финансирование.",
+        "Erro típico: usar a preposição diretamente antes de что (*благодаря что, *из-за что) ou esquecer a preposição antes de то (*несмотря то, что). A regra prática é sempre preposição + forma de то + vírgula + что + oração."
+      ],
+      "audio_script": "Esta parte trata de como ligar causa e concessão a uma oração inteira, e não apenas a um substantivo. Essa é a diferença entre из-за дождя, por causa da chuva, e из-за того, что шёл дождь, porque estava chovendo. No primeiro caso a preposição liga um substantivo. No segundo, ela precisa ligar uma oração — e o russo resolve isso com um truque elegante. Ele coloca o pronome то entre a preposição e a conjunção что. A preposição rege то, e что introduz a oração. Como то declina, cada preposição fica com uma forma diferente. E é exatamente aí que quase todo aluno erra. Vamos aos três blocos, e vale ouvir com atenção, porque a diferença é de uma sílaba. Bloco um, causa negativa ou neutra: из-за. из-за exige genitivo, então: из-за ТОГО, что. Bloco dois, causa positiva: благодаря. благодаря exige dativo, então: благодаря ТОМУ, что. Bloco três, concessão: несмотря на. на exige acusativo, então: несмотря на ТО, что. Repetindo os três juntos, porque é assim que se decora: из-за ТОГО, что. благодаря ТОМУ, что. несмотря на ТО, что. Genitivo, dativo, acusativo. Того, тому, то. Em português os três viram «porque» ou «apesar de», e é por isso que a memória não ajuda: você precisa decorar em russo. Há ainda uma questão de sentido, e não só de forma. благодаря só se usa com causa POSITIVA, com um resultado bom. Dizer благодаря болезни, graças à doença, soa sarcástico para um russo. Nesse caso o correto é из-за болезни. E, por último, a vírgula. Em несмотря на то, что, a vírgula vem antes de что, não antes de несмотря. Essa vírgula interna é obrigatória e é um detalhe que corretores de exame verificam.",
+      "examples": [
+        {
+          "ru": "Из-за того, что финансирование сократили, проект приостановили.",
+          "pt": "Como cortaram o financiamento, o projeto foi suspenso.",
+          "note": "из-за + genitivo → того."
+        },
+        {
+          "ru": "Благодаря тому, что эксперимент был спланирован, результаты оказались точными.",
+          "pt": "Graças ao fato de o experimento ter sido planejado, os resultados foram precisos.",
+          "note": "благодаря + dativo → тому."
+        },
+        {
+          "ru": "Несмотря на то, что учёные предупреждали, эксперимент продолжился.",
+          "pt": "Apesar de os cientistas terem alertado, o experimento continuou.",
+          "note": "несмотря на + acusativo → то."
+        },
+        {
+          "ru": "Из-за болезни он не поехал на конференцию.",
+          "pt": "Por causa da doença ele não foi à conferência.",
+          "note": "Causa negativa: из-за, nunca благодаря."
+        }
+      ],
+      "pitfalls": [
+        "Trocar «благодаря того» por «благодаря тому»: благодаря é a única preposição de causa com dativo.",
+        "Escrever «несмотря того, что», sem o на: sem a preposição a locução não existe.",
+        "Usar благодаря com desgraças: благодаря болезни soa sarcástico."
+      ]
+    },
+    {
+      "title": "Passivo: -ся para o processo, particípio curto para o resultado",
+      "paragraphs": [
+        "O russo tem dois recursos comuns para o passivo. Verbos reflexivos em -ся descrevem um processo geral ou repetido, sem focar quem executa a ação: Эта технология используется во многих странах (é usada — fato geral, presente). O particípio curto passivo (formado a partir de um verbo perfectivo) descreve o resultado de uma ação concluída e concorda em gênero e número com o sujeito, como um adjetivo predicativo: Вакцина была разработана в прошлом году (foi desenvolvida — evento concluído, com быть no passado); no presente, быть normalmente desaparece: Программа уже создана.",
+        "Regências deste tema: опираться/опереться на кого? что? (basear-se em, apoiar-se em; винительный падеж) e основываться на ком? чём? (basear-se em; предложный падеж — apesar da mesma preposição на, o caso é diferente); способствовать кому? чему? e препятствовать кому? чему? (дательный падеж, sem tradução direta do «para»/«contra» do português); сопровождаться чем? (творительный падеж); заключаться в ком? чём? (предложный падеж, consistir em)."
+      ],
+      "audio_script": "Agora a voz passiva em russo, que funciona de um jeito bem diferente do português. Em português temos basicamente uma forma: o artigo foi escrito, com o verbo ser mais particípio. Em russo existem duas construções, e a escolha entre elas depende do aspecto, não do gosto. Construção um: verbo imperfectivo mais a partícula ся. Ela descreve o PROCESSO. Дом строится уже два года. A casa está sendo construída há dois anos. Проблема обсуждается на конференции. O problema está sendo discutido na conferência. Construção dois: particípio curto passivo, formado de verbo perfectivo. Ela descreve o RESULTADO. Дом построен. A casa está construída, está pronta. Программа создана группой разработчиков. O programa foi criado por um grupo de desenvolvedores. Então: processo em curso pede ся com imperfectivo; resultado alcançado pede particípio curto com perfectivo. Vamos à forma do particípio curto, porque ela concorda e isso gera erro. Ele concorda em gênero e número com o SUJEITO passivo, exatamente como um adjetivo curto. Masculino: построен, создан, написан. Sem terminação. Feminino: построена, создана, написана. Termina em а. Neutro: построено, создано, написано. Termina em о. Plural: построены, созданы, написаны. Termina em ы. E o agente, ou seja, por quem a ação foi feita, vai para o instrumental SEM preposição nenhuma. Программа создана группой. Não existe um equivalente do «por» português: só o caso. Uma observação final de estilo. O russo científico e jornalístico usa muito mais passiva do que o russo falado. Num texto de nível bê dois sobre ciência, a passiva não é opcional — é a marca do registro.",
+      "examples": [
+        {
+          "ru": "Этот вопрос обсуждается уже несколько лет.",
+          "pt": "Essa questão vem sendo discutida há vários anos.",
+          "note": "-ся + imperfectivo = processo."
+        },
+        {
+          "ru": "Проблема была решена ещё в прошлом году.",
+          "pt": "O problema já tinha sido resolvido no ano passado.",
+          "note": "Particípio curto = resultado."
+        },
+        {
+          "ru": "Программа создана группой молодых разработчиков.",
+          "pt": "O programa foi criado por um grupo de jovens desenvolvedores.",
+          "note": "Agente no instrumental, sem preposição."
+        },
+        {
+          "ru": "Результаты опубликованы в международном журнале.",
+          "pt": "Os resultados foram publicados numa revista internacional.",
+          "note": "Plural: опубликованы."
+        }
+      ],
+      "pitfalls": [
+        "Acrescentar uma preposição ao agente: «создана с группой» está errado; é só o instrumental.",
+        "Usar particípio curto para processo em andamento: «дом построен два года» não faz sentido; é строится."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Particípio curto passivo: concordância",
+    "columns": [
+      "Infinitivo (perfectivo)",
+      "Муж.",
+      "Жен.",
+      "Ср.",
+      "Мн."
+    ],
+    "rows": [
+      [
+        "разработать",
+        "разработан",
+        "разработана",
+        "разработано",
+        "разработаны"
+      ],
+      [
+        "создать",
+        "создан",
+        "создана",
+        "создано",
+        "созданы"
+      ],
+      [
+        "открыть",
+        "открыт",
+        "открыта",
+        "открыто",
+        "открыты"
+      ],
+      [
+        "внедрить",
+        "внедрён",
+        "внедрена",
+        "внедрено",
+        "внедрены"
+      ]
+    ],
+    "note": "O particípio curto concorda com o sujeito que sofre a ação e funciona como predicado: Вакцина разработана (está desenvolvida) × Вакцина была разработана в 2020 году (foi desenvolvida em 2020)."
+  },
+  "reference": [
+    {
+      "construction": "опираться / опереться на",
+      "question": "на кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "basear-se em, apoiar-se em",
+      "example": "опираться на результаты исследования"
+    },
+    {
+      "construction": "основываться на",
+      "question": "на ком? чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "basear-se em",
+      "example": "теория основывается на новых данных"
+    },
+    {
+      "construction": "способствовать",
+      "question": "кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "contribuir para, favorecer",
+      "example": "способствовать развитию науки"
+    },
+    {
+      "construction": "препятствовать",
+      "question": "кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "impedir, atrapalhar",
+      "example": "препятствовать внедрению технологии"
+    },
+    {
+      "construction": "сопровождаться",
+      "question": "чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ser acompanhado de",
+      "example": "сопровождаться побочными эффектами"
+    },
+    {
+      "construction": "заключаться в",
+      "question": "в ком? чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "consistir em",
+      "example": "заключаться в разработке нового метода"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u09-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "опираться / опереться",
+      "back": "опираться/опереться на кого? что?",
+      "explanation": "на + винительный падеж.",
+      "tags": [
+        "опираться на",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u09-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "основываться",
+      "back": "основываться на ком? чём?",
+      "explanation": "на + предложный падеж (diferente de опираться на, que usa винительный), sinônimo próximo de опираться на.",
+      "tags": [
+        "основываться на",
+        "предложный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u09-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "способствовать",
+      "back": "способствовать кому? чему?",
+      "explanation": "Sem preposição; дательный падеж direto.",
+      "tags": [
+        "способствовать",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u09-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "препятствовать",
+      "back": "препятствовать кому? чему?",
+      "explanation": "Sem preposição; дательный падеж direto.",
+      "tags": [
+        "препятствовать",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u09-e05",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "сопровождаться",
+      "back": "сопровождаться чем?",
+      "explanation": "Sem preposição; творительный падеж direto.",
+      "tags": [
+        "сопровождаться",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u09-e06",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "заключаться",
+      "back": "заключаться в ком? чём?",
+      "explanation": "в + предложный падеж.",
+      "tags": [
+        "заключаться в",
+        "предложный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u09-e07",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "prompt": "___ на то, что учёные потратили годы на исследование, лекарство так и не было создано.",
+      "options": [
+        "Несмотря",
+        "Благодаря",
+        "Из-за",
+        "Согласно"
+      ],
+      "answer": "Несмотря",
+      "explanation": "несмотря на то, что: винительный падеж de то (forma «то»).",
+      "tags": [
+        "несмотря на то что",
+        "estrutura B2",
+        "concessão"
+      ]
+    },
+    {
+      "id": "u09-e08",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "prompt": "___ тому, что результаты исследования опирались на надёжные данные, статья была принята к публикации.",
+      "options": [
+        "Благодаря",
+        "Несмотря",
+        "Из-за",
+        "Вопреки"
+      ],
+      "answer": "Благодаря",
+      "explanation": "благодаря тому, что: дательный падеж de то (forma «тому»).",
+      "tags": [
+        "благодаря тому что",
+        "estrutura B2",
+        "causa"
+      ]
+    },
+    {
+      "id": "u09-e09",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "prompt": "___ того, что оборудование оказалось неисправным, эксперимент пришлось отложить.",
+      "options": [
+        "Из-за",
+        "Благодаря",
+        "Несмотря",
+        "Согласно"
+      ],
+      "answer": "Из-за",
+      "explanation": "из-за того, что: родительный падеж de то (forma «того»).",
+      "tags": [
+        "из-за того что",
+        "estrutura B2",
+        "causa"
+      ]
+    },
+    {
+      "id": "u09-e10",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "prompt": "___ учёные предупреждали о рисках, проект всё равно был реализован.",
+      "options": [
+        "Хотя",
+        "Несмотря на",
+        "Из-за",
+        "Благодаря"
+      ],
+      "answer": "Хотя",
+      "explanation": "хотя liga-se diretamente à oração, sem то nem preposição; as outras exigem то antes de что.",
+      "tags": [
+        "хотя",
+        "estrutura B2",
+        "concessão"
+      ]
+    },
+    {
+      "id": "u09-e11",
+      "type": "choice",
+      "stage": "passive",
+      "difficulty": 2,
+      "prompt": "После многих лет испытаний эта вакцина наконец ___ ведущими специалистами страны.",
+      "options": [
+        "была разработана",
+        "разрабатывалась",
+        "разрабатывает",
+        "разработать"
+      ],
+      "answer": "была разработана",
+      "explanation": "наконец + resultado concluído após anos de testes; particípio curto concorda com вакцина (feminino): разработана. разрабатывалась descreveria o processo em si, sem marcar a conclusão.",
+      "tags": [
+        "particípio curto",
+        "пассив",
+        "resultado"
+      ]
+    },
+    {
+      "id": "u09-e12",
+      "type": "choice",
+      "stage": "passive",
+      "difficulty": 2,
+      "prompt": "Эта технология уже ___ в нескольких странах.",
+      "options": [
+        "используется",
+        "использовалась",
+        "будет использована",
+        "использовать"
+      ],
+      "answer": "используется",
+      "explanation": "уже + fato geral e atual: passivo com -ся no presente.",
+      "tags": [
+        "пассив с -ся",
+        "processo",
+        "presente"
+      ]
+    },
+    {
+      "id": "u09-e13",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma de «то» exigida pela conjunção.",
+      "prompt": "Несмотря на ___, что цены на оборудование выросли, лаборатория продолжила закупки.",
+      "explanation": "A conjunção composta guarda o caso que a preposição pede: на exige винительный падеж, e o винительный neutro de тот é «то», idêntico ao именительный. Bloco a memorizar inteiro: несмотря на то, что.",
+      "tags": [
+        "несмотря на то что",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "то",
+        "того",
+        "тому",
+        "том"
+      ],
+      "answer": "то"
+    },
+    {
+      "id": "u09-e14",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma de «то» exigida pela conjunção.",
+      "prompt": "Благодаря ___, что эксперимент был хорошо спланирован, результаты оказались точными.",
+      "explanation": "благодаря é a preposição de causa que exige дательный падеж → благодаря тому, что. É o par oposto de из-за того, что (родительный): as duas traduzem «porque», mas благодаря só aparece com causa positiva.",
+      "tags": [
+        "благодаря тому что",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "тому",
+        "того",
+        "то",
+        "том"
+      ],
+      "answer": "тому"
+    },
+    {
+      "id": "u09-e15",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma de «то» exigida pela conjunção.",
+      "prompt": "Из-за ___, что финансирование сократили, проект пришлось приостановить.",
+      "explanation": "из-за exige родительный падеж → из-за того, что. Guarde os três blocos juntos: благодаря ТОМУ, что (dativo) · из-за ТОГО, что (genitivo) · несмотря на ТО, что (acusativo).",
+      "tags": [
+        "из-за того что",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "того",
+        "тому",
+        "то",
+        "том"
+      ],
+      "answer": "того"
+    },
+    {
+      "id": "u09-e16",
+      "type": "choice",
+      "stage": "passive",
+      "difficulty": 2,
+      "instruction": "Escolha o particípio curto passivo correto.",
+      "prompt": "Эта программа ___ группой молодых разработчиков. (создать)",
+      "explanation": "O particípio curto concorda em gênero e número com o SUJEITO passivo: программа é feminino singular → создана. O agente («por quem») fica no творительный падеж, sem preposição: группой разработчиков.",
+      "tags": [
+        "particípio curto",
+        "пассив",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "создана",
+        "создан",
+        "создано",
+        "созданы"
+      ],
+      "answer": "создана"
+    },
+    {
+      "id": "u09-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase usa corretamente a conjunção de concessão?",
+      "explanation": "A preposição на é obrigatória e traz consigo o винительный падеж «то». Sem на, a locução simplesmente não existe em russo padrão.",
+      "tags": [
+        "несмотря на то что",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Несмотря на то, что учёные предупреждали о последствиях, эксперимент продолжился.",
+        "Несмотря того, что учёные предупреждали о последствиях, эксперимент продолжился.",
+        "Несмотря на того, что учёные предупреждали о последствиях, эксперимент продолжился.",
+        "Несмотря тому, что учёные предупреждали о последствиях, эксперимент продолжился."
+      ],
+      "answer": "Несмотря на то, что учёные предупреждали о последствиях, эксперимент продолжился."
+    },
+    {
+      "id": "u09-e18",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase usa corretamente a conjunção de causa positiva?",
+      "explanation": "благодаря + дательный падеж = тому. «того» é родительный e pertence a из-за того, что — trocar os dois é o erro clássico, porque em português ambos viram «porque».",
+      "tags": [
+        "благодаря тому что",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Благодаря тому, что технология оказалась эффективной, её быстро внедрили.",
+        "Благодаря того, что технология оказалась эффективной, её быстро внедрили.",
+        "Благодаря то, что технология оказалась эффективной, её быстро внедрили.",
+        "Благодаря на то, что технология оказалась эффективной, её быстро внедрили."
+      ],
+      "answer": "Благодаря тому, что технология оказалась эффективной, её быстро внедрили."
+    },
+    {
+      "id": "u09-e19",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com uma oração de concessão.",
+      "tokens": [
+        "Несмотря",
+        "на",
+        "то,",
+        "что",
+        "риски",
+        "были",
+        "известны,",
+        "проект",
+        "получил",
+        "финансирование"
+      ],
+      "answer": "Несмотря на то, что риски были известны, проект получил финансирование",
+      "explanation": "несмотря на то, что + oração completa.",
+      "tags": [
+        "несмотря на то что",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u09-e20",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte uma frase com regência dupla.",
+      "tokens": [
+        "Эта",
+        "вакцина",
+        "была",
+        "разработана",
+        "благодаря",
+        "сотрудничеству",
+        "нескольких",
+        "лабораторий"
+      ],
+      "answer": "Эта вакцина была разработана благодаря сотрудничеству нескольких лабораторий",
+      "explanation": "благодаря чему? сотрудничеству (дательный); сотрудничество чего? нескольких лабораторий (родительный).",
+      "tags": [
+        "благодаря",
+        "particípio curto",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u09-e21",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a construção russa ao significado correspondente.",
+      "pairs": [
+        {
+          "left": "опираться на данные",
+          "right": "basear-se em dados"
+        },
+        {
+          "left": "способствовать развитию",
+          "right": "contribuir para o desenvolvimento"
+        },
+        {
+          "left": "препятствовать внедрению",
+          "right": "impedir a implementação"
+        },
+        {
+          "left": "сопровождаться побочными эффектами",
+          "right": "ser acompanhado de efeitos colaterais"
+        },
+        {
+          "left": "заключаться в разработке метода",
+          "right": "consistir em desenvolver um método"
+        },
+        {
+          "left": "быть основанным на фактах",
+          "right": "ser baseado em fatos"
+        }
+      ],
+      "explanation": "Vocabulário-chave de argumentação científica.",
+      "tags": [
+        "наука",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u09-e22",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Não abra com «Я считаю, что». Use pelo menos uma construção causal/concessiva com «то, что» e pelo menos duas unidades da lista.",
+      "prompt": "«Технологии в науке: больше пользы или больше риска?»\n\nUnidades: опираться на · способствовать · несмотря на то что · благодаря тому что",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Verificar especialmente о caso de то/тому/того após as preposições. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "estrutura B2",
+        "ТРКИ-II"
+      ]
+    },
+    {
+      "id": "u09-e23",
+      "type": "open_text",
+      "stage": "micro_writing",
+      "difficulty": 2,
+      "instruction": "Escreva 2–3 frases em russo sobre uma descoberta ou invenção científica. Use pelo menos uma forma passiva.",
+      "prompt": "Tema: важное открытие или изобретение\nUse: быть разработан(а/о/ы) · способствовать",
+      "review_notes": "Verificar concordância de gênero/número do particípio curto e a regência de способствовать.",
+      "tags": [
+        "produção escrita",
+        "particípio curto",
+        "способствовать"
+      ]
+    },
+    {
+      "id": "u09-e24",
+      "type": "reading",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Leia como um pequeno texto científico e diferencie causa, concessão e resultado.",
+      "context": "Хотя первые результаты эксперимента казались убедительными, исследователи решили повторить испытания. Благодаря дополнительной проверке была обнаружена ошибка в методике. Из-за этого выводы предыдущего отчёта были пересмотрены, а новая статья теперь основывается на более надёжных данных.",
+      "prompt": "Qual foi a consequência direta da verificação adicional?",
+      "options": [
+        "Uma falha metodológica foi descoberta e as conclusões anteriores foram revistas.",
+        "Os pesquisadores aceitaram os primeiros resultados sem repetir os testes.",
+        "O novo artigo passou a se basear em dados menos confiáveis.",
+        "O experimento foi cancelado exclusivamente por falta de financiamento."
+      ],
+      "answer": "Uma falha metodológica foi descoberta e as conclusões anteriores foram revistas.",
+      "explanation": "благодаря introduz o fator que permitiu descobrir o erro; из-за этого introduz a revisão resultante.",
+      "tags": [
+        "leitura",
+        "causa e consequência",
+        "voz passiva"
+      ]
+    },
+    {
+      "id": "u09-e25",
+      "type": "listening",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Ouça uma notícia científica e identifique o que já ocorreu e o que ainda falta.",
+      "prompt": "Qual afirmação está correta?",
+      "audio_text": "Новая система была разработана группой молодых инженеров и уже используется в двух лабораториях. Однако, прежде чем внедрять её по всей стране, необходимо проверить, насколько надёжно она работает в разных условиях.",
+      "options": [
+        "O sistema já é usado em duas instalações, mas ainda precisa ser testado em condições variadas.",
+        "O sistema ainda não foi desenvolvido e não chegou a nenhum laboratório.",
+        "A implantação nacional já foi concluída sem testes adicionais.",
+        "O sistema foi abandonado porque os engenheiros não participaram do projeto."
+      ],
+      "answer": "O sistema já é usado em duas instalações, mas ainda precisa ser testado em condições variadas.",
+      "explanation": "была разработана marca resultado concluído; уже используется, estado atual; необходимо проверить, etapa pendente.",
+      "tags": [
+        "аудирование",
+        "voz passiva",
+        "ciência"
+      ]
+    },
+    {
+      "id": "u09-e26",
+      "type": "listening",
+      "response_type": "input",
+      "stage": "noticing",
+      "difficulty": 3,
+      "instruction": "Ditado focalizado: digite a frase inteira, incluindo a construção concessiva.",
+      "prompt": "Escreva exatamente a frase ouvida.",
+      "audio_text": "Несмотря на то, что проект был хорошо подготовлен, его пришлось отложить.",
+      "answer": "Несмотря на то, что проект был хорошо подготовлен, его пришлось отложить.",
+      "explanation": "Forma fixa: несмотря на то, что + oração completa.",
+      "tags": [
+        "аудирование",
+        "ditado",
+        "несмотря на то что",
+        "voz passiva"
+      ]
+    }
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 7-8 (причастия, страдательные конструкции) · Кузьмина, Пассивные конструкции e Сложные предложения"
+}

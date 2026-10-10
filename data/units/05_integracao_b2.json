@@ -1,0 +1,527 @@
+{
+  "id": "u05_integracao_b2",
+  "order": 5,
+  "title": "Integração B2 e produção",
+  "description": "Combina regência, aspecto e estruturas argumentativas em frases, resumos e textos sobre cidade, migração e adaptação.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "usar construções em contexto sem pistas explícitas",
+    "produzir frases argumentativas reutilizáveis",
+    "registrar escrita para correção humana posterior"
+  ],
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção: usar a estrutura numa frase sua."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Conectores de nível B2",
+      "paragraphs": [
+        "Um texto B2 sobre cidade/campo ou migração precisa de estruturas que organizem o argumento, não só de vocabulário temático: несмотря на то что / хотя (concessão — algo acontece apesar de um obstáculo), с одной стороны... с другой стороны (apresentar dois lados equilibrados), нельзя отрицать, что (reconhecer um ponto antes de contrapor), следует учитывать, что (introduzir um fator relevante), одним из факторов является (apresentar um fator entre vários), может привести к / оказывает влияние на (causa e consequência), в конечном счёте (fechar a conclusão).",
+        "Esses conectores servem para dar coesão real, não para virar uma lista decorada solta: cada um só funciona bem se estiver ligado ao argumento anterior e ao seguinte."
+      ],
+      "audio_script": "Um texto de nível bê dois não se distingue de um texto de nível bê um pelo vocabulário temático. Ele se distingue pelas estruturas que organizam o argumento. Vamos ver as sete que mais rendem no exame Térki dois. Para concessão — dizer que algo acontece apesar de um obstáculo — use несмотря на то, что, ou o mais curto хотя. Несмотря на высокие цены, спрос вырос. Apesar dos preços altos, a demanda cresceu. Para apresentar dois lados de forma equilibrada: с одной стороны… с другой стороны. Por um lado, por outro lado. Essas duas nunca aparecem sozinhas: se você abriu com с одной стороны, o parágrafo DEVE fechar com с другой стороны. Para reconhecer um ponto antes de contrapor: нельзя отрицать, что. Não se pode negar que. Essa é uma jogada retórica poderosa, porque mostra que você entendeu o argumento contrário antes de rebatê-lo. Para introduzir um fator relevante: следует учитывать, что. É preciso levar em conta que. Para apresentar um fator entre vários: одним из факторов является. Para causa e consequência: может привести к, com dativo, e оказывает влияние на, com acusativo. E para fechar: в конечном счёте. Em última análise. Uma advertência que vale mais que a lista inteira: conector não é enfeite. Empilhar conectores num texto sem que eles liguem argumentos reais soa pior do que não usar nenhum. Use um por função, ligado ao que veio antes e ao que vem depois.",
+      "examples": [
+        {
+          "ru": "Несмотря на то, что зарплаты выросли, уровень жизни не изменился.",
+          "pt": "Apesar de os salários terem subido, o padrão de vida não mudou.",
+          "note": "несмотря на ТО, что — то no acusativo."
+        },
+        {
+          "ru": "С одной стороны, город даёт возможности; с другой стороны, он требует высокого темпа.",
+          "pt": "Por um lado a cidade dá oportunidades; por outro, exige um ritmo alto.",
+          "note": "Par obrigatório: abriu com с одной, fecha com с другой."
+        },
+        {
+          "ru": "Нельзя отрицать, что переезд связан с риском.",
+          "pt": "Não se pode negar que a mudança envolve risco."
+        },
+        {
+          "ru": "В конечном счёте всё зависит от личных приоритетов.",
+          "pt": "Em última análise, tudo depende das prioridades pessoais."
+        }
+      ],
+      "pitfalls": [
+        "Abrir с одной стороны e nunca fechar com с другой стороны: o par é obrigatório.",
+        "Empilhar três conectores seguidos: um por função é o suficiente."
+      ]
+    },
+    {
+      "title": "Evitar «Я считаю, что» como única abertura",
+      "paragraphs": [
+        "«Я считаю, что» não está errado, mas usado em toda introdução soa repetitivo e empobrece o texto. Alternativas mais próprias de B2: «Вопрос о... вызывает много споров.» (o tema gera controvérsia), «Сегодня всё чаще обсуждают...» (hoje se discute cada vez mais), «Существует мнение, что..., однако...» (existe a opinião de que..., porém...). A escolha depende de como o parágrafo seguinte vai se desenvolver."
+      ],
+      "audio_script": "Uma dica de redação que os corretores de Térki dois notam imediatamente. A expressão я считаю, что não está errada. Ela é correta, natural e útil. O problema é usá-la como abertura de todo parágrafo de opinião, porque isso empobrece o texto e sinaliza repertório limitado. Aqui vão três aberturas alternativas, cada uma com um efeito diferente. Primeira: Вопрос о… вызывает много споров. A questão de tal coisa gera muita controvérsia. Use quando o parágrafo seguinte vai apresentar posições opostas. Segunda: Сегодня всё чаще обсуждают… Hoje se discute cada vez mais. Use quando você quer ancorar o tema no presente, mostrando relevância atual. Terceira: Существует мнение, что…, однако… Existe a opinião de que…, porém… Use quando você vai discordar de um lugar-comum. Essa é a mais forte das três num texto argumentativo. A escolha não é estética. Ela depende de como o parágrafo seguinte vai se desenvolver. Escolha a abertura depois de saber o que você vai dizer, nunca antes.",
+      "examples": [
+        {
+          "ru": "Вопрос о переезде в мегаполис вызывает много споров.",
+          "pt": "A questão da mudança para a metrópole gera muita controvérsia.",
+          "note": "Abre um parágrafo de posições opostas."
+        },
+        {
+          "ru": "Сегодня всё чаще обсуждают проблему выгорания на работе.",
+          "pt": "Hoje se discute cada vez mais o problema do esgotamento no trabalho.",
+          "note": "Ancora o tema no presente."
+        },
+        {
+          "ru": "Существует мнение, что деревня умирает, однако статистика говорит об обратном.",
+          "pt": "Existe a opinião de que o campo está morrendo; porém, a estatística diz o contrário.",
+          "note": "Prepara uma discordância."
+        }
+      ],
+      "pitfalls": [
+        "Repetir «Я считаю, что» em cada parágrafo: correto, mas sinaliza repertório limitado ao corretor."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Conectores B2 — função e regência",
+    "columns": [
+      "Conector",
+      "Função",
+      "Observação de caso/regência"
+    ],
+    "rows": [
+      [
+        "несмотря на",
+        "concessão",
+        "несмотря на + винительный падеж (несмотря на трудности)"
+      ],
+      [
+        "хотя",
+        "concessão",
+        "introduz oração completa; não rege caso"
+      ],
+      [
+        "с одной стороны... с другой стороны",
+        "contraste equilibrado",
+        "advérbios; não regem caso"
+      ],
+      [
+        "нельзя отрицать, что",
+        "concordar parcialmente antes de objetar",
+        "seguido de oração completa"
+      ],
+      [
+        "следует учитывать, что",
+        "introduzir um fator relevante",
+        "seguido de oração completa"
+      ],
+      [
+        "одним из факторов является",
+        "apresentar um fator entre vários",
+        "одним = творительный; o sujeito real fica no именительный"
+      ],
+      [
+        "привести к / влияние на",
+        "causa e consequência",
+        "привести к чему? (дательный); влияние на что? (винительный)"
+      ],
+      [
+        "в конечном счёте",
+        "fechar a conclusão",
+        "advérbio fixo; não rege caso"
+      ]
+    ],
+    "note": "Conector sem conexão real com o argumento vizinho soa artificial — use um por função, não vários empilhados."
+  },
+  "reference": [
+    {
+      "construction": "оказывать влияние на",
+      "question": "на кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "exercer influência sobre",
+      "example": "оказывать влияние на выбор профессии"
+    },
+    {
+      "construction": "одним из факторов является",
+      "question": "одним из чего?",
+      "case": "ТВОРИТЕЛЬНЫЙ + РОДИТЕЛЬНЫЙ",
+      "meaning": "um dos fatores é",
+      "example": "Одним из факторов является стоимость жилья."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u05-e01",
+      "type": "choice",
+      "stage": "b2_phrase",
+      "difficulty": 2,
+      "prompt": "Escolha a continuação mais natural:\n«Принимая решение о переезде, следует учитывать…»",
+      "options": [
+        "возможные последствия",
+        "с возможными последствиями",
+        "к возможным последствиям",
+        "от возможных последствий"
+      ],
+      "answer": "возможные последствия",
+      "explanation": "учитывать кого? что? pede винительный падеж; plural inanimado coincide com именительный.",
+      "tags": [
+        "estrutura B2",
+        "винительный падеж",
+        "produção argumentativa"
+      ]
+    },
+    {
+      "id": "u05-e02",
+      "type": "sentence_order",
+      "stage": "b2_phrase",
+      "difficulty": 3,
+      "prompt": "Monte uma frase argumentativa natural.",
+      "tokens": [
+        "Решение",
+        "о",
+        "переезде",
+        "зависит",
+        "не",
+        "только",
+        "от",
+        "желания,",
+        "но",
+        "и",
+        "от",
+        "оценки",
+        "последствий"
+      ],
+      "answer": "Решение о переезде зависит не только от желания, но и от оценки последствий",
+      "explanation": "Padrão correlativo: не только от X, но и от Y. Ambos seguem зависеть от.",
+      "tags": [
+        "зависеть от",
+        "estrutura B2",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u05-e03",
+      "type": "sentence_order",
+      "stage": "b2_phrase",
+      "difficulty": 3,
+      "prompt": "Monte uma frase de causa e consequência.",
+      "tokens": [
+        "Нехватка",
+        "доступного",
+        "жилья",
+        "может",
+        "привести",
+        "к",
+        "оттоку",
+        "молодых",
+        "специалистов"
+      ],
+      "answer": "Нехватка доступного жилья может привести к оттоку молодых специалистов",
+      "explanation": "привести к чему? оттоку; saída de quem? молодых специалистов.",
+      "tags": [
+        "приводить к",
+        "estrutura B2",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u05-e04",
+      "type": "choice",
+      "stage": "reformulation",
+      "difficulty": 3,
+      "instruction": "Escolha a reformulação correta.",
+      "prompt": "Многие факторы влияют на решение человека. → Решение человека зависит ___. (многие факторы)",
+      "explanation": "A mesma relação vista das duas pontas: X влияет НА Y (винительный) ↔ Y зависит ОТ X (родительный). Trocar de verbo obriga a trocar preposição e caso ao mesmo tempo.",
+      "tags": [
+        "зависеть от",
+        "влиять на",
+        "reformulação",
+        "múltipla escolha"
+      ],
+      "options": [
+        "от многих факторов",
+        "от многие факторы",
+        "многими факторами",
+        "на многие факторы"
+      ],
+      "answer": "от многих факторов"
+    },
+    {
+      "id": "u05-e05",
+      "type": "choice",
+      "stage": "cohesion",
+      "difficulty": 2,
+      "prompt": "Qual conector introduz melhor um contraste real?\n«Переезд открывает новые возможности. ___ следует учитывать трудности адаптации.»",
+      "options": [
+        "Однако",
+        "Благодаря",
+        "Поэтому что",
+        "В конечном счёте от"
+      ],
+      "answer": "Однако",
+      "explanation": "однако introduz contraste sem alterar a regência da oração seguinte.",
+      "tags": [
+        "estrutura B2",
+        "coesão",
+        "conectores"
+      ]
+    },
+    {
+      "id": "u05-e06",
+      "type": "choice",
+      "stage": "reformulation",
+      "difficulty": 3,
+      "prompt": "Qual frase está correta e mantém o paralelismo «не только… но и…»?",
+      "explanation": "Três problemas resolvidos de uma vez: o sujeito é o substantivo решение (não o infinitivo решить); зависеть exige от + родительный; e a correlação «не только X, но и Y» repete a preposição nos dois membros — от желания… но и от оценки.",
+      "tags": [
+        "estrutura B2",
+        "reformulação",
+        "sintaxe",
+        "múltipla escolha"
+      ],
+      "instruction": "Escolha a versão B2 bem construída.",
+      "options": [
+        "Решение о переезде зависит не только от желания, но и от оценки последствий.",
+        "Решить о переезде зависит не только от желания, но нужно считать последствия.",
+        "Решение о переезде зависит не только желания, но и оценку последствий.",
+        "Решение о переезде зависит не только от желание, но и от оценка последствий."
+      ],
+      "answer": "Решение о переезде зависит не только от желания, но и от оценки последствий."
+    },
+    {
+      "id": "u05-e07",
+      "type": "choice",
+      "stage": "b2_phrase",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução formal correta.",
+      "prompt": "«Um dos fatores é a possibilidade de desenvolvimento profissional.»",
+      "explanation": "Na construção formal com являться, quem fica no творительный падеж é o predicativo — mas aqui a ordem é invertida: «одним из факторов» (творительный) vem antes e возможность é o sujeito, em именительный. Guardar o bloco inteiro «одним из + родительный plural + является + именительный» resolve o item.",
+      "tags": [
+        "являться",
+        "estrutura B2",
+        "produção argumentativa",
+        "múltipla escolha"
+      ],
+      "options": [
+        "Одним из факторов является возможность профессионального развития.",
+        "Один из факторов является возможностью профессионального развития.",
+        "Одним из факторов является возможностью профессионального развития.",
+        "Одного из факторов является возможность профессионального развития."
+      ],
+      "answer": "Одним из факторов является возможность профессионального развития."
+    },
+    {
+      "id": "u05-e08",
+      "type": "choice",
+      "stage": "b2_phrase",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução que preserva as duas regências.",
+      "prompt": "«A adaptação depende não apenas do conhecimento da língua, mas também do apoio social.»",
+      "explanation": "зависеть ОТ + родительный vale para os dois elementos coordenados; a preposição от se repete depois de «но и». Note que знание vira знания e поддержка vira поддержки — ambos родительный падеж.",
+      "tags": [
+        "зависеть от",
+        "estrutura B2",
+        "produção argumentativa",
+        "múltipla escolha"
+      ],
+      "options": [
+        "Адаптация зависит не только от знания языка, но и от социальной поддержки.",
+        "Адаптация зависит не только знания языка, но и социальной поддержки.",
+        "Адаптация зависит не только от знание языка, но и от социальная поддержка.",
+        "Адаптация зависит не только на знание языка, но и на социальную поддержку."
+      ],
+      "answer": "Адаптация зависит не только от знания языка, но и от социальной поддержки."
+    },
+    {
+      "id": "u05-e09",
+      "type": "open_text",
+      "stage": "micro_writing",
+      "difficulty": 2,
+      "instruction": "Escreva 2–3 frases em russo. Use as três construções indicadas.",
+      "prompt": "Tema: первые месяцы после переезда\nUse: адаптироваться к · сталкиваться с · благодаря",
+      "review_notes": "Na correção, verificar regência, terminações, naturalidade lexical e se as três construções foram realmente usadas.",
+      "tags": [
+        "produção escrita",
+        "адаптироваться к",
+        "сталкиваться с",
+        "благодаря"
+      ]
+    },
+    {
+      "id": "u05-e10",
+      "type": "open_text",
+      "stage": "micro_writing",
+      "difficulty": 2,
+      "instruction": "Escreva 3–4 frases em russo sem consultar. Use as construções indicadas.",
+      "prompt": "Tema: качество жизни в большом городе\nUse: зависеть от · влиять на · быть недовольным",
+      "review_notes": "Distinguir se eventuais erros pertencem à regência, à terminação ou à seleção lexical. Avaliar coesão entre as frases.",
+      "tags": [
+        "produção escrita",
+        "зависеть от",
+        "влиять на",
+        "быть недовольным"
+      ]
+    },
+    {
+      "id": "u05-e11",
+      "type": "open_text",
+      "stage": "summary",
+      "difficulty": 3,
+      "instruction": "Escreva um resumo de 35–50 palavras em russo.",
+      "context": "Переезд в другую страну может открыть новые профессиональные возможности. Однако человеку приходится привыкать к незнакомой среде, решать вопросы с документами и создавать новый круг общения. Успех адаптации зависит как от личной инициативы, так и от поддержки окружающих.",
+      "prompt": "Resuma a ideia principal sem copiar uma frase inteira. Use pelo menos uma regência estudada.",
+      "review_notes": "Avaliar fidelidade ao texto, síntese, construção russa natural, regência e controle das terminações.",
+      "tags": [
+        "produção escrita",
+        "resumo",
+        "estrutura B2"
+      ]
+    },
+    {
+      "id": "u05-e12",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Não abra com «Я считаю, что». Use pelo menos seis unidades da lista.",
+      "prompt": "«Переезд в другую страну: новые возможности или серьёзный риск?»\n\nUnidades: адаптироваться к · сталкиваться с · привести к · являться · трудоустройство · место жительства · однако · в конечном счёте",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "ТРКИ-II",
+        "estrutura B2"
+      ]
+    },
+    {
+      "id": "u05-e13",
+      "type": "open_text",
+      "stage": "speaking_plan",
+      "difficulty": 3,
+      "instruction": "Prepare por escrito um roteiro de 6–8 tópicos curtos; depois fale por 90 segundos sem ler frases completas.",
+      "prompt": "«Что важнее при выборе места жительства: карьера, семья или качество жизни?»\nInclua: зависеть от · стремиться к · нуждаться в · влиять на",
+      "review_notes": "Avaliar se o roteiro apoia fala espontânea, se há estrutura argumentativa e se as quatro regências aparecem corretamente.",
+      "tags": [
+        "говорение",
+        "produção escrita",
+        "estrutura B2"
+      ]
+    },
+    {
+      "id": "u05-e14",
+      "type": "flashcard",
+      "stage": "b2_phrase",
+      "difficulty": 2,
+      "front": "Estrutura para conclusão sem «Я считаю»",
+      "back": "В конечном счёте решение зависит от…",
+      "explanation": "Complete com родительный падеж e uma conclusão realmente ligada aos argumentos.",
+      "tags": [
+        "estrutura B2",
+        "зависеть от",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u05-e15",
+      "type": "match_pairs",
+      "stage": "recognition",
+      "difficulty": 2,
+      "instruction": "Relacione cada conector à sua função no texto argumentativo.",
+      "pairs": [
+        {
+          "left": "несмотря на то что",
+          "right": "algo acontece apesar de um obstáculo"
+        },
+        {
+          "left": "с одной стороны... с другой стороны",
+          "right": "apresentar dois lados equilibrados de um argumento"
+        },
+        {
+          "left": "нельзя отрицать, что",
+          "right": "reconhecer um ponto antes de contrapor"
+        },
+        {
+          "left": "следует учитывать, что",
+          "right": "introduzir um fator relevante"
+        },
+        {
+          "left": "в конечном счёте",
+          "right": "fechar a conclusão do texto"
+        }
+      ],
+      "explanation": "Cada conector cumpre uma função específica; escolher pela função evita empilhar conectores sem propósito.",
+      "tags": [
+        "estrutura B2",
+        "conectores",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u05-e16",
+      "type": "reading",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Leia e escolha a melhor síntese — não a frase que apenas repete palavras do texto.",
+      "context": "Переезд часто связывают с профессиональным ростом и более высоким качеством жизни. Однако сам по себе новый адрес не решает старых проблем. Человеку приходится адаптироваться к незнакомым нормам, искать жильё и заново создавать круг общения. Поэтому решение зависит не только от ожидаемых преимуществ, но и от готовности справляться с неопределённостью.",
+      "prompt": "Qual é a tese central?",
+      "options": [
+        "Mudar-se pode abrir oportunidades, mas exige recursos e disposição para enfrentar a adaptação.",
+        "Toda mudança de endereço melhora automaticamente a qualidade de vida.",
+        "O principal problema de uma mudança é exclusivamente encontrar moradia.",
+        "O crescimento profissional torna desnecessário criar novos vínculos sociais."
+      ],
+      "answer": "Mudar-se pode abrir oportunidades, mas exige recursos e disposição para enfrentar a adaptação.",
+      "explanation": "A síntese preserva a concessão e a condição central, sem reduzir o texto a um detalhe.",
+      "tags": [
+        "leitura",
+        "síntese",
+        "estrutura B2"
+      ]
+    },
+    {
+      "id": "u05-e17",
+      "type": "listening",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Ouça como se fosse um depoimento de prova. Anote mentalmente vantagem, dificuldade e conclusão.",
+      "prompt": "Qual conclusão a falante defende?",
+      "audio_text": "С одной стороны, переезд дал мне возможность найти интересную работу. С другой стороны, первые месяцы я сталкивалась с одиночеством и бытовыми трудностями. В конечном счёте я поняла, что успешная адаптация зависит не только от знания языка, но и от поддержки окружающих.",
+      "options": [
+        "A adaptação depende de língua e apoio social, não apenas da oportunidade profissional.",
+        "A mudança fracassou porque a falante não encontrou trabalho.",
+        "Conhecer a língua resolve sozinho todas as dificuldades cotidianas.",
+        "A falante concluiu que deveria voltar imediatamente ao país de origem."
+      ],
+      "answer": "A adaptação depende de língua e apoio social, não apenas da oportunidade profissional.",
+      "explanation": "A conclusão vem depois de «В конечном счёте» e usa a estrutura не только..., но и....",
+      "tags": [
+        "аудирование",
+        "síntese",
+        "conectores B2"
+      ]
+    },
+    {
+      "id": "u05-e18",
+      "type": "listening",
+      "response_type": "input",
+      "stage": "noticing",
+      "difficulty": 3,
+      "instruction": "Ditado de chunk: digite a frase completa, prestando atenção às regências.",
+      "prompt": "Escreva exatamente a frase ouvida.",
+      "audio_text": "Решение о переезде зависит не только от желания, но и от реалистичной оценки последствий.",
+      "answer": "Решение о переезде зависит не только от желания, но и от реалистичной оценки последствий.",
+      "explanation": "Chunk reutilizável: зависеть от кого? чего? + не только..., но и....",
+      "tags": [
+        "аудирование",
+        "ditado",
+        "зависеть от",
+        "estrutura B2"
+      ]
+    }
+  ],
+  "source_note": "Estruturas argumentativas de «В мире людей. Письмо, говорение» e «Время обсуждать» (ТРКИ-II)"
+}

@@ -1,0 +1,580 @@
+{
+  "id": "v22",
+  "unit_id": "u22_vremya",
+  "order": 22,
+  "title": "Успеть к пятнице",
+  "theme": "Chefe e funcionária organizam a entrega de um projeto",
+  "description": "Chefe e funcionária organizam a entrega de um projeto. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Сотрудница": "f",
+    "Руководитель": "m"
+  },
+  "dialogue": {
+    "title": "Успеть к пятнице",
+    "setting": "Chefe e funcionária organizam a entrega de um projeto",
+    "lines": [
+      {
+        "speaker": "Сотрудница",
+        "ru": "Отчёт должен быть готов к следующей пятнице?",
+        "pt": "O relatório deve estar pronto até a próxima sexta-feira?"
+      },
+      {
+        "speaker": "Руководитель",
+        "ru": "Да, перед общим собранием нужно проверить все цифры.",
+        "pt": "Sim, antes da reunião geral precisamos conferir todos os números."
+      },
+      {
+        "speaker": "Сотрудница",
+        "ru": "Тогда я отправлю черновик за два дня до срока.",
+        "pt": "Então enviarei o rascunho dois dias antes do prazo."
+      },
+      {
+        "speaker": "Руководитель",
+        "ru": "А окончательный ответ клиент даст через неделю после проверки.",
+        "pt": "E o cliente dará a resposta final uma semana depois da conferência."
+      },
+      {
+        "speaker": "Сотрудница",
+        "ru": "Я буду в офисе с понедельника по пятницу, поэтому успею внести изменения.",
+        "pt": "Estarei no escritório de segunda a sexta-feira, por isso dará tempo de fazer as alterações."
+      },
+      {
+        "speaker": "Руководитель",
+        "ru": "Но не закрывайте проект, пока не получим ответ.",
+        "pt": "Mas não encerre o projeto até recebermos a resposta."
+      },
+      {
+        "speaker": "Сотрудница",
+        "ru": "Накануне важной встречи я ещё раз проверю таблицы.",
+        "pt": "Na véspera da reunião importante, vou conferir as tabelas mais uma vez."
+      },
+      {
+        "speaker": "Руководитель",
+        "ru": "И помните: по рабочим понедельникам мы обсуждаем текущие задачи.",
+        "pt": "E lembre-se: nas segundas-feiras de trabalho discutimos as tarefas em andamento."
+      },
+      {
+        "speaker": "Сотрудница",
+        "ru": "Значит, черновик отправлю в среду, а утром в пятницу проверю финальную версию.",
+        "pt": "Então enviarei o rascunho na quarta e, na manhã de sexta, conferirei a versão final."
+      },
+      {
+        "speaker": "Руководитель",
+        "ru": "Верно. После встречи сохраните все замечания клиента в общей папке.",
+        "pt": "Certo. Depois da reunião, guarde todas as observações do cliente na pasta compartilhada."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "O que os dois estão definindo?",
+      "options": [
+        "A sequência de entrega, conferência e resposta.",
+        "As datas de férias de todos os clientes.",
+        "O orçamento de uma viagem no próximo mês.",
+        "A mudança do escritório para outra cidade."
+      ],
+      "answer": "A sequência de entrega, conferência e resposta.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "к",
+      "tag": "к + срок",
+      "head": "к + срок",
+      "regency": "к какому сроку?",
+      "case": "дательный падеж",
+      "pt": "até a próxima sexta-feira como prazo",
+      "chunk": "к следующей пятнице",
+      "chunk_pt": "até a próxima sexta-feira como prazo",
+      "chunk_wrong": [
+        "к следующую пятницу",
+        "к следующей пятницей",
+        "к следующей пятницы"
+      ],
+      "form_note": "к + дательный падеж marca o momento em que o resultado deve estar pronto, não quando o trabalho começa.",
+      "trap": "к + дательный падеж marca o momento em que o resultado deve estar pronto, não quando o trabalho começa.",
+      "example": {
+        "ru": "Отчёт должен быть готов к вечеру.",
+        "pt": "O relatório deve estar pronto até a noite.",
+        "extra": "вечером",
+        "note": "к + дательный падеж marca o momento em que o resultado deve estar pronto, não quando o trabalho começa."
+      },
+      "cloze": {
+        "ru": "Закончите таблицу ___.",
+        "answer": "к первому мая",
+        "wrong": [
+          "к первое мая",
+          "к первого мая",
+          "к первым мая"
+        ],
+        "pt": "Termine a tabela até primeiro de maio.",
+        "note": "к + дательный падеж marca o momento em que o resultado deve estar pronto, não quando o trabalho começa."
+      },
+      "hear": {
+        "ru": "Сын закончил проект к понедельнику.",
+        "pt": "O filho terminou o projeto até segunda-feira.",
+        "wrong": [
+          "O filho terminará o projeto até segunda-feira.",
+          "O filho não terminou o projeto até segunda-feira.",
+          "O pai terminou o projeto até segunda-feira."
+        ],
+        "note": "к + дательный падеж marca o momento em que o resultado deve estar pronto, não quando o trabalho começa."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "перед",
+      "tag": "перед",
+      "head": "перед",
+      "regency": "перед чем?",
+      "case": "творительный падеж",
+      "pt": "antes da reunião geral",
+      "chunk": "перед общим собранием",
+      "chunk_pt": "antes da reunião geral",
+      "chunk_wrong": [
+        "перед общего собрания",
+        "перед общему собранию",
+        "перед общее собрание"
+      ],
+      "form_note": "перед чем? usa творительный падеж; não transfira o родительный падеж de до.",
+      "trap": "перед чем? usa творительный падеж; não transfira o родительный падеж de до.",
+      "example": {
+        "ru": "Перед поездкой она проверила документы.",
+        "pt": "Antes da viagem, ela conferiu os documentos.",
+        "extra": "поездку",
+        "note": "перед чем? usa творительный падеж; não transfira o родительный падеж de до."
+      },
+      "cloze": {
+        "ru": "Нужно отдохнуть ___.",
+        "answer": "перед трудной неделей",
+        "wrong": [
+          "перед трудную неделю",
+          "перед трудной недели",
+          "перед трудной неделе"
+        ],
+        "pt": "É preciso descansar antes de uma semana difícil.",
+        "note": "перед чем? usa творительный падеж; não transfira o родительный падеж de до."
+      },
+      "hear": {
+        "ru": "Начальник позвонил сотруднику перед встречей.",
+        "pt": "O chefe telefonou ao funcionário antes da reunião.",
+        "wrong": [
+          "O funcionário telefonou ao chefe antes da reunião.",
+          "O chefe não telefonou ao funcionário antes da reunião.",
+          "O chefe telefonará ao funcionário antes da reunião."
+        ],
+        "note": "перед чем? usa творительный падеж; não transfira o родительный падеж de до."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "за",
+      "tag": "за … до",
+      "head": "за … до",
+      "regency": "за сколько времени до чего?",
+      "case": "винительный падеж + родительный падеж",
+      "pt": "dois dias antes do prazo",
+      "chunk": "за два дня до срока",
+      "chunk_pt": "dois dias antes do prazo",
+      "chunk_wrong": [
+        "за двух дней до срока",
+        "за двум дням до срока",
+        "за двумя днями до срока"
+      ],
+      "form_note": "за + винительный падеж mede a distância até o evento; до + родительный падеж marca o evento de referência.",
+      "trap": "за + винительный падеж mede a distância até o evento; до + родительный падеж marca o evento de referência.",
+      "example": {
+        "ru": "За час до вылета мы приехали в аэропорт.",
+        "pt": "Chegamos ao aeroporto uma hora antes da decolagem.",
+        "extra": "вылету",
+        "note": "за + винительный падеж mede a distância até o evento; до + родительный падеж marca o evento de referência."
+      },
+      "cloze": {
+        "ru": "Напомни мне ___.",
+        "answer": "за неделю до встречи",
+        "wrong": [
+          "за недели до встречи",
+          "за неделе до встречи",
+          "за неделей до встречи"
+        ],
+        "pt": "Lembre-me uma semana antes da reunião.",
+        "note": "за + винительный падеж mede a distância até o evento; до + родительный падеж marca o evento de referência."
+      },
+      "hear": {
+        "ru": "Дочь отправила письмо за день до отъезда матери.",
+        "pt": "A filha enviou a carta um dia antes da partida da mãe.",
+        "wrong": [
+          "A mãe enviou a carta um dia antes da partida da filha.",
+          "A filha não enviou a carta um dia antes da partida da mãe.",
+          "A filha enviará a carta um dia antes da partida da mãe."
+        ],
+        "note": "за + винительный падеж mede a distância até o evento; до + родительный падеж marca o evento de referência."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "через",
+      "tag": "через … после",
+      "head": "через … после",
+      "regency": "через сколько времени после чего?",
+      "case": "винительный падеж + родительный падеж",
+      "pt": "uma semana depois da conferência",
+      "chunk": "через неделю после проверки",
+      "chunk_pt": "uma semana depois da conferência",
+      "chunk_wrong": [
+        "через недели после проверки",
+        "через неделе после проверки",
+        "через неделей после проверки"
+      ],
+      "form_note": "через + винительный падеж mede o intervalo; после + родительный падеж introduz a referência anterior.",
+      "trap": "через + винительный падеж mede o intervalo; после + родительный падеж introduz a referência anterior.",
+      "example": {
+        "ru": "Через месяц после ремонта мы переехали.",
+        "pt": "Mudamos um mês depois da reforma.",
+        "extra": "ремонту",
+        "note": "через + винительный падеж mede o intervalo; после + родительный падеж introduz a referência anterior."
+      },
+      "cloze": {
+        "ru": "Ответ пришёл ___.",
+        "answer": "через час после звонка",
+        "wrong": [
+          "через часа после звонка",
+          "через часу после звонка",
+          "через часом после звонка"
+        ],
+        "pt": "A resposta chegou uma hora depois do telefonema.",
+        "note": "через + винительный падеж mede o intervalo; после + родительный падеж introduz a referência anterior."
+      },
+      "hear": {
+        "ru": "Брат приехал через день после сестры.",
+        "pt": "O irmão chegou um dia depois da irmã.",
+        "wrong": [
+          "A irmã chegou um dia depois do irmão.",
+          "O irmão não chegou um dia depois da irmã.",
+          "O irmão chegará um dia depois da irmã."
+        ],
+        "note": "через + винительный падеж mede o intervalo; после + родительный падеж introduz a referência anterior."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "с",
+      "tag": "с … по",
+      "head": "с … по",
+      "regency": "с какого дня по какой день?",
+      "case": "родительный падеж + винительный падеж",
+      "pt": "de segunda a sexta-feira",
+      "chunk": "с понедельника по пятницу",
+      "chunk_pt": "de segunda a sexta-feira",
+      "chunk_wrong": [
+        "с понедельнику по пятницу",
+        "с понедельника по пятнице",
+        "с понедельником по пятницу"
+      ],
+      "form_note": "Início: с + родительный падеж. Fim inclusivo: по + винительный падеж, como по пятницу.",
+      "trap": "Início: с + родительный падеж. Fim inclusivo: по + винительный падеж, como по пятницу.",
+      "example": {
+        "ru": "Мы работаем с утра до вечера.",
+        "pt": "Trabalhamos da manhã até a noite.",
+        "extra": "утру",
+        "note": "Início: с + родительный падеж. Fim inclusivo: по + винительный падеж, como по пятницу."
+      },
+      "cloze": {
+        "ru": "Курс проходит ___.",
+        "answer": "с третьего по десятое июня",
+        "wrong": [
+          "с третьему по десятое июня",
+          "с третьего по десятому июня",
+          "с третьим по десятое июня"
+        ],
+        "pt": "O curso acontece de três a dez de junho.",
+        "note": "Início: с + родительный падеж. Fim inclusivo: по + винительный падеж, como по пятницу."
+      },
+      "hear": {
+        "ru": "Отец был в отпуске с мая по июнь.",
+        "pt": "O pai esteve de férias de maio a junho.",
+        "wrong": [
+          "O pai estará de férias de maio a junho.",
+          "O pai não esteve de férias de maio a junho.",
+          "O filho esteve de férias de maio a junho."
+        ],
+        "note": "Início: с + родительный падеж. Fim inclusivo: по + винительный падеж, como по пятницу."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "пока",
+      "tag": "пока не",
+      "head": "пока не",
+      "regency": "пока не + сказуемое",
+      "case": "придаточное времени",
+      "pt": "até recebermos uma resposta",
+      "chunk": "пока не получим ответ",
+      "chunk_pt": "até recebermos uma resposta",
+      "chunk_wrong": [
+        "пока не получить ответ",
+        "пока не получите ответ",
+        "пока не получат ответ"
+      ],
+      "form_note": "пока не pode significar «até que»: a negação russa faz parte da construção, embora o português não a repita.",
+      "trap": "пока не pode significar «até que»: a negação russa faz parte da construção, embora o português não a repita.",
+      "example": {
+        "ru": "Я останусь здесь, пока не придёт врач.",
+        "pt": "Vou ficar aqui até o médico chegar.",
+        "extra": "приходить",
+        "note": "пока не pode significar «até que»: a negação russa faz parte da construção, embora o português não a repita."
+      },
+      "cloze": {
+        "ru": "Мы не уйдём, ___.",
+        "answer": "пока не закончим работу",
+        "wrong": [
+          "пока не закончим работой",
+          "пока не закончим работе",
+          "пока не закончим работа"
+        ],
+        "pt": "Não vamos embora até terminarmos o trabalho.",
+        "note": "пока не pode significar «até que»: a negação russa faz parte da construção, embora o português não a repita."
+      },
+      "hear": {
+        "ru": "Мать ждала, пока не вернулся сын.",
+        "pt": "A mãe esperou até o filho voltar.",
+        "wrong": [
+          "O filho esperou até a mãe voltar.",
+          "A mãe não esperou até o filho voltar.",
+          "A mãe esperará até o filho voltar."
+        ],
+        "note": "пока не pode significar «até que»: a negação russa faz parte da construção, embora o português não a repita."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "накануне",
+      "tag": "накануне",
+      "head": "накануне",
+      "regency": "накануне чего?",
+      "case": "родительный падеж",
+      "pt": "na véspera da reunião importante",
+      "chunk": "накануне важной встречи",
+      "chunk_pt": "na véspera da reunião importante",
+      "chunk_wrong": [
+        "накануне важную встречу",
+        "накануне важной встрече",
+        "накануне важной встречей"
+      ],
+      "form_note": "накануне чего? usa родительный падеж e indica a véspera, não qualquer período anterior.",
+      "trap": "накануне чего? usa родительный падеж e indica a véspera, não qualquer período anterior.",
+      "example": {
+        "ru": "Накануне праздника мы украсили офис.",
+        "pt": "Na véspera do feriado, decoramos o escritório.",
+        "extra": "празднику",
+        "note": "накануне чего? usa родительный падеж e indica a véspera, não qualquer período anterior."
+      },
+      "cloze": {
+        "ru": "Она заболела ___.",
+        "answer": "накануне экзамена",
+        "wrong": [
+          "накануне экзамен",
+          "накануне экзамену",
+          "накануне экзаменом"
+        ],
+        "pt": "Ela adoeceu na véspera da prova.",
+        "note": "накануне чего? usa родительный падеж e indica a véspera, não qualquer período anterior."
+      },
+      "hear": {
+        "ru": "Сестра позвонила брату накануне поездки.",
+        "pt": "A irmã telefonou ao irmão na véspera da viagem.",
+        "wrong": [
+          "O irmão telefonou à irmã na véspera da viagem.",
+          "A irmã não telefonou ao irmão na véspera da viagem.",
+          "A irmã telefonará ao irmão na véspera da viagem."
+        ],
+        "note": "накануне чего? usa родительный падеж e indica a véspera, não qualquer período anterior."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "по",
+      "tag": "по + дни недели",
+      "head": "по + дни недели",
+      "regency": "по каким дням?",
+      "case": "дательный падеж, множественное число",
+      "pt": "nas segundas-feiras de trabalho",
+      "chunk": "по рабочим понедельникам",
+      "chunk_pt": "nas segundas-feiras de trabalho",
+      "chunk_wrong": [
+        "по рабочих понедельников",
+        "по рабочие понедельники",
+        "по рабочими понедельниками"
+      ],
+      "form_note": "Recorrência semanal: по + дательный падеж plural, como по понедельникам. Não confunda com o fim inclusivo em по пятницу.",
+      "trap": "Recorrência semanal: по + дательный падеж plural, como по понедельникам. Não confunda com o fim inclusivo em по пятницу.",
+      "example": {
+        "ru": "По средам мы обсуждаем результаты.",
+        "pt": "Às quartas-feiras, discutimos os resultados.",
+        "extra": "среды",
+        "note": "Recorrência semanal: по + дательный падеж plural, como по понедельникам. Não confunda com o fim inclusivo em по пятницу."
+      },
+      "cloze": {
+        "ru": "Она занимается ___.",
+        "answer": "по субботам",
+        "wrong": [
+          "по субботы",
+          "по суббот",
+          "по субботами"
+        ],
+        "pt": "Ela estuda aos sábados.",
+        "note": "Recorrência semanal: по + дательный падеж plural, como по понедельникам. Não confunda com o fim inclusivo em по пятницу."
+      },
+      "hear": {
+        "ru": "Брат навещал сестру по воскресеньям.",
+        "pt": "O irmão visitava a irmã aos domingos.",
+        "wrong": [
+          "A irmã visitava o irmão aos domingos.",
+          "O irmão não visitava a irmã aos domingos.",
+          "O irmão visitará a irmã aos domingos."
+        ],
+        "note": "Recorrência semanal: по + дательный падеж plural, como по понедельникам. Não confunda com o fim inclusivo em по пятницу."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Quando a funcionária enviará o rascunho?",
+      "options": [
+        "Na quarta-feira, dois dias antes do prazo.",
+        "Na sexta-feira, depois da reunião geral.",
+        "Na segunda-feira, após a resposta do cliente.",
+        "No sábado, uma semana depois da conferência."
+      ],
+      "answer": "Na quarta-feira, dois dias antes do prazo.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "Quando o projeto poderá ser encerrado?",
+      "options": [
+        "Quando a equipe receber a resposta do cliente.",
+        "Assim que o rascunho for enviado na quarta.",
+        "Antes de conferir os números da tabela.",
+        "Na primeira segunda-feira de trabalho."
+      ],
+      "answer": "Quando a equipe receber a resposta do cliente.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "к следующей пятнице",
+      "wrong": [
+        "к следующую пятницу",
+        "к следующей пятницей",
+        "к следующей пятницы"
+      ],
+      "note": "к + дательный падеж marca o momento em que o resultado deve estar pronto, não quando o trabalho começa."
+    },
+    {
+      "line": 1,
+      "gap": "перед общим собранием",
+      "wrong": [
+        "перед общего собрания",
+        "перед общему собранию",
+        "перед общее собрание"
+      ],
+      "note": "перед чем? usa творительный падеж; não transfira o родительный падеж de до."
+    },
+    {
+      "line": 2,
+      "gap": "за два дня до срока",
+      "wrong": [
+        "за двух дней до срока",
+        "за двум дням до срока",
+        "за двумя днями до срока"
+      ],
+      "note": "за + винительный падеж mede a distância até o evento; до + родительный падеж marca o evento de referência."
+    },
+    {
+      "line": 5,
+      "gap": "пока не получим ответ",
+      "wrong": [
+        "пока не получить ответ",
+        "пока не получите ответ",
+        "пока не получат ответ"
+      ],
+      "note": "пока не pode significar «até que»: a negação russa faz parte da construção, embora o português não a repita."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "к следующей пятнице",
+        "right": "até a próxima sexta-feira como prazo"
+      },
+      {
+        "left": "перед общим собранием",
+        "right": "antes da reunião geral"
+      },
+      {
+        "left": "за два дня до срока",
+        "right": "dois dias antes do prazo"
+      },
+      {
+        "left": "через неделю после проверки",
+        "right": "uma semana depois da conferência"
+      },
+      {
+        "left": "с понедельника по пятницу",
+        "right": "de segunda a sexta-feira"
+      },
+      {
+        "left": "пока не получим ответ",
+        "right": "até recebermos uma resposta"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Сотрудница",
+      "you": "Руководитель",
+      "ru": "К какому сроку подготовить окончательный отчёт?",
+      "prompt": "Informe o prazo para a conclusão.",
+      "answer": "К следующей пятнице.",
+      "wrong": [
+        "К следующую пятницу.",
+        "К следующей пятницей.",
+        "К следующей пятницы."
+      ],
+      "explanation": "к + дательный падеж marca o momento em que o resultado deve estar pronto, não quando o trabalho começa."
+    },
+    {
+      "speaker": "Руководитель",
+      "you": "Сотрудница",
+      "ru": "Когда проверить все цифры?",
+      "prompt": "Informe o evento antes do qual conferir.",
+      "answer": "Перед общим собранием.",
+      "wrong": [
+        "Перед общего собрания.",
+        "Перед общему собранию.",
+        "Перед общее собрание."
+      ],
+      "explanation": "перед чем? usa творительный падеж; não transfira o родительный падеж de до."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva um cronograma em forma de mensagem. Diferencie prazo, véspera, antecedência, intervalo posterior e rotina semanal.",
+    "use": [
+      "к + срок",
+      "перед",
+      "за … до",
+      "через … после",
+      "с … по"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: к какому сроку?; перед чем?; за сколько времени до чего?; через сколько времени после чего?; с какого дня по какой день?; пока не + сказуемое; накануне чего?; по каким дням?."
+  }
+}

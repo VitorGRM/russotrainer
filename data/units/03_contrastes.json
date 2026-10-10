@@ -1,0 +1,677 @@
+{
+  "id": "u03_contrastes",
+  "order": 3,
+  "title": "Contrastes de regência",
+  "description": "Compara depender, influenciar, necessitar, receber e recusar para impedir traduções automáticas do português.",
+  "estimated_minutes": 26,
+  "objectives": [
+    "contrastar от, на e в",
+    "reconhecer complementos sem preposição",
+    "combinar regência verbal com grupos nominais complexos em leitura e áudio"
+  ],
+  "grammar": [
+    {
+      "title": "Por que o português engana aqui",
+      "paragraphs": [
+        "Em português, depender DE, necessitar DE e desistir/recusar DE usam a mesma preposição «de» — o que empurra o aluno a imaginar uma regência russa única. Em russo essas ideias exigem casos e preposições diferentes: зависеть от (родительный), нуждаться в (предложный), отказаться от (родительный, mesma preposição de зависеть, mas outro verbo). Já influenciar e receber não têm preposição de objeto em português, mas влиять на exige на + винительный, enquanto получать/получить não usa preposição nenhuma (винительный direto).",
+        "A estratégia é memorizar cada verbo como bloco fechado — verbo + preposição (se houver) + pergunta russa — e não tentar prever o caso a partir da tradução portuguesa."
+      ],
+      "audio_script": "Esta unidade tem um objetivo único: desfazer as armadilhas que o português cria na sua cabeça. O problema é o seguinte. Em português, muitos verbos diferentes usam a mesma preposição. Depender DE. Precisar DE. Recorrer A. Acostumar-se A. Influenciar — sem preposição nenhuma. Quando você traduz mentalmente, sua cabeça agrupa esses verbos pela preposição portuguesa. E aí o russo desmonta o grupo. Vamos ver. Зависеть pede от e genitivo. Нуждаться pede в e prepositivo. As duas frases em português usam DE: dependo de, preciso de. Em russo são preposições e casos completamente diferentes. Outro par. Влиять pede на e acusativo — влиять на решение. Обращаться pede к e dativo — обратиться к специалисту. Em português, influenciar não leva preposição e recorrer leva A. Nenhuma dessas informações ajuda em russo. A conclusão pedagógica é forte: pare de aprender a preposição russa a partir da preposição portuguesa. Aprenda o bloco verbo mais preposição mais pergunta russa, como uma unidade indivisível. Зависеть от чего? Нуждаться в чём? Влиять на что? Обращаться к кому? Se você conseguir recuperar a PERGUNTA russa, o caso vem sozinho, porque a pergunta já está no caso certo.",
+      "examples": [
+        {
+          "ru": "Всё зависит от обстоятельств.",
+          "pt": "Tudo depende das circunstâncias.",
+          "note": "зависеть ОТ + родительный."
+        },
+        {
+          "ru": "Город нуждается в новых школах.",
+          "pt": "A cidade precisa de novas escolas.",
+          "note": "нуждаться В + предложный. Mesmo «de» do português, outro caso."
+        },
+        {
+          "ru": "Реклама влияет на выбор потребителя.",
+          "pt": "A publicidade influencia a escolha do consumidor.",
+          "note": "влиять НА + винительный."
+        },
+        {
+          "ru": "Он обратился к юристу за помощью.",
+          "pt": "Ele recorreu a um advogado em busca de ajuda.",
+          "note": "обращаться К + дательный, за + творительный."
+        }
+      ],
+      "pitfalls": [
+        "Agrupar verbos russos pela preposição portuguesa: «depender de» e «precisar de» têm regências opostas em russo.",
+        "Traduzir «influenciar» sem preposição: em russo é obrigatoriamente влиять НА."
+      ]
+    },
+    {
+      "title": "Três casos em contraste: родительный, винительный, предложный",
+      "paragraphs": [
+        "родительный падеж aqui marca origem/ausência da dependência: от кого? от чего? (зависеть от, отказаться от). винительный падеж marca o alvo direto de uma influência ou o objeto recebido, com ou sem preposição: на кого? на что? (влиять на) e кого? что? sem preposição (получать/получить). предложный падеж, com в, marca a necessidade contida «dentro» de algo: в ком? в чём? (нуждаться в) — não confundir com o в de localização (где?) já visto na unidade 1."
+      ],
+      "audio_script": "Vamos organizar os três casos que mais se confundem: genitivo, acusativo e prepositivo. O родительный падеж, genitivo, responde кого? чего?. Ele é o caso da ausência, da origem, da posse e da quantidade. Нет времени — não há tempo. Приехать из Москвы — vir de Moscou. Отказаться от проекта — recusar o projeto. As preposições que o acompanham: от, из, с com sentido de origem, без, для, около, у. O винительный падеж, acusativo, responde кого? что?. Ele é o caso do objeto direto e do destino. Читать книгу — ler um livro. Поехать в город — ir para a cidade. Влиять на решение — influenciar a decisão. As preposições típicas: в e на quando indicam destino, через, про, за quando indica destino. O предложный падеж, prepositivo, responde о ком? о чём? ou где?. Ele nunca aparece sem preposição — daí o nome. Говорить о проблеме — falar sobre o problema. Жить в городе — morar na cidade. Нуждаться в помощи — precisar de ajuda. As preposições: о, в e на com sentido de lugar, при. E agora o teste rápido que resolve o par mais confuso de todos: в e на mudam de caso conforme a pergunta. Se a pergunta é где — onde — o caso é prepositivo: в городе. Se a pergunta é куда — para onde — o caso é acusativo: в город. Mesma preposição, duas perguntas, dois casos. Antes de escolher a terminação, faça a pergunta em russo.",
+      "examples": [
+        {
+          "ru": "У нас нет свободного времени.",
+          "pt": "Não temos tempo livre.",
+          "note": "Negação de existência → родительный."
+        },
+        {
+          "ru": "Он написал интересную статью.",
+          "pt": "Ele escreveu um artigo interessante.",
+          "note": "Objeto direto → винительный."
+        },
+        {
+          "ru": "Они говорили о новой программе.",
+          "pt": "Eles falaram sobre o novo programa.",
+          "note": "о + предложный."
+        },
+        {
+          "ru": "Она работает в университете и часто ездит в университет на велосипеде.",
+          "pt": "Ela trabalha na universidade e vai à universidade de bicicleta.",
+          "note": "в университете (где?) × в университет (куда?)."
+        }
+      ],
+      "pitfalls": [
+        "Usar o prepositivo com verbo de movimento: идти «в магазине» é estar dentro da loja andando, não ir à loja.",
+        "Esquecer que o prepositivo NUNCA aparece sem preposição — se não há preposição, não é prepositivo."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Regência: mesmo sentido em português, casos diferentes em russo",
+    "columns": [
+      "Verbo/expressão em português",
+      "Construção russa",
+      "Caso",
+      "Pergunta"
+    ],
+    "rows": [
+      [
+        "depender de",
+        "зависеть от",
+        "родительный падеж",
+        "от кого? от чего?"
+      ],
+      [
+        "desistir de, recusar",
+        "отказаться от",
+        "родительный падеж",
+        "от кого? от чего?"
+      ],
+      [
+        "influenciar",
+        "влиять на",
+        "винительный падеж",
+        "на кого? на что?"
+      ],
+      [
+        "receber, obter",
+        "получать / получить",
+        "винительный падеж (sem preposição)",
+        "кого? что?"
+      ],
+      [
+        "necessitar de",
+        "нуждаться в",
+        "предложный падеж",
+        "в ком? в чём?"
+      ]
+    ],
+    "note": "A preposição portuguesa não prevê o caso russo: cada combinação é memorizada como unidade, não deduzida da tradução."
+  },
+  "reference": [
+    {
+      "construction": "зависеть от",
+      "question": "от кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "depender de",
+      "example": "зависеть от семейных обстоятельств"
+    },
+    {
+      "construction": "отказаться от",
+      "question": "от кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "recusar, desistir de",
+      "example": "отказаться от реализации проекта"
+    },
+    {
+      "construction": "влиять на",
+      "question": "на кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "influenciar",
+      "example": "влиять на качество жизни"
+    },
+    {
+      "construction": "получать / получить",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "receber, obter",
+      "example": "получить разрешение на работу"
+    },
+    {
+      "construction": "нуждаться в",
+      "question": "в ком? чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "necessitar de",
+      "example": "нуждаться в доступном жилье"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u03-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "зависеть",
+      "back": "зависеть от кого? чего?",
+      "explanation": "A preposição от exige родительный падеж.",
+      "tags": [
+        "зависеть от",
+        "родительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u03-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "влиять",
+      "back": "влиять на кого? что?",
+      "explanation": "O complemento vai a на + винительный падеж.",
+      "tags": [
+        "влиять на",
+        "винительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u03-e03",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "prompt": "A decisão depende das circunstâncias, mas também influencia o futuro. Complete na ordem correta:\nРешение зависит ___ обстоятельств и влияет ___ будущее.",
+      "options": [
+        "от / на",
+        "на / от",
+        "с / к",
+        "в / с"
+      ],
+      "answer": "от / на",
+      "explanation": "зависеть от кого? чего?; влиять на кого? что?.",
+      "tags": [
+        "зависеть от",
+        "влиять на",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u03-e04",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Результат исследования зависит от ___.\n(качество исходных данных)",
+      "options": [
+        "качества исходных данных",
+        "качество исходных данных",
+        "качеству исходных данных",
+        "качеством исходных данных"
+      ],
+      "answer": "качества исходных данных",
+      "explanation": "от чего? качества; depois, dados de quê? исходных данных. As demais opções deixam o substantivo sem declinar ou usam дательный/творительный падеж.",
+      "tags": [
+        "зависеть от",
+        "родительный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u03-e05",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Уровень дохода влияет на ___.\n(потребительское поведение семьи)",
+      "options": [
+        "потребительское поведение семьи",
+        "потребительскому поведению семьи",
+        "потребительского поведения семьи",
+        "потребительским поведением семьи"
+      ],
+      "answer": "потребительское поведение семьи",
+      "explanation": "Neutro inanimado no винительный падеж tem a mesma forma do именительный: поведение. As demais opções são дательный, родительный ou творительный падеж.",
+      "tags": [
+        "влиять на",
+        "винительный падеж",
+        "forma inanimada"
+      ]
+    },
+    {
+      "id": "u03-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Район нуждается в ___.\n(современная транспортная инфраструктура)",
+      "options": [
+        "современной транспортной инфраструктуре",
+        "современная транспортная инфраструктура",
+        "современной транспортной инфраструктуры",
+        "современную транспортную инфраструктуру"
+      ],
+      "answer": "современной транспортной инфраструктуре",
+      "explanation": "в чём?; feminina em предложный падеж: -ой/-ей e -е.",
+      "tags": [
+        "нуждаться в",
+        "предложный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u03-e07",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Организация отказалась от ___.\n(первоначальные условия договора)",
+      "options": [
+        "первоначальных условий договора",
+        "первоначальные условия договора",
+        "первоначальным условиям договора",
+        "первоначальными условиями договора"
+      ],
+      "answer": "первоначальных условий договора",
+      "explanation": "от кого? чего?; родительный падеж plural: первоначальных условий.",
+      "tags": [
+        "отказаться от",
+        "родительный падеж",
+        "terminação plural"
+      ]
+    },
+    {
+      "id": "u03-e08",
+      "type": "choice",
+      "stage": "case_question",
+      "difficulty": 2,
+      "prompt": "Na construção «получить гражданство», qual pergunta corresponde ao complemento?",
+      "options": [
+        "что?",
+        "чем?",
+        "чего?",
+        "чему?"
+      ],
+      "answer": "что?",
+      "explanation": "получать / получить кого? что? não usa preposição.",
+      "tags": [
+        "получать / получить",
+        "винительный падеж",
+        "pergunta russa"
+      ]
+    },
+    {
+      "id": "u03-e09",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Escolha a frase sem erro de verbo, preposição ou terminação.",
+      "prompt": "Qual frase está correta?",
+      "options": [
+        "Выбор университета зависит от финансовых возможностей семьи.",
+        "Выбор университета влияет от финансовых возможностей семьи.",
+        "Выбор университета влияет на финансовые возможности семьи.",
+        "Выбор университета зависит на финансовых возможностей семьи."
+      ],
+      "answer": "Выбор университета зависит от финансовых возможностей семьи.",
+      "explanation": "O sentido é 'depende de', então o verbo correto é зависеть от. A terceira opção usa влиять на corretamente, mas inverte o sentido da frase (o orçamento influenciaria a escolha, não o contrário); a última mistura на com родительный падеж, o que não existe.",
+      "tags": [
+        "зависеть от",
+        "влиять на",
+        "erro lexical"
+      ]
+    },
+    {
+      "id": "u03-e10",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Escolha a frase sem erro de preposição ou terminação.",
+      "prompt": "Qual frase está correta?",
+      "options": [
+        "Молодая семья нуждается в доступном жилье рядом с работой.",
+        "Молодая семья нуждается доступное жильё рядом с работой.",
+        "Молодая семья нуждается в доступное жильё рядом с работой.",
+        "Молодая семья нуждается доступным жильём рядом с работой."
+      ],
+      "answer": "Молодая семья нуждается в доступном жилье рядом с работой.",
+      "explanation": "нуждаться в ком? чём? exige a preposição в seguida do предложный падеж (доступном жилье). As demais opções omitem в ou usam outro caso (винительный, творительный).",
+      "tags": [
+        "нуждаться в",
+        "предложный падеж",
+        "correção de erro"
+      ]
+    },
+    {
+      "id": "u03-e11",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase com duas regências diferentes.",
+      "tokens": [
+        "Качество",
+        "жизни",
+        "зависит",
+        "от",
+        "дохода",
+        "и",
+        "влияет",
+        "на",
+        "решение",
+        "о",
+        "переезде"
+      ],
+      "answer": "Качество жизни зависит от дохода и влияет на решение о переезде",
+      "explanation": "зависеть от дохода; влиять на решение.",
+      "tags": [
+        "зависеть от",
+        "влиять на",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u03-e12",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte uma frase natural.",
+      "tokens": [
+        "После",
+        "переезда",
+        "он",
+        "получил",
+        "разрешение",
+        "на",
+        "временное",
+        "проживание"
+      ],
+      "answer": "После переезда он получил разрешение на временное проживание",
+      "explanation": "получить что? разрешение; autorização para quê? на временное проживание.",
+      "tags": [
+        "получать / получить",
+        "винительный падеж",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u03-e13",
+      "type": "choice",
+      "stage": "active_recall",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta para a combinação.",
+      "prompt": "depender das prioridades pessoais",
+      "options": [
+        "зависеть от личных приоритетов",
+        "зависеть от личные приоритеты",
+        "зависеть на личных приоритетов",
+        "влиять на личные приоритеты"
+      ],
+      "answer": "зависеть от личных приоритетов",
+      "explanation": "от + родительный падеж plural. A última opção troca o verbo por влиять (influenciar), que tem sentido diferente.",
+      "tags": [
+        "зависеть от",
+        "родительный падеж",
+        "recuperação ativa"
+      ]
+    },
+    {
+      "id": "u03-e14",
+      "type": "choice",
+      "stage": "active_recall",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta para a combinação.",
+      "prompt": "influenciar as oportunidades profissionais",
+      "options": [
+        "влиять на профессиональные возможности",
+        "влиять профессиональные возможности",
+        "влиять на профессиональных возможностей",
+        "зависеть от профессиональных возможностей"
+      ],
+      "answer": "влиять на профессиональные возможности",
+      "explanation": "на + винительный падеж; plural inanimado mantém a forma профессиональные возможности. A última opção troca o verbo por зависеть (depender).",
+      "tags": [
+        "влиять на",
+        "винительный падеж",
+        "recuperação ativa"
+      ]
+    },
+    {
+      "id": "u03-e15",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "prompt": "Qual frase significa que a cidade precisa de novos hospitais?",
+      "options": [
+        "Город нуждается в новых больницах.",
+        "Город интересуется новыми больницами.",
+        "Город зависит от новых больниц.",
+        "Город отказывается от новых больниц."
+      ],
+      "answer": "Город нуждается в новых больницах.",
+      "explanation": "нуждаться в ком? чём? expressa necessidade.",
+      "tags": [
+        "нуждаться в",
+        "significado",
+        "contraste lexical"
+      ]
+    },
+    {
+      "id": "u03-e16",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "prompt": "Escolha o grupo correto: «Решение зависит от…»",
+      "options": [
+        "реалистичной оценки последствий",
+        "реалистичной оценке последствий",
+        "реалистичной оценкой последствий",
+        "реалистичную оценку последствий"
+      ],
+      "answer": "реалистичной оценки последствий",
+      "explanation": "от чего? оценки; avaliação de quê? последствий — ambos em родительный падеж.",
+      "tags": [
+        "зависеть от",
+        "родительный падеж",
+        "cadeia nominal"
+      ]
+    },
+    {
+      "id": "u03-e17",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "нуждаться",
+      "back": "нуждаться в ком? чём?",
+      "explanation": "Use в + предложный падеж, não um acusativo modelado pelo português.",
+      "tags": [
+        "нуждаться в",
+        "предложный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u03-e18",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "отказаться",
+      "back": "отказаться от кого? чего?",
+      "explanation": "от + родительный падеж.",
+      "tags": [
+        "отказаться от",
+        "родительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u03-e19",
+      "type": "match_pairs",
+      "stage": "recognition",
+      "difficulty": 2,
+      "instruction": "Relacione cada construção russa ao seu significado em português.",
+      "pairs": [
+        {
+          "left": "зависеть от",
+          "right": "depender de"
+        },
+        {
+          "left": "отказаться от",
+          "right": "desistir de, recusar"
+        },
+        {
+          "left": "влиять на",
+          "right": "influenciar"
+        },
+        {
+          "left": "получать / получить",
+          "right": "receber, obter"
+        },
+        {
+          "left": "нуждаться в",
+          "right": "necessitar de"
+        }
+      ],
+      "explanation": "Mesmo sentido geral em português, cinco regências diferentes em russo — memorize por bloco, não por tradução literal.",
+      "tags": [
+        "regência",
+        "contraste",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u03-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 2,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Качество жизни в городе часто зависит от уровня дохода и доступности жилья. Высокая арендная плата влияет на решение многих семей о переезде: некоторые отказываются от жизни в центре города и выбирают более дешёвые районы. При этом молодые специалисты нуждаются в стабильной работе, чтобы получить кредит на квартиру. Если человек получает достаточный доход, он реже сталкивается с финансовыми трудностями.",
+      "prompt": "Segundo o texto, de que depende a qualidade de vida na cidade?",
+      "options": [
+        "Do nível de renda e da disponibilidade de moradia.",
+        "Apenas do clima da região.",
+        "Do número de imigrantes na cidade.",
+        "Da distância até o trabalho."
+      ],
+      "answer": "Do nível de renda e da disponibilidade de moradia.",
+      "explanation": "«Качество жизни в городе часто зависит от уровня дохода и доступности жилья».",
+      "tags": [
+        "зависеть от",
+        "leitura",
+        "contraste de regência"
+      ]
+    },
+    {
+      "id": "u03-e21",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 2,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Качество жизни в городе часто зависит от уровня дохода и доступности жилья. Высокая арендная плата влияет на решение многих семей о переезде: некоторые отказываются от жизни в центре города и выбирают более дешёвые районы. При этом молодые специалисты нуждаются в стабильной работе, чтобы получить кредит на квартиру. Если человек получает достаточный доход, он реже сталкивается с финансовыми трудностями.",
+      "prompt": "De acordo com o texto, do que alguns moradores desistem (отказываются) para pagar menos aluguel?",
+      "options": [
+        "Da vida no centro da cidade.",
+        "Do emprego atual.",
+        "Da cidadania do país.",
+        "Do transporte público."
+      ],
+      "answer": "Da vida no centro da cidade.",
+      "explanation": "«некоторые отказываются от жизни в центре города и выбирают более дешёвые районы».",
+      "tags": [
+        "отказаться от",
+        "leitura",
+        "contraste de regência"
+      ]
+    },
+    {
+      "id": "u03-e22",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Качество жизни в городе часто зависит от уровня дохода и доступности жилья. Высокая арендная плата влияет на решение многих семей о переезде: некоторые отказываются от жизни в центре города и выбирают более дешёвые районы. При этом молодые специалисты нуждаются в стабильной работе, чтобы получить кредит на квартиру. Если человек получает достаточный доход, он реже сталкивается с финансовыми трудностями.",
+      "prompt": "Qual trecho do texto está no предложный падеж (в ком? в чём?) depois de нуждаться?",
+      "options": [
+        "в стабильной работе",
+        "от уровня дохода",
+        "на решение... о переезде",
+        "с финансовыми трудностями"
+      ],
+      "answer": "в стабильной работе",
+      "explanation": "«от уровня дохода» é родительный (зависеть от), «на решение» é винительный (влиять на) e «с финансовыми трудностями» é творительный (сталкиваться с, unidade anterior). Só «в стабильной работе» responde в чём? depois de нуждаться.",
+      "tags": [
+        "нуждаться в",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u03-e23",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Успех проекта во многом зависит от финансирования и опытной команды.",
+      "prompt": "Segundo o áudio, de que depende o sucesso do projeto?",
+      "options": [
+        "Do financiamento e de uma equipe experiente.",
+        "Apenas da sorte.",
+        "Do tamanho do escritório.",
+        "Da opinião dos concorrentes."
+      ],
+      "answer": "Do financiamento e de uma equipe experiente.",
+      "explanation": "зависеть от кого? чего? = «от финансирования и опытной команды».",
+      "tags": [
+        "зависеть от",
+        "родительный падеж",
+        "audição"
+      ]
+    },
+    {
+      "id": "u03-e24",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Город нуждается в новых школах и больницах для растущего населения.",
+      "prompt": "Do que a cidade precisa, segundo o áudio?",
+      "options": [
+        "De novas escolas e hospitais para a população crescente.",
+        "De mais impostos sobre moradia.",
+        "De um novo prefeito.",
+        "De menos moradores."
+      ],
+      "answer": "De novas escolas e hospitais para a população crescente.",
+      "explanation": "нуждаться в ком? чём? = «в новых школах и больницах для растущего населения».",
+      "tags": [
+        "нуждаться в",
+        "предложный падеж",
+        "audição"
+      ]
+    }
+  ],
+  "source_note": "Contraste sistemático de regências dos урок 1-2 de «Время обсуждать» · «Russian Grammar in Tables» (Кузьмина), значения падежей",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e pares: usar a estrutura numa produção sua."
+    }
+  ]
+}

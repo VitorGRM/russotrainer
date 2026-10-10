@@ -1,0 +1,580 @@
+{
+  "id": "v17",
+  "unit_id": "u17_vozvratnye",
+  "order": 17,
+  "title": "Договориться дома",
+  "theme": "Dois irmãos negociam responsabilidades e diferenças na família",
+  "description": "Dois irmãos negociam responsabilidades e diferenças na família. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Катя": "f",
+    "Денис": "m"
+  },
+  "dialogue": {
+    "title": "Договориться дома",
+    "setting": "Dois irmãos negociam responsabilidades e diferenças na família",
+    "lines": [
+      {
+        "speaker": "Катя",
+        "ru": "Ты сильно отличаешься от старшего брата: всегда всё планируешь.",
+        "pt": "Você é muito diferente do irmão mais velho: sempre planeja tudo."
+      },
+      {
+        "speaker": "Денис",
+        "ru": "Поэтому хочу договориться с отцом о поездке заранее.",
+        "pt": "Por isso quero combinar a viagem com o pai antecipadamente."
+      },
+      {
+        "speaker": "Катя",
+        "ru": "Но сначала надо решить, кто будет пользоваться общим компьютером вечером.",
+        "pt": "Mas primeiro precisamos decidir quem vai usar o computador compartilhado à noite."
+      },
+      {
+        "speaker": "Денис",
+        "ru": "Давай не будем начинать семейный разговор с ссоры.",
+        "pt": "Vamos evitar começar uma conversa em família com uma briga."
+      },
+      {
+        "speaker": "Катя",
+        "ru": "Я стараюсь понять родителей, но мне тоже нужно свободное время.",
+        "pt": "Procuro entender os pais, mas também preciso de tempo livre."
+      },
+      {
+        "speaker": "Денис",
+        "ru": "Ты можешь встречаться со школьными друзьями по пятницам.",
+        "pt": "Você pode se encontrar com os amigos da escola às sextas-feiras."
+      },
+      {
+        "speaker": "Катя",
+        "ru": "И не надо обижаться на младшую сестру: она просто забыла выключить компьютер.",
+        "pt": "E não é preciso ficar magoado com a irmã mais nova: ela só esqueceu de desligar o computador."
+      },
+      {
+        "speaker": "Денис",
+        "ru": "Хорошо. Но нам всем нужно серьёзно относиться к обещаниям.",
+        "pt": "Tudo bem. Mas todos precisamos levar as promessas a sério."
+      },
+      {
+        "speaker": "Катя",
+        "ru": "Тогда составим расписание на неделю и покажем его родителям.",
+        "pt": "Então vamos fazer um horário para a semana e mostrá-lo aos pais."
+      },
+      {
+        "speaker": "Денис",
+        "ru": "А вечером я первым поговорю с отцом.",
+        "pt": "E à noite eu falarei primeiro com o pai."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "O que os irmãos procuram fazer?",
+      "options": [
+        "Combinar uma rotina familiar sem transformar tudo em briga.",
+        "Cancelar a viagem para não conversar com os pais.",
+        "Comprar computadores novos para cada membro da família.",
+        "Proibir encontros com amigos durante todas as semanas."
+      ],
+      "answer": "Combinar uma rotina familiar sem transformar tudo em briga.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "отличаться",
+      "tag": "отличаться от",
+      "head": "отличаться от",
+      "regency": "отличаться от кого? чего?",
+      "case": "родительный падеж",
+      "pt": "ser diferente do irmão mais velho",
+      "chunk": "отличаться от старшего брата",
+      "chunk_pt": "ser diferente do irmão mais velho",
+      "chunk_wrong": [
+        "отличаться от старшему брату",
+        "отличаться от старшим братом",
+        "отличаться от старший брат"
+      ],
+      "form_note": "A referência da comparação vem com от + родительный падеж, não с.",
+      "trap": "A referência da comparação vem com от + родительный падеж, não с.",
+      "example": {
+        "ru": "Новый план отличается от прежнего.",
+        "pt": "O novo plano é diferente do anterior.",
+        "extra": "прежнему",
+        "note": "A referência da comparação vem com от + родительный падеж, não с."
+      },
+      "cloze": {
+        "ru": "Моя комната отличается ___.",
+        "answer": "от комнаты сестры",
+        "wrong": [
+          "от комнату сестры",
+          "от комнате сестры",
+          "от комнатой сестры"
+        ],
+        "pt": "Meu quarto é diferente do quarto da irmã.",
+        "note": "A referência da comparação vem com от + родительный падеж, não с."
+      },
+      "hear": {
+        "ru": "Дочь отличалась от матери характером.",
+        "pt": "A filha era diferente da mãe no temperamento.",
+        "wrong": [
+          "A filha não era diferente da mãe no temperamento.",
+          "A filha será diferente da mãe no temperamento.",
+          "A filha é diferente da mãe no temperamento."
+        ],
+        "note": "A referência da comparação vem com от + родительный падеж, não с."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "договариваться",
+      "tag": "договориться с … о …",
+      "head": "договориться с … о …",
+      "regency": "договориться с кем? о чём?",
+      "case": "творительный падеж + предложный падеж",
+      "pt": "combinar uma viagem com o pai",
+      "chunk": "договориться с отцом о поездке",
+      "chunk_pt": "combinar uma viagem com o pai",
+      "chunk_wrong": [
+        "договориться с отца о поездке",
+        "договориться с отцом о поездку",
+        "договориться с отцу о поездке"
+      ],
+      "form_note": "Interlocutor: с кем?; assunto do acordo: о чём?. Não use o mesmo caso nos dois complementos.",
+      "trap": "Interlocutor: с кем?; assunto do acordo: о чём?. Não use o mesmo caso nos dois complementos.",
+      "example": {
+        "ru": "Мы договорились с соседями о ремонте.",
+        "pt": "Combinamos a reforma com os vizinhos.",
+        "extra": "соседям",
+        "note": "Interlocutor: с кем?; assunto do acordo: о чём?. Não use o mesmo caso nos dois complementos."
+      },
+      "cloze": {
+        "ru": "Я хочу договориться с сестрой ___.",
+        "answer": "о совместном ужине",
+        "wrong": [
+          "о совместный ужин",
+          "о совместного ужина",
+          "о совместным ужином"
+        ],
+        "pt": "Quero combinar um jantar em conjunto com minha irmã.",
+        "note": "Interlocutor: с кем?; assunto do acordo: о чём?. Não use o mesmo caso nos dois complementos."
+      },
+      "hear": {
+        "ru": "Сын договорился с матерью о встрече.",
+        "pt": "O filho combinou um encontro com a mãe.",
+        "wrong": [
+          "O filho não combinou um encontro com a mãe.",
+          "O filho combinará um encontro com a mãe.",
+          "O filho combina um encontro com a mãe."
+        ],
+        "note": "Interlocutor: с кем?; assunto do acordo: о чём?. Não use o mesmo caso nos dois complementos."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "пользоваться",
+      "tag": "пользоваться",
+      "head": "пользоваться",
+      "regency": "пользоваться чем?",
+      "case": "творительный падеж",
+      "pt": "usar o computador compartilhado",
+      "chunk": "пользоваться общим компьютером",
+      "chunk_pt": "usar o computador compartilhado",
+      "chunk_wrong": [
+        "пользоваться общего компьютера",
+        "пользоваться общему компьютеру",
+        "пользоваться общий компьютер"
+      ],
+      "form_note": "пользоваться чем? pede творительный падеж sem preposição; usar em português tem outra estrutura.",
+      "trap": "пользоваться чем? pede творительный падеж sem preposição; usar em português tem outra estrutura.",
+      "example": {
+        "ru": "Бабушка пользуется новым телефоном.",
+        "pt": "A avó usa um telefone novo.",
+        "extra": "телефону",
+        "note": "пользоваться чем? pede творительный падеж sem preposição; usar em português tem outra estrutura."
+      },
+      "cloze": {
+        "ru": "Дети могут пользоваться ___.",
+        "answer": "семейной библиотекой",
+        "wrong": [
+          "семейную библиотеку",
+          "семейной библиотеки",
+          "семейной библиотеке"
+        ],
+        "pt": "As crianças podem usar a biblioteca da família.",
+        "note": "пользоваться чем? pede творительный падеж sem preposição; usar em português tem outra estrutura."
+      },
+      "hear": {
+        "ru": "Сестра пользовалась телефоном брата.",
+        "pt": "A irmã usava o telefone do irmão.",
+        "wrong": [
+          "O irmão usava o telefone da irmã.",
+          "A irmã não usava o telefone do irmão.",
+          "A irmã usará o telefone do irmão."
+        ],
+        "note": "пользоваться чем? pede творительный падеж sem preposição; usar em português tem outra estrutura."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "начинать",
+      "tag": "начинать / начинаться",
+      "head": "начинать / начинаться",
+      "regency": "начинать что? / что начинается?",
+      "case": "винительный падеж / именительный падеж",
+      "pt": "começar uma conversa em família",
+      "chunk": "начинать семейный разговор",
+      "chunk_pt": "começar uma conversa em família",
+      "chunk_wrong": [
+        "начинать семейного разговора",
+        "начинать семейному разговору",
+        "начинать семейным разговором"
+      ],
+      "form_note": "Uma pessoa começa algo: начинать что?. O evento começa: что начинается?. Não acrescente -ся ao verbo transitivo.",
+      "trap": "Uma pessoa começa algo: начинать что?. O evento começa: что начинается?. Não acrescente -ся ao verbo transitivo.",
+      "example": {
+        "ru": "Собрание начинается в семь.",
+        "pt": "A reunião começa às sete.",
+        "extra": "собрания",
+        "note": "Uma pessoa começa algo: начинать что?. O evento começa: что начинается?. Não acrescente -ся ao verbo transitivo."
+      },
+      "cloze": {
+        "ru": "Каждый вечер отец ___ обсуждение планов.",
+        "answer": "начинает",
+        "wrong": [
+          "начинается",
+          "начинаюсь",
+          "начинаются"
+        ],
+        "pt": "Toda noite, o pai começa a discussão dos planos.",
+        "note": "Uma pessoa começa algo: начинать что?. O evento começa: что начинается?. Não acrescente -ся ao verbo transitivo."
+      },
+      "hear": {
+        "ru": "Мать начала разговор, а сын слушал.",
+        "pt": "A mãe começou a conversa, e o filho escutava.",
+        "wrong": [
+          "O filho começou a conversa, e a mãe escutava.",
+          "A mãe não começou a conversa, e o filho escutava.",
+          "A mãe começará a conversa, e o filho escutará."
+        ],
+        "note": "Uma pessoa começa algo: начинать что?. O evento começa: что начинается?. Não acrescente -ся ao verbo transitivo."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "стараться",
+      "tag": "стараться",
+      "head": "стараться",
+      "regency": "стараться + инфинитив",
+      "case": "инфинитив",
+      "pt": "esforçar-se para entender os pais",
+      "chunk": "стараться понять родителей",
+      "chunk_pt": "esforçar-se para entender os pais",
+      "chunk_wrong": [
+        "стараться понимаю родителей",
+        "стараться пойму родителей",
+        "стараться понял родителей"
+      ],
+      "form_note": "Depois de стараться vem infinitivo; não uma forma pessoal ou passada do segundo verbo.",
+      "trap": "Depois de стараться vem infinitivo; não uma forma pessoal ou passada do segundo verbo.",
+      "example": {
+        "ru": "Он старается говорить спокойно.",
+        "pt": "Ele se esforça para falar com tranquilidade.",
+        "extra": "говорит",
+        "note": "Depois de стараться vem infinitivo; não uma forma pessoal ou passada do segundo verbo."
+      },
+      "cloze": {
+        "ru": "Мы стараемся ___ чужое мнение.",
+        "answer": "уважать",
+        "wrong": [
+          "уважаем",
+          "уважает",
+          "уважал"
+        ],
+        "pt": "Nós nos esforçamos para respeitar a opinião alheia.",
+        "note": "Depois de стараться vem infinitivo; não uma forma pessoal ou passada do segundo verbo."
+      },
+      "hear": {
+        "ru": "Сын старался не спорить с отцом.",
+        "pt": "O filho se esforçava para não discutir com o pai.",
+        "wrong": [
+          "O pai se esforçava para não discutir com o filho.",
+          "O filho se esforçará para não discutir com o pai.",
+          "O filho se esforçava para discutir com o pai."
+        ],
+        "note": "Depois de стараться vem infinitivo; não uma forma pessoal ou passada do segundo verbo."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "встречаться",
+      "tag": "встречаться с",
+      "head": "встречаться с",
+      "regency": "встречаться с кем?",
+      "case": "творительный падеж",
+      "pt": "encontrar-se com os amigos da escola",
+      "chunk": "встречаться со школьными друзьями",
+      "chunk_pt": "encontrar-se com os amigos da escola",
+      "chunk_wrong": [
+        "встречаться со школьных друзей",
+        "встречаться со школьным друзьям",
+        "встречаться со школьные друзья"
+      ],
+      "form_note": "встречаться с кем? difere de встречать кого?: o primeiro descreve um encontro mútuo.",
+      "trap": "встречаться с кем? difere de встречать кого?: o primeiro descreve um encontro mútuo.",
+      "example": {
+        "ru": "По средам она встречается с коллегой.",
+        "pt": "Às quartas-feiras, ela se encontra com uma colega.",
+        "extra": "коллегу",
+        "note": "встречаться с кем? difere de встречать кого?: o primeiro descreve um encontro mútuo."
+      },
+      "cloze": {
+        "ru": "Мы часто встречаемся ___.",
+        "answer": "с двоюродной сестрой",
+        "wrong": [
+          "с двоюродную сестру",
+          "с двоюродной сестры",
+          "с двоюродной сестре"
+        ],
+        "pt": "Nós nos encontramos frequentemente com a prima.",
+        "note": "встречаться с кем? difere de встречать кого?: o primeiro descreve um encontro mútuo."
+      },
+      "hear": {
+        "ru": "Брат встречался с друзьями после работы.",
+        "pt": "O irmão se encontrava com os amigos depois do trabalho.",
+        "wrong": [
+          "O irmão se encontrará com os amigos depois do trabalho.",
+          "O irmão não se encontrava com os amigos depois do trabalho.",
+          "O irmão se encontrava com os amigos antes do trabalho."
+        ],
+        "note": "встречаться с кем? difere de встречать кого?: o primeiro descreve um encontro mútuo."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "обижаться",
+      "tag": "обижаться на",
+      "head": "обижаться на",
+      "regency": "обижаться на кого? что?",
+      "case": "винительный падеж",
+      "pt": "ficar magoado com a irmã mais nova",
+      "chunk": "обижаться на младшую сестру",
+      "chunk_pt": "ficar magoado com a irmã mais nova",
+      "chunk_wrong": [
+        "обижаться на младшей сестре",
+        "обижаться на младшей сестрой",
+        "обижаться на младшей сестры"
+      ],
+      "form_note": "обижаться на кого? что? usa на + винительный падеж; «com» não se traduz aqui por с.",
+      "trap": "обижаться на кого? что? usa на + винительный падеж; «com» não se traduz aqui por с.",
+      "example": {
+        "ru": "Он обиделся на грубый ответ.",
+        "pt": "Ele ficou magoado com a resposta grosseira.",
+        "extra": "ответом",
+        "note": "обижаться на кого? что? usa на + винительный падеж; «com» não se traduz aqui por с."
+      },
+      "cloze": {
+        "ru": "Не надо обижаться ___.",
+        "answer": "на честную критику",
+        "wrong": [
+          "на честной критике",
+          "на честной критикой",
+          "на честной критики"
+        ],
+        "pt": "Não é preciso ficar magoado com uma crítica honesta.",
+        "note": "обижаться на кого? что? usa на + винительный падеж; «com» não se traduz aqui por с."
+      },
+      "hear": {
+        "ru": "Дочь обиделась на отца из-за шутки.",
+        "pt": "A filha ficou magoada com o pai por causa da piada.",
+        "wrong": [
+          "O pai ficou magoado com a filha por causa da piada.",
+          "A filha não ficou magoada com o pai por causa da piada.",
+          "A filha ficará magoada com o pai por causa da piada."
+        ],
+        "note": "обижаться на кого? что? usa на + винительный падеж; «com» não se traduz aqui por с."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "относиться",
+      "tag": "относиться к",
+      "head": "относиться к",
+      "regency": "относиться к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "levar as promessas a sério",
+      "chunk": "серьёзно относиться к обещаниям",
+      "chunk_pt": "levar as promessas a sério",
+      "chunk_wrong": [
+        "серьёзно относиться к обещаний",
+        "серьёзно относиться к обещаниями",
+        "серьёзно относиться на обещания"
+      ],
+      "form_note": "относиться к чему? continua com дательный падеж, mesmo quando significa «levar algo a sério».",
+      "trap": "относиться к чему? continua com дательный падеж, mesmo quando significa «levar algo a sério».",
+      "example": {
+        "ru": "Она внимательно относится к советам дедушки.",
+        "pt": "Ela trata os conselhos do avô com atenção.",
+        "extra": "советы",
+        "note": "относиться к чему? continua com дательный падеж, mesmo quando significa «levar algo a sério»."
+      },
+      "cloze": {
+        "ru": "Мы должны ответственно относиться ___.",
+        "answer": "к домашним обязанностям",
+        "wrong": [
+          "к домашние обязанности",
+          "к домашних обязанностей",
+          "к домашними обязанностями"
+        ],
+        "pt": "Devemos ter uma atitude responsável com as obrigações domésticas.",
+        "note": "относиться к чему? continua com дательный падеж, mesmo quando significa «levar algo a sério»."
+      },
+      "hear": {
+        "ru": "Родители серьёзно относились к планам сына.",
+        "pt": "Os pais levavam a sério os planos do filho.",
+        "wrong": [
+          "O filho levava a sério os planos dos pais.",
+          "Os pais não levavam a sério os planos do filho.",
+          "Os pais levarão a sério os planos do filho."
+        ],
+        "note": "относиться к чему? continua com дательный падеж, mesmo quando significa «levar algo a sério»."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "O que vão mostrar aos pais?",
+      "options": [
+        "Um horário feito para a semana.",
+        "Um pedido de compra do computador.",
+        "Uma lista de amigos da escola.",
+        "Um bilhete para cancelar a viagem."
+      ],
+      "answer": "Um horário feito para a semana.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "Por que a irmã deixou o computador ligado?",
+      "options": [
+        "Porque esqueceu de desligá-lo.",
+        "Porque queria impedir a viagem.",
+        "Porque esperava a visita do pai.",
+        "Porque havia uma reunião da escola."
+      ],
+      "answer": "Porque esqueceu de desligá-lo.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "от старшего брата",
+      "wrong": [
+        "от старшему брату",
+        "от старшим братом",
+        "от старший брат"
+      ],
+      "note": "A referência da comparação vem com от + родительный падеж, não с."
+    },
+    {
+      "line": 1,
+      "gap": "с отцом о поездке",
+      "wrong": [
+        "с отца о поездке",
+        "с отцом о поездку",
+        "с отцу о поездке"
+      ],
+      "note": "Interlocutor: с кем?; assunto do acordo: о чём?. Não use o mesmo caso nos dois complementos."
+    },
+    {
+      "line": 2,
+      "gap": "общим компьютером",
+      "wrong": [
+        "общего компьютера",
+        "общему компьютеру",
+        "общий компьютер"
+      ],
+      "note": "пользоваться чем? pede творительный падеж sem preposição; usar em português tem outra estrutura."
+    },
+    {
+      "line": 6,
+      "gap": "на младшую сестру",
+      "wrong": [
+        "на младшей сестре",
+        "на младшей сестрой",
+        "на младшая сестра"
+      ],
+      "note": "обижаться на кого? что? usa на + винительный падеж; «com» não se traduz aqui por с."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "отличаться от старшего брата",
+        "right": "ser diferente do irmão mais velho"
+      },
+      {
+        "left": "договориться с отцом о поездке",
+        "right": "combinar uma viagem com o pai"
+      },
+      {
+        "left": "пользоваться общим компьютером",
+        "right": "usar o computador compartilhado"
+      },
+      {
+        "left": "начинать семейный разговор",
+        "right": "começar uma conversa em família"
+      },
+      {
+        "left": "стараться понять родителей",
+        "right": "esforçar-se para entender os pais"
+      },
+      {
+        "left": "встречаться со школьными друзьями",
+        "right": "encontrar-se com os amigos da escola"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Катя",
+      "you": "Денис",
+      "ru": "Можно ли быть не таким, как старший брат?",
+      "prompt": "Responda usando a referência da comparação.",
+      "answer": "Можно отличаться от старшего брата.",
+      "wrong": [
+        "Можно отличаться от старшему брату.",
+        "Можно отличаться от старшим братом.",
+        "Можно отличаться от старший брат."
+      ],
+      "explanation": "A referência da comparação vem com от + родительный падеж, não с."
+    },
+    {
+      "speaker": "Денис",
+      "you": "Катя",
+      "ru": "Как лучше обсудить поездку с папой?",
+      "prompt": "Sugira um acordo com pessoa e assunto.",
+      "answer": "Можно договориться с отцом о поездке.",
+      "wrong": [
+        "Можно договориться с отца о поездке.",
+        "Можно договориться с отцом о поездку.",
+        "Можно договориться с отцу о поездке."
+      ],
+      "explanation": "Interlocutor: с кем?; assunto do acordo: о чём?. Não use o mesmo caso nos dois complementos."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva uma proposta para dividir responsabilidades em casa. Descreva uma diferença entre pessoas e um acordo possível.",
+    "use": [
+      "отличаться от",
+      "договориться с … о …",
+      "пользоваться",
+      "начинать / начинаться",
+      "стараться"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: отличаться от кого? чего?; договориться с кем? о чём?; пользоваться чем?; начинать что? / что начинается?; стараться + инфинитив; встречаться с кем?; обижаться на кого? что?; относиться к кому? чему?."
+  }
+}

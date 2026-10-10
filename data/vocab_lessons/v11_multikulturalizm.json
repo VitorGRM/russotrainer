@@ -1,0 +1,580 @@
+{
+  "id": "v11",
+  "unit_id": "u11_multikulturalizm",
+  "order": 11,
+  "title": "Фестиваль без стереотипов",
+  "theme": "Alina e Murad organizam um festival de culturas na universidade",
+  "description": "Alina e Murad organizam um festival de culturas na universidade. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Алина": "f",
+    "Мурад": "m"
+  },
+  "dialogue": {
+    "title": "Фестиваль без стереотипов",
+    "setting": "Alina e Murad organizam um festival de culturas na universidade",
+    "lines": [
+      {
+        "speaker": "Алина",
+        "ru": "Для фестиваля важно проявлять уважение к гостям, а не только украшать зал.",
+        "pt": "Para o festival, é importante demonstrar respeito pelos convidados, e não só decorar o salão."
+      },
+      {
+        "speaker": "Мурад",
+        "ru": "Согласен. Нужно доброжелательно относиться к соседям по общежитию.",
+        "pt": "Concordo. Precisamos tratar os vizinhos do alojamento com cordialidade."
+      },
+      {
+        "speaker": "Алина",
+        "ru": "Я горжусь родным языком и хочу прочитать стихотворение.",
+        "pt": "Tenho orgulho da minha língua materna e quero ler um poema."
+      },
+      {
+        "speaker": "Мурад",
+        "ru": "А моя семья старается придерживаться семейных традиций. Мы приготовим ужин.",
+        "pt": "Já minha família procura seguir as tradições familiares. Vamos preparar um jantar."
+      },
+      {
+        "speaker": "Алина",
+        "ru": "Гостям предложим соблюдать местные обычаи, но сначала всё объясним.",
+        "pt": "Vamos propor que os convidados respeitem os costumes locais, mas primeiro explicaremos tudo."
+      },
+      {
+        "speaker": "Мурад",
+        "ru": "Я принадлежу к этой общине, однако не представляю каждого её участника.",
+        "pt": "Pertenço a esta comunidade, mas não represento todos os seus membros."
+      },
+      {
+        "speaker": "Алина",
+        "ru": "Разные культуры могут мирно сосуществовать с соседями и влиять друг на друга.",
+        "pt": "Culturas diferentes podem conviver pacificamente com os vizinhos e influenciar umas às outras."
+      },
+      {
+        "speaker": "Мурад",
+        "ru": "Да, никто не должен подвергаться несправедливой критике из-за происхождения.",
+        "pt": "Sim, ninguém deve ser alvo de críticas injustas por causa da origem."
+      },
+      {
+        "speaker": "Алина",
+        "ru": "Тогда после стихотворения устроим обсуждение, а ужин оставим на вечер.",
+        "pt": "Então faremos uma discussão depois do poema e deixaremos o jantar para a noite."
+      },
+      {
+        "speaker": "Мурад",
+        "ru": "Хорошо. Вход будет свободным, а вопросы можно задать лично.",
+        "pt": "Ótimo. A entrada será livre e as perguntas poderão ser feitas pessoalmente."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual é o objetivo principal dos organizadores?",
+      "options": [
+        "Criar um encontro respeitoso entre culturas.",
+        "Escolher uma única cultura para representar.",
+        "Vender ingressos para financiar o alojamento.",
+        "Cancelar o debate e manter apenas o jantar."
+      ],
+      "answer": "Criar um encontro respeitoso entre culturas.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "уважение",
+      "tag": "уважение к",
+      "head": "уважение к",
+      "regency": "уважение к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "demonstrar respeito pelos convidados",
+      "chunk": "проявлять уважение к гостям",
+      "chunk_pt": "demonstrar respeito pelos convidados",
+      "chunk_wrong": [
+        "проявлять уважение к гостей",
+        "проявлять уважение к гостями",
+        "проявлять уважение на гостей"
+      ],
+      "form_note": "Em português, respeito «por»; em russo, уважение к кому? чему?, com дательный падеж.",
+      "trap": "Em português, respeito «por»; em russo, уважение к кому? чему?, com дательный падеж.",
+      "example": {
+        "ru": "Дети проявляют уважение к учителю.",
+        "pt": "As crianças demonstram respeito pelo professor.",
+        "extra": "учителя",
+        "note": "Em português, respeito «por»; em russo, уважение к кому? чему?, com дательный падеж."
+      },
+      "cloze": {
+        "ru": "Важно проявлять уважение ___.",
+        "answer": "к чужой культуре",
+        "wrong": [
+          "к чужую культуру",
+          "к чужой культурой",
+          "на чужую культуру"
+        ],
+        "pt": "É importante demonstrar respeito pela cultura alheia.",
+        "note": "Em português, respeito «por»; em russo, уважение к кому? чему?, com дательный падеж."
+      },
+      "hear": {
+        "ru": "Студенты проявили уважение к переводчице.",
+        "pt": "Os estudantes demonstraram respeito pela tradutora.",
+        "wrong": [
+          "A tradutora demonstrou respeito pelos estudantes.",
+          "Os estudantes não demonstraram respeito pela tradutora.",
+          "Os estudantes demonstrarão respeito pela tradutora."
+        ],
+        "note": "Em português, respeito «por»; em russo, уважение к кому? чему?, com дательный падеж."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "относиться",
+      "tag": "относиться к",
+      "head": "относиться к",
+      "regency": "относиться к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "tratar os vizinhos com cordialidade",
+      "chunk": "доброжелательно относиться к соседям",
+      "chunk_pt": "tratar os vizinhos com cordialidade",
+      "chunk_wrong": [
+        "доброжелательно относиться к соседей",
+        "доброжелательно относиться с соседями",
+        "доброжелательно относиться к соседями"
+      ],
+      "form_note": "A pessoa ou o assunto recebe к + дательный падеж; não copie o objeto direto de «tratar».",
+      "trap": "A pessoa ou o assunto recebe к + дательный падеж; não copie o objeto direto de «tratar».",
+      "example": {
+        "ru": "Она спокойно относится к критике.",
+        "pt": "Ela lida com a crítica com tranquilidade.",
+        "extra": "критику",
+        "note": "A pessoa ou o assunto recebe к + дательный падеж; não copie o objeto direto de «tratar»."
+      },
+      "cloze": {
+        "ru": "Он старается терпимо относиться ___.",
+        "answer": "к чужим обычаям",
+        "wrong": [
+          "к чужие обычаи",
+          "к чужими обычаями",
+          "с чужими обычаями"
+        ],
+        "pt": "Ele procura ter uma atitude tolerante com os costumes alheios.",
+        "note": "A pessoa ou o assunto recebe к + дательный падеж; não copie o objeto direto de «tratar»."
+      },
+      "hear": {
+        "ru": "Соседи хорошо относились к нашей семье.",
+        "pt": "Os vizinhos tratavam bem nossa família.",
+        "wrong": [
+          "Nossa família tratava bem os vizinhos.",
+          "Os vizinhos não tratavam bem nossa família.",
+          "Os vizinhos tratarão bem nossa família."
+        ],
+        "note": "A pessoa ou o assunto recebe к + дательный падеж; não copie o objeto direto de «tratar»."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "гордиться",
+      "tag": "гордиться",
+      "head": "гордиться",
+      "regency": "гордиться кем? чем?",
+      "case": "творительный падеж",
+      "pt": "ter orgulho da língua materna",
+      "chunk": "гордиться родным языком",
+      "chunk_pt": "ter orgulho da língua materna",
+      "chunk_wrong": [
+        "гордиться родного языка",
+        "гордиться родному языку",
+        "гордиться о родном языке"
+      ],
+      "form_note": "гордиться кем? чем? usa творительный падеж sem preposição; «de» não vira от.",
+      "trap": "гордиться кем? чем? usa творительный падеж sem preposição; «de» não vira от.",
+      "example": {
+        "ru": "Сестра гордится своей работой.",
+        "pt": "A irmã tem orgulho do próprio trabalho.",
+        "extra": "работу",
+        "note": "гордиться кем? чем? usa творительный падеж sem preposição; «de» não vira от."
+      },
+      "cloze": {
+        "ru": "Мы можем гордиться ___.",
+        "answer": "нашими волонтёрами",
+        "wrong": [
+          "наших волонтёров",
+          "нашим волонтёрам",
+          "о наших волонтёрах"
+        ],
+        "pt": "Podemos ter orgulho dos nossos voluntários.",
+        "note": "гордиться кем? чем? usa творительный падеж sem preposição; «de» não vira от."
+      },
+      "hear": {
+        "ru": "Отец гордился успехами дочери.",
+        "pt": "O pai tinha orgulho dos sucessos da filha.",
+        "wrong": [
+          "A filha tinha orgulho dos sucessos do pai.",
+          "O pai não tinha orgulho dos sucessos da filha.",
+          "O pai terá orgulho dos sucessos da filha."
+        ],
+        "note": "гордиться кем? чем? usa творительный падеж sem preposição; «de» não vira от."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "придерживаться",
+      "tag": "придерживаться",
+      "head": "придерживаться",
+      "regency": "придерживаться чего?",
+      "case": "родительный падеж",
+      "pt": "seguir as tradições familiares",
+      "chunk": "придерживаться семейных традиций",
+      "chunk_pt": "seguir as tradições familiares",
+      "chunk_wrong": [
+        "придерживаться семейным традициям",
+        "придерживаться семейными традициями",
+        "придерживаться семейные традиции"
+      ],
+      "form_note": "придерживаться чего? exige родительный падеж; o -ся não determina sozinho o caso.",
+      "trap": "придерживаться чего? exige родительный падеж; o -ся não determina sozinho o caso.",
+      "example": {
+        "ru": "Редактор придерживается строгих правил.",
+        "pt": "O editor segue regras rigorosas.",
+        "extra": "правилам",
+        "note": "придерживаться чего? exige родительный падеж; o -ся não determina sozinho o caso."
+      },
+      "cloze": {
+        "ru": "Мы предпочитаем придерживаться ___.",
+        "answer": "старого расписания",
+        "wrong": [
+          "старому расписанию",
+          "старым расписанием",
+          "старое расписание"
+        ],
+        "pt": "Preferimos seguir o horário antigo.",
+        "note": "придерживаться чего? exige родительный падеж; o -ся não determina sozinho o caso."
+      },
+      "hear": {
+        "ru": "Бабушка придерживалась семейных традиций.",
+        "pt": "A avó seguia as tradições familiares.",
+        "wrong": [
+          "A avó não seguia as tradições familiares.",
+          "A avó seguirá as tradições familiares.",
+          "A família seguia as tradições da avó."
+        ],
+        "note": "придерживаться чего? exige родительный падеж; o -ся não determina sozinho o caso."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "соблюдать",
+      "tag": "соблюдать",
+      "head": "соблюдать",
+      "regency": "соблюдать что?",
+      "case": "винительный падеж",
+      "pt": "respeitar os costumes locais",
+      "chunk": "соблюдать местные обычаи",
+      "chunk_pt": "respeitar os costumes locais",
+      "chunk_wrong": [
+        "соблюдать местных обычаев",
+        "соблюдать местным обычаям",
+        "соблюдать местными обычаями"
+      ],
+      "form_note": "соблюдать что? leva objeto direto; não use o caso de придерживаться чего?.",
+      "trap": "соблюдать что? leva objeto direto; não use o caso de придерживаться чего?.",
+      "example": {
+        "ru": "Посетители соблюдают тишину.",
+        "pt": "Os visitantes respeitam o silêncio.",
+        "extra": "тишиной",
+        "note": "соблюдать что? leva objeto direto; não use o caso de придерживаться чего?."
+      },
+      "cloze": {
+        "ru": "Во время церемонии надо соблюдать ___.",
+        "answer": "установленные правила",
+        "wrong": [
+          "установленным правилам",
+          "установленных правил",
+          "установленными правилами"
+        ],
+        "pt": "Durante a cerimônia, é preciso respeitar as regras estabelecidas.",
+        "note": "соблюдать что? leva objeto direto; não use o caso de придерживаться чего?."
+      },
+      "hear": {
+        "ru": "Гости соблюдали правила хозяев.",
+        "pt": "Os convidados respeitavam as regras dos anfitriões.",
+        "wrong": [
+          "Os anfitriões respeitavam as regras dos convidados.",
+          "Os convidados não respeitavam as regras dos anfitriões.",
+          "Os convidados respeitarão as regras dos anfitriões."
+        ],
+        "note": "соблюдать что? leva objeto direto; não use o caso de придерживаться чего?."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "принадлежать",
+      "tag": "принадлежать к",
+      "head": "принадлежать к",
+      "regency": "принадлежать к чему? / принадлежать кому?",
+      "case": "дательный падеж",
+      "pt": "pertencer a esta comunidade",
+      "chunk": "принадлежать к этой общине",
+      "chunk_pt": "pertencer a esta comunidade",
+      "chunk_wrong": [
+        "принадлежать в эту общину",
+        "принадлежать к этой общиной",
+        "принадлежать к эту общину"
+      ],
+      "form_note": "Filiação: принадлежать к чему?. Posse: принадлежать кому? sem к, como «o manuscrito pertence ao museu».",
+      "trap": "Filiação: принадлежать к чему?. Posse: принадлежать кому? sem к, como «o manuscrito pertence ao museu».",
+      "example": {
+        "ru": "Этот поэт принадлежит к новому поколению.",
+        "pt": "Este poeta pertence à nova geração.",
+        "extra": "поколение",
+        "note": "Filiação: принадлежать к чему?. Posse: принадлежать кому? sem к, como «o manuscrito pertence ao museu»."
+      },
+      "cloze": {
+        "ru": "Семья может принадлежать ___.",
+        "answer": "к другой религиозной группе",
+        "wrong": [
+          "к другую религиозную группу",
+          "к другой религиозной группой",
+          "в другую религиозную группу"
+        ],
+        "pt": "A família pode pertencer a outro grupo religioso.",
+        "note": "Filiação: принадлежать к чему?. Posse: принадлежать кому? sem к, como «o manuscrito pertence ao museu»."
+      },
+      "hear": {
+        "ru": "Рукопись принадлежала нашему музею.",
+        "pt": "O manuscrito pertencia ao nosso museu.",
+        "wrong": [
+          "Nosso museu pertencia ao manuscrito.",
+          "O manuscrito não pertencia ao nosso museu.",
+          "O manuscrito pertencerá ao nosso museu."
+        ],
+        "note": "Filiação: принадлежать к чему?. Posse: принадлежать кому? sem к, como «o manuscrito pertence ao museu»."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "сосуществовать",
+      "tag": "сосуществовать с",
+      "head": "сосуществовать с",
+      "regency": "сосуществовать с кем? чем?",
+      "case": "творительный падеж",
+      "pt": "conviver pacificamente com os vizinhos",
+      "chunk": "мирно сосуществовать с соседями",
+      "chunk_pt": "conviver pacificamente com os vizinhos",
+      "chunk_wrong": [
+        "мирно сосуществовать с соседей",
+        "мирно сосуществовать с соседям",
+        "мирно сосуществовать к соседям"
+      ],
+      "form_note": "Companhia usa с + творительный падеж; сосуществовать с чем? não recebe к.",
+      "trap": "Companhia usa с + творительный падеж; сосуществовать с чем? não recebe к.",
+      "example": {
+        "ru": "Новые идеи сосуществуют со старыми привычками.",
+        "pt": "Ideias novas coexistem com hábitos antigos.",
+        "extra": "привычкам",
+        "note": "Companhia usa с + творительный падеж; сосуществовать с чем? não recebe к."
+      },
+      "cloze": {
+        "ru": "Разные общины могут сосуществовать ___.",
+        "answer": "с местным населением",
+        "wrong": [
+          "с местного населения",
+          "с местному населению",
+          "к местному населению"
+        ],
+        "pt": "Comunidades diferentes podem coexistir com a população local.",
+        "note": "Companhia usa с + творительный падеж; сосуществовать с чем? não recebe к."
+      },
+      "hear": {
+        "ru": "Новые обычаи сосуществовали со старыми традициями.",
+        "pt": "Os costumes novos coexistiam com as tradições antigas.",
+        "wrong": [
+          "Os costumes novos não coexistiam com as tradições antigas.",
+          "Os costumes novos coexistirão com as tradições antigas.",
+          "As tradições novas coexistiam com os costumes antigos."
+        ],
+        "note": "Companhia usa с + творительный падеж; сосуществовать с чем? não recebe к."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "подвергаться",
+      "tag": "подвергаться",
+      "head": "подвергаться",
+      "regency": "подвергаться чему?",
+      "case": "дательный падеж",
+      "pt": "ser alvo de críticas injustas",
+      "chunk": "подвергаться несправедливой критике",
+      "chunk_pt": "ser alvo de críticas injustas",
+      "chunk_wrong": [
+        "подвергаться несправедливую критику",
+        "подвергаться несправедливой критики",
+        "подвергаться несправедливой критикой"
+      ],
+      "form_note": "подвергаться чему? usa дательный падеж sem preposição; é quem sofre a ação, não quem a executa.",
+      "trap": "подвергаться чему? usa дательный падеж sem preposição; é quem sofre a ação, não quem a executa.",
+      "example": {
+        "ru": "Предложение подверглось резкой критике.",
+        "pt": "A proposta foi alvo de críticas duras.",
+        "extra": "критику",
+        "note": "подвергаться чему? usa дательный падеж sem preposição; é quem sofre a ação, não quem a executa."
+      },
+      "cloze": {
+        "ru": "Никто не должен подвергаться ___.",
+        "answer": "этой опасности",
+        "wrong": [
+          "эту опасность",
+          "этой опасностью",
+          "этой опасность"
+        ],
+        "pt": "Ninguém deve ficar exposto a esse perigo.",
+        "note": "подвергаться чему? usa дательный падеж sem preposição; é quem sofre a ação, não quem a executa."
+      },
+      "hear": {
+        "ru": "Доклад профессора подвергся критике студентов.",
+        "pt": "A apresentação do professor foi criticada pelos estudantes.",
+        "wrong": [
+          "A apresentação dos estudantes foi criticada pelo professor.",
+          "A apresentação do professor não foi criticada pelos estudantes.",
+          "A apresentação do professor será criticada pelos estudantes."
+        ],
+        "note": "подвергаться чему? usa дательный падеж sem preposição; é quem sofre a ação, não quem a executa."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "O que Alina quer apresentar?",
+      "options": [
+        "Um poema em sua língua materna.",
+        "Um filme sobre a vida no alojamento.",
+        "Uma receita de sua família no palco.",
+        "Uma entrevista com os novos vizinhos."
+      ],
+      "answer": "Um poema em sua língua materna.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "Quando ocorrerá o jantar?",
+      "options": [
+        "À noite, depois da discussão.",
+        "De manhã, antes da decoração.",
+        "Durante a leitura do poema.",
+        "À tarde, antes da apresentação."
+      ],
+      "answer": "À noite, depois da discussão.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "к гостям",
+      "wrong": [
+        "к гостей",
+        "к гостями",
+        "на гостей"
+      ],
+      "note": "Em português, respeito «por»; em russo, уважение к кому? чему?, com дательный падеж."
+    },
+    {
+      "line": 1,
+      "gap": "к соседям",
+      "wrong": [
+        "к соседей",
+        "к соседями",
+        "с соседями"
+      ],
+      "note": "A pessoa ou o assunto recebe к + дательный падеж; não copie o objeto direto de «tratar»."
+    },
+    {
+      "line": 2,
+      "gap": "родным языком",
+      "wrong": [
+        "родного языка",
+        "родному языку",
+        "о родном языке"
+      ],
+      "note": "гордиться кем? чем? usa творительный падеж sem preposição; «de» não vira от."
+    },
+    {
+      "line": 7,
+      "gap": "несправедливой критике",
+      "wrong": [
+        "несправедливую критику",
+        "несправедливой критики",
+        "несправедливой критикой"
+      ],
+      "note": "подвергаться чему? usa дательный падеж sem preposição; é quem sofre a ação, não quem a executa."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "проявлять уважение к гостям",
+        "right": "demonstrar respeito pelos convidados"
+      },
+      {
+        "left": "доброжелательно относиться к соседям",
+        "right": "tratar os vizinhos com cordialidade"
+      },
+      {
+        "left": "гордиться родным языком",
+        "right": "ter orgulho da língua materna"
+      },
+      {
+        "left": "придерживаться семейных традиций",
+        "right": "seguir as tradições familiares"
+      },
+      {
+        "left": "соблюдать местные обычаи",
+        "right": "respeitar os costumes locais"
+      },
+      {
+        "left": "принадлежать к этой общине",
+        "right": "pertencer a esta comunidade"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Алина",
+      "you": "Мурад",
+      "ru": "Как нам показать, что гости для нас важны?",
+      "prompt": "Escolha a ação que demonstra acolhimento.",
+      "answer": "Нужно проявлять уважение к гостям.",
+      "wrong": [
+        "Нужно проявлять уважение к гостей.",
+        "Нужно проявлять уважение к гостями.",
+        "Нужно проявлять уважение на гостей."
+      ],
+      "explanation": "Em português, respeito «por»; em russo, уважение к кому? чему?, com дательный падеж."
+    },
+    {
+      "speaker": "Мурад",
+      "you": "Алина",
+      "ru": "Как вести себя с соседями по общежитию?",
+      "prompt": "Responda sobre a atitude com os vizinhos.",
+      "answer": "Нужно доброжелательно относиться к соседям.",
+      "wrong": [
+        "Нужно доброжелательно относиться к соседей.",
+        "Нужно доброжелательно относиться с соседями.",
+        "Нужно доброжелательно относиться к соседями."
+      ],
+      "explanation": "A pessoa ou o assunto recebe к + дательный падеж; não copie o objeto direto de «tratar»."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva uma proposta para um festival universitário. Explique como acolher os convidados e evitar estereótipos.",
+    "use": [
+      "уважение к",
+      "относиться к",
+      "гордиться",
+      "придерживаться",
+      "соблюдать"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: уважение к кому? чему?; относиться к кому? чему?; гордиться кем? чем?; придерживаться чего?; соблюдать что?; принадлежать к чему? / принадлежать кому?; сосуществовать с кем? чем?; подвергаться чему?."
+  }
+}

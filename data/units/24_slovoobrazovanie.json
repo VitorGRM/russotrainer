@@ -1,0 +1,774 @@
+{
+  "id": "u24_slovoobrazovanie",
+  "order": 24,
+  "title": "Formação de palavras: ler o que você nunca viu",
+  "description": "A unidade que multiplica o vocabulário: sufixos, prefixos e raízes que permitem deduzir o sentido de milhares de palavras sem dicionário.",
+  "estimated_minutes": 34,
+  "objectives": [
+    "identificar a raiz comum numa família de palavras",
+    "prever a classe e o sentido de uma palavra pelo sufixo",
+    "interpretar prefixos negativos, de intensidade e de relação"
+  ],
+  "source_note": "Kagan/Kudyma/Miller: «Однокоренные слова» e «Образование существительных / прилагательных / наречий» (Главы 1-10) · Кузьмина, словообразовательные модели · Лексический минимум ТРКИ-II",
+  "grammar": [
+    {
+      "title": "Famílias de palavras: uma raiz, dez palavras",
+      "paragraphs": [
+        "Cada capítulo do livro de Kagan abre com однокоренные слова — palavras da mesma raiz — e isso não é enfeite: é a estratégia central de ampliação de vocabulário em nível B2. Da raiz -уч-/-ук- vêm учить, учиться, учебник, ученик, учитель, учёба, учёный, обучение, изучать, наука, научный. Onze palavras a partir de uma raiz. Se você reconhece a raiz e sabe o que cada sufixo faz, deduz o sentido de todas.",
+        "Da raiz -работ- vêm работать, работа, работник, работодатель, безработица, безработный, обработка, разработка, переработка. Note que работодатель é literalmente «quem dá trabalho» — composto de работа + давать. Da raiz -вод-/-вед- vêm водить, руководить, руководитель, руководство, проводить, производить, производство, производитель, вводить, введение.",
+        "Ao encontrar uma palavra desconhecida num texto, faça três perguntas antes de abrir o dicionário: (1) qual é a raiz e que palavra conhecida a contém? (2) que prefixo há, e o que ele faz? (3) que sufixo há, e que classe/sentido ele indica? Na maioria dos casos as três respostas juntas dão um significado próximo o bastante para continuar lendo. Essa habilidade é justamente o que o exame ТРКИ-II mede na parte de leitura: ninguém espera que você conheça todas as palavras."
+      ],
+      "audio_script": "Словообразование, a formação de palavras. E esta é, na minha opinião, a unidade que mais multiplica o seu russo, porque ela não ensina palavras: ensina a deduzir palavras que você nunca viu. Cada capítulo do livro de Kagan abre com однокоренные слова, palavras da mesma raiz. E isso não é enfeite pedagógico: é a estratégia central de ampliação de vocabulário no nível bê dois. Vamos ver como funciona. Da raiz уч, ou ук, vêm: Учить, ensinar. Учиться, estudar. Учебник, livro didático. Ученик, aluno. Учитель, professor. Учёба, os estudos. Учёный, cientista. Обучение, o ensino. Изучать, estudar a fundo. Наука, ciência. Научный, científico. Onze palavras a partir de uma raiz só. Se você reconhece a raiz e sabe o que cada sufixo faz, deduz o sentido de todas elas. Outro exemplo, da raiz работ: Работать, работа, работник, работодатель, безработица, безработный, обработка, разработка, переработка. E repare em работодатель: ela é literalmente «quem dá trabalho», работа mais давать. Empregador. Mais um, da raiz вод, que alterna com вед: Водить, руководить, руководитель, руководство, проводить, производить, производство, производитель, вводить, введение. Agora a parte prática, que é o que você deve fazer ao encontrar uma palavra desconhecida num texto. Antes de abrir o dicionário, faça três perguntas. Pergunta um: qual é a raiz, e que palavra conhecida contém essa raiz? Pergunta dois: que prefixo há aqui, e o que ele faz? Pergunta três: que sufixo há, e que classe gramatical e que sentido ele indica? Na maioria das vezes, as três respostas juntas dão um significado próximo o bastante para continuar lendo. E vale dizer com clareza: essa habilidade é exatamente o que a parte de leitura do exame Térki dois mede. Ninguém espera que você conheça todas as palavras de um texto autêntico. Espera-se que você consiga deduzir as que não conhece.",
+      "examples": [
+        {
+          "ru": "учить · учиться · учебник · ученик · учитель · учёба · обучение",
+          "pt": "ensinar · estudar · livro didático · aluno · professor · os estudos · o ensino",
+          "note": "Uma raiz (-уч-), sete palavras."
+        },
+        {
+          "ru": "работать · работник · работодатель · безработица",
+          "pt": "trabalhar · trabalhador · empregador · desemprego",
+          "note": "работодатель = работа + давать."
+        },
+        {
+          "ru": "производить · производство · производитель · производительность",
+          "pt": "produzir · produção · produtor · produtividade",
+          "note": "Raiz -вод- com prefixo про-."
+        },
+        {
+          "ru": "Разработка новых технологий требует больших вложений.",
+          "pt": "O desenvolvimento de novas tecnologias exige grandes investimentos.",
+          "note": "разработка: раз- + работ- + -ка."
+        }
+      ],
+      "pitfalls": [
+        "Decorar palavras isoladamente em vez de por família: учить, учиться, учёба e обучение se sustentam mutuamente.",
+        "Abrir o dicionário antes de tentar decompor: raiz + prefixo + sufixo resolve a maioria dos casos."
+      ]
+    },
+    {
+      "title": "Sufixos: o sufixo diz a classe e o sentido",
+      "paragraphs": [
+        "Substantivos abstratos de AÇÃO ou PROCESSO usam -ение/-ание/-тие: развивать → развитие, решать → решение, образовать → образование, понимать → понимание. São quase todos neutros e são a espinha dorsal do vocabulário acadêmico. Substantivos de QUALIDADE usam -ость/-есть: возможный → возможность, ответственный → ответственность, скорый → скорость. Todos femininos, todos abstratos.",
+        "Substantivos de AGENTE (quem faz) usam -тель (учитель, потребитель, руководитель, читатель), -ник/-ик (работник, ученик, участник), -щик/-чик (переводчик, лётчик, программист usa -ист), -ец (продавец, беженец, иностранец). Substantivos de ATIVIDADE ou CONJUNTO usam -ство (производство, руководство, государство, большинство) e -ция/-изация para termos internacionais (организация, глобализация, приватизация).",
+        "Adjetivos: -н- é o mais comum e geral (интересный, современный); -ск-/-еск- indica relação com um lugar, grupo ou disciplina (городской, русский, экономический, политический); -ов-/-ев- indica material ou domínio (деловой, денежный); -лив- indica tendência (счастливый, терпеливый); -чив- indica capacidade (устойчивый, задумчивый). Advérbios, como visto na Unidade 14, vêm do adjetivo com -о, ou com по-…-и e по-…-ому."
+      ],
+      "audio_script": "Segunda parte: os sufixos. E a ideia central é simples — o sufixo diz duas coisas ao mesmo tempo: a classe gramatical da palavra, e o tipo de significado que ela carrega. Vamos por grupos. Grupo um: substantivos abstratos de AÇÃO ou PROCESSO. Sufixos ение, ание e тие. Развивать vira развитие, desenvolvimento. Решать vira решение, decisão ou solução. Образовать vira образование, educação. Понимать vira понимание, compreensão. São quase todos neutros, e formam a espinha dorsal do vocabulário acadêmico russo. Se você vê ение no fim de uma palavra, já sabe: é neutro, é abstrato, e nomeia um processo. Grupo dois: substantivos de QUALIDADE. Sufixo ость, às vezes есть. Возможный vira возможность, possibilidade. Ответственный vira ответственность, responsabilidade. Скорый vira скорость, velocidade. Todos femininos, todos abstratos, todos vindos de adjetivos. Grupo três: substantivos de AGENTE, ou seja, quem faz a ação. Aqui há vários sufixos. Тель: учитель, потребитель, руководитель, читатель. Ник e ик: работник, ученик, участник. Щик e чик: переводчик, лётчик. Ец: продавец, беженец, иностранец. Grupo quatro: atividade ou conjunto. Sufixo ство. Производство, руководство, государство, большинство. E ция ou изация, para os termos internacionais, que são fáceis de reconhecer: организация, глобализация, приватизация. Agora os adjetivos. О sufixo н é o mais comum e mais geral: интересный, современный. Ск ou еск indica relação com um lugar, um grupo ou uma disciplina: городской, русский, экономический, политический. Ов e ев indicam material ou domínio: деловой, денежный. Лив indica tendência: счастливый, терпеливый. Чив indica capacidade ou propensão: устойчивый, задумчивый. E os advérbios, como você viu na unidade catorze, vêm do adjetivo com о, ou então com по mais и, e по mais ому.",
+      "examples": [
+        {
+          "ru": "решать → решение · развивать → развитие · понимать → понимание",
+          "pt": "decidir → decisão · desenvolver → desenvolvimento · entender → compreensão",
+          "note": "-ение/-ание: processo, neutro."
+        },
+        {
+          "ru": "возможный → возможность · ответственный → ответственность",
+          "pt": "possível → possibilidade · responsável → responsabilidade",
+          "note": "-ость: qualidade, feminino."
+        },
+        {
+          "ru": "потреблять → потребитель · переводить → переводчик · беженец",
+          "pt": "consumir → consumidor · traduzir → tradutor · refugiado",
+          "note": "Três sufixos de agente diferentes."
+        },
+        {
+          "ru": "экономический кризис × экономный человек",
+          "pt": "crise econômica × pessoa econômica",
+          "note": "-ическ- = relativo à disciplina; -н- = qualidade pessoal. Sufixos diferentes, sentidos diferentes."
+        }
+      ],
+      "pitfalls": [
+        "Confundir экономический (relativo à economia) com экономный (que economiza).",
+        "Achar que todo -ость é abstrato inventável: возможность existe, «интересность» não."
+      ]
+    },
+    {
+      "title": "Prefixos e palavras compostas",
+      "paragraphs": [
+        "Prefixos de NEGAÇÃO: не- é o mais produtivo (невозможный, неудача, неправильный) e без-/бес- indica ausência (безработный, безопасность, бесполезный). Note que безопасность é literalmente «sem perigo» = segurança. Prefixos de RELAÇÃO: меж-/между- (международный, межличностный), со- (сотрудник, сообщество, соглашение — indica «junto»), противо- (противоречие, противостояние), анти- (антикризисный).",
+        "Prefixos de INTENSIDADE ou GRAU: сверх- (сверхдержава, сверхприбыль), пере- em sentido de excesso (переработать = trabalhar demais ou reprocessar, переоценить = superestimar), недо- (недооценить = subestimar, недостаток = falta). O par переоценить × недооценить é especialmente útil em texto argumentativo.",
+        "Palavras compostas juntam duas raízes com -о- ou -е- de ligação: сельскохозяйственный (сельское + хозяйство = agrícola), водохранилище (вода + хранить = reservatório), работодатель, благосостояние (благо + состояние = bem-estar), достопримечательность (ponto turístico). E o russo usa muitas siglas lexicalizadas que aparecem em qualquer texto de imprensa: вуз (высшее учебное заведение = universidade), СМИ (средства массовой информации = mídia), ВВП (валовой внутренний продукт = PIB), ООН (ONU), ЕС (UE). вуз já se declina como substantivo comum: в вузе, из вуза."
+      ],
+      "audio_script": "Terceira parte: prefixos e palavras compostas. Começando pelos prefixos de negação, que são dois. Не é o mais produtivo de todos. Невозможный, impossível. Неудача, fracasso. Неправильный, incorreto. E без, ou бес antes de consoante surda, que indica ausência. Безработный, desempregado, literalmente «sem trabalho». Бесполезный, inútil, «sem utilidade». E preste atenção nesta: безопасность, segurança. Literalmente, «sem perigo». Опасность é perigo; безопасность é a ausência dele. Uma vez que você vê isso, nunca mais esquece a palavra. Prefixos de relação. Меж e между: международный, internacional. Межличностный, interpessoal. Со, que indica «junto»: сотрудник, colega de trabalho. Сообщество, comunidade. Соглашение, acordo. Противо: противоречие, contradição. Противостояние, confronto. E анти, que é transparente: антикризисный. Prefixos de intensidade e grau. Сверх significa «além de, super»: сверхдержава, superpotência. Пере, no sentido de excesso: переработать, trabalhar demais. Переоценить, superestimar. E недо, que é o oposto: недооценить, subestimar. Недостаток, falta, carência. O par переоценить e недооценить é especialmente útil em texto argumentativo, porque permite dizer que alguém está exagerando ou minimizando um problema. Agora as palavras compostas. Elas juntam duas raízes com um о ou um е de ligação. Сельскохозяйственный: сельское mais хозяйство. Agrícola. Водохранилище: вода mais хранить. Reservatório de água. Работодатель: работа mais давать. Empregador. Благосостояние: благо mais состояние. Bem-estar. E por fim, as siglas. O russo usa muitas siglas lexicalizadas que aparecem em qualquer texto de imprensa: Вуз, высшее учебное заведение, ou seja, universidade. СМИ, средства массовой информации, ou seja, a mídia. ВВП, валовой внутренний продукт, o PIB. ООН é a ONU. ЕС é a União Europeia. E note uma coisa interessante: вуз já virou substantivo comum e se declina normalmente. В вузе. Из вуза. Ninguém pensa mais na sigla original.",
+      "examples": [
+        {
+          "ru": "Уровень безработицы среди выпускников вузов вырос.",
+          "pt": "O nível de desemprego entre os formados em universidades subiu.",
+          "note": "без- + работ- + -ица; вузов é genitivo plural da sigla lexicalizada."
+        },
+        {
+          "ru": "Нельзя недооценивать роль СМИ в формировании общественного мнения.",
+          "pt": "Não se pode subestimar o papel da mídia na formação da opinião pública.",
+          "note": "недо- = subestimar; о par é переоценивать."
+        },
+        {
+          "ru": "Международное сотрудничество способствует росту благосостояния.",
+          "pt": "A cooperação internacional contribui para o aumento do bem-estar.",
+          "note": "меж-, со- e uma composta (благо + состояние)."
+        },
+        {
+          "ru": "Это противоречит основным принципам безопасности.",
+          "pt": "Isso contraria os princípios básicos de segurança.",
+          "note": "противо- + речь; без- + опасность."
+        }
+      ],
+      "pitfalls": [
+        "Traduzir переоценить como «reavaliar»: aqui пере- marca excesso — superestimar.",
+        "Tratar вуз como sigla indeclinável: ela se declina como substantivo comum (в вузе)."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Sufixos e prefixos mais produtivos",
+    "columns": [
+      "Elemento",
+      "Classe / sentido",
+      "Exemplos"
+    ],
+    "rows": [
+      [
+        "-ение / -ание / -тие",
+        "substantivo neutro: processo, ação",
+        "решение · образование · развитие · понимание"
+      ],
+      [
+        "-ость / -есть",
+        "substantivo feminino: qualidade abstrata",
+        "возможность · ответственность · скорость"
+      ],
+      [
+        "-тель",
+        "substantivo: agente",
+        "учитель · потребитель · руководитель"
+      ],
+      [
+        "-ник / -ик · -щик / -чик · -ец",
+        "substantivo: agente ou pertencimento",
+        "работник · переводчик · беженец"
+      ],
+      [
+        "-ство",
+        "substantivo: atividade, conjunto, instituição",
+        "производство · руководство · большинство"
+      ],
+      [
+        "-ция / -изация",
+        "substantivo: processo internacional",
+        "организация · глобализация"
+      ],
+      [
+        "-ск- / -еск- / -ическ-",
+        "adjetivo: relação com lugar, grupo, disciplina",
+        "городской · экономический · политический"
+      ],
+      [
+        "-лив- / -чив-",
+        "adjetivo: tendência, propensão",
+        "терпеливый · устойчивый"
+      ],
+      [
+        "не- · без- / бес-",
+        "prefixo: negação, ausência",
+        "невозможный · безработный · безопасность"
+      ],
+      [
+        "меж- / между- · со- · противо-",
+        "prefixo: relação",
+        "международный · сотрудник · противоречие"
+      ],
+      [
+        "сверх- · пере- · недо-",
+        "prefixo: grau (acima, excesso, aquém)",
+        "сверхдержава · переоценить · недооценить"
+      ],
+      [
+        "Composta (о/е de ligação)",
+        "duas raízes numa palavra",
+        "работодатель · благосостояние · сельскохозяйственный"
+      ],
+      [
+        "Siglas lexicalizadas",
+        "leem-se como palavras e podem declinar",
+        "вуз (в вузе) · СМИ · ВВП · ООН"
+      ]
+    ],
+    "note": "Ao ver uma palavra nova: (1) qual é a raiz? (2) que prefixo há? (3) que sufixo há? Três respostas costumam bastar para continuar lendo sem dicionário."
+  },
+  "reference": [
+    {
+      "construction": "недооценивать / недооценить",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "subestimar",
+      "example": "недооценить роль СМИ"
+    },
+    {
+      "construction": "переоценивать / переоценить",
+      "question": "кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "superestimar",
+      "example": "переоценить свои возможности"
+    },
+    {
+      "construction": "противоречить",
+      "question": "чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "contrariar, contradizer",
+      "example": "противоречить принципам"
+    },
+    {
+      "construction": "сотрудничать с",
+      "question": "с кем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "cooperar com",
+      "example": "сотрудничать с зарубежными вузами"
+    },
+    {
+      "construction": "заключаться в",
+      "question": "в чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "consistir em",
+      "example": "проблема заключается в отсутствии данных"
+    },
+    {
+      "construction": "являться",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ser (registro formal)",
+      "example": "глобализация является сложным процессом"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u24-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "-ение / -ание",
+      "back": "substantivo NEUTRO de processo: решение, образование, развитие",
+      "explanation": "É a terminação mais frequente do vocabulário acadêmico russo.",
+      "tags": [
+        "словообразование",
+        "sufixos",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u24-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "-ость",
+      "back": "substantivo FEMININO de qualidade abstrata: возможность, ответственность",
+      "explanation": "Sempre vem de um adjetivo: возможный → возможность.",
+      "tags": [
+        "словообразование",
+        "sufixos",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u24-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "недооценить × переоценить",
+      "back": "недо- = subestimar · пере- = superestimar",
+      "explanation": "O par mais útil em texto argumentativo. пере- aqui marca EXCESSO, não repetição.",
+      "tags": [
+        "словообразование",
+        "prefixos",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u24-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "вуз · СМИ · ВВП",
+      "back": "universidade · mídia · PIB — siglas lexicalizadas",
+      "explanation": "вуз já se declina como substantivo comum: в вузе, из вуза, вузов.",
+      "tags": [
+        "словообразование",
+        "siglas",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u24-e05",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 1,
+      "instruction": "Escolha o substantivo derivado correto.",
+      "prompt": "решать → «a decisão» é ___",
+      "options": [
+        "решение",
+        "решительность",
+        "решатель",
+        "решительный"
+      ],
+      "answer": "решение",
+      "explanation": "-ение forma o substantivo de PROCESSO/RESULTADO a partir do verbo. решительность seria a qualidade de ser decidido, e решительный é o adjetivo.",
+      "tags": [
+        "словообразование",
+        "sufixos",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u24-e06",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha o substantivo derivado correto.",
+      "prompt": "ответственный → «a responsabilidade» é ___",
+      "options": [
+        "ответственность",
+        "ответствие",
+        "ответственство",
+        "ответчик"
+      ],
+      "answer": "ответственность",
+      "explanation": "-ость transforma adjetivo em substantivo abstrato de qualidade, e o resultado é sempre feminino: ответственность, возможность, скорость.",
+      "tags": [
+        "словообразование",
+        "sufixos",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u24-e07",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha o substantivo de agente correto.",
+      "prompt": "потреблять → «o consumidor» é ___",
+      "options": [
+        "потребитель",
+        "потребление",
+        "потребность",
+        "потребительский"
+      ],
+      "answer": "потребитель",
+      "explanation": "-тель forma o AGENTE (quem faz). потребление é o processo (consumo), потребность é a necessidade e потребительский é o adjetivo.",
+      "tags": [
+        "словообразование",
+        "agente",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u24-e08",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o adjetivo correto.",
+      "prompt": "___ кризис затронул все отрасли промышленности.",
+      "options": [
+        "Экономический",
+        "Экономный",
+        "Экономичный",
+        "Экономика"
+      ],
+      "answer": "Экономический",
+      "explanation": "-ическ- indica relação com a DISCIPLINA ou o campo: экономический = relativo à economia. экономный é «que economiza» (pessoa), экономичный é «econômico» no sentido de barato de manter (carro, motor).",
+      "tags": [
+        "словообразование",
+        "adjetivos",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u24-e09",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a palavra correta.",
+      "prompt": "Уровень ___ среди молодёжи достиг рекордных значений.",
+      "options": [
+        "безработицы",
+        "работы",
+        "работника",
+        "переработки"
+      ],
+      "answer": "безработицы",
+      "explanation": "без- + работ- + -ица = ausência de trabalho, desemprego. переработка seria reprocessamento ou excesso de trabalho.",
+      "tags": [
+        "словообразование",
+        "prefixos",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u24-e10",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Нельзя недооценивать роль образования в этом процессе.»",
+      "options": [
+        "Não se pode subestimar o papel da educação nesse processo.",
+        "Não se pode superestimar o papel da educação nesse processo.",
+        "Não se pode reavaliar o papel da educação nesse processo.",
+        "Não se pode avaliar o papel da educação nesse processo."
+      ],
+      "answer": "Não se pode subestimar o papel da educação nesse processo.",
+      "explanation": "недо- indica «aquém do devido» → subestimar. O par oposto seria переоценивать, superestimar, com пере- indicando excesso.",
+      "tags": [
+        "словообразование",
+        "prefixos",
+        "significado"
+      ]
+    },
+    {
+      "id": "u24-e11",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a decomposição correta.",
+      "prompt": "безопасность = ?",
+      "options": [
+        "без- (sem) + опасность (perigo) = segurança",
+        "без- (sem) + пасность (passagem) = impedimento",
+        "безо- (todo) + пасность (cuidado) = vigilância",
+        "без- (sem) + опас (rápido) = lentidão"
+      ],
+      "answer": "без- (sem) + опасность (perigo) = segurança",
+      "explanation": "Опасность é perigo; без- retira. Decompor assim torna a palavra impossível de esquecer — e o mesmo raciocínio funciona para бесполезный, безответственный, безработный.",
+      "tags": [
+        "словообразование",
+        "prefixos",
+        "significado"
+      ]
+    },
+    {
+      "id": "u24-e12",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a palavra correta.",
+      "prompt": "___ сотрудничество в области науки развивается быстрее, чем в политике.",
+      "options": [
+        "Международное",
+        "Междугородное",
+        "Внутреннее",
+        "Противоречивое"
+      ],
+      "answer": "Международное",
+      "explanation": "между + народ + -н- = «entre povos» = internacional. междугородный seria «entre cidades» (interurbano), que não cabe aqui.",
+      "tags": [
+        "словообразование",
+        "prefixos",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u24-e13",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha a decomposição correta.",
+      "prompt": "работодатель = ?",
+      "options": [
+        "работа + давать = quem dá trabalho (empregador)",
+        "работа + брать = quem toma trabalho (empregado)",
+        "работать + делать = quem organiza o trabalho",
+        "работа + отель = alojamento de trabalhadores"
+      ],
+      "answer": "работа + давать = quem dá trabalho (empregador)",
+      "explanation": "Palavra composta com -о- de ligação e o sufixo de agente -тель. O par é работник (quem trabalha) × работодатель (quem dá o trabalho).",
+      "tags": [
+        "словообразование",
+        "compostas",
+        "significado"
+      ]
+    },
+    {
+      "id": "u24-e14",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Это решение ___ основным принципам организации.",
+      "options": [
+        "противоречит",
+        "противоречит с",
+        "противоречит на",
+        "противоречие"
+      ],
+      "answer": "противоречит",
+      "explanation": "противоречить чему? → дательный падеж sem preposição. É a mesma regência de способствовать, мешать e помогать.",
+      "tags": [
+        "противоречить",
+        "дательный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u24-e15",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Главная трудность ___ отсутствии надёжных данных.",
+      "options": [
+        "заключается в",
+        "заключается на",
+        "заключается с",
+        "заключает в"
+      ],
+      "answer": "заключается в",
+      "explanation": "заключаться В чём? → предложный падеж. É a construção formal padrão para «o problema consiste em». Note que é verbo em -ся e por isso não aceita objeto direto.",
+      "tags": [
+        "заключаться в",
+        "предложный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u24-e16",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Число выпускников ___ выросло за последние пять лет. (вуз)",
+      "options": [
+        "вузов",
+        "вуз",
+        "вузы",
+        "ВУЗ-ов"
+      ],
+      "answer": "вузов",
+      "explanation": "вуз já é substantivo comum e se declina normalmente: genitivo plural masculino em -ов. Escreve-se em minúsculas e sem hífen.",
+      "tags": [
+        "словообразование",
+        "siglas",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u24-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase usa as palavras derivadas corretamente?",
+      "options": [
+        "Экономический рост зависит от производительности труда и ответственности руководства.",
+        "Экономный рост зависит от производства труда и ответственность руководителя.",
+        "Экономический рост зависит от производительность труда и ответственности руководства.",
+        "Экономичный рост зависит от производительности труда и ответственность руководства."
+      ],
+      "answer": "Экономический рост зависит от производительности труда и ответственности руководства.",
+      "explanation": "экономический (relativo à economia, não экономный/экономичный); производительность (produtividade, não производство = produção); e зависеть от exige родительный nos dois substantivos coordenados.",
+      "tags": [
+        "словообразование",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u24-e18",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha o significado correto.",
+      "prompt": "Uma palavra desconhecida no texto: «перенаселённость». O que ela deve significar?",
+      "options": [
+        "Superpopulação (пере- = excesso + население = população + -ость = qualidade).",
+        "Migração entre cidades.",
+        "Falta de moradia.",
+        "Mudança de residência."
+      ],
+      "answer": "Superpopulação (пере- = excesso + население = população + -ость = qualidade).",
+      "explanation": "Decomposição em três passos: prefixo пере- (excesso), raiz -насел- (население, população), sufixo -ость (qualidade abstrata). Não é preciso ter visto a palavra antes.",
+      "tags": [
+        "словообразование",
+        "dedução",
+        "significado"
+      ]
+    },
+    {
+      "id": "u24-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Глобализация — противоречивый процесс. С одной стороны, международное сотрудничество способствует развитию науки и повышению благосостояния. С другой стороны, многие исследователи считают, что её последствия недооцениваются: рост неравенства, перенаселённость крупных городов и потеря культурной самобытности. По данным ООН, к середине века доля городского населения превысит семьдесят процентов. Таким образом, проблема заключается не в том, чтобы остановить глобализацию, а в том, чтобы управлять её последствиями.",
+      "prompt": "Segundo o texto, em que consiste o problema?",
+      "options": [
+        "Não em deter a globalização, mas em administrar as suas consequências.",
+        "Em deter completamente a globalização.",
+        "Em aumentar a cooperação internacional a qualquer custo.",
+        "Em reduzir a população das grandes cidades."
+      ],
+      "answer": "Não em deter a globalização, mas em administrar as suas consequências.",
+      "explanation": "«проблема заключается не в том, чтобы остановить…, а в том, чтобы управлять…» — заключаться в + предложный, com «то, чтобы» ligando a orações.",
+      "tags": [
+        "словообразование",
+        "leitura",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u24-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Глобализация — противоречивый процесс. Международное сотрудничество способствует развитию науки и повышению благосостояния. Многие исследователи считают, что её последствия недооцениваются: рост неравенства, перенаселённость крупных городов и потеря культурной самобытности.",
+      "prompt": "Qual palavra do texto é formada por composição de duas raízes?",
+      "options": [
+        "благосостояние",
+        "сотрудничество",
+        "перенаселённость",
+        "недооцениваются"
+      ],
+      "answer": "благосостояние",
+      "explanation": "благо + о + состояние = bem-estar: duas raízes numa palavra. As outras três são formadas por prefixo e sufixo sobre uma raiz só (со-труд-, пере-насел-, недо-цен-).",
+      "tags": [
+        "словообразование",
+        "compostas",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u24-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Уровень безработицы среди выпускников вузов вырос, хотя число рабочих мест не сократилось.",
+      "prompt": "O que foi dito no áudio?",
+      "options": [
+        "O desemprego entre os formados em universidades subiu, embora o número de vagas não tenha diminuído.",
+        "O desemprego caiu porque surgiram novas vagas.",
+        "O número de universidades diminuiu junto com as vagas.",
+        "Os formados encontram emprego mais rápido do que antes."
+      ],
+      "answer": "O desemprego entre os formados em universidades subiu, embora o número de vagas não tenha diminuído.",
+      "explanation": "безработицы (без- + работ- + -ица) e вузов (sigla lexicalizada no genitivo plural), com хотя marcando a concessão.",
+      "tags": [
+        "словообразование",
+        "audição",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u24-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Международное сотрудничество способствует повышению производительности и снижению неравенства.",
+      "prompt": "A que duas coisas a cooperação internacional contribui, segundo o áudio?",
+      "options": [
+        "Ao aumento da produtividade e à redução da desigualdade.",
+        "À redução da produtividade e ao aumento da desigualdade.",
+        "Ao aumento da produção e da população.",
+        "À redução do desemprego e à alta dos preços."
+      ],
+      "answer": "Ao aumento da produtividade e à redução da desigualdade.",
+      "explanation": "способствовать чему? → дательный падеж: повышению e снижению, dois substantivos em -ение derivados de повышать e снижать.",
+      "tags": [
+        "способствовать",
+        "словообразование",
+        "audição"
+      ]
+    },
+    {
+      "id": "u24-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com substantivos derivados e a regência de способствовать.",
+      "tokens": [
+        "Международное",
+        "сотрудничество",
+        "способствует",
+        "развитию",
+        "науки",
+        "и",
+        "повышению",
+        "благосостояния"
+      ],
+      "answer": "Международное сотрудничество способствует развитию науки и повышению благосостояния",
+      "explanation": "Quatro palavras derivadas numa frase: между+народ+н-, со+труд+нич+ество, раз+вит+ие, по+выш+ение — e todas depois de способствовать ficam no дательный.",
+      "tags": [
+        "словообразование",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u24-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Relacione a palavra derivada ao seu significado.",
+      "pairs": [
+        {
+          "left": "безработица",
+          "right": "desemprego (sem + trabalho)"
+        },
+        {
+          "left": "безопасность",
+          "right": "segurança (sem + perigo)"
+        },
+        {
+          "left": "работодатель",
+          "right": "empregador (trabalho + dar)"
+        },
+        {
+          "left": "производительность",
+          "right": "produtividade"
+        },
+        {
+          "left": "недооценить",
+          "right": "subestimar"
+        },
+        {
+          "left": "переоценить",
+          "right": "superestimar"
+        }
+      ],
+      "explanation": "Seis palavras que se resolvem por decomposição: prefixo + raiz + sufixo, sem precisar de dicionário.",
+      "tags": [
+        "словообразование",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u24-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 100–120 palavras em russo. Use pelo menos cinco palavras derivadas (com -ение, -ость, -тель, без- ou меж-).",
+      "prompt": "«Глобализация: больше возможностей или больше рисков?» (Globalização: mais oportunidades ou mais riscos?)\n\nUnidades: развитие · возможность · ответственность · сотрудничество · безработица · недооценивать / переоценивать · способствовать · заключаться в",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "словообразование",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

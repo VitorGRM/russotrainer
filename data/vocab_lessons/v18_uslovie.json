@@ -1,0 +1,580 @@
+{
+  "id": "v18",
+  "unit_id": "u18_uslovie",
+  "order": 18,
+  "title": "Уйти или остаться",
+  "theme": "Uma amiga considera pedir demissão e avalia alternativas",
+  "description": "Uma amiga considera pedir demissão e avalia alternativas. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Нина": "f",
+    "Алексей": "m"
+  },
+  "dialogue": {
+    "title": "Уйти или остаться",
+    "setting": "Uma amiga considera pedir demissão e avalia alternativas",
+    "lines": [
+      {
+        "speaker": "Нина",
+        "ru": "Если бы я сменила работу, я бы меньше уставала. Но страшно уходить.",
+        "pt": "Se eu mudasse de emprego, ficaria menos cansada. Mas tenho medo de sair."
+      },
+      {
+        "speaker": "Алексей",
+        "ru": "Тогда попроси помощи: «Не могли бы вы помочь мне с резюме?»",
+        "pt": "Então peça ajuda: “O senhor poderia me ajudar com o currículo?”"
+      },
+      {
+        "speaker": "Нина",
+        "ru": "Я хочу успеть отправить резюме до пятницы.",
+        "pt": "Quero conseguir enviar o currículo até sexta-feira."
+      },
+      {
+        "speaker": "Алексей",
+        "ru": "Ты можешь устроиться на работу переводчиком. У тебя есть опыт.",
+        "pt": "Você pode conseguir emprego como tradutora. Você tem experiência."
+      },
+      {
+        "speaker": "Нина",
+        "ru": "Но сначала я должна решить, стоит ли уволиться с прежней работы.",
+        "pt": "Mas primeiro preciso decidir se vale a pena pedir demissão do emprego anterior."
+      },
+      {
+        "speaker": "Алексей",
+        "ru": "Помни: нельзя раскрывать тайну компании даже после увольнения.",
+        "pt": "Lembre-se: é proibido revelar um segredo da empresa mesmo depois da demissão."
+      },
+      {
+        "speaker": "Нина",
+        "ru": "Мне предложили согласиться на новую должность, но зарплата не изменится.",
+        "pt": "Propuseram que eu aceitasse um novo cargo, mas o salário não mudará."
+      },
+      {
+        "speaker": "Алексей",
+        "ru": "Можно сначала подать заявление на отпуск и спокойно всё обдумать.",
+        "pt": "Você pode primeiro entregar um pedido de férias e pensar em tudo com tranquilidade."
+      },
+      {
+        "speaker": "Нина",
+        "ru": "Хорошая мысль. Сначала отправлю резюме, потом поговорю с начальником.",
+        "pt": "Boa ideia. Primeiro vou enviar o currículo, depois conversar com o chefe."
+      },
+      {
+        "speaker": "Алексей",
+        "ru": "И проверь условия новой работы до окончательного решения.",
+        "pt": "E confira as condições do novo emprego antes da decisão final."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "O que Nina está avaliando?",
+      "options": [
+        "Mudar de emprego depois de examinar alternativas.",
+        "Revelar segredos para obter um cargo novo.",
+        "Pedir demissão sem preparar o currículo.",
+        "Aceitar imediatamente um salário mais baixo."
+      ],
+      "answer": "Mudar de emprego depois de examinar alternativas.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "бы",
+      "tag": "если бы …, … бы",
+      "head": "если бы …, … бы",
+      "regency": "если бы + прошедшее, … бы + прошедшее",
+      "case": "условное наклонение",
+      "pt": "se eu mudasse de emprego",
+      "chunk": "если бы я сменила работу",
+      "chunk_pt": "se eu mudasse de emprego",
+      "chunk_wrong": [
+        "если бы я сменю работу",
+        "если бы я сменить работу",
+        "если бы я сменит работу"
+      ],
+      "form_note": "Hipótese contrafactual: если бы e forma de passado; o resultado também recebe бы. Não use futuro depois de если бы.",
+      "trap": "Hipótese contrafactual: если бы e forma de passado; o resultado também recebe бы. Não use futuro depois de если бы.",
+      "example": {
+        "ru": "Если бы у меня было время, я бы отдохнула.",
+        "pt": "Se eu tivesse tempo, descansaria.",
+        "extra": "будет",
+        "note": "Hipótese contrafactual: если бы e forma de passado; o resultado também recebe бы. Não use futuro depois de если бы."
+      },
+      "cloze": {
+        "ru": "Если бы она ___, она бы переехала.",
+        "answer": "нашла работу",
+        "wrong": [
+          "найдёт работу",
+          "найти работу",
+          "найдут работу"
+        ],
+        "pt": "Se ela encontrasse emprego, se mudaria.",
+        "note": "Hipótese contrafactual: если бы e forma de passado; o resultado também recebe бы. Não use futuro depois de если бы."
+      },
+      "hear": {
+        "ru": "Если бы брат помог, сестра бы успела.",
+        "pt": "Se o irmão ajudasse, a irmã conseguiria a tempo.",
+        "wrong": [
+          "Se a irmã ajudasse, o irmão conseguiria a tempo.",
+          "Se o irmão ajudasse, a irmã não conseguiria a tempo.",
+          "Se o irmão ajudar, a irmã conseguirá a tempo."
+        ],
+        "note": "Hipótese contrafactual: если бы e forma de passado; o resultado também recebe бы. Não use futuro depois de если бы."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "мочь",
+      "tag": "Не могли бы вы …?",
+      "head": "Не могли бы вы …?",
+      "regency": "Не могли бы вы + инфинитив?",
+      "case": "условное наклонение",
+      "pt": "o senhor poderia ajudar",
+      "chunk": "не могли бы вы помочь",
+      "chunk_pt": "o senhor poderia ajudar",
+      "chunk_wrong": [
+        "не могли бы вы помогли",
+        "не могли бы вы поможет",
+        "не могли бы вы помогу"
+      ],
+      "form_note": "Pedido cortês: Не могли бы вы + infinitivo. A negação suaviza o pedido; não significa proibição.",
+      "trap": "Pedido cortês: Не могли бы вы + infinitivo. A negação suaviza o pedido; não significa proibição.",
+      "example": {
+        "ru": "Не могли бы вы проверить договор?",
+        "pt": "O senhor poderia conferir o contrato?",
+        "extra": "проверите",
+        "note": "Pedido cortês: Не могли бы вы + infinitivo. A negação suaviza o pedido; não significa proibição."
+      },
+      "cloze": {
+        "ru": "Не могли бы вы ___ завтра?",
+        "answer": "позвонить",
+        "wrong": [
+          "позвоните",
+          "позвонили",
+          "позвоню"
+        ],
+        "pt": "O senhor poderia telefonar amanhã?",
+        "note": "Pedido cortês: Не могли бы вы + infinitivo. A negação suaviza o pedido; não significa proibição."
+      },
+      "hear": {
+        "ru": "Не могли бы вы сообщить сестре решение?",
+        "pt": "O senhor poderia informar a decisão à irmã?",
+        "wrong": [
+          "A irmã poderia informar a decisão ao senhor?",
+          "O senhor informou a decisão à irmã?",
+          "O senhor não pode informar a decisão à irmã."
+        ],
+        "note": "Pedido cortês: Не могли бы вы + infinitivo. A negação suaviza o pedido; não significa proibição."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "успевать",
+      "tag": "успеть + сов. вид",
+      "head": "успеть + сов. вид",
+      "regency": "успеть что сделать?",
+      "case": "инфинитив, совершенный вид",
+      "pt": "conseguir enviar o currículo a tempo",
+      "chunk": "успеть отправить резюме",
+      "chunk_pt": "conseguir enviar o currículo a tempo",
+      "chunk_wrong": [
+        "успеть отправлю резюме",
+        "успеть отправил резюме",
+        "успеть отправит резюме"
+      ],
+      "form_note": "успеть + infinitivo perfectivo indica conclusão antes do limite; não coloque uma forma pessoal depois do verbo.",
+      "trap": "успеть + infinitivo perfectivo indica conclusão antes do limite; não coloque uma forma pessoal depois do verbo.",
+      "example": {
+        "ru": "Мы успели закончить отчёт до обеда.",
+        "pt": "Conseguimos terminar o relatório antes do almoço.",
+        "extra": "закончим",
+        "note": "успеть + infinitivo perfectivo indica conclusão antes do limite; não coloque uma forma pessoal depois do verbo."
+      },
+      "cloze": {
+        "ru": "До шести нужно успеть ___.",
+        "answer": "подать документы",
+        "wrong": [
+          "подам документы",
+          "подал документы",
+          "подаст документы"
+        ],
+        "pt": "Até as seis, é preciso conseguir entregar os documentos.",
+        "note": "успеть + infinitivo perfectivo indica conclusão antes do limite; não coloque uma forma pessoal depois do verbo."
+      },
+      "hear": {
+        "ru": "Анна успела позвонить начальнику до встречи.",
+        "pt": "Anna conseguiu telefonar ao chefe antes da reunião.",
+        "wrong": [
+          "O chefe conseguiu telefonar a Anna antes da reunião.",
+          "Anna não conseguiu telefonar ao chefe antes da reunião.",
+          "Anna conseguirá telefonar ao chefe antes da reunião."
+        ],
+        "note": "успеть + infinitivo perfectivo indica conclusão antes do limite; não coloque uma forma pessoal depois do verbo."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "устраиваться",
+      "tag": "устроиться на работу",
+      "head": "устроиться на работу",
+      "regency": "устроиться на работу кем?",
+      "case": "творительный падеж",
+      "pt": "conseguir emprego como tradutor",
+      "chunk": "устроиться на работу переводчиком",
+      "chunk_pt": "conseguir emprego como tradutor",
+      "chunk_wrong": [
+        "устроиться на работу переводчика",
+        "устроиться на работу переводчику",
+        "устроиться на работу переводчике"
+      ],
+      "form_note": "O cargo usa кем? + творительный падеж; não introduza «como» por uma preposição portuguesa literal.",
+      "trap": "O cargo usa кем? + творительный падеж; não introduza «como» por uma preposição portuguesa literal.",
+      "example": {
+        "ru": "Она устроилась на работу инженером.",
+        "pt": "Ela conseguiu emprego como engenheira.",
+        "extra": "инженеру",
+        "note": "O cargo usa кем? + творительный падеж; não introduza «como» por uma preposição portuguesa literal."
+      },
+      "cloze": {
+        "ru": "Он хочет устроиться на работу ___.",
+        "answer": "редактором",
+        "wrong": [
+          "редактора",
+          "редактору",
+          "редакторе"
+        ],
+        "pt": "Ele quer conseguir emprego como editor.",
+        "note": "O cargo usa кем? + творительный падеж; não introduza «como» por uma preposição portuguesa literal."
+      },
+      "hear": {
+        "ru": "Сестра устроилась на работу бухгалтером.",
+        "pt": "A irmã conseguiu emprego como contadora.",
+        "wrong": [
+          "O irmão conseguiu emprego como contador.",
+          "A irmã não conseguiu emprego como contadora.",
+          "A irmã conseguirá emprego como contadora."
+        ],
+        "note": "O cargo usa кем? + творительный падеж; não introduza «como» por uma preposição portuguesa literal."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "увольняться",
+      "tag": "уволиться с",
+      "head": "уволиться с",
+      "regency": "уволиться с чего?",
+      "case": "родительный падеж",
+      "pt": "pedir demissão do emprego anterior",
+      "chunk": "уволиться с прежней работы",
+      "chunk_pt": "pedir demissão do emprego anterior",
+      "chunk_wrong": [
+        "уволиться с прежнюю работу",
+        "уволиться с прежней работе",
+        "уволиться с прежней работой"
+      ],
+      "form_note": "уволиться с чего? é a decisão de sair; уволить кого? é demitir outra pessoa.",
+      "trap": "уволиться с чего? é a decisão de sair; уволить кого? é demitir outra pessoa.",
+      "example": {
+        "ru": "Он уволился с завода в мае.",
+        "pt": "Ele pediu demissão da fábrica em maio.",
+        "extra": "заводу",
+        "note": "уволиться с чего? é a decisão de sair; уволить кого? é demitir outra pessoa."
+      },
+      "cloze": {
+        "ru": "Она решила уволиться ___.",
+        "answer": "с постоянной работы",
+        "wrong": [
+          "с постоянную работу",
+          "с постоянной работе",
+          "с постоянной работой"
+        ],
+        "pt": "Ela decidiu pedir demissão do emprego fixo.",
+        "note": "уволиться с чего? é a decisão de sair; уволить кого? é demitir outra pessoa."
+      },
+      "hear": {
+        "ru": "Нина уволилась с работы после отпуска.",
+        "pt": "Nina pediu demissão depois das férias.",
+        "wrong": [
+          "Nina pedirá demissão depois das férias.",
+          "Nina não pediu demissão depois das férias.",
+          "Nina pediu demissão antes das férias."
+        ],
+        "note": "уволиться с чего? é a decisão de sair; уволить кого? é demitir outra pessoa."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "нельзя",
+      "tag": "нельзя + вид",
+      "head": "нельзя + вид",
+      "regency": "нельзя что делать? / нельзя что сделать?",
+      "case": "инфинитив",
+      "pt": "é proibido revelar o segredo",
+      "chunk": "нельзя раскрывать тайну",
+      "chunk_pt": "é proibido revelar o segredo",
+      "chunk_wrong": [
+        "нельзя раскрываю тайну",
+        "нельзя раскрывал тайну",
+        "нельзя раскрывает тайну"
+      ],
+      "form_note": "Proibição costuma usar несовершенный вид; impossibilidade de obter um resultado usa совершенный вид. O contexto decide.",
+      "trap": "Proibição costuma usar несовершенный вид; impossibilidade de obter um resultado usa совершенный вид. O contexto decide.",
+      "example": {
+        "ru": "Повреждённый архив нельзя открыть.",
+        "pt": "Não é possível abrir o arquivo compactado corrompido.",
+        "extra": "откроет",
+        "note": "Proibição costuma usar несовершенный вид; impossibilidade de obter um resultado usa совершенный вид. O contexto decide."
+      },
+      "cloze": {
+        "ru": "Здесь запрещено курить: здесь ___.",
+        "answer": "нельзя курить",
+        "wrong": [
+          "нельзя курю",
+          "нельзя курил",
+          "нельзя курит"
+        ],
+        "pt": "Aqui é proibido fumar: aqui não se pode fumar.",
+        "note": "Proibição costuma usar несовершенный вид; impossibilidade de obter um resultado usa совершенный вид. O contexto decide."
+      },
+      "hear": {
+        "ru": "Этот отчёт нельзя закончить за час: данных ещё нет.",
+        "pt": "Não é possível terminar este relatório em uma hora: os dados ainda não chegaram.",
+        "wrong": [
+          "É possível terminar este relatório em uma hora: os dados já chegaram.",
+          "Não era possível terminar este relatório em uma hora: os dados ainda não tinham chegado.",
+          "Não é possível começar este relatório em uma hora: os dados ainda não chegaram."
+        ],
+        "note": "Proibição costuma usar несовершенный вид; impossibilidade de obter um resultado usa совершенный вид. O contexto decide."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "соглашаться",
+      "tag": "соглашаться / согласиться на",
+      "head": "соглашаться / согласиться на",
+      "regency": "согласиться на что?",
+      "case": "винительный падеж",
+      "pt": "aceitar o novo cargo",
+      "chunk": "согласиться на новую должность",
+      "chunk_pt": "aceitar o novo cargo",
+      "chunk_wrong": [
+        "согласиться на новой должности",
+        "согласиться на новой должностью",
+        "согласиться на новая должность"
+      ],
+      "form_note": "согласиться на что? é aceitar uma proposta; согласиться с кем? é concordar com uma pessoa.",
+      "trap": "согласиться на что? é aceitar uma proposta; согласиться с кем? é concordar com uma pessoa.",
+      "example": {
+        "ru": "Мы согласились на предложенные условия.",
+        "pt": "Aceitamos as condições propostas.",
+        "extra": "условиям",
+        "note": "согласиться на что? é aceitar uma proposta; согласиться с кем? é concordar com uma pessoa."
+      },
+      "cloze": {
+        "ru": "Она готова согласиться ___.",
+        "answer": "на меньшую зарплату",
+        "wrong": [
+          "на меньшей зарплате",
+          "на меньшей зарплатой",
+          "на меньшей зарплаты"
+        ],
+        "pt": "Ela está pronta para aceitar um salário menor.",
+        "note": "согласиться на что? é aceitar uma proposta; согласиться с кем? é concordar com uma pessoa."
+      },
+      "hear": {
+        "ru": "Брат согласился на работу в другом городе.",
+        "pt": "O irmão aceitou trabalhar em outra cidade.",
+        "wrong": [
+          "O irmão aceitará trabalhar em outra cidade.",
+          "O irmão não aceitou trabalhar em outra cidade.",
+          "A irmã aceitou trabalhar em outra cidade."
+        ],
+        "note": "согласиться на что? é aceitar uma proposta; согласиться с кем? é concordar com uma pessoa."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "подавать",
+      "tag": "подать заявление на",
+      "head": "подать заявление на",
+      "regency": "подать заявление на что?",
+      "case": "винительный падеж",
+      "pt": "entregar um pedido de férias",
+      "chunk": "подать заявление на отпуск",
+      "chunk_pt": "entregar um pedido de férias",
+      "chunk_wrong": [
+        "подать заявление на отпуске",
+        "подать заявление на отпуска",
+        "подать заявление на отпуском"
+      ],
+      "form_note": "O pedido tem finalidade: заявление на что? + винительный падеж. Para demissão, a fórmula usual é заявление об увольнении.",
+      "trap": "O pedido tem finalidade: заявление на что? + винительный падеж. Para demissão, a fórmula usual é заявление об увольнении.",
+      "example": {
+        "ru": "Она подала заявление на перевод.",
+        "pt": "Ela entregou um pedido de transferência.",
+        "extra": "переводе",
+        "note": "O pedido tem finalidade: заявление на что? + винительный падеж. Para demissão, a fórmula usual é заявление об увольнении."
+      },
+      "cloze": {
+        "ru": "Он собирается подать заявление ___.",
+        "answer": "на материальную помощь",
+        "wrong": [
+          "на материальной помощи",
+          "на материальной помощью",
+          "на материальная помощь"
+        ],
+        "pt": "Ele pretende entregar um pedido de auxílio financeiro.",
+        "note": "O pedido tem finalidade: заявление на что? + винительный падеж. Para demissão, a fórmula usual é заявление об увольнении."
+      },
+      "hear": {
+        "ru": "Начальник подал заявление на отпуск раньше сотрудника.",
+        "pt": "O chefe entregou um pedido de férias antes do funcionário.",
+        "wrong": [
+          "O funcionário entregou um pedido de férias antes do chefe.",
+          "O chefe não entregou um pedido de férias antes do funcionário.",
+          "O chefe entregará um pedido de férias antes do funcionário."
+        ],
+        "note": "O pedido tem finalidade: заявление на что? + винительный падеж. Para demissão, a fórmula usual é заявление об увольнении."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Qual é o prazo para enviar o currículo?",
+      "options": [
+        "Até sexta-feira, antes da decisão final.",
+        "Depois das férias, no fim do verão.",
+        "No mesmo dia em que sair da empresa.",
+        "Após começar a trabalhar na nova vaga."
+      ],
+      "answer": "Até sexta-feira, antes da decisão final.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "O que muda na proposta da empresa atual?",
+      "options": [
+        "O cargo muda, mas o salário continua igual.",
+        "O salário aumenta, mas o cargo continua igual.",
+        "O cargo desaparece e o salário é reduzido.",
+        "O horário diminui e o salário é duplicado."
+      ],
+      "answer": "O cargo muda, mas o salário continua igual.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "Если бы я сменила работу",
+      "wrong": [
+        "Если бы я сменю работу",
+        "Если бы я сменить работу",
+        "Если бы я сменит работу"
+      ],
+      "note": "Hipótese contrafactual: если бы e forma de passado; o resultado também recebe бы. Não use futuro depois de если бы."
+    },
+    {
+      "line": 2,
+      "gap": "отправить резюме",
+      "wrong": [
+        "отправлю резюме",
+        "отправил резюме",
+        "отправит резюме"
+      ],
+      "note": "успеть + infinitivo perfectivo indica conclusão antes do limite; não coloque uma forma pessoal depois do verbo."
+    },
+    {
+      "line": 4,
+      "gap": "с прежней работы",
+      "wrong": [
+        "с прежнюю работу",
+        "с прежней работе",
+        "с прежней работой"
+      ],
+      "note": "уволиться с чего? é a decisão de sair; уволить кого? é demitir outra pessoa."
+    },
+    {
+      "line": 6,
+      "gap": "на новую должность",
+      "wrong": [
+        "на новой должности",
+        "на новой должностью",
+        "на новая должность"
+      ],
+      "note": "согласиться на что? é aceitar uma proposta; согласиться с кем? é concordar com uma pessoa."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "если бы я сменила работу",
+        "right": "se eu mudasse de emprego"
+      },
+      {
+        "left": "не могли бы вы помочь",
+        "right": "o senhor poderia ajudar"
+      },
+      {
+        "left": "успеть отправить резюме",
+        "right": "conseguir enviar o currículo a tempo"
+      },
+      {
+        "left": "устроиться на работу переводчиком",
+        "right": "conseguir emprego como tradutor"
+      },
+      {
+        "left": "уволиться с прежней работы",
+        "right": "pedir demissão do emprego anterior"
+      },
+      {
+        "left": "нельзя раскрывать тайну",
+        "right": "é proibido revelar o segredo"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Нина",
+      "you": "Алексей",
+      "ru": "Какое условие помогло бы тебе меньше уставать?",
+      "prompt": "Formule uma hipótese contrafactual.",
+      "answer": "Если бы я сменила работу, я бы меньше уставала.",
+      "wrong": [
+        "Если бы я сменю работу, я бы меньше уставала.",
+        "Если бы я сменить работу, я бы меньше уставала.",
+        "Если бы я сменит работу, я бы меньше уставала."
+      ],
+      "explanation": "Hipótese contrafactual: если бы e forma de passado; o resultado também recebe бы. Não use futuro depois de если бы."
+    },
+    {
+      "speaker": "Алексей",
+      "you": "Нина",
+      "ru": "Как вежливо попросить коллегу о помощи?",
+      "prompt": "Escolha uma formulação cortês com infinitivo.",
+      "answer": "Не могли бы вы помочь?",
+      "wrong": [
+        "Не могли бы вы помогли?",
+        "Не могли бы вы поможет?",
+        "Не могли бы вы помогу?"
+      ],
+      "explanation": "Pedido cortês: Не могли бы вы + infinitivo. A negação suaviza o pedido; não significa proibição."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva a uma amiga que pensa em mudar de emprego. Formule uma hipótese, um pedido cortês e dois passos antes da decisão.",
+    "use": [
+      "если бы …, … бы",
+      "Не могли бы вы …?",
+      "успеть + сов. вид",
+      "устроиться на работу",
+      "уволиться с"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: если бы + прошедшее, … бы + прошедшее; Не могли бы вы + инфинитив?; успеть что сделать?; устроиться на работу кем?; уволиться с чего?; нельзя что делать? / нельзя что сделать?; согласиться на что?; подать заявление на что?."
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "id": "v01",
+  "unit_id": "u01_dativo",
+  "order": 1,
+  "title": "Первый месяц в Москве",
+  "theme": "Переезд и адаптация",
+  "description": "Lena mudou-se de Kazan para Moscou por causa do trabalho. Oito construções com дательный падеж: к + pessoa/coisa, благодаря e os verbos sem preposição que o português engana (помочь, мешать).",
+  "speakers": {"Лена": "f", "Максим": "m"},
+  "dialogue": {
+    "title": "На кухне в офисе",
+    "setting": "Maksim conversa com Lena, colega que chegou de Kazan há um mês.",
+    "lines": [
+      {"speaker": "Максим", "ru": "Лена, ты уже месяц в Москве. Ну как тебе здесь?", "pt": "Lena, você já está há um mês em Moscou. E aí, o que está achando?"},
+      {"speaker": "Лена", "ru": "Честно говоря, непросто. Я долго не могла привыкнуть к такому ритму жизни.", "pt": "Para ser sincera, não é fácil. Demorei a me acostumar com esse ritmo de vida."},
+      {"speaker": "Максим", "ru": "Понимаю. Когда я переехал из Твери, первое время страшно уставал.", "pt": "Entendo. Quando me mudei de Tver, nas primeiras semanas ficava exausto."},
+      {"speaker": "Лена", "ru": "Но я стараюсь адаптироваться к новым условиям. Благодаря коллегам всё стало гораздо легче.", "pt": "Mas estou tentando me adaptar às novas condições. Graças aos colegas, tudo ficou bem mais fácil."},
+      {"speaker": "Максим", "ru": "А почему ты вообще решила уехать из Казани? Там же была хорошая работа.", "pt": "E por que você decidiu sair de Kazan? Você tinha um bom emprego lá."},
+      {"speaker": "Лена", "ru": "Была. Но я всегда стремилась к профессиональному росту, а в нашем филиале это было невозможно.", "pt": "Tinha. Mas sempre busquei crescer profissionalmente, e na nossa filial isso era impossível."},
+      {"speaker": "Максим", "ru": "А родители не были против?", "pt": "E seus pais não foram contra?"},
+      {"speaker": "Лена", "ru": "Сначала мама боялась, что стресс приведёт к проблемам со здоровьем. Но потом сама помогла мне найти квартиру.", "pt": "No começo minha mãe tinha medo de que o estresse causasse problemas de saúde. Mas depois ela mesma me ajudou a encontrar um apartamento."},
+      {"speaker": "Максим", "ru": "Слушай, если будут трудности с документами, обращайся к Ирине из отдела кадров. Она всем помогает.", "pt": "Olha, se tiver dificuldade com documentos, fale com a Irina, do RH. Ela ajuda todo mundo."},
+      {"speaker": "Лена", "ru": "Спасибо! С документами пока всё в порядке. Больше всего мне мешает дорога: я трачу на неё почти два часа.", "pt": "Obrigada! Com os documentos, por enquanto, tudo certo. O que mais me atrapalha é o trajeto: gasto quase duas horas nele."},
+      {"speaker": "Максим", "ru": "Ничего, со временем привыкнешь. Главное — не сравнивай каждый день Москву с Казанью.", "pt": "Tudo bem, com o tempo você se acostuma. O importante é não comparar Moscou com Kazan todo dia."},
+      {"speaker": "Лена", "ru": "Постараюсь. Спасибо, что поддерживаешь.", "pt": "Vou tentar. Obrigada pelo apoio."}
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual é o assunto principal da conversa?",
+      "options": [
+        "Como Lena está lidando com a vida e o trabalho em Moscou.",
+        "Por que Maksim pensa em voltar a morar em Tver.",
+        "Como Lena quer convencer os pais a se mudarem para Moscou.",
+        "Os problemas de Lena com documentos na filial de Kazan."
+      ],
+      "answer": "Como Lena está lidando com a vida e o trabalho em Moscou.",
+      "explanation": "A conversa gira em torno da adaptação de Lena: ritmo de vida, colegas, motivo da mudança e trajeto."
+    },
+    {
+      "prompt": "Como Lena avalia, em geral, o primeiro mês?",
+      "options": [
+        "Difícil no começo, mas está melhorando.",
+        "Fácil, porque já conhecia bem a cidade.",
+        "Tão difícil que ela pensa em voltar.",
+        "Tranquilo, com exceção dos colegas."
+      ],
+      "answer": "Difícil no começo, mas está melhorando.",
+      "explanation": "«непросто… долго не могла привыкнуть», mas «всё стало гораздо легче»."
+    }
+  ],
+  "items": [
+    {
+      "key": "privyknut",
+      "lemma": "привыкать",
+      "tag": "привыкать к",
+      "head": "привыкать / привыкнуть к",
+      "regency": "привыкать / привыкнуть к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "acostumar-se a",
+      "chunk": "привыкнуть к новому графику",
+      "chunk_pt": "acostumar-se ao novo horário",
+      "chunk_wrong": ["привыкнуть с новым графиком", "привыкнуть к новом графике", "привыкнуть к новым графикам"],
+      "form_note": "O português do Brasil diz «acostumar-se com»; o russo só aceita к + дательный.",
+      "trap": "«Acostumar-se com» → não existe привыкнуть с. Sempre к + дательный: к городу, к людям, к тому, что…",
+      "example": {"ru": "Дети быстро привыкают к новой школе.", "pt": "As crianças se acostumam rápido à nova escola.", "extra": "новую", "note": "к новой школе: adjetivo e substantivo femininos no дательный (-ой, -е)."},
+      "cloze": {"ru": "Иностранные студенты не сразу привыкают ___.", "answer": "к русской зиме", "wrong": ["с русской зимой", "к русскую зиму", "к русской зимы"], "pt": "Estudantes estrangeiros não se acostumam logo ao inverno russo.", "note": "привыкать к чему? → к русской зиме (дательный, feminino: -ой, -е)."},
+      "hear": {"ru": "Коллеги быстро привыкли к новому директору.", "pt": "Os colegas se acostumaram rápido ao novo diretor.", "wrong": ["O novo diretor se acostumou rápido aos colegas.", "Os colegas se acostumaram rápido aos novos diretores.", "Os colegas nunca se acostumaram ao novo diretor."], "note": "Sujeito: коллеги (nominativo). Complemento: к новому директору — masculino (-ому, -у)."}
+    },
+    {
+      "key": "adaptirovatsya",
+      "lemma": "адаптироваться",
+      "tag": "адаптироваться к",
+      "head": "адаптироваться к",
+      "regency": "адаптироваться к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "adaptar-se a",
+      "chunk": "адаптироваться к новым требованиям",
+      "chunk_pt": "adaptar-se às novas exigências",
+      "chunk_wrong": ["адаптироваться с новыми требованиями", "адаптироваться к новыми требованиями", "адаптироваться на новые требования"],
+      "form_note": "Plural do дательный: -ым (adjetivo) + -ам/-ям (substantivo).",
+      "trap": "No plural, não misture -ым (дательный) com -ыми (творительный): к новым требованиям, não «к новыми».",
+      "example": {"ru": "Не всем мигрантам легко адаптироваться к местному климату.", "pt": "Nem todos os migrantes se adaptam facilmente ao clima local.", "extra": "климатом", "note": "к местному климату: masculino no дательный. мигрантам também é дательный (para quem é fácil)."},
+      "cloze": {"ru": "Пожилым людям бывает трудно адаптироваться ___.", "answer": "к новым технологиям", "wrong": ["к новыми технологиями", "с новыми технологиями", "на новые технологии"], "pt": "Para pessoas idosas às vezes é difícil adaptar-se às novas tecnologias.", "note": "к + дательный plural: -ым / -ям."},
+      "hear": {"ru": "Компания адаптировалась к кризису благодаря новым клиентам.", "pt": "A empresa se adaptou à crise graças aos novos clientes.", "wrong": ["Os novos clientes se adaptaram à crise graças à empresa.", "A empresa se adaptou à crise apesar dos novos clientes.", "A empresa está se adaptando à crise graças a um novo cliente."], "note": "компания = sujeito; к кризису e благодаря новым клиентам estão no дательный; адаптировалась = passado."}
+    },
+    {
+      "key": "stremitsya",
+      "lemma": "стремиться",
+      "tag": "стремиться к",
+      "head": "стремиться к",
+      "regency": "стремиться к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "aspirar a, buscar, empenhar-se por",
+      "chunk": "стремиться к профессиональному росту",
+      "chunk_pt": "buscar o crescimento profissional",
+      "chunk_wrong": ["стремиться на профессиональный рост", "стремиться к профессиональным ростом", "стремиться за профессиональным ростом"],
+      "form_note": "O objetivo buscado vem com к + дательный, nunca com на ou за.",
+      "trap": "«Buscar algo» leva a pensar em objeto direto ou em «ir atrás» (за + творительный). Com стремиться, o alvo é sempre к + дательный.",
+      "example": {"ru": "Эта компания стремится к лидерству на рынке.", "pt": "Esta empresa busca a liderança no mercado.", "extra": "лидерство", "note": "к лидерству: neutro em -ство → дательный -ству."},
+      "cloze": {"ru": "Каждый спортсмен стремится ___.", "answer": "к победе", "wrong": ["на победу", "к победу", "за победой"], "pt": "Todo atleta busca a vitória.", "note": "к победе — feminino em -а, дательный -е."},
+      "hear": {"ru": "Мой брат всегда стремился к независимости.", "pt": "Meu irmão sempre buscou a independência.", "wrong": ["Meu irmão sempre teve medo da independência.", "Meu irmão finalmente conquistou a independência.", "Meu irmão sempre lutou pela independência do país."], "note": "стремился = aspirava, buscava (processo). «Conquistou» seria достиг; «teve medo» seria боялся."}
+    },
+    {
+      "key": "privesti",
+      "lemma": "приводить",
+      "tag": "приводить к",
+      "head": "приводить / привести к",
+      "regency": "приводить / привести к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "levar a, causar, resultar em",
+      "chunk": "привести к серьёзным последствиям",
+      "chunk_pt": "levar a consequências sérias",
+      "chunk_wrong": ["привести до серьёзных последствий", "привести в серьёзные последствия", "привести к серьёзных последствиях"],
+      "form_note": "A consequência vem com к + дательный. «Levar até» não se traduz por до.",
+      "trap": "привести в + винительный existe, mas com outro sentido: привести в порядок (pôr em ordem), привести в пример (dar como exemplo).",
+      "example": {"ru": "Сокращение бюджета привело к закрытию библиотеки.", "pt": "O corte no orçamento levou ao fechamento da biblioteca.", "extra": "закрытие", "note": "к закрытию: neutro em -ие → дательный -ию."},
+      "cloze": {"ru": "Неправильное лечение может привести ___.", "answer": "к осложнениям", "wrong": ["к осложнений", "в осложнения", "до осложнений"], "pt": "Um tratamento inadequado pode levar a complicações.", "note": "к осложнениям — plural do дательный em -ям."},
+      "hear": {"ru": "Спор между соседями привёл к конфликту.", "pt": "A discussão entre os vizinhos levou a um conflito.", "wrong": ["O conflito entre os vizinhos levou a uma discussão.", "A discussão entre os vizinhos evitou um conflito.", "A discussão com o vizinho vai levar a um conflito."], "note": "спор = sujeito (causa); к конфликту = consequência; привёл = passado perfectivo."}
+    },
+    {
+      "key": "obratitsya",
+      "lemma": "обращаться",
+      "tag": "обращаться к",
+      "head": "обращаться / обратиться к",
+      "regency": "обращаться / обратиться к кому? чему? · в + винительный (instituição)",
+      "case": "дательный падеж",
+      "pt": "dirigir-se a, recorrer a, procurar (alguém)",
+      "chunk": "обратиться к специалисту",
+      "chunk_pt": "procurar um especialista",
+      "chunk_wrong": ["обратиться в специалиста", "обратиться специалисту", "обратиться к специалисте"],
+      "form_note": "Pessoa: к + дательный (к врачу, к юристу). Instituição: в + винительный (в банк, в полицию).",
+      "trap": "«Procurar um especialista» não é искать специалиста quando se quer ajuda dele: é обратиться к специалисту.",
+      "example": {"ru": "С этим вопросом лучше обратиться к юристу.", "pt": "Com essa questão é melhor procurar um advogado.", "extra": "юриста", "note": "к юристу: pessoa → к + дательный."},
+      "cloze": {"ru": "Если у вас болит зуб, нужно обратиться ___.", "answer": "к стоматологу", "wrong": ["в стоматолога", "к стоматологом", "стоматологу"], "pt": "Se o dente dói, é preciso procurar um dentista.", "note": "Pessoa → к стоматологу. Instituição seria в стоматологию."},
+      "hear": {"ru": "Студентка обратилась к преподавателю за советом.", "pt": "A estudante recorreu ao professor em busca de um conselho.", "wrong": ["O professor recorreu à estudante em busca de um conselho.", "A estudante deu um conselho ao professor.", "A estudante vai recorrer ao professor para pedir um conselho."], "note": "студентка = sujeito; к преподавателю = a quem recorreu; за советом = em busca de (за + творительный)."}
+    },
+    {
+      "key": "blagodarya",
+      "lemma": "благодаря",
+      "tag": "благодаря",
+      "head": "благодаря",
+      "regency": "благодаря кому? чему?",
+      "case": "дательный падеж",
+      "pt": "graças a (causa favorável)",
+      "chunk": "благодаря поддержке коллег",
+      "chunk_pt": "graças ao apoio dos colegas",
+      "chunk_wrong": ["благодаря поддержки коллег", "благодаря поддержку коллег", "благодаря за поддержку коллег"],
+      "form_note": "благодаря rege дательный; из-за (causa negativa) rege родительный — não misture.",
+      "trap": "Não confunda a preposição благодаря (+ дательный) com o verbo благодарить за (agradecer por).",
+      "example": {"ru": "Благодаря хорошей погоде экскурсия прошла отлично.", "pt": "Graças ao bom tempo, a excursão foi ótima.", "extra": "погоды", "note": "благодаря хорошей погоде — feminino no дательный."},
+      "cloze": {"ru": "___ проект закончили вовремя.", "answer": "Благодаря усилиям команды", "wrong": ["Благодаря усилий команды", "Благодаря усилиями команды", "Благодаря за усилия команды"], "pt": "Graças aos esforços da equipe, o projeto foi concluído a tempo.", "note": "усилиям — plural do дательный; команды — родительный (de quem são os esforços)."},
+      "hear": {"ru": "Благодаря бабушке дети выучили татарский язык.", "pt": "Graças à avó, as crianças aprenderam tártaro.", "wrong": ["Graças às crianças, a avó aprendeu tártaro.", "Apesar da avó, as crianças aprenderam tártaro.", "Graças à avó, as crianças estão aprendendo tártaro."], "note": "благодаря бабушке (дательный) = causa; дети = sujeito; выучили = perfectivo, resultado alcançado."}
+    },
+    {
+      "key": "pomoch",
+      "lemma": "помогать",
+      "tag": "помогать кому",
+      "head": "помогать / помочь",
+      "regency": "помогать / помочь кому? + инфинитив · с чем?",
+      "case": "дательный падеж",
+      "pt": "ajudar (alguém)",
+      "chunk": "помочь новому сотруднику",
+      "chunk_pt": "ajudar o novo funcionário",
+      "chunk_wrong": ["помочь нового сотрудника", "помочь новым сотрудником", "помочь к новому сотруднику"],
+      "form_note": "Em português «ajudar alguém» tem objeto direto; em russo, a pessoa ajudada vai para o дательный.",
+      "trap": "Calque típico: «помочь его» ✗ → помочь ему ✓. A tarefa vem no infinitivo: помочь ему найти квартиру.",
+      "example": {"ru": "Старший брат всегда помогает младшей сестре.", "pt": "O irmão mais velho sempre ajuda a irmã mais nova.", "extra": "сестру", "note": "помогать кому? → младшей сестре (дательный feminino)."},
+      "cloze": {"ru": "Волонтёры помогают ___ найти жильё.", "answer": "беженцам", "wrong": ["беженцев", "беженцами", "к беженцам"], "pt": "Os voluntários ajudam os refugiados a encontrar moradia.", "note": "помогать кому? → беженцам (дательный plural, -ам)."},
+      "hear": {"ru": "Соседка помогла нам перевезти вещи.", "pt": "A vizinha nos ajudou a transportar as coisas.", "wrong": ["Nós ajudamos a vizinha a transportar as coisas.", "A vizinha nos atrapalhou a transportar as coisas.", "A vizinha vai nos ajudar a transportar as coisas."], "note": "соседка = sujeito; нам = дательный (quem recebeu ajuda); помогла = passado."}
+    },
+    {
+      "key": "meshat",
+      "lemma": "мешать",
+      "tag": "мешать кому",
+      "head": "мешать / помешать",
+      "regency": "мешать / помешать кому? чему? + инфинитив",
+      "case": "дательный падеж",
+      "pt": "atrapalhar, incomodar, impedir",
+      "chunk": "мешать соседям",
+      "chunk_pt": "incomodar os vizinhos",
+      "chunk_wrong": ["мешать соседей", "мешать соседями", "мешать к соседям"],
+      "form_note": "Como помогать: quem é atrapalhado vai para o дательный.",
+      "trap": "«Incomodar alguém» parece pedir objeto direto: мешать соседей ✗ → мешать соседям ✓.",
+      "example": {"ru": "Громкая музыка мешает мне сосредоточиться.", "pt": "A música alta me impede de me concentrar.", "extra": "меня", "note": "мешать кому? → мне (дательный de я)."},
+      "cloze": {"ru": "Постоянный шум за окном мешает ___.", "answer": "моей работе", "wrong": ["мою работу", "моей работы", "моей работой"], "pt": "O barulho constante do lado de fora atrapalha o meu trabalho.", "note": "мешать чему? → моей работе (дательный feminino)."},
+      "hear": {"ru": "Ремонт у соседей мешает ребёнку спать.", "pt": "A reforma dos vizinhos atrapalha o sono da criança.", "wrong": ["A criança atrapalha a reforma dos vizinhos.", "A reforma dos vizinhos ajuda a criança a dormir.", "A reforma dos vizinhos atrapalhava o sono das crianças."], "note": "ремонт = sujeito; ребёнку = дательный singular (quem é atrapalhado); мешает = presente."}
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Por que Lena saiu de Kazan?",
+      "options": [
+        "Na filial de Kazan não havia como crescer na carreira.",
+        "Recebeu em Moscou uma oferta com salário muito maior.",
+        "Os pais pediram que ela fosse morar perto deles.",
+        "Perdeu o emprego que tinha na filial de Kazan."
+      ],
+      "answer": "Na filial de Kazan não havia como crescer na carreira.",
+      "explanation": "«я всегда стремилась к профессиональному росту, а в нашем филиале это было невозможно»."
+    },
+    {
+      "prompt": "Segundo Lena, o que mais a atrapalha agora?",
+      "options": [
+        "O trajeto: gasta quase duas horas nele.",
+        "Os documentos: ainda não os resolveu.",
+        "A saúde: o estresse a deixou doente.",
+        "Os colegas: ainda não a aceitaram."
+      ],
+      "answer": "O trajeto: gasta quase duas horas nele.",
+      "explanation": "«Больше всего мне мешает дорога». Os documentos estão em ordem; a doença era só o medo da mãe."
+    }
+  ],
+  "reconstruct": [
+    {"line": 1, "gap": "к такому ритму", "wrong": ["с таким ритмом", "к такой ритм", "к таким ритмам"], "note": "привыкнуть к чему? → к такому ритму (дательный masculino singular)."},
+    {"line": 3, "gap": "Благодаря коллегам", "wrong": ["Благодаря коллег", "Благодаря коллегами", "Благодаря с коллегами"], "note": "благодаря кому? → коллегам (дательный plural)."},
+    {"line": 5, "gap": "к профессиональному росту", "wrong": ["на профессиональный рост", "за профессиональным ростом", "к профессиональным ростом"], "note": "стремиться к чему? → к профессиональному росту."},
+    {"line": 8, "gap": "к Ирине", "wrong": ["в Ирину", "к Ирину", "Ирине"], "note": "Pessoa → обращаться к + дательный: к Ирине."}
+  ],
+  "match": {
+    "instruction": "Pares quase iguais, sentidos diferentes. Relacione cada construção russa ao seu sentido.",
+    "prompt": "Mesma raiz, outra regência: o que muda?",
+    "pairs": [
+      {"left": "обратиться к врачу", "right": "consultar um médico"},
+      {"left": "обратиться в больницу", "right": "procurar o hospital"},
+      {"left": "привести к кризису", "right": "levar a uma crise"},
+      {"left": "привести в порядок", "right": "pôr em ordem"},
+      {"left": "благодаря помощи", "right": "graças à ajuda"},
+      {"left": "благодарить за помощь", "right": "agradecer pela ajuda"}
+    ],
+    "explanation": "к + pessoa × в + instituição; к + consequência × в порядок (expressão fixa); благодаря + дательный × благодарить за + винительный."
+  },
+  "replies": [
+    {
+      "speaker": "Максим",
+      "you": "Лена",
+      "ru": "Слушай, а к нашему обеду в двенадцать ты уже привыкла?",
+      "prompt": "Maksim pergunta se você já se acostumou ao almoço ao meio-dia. Responda.",
+      "answer": "Почти. К обеду в двенадцать я уже привыкла.",
+      "wrong": ["Почти. На обед в двенадцать я уже привыкла.", "Почти. Обедом в двенадцать я уже привыкла.", "Почти. К обеду в двенадцать я уже привыкну."],
+      "explanation": "привыкнуть к чему? → к обеду. «уже» + resultado pede o passado привыкла, não o futuro привыкну."
+    },
+    {
+      "speaker": "Лена",
+      "you": "Максим",
+      "ru": "Мне нужна справка для визы. К кому мне обратиться?",
+      "prompt": "Lena precisa de um documento para o visto. Responda a quem ela deve procurar.",
+      "answer": "Обратись к Ирине, она этим занимается.",
+      "wrong": ["Обратись Ирине, она этим занимается.", "Обратись в Ирину, она этим занимается.", "Обратись к Ирину, она этим занимается."],
+      "explanation": "К кому? → к Ирине: preposição к + дательный (-е para femininos em -а)."
+    }
+  ],
+  "writing": {
+    "prompt": "Um amigo vai se mudar para outra cidade. Escreva a ele uma mensagem contando como foi a sua adaptação a um lugar novo e dando dois conselhos.",
+    "use": ["привыкнуть к", "адаптироваться к", "благодаря", "обратиться к", "мешать кому"],
+    "words": "40–60",
+    "notes": "Verificar: к + дательный em todas as construções; благодаря + дательный; мешать/помогать + дательный sem preposição; aspecto de привыкать/привыкнуть."
+  }
+}

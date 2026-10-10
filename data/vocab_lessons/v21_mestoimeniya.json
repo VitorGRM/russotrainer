@@ -1,0 +1,580 @@
+{
+  "id": "v21",
+  "unit_id": "u21_mestoimeniya",
+  "order": 21,
+  "title": "Разговор перед выборами",
+  "theme": "Uma estudante e seu avô discutem participação e responsabilidade antes de uma eleição",
+  "description": "Uma estudante e seu avô discutem participação e responsabilidade antes de uma eleição. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Внучка": "f",
+    "Дедушка": "m"
+  },
+  "dialogue": {
+    "title": "Разговор перед выборами",
+    "setting": "Uma estudante e seu avô discutem participação e responsabilidade antes de uma eleição",
+    "lines": [
+      {
+        "speaker": "Внучка",
+        "ru": "Я хочу участвовать в местных выборах, но ещё читаю программы.",
+        "pt": "Quero participar das eleições locais, mas ainda estou lendo os programas."
+      },
+      {
+        "speaker": "Дедушка",
+        "ru": "Не спеши голосовать за эту партию только потому, что её поддерживают друзья.",
+        "pt": "Não se apresse em votar neste partido só porque seus amigos o apoiam."
+      },
+      {
+        "speaker": "Внучка",
+        "ru": "Я предпочитаю выступать за новую реформу, если она помогает школам.",
+        "pt": "Prefiro me manifestar a favor da nova reforma se ela ajuda as escolas."
+      },
+      {
+        "speaker": "Дедушка",
+        "ru": "Важно взять на себя ответственность за решение, а не повторять чужое мнение.",
+        "pt": "É importante assumir a responsabilidade pela decisão, em vez de repetir a opinião alheia."
+      },
+      {
+        "speaker": "Внучка",
+        "ru": "После обсуждений я стала чувствовать себя уверенно.",
+        "pt": "Depois das discussões, passei a me sentir confiante."
+      },
+      {
+        "speaker": "Дедушка",
+        "ru": "Можно поддерживать нового кандидата и всё равно задавать ему трудные вопросы.",
+        "pt": "É possível apoiar o novo candidato e ainda assim fazer perguntas difíceis a ele."
+      },
+      {
+        "speaker": "Внучка",
+        "ru": "Он собирается обещать избирателям помощь с транспортом.",
+        "pt": "Ele pretende prometer aos eleitores ajuda com o transporte."
+      },
+      {
+        "speaker": "Дедушка",
+        "ru": "А кто будет платить? Хорошо ни от кого не зависеть, но нужен прозрачный бюджет.",
+        "pt": "E quem vai pagar? É bom não depender de ninguém, mas é preciso um orçamento transparente."
+      },
+      {
+        "speaker": "Внучка",
+        "ru": "Я проверю источники финансирования и только потом решу.",
+        "pt": "Vou conferir as fontes de financiamento e só depois decidir."
+      },
+      {
+        "speaker": "Дедушка",
+        "ru": "Тогда наш разговор был полезен. Обсудим результаты после выборов.",
+        "pt": "Então nossa conversa foi útil. Vamos discutir os resultados depois das eleições."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual atitude o avô recomenda?",
+      "options": [
+        "Examinar propostas e assumir a própria decisão.",
+        "Votar sempre no partido preferido pelos amigos.",
+        "Evitar perguntas ao candidato que se apoia.",
+        "Aceitar promessas sem consultar o orçamento."
+      ],
+      "answer": "Examinar propostas e assumir a própria decisão.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "участвовать",
+      "tag": "участвовать в выборах",
+      "head": "участвовать в выборах",
+      "regency": "участвовать в чём?",
+      "case": "предложный падеж",
+      "pt": "participar das eleições locais",
+      "chunk": "участвовать в местных выборах",
+      "chunk_pt": "participar das eleições locais",
+      "chunk_wrong": [
+        "участвовать в местные выборы",
+        "участвовать в местных выборов",
+        "участвовать в местными выборами"
+      ],
+      "form_note": "участвовать в чём? usa предложный падеж; выборы é plural, por isso в выборах.",
+      "trap": "участвовать в чём? usa предложный падеж; выборы é plural, por isso в выборах.",
+      "example": {
+        "ru": "Молодёжь участвует в общественных обсуждениях.",
+        "pt": "Os jovens participam de debates públicos.",
+        "extra": "обсуждения",
+        "note": "участвовать в чём? usa предложный падеж; выборы é plural, por isso в выборах."
+      },
+      "cloze": {
+        "ru": "Мы собираемся участвовать ___.",
+        "answer": "в президентских выборах",
+        "wrong": [
+          "в президентские выборы",
+          "в президентских выборов",
+          "в президентскими выборами"
+        ],
+        "pt": "Pretendemos participar das eleições presidenciais.",
+        "note": "участвовать в чём? usa предложный падеж; выборы é plural, por isso в выборах."
+      },
+      "hear": {
+        "ru": "Дочь участвовала в выборах вместе с отцом.",
+        "pt": "A filha participou das eleições junto com o pai.",
+        "wrong": [
+          "A filha participará das eleições junto com o pai.",
+          "A filha não participou das eleições junto com o pai.",
+          "O filho participou das eleições junto com o pai."
+        ],
+        "note": "участвовать в чём? usa предложный падеж; выборы é plural, por isso в выборах."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "голосовать",
+      "tag": "голосовать за / против",
+      "head": "голосовать за / против",
+      "regency": "голосовать за кого? что? / против кого? чего?",
+      "case": "винительный падеж / родительный падеж",
+      "pt": "votar neste partido",
+      "chunk": "голосовать за эту партию",
+      "chunk_pt": "votar neste partido",
+      "chunk_wrong": [
+        "голосовать за этой партии",
+        "голосовать за этой партией",
+        "голосовать за эта партия"
+      ],
+      "form_note": "за + винительный падеж; против + родительный падеж. A polaridade e o caso mudam juntos.",
+      "trap": "за + винительный падеж; против + родительный падеж. A polaridade e o caso mudam juntos.",
+      "example": {
+        "ru": "Она голосовала против нового закона.",
+        "pt": "Ela votou contra a nova lei.",
+        "extra": "закону",
+        "note": "за + винительный падеж; против + родительный падеж. A polaridade e o caso mudam juntos."
+      },
+      "cloze": {
+        "ru": "Он решил голосовать ___.",
+        "answer": "против этого проекта",
+        "wrong": [
+          "против этот проект",
+          "против этому проекту",
+          "против этим проектом"
+        ],
+        "pt": "Ele decidiu votar contra este projeto.",
+        "note": "за + винительный падеж; против + родительный падеж. A polaridade e o caso mudam juntos."
+      },
+      "hear": {
+        "ru": "Брат голосовал за кандидата, а сестра против него.",
+        "pt": "O irmão votou no candidato, e a irmã contra ele.",
+        "wrong": [
+          "A irmã votou no candidato, e o irmão contra ele.",
+          "O irmão votará no candidato, e a irmã contra ele.",
+          "O irmão votou contra o candidato, e a irmã nele."
+        ],
+        "note": "за + винительный падеж; против + родительный падеж. A polaridade e o caso mudam juntos."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "выступать",
+      "tag": "выступать за / против",
+      "head": "выступать за / против",
+      "regency": "выступать за что? / против чего?",
+      "case": "винительный падеж / родительный падеж",
+      "pt": "manifestar-se a favor da nova reforma",
+      "chunk": "выступать за новую реформу",
+      "chunk_pt": "manifestar-se a favor da nova reforma",
+      "chunk_wrong": [
+        "выступать за новой реформе",
+        "выступать за новой реформой",
+        "выступать за новой реформы"
+      ],
+      "form_note": "выступать за что? é declarar apoio; выступать против чего? é oposição. Não confunda com falar em um palco.",
+      "trap": "выступать за что? é declarar apoio; выступать против чего? é oposição. Não confunda com falar em um palco.",
+      "example": {
+        "ru": "Жители выступают против закрытия школы.",
+        "pt": "Os moradores se manifestam contra o fechamento da escola.",
+        "extra": "закрытию",
+        "note": "выступать за что? é declarar apoio; выступать против чего? é oposição. Não confunda com falar em um palco."
+      },
+      "cloze": {
+        "ru": "Мы выступаем ___.",
+        "answer": "за равные права",
+        "wrong": [
+          "за равных прав",
+          "за равным правам",
+          "за равными правами"
+        ],
+        "pt": "Nós nos manifestamos a favor de direitos iguais.",
+        "note": "выступать за что? é declarar apoio; выступать против чего? é oposição. Não confunda com falar em um palco."
+      },
+      "hear": {
+        "ru": "Студенты выступали за реформу, а учителя против неё.",
+        "pt": "Os estudantes eram a favor da reforma, e os professores contra ela.",
+        "wrong": [
+          "Os professores eram a favor da reforma, e os estudantes contra ela.",
+          "Os estudantes serão a favor da reforma, e os professores contra ela.",
+          "Os estudantes eram contra a reforma, e os professores a favor dela."
+        ],
+        "note": "выступать за что? é declarar apoio; выступать против чего? é oposição. Não confunda com falar em um palco."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "брать",
+      "tag": "взять на себя",
+      "head": "взять на себя",
+      "regency": "взять на себя что?",
+      "case": "винительный падеж",
+      "pt": "assumir a responsabilidade",
+      "chunk": "взять на себя ответственность",
+      "chunk_pt": "assumir a responsabilidade",
+      "chunk_wrong": [
+        "взять на себе ответственность",
+        "взять на собой ответственность",
+        "взять на себя ответственности"
+      ],
+      "form_note": "A expressão é взять на себя что?: себя é a forma reflexiva, e a responsabilidade é objeto direto.",
+      "trap": "A expressão é взять на себя что?: себя é a forma reflexiva, e a responsabilidade é objeto direto.",
+      "example": {
+        "ru": "Она взяла на себя организацию встречи.",
+        "pt": "Ela assumiu a organização do encontro.",
+        "extra": "организацией",
+        "note": "A expressão é взять на себя что?: себя é a forma reflexiva, e a responsabilidade é objeto direto."
+      },
+      "cloze": {
+        "ru": "Он готов взять на себя ___.",
+        "answer": "трудную задачу",
+        "wrong": [
+          "трудной задаче",
+          "трудной задачей",
+          "трудной задачи"
+        ],
+        "pt": "Ele está pronto para assumir a tarefa difícil.",
+        "note": "A expressão é взять на себя что?: себя é a forma reflexiva, e a responsabilidade é objeto direto."
+      },
+      "hear": {
+        "ru": "Дочь взяла на себя заботу о матери.",
+        "pt": "A filha assumiu o cuidado com a mãe.",
+        "wrong": [
+          "A mãe assumiu o cuidado com a filha.",
+          "A filha não assumiu o cuidado com a mãe.",
+          "A filha assumirá o cuidado com a mãe."
+        ],
+        "note": "A expressão é взять на себя что?: себя é a forma reflexiva, e a responsabilidade é objeto direto."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "чувствовать",
+      "tag": "чувствовать себя",
+      "head": "чувствовать себя",
+      "regency": "чувствовать себя как? кем?",
+      "case": "возвратное местоимение",
+      "pt": "sentir-se confiante",
+      "chunk": "чувствовать себя уверенно",
+      "chunk_pt": "sentir-se confiante",
+      "chunk_wrong": [
+        "чувствовать себе уверенно",
+        "чувствовать собой уверенно",
+        "чувствовать свой уверенно"
+      ],
+      "form_note": "чувствовать себя usa себя para qualquer pessoa; свой indica posse e não substitui o pronome reflexivo.",
+      "trap": "чувствовать себя usa себя para qualquer pessoa; свой indica posse e não substitui o pronome reflexivo.",
+      "example": {
+        "ru": "После отдыха я чувствую себя лучше.",
+        "pt": "Depois de descansar, eu me sinto melhor.",
+        "extra": "себе",
+        "note": "чувствовать себя usa себя para qualquer pessoa; свой indica posse e não substitui o pronome reflexivo."
+      },
+      "cloze": {
+        "ru": "На новой работе она чувствует ___ спокойно.",
+        "answer": "себя",
+        "wrong": [
+          "себе",
+          "собой",
+          "свою"
+        ],
+        "pt": "No novo emprego, ela se sente tranquila.",
+        "note": "чувствовать себя usa себя para qualquer pessoa; свой indica posse e não substitui o pronome reflexivo."
+      },
+      "hear": {
+        "ru": "Отец чувствовал себя спокойнее рядом с сыном.",
+        "pt": "O pai se sentia mais tranquilo ao lado do filho.",
+        "wrong": [
+          "O filho se sentia mais tranquilo ao lado do pai.",
+          "O pai não se sentia mais tranquilo ao lado do filho.",
+          "O pai se sentirá mais tranquilo ao lado do filho."
+        ],
+        "note": "чувствовать себя usa себя para qualquer pessoa; свой indica posse e não substitui o pronome reflexivo."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "поддерживать",
+      "tag": "поддерживать",
+      "head": "поддерживать",
+      "regency": "поддерживать кого? что?",
+      "case": "винительный падеж",
+      "pt": "apoiar o novo candidato",
+      "chunk": "поддерживать нового кандидата",
+      "chunk_pt": "apoiar o novo candidato",
+      "chunk_wrong": [
+        "поддерживать новому кандидату",
+        "поддерживать новым кандидатом",
+        "поддерживать новый кандидат"
+      ],
+      "form_note": "поддерживать кого? что? é transitivo; não acrescente preposição por analogia a выступать за.",
+      "trap": "поддерживать кого? что? é transitivo; não acrescente preposição por analogia a выступать за.",
+      "example": {
+        "ru": "Коллеги поддержали мою идею.",
+        "pt": "Os colegas apoiaram minha ideia.",
+        "extra": "идее",
+        "note": "поддерживать кого? что? é transitivo; não acrescente preposição por analogia a выступать за."
+      },
+      "cloze": {
+        "ru": "Семья поддерживает ___.",
+        "answer": "младшую дочь",
+        "wrong": [
+          "младшей дочери",
+          "младшей дочерью",
+          "младшая дочь"
+        ],
+        "pt": "A família apoia a filha mais nova.",
+        "note": "поддерживать кого? что? é transitivo; não acrescente preposição por analogia a выступать за."
+      },
+      "hear": {
+        "ru": "Дедушка поддерживал решение внучки.",
+        "pt": "O avô apoiava a decisão da neta.",
+        "wrong": [
+          "A neta apoiava a decisão do avô.",
+          "O avô não apoiava a decisão da neta.",
+          "O avô apoiará a decisão da neta."
+        ],
+        "note": "поддерживать кого? что? é transitivo; não acrescente preposição por analogia a выступать за."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "обещать",
+      "tag": "обещать",
+      "head": "обещать",
+      "regency": "обещать кому? что?",
+      "case": "дательный падеж + винительный падеж",
+      "pt": "prometer ajuda aos eleitores",
+      "chunk": "обещать избирателям помощь",
+      "chunk_pt": "prometer ajuda aos eleitores",
+      "chunk_wrong": [
+        "обещать избирателей помощь",
+        "обещать избирателями помощь",
+        "обещать избирателям помощи"
+      ],
+      "form_note": "Quem recebe: кому? em дательный падеж. O que se promete: что? em винительный падеж.",
+      "trap": "Quem recebe: кому? em дательный падеж. O que se promete: что? em винительный падеж.",
+      "example": {
+        "ru": "Мать обещала сыну поддержку.",
+        "pt": "A mãe prometeu apoio ao filho.",
+        "extra": "сына",
+        "note": "Quem recebe: кому? em дательный падеж. O que se promete: что? em винительный падеж."
+      },
+      "cloze": {
+        "ru": "Он обещал соседям ___.",
+        "answer": "новую площадку",
+        "wrong": [
+          "новой площадке",
+          "новой площадкой",
+          "новой площадки"
+        ],
+        "pt": "Ele prometeu aos vizinhos uma área de lazer nova.",
+        "note": "Quem recebe: кому? em дательный падеж. O que se promete: что? em винительный падеж."
+      },
+      "hear": {
+        "ru": "Кандидат обещал студентам скидки на транспорт.",
+        "pt": "O candidato prometeu aos estudantes descontos no transporte.",
+        "wrong": [
+          "Os estudantes prometeram ao candidato descontos no transporte.",
+          "O candidato não prometeu aos estudantes descontos no transporte.",
+          "O candidato prometerá aos estudantes descontos no transporte."
+        ],
+        "note": "Quem recebe: кому? em дательный падеж. O que se promete: что? em винительный падеж."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "зависеть",
+      "tag": "ни от кого не зависеть",
+      "head": "ни от кого не зависеть",
+      "regency": "не зависеть ни от кого? ни от чего?",
+      "case": "родительный падеж",
+      "pt": "não depender de ninguém",
+      "chunk": "ни от кого не зависеть",
+      "chunk_pt": "não depender de ninguém",
+      "chunk_wrong": [
+        "ни от кому не зависеть",
+        "ни от кем не зависеть",
+        "ни от кто не зависеть"
+      ],
+      "form_note": "Em russo, ни exige também не no verbo; com preposição, escreva ни от кого em três palavras.",
+      "trap": "Em russo, ни exige também не no verbo; com preposição, escreva ни от кого em três palavras.",
+      "example": {
+        "ru": "Эта организация ни от кого не зависит.",
+        "pt": "Esta organização não depende de ninguém.",
+        "extra": "кому",
+        "note": "Em russo, ни exige também не no verbo; com preposição, escreva ни от кого em três palavras."
+      },
+      "cloze": {
+        "ru": "Я хочу ни от кого ___.",
+        "answer": "не зависеть",
+        "wrong": [
+          "не завишу",
+          "не зависит",
+          "не зависел"
+        ],
+        "pt": "Quero não depender de ninguém.",
+        "note": "Em russo, ни exige também не no verbo; com preposição, escreva ни от кого em três palavras."
+      },
+      "hear": {
+        "ru": "Сестра ни от кого не зависела финансово.",
+        "pt": "A irmã não dependia financeiramente de ninguém.",
+        "wrong": [
+          "A irmã dependia financeiramente de alguém.",
+          "A irmã não dependerá financeiramente de ninguém.",
+          "O irmão não dependia financeiramente de ninguém."
+        ],
+        "note": "Em russo, ни exige também не no verbo; com preposição, escreva ни от кого em três palavras."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Que ajuda o candidato pretende prometer?",
+      "options": [
+        "Ajuda aos eleitores com o transporte.",
+        "Ajuda às escolas com a construção de hotéis.",
+        "Ajuda aos candidatos com despesas de viagem.",
+        "Ajuda aos amigos com a compra de computadores."
+      ],
+      "answer": "Ajuda aos eleitores com o transporte.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "O que a neta vai conferir antes de decidir?",
+      "options": [
+        "As fontes de financiamento da proposta.",
+        "A opinião de todos os amigos da escola.",
+        "A cor dos cartazes usados pela campanha.",
+        "O resultado oficial depois das eleições."
+      ],
+      "answer": "As fontes de financiamento da proposta.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "в местных выборах",
+      "wrong": [
+        "в местные выборы",
+        "в местных выборов",
+        "в местными выборами"
+      ],
+      "note": "участвовать в чём? usa предложный падеж; выборы é plural, por isso в выборах."
+    },
+    {
+      "line": 1,
+      "gap": "за эту партию",
+      "wrong": [
+        "за этой партии",
+        "за этой партией",
+        "за эта партия"
+      ],
+      "note": "за + винительный падеж; против + родительный падеж. A polaridade e o caso mudam juntos."
+    },
+    {
+      "line": 3,
+      "gap": "на себя ответственность",
+      "wrong": [
+        "на себе ответственность",
+        "на собой ответственность",
+        "на себя ответственности"
+      ],
+      "note": "A expressão é взять на себя что?: себя é a forma reflexiva, e a responsabilidade é objeto direto."
+    },
+    {
+      "line": 7,
+      "gap": "ни от кого не зависеть",
+      "wrong": [
+        "ни от кому не зависеть",
+        "ни от кем не зависеть",
+        "ни от кто не зависеть"
+      ],
+      "note": "Em russo, ни exige também не no verbo; com preposição, escreva ни от кого em três palavras."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "участвовать в местных выборах",
+        "right": "participar das eleições locais"
+      },
+      {
+        "left": "голосовать за эту партию",
+        "right": "votar neste partido"
+      },
+      {
+        "left": "выступать за новую реформу",
+        "right": "manifestar-se a favor da nova reforma"
+      },
+      {
+        "left": "взять на себя ответственность",
+        "right": "assumir a responsabilidade"
+      },
+      {
+        "left": "чувствовать себя уверенно",
+        "right": "sentir-se confiante"
+      },
+      {
+        "left": "поддерживать нового кандидата",
+        "right": "apoiar o novo candidato"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Внучка",
+      "you": "Дедушка",
+      "ru": "Как ты собираешься участвовать в жизни города?",
+      "prompt": "Responda sobre participação nas eleições.",
+      "answer": "Я хочу участвовать в местных выборах.",
+      "wrong": [
+        "Я хочу участвовать в местные выборы.",
+        "Я хочу участвовать в местных выборов.",
+        "Я хочу участвовать в местными выборами."
+      ],
+      "explanation": "участвовать в чём? usa предложный падеж; выборы é plural, por isso в выборах."
+    },
+    {
+      "speaker": "Дедушка",
+      "you": "Внучка",
+      "ru": "Кого ты собираешься поддержать на выборах?",
+      "prompt": "Responda com o alvo do voto.",
+      "answer": "Я решил голосовать за эту партию.",
+      "wrong": [
+        "Я решил голосовать за этой партии.",
+        "Я решил голосовать за этой партией.",
+        "Я решил голосовать за эта партия."
+      ],
+      "explanation": "за + винительный падеж; против + родительный падеж. A polaridade e o caso mudam juntos."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva um comentário neutro sobre como avaliar uma proposta pública. Distinga apoio, oposição, promessa e responsabilidade.",
+    "use": [
+      "участвовать в выборах",
+      "голосовать за / против",
+      "выступать за / против",
+      "взять на себя",
+      "чувствовать себя"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: участвовать в чём?; голосовать за кого? что? / против кого? чего?; выступать за что? / против чего?; взять на себя что?; чувствовать себя как? кем?; поддерживать кого? что?; обещать кому? что?; не зависеть ни от кого? ни от чего?."
+  }
+}

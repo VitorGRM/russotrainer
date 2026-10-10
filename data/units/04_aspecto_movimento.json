@@ -1,0 +1,645 @@
+{
+  "id": "u04_aspecto_movimento",
+  "order": 4,
+  "title": "Aspecto, movimento e пере-",
+  "description": "Integra processo, repetição e resultado com ехать, приехать, уехать, переехать e relações где? куда? откуда?.",
+  "estimated_minutes": 35,
+  "objectives": [
+    "escolher aspecto pelo modo de apresentar a ação",
+    "distinguir localização, destino e origem",
+    "tratar o prefixo como pista semântica, não como tradução fixa"
+  ],
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção: usar a estrutura numa frase sua."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Aspecto verbal: processo/repetição × resultado",
+      "paragraphs": [
+        "O par aspectual несовершенный/совершенный não é «passado × presente», é uma escolha de como a ação é apresentada. Use несовершенный вид (переезжать, получать, менять) para: 1) fato geral, sem foco no resultado; 2) processo em curso; 3) ação repetida (обычно, часто, несколько раз, каждый год). Use совершенный вид (переехать, получить, сменить) para uma ação vista como um único evento concluído, com resultado (наконец, уже, в прошлом году + data específica).",
+        "Caso real já discutido: «несколько раз переезжала» usa несовершенный вид mesmo que cada mudança individual tenha terminado — несколько раз sinaliza repetição, e é a série que está sendo descrita, não o resultado de uma mudança específica.",
+        "Padrões de formação mais comuns do par aspectual: prefixação (де́лать → с де́лать), troca de sufixo -ыва-/-ива- → raiz sem sufixo (перепи́сывать → переписать), sufixo -а- → -и- (реша́ть → реши́ть), e pares totalmente diferentes/supletivos (говорить → сказать, брать → взять)."
+      ],
+      "audio_script": "Vamos falar de aspecto verbal, que é provavelmente o assunto mais difícil do russo para quem fala português. E o primeiro passo é desfazer um mal-entendido muito comum. O par aspectual несовершенный e совершенный não é a diferença entre passado e presente. Não é tempo verbal. É uma escolha sobre COMO você apresenta a ação. A mesma ação, no mesmo momento, pode ser dita das duas formas. Use o aspecto incompleto, несовершенный вид — переезжать, получать, менять — em três situações. Primeira: fato geral, sem foco em resultado nenhum. Вы переезжали? Você já se mudou alguma vez? Segunda: processo em andamento. Когда я переезжал, шёл дождь. Enquanto eu me mudava, chovia. Terceira, e é a que mais confunde: ação repetida. Palavras como обычно, часто, несколько раз, каждый год puxam o incompleto. Use o aspecto completo, совершенный вид — переехать, получить, сменить — quando a ação é um evento único, visto do lado do resultado. Наконец, уже, в прошлом году com data específica: esses marcadores puxam o completo. Vamos a um caso real que aparece nos textos do curso e que quase todo aluno erra. Она несколько раз переезжала. Ela se mudou várias vezes. O verbo está no incompleto, mesmo que cada mudança individual tenha terminado e tenha dado resultado. Por quê? Porque несколько раз sinaliza uma série, e o que está sendo descrito é a série, não o resultado de uma mudança específica. Agora, como os pares se formam. São quatro padrões, e reconhecê-los economiza muita memorização. Padrão um, prefixação: делать vira сделать, писать vira написать. Padrão dois, perda do sufixo ыва ou ива: переписывать vira переписать. Padrão três, troca do sufixo а pelo и: решать vira решить, получать vira получить. E padrão quatro, os supletivos, que são pares completamente diferentes e precisam ser decorados: говорить e сказать. брать e взять.",
+      "examples": [
+        {
+          "ru": "Она несколько раз переезжала из города в город.",
+          "pt": "Ela se mudou várias vezes de cidade em cidade.",
+          "note": "несколько раз = série → aspecto incompleto."
+        },
+        {
+          "ru": "В прошлом году она наконец переехала в Москву.",
+          "pt": "No ano passado ela finalmente se mudou para Moscou.",
+          "note": "наконец + data → aspecto completo."
+        },
+        {
+          "ru": "Когда я переезжал, шёл дождь.",
+          "pt": "Enquanto eu me mudava, chovia.",
+          "note": "Processo em curso → incompleto nos dois verbos."
+        },
+        {
+          "ru": "Он обычно получает письма утром, но вчера получил вечером.",
+          "pt": "Ele costuma receber cartas de manhã, mas ontem recebeu à noite.",
+          "note": "обычно → incompleto; вчера pontual → completo."
+        }
+      ],
+      "pitfalls": [
+        "Traduzir aspecto por tempo verbal: «переезжал» não é imperfeito do português, é um modo de apresentar a ação.",
+        "Usar completo com несколько раз, часто ou каждый год — esses marcadores exigem incompleto."
+      ]
+    },
+    {
+      "title": "Verbos de movimento com prefixo: direção",
+      "paragraphs": [
+        "Sobre a raiz -ех- (ехать, de veículo), os prefixos marcam a direção do deslocamento: при- = chegada (приехать), у- = saída/afastamento (уехать), пере- = mudança de um lugar/estado para outro (переехать). A pergunta muda com o prefixo: приехать откуда? (de onde chegou), уехать куда?/откуда?, переехать откуда? куда? (de onde para onde)."
+      ],
+      "audio_script": "Agora os verbos de movimento com prefixo. A raiz aqui é ех, de ехать, que é deslocar-se de veículo. Sobre essa raiz, o prefixo marca a direção, e três prefixos cobrem a maior parte dos textos. при indica chegada: приехать, chegar. у indica saída, afastamento: уехать, ir embora. пере indica passagem de um lugar a outro: переехать, mudar-se. E repare numa coisa sutil: o prefixo muda também a pergunta que o verbo aceita. приехать combina naturalmente com откуда — de onde você chegou. уехать combina com куда — para onde você foi. E переехать aceita as duas ao mesmo tempo: откуда e куда, de onde para onde. Он приехал из Казани. Он уехал в Москву. Он переехал из Казани в Москву. Uma frase, dois complementos, e cada um no seu caso: из mais genitivo para origem, в mais acusativo para destino.",
+      "examples": [
+        {
+          "ru": "Он приехал из Казани вчера вечером.",
+          "pt": "Ele chegou de Kazan ontem à noite.",
+          "note": "при- + откуда? → из + родительный."
+        },
+        {
+          "ru": "Через год они уехали в другой город.",
+          "pt": "Um ano depois eles foram embora para outra cidade.",
+          "note": "у- + куда? → в + винительный."
+        },
+        {
+          "ru": "Семья переехала из деревни в областной центр.",
+          "pt": "A família se mudou do campo para a capital regional.",
+          "note": "пере- aceita откуда e куда na mesma frase."
+        }
+      ],
+      "pitfalls": [
+        "Usar приехать com в quando se quer dizer «vir de»: chegada de um lugar é из/с + родительный."
+      ]
+    },
+    {
+      "title": "Prefixo пере-: pista semântica, não tradução única",
+      "paragraphs": [
+        "пере- carrega a ideia central de «passar de um lugar/estado a outro», que se realiza de formas bem diferentes conforme o verbo: переехать = mudar de residência/cidade; перенести (встречу) = adiar/remarcar; переписать = reescrever um texto do zero; перевести = traduzir ou transferir dinheiro. Não existe uma tradução fixa de пере- para o português — o significado final depende do verbo completo, e é o verbo completo que deve ser memorizado, não o prefixo isolado."
+      ],
+      "audio_script": "Terceira parte, e é uma advertência importante sobre prefixos. O prefixo пере carrega a ideia central de passar de um lugar ou de um estado a outro. Mas essa ideia se realiza de formas muito diferentes conforme o verbo, e não existe uma tradução fixa de пере para o português. Veja. Переехать é mudar de residência ou de cidade. Перенести встречу é adiar uma reunião — a reunião passou de uma data para outra. Переписать текст é reescrever um texto do zero — o texto passou de uma versão para outra. Перевести é traduzir, ou transferir dinheiro — em ambos os casos algo passa de um sistema para outro. Todos compartilham o núcleo de sentido, mas nenhuma tradução portuguesa serve para os quatro. A conclusão prática é direta: memorize o verbo completo, não o prefixo isolado. O prefixo é uma pista que ajuda a adivinhar o sentido de um verbo desconhecido num texto. Ele não é uma regra de formação que você pode aplicar para inventar verbos novos.",
+      "examples": [
+        {
+          "ru": "Пришлось перенести встречу на следующую неделю.",
+          "pt": "Foi preciso adiar a reunião para a semana seguinte.",
+          "note": "пере- = passar de uma data a outra."
+        },
+        {
+          "ru": "Он переписал статью полностью.",
+          "pt": "Ele reescreveu o artigo por completo.",
+          "note": "пере- = passar de uma versão a outra."
+        },
+        {
+          "ru": "Переведите эту сумму на другой счёт.",
+          "pt": "Transfira essa quantia para outra conta.",
+          "note": "пере- = passar de um sistema a outro."
+        }
+      ],
+      "pitfalls": [
+        "Procurar uma tradução única para пере-: o sentido final é do verbo inteiro, não do prefixo."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Formação de pares aspectuais do tema",
+    "columns": [
+      "Incompleto (несовершенный)",
+      "Completo (совершенный)",
+      "Padrão de formação",
+      "Uso típico"
+    ],
+    "rows": [
+      [
+        "переезжать",
+        "переехать",
+        "sufixo -езжа- / raiz -ех-",
+        "processo ou repetição × mudança concluída"
+      ],
+      [
+        "получать",
+        "получить",
+        "sufixo -а- → -и-",
+        "obtenção habitual × resultado pontual"
+      ],
+      [
+        "менять",
+        "сменить",
+        "verbo simples → verbo prefixado",
+        "mudança geral × decisão/resultado específico"
+      ]
+    ],
+    "note": "мно́го раз / не́сколько раз pede несовершенный вид mesmo que cada evento individual tenha terminado: descreve-se a série, não um resultado único."
+  },
+  "reference": [
+    {
+      "construction": "жить за городом",
+      "question": "где?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "morar fora da cidade",
+      "example": "Семья живёт за городом."
+    },
+    {
+      "construction": "переехать за город",
+      "question": "куда?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "mudar-se para fora da cidade",
+      "example": "Семья переехала за город."
+    },
+    {
+      "construction": "вернуться с",
+      "question": "с кого? чего? / откуда?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "voltar de uma superfície, atividade ou evento",
+      "example": "вернуться с дачи / с работы / с экскурсии"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u04-e01",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 1,
+      "prompt": "Каждые три года компания ___ в новый офис.",
+      "options": [
+        "переезжала",
+        "переехала",
+        "переедет",
+        "перенесла"
+      ],
+      "answer": "переезжала",
+      "explanation": "каждые три года indica repetição: несовершенный вид.",
+      "tags": [
+        "переезжать / переехать",
+        "aspecto",
+        "repetição"
+      ]
+    },
+    {
+      "id": "u04-e02",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 1,
+      "prompt": "В прошлом месяце офис наконец ___ в центр.",
+      "options": [
+        "переезжал",
+        "переехал",
+        "переезжает",
+        "ехать"
+      ],
+      "answer": "переехал",
+      "explanation": "Um fato concluído e marcado por наконец favorece совершенный вид.",
+      "tags": [
+        "переезжать / переехать",
+        "aspecto",
+        "resultado"
+      ]
+    },
+    {
+      "id": "u04-e03",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "Обычно иностранные студенты сначала ___ временную регистрацию.",
+      "options": [
+        "получают",
+        "получили",
+        "получат",
+        "сменили"
+      ],
+      "answer": "получают",
+      "explanation": "обычно apresenta uma sequência típica/repetida: несовершенный вид.",
+      "tags": [
+        "получать / получить",
+        "aspecto",
+        "repetição"
+      ]
+    },
+    {
+      "id": "u04-e04",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "После проверки документов она ___ гражданство.",
+      "options": [
+        "получала",
+        "получила",
+        "получает",
+        "получать"
+      ],
+      "answer": "получила",
+      "explanation": "O contexto apresenta a obtenção como resultado concluído.",
+      "tags": [
+        "получать / получить",
+        "aspecto",
+        "resultado"
+      ]
+    },
+    {
+      "id": "u04-e05",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "Она не хочет постоянно ___ профессию из-за временных трудностей.",
+      "options": [
+        "менять",
+        "сменить",
+        "изменила",
+        "поменяла"
+      ],
+      "answer": "менять",
+      "explanation": "постоянно e uma ação geral favorecem менять, несовершенный вид.",
+      "tags": [
+        "менять / сменить",
+        "aspecto",
+        "processo"
+      ]
+    },
+    {
+      "id": "u04-e06",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "После университета он решил ___ профессию.",
+      "options": [
+        "менять",
+        "сменить",
+        "менял",
+        "меняет"
+      ],
+      "answer": "сменить",
+      "explanation": "Após решил, a mudança é vista como objetivo delimitado: сменить.",
+      "tags": [
+        "менять / сменить",
+        "aspecto",
+        "resultado"
+      ]
+    },
+    {
+      "id": "u04-e07",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "prompt": "Сейчас мы ___ за город и вернёмся вечером.",
+      "options": [
+        "едем",
+        "приехали",
+        "уехали",
+        "переехали"
+      ],
+      "answer": "едем",
+      "explanation": "Deslocamento em curso, por veículo e em uma direção: ехать → едем.",
+      "tags": [
+        "ехать",
+        "verbos de movimento",
+        "processo"
+      ]
+    },
+    {
+      "id": "u04-e08",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "prompt": "Когда вы ___ из Испании?",
+      "options": [
+        "приедете",
+        "уедете",
+        "переедете",
+        "едете"
+      ],
+      "answer": "приедете",
+      "explanation": "Do ponto de vista do local de chegada, usa-se приехать.",
+      "tags": [
+        "приехать",
+        "verbos de movimento",
+        "prefixos"
+      ]
+    },
+    {
+      "id": "u04-e09",
+      "type": "choice",
+      "stage": "spatial_case",
+      "difficulty": 2,
+      "prompt": "Летом семья живёт ___. (за + город)",
+      "explanation": "жить responde где? → за + творительный падеж: за городом (= no campo, fora da cidade). «за город» responde куда? e só cabe com verbo de movimento.",
+      "tags": [
+        "за городом / за город",
+        "где куда откуда",
+        "творительный падеж",
+        "múltipla escolha"
+      ],
+      "instruction": "Escolha a forma que responde «где?» (localização).",
+      "options": [
+        "за городом",
+        "за город",
+        "за города",
+        "за городе"
+      ],
+      "answer": "за городом"
+    },
+    {
+      "id": "u04-e10",
+      "type": "choice",
+      "stage": "spatial_case",
+      "difficulty": 2,
+      "prompt": "В следующем году семья переедет ___. (за + город)",
+      "explanation": "переехать responde куда? → за + винительный падеж: за город. O par за городом (где?) × за город (куда?) é o mesmo mecanismo de в доме × в дом.",
+      "tags": [
+        "за городом / за город",
+        "где куда откуда",
+        "винительный падеж",
+        "múltipla escolha"
+      ],
+      "instruction": "Escolha a forma que responde «куда?» (destino).",
+      "options": [
+        "за город",
+        "за городом",
+        "за городе",
+        "из города"
+      ],
+      "answer": "за город"
+    },
+    {
+      "id": "u04-e11",
+      "type": "choice",
+      "stage": "spatial_case",
+      "difficulty": 2,
+      "prompt": "После выходных мы вернулись ___. (дача)",
+      "explanation": "откуда? → с + родительный падеж, porque o par de дача é «на даче / на дачу». Regra fixa: в ↔ из, на ↔ с. Como se diz на даче, o retorno é с дачи, nunca «из дачи».",
+      "tags": [
+        "вернуться",
+        "где куда откуда",
+        "родительный падеж",
+        "múltipla escolha"
+      ],
+      "instruction": "Escolha a forma que responde «откуда?» (origem).",
+      "options": [
+        "с дачи",
+        "из дачи",
+        "на дачу",
+        "на даче"
+      ],
+      "answer": "с дачи"
+    },
+    {
+      "id": "u04-e12",
+      "type": "choice",
+      "stage": "prefixes",
+      "difficulty": 2,
+      "prompt": "Встречу пришлось ___ на следующую пятницу.",
+      "options": [
+        "перенести",
+        "перейти",
+        "переехать",
+        "переписать"
+      ],
+      "answer": "перенести",
+      "explanation": "перенести встречу significa transferir/adiar uma reunião.",
+      "tags": [
+        "prefixo пере-",
+        "перенести",
+        "vocabulário"
+      ]
+    },
+    {
+      "id": "u04-e13",
+      "type": "choice",
+      "stage": "prefixes",
+      "difficulty": 2,
+      "prompt": "После замечаний преподавателя студент решил ___ эссе.",
+      "options": [
+        "переписать",
+        "переехать",
+        "перейти",
+        "перенести"
+      ],
+      "answer": "переписать",
+      "explanation": "переписать текст: reescrever ou passar a limpo.",
+      "tags": [
+        "prefixo пере-",
+        "переписать",
+        "vocabulário"
+      ]
+    },
+    {
+      "id": "u04-e14",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte uma frase com origem e destino.",
+      "tokens": [
+        "После",
+        "университета",
+        "она",
+        "переехала",
+        "из",
+        "провинции",
+        "в",
+        "столицу"
+      ],
+      "answer": "После университета она переехала из провинции в столицу",
+      "explanation": "откуда? из провинции; куда? в столицу.",
+      "tags": [
+        "переехать",
+        "где куда откуда",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u04-e15",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase usa corretamente за город / за городом?",
+      "explanation": "жить responde где?, e где? com за pede творительный падеж: за городом. «за город» seria destino (куда?), que жить não admite.",
+      "tags": [
+        "за городом / за город",
+        "где куда откуда",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Мои родители живут за городом, но работают в центре.",
+        "Мои родители живут за город, но работают в центре.",
+        "Мои родители живут за городе, но работают в центре.",
+        "Мои родители живут из города, но работают в центре."
+      ],
+      "answer": "Мои родители живут за городом, но работают в центре."
+    },
+    {
+      "id": "u04-e16",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase descreve corretamente o retorno do grupo ao hotel?",
+      "explanation": "вернуться é verbo de movimento: o hotel aqui é destino (куда?) → в гостиницу, винительный падеж. «с гостиницы» inverteria o sentido (sair do hotel) e ainda erraria a preposição, já que o par de гостиница é в/из.",
+      "tags": [
+        "вернуться",
+        "где куда откуда",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "После экскурсии группа вернулась в гостиницу.",
+        "После экскурсии группа вернулась с гостиницы.",
+        "После экскурсии группа вернулась из гостиницу.",
+        "После экскурсии группа вернулась в гостинице."
+      ],
+      "answer": "После экскурсии группа вернулась в гостиницу."
+    },
+    {
+      "id": "u04-e17",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "Onde? / Para onde? — fora da cidade",
+      "back": "где? за городом · куда? за город",
+      "explanation": "Localização usa творительный; destino usa винительный.",
+      "tags": [
+        "за городом / за город",
+        "где куда откуда",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u04-e18",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "переезжать × переехать",
+      "back": "процесс/повторение × факт/результат",
+      "explanation": "Cada mudança repetida pode ser concluída, mas a série é apresentada pelo несовершенный вид.",
+      "tags": [
+        "переезжать / переехать",
+        "aspecto",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u04-e19",
+      "type": "match_pairs",
+      "stage": "recognition",
+      "difficulty": 2,
+      "instruction": "Relacione cada verbo com пере- ao seu significado nesse contexto.",
+      "pairs": [
+        {
+          "left": "перенести встречу",
+          "right": "adiar/remarcar uma reunião para outra data"
+        },
+        {
+          "left": "переехать в другой город",
+          "right": "mudar-se de residência para outra cidade"
+        },
+        {
+          "left": "переписать эссе",
+          "right": "reescrever o texto do zero"
+        },
+        {
+          "left": "перевести документы",
+          "right": "traduzir de um idioma para outro"
+        }
+      ],
+      "explanation": "пере- indica sempre «passar de um lugar/estado a outro»; o significado exato vem do verbo completo, não do prefixo isolado.",
+      "tags": [
+        "prefixo пере-",
+        "aspecto",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u04-e20",
+      "type": "reading",
+      "stage": "comprehension",
+      "difficulty": 2,
+      "instruction": "Leia uma vez para captar a situação; releia procurando marcadores de aspecto.",
+      "context": "За последние десять лет семья Орловых три раза переезжала. Сначала они жили в небольшом городе, потом переехали в столицу, а два года назад решили поселиться за городом. Теперь родители каждый день ездят на работу, но возвращаться в тихий дом им нравится.",
+      "prompt": "Por que o texto usa «три раза переезжала», mas depois «переехали»?",
+      "options": [
+        "O primeiro descreve uma série repetida; o segundo, uma mudança específica concluída.",
+        "O primeiro está no presente; o segundo, no passado.",
+        "переезжать só se usa com famílias; переехать, com cidades.",
+        "Não há diferença de sentido entre as duas formas."
+      ],
+      "answer": "O primeiro descreve uma série repetida; o segundo, uma mudança específica concluída.",
+      "explanation": "три раза enquadra a série como repetição (несовершенный вид); потом apresenta um evento delimitado (совершенный вид).",
+      "tags": [
+        "leitura",
+        "переезжать / переехать",
+        "aspecto"
+      ]
+    },
+    {
+      "id": "u04-e21",
+      "type": "listening",
+      "stage": "comprehension",
+      "difficulty": 2,
+      "instruction": "Ouça sem ler. Identifique origem, destino e motivo da mudança.",
+      "prompt": "Qual resumo corresponde ao áudio?",
+      "audio_text": "Анна несколько лет жила за городом, но каждое утро тратила два часа на дорогу. В прошлом месяце она наконец переехала с дачи в квартиру рядом с работой.",
+      "options": [
+        "Anna mudou da dacha para perto do trabalho porque perdia muito tempo no trajeto.",
+        "Anna deixou o emprego para morar definitivamente na dacha.",
+        "Anna ainda pretende se mudar, mas não encontrou apartamento.",
+        "Anna viajava duas horas apenas nos fins de semana."
+      ],
+      "answer": "Anna mudou da dacha para perto do trabalho porque perdia muito tempo no trajeto.",
+      "explanation": "жила e тратила descrevem a situação habitual; наконец переехала marca a mudança concluída.",
+      "tags": [
+        "аудирование",
+        "где куда откуда",
+        "aspecto"
+      ]
+    },
+    {
+      "id": "u04-e22",
+      "type": "listening",
+      "response_type": "input",
+      "stage": "noticing",
+      "difficulty": 2,
+      "instruction": "Ditado focalizado: ouça e digite a frase inteira. A transcrição só aparece depois da resposta.",
+      "prompt": "Escreva exatamente a frase ouvida.",
+      "audio_text": "После окончания университета она переехала из провинции в столицу.",
+      "answer": "После окончания университета она переехала из провинции в столицу.",
+      "explanation": "Observe o quadro completo: откуда? из провинции; куда? в столицу; evento único: переехала.",
+      "tags": [
+        "аудирование",
+        "ditado",
+        "переехать",
+        "где куда откуда"
+      ]
+    },
+    {
+      "id": "u04-e23",
+      "type": "open_text",
+      "stage": "transfer",
+      "difficulty": 3,
+      "instruction": "Escreva 70–90 palavras. Conte uma mudança real ou imaginária e use todos os elementos pedidos.",
+      "prompt": "История одного переезда\nUse: uma série repetida no несовершенный вид · um resultado no совершенный вид · откуда? куда? · за городом/за город",
+      "review_notes": "Verificar contraste aspectual, coerência temporal, origem/destino, terminações e naturalidade. Exigir pelo menos um uso correto de cada aspecto.",
+      "tags": [
+        "produção escrita",
+        "aspecto",
+        "где куда откуда",
+        "transferência"
+      ]
+    }
+  ],
+  "source_note": "«Время обсуждать», урок 1-2 · «Russian Grammar in Tables» (Кузьмина), Виды глагола e Глаголы движения"
+}

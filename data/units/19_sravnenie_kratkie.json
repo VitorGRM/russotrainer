@@ -1,0 +1,772 @@
+{
+  "id": "u19_sravnenie",
+  "order": 19,
+  "title": "Comparativo, superlativo e adjetivos curtos",
+  "description": "Comparar sem erro: as duas formas de comparativo, as três de superlativo e o adjetivo curto, que muda o sentido da frase.",
+  "estimated_minutes": 32,
+  "objectives": [
+    "formar o comparativo simples com alternância consonantal",
+    "escolher entre чем + nominativo e genitivo puro",
+    "usar o adjetivo curto onde a forma longa seria agramatical"
+  ],
+  "source_note": "Кузьмина, «Русская грамматика в таблицах»: Образование степеней сравнения, Особые случаи, Полные и краткие прилагательные · Red Kalinka, comparison · Kagan/Kudyma/Miller, Глава 5 e 9",
+  "grammar": [
+    {
+      "title": "Comparativo: uma forma curta e uma forma longa",
+      "paragraphs": [
+        "O comparativo simples é invariável — não tem gênero, número nem caso — e forma-se com -ее: быстрый → быстрее, интересный → интереснее, красивый → красивее. Um grupo grande forma com -е e alternância da consonante final, e vale reconhecer o padrão: к→ч (громкий → громче, лёгкий → легче, крепкий → крепче), г→ж (дорогой → дороже, строгий → строже), д→ж (молодой → моложе, твёрдый → твёрже), т→ч (богатый → богаче, короткий → короче), с→ш (высокий → выше, низкий → ниже), з→ж (близкий → ближе, узкий → уже). Quatro são supletivos e precisam ser decorados: хороший → лучше, плохой → хуже, маленький → меньше, большой → больше.",
+        "Há duas maneiras de introduzir o termo comparado, e as duas são corretas. Com чем, o segundo termo fica no mesmo caso do primeiro: Она старше, чем я. Sem чем, o segundo termo vai ao родительный падеж: Она старше меня. A segunda é mais curta e mais frequente na fala; a primeira é obrigatória quando os termos comparados não são substantivos simples (Работать здесь интереснее, чем в офисе).",
+        "Para intensificar, use гораздо, намного, значительно (bem mais), чуть, немного (um pouco): гораздо дороже, немного дешевле. Há também o comparativo composto — более + adjetivo completo (более интересный проект) — que se usa quando o adjetivo precisa concordar com o substantivo, ou seja, na posição atributiva. E o erro clássico, que aparece até em russos: nunca combine as duas formas. «Более лучше» e «более интереснее» são incorretos, porque já há comparativo dentro da própria palavra."
+      ],
+      "audio_script": "Comparar em russo. Existem duas formas de comparativo, e é importante saber quando usar cada uma. Vamos primeiro ao comparativo simples, que é o mais frequente. Ele tem uma vantagem enorme: é invariável. Não tem gênero, não tem número, não tem caso. Uma forma só. Forma-se com ее. Быстрый vira быстрее. Интересный vira интереснее. Красивый vira красивее. Mas existe um grupo grande que forma com е e muda a consoante final. E há um padrão aqui, então ouça em blocos. К vira ч. Громкий vira громче. Лёгкий vira легче. Крепкий vira крепче. Г vira ж. Дорогой vira дороже. Строгий vira строже. Д vira ж. Молодой vira моложе. Твёрдый vira твёрже. Т vira ч. Богатый vira богаче. Короткий vira короче. С vira ш. Высокий vira выше. Низкий vira ниже. З vira ж. Близкий vira ближе. Узкий vira уже. E quatro são supletivos, ou seja, completamente irregulares, e precisam ser decorados: Хороший vira лучше. Плохой vira хуже. Маленький vira меньше. Большой vira больше. Agora, como introduzir aquilo com que se compara. Existem duas maneiras, e as duas são corretas. Maneira um, com чем: o segundo termo fica no mesmo caso do primeiro. Она старше, чем я. Ela é mais velha do que eu. Maneira dois, sem чем: o segundo termo vai ao genitivo. Она старше меня. Mesma coisa, mais curto. A segunda é mais frequente na fala. A primeira é obrigatória quando os termos comparados não são substantivos simples: Работать здесь интереснее, чем в офисе. Aqui você não teria como usar genitivo. Para intensificar, use гораздо, намного ou значительно, que significam «bem mais». Ou чуть e немного, que significam «um pouco». Гораздо дороже. Немного дешевле. E existe ainda o comparativo composto: более mais o adjetivo completo. Более интересный проект. Ele se usa quando o adjetivo precisa concordar com o substantivo, ou seja, na posição de atributo. Por último, o erro clássico, que até russos cometem: nunca combine as duas formas. Более лучше está errado. Более интереснее está errado. O comparativo já está dentro da palavra; acrescentar более é dizer duas vezes a mesma coisa.",
+      "examples": [
+        {
+          "ru": "Жизнь в мегаполисе дороже, чем в провинции.",
+          "pt": "A vida na metrópole é mais cara que no interior.",
+          "note": "дорогой → дороже (г→ж); com чем."
+        },
+        {
+          "ru": "Он старше меня на три года.",
+          "pt": "Ele é três anos mais velho que eu.",
+          "note": "Sem чем: o segundo termo vai ao genitivo (меня)."
+        },
+        {
+          "ru": "Этот вариант гораздо лучше предыдущего.",
+          "pt": "Essa opção é bem melhor que a anterior.",
+          "note": "гораздо intensifica; лучше é supletivo."
+        },
+        {
+          "ru": "Нам нужен более опытный специалист.",
+          "pt": "Precisamos de um especialista mais experiente.",
+          "note": "Posição atributiva → comparativo composto com более."
+        }
+      ],
+      "pitfalls": [
+        "Combinar as duas formas: «более лучше» e «более интереснее» são incorretos.",
+        "Usar более com o comparativo simples: é более опытный, não «более опытнее».",
+        "Esquecer a alternância: é дороже, não «дорогее»."
+      ]
+    },
+    {
+      "title": "Superlativo: самый, наиболее e всех",
+      "paragraphs": [
+        "A forma mais comum e mais segura é самый + adjetivo completo, com самый concordando em gênero, número e caso: самый интересный проект, в самой большой стране, о самых важных вопросах. Ela serve em qualquer registro e nunca está errada. Em texto formal aparece наиболее + adjetivo (наиболее эффективное решение), que não concorda e é invariável.",
+        "Existe também o superlativo sintético em -ейший/-айший: интереснейший, важнейший, величайший, ближайший. Ele é livresco e tem um matiz enfático, não puramente comparativo — интереснейший доклад significa mais «uma palestra extremamente interessante» do que «a mais interessante de todas». Duas exceções úteis de uso corrente: ближайший (o mais próximo, o próximo) e лучший (o melhor), que já é superlativo por si só — «самый лучший» é redundante, embora muito comum na fala.",
+        "Por fim, a construção com o comparativo + всех / всего, que é a preferida na língua falada: Он работает лучше всех (melhor que todos — usada com pessoas) e Больше всего меня беспокоит инфляция (o que mais me preocupa — usada com coisas). Всех para pessoas, всего para coisas: essa distinção é pequena e cai em prova."
+      ],
+      "audio_script": "Segunda parte: o superlativo. Existem três formas, e elas não são intercambiáveis. Forma um, a mais comum e a mais segura: самый mais o adjetivo completo. E самый concorda em gênero, número e caso com o substantivo. Самый интересный проект. В самой большой стране. О самых важных вопросах. Essa forma serve em qualquer registro e nunca está errada. Se estiver em dúvida, use самый. Forma dois, para texto formal: наиболее mais o adjetivo. Наиболее эффективное решение. E наиболее é invariável, não concorda com nada. Forma três, o superlativo sintético, com ейший ou айший. Интереснейший, важнейший, величайший, ближайший. Essa forma é livresca, e tem um matiz enfático que não é puramente comparativo. Интереснейший доклад significa mais «uma palestra extremamente interessante» do que «a palestra mais interessante de todas». É intensidade, não ranking. Duas exceções úteis, porque são de uso corrente e não soam livrescas: Ближайший, que significa o mais próximo, ou simplesmente «o próximo». В ближайшее время, em breve. E лучший, que significa o melhor e já é superlativo sozinho. Por isso самый лучший é tecnicamente redundante — embora seja muito comum na fala, e ninguém vai corrigir você por isso. Por fim, a construção preferida na língua falada: comparativo mais всех ou всего. Он работает лучше всех. Ele trabalha melhor que todos. Больше всего меня беспокоит инфляция. O que mais me preocupa é a inflação. E aqui vai uma distinção pequena que cai em prova: всех para pessoas. всего para coisas. Лучше всех, para gente. Больше всего, para coisas.",
+      "examples": [
+        {
+          "ru": "Это самый эффективный способ решить проблему.",
+          "pt": "Esse é o modo mais eficaz de resolver o problema.",
+          "note": "самый + adjetivo completo, concordando."
+        },
+        {
+          "ru": "Наиболее серьёзной проблемой остаётся безработица.",
+          "pt": "O problema mais sério continua sendo o desemprego.",
+          "note": "наиболее é invariável; a frase usa instrumental por causa de оставаться."
+        },
+        {
+          "ru": "Он справляется с этой работой лучше всех.",
+          "pt": "Ele dá conta desse trabalho melhor que todos.",
+          "note": "всех: comparação com pessoas."
+        },
+        {
+          "ru": "Больше всего меня беспокоит рост цен.",
+          "pt": "O que mais me preocupa é a alta dos preços.",
+          "note": "всего: comparação com coisas."
+        }
+      ],
+      "pitfalls": [
+        "Usar всего com pessoas: é лучше всех, não «лучше всего», quando se compara com gente.",
+        "Tratar -ейший como ranking: интереснейший é intensidade, não «o mais interessante de todos»."
+      ]
+    },
+    {
+      "title": "Adjetivo curto: quando a forma longa é impossível",
+      "paragraphs": [
+        "O adjetivo curto existe só no predicado e tem quatro formas: masculino sem terminação (нов, интересен, способен — com vogal móvel), feminino -а (нова, интересна), neutro -о (ново, интересно), plural -ы/-и (новы, интересны). Ele não se declina, porque nunca é atributo.",
+        "Três situações em que a forma curta não é opcional, e sim obrigatória. Primeira: quando o adjetivo vem com um complemento. Он способен К математике. Она готова К переговорам. Мы уверены В результате. Я доволен работой. Он рад встрече. Ele é похож НА отца. Nessas construções a forma longa é agramatical — não se diz «он способный к математике».",
+        "Segunda: com должен, нужен, рад, готов no sentido de obrigação, necessidade e disposição — essas palavras só existem em forma curta nesses usos: Я должен работать. Нам нужны новые сотрудники. Terceira: para indicar excesso em relação a alguém — Костюм ему мал (o terno ficou pequeno nele), Туфли велики. E há ainda uma diferença de sentido que a forma curta carrega: estado temporário × qualidade permanente. Он больной = ele é doente crônico. Он болен = ele está doente agora. Она весёлая = ela é alegre. Она весела = ela está alegre hoje."
+      ],
+      "audio_script": "Terceira parte: o adjetivo curto. E este é um assunto que quase todo curso trata de forma superficial, então vale entender direito, porque em vários casos a forma longa é simplesmente impossível. O adjetivo curto existe só no predicado, e tem quatro formas. Masculino, sem terminação nenhuma: нов, интересен, способен. Note a vogal móvel que aparece em alguns. Feminino, com а: нова, интересна, способна. Neutro, com о: ново, интересно, способно. E plural, com ы ou и: новы, интересны, способны. Ele não se declina, porque nunca funciona como atributo. Só como predicado. Agora, três situações em que a forma curta não é opcional. É obrigatória. Situação um, e é a mais importante: quando o adjetivo vem acompanhado de um complemento. Он способен К математике. Ele tem talento para matemática. Она готова К переговорам. Ela está pronta para as negociações. Мы уверены В результате. Estamos seguros do resultado. Я доволен работой, com instrumental. Он рад встрече, com dativo. Он похож НА отца, com acusativo. Em todas essas, a forma longa é agramatical. Não se diz «он способный к математике». Situação dois: as palavras должен, нужен, рад e готов, nos sentidos de obrigação, necessidade e disposição. Elas só existem em forma curta nesses usos. Я должен работать. Нам нужны новые сотрудники. Situação três: para indicar excesso, ou seja, que algo é grande ou pequeno demais para alguém. Костюм ему мал. O terno ficou pequeno nele. Туфли велики. Os sapatos estão grandes. Só a forma curta serve aqui. A forma longa mudaria completamente o sentido. E para terminar, uma diferença de significado que vale conhecer, porque é sutil e muito russa. A forma longa indica qualidade permanente. A forma curta indica estado temporário. Он больной significa que ele é doente crônico, é uma característica dele. Он болен significa que ele está doente agora. Она весёлая, ela é uma pessoa alegre. Она весела, ela está alegre hoje. Duas palavras quase iguais, e uma diferença de sentido que muda a frase inteira.",
+      "examples": [
+        {
+          "ru": "Он способен к точным наукам.",
+          "pt": "Ele tem aptidão para as ciências exatas.",
+          "note": "Com complemento (к + дательный) a forma curta é obrigatória."
+        },
+        {
+          "ru": "Мы уверены в успехе проекта.",
+          "pt": "Estamos seguros do sucesso do projeto.",
+          "note": "уверен В + предложный, sempre em forma curta."
+        },
+        {
+          "ru": "Он болен уже неделю, но вообще он не больной человек.",
+          "pt": "Ele está doente há uma semana, mas em geral não é uma pessoa doente.",
+          "note": "Curto = estado; longo = característica."
+        },
+        {
+          "ru": "Эти туфли мне велики.",
+          "pt": "Esses sapatos estão grandes em mim.",
+          "note": "Excesso: só a forma curta funciona."
+        }
+      ],
+      "pitfalls": [
+        "Usar forma longa com complemento: «он уверенный в результате» é agramatical.",
+        "Escrever «я должный работать»: должен só tem forma curta nesse sentido.",
+        "Confundir «он больной» (crônico) com «он болен» (doente agora)."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Comparação e formas curtas",
+    "columns": [
+      "Forma",
+      "Como se faz",
+      "Exemplo",
+      "Observação"
+    ],
+    "rows": [
+      [
+        "Comparativo simples",
+        "-ее (invariável)",
+        "интересный → интереснее",
+        "Não concorda com nada"
+      ],
+      [
+        "Comparativo com alternância",
+        "-е + k→ч, г→ж, д→ж, т→ч, с→ш, з→ж",
+        "дорогой → дороже · высокий → выше",
+        "Grupo grande, vale decorar"
+      ],
+      [
+        "Supletivos",
+        "irregular",
+        "хороший → лучше · плохой → хуже · большой → больше · маленький → меньше",
+        "Só quatro"
+      ],
+      [
+        "Segundo termo",
+        "чем + mesmo caso · ou родительный",
+        "старше, чем я = старше меня",
+        "Sem чем só com substantivo simples"
+      ],
+      [
+        "Comparativo composto",
+        "более + adjetivo completo",
+        "более опытный специалист",
+        "Para posição atributiva"
+      ],
+      [
+        "Superlativo comum",
+        "самый + adjetivo (concorda)",
+        "самый эффективный способ",
+        "Sempre correto"
+      ],
+      [
+        "Superlativo formal",
+        "наиболее (invariável)",
+        "наиболее серьёзная проблема",
+        "Registro escrito"
+      ],
+      [
+        "Superlativo falado",
+        "comparativo + всех / всего",
+        "лучше всех (pessoas) · больше всего (coisas)",
+        "всех ≠ всего"
+      ],
+      [
+        "Adjetivo curto",
+        "∅ / -а / -о / -ы",
+        "способен · способна · способно · способны",
+        "Só no predicado"
+      ],
+      [
+        "Curto obrigatório",
+        "com complemento",
+        "уверен в · доволен + твор. · рад + дат. · похож на",
+        "Forma longa é agramatical"
+      ]
+    ],
+    "note": "Nunca combine as duas formas de comparativo: «более лучше» e «более интереснее» são erros."
+  },
+  "reference": [
+    {
+      "construction": "быть уверенным в",
+      "question": "в ком? чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "estar seguro de",
+      "example": "мы уверены в результате"
+    },
+    {
+      "construction": "быть довольным",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "estar satisfeito com",
+      "example": "он доволен новой работой"
+    },
+    {
+      "construction": "быть способным к",
+      "question": "к чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ter aptidão para",
+      "example": "она способна к языкам"
+    },
+    {
+      "construction": "быть похожим на",
+      "question": "на кого? что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "parecer-se com",
+      "example": "он похож на отца"
+    },
+    {
+      "construction": "быть готовым к",
+      "question": "к чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "estar pronto para",
+      "example": "мы готовы к переговорам"
+    },
+    {
+      "construction": "быть рад(ым)",
+      "question": "кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "estar contente com",
+      "example": "я рад вашему звонку"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u19-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "Comparativos supletivos",
+      "back": "хороший → лучше · плохой → хуже · большой → больше · маленький → меньше",
+      "explanation": "Só esses quatro são totalmente irregulares. Todo o resto segue -ее ou -е com alternância.",
+      "tags": [
+        "comparativo",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u19-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "старше, чем я × старше меня",
+      "back": "чем + mesmo caso · sem чем + родительный падеж",
+      "explanation": "As duas são corretas. Sem чем é mais curto e mais frequente na fala.",
+      "tags": [
+        "comparativo",
+        "чем",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u19-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "уверен в · доволен + твор. · способен к",
+      "back": "Adjetivo com complemento → forma CURTA obrigatória",
+      "explanation": "«он уверенный в результате» é agramatical: com complemento só a forma curta funciona.",
+      "tags": [
+        "adjetivo curto",
+        "regência",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u19-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "лучше всех × больше всего",
+      "back": "всех = comparação com pessoas · всего = comparação com coisas",
+      "explanation": "Он работает лучше всех × Больше всего меня беспокоит инфляция.",
+      "tags": [
+        "superlativo",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u19-e05",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 1,
+      "instruction": "Escolha o comparativo correto.",
+      "prompt": "Жильё в центре ___, чем в пригороде. (дорогой)",
+      "options": [
+        "дороже",
+        "дорогее",
+        "более дороже",
+        "самый дорогой"
+      ],
+      "answer": "дороже",
+      "explanation": "дорогой forma o comparativo com -е e alternância г→ж: дороже. «дорогее» aplicaria o sufixo -ее, que não cabe aqui, e «более дороже» duplicaria o comparativo.",
+      "tags": [
+        "comparativo",
+        "alternância",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u19-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha o comparativo correto.",
+      "prompt": "После ремонта потолки в квартире кажутся ___. (высокий)",
+      "options": [
+        "выше",
+        "высочее",
+        "высокее",
+        "более выше"
+      ],
+      "answer": "выше",
+      "explanation": "высокий → выше, com alternância с→ш e perda do sufixo -ок-. É um dos comparativos mais frequentes do russo.",
+      "tags": [
+        "comparativo",
+        "alternância",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u19-e07",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Моя сестра на два года ___.",
+      "options": [
+        "старше меня",
+        "старше чем меня",
+        "старше я",
+        "более старая меня"
+      ],
+      "answer": "старше меня",
+      "explanation": "Sem чем, o segundo termo vai ao родительный падеж: меня. Com чем seria «старше, чем я», com o pronome no именительный.",
+      "tags": [
+        "comparativo",
+        "чем",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u19-e08",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Компании нужен ___ специалист, чем тот, кого мы взяли в прошлом году.",
+      "options": [
+        "более опытный",
+        "опытнее",
+        "более опытнее",
+        "самый опытный"
+      ],
+      "answer": "более опытный",
+      "explanation": "Aqui o adjetivo é atributo de специалист e precisa concordar com ele → comparativo composto (более + forma completa). O comparativo simples опытнее não concorda e só funciona no predicado.",
+      "tags": [
+        "comparativo composto",
+        "более",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u19-e09",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 2,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase forma corretamente o comparativo?",
+      "options": [
+        "Этот вариант гораздо лучше предыдущего.",
+        "Этот вариант гораздо более лучше предыдущего.",
+        "Этот вариант гораздо лучше чем предыдущего.",
+        "Этот вариант гораздо более хороший предыдущего."
+      ],
+      "answer": "Этот вариант гораздо лучше предыдущего.",
+      "explanation": "лучше já é comparativo, então более é redundante. E sem чем o segundo termo vai ao родительный (предыдущего) — «чем предыдущего» misturaria as duas construções.",
+      "tags": [
+        "comparativo",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u19-e10",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Мы обсудили это на ___ заседании комиссии. (самый важный)",
+      "options": [
+        "самом важном",
+        "самый важный",
+        "наиболее важный",
+        "самого важного"
+      ],
+      "answer": "самом важном",
+      "explanation": "самый concorda em gênero, número e CASO com o substantivo. Como «на заседании» está no предложный, самый vira самом e важный vira важном.",
+      "tags": [
+        "superlativo",
+        "самый",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u19-e11",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Из всех сотрудников он справляется с кризисом ___.",
+      "options": [
+        "лучше всех",
+        "лучше всего",
+        "самый лучший",
+        "более лучше"
+      ],
+      "answer": "лучше всех",
+      "explanation": "A comparação é com PESSOAS (сотрудников), então usa-se всех. «лучше всего» seria comparação com coisas ou situações.",
+      "tags": [
+        "superlativo",
+        "всех/всего",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u19-e12",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "___ меня беспокоит рост цен на продукты.",
+      "options": [
+        "Больше всего",
+        "Больше всех",
+        "Самое больше",
+        "Более всего"
+      ],
+      "answer": "Больше всего",
+      "explanation": "O que preocupa é uma COISA (o aumento dos preços), então всего. «больше всех» seria usado se a comparação fosse com pessoas.",
+      "tags": [
+        "superlativo",
+        "всех/всего",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u19-e13",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Наша команда ___ к переговорам на следующей неделе.",
+      "options": [
+        "готова",
+        "готовая",
+        "готовой",
+        "готовности"
+      ],
+      "answer": "готова",
+      "explanation": "Com complemento (к + дательный), o adjetivo só pode aparecer em forma curta: готова. «готовая» seria atributo e não aceitaria o complemento.",
+      "tags": [
+        "adjetivo curto",
+        "готов к",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u19-e14",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Руководство ___ результатами квартала.",
+      "options": [
+        "довольно",
+        "довольное",
+        "довольно с",
+        "довольно от"
+      ],
+      "answer": "довольно",
+      "explanation": "быть довольным кем? чем? → творительный падеж sem preposição, e com adjetivo curto. Руководство é neutro, então a forma é довольно.",
+      "tags": [
+        "adjetivo curto",
+        "доволен",
+        "regência"
+      ]
+    },
+    {
+      "id": "u19-e15",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha a forma que indica um estado temporário.",
+      "prompt": "Он не пришёл на работу, потому что ___.",
+      "options": [
+        "он болен",
+        "он больной",
+        "он болезнь",
+        "он больного"
+      ],
+      "answer": "он болен",
+      "explanation": "A forma curta болен indica estado atual e temporário: está doente hoje. «он больной» descreveria uma condição permanente, uma pessoa doente crônica.",
+      "tags": [
+        "adjetivo curto",
+        "estado × qualidade",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u19-e16",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Мы ___ в том, что проект будет закончен вовремя.",
+      "options": [
+        "уверены",
+        "уверенные",
+        "уверенность",
+        "уверенно"
+      ],
+      "answer": "уверены",
+      "explanation": "уверен В чём? exige forma curta e предложный падеж. «уверенно» é advérbio (com segurança) e responderia «como?», não «em quê?».",
+      "tags": [
+        "adjetivo curto",
+        "уверен в",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u19-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase usa corretamente as formas curtas?",
+      "options": [
+        "Он способен к языкам, доволен работой и похож на отца.",
+        "Он способный к языкам, довольный работой и похожий на отца.",
+        "Он способен к языки, доволен с работой и похож на отца.",
+        "Он способный к языкам, доволен работой и похож на отца."
+      ],
+      "answer": "Он способен к языкам, доволен работой и похож на отца.",
+      "explanation": "Os três adjetivos vêm com complemento, então os três exigem forma curta. E cada complemento tem seu caso: к языкам (дательный), работой (творительный), на отца (винительный).",
+      "tags": [
+        "adjetivo curto",
+        "regência",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u19-e18",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Этот костюм ему мал, а туфли велики.»",
+      "options": [
+        "Esse terno está pequeno nele e os sapatos estão grandes.",
+        "Esse terno é pequeno e os sapatos são grandes.",
+        "Ele tem um terno pequeno e sapatos grandes.",
+        "O terno dele diminuiu e os sapatos aumentaram."
+      ],
+      "answer": "Esse terno está pequeno nele e os sapatos estão grandes.",
+      "explanation": "As formas curtas мал e велики indicam EXCESSO em relação a alguém (dativo: ему). As formas longas маленький e большие descreveriam apenas o tamanho absoluto.",
+      "tags": [
+        "adjetivo curto",
+        "excesso",
+        "significado"
+      ]
+    },
+    {
+      "id": "u19-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "По данным исследования, жизнь в крупных городах становится всё дороже: аренда жилья в столице почти в три раза выше, чем в среднем по стране. При этом зарплаты растут значительно медленнее цен. Больше всего от этого страдают молодые семьи, которые ещё не готовы к покупке собственного жилья. Специалисты считают, что наиболее эффективным решением была бы программа льготной ипотеки, но признают: она помогает далеко не всем и требует больших бюджетных расходов.",
+      "prompt": "Segundo o texto, quem mais sofre com a situação?",
+      "options": [
+        "As famílias jovens, que ainda não estão prontas para comprar imóvel próprio.",
+        "Os aposentados das grandes cidades.",
+        "Os proprietários de imóveis na capital.",
+        "Os funcionários públicos do interior."
+      ],
+      "answer": "As famílias jovens, que ainda não estão prontas para comprar imóvel próprio.",
+      "explanation": "«Больше всего от этого страдают молодые семьи, которые ещё не готовы к покупке» — больше всего (superlativo falado) e готовы к (adjetivo curto com complemento).",
+      "tags": [
+        "comparativo",
+        "adjetivo curto",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u19-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Аренда жилья в столице почти в три раза выше, чем в среднем по стране. При этом зарплаты растут значительно медленнее цен. Специалисты считают, что наиболее эффективным решением была бы программа льготной ипотеки.",
+      "prompt": "Por que o texto usa «медленнее цен» sem «чем»?",
+      "options": [
+        "Porque sem чем o segundo termo vai ao родительный падеж: цен.",
+        "Porque «чем» só se usa com adjetivos, não com advérbios.",
+        "Porque é um erro de digitação do texto.",
+        "Porque цены está no plural."
+      ],
+      "answer": "Porque sem чем o segundo termo vai ao родительный падеж: цен.",
+      "explanation": "«медленнее цен» = «медленнее, чем цены». As duas construções são corretas; sem чем, o termo comparado vai obrigatoriamente ao genitivo.",
+      "tags": [
+        "comparativo",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u19-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Новый вариант гораздо дешевле предыдущего, но качество, к сожалению, хуже.",
+      "prompt": "O que se diz sobre a nova opção?",
+      "options": [
+        "É bem mais barata que a anterior, mas a qualidade é pior.",
+        "É bem mais cara e de melhor qualidade.",
+        "Tem o mesmo preço e melhor qualidade.",
+        "É mais barata e de melhor qualidade."
+      ],
+      "answer": "É bem mais barata que a anterior, mas a qualidade é pior.",
+      "explanation": "дешевле (дешёвый) e хуже (плохой, supletivo), com гораздо intensificando o primeiro. O segundo termo (предыдущего) está no genitivo, sem чем.",
+      "tags": [
+        "comparativo",
+        "audição",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u19-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Мы уверены в успехе проекта и полностью довольны работой новой команды.",
+      "prompt": "Quais são as duas regências usadas no áudio?",
+      "options": [
+        "уверены В + предложный e довольны + творительный.",
+        "уверены + творительный e довольны В + предложный.",
+        "уверены О + предложный e довольны С + творительный.",
+        "As duas expressões usam o mesmo caso."
+      ],
+      "answer": "уверены В + предложный e довольны + творительный.",
+      "explanation": "уверены в успехе (предложный) e довольны работой (творительный, sem preposição). Duas formas curtas, duas regências diferentes.",
+      "tags": [
+        "adjetivo curto",
+        "regência",
+        "audição"
+      ]
+    },
+    {
+      "id": "u19-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase com comparativo e adjetivo curto.",
+      "tokens": [
+        "Новый",
+        "проект",
+        "сложнее",
+        "предыдущего",
+        "но",
+        "команда",
+        "уверена",
+        "в",
+        "успехе"
+      ],
+      "answer": "Новый проект сложнее предыдущего но команда уверена в успехе",
+      "explanation": "сложнее sem чем pede genitivo (предыдущего); уверена é forma curta obrigatória por causa do complemento в успехе.",
+      "tags": [
+        "comparativo",
+        "adjetivo curto",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u19-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione o adjetivo curto à sua regência.",
+      "pairs": [
+        {
+          "left": "уверен",
+          "right": "в чём? — предложный"
+        },
+        {
+          "left": "доволен",
+          "right": "чем? — творительный"
+        },
+        {
+          "left": "способен",
+          "right": "к чему? — дательный"
+        },
+        {
+          "left": "похож",
+          "right": "на кого? — винительный"
+        },
+        {
+          "left": "полон",
+          "right": "чего? — родительный"
+        },
+        {
+          "left": "рад",
+          "right": "чему? — дательный"
+        }
+      ],
+      "explanation": "Seis adjetivos curtos, seis regências. Em todos eles a forma longa seria agramatical junto do complemento.",
+      "tags": [
+        "adjetivo curto",
+        "regência",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u19-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 80–100 palavras em russo. Use pelo menos três comparativos e dois adjetivos curtos com complemento.",
+      "prompt": "«Сравните жизнь в вашем городе десять лет назад и сейчас.» (Compare a vida na sua cidade há dez anos e hoje.)\n\nUnidades: дороже / дешевле · лучше / хуже · больше всего · гораздо · доволен + твор. · готов к · уверен в",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "comparativo",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

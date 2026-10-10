@@ -1,0 +1,580 @@
+{
+  "id": "v13",
+  "unit_id": "u13_vinitelnyi",
+  "order": 13,
+  "title": "Выходные без спешки",
+  "theme": "Dois amigos combinam um passeio e recebem uma visitante",
+  "description": "Dois amigos combinam um passeio e recebem uma visitante. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Нина": "f",
+    "Олег": "m"
+  },
+  "dialogue": {
+    "title": "Выходные без спешки",
+    "setting": "Dois amigos combinam um passeio e recebem uma visitante",
+    "lines": [
+      {
+        "speaker": "Нина",
+        "ru": "Можно собрать вещи за один час и выйти после завтрака.",
+        "pt": "Podemos arrumar as coisas em uma hora e sair depois do café da manhã."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "Хорошо, но моя сестра приедет через два часа. Я должен её встретить.",
+        "pt": "Tudo bem, mas minha irmã chegará daqui a duas horas. Preciso recebê-la."
+      },
+      {
+        "speaker": "Нина",
+        "ru": "Тогда возьмём велосипеды на весь выходной.",
+        "pt": "Então pegaremos bicicletas pelo dia de folga inteiro."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "Я хочу пригласить друзей на выставку рядом с парком.",
+        "pt": "Quero convidar amigos para a exposição perto do parque."
+      },
+      {
+        "speaker": "Нина",
+        "ru": "Сначала лучше посетить городскую галерею: она закрывается в пять.",
+        "pt": "É melhor visitar primeiro a galeria municipal: ela fecha às cinco."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "А потом сможем провести свободное время на набережной.",
+        "pt": "Depois poderemos passar o tempo livre à beira do rio."
+      },
+      {
+        "speaker": "Нина",
+        "ru": "Я буду ждать свою подругу у входа в галерею.",
+        "pt": "Vou esperar minha amiga na entrada da galeria."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "А мне нужно встретить младшую сестру на станции.",
+        "pt": "E eu preciso receber minha irmã mais nova na estação."
+      },
+      {
+        "speaker": "Нина",
+        "ru": "Тогда встретимся у галереи в час. Билеты купим на месте.",
+        "pt": "Então vamos nos encontrar na galeria à uma. Compraremos os ingressos lá."
+      },
+      {
+        "speaker": "Олег",
+        "ru": "Договорились. Если пойдёт дождь, останемся внутри.",
+        "pt": "Combinado. Se chover, ficaremos dentro."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual é o plano dos amigos?",
+      "options": [
+        "Receber a irmã e visitar uma galeria.",
+        "Passar o dia inteiro dentro de um trem.",
+        "Esperar a amiga para viajar outra cidade.",
+        "Comprar bicicletas para uma exposição."
+      ],
+      "answer": "Receber a irmã e visitar uma galeria.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "за",
+      "tag": "за + время",
+      "head": "за + время",
+      "regency": "за сколько времени?",
+      "case": "винительный падеж",
+      "pt": "em uma hora para concluir",
+      "chunk": "за один час",
+      "chunk_pt": "em uma hora para concluir",
+      "chunk_wrong": [
+        "за одного часа",
+        "за одному часу",
+        "за одним часом"
+      ],
+      "form_note": "за + duração mede o tempo necessário para concluir uma ação; não confunda com через, que indica quando ela acontece.",
+      "trap": "за + duração mede o tempo necessário para concluir uma ação; não confunda com через, que indica quando ela acontece.",
+      "example": {
+        "ru": "Мы собрали мебель за полчаса.",
+        "pt": "Montamos os móveis em meia hora.",
+        "extra": "полчасом",
+        "note": "за + duração mede o tempo necessário para concluir uma ação; não confunda com через, que indica quando ela acontece."
+      },
+      "cloze": {
+        "ru": "Она прочитала рассказ ___.",
+        "answer": "за десять минут",
+        "wrong": [
+          "за десяти минут",
+          "за десятью минутами",
+          "за десяти минутам"
+        ],
+        "pt": "Ela leu o conto inteiro em dez minutos.",
+        "note": "за + duração mede o tempo necessário para concluir uma ação; não confunda com через, que indica quando ela acontece."
+      },
+      "hear": {
+        "ru": "Друзья приготовили ужин за сорок минут.",
+        "pt": "Os amigos prepararam o jantar em quarenta minutos.",
+        "wrong": [
+          "Os amigos prepararão o jantar em quarenta minutos.",
+          "Os amigos não prepararam o jantar em quarenta minutos.",
+          "Os amigos prepararam o jantar após quarenta minutos."
+        ],
+        "note": "за + duração mede o tempo necessário para concluir uma ação; não confunda com через, que indica quando ela acontece."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "через",
+      "tag": "через + время",
+      "head": "через + время",
+      "regency": "через сколько времени?",
+      "case": "винительный падеж",
+      "pt": "daqui a duas horas",
+      "chunk": "через два часа",
+      "chunk_pt": "daqui a duas horas",
+      "chunk_wrong": [
+        "через двух часов",
+        "через двум часам",
+        "через двумя часами"
+      ],
+      "form_note": "через сколько времени? usa винительный падеж e conta a espera até o acontecimento.",
+      "trap": "через сколько времени? usa винительный падеж e conta a espera até o acontecimento.",
+      "example": {
+        "ru": "Автобус придёт через минуту.",
+        "pt": "O ônibus chegará daqui a um minuto.",
+        "extra": "минутой",
+        "note": "через сколько времени? usa винительный падеж e conta a espera até o acontecimento."
+      },
+      "cloze": {
+        "ru": "Мы встретимся ___.",
+        "answer": "через три дня",
+        "wrong": [
+          "через трёх дней",
+          "через трём дням",
+          "через тремя днями"
+        ],
+        "pt": "Vamos nos encontrar daqui a três dias.",
+        "note": "через сколько времени? usa винительный падеж e conta a espera até o acontecimento."
+      },
+      "hear": {
+        "ru": "Брат вернётся через неделю.",
+        "pt": "O irmão voltará daqui a uma semana.",
+        "wrong": [
+          "O irmão voltou há uma semana.",
+          "O irmão não voltará daqui a uma semana.",
+          "A irmã voltará daqui a uma semana."
+        ],
+        "note": "через сколько времени? usa винительный падеж e conta a espera até o acontecimento."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "на",
+      "tag": "на + срок",
+      "head": "на + срок",
+      "regency": "на сколько времени?",
+      "case": "винительный падеж",
+      "pt": "pelo dia de folga inteiro",
+      "chunk": "на весь выходной",
+      "chunk_pt": "pelo dia de folga inteiro",
+      "chunk_wrong": [
+        "на всего выходного",
+        "на всему выходному",
+        "на всем выходным"
+      ],
+      "form_note": "на сколько времени? expressa o prazo previsto de uso ou permanência; за mede o tempo de execução.",
+      "trap": "на сколько времени? expressa o prazo previsto de uso ou permanência; за mede o tempo de execução.",
+      "example": {
+        "ru": "Мы сняли дачу на месяц.",
+        "pt": "Alugamos uma casa de campo por um mês.",
+        "extra": "месяцем",
+        "note": "на сколько времени? expressa o prazo previsto de uso ou permanência; за mede o tempo de execução."
+      },
+      "cloze": {
+        "ru": "Они уехали за город ___.",
+        "answer": "на три недели",
+        "wrong": [
+          "на трёх недель",
+          "на трём неделям",
+          "на тремя неделями"
+        ],
+        "pt": "Eles foram para fora da cidade por três semanas.",
+        "note": "на сколько времени? expressa o prazo previsto de uso ou permanência; за mede o tempo de execução."
+      },
+      "hear": {
+        "ru": "Сестра взяла машину на два дня.",
+        "pt": "A irmã pegou o carro por dois dias.",
+        "wrong": [
+          "A irmã pegará o carro por dois dias.",
+          "A irmã não pegou o carro por dois dias.",
+          "O irmão pegou o carro por dois dias."
+        ],
+        "note": "на сколько времени? expressa o prazo previsto de uso ou permanência; за mede o tempo de execução."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "приглашать",
+      "tag": "приглашать / пригласить",
+      "head": "приглашать / пригласить",
+      "regency": "приглашать / пригласить кого? куда?",
+      "case": "винительный падеж",
+      "pt": "convidar amigos para a exposição",
+      "chunk": "пригласить друзей на выставку",
+      "chunk_pt": "convidar amigos para a exposição",
+      "chunk_wrong": [
+        "пригласить друзьям на выставку",
+        "пригласить друзьями на выставку",
+        "пригласить друзья на выставку"
+      ],
+      "form_note": "Pessoa: кого?; destino: куда?, com в ou на + винительный падеж. Localização não substitui destino.",
+      "trap": "Pessoa: кого?; destino: куда?, com в ou на + винительный падеж. Localização não substitui destino.",
+      "example": {
+        "ru": "Редактор пригласил автора в студию.",
+        "pt": "O editor convidou o autor para o estúdio.",
+        "extra": "автору",
+        "note": "Pessoa: кого?; destino: куда?, com в ou на + винительный падеж. Localização não substitui destino."
+      },
+      "cloze": {
+        "ru": "Хочу пригласить сестру ___.",
+        "answer": "в новый театр",
+        "wrong": [
+          "в новом театре",
+          "в нового театра",
+          "в новым театром"
+        ],
+        "pt": "Quero convidar minha irmã para o novo teatro.",
+        "note": "Pessoa: кого?; destino: куда?, com в ou на + винительный падеж. Localização não substitui destino."
+      },
+      "hear": {
+        "ru": "Олег пригласил Нину на концерт.",
+        "pt": "Oleg convidou Nina para o concerto.",
+        "wrong": [
+          "Nina convidou Oleg para o concerto.",
+          "Oleg não convidou Nina para o concerto.",
+          "Oleg convidará Nina para o concerto."
+        ],
+        "note": "Pessoa: кого?; destino: куда?, com в ou на + винительный падеж. Localização não substitui destino."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "посещать",
+      "tag": "посещать / посетить",
+      "head": "посещать / посетить",
+      "regency": "посещать / посетить что?",
+      "case": "винительный падеж",
+      "pt": "visitar a galeria municipal",
+      "chunk": "посетить городскую галерею",
+      "chunk_pt": "visitar a galeria municipal",
+      "chunk_wrong": [
+        "посетить городской галерее",
+        "посетить городской галереей",
+        "посетить городской галереи"
+      ],
+      "form_note": "посещать что? recebe objeto direto sem в ou на; visitar um lugar não é apenas ir até ele.",
+      "trap": "посещать что? recebe objeto direto sem в ou на; visitar um lugar não é apenas ir até ele.",
+      "example": {
+        "ru": "Туристы посетили исторический музей.",
+        "pt": "Os turistas visitaram o museu histórico.",
+        "extra": "музею",
+        "note": "посещать что? recebe objeto direto sem в ou на; visitar um lugar não é apenas ir até ele."
+      },
+      "cloze": {
+        "ru": "По воскресеньям мы посещаем ___.",
+        "answer": "бесплатные лекции",
+        "wrong": [
+          "бесплатных лекций",
+          "бесплатным лекциям",
+          "бесплатными лекциями"
+        ],
+        "pt": "Aos domingos, frequentamos palestras gratuitas.",
+        "note": "посещать что? recebe objeto direto sem в ou на; visitar um lugar não é apenas ir até ele."
+      },
+      "hear": {
+        "ru": "Студенты посетили новую выставку.",
+        "pt": "Os estudantes visitaram a nova exposição.",
+        "wrong": [
+          "Os estudantes visitarão a nova exposição.",
+          "Os estudantes não visitaram a nova exposição.",
+          "Os estudantes visitavam a nova exposição."
+        ],
+        "note": "посещать что? recebe objeto direto sem в ou на; visitar um lugar não é apenas ir até ele."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "проводить",
+      "tag": "проводить / провести время",
+      "head": "проводить / провести время",
+      "regency": "проводить / провести что? где? с кем?",
+      "case": "винительный падеж",
+      "pt": "passar o tempo livre",
+      "chunk": "провести свободное время",
+      "chunk_pt": "passar o tempo livre",
+      "chunk_wrong": [
+        "провести свободного времени",
+        "провести свободному времени",
+        "провести свободным временем"
+      ],
+      "form_note": "провести время descreve um período vivido; время fica no винительный падеж, não no instrumental.",
+      "trap": "провести время descreve um período vivido; время fica no винительный падеж, não no instrumental.",
+      "example": {
+        "ru": "Дети провели вечер у бабушки.",
+        "pt": "As crianças passaram a noite na casa da avó.",
+        "extra": "вечером",
+        "note": "провести время descreve um período vivido; время fica no винительный падеж, não no instrumental."
+      },
+      "cloze": {
+        "ru": "Мы хотим провести ___ вместе.",
+        "answer": "следующую субботу",
+        "wrong": [
+          "следующей субботе",
+          "следующей субботой",
+          "следующей субботы"
+        ],
+        "pt": "Queremos passar o próximo sábado juntos.",
+        "note": "провести время descreve um período vivido; время fica no винительный падеж, não no instrumental."
+      },
+      "hear": {
+        "ru": "Анна провела выходные с братом.",
+        "pt": "Anna passou o fim de semana com o irmão.",
+        "wrong": [
+          "O irmão passou o fim de semana com a irmã de Anna.",
+          "Anna passará o fim de semana com o irmão.",
+          "Anna não passou o fim de semana com o irmão."
+        ],
+        "note": "провести время descreve um período vivido; время fica no винительный падеж, não no instrumental."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "ждать",
+      "tag": "ждать",
+      "head": "ждать",
+      "regency": "ждать кого? что? / чего?",
+      "case": "винительный падеж / родительный падеж",
+      "pt": "esperar a própria amiga",
+      "chunk": "ждать свою подругу",
+      "chunk_pt": "esperar a própria amiga",
+      "chunk_wrong": [
+        "ждать своей подруге",
+        "ждать своей подругой",
+        "ждать со своей подругой"
+      ],
+      "form_note": "Pessoa definida: ждать кого?; com coisas, ждать что? e ждать чего? podem ser aceitáveis. Não use uma variante de caso defensável como distrator.",
+      "trap": "Pessoa definida: ждать кого?; com coisas, ждать что? e ждать чего? podem ser aceitáveis. Não use uma variante de caso defensável como distrator.",
+      "example": {
+        "ru": "Я жду ответ от редактора.",
+        "pt": "Estou esperando uma resposta do editor.",
+        "extra": "ответу",
+        "note": "Pessoa definida: ждать кого?; com coisas, ждать что? e ждать чего? podem ser aceitáveis. Não use uma variante de caso defensável como distrator."
+      },
+      "cloze": {
+        "ru": "У входа он ждёт ___.",
+        "answer": "своего брата",
+        "wrong": [
+          "своему брату",
+          "своим братом",
+          "своём брате"
+        ],
+        "pt": "Na entrada, ele espera o próprio irmão.",
+        "note": "Pessoa definida: ждать кого?; com coisas, ждать что? e ждать чего? podem ser aceitáveis. Não use uma variante de caso defensável como distrator."
+      },
+      "hear": {
+        "ru": "Нина ждала Олега у метро.",
+        "pt": "Nina estava esperando Oleg perto do metrô.",
+        "wrong": [
+          "Oleg estava esperando Nina perto do metrô.",
+          "Nina não estava esperando Oleg perto do metrô.",
+          "Nina esperará Oleg perto do metrô."
+        ],
+        "note": "Pessoa definida: ждать кого?; com coisas, ждать что? e ждать чего? podem ser aceitáveis. Não use uma variante de caso defensável como distrator."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "встречать",
+      "tag": "встречать / встретить",
+      "head": "встречать / встретить",
+      "regency": "встречать / встретить кого? где?",
+      "case": "винительный падеж",
+      "pt": "receber a irmã mais nova",
+      "chunk": "встретить младшую сестру",
+      "chunk_pt": "receber a irmã mais nova",
+      "chunk_wrong": [
+        "встретить младшей сестре",
+        "встретить младшей сестрой",
+        "встретить младшая сестра"
+      ],
+      "form_note": "встретить кого? é transitivo; встретиться с кем? é encontrar-se com alguém, outra construção.",
+      "trap": "встретить кого? é transitivo; встретиться с кем? é encontrar-se com alguém, outra construção.",
+      "example": {
+        "ru": "Отец встретил сына на вокзале.",
+        "pt": "O pai recebeu o filho na estação.",
+        "extra": "сыну",
+        "note": "встретить кого? é transitivo; встретиться с кем? é encontrar-se com alguém, outra construção."
+      },
+      "cloze": {
+        "ru": "Завтра мы встретим ___.",
+        "answer": "новую сотрудницу",
+        "wrong": [
+          "новой сотруднице",
+          "новой сотрудницей",
+          "новая сотрудница"
+        ],
+        "pt": "Amanhã vamos receber a nova funcionária.",
+        "note": "встретить кого? é transitivo; встретиться с кем? é encontrar-se com alguém, outra construção."
+      },
+      "hear": {
+        "ru": "Мама встретила дочь у школы.",
+        "pt": "A mãe recebeu a filha perto da escola.",
+        "wrong": [
+          "A filha recebeu a mãe perto da escola.",
+          "A mãe não recebeu a filha perto da escola.",
+          "A mãe receberá a filha perto da escola."
+        ],
+        "note": "встретить кого? é transitivo; встретиться с кем? é encontrar-se com alguém, outra construção."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Por que a galeria vem primeiro?",
+      "options": [
+        "Ela fecha às cinco da tarde.",
+        "Ela abre somente depois do jantar.",
+        "Ela fica distante da estação de trem.",
+        "Ela não vende ingressos no próprio local."
+      ],
+      "answer": "Ela fecha às cinco da tarde.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "Onde Oleg vai receber a irmã?",
+      "options": [
+        "Na estação, antes do encontro na galeria.",
+        "No parque, depois da exposição municipal.",
+        "Na galeria, depois de comprar os ingressos.",
+        "À beira do rio, antes do café da manhã."
+      ],
+      "answer": "Na estação, antes do encontro na galeria.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "за один час",
+      "wrong": [
+        "за одного часа",
+        "за одному часу",
+        "за одним часом"
+      ],
+      "note": "за + duração mede o tempo necessário para concluir uma ação; não confunda com через, que indica quando ela acontece."
+    },
+    {
+      "line": 1,
+      "gap": "через два часа",
+      "wrong": [
+        "через двух часов",
+        "через двум часам",
+        "через двумя часами"
+      ],
+      "note": "через сколько времени? usa винительный падеж e conta a espera até o acontecimento."
+    },
+    {
+      "line": 2,
+      "gap": "на весь выходной",
+      "wrong": [
+        "на всего выходного",
+        "на всему выходному",
+        "на всем выходным"
+      ],
+      "note": "на сколько времени? expressa o prazo previsto de uso ou permanência; за mede o tempo de execução."
+    },
+    {
+      "line": 6,
+      "gap": "свою подругу",
+      "wrong": [
+        "своей подруге",
+        "своей подругой",
+        "своя подруга"
+      ],
+      "note": "Pessoa definida: ждать кого?; com coisas, ждать что? e ждать чего? podem ser aceitáveis. Não use uma variante de caso defensável como distrator."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "за один час",
+        "right": "em uma hora para concluir"
+      },
+      {
+        "left": "через два часа",
+        "right": "daqui a duas horas"
+      },
+      {
+        "left": "на весь выходной",
+        "right": "pelo dia de folga inteiro"
+      },
+      {
+        "left": "пригласить друзей на выставку",
+        "right": "convidar amigos para a exposição"
+      },
+      {
+        "left": "посетить городскую галерею",
+        "right": "visitar a galeria municipal"
+      },
+      {
+        "left": "провести свободное время",
+        "right": "passar o tempo livre"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Нина",
+      "you": "Олег",
+      "ru": "За сколько времени мы сможем собраться?",
+      "prompt": "Informe o tempo necessário para concluir.",
+      "answer": "За один час.",
+      "wrong": [
+        "За одного часа.",
+        "За одному часу.",
+        "За одним часом."
+      ],
+      "explanation": "за + duração mede o tempo necessário para concluir uma ação; não confunda com через, que indica quando ela acontece."
+    },
+    {
+      "speaker": "Олег",
+      "you": "Нина",
+      "ru": "Когда приедет твоя сестра?",
+      "prompt": "Informe a espera até a chegada.",
+      "answer": "Через два часа.",
+      "wrong": [
+        "Через двух часов.",
+        "Через двум часам.",
+        "Через двумя часами."
+      ],
+      "explanation": "через сколько времени? usa винительный падеж e conta a espera até o acontecimento."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva a um amigo um plano de fim de semana. Diferencie tempo para concluir, espera até um evento e duração prevista.",
+    "use": [
+      "за + время",
+      "через + время",
+      "на + срок",
+      "приглашать / пригласить",
+      "посещать / посетить"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: за сколько времени?; через сколько времени?; на сколько времени?; приглашать / пригласить кого? куда?; посещать / посетить что?; проводить / провести что? где? с кем?; ждать кого? что? / чего?; встречать / встретить кого? где?."
+  }
+}

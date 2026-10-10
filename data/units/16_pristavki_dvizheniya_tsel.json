@@ -1,0 +1,780 @@
+{
+  "id": "u16_pristavki_dvizheniya",
+  "order": 16,
+  "title": "Movimento com prefixo e expressão de finalidade",
+  "description": "Город, пригород и деревня: os dez prefixos espaciais com a preposição que cada um exige, e as quatro maneiras de dizer «para quê».",
+  "estimated_minutes": 36,
+  "objectives": [
+    "associar cada prefixo de movimento à sua preposição obrigatória",
+    "formar o par aspectual dos verbos de movimento prefixados",
+    "escolher entre чтобы + infinitivo e чтобы + passado"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 5 «Город, пригород и деревня» (Глаголы движения с приставками, Выражение цели) · Кузьмина, Глаголы движения с приставками, обозначающими пространственные отношения",
+  "grammar": [
+    {
+      "title": "Cada prefixo traz a sua preposição",
+      "paragraphs": [
+        "Nos verbos de movimento, o prefixo e a preposição formam um par fixo: escolher o prefixo já decide qual preposição vem depois. Os cinco pares mais frequentes: в-/во- exige в + винительный (войти в дом) e o oposto вы- exige из + родительный (выйти из дома); при- exige из/с + родительный (приехать из Москвы) e o oposto у- exige в/на + винительный (уехать в Москву); под- exige к + дательный (подойти к окну) e o oposto от- exige от + родительный (отойти от окна).",
+        "Os outros cinco: до- exige до + родительный e significa chegar até um limite (дойти до угла); про- significa passar por dentro ou ao lado e exige через + винительный ou мимо + родительный (пройти через парк, пройти мимо дома); пере- significa atravessar e exige через + винительный ou acusativo direto (перейти через улицу / перейти улицу); за- significa passar rapidamente em algum lugar no caminho e exige в/на + винительный ou к + дательный (зайти в магазин, зайти к другу); об- significa contornar e leva acusativo direto (обойти здание).",
+        "Uma pergunta simples resolve a escolha do prefixo: qual é a relação com o ponto de referência? Entrar dentro → в-. Sair de dentro → вы-. Chegar ao destino final → при-. Deixar o lugar → у-. Aproximar-se sem entrar → под-. Afastar-se um pouco → от-. Chegar até um limite → до-. Passar sem parar → про-. Atravessar de um lado a outro → пере-. Parar rapidamente no caminho → за-. Contornar → об-."
+      ],
+      "audio_script": "Verbos de movimento com prefixo. E a boa notícia é que existe um sistema aqui, não uma lista solta de palavras. A regra central é esta: nos verbos de movimento, o prefixo e a preposição formam um par fixo. Escolher o prefixo já decide qual preposição vem depois. Você não precisa memorizar as duas coisas separadamente. Vamos aos pares de opostos, que são a melhor forma de guardar. Par um: в mais в mais acusativo, para entrar. Войти в дом. O oposto é вы, que exige из mais genitivo. Выйти из дома. Par dois: при, que exige из ou с mais genitivo, para a origem de quem chega. Приехать из Москвы. O oposto é у, que exige в ou на mais acusativo, para o destino de quem parte. Уехать в Москву. Par três: под, que exige к mais dativo, para aproximar-se sem entrar. Подойти к окну. O oposto é от, que exige от mais genitivo, para afastar-se um pouco. Отойти от окна. Agora os cinco prefixos que não formam pares opostos. До exige до mais genitivo e significa chegar até um limite. Дойти до угла, chegar até a esquina. Про significa passar por dentro ou ao lado, e exige через mais acusativo, ou мимо mais genitivo. Пройти через парк, atravessar o parque. Пройти мимо дома, passar em frente à casa. Пере significa atravessar de um lado ao outro, e aceita через mais acusativo ou acusativo direto. Перейти через улицу, ou simplesmente перейти улицу. За significa passar rapidamente em algum lugar no caminho, e exige в ou на mais acusativo, ou к mais dativo. Зайти в магазин. Зайти к другу. Esse за é muito frequente na conversa cotidiana. E об significa contornar, e leva acusativo direto: обойти здание. Para escolher o prefixo, faça uma pergunta só: qual é a relação com o ponto de referência? Entrar dentro, в. Sair de dentro, вы. Chegar ao destino final, при. Deixar o lugar, у. Aproximar-se sem entrar, под. Afastar-se um pouco, от. Chegar até um limite, до. Passar sem parar, про. Atravessar, пере. Dar um pulo no caminho, за. Contornar, об.",
+      "examples": [
+        {
+          "ru": "Он вошёл в здание и сразу вышел из него.",
+          "pt": "Ele entrou no prédio e saiu dele imediatamente.",
+          "note": "в- com в + acusativo; вы- com из + genitivo."
+        },
+        {
+          "ru": "Подойдите к окну и посмотрите на новый район.",
+          "pt": "Aproxime-se da janela e olhe o novo bairro.",
+          "note": "под- exige к + dativo."
+        },
+        {
+          "ru": "Дойдите до перекрёстка и перейдите улицу.",
+          "pt": "Vá até o cruzamento e atravesse a rua.",
+          "note": "до- com до + genitivo; пере- com acusativo direto."
+        },
+        {
+          "ru": "По дороге домой я зайду в магазин.",
+          "pt": "No caminho de casa vou passar no mercado.",
+          "note": "за- = parada rápida no trajeto."
+        }
+      ],
+      "pitfalls": [
+        "Dizer «подойти до окна»: под- exige к, não до.",
+        "Dizer «выйти от дома»: вы- exige из; от- pertence a отойти.",
+        "Confundir дойти (chegar até) com пройти (passar sem parar)."
+      ]
+    },
+    {
+      "title": "O par aspectual muda a raiz",
+      "paragraphs": [
+        "Quando um prefixo entra num verbo de movimento, algo importante acontece: o verbo unidirecional prefixado vira PERFECTIVO, e o multidirecional prefixado vira IMPERFECTIVO. Assim, прийти (de идти) é perfectivo e приходить (de ходить) é imperfectivo. приехать é perfectivo e приезжать é imperfectivo. O par aspectual dos verbos de movimento se forma pelo próprio par unidirecional/multidirecional, e não por sufixação normal.",
+        "As raízes mudam de forma ao receber prefixo, e é preciso reconhecê-las: идти vira -йти (прийти, войти, выйти, подойти, дойти, пройти, перейти, зайти, уйти); ходить vira -ходить (приходить, входить, выходить, подходить); ехать vira -ехать (приехать, въехать, уехать); ездить vira -езжать (приезжать, въезжать, уезжать). Note a grafia especial de прийти, com и, e a tonicidade de вы́йти, que puxa o acento para o prefixo.",
+        "O sentido prático dessa distribuição: use o perfectivo para um deslocamento único e concluído (Он пришёл домой в семь — chegou em casa às sete) e o imperfectivo para repetição, hábito ou processo (Он приходит домой в семь — chega em casa às sete, sempre). No futuro a diferença é a mesma: Он придёт (virá, uma vez) × Он будет приходить (virá regularmente)."
+      ],
+      "audio_script": "Segunda parte, e ela resolve um mal-entendido muito comum. Quando um prefixo entra num verbo de movimento, acontece uma coisa importante: os aspectos se reorganizam. O verbo unidirecional prefixado vira PERFECTIVO. O verbo multidirecional prefixado vira IMPERFECTIVO. Então: прийти, que vem de идти, é perfectivo. E приходить, que vem de ходить, é imperfectivo. Приехать é perfectivo. Приезжать é imperfectivo. Ou seja: o par aspectual dos verbos de movimento se forma pelo próprio par unidirecional e multidirecional. Não é por sufixação, como nos verbos normais. É um sistema à parte. Agora, as raízes mudam de forma ao receber prefixo, e vale reconhecê-las. идти vira йти. Прийти, войти, выйти, подойти, дойти, пройти, перейти, зайти, уйти. ходить vira ходить mesmo. Приходить, входить, выходить, подходить. ехать continua ехать. Приехать, въехать, уехать. E ездить vira езжать. Приезжать, въезжать, уезжать. Essa última é a que mais surpreende. Dois detalhes de escrita e pronúncia. Прийти se escreve com и, e não com й depois do при. É uma grafia especial que todo mundo erra no começo. E выйти tem o acento no prefixo: ВЫйти. O prefixo вы sempre puxa o acento nos verbos perfectivos. Para terminar, o sentido prático de tudo isso. Use o perfectivo para um deslocamento único e concluído: Он пришёл домой в семь. Ele chegou em casa às sete, naquele dia. Use o imperfectivo para repetição, hábito ou processo: Он приходит домой в семь. Ele chega em casa às sete, sempre. E no futuro a lógica é a mesma. Он придёт, ele virá, uma vez. Он будет приходить, ele virá regularmente.",
+      "examples": [
+        {
+          "ru": "Вчера он пришёл домой очень поздно.",
+          "pt": "Ontem ele chegou em casa muito tarde.",
+          "note": "Perfectivo: um evento concluído."
+        },
+        {
+          "ru": "Он всегда приходит домой поздно.",
+          "pt": "Ele sempre chega em casa tarde.",
+          "note": "Imperfectivo: hábito."
+        },
+        {
+          "ru": "Поезд приезжает в семь, но сегодня приедет с опозданием.",
+          "pt": "O trem chega às sete, mas hoje chegará atrasado.",
+          "note": "Horário regular (impf.) × ocorrência única (pf.)."
+        },
+        {
+          "ru": "Выходите на следующей остановке.",
+          "pt": "Desça na próxima parada.",
+          "note": "выходить: imperfectivo, forma normal de instrução no transporte."
+        }
+      ],
+      "pitfalls": [
+        "Escrever «прийти»: a grafia correta é прийти.",
+        "Usar приходить para um evento único do passado: «вчера он приходил» só cabe se ele veio e foi embora."
+      ]
+    },
+    {
+      "title": "Expressar finalidade: чтобы, для, за e ради",
+      "paragraphs": [
+        "Há quatro maneiras principais de dizer «para quê», e a escolha depende da forma do complemento. A primeira e mais importante é чтобы, com uma regra que decide tudo: se o sujeito da finalidade é o MESMO da oração principal, usa-se чтобы + INFINITIVO — Я приехал в Москву, чтобы учиться. Se o sujeito é DIFERENTE, usa-se чтобы + PASSADO — Родители переехали в город, чтобы дети учились в хорошей школе.",
+        "Esse passado depois de чтобы não indica tempo passado: é a forma exigida pela conjunção, exatamente como no discurso indireto de ordens (Unidade 10). Confundir os dois casos é o erro mais comum: «чтобы дети учиться» e «чтобы дети учатся» estão ambos errados; só «чтобы дети учились» funciona.",
+        "As outras três são mais simples. для + родительный introduz finalidade com substantivo: программа для молодых специалистов. за + творительный significa «ir buscar»: Он пошёл в магазин за хлебом (foi ao mercado buscar pão) — e essa é a construção que mais surpreende quem fala português, porque em russo não se diz «ir buscar o pão», diz-se «ir atrás do pão». ради + родительный significa «em nome de, pelo bem de»: ради детей, ради будущего. E em registro formal aparece с целью + родительный: с целью улучшения инфраструктуры."
+      ],
+      "audio_script": "Terceira parte: como dizer «para quê». São quatro maneiras, e a escolha entre elas depende da forma do complemento. A primeira e mais importante é чтобы, e ela tem uma regra que decide tudo. Ouça com atenção. Se o sujeito da finalidade é o MESMO da oração principal, usa-se чтобы mais INFINITIVO. Я приехал в Москву, чтобы учиться. Eu vim a Moscou para estudar. Quem veio e quem estuda é a mesma pessoa. Mas se o sujeito é DIFERENTE, usa-se чтобы mais PASSADO. Родители переехали в город, чтобы дети учились в хорошей школе. Os pais se mudaram para a cidade para que os filhos estudassem numa boa escola. Quem se mudou são os pais; quem estuda são os filhos. Sujeitos diferentes, então passado. E atenção: esse passado NÃO indica tempo passado. É simplesmente a forma que a conjunção чтобы exige. É exatamente o mesmo mecanismo do discurso indireto de ordens, que você viu na unidade dez. O erro mais comum é este, e vale ouvir as três versões para fixar: чтобы дети учиться, errado. чтобы дети учатся, errado. чтобы дети учились, correto. Agora as outras três maneiras, que são mais simples. Для mais genitivo introduz finalidade com substantivo. Программа для молодых специалистов. За mais instrumental significa ir buscar. E essa é a que mais surpreende quem fala português. Он пошёл в магазин за хлебом. Literalmente: ele foi ao mercado ATRÁS do pão. Em russo não se diz «ir buscar o pão»: diz-se «ir atrás do pão», com за mais instrumental. Ради mais genitivo significa em nome de, pelo bem de. Ради детей. Ради будущего. E em registro formal, de documento ou de artigo, aparece с целью mais genitivo. С целью улучшения инфраструктуры. Com o objetivo de melhorar a infraestrutura.",
+      "examples": [
+        {
+          "ru": "Я переехал в город, чтобы найти работу.",
+          "pt": "Mudei-me para a cidade para achar emprego.",
+          "note": "Mesmo sujeito → чтобы + infinitivo."
+        },
+        {
+          "ru": "Мы переехали в пригород, чтобы дети росли на свежем воздухе.",
+          "pt": "Mudamo-nos para o subúrbio para que as crianças crescessem ao ar livre.",
+          "note": "Sujeitos diferentes → чтобы + passado."
+        },
+        {
+          "ru": "Он вышел за хлебом и вернулся через десять минут.",
+          "pt": "Ele saiu para comprar pão e voltou em dez minutos.",
+          "note": "за + instrumental = ir buscar."
+        },
+        {
+          "ru": "Город построил новый мост для жителей пригорода.",
+          "pt": "A cidade construiu uma ponte nova para os moradores do subúrbio.",
+          "note": "для + genitivo, finalidade com substantivo."
+        }
+      ],
+      "pitfalls": [
+        "Usar чтобы + infinitivo com sujeitos diferentes: é «чтобы дети учились», não «чтобы дети учиться».",
+        "Traduzir «ir buscar pão» literalmente: em russo é пойти за хлебом, com за + instrumental."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Prefixos de movimento e a preposição de cada um",
+    "columns": [
+      "Prefixo",
+      "Sentido",
+      "Preposição + caso",
+      "Exemplo"
+    ],
+    "rows": [
+      [
+        "в- / во-",
+        "entrar",
+        "в + винительный",
+        "войти в здание"
+      ],
+      [
+        "вы-",
+        "sair de dentro",
+        "из + родительный",
+        "выйти из здания"
+      ],
+      [
+        "при-",
+        "chegar (destino final)",
+        "из / с + родительный",
+        "приехать из провинции"
+      ],
+      [
+        "у-",
+        "partir, ir embora",
+        "в / на + винительный",
+        "уехать в столицу"
+      ],
+      [
+        "под- / подо-",
+        "aproximar-se",
+        "к + дательный",
+        "подойти к остановке"
+      ],
+      [
+        "от- / ото-",
+        "afastar-se",
+        "от + родительный",
+        "отойти от края"
+      ],
+      [
+        "до-",
+        "chegar até um limite",
+        "до + родительный",
+        "дойти до перекрёстка"
+      ],
+      [
+        "про-",
+        "passar por / atravessar",
+        "через + вин. · мимо + род.",
+        "пройти через парк · пройти мимо музея"
+      ],
+      [
+        "пере-",
+        "atravessar de um lado a outro",
+        "через + вин. ou вин. direto",
+        "перейти (через) улицу"
+      ],
+      [
+        "за-",
+        "dar um pulo no caminho",
+        "в / на + вин. · к + дат.",
+        "зайти в аптеку · зайти к другу"
+      ],
+      [
+        "об- / обо-",
+        "contornar",
+        "винительный direto",
+        "обойти площадь"
+      ]
+    ],
+    "note": "Aspecto: prefixo + unidirecional = perfectivo (прийти, приехать) · prefixo + multidirecional = imperfectivo (приходить, приезжать). Raízes: -йти, -ходить, -ехать, -езжать."
+  },
+  "reference": [
+    {
+      "construction": "чтобы + инфинитив",
+      "question": "зачем?",
+      "case": "—",
+      "meaning": "para (mesmo sujeito)",
+      "example": "я приехал, чтобы учиться"
+    },
+    {
+      "construction": "чтобы + прошедшее время",
+      "question": "зачем?",
+      "case": "—",
+      "meaning": "para que (sujeito diferente)",
+      "example": "чтобы дети учились здесь"
+    },
+    {
+      "construction": "для",
+      "question": "для кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "para (destinatário, finalidade)",
+      "example": "программа для молодых семей"
+    },
+    {
+      "construction": "за",
+      "question": "за кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ir buscar",
+      "example": "пойти в магазин за продуктами"
+    },
+    {
+      "construction": "ради",
+      "question": "ради кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "em nome de, pelo bem de",
+      "example": "ради будущего детей"
+    },
+    {
+      "construction": "переезжать / переехать",
+      "question": "откуда? куда?",
+      "case": "РОД. + ВИН.",
+      "meaning": "mudar-se de… para…",
+      "example": "переехать из деревни в город"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u16-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "под- × от-",
+      "back": "подойти К + дательный · отойти ОТ + родительный",
+      "explanation": "Aproximar-se pede к; afastar-se pede от. Prefixo e preposição andam sempre juntos.",
+      "tags": [
+        "prefixos",
+        "движение",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u16-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "прийти × приходить",
+      "back": "прийти = perfectivo (uma vez) · приходить = imperfectivo (hábito)",
+      "explanation": "Prefixo + unidirecional = perfectivo; prefixo + multidirecional = imperfectivo.",
+      "tags": [
+        "prefixos",
+        "aspecto",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u16-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "чтобы",
+      "back": "mesmo sujeito → + infinitivo · sujeito diferente → + passado",
+      "explanation": "чтобы учиться (eu) × чтобы дети учились (eles). O passado aqui não é tempo, é exigência da conjunção.",
+      "tags": [
+        "чтобы",
+        "finalidade",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u16-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "пойти за хлебом",
+      "back": "за + творительный падеж = ir buscar",
+      "explanation": "Em russo não se «vai buscar o pão»: vai-se «atrás do pão».",
+      "tags": [
+        "за + творительный",
+        "finalidade",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u16-e05",
+      "type": "choice",
+      "stage": "prefixes",
+      "difficulty": 1,
+      "instruction": "Escolha o verbo correto.",
+      "prompt": "Автобус остановился, и пассажиры начали ___ из салона.",
+      "options": [
+        "выходить",
+        "входить",
+        "подходить",
+        "переходить"
+      ],
+      "answer": "выходить",
+      "explanation": "«из салона» já entrega a resposta: из + родительный é a preposição do prefixo вы-. Entrar seria входить в салон.",
+      "tags": [
+        "prefixos",
+        "движение",
+        "escolha do prefixo"
+      ]
+    },
+    {
+      "id": "u16-e06",
+      "type": "choice",
+      "stage": "prefixes",
+      "difficulty": 2,
+      "instruction": "Escolha o verbo correto.",
+      "prompt": "___ к окну, отсюда видно весь новый район.",
+      "options": [
+        "Подойдите",
+        "Дойдите",
+        "Обойдите",
+        "Перейдите"
+      ],
+      "answer": "Подойдите",
+      "explanation": "к + дательный é a preposição de под-. дойти exigiria до + родительный (дойти до окна), com sentido de chegar até um limite.",
+      "tags": [
+        "prefixos",
+        "под-",
+        "escolha do prefixo"
+      ]
+    },
+    {
+      "id": "u16-e07",
+      "type": "choice",
+      "stage": "prefixes",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Идите прямо и ___ перекрёстка, там будет остановка.",
+      "options": [
+        "дойдите до",
+        "подойдите до",
+        "дойдите к",
+        "перейдите до"
+      ],
+      "answer": "дойдите до",
+      "explanation": "до- exige до + родительный. «подойдите до» mistura o prefixo под- com a preposição de до-; «дойдите к» faz o inverso.",
+      "tags": [
+        "prefixos",
+        "до-",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u16-e08",
+      "type": "choice",
+      "stage": "prefixes",
+      "difficulty": 2,
+      "instruction": "Escolha o verbo correto.",
+      "prompt": "По дороге домой я ___ в аптеку за лекарством.",
+      "options": [
+        "зайду",
+        "войду",
+        "перейду",
+        "обойду"
+      ],
+      "answer": "зайду",
+      "explanation": "за- indica uma parada rápida no meio do trajeto, que é exatamente o sentido de «passar na farmácia a caminho de casa». войти seria apenas entrar, sem a ideia de desvio breve.",
+      "tags": [
+        "prefixos",
+        "за-",
+        "significado"
+      ]
+    },
+    {
+      "id": "u16-e09",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Мы ___ через площадь и ___ мимо старого театра.",
+      "options": [
+        "перешли … прошли",
+        "прошли … перешли",
+        "подошли … дошли",
+        "вышли … зашли"
+      ],
+      "answer": "перешли … прошли",
+      "explanation": "пере- + через = atravessar de um lado a outro (перешли через площадь). про- + мимо = passar ao lado sem parar (прошли мимо театра). Cada prefixo com a sua preposição.",
+      "tags": [
+        "prefixos",
+        "contraste",
+        "movimento"
+      ]
+    },
+    {
+      "id": "u16-e10",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Он обычно ___ домой около семи, но вчера ___ в десять.",
+      "options": [
+        "приходит … пришёл",
+        "пришёл … приходит",
+        "приходит … приходил",
+        "придёт … пришёл"
+      ],
+      "answer": "приходит … пришёл",
+      "explanation": "«обычно» exige imperfectivo (приходит); «вчера… в десять» descreve um evento único e concluído, então perfectivo (пришёл).",
+      "tags": [
+        "prefixos",
+        "aspecto",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u16-e11",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a grafia correta.",
+      "prompt": "Он обещал ___ пораньше, чтобы помочь с переездом. (при- + идти)",
+      "options": [
+        "прийти",
+        "придти",
+        "приходить",
+        "приезжать"
+      ],
+      "answer": "прийти",
+      "explanation": "A raiz идти vira -йти sob prefixo, e a grafia normativa é прийти (придти é forma antiga, hoje considerada erro). приходить é o imperfectivo — não serve para uma promessa pontual — e приезжать viria de ездить, ou seja, de veículo.",
+      "tags": [
+        "prefixos",
+        "ortografia",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u16-e12",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 3,
+      "instruction": "Escolha o imperfectivo correto.",
+      "prompt": "Раньше поезда ___ в этот посёлок два раза в день.",
+      "options": [
+        "приезжали",
+        "приехали",
+        "приходили",
+        "ездили"
+      ],
+      "answer": "приезжали",
+      "explanation": "O imperfectivo de приехать é приезжать (a raiz ездить vira -езжать sob prefixo). «приехали» é perfectivo e não combina com «два раза в день».",
+      "tags": [
+        "prefixos",
+        "aspecto",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u16-e13",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Я переехал в этот город, ___ хорошую работу.",
+      "options": [
+        "чтобы найти",
+        "чтобы нашёл",
+        "чтобы я нашёл",
+        "для найти"
+      ],
+      "answer": "чтобы найти",
+      "explanation": "Quem se mudou e quem procura emprego são a mesma pessoa → чтобы + infinitivo. Repetir o sujeito («чтобы я нашёл») é redundante e não é a forma padrão.",
+      "tags": [
+        "чтобы",
+        "finalidade",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u16-e14",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Родители переехали за город, ___ на свежем воздухе.",
+      "options": [
+        "чтобы дети росли",
+        "чтобы дети расти",
+        "чтобы дети растут",
+        "чтобы дети вырастать"
+      ],
+      "answer": "чтобы дети росли",
+      "explanation": "Os sujeitos são diferentes (родители переехали × дети растут), então чтобы exige PASSADO: росли. Nem infinitivo nem presente funcionam depois de чтобы com sujeito próprio.",
+      "tags": [
+        "чтобы",
+        "finalidade",
+        "sujeito diferente"
+      ]
+    },
+    {
+      "id": "u16-e15",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Мама попросила меня сходить в магазин ___. (продукты)",
+      "options": [
+        "за продуктами",
+        "для продуктов",
+        "на продукты",
+        "за продукты"
+      ],
+      "answer": "за продуктами",
+      "explanation": "«Ir buscar algo» é за + творительный падеж: за продуктами, за хлебом, за водой. «за продукты» (acusativo) significaria «em troca dos produtos».",
+      "tags": [
+        "за + творительный",
+        "finalidade",
+        "regência"
+      ]
+    },
+    {
+      "id": "u16-e16",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Город построил новую поликлинику ___. (жители пригорода)",
+      "options": [
+        "для жителей пригорода",
+        "за жителями пригорода",
+        "ради жителям пригорода",
+        "чтобы жители пригорода"
+      ],
+      "answer": "для жителей пригорода",
+      "explanation": "для + родительный introduz o destinatário da finalidade. ради existiria mas exige родительный também (ради жителей) e carrega tom de sacrifício; чтобы pediria uma oração completa.",
+      "tags": [
+        "для",
+        "finalidade",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u16-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase combina corretamente prefixo, preposição e finalidade?",
+      "options": [
+        "Он вышел из дома пораньше, чтобы дойти до вокзала пешком.",
+        "Он вышел от дома пораньше, чтобы дойти к вокзалу пешком.",
+        "Он вышел из дома пораньше, чтобы дойти к вокзалу пешком.",
+        "Он вышел из дома пораньше, чтобы дошёл до вокзала пешком."
+      ],
+      "answer": "Он вышел из дома пораньше, чтобы дойти до вокзала пешком.",
+      "explanation": "Três decisões: вы- exige из (não от); до- exige до (não к); e como o sujeito é o mesmo nas duas orações, чтобы pede infinitivo (não passado).",
+      "tags": [
+        "prefixos",
+        "чтобы",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u16-e18",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Чтобы добраться до центра, придётся перейти мост и обойти стройку.»",
+      "options": [
+        "Para chegar ao centro, será preciso atravessar a ponte e contornar a obra.",
+        "Para chegar ao centro, será preciso passar sob a ponte e entrar na obra.",
+        "Ao chegar ao centro, atravessamos a ponte e paramos na obra.",
+        "Para sair do centro, é preciso atravessar a obra e a ponte."
+      ],
+      "answer": "Para chegar ao centro, será preciso atravessar a ponte e contornar a obra.",
+      "explanation": "добраться до = chegar até; перейти = atravessar; обойти = contornar. Três prefixos espaciais numa frase só.",
+      "tags": [
+        "prefixos",
+        "significado",
+        "movimento"
+      ]
+    },
+    {
+      "id": "u16-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Пять лет назад мы уехали из центра и переехали в пригород. Сначала было трудно: чтобы добраться до работы, нужно было выходить из дома в шесть утра, доходить до остановки, ехать сорок минут на автобусе, а потом ещё переходить через большой перекрёсток. Но потом рядом с нашим домом построили новую станцию, и теперь я выхожу в семь и приезжаю в офис раньше, чем раньше. Соседи говорят, что в пригород люди переезжают ради тишины, но, по-моему, главная причина — цена жилья.",
+      "prompt": "O que mudou na rotina do autor depois da construção da estação?",
+      "options": [
+        "Ele sai de casa mais tarde e chega ao escritório mais cedo do que antes.",
+        "Ele sai de casa mais cedo e chega mais tarde.",
+        "Ele passou a ir a pé até o centro.",
+        "Ele voltou a morar no centro."
+      ],
+      "answer": "Ele sai de casa mais tarde e chega ao escritório mais cedo do que antes.",
+      "explanation": "«теперь я выхожу в семь и приезжаю в офис раньше, чем раньше» — выходить e приезжать no imperfectivo porque descrevem a rotina atual.",
+      "tags": [
+        "prefixos",
+        "leitura",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u16-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Чтобы добраться до работы, нужно было выходить из дома в шесть утра, доходить до остановки, ехать сорок минут на автобусе, а потом ещё переходить через большой перекрёсток. Соседи говорят, что в пригород люди переезжают ради тишины.",
+      "prompt": "Qual construção do texto expressa finalidade com substantivo?",
+      "options": [
+        "ради тишины",
+        "чтобы добраться",
+        "до остановки",
+        "через перекрёсток"
+      ],
+      "answer": "ради тишины",
+      "explanation": "ради + родительный падеж introduz finalidade com substantivo. «чтобы добраться» também é finalidade, mas com oração e infinitivo; as outras duas são espaciais.",
+      "tags": [
+        "finalidade",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u16-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Дойдите до перекрёстка, перейдите улицу и зайдите в аптеку на углу.",
+      "prompt": "Qual é a sequência de instruções do áudio?",
+      "options": [
+        "Ir até o cruzamento, atravessar a rua e passar na farmácia da esquina.",
+        "Atravessar o cruzamento, contornar a rua e sair da farmácia.",
+        "Sair da farmácia, ir até a esquina e atravessar o cruzamento.",
+        "Aproximar-se da farmácia e esperar no cruzamento."
+      ],
+      "answer": "Ir até o cruzamento, atravessar a rua e passar na farmácia da esquina.",
+      "explanation": "дойти до (chegar até), перейти (atravessar), зайти в (passar em). Três prefixos, três preposições diferentes.",
+      "tags": [
+        "prefixos",
+        "audição",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u16-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Мы переехали в пригород, чтобы дети могли играть во дворе, а не сидеть дома.",
+      "prompt": "Por que a família se mudou, segundo o áudio?",
+      "options": [
+        "Para que as crianças pudessem brincar no pátio em vez de ficar em casa.",
+        "Para que os pais pudessem trabalhar em casa.",
+        "Porque as crianças brincavam demais no pátio.",
+        "Para morar mais perto do centro."
+      ],
+      "answer": "Para que as crianças pudessem brincar no pátio em vez de ficar em casa.",
+      "explanation": "«чтобы дети могли играть» — sujeitos diferentes (нас × дети), então чтобы + passado (могли), seguido do infinitivo играть, que depende de мочь.",
+      "tags": [
+        "чтобы",
+        "finalidade",
+        "audição"
+      ]
+    },
+    {
+      "id": "u16-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com prefixo de movimento e finalidade.",
+      "tokens": [
+        "Мы",
+        "уехали",
+        "из",
+        "центра",
+        "чтобы",
+        "дети",
+        "росли",
+        "за",
+        "городом"
+      ],
+      "answer": "Мы уехали из центра чтобы дети росли за городом",
+      "explanation": "у- exige из + родительный (из центра); e como o sujeito muda (мы × дети), чтобы pede passado (росли).",
+      "tags": [
+        "prefixos",
+        "чтобы",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u16-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione o verbo prefixado ao seu sentido espacial.",
+      "pairs": [
+        {
+          "left": "войти в здание",
+          "right": "entrar no prédio"
+        },
+        {
+          "left": "выйти из здания",
+          "right": "sair do prédio"
+        },
+        {
+          "left": "подойти к зданию",
+          "right": "aproximar-se do prédio"
+        },
+        {
+          "left": "дойти до здания",
+          "right": "chegar até o prédio"
+        },
+        {
+          "left": "обойти здание",
+          "right": "contornar o prédio"
+        },
+        {
+          "left": "пройти мимо здания",
+          "right": "passar em frente ao prédio"
+        }
+      ],
+      "explanation": "Seis prefixos sobre o mesmo substantivo: o que muda o sentido é exclusivamente o par prefixo + preposição.",
+      "tags": [
+        "prefixos",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u16-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Use pelo menos quatro verbos de movimento com prefixo e uma construção de finalidade.",
+      "prompt": "«Где лучше жить — в центре города, в пригороде или в деревне?» (Onde é melhor morar — no centro, no subúrbio ou no campo?)\n\nUnidades: переехать из … в … · добираться до · выходить из дома · чтобы + инфинитив / прошедшее · ради · для",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "prefixos de movimento",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

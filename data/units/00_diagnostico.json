@@ -1,0 +1,553 @@
+{
+  "id": "u00_diagnostico",
+  "order": 0,
+  "title": "Diagnóstico cumulativo",
+  "description": "Mede separadamente regência, terminação, significado e aspecto sem repetir os exemplos das aulas.",
+  "estimated_minutes": 18,
+  "objectives": [
+    "identificar construções ainda não automatizadas",
+    "distinguir escolha do caso de formação da terminação",
+    "estabelecer uma linha de base sem consulta"
+  ],
+  "exercises": [
+    {
+      "id": "u00-e01",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 1,
+      "instruction": "Complete a construção sem consultar.",
+      "prompt": "Успех проекта во многом зависит ___ опыта команды.",
+      "options": [
+        "к",
+        "от",
+        "с",
+        "на"
+      ],
+      "answer": "от",
+      "explanation": "зависеть от кого? чего? exige родительный падеж.",
+      "tags": [
+        "зависеть от",
+        "родительный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u00-e02",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 1,
+      "instruction": "Escolha a pergunta exigida pela construção.",
+      "prompt": "сталкиваться с…",
+      "options": [
+        "кем? чем?",
+        "кого? чего?",
+        "кому? чему?",
+        "кого? что?"
+      ],
+      "answer": "кем? чем?",
+      "explanation": "сталкиваться / столкнуться с кем? чем? exige творительный падеж.",
+      "tags": [
+        "сталкиваться с",
+        "творительный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u00-e03",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta do grupo entre parênteses.",
+      "prompt": "Молодые сотрудники постепенно привыкают к ___. (новые требования)",
+      "explanation": "привыкать к кому? чему? → дательный падеж plural: adjetivo -ым, substantivo -ам (новым требованиям). «новых требований» é родительный, «новыми требованиями» é творительный, «новые требования» é именительный/винительный.",
+      "tags": [
+        "привыкать к",
+        "дательный падеж",
+        "terminação plural",
+        "múltipla escolha"
+      ],
+      "options": [
+        "новым требованиям",
+        "новых требований",
+        "новыми требованиями",
+        "новые требования"
+      ],
+      "answer": "новым требованиям"
+    },
+    {
+      "id": "u00-e04",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta do grupo entre parênteses.",
+      "prompt": "Исследователи интересуются ___. (массовые миграционные процессы)",
+      "explanation": "интересоваться кем? чем? → творительный падеж plural: adjetivo -ыми, substantivo -ами. As demais são родительный (-ых/-ов), дательный (-ым/-ам) e именительный.",
+      "tags": [
+        "интересоваться",
+        "творительный падеж",
+        "terminação plural",
+        "múltipla escolha"
+      ],
+      "options": [
+        "массовыми миграционными процессами",
+        "массовых миграционных процессов",
+        "массовым миграционным процессам",
+        "массовые миграционные процессы"
+      ],
+      "answer": "массовыми миграционными процессами"
+    },
+    {
+      "id": "u00-e05",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 1,
+      "instruction": "Escolha a construção completa.",
+      "prompt": "влиять…",
+      "options": [
+        "на кого? что?",
+        "к кому? чему?",
+        "с кем? чем?",
+        "от кого? чего?"
+      ],
+      "answer": "на кого? что?",
+      "explanation": "влиять на кого? что? exige винительный падеж.",
+      "tags": [
+        "влиять на",
+        "винительный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u00-e06",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a preposição e a forma corretas.",
+      "prompt": "После переезда семья столкнулась ___. (неожиданные бытовые трудности)",
+      "explanation": "сталкиваться / столкнуться С кем? чем? → творительный падеж. A preposição faz parte do verbo: sem «с» a construção não existe.",
+      "tags": [
+        "сталкиваться с",
+        "творительный падеж",
+        "terminação plural",
+        "múltipla escolha"
+      ],
+      "options": [
+        "с неожиданными бытовыми трудностями",
+        "к неожиданным бытовым трудностям",
+        "от неожиданных бытовых трудностей",
+        "в неожиданных бытовых трудностях"
+      ],
+      "answer": "с неожиданными бытовыми трудностями"
+    },
+    {
+      "id": "u00-e07",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a forma natural e gramaticalmente correta.",
+      "prompt": "___ развитой транспортной сети жители быстрее добираются до работы.",
+      "options": [
+        "Благодаря",
+        "Из-за",
+        "Несмотря",
+        "Вопреки от"
+      ],
+      "answer": "Благодаря",
+      "explanation": "благодаря кому? чему? introduz uma causa favorável e exige дательный падеж.",
+      "tags": [
+        "благодаря",
+        "дательный падеж",
+        "significado"
+      ]
+    },
+    {
+      "id": "u00-e08",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta do grupo entre parênteses.",
+      "prompt": "Жители недовольны ___. (качество медицинского обслуживания)",
+      "explanation": "быть довольным / недовольным кем? чем? → творительный падеж, sem preposição: качеством. «медицинского обслуживания» fica no родительный porque depende de качество (a qualidade DE algo).",
+      "tags": [
+        "быть недовольным",
+        "творительный падеж",
+        "terminação singular",
+        "múltipla escolha"
+      ],
+      "options": [
+        "качеством медицинского обслуживания",
+        "качества медицинского обслуживания",
+        "качеству медицинскому обслуживанию",
+        "качестве медицинского обслуживания"
+      ],
+      "answer": "качеством медицинского обслуживания"
+    },
+    {
+      "id": "u00-e09",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a forma adequada pelo contexto aspectual.",
+      "prompt": "В детстве наша семья несколько раз ___ из одного района в другой.",
+      "options": [
+        "переезжала",
+        "переехала",
+        "переедет",
+        "ехать"
+      ],
+      "answer": "переезжала",
+      "explanation": "несколько раз apresenta repetição; usa-se переезжать, несовершенный вид.",
+      "tags": [
+        "переезжать / переехать",
+        "aspecto",
+        "repetição"
+      ]
+    },
+    {
+      "id": "u00-e10",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a forma adequada pelo contexto aspectual.",
+      "prompt": "После долгого ожидания он наконец ___ разрешение на работу.",
+      "options": [
+        "получал",
+        "получил",
+        "получает",
+        "получать"
+      ],
+      "answer": "получил",
+      "explanation": "наконец e o resultado obtido favorecem получить, совершенный вид.",
+      "tags": [
+        "получать / получить",
+        "aspecto",
+        "resultado"
+      ]
+    },
+    {
+      "id": "u00-e11",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a preposição e a forma corretas.",
+      "prompt": "Многие пожилые люди нуждаются ___. (регулярная медицинская помощь)",
+      "explanation": "нуждаться В ком? чём? → предложный падеж (в помощи), nunca винительный. Compare com верить в + винительный: cada verbo fixa o seu par preposição+caso.",
+      "tags": [
+        "нуждаться в",
+        "предложный падеж",
+        "terminação singular",
+        "múltipla escolha"
+      ],
+      "options": [
+        "в регулярной медицинской помощи",
+        "в регулярную медицинскую помощь",
+        "регулярной медицинской помощью",
+        "к регулярной медицинской помощи"
+      ],
+      "answer": "в регулярной медицинской помощи"
+    },
+    {
+      "id": "u00-e12",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a preposição e a forma corretas.",
+      "prompt": "Реформа может привести ___. (серьёзные социальные изменения)",
+      "explanation": "приводить / привести К чему? → дательный падеж plural (-ым/-ам). Em português diz-se «levar A», e é exatamente essa a construção russa: к + дательный.",
+      "tags": [
+        "приводить к",
+        "дательный падеж",
+        "terminação plural",
+        "múltipla escolha"
+      ],
+      "options": [
+        "к серьёзным социальным изменениям",
+        "к серьёзных социальных изменений",
+        "серьёзными социальными изменениями",
+        "в серьёзные социальные изменения"
+      ],
+      "answer": "к серьёзным социальным изменениям"
+    },
+    {
+      "id": "u00-e13",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta para definir/classificar o sujeito.",
+      "prompt": "Нехватка жилья является ___ для молодых семей.",
+      "options": [
+        "серьёзная проблема",
+        "серьёзной проблемой",
+        "серьёзную проблему",
+        "о серьёзной проблеме"
+      ],
+      "answer": "серьёзной проблемой",
+      "explanation": "являться кем? чем? usa творительный падеж para classificação ou definição.",
+      "tags": [
+        "являться",
+        "творительный падеж",
+        "registro formal"
+      ]
+    },
+    {
+      "id": "u00-e14",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 1,
+      "instruction": "Escolha a origem correta.",
+      "prompt": "После экскурсии туристы поздно вернулись ___ гостиницу.",
+      "options": [
+        "с",
+        "из",
+        "в",
+        "за"
+      ],
+      "answer": "в",
+      "valid_answers": [
+        "в"
+      ],
+      "explanation": "A frase pede destino: вернуться в гостиницу. A origem seria вернуться с экскурсии.",
+      "tags": [
+        "вернуться",
+        "где куда откуда",
+        "movimento"
+      ]
+    },
+    {
+      "id": "u00-e15",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a preposição e a forma corretas.",
+      "prompt": "Компания отказалась ___. (реализация рискованного проекта)",
+      "explanation": "отказаться ОТ кого? чего? → родительный падеж. реализация (fem. em -ия) faz родительный em -ии: реализации.",
+      "tags": [
+        "отказаться от",
+        "родительный падеж",
+        "terminação singular",
+        "múltipla escolha"
+      ],
+      "options": [
+        "от реализации рискованного проекта",
+        "с реализацией рискованного проекта",
+        "к реализации рискованного проекта",
+        "в реализации рискованного проекта"
+      ],
+      "answer": "от реализации рискованного проекта"
+    },
+    {
+      "id": "u00-e16",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a preposição e a forma corretas.",
+      "prompt": "Абитуриент обратился ___. (ответственный сотрудник комиссии)",
+      "explanation": "обращаться / обратиться К кому? → дательный падеж (к сотруднику). «обратиться с чем?» existe, mas introduz o assunto (обратиться с просьбой), não a pessoa.",
+      "tags": [
+        "обращаться к",
+        "дательный падеж",
+        "terminação singular",
+        "múltipla escolha"
+      ],
+      "options": [
+        "к ответственному сотруднику комиссии",
+        "с ответственным сотрудником комиссии",
+        "от ответственного сотрудника комиссии",
+        "об ответственном сотруднике комиссии"
+      ],
+      "answer": "к ответственному сотруднику комиссии"
+    },
+    {
+      "id": "u00-e17",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 3,
+      "instruction": "Escolha a versão em que a regência e as formas dependentes estão corretas.",
+      "prompt": "Qual frase está com a regência e as formas corretas?",
+      "options": [
+        "Новая политика влияет на профессиональные решения молодых специалистов.",
+        "Новая политика зависит на профессиональные решения молодых специалистов.",
+        "Новая политика влияет к профессиональным решениям молодых специалистов.",
+        "Новая политика влияет с профессиональными решениями молодых специалистов."
+      ],
+      "answer": "Новая политика влияет на профессиональные решения молодых специалистов.",
+      "explanation": "влиять на кого? что?; здесь винительный падеж plural, igual ao nominativo inanimado.",
+      "tags": [
+        "влиять на",
+        "винительный падеж",
+        "correção de erro"
+      ]
+    },
+    {
+      "id": "u00-e18",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta do grupo entre parênteses.",
+      "prompt": "Благодаря ___ университет открыл новую программу. (успешное международное сотрудничество)",
+      "explanation": "благодаря é a única preposição de causa que exige дательный падеж (кому? чему?). из-за e в результате exigem родительный — é justamente aí que quase todo aluno erra.",
+      "tags": [
+        "благодаря",
+        "дательный падеж",
+        "terminação singular",
+        "múltipla escolha"
+      ],
+      "options": [
+        "успешному международному сотрудничеству",
+        "успешного международного сотрудничества",
+        "успешным международным сотрудничеством",
+        "успешном международном сотрудничестве"
+      ],
+      "answer": "успешному международному сотрудничеству"
+    },
+    {
+      "id": "u00-e19",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 3,
+      "instruction": "Escolha a versão em que a regência e a terminação estão corretas.",
+      "prompt": "Qual frase está com a regência e a terminação corretas?",
+      "options": [
+        "Иностранным студентам трудно адаптироваться к новой образовательной системе.",
+        "Иностранным студентам трудно адаптироваться с новой образовательной системой.",
+        "Иностранным студентам трудно адаптироваться к новой образовательной системой.",
+        "Иностранным студентам трудно адаптироваться на новую образовательную систему."
+      ],
+      "answer": "Иностранным студентам трудно адаптироваться к новой образовательной системе.",
+      "explanation": "адаптироваться к кому? чему? exige дательный падеж.",
+      "tags": [
+        "адаптироваться к",
+        "дательный падеж",
+        "correção de erro"
+      ]
+    },
+    {
+      "id": "u00-e20",
+      "type": "choice",
+      "stage": "diagnostic",
+      "diagnostic": true,
+      "difficulty": 2,
+      "instruction": "Escolha a frase em que a relação espacial está correta.",
+      "prompt": "Onde a família mora agora e para onde vai se mudar?",
+      "options": [
+        "Сейчас семья живёт за городом, но скоро переедет в столицу.",
+        "Сейчас семья живёт за город, но скоро переедет в столице.",
+        "Сейчас семья живёт из города, но скоро переедет на столицу.",
+        "Сейчас семья живёт в город, но скоро переедет из столицу."
+      ],
+      "answer": "Сейчас семья живёт за городом, но скоро переедет в столицу.",
+      "explanation": "где? за городом; куда? в столицу.",
+      "tags": [
+        "где куда откуда",
+        "за городом / за город",
+        "movimento"
+      ]
+    }
+  ],
+  "source_note": "Itens construídos a partir das regências dos урок 1-2 de «Время обсуждать», sem repetir os exemplos das aulas",
+  "lesson_flow": [
+    {
+      "title": "Responder",
+      "description": "Sem consulta e sem pressa: o objetivo é medir, não acertar."
+    },
+    {
+      "title": "Classificar",
+      "description": "Depois de cada item, diga se o erro foi de regência, terminação, vocabulário ou aspecto."
+    },
+    {
+      "title": "Ler o mapa",
+      "description": "O painel mostra qual das quatro habilidades está mais atrasada."
+    },
+    {
+      "title": "Começar a trilha",
+      "description": "O diagnóstico não trava nada: a Unidade 1 já está liberada."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Como ler o seu resultado no diagnóstico",
+      "paragraphs": [
+        "Este não é um teste para passar ou reprovar: é uma medida separada de quatro habilidades que quase sempre estão em níveis diferentes. (1) Escolha do caso — saber que привыкать pede дательный; (2) formação da terminação — saber transformar новые требования em новым требованиям; (3) significado — saber o que a construção quer dizer; (4) aspecto — saber quando usar o par incompleto e quando usar o completo.",
+        "A distinção entre (1) e (2) é a mais importante do curso inteiro. Errar a preposição é um problema de regência: você não guardou o bloco «verbo + preposição». Acertar a preposição e errar a terminação é um problema de morfologia: você guardou o bloco, mas ainda não automatizou a tabela de terminações. São dois problemas com dois tratamentos diferentes — e por isso o aplicativo pede que você classifique cada erro depois de responder.",
+        "Responda sem consultar nada. Um resultado baixo aqui não atrasa a trilha: o diagnóstico não trava nem desbloqueia unidade nenhuma. Ele só serve para você saber por onde começar e, mais tarde, para comparar com o mesmo teste refeito e ver o quanto avançou."
+      ],
+      "audio_script": "Antes de começar, entenda o que este diagnóstico mede. Ele não é uma prova para passar ou reprovar. Ele separa quatro habilidades que quase sempre estão em níveis diferentes dentro da mesma pessoa. Habilidade um: escolher o caso certo. Saber que привыкать pede dativo, que зависеть pede genitivo, que нуждаться pede prepositivo. Habilidade dois: formar a terminação. Saber transformar новые требования em новым требованиям. Habilidade três: entender o significado da construção dentro de uma frase real. E habilidade quatro: escolher o aspecto verbal certo. A diferença entre a habilidade um e a habilidade dois é o ponto mais importante do curso inteiro, então vale repetir. Se você errou a preposição, o seu problema é de regência: você não guardou o bloco verbo mais preposição. Se você acertou a preposição e errou a terminação, o seu problema é de morfologia: você guardou o bloco, mas ainda não automatizou a tabela. São dois problemas diferentes, com dois tratamentos diferentes. Por isso o aplicativo pede que você classifique cada erro depois de responder — regência, terminação, vocabulário ou aspecto. Essa classificação é o que alimenta a sua revisão espaçada. Uma última coisa: responda sem consultar nada, e não se preocupe com a nota. O diagnóstico não trava nem desbloqueia nenhuma unidade da trilha. Ele existe para você saber por onde começar, e para você refazer daqui a alguns meses e ver, em números, o quanto avançou.",
+      "examples": [
+        {
+          "ru": "Он привык к новым требованиям.",
+          "pt": "Ele se acostumou às novas exigências.",
+          "note": "Regência (к) + morfologia (-ым/-ам): duas habilidades numa frase só."
+        },
+        {
+          "ru": "Всё зависит от обстоятельств.",
+          "pt": "Tudo depende das circunstâncias.",
+          "note": "зависеть ОТ + родительный."
+        },
+        {
+          "ru": "Город нуждается в новых школах.",
+          "pt": "A cidade precisa de novas escolas.",
+          "note": "нуждаться В + предложный."
+        }
+      ],
+      "pitfalls": [
+        "Consultar a tabela durante o diagnóstico: isso apaga justamente a informação que o teste existe para medir.",
+        "Tratar «errei a preposição» e «errei a terminação» como o mesmo erro — eles pedem estudos diferentes."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "As quatro perguntas que o diagnóstico separa",
+    "columns": [
+      "Habilidade",
+      "Pergunta que você faz",
+      "Exemplo de erro",
+      "Onde treinar"
+    ],
+    "rows": [
+      [
+        "Regência",
+        "Qual preposição este verbo exige?",
+        "адаптироваться С нормами (correto: К нормам)",
+        "Unidades 1-3 e Referência"
+      ],
+      [
+        "Terminação",
+        "Como se forma este caso aqui?",
+        "к новым требованиЯМ escrito «требованиЕ»",
+        "Página Terminações"
+      ],
+      [
+        "Vocabulário",
+        "O que esta construção significa?",
+        "confundir переезд com переселение",
+        "Flashcards e leitura"
+      ],
+      [
+        "Aspecto",
+        "Processo/repetição ou resultado único?",
+        "«вчера я переезжал» em vez de переехал",
+        "Unidade 4"
+      ]
+    ],
+    "note": "Depois de responder, o aplicativo pergunta qual foi a natureza do seu erro. Responder isso com honestidade é o que faz a revisão espaçada trazer o item certo de volta."
+  }
+}

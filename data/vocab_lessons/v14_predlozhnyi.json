@@ -1,0 +1,580 @@
+{
+  "id": "v14",
+  "unit_id": "u14_predlozhnyi",
+  "order": 14,
+  "title": "Разговор о здоровье",
+  "theme": "Uma paciente conversa com o médico sobre hábitos e tratamento",
+  "description": "Uma paciente conversa com o médico sobre hábitos e tratamento. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Елена": "f",
+    "Врач": "m"
+  },
+  "dialogue": {
+    "title": "Разговор о здоровье",
+    "setting": "Uma paciente conversa com o médico sobre hábitos e tratamento",
+    "lines": [
+      {
+        "speaker": "Елена",
+        "ru": "Я стараюсь заботиться о своём здоровье, но постоянно устаю.",
+        "pt": "Procuro cuidar da minha saúde, mas estou sempre cansada."
+      },
+      {
+        "speaker": "Врач",
+        "ru": "Нужно думать о своём питании и регулярно отдыхать.",
+        "pt": "É preciso pensar na própria alimentação e descansar regularmente."
+      },
+      {
+        "speaker": "Елена",
+        "ru": "Я стала сомневаться в точном диагнозе, который мне поставили раньше.",
+        "pt": "Passei a duvidar do diagnóstico exato que me deram antes."
+      },
+      {
+        "speaker": "Врач",
+        "ru": "Мы проверим анализы. Пока можно участвовать в лечебной программе.",
+        "pt": "Vamos conferir os exames. Por enquanto, você pode participar do programa terapêutico."
+      },
+      {
+        "speaker": "Елена",
+        "ru": "Мне трудно отказаться от вредной привычки пить кофе ночью.",
+        "pt": "Tenho dificuldade de abandonar o hábito prejudicial de tomar café à noite."
+      },
+      {
+        "speaker": "Врач",
+        "ru": "Начните постепенно. Сейчас вам нужно лечиться от сильной простуды.",
+        "pt": "Comece aos poucos. Agora você precisa se tratar de um resfriado forte."
+      },
+      {
+        "speaker": "Елена",
+        "ru": "Я думала, что могу болеть тяжёлой ангиной.",
+        "pt": "Achei que poderia estar com uma amigdalite grave."
+      },
+      {
+        "speaker": "Врач",
+        "ru": "Анализы этого не показывают. Вы говорили, что мечтаете о полноценном отдыхе?",
+        "pt": "Os exames não mostram isso. Você disse que sonha com um descanso adequado?"
+      },
+      {
+        "speaker": "Елена",
+        "ru": "Да, я хочу взять неделю отпуска и выключить телефон.",
+        "pt": "Sim, quero tirar uma semana de férias e desligar o telefone."
+      },
+      {
+        "speaker": "Врач",
+        "ru": "Тогда запишитесь на повторный приём через десять дней.",
+        "pt": "Então marque um retorno daqui a dez dias."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "O que o médico propõe à paciente?",
+      "options": [
+        "Rever os exames e ajustar hábitos e descanso.",
+        "Confirmar uma angina sem olhar os exames.",
+        "Suspender o retorno e continuar sem descanso.",
+        "Começar uma viagem antes de tratar o resfriado."
+      ],
+      "answer": "Rever os exames e ajustar hábitos e descanso.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "заботиться",
+      "tag": "заботиться о",
+      "head": "заботиться о",
+      "regency": "заботиться о ком? о чём?",
+      "case": "предложный падеж",
+      "pt": "cuidar da própria saúde",
+      "chunk": "заботиться о своём здоровье",
+      "chunk_pt": "cuidar da própria saúde",
+      "chunk_wrong": [
+        "заботиться о своё здоровье",
+        "заботиться о своего здоровья",
+        "заботиться о своим здоровьем"
+      ],
+      "form_note": "заботиться о ком? о чём? usa предложный падеж; «cuidar de» não pede от.",
+      "trap": "заботиться о ком? о чём? usa предложный падеж; «cuidar de» não pede от.",
+      "example": {
+        "ru": "Родители заботятся о маленьком сыне.",
+        "pt": "Os pais cuidam do filho pequeno.",
+        "extra": "сына",
+        "note": "заботиться о ком? о чём? usa предложный падеж; «cuidar de» não pede от."
+      },
+      "cloze": {
+        "ru": "Нужно заботиться ___.",
+        "answer": "о пожилой матери",
+        "wrong": [
+          "о пожилую мать",
+          "о пожилой матерью",
+          "о пожилая мать"
+        ],
+        "pt": "É preciso cuidar da mãe idosa.",
+        "note": "заботиться о ком? о чём? usa предложный падеж; «cuidar de» não pede от."
+      },
+      "hear": {
+        "ru": "Сын заботился о больном отце.",
+        "pt": "O filho cuidava do pai doente.",
+        "wrong": [
+          "O pai cuidava do filho doente.",
+          "O filho não cuidava do pai doente.",
+          "O filho cuidará do pai doente."
+        ],
+        "note": "заботиться о ком? о чём? usa предложный падеж; «cuidar de» não pede от."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "думать",
+      "tag": "думать о",
+      "head": "думать о",
+      "regency": "думать о ком? о чём?",
+      "case": "предложный падеж",
+      "pt": "pensar na própria alimentação",
+      "chunk": "думать о своём питании",
+      "chunk_pt": "pensar na própria alimentação",
+      "chunk_wrong": [
+        "думать о своё питание",
+        "думать о своего питания",
+        "думать о своим питанием"
+      ],
+      "form_note": "O assunto de думать vem com о + предложный падеж; pensar «em» não se traduz mecanicamente por в.",
+      "trap": "O assunto de думать vem com о + предложный падеж; pensar «em» não se traduz mecanicamente por в.",
+      "example": {
+        "ru": "Врач думает о причине боли.",
+        "pt": "O médico pensa na causa da dor.",
+        "extra": "причину",
+        "note": "O assunto de думать vem com о + предложный падеж; pensar «em» não se traduz mecanicamente por в."
+      },
+      "cloze": {
+        "ru": "Пациенту стоит думать ___.",
+        "answer": "о ежедневном отдыхе",
+        "wrong": [
+          "о ежедневный отдых",
+          "о ежедневного отдыха",
+          "о ежедневным отдыхом"
+        ],
+        "pt": "O paciente deve pensar no descanso diário.",
+        "note": "O assunto de думать vem com о + предложный падеж; pensar «em» não se traduz mecanicamente por в."
+      },
+      "hear": {
+        "ru": "Доктор думал о лечении ребёнка.",
+        "pt": "O médico pensava no tratamento da criança.",
+        "wrong": [
+          "O médico pensará no tratamento da criança.",
+          "O médico não pensava no tratamento da criança.",
+          "A criança pensava no tratamento do médico."
+        ],
+        "note": "O assunto de думать vem com о + предложный падеж; pensar «em» não se traduz mecanicamente por в."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "сомневаться",
+      "tag": "сомневаться в",
+      "head": "сомневаться в",
+      "regency": "сомневаться в ком? в чём?",
+      "case": "предложный падеж",
+      "pt": "duvidar do diagnóstico exato",
+      "chunk": "сомневаться в точном диагнозе",
+      "chunk_pt": "duvidar do diagnóstico exato",
+      "chunk_wrong": [
+        "сомневаться в точный диагноз",
+        "сомневаться в точного диагноза",
+        "сомневаться в точным диагнозом"
+      ],
+      "form_note": "сомневаться в чём? usa в + предложный падеж; não transfira «duvidar de».",
+      "trap": "сомневаться в чём? usa в + предложный падеж; não transfira «duvidar de».",
+      "example": {
+        "ru": "Она сомневается в пользе лекарства.",
+        "pt": "Ela duvida da utilidade do remédio.",
+        "extra": "пользу",
+        "note": "сомневаться в чём? usa в + предложный падеж; não transfira «duvidar de»."
+      },
+      "cloze": {
+        "ru": "Не стоит сомневаться ___.",
+        "answer": "в опыте специалиста",
+        "wrong": [
+          "в опыт специалиста",
+          "в опыта специалиста",
+          "в опытом специалиста"
+        ],
+        "pt": "Não vale a pena duvidar da experiência do especialista.",
+        "note": "сомневаться в чём? usa в + предложный падеж; não transfira «duvidar de»."
+      },
+      "hear": {
+        "ru": "Пациент сомневался в совете врача.",
+        "pt": "O paciente duvidava do conselho do médico.",
+        "wrong": [
+          "O médico duvidava do conselho do paciente.",
+          "O paciente não duvidava do conselho do médico.",
+          "O paciente duvidará do conselho do médico."
+        ],
+        "note": "сомневаться в чём? usa в + предложный падеж; não transfira «duvidar de»."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "участвовать",
+      "tag": "участвовать в",
+      "head": "участвовать в",
+      "regency": "участвовать в чём?",
+      "case": "предложный падеж",
+      "pt": "participar do programa terapêutico",
+      "chunk": "участвовать в лечебной программе",
+      "chunk_pt": "participar do programa terapêutico",
+      "chunk_wrong": [
+        "участвовать в лечебную программу",
+        "участвовать в лечебной программы",
+        "участвовать в лечебной программой"
+      ],
+      "form_note": "участвовать в чём? indica participação, não movimento; portanto предложный падеж.",
+      "trap": "участвовать в чём? indica participação, não movimento; portanto предложный падеж.",
+      "example": {
+        "ru": "Сестра участвует в медицинском исследовании.",
+        "pt": "A irmã participa de uma pesquisa médica.",
+        "extra": "исследование",
+        "note": "участвовать в чём? indica participação, não movimento; portanto предложный падеж."
+      },
+      "cloze": {
+        "ru": "Врач предложил участвовать ___.",
+        "answer": "в спортивной группе",
+        "wrong": [
+          "в спортивную группу",
+          "в спортивной группы",
+          "в спортивной группой"
+        ],
+        "pt": "O médico propôs participar de um grupo esportivo.",
+        "note": "участвовать в чём? indica participação, não movimento; portanto предложный падеж."
+      },
+      "hear": {
+        "ru": "Дочь участвовала в программе вместе с матерью.",
+        "pt": "A filha participava do programa junto com a mãe.",
+        "wrong": [
+          "A filha participará do programa junto com a mãe.",
+          "A filha não participava do programa junto com a mãe.",
+          "A filha participa do programa junto com a mãe."
+        ],
+        "note": "участвовать в чём? indica participação, não movimento; portanto предложный падеж."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "отказываться",
+      "tag": "отказываться / отказаться от",
+      "head": "отказываться / отказаться от",
+      "regency": "отказываться / отказаться от кого? чего?",
+      "case": "родительный падеж",
+      "pt": "abandonar um hábito prejudicial",
+      "chunk": "отказаться от вредной привычки",
+      "chunk_pt": "abandonar um hábito prejudicial",
+      "chunk_wrong": [
+        "отказаться от вредную привычку",
+        "отказаться от вредной привычке",
+        "отказаться от вредной привычкой"
+      ],
+      "form_note": "отказаться от чего? usa родительный падеж; abandonar algo em português não implica objeto direto em russo.",
+      "trap": "отказаться от чего? usa родительный падеж; abandonar algo em português não implica objeto direto em russo.",
+      "example": {
+        "ru": "Он отказался от позднего ужина.",
+        "pt": "Ele abriu mão do jantar tarde da noite.",
+        "extra": "ужину",
+        "note": "отказаться от чего? usa родительный падеж; abandonar algo em português não implica objeto direto em russo."
+      },
+      "cloze": {
+        "ru": "Пора отказаться ___.",
+        "answer": "от сладких напитков",
+        "wrong": [
+          "от сладкие напитки",
+          "от сладким напиткам",
+          "от сладкими напитками"
+        ],
+        "pt": "Está na hora de abandonar as bebidas doces.",
+        "note": "отказаться от чего? usa родительный падеж; abandonar algo em português não implica objeto direto em russo."
+      },
+      "hear": {
+        "ru": "Пациент отказался от курения после операции.",
+        "pt": "O paciente deixou de fumar depois da operação.",
+        "wrong": [
+          "O paciente deixará de fumar depois da operação.",
+          "O paciente não deixou de fumar depois da operação.",
+          "O paciente deixou de fumar antes da operação."
+        ],
+        "note": "отказаться от чего? usa родительный падеж; abandonar algo em português não implica objeto direto em russo."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "лечиться",
+      "tag": "лечиться от",
+      "head": "лечиться от",
+      "regency": "лечиться от чего?",
+      "case": "родительный падеж",
+      "pt": "tratar-se de um resfriado forte",
+      "chunk": "лечиться от сильной простуды",
+      "chunk_pt": "tratar-se de um resfriado forte",
+      "chunk_wrong": [
+        "лечиться от сильную простуду",
+        "лечиться от сильной простуде",
+        "лечиться от сильной простудой"
+      ],
+      "form_note": "Doença combatida: лечиться от чего?. Diferencie лечения, substantivo, de лечиться, verbo reflexivo.",
+      "trap": "Doença combatida: лечиться от чего?. Diferencie лечения, substantivo, de лечиться, verbo reflexivo.",
+      "example": {
+        "ru": "Сосед лечится от бессонницы.",
+        "pt": "O vizinho está se tratando de insônia.",
+        "extra": "бессоннице",
+        "note": "Doença combatida: лечиться от чего?. Diferencie лечения, substantivo, de лечиться, verbo reflexivo."
+      },
+      "cloze": {
+        "ru": "Она начала лечиться ___.",
+        "answer": "от хронического кашля",
+        "wrong": [
+          "от хронический кашель",
+          "от хроническому кашлю",
+          "от хроническим кашлем"
+        ],
+        "pt": "Ela começou a se tratar de uma tosse crônica.",
+        "note": "Doença combatida: лечиться от чего?. Diferencie лечения, substantivo, de лечиться, verbo reflexivo."
+      },
+      "hear": {
+        "ru": "Бабушка лечилась от высокого давления.",
+        "pt": "A avó estava se tratando de pressão alta.",
+        "wrong": [
+          "A avó vai se tratar de pressão alta.",
+          "A avó não estava se tratando de pressão alta.",
+          "A avó está se tratando de pressão alta."
+        ],
+        "note": "Doença combatida: лечиться от чего?. Diferencie лечения, substantivo, de лечиться, verbo reflexivo."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "болеть",
+      "tag": "болеть",
+      "head": "болеть",
+      "regency": "болеть чем?",
+      "case": "творительный падеж",
+      "pt": "estar com uma amigdalite grave",
+      "chunk": "болеть тяжёлой ангиной",
+      "chunk_pt": "estar com uma amigdalite grave",
+      "chunk_wrong": [
+        "болеть тяжёлую ангину",
+        "болеть тяжёлой ангины",
+        "болеть тяжёлой ангине"
+      ],
+      "form_note": "Nome da doença: болеть чем? + творительный падеж sem preposição. «Болеть за» significa torcer por.",
+      "trap": "Nome da doença: болеть чем? + творительный падеж sem preposição. «Болеть за» significa torcer por.",
+      "example": {
+        "ru": "Ребёнок болеет гриппом.",
+        "pt": "A criança está com gripe.",
+        "extra": "гриппу",
+        "note": "Nome da doença: болеть чем? + творительный падеж sem preposição. «Болеть за» significa torcer por."
+      },
+      "cloze": {
+        "ru": "Он уже неделю болеет ___.",
+        "answer": "воспалением лёгких",
+        "wrong": [
+          "воспаления лёгких",
+          "воспалению лёгких",
+          "воспаление лёгких"
+        ],
+        "pt": "Ele está com pneumonia há uma semana.",
+        "note": "Nome da doença: болеть чем? + творительный падеж sem preposição. «Болеть за» significa torcer por."
+      },
+      "hear": {
+        "ru": "Мать болела гриппом, а сын был здоров.",
+        "pt": "A mãe estava com gripe, e o filho estava saudável.",
+        "wrong": [
+          "O filho estava com gripe, e a mãe estava saudável.",
+          "A mãe estará com gripe, e o filho estará saudável.",
+          "A mãe está com gripe, e o filho está saudável."
+        ],
+        "note": "Nome da doença: болеть чем? + творительный падеж sem preposição. «Болеть за» significa torcer por."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "мечтать",
+      "tag": "мечтать о",
+      "head": "мечтать о",
+      "regency": "мечтать о ком? о чём?",
+      "case": "предложный падеж",
+      "pt": "sonhar com um descanso adequado",
+      "chunk": "мечтать о полноценном отдыхе",
+      "chunk_pt": "sonhar com um descanso adequado",
+      "chunk_wrong": [
+        "мечтать о полноценный отдых",
+        "мечтать о полноценного отдыха",
+        "мечтать о полноценным отдыхом"
+      ],
+      "form_note": "Sonho desejado: мечтать о чём?. Não copie «com» usando с + творительный падеж.",
+      "trap": "Sonho desejado: мечтать о чём?. Não copie «com» usando с + творительный падеж.",
+      "example": {
+        "ru": "После смены медсестра мечтает о тишине.",
+        "pt": "Depois do plantão, a enfermeira sonha com silêncio.",
+        "extra": "тишину",
+        "note": "Sonho desejado: мечтать о чём?. Não copie «com» usando с + творительный падеж."
+      },
+      "cloze": {
+        "ru": "Он мечтает ___.",
+        "answer": "о спокойной жизни",
+        "wrong": [
+          "о спокойную жизнь",
+          "о спокойной жизнью",
+          "о спокойная жизнь"
+        ],
+        "pt": "Ele sonha com uma vida tranquila.",
+        "note": "Sonho desejado: мечтать о чём?. Não copie «com» usando с + творительный падеж."
+      },
+      "hear": {
+        "ru": "Отец мечтал о поездке с дочерью.",
+        "pt": "O pai sonhava com uma viagem com a filha.",
+        "wrong": [
+          "A filha sonhava com uma viagem com o pai.",
+          "O pai não sonhava com uma viagem com a filha.",
+          "O pai sonhará com uma viagem com a filha."
+        ],
+        "note": "Sonho desejado: мечтать о чём?. Não copie «com» usando с + творительный падеж."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Qual hábito a paciente quer abandonar?",
+      "options": [
+        "Tomar café durante a noite.",
+        "Desligar o telefone nas férias.",
+        "Participar do programa terapêutico.",
+        "Conferir os resultados dos exames."
+      ],
+      "answer": "Tomar café durante a noite.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "O que os exames não confirmam?",
+      "options": [
+        "A angina grave que ela suspeitava.",
+        "A necessidade de marcar um retorno.",
+        "O pedido para tirar uma semana livre.",
+        "O hábito de tomar café durante a noite."
+      ],
+      "answer": "A angina grave que ela suspeitava.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "о своём здоровье",
+      "wrong": [
+        "о своё здоровье",
+        "о своего здоровья",
+        "о своим здоровьем"
+      ],
+      "note": "заботиться о ком? о чём? usa предложный падеж; «cuidar de» não pede от."
+    },
+    {
+      "line": 2,
+      "gap": "в точном диагнозе",
+      "wrong": [
+        "в точный диагноз",
+        "в точного диагноза",
+        "в точным диагнозом"
+      ],
+      "note": "сомневаться в чём? usa в + предложный падеж; não transfira «duvidar de»."
+    },
+    {
+      "line": 5,
+      "gap": "от сильной простуды",
+      "wrong": [
+        "от сильную простуду",
+        "от сильной простуде",
+        "от сильной простудой"
+      ],
+      "note": "Doença combatida: лечиться от чего?. Diferencie лечения, substantivo, de лечиться, verbo reflexivo."
+    },
+    {
+      "line": 6,
+      "gap": "тяжёлой ангиной",
+      "wrong": [
+        "тяжёлую ангину",
+        "тяжёлой ангины",
+        "тяжёлой ангине"
+      ],
+      "note": "Nome da doença: болеть чем? + творительный падеж sem preposição. «Болеть за» significa torcer por."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "заботиться о своём здоровье",
+        "right": "cuidar da própria saúde"
+      },
+      {
+        "left": "думать о своём питании",
+        "right": "pensar na própria alimentação"
+      },
+      {
+        "left": "сомневаться в точном диагнозе",
+        "right": "duvidar do diagnóstico exato"
+      },
+      {
+        "left": "участвовать в лечебной программе",
+        "right": "participar do programa terapêutico"
+      },
+      {
+        "left": "отказаться от вредной привычки",
+        "right": "abandonar um hábito prejudicial"
+      },
+      {
+        "left": "лечиться от сильной простуды",
+        "right": "tratar-se de um resfriado forte"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Елена",
+      "you": "Врач",
+      "ru": "Что мне делать, чтобы лучше себя чувствовать?",
+      "prompt": "Dê uma resposta sobre cuidar da saúde.",
+      "answer": "Нужно заботиться о своём здоровье.",
+      "wrong": [
+        "Нужно заботиться о своё здоровье.",
+        "Нужно заботиться о своего здоровья.",
+        "Нужно заботиться о своим здоровьем."
+      ],
+      "explanation": "заботиться о ком? о чём? usa предложный падеж; «cuidar de» não pede от."
+    },
+    {
+      "speaker": "Врач",
+      "you": "Елена",
+      "ru": "О чём мне стоит подумать при такой усталости?",
+      "prompt": "Responda sobre o assunto que merece atenção.",
+      "answer": "Нужно думать о своём питании.",
+      "wrong": [
+        "Нужно думать о своё питание.",
+        "Нужно думать о своего питания.",
+        "Нужно думать о своим питанием."
+      ],
+      "explanation": "O assunto de думать vem com о + предложный падеж; pensar «em» não se traduz mecanicamente por в."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva uma mensagem contando uma consulta e um plano de mudança de hábitos. Diferencie a doença de que alguém sofre e aquela de que se trata.",
+    "use": [
+      "заботиться о",
+      "думать о",
+      "сомневаться в",
+      "участвовать в",
+      "отказываться / отказаться от"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: заботиться о ком? о чём?; думать о ком? о чём?; сомневаться в ком? в чём?; участвовать в чём?; отказываться / отказаться от кого? чего?; лечиться от чего?; болеть чем?; мечтать о ком? о чём?."
+  }
+}

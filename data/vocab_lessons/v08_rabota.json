@@ -1,0 +1,241 @@
+{
+  "id": "v08",
+  "unit_id": "u08_rabota_kotoryi",
+  "order": 8,
+  "title": "Собеседование",
+  "theme": "Работа и карьера",
+  "description": "Denis faz uma entrevista para chefe de projeto. Oito verbos do mundo do trabalho com regências que o português não prevê: руководить + творительный, отвечать за, работать над, обеспечить кого чем, претендовать на…",
+  "speakers": {"Мария": "f", "Денис": "m"},
+  "dialogue": {
+    "title": "Отдел кадров, 10:00",
+    "setting": "Maria, do RH de uma empresa de tecnologia, entrevista Denis para uma vaga de chefe de projeto.",
+    "lines": [
+      {"speaker": "Мария", "ru": "Денис, добрый день. Расскажите, чем вы занимались на прошлой работе.", "pt": "Denis, bom dia. Conte o que o senhor fazia no emprego anterior."},
+      {"speaker": "Денис", "ru": "Я три года руководил небольшим отделом — пять человек. Мы работали над мобильными приложениями для банков.", "pt": "Durante três anos chefiei um departamento pequeno, de cinco pessoas. Trabalhávamos em aplicativos para bancos."},
+      {"speaker": "Мария", "ru": "За что конкретно вы отвечали?", "pt": "Pelo que exatamente o senhor era responsável?"},
+      {"speaker": "Денис", "ru": "Я отвечал за сроки и качество. Если кто-то не справлялся с задачей, я помогал или перераспределял работу.", "pt": "Eu respondia pelos prazos e pela qualidade. Se alguém não dava conta de uma tarefa, eu ajudava ou redistribuía o trabalho."},
+      {"speaker": "Мария", "ru": "Вам приходилось кого-то увольнять?", "pt": "O senhor já teve de demitir alguém?"},
+      {"speaker": "Денис", "ru": "Один раз. Пришлось уволить сотрудника за систематические опоздания. Неприятно, но справедливо.", "pt": "Uma vez. Tive de demitir um funcionário por atrasos sistemáticos. Desagradável, mas justo."},
+      {"speaker": "Мария", "ru": "А нанимать людей?", "pt": "E contratar pessoas?"},
+      {"speaker": "Денис", "ru": "Да, я сам нанял троих. Двое до сих пор там работают.", "pt": "Sim, eu mesmo contratei três. Dois ainda trabalham lá."},
+      {"speaker": "Мария", "ru": "Хорошо. Вы претендуете на должность руководителя проекта. Чем, по-вашему, компания должна обеспечивать команду?", "pt": "Certo. O senhor se candidata ao cargo de chefe de projeto. Na sua opinião, com o que a empresa deve prover a equipe?"},
+      {"speaker": "Денис", "ru": "Прежде всего нормальным оборудованием и ясными задачами. Остальное зависит от руководителя.", "pt": "Antes de tudo, com equipamento decente e tarefas claras. O resto depende do chefe."},
+      {"speaker": "Мария", "ru": "Спасибо. Ответ мы дадим в течение недели.", "pt": "Obrigada. Daremos a resposta dentro de uma semana."}
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Que tipo de conversa é esta?",
+      "options": [
+        "Uma entrevista de emprego para chefe de projeto.",
+        "Uma avaliação anual de um funcionário da empresa.",
+        "Uma conversa sobre a demissão de Denis.",
+        "Um treinamento para novos gerentes da empresa."
+      ],
+      "answer": "Uma entrevista de emprego para chefe de projeto.",
+      "explanation": "«Вы претендуете на должность руководителя проекта… Ответ мы дадим в течение недели»."
+    }
+  ],
+  "items": [
+    {
+      "key": "rukovodit",
+      "lemma": "руководить",
+      "tag": "руководить",
+      "head": "руководить",
+      "regency": "руководить кем? чем?",
+      "case": "творительный падеж",
+      "pt": "chefiar, dirigir",
+      "chunk": "руководить отделом продаж",
+      "chunk_pt": "chefiar o departamento de vendas",
+      "chunk_wrong": ["руководить отдел продаж", "руководить отделу продаж", "руководить над отделом продаж"],
+      "form_note": "творительный sem preposição, como управлять, командовать.",
+      "trap": "«Dirigir o departamento» é transitivo direto em português. Em russo: руководить отделом, школой, людьми.",
+      "example": {"ru": "Его мать руководит крупной больницей.", "pt": "A mãe dele dirige um hospital grande.", "extra": "крупную", "note": "руководить чем? → крупной больницей (творительный feminino)."},
+      "cloze": {"ru": "Кто будет руководить ___?", "answer": "этим проектом", "wrong": ["этот проект", "этому проекту", "над этим проектом"], "pt": "Quem vai chefiar este projeto?", "note": "творительный masculino: этим проектом."},
+      "hear": {"ru": "Раньше она руководила школой, а теперь руководит всем районным образованием.", "pt": "Antes ela dirigia uma escola; agora dirige toda a educação do distrito.", "wrong": ["Antes ela dirigia a educação do distrito; agora dirige uma escola.", "Ela dirige uma escola e também dá aulas no distrito.", "Ela vai dirigir a educação do distrito depois da escola."], "note": "раньше школой → теперь всем образованием."}
+    },
+    {
+      "key": "spravitsya",
+      "lemma": "справляться",
+      "tag": "справляться с",
+      "head": "справляться / справиться с",
+      "regency": "справляться / справиться с кем? чем?",
+      "case": "творительный падеж",
+      "pt": "dar conta de, lidar com",
+      "chunk": "справиться с задачей",
+      "chunk_pt": "dar conta da tarefa",
+      "chunk_wrong": ["справиться задачу", "справиться за задачей", "справиться с задачу"],
+      "form_note": "с + творительный: справиться с работой, с детьми, со стрессом.",
+      "trap": "«Dar conta DE» sugere родительный. A regência é с + творительный.",
+      "example": {"ru": "Новый сотрудник легко справился с нагрузкой.", "pt": "O funcionário novo deu conta da carga de trabalho com facilidade.", "extra": "нагрузку", "note": "с нагрузкой: творительный feminino (-ой)."},
+      "cloze": {"ru": "Одна я не справлюсь ___.", "answer": "с таким объёмом работы", "wrong": ["такой объём работы", "с таким объёмом работой", "таким объёмом работы"], "pt": "Sozinha não vou dar conta de tanto trabalho.", "note": "с + творительный: с объёмом; работы = родительный."},
+      "hear": {"ru": "Команда справилась с проектом раньше срока.", "pt": "A equipe deu conta do projeto antes do prazo.", "wrong": ["A equipe não conseguiu terminar o projeto no prazo.", "O projeto foi entregue à equipe antes do prazo.", "A equipe vai dar conta do projeto antes do prazo."], "note": "справилась = passado perfectivo; раньше срока = antes do prazo."}
+    },
+    {
+      "key": "obespechit",
+      "lemma": "обеспечивать",
+      "tag": "обеспечивать кого чем",
+      "head": "обеспечивать / обеспечить",
+      "regency": "обеспечивать / обеспечить кого? чем?",
+      "case": "винительный + творительный",
+      "pt": "prover, fornecer (algo a alguém)",
+      "chunk": "обеспечить сотрудников оборудованием",
+      "chunk_pt": "fornecer equipamento aos funcionários",
+      "chunk_wrong": ["обеспечить сотрудников оборудование", "обеспечить сотрудникам оборудованием", "обеспечить сотрудников с оборудованием"],
+      "form_note": "Quem recebe → винительный; o que se fornece → творительный sem preposição.",
+      "trap": "Em português, «fornecer algo A alguém». Em russo a pessoa é objeto direto e a coisa vai para o творительный: обеспечить детей едой.",
+      "example": {"ru": "Школа обеспечивает учеников учебниками.", "pt": "A escola fornece os livros didáticos aos alunos.", "extra": "ученикам", "note": "кого? → учеников; чем? → учебниками."},
+      "cloze": {"ru": "Фирма обязана обеспечить работников ___.", "answer": "спецодеждой", "wrong": ["спецодежду", "спецодежды", "со спецодеждой"], "pt": "A empresa é obrigada a fornecer uniforme de trabalho aos funcionários.", "note": "чем? → спецодеждой (творительный)."},
+      "hear": {"ru": "Родители обеспечили сына всем необходимым.", "pt": "Os pais deram ao filho tudo de que ele precisava.", "wrong": ["O filho deu aos pais tudo de que eles precisavam.", "Os pais vão dar ao filho tudo de que ele precisa.", "Os pais tiraram do filho tudo o que não era necessário."], "note": "родители = sujeito; сына = quem recebe; всем необходимым = творительный."}
+    },
+    {
+      "key": "otvechat_za",
+      "lemma": "отвечать",
+      "tag": "отвечать за",
+      "head": "отвечать / ответить за",
+      "regency": "отвечать за кого? что? · × отвечать на что? (responder a)",
+      "case": "винительный падеж",
+      "pt": "ser responsável por, responder por",
+      "chunk": "отвечать за качество",
+      "chunk_pt": "ser responsável pela qualidade",
+      "chunk_wrong": ["отвечать на качество", "отвечать качеству", "отвечать о качестве"],
+      "form_note": "за + винительный = responsabilidade; на + винительный = resposta (отвечать на вопрос).",
+      "trap": "Mesmo verbo, duas preposições: отвечать на письмо (responder) × отвечать за детей (responder por).",
+      "example": {"ru": "Кто у вас отвечает за безопасность?", "pt": "Quem é responsável pela segurança aqui?", "extra": "безопасности", "note": "за безопасность: винительный = nominativo (feminino em -ь)."},
+      "cloze": {"ru": "Капитан отвечает ___.", "answer": "за жизнь пассажиров", "wrong": ["на жизнь пассажиров", "о жизни пассажиров", "жизнью пассажиров"], "pt": "O capitão é responsável pela vida dos passageiros.", "note": "за + винительный: за жизнь."},
+      "hear": {"ru": "Я отвечаю за свои слова, а за его — нет.", "pt": "Eu respondo pelas minhas palavras, mas não pelas dele.", "wrong": ["Eu respondo às minhas perguntas, mas não às dele.", "Ele responde pelas palavras dele, mas não pelas minhas.", "Eu não respondo nem pelas minhas palavras nem pelas dele."], "note": "за свои слова — sim; за его — нет."}
+    },
+    {
+      "key": "nanyat",
+      "lemma": "нанимать",
+      "tag": "нанимать / нанять",
+      "head": "нанимать / нанять",
+      "regency": "нанимать / нанять кого? что? · кем? на что?",
+      "case": "винительный падеж",
+      "pt": "contratar",
+      "chunk": "нанять опытного специалиста",
+      "chunk_pt": "contratar um especialista experiente",
+      "chunk_wrong": ["нанять опытный специалист", "нанять опытному специалисту", "наняться опытного специалиста"],
+      "form_note": "Animado no винительный = родительный: нанять юриста, двух рабочих.",
+      "trap": "O objeto é uma pessoa: o винительный animado masculino termina como o родительный (-а, -ого).",
+      "example": {"ru": "Мы наняли няню для младшего сына.", "pt": "Contratamos uma babá para o filho mais novo.", "extra": "няне", "note": "нанять кого? → няню (винительный feminino)."},
+      "cloze": {"ru": "Для ремонта соседи наняли ___.", "answer": "двух рабочих", "wrong": ["два рабочих", "двоим рабочим", "двумя рабочими"], "pt": "Para a reforma, os vizinhos contrataram dois operários.", "note": "Objeto animado: двух рабочих (винительный = родительный)."},
+      "hear": {"ru": "Компания наняла десять новых сотрудников и уволила двух.", "pt": "A empresa contratou dez funcionários novos e demitiu dois.", "wrong": ["A empresa demitiu dez funcionários e contratou dois novos.", "A empresa contratou dez funcionários novos e dois pediram demissão.", "A empresa vai contratar dez funcionários e demitir dois."], "note": "наняла десять; уволила двух."}
+    },
+    {
+      "key": "uvolit",
+      "lemma": "увольнять",
+      "tag": "уволить за",
+      "head": "увольнять / уволить",
+      "regency": "увольнять / уволить кого? за что? · × уволиться (pedir demissão)",
+      "case": "винительный падеж",
+      "pt": "demitir (alguém)",
+      "chunk": "уволить за опоздания",
+      "chunk_pt": "demitir por atrasos",
+      "chunk_wrong": ["уволить для опозданий", "уволить за опозданиями", "уволиться за опоздания"],
+      "form_note": "Motivo → за + винительный. уволить кого? = demitir; уволиться = pedir demissão.",
+      "trap": "Sem -ся, alguém é demitido pelo chefe; com -ся, a pessoa sai por conta própria.",
+      "example": {"ru": "Его уволили за нарушение дисциплины.", "pt": "Ele foi demitido por indisciplina.", "extra": "нарушением", "note": "за нарушение: винительный neutro."},
+      "cloze": {"ru": "Директор не имеет права уволить ___ без предупреждения.", "answer": "сотрудника", "wrong": ["сотруднику", "сотрудник", "с сотрудником"], "pt": "O diretor não tem o direito de demitir um funcionário sem aviso prévio.", "note": "кого? → сотрудника (винительный animado)."},
+      "hear": {"ru": "Её не уволили — она уволилась сама.", "pt": "Ela não foi demitida: ela mesma pediu demissão.", "wrong": ["Ela foi demitida, embora quisesse muito ficar.", "Ela demitiu o chefe e foi embora da empresa.", "Ela não pediu demissão: foi demitida pelo chefe."], "note": "не уволили (não a demitiram) × уволилась сама (saiu)."}
+    },
+    {
+      "key": "pretendovat",
+      "lemma": "претендовать",
+      "tag": "претендовать на",
+      "head": "претендовать на",
+      "regency": "претендовать на кого? что?",
+      "case": "винительный падеж",
+      "pt": "candidatar-se a, disputar, aspirar a",
+      "chunk": "претендовать на должность",
+      "chunk_pt": "candidatar-se ao cargo",
+      "chunk_wrong": ["претендовать должность", "претендовать в должность", "претендовать на должности"],
+      "form_note": "на + винительный: претендовать на вакансию, на победу, на наследство.",
+      "trap": "Não é «кандидатировать»: candidatar-se a uma vaga = претендовать на вакансию.",
+      "example": {"ru": "Три кандидата претендуют на эту вакансию.", "pt": "Três candidatos disputam esta vaga.", "extra": "вакансии", "note": "на эту вакансию: винительный feminino (-ую, -ю)."},
+      "cloze": {"ru": "Она претендует ___ в этом конкурсе.", "answer": "на первое место", "wrong": ["первое место", "на первом месте", "к первому месту"], "pt": "Ela disputa o primeiro lugar neste concurso.", "note": "на + винительный neutro: на первое место."},
+      "hear": {"ru": "На должность директора претендуют две женщины и один мужчина.", "pt": "Duas mulheres e um homem disputam o cargo de diretor.", "wrong": ["Dois homens e uma mulher disputam o cargo de diretor.", "Duas mulheres e um homem foram nomeados diretores.", "A diretora escolheu duas mulheres e um homem."], "note": "две женщины и один мужчина = sujeitos."}
+    },
+    {
+      "key": "rabotat_nad",
+      "lemma": "работать",
+      "tag": "работать над",
+      "head": "работать над",
+      "regency": "работать над кем? чем? (criar, aperfeiçoar)",
+      "case": "творительный падеж",
+      "pt": "trabalhar em (algo que se cria ou melhora)",
+      "chunk": "работать над ошибками",
+      "chunk_pt": "trabalhar nos próprios erros",
+      "chunk_wrong": ["работать на ошибках", "работать над ошибок", "работать ошибками"],
+      "form_note": "над + творительный: работать над книгой, над собой, над проектом.",
+      "trap": "«Trabalhar EM» empurra para в / на. Para algo que se está criando ou melhorando, o russo usa над.",
+      "example": {"ru": "Писатель пять лет работал над романом.", "pt": "O escritor trabalhou cinco anos no romance.", "extra": "роман", "note": "над романом: творительный masculino."},
+      "cloze": {"ru": "Сейчас наша лаборатория работает ___.", "answer": "над новой вакциной", "wrong": ["на новой вакцине", "над новую вакцину", "новой вакциной"], "pt": "Agora nosso laboratório trabalha numa nova vacina.", "note": "над + творительный feminino: над новой вакциной."},
+      "hear": {"ru": "Над этим фильмом работали сто человек.", "pt": "Cem pessoas trabalharam neste filme.", "wrong": ["Cem pessoas assistiram a este filme.", "Este filme foi feito em cem dias.", "Cem pessoas vão trabalhar neste filme."], "note": "над фильмом (творительный); сто человек = sujeito; работали = passado."}
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Por que Denis demitiu um funcionário?",
+      "options": ["Por atrasos constantes.", "Por erros no aplicativo.", "Por falta de verba.", "Por brigar com colegas."],
+      "answer": "Por atrasos constantes.",
+      "explanation": "«уволить сотрудника за систематические опоздания»."
+    },
+    {
+      "prompt": "Segundo Denis, com o que a empresa deve prover a equipe?",
+      "options": [
+        "Equipamento decente e tarefas claras.",
+        "Salários altos e bônus anuais.",
+        "Horário flexível e trabalho remoto.",
+        "Cursos e treinamentos regulares."
+      ],
+      "answer": "Equipamento decente e tarefas claras.",
+      "explanation": "«нормальным оборудованием и ясными задачами» — обеспечивать чем? (творительный)."
+    }
+  ],
+  "reconstruct": [
+    {"line": 1, "gap": "руководил небольшим отделом", "wrong": ["руководил небольшой отдел", "руководил небольшому отделу", "руководил над небольшим отделом"], "note": "руководить + творительный."},
+    {"line": 3, "gap": "отвечал за сроки", "wrong": ["отвечал на сроки", "отвечал срокам", "отвечал о сроках"], "note": "отвечать за + винительный."},
+    {"line": 5, "gap": "за систематические опоздания", "wrong": ["для систематических опозданий", "за систематическими опозданиями", "на систематические опоздания"], "note": "уволить за + винительный."},
+    {"line": 9, "gap": "нормальным оборудованием", "wrong": ["нормальное оборудование", "с нормальным оборудованием", "нормального оборудования"], "note": "обеспечивать чем? → творительный sem preposição."}
+  ],
+  "match": {
+    "instruction": "Relacione cada verbo ao complemento com a regência certa.",
+    "prompt": "Qual complemento completa cada verbo?",
+    "pairs": [
+      {"left": "руководить", "right": "большим коллективом"},
+      {"left": "справиться", "right": "с трудной ситуацией"},
+      {"left": "обеспечить", "right": "детей едой"},
+      {"left": "отвечать", "right": "за результат"},
+      {"left": "претендовать", "right": "на повышение"},
+      {"left": "работать", "right": "над диссертацией"}
+    ],
+    "explanation": "творительный puro; с + творительный; кого + чем; за + винительный; на + винительный; над + творительный."
+  },
+  "replies": [
+    {
+      "speaker": "Мария",
+      "you": "Денис",
+      "ru": "Вы когда-нибудь руководили большой командой?",
+      "prompt": "Maria pergunta se você já chefiou uma equipe grande. Responda: não, só um departamento pequeno de cinco pessoas.",
+      "answer": "Нет, только небольшим отделом из пяти человек.",
+      "wrong": ["Нет, только небольшой отдел из пяти человек.", "Нет, только небольшим отделом из пять человек.", "Нет, только над небольшим отделом из пяти человек."],
+      "explanation": "руководить чем? → небольшим отделом; из + родительный: из пяти человек."
+    },
+    {
+      "speaker": "Денис",
+      "you": "Мария",
+      "ru": "А кто будет отвечать за мой испытательный срок?",
+      "prompt": "Denis pergunta quem será responsável pelo período de experiência dele. Responda: o chefe do departamento.",
+      "answer": "За ваш испытательный срок отвечает руководитель отдела.",
+      "wrong": ["На ваш испытательный срок отвечает руководитель отдела.", "За ваш испытательный срок отвечает руководителю отдела.", "За вашим испытательным сроком отвечает руководитель отдела."],
+      "explanation": "отвечать за + винительный; руководитель = sujeito (nominativo)."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva uma carta de apresentação curta para uma vaga: sua experiência, pelo que você era responsável, em que trabalhou e com que dificuldades lidou.",
+    "use": ["руководить", "отвечать за", "справиться с", "работать над", "претендовать на"],
+    "words": "50–70",
+    "notes": "Verificar творительный sem preposição (руководить), за × на com отвечать, с + творительный, над + творительный, на + винительный; registro formal."
+  }
+}

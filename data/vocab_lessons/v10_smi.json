@@ -1,0 +1,239 @@
+{
+  "id": "v10",
+  "unit_id": "u10_smi_kosvennaya_rech",
+  "order": 10,
+  "title": "Новость или фейк?",
+  "theme": "СМИ и доверие",
+  "description": "Na redação de um jornal, a editora e um repórter decidem como cobrir um boato que se espalhou nas redes. Oito construções da mídia: освещать, ссылаться на, реагировать на, доверять × доверие к, воздействовать на, распространять, опровергнуть.",
+  "speakers": {"Елена": "f", "Кирилл": "m"},
+  "dialogue": {
+    "title": "Редакция, 15:40",
+    "setting": "Elena, editora de um jornal regional, conversa com o repórter Kirill sobre uma notícia que viralizou.",
+    "lines": [
+      {"speaker": "Елена", "ru": "Кирилл, ты видел? Новость о закрытии завода уже распространили все соцсети.", "pt": "Kirill, você viu? A notícia do fechamento da fábrica já foi espalhada por todas as redes sociais."},
+      {"speaker": "Кирилл", "ru": "Видел. Но на кого они ссылаются? Официального сообщения не было.", "pt": "Vi. Mas que fonte eles citam? Não houve comunicado oficial."},
+      {"speaker": "Елена", "ru": "Вот именно. Один блогер сослался на «источник в администрации» — и всё.", "pt": "Exatamente. Um blogueiro citou uma «fonte na administração» — e só."},
+      {"speaker": "Кирилл", "ru": "А администрация как-то отреагировала на это?", "pt": "E a administração reagiu de alguma forma a isso?"},
+      {"speaker": "Елена", "ru": "Пока молчит. Поэтому нам нужно осветить эту историю аккуратно, без паники.", "pt": "Por enquanto está calada. Por isso precisamos cobrir essa história com cuidado, sem pânico."},
+      {"speaker": "Кирилл", "ru": "Понимаю. Люди и так не очень доверяют СМИ. Если мы ошибёмся, доверие к газете упадёт ещё сильнее.", "pt": "Entendo. As pessoas já não confiam muito na mídia. Se errarmos, a confiança no jornal vai cair ainda mais."},
+      {"speaker": "Елена", "ru": "Именно. Такие новости сильно воздействуют на людей: они боятся потерять работу.", "pt": "Exatamente. Notícias assim mexem muito com as pessoas: elas têm medo de perder o emprego."},
+      {"speaker": "Кирилл", "ru": "Тогда я позвоню директору завода. Если это фейк, он его опровергнет.", "pt": "Então vou ligar para o diretor da fábrica. Se for falso, ele vai desmentir."},
+      {"speaker": "Елена", "ru": "Хорошо. И пришли мне текст до шести.", "pt": "Certo. E me mande o texto até as seis."}
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual é o problema que a editora e o repórter discutem?",
+      "options": [
+        "Uma notícia não confirmada que se espalhou nas redes.",
+        "O fechamento definitivo da fábrica da cidade.",
+        "Um erro publicado pelo próprio jornal na véspera.",
+        "A demissão do diretor da fábrica por corrupção."
+      ],
+      "answer": "Uma notícia não confirmada que se espalhou nas redes.",
+      "explanation": "«Официального сообщения не было… сослался на „источник“ — и всё»."
+    }
+  ],
+  "items": [
+    {
+      "key": "osveshchat",
+      "lemma": "освещать",
+      "tag": "освещать / осветить",
+      "head": "освещать / осветить",
+      "regency": "освещать / осветить что? (событие, тему)",
+      "case": "винительный падеж",
+      "pt": "cobrir (jornalisticamente), noticiar",
+      "chunk": "освещать события",
+      "chunk_pt": "cobrir os acontecimentos",
+      "chunk_wrong": ["освещать о событиях", "освещать событиям", "освещаться события"],
+      "form_note": "Objeto direto, sem о: освещать выборы, освещать конфликт.",
+      "trap": "Parece «falar sobre» (о + предложный), mas освещать é transitivo: освещать событие.",
+      "example": {"ru": "Этот канал подробно освещал выборы.", "pt": "Este canal cobriu as eleições em detalhes.", "extra": "выборах", "note": "освещать что? → выборы (винительный plural)."},
+      "cloze": {"ru": "Журналисты освещают ___ в прямом эфире.", "answer": "ход переговоров", "wrong": ["о ходе переговоров", "ходу переговоров", "ходом переговоров"], "pt": "Os jornalistas cobrem o andamento das negociações ao vivo.", "note": "Objeto direto: ход; переговоров = родительный."},
+      "hear": {"ru": "Местные СМИ почти не освещали забастовку.", "pt": "A mídia local quase não cobriu a greve.", "wrong": ["A mídia local cobriu a greve em detalhes.", "A mídia local quase não apoiou a greve.", "A greve quase não afetou a mídia local."], "note": "почти не освещали = quase não cobriram."}
+    },
+    {
+      "key": "vozdeystvovat",
+      "lemma": "воздействовать",
+      "tag": "воздействовать на",
+      "head": "воздействовать на",
+      "regency": "воздействовать на кого? что?",
+      "case": "винительный падеж",
+      "pt": "agir sobre, afetar",
+      "chunk": "воздействовать на общественное мнение",
+      "chunk_pt": "agir sobre a opinião pública",
+      "chunk_wrong": ["воздействовать общественное мнение", "воздействовать на общественном мнении", "воздействовать в общественное мнение"],
+      "form_note": "на + винительный, como влиять на.",
+      "trap": "Sem на o verbo não funciona: воздействовать на людей, на организм.",
+      "example": {"ru": "Реклама воздействует на подсознание.", "pt": "A publicidade age sobre o subconsciente.", "extra": "подсознании", "note": "на + винительный neutro: на подсознание."},
+      "cloze": {"ru": "Эти лекарства воздействуют ___.", "answer": "на нервную систему", "wrong": ["нервную систему", "на нервной системе", "нервной системе"], "pt": "Estes remédios agem sobre o sistema nervoso.", "note": "на + винительный feminino: -ую, -у."},
+      "hear": {"ru": "Музыка воздействует на настроение сильнее, чем слова.", "pt": "A música age sobre o humor mais do que as palavras.", "wrong": ["As palavras agem sobre o humor mais do que a música.", "A música e as palavras agem igualmente sobre o humor.", "O humor influencia a música mais do que as palavras."], "note": "музыка = sujeito; сильнее, чем слова."}
+    },
+    {
+      "key": "doverie",
+      "lemma": "доверие",
+      "tag": "доверие к",
+      "head": "доверие к",
+      "regency": "доверие к кому? чему?",
+      "case": "дательный падеж",
+      "pt": "confiança em",
+      "chunk": "доверие к источникам",
+      "chunk_pt": "confiança nas fontes",
+      "chunk_wrong": ["доверие в источники", "доверие источникам", "доверие на источники"],
+      "form_note": "Substantivo доверие → к + дательный. Verbo доверять → дательный sem preposição.",
+      "trap": "«Confiança EM» puxa в. O russo usa к: доверие к врачам. «доверие правительства» = a confiança que o governo tem (de quem).",
+      "example": {"ru": "У молодёжи нет доверия к телевидению.", "pt": "Os jovens não confiam na televisão.", "extra": "телевидение", "note": "нет доверия (родительный por нет) к телевидению (дательный)."},
+      "cloze": {"ru": "Скандал подорвал ___.", "answer": "доверие к правительству", "wrong": ["доверие в правительство", "доверие правительства", "доверие на правительство"], "pt": "O escândalo abalou a confiança no governo.", "note": "доверие к + дательный. доверие правительства = a confiança do governo."},
+      "hear": {"ru": "Доверие к врачам выросло, а к политикам — упало.", "pt": "A confiança nos médicos cresceu; nos políticos, caiu.", "wrong": ["A confiança nos políticos cresceu; nos médicos, caiu.", "A confiança dos médicos nos políticos caiu.", "A confiança nos médicos e nos políticos caiu."], "note": "к врачам — выросло; к политикам — упало."}
+    },
+    {
+      "key": "doveryat",
+      "lemma": "доверять",
+      "tag": "доверять кому",
+      "head": "доверять / доверить",
+      "regency": "доверять кому? чему? · доверить кому? что? (confiar algo a alguém)",
+      "case": "дательный падеж",
+      "pt": "confiar em",
+      "chunk": "доверять журналистам",
+      "chunk_pt": "confiar nos jornalistas",
+      "chunk_wrong": ["доверять в журналистов", "доверять журналистов", "доверять к журналистам"],
+      "form_note": "дательный sem preposição.",
+      "trap": "«Confiar EM alguém» → sem в: доверять другу, доверять интуиции.",
+      "example": {"ru": "Я не доверяю незнакомым людям.", "pt": "Não confio em pessoas desconhecidas.", "extra": "незнакомых", "note": "дательный plural: незнакомым людям."},
+      "cloze": {"ru": "Сегодня многие больше доверяют ___, чем газетам.", "answer": "блогерам", "wrong": ["в блогеров", "блогеров", "к блогерам"], "pt": "Hoje muitos confiam mais em blogueiros do que em jornais.", "note": "дательный plural: блогерам, como газетам."},
+      "hear": {"ru": "Она доверяет мужу, но не его друзьям.", "pt": "Ela confia no marido, mas não nos amigos dele.", "wrong": ["O marido confia nela, mas não nas amigas dela.", "Ela confia nos amigos do marido, mas não nele.", "Ela não confia nem no marido nem nos amigos dele."], "note": "она = sujeito; мужу — sim; друзьям — не."}
+    },
+    {
+      "key": "ssylatsya",
+      "lemma": "ссылаться",
+      "tag": "ссылаться на",
+      "head": "ссылаться / сослаться на",
+      "regency": "ссылаться / сослаться на кого? что?",
+      "case": "винительный падеж",
+      "pt": "citar (como fonte), referir-se a",
+      "chunk": "ссылаться на источник",
+      "chunk_pt": "citar a fonte",
+      "chunk_wrong": ["ссылаться источник", "ссылаться к источнику", "ссылаться на источнике"],
+      "form_note": "на + винительный: ссылаться на закон, на данные, на эксперта.",
+      "trap": "«Citar a fonte» é transitivo direto em português. Em russo: ссылаться НА источник.",
+      "example": {"ru": "Автор ссылается на данные ООН.", "pt": "O autor cita dados da ONU.", "extra": "данных", "note": "на данные: винительный plural."},
+      "cloze": {"ru": "В статье журналист сослался ___.", "answer": "на анонимного эксперта", "wrong": ["анонимного эксперта", "на анонимном эксперте", "к анонимному эксперту"], "pt": "No artigo, o jornalista citou um especialista anônimo.", "note": "на + винительный animado: на анонимного эксперта."},
+      "hear": {"ru": "Министр сослался на слова своего предшественника.", "pt": "O ministro citou as palavras do seu antecessor.", "wrong": ["O antecessor do ministro citou as palavras dele.", "O ministro negou as palavras do seu antecessor.", "O ministro vai citar as palavras do seu antecessor."], "note": "министр = sujeito; сослался = passado."}
+    },
+    {
+      "key": "reagirovat",
+      "lemma": "реагировать",
+      "tag": "реагировать на",
+      "head": "реагировать / отреагировать на",
+      "regency": "реагировать / отреагировать на кого? что?",
+      "case": "винительный падеж",
+      "pt": "reagir a",
+      "chunk": "реагировать на критику",
+      "chunk_pt": "reagir às críticas",
+      "chunk_wrong": ["реагировать к критике", "реагировать критику", "реагировать на критике"],
+      "form_note": "на + винительный.",
+      "trap": "«Reagir A» puxa к + дательный. Em russo: реагировать на новость, на слова.",
+      "example": {"ru": "Компания быстро отреагировала на жалобы клиентов.", "pt": "A empresa reagiu rápido às reclamações dos clientes.", "extra": "жалобам", "note": "на жалобы: винительный plural."},
+      "cloze": {"ru": "Как власти отреагировали ___?", "answer": "на протесты", "wrong": ["к протестам", "протестам", "на протестах"], "pt": "Como as autoridades reagiram aos protestos?", "note": "на + винительный plural."},
+      "hear": {"ru": "Публика спокойно отреагировала на новость.", "pt": "O público reagiu com calma à notícia.", "wrong": ["O público reagiu com raiva à notícia.", "O público ainda não sabe da notícia.", "A notícia acalmou o público."], "note": "спокойно = com calma; публика = sujeito."}
+    },
+    {
+      "key": "rasprostranyat",
+      "lemma": "распространять",
+      "tag": "распространять / распространить",
+      "head": "распространять / распространить",
+      "regency": "распространять что? · × распространяться (espalhar-se)",
+      "case": "винительный падеж",
+      "pt": "espalhar, difundir",
+      "chunk": "распространять слухи",
+      "chunk_pt": "espalhar boatos",
+      "chunk_wrong": ["распространять о слухах", "распространяться слухи", "распространять слухами"],
+      "form_note": "Transitivo: alguém espalha algo. Com -ся, a coisa se espalha sozinha: слухи распространяются.",
+      "trap": "«O vírus se espalhou» → вирус распространился (com -ся). «Espalharam o vírus» → распространили.",
+      "example": {"ru": "Кто распространяет эти листовки?", "pt": "Quem está distribuindo estes panfletos?", "extra": "листовками", "note": "Objeto direto: эти листовки."},
+      "cloze": {"ru": "Вирус быстро ___ по всему городу.", "answer": "распространился", "wrong": ["распространил", "распространял", "распространит"], "pt": "O vírus se espalhou rapidamente por toda a cidade.", "note": "Sem agente → forma em -ся."},
+      "hear": {"ru": "Новость распространилась быстрее, чем её успели проверить.", "pt": "A notícia se espalhou antes que conseguissem verificá-la.", "wrong": ["A notícia foi verificada antes de se espalhar.", "A notícia não se espalhou porque foi verificada.", "Espalharam a notícia depois de verificá-la."], "note": "распространилась (espalhou-se) быстрее, чем успели проверить."}
+    },
+    {
+      "key": "oprovergnut",
+      "lemma": "опровергать",
+      "tag": "опровергать / опровергнуть",
+      "head": "опровергать / опровергнуть",
+      "regency": "опровергать / опровергнуть что? (информацию, слухи, теорию)",
+      "case": "винительный падеж",
+      "pt": "desmentir, refutar",
+      "chunk": "опровергнуть слухи",
+      "chunk_pt": "desmentir os boatos",
+      "chunk_wrong": ["опровергнуть о слухах", "опровергнуть слухам", "опровергнуться слухи"],
+      "form_note": "Objeto direto. Passado: опроверг, опровергла, опровергли (sem -ну-).",
+      "trap": "O passado perde o -ну-: он опроверг, они опровергли. «опровергнули» é erro frequente.",
+      "example": {"ru": "Пресс-служба опровергла информацию об отставке.", "pt": "A assessoria de imprensa desmentiu a informação sobre a renúncia.", "extra": "информации", "note": "опровергнуть что? → информацию."},
+      "cloze": {"ru": "Новые данные полностью ___ старую теорию.", "answer": "опровергли", "wrong": ["опровергнули", "опровергались", "опровергнулись"], "pt": "Os novos dados refutaram completamente a teoria antiga.", "note": "Passado plural sem -ну-: опровергли."},
+      "hear": {"ru": "Директор не подтвердил, но и не опроверг эту информацию.", "pt": "O diretor não confirmou, mas também não desmentiu a informação.", "wrong": ["O diretor confirmou e depois desmentiu a informação.", "O diretor desmentiu a informação, mas não a confirmou.", "O diretor não confirmou a informação porque era falsa."], "note": "не подтвердил, но и не опроверг = nem confirmou nem desmentiu."}
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Por que Kirill quer ter cuidado com a matéria?",
+      "options": [
+        "As pessoas já confiam pouco na mídia.",
+        "O diretor da fábrica é amigo da editora.",
+        "A administração proibiu a publicação.",
+        "O blogueiro ameaçou processar o jornal."
+      ],
+      "answer": "As pessoas já confiam pouco na mídia.",
+      "explanation": "«Люди и так не очень доверяют СМИ»."
+    },
+    {
+      "prompt": "O que Kirill decide fazer?",
+      "options": ["Ligar para o diretor da fábrica.", "Escrever para o blogueiro.", "Ir pessoalmente à administração.", "Publicar a notícia ainda hoje."],
+      "answer": "Ligar para o diretor da fábrica.",
+      "explanation": "«я позвоню директору завода»."
+    }
+  ],
+  "reconstruct": [
+    {"line": 1, "gap": "на кого они ссылаются", "wrong": ["кому они ссылаются", "к кому они ссылаются", "кого они ссылаются"], "note": "ссылаться на + винительный: на кого?"},
+    {"line": 3, "gap": "отреагировала на это", "wrong": ["отреагировала к этому", "отреагировала этому", "отреагировала на этом"], "note": "реагировать на + винительный."},
+    {"line": 5, "gap": "доверие к газете", "wrong": ["доверие в газету", "доверие газеты", "доверие на газету"], "note": "доверие к + дательный."},
+    {"line": 6, "gap": "воздействуют на людей", "wrong": ["воздействуют людей", "воздействуют на людях", "воздействуют людям"], "note": "воздействовать на + винительный."}
+  ],
+  "match": {
+    "instruction": "Relacione cada verbo ao complemento que combina em sentido e regência.",
+    "prompt": "Qual complemento completa cada verbo?",
+    "pairs": [
+      {"left": "освещать", "right": "спортивные события"},
+      {"left": "ссылаться", "right": "на официальные данные"},
+      {"left": "доверять", "right": "проверенным источникам"},
+      {"left": "реагировать", "right": "на жалобы читателей"},
+      {"left": "распространять", "right": "листовки у метро"},
+      {"left": "опровергнуть", "right": "обвинения в коррупции"}
+    ],
+    "explanation": "освещать, распространять, опровергнуть: objeto direto; ссылаться/реагировать на + винительный; доверять + дательный."
+  },
+  "replies": [
+    {
+      "speaker": "Елена",
+      "you": "Кирилл",
+      "ru": "Ты сослался в тексте на пресс-службу завода?",
+      "prompt": "Elena pergunta se você citou a assessoria da fábrica. Diga que sim, que citou a resposta oficial deles.",
+      "answer": "Да, я сослался на их официальный ответ.",
+      "wrong": ["Да, я сослался их официальный ответ.", "Да, я сослался на их официальном ответе.", "Да, я сослал на их официальный ответ."],
+      "explanation": "сослаться на + винительный: на их официальный ответ."
+    },
+    {
+      "speaker": "Кирилл",
+      "you": "Елена",
+      "ru": "А как читатели отреагировали на прошлую статью?",
+      "prompt": "Kirill pergunta como os leitores reagiram à matéria anterior. Diga que muitos reagiram de forma muito emocional.",
+      "answer": "Многие отреагировали на неё очень эмоционально.",
+      "wrong": ["Многие отреагировали к ней очень эмоционально.", "Многие отреагировали её очень эмоционально.", "Многие отреагировали на ней очень эмоционально."],
+      "explanation": "отреагировать на + винительный: на неё."
+    }
+  ],
+  "writing": {
+    "prompt": "Explique como você decide em que notícias confiar: que fontes cita, como reage a boatos, o que faz antes de repassar uma informação.",
+    "use": ["доверять", "доверие к", "ссылаться на", "распространять", "опровергнуть"],
+    "words": "50–70",
+    "notes": "Verificar доверять + дательный × доверие к + дательный, на + винительный (ссылаться, реагировать), распространять × распространяться, passado de опровергнуть."
+  }
+}

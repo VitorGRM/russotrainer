@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <script>
+    (() => {
+      let choice = 'dark';
+      try { choice = localStorage.getItem('lingualab-theme') || 'dark'; } catch (_) {}
+      if (!['dark', 'light', 'system'].includes(choice)) choice = 'dark';
+      document.documentElement.dataset.themeChoice = choice;
+      document.documentElement.dataset.theme = choice === 'system'
+        ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : choice;
+    })();
+  </script>
+  <title>LinguaLab · cursos de idiomas</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Ir para o conteúdo</a>
+  <button id="sidebarBackdrop" class="sidebar-backdrop hidden" aria-label="Fechar menu" tabindex="-1"></button>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark" id="brandMark">Я</span>
+        <div>
+          <strong id="brandName">Русский тренажёр</strong>
+          <small id="brandLevel">ТРКИ-II · B2</small>
+        </div>
+      </div>
+
+      <nav id="nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="home"><span>⌂</span> Visão geral</button>
+        <button class="nav-item" data-view="study"><span>✎</span> Estudar</button>
+        <button class="nav-item" data-view="vocab" data-russian-only><span>Л</span> Vocabulário</button>
+        <button class="nav-item" data-view="review"><span>↻</span> Revisar <b id="dueBadge" class="badge">0</b></button>
+        <button class="nav-item" data-view="errors"><span>△</span> Caderno de erros</button>
+        <button class="nav-item" data-view="reference"><span id="navReferenceMark">Ж</span> Referência</button>
+        <button class="nav-item" data-view="morphology" data-russian-only><span>Ы</span> Terminações</button>
+        <button class="nav-item" data-view="prefixes" data-russian-only><span>П</span> Prefixos</button>
+        <button class="nav-item" data-view="data"><span>↓</span> Dados e análise</button>
+      </nav>
+
+      <div class="sidebar-note">
+        <span class="status-dot"></span>
+        <div><strong>Dados locais</strong><small>Respostas salvas automaticamente</small></div>
+      </div>
+
+      <div class="update-box" id="updateBox">
+        <small id="updateVersion"></small>
+        <button type="button" class="update-button" id="updateButton">Buscar atualizações</button>
+        <small id="updateMessage" role="status" aria-live="polite"></small>
+      </div>
+    </aside>
+
+    <main class="main" id="mainContent" tabindex="-1">
+      <header class="topbar">
+        <button id="mobileMenu" class="icon-button" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <div>
+          <p class="eyebrow" id="viewEyebrow">ПОДГОТОВКА К ЭКЗАМЕНУ</p>
+          <h1 id="viewTitle">Visão geral</h1>
+        </div>
+        <div class="course-switcher" id="courseSwitcher" aria-label="Escolher curso"></div>
+        <div class="consultation-global" title="Como você respondeu?">
+          <span>Consulta</span>
+          <div class="segmented" id="consultationSelector">
+            <button data-value="SC" class="active">SC</button>
+            <button data-value="C">C</button>
+            <button data-value="CC">CC</button>
+          </div>
+        </div>
+        <label class="theme-control" for="themeSelect"><span>Tema</span>
+          <select id="themeSelect" aria-label="Tema da interface">
+            <option value="dark">Escuro</option><option value="light">Claro</option><option value="system">Sistema</option>
+          </select>
+        </label>
+      </header>
+
+      <section id="homeView" class="view active">
+        <article class="panel resume-panel hidden" id="resumePanel" aria-live="polite">
+          <div class="panel-header">
+            <div><p class="eyebrow">CONTINUAR DE ONDE PAROU</p><h3>Sessões interrompidas</h3></div>
+            <span class="muted">salvas a cada pergunta</span>
+          </div>
+          <div id="resumeList" class="resume-list"></div>
+        </article>
+
+        <div class="hero">
+          <div>
+            <span class="hero-kicker" id="heroKicker">СЕГОДНЯ</span>
+            <h2 id="heroTitle">Transforme regência em reflexo.</h2>
+            <p id="heroCopy">Reconhecer o caso é só o começo. O objetivo é recuperar a construção e produzir a terminação sem traduzir mentalmente.</p>
+            <div class="hero-actions">
+              <button class="primary" id="startDiagnostic">Fazer diagnóstico</button>
+              <button class="secondary" id="startDue">Revisar agora</button>
+            </div>
+          </div>
+          <div class="case-wheel" id="heroVisual" aria-label="Conteúdo em foco">
+            <div><b>Д</b><span>дательный</span></div>
+            <div><b>Т</b><span>творительный</span></div>
+            <div><b>Р</b><span>родительный</span></div>
+          </div>
+        </div>
+
+        <div class="metrics" id="metrics"></div>
+
+        <div class="dashboard-grid">
+          <article class="panel mastery-panel">
+            <div class="panel-header">
+              <div><p class="eyebrow">MAPA DE DOMÍNIO</p><h3>Construções e habilidades</h3></div>
+              <span class="muted">acerto ponderado por consulta</span>
+            </div>
+            <div id="masteryList" class="mastery-list empty-state">Responda ao diagnóstico para formar seu mapa.</div>
+          </article>
+          <article class="panel next-panel">
+            <div class="panel-header"><div><p class="eyebrow">PRÓXIMO PASSO</p><h3>Fila pedagógica</h3></div></div>
+            <div id="nextSteps"></div>
+          </article>
+        </div>
+
+        <article class="panel units-panel">
+          <div class="panel-header">
+            <div><p class="eyebrow">PERCURSO</p><h3>Unidades disponíveis</h3></div>
+            <span id="unitCount" class="muted"></span>
+          </div>
+          <div id="unitsGrid" class="units-grid"></div>
+        </article>
+      </section>
+
+      <section id="studyView" class="view">
+        <article class="panel study-path-panel">
+          <p class="eyebrow">TRILHA</p>
+          <h2 id="pathTitle">Percorra as unidades em ordem.</h2>
+          <p class="muted" id="pathCopy">Conclua cada unidade para desbloquear a próxima. Revisão e itens difíceis continuam livres, sem depender da trilha.</p>
+          <div id="studyPath" class="study-path"></div>
+        </article>
+        <div id="studySetup" class="study-setup">
+          <article class="panel">
+            <p class="eyebrow">SESSÃO PERSONALIZADA</p>
+            <h2>O que vamos treinar?</h2>
+            <p class="muted">Escolher uma unidade roda todos os exercícios dela, na ordem da lição. Sem unidade, o treino mistura tudo o que já foi desbloqueado. As questões erradas voltam pela revisão espaçada com vocabulário diferente.</p>
+            <div class="form-grid">
+              <label>Unidade<select id="unitSelect"></select></label>
+              <label>Modo<select id="modeSelect">
+                <option value="study">Treino misto</option>
+                <option value="diagnostic">Diagnóstico sem pistas</option>
+                <option value="flashcards">Flashcards</option>
+                <option value="writing">Produção escrita</option>
+                <option value="difficult">Meus itens difíceis</option>
+              </select></label>
+            </div>
+            <div id="unitIntro" class="unit-intro hidden"></div>
+            <button class="primary wide" id="beginSession">Iniciar sessão</button>
+          </article>
+          <aside class="panel protocol-card">
+            <p class="eyebrow">PROTOCOLO SC · C · CC</p>
+            <dl>
+              <div><dt>SC</dt><dd>Sem consulta. Mede recuperação real.</dd></div>
+              <div><dt>C</dt><dd>Consultou antes de responder.</dd></div>
+              <div><dt>CC</dt><dd>Respondeu e conferiu depois.</dd></div>
+            </dl>
+          </aside>
+        </div>
+        <div id="sessionArea" class="session-area hidden"></div>
+      </section>
+
+      <section id="reviewView" class="view">
+        <article class="panel review-intro">
+          <p class="eyebrow">REVISÃO ESPAÇADA</p>
+          <h2 id="reviewHeadline">Sua fila está pronta.</h2>
+          <p id="reviewCopy" class="muted"></p>
+          <button class="primary" id="launchReview">Começar revisão</button>
+        </article>
+      </section>
+
+      <section id="errorsView" class="view">
+        <article class="panel">
+          <div class="panel-header"><div><p class="eyebrow">DIAGNÓSTICO CONTÍNUO</p><h2>Caderno de erros</h2></div></div>
+          <p class="muted">Aqui aparecem os erros mais recentes. A categoria informada por você ajuda a distinguir regência, terminação e simples digitação.</p>
+          <div id="errorTypeStats" class="error-type-stats"></div>
+          <div id="errorsList" class="errors-list"></div>
+        </article>
+      </section>
+
+      <section id="referenceView" class="view">
+        <div class="reference-intro">
+          <p class="eyebrow">CONSULTA RÁPIDA</p>
+          <h2 id="referenceTitle">Aprenda a construção inteira.</h2>
+          <p id="referenceCopy">Verbo ou expressão + preposição + pergunta russa. A tradução vem por último.</p>
+        </div>
+        <div id="referenceGrid" class="reference-grid"></div>
+      </section>
+
+      <section id="vocabView" class="view">
+        <div id="vocabContent">
+          <div class="morph-hero">
+            <div>
+              <p class="eyebrow">ЛЕКСИКА В ДИАЛОГЕ · 24 УРОКА</p>
+              <h2>Ouça a cena, aprenda a construção inteira, use-a de novo.</h2>
+              <p>Cada lição pega oito construções de uma unidade da trilha e as apresenta num diálogo com vozes russas. Você ouve antes de estudar, recupera cada construção em intervalos crescentes, pratica em frases novas e volta ao diálogo para reconstruí-lo e responder. Os erros voltam cerca de cinco telas depois, com até duas novas tentativas antes da re-escuta e da escrita.</p>
+            </div>
+            <div class="coverage-orbit" aria-label="Construções firmes">
+              <strong id="vocabFirmPercent">0%</strong><span>construções firmes</span>
+            </div>
+          </div>
+
+          <div id="vocabMetrics" class="morph-metrics"></div>
+
+          <article class="panel vocab-method">
+            <div class="panel-header"><div><p class="eyebrow">COMO A LIÇÃO FUNCIONA</p><h3>Três partes de 8–12 minutos</h3></div><span class="muted">base: docs/modelo_licao_vocabulario.md</span></div>
+            <ol class="vocab-steps">
+              <li><b>1 · Ouvir e apresentar</b><span>Diálogo sem texto (pré-teste), depois cada construção: cartão → reconhecer o sentido → escolher a forma exata, com intervalos crescentes.</span></li>
+              <li><b>2 · Praticar em contexto</b><span>Lacuna em frase nova, compreensão auditiva em que os casos decidem quem faz o quê, montagem com um bloco a mais e colocações.</span></li>
+              <li><b>3 · Voltar ao diálogo</b><span>Detalhes, reconstrução das falas, responder a uma fala ouvida, re-escuta com texto e uma produção escrita curta.</span></li>
+            </ol>
+            <p class="memory-note"><b>Sem respostas óbvias:</b> as alternativas diferem só na preposição, no caso, no número ou em quem faz a ação — os erros típicos de quem fala português. Nas tarefas de áudio as alternativas não são lidas em voz alta.</p>
+          </article>
+
+          <div id="vocabLessonDetail" class="hidden"></div>
+
+          <article class="panel">
+            <div class="panel-header"><div><p class="eyebrow">LIÇÕES</p><h3>Uma cena por unidade da trilha</h3></div><span id="vocabCount" class="muted"></span></div>
+            <div id="vocabGrid" class="vocab-grid"></div>
+            <p id="vocabStatus" class="inline-status"></p>
+          </article>
+        </div>
+        <div id="vocabGameArea" class="session-area hidden"></div>
+      </section>
+
+      <section id="morphologyView" class="view">
+        <div id="morphologyContent">
+          <div class="morph-hero">
+            <div>
+              <p class="eyebrow">КАРТА ОКОНЧАНИЙ · TRKI-II</p>
+              <h2>Veja a função, encontre a família, escolha a terminação.</h2>
+              <p>As cores separam a base da palavra da parte que muda. Depois das tabelas, o jogo sorteia palavras reais do léxico mínimo oficial.</p>
+            </div>
+            <div class="coverage-orbit" aria-label="Cobertura lexical">
+              <strong id="coveragePercent">0%</strong><span>léxico visto</span>
+            </div>
+          </div>
+
+          <div id="morphMetrics" class="morph-metrics"></div>
+
+          <article class="panel case-map-panel">
+            <div class="panel-header"><div><p class="eyebrow">1 · ESCOLHA O CASO PELA IDEIA</p><h3>O mapa mental dos cinco casos oblíquos</h3></div></div>
+            <div class="case-route">
+              <div class="case-node case-gen"><span class="case-icon">↙</span><b>Родительный</b><small>кого? чего?</small><p>ausência · origem · posse · quantidade</p><em>нет города · из музея</em></div>
+              <div class="case-node case-dat"><span class="case-icon">→</span><b>Дательный</b><small>кому? чему?</small><p>destinatário · idade · estado</p><em>к другу · мне трудно</em></div>
+              <div class="case-node case-acc"><span class="case-icon">◎</span><b>Винительный</b><small>кого? что?</small><p>objeto direto · destino</p><em>вижу город · в школу</em></div>
+              <div class="case-node case-inst"><span class="case-icon">⚒</span><b>Творительный</b><small>кем? чем?</small><p>instrumento · companhia · papel</p><em>с другом · стать врачом</em></div>
+              <div class="case-node case-prep"><span class="case-icon">⌖</span><b>Предложный</b><small>о ком? о чём? где?</small><p>assunto · localização</p><em>о городе · в музее</em></div>
+            </div>
+          </article>
+
+          <article class="panel endings-panel">
+            <div class="panel-header"><div><p class="eyebrow">2 · ENCONTRE A FAMÍLIA</p><h3>Substantivos no singular</h3></div><span class="morph-legend"><i></i> base <i></i> terminação</span></div>
+            <div class="table-scroll"><table class="ending-table noun-table">
+              <thead><tr><th>Família</th><th>Р · genitivo</th><th>Д · dativo</th><th>В · acusativo</th><th>Т · instrumental</th><th>П · prepositivo</th></tr></thead>
+              <tbody>
+                <tr><th>♂ consoante<br><span class="word-build"><i>город</i><u>∅</u></span></th><td><b>-а / -я</b><span class="word-build"><i>город</i><u>а</u></span></td><td><b>-у / -ю</b><span class="word-build"><i>город</i><u>у</u></span></td><td><b>= N / R*</b><span>inanimado / animado</span></td><td><b>-ом / -ем</b><span class="word-build"><i>город</i><u>ом</u></span></td><td><b>-е</b><span class="word-build"><i>город</i><u>е</u></span></td></tr>
+                <tr><th>♀ -а / -я<br><span class="word-build"><i>проблем</i><u>а</u></span></th><td><b>-ы / -и</b><span class="word-build"><i>проблем</i><u>ы</u></span></td><td><b>-е</b><span class="word-build"><i>проблем</i><u>е</u></span></td><td><b>-у / -ю</b><span class="word-build"><i>проблем</i><u>у</u></span></td><td><b>-ой / -ей</b><span class="word-build"><i>проблем</i><u>ой</u></span></td><td><b>-е</b><span class="word-build"><i>проблем</i><u>е</u></span></td></tr>
+                <tr><th>⚪ -о / -е<br><span class="word-build"><i>окн</i><u>о</u></span></th><td><b>-а / -я</b><span class="word-build"><i>окн</i><u>а</u></span></td><td><b>-у / -ю</b><span class="word-build"><i>окн</i><u>у</u></span></td><td><b>= nominativo</b><span class="word-build"><i>окн</i><u>о</u></span></td><td><b>-ом / -ем</b><span class="word-build"><i>окн</i><u>ом</u></span></td><td><b>-е</b><span class="word-build"><i>окн</i><u>е</u></span></td></tr>
+                <tr><th>♀ -ь<br><span class="word-build"><i>недел</i><u>ь</u></span></th><td><b>-и</b><span class="word-build"><i>недел</i><u>и</u></span></td><td><b>-и</b><span class="word-build"><i>недел</i><u>и</u></span></td><td><b>-ь</b><span class="word-build"><i>недел</i><u>ь</u></span></td><td><b>-ью</b><span class="word-build"><i>недел</i><u>ью</u></span></td><td><b>-и</b><span class="word-build"><i>недел</i><u>и</u></span></td></tr>
+              </tbody>
+            </table></div>
+            <p class="memory-note"><b>Atalho:</b> masculino e neutro caminham juntos em Р, Д e Т. Feminino <b>-а</b> faz a escada <b>-ы → -е → -у → -ой → -е</b>. Depois de г, к, х, ж, ч, ш, щ, escreva <b>и</b>, nunca ы.</p>
+          </article>
+
+          <div class="morph-two-columns">
+            <article class="panel endings-panel">
+              <p class="eyebrow">3 · PLURAL: UMA ESPINHA DORSAL</p><h3>As terminações mais regulares</h3>
+              <div class="plural-spine">
+                <div><small>Р</small><b>variável</b><span>∅ · -ов/-ев · -ей</span></div><i>→</i>
+                <div><small>Д</small><b>-ам / -ям</b><span>студентам</span></div><i>→</i>
+                <div><small>Т</small><b>-ами / -ями</b><span>студентами</span></div><i>→</i>
+                <div><small>П</small><b>-ах / -ях</b><span>о студентах</span></div>
+              </div>
+              <p class="memory-note"><b>Imagem mental:</b> no plural, Д–Т–П acrescentam comprimento: <b>-ам → -ами → -ах</b>. O acusativo copia o nominativo para inanimados e o genitivo para animados.</p>
+            </article>
+
+            <article class="panel endings-panel adjective-card">
+              <p class="eyebrow">4 · ADJETIVOS: CONCORDÂNCIA</p><h3>Uma terminação aponta para o substantivo</h3>
+              <div class="table-scroll"><table class="ending-table compact-table">
+                <thead><tr><th>Caso</th><th>♂ / ⚪</th><th>♀</th><th>plural</th></tr></thead>
+                <tbody>
+                  <tr><th>Р</th><td>-ого / -его</td><td>-ой / -ей</td><td>-ых / -их</td></tr>
+                  <tr><th>Д</th><td>-ому / -ему</td><td>-ой / -ей</td><td>-ым / -им</td></tr>
+                  <tr><th>В</th><td>= Н / Р*</td><td>-ую / -юю</td><td>= Н / Р*</td></tr>
+                  <tr><th>Т</th><td>-ым / -им</td><td>-ой / -ей</td><td>-ыми / -ими</td></tr>
+                  <tr><th>П</th><td>-ом / -ем</td><td>-ой / -ей</td><td>-ых / -их</td></tr>
+                </tbody>
+              </table></div>
+              <p class="word-demo"><span class="word-build"><i>нов</i><u>ому</u></span> студенту · <span class="word-build"><i>нов</i><u>ой</u></span> системе</p>
+            </article>
+          </div>
+
+          <article class="panel endings-panel b2-alerts">
+            <div class="panel-header"><div><p class="eyebrow">5 · ONDE O B2 COSTUMA TROPEÇAR</p><h3>Famílias especiais e formas que pedem memória lexical</h3></div></div>
+            <div class="alert-grid">
+              <div><b>-ий · -ия · -ие</b><p>No prepositivo, guarde <strong>-ии</strong>: о санатории, о России, о развитии. Compare o dativo: к санаторию, к России, к развитию.</p></div>
+              <div><b>Genitivo plural</b><p>Não existe uma única saída: студентов, музеев, словарей; проблем, недель, зданий. Aprenda a forma plural junto com o lema.</p></div>
+              <div><b>Locativo em -у́ / -ю́</b><p>Um grupo limitado troca -е por final tônico depois de в/на: в лесу́, на мосту́, в Крыму́. Com assunto, volta o prepositivo comum: о ле́се.</p></div>
+              <div><b>Radical móvel</b><p>Algumas palavras perdem ou recuperam vogal: день → дня, отец → отца, окно → окон. Aqui a regra ajuda menos que a recuperação espaçada.</p></div>
+            </div>
+            <p class="memory-note"><b>Regra de decisão:</b> primeiro determine a função e o caso; depois número e animacidade; só então escolha a família. Se a forma pertence a um grupo lexical irregular, memorize-a como par: <b>слово — нет слов</b>.</p>
+          </article>
+
+          <article class="panel game-launcher">
+            <div><p class="eyebrow">6 · RECUPERAÇÃO ATIVA</p><h2>Jogo do Léxico Mínimo</h2><p class="muted">Treine formas ou percorra o inventário completo. Para aprender a produzir, troque “Escolher” por “Digitar sem alternativas”.</p></div>
+            <div class="morph-form">
+              <label>Jogo<select id="morphKind"><option value="morphology">Adivinhar a flexão</option><option value="vocabulary">Cobertura lexical</option></select></label>
+              <label>Resposta<select id="morphResponse"><option value="choice">Escolher entre formas</option><option value="input">Digitar sem alternativas</option></select></label>
+              <label>Classe<select id="morphPos"><option value="">Todas</option><option value="noun">Substantivos</option><option value="adjective">Adjetivos</option><option value="verb">Verbos (vocabulário)</option></select></label>
+              <label>Caso<select id="morphCase"><option value="">Todos</option><option value="gen">Родительный</option><option value="dat">Дательный</option><option value="acc">Винительный</option><option value="inst">Творительный</option><option value="prep">Предложный</option></select></label>
+              <label>Número<select id="morphNumber"><option value="">Singular + plural</option><option value="sg">Singular</option><option value="pl">Plural</option></select></label>
+              <label>Quantidade<select id="morphLimit"><option>10</option><option selected>20</option><option>50</option><option>100</option></select></label>
+              <label class="check-label"><input type="checkbox" id="morphUnseen"> Só lemas inéditos</label>
+              <button class="primary" id="startMorphGame">Começar jogo</button>
+            </div>
+            <p id="morphStatus" class="inline-status"></p>
+          </article>
+        </div>
+        <div id="morphologyGameArea" class="session-area hidden"></div>
+      </section>
+
+      <section id="prefixesView" class="view">
+        <div id="prefixesContent">
+          <div class="morph-hero">
+            <div>
+              <p class="eyebrow">ГЛАГОЛЬНЫЕ ПРИСТАВКИ · B1–B2</p>
+              <h2>O prefixo é a chave de leitura do verbo.</h2>
+              <p>Os blocos por família comparam verbos de um mesmo prefixo; o bloco “Contrastes” inverte a tarefa e mantém o radical para você sentir o efeito de prefixos diferentes. Vocabulário do Лексический минимум ТРКИ-II.</p>
+            </div>
+            <div class="coverage-orbit" aria-label="Domínio do módulo">
+              <strong id="prefixMasteryPercent">0%</strong><span>prefixos dominados</span>
+            </div>
+          </div>
+
+          <div id="prefixIntro" class="prefix-intro"></div>
+
+          <article class="panel game-launcher">
+            <div><p class="eyebrow">RECUPERAÇÃO ATIVA</p><h2>Escolha um prefixo</h2><p class="muted">Clique num prefixo para treinar só ele, ou em «Todos» para uma sessão mista sorteada.</p></div>
+            <div id="prefixStageGrid" class="prefix-stage-grid"></div>
+            <div class="morph-form">
+              <label>Quantidade
+                <select id="prefixLimit"><option>8</option><option selected>16</option><option>32</option><option value="60">Todos</option></select>
+              </label>
+              <button class="primary" id="startPrefixAll">Todos os prefixos</button>
+            </div>
+            <p id="prefixStatus" class="inline-status"></p>
+          </article>
+        </div>
+        <div id="prefixGameArea" class="session-area hidden"></div>
+      </section>
+
+      <section id="dataView" class="view">
+        <div class="data-grid">
+          <article class="panel">
+            <p class="eyebrow">ARQUIVOS DE ANÁLISE</p>
+            <h2>Seu histórico é seu.</h2>
+            <p>O aplicativo atualiza automaticamente arquivos legíveis dentro da pasta <code>russotrainer/exports</code>. Eles permitem analisar sua evolução em aulas futuras.</p>
+            <ul class="file-list">
+              <li><b>relatorio_atual.md</b><span>resumo humano e erros recentes</span></li>
+              <li><b>analise_atual.json</b><span>histórico completo e produções</span></li>
+              <li><b>respostas.csv</b><span>planilha de todas as tentativas</span></li>
+              <li><b>problemas_reportados.md</b><span>exercícios sinalizados para revisão</span></li>
+              <li><b>progress.sqlite3</b><span>banco principal e revisão espaçada</span></li>
+            </ul>
+            <button class="primary" id="exportNow">Atualizar exportações</button>
+            <p id="exportStatus" class="inline-status"></p>
+          </article>
+          <article class="panel">
+            <p class="eyebrow">PRODUÇÕES SALVAS</p>
+            <h3>Pendentes de correção</h3>
+            <div id="pendingWriting" class="pending-writing"></div>
+          </article>
+          <article class="panel">
+            <p class="eyebrow">REVISÃO DE CONTEÚDO</p>
+            <h3>Problemas sinalizados</h3>
+            <p class="muted">As notificações ficam persistidas mesmo depois de fechar o aplicativo.</p>
+            <div id="reportedContent" class="pending-writing"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="dictionaryDialog" class="app-dialog dictionary-dialog">
+    <button class="dialog-close" data-close-dialog="dictionaryDialog" aria-label="Fechar">×</button>
+    <p class="eyebrow">DICIONÁRIO MORFOLÓGICO</p>
+    <div id="dictionaryContent"></div>
+    <footer>Dados morfológicos e tradução inglesa: OpenRussian, CC BY-SA 4.0. Traduções portuguesas do vocabulário do curso são próprias.</footer>
+  </dialog>
+
+  <dialog id="reportDialog" class="app-dialog report-dialog">
+    <button class="dialog-close" data-close-dialog="reportDialog" aria-label="Fechar">×</button>
+    <p class="eyebrow">NOTIFICAR PROBLEMA</p>
+    <h3>O que parece errado neste exercício?</h3>
+    <label>Tipo de problema
+      <select id="reportReason">
+        <option value="enunciado_confuso">Enunciado confuso</option>
+        <option value="sem_campo_resposta">Não consigo responder</option>
+        <option value="gabarito_suspeito">Gabarito suspeito</option>
+        <option value="traducao">Tradução ou significado</option>
+        <option value="audio">Áudio ou pronúncia</option>
+        <option value="outro">Outro</option>
+      </select>
+    </label>
+    <label>Observação opcional
+      <textarea id="reportNote" rows="4" placeholder="Explique brevemente o problema…"></textarea>
+    </label>
+    <button id="submitReport" class="primary wide">Salvar sinalização</button>
+  </dialog>
+
+  <dialog id="resumeDialog" class="app-dialog resume-dialog">
+    <button class="dialog-close" data-close-dialog="resumeDialog" aria-label="Fechar">×</button>
+    <p class="eyebrow">SESSÃO SALVA</p>
+    <h3 id="resumeDialogTitle">Você parou no meio</h3>
+    <p id="resumeDialogInfo" class="muted"></p>
+    <div id="resumeDialogBar" class="vocab-bar"><i></i></div>
+    <div class="resume-actions">
+      <button class="primary" id="resumeContinue">Continuar de onde parou</button>
+      <button class="secondary" id="resumeRestart">Recomeçar do início</button>
+      <button class="ghost-button" id="resumeCancel">Cancelar</button>
+    </div>
+    <p class="muted resume-note">Recomeçar não apaga o que você já respondeu: o histórico e a revisão espaçada continuam como estão.</p>
+  </dialog>
+
+  <dialog id="mapDialog" class="app-dialog map-dialog">
+    <button class="dialog-close" data-close-dialog="mapDialog" aria-label="Fechar">×</button>
+    <p class="eyebrow">MAPA DAS PERGUNTAS</p>
+    <h3 id="mapDialogTitle">Esta sessão</h3>
+    <p class="muted">Toque numa pergunta para ir direto a ela. Você pode responder em qualquer ordem; o progresso é salvo pergunta a pergunta.</p>
+    <div id="mapDialogGrid" class="question-map"></div>
+    <div class="map-legend" id="mapLegend"></div>
+  </dialog>
+
+  <audio id="ttsPlayer" preload="none"></audio>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

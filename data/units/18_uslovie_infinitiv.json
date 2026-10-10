@@ -1,0 +1,774 @@
+{
+  "id": "u18_uslovie",
+  "order": 18,
+  "title": "Условное наклонение e o aspecto no infinitivo",
+  "description": "Работа и карьера: condição real × irreal com бы, pedidos educados e os verbos que só aceitam um dos dois aspectos no infinitivo.",
+  "estimated_minutes": 34,
+  "objectives": [
+    "separar если (real) de если бы (irreal)",
+    "usar бы para pedidos e desejos em registro formal",
+    "escolher o aspecto do infinitivo depois de начать, успеть, надо e нельзя"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 2 «Работа и жизнь» (Условное наклонение, Виды глагола в инфинитиве) · Кузьмина, Употребление видов глагола в инфинитиве",
+  "grammar": [
+    {
+      "title": "если × если бы: duas condições, dois mundos",
+      "paragraphs": [
+        "Condição REAL usa если com presente ou futuro, e a oração principal também vai ao futuro: Если будет время, я приду на собеседование. Se houver tempo, eu vou à entrevista. O falante considera isso possível. Repare que o russo usa futuro nas duas orações, enquanto o português usa futuro do subjuntivo na primeira («se houver») — não existe subjuntivo em russo.",
+        "Condição IRREAL usa если бы + PASSADO na condição e бы + PASSADO na consequência: Если бы у меня было больше опыта, я бы получил эту работу. Se eu tivesse mais experiência, teria conseguido esse emprego. E aqui está a economia mais elegante do russo: essa mesma forma cobre o que o português divide em três tempos — «se eu tivesse (agora)», «se eu tivesse tido (no passado)» e «se eu tivesse (no futuro)». Uma forma só, e o contexto decide.",
+        "A partícula бы é invariável e obrigatória nas duas orações. Ela pode vir depois do verbo (я пришёл бы) ou depois de outra palavra tônica (я бы пришёл) — as duas ordens são corretas. O que não se pode é combinar бы com presente ou futuro: «если бы я буду» e «если бы я имею» são impossíveis. бы só anda com passado, em qualquer contexto."
+      ],
+      "audio_script": "Условное наклонение, as condicionais. E aqui o russo é muito mais simples do que o português — vale saber disso desde já. Existem dois tipos, e a fronteira entre eles é nítida. Tipo um: condição REAL. Usa-se если com presente ou futuro, e a oração principal também vai ao futuro. Если будет время, я приду на собеседование. Se houver tempo, eu vou à entrevista. O falante considera isso possível, provável até. Repare numa diferença importante: o russo usa FUTURO nas duas orações. O português usa futuro do subjuntivo na primeira: «se houver». Mas não existe subjuntivo em russo, então não procure por ele. É futuro e pronto. Tipo dois: condição IRREAL. Usa-se если бы mais PASSADO na condição, e бы mais PASSADO na consequência. Если бы у меня было больше опыта, я бы получил эту работу. Se eu tivesse mais experiência, teria conseguido esse emprego. E agora vem a parte mais elegante de toda a gramática russa, na minha opinião. Essa mesma forma cobre o que o português divide em três tempos verbais diferentes. Se eu tivesse, agora. Se eu tivesse tido, no passado. Se eu viesse a ter, no futuro. Em russo é uma forma só: если бы mais passado. O contexto decide qual das três leituras é a certa. Isso significa menos formas para decorar, não mais. Agora, três regras sobre a partícula бы. Primeira: ela é invariável. Nunca muda, em nenhuma situação. Segunda: ela é obrigatória nas DUAS orações, tanto na condição quanto na consequência. Terceira, e é a mais importante: бы só anda com PASSADO. Если бы я буду é impossível. Если бы я имею é impossível. Se você viu бы, o verbo ao lado está no passado. Sem exceção. Sobre a posição: бы pode vir depois do verbo, я пришёл бы, ou depois de outra palavra tônica, я бы пришёл. As duas ordens são corretas e igualmente comuns.",
+      "examples": [
+        {
+          "ru": "Если будет вакансия, я обязательно отправлю резюме.",
+          "pt": "Se houver vaga, eu certamente envio o currículo.",
+          "note": "Condição real: futuro nas duas orações."
+        },
+        {
+          "ru": "Если бы я знал об этой вакансии раньше, я бы уже отправил резюме.",
+          "pt": "Se eu soubesse dessa vaga antes, já teria enviado o currículo.",
+          "note": "Condição irreal: бы + passado dos dois lados."
+        },
+        {
+          "ru": "Если бы у нас было больше сотрудников, проект шёл бы быстрее.",
+          "pt": "Se tivéssemos mais funcionários, o projeto andaria mais rápido.",
+          "note": "A mesma forma serve para presente hipotético."
+        },
+        {
+          "ru": "На вашем месте я бы согласился.",
+          "pt": "No seu lugar, eu aceitaria.",
+          "note": "бы + passado sem если: hipótese implícita."
+        }
+      ],
+      "pitfalls": [
+        "Combinar бы com futuro: «если бы я буду» é impossível — бы exige passado.",
+        "Procurar um subjuntivo russo para traduzir «se houver»: use o futuro simples com если.",
+        "Esquecer o бы da oração principal: ele é obrigatório nas duas."
+      ]
+    },
+    {
+      "title": "бы para pedir, aconselhar e desejar",
+      "paragraphs": [
+        "Fora das condicionais, бы é a principal ferramenta de polidez do russo. Pedido educado: Не могли бы вы прислать документы? (O senhor poderia enviar os documentos?) — muito mais cortês que Пришлите документы. Desejo: Я хотел бы обсудить условия. Мне хотелось бы уточнить один вопрос. Conselho: На вашем месте я бы согласился. Вам бы стоило подготовиться заранее.",
+        "Numa entrevista de emprego ou num e-mail profissional, a diferença entre Я хочу и Я хотел бы é a diferença entre soar exigente e soar profissional. O mesmo vale para Дайте мне… × Не могли бы вы дать мне…. Esse é um dos poucos pontos gramaticais que afetam diretamente como você é percebido, e não apenas se a frase está correta.",
+        "Existe ainda чтобы + passado como forma de expressar desejo indireto sobre outra pessoa — Я хочу, чтобы вы прислали отчёт (quero que você envie o relatório) — e a construção хорошо бы / лучше бы para sugestões impessoais: Хорошо бы закончить проект до пятницы. Repare que чтобы é literalmente что + бы, e por isso também exige passado: é a mesma regra, não uma exceção nova."
+      ],
+      "audio_script": "Segunda parte: бы fora das condicionais. E aqui ele é a principal ferramenta de polidez do russo. Vamos a quatro usos, e todos são muito úteis na vida profissional. Uso um: pedido educado. Не могли бы вы прислать документы? O senhor poderia enviar os documentos? Compare com Пришлите документы, que é uma ordem direta. A diferença de tom é enorme. Uso dois: desejo. Я хотел бы обсудить условия. Eu gostaria de discutir as condições. Мне хотелось бы уточнить один вопрос. Eu gostaria de esclarecer uma questão. Uso três: conselho. На вашем месте я бы согласился. No seu lugar, eu aceitaria. Вам бы стоило подготовиться заранее. Valeria a pena o senhor se preparar com antecedência. Uso quatro: sugestão impessoal, com хорошо бы ou лучше бы. Хорошо бы закончить проект до пятницы. Seria bom terminar o projeto até sexta. Agora, por que isso importa tanto. Numa entrevista de emprego ou num e-mail profissional, a diferença entre я хочу e я хотел бы é a diferença entre soar exigente e soar profissional. O mesmo vale para дайте мне, que é seco, e не могли бы вы дать мне, que é o padrão educado. Este é um dos poucos pontos de gramática que afetam diretamente como você é PERCEBIDO, e não apenas se a sua frase está correta ou não. Vale investir nele. Por último, uma observação que amarra tudo com a unidade dezesseis. A conjunção чтобы é literalmente что mais бы. É por isso que ela também exige passado: чтобы вы прислали отчёт. Não é uma exceção nova que você precise decorar. É a mesma regra de sempre: onde há бы, há passado.",
+      "examples": [
+        {
+          "ru": "Не могли бы вы прислать мне описание вакансии?",
+          "pt": "O senhor poderia me enviar a descrição da vaga?",
+          "note": "Pedido educado padrão em e-mail profissional."
+        },
+        {
+          "ru": "Я хотел бы обсудить условия работы.",
+          "pt": "Eu gostaria de discutir as condições de trabalho.",
+          "note": "Muito mais adequado que «я хочу» numa entrevista."
+        },
+        {
+          "ru": "На вашем месте я бы не отказывался от этого предложения.",
+          "pt": "No seu lugar eu não recusaria essa proposta.",
+          "note": "Conselho com бы + passado."
+        },
+        {
+          "ru": "Хорошо бы получить ответ до конца недели.",
+          "pt": "Seria bom receber a resposta até o fim da semana."
+        }
+      ],
+      "pitfalls": [
+        "Usar «я хочу» em contexto profissional: soa exigente. O padrão é я хотел бы.",
+        "Escrever «чтобы вы пришлёте»: чтобы contém бы e por isso exige passado."
+      ]
+    },
+    {
+      "title": "Aspecto no infinitivo: os verbos que só aceitam um",
+      "paragraphs": [
+        "Alguns verbos impõem o aspecto do infinitivo que vem depois deles, e não há escolha. Grupo 1 — só IMPERFECTIVO: начать/начинать, стать, продолжать, кончить/кончать, перестать, привыкнуть. Он начал работать (nunca «начал поработать»). Она перестала курить. A lógica é semântica: esses verbos descrevem uma fase de um processo, e processo é imperfectivo por definição.",
+        "Grupo 2 — normalmente PERFECTIVO: успеть (conseguir a tempo), забыть, удаться, суметь, решить (decidir). Я не успел закончить отчёт. Он забыл отправить резюме. Aqui o foco é o resultado alcançado ou não alcançado, e resultado pede perfectivo.",
+        "Grupo 3 — o contraste que mais vale ouro. Com надо/нужно, o perfectivo indica uma ação única com resultado (Надо отправить резюме сегодня) e o imperfectivo indica hábito ou processo (Надо регулярно проверять почту). Mas na NEGAÇÃO a regra muda: не надо/не нужно + IMPERFECTIVO é proibição ou desnecessidade (Не надо звонить ему — não precisa ligar). E o par mais fino de todos é нельзя: нельзя + IMPERFECTIVO significa «é proibido» (Здесь нельзя курить), enquanto нельзя + PERFECTIVO significa «é impossível» (Эту дверь нельзя открыть — não dá para abrir). Duas frases idênticas em português, dois sentidos opostos em russo."
+      ],
+      "audio_script": "Terceira parte: o aspecto do infinitivo. Existem verbos que IMPÕEM o aspecto do infinitivo que vem depois deles. Não há escolha, não há estilo: é obrigatório. Vamos aos três grupos. Grupo um: só aceitam IMPERFECTIVO. Начать e начинать. Стать. Продолжать. Кончить e кончать. Перестать. Привыкнуть. Он начал работать. Nunca начал поработать. Она перестала курить. Он продолжает искать работу. E há uma lógica por trás disso, que ajuda a não decorar: todos esses verbos descrevem uma FASE de um processo — o começo, o meio, o fim. E processo, por definição, é imperfectivo. Faz sentido. Grupo dois: normalmente PERFECTIVO. Успеть, conseguir a tempo. Забыть. Удаться. Суметь. Решить, no sentido de decidir. Я не успел закончить отчёт. Não consegui terminar o relatório a tempo. Он забыл отправить резюме. Ele esqueceu de enviar o currículo. Aqui o foco é o resultado, alcançado ou não alcançado. E resultado pede perfectivo. Grupo três, e este é o contraste que mais vale ouro. Preste bastante atenção. Com надо e нужно, o perfectivo indica uma ação única com resultado. Надо отправить резюме сегодня. Preciso enviar o currículo hoje. E o imperfectivo indica hábito ou processo. Надо регулярно проверять почту. É preciso verificar o e-mail regularmente. Mas na NEGAÇÃO a regra muda. Не надо e не нужно pedem IMPERFECTIVO, e significam proibição ou desnecessidade. Не надо звонить ему. Não precisa ligar para ele. E agora o par mais fino de todo o russo, que vale a unidade inteira. É o нельзя. Нельзя mais IMPERFECTIVO significa «é PROIBIDO». Здесь нельзя курить. Aqui é proibido fumar. Нельзя mais PERFECTIVO significa «é IMPOSSÍVEL». Эту дверь нельзя открыть. Essa porta não dá para abrir. Ninguém proibiu — ela simplesmente não abre. Duas frases que em português seriam quase idênticas. Em russo, dois sentidos opostos, e a única diferença entre eles é o aspecto do infinitivo.",
+      "examples": [
+        {
+          "ru": "Он начал искать новую работу ещё в прошлом году.",
+          "pt": "Ele começou a procurar um novo emprego já no ano passado.",
+          "note": "начать só aceita imperfectivo: искать."
+        },
+        {
+          "ru": "Я не успел отправить резюме до дедлайна.",
+          "pt": "Não consegui enviar o currículo antes do prazo.",
+          "note": "успеть pede perfectivo: отправить."
+        },
+        {
+          "ru": "Здесь нельзя курить.",
+          "pt": "Aqui é proibido fumar.",
+          "note": "нельзя + imperfectivo = proibição."
+        },
+        {
+          "ru": "Эту дверь нельзя открыть — замок сломан.",
+          "pt": "Essa porta não dá para abrir — a fechadura está quebrada.",
+          "note": "нельзя + perfectivo = impossibilidade física."
+        }
+      ],
+      "pitfalls": [
+        "Dizer «начал поработать»: начать só aceita infinitivo imperfectivo.",
+        "Usar нельзя + perfectivo para proibir: «здесь нельзя закурить» significaria «não dá para acender aqui».",
+        "Usar perfectivo depois de не надо: a negação pede imperfectivo."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Condicionais e aspecto no infinitivo",
+    "columns": [
+      "Construção",
+      "Forma exigida",
+      "Exemplo",
+      "Sentido"
+    ],
+    "rows": [
+      [
+        "если (real)",
+        "presente / futuro",
+        "Если будет время, я приду",
+        "Condição possível"
+      ],
+      [
+        "если бы (irreal)",
+        "бы + passado nas duas orações",
+        "Если бы было время, я бы пришёл",
+        "Hipótese contrária ao fato"
+      ],
+      [
+        "Я хотел бы / Не могли бы вы",
+        "бы + passado",
+        "Я хотел бы уточнить",
+        "Polidez, registro profissional"
+      ],
+      [
+        "чтобы (= что + бы)",
+        "+ passado (sujeito diferente)",
+        "Я хочу, чтобы вы прислали отчёт",
+        "Desejo sobre outra pessoa"
+      ],
+      [
+        "начать · продолжать · перестать",
+        "só IMPERFECTIVO",
+        "начал работать",
+        "Fase de um processo"
+      ],
+      [
+        "успеть · забыть · удаться",
+        "normalmente PERFECTIVO",
+        "не успел закончить",
+        "Resultado alcançado ou não"
+      ],
+      [
+        "надо / нужно",
+        "perfectivo = ação única",
+        "надо отправить сегодня",
+        "Resultado pontual"
+      ],
+      [
+        "не надо / не нужно",
+        "IMPERFECTIVO",
+        "не надо звонить",
+        "Proibição / desnecessidade"
+      ],
+      [
+        "нельзя + imperfectivo",
+        "proibição",
+        "здесь нельзя курить",
+        "É proibido"
+      ],
+      [
+        "нельзя + perfectivo",
+        "impossibilidade",
+        "дверь нельзя открыть",
+        "Não é possível"
+      ]
+    ],
+    "note": "бы é invariável e SEMPRE acompanha passado — nunca presente nem futuro, em nenhuma construção."
+  },
+  "reference": [
+    {
+      "construction": "если бы … , … бы",
+      "question": "при каком условии?",
+      "case": "—",
+      "meaning": "se … (irreal)",
+      "example": "если бы я знал, я бы сказал"
+    },
+    {
+      "construction": "Не могли бы вы …?",
+      "question": "—",
+      "case": "—",
+      "meaning": "o senhor poderia…? (pedido formal)",
+      "example": "не могли бы вы прислать документы?"
+    },
+    {
+      "construction": "успевать / успеть",
+      "question": "+ инфинитив совершенного вида",
+      "case": "—",
+      "meaning": "conseguir a tempo",
+      "example": "успеть подготовиться к собеседованию"
+    },
+    {
+      "construction": "устраиваться / устроиться на работу",
+      "question": "куда? кем?",
+      "case": "ВИН. + ТВОР.",
+      "meaning": "conseguir emprego (como)",
+      "example": "устроиться на работу инженером"
+    },
+    {
+      "construction": "увольняться / уволиться с",
+      "question": "с чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "demitir-se de",
+      "example": "уволиться с прежней работы"
+    },
+    {
+      "construction": "нельзя + вид глагола",
+      "question": "—",
+      "case": "—",
+      "meaning": "proibido (impf.) × impossível (perf.)",
+      "example": "нельзя курить × нельзя открыть"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u18-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "бы",
+      "back": "бы é invariável e SEMPRE vem com passado — nunca com presente ou futuro",
+      "explanation": "Vale nas condicionais, nos pedidos e em чтобы (que é что + бы).",
+      "tags": [
+        "условное наклонение",
+        "бы",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u18-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "если × если бы",
+      "back": "если + futuro = condição real · если бы + passado = condição irreal",
+      "explanation": "Если будет время, приду × Если бы было время, я бы пришёл.",
+      "tags": [
+        "условное наклонение",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u18-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "начать / продолжать / перестать",
+      "back": "só aceitam infinitivo IMPERFECTIVO",
+      "explanation": "начал работать, продолжает искать, перестала курить. Nunca perfectivo.",
+      "tags": [
+        "aspecto",
+        "infinitivo",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u18-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 3,
+      "front": "нельзя курить × нельзя открыть",
+      "back": "нельзя + impf = proibido · нельзя + perf = impossível",
+      "explanation": "Здесь нельзя курить (proibição) × Эту дверь нельзя открыть (impossibilidade).",
+      "tags": [
+        "aspecto",
+        "нельзя",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u18-e05",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 1,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Если ___ подходящая вакансия, я сразу отправлю резюме.",
+      "options": [
+        "появится",
+        "появилась бы",
+        "появится бы",
+        "появлялась"
+      ],
+      "answer": "появится",
+      "explanation": "Condição real: если + futuro, e a principal também no futuro (отправлю). O português usaria futuro do subjuntivo («se aparecer»), mas o russo não tem subjuntivo.",
+      "tags": [
+        "условное наклонение",
+        "condição real",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u18-e06",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Если бы у меня ___ больше опыта, меня бы взяли на эту должность.",
+      "options": [
+        "было",
+        "будет",
+        "есть",
+        "быть"
+      ],
+      "answer": "было",
+      "explanation": "если бы exige passado obrigatoriamente: было. E a oração principal repete o бы com passado: меня бы взяли.",
+      "tags": [
+        "условное наклонение",
+        "condição irreal",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u18-e07",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase constrói corretamente a condição irreal?",
+      "options": [
+        "Если бы я знал об этой вакансии раньше, я бы обязательно попробовал.",
+        "Если бы я буду знать об этой вакансии раньше, я обязательно попробую.",
+        "Если бы я знал об этой вакансии раньше, я обязательно попробовал.",
+        "Если я бы знаю об этой вакансии раньше, я бы попробовал."
+      ],
+      "answer": "Если бы я знал об этой вакансии раньше, я бы обязательно попробовал.",
+      "explanation": "Três exigências: бы com passado nas duas orações, e бы presente também na principal. A opção 3 esquece o бы da principal; as outras duas combinam бы com futuro ou presente, o que é impossível.",
+      "tags": [
+        "условное наклонение",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u18-e08",
+      "type": "choice",
+      "stage": "register",
+      "difficulty": 2,
+      "instruction": "Escolha a versão adequada a um e-mail profissional.",
+      "prompt": "Você quer pedir a descrição da vaga ao recrutador.",
+      "options": [
+        "Не могли бы вы прислать описание вакансии?",
+        "Пришлите описание вакансии.",
+        "Я хочу описание вакансии.",
+        "Вы должны прислать описание вакансии."
+      ],
+      "answer": "Не могли бы вы прислать описание вакансии?",
+      "explanation": "Не могли бы вы + infinitivo é a fórmula padrão de pedido cortês. As demais soam como ordem ou exigência — corretas gramaticalmente, inadequadas ao registro.",
+      "tags": [
+        "бы",
+        "registro",
+        "polidez"
+      ]
+    },
+    {
+      "id": "u18-e09",
+      "type": "choice",
+      "stage": "register",
+      "difficulty": 2,
+      "instruction": "Escolha a versão mais adequada a uma entrevista.",
+      "prompt": "Você quer dizer que gostaria de discutir as condições de trabalho.",
+      "options": [
+        "Я хотел бы обсудить условия работы.",
+        "Я хочу обсудить условия работы.",
+        "Обсудим условия работы.",
+        "Мне надо обсудить условия работы."
+      ],
+      "answer": "Я хотел бы обсудить условия работы.",
+      "explanation": "хотел бы marca o registro profissional. «я хочу» não está errado, mas soa exigente numa entrevista; as outras duas são diretas demais para quem é candidato.",
+      "tags": [
+        "бы",
+        "registro",
+        "polidez"
+      ]
+    },
+    {
+      "id": "u18-e10",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Начальник хочет, чтобы мы ___ отчёт до пятницы.",
+      "options": [
+        "закончили",
+        "закончим",
+        "закончить",
+        "заканчиваем"
+      ],
+      "answer": "закончили",
+      "explanation": "чтобы contém бы e, com sujeito diferente do principal, exige passado: чтобы мы закончили. Nem futuro nem infinitivo funcionam aqui.",
+      "tags": [
+        "чтобы",
+        "бы",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u18-e11",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 1,
+      "instruction": "Escolha o infinitivo correto.",
+      "prompt": "После университета он начал ___ работу.",
+      "options": [
+        "искать",
+        "найти",
+        "поискать",
+        "находить"
+      ],
+      "answer": "искать",
+      "explanation": "начать só aceita infinitivo imperfectivo. «найти» é perfectivo e não pode vir depois de начать em nenhuma variante.",
+      "tags": [
+        "aspecto",
+        "infinitivo",
+        "начать"
+      ]
+    },
+    {
+      "id": "u18-e12",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "instruction": "Escolha o infinitivo correto.",
+      "prompt": "Я не успел ___ резюме до конца дня.",
+      "options": [
+        "отправить",
+        "отправлять",
+        "посылать",
+        "отправляться"
+      ],
+      "answer": "отправить",
+      "explanation": "успеть foca o resultado (conseguir ou não conseguir concluir) e por isso pede perfectivo: отправить.",
+      "tags": [
+        "aspecto",
+        "infinitivo",
+        "успеть"
+      ]
+    },
+    {
+      "id": "u18-e13",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "instruction": "Escolha o infinitivo correto.",
+      "prompt": "Не надо ___ ему сегодня — он на собеседовании.",
+      "options": [
+        "звонить",
+        "позвонить",
+        "созвониться",
+        "дозвониться"
+      ],
+      "answer": "звонить",
+      "explanation": "A negação не надо / не нужно exige imperfectivo. Na afirmativa seria o contrário: Надо позвонить ему сегодня (ação única com resultado).",
+      "tags": [
+        "aspecto",
+        "infinitivo",
+        "negação"
+      ]
+    },
+    {
+      "id": "u18-e14",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 3,
+      "instruction": "Escolha a frase que significa «é proibido».",
+      "prompt": "Numa placa de escritório, para proibir fumar:",
+      "options": [
+        "Здесь нельзя курить.",
+        "Здесь нельзя закурить.",
+        "Здесь нельзя покурить.",
+        "Здесь нельзя выкурить."
+      ],
+      "answer": "Здесь нельзя курить.",
+      "explanation": "нельзя + imperfectivo = proibição. As três outras opções são perfectivas e significariam «não é possível acender/fumar aqui» — impossibilidade física, não proibição.",
+      "tags": [
+        "aspecto",
+        "нельзя",
+        "significado"
+      ]
+    },
+    {
+      "id": "u18-e15",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Этот файл нельзя открыть: он повреждён.»",
+      "options": [
+        "Esse arquivo não pode ser aberto: está corrompido.",
+        "É proibido abrir esse arquivo: ele é confidencial.",
+        "Não se deve abrir esse arquivo com frequência.",
+        "Esse arquivo abre, mas não deve ser aberto."
+      ],
+      "answer": "Esse arquivo não pode ser aberto: está corrompido.",
+      "explanation": "нельзя + perfectivo (открыть) = impossibilidade. Se fosse proibição, seria нельзя открывать. O contexto («он повреждён») confirma a leitura de impossibilidade.",
+      "tags": [
+        "aspecto",
+        "нельзя",
+        "significado"
+      ]
+    },
+    {
+      "id": "u18-e16",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Надо ___ отчёт сегодня, но вообще надо ___ почту каждый день.",
+      "options": [
+        "отправить … проверять",
+        "отправлять … проверить",
+        "отправить … проверить",
+        "отправлять … проверять"
+      ],
+      "answer": "отправить … проверять",
+      "explanation": "«сегодня» marca ação única com resultado → perfectivo (отправить). «каждый день» marca hábito → imperfectivo (проверять). Надо aceita os dois: quem decide é o advérbio.",
+      "tags": [
+        "aspecto",
+        "infinitivo",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u18-e17",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Он ___ прежней работы и ___ в международную компанию.",
+      "options": [
+        "уволился с … устроился",
+        "уволился из … устроился",
+        "уволился от … устроился",
+        "уволил с … устроил"
+      ],
+      "answer": "уволился с … устроился",
+      "explanation": "увольняться С работы (родительный, porque o par de на работу é с работы) e устраиваться НА работу / В компанию (винительный). Os dois são verbos em -ся: nenhum aceita objeto direto.",
+      "tags": [
+        "увольняться с",
+        "устраиваться на",
+        "regência"
+      ]
+    },
+    {
+      "id": "u18-e18",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase escolhe corretamente os aspectos no infinitivo?",
+      "options": [
+        "Он перестал искать работу, потому что не сумел пройти ни одного собеседования.",
+        "Он перестал найти работу, потому что не сумел проходить ни одного собеседования.",
+        "Он перестал искать работу, потому что не сумел проходить ни одного собеседования.",
+        "Он перестал найти работу, потому что не сумел пройти ни одного собеседования."
+      ],
+      "answer": "Он перестал искать работу, потому что не сумел пройти ни одного собеседования.",
+      "explanation": "перестать exige imperfectivo (искать); суметь foca o resultado e exige perfectivo (пройти). Cada verbo impõe o seu aspecto, independentemente do outro.",
+      "tags": [
+        "aspecto",
+        "infinitivo",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u18-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Мне двадцать девять лет, и я уже дважды менял профессию. Если бы пять лет назад мне сказали, что я буду работать программистом, я бы не поверил. Тогда я только начал изучать язык программирования по вечерам, после основной работы. Через год я успел собрать небольшое портфолио и уволился с прежней работы. Было страшно: если бы у меня не было накоплений, я бы, наверное, не решился. Сейчас я советую всем: не надо ждать идеального момента, но и нельзя увольняться, не имея никакого плана.",
+      "prompt": "O que o autor recomenda a quem quer mudar de profissão?",
+      "options": [
+        "Não esperar o momento ideal, mas também não pedir demissão sem nenhum plano.",
+        "Esperar o momento ideal antes de qualquer decisão.",
+        "Pedir demissão o quanto antes e depois pensar no plano.",
+        "Nunca mudar de profissão depois dos trinta."
+      ],
+      "answer": "Não esperar o momento ideal, mas também não pedir demissão sem nenhum plano.",
+      "explanation": "«не надо ждать идеального момента, но и нельзя увольняться, не имея никакого плана» — не надо + imperfectivo (ждать) e нельзя + imperfectivo (увольняться), os dois com valor de proibição/conselho.",
+      "tags": [
+        "условное наклонение",
+        "aspecto",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u18-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Если бы пять лет назад мне сказали, что я буду работать программистом, я бы не поверил. Тогда я только начал изучать язык программирования по вечерам. Через год я успел собрать небольшое портфолио. Было страшно: если бы у меня не было накоплений, я бы, наверное, не решился.",
+      "prompt": "Por que o texto usa «начал изучать» e «успел собрать» com aspectos diferentes?",
+      "options": [
+        "начать só aceita imperfectivo; успеть foca o resultado e pede perfectivo.",
+        "Porque um verbo está no passado e o outro no futuro.",
+        "Porque a escolha do aspecto no infinitivo é livre.",
+        "Porque изучать não tem par perfectivo."
+      ],
+      "answer": "начать só aceita imperfectivo; успеть foca o resultado e pede perfectivo.",
+      "explanation": "É o contraste entre os grupos 1 e 2 da tabela: verbos de fase impõem imperfectivo, verbos de resultado impõem perfectivo.",
+      "tags": [
+        "aspecto",
+        "infinitivo",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u18-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Не могли бы вы прислать мне описание вакансии? Я хотел бы уточнить условия до собеседования.",
+      "prompt": "Qual é o registro do áudio?",
+      "options": [
+        "Um pedido formal e cortês, típico de e-mail profissional.",
+        "Uma ordem direta de um chefe a um subordinado.",
+        "Uma conversa informal entre amigos.",
+        "Uma reclamação sobre a vaga."
+      ],
+      "answer": "Um pedido formal e cortês, típico de e-mail profissional.",
+      "explanation": "«Не могли бы вы…» e «Я хотел бы…» são as duas fórmulas de polidez com бы. Sem elas, as mesmas frases soariam exigentes.",
+      "tags": [
+        "бы",
+        "registro",
+        "audição"
+      ]
+    },
+    {
+      "id": "u18-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Если бы компания предложила лучшие условия, он бы не уволился так быстро.",
+      "prompt": "O que realmente aconteceu, segundo o áudio?",
+      "options": [
+        "A empresa não ofereceu boas condições e ele pediu demissão rapidamente.",
+        "A empresa ofereceu boas condições e ele ficou.",
+        "Ele ainda está decidindo se sai da empresa.",
+        "A empresa vai oferecer melhores condições no futuro."
+      ],
+      "answer": "A empresa não ofereceu boas condições e ele pediu demissão rapidamente.",
+      "explanation": "A condição irreal (если бы + passado) descreve o CONTRÁRIO do que aconteceu: como a frase diz «se tivesse oferecido», a realidade é que não ofereceu.",
+      "tags": [
+        "условное наклонение",
+        "audição",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u18-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com condição irreal.",
+      "tokens": [
+        "Если",
+        "бы",
+        "я",
+        "знал",
+        "об",
+        "этой",
+        "вакансии",
+        "я",
+        "бы",
+        "отправил",
+        "резюме",
+        "вчера"
+      ],
+      "answer": "Если бы я знал об этой вакансии я бы отправил резюме вчера",
+      "explanation": "бы aparece duas vezes — uma na condição, outra na consequência — e os dois verbos ficam no passado.",
+      "tags": [
+        "условное наклонение",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u18-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Relacione a construção ao seu sentido.",
+      "pairs": [
+        {
+          "left": "Здесь нельзя курить",
+          "right": "é proibido fumar aqui"
+        },
+        {
+          "left": "Эту дверь нельзя открыть",
+          "right": "essa porta não dá para abrir"
+        },
+        {
+          "left": "Не надо звонить ему",
+          "right": "não precisa ligar para ele"
+        },
+        {
+          "left": "Надо позвонить ему сегодня",
+          "right": "é preciso ligar para ele hoje"
+        },
+        {
+          "left": "Я не успел закончить",
+          "right": "não consegui terminar a tempo"
+        },
+        {
+          "left": "Я начал заканчивать",
+          "right": "comecei a concluir (processo em curso)"
+        }
+      ],
+      "explanation": "Seis pares em que só o aspecto do infinitivo (ou a negação) decide o sentido.",
+      "tags": [
+        "aspecto",
+        "infinitivo",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u18-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Use pelo menos uma condição irreal com бы e dois infinitivos com aspecto imposto.",
+      "prompt": "«Если бы вы могли начать карьеру заново, что бы вы изменили?» (Se você pudesse recomeçar a carreira, o que mudaria?)\n\nUnidades: если бы … бы · я хотел бы · начать + инфинитив · успеть + инфинитив · не надо · устроиться на работу",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "условное наклонение",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

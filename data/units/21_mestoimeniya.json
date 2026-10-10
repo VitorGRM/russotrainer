@@ -1,0 +1,764 @@
+{
+  "id": "u21_mestoimeniya",
+  "order": 21,
+  "title": "Pronomes indefinidos, negativos e enfáticos",
+  "description": "Политика и общество: -то × -нибудь, a dupla negação obrigatória e a diferença entre сам, самый e себя.",
+  "estimated_minutes": 32,
+  "objectives": [
+    "escolher entre -то e -нибудь pela existência do referente",
+    "construir a dupla negação com ни-",
+    "separar сам, самый, себя e свой"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 8 «Политика и общество» (Отрицательные наречия, Порядок слов) · Кузьмина, Образование вопросительных, отрицательных и неопределённых местоимений · Местоимения САМ, СЕБЯ, САМЫЙ, ВЕСЬ",
+  "grammar": [
+    {
+      "title": "-то × -нибудь: existe ou não existe?",
+      "paragraphs": [
+        "As partículas -то e -нибудь transformam palavras interrogativas em indefinidas: кто-то / кто-нибудь, что-то / что-нибудь, где-то / где-нибудь, когда-то / когда-нибудь, какой-то / какой-нибудь. A escolha entre elas não é estilística: ela informa se o referente existe ou não.",
+        "-то significa que a coisa ou pessoa EXISTE, mas o falante não sabe qual é. Кто-то звонил — alguém ligou (a ligação aconteceu, não sei quem foi). Он что-то сказал — ele disse alguma coisa (falou de fato). Por isso -то aparece quase sempre com verbos no passado e em afirmações sobre fatos já ocorridos.",
+        "-нибудь significa que a existência é hipotética, desejada ou irrelevante — qualquer um serve. Позвони кому-нибудь (ligue para alguém, tanto faz quem). Ты что-нибудь знаешь об этом? (você sabe alguma coisa?). Если кто-нибудь позвонит, скажи мне. Por isso -нибудь aparece com imperativo, futuro, perguntas e condicionais. O teste é direto: «eu sei que aconteceu, só não sei o quê» → -то. «Ainda não aconteceu, ou tanto faz» → -нибудь."
+      ],
+      "audio_script": "Pronomes indefinidos. E aqui existe uma distinção que o português simplesmente não faz, então vale entender bem, porque uma vez entendida ela é fácil. As partículas то e нибудь transformam palavras interrogativas em indefinidas. Кто-то e кто-нибудь. Что-то e что-нибудь. Где-то e где-нибудь. Когда-то e когда-нибудь. Какой-то e какой-нибудь. Em português, todas essas viram «alguém», «alguma coisa», «em algum lugar». Uma palavra só para duas russas. E a escolha entre elas não é estilística. Ela informa se o referente EXISTE ou não. То significa que a coisa ou a pessoa existe, mas o falante não sabe qual é. Кто-то звонил. Alguém ligou. A ligação aconteceu de fato; eu só não sei quem foi. Он что-то сказал. Ele disse alguma coisa. Ele falou mesmo; eu não ouvi o quê. Por isso то aparece quase sempre com verbos no passado, e em afirmações sobre fatos já ocorridos. Нибудь significa que a existência é hipotética, desejada, ou irrelevante. Qualquer um serve. Позвони кому-нибудь. Ligue para alguém — tanto faz quem. Ты что-нибудь знаешь об этом? Você sabe alguma coisa sobre isso? Если кто-нибудь позвонит, скажи мне. Se alguém ligar, me avise. Por isso нибудь aparece com imperativo, futuro, perguntas e condicionais. O teste é direto e resolve praticamente todos os casos. Pergunte a si mesmo: eu sei que aconteceu, só não sei o quê? Então то. Ainda não aconteceu, ou tanto faz qual seja? Então нибудь. Um exemplo final que mostra a diferença com clareza total. Он женился на ком-то из нашей группы. Ele se casou com alguém do nosso grupo — o casamento existe, eu não sei com quem. Он хочет жениться на ком-нибудь из нашей группы. Ele quer se casar com alguém do nosso grupo — qualquer uma serve. Duas frases muito diferentes, e a única diferença entre elas são três letras.",
+      "examples": [
+        {
+          "ru": "Кто-то оставил документы на столе.",
+          "pt": "Alguém deixou os documentos na mesa.",
+          "note": "-то: o fato ocorreu, o autor é desconhecido."
+        },
+        {
+          "ru": "Спроси у кого-нибудь из коллег.",
+          "pt": "Pergunte a algum dos colegas.",
+          "note": "-нибудь: qualquer um serve."
+        },
+        {
+          "ru": "Он когда-то работал в министерстве.",
+          "pt": "Ele trabalhou um dia no ministério.",
+          "note": "когда-то = num momento passado indeterminado."
+        },
+        {
+          "ru": "Вы когда-нибудь участвовали в выборах?",
+          "pt": "Você já participou de eleições alguma vez?",
+          "note": "когда-нибудь = em algum momento qualquer, típico de pergunta."
+        }
+      ],
+      "pitfalls": [
+        "Usar -то em perguntas: «Ты что-то знаешь?» pressupõe que você sabe; o normal é что-нибудь.",
+        "Usar -нибудь para relatar um fato passado: «кто-нибудь звонил» soaria como «ligou alguém, qualquer um?»."
+      ]
+    },
+    {
+      "title": "Negação: em russo, quanto mais, melhor",
+      "paragraphs": [
+        "Os pronomes e advérbios negativos formam-se com ни-: никто, ничто/ничего, никогда, нигде, никуда, никакой, ничей, никак. E aqui está a regra que contraria toda a lógica das línguas românicas escolarizadas: a dupla negação é OBRIGATÓRIA. O verbo tem que vir com не, mesmo que já haja um ни-. Я никогда не был в Москве. Никто ничего не сказал — três negações numa frase de três palavras, e é o russo correto.",
+        "Quando há preposição, ela entra NO MEIO da palavra negativa, que se separa em duas: ни у кого нет, ни с кем не говорил, ни о чём не думаю, ни к кому не обращался. Essa separação é obrigatória e é um dos traços mais visíveis de quem escreve russo bem. Escrever «у никого» é impossível.",
+        "Existe uma segunda série, com не- tônico, que significa algo completamente diferente: некого, нечего, негде, некуда, некогда, не с кем. Ela não nega — ela indica AUSÊNCIA de possibilidade, e a construção é impessoal, com o sujeito lógico no дательный падеж e o verbo no infinitivo. Мне некогда — não tenho tempo. Ему не с кем поговорить — ele não tem com quem conversar. Нам некуда идти — não temos para onde ir. Compare com a série ни-: Он никогда не отдыхает (ele nunca descansa) × Ему некогда отдыхать (ele não tem tempo para descansar)."
+      ],
+      "audio_script": "Negação. E aqui o russo faz o oposto do que a escola ensina em português. Os pronomes e advérbios negativos formam-se com o prefixo ни. Никто, ninguém. Ничто e ничего, nada. Никогда, nunca. Нигде, em lugar nenhum. Никуда, para lugar nenhum. Никакой, nenhum. Ничей, de ninguém. Никак, de jeito nenhum. E agora a regra central: a dupla negação é OBRIGATÓRIA. O verbo tem que vir com не, mesmo que já exista um ни na frase. Я никогда не был в Москве. Literalmente: eu nunca não estive em Moscou. Никто ничего не сказал. Ninguém nada não disse. Três negações numa frase de três palavras, e isso é o russo correto e obrigatório. Se você tirar o не, a frase fica errada. Agora um detalhe que separa quem escreve russo bem de quem escreve mais ou menos. Quando há preposição, ela entra NO MEIO da palavra negativa, que se parte em duas. Ни у кого нет. Ни с кем не говорил. Ни о чём не думаю. Ни к кому не обращался. Escrever «у никого» é impossível em russo. A preposição sempre entra no meio. Existe ainda uma segunda série, com не tônico, e ela significa uma coisa completamente diferente. Некого, нечего, негде, некуда, некогда, не с кем. Essa série não nega. Ela indica AUSÊNCIA DE POSSIBILIDADE. E a construção é impessoal: o sujeito lógico vai ao dativo, e o verbo fica no infinitivo. Мне некогда. Não tenho tempo. Ему не с кем поговорить. Ele não tem com quem conversar. Нам некуда идти. Não temos para onde ir. Compare as duas séries lado a lado, porque a diferença é fina e importante: Он никогда не отдыхает. Ele nunca descansa — é uma escolha dele, uma constatação. Ему некогда отдыхать. Ele não tem tempo para descansar — não é escolha, é falta de possibilidade. Ни nega um fato. Не tônico registra que a possibilidade não existe.",
+      "examples": [
+        {
+          "ru": "Никто ничего не знал об этом решении.",
+          "pt": "Ninguém sabia nada sobre essa decisão.",
+          "note": "Dupla (aqui tripla) negação obrigatória."
+        },
+        {
+          "ru": "Он ни с кем не обсуждал этот вопрос.",
+          "pt": "Ele não discutiu essa questão com ninguém.",
+          "note": "A preposição entra no meio: ни С кем."
+        },
+        {
+          "ru": "У нас ни у кого нет права голоса.",
+          "pt": "Nenhum de nós tem direito a voto.",
+          "note": "ни у кого нет: negação de posse."
+        },
+        {
+          "ru": "Ему некогда читать новости.",
+          "pt": "Ele não tem tempo de ler as notícias.",
+          "note": "Série не- tônica: ausência de possibilidade, sujeito no dativo."
+        }
+      ],
+      "pitfalls": [
+        "Omitir o не do verbo: «я никогда был в Москве» está errado.",
+        "Escrever «у никого» ou «с никем»: a preposição vai no meio — ни у кого, ни с кем.",
+        "Confundir никогда (nunca) com некогда (não há tempo)."
+      ]
+    },
+    {
+      "title": "сам, самый, себя e свой",
+      "paragraphs": [
+        "Quatro palavras parecidas com funções distintas. САМ significa «em pessoa, ele próprio» e concorda com o substantivo: Президент сам подписал документ (o próprio presidente assinou). САМЫЙ forma o superlativo (самый важный вопрос) e também aparece em тот же самый (o mesmo exato). Não são intercambiáveis: сам enfatiza quem age, самый classifica.",
+        "СЕБЯ é o reflexivo universal, e é uma economia enorme: uma só palavra serve para todas as pessoas. Я думаю о себе, ты думаешь о себе, они думают о себе. Ele não tem nominativo (a forma começa em себя, себе, собой) porque nunca é sujeito. Combinações fixas úteis: чувствовать себя (sentir-se), вести себя (comportar-se), брать на себя ответственность (assumir a responsabilidade), у себя (na própria casa/sala).",
+        "СВОЙ significa «próprio, do sujeito da frase» e evita ambiguidades que o português não resolve. Compare: Он взял его документы (pegou os documentos DE OUTRA PESSOA) × Он взял свои документы (pegou os PRÓPRIOS documentos). Em português «ele pegou os documentos dele» é ambíguo; em russo, nunca. Regra: se o possuidor é o mesmo que o sujeito da oração, use свой. E свой nunca aparece com sujeito de 1ª ou 2ª pessoa no nominativo — não se diz «свой я», mas «я и мой брат»."
+      ],
+      "audio_script": "Terceira parte: quatro palavras parecidas que fazem coisas diferentes. Сам, самый, себя e свой. Começando por сам. Ele significa «em pessoa», «ele próprio», e concorda com o substantivo. Президент сам подписал документ. O próprio presidente assinou o documento — não um assessor. Я сам это сделал. Eu mesmo fiz isso. Самый, com ы, é outra coisa: ele forma o superlativo. Самый важный вопрос. A questão mais importante. E aparece também na expressão тот же самый, que significa «exatamente o mesmo». Сам enfatiza QUEM age. Самый classifica. Não são intercambiáveis. Себя é o reflexivo universal, e ele é uma economia enorme de memória: uma palavra só serve para todas as pessoas gramaticais. Я думаю о себе. Ты думаешь о себе. Они думают о себе. Sempre себе. Ele não tem nominativo, porque nunca é sujeito. As formas começam em себя, себе, собой. E há combinações fixas muito úteis, que valem a pena guardar inteiras: Чувствовать себя, sentir-se. Вести себя, comportar-se. Брать на себя ответственность, assumir a responsabilidade. У себя, na própria casa ou sala. E finalmente свой, que significa «próprio, do sujeito da frase». Esta palavra resolve uma ambiguidade que o português simplesmente não resolve. Compare. Он взял его документы. Ele pegou os documentos DE OUTRA PESSOA. Он взял свои документы. Ele pegou os PRÓPRIOS documentos. Em português, «ele pegou os documentos dele» pode significar as duas coisas, e você precisa do contexto. Em russo, nunca. A escolha entre его e свой decide, e é obrigatória. A regra é simples: se o possuidor é o mesmo que o SUJEITO da oração, use свой. Um último detalhe: свой não aparece junto com sujeito de primeira ou segunda pessoa no nominativo. Não se diz «свой я». Diz-se «я и мой брат». O свой só entra quando ele modifica um complemento, não o sujeito.",
+      "examples": [
+        {
+          "ru": "Министр сам прокомментировал ситуацию.",
+          "pt": "O próprio ministro comentou a situação.",
+          "note": "сам = em pessoa."
+        },
+        {
+          "ru": "Это самый острый вопрос повестки дня.",
+          "pt": "Essa é a questão mais espinhosa da pauta.",
+          "note": "самый = superlativo."
+        },
+        {
+          "ru": "Он взял на себя ответственность за решение.",
+          "pt": "Ele assumiu a responsabilidade pela decisão.",
+          "note": "Expressão fixa com себя."
+        },
+        {
+          "ru": "Депутат защищал свои интересы, а не интересы избирателей.",
+          "pt": "O deputado defendia os próprios interesses, não os dos eleitores.",
+          "note": "свои = do sujeito da frase."
+        }
+      ],
+      "pitfalls": [
+        "Usar его em vez de свой quando o possuidor é o sujeito: muda o sentido da frase.",
+        "Trocar сам por самый: «самый президент подписал» seria agramatical aqui.",
+        "Procurar um nominativo para себя: ele não existe."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Pronomes indefinidos, negativos e enfáticos",
+    "columns": [
+      "Forma",
+      "Sentido",
+      "Contexto típico",
+      "Exemplo"
+    ],
+    "rows": [
+      [
+        "кто-то / что-то",
+        "existe, não sei qual",
+        "passado, afirmação",
+        "кто-то звонил"
+      ],
+      [
+        "кто-нибудь / что-нибудь",
+        "qualquer um / hipotético",
+        "imperativo, futuro, pergunta, condição",
+        "спроси кого-нибудь"
+      ],
+      [
+        "никто / ничего / никогда",
+        "negação (ни-)",
+        "sempre com не no verbo",
+        "никто ничего не сказал"
+      ],
+      [
+        "ни у кого / ни с кем",
+        "negação com preposição",
+        "preposição NO MEIO",
+        "он ни с кем не говорил"
+      ],
+      [
+        "некого / некогда / негде",
+        "ausência de possibilidade (не- tônico)",
+        "impessoal + дательный + infinitivo",
+        "ему некогда отдыхать"
+      ],
+      [
+        "сам",
+        "em pessoa, ele próprio",
+        "concorda com o substantivo",
+        "президент сам подписал"
+      ],
+      [
+        "самый",
+        "superlativo / o mesmo exato",
+        "самый + adjetivo",
+        "самый важный вопрос"
+      ],
+      [
+        "себя",
+        "reflexivo universal (sem nominativo)",
+        "todas as pessoas",
+        "чувствовать себя · вести себя"
+      ],
+      [
+        "свой",
+        "próprio, do sujeito da oração",
+        "desfaz a ambiguidade de «dele»",
+        "он взял свои документы"
+      ]
+    ],
+    "note": "Dupla negação é obrigatória em russo: ни- no pronome E не no verbo. Nunca escreva «у никого» — a preposição entra no meio: ни у кого."
+  },
+  "reference": [
+    {
+      "construction": "участвовать в",
+      "question": "в чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "participar de",
+      "example": "участвовать в выборах"
+    },
+    {
+      "construction": "голосовать за / против",
+      "question": "за кого? · против кого?",
+      "case": "ВИН. / РОД.",
+      "meaning": "votar a favor / contra",
+      "example": "голосовать за кандидата · против реформы"
+    },
+    {
+      "construction": "выступать за / против",
+      "question": "за что? · против чего?",
+      "case": "ВИН. / РОД.",
+      "meaning": "defender / opor-se a",
+      "example": "выступать против нового закона"
+    },
+    {
+      "construction": "брать на себя",
+      "question": "что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "assumir (responsabilidade)",
+      "example": "взять на себя ответственность"
+    },
+    {
+      "construction": "чувствовать себя",
+      "question": "как?",
+      "case": "—",
+      "meaning": "sentir-se (de certo modo)",
+      "example": "чувствовать себя уверенно"
+    },
+    {
+      "construction": "относиться к власти",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ter uma atitude em relação ao poder",
+      "example": "скептически относиться к власти"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u21-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "-то × -нибудь",
+      "back": "-то = existe, não sei qual · -нибудь = hipotético ou tanto faz",
+      "explanation": "Кто-то звонил (ligou de fato) × Позвони кому-нибудь (a qualquer um).",
+      "tags": [
+        "pronomes indefinidos",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u21-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "Dupla negação",
+      "back": "ни- no pronome E не no verbo — obrigatório",
+      "explanation": "Я никогда НЕ был в Москве. Sem o не a frase está errada.",
+      "tags": [
+        "negação",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u21-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 3,
+      "front": "никогда × некогда",
+      "back": "никогда = nunca · некогда = não há tempo (impessoal + дательный)",
+      "explanation": "Он никогда не отдыхает × Ему некогда отдыхать.",
+      "tags": [
+        "negação",
+        "не- tônico",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u21-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "его документы × свои документы",
+      "back": "его = de outra pessoa · свои = do próprio sujeito",
+      "explanation": "O russo desfaz uma ambiguidade que o português não resolve.",
+      "tags": [
+        "свой",
+        "pronomes",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u21-e05",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "___ уже сообщил об этом в новостях — я слышал вчера.",
+      "options": [
+        "Кто-то",
+        "Кто-нибудь",
+        "Никто",
+        "Некому"
+      ],
+      "answer": "Кто-то",
+      "explanation": "O fato aconteceu (o falante ouviu ontem), apenas o autor é desconhecido → -то. «Кто-нибудь» faria sentido só se a notícia ainda não tivesse sido dada.",
+      "tags": [
+        "pronomes indefinidos",
+        "-то",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u21-e06",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Если ___ спросит о результатах голосования, скажи, что их ещё нет.",
+      "options": [
+        "кто-нибудь",
+        "кто-то",
+        "никто",
+        "некто"
+      ],
+      "answer": "кто-нибудь",
+      "explanation": "Contexto condicional e futuro: a pessoa é hipotética e qualquer uma serve → -нибудь.",
+      "tags": [
+        "pronomes indefinidos",
+        "-нибудь",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u21-e07",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Он ___ сказал на собрании, но я не расслышал. Спроси у ___ из коллег.",
+      "options": [
+        "что-то … кого-нибудь",
+        "что-нибудь … кого-то",
+        "что-то … кого-то",
+        "что-нибудь … кого-нибудь"
+      ],
+      "answer": "что-то … кого-нибудь",
+      "explanation": "A fala aconteceu (só não foi ouvida) → что-то. O colega a consultar é qualquer um → кого-нибудь. As duas partículas na mesma frase, com funções opostas.",
+      "tags": [
+        "pronomes indefinidos",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u21-e08",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Вы когда-нибудь участвовали в выборах?»",
+      "options": [
+        "Você já participou de eleições alguma vez?",
+        "Você participou das eleições naquela época?",
+        "Você nunca participou de eleições.",
+        "Você vai participar das eleições um dia?"
+      ],
+      "answer": "Você já participou de eleições alguma vez?",
+      "explanation": "когда-нибудь em pergunta = «alguma vez na vida». когда-то, ao contrário, afirmaria um momento passado real: «он когда-то участвовал».",
+      "tags": [
+        "pronomes indefinidos",
+        "significado"
+      ]
+    },
+    {
+      "id": "u21-e09",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a frase correta.",
+      "prompt": "Como dizer «ninguém disse nada»?",
+      "options": [
+        "Никто ничего не сказал.",
+        "Никто ничего сказал.",
+        "Кто-то ничего не сказал.",
+        "Никто что-то не сказал."
+      ],
+      "answer": "Никто ничего не сказал.",
+      "explanation": "Dupla (aqui tripla) negação obrigatória: никто, ничего e не juntos. Retirar o не torna a frase agramatical.",
+      "tags": [
+        "negação",
+        "dupla negação",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u21-e10",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Он ___ не обсуждал этот законопроект.",
+      "options": [
+        "ни с кем",
+        "с никем",
+        "никем",
+        "ни кем"
+      ],
+      "answer": "ни с кем",
+      "explanation": "Com preposição, a palavra negativa se parte e a preposição entra no meio: ни С кем. «с никем» é impossível em russo.",
+      "tags": [
+        "negação",
+        "preposição",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u21-e11",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "В нашем отделе ___ нет доступа к этим документам.",
+      "options": [
+        "ни у кого",
+        "у никого",
+        "никого",
+        "ни кого"
+      ],
+      "answer": "ни у кого",
+      "explanation": "у + родительный na negação de posse, com a preposição inserida no meio da palavra negativa: ни У кого нет.",
+      "tags": [
+        "negação",
+        "preposição",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u21-e12",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Он очень занят: ему ___ следить за политикой.",
+      "options": [
+        "некогда",
+        "никогда",
+        "никогда не",
+        "не когда"
+      ],
+      "answer": "некогда",
+      "explanation": "A construção é impessoal (ему, dativo) + infinitivo → série не- tônica: некогда = «não há tempo». никогда significaria «nunca» e exigiria sujeito e verbo conjugado com не.",
+      "tags": [
+        "negação",
+        "не- tônico",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u21-e13",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Ему не с кем обсудить эту проблему.»",
+      "options": [
+        "Ele não tem com quem discutir esse problema.",
+        "Ele não quer discutir esse problema com ninguém.",
+        "Ele nunca discutiu esse problema.",
+        "Ninguém discute esse problema com ele."
+      ],
+      "answer": "Ele não tem com quem discutir esse problema.",
+      "explanation": "не с кем (com не tônico) indica ausência de possibilidade, não recusa. Se fosse recusa, seria «он ни с кем не хочет обсуждать».",
+      "tags": [
+        "negação",
+        "не- tônico",
+        "significado"
+      ]
+    },
+    {
+      "id": "u21-e14",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Министр ___ приехал на место аварии.",
+      "options": [
+        "сам",
+        "самый",
+        "себя",
+        "свой"
+      ],
+      "answer": "сам",
+      "explanation": "сам = «em pessoa», enfatizando que foi ele mesmo e não um representante. самый formaria superlativo e não cabe aqui.",
+      "tags": [
+        "сам",
+        "pronomes",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u21-e15",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Депутат ___ признал, что это ___ сложный вопрос повестки.",
+      "options": [
+        "сам … самый",
+        "самый … сам",
+        "сам … сам",
+        "самый … самый"
+      ],
+      "answer": "сам … самый",
+      "explanation": "сам enfatiza quem agiu (o próprio deputado); самый forma o superlativo (a questão mais difícil). As duas palavras na mesma frase, com funções distintas.",
+      "tags": [
+        "сам/самый",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u21-e16",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "После выборов губернатор взял ___ ответственность за реформу.",
+      "options": [
+        "на себя",
+        "на себе",
+        "на сам",
+        "на свой"
+      ],
+      "answer": "на себя",
+      "explanation": "брать / взять НА СЕБЯ ответственность é expressão fixa, com себя no винительный падеж. «на себе» (предложный) mudaria a construção.",
+      "tags": [
+        "себя",
+        "expressão fixa",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u21-e17",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Он взял его документы и ушёл.»",
+      "options": [
+        "Ele pegou os documentos de outra pessoa e foi embora.",
+        "Ele pegou os próprios documentos e foi embora.",
+        "Ele pegou os documentos e os deu a ele.",
+        "Ele levou os documentos dele mesmo para outro lugar."
+      ],
+      "answer": "Ele pegou os documentos de outra pessoa e foi embora.",
+      "explanation": "его indica que o possuidor NÃO é o sujeito da frase. Se fossem os próprios documentos, seria «свои документы». O português não faz essa distinção sem contexto.",
+      "tags": [
+        "свой",
+        "pronomes",
+        "significado"
+      ]
+    },
+    {
+      "id": "u21-e18",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase constrói corretamente a negação?",
+      "options": [
+        "Никто из депутатов ни с кем не обсуждал этот вопрос.",
+        "Никто из депутатов с никем обсуждал этот вопрос.",
+        "Кто-то из депутатов ни с кем не обсуждал этот вопрос.",
+        "Никто из депутатов ни с кем обсуждал этот вопрос."
+      ],
+      "answer": "Никто из депутатов ни с кем не обсуждал этот вопрос.",
+      "explanation": "Três exigências ao mesmo tempo: никто, ни с кем com a preposição no meio, e не no verbo. Faltar qualquer uma torna a frase incorreta.",
+      "tags": [
+        "negação",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u21-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "По результатам опроса, почти половина граждан скептически относится к политике: они считают, что от них ничего не зависит и что никто их не слушает. При этом, когда кто-то предлагает конкретный проект по благоустройству двора или района, люди охотно участвуют. Социологи объясняют это так: гражданам некогда следить за большой политикой, но они готовы брать на себя ответственность там, где сами видят результат. Если кто-нибудь спросит их о выборах, они пожмут плечами; если предложить убрать двор — придут.",
+      "prompt": "Segundo o texto, quando as pessoas participam de boa vontade?",
+      "options": [
+        "Quando alguém propõe um projeto concreto no próprio bairro.",
+        "Quando há eleições nacionais.",
+        "Quando os sociólogos as entrevistam.",
+        "Quando alguém as obriga a participar."
+      ],
+      "answer": "Quando alguém propõe um projeto concreto no próprio bairro.",
+      "explanation": "«когда кто-то предлагает конкретный проект… люди охотно участвуют» — кто-то porque a proposta é apresentada como fato real e recorrente.",
+      "tags": [
+        "pronomes",
+        "negação",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u21-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Они считают, что от них ничего не зависит и что никто их не слушает. Гражданам некогда следить за большой политикой. Если кто-нибудь спросит их о выборах, они пожмут плечами.",
+      "prompt": "Por que o texto usa «некогда» e não «никогда»?",
+      "options": [
+        "Porque a construção é impessoal e significa falta de tempo, não «nunca».",
+        "Porque «никогда» só se usa no passado.",
+        "Porque «некогда» é a forma formal de «никогда».",
+        "Porque há uma negação dupla na frase."
+      ],
+      "answer": "Porque a construção é impessoal e significa falta de tempo, não «nunca».",
+      "explanation": "«Гражданам некогда следить» tem sujeito lógico no дательный (гражданам) e verbo no infinitivo — marca da série не- tônica. Com никогда a frase seria «граждане никогда не следят».",
+      "tags": [
+        "negação",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u21-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Никто из членов комиссии ни с кем не обсуждал этот законопроект до голосования.",
+      "prompt": "O que foi dito no áudio?",
+      "options": [
+        "Nenhum membro da comissão discutiu esse projeto de lei com ninguém antes da votação.",
+        "Alguns membros da comissão discutiram o projeto entre si.",
+        "A comissão discutiu o projeto com todos antes da votação.",
+        "Ninguém votou o projeto de lei."
+      ],
+      "answer": "Nenhum membro da comissão discutiu esse projeto de lei com ninguém antes da votação.",
+      "explanation": "Tripla negação: никто, ни с кем e не обсуждал. Em português a tradução usa apenas duas negativas.",
+      "tags": [
+        "negação",
+        "audição",
+        "compreensão"
+      ]
+    },
+    {
+      "id": "u21-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Губернатор сам приехал на встречу и взял на себя ответственность за свои решения.",
+      "prompt": "O que o governador fez, segundo o áudio?",
+      "options": [
+        "Foi pessoalmente à reunião e assumiu a responsabilidade pelas próprias decisões.",
+        "Enviou um representante e culpou outras pessoas.",
+        "Foi à reunião mais importante do ano.",
+        "Assumiu a responsabilidade pelas decisões de outra pessoa."
+      ],
+      "answer": "Foi pessoalmente à reunião e assumiu a responsabilidade pelas próprias decisões.",
+      "explanation": "сам = em pessoa; взял на себя = assumiu; свои решения = as próprias decisões (не «его решения», que seriam de outra pessoa).",
+      "tags": [
+        "сам",
+        "себя",
+        "свой",
+        "audição"
+      ]
+    },
+    {
+      "id": "u21-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com dupla negação e preposição no meio.",
+      "tokens": [
+        "Он",
+        "ни",
+        "с",
+        "кем",
+        "не",
+        "говорил",
+        "о",
+        "своих",
+        "планах"
+      ],
+      "answer": "Он ни с кем не говорил о своих планах",
+      "explanation": "A preposição с entra no meio de ни…кем; o не do verbo é obrigatório; e свой marca que os planos são dele mesmo.",
+      "tags": [
+        "negação",
+        "свой",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u21-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Relacione a expressão ao significado.",
+      "pairs": [
+        {
+          "left": "Он никогда не отдыхает",
+          "right": "ele nunca descansa"
+        },
+        {
+          "left": "Ему некогда отдыхать",
+          "right": "ele não tem tempo para descansar"
+        },
+        {
+          "left": "Кто-то позвонил",
+          "right": "alguém ligou (aconteceu)"
+        },
+        {
+          "left": "Позвони кому-нибудь",
+          "right": "ligue para alguém (tanto faz)"
+        },
+        {
+          "left": "Он взял свои документы",
+          "right": "ele pegou os próprios documentos"
+        },
+        {
+          "left": "Он взял его документы",
+          "right": "ele pegou os documentos de outro"
+        }
+      ],
+      "explanation": "Três pares mínimos: ни-/не- tônico, -то/-нибудь e свой/его. Em português os dois lados de cada par ficariam quase idênticos.",
+      "tags": [
+        "pronomes",
+        "negação",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u21-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Use pelo menos uma dupla negação, um pronome indefinido e свой.",
+      "prompt": "«Является ли участие в выборах гражданской обязанностью?» (Participar de eleições é um dever cívico?)\n\nUnidades: участвовать в · голосовать за / против · выступать против · никто … не · кто-нибудь · брать на себя ответственность · свой",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "pronomes",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

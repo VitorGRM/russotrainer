@@ -1,0 +1,16 @@
+__pycache__/
+dist/
+build/
+exports/
+data/progress.sqlite3
+data/openrussian.sqlite3
+data/lexical_minimum.sqlite3
+*.pyc
+.venv/
+data/tts_cache/
+data/progress.sqlite3-shm
+data/progress.sqlite3-wal
+data/openrussian.sqlite3-shm
+data/openrussian.sqlite3-wal
+data/lexical_minimum.sqlite3-shm
+data/lexical_minimum.sqlite3-wal

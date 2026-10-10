@@ -1,0 +1,765 @@
+{
+  "id": "u23_sintaksis",
+  "order": 23,
+  "title": "Período composto e ordem das palavras",
+  "description": "Россия и глобальные проблемы: o inventário completo de conjunções e a regra que governa a ordem das palavras em russo — informação nova no fim.",
+  "estimated_minutes": 34,
+  "objectives": [
+    "escolher a conjunção certa para causa, concessão, condição e consequência",
+    "aplicar a regra tema-rema à ordem das palavras",
+    "pontuar corretamente o período composto"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 8 e 10 «Порядок слов в русском языке» · Кузьмина, Сложные предложения с союзами · «В мире людей. Письмо, говорение» (ТРКИ-II)",
+  "grammar": [
+    {
+      "title": "Inventário de conjunções por função",
+      "paragraphs": [
+        "CAUSA: потому что (a mais comum, sempre depois da principal), так как e поскольку (podem abrir a frase, registro mais formal), из-за того что (causa negativa), благодаря тому что (causa positiva), в связи с тем что (formal, burocrático). CONSEQUÊNCIA: поэтому, так что, в результате чего, вследствие этого. Note o par que confunde: потому что introduz a CAUSA (Он опоздал, потому что были пробки) e поэтому introduz a CONSEQUÊNCIA (Были пробки, поэтому он опоздал). São inversos.",
+        "CONCESSÃO: хотя (o mais usado), несмотря на то что, вопреки тому что, всё же e тем не менее (advérbios, não conjunções — vêm na segunda oração). CONDIÇÃO: если, если бы, при условии что, в случае если, раз (coloquial: «já que»). FINALIDADE: чтобы, для того чтобы, с тем чтобы. TEMPO: когда, пока, пока не, как только, после того как, перед тем как, с тех пор как. EXPLICATIVA: что (fato), чтобы (desejo/ordem), будто e как будто (dúvida sobre a veracidade).",
+        "Sobre a vírgula, que em russo é obrigatória e não estilística: sempre há vírgula antes de que, чтобы, потому что, если, когда, который e todas as demais conjunções subordinativas. Nas locuções compostas (потому что, несмотря на то что, в связи с тем что) a vírgula pode ir antes da locução inteira ou dentro dela, dependendo da ênfase — e as duas são aceitas; o que não se aceita é a ausência de vírgula. Um texto B2 sem vírgulas antes de что é imediatamente percebido como escrito por estrangeiro."
+      ],
+      "audio_script": "Período composto. Vamos organizar todas as conjunções do russo por função, porque assim elas param de parecer uma lista infinita e viram seis grupos. Grupo um: CAUSA. Потому что é a mais comum, e ela vem sempre depois da oração principal. Так как e поскольку podem abrir a frase, e são de registro mais formal. Из-за того что introduz causa negativa. Благодаря тому что, causa positiva. E в связи с тем что é a versão burocrática, muito comum em documentos. Grupo dois: CONSEQUÊNCIA. Поэтому, так что, в результате чего, вследствие этого. E aqui vai o par que mais confunde, então preste atenção, porque eles são INVERSOS um do outro. Потому что introduz a CAUSA: Он опоздал, потому что были пробки. Ele se atrasou porque havia trânsito. Поэтому introduz a CONSEQUÊNCIA: Были пробки, поэтому он опоздал. Havia trânsito, por isso ele se atrasou. Mesma situação, ordem invertida, conjunção diferente. Grupo três: CONCESSÃO. Хотя é a mais usada. Несмотря на то что é a mais formal. E existem também всё же e тем не менее, mas atenção: essas duas NÃO são conjunções. São advérbios. Elas aparecem dentro da segunda oração, não ligando as duas. Grupo quatro: CONDIÇÃO. Если, если бы, при условии что, в случае если. E existe раз, que é coloquial e significa «já que»: Раз ты здесь, помоги. Grupo cinco: FINALIDADE. Чтобы, для того чтобы, с тем чтобы. Grupo seis: TEMPO. Когда, пока, пока не, как только, после того как, перед тем как, с тех пор как. E fora dos grupos, as explicativas: что para fatos, чтобы para desejo ou ordem, e будто ou как будто quando o falante duvida da veracidade. Он сказал, что приедет — ele disse que vem, e eu acredito. Он сказал, будто приедет — ele disse que vem, mas eu duvido. Por último, a vírgula. E em russo a vírgula é obrigatória, não estilística. Sempre há vírgula antes de что, чтобы, потому что, если, когда, который e todas as subordinativas. Nas locuções compostas, a vírgula pode ir antes da locução inteira ou dentro dela, dependendo da ênfase, e as duas posições são aceitas. O que não se aceita é a ausência da vírgula. Um texto de nível bê dois sem vírgula antes de что é reconhecido imediatamente como escrito por estrangeiro.",
+      "examples": [
+        {
+          "ru": "Он опоздал, потому что были пробки.",
+          "pt": "Ele se atrasou porque havia trânsito.",
+          "note": "потому что → causa, depois da principal."
+        },
+        {
+          "ru": "Были пробки, поэтому он опоздал.",
+          "pt": "Havia trânsito, por isso ele se atrasou.",
+          "note": "поэтому → consequência. Ordem inversa da anterior."
+        },
+        {
+          "ru": "Поскольку данные ещё не проверены, выводы делать рано.",
+          "pt": "Como os dados ainda não foram verificados, é cedo para tirar conclusões.",
+          "note": "поскольку pode abrir a frase; потому что não pode."
+        },
+        {
+          "ru": "Он утверждает, будто ничего не знал об этом.",
+          "pt": "Ele afirma que não sabia nada disso.",
+          "note": "будто marca que o falante duvida da afirmação."
+        }
+      ],
+      "pitfalls": [
+        "Abrir a frase com потому что: ela vem sempre depois da principal. Para abrir, use так как ou поскольку.",
+        "Trocar потому что por поэтому: uma introduz a causa, a outra a consequência.",
+        "Omitir a vírgula antes de что e который: em russo ela é obrigatória."
+      ]
+    },
+    {
+      "title": "Ordem das palavras: o que é novo vai no fim",
+      "paragraphs": [
+        "O russo não tem artigos, e por isso usa a ORDEM DAS PALAVRAS para fazer o que o português faz com «o/um». A regra é chamada de tema-rema: a informação já conhecida (o tema) vem no começo; a informação nova (o rema) vem no fim. É a posição final que recebe o foco.",
+        "Compare três frases com as mesmas palavras: Мальчик читает книгу — sabemos do menino; a novidade é o que ele lê. Книгу читает мальчик — sabemos do livro; a novidade é quem está lendo (equivale a «quem lê o livro é o menino»). Читает мальчик книгу — ordem marcada, enfática, típica da fala. Nenhuma está errada; elas respondem a perguntas diferentes.",
+        "Duas aplicações práticas. Primeira, existência: В комнате стоял стол significa «havia uma mesa no quarto» (стол é novo, vem no fim), enquanto Стол стоял в комнате significa «a mesa estava no quarto» (стол é conhecido). É exatamente a diferença entre «uma mesa» e «a mesa». Segunda, resposta a perguntas: a resposta a «Кто пришёл?» deve terminar com quem — Пришёл Иван; a resposta a «Что сделал Иван?» deve terminar com o que — Иван пришёл. Colocar a informação nova no começo soa desconexo, mesmo com a gramática toda correta."
+      ],
+      "audio_script": "Segunda parte, e este é o assunto mais subestimado de todos: a ordem das palavras. Muita gente diz que em russo a ordem é livre. Isso é meia verdade, e a metade errada custa caro. A ordem é gramaticalmente flexível, porque os casos já marcam quem é sujeito e quem é objeto. Mas ela não é livre no sentido de ser indiferente. Ela carrega informação. E é assim porque o russo não tem artigos. O português distingue «o livro» de «um livro». O russo faz essa mesma distinção pela POSIÇÃO da palavra. A regra chama-se tema e rema. A informação já conhecida, o tema, vem no começo. A informação nova, o rema, vem no fim. É a posição final que recebe o foco. Vamos comparar três frases com exatamente as mesmas palavras. Мальчик читает книгу. Já sabemos do menino; a novidade é o que ele está lendo. Книгу читает мальчик. Já sabemos do livro; a novidade é quem está lendo. Em português, isso equivale a «quem está lendo o livro é o menino». Читает мальчик книгу. Ordem marcada, enfática, típica da língua falada. Nenhuma das três está errada. Elas respondem a perguntas diferentes. Agora duas aplicações práticas que vale a pena guardar. Primeira: existência. В комнате стоял стол. Havia uma mesa no quarto. Стол vem no fim porque é a informação nova. Стол стоял в комнате. A mesa estava no quarto. Стол vem no começo porque já sabemos qual mesa. É exatamente a diferença entre «uma mesa» e «a mesa» — feita só pela ordem. Segunda aplicação: responder perguntas. A resposta a «Кто пришёл?» deve TERMINAR com quem: Пришёл Иван. A resposta a «Что сделал Иван?» deve terminar com o que: Иван пришёл. As mesmas duas palavras, invertidas conforme a pergunta. E aqui está o ponto: colocar a informação nova no começo soa desconexo, mesmo com toda a gramática correta e todas as terminações certas. É por isso que textos de estrangeiros às vezes soam estranhos sem que se consiga apontar um erro. Não há erro. Há informação no lugar errado.",
+      "examples": [
+        {
+          "ru": "В комнате стоял большой стол.",
+          "pt": "Havia uma mesa grande no quarto.",
+          "note": "стол no fim = informação nova = «uma mesa»."
+        },
+        {
+          "ru": "Большой стол стоял в комнате.",
+          "pt": "A mesa grande estava no quarto.",
+          "note": "стол no começo = já conhecido = «a mesa»."
+        },
+        {
+          "ru": "— Кто написал эту статью? — Эту статью написал наш коллега.",
+          "pt": "— Quem escreveu esse artigo? — Esse artigo foi escrito por um colega nosso.",
+          "note": "A resposta termina com a informação pedida."
+        },
+        {
+          "ru": "Именно поэтому вопрос до сих пор не решён.",
+          "pt": "É justamente por isso que a questão ainda não foi resolvida.",
+          "note": "именно foca explicitamente o elemento seguinte."
+        }
+      ],
+      "pitfalls": [
+        "Traduzir a ordem do português palavra por palavra: o russo põe o novo no fim, o português usa artigo.",
+        "Responder a «Кто пришёл?» com «Иван пришёл»: a resposta natural é Пришёл Иван."
+      ]
+    },
+    {
+      "title": "Construções de coesão para texto argumentativo",
+      "paragraphs": [
+        "Um texto B2 se distingue por como as ideias se ligam, e o russo tem um repertório fixo de conectores para isso. Para acrescentar: кроме того, более того, к тому же, вместе с тем. Para contrapor: однако (mais formal que но), тем не менее, с другой стороны, в то же время. Para exemplificar: например, в частности, в том числе, а именно. Para generalizar: в целом, в основном, как правило, в большинстве случаев.",
+        "Para retomar e concluir: таким образом, следовательно, итак, в конечном счёте, подводя итог. E para marcar a fonte da informação — recurso essencial em texto sobre política, ciência e sociedade: по данным (segundo os dados de), согласно + дательный (conforme), по мнению + родительный (na opinião de), как отмечают специалисты (como observam os especialistas). Note que согласно é uma das poucas preposições com дательный: согласно закону, согласно данным.",
+        "Uma advertência de estilo que vale mais que a lista: conector sem função real polui o texto. Um parágrafo com кроме того, более того e к тому же seguidos não parece sofisticado — parece que o autor decorou uma lista. Use um conector por movimento argumentativo, e escolha-o depois de saber o que a frase seguinte vai dizer, nunca antes."
+      ],
+      "audio_script": "Terceira parte: os conectores que fazem um texto parecer bê dois em vez de bê um. Um texto avançado não se distingue pelo vocabulário difícil. Ele se distingue por como as ideias se LIGAM. Vamos aos grupos. Para acrescentar: кроме того, более того, к тому же, вместе с тем. Para contrapor: однако, que é mais formal que но. Тем не менее. С другой стороны. В то же время. Para exemplificar: например, в частности, в том числе, а именно. Para generalizar: в целом, в основном, как правило, в большинстве случаев. Para retomar e concluir: таким образом, следовательно, итак, в конечном счёте, подводя итог. E agora um grupo que é essencial em texto sobre política, ciência e sociedade, e que quase ninguém ensina: os marcadores de FONTE da informação. По данным, segundo os dados de. По данным Росстата. Согласно mais dativo, conforme. Согласно закону. Согласно данным исследования. E note: согласно é uma das raras preposições que exigem dativo. Согласно закону, não «согласно закона». По мнению mais genitivo, na opinião de. По мнению экспертов. Как отмечают специалисты, como observam os especialistas. Esses marcadores permitem que você apresente informação sem se comprometer com ela, que é exatamente o que um texto argumentativo de nível avançado precisa fazer. E para terminar, uma advertência de estilo que vale mais do que a lista inteira. Conector sem função real polui o texto. Um parágrafo com кроме того, более того e к тому же em sequência não parece sofisticado. Parece que o autor decorou uma lista e está usando tudo de uma vez. Use um conector por movimento argumentativo. E escolha o conector DEPOIS de saber o que a frase seguinte vai dizer, nunca antes.",
+      "examples": [
+        {
+          "ru": "По данным ООН, число мигрантов выросло на треть.",
+          "pt": "Segundo dados da ONU, o número de migrantes cresceu um terço.",
+          "note": "по данным + genitivo: fonte da informação."
+        },
+        {
+          "ru": "Согласно новому закону, компании обязаны публиковать эти сведения.",
+          "pt": "Conforme a nova lei, as empresas são obrigadas a publicar esses dados.",
+          "note": "согласно + dativo — não genitivo."
+        },
+        {
+          "ru": "Однако не все специалисты согласны с этим выводом.",
+          "pt": "No entanto, nem todos os especialistas concordam com essa conclusão.",
+          "note": "однако: contraposição formal."
+        },
+        {
+          "ru": "Таким образом, проблема остаётся нерешённой.",
+          "pt": "Assim, o problema continua sem solução.",
+          "note": "таким образом: retomada e conclusão."
+        }
+      ],
+      "pitfalls": [
+        "Usar «согласно закона»: согласно exige dativo — согласно закону.",
+        "Empilhar conectores: um por movimento argumentativo é o suficiente."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Conjunções e conectores por função",
+    "columns": [
+      "Função",
+      "Conjunções (ligam orações)",
+      "Conectores (dentro da oração)"
+    ],
+    "rows": [
+      [
+        "Causa",
+        "потому что · так как · поскольку · из-за того что · благодаря тому что",
+        "по этой причине · в связи с этим"
+      ],
+      [
+        "Consequência",
+        "так что · в результате чего",
+        "поэтому · следовательно · таким образом"
+      ],
+      [
+        "Concessão",
+        "хотя · несмотря на то что · вопреки тому что",
+        "однако · тем не менее · всё же"
+      ],
+      [
+        "Condição",
+        "если · если бы · при условии что · в случае если · раз",
+        "в противном случае"
+      ],
+      [
+        "Finalidade",
+        "чтобы · для того чтобы · с тем чтобы",
+        "с этой целью"
+      ],
+      [
+        "Tempo",
+        "когда · пока · пока не · как только · после того как · перед тем как · с тех пор как",
+        "тогда · затем · впоследствии"
+      ],
+      [
+        "Adição",
+        "—",
+        "кроме того · более того · к тому же · вместе с тем"
+      ],
+      [
+        "Exemplificação",
+        "—",
+        "например · в частности · в том числе · а именно"
+      ],
+      [
+        "Generalização",
+        "—",
+        "в целом · в основном · как правило"
+      ],
+      [
+        "Fonte",
+        "как отмечают специалисты",
+        "по данным + род. · согласно + ДАТ. · по мнению + род."
+      ]
+    ],
+    "note": "Ordem das palavras: informação conhecida no começo, informação NOVA no fim. В комнате стоял стол («uma mesa») × Стол стоял в комнате («a mesa»)."
+  },
+  "reference": [
+    {
+      "construction": "согласно",
+      "question": "согласно чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "conforme, de acordo com",
+      "example": "согласно новому закону"
+    },
+    {
+      "construction": "по данным",
+      "question": "по данным кого?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "segundo dados de",
+      "example": "по данным исследования"
+    },
+    {
+      "construction": "по мнению",
+      "question": "по мнению кого?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "na opinião de",
+      "example": "по мнению экспертов"
+    },
+    {
+      "construction": "приводить / привести к",
+      "question": "к чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "levar a (consequência)",
+      "example": "привести к серьёзным последствиям"
+    },
+    {
+      "construction": "способствовать",
+      "question": "чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "contribuir para",
+      "example": "способствовать развитию экономики"
+    },
+    {
+      "construction": "препятствовать",
+      "question": "чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "dificultar, impedir",
+      "example": "препятствовать реализации проекта"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u23-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "потому что × поэтому",
+      "back": "потому что introduz a CAUSA · поэтому introduz a CONSEQUÊNCIA",
+      "explanation": "Он опоздал, потому что были пробки × Были пробки, поэтому он опоздал.",
+      "tags": [
+        "conjunções",
+        "causa",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u23-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "согласно",
+      "back": "согласно + ДАТЕЛЬНЫЙ падеж (согласно закону, согласно данным)",
+      "explanation": "É uma das raras preposições com dativo. «согласно закона» é erro frequente até entre russos.",
+      "tags": [
+        "согласно",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u23-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "Tema-rema",
+      "back": "Informação conhecida no começo · informação NOVA no fim",
+      "explanation": "В комнате стоял стол = «uma mesa» · Стол стоял в комнате = «a mesa». O russo não tem artigos: a ordem faz esse trabalho.",
+      "tags": [
+        "ordem das palavras",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u23-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "что × будто",
+      "back": "что = o falante aceita o fato · будто = o falante duvida",
+      "explanation": "Он сказал, что приедет (acredito) × Он сказал, будто приедет (duvido).",
+      "tags": [
+        "conjunções",
+        "будто",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u23-e05",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a conjunção correta.",
+      "prompt": "___ данные ещё не проверены, делать выводы рано.",
+      "options": [
+        "Поскольку",
+        "Потому что",
+        "Поэтому",
+        "Так что"
+      ],
+      "answer": "Поскольку",
+      "explanation": "Só поскольку e так как podem ABRIR a frase introduzindo causa. потому что vem sempre depois da principal, e поэтому/так что introduzem consequência, não causa.",
+      "tags": [
+        "conjunções",
+        "causa",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u23-e06",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Финансирование сократили, ___ проект приостановили. Проект приостановили, ___ сократили финансирование.",
+      "options": [
+        "поэтому … потому что",
+        "потому что … поэтому",
+        "поэтому … поэтому",
+        "потому что … потому что"
+      ],
+      "answer": "поэтому … потому что",
+      "explanation": "Na primeira frase a causa vem antes e a consequência depois → поэтому. Na segunda, a consequência vem antes e a causa depois → потому что. As duas conjunções são espelhos uma da outra.",
+      "tags": [
+        "conjunções",
+        "causa/consequência",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u23-e07",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "___ новому закону, компании обязаны публиковать эти данные.",
+      "options": [
+        "Согласно",
+        "Согласно с",
+        "По",
+        "В соответствии"
+      ],
+      "answer": "Согласно",
+      "explanation": "согласно + дательный падеж, sem preposição adicional: согласно новому закону. «в соответствии» existiria mas exigiria с + творительный (в соответствии с законом).",
+      "tags": [
+        "согласно",
+        "дательный падеж",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u23-e08",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha a interpretação correta.",
+      "prompt": "«Он утверждает, будто не знал об этом решении.»",
+      "options": [
+        "O falante transmite a afirmação com desconfiança.",
+        "O falante confirma que ele realmente não sabia.",
+        "O falante pergunta se ele sabia.",
+        "O falante afirma que ele mentiu comprovadamente."
+      ],
+      "answer": "O falante transmite a afirmação com desconfiança.",
+      "explanation": "будто (ou как будто) marca reserva quanto à veracidade. Com что a frase seria neutra: «он утверждает, что не знал».",
+      "tags": [
+        "conjunções",
+        "будто",
+        "significado"
+      ]
+    },
+    {
+      "id": "u23-e09",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a conjunção correta.",
+      "prompt": "___ переговоры продолжались несколько месяцев, стороны так и не пришли к соглашению.",
+      "options": [
+        "Хотя",
+        "Поэтому",
+        "Так что",
+        "Если"
+      ],
+      "answer": "Хотя",
+      "explanation": "A relação é de concessão: as negociações duraram, e MESMO ASSIM não houve acordo. хотя é a conjunção concessiva mais usada; «несмотря на то что» seria a alternativa formal.",
+      "tags": [
+        "conjunções",
+        "concessão",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u23-e10",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a frase que significa «havia uma mesa grande no quarto».",
+      "prompt": "Contexto: você entra num quarto e descreve o que viu pela primeira vez.",
+      "options": [
+        "В комнате стоял большой стол.",
+        "Большой стол стоял в комнате.",
+        "Стол в комнате стоял большой.",
+        "В большой комнате стоял стол."
+      ],
+      "answer": "В комнате стоял большой стол.",
+      "explanation": "A mesa é informação NOVA, então vai no fim. «Большой стол стоял в комнате» pressuporia que já sabemos de qual mesa se trata («a mesa»).",
+      "tags": [
+        "ordem das palavras",
+        "tema-rema",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u23-e11",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a resposta com a ordem natural.",
+      "prompt": "— Кто написал этот доклад?",
+      "options": [
+        "— Этот доклад написал наш новый сотрудник.",
+        "— Наш новый сотрудник этот доклад написал.",
+        "— Написал этот доклад наш новый сотрудник.",
+        "— Наш новый сотрудник написал этот доклад."
+      ],
+      "answer": "— Этот доклад написал наш новый сотрудник.",
+      "explanation": "A pergunta é sobre QUEM, então a resposta tem que terminar com quem. Começar pelo funcionário colocaria a informação nova na posição de informação já conhecida.",
+      "tags": [
+        "ordem das palavras",
+        "tema-rema",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u23-e12",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Escolha a diferença correta.",
+      "prompt": "«Книгу читает мальчик» × «Мальчик читает книгу»",
+      "options": [
+        "Na primeira, a novidade é quem lê; na segunda, a novidade é o que ele lê.",
+        "A primeira está errada; a segunda é a única correta.",
+        "A primeira é mais formal; a segunda é coloquial.",
+        "Não há diferença: a ordem em russo é livre."
+      ],
+      "answer": "Na primeira, a novidade é quem lê; na segunda, a novidade é o que ele lê.",
+      "explanation": "Os casos já marcam quem é sujeito e quem é objeto (книгу é acusativo nos dois casos), então a ordem fica livre para carregar outra informação: o foco. Ele está sempre no fim.",
+      "tags": [
+        "ordem das palavras",
+        "tema-rema",
+        "significado"
+      ]
+    },
+    {
+      "id": "u23-e13",
+      "type": "choice",
+      "stage": "cohesion",
+      "difficulty": 2,
+      "instruction": "Escolha o conector correto.",
+      "prompt": "Экономика выросла на три процента. ___, уровень жизни большинства населения не изменился.",
+      "options": [
+        "Однако",
+        "Кроме того",
+        "Например",
+        "Следовательно"
+      ],
+      "answer": "Однако",
+      "explanation": "A segunda frase contradiz a expectativa criada pela primeira → conector de contraposição. «Кроме того» acrescentaria, «например» exemplificaria e «следовательно» concluiria — nenhum deles cabe.",
+      "tags": [
+        "conectores",
+        "coesão",
+        "argumentação"
+      ]
+    },
+    {
+      "id": "u23-e14",
+      "type": "choice",
+      "stage": "cohesion",
+      "difficulty": 2,
+      "instruction": "Escolha o conector correto.",
+      "prompt": "Все аргументы указывают в одном направлении. ___, реформа необходима.",
+      "options": [
+        "Таким образом",
+        "Например",
+        "С другой стороны",
+        "В частности"
+      ],
+      "answer": "Таким образом",
+      "explanation": "A segunda frase é a CONCLUSÃO da primeira → таким образом (ou следовательно). Os outros três abririam exemplificação ou contraposição.",
+      "tags": [
+        "conectores",
+        "coesão",
+        "argumentação"
+      ]
+    },
+    {
+      "id": "u23-e15",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "___ экспертов, ситуация улучшится не раньше следующего года.",
+      "options": [
+        "По мнению",
+        "По мнения",
+        "Согласно мнения",
+        "В мнении"
+      ],
+      "answer": "По мнению",
+      "explanation": "по мнению + родительный падеж (по мнению экспертов). Note o contraste com согласно, que pede дательный: согласно мнению экспертов também seria possível, mas «согласно мнения» não.",
+      "tags": [
+        "по мнению",
+        "родительный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u23-e16",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "Новые технологии ___ развитию малого бизнеса.",
+      "options": [
+        "способствуют",
+        "способствуют к",
+        "способствуют на",
+        "способствуют в"
+      ],
+      "answer": "способствуют",
+      "explanation": "способствовать чему? → дательный падеж SEM preposição. É o mesmo padrão de помогать, мешать e препятствовать.",
+      "tags": [
+        "способствовать",
+        "дательный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u23-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase usa conjunção e pontuação corretamente?",
+      "options": [
+        "Хотя данные были опубликованы, никто не обратил на них внимания, потому что тема казалась второстепенной.",
+        "Хотя данные были опубликованы никто не обратил на них внимания потому что тема казалась второстепенной.",
+        "Потому что данные были опубликованы, никто не обратил на них внимания, хотя тема казалась второстепенной.",
+        "Хотя данные были опубликованы, никто не обратил на них внимания, поэтому тема казалась второстепенной."
+      ],
+      "answer": "Хотя данные были опубликованы, никто не обратил на них внимания, потому что тема казалась второстепенной.",
+      "explanation": "Concessão (хотя) abre a frase, e a causa (потому что) vem depois da principal. As vírgulas são obrigatórias antes de cada conjunção. A opção 3 troca as funções e a 4 inverte a relação lógica.",
+      "tags": [
+        "conjunções",
+        "pontuação",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u23-e18",
+      "type": "choice",
+      "stage": "cohesion",
+      "difficulty": 3,
+      "instruction": "Escolha a versão mais bem construída.",
+      "prompt": "Qual parágrafo usa os conectores de forma adequada?",
+      "options": [
+        "Проблема миграции сложна. Однако простых решений не существует. По данным ООН, число мигрантов растёт.",
+        "Проблема миграции сложна. Кроме того, более того, к тому же простых решений не существует. По данным ООН, число мигрантов растёт.",
+        "Проблема миграции сложна. Например, следовательно, таким образом простых решений не существует.",
+        "Проблема миграции сложна. Потому что простых решений не существует. Поэтому по данным ООН число мигрантов растёт."
+      ],
+      "answer": "Проблема миграции сложна. Однако простых решений не существует. По данным ООН, число мигрантов растёт.",
+      "explanation": "Um conector por movimento argumentativo. Empilhar três conectores de adição (opção 2) ou misturar exemplificação com conclusão (opção 3) não soa sofisticado — soa como lista decorada.",
+      "tags": [
+        "conectores",
+        "coesão",
+        "estilo"
+      ]
+    },
+    {
+      "id": "u23-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "По данным международных организаций, изменение климата уже влияет на экономику десятков стран. Хотя правительства подписали несколько соглашений, реальные выбросы продолжают расти. Поскольку экономический рост по-прежнему зависит от ископаемого топлива, быстрый переход на другие источники энергии кажется маловероятным. Однако некоторые эксперты утверждают, будто технологии развиваются быстрее прогнозов. Таким образом, вопрос остаётся открытым: реформы необходимы, но их темп определяется не только наукой, а прежде всего политикой.",
+      "prompt": "Como o texto apresenta a afirmação dos especialistas sobre a tecnologia?",
+      "options": [
+        "Com reserva quanto à veracidade, usando «будто».",
+        "Como um fato confirmado, usando «что».",
+        "Como uma pergunta aberta.",
+        "Como a conclusão principal do texto."
+      ],
+      "answer": "Com reserva quanto à veracidade, usando «будто».",
+      "explanation": "«утверждают, будто технологии развиваются быстрее прогнозов» — a escolha de будто em vez de что sinaliza que o autor não assume a afirmação como sua.",
+      "tags": [
+        "conjunções",
+        "будто",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u23-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Хотя правительства подписали несколько соглашений, реальные выбросы продолжают расти. Поскольку экономический рост по-прежнему зависит от ископаемого топлива, быстрый переход кажется маловероятным. Таким образом, вопрос остаётся открытым.",
+      "prompt": "Quais relações lógicas as três conjunções do trecho marcam, em ordem?",
+      "options": [
+        "Concessão, causa, conclusão.",
+        "Causa, concessão, exemplo.",
+        "Condição, consequência, contraste.",
+        "Tempo, finalidade, adição."
+      ],
+      "answer": "Concessão, causa, conclusão.",
+      "explanation": "Хотя = concessão; поскольку = causa (e pode abrir a frase, ao contrário de потому что); таким образом = conclusão.",
+      "tags": [
+        "conjunções",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u23-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Согласно новому закону, компании обязаны публиковать эти данные, однако проверить их достоверность практически невозможно.",
+      "prompt": "Qual é a estrutura lógica do áudio?",
+      "options": [
+        "Uma obrigação legal, seguida de uma objeção prática.",
+        "Uma obrigação legal, seguida de um exemplo.",
+        "Uma proibição, seguida de uma causa.",
+        "Uma hipótese, seguida de uma conclusão."
+      ],
+      "answer": "Uma obrigação legal, seguida de uma objeção prática.",
+      "explanation": "«Согласно новому закону» apresenta a norma (согласно + dativo); «однако» introduz a contraposição — a dificuldade prática de verificar.",
+      "tags": [
+        "согласно",
+        "однако",
+        "audição"
+      ]
+    },
+    {
+      "id": "u23-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "В прошлом году в нашем регионе появилась новая проблема: качественной питьевой воды стало не хватать.",
+      "prompt": "Por que «новая проблема» aparece no fim da primeira parte da frase?",
+      "options": [
+        "Porque é a informação nova, e o russo põe o novo no fim.",
+        "Porque é o sujeito gramatical da frase.",
+        "Porque «проблема» é feminino.",
+        "Porque o verbo exige essa ordem."
+      ],
+      "answer": "Porque é a informação nova, e o russo põe o novo no fim.",
+      "explanation": "«В прошлом году в нашем регионе» é o tema (contexto já dado); «появилась новая проблема» é o rema. Em português usaríamos o artigo indefinido: «surgiu UM novo problema».",
+      "tags": [
+        "ordem das palavras",
+        "tema-rema",
+        "audição"
+      ]
+    },
+    {
+      "id": "u23-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com concessão e causa.",
+      "tokens": [
+        "Хотя",
+        "данные",
+        "были",
+        "опубликованы",
+        "никто",
+        "не",
+        "заметил",
+        "их",
+        "потому",
+        "что",
+        "тема",
+        "казалась",
+        "скучной"
+      ],
+      "answer": "Хотя данные были опубликованы никто не заметил их потому что тема казалась скучной",
+      "explanation": "Хотя abre a frase (concessão) e потому что vem depois da principal (causa) — nenhuma das duas pode ocupar a posição da outra.",
+      "tags": [
+        "conjunções",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u23-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione o conector à sua função.",
+      "pairs": [
+        {
+          "left": "поскольку",
+          "right": "causa (pode abrir a frase)"
+        },
+        {
+          "left": "поэтому",
+          "right": "consequência"
+        },
+        {
+          "left": "хотя",
+          "right": "concessão"
+        },
+        {
+          "left": "таким образом",
+          "right": "conclusão"
+        },
+        {
+          "left": "в частности",
+          "right": "exemplificação"
+        },
+        {
+          "left": "как правило",
+          "right": "generalização"
+        }
+      ],
+      "explanation": "Seis relações lógicas diferentes. Trocar uma pela outra não produz erro de gramática, mas quebra o raciocínio do texto.",
+      "tags": [
+        "conectores",
+        "coesão",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u23-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 100–120 palavras em russo. Use pelo menos quatro conectores de funções diferentes e uma fonte de informação.",
+      "prompt": "«Какая глобальная проблема кажется вам самой серьёзной и почему?» (Qual problema global lhe parece o mais sério e por quê?)\n\nUnidades: поскольку · хотя · однако · таким образом · по данным / согласно · способствовать · приводить к",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "sintaxe",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

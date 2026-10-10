@@ -1,0 +1,765 @@
+{
+  "id": "u20_chislitelnye",
+  "order": 20,
+  "title": "Numerais, datas e dados estatísticos",
+  "description": "Экономика и общество: como declinar números, dizer datas e ler percentuais — a gramática que todo texto econômico exige.",
+  "estimated_minutes": 34,
+  "objectives": [
+    "declinar numerais cardinais nos casos oblíquos",
+    "formar datas com родительный e предложный падеж",
+    "ler e escrever variações percentuais e comparações numéricas"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 9 «Экономика и общество» (Числительные) · Кузьмина, Числительные: количественные, порядковые, собирательные · Appendix 2 «Numerals and dates»",
+  "grammar": [
+    {
+      "title": "O numeral também se declina",
+      "paragraphs": [
+        "Na Unidade 12 vimos a regra do numeral no именительный/винительный: 1 → nominativo, 2-4 → genitivo singular, 5+ → genitivo plural. Mas o que acontece nos outros casos? A regra se inverte de forma limpa: quando o numeral está num caso oblíquo (dativo, instrumental, prepositivo, genitivo), o substantivo CONCORDA com ele nesse mesmo caso, no plural. с двумя студентами (instrumental), о пяти проектах (prepositivo), к трём коллегам (dativo).",
+        "As declinações: один se declina como этот (одного, одному, одним, об одном) e concorda em gênero. два/две, три, четыре têm formas próprias — двух, двум, двумя, о двух; трёх, трём, тремя; четырёх, четырём, четырьмя. De пять a двадцать e тридцать, declinam-se como дверь (femininos em -ь): пяти, пятью, о пяти. сорок, девяносто e сто têm apenas duas formas: сорок/сорока, девяносто/девяноста, сто/ста.",
+        "Nos números compostos, TODAS as partes se declinam: пятьдесят → пятидесяти; двести → двухсот; триста → трёхсот. É por isso que russos evitam declinar números longos na fala e reformulam a frase — e você pode fazer o mesmo. Uma saída elegante e sempre correta: usar около, более, свыше (todos com genitivo, e aí o numeral fica na forma básica): около пятидесяти тысяч рублей."
+      ],
+      "audio_script": "Числительные, os numerais. Na unidade doze você viu a regra básica: um pede nominativo, dois a quatro pedem genitivo singular, cinco em diante pede genitivo plural. Mas isso vale só quando o numeral está no nominativo ou no acusativo. E aí vem a pergunta: e nos outros casos? A resposta é boa: a regra se inverte de forma muito limpa. Quando o numeral está num caso oblíquo — dativo, instrumental, prepositivo ou genitivo — o substantivo CONCORDA com ele nesse mesmo caso, no plural. С двумя студентами, com dois estudantes, no instrumental. О пяти проектах, sobre cinco projetos, no prepositivo. К трём коллегам, a três colegas, no dativo. Repare: nada de genitivo aqui. Numeral e substantivo simplesmente concordam. Agora as declinações. Один se declina como этот, e concorda em gênero: одного, одному, одним, об одном. Два, две, три e четыре têm formas próprias, e vale ouvir: двух, двум, двумя, о двух. трёх, трём, тремя, о трёх. четырёх, четырём, четырьмя, о четырёх. De cinco a vinte, e também trinta, declinam-se exatamente como дверь, ou seja, como um feminino em sinal brando: пяти, пятью, о пяти. E três números têm apenas duas formas, o que é uma economia bem-vinda: сорок e сорока. девяносто e девяноста. сто e ста. Nos números compostos, todas as partes se declinam. Пятьдесят vira пятидесяти. Двести vira двухсот. E aqui vai um conselho prático que os próprios russos seguem: declinar números longos na fala é trabalhoso, e falantes nativos costumam simplesmente reformular a frase. Você pode fazer o mesmo, e existe uma saída elegante e sempre correta. Use около, более ou свыше. Todos os três exigem genitivo, e aí o numeral fica na forma básica. Около пятидесяти тысяч рублей. Более двухсот участников. Isso soa natural e evita a parte mais difícil do sistema.",
+      "examples": [
+        {
+          "ru": "Он работал над этим проектом с двумя коллегами.",
+          "pt": "Ele trabalhou nesse projeto com dois colegas.",
+          "note": "Instrumental: numeral e substantivo concordam, sem genitivo."
+        },
+        {
+          "ru": "В докладе говорится о пяти основных проблемах.",
+          "pt": "O relatório fala sobre cinco problemas principais.",
+          "note": "Prepositivo: о пяти проблемах."
+        },
+        {
+          "ru": "Бюджет вырос примерно на сорок процентов.",
+          "pt": "O orçamento cresceu cerca de quarenta por cento."
+        },
+        {
+          "ru": "В конференции участвовало более двухсот специалистов.",
+          "pt": "Mais de duzentos especialistas participaram da conferência.",
+          "note": "более + genitivo evita declinar o número dentro da frase."
+        }
+      ],
+      "pitfalls": [
+        "Manter o genitivo nos casos oblíquos: é «с двумя студентами», não «с двумя студентов».",
+        "Não declinar a primeira parte dos compostos: пятидесяти, não «пятьдесяти»."
+      ]
+    },
+    {
+      "title": "Datas: três construções, três casos",
+      "paragraphs": [
+        "Primeira: «que dia é hoje?» — Какое сегодня число? A resposta usa ordinal no именительный neutro + mês no родительный: Сегодня пятое мая. Segunda: «quando?» — Когда? A data inteira vai ao родительный падеж: Пятого мая, десятого января. Repare que o mês já estava no genitivo e continua; o que muda é o ordinal, que passa de пятое a пятого.",
+        "Terceira: anos. «Em que ano?» — В каком году? Usa-se ordinal + году no предложный: в две тысячи двадцатом году. E aqui está a economia mais útil: em números compostos, SÓ O ÚLTIMO elemento vira ordinal e se declina — «две тысячи» fica sempre igual. Para uma data completa com ano, o ano vai ao родительный: пятого мая две тысячи двадцатого года.",
+        "Ainda sobre tempo: para dizer «desde», use с + родительный (с января, с двухтысячного года); para «até», до + родительный (до конца года). Horas: в два часа, в половине третьего (às duas e meia — literalmente «na metade da terceira»), без четверти пять (quinze para as cinco). E a aproximação por inversão, muito comum na fala: лет пять (uns cinco anos), часа два (umas duas horas) — basta trocar a ordem de numeral e substantivo."
+      ],
+      "audio_script": "Segunda parte: datas. São três construções, e cada uma usa um caso diferente. Construção um: que dia é hoje? Em russo, Какое сегодня число? A resposta usa o ordinal no nominativo neutro, mais o mês no genitivo. Сегодня пятое мая. Hoje é cinco de maio. Construção dois: quando? Когда? Aqui a data inteira vai para o genitivo. Пятого мая. Десятого января. Repare no que mudou: o mês já estava no genitivo e continua igual. O que muda é o ordinal, que passa de пятое para пятого. Construção três: anos. Em que ano? В каком году? Usa-se o ordinal mais a palavra году, no prepositivo. В две тысячи двадцатом году. No ano de dois mil e vinte. E aqui está a melhor economia de todo o sistema: em números compostos, SÓ o último elemento vira ordinal e se declina. «Две тысячи» fica sempre igual, sempre. Só двадцатом muda. Isso significa que você nunca precisa declinar a parte longa do ano. Para uma data completa com ano, o ano vai ao genitivo: Пятого мая две тысячи двадцатого года. Ainda sobre tempo, mais algumas construções úteis. Para dizer «desde», use с mais genitivo: с января, с двухтысячного года. Para «até», до mais genitivo: до конца года. Horas: в два часа, às duas. В половине третьего, às duas e meia — e note que o russo diz literalmente «na metade da terceira», porque conta a hora que está em curso, não a que passou. Без четверти пять, quinze para as cinco. E por fim, um truque de aproximação muito comum na fala: basta inverter a ordem. Пять лет é cinco anos. Лет пять é uns cinco anos. Два часа são duas horas. Часа два são uma duas horas. Inverter numeral e substantivo transforma o número exato em aproximação. Simples e muito usado.",
+      "examples": [
+        {
+          "ru": "— Какое сегодня число? — Сегодня двадцать пятое сентября.",
+          "pt": "— Que dia é hoje? — Hoje é 25 de setembro.",
+          "note": "Ordinal no nominativo + mês no genitivo."
+        },
+        {
+          "ru": "Договор был подписан двадцать пятого сентября.",
+          "pt": "O contrato foi assinado em 25 de setembro.",
+          "note": "«Quando?» → data inteira no genitivo."
+        },
+        {
+          "ru": "Кризис начался в две тысячи восьмом году.",
+          "pt": "A crise começou em 2008.",
+          "note": "Só o último elemento vira ordinal e declina."
+        },
+        {
+          "ru": "Мы ждём ответа уже недели две.",
+          "pt": "Estamos esperando resposta há umas duas semanas.",
+          "note": "Inversão = aproximação."
+        }
+      ],
+      "pitfalls": [
+        "Declinar todo o ano: é «в две тысячи двадцатом году», não «в двух тысячах двадцатом».",
+        "Usar nominativo para responder «quando?»: é пятого мая, não «пятое мая».",
+        "Traduzir «duas e meia» ao pé da letra: em russo é в половине ТРЕТЬЕГО."
+      ]
+    },
+    {
+      "title": "Estatística: por cento, vezes e coletivos",
+      "paragraphs": [
+        "Variação percentual usa на + винительный падеж: Цены выросли на сорок процентов (os preços subiram 40%). Já para dizer quantas vezes algo é maior, usa-se в + винительный: Аренда в три раза выше (o aluguel é três vezes mais caro). A confusão entre на e в aqui é o erro mais frequente em texto econômico: на indica a diferença acrescentada, в indica o multiplicador.",
+        "Verbos que aparecem sempre nesses textos: составлять (perfazer, ser de) — Инфляция составила семь процентов; увеличиваться/уменьшаться на, расти/падать на, достигать + родительный (Безработица достигла рекордного уровня), приходиться на (На долю малого бизнеса приходится треть ВВП). Note que составить leva винительный, mas достичь leva родительный.",
+        "Por fim, os numerais coletivos двое, трое, четверо, пятеро, que pedem родительный plural e têm uso restrito: pessoas do sexo masculino ou grupos mistos (двое мужчин, трое студентов), crianças (трое детей), substantivos que só existem no plural (двое суток, трое ножниц) e a palavra люди (двое людей). Não se usam com mulheres — «двое женщин» é considerado incorreto; diz-se две женщины. E оба/обе (ambos) funciona como два/две: оба студента, обе книги, e declina — обоих, обеим."
+      ],
+      "audio_script": "Terceira parte: a linguagem da estatística, que é o que todo texto econômico exige. E vamos começar pela distinção que mais gera erro. Para variação percentual, usa-se на mais acusativo. Цены выросли на сорок процентов. Os preços subiram quarenta por cento. На indica a diferença ACRESCENTADA. Mas para dizer quantas VEZES algo é maior, usa-se в mais acusativo. Аренда в три раза выше. O aluguel é três vezes mais caro. В indica o MULTIPLICADOR. Repita mentalmente: на para porcentagem, в para múltiplo. Trocar os dois muda o número inteiro da frase. Agora os verbos que aparecem sempre nesses textos. Ouça com a regência de cada um. Составлять, perfazer, ser de. Инфляция составила семь процентов. Leva acusativo. Увеличиваться на, уменьшаться на, расти на, падать на. Todos com acusativo. Достигать, atingir. E este leva GENITIVO: Безработица достигла рекордного уровня. Приходиться на, caber a, corresponder a. На долю малого бизнеса приходится треть ВВП. Um terço do PIB corresponde às pequenas empresas. Por fim, os numerais coletivos: двое, трое, четверо, пятеро. Eles pedem genitivo plural e têm um uso restrito, que vale conhecer bem. Usam-se com pessoas do sexo masculino ou grupos mistos: двое мужчин, трое студентов. Com crianças: трое детей. Com substantivos que só existem no plural: двое суток, трое ножниц. E com a palavra люди: двое людей. Mas atenção: não se usam com mulheres. «Двое женщин» é considerado incorreto. O certo é две женщины. E por último, оба e обе, que significam ambos. Eles funcionam como два e две: оба студента, обе книги. E declinam-se: обоих, обеим, обоими. Um detalhe: оба é masculino e neutro, обе é feminino. Confundir os dois é um erro visível.",
+      "examples": [
+        {
+          "ru": "Цены на продукты выросли на пятнадцать процентов.",
+          "pt": "Os preços dos alimentos subiram 15%.",
+          "note": "на + acusativo = diferença acrescentada."
+        },
+        {
+          "ru": "Аренда в столице в три раза выше, чем в области.",
+          "pt": "O aluguel na capital é três vezes mais alto que na região.",
+          "note": "в + acusativo = multiplicador."
+        },
+        {
+          "ru": "Безработица среди молодёжи достигла критического уровня.",
+          "pt": "O desemprego entre os jovens atingiu um nível crítico.",
+          "note": "достигать + genitivo."
+        },
+        {
+          "ru": "В семье трое детей, и оба родителя работают.",
+          "pt": "A família tem três filhos, e ambos os pais trabalham.",
+          "note": "трое (coletivo com детей); оба (masculino/misto)."
+        }
+      ],
+      "pitfalls": [
+        "Trocar на por в: «выросли в сорок процентов» significaria quarenta VEZES, não quarenta por cento.",
+        "Usar coletivo com mulheres: é две женщины, não «двое женщин».",
+        "Dar acusativo a достигать: o verbo exige genitivo."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Numerais, datas e estatística",
+    "columns": [
+      "Construção",
+      "Caso exigido",
+      "Exemplo"
+    ],
+    "rows": [
+      [
+        "Numeral no nominativo/acusativo",
+        "1 → им. · 2-4 → род. sing. · 5+ → род. pl.",
+        "один проект · два проекта · пять проектов"
+      ],
+      [
+        "Numeral em caso oblíquo",
+        "substantivo concorda, no plural",
+        "с двумя проектами · о пяти проектах"
+      ],
+      [
+        "11-14",
+        "sempre род. plural",
+        "двенадцать проектов"
+      ],
+      [
+        "Что сегодня?",
+        "ordinal им. + mês род.",
+        "сегодня пятое мая"
+      ],
+      [
+        "Когда?",
+        "data inteira no родительный",
+        "пятого мая"
+      ],
+      [
+        "В каком году?",
+        "ordinal + году (предложный)",
+        "в две тысячи двадцатом году"
+      ],
+      [
+        "Porcentagem",
+        "на + винительный",
+        "выросли на сорок процентов"
+      ],
+      [
+        "Múltiplo",
+        "в + винительный",
+        "в три раза выше"
+      ],
+      [
+        "достигать",
+        "родительный",
+        "достичь рекордного уровня"
+      ],
+      [
+        "Coletivos двое/трое",
+        "родительный plural (só masc./crianças/pl. tantum)",
+        "трое детей · двое суток"
+      ],
+      [
+        "оба / обе",
+        "como два / две",
+        "оба студента · обе книги · обоих, обеим"
+      ]
+    ],
+    "note": "Em ano composto só o ÚLTIMO elemento vira ordinal e declina: «две тысячи» permanece invariável. Inverter numeral e substantivo produz aproximação: лет пять = uns cinco anos."
+  },
+  "reference": [
+    {
+      "construction": "составлять / составить",
+      "question": "что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "perfazer, ser de (valor)",
+      "example": "инфляция составила семь процентов"
+    },
+    {
+      "construction": "достигать / достичь",
+      "question": "чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "atingir (nível, resultado)",
+      "example": "достичь рекордного уровня"
+    },
+    {
+      "construction": "увеличиваться / уменьшаться на",
+      "question": "на сколько?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "aumentar / diminuir em",
+      "example": "вырасти на двадцать процентов"
+    },
+    {
+      "construction": "в … раза (раз)",
+      "question": "во сколько раз?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "… vezes mais/menos",
+      "example": "в три раза дороже"
+    },
+    {
+      "construction": "приходиться на",
+      "question": "на что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "caber a, corresponder a",
+      "example": "на долю экспорта приходится треть"
+    },
+    {
+      "construction": "тратить / потратить на",
+      "question": "на что?",
+      "case": "ВИНИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "gastar em",
+      "example": "тратить деньги на продукты"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u20-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "Numeral em caso oblíquo",
+      "back": "substantivo CONCORDA com o numeral, no plural: с двумя проектами",
+      "explanation": "A regra do genitivo (два проекта) só vale no именительный/винительный.",
+      "tags": [
+        "numerais",
+        "declinação",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u20-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "в каком году?",
+      "back": "в две тысячи двадцатом году — só o último elemento vira ordinal",
+      "explanation": "«две тысячи» é invariável; só двадцатый declina, no предложный.",
+      "tags": [
+        "datas",
+        "numerais",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u20-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "на 40% × в 3 раза",
+      "back": "на + вин. = porcentagem · в + вин. = multiplicador",
+      "explanation": "Выросли на сорок процентов (subiram 40%) × в три раза выше (três vezes mais alto).",
+      "tags": [
+        "estatística",
+        "numerais",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u20-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "трое детей × две женщины",
+      "back": "Coletivos só com masculinos, crianças e plurais-tantum",
+      "explanation": "«двое женщин» é incorreto: com mulheres usa-se o cardinal comum, две женщины.",
+      "tags": [
+        "numerais coletivos",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u20-e05",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Он обсудил бюджет ___. (два заместителя)",
+      "options": [
+        "с двумя заместителями",
+        "с двумя заместителей",
+        "с два заместителя",
+        "с двух заместителей"
+      ],
+      "answer": "с двумя заместителями",
+      "explanation": "с exige творительный падеж. Nos casos oblíquos o substantivo CONCORDA com o numeral, no plural: двумя заместителями. O genitivo (заместителя) só valeria no nominativo/acusativo.",
+      "tags": [
+        "numerais",
+        "declinação",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u20-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "В отчёте говорится ___. (пять основных показателей)",
+      "options": [
+        "о пяти основных показателях",
+        "о пять основных показателей",
+        "о пяти основных показателей",
+        "о пятью основными показателями"
+      ],
+      "answer": "о пяти основных показателях",
+      "explanation": "о exige предложный падеж; пять declina-se como дверь (пяти) e o substantivo concorda no plural: показателях.",
+      "tags": [
+        "numerais",
+        "declinação",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u20-e07",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Сумма кредита составила около ___. (пятьдесят тысяч рублей)",
+      "options": [
+        "пятидесяти тысяч рублей",
+        "пятьдесяти тысяч рублей",
+        "пятьдесят тысяч рублей",
+        "пятидесятью тысячами рублей"
+      ],
+      "answer": "пятидесяти тысяч рублей",
+      "explanation": "около exige родительный, e nos numerais compostos TODAS as partes declinam: пятьдесят → пятидесяти. Usar около é justamente a saída que evita frases mais complicadas.",
+      "tags": [
+        "numerais",
+        "declinação",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u20-e08",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "— Какое сегодня число? — Сегодня ___.",
+      "options": [
+        "двадцать пятое сентября",
+        "двадцать пятого сентября",
+        "двадцать пять сентября",
+        "двадцать пятом сентябре"
+      ],
+      "answer": "двадцать пятое сентября",
+      "explanation": "Para «que dia é hoje?», o ordinal fica no именительный neutro (пятое) e o mês no родительный (сентября).",
+      "tags": [
+        "datas",
+        "numerais",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u20-e09",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Договор был подписан ___.",
+      "options": [
+        "двадцать пятого сентября",
+        "двадцать пятое сентября",
+        "в двадцать пятое сентября",
+        "двадцать пятым сентябрём"
+      ],
+      "answer": "двадцать пятого сентября",
+      "explanation": "Para responder «quando?», a data inteira vai ao родительный падеж, sem preposição nenhuma: пятого сентября.",
+      "tags": [
+        "datas",
+        "numerais",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u20-e10",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Экономический кризис начался ___. (2008)",
+      "options": [
+        "в две тысячи восьмом году",
+        "в двух тысячах восьмом году",
+        "в две тысячи восьмого года",
+        "в две тысячи восемь году"
+      ],
+      "answer": "в две тысячи восьмом году",
+      "explanation": "Só o ÚLTIMO elemento vira ordinal e declina: восьмом, no предложный com году. «Две тысячи» permanece invariável.",
+      "tags": [
+        "datas",
+        "anos",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u20-e11",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Встреча назначена на половину третьего.»",
+      "options": [
+        "A reunião está marcada para as duas e meia.",
+        "A reunião está marcada para as três e meia.",
+        "A reunião está marcada para meio-dia e meia.",
+        "A reunião durará meia hora a partir das três."
+      ],
+      "answer": "A reunião está marcada para as duas e meia.",
+      "explanation": "O russo conta a hora EM CURSO: половина третьего é «metade da terceira hora», ou seja, 2h30. É preciso subtrair um do ordinal.",
+      "tags": [
+        "horas",
+        "numerais",
+        "significado"
+      ]
+    },
+    {
+      "id": "u20-e12",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a preposição correta.",
+      "prompt": "За год цены на жильё выросли ___ пятнадцать процентов.",
+      "options": [
+        "на",
+        "в",
+        "до",
+        "за"
+      ],
+      "answer": "на",
+      "explanation": "Variação percentual usa на + винительный: выросли на пятнадцать процентов. Com «в» a frase significaria «cresceram quinze VEZES».",
+      "tags": [
+        "estatística",
+        "на/в",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u20-e13",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Зарплаты выросли ___ десять процентов, а расходы — ___ два раза.",
+      "options": [
+        "на … в",
+        "в … на",
+        "на … на",
+        "в … в"
+      ],
+      "answer": "на … в",
+      "explanation": "на marca a diferença percentual (dez por cento); в marca o multiplicador (duas vezes). São duas preposições com funções numéricas completamente diferentes.",
+      "tags": [
+        "estatística",
+        "на/в",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u20-e14",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Уровень безработицы достиг ___. (рекордная отметка)",
+      "options": [
+        "рекордной отметки",
+        "рекордную отметку",
+        "рекордной отметке",
+        "рекордной отметкой"
+      ],
+      "answer": "рекордной отметки",
+      "explanation": "достигать / достичь чего? → родительный падеж. Compare com составить, que pede винительный: составил рекордную сумму.",
+      "tags": [
+        "достигать",
+        "родительный падеж",
+        "regência"
+      ]
+    },
+    {
+      "id": "u20-e15",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "В этой семье ___ и все они ходят в школу. (три ребёнка / трое детей)",
+      "options": [
+        "трое детей",
+        "три детей",
+        "трое ребёнка",
+        "три ребёнок"
+      ],
+      "answer": "трое детей",
+      "explanation": "Com дети usa-se obrigatoriamente o numeral coletivo трое + родительный plural: трое детей. É uma das poucas palavras em que o coletivo é a forma normal.",
+      "tags": [
+        "numerais coletivos",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u20-e16",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase usa corretamente os numerais?",
+      "options": [
+        "На конференции выступили двое мужчин и две женщины.",
+        "На конференции выступили двое мужчин и двое женщин.",
+        "На конференции выступили два мужчин и две женщины.",
+        "На конференции выступили двое мужчина и две женщина."
+      ],
+      "answer": "На конференции выступили двое мужчин и две женщины.",
+      "explanation": "Coletivo двое é correto com masculinos (двое мужчин, com genitivo plural), mas incorreto com mulheres: aí usa-se o cardinal две + genitivo singular (две женщины).",
+      "tags": [
+        "numerais coletivos",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u20-e17",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "___ родителя работают полный день.",
+      "options": [
+        "Оба",
+        "Обе",
+        "Обои",
+        "Обоих"
+      ],
+      "answer": "Оба",
+      "explanation": "родители é masculino/misto → оба. Обе seria para feminino (обе сестры). E обоих é a forma do genitivo/acusativo animado, não do nominativo.",
+      "tags": [
+        "оба/обе",
+        "numerais",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u20-e18",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Мы ждём решения уже недели две.»",
+      "options": [
+        "Estamos esperando a decisão há umas duas semanas.",
+        "Estamos esperando a decisão há exatamente duas semanas.",
+        "Vamos esperar a decisão por duas semanas.",
+        "Esperamos a decisão a cada duas semanas."
+      ],
+      "answer": "Estamos esperando a decisão há umas duas semanas.",
+      "explanation": "A inversão de numeral e substantivo (недели две em vez de две недели) transforma o número exato em aproximação. É muito comum na fala.",
+      "tags": [
+        "aproximação",
+        "numerais",
+        "significado"
+      ]
+    },
+    {
+      "id": "u20-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "По данным Росстата, за две тысячи двадцать третий год средняя зарплата выросла на восемь процентов, однако цены на продукты увеличились почти в полтора раза быстрее. На долю продуктов питания сейчас приходится около трети расходов средней семьи. Экономисты отмечают, что за последние пять лет доля обязательных расходов достигла критического уровня: у семей с двумя и более детьми она превышает шестьдесят процентов бюджета.",
+      "prompt": "Qual foi o crescimento do salário médio, segundo o texto?",
+      "options": [
+        "Oito por cento no ano.",
+        "Uma vez e meia no ano.",
+        "Sessenta por cento no ano.",
+        "Um terço no ano."
+      ],
+      "answer": "Oito por cento no ano.",
+      "explanation": "«зарплата выросла на восемь процентов» — на + acusativo marca a diferença percentual. O «в полтора раза» que aparece depois se refere à velocidade dos preços, não ao salário.",
+      "tags": [
+        "estatística",
+        "numerais",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u20-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "Средняя зарплата выросла на восемь процентов, однако цены на продукты увеличились почти в полтора раза быстрее. У семей с двумя и более детьми доля обязательных расходов превышает шестьдесят процентов бюджета.",
+      "prompt": "Por que o texto usa «с двумя» e não «с два» nem «с двух»?",
+      "options": [
+        "Porque с exige творительный падеж, e o numeral se declina como o substantivo.",
+        "Porque «два» não tem forma no plural.",
+        "Porque семья é feminino.",
+        "Porque о número está no genitivo depois de «с»."
+      ],
+      "answer": "Porque с exige творительный падеж, e o numeral se declina como o substantivo.",
+      "explanation": "Nos casos oblíquos, numeral e substantivo concordam: с двумя детьми. A regra do genitivo só se aplica no именительный e no винительный.",
+      "tags": [
+        "numerais",
+        "declinação",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u20-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "За прошлый год инфляция составила семь процентов, а аренда жилья выросла в два раза.",
+      "prompt": "O que aconteceu com o aluguel, segundo o áudio?",
+      "options": [
+        "Dobrou.",
+        "Subiu dois por cento.",
+        "Subiu sete por cento.",
+        "Caiu pela metade."
+      ],
+      "answer": "Dobrou.",
+      "explanation": "«выросла в два раза» — в + acusativo é o multiplicador: dobrou. Já «составила семь процентов» usa составить + acusativo para dar o valor da inflação.",
+      "tags": [
+        "estatística",
+        "на/в",
+        "audição"
+      ]
+    },
+    {
+      "id": "u20-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Соглашение было подписано пятнадцатого марта две тысячи двадцать второго года.",
+      "prompt": "Qual é a data mencionada no áudio?",
+      "options": [
+        "15 de março de 2022.",
+        "22 de março de 2015.",
+        "15 de maio de 2022.",
+        "20 de março de 2015."
+      ],
+      "answer": "15 de março de 2022.",
+      "explanation": "«пятнадцатого марта» (dia e mês no genitivo, respondendo «quando?») e «две тысячи двадцать второго года» (o ano também no genitivo, com só o último elemento declinado).",
+      "tags": [
+        "datas",
+        "numerais",
+        "audição"
+      ]
+    },
+    {
+      "id": "u20-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com data e variação percentual.",
+      "tokens": [
+        "Пятого",
+        "января",
+        "цены",
+        "на",
+        "продукты",
+        "выросли",
+        "на",
+        "двенадцать",
+        "процентов"
+      ],
+      "answer": "Пятого января цены на продукты выросли на двенадцать процентов",
+      "explanation": "Duas construções com formas diferentes: пятого января (data no genitivo) e на двенадцать процентов (percentual no acusativo).",
+      "tags": [
+        "numerais",
+        "datas",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u20-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 3,
+      "instruction": "Relacione a expressão numérica ao significado.",
+      "pairs": [
+        {
+          "left": "выросли на 20 процентов",
+          "right": "subiram 20%"
+        },
+        {
+          "left": "выросли в 20 раз",
+          "right": "aumentaram 20 vezes"
+        },
+        {
+          "left": "составили 20 процентов",
+          "right": "corresponderam a 20%"
+        },
+        {
+          "left": "достигли 20 процентов",
+          "right": "atingiram 20%"
+        },
+        {
+          "left": "около двадцати процентов",
+          "right": "cerca de 20%"
+        },
+        {
+          "left": "процентов двадцать",
+          "right": "uns 20%"
+        }
+      ],
+      "explanation": "Seis maneiras de falar do mesmo número, com preposições, regências e nuances diferentes — a última usando a inversão de aproximação.",
+      "tags": [
+        "estatística",
+        "numerais",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u20-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Use pelo menos três construções numéricas diferentes e uma data completa.",
+      "prompt": "«Как изменились цены и доходы в вашей стране за последние годы?» (Como mudaram os preços e a renda no seu país nos últimos anos?)\n\nUnidades: вырасти на … процентов · в … раза · составить · достичь · около · на долю … приходится · в … году",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "numerais",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

@@ -1,0 +1,773 @@
+{
+  "id": "u14_predlozhnyi",
+  "order": 14,
+  "title": "Предложный падеж e a formação de advérbios",
+  "description": "Здоровье e образ жизни: o único caso que nunca anda sozinho, o locativo em -у́ e como transformar adjetivos em advérbios.",
+  "estimated_minutes": 32,
+  "objectives": [
+    "separar as quatro funções do предложный падеж",
+    "reconhecer o segundo prepositivo (в лесу, на берегу, в году)",
+    "formar advérbios em -о, -и e по-…-ому"
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 7 «Здоровье и вредные привычки» (Предложный падеж, Образование наречий) · Кузьмина, Предложный падеж e Особые окончания в предложном падеже · Red Kalinka, Prepositional case",
+  "grammar": [
+    {
+      "title": "O único caso que nunca aparece sozinho",
+      "paragraphs": [
+        "O предложный падеж tem o nome mais honesto de toda a gramática russa: ele não existe sem preposição. Se não há preposição na frente, não é prepositivo — essa é a checagem mais rápida que existe. São quatro funções: (1) lugar, com в e на, respondendo где?: жить в городе, работать на заводе; (2) assunto, com о, об, обо: говорить о здоровье, думать об этом; (3) meio de transporte, com на: ехать на машине, лететь на самолёте; (4) tempo, com в para meses, anos e décadas (в январе, в 2020 году) e com на para semanas (на прошлой неделе).",
+        "As terminações são as mais simples do sistema: praticamente tudo faz -е. стол → о столе, окно → об окне, книга → о книге. As exceções cabem em duas linhas e valem ouro: palavras terminadas em -ий, -ия, -ие fazem -ии (санаторий → в санатории, Россия → в России, здание → в здании) e femininos em -ь fazem -и (дверь → о двери). Adjetivos: masculino e neutro -ом/-ем, feminino -ой/-ей, plural -ых/-их; substantivo plural -ах/-ях.",
+        "Sobre a preposição de assunto: usa-se о antes de consoante (о здоровье), об antes de vogal (об этом, об истории, об аварии) e обо nas duas combinações fixas обо мне e обо всём. Escrever «о этом» é um dos erros mais visíveis num texto, porque quebra a pronúncia — e corretores de exame marcam."
+      ],
+      "audio_script": "Предложный падеж, o prepositivo. Ele tem o nome mais honesto da gramática russa inteira, porque ele literalmente não existe sem preposição. Isso dá a você a checagem mais rápida que há: se não tem preposição na frente, não é prepositivo. Ponto final. Ele tem quatro funções. Função um: lugar, com в e на, respondendo где? Жить в городе. Работать на заводе. Função dois: assunto, com о, об e обо. Говорить о здоровье. Думать об этом. Função três: meio de transporte, com на. Ехать на машине. Лететь на самолёте. Repare que aqui на não significa «em cima de»: значит «de», como meio de transporte. Função quatro: tempo. Com в para meses, anos e décadas: в январе, в две тысячи двадцатом году. E com на para semanas: на прошлой неделе, на этой неделе. Semana é a única unidade que usa на. Agora as terminações, e essa é a melhor notícia do sistema de casos: praticamente tudo faz е. стол vira о столе. окно vira об окне. книга vira о книге. As exceções cabem em duas linhas, e vale decorá-las. Primeira: palavras terminadas em ий, ия ou ие fazem ии. санаторий vira в санатории. Россия vira в России. здание vira в здании. Segunda: femininos em sinal brando fazem и. дверь vira о двери. Os adjetivos: masculino e neutro terminam em ом ou ем; feminino em ой ou ей; plural em ых ou их. E o substantivo plural termina em ах ou ях. Uma última observação, sobre a preposição de assunto, porque é um erro muito visível quando aparece. Usa-se о antes de consoante: о здоровье. Usa-se об antes de vogal: об этом, об истории, об аварии. E usa-se обо em duas combinações fixas: обо мне e обо всём. Escrever «о этом» quebra a pronúncia e é imediatamente marcado como erro por qualquer corretor.",
+      "examples": [
+        {
+          "ru": "Врачи говорили о здоровье подростков.",
+          "pt": "Os médicos falaram sobre a saúde dos adolescentes.",
+          "note": "о + consoante; здоровье (neutro em -ье) → о здоровье."
+        },
+        {
+          "ru": "Об этом писали во всех медицинских журналах.",
+          "pt": "Escreveram sobre isso em todas as revistas médicas.",
+          "note": "об + vogal; plural -ых / -ах."
+        },
+        {
+          "ru": "Она работает в санатории на берегу моря.",
+          "pt": "Ela trabalha num sanatório à beira-mar.",
+          "note": "-ий → -ии: в санатории."
+        },
+        {
+          "ru": "На прошлой неделе он был в поликлинике.",
+          "pt": "Na semana passada ele esteve no posto de saúde.",
+          "note": "Semana usa на; поликлиника → в поликлинике."
+        }
+      ],
+      "pitfalls": [
+        "Escrever «о этом»: antes de vogal é об этом.",
+        "Fazer «в Россие»: palavras em -ия fazem -ии, ou seja, в России.",
+        "Usar в com semana: é на прошлой неделе, não «в прошлой неделе»."
+      ]
+    },
+    {
+      "title": "O segundo prepositivo: в лесу́, на берегу́, в году́",
+      "paragraphs": [
+        "Um grupo de substantivos masculinos tem duas formas de prepositivo, e a escolha entre elas não é livre. Depois de в e на com sentido de LUGAR, eles fazem -у́ tônico: в лесу, в саду, на берегу, в углу, на полу, в шкафу, в аэропорту, на мосту, в году, в порту, на краю, в Крыму. Mas com a preposição о, ou quando a palavra não indica lugar, volta a terminação normal -е: о лесе, о саде, о годе.",
+        "Compare as duas na mesma palavra: Мы гуляли в лесу (lugar → -у) × Мы говорили о лесе (assunto → -е). Он родился в 1990 году (lugar temporal, ainda -у) × Речь идёт о годе, когда всё изменилось (-е). Não é uma exceção caótica: é uma forma antiga preservada, chamada de locativo, que sobreviveu justamente nas palavras que mais se usam para dizer onde algo está.",
+        "A lista é curta e fechada — cerca de trinta palavras de uso corrente. Não tente deduzir: uma palavra ou está na lista ou não está. As mais frequentes em texto de nível B2 são в году, на берегу, в аэропорту, в шкафу, на полу, в углу, в лесу, в саду, на мосту. Se você aprender só essas nove, cobre quase tudo o que vai encontrar."
+      ],
+      "audio_script": "Segunda parte, e é a novidade desta unidade: o segundo prepositivo. Existe um grupo de substantivos masculinos que tem DUAS formas de prepositivo, e a escolha entre elas não é livre. Depois de в e на com sentido de LUGAR, eles fazem у tônico. Ouça a lista: в лесу. в саду. на берегу. в углу. на полу. в шкафу. в аэропорту. на мосту. в году. в порту. на краю. в Крыму. Mas com a preposição о, ou quando a palavra não indica lugar, volta a terminação normal, com е. О лесе. О саде. О годе. Compare as duas formas na mesma palavra, porque assim fica claro. Мы гуляли в лесу — passeamos NA floresta. Lugar, então у. Мы говорили о лесе — falamos SOBRE a floresta. Assunto, então е. Outro par. Он родился в тысяча девятьсот девяностом году. Lugar temporal, então у. Isso não é uma exceção caótica que alguém inventou para complicar. É uma forma antiga preservada, que os linguistas chamam de locativo, e ela sobreviveu justamente nas palavras que mais se usam para dizer onde alguma coisa está. A lista é curta e fechada: cerca de trinta palavras de uso corrente. Não tente deduzir. Uma palavra ou está na lista, ou não está. Se você quiser economizar esforço, aprenda estas nove, que cobrem quase tudo o que aparece num texto de nível bê dois: в году, на берегу, в аэропорту, в шкафу, на полу, в углу, в лесу, в саду, на мосту.",
+      "examples": [
+        {
+          "ru": "Мы отдыхали на берегу озера.",
+          "pt": "Descansamos à beira do lago.",
+          "note": "Lugar → берегу, com -у tônico."
+        },
+        {
+          "ru": "Он родился в 1985 году в маленьком городе.",
+          "pt": "Ele nasceu em 1985, numa cidade pequena.",
+          "note": "в году (locativo) × в городе (prepositivo normal), na mesma frase."
+        },
+        {
+          "ru": "Документы лежат в шкафу, а не на полу.",
+          "pt": "Os documentos estão no armário, não no chão.",
+          "note": "Dois locativos em -у."
+        },
+        {
+          "ru": "Мы долго говорили о лесе и о его будущем.",
+          "pt": "Falamos muito sobre a floresta e sobre o futuro dela.",
+          "note": "Com о, volta a terminação normal: о лесе."
+        }
+      ],
+      "pitfalls": [
+        "Usar -у com о: «о лесу» está errado; com о é о лесе.",
+        "Aplicar o locativo a palavras fora da lista: «в столу» não existe — é на столе."
+      ]
+    },
+    {
+      "title": "Formação de advérbios: -о, -и e по-…-ому",
+      "paragraphs": [
+        "Advérbios de modo se formam do adjetivo trocando a terminação por -о: быстрый → быстро, хороший → хорошо, серьёзный → серьёзно, регулярный → регулярно. Essa forma é idêntica ao neutro curto do adjetivo, e a diferença aparece só na função: Он говорит быстро (advérbio, modifica o verbo) × Решение быстро (adjetivo curto neutro, atribui qualidade ao sujeito).",
+        "O segundo tipo vem de adjetivos em -ский e forma advérbios em по-…-и, usados para línguas e modos culturais: по-русски, по-английски, по-французски. Atenção: говорить по-русски (falar russo, como modo) é diferente de знать русский язык (saber a língua russa, como objeto). O primeiro é advérbio, o segundo é substantivo — e trocá-los é um erro típico.",
+        "O terceiro tipo é по- + dativo do adjetivo, terminando em -ому/-ему: по-новому (de um jeito novo), по-другому (de outro jeito), по-моему (na minha opinião), по-разному (de formas diferentes). Todos levam hífen. Guarde a série inteira porque ela é muito produtiva em texto argumentativo: по-моему, по-вашему, по-разному, по-прежнему (como antes)."
+      ],
+      "audio_script": "Terceira parte: como transformar adjetivo em advérbio. São três padrões, e cada um tem um uso próprio. Padrão um, o mais comum: troque a terminação do adjetivo por о. быстрый vira быстро. хороший vira хорошо. серьёзный vira серьёзно. регулярный vira регулярно. Uma observação importante: essa forma é idêntica ao adjetivo curto neutro, e a diferença aparece só na função. Он говорит быстро. Aqui быстро é advérbio: modifica o verbo, diz COMO ele fala. Решение быстро. Aqui быстро é adjetivo curto: atribui uma qualidade ao sujeito. A forma é a mesma; o papel na frase é que muda. Padrão dois: adjetivos terminados em ский formam advérbios com по e и, ligados por hífen. По-русски. По-английски. По-французски. E aqui há uma distinção que quase todo estudante erra no começo. Говорить по-русски é falar russo, e по-русски é advérbio: diz de que modo você fala. Знать русский язык é saber a língua russa, e русский язык é substantivo com adjetivo: é o objeto do conhecimento. Não se diz «говорить русский язык», nem «знать по-русски». Cada verbo pede uma das duas construções. Padrão três: по mais o dativo do adjetivo, terminando em ому ou ему, também com hífen. По-новому, de um jeito novo. По-другому, de outro jeito. По-моему, na minha opinião. По-разному, de formas diferentes. Essa série é muito produtiva em texto argumentativo, então vale guardar inteira: по-моему, по-вашему, по-разному, по-прежнему, que significa como antes.",
+      "examples": [
+        {
+          "ru": "Он регулярно занимается спортом и хорошо себя чувствует.",
+          "pt": "Ele pratica esporte regularmente e se sente bem.",
+          "note": "Dois advérbios em -о modificando verbos."
+        },
+        {
+          "ru": "Она свободно говорит по-русски, но пишет медленно.",
+          "pt": "Ela fala russo fluentemente, mas escreve devagar.",
+          "note": "по-русски com говорить; nunca «говорить русский язык»."
+        },
+        {
+          "ru": "По-моему, эту проблему надо решать по-другому.",
+          "pt": "Na minha opinião, esse problema deve ser resolvido de outro jeito.",
+          "note": "Dois advérbios do tipo по-…-ому."
+        },
+        {
+          "ru": "Всё осталось по-прежнему.",
+          "pt": "Tudo ficou como antes."
+        }
+      ],
+      "pitfalls": [
+        "Dizer «говорить русский язык»: com говорить o certo é по-русски.",
+        "Esquecer o hífen em по-моему, по-русски, по-другому — ele é obrigatório."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Предложный падеж — terminações e casos especiais",
+    "columns": [
+      "Grupo",
+      "Terminação",
+      "Exemplo",
+      "Observação"
+    ],
+    "rows": [
+      [
+        "Masculino em consoante",
+        "-е",
+        "стол → о столе",
+        "Regra geral"
+      ],
+      [
+        "Masculino em -ий",
+        "-ии",
+        "санаторий → в санатории",
+        "Nunca -ие"
+      ],
+      [
+        "Neutro em -о",
+        "-е",
+        "окно → об окне",
+        "—"
+      ],
+      [
+        "Neutro em -ие",
+        "-ии",
+        "здание → в здании",
+        "—"
+      ],
+      [
+        "Feminino em -а",
+        "-е",
+        "книга → о книге",
+        "—"
+      ],
+      [
+        "Feminino em -ия",
+        "-ии",
+        "Россия → в России",
+        "Erro comum: «в Россие»"
+      ],
+      [
+        "Feminino em -ь",
+        "-и",
+        "дверь → о двери",
+        "—"
+      ],
+      [
+        "Adjetivo",
+        "-ом/-ем · -ой/-ей · -ых/-их",
+        "о новом · о новой · о новых",
+        "—"
+      ],
+      [
+        "Plural (substantivo)",
+        "-ах / -ях",
+        "в городах · в зданиях",
+        "—"
+      ],
+      [
+        "Segundo prepositivo",
+        "-у́ (só com в/на de lugar)",
+        "в лесу · на берегу · в году",
+        "Com о volta a -е: о лесе"
+      ]
+    ],
+    "note": "Advérbios: adjetivo + -о (быстро) · по-…-и para línguas (по-русски) · по-…-ому para modo e opinião (по-моему, по-другому)."
+  },
+  "reference": [
+    {
+      "construction": "заботиться о",
+      "question": "о ком? о чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "cuidar de, zelar por",
+      "example": "заботиться о своём здоровье"
+    },
+    {
+      "construction": "думать о",
+      "question": "о ком? о чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "pensar em",
+      "example": "думать о будущем"
+    },
+    {
+      "construction": "сомневаться в",
+      "question": "в ком? в чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "duvidar de",
+      "example": "сомневаться в результатах"
+    },
+    {
+      "construction": "участвовать в",
+      "question": "в ком? в чём?",
+      "case": "ПРЕДЛОЖНЫЙ ПАДЕЖ",
+      "meaning": "participar de",
+      "example": "участвовать в исследовании"
+    },
+    {
+      "construction": "отказываться от",
+      "question": "от кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "abrir mão de (contraste com «в»)",
+      "example": "отказаться от вредных привычек"
+    },
+    {
+      "construction": "лечиться от",
+      "question": "от кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "tratar-se de (uma doença)",
+      "example": "лечиться от гриппа"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u14-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "заботиться",
+      "back": "заботиться о ком? о чём? — предложный падеж",
+      "explanation": "заботиться о здоровье, о детях, о будущем.",
+      "tags": [
+        "заботиться о",
+        "предложный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u14-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "сомневаться",
+      "back": "сомневаться в ком? в чём? — предложный падеж",
+      "explanation": "сомневаться в результатах, в успехе. Em português «duvidar DE»; em russo é в.",
+      "tags": [
+        "сомневаться в",
+        "предложный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u14-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "Segundo prepositivo",
+      "back": "в лесу · на берегу · в году · в шкафу · на полу · в аэропорту",
+      "explanation": "Só com в/на indicando lugar. Com о volta a terminação normal: о лесе, о годе.",
+      "tags": [
+        "segundo prepositivo",
+        "предложный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u14-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 2,
+      "front": "говорить по-русски × знать русский язык",
+      "back": "по-русски = advérbio de modo · русский язык = substantivo",
+      "explanation": "Não existe «говорить русский язык» nem «знать по-русски».",
+      "tags": [
+        "advérbios",
+        "по-русски",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u14-e05",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 1,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Врач рассказал ___. (профилактика гриппа)",
+      "options": [
+        "о профилактике гриппа",
+        "о профилактику гриппа",
+        "о профилактики гриппа",
+        "про профилактика гриппа"
+      ],
+      "answer": "о профилактике гриппа",
+      "explanation": "о + предложный падеж; профилактика é feminino em -а → профилактике. «гриппа» fica no родительный por depender de профилактика.",
+      "tags": [
+        "предложный падеж",
+        "morfologia",
+        "о + assunto"
+      ]
+    },
+    {
+      "id": "u14-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Мы много слышали ___. (эта новая программа)",
+      "options": [
+        "об этой новой программе",
+        "о этой новой программе",
+        "об эту новую программу",
+        "об этой новой программы"
+      ],
+      "answer": "об этой новой программе",
+      "explanation": "Antes de vogal usa-se об (об этой). Feminino no предложный: этой новой программе.",
+      "tags": [
+        "об + vogal",
+        "предложный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u14-e07",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Он лечился ___ два месяца. (санаторий)",
+      "options": [
+        "в санатории",
+        "в санаторие",
+        "в санаторий",
+        "в санаторием"
+      ],
+      "answer": "в санатории",
+      "explanation": "Substantivos masculinos em -ий fazem предложный em -ии: санаторий → в санатории. Escrever «-ие» é o erro clássico.",
+      "tags": [
+        "-ий → -ии",
+        "предложный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u14-e08",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Эта традиция существует ___ уже давно. (Россия)",
+      "options": [
+        "в России",
+        "в Россие",
+        "в Россию",
+        "в Россией"
+      ],
+      "answer": "в России",
+      "explanation": "Femininos em -ия fazem предложный em -ии: Россия → в России. Mesma regra de история → в истории, аудитория → в аудитории.",
+      "tags": [
+        "-ия → -ии",
+        "предложный падеж",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u14-e09",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Летом врачи советуют больше гулять ___. (лес)",
+      "options": [
+        "в лесу",
+        "в лесе",
+        "в лес",
+        "о лесе"
+      ],
+      "answer": "в лесу",
+      "explanation": "лес pertence ao grupo do segundo prepositivo: com в/на indicando lugar, faz -у tônico (в лесу). Com о volta ao normal: о лесе.",
+      "tags": [
+        "segundo prepositivo",
+        "предложный падеж",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u14-e10",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "instruction": "Escolha o par correto.",
+      "prompt": "Мы гуляли ___, а потом долго говорили ___.",
+      "options": [
+        "в лесу … о лесе",
+        "в лесе … о лесу",
+        "в лесу … о лесу",
+        "в лесе … о лесе"
+      ],
+      "answer": "в лесу … о лесе",
+      "explanation": "Lugar com в → segundo prepositivo (в лесу). Assunto com о → prepositivo normal (о лесе). A mesma palavra, duas formas, decididas pela preposição.",
+      "tags": [
+        "segundo prepositivo",
+        "contraste",
+        "предложный падеж"
+      ]
+    },
+    {
+      "id": "u14-e11",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Он бросил курить ___. (прошлый год)",
+      "options": [
+        "в прошлом году",
+        "в прошлом годе",
+        "в прошлый год",
+        "на прошлом году"
+      ],
+      "answer": "в прошлом году",
+      "explanation": "год pertence ao segundo prepositivo: в году, sempre. E o adjetivo mantém a terminação normal do prepositivo: прошлом.",
+      "tags": [
+        "segundo prepositivo",
+        "tempo",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u14-e12",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha o par correto de preposições de tempo.",
+      "prompt": "Он заболел ___, а выздоровел ___.",
+      "options": [
+        "на прошлой неделе … в январе",
+        "в прошлой неделе … в январе",
+        "на прошлой неделе … на январе",
+        "в прошлую неделю … в январь"
+      ],
+      "answer": "на прошлой неделе … в январе",
+      "explanation": "неделя é a única unidade de tempo que usa на no prepositivo (на прошлой неделе); meses e anos usam в (в январе, в 2020 году).",
+      "tags": [
+        "tempo",
+        "предложный падеж",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u14-e13",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 1,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "Врачи советуют ___ заниматься спортом. (регулярный)",
+      "options": [
+        "регулярно",
+        "регулярный",
+        "регулярным",
+        "по-регулярному"
+      ],
+      "answer": "регулярно",
+      "explanation": "Advérbio de modo se forma trocando a terminação do adjetivo por -о: регулярный → регулярно. Ele modifica o verbo заниматься.",
+      "tags": [
+        "advérbios",
+        "formação",
+        "estrutura"
+      ]
+    },
+    {
+      "id": "u14-e14",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "instruction": "Escolha a construção correta.",
+      "prompt": "После двух лет в Москве она ___ почти без акцента.",
+      "options": [
+        "говорит по-русски",
+        "говорит русский язык",
+        "знает по-русски",
+        "говорит русским языком"
+      ],
+      "answer": "говорит по-русски",
+      "explanation": "говорить pede o advérbio по-русски. O substantivo русский язык vai com знать, учить, изучать — nunca com говорить.",
+      "tags": [
+        "по-русски",
+        "advérbios",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u14-e15",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 2,
+      "instruction": "Escolha a forma correta.",
+      "prompt": "___, эту проблему нужно решать ___. (мой / другой)",
+      "options": [
+        "По-моему … по-другому",
+        "По моему … по другому",
+        "По-моему … по-другой",
+        "Помоему … подругому"
+      ],
+      "answer": "По-моему … по-другому",
+      "explanation": "O tipo по- + dativo do adjetivo termina em -ому e leva hífen obrigatório: по-моему, по-другому, по-новому, по-прежнему.",
+      "tags": [
+        "advérbios",
+        "по-…-ому",
+        "ortografia"
+      ]
+    },
+    {
+      "id": "u14-e16",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases está correta. Qual?",
+      "prompt": "Qual frase usa corretamente o предложный падеж?",
+      "options": [
+        "Она много читает об истории медицины и работает в поликлинике.",
+        "Она много читает о истории медицины и работает в поликлинике.",
+        "Она много читает об историю медицины и работает в поликлинику.",
+        "Она много читает об истории медицины и работает в поликлинике на прошлом году."
+      ],
+      "answer": "Она много читает об истории медицины и работает в поликлинике.",
+      "explanation": "об antes de vogal (об истории, com -ия → -ии) e в поликлинике para lugar. A última opção erra o tempo: seria в прошлом году, com в, não на.",
+      "tags": [
+        "предложный падеж",
+        "об + vogal",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u14-e17",
+      "type": "choice",
+      "stage": "which_case",
+      "difficulty": 2,
+      "instruction": "Escolha a preposição e o caso corretos.",
+      "prompt": "Ему пришлось отказаться ___. (вредные привычки)",
+      "options": [
+        "от вредных привычек",
+        "в вредных привычках",
+        "о вредных привычках",
+        "от вредные привычки"
+      ],
+      "answer": "от вредных привычек",
+      "explanation": "отказаться ОТ + родительный падеж. Esta unidade é sobre предложный, mas отказаться é justamente o contraste: nem toda construção de saúde usa в/о.",
+      "tags": [
+        "отказаться от",
+        "родительный падеж",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u14-e18",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Escolha a tradução correta.",
+      "prompt": "«Он лечится от аллергии и заботится о своём здоровье.»",
+      "options": [
+        "Ele está se tratando de alergia e cuida da própria saúde.",
+        "Ele tem medo de alergia e pensa na própria saúde.",
+        "Ele se curou da alergia e não se preocupa com a saúde.",
+        "Ele está se tratando com alergia e se preocupa com a saúde dele."
+      ],
+      "answer": "Ele está se tratando de alergia e cuida da própria saúde.",
+      "explanation": "лечиться ОТ + родительный (a doença de que se trata) e заботиться О + предложный (aquilo de que se cuida). Duas regências diferentes na mesma frase.",
+      "tags": [
+        "лечиться от",
+        "заботиться о",
+        "significado"
+      ]
+    },
+    {
+      "id": "u14-e19",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "В прошлом году в нашем городе открылся новый спортивный центр на берегу реки. Врачи говорят, что регулярные занятия спортом помогают не только в профилактике сердечных заболеваний, но и в борьбе со стрессом. По статистике, люди, которые занимаются спортом хотя бы три раза в неделю, реже думают о своих проблемах и лучше спят. Однако специалисты предупреждают: начинать нужно постепенно и обязательно консультироваться с врачом, особенно если вы уже лечитесь от чего-нибудь.",
+      "prompt": "Qual é a advertência dos especialistas no texto?",
+      "options": [
+        "Começar aos poucos e consultar obrigatoriamente um médico.",
+        "Praticar esporte todos os dias sem exceção.",
+        "Evitar esporte se você tiver estresse.",
+        "Ir ao centro esportivo só no verão."
+      ],
+      "answer": "Começar aos poucos e consultar obrigatoriamente um médico.",
+      "explanation": "«начинать нужно постепенно и обязательно консультироваться с врачом» — постепенно e обязательно são advérbios em -о.",
+      "tags": [
+        "предложный падеж",
+        "advérbios",
+        "leitura"
+      ]
+    },
+    {
+      "id": "u14-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o mesmo texto e responda.",
+      "context": "В прошлом году в нашем городе открылся новый спортивный центр на берегу реки. Врачи говорят, что регулярные занятия спортом помогают не только в профилактике сердечных заболеваний, но и в борьбе со стрессом. По статистике, люди, которые занимаются спортом хотя бы три раза в неделю, реже думают о своих проблемах и лучше спят.",
+      "prompt": "Qual expressão do texto usa o SEGUNDO prepositivo (terminação -у́)?",
+      "options": [
+        "на берегу реки",
+        "в нашем городе",
+        "о своих проблемах",
+        "в профилактике заболеваний"
+      ],
+      "answer": "на берегу реки",
+      "explanation": "берег pertence ao grupo do locativo: на берегу, com -у tônico. As outras três usam as terminações regulares -е, -ах e -е.",
+      "tags": [
+        "segundo prepositivo",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u14-e21",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "На прошлой неделе он был в поликлинике и говорил с врачом о результатах анализов.",
+      "prompt": "Quando e onde a conversa aconteceu, segundo o áudio?",
+      "options": [
+        "Na semana passada, no posto de saúde.",
+        "No mês passado, num sanatório.",
+        "Na semana que vem, no hospital.",
+        "Ontem, por telefone."
+      ],
+      "answer": "Na semana passada, no posto de saúde.",
+      "explanation": "«На прошлой неделе» (semana usa на) e «в поликлинике» (lugar com в + prepositivo).",
+      "tags": [
+        "предложный падеж",
+        "tempo",
+        "audição"
+      ]
+    },
+    {
+      "id": "u14-e22",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "По-моему, начинать нужно постепенно: сначала гулять в лесу, а потом уже заниматься в спортивном зале.",
+      "prompt": "Qual é a sequência recomendada no áudio?",
+      "options": [
+        "Primeiro caminhar na floresta, depois treinar na academia.",
+        "Primeiro treinar na academia, depois caminhar na floresta.",
+        "Caminhar e treinar ao mesmo tempo, desde o início.",
+        "Não caminhar e ir direto para a academia."
+      ],
+      "answer": "Primeiro caminhar na floresta, depois treinar na academia.",
+      "explanation": "«сначала гулять в лесу, а потом уже заниматься в спортивном зале» — в лесу (locativo) e в зале (prepositivo normal), abertos por по-моему.",
+      "tags": [
+        "segundo prepositivo",
+        "advérbios",
+        "audição"
+      ]
+    },
+    {
+      "id": "u14-e23",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase com предложный падеж de lugar e de assunto.",
+      "tokens": [
+        "В",
+        "прошлом",
+        "году",
+        "врачи",
+        "говорили",
+        "о",
+        "профилактике",
+        "на",
+        "международной",
+        "конференции"
+      ],
+      "answer": "В прошлом году врачи говорили о профилактике на международной конференции",
+      "explanation": "Três prepositivos: в году (locativo), о профилактике (assunto) e на конференции (lugar).",
+      "tags": [
+        "предложный падеж",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u14-e24",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a construção russa ao significado.",
+      "pairs": [
+        {
+          "left": "заботиться о здоровье",
+          "right": "cuidar da saúde"
+        },
+        {
+          "left": "лечиться от гриппа",
+          "right": "tratar-se de gripe"
+        },
+        {
+          "left": "сомневаться в диагнозе",
+          "right": "duvidar do diagnóstico"
+        },
+        {
+          "left": "отказаться от сигарет",
+          "right": "abrir mão do cigarro"
+        },
+        {
+          "left": "участвовать в исследовании",
+          "right": "participar de uma pesquisa"
+        },
+        {
+          "left": "консультироваться с врачом",
+          "right": "consultar-se com o médico"
+        }
+      ],
+      "explanation": "Três regências diferentes no mesmo campo semântico: о/в pedem предложный, от pede родительный e с pede творительный.",
+      "tags": [
+        "предложный падеж",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u14-e25",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 80–100 palavras em russo. Use pelo menos três construções com предложный падеж e dois advérbios.",
+      "prompt": "«Что помогает вам сохранять здоровье?» (O que ajuda você a manter a saúde?)\n\nUnidades: заботиться о · думать о · участвовать в · отказаться от · регулярно · постепенно · по-моему",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "предложный падеж",
+        "ТРКИ-II"
+      ]
+    }
+  ],
+  "course_id": "russian",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ]
+}

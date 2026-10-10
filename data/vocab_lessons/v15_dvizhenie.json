@@ -1,0 +1,580 @@
+{
+  "id": "v15",
+  "unit_id": "u15_dvizhenie",
+  "order": 15,
+  "title": "Суббота всей семьёй",
+  "theme": "Mãe e filho organizam deslocamentos e cuidados em família",
+  "description": "Mãe e filho organizam deslocamentos e cuidados em família. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Мама": "f",
+    "Сын": "m"
+  },
+  "dialogue": {
+    "title": "Суббота всей семьёй",
+    "setting": "Mãe e filho organizam deslocamentos e cuidados em família",
+    "lines": [
+      {
+        "speaker": "Мама",
+        "ru": "Вчера я ходила в соседний магазин, поэтому продукты уже дома.",
+        "pt": "Ontem fui a pé à loja vizinha e voltei, por isso os mantimentos já estão em casa."
+      },
+      {
+        "speaker": "Сын",
+        "ru": "Когда ты позвонила, я ехал на новую дачу. Автобус опоздал.",
+        "pt": "Quando você ligou, eu estava indo à nova casa de campo. O ônibus atrasou."
+      },
+      {
+        "speaker": "Мама",
+        "ru": "Постоянная спешка может вести к семейным конфликтам. Давай всё распределим.",
+        "pt": "A pressa constante pode levar a conflitos familiares. Vamos distribuir as tarefas."
+      },
+      {
+        "speaker": "Сын",
+        "ru": "На даче холодно, я буду носить тёплую куртку.",
+        "pt": "Faz frio na casa de campo, vou usar uma jaqueta quente."
+      },
+      {
+        "speaker": "Мама",
+        "ru": "Утром мне нужно везти ребёнка к врачу — твою младшую сестру.",
+        "pt": "De manhã preciso levar a criança ao médico de transporte: sua irmã mais nova."
+      },
+      {
+        "speaker": "Сын",
+        "ru": "Тогда я останусь ухаживать за больной бабушкой.",
+        "pt": "Então vou ficar para cuidar da avó doente."
+      },
+      {
+        "speaker": "Мама",
+        "ru": "С понедельника я снова буду водить детей в школу пешком.",
+        "pt": "A partir de segunda-feira, voltarei a levar as crianças à escola a pé."
+      },
+      {
+        "speaker": "Сын",
+        "ru": "А я могу возить продукты на дачу по пятницам.",
+        "pt": "E eu posso levar mantimentos à casa de campo às sextas-feiras."
+      },
+      {
+        "speaker": "Мама",
+        "ru": "Отлично. Сегодня сначала врач, потом обед у бабушки.",
+        "pt": "Certo. Hoje, primeiro o médico, depois almoço na casa da avó."
+      },
+      {
+        "speaker": "Сын",
+        "ru": "Теперь всё ясно. После обеда вернусь домой и проверю уроки.",
+        "pt": "Agora está tudo claro. Depois do almoço, voltarei para casa e conferirei as lições."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual problema a família resolve?",
+      "options": [
+        "Distribuir deslocamentos e cuidados de sábado.",
+        "Escolher uma escola nova fora da cidade.",
+        "Preparar uma mudança definitiva para a aldeia.",
+        "Cancelar o médico para viajar de ônibus."
+      ],
+      "answer": "Distribuir deslocamentos e cuidados de sábado.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "ходить",
+      "tag": "ходил / ездил",
+      "head": "ходил / ездил",
+      "regency": "ходить куда? / ездить куда?",
+      "case": "винительный падеж",
+      "pt": "ir a pé à loja vizinha",
+      "chunk": "ходить в соседний магазин",
+      "chunk_pt": "ir a pé à loja vizinha",
+      "chunk_wrong": [
+        "ходить в соседнем магазине",
+        "ходить в соседнего магазина",
+        "ходить в соседним магазином"
+      ],
+      "form_note": "No passado, ходил / ездил pode relatar uma ida com volta; шёл / ехал focaliza o percurso em andamento.",
+      "trap": "No passado, ходил / ездил pode relatar uma ida com volta; шёл / ехал focaliza o percurso em andamento.",
+      "example": {
+        "ru": "Вчера мама ходила в аптеку.",
+        "pt": "Ontem, a mãe foi à farmácia e voltou.",
+        "extra": "аптеке",
+        "note": "No passado, ходил / ездил pode relatar uma ida com volta; шёл / ехал focaliza o percurso em andamento."
+      },
+      "cloze": {
+        "ru": "Вчера я ___; сейчас я дома.",
+        "answer": "ходил в библиотеку",
+        "wrong": [
+          "ходил в библиотеке",
+          "ходил в библиотекой",
+          "ходил в библиотек"
+        ],
+        "pt": "Ontem, fui à biblioteca e voltei; agora estou em casa.",
+        "note": "No passado, ходил / ездил pode relatar uma ida com volta; шёл / ехал focaliza o percurso em andamento."
+      },
+      "hear": {
+        "ru": "Отец ездил в город и вернулся к обеду.",
+        "pt": "O pai foi à cidade de transporte e voltou antes do almoço.",
+        "wrong": [
+          "O pai estava a caminho da cidade antes do almoço.",
+          "O pai irá à cidade de transporte depois do almoço.",
+          "O pai não foi à cidade de transporte antes do almoço."
+        ],
+        "note": "No passado, ходил / ездил pode relatar uma ida com volta; шёл / ехал focaliza o percurso em andamento."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "идти",
+      "tag": "шёл / ехал",
+      "head": "шёл / ехал",
+      "regency": "идти куда? / ехать куда?",
+      "case": "винительный падеж",
+      "pt": "ir de transporte à nova casa de campo",
+      "chunk": "ехать на новую дачу",
+      "chunk_pt": "ir de transporte à nova casa de campo",
+      "chunk_wrong": [
+        "ехать на новой даче",
+        "ехать на новой дачи",
+        "ехать на новой дачей"
+      ],
+      "form_note": "шёл e ехал descrevem um trajeto em andamento. O contexto «quando» situa o evento dentro desse trajeto.",
+      "trap": "шёл e ехал descrevem um trajeto em andamento. O contexto «quando» situa o evento dentro desse trajeto.",
+      "example": {
+        "ru": "Когда ты позвонил, я шёл к остановке.",
+        "pt": "Quando você ligou, eu estava indo a pé até o ponto.",
+        "extra": "остановку",
+        "note": "шёл e ехал descrevem um trajeto em andamento. O contexto «quando» situa o evento dentro desse trajeto."
+      },
+      "cloze": {
+        "ru": "Когда начался дождь, мы ___.",
+        "answer": "ехали в центр",
+        "wrong": [
+          "ехали в центра",
+          "ехали в центру",
+          "ехали в центром"
+        ],
+        "pt": "Quando começou a chover, estávamos a caminho do centro de transporte.",
+        "note": "шёл e ехал descrevem um trajeto em andamento. O contexto «quando» situa o evento dentro desse trajeto."
+      },
+      "hear": {
+        "ru": "Сын ехал в школу, когда ему позвонила мама.",
+        "pt": "O filho estava a caminho da escola quando a mãe lhe telefonou.",
+        "wrong": [
+          "A mãe estava a caminho da escola quando o filho lhe telefonou.",
+          "O filho voltará da escola quando a mãe lhe telefonar.",
+          "O filho não estava a caminho da escola quando a mãe lhe telefonou."
+        ],
+        "note": "шёл e ехал descrevem um trajeto em andamento. O contexto «quando» situa o evento dentro desse trajeto."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "вести",
+      "tag": "вести к",
+      "head": "вести к",
+      "regency": "вести к чему?",
+      "case": "дательный падеж",
+      "pt": "levar a conflitos familiares",
+      "chunk": "вести к семейным конфликтам",
+      "chunk_pt": "levar a conflitos familiares",
+      "chunk_wrong": [
+        "вести к семейных конфликтов",
+        "вести к семейными конфликтами",
+        "вести в семейные конфликты"
+      ],
+      "form_note": "No uso de consequência, вести к чему? exige дательный падеж; não confunda com levar uma pessoa fisicamente.",
+      "trap": "No uso de consequência, вести к чему? exige дательный падеж; não confunda com levar uma pessoa fisicamente.",
+      "example": {
+        "ru": "Недосып ведёт к усталости.",
+        "pt": "Dormir pouco leva ao cansaço.",
+        "extra": "усталость",
+        "note": "No uso de consequência, вести к чему? exige дательный падеж; não confunda com levar uma pessoa fisicamente."
+      },
+      "cloze": {
+        "ru": "Такая привычка может вести ___.",
+        "answer": "к серьёзным проблемам",
+        "wrong": [
+          "к серьёзные проблемы",
+          "к серьёзных проблем",
+          "к серьёзными проблемами"
+        ],
+        "pt": "Esse hábito pode levar a problemas sérios.",
+        "note": "No uso de consequência, вести к чему? exige дательный падеж; não confunda com levar uma pessoa fisicamente."
+      },
+      "hear": {
+        "ru": "Спешка привела к ошибке в расписании.",
+        "pt": "A pressa levou a um erro no horário.",
+        "wrong": [
+          "O erro no horário levou à pressa.",
+          "A pressa não levou a um erro no horário.",
+          "A pressa levará a um erro no horário."
+        ],
+        "note": "No uso de consequência, вести к чему? exige дательный падеж; não confunda com levar uma pessoa fisicamente."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "носить",
+      "tag": "носить",
+      "head": "носить",
+      "regency": "носить что?",
+      "case": "винительный падеж",
+      "pt": "usar uma jaqueta quente",
+      "chunk": "носить тёплую куртку",
+      "chunk_pt": "usar uma jaqueta quente",
+      "chunk_wrong": [
+        "носить тёплой куртке",
+        "носить тёплой курткой",
+        "носить тёплой куртки"
+      ],
+      "form_note": "носить что? é usar habitualmente uma roupa; надеть что? é colocá-la em uma ocasião.",
+      "trap": "носить что? é usar habitualmente uma roupa; надеть что? é colocá-la em uma ocasião.",
+      "example": {
+        "ru": "Зимой дедушка носит шерстяной шарф.",
+        "pt": "No inverno, o avô usa um cachecol de lã.",
+        "extra": "шарфом",
+        "note": "носить что? é usar habitualmente uma roupa; надеть что? é colocá-la em uma ocasião."
+      },
+      "cloze": {
+        "ru": "На работе она носит ___.",
+        "answer": "удобную обувь",
+        "wrong": [
+          "удобной обувью",
+          "удобной обуви",
+          "удобная обувь"
+        ],
+        "pt": "No trabalho, ela usa calçados confortáveis.",
+        "note": "носить что? é usar habitualmente uma roupa; надеть что? é colocá-la em uma ocasião."
+      },
+      "hear": {
+        "ru": "Дочь носила мамину куртку.",
+        "pt": "A filha usava a jaqueta da mãe.",
+        "wrong": [
+          "A mãe usava a jaqueta da filha.",
+          "A filha não usava a jaqueta da mãe.",
+          "A filha usará a jaqueta da mãe."
+        ],
+        "note": "носить что? é usar habitualmente uma roupa; надеть что? é colocá-la em uma ocasião."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "везти",
+      "tag": "везти / везёт",
+      "head": "везти / везёт",
+      "regency": "везти кого? что? / везти кому?",
+      "case": "винительный падеж / дательный падеж",
+      "pt": "levar a criança ao médico de transporte",
+      "chunk": "везти ребёнка к врачу",
+      "chunk_pt": "levar a criança ao médico de transporte",
+      "chunk_wrong": [
+        "везти ребёнку к врачу",
+        "везти ребёнком к врачу",
+        "везти ребёнок к врачу"
+      ],
+      "form_note": "Transporte: везти кого? что?. Sorte: везти кому? em construção impessoal, por exemplo брату везёт.",
+      "trap": "Transporte: везти кого? что?. Sorte: везти кому? em construção impessoal, por exemplo брату везёт.",
+      "example": {
+        "ru": "Сегодня мне везёт: автобус пришёл сразу.",
+        "pt": "Hoje estou com sorte: o ônibus chegou logo.",
+        "extra": "меня",
+        "note": "Transporte: везти кого? что?. Sorte: везти кому? em construção impessoal, por exemplo брату везёт."
+      },
+      "cloze": {
+        "ru": "Сейчас отец ___ на вокзал.",
+        "answer": "везёт сестру",
+        "wrong": [
+          "везёт сестре",
+          "везёт сестрой",
+          "везёт сестра"
+        ],
+        "pt": "Agora, o pai está levando a irmã à estação de transporte.",
+        "note": "Transporte: везти кого? что?. Sorte: везти кому? em construção impessoal, por exemplo брату везёт."
+      },
+      "hear": {
+        "ru": "Брату везло, а сестре не везло.",
+        "pt": "O irmão tinha sorte, e a irmã não tinha sorte.",
+        "wrong": [
+          "A irmã tinha sorte, e o irmão não tinha sorte.",
+          "O irmão terá sorte, e a irmã não terá sorte.",
+          "O irmão tem sorte, e a irmã não tem sorte."
+        ],
+        "note": "Transporte: везти кого? что?. Sorte: везти кому? em construção impessoal, por exemplo брату везёт."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "ухаживать",
+      "tag": "ухаживать за",
+      "head": "ухаживать за",
+      "regency": "ухаживать за кем? чем?",
+      "case": "творительный падеж",
+      "pt": "cuidar da avó doente",
+      "chunk": "ухаживать за больной бабушкой",
+      "chunk_pt": "cuidar da avó doente",
+      "chunk_wrong": [
+        "ухаживать за больную бабушку",
+        "ухаживать за больной бабушки",
+        "ухаживать за больной бабушке"
+      ],
+      "form_note": "ухаживать за кем? чем? usa за + творительный падеж; compare заботиться о ком? о чём?.",
+      "trap": "ухаживать за кем? чем? usa за + творительный падеж; compare заботиться о ком? о чём?.",
+      "example": {
+        "ru": "Соседка ухаживает за садом.",
+        "pt": "A vizinha cuida do jardim.",
+        "extra": "сад",
+        "note": "ухаживать за кем? чем? usa за + творительный падеж; compare заботиться о ком? о чём?."
+      },
+      "cloze": {
+        "ru": "Надо ухаживать ___.",
+        "answer": "за домашними растениями",
+        "wrong": [
+          "за домашние растения",
+          "за домашних растений",
+          "за домашним растениям"
+        ],
+        "pt": "É preciso cuidar das plantas de casa.",
+        "note": "ухаживать за кем? чем? usa за + творительный падеж; compare заботиться о ком? о чём?."
+      },
+      "hear": {
+        "ru": "Внук ухаживал за дедушкой после операции.",
+        "pt": "O neto cuidava do avô depois da operação.",
+        "wrong": [
+          "O avô cuidava do neto depois da operação.",
+          "O neto não cuidava do avô depois da operação.",
+          "O neto cuidará do avô depois da operação."
+        ],
+        "note": "ухаживать за кем? чем? usa за + творительный падеж; compare заботиться о ком? о чём?."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "водить",
+      "tag": "водить",
+      "head": "водить",
+      "regency": "водить кого? куда?",
+      "case": "винительный падеж",
+      "pt": "levar as crianças à escola regularmente",
+      "chunk": "водить детей в школу",
+      "chunk_pt": "levar as crianças à escola regularmente",
+      "chunk_wrong": [
+        "водить детям в школу",
+        "водить детьми в школу",
+        "водить дети в школу"
+      ],
+      "form_note": "водить кого? куда? indica condução habitual a pé; вести descreve uma direção em andamento.",
+      "trap": "водить кого? куда? indica condução habitual a pé; вести descreve uma direção em andamento.",
+      "example": {
+        "ru": "Дедушка водит внучку на музыку.",
+        "pt": "O avô leva a neta às aulas de música regularmente.",
+        "extra": "внучке",
+        "note": "водить кого? куда? indica condução habitual a pé; вести descreve uma direção em andamento."
+      },
+      "cloze": {
+        "ru": "Каждое утро мать водит ___.",
+        "answer": "сына в детский сад",
+        "wrong": [
+          "сыну в детский сад",
+          "сыном в детский сад",
+          "сын в детский сад"
+        ],
+        "pt": "Toda manhã, a mãe leva o filho à creche.",
+        "note": "водить кого? куда? indica condução habitual a pé; вести descreve uma direção em andamento."
+      },
+      "hear": {
+        "ru": "Отец водил дочь в бассейн по субботам.",
+        "pt": "O pai levava a filha à piscina aos sábados.",
+        "wrong": [
+          "A filha levava o pai à piscina aos sábados.",
+          "O pai não levava a filha à piscina aos sábados.",
+          "O pai levará a filha à piscina aos sábados."
+        ],
+        "note": "водить кого? куда? indica condução habitual a pé; вести descreve uma direção em andamento."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "возить",
+      "tag": "возить",
+      "head": "возить",
+      "regency": "возить кого? что? куда?",
+      "case": "винительный падеж",
+      "pt": "levar mantimentos à casa de campo regularmente",
+      "chunk": "возить продукты на дачу",
+      "chunk_pt": "levar mantimentos à casa de campo regularmente",
+      "chunk_wrong": [
+        "возить продуктам на дачу",
+        "возить продуктами на дачу",
+        "возить продуктах на дачу"
+      ],
+      "form_note": "возить descreve transporte repetido ou em direções variadas; везти descreve uma direção atual.",
+      "trap": "возить descreve transporte repetido ou em direções variadas; везти descreve uma direção atual.",
+      "example": {
+        "ru": "По пятницам он возит маму на рынок.",
+        "pt": "Às sextas-feiras, ele leva a mãe ao mercado de transporte.",
+        "extra": "маме",
+        "note": "возить descreve transporte repetido ou em direções variadas; везти descreve uma direção atual."
+      },
+      "cloze": {
+        "ru": "Каждую неделю мы возим ___.",
+        "answer": "вещи в деревню",
+        "wrong": [
+          "вещам в деревню",
+          "вещами в деревню",
+          "вещах в деревню"
+        ],
+        "pt": "Toda semana, levamos coisas à aldeia de transporte.",
+        "note": "возить descreve transporte repetido ou em direções variadas; везти descreve uma direção atual."
+      },
+      "hear": {
+        "ru": "Сестра возила брата в больницу каждую неделю.",
+        "pt": "A irmã levava o irmão ao hospital toda semana.",
+        "wrong": [
+          "O irmão levava a irmã ao hospital toda semana.",
+          "A irmã não levava o irmão ao hospital toda semana.",
+          "A irmã levará o irmão ao hospital toda semana."
+        ],
+        "note": "возить descreve transporte repetido ou em direções variadas; везти descreve uma direção atual."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Onde o filho ficará de manhã?",
+      "options": [
+        "Cuidando da avó que está doente.",
+        "Levando a irmã à consulta médica.",
+        "Fazendo compras na loja vizinha.",
+        "Levando crianças à escola a pé."
+      ],
+      "answer": "Cuidando da avó que está doente.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "O que a mãe fez ontem?",
+      "options": [
+        "Foi à loja e trouxe os mantimentos.",
+        "Foi ao médico e ficou na estação.",
+        "Viajou à casa de campo sem voltar.",
+        "Levou o filho à escola de ônibus."
+      ],
+      "answer": "Foi à loja e trouxe os mantimentos.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "в соседний магазин",
+      "wrong": [
+        "в соседнем магазине",
+        "в соседнего магазина",
+        "в соседним магазином"
+      ],
+      "note": "No passado, ходил / ездил pode relatar uma ida com volta; шёл / ехал focaliza o percurso em andamento."
+    },
+    {
+      "line": 2,
+      "gap": "к семейным конфликтам",
+      "wrong": [
+        "к семейных конфликтов",
+        "к семейными конфликтами",
+        "в семейные конфликты"
+      ],
+      "note": "No uso de consequência, вести к чему? exige дательный падеж; não confunda com levar uma pessoa fisicamente."
+    },
+    {
+      "line": 3,
+      "gap": "тёплую куртку",
+      "wrong": [
+        "тёплой куртке",
+        "тёплой курткой",
+        "тёплая куртка"
+      ],
+      "note": "носить что? é usar habitualmente uma roupa; надеть что? é colocá-la em uma ocasião."
+    },
+    {
+      "line": 5,
+      "gap": "за больной бабушкой",
+      "wrong": [
+        "за больную бабушку",
+        "за больной бабушки",
+        "за больной бабушке"
+      ],
+      "note": "ухаживать за кем? чем? usa за + творительный падеж; compare заботиться о ком? о чём?."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "ходить в соседний магазин",
+        "right": "ir a pé à loja vizinha"
+      },
+      {
+        "left": "ехать на новую дачу",
+        "right": "ir de transporte à nova casa de campo"
+      },
+      {
+        "left": "вести к семейным конфликтам",
+        "right": "levar a conflitos familiares"
+      },
+      {
+        "left": "носить тёплую куртку",
+        "right": "usar uma jaqueta quente"
+      },
+      {
+        "left": "везти ребёнка к врачу",
+        "right": "levar a criança ao médico de transporte"
+      },
+      {
+        "left": "ухаживать за больной бабушкой",
+        "right": "cuidar da avó doente"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Мама",
+      "you": "Сын",
+      "ru": "Как можно делать покупки и больше двигаться?",
+      "prompt": "Sugira um deslocamento a pé.",
+      "answer": "Можно ходить в соседний магазин.",
+      "wrong": [
+        "Можно ходить в соседнем магазине.",
+        "Можно ходить в соседнего магазина.",
+        "Можно ходить в соседним магазином."
+      ],
+      "explanation": "No passado, ходил / ездил pode relatar uma ida com volta; шёл / ехал focaliza o percurso em andamento."
+    },
+    {
+      "speaker": "Сын",
+      "you": "Мама",
+      "ru": "Как добраться до дачи на автобусе?",
+      "prompt": "Sugira um deslocamento de transporte.",
+      "answer": "Можно ехать на новую дачу.",
+      "wrong": [
+        "Можно ехать на новой даче.",
+        "Можно ехать на новой дачи.",
+        "Можно ехать на новой дачей."
+      ],
+      "explanation": "шёл e ехал descrevem um trajeto em andamento. O contexto «quando» situa o evento dentro desse trajeto."
+    }
+  ],
+  "writing": {
+    "prompt": "Descreva a rotina de deslocamentos de uma família e um trajeto que estava em andamento quando ocorreu um imprevisto.",
+    "use": [
+      "ходил / ездил",
+      "шёл / ехал",
+      "вести к",
+      "носить",
+      "везти / везёт"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: ходить куда? / ездить куда?; идти куда? / ехать куда?; вести к чему?; носить что?; везти кого? что? / везти кому?; ухаживать за кем? чем?; водить кого? куда?; возить кого? что? куда?."
+  }
+}

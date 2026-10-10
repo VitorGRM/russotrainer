@@ -1,0 +1,61 @@
+{
+  "id": "u06_nova_unidade",
+  "order": 6,
+  "title": "Título da unidade",
+  "description": "O que será automatizado.",
+  "estimated_minutes": 20,
+  "objectives": ["objetivo observável"],
+  "grammar": [
+    {
+      "title": "Nome do ponto gramatical",
+      "paragraphs": [
+        "Explicação em português do que muda e por quê, com exemplos russos dentro do texto.",
+        "Segundo parágrafo, se necessário: contraste com um erro típico ou com o português."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Tabela de memorização",
+    "columns": ["Caso", "Pergunta", "Singular", "Plural"],
+    "rows": [
+      ["Творительный", "кем? чем?", "-ом / -ем", "-ами / -ями"]
+    ],
+    "note": "Observação curta de mnemônica, opcional."
+  },
+  "reference": [
+    {
+      "construction": "заниматься",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "ocupar-se de, praticar",
+      "example": "заниматься научной работой"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u06-e01",
+      "type": "input",
+      "stage": "active_recall",
+      "difficulty": 2,
+      "instruction": "Digite a construção completa.",
+      "prompt": "ocupar-se de pesquisa científica",
+      "answer": "заниматься научными исследованиями",
+      "valid_answers": ["заниматься научной работой"],
+      "explanation": "заниматься кем? чем? exige творительный падеж.",
+      "tags": ["заниматься", "творительный падеж", "recuperação"]
+    },
+    {
+      "id": "u06-e02",
+      "type": "match_pairs",
+      "stage": "recognition",
+      "difficulty": 2,
+      "instruction": "Relacione o verbo/expressão com a pergunta russa correta.",
+      "pairs": [
+        {"left": "заниматься", "right": "кем? чем?"},
+        {"left": "зависеть", "right": "от кого? чего?"}
+      ],
+      "explanation": "Cada construção tem uma regência fixa; memorize o par verbo + pergunta.",
+      "tags": ["regência", "match_pairs"]
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "id": "v09",
+  "unit_id": "u09_nauka_prichina_passiv",
+  "order": 9,
+  "title": "Черновик статьи",
+  "theme": "Наука и исследования",
+  "description": "A chefe de laboratório discute o rascunho de um artigo com um pesquisador. Oito construções do discurso científico: основываться на (предл.) × опираться на (вин.), способствовать/препятствовать + дательный, сопровождаться, заключаться в, доказать, прийти к выводу.",
+  "speakers": {"Наталья": "f", "Игорь": "m"},
+  "dialogue": {
+    "title": "В лаборатории",
+    "setting": "Natalia, chefe do laboratório, leu o rascunho do artigo de Igor sobre um novo método de tratamento.",
+    "lines": [
+      {"speaker": "Наталья", "ru": "Игорь, я прочитала черновик статьи. Выводы интересные, но на чём они основываются?", "pt": "Igor, li o rascunho do artigo. As conclusões são interessantes, mas em que elas se baseiam?"},
+      {"speaker": "Игорь", "ru": "На данных двух экспериментов. Мы провели их весной на двух группах пациентов.", "pt": "Nos dados de dois experimentos. Nós os fizemos na primavera, com dois grupos de pacientes."},
+      {"speaker": "Наталья", "ru": "Двух групп мало. Рецензенты скажут, что вы опираетесь на слишком маленькую выборку.", "pt": "Dois grupos é pouco. Os revisores vão dizer que vocês se apoiam numa amostra pequena demais."},
+      {"speaker": "Игорь", "ru": "Согласен. Но мы доказали, что новый метод способствует быстрому восстановлению.", "pt": "Concordo. Mas provamos que o novo método contribui para uma recuperação rápida."},
+      {"speaker": "Наталья", "ru": "А побочные эффекты? Лечение ими не сопровождалось?", "pt": "E os efeitos colaterais? O tratamento não veio acompanhado deles?"},
+      {"speaker": "Игорь", "ru": "Сопровождалось, но редко: лёгкой головной болью у трёх человек.", "pt": "Veio, mas raramente: uma dor de cabeça leve em três pessoas."},
+      {"speaker": "Наталья", "ru": "Тогда в чём заключается главная проблема?", "pt": "Então em que consiste o problema principal?"},
+      {"speaker": "Игорь", "ru": "В финансировании. Отсутствие денег препятствует третьему эксперименту.", "pt": "No financiamento. A falta de dinheiro impede o terceiro experimento."},
+      {"speaker": "Наталья", "ru": "Понятно. Тогда не спеши приходить к окончательному выводу. Сначала подадим заявку на грант.", "pt": "Entendi. Então não se apresse em chegar a uma conclusão definitiva. Primeiro vamos pedir uma bolsa de pesquisa."},
+      {"speaker": "Игорь", "ru": "Хорошо. Я подготовлю заявку к понедельнику.", "pt": "Está bem. Preparo o pedido até segunda-feira."}
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "O que a chefe do laboratório acha do artigo?",
+      "options": [
+        "As conclusões são interessantes, mas os dados ainda são poucos.",
+        "O artigo está pronto e pode ser publicado ainda este mês.",
+        "O método novo não funciona e deve ser abandonado de vez.",
+        "O artigo deve ser reescrito por outro pesquisador do grupo."
+      ],
+      "answer": "As conclusões são interessantes, mas os dados ainda são poucos.",
+      "explanation": "«Выводы интересные… Двух групп мало»."
+    }
+  ],
+  "items": [
+    {
+      "key": "osnovyvatsya",
+      "lemma": "основываться",
+      "tag": "основываться на",
+      "head": "основываться на",
+      "regency": "основываться на ком? чём?",
+      "case": "предложный падеж",
+      "pt": "basear-se em",
+      "chunk": "основываться на фактах",
+      "chunk_pt": "basear-se em fatos",
+      "chunk_wrong": ["основываться на факты", "основываться от фактов", "основываться фактами"],
+      "form_note": "на + предложный: a base «está» embaixo (где?).",
+      "trap": "основываться на + предложный, mas опираться на + винительный. Mesma preposição, casos diferentes.",
+      "example": {"ru": "Эта теория основывается на наблюдениях.", "pt": "Esta teoria se baseia em observações.", "extra": "наблюдения", "note": "на наблюдениях: предложный plural (-ях)."},
+      "cloze": {"ru": "Решение суда основывалось ___.", "answer": "на показаниях свидетелей", "wrong": ["на показания свидетелей", "из показаний свидетелей", "показаниями свидетелей"], "pt": "A decisão do tribunal se baseava nos depoimentos das testemunhas.", "note": "на + предложный plural: на показаниях."},
+      "hear": {"ru": "Его выводы основываются не на фактах, а на слухах.", "pt": "As conclusões dele se baseiam em boatos, e não em fatos.", "wrong": ["As conclusões dele se baseiam em fatos, e não em boatos.", "As conclusões dele deram origem a boatos.", "Os boatos se baseiam nas conclusões dele."], "note": "не на фактах, а на слухах."}
+    },
+    {
+      "key": "opiratsya",
+      "lemma": "опираться",
+      "tag": "опираться на",
+      "head": "опираться / опереться на",
+      "regency": "опираться / опереться на кого? что?",
+      "case": "винительный падеж",
+      "pt": "apoiar-se em, basear-se em",
+      "chunk": "опираться на опыт",
+      "chunk_pt": "apoiar-se na experiência",
+      "chunk_wrong": ["опираться на опыте", "опираться об опыт", "опираться опытом"],
+      "form_note": "на + винительный: o peso vai «para cima» do apoio (куда?).",
+      "trap": "Erro clássico: «опираться на опыте» (предложный). O certo é на опыт, на данные, на факты.",
+      "example": {"ru": "В работе мы опираемся на данные статистики.", "pt": "No trabalho nos apoiamos nos dados estatísticos.", "extra": "данных", "note": "на данные: винительный plural = nominativo."},
+      "cloze": {"ru": "Автор статьи опирается ___.", "answer": "на результаты опроса", "wrong": ["на результатах опроса", "результатами опроса", "от результатов опроса"], "pt": "O autor do artigo se apoia nos resultados da enquete.", "note": "на + винительный plural: на результаты."},
+      "hear": {"ru": "Учительница опиралась на учебник, а не на свой опыт.", "pt": "A professora se apoiava no livro didático, e não na própria experiência.", "wrong": ["A professora se apoiava na própria experiência, e não no livro didático.", "A professora escreveu um livro com base na própria experiência.", "A professora vai se apoiar no livro didático, e não na experiência."], "note": "на учебник — sim; на свой опыт — não."}
+    },
+    {
+      "key": "dokazat",
+      "lemma": "доказывать",
+      "tag": "доказывать / доказать",
+      "head": "доказывать / доказать",
+      "regency": "доказывать / доказать что? кому? · что + oração",
+      "case": "винительный падеж",
+      "pt": "provar, demonstrar",
+      "chunk": "доказать свою правоту",
+      "chunk_pt": "provar que se tem razão",
+      "chunk_wrong": ["доказать своей правоте", "доказаться свою правоту", "доказать в своей правоте"],
+      "form_note": "O que se prova → винительный; a quem → дательный: доказать учителю, что…",
+      "trap": "Não há -ся nem preposição: доказать гипотезу, доказать, что метод работает.",
+      "example": {"ru": "Адвокат доказал невиновность клиента.", "pt": "O advogado provou a inocência do cliente.", "extra": "невиновностью", "note": "доказать что? → невиновность (винительный); клиента = родительный."},
+      "cloze": {"ru": "Учёным удалось доказать ___.", "answer": "свою гипотезу", "wrong": ["своей гипотезе", "в своей гипотезе", "о своей гипотезе"], "pt": "Os cientistas conseguiram provar a sua hipótese.", "note": "Objeto direto: свою гипотезу."},
+      "hear": {"ru": "Он доказал мне, что я был неправ.", "pt": "Ele me provou que eu estava errado.", "wrong": ["Eu provei a ele que ele estava errado.", "Ele me disse, sem provas, que eu estava errado.", "Ele vai me provar que eu estava errado."], "note": "он = quem prova; мне = a quem; я был неправ = o que foi provado."}
+    },
+    {
+      "key": "sposobstvovat",
+      "lemma": "способствовать",
+      "tag": "способствовать",
+      "head": "способствовать",
+      "regency": "способствовать кому? чему?",
+      "case": "дательный падеж",
+      "pt": "contribuir para, favorecer",
+      "chunk": "способствовать развитию",
+      "chunk_pt": "contribuir para o desenvolvimento",
+      "chunk_wrong": ["способствовать к развитию", "способствовать развитие", "способствовать для развития"],
+      "form_note": "дательный sem preposição.",
+      "trap": "«Contribuir PARA» puxa к ou для. Não há preposição: способствовать росту, успеху.",
+      "example": {"ru": "Спорт способствует укреплению здоровья.", "pt": "O esporte contribui para fortalecer a saúde.", "extra": "укрепление", "note": "укреплению: дательный neutro (-ию)."},
+      "cloze": {"ru": "Хороший сон способствует ___.", "answer": "быстрому восстановлению", "wrong": ["к быстрому восстановлению", "быстрое восстановление", "для быстрого восстановления"], "pt": "Um bom sono contribui para uma recuperação rápida.", "note": "дательный: быстрому восстановлению."},
+      "hear": {"ru": "Низкие цены способствовали росту туризма.", "pt": "Os preços baixos contribuíram para o crescimento do turismo.", "wrong": ["O crescimento do turismo contribuiu para os preços baixos.", "Os preços baixos atrapalharam o crescimento do turismo.", "Os preços baixos vão contribuir para o crescimento do turismo."], "note": "цены = sujeito (causa); росту = дательный (efeito)."}
+    },
+    {
+      "key": "prepyatstvovat",
+      "lemma": "препятствовать",
+      "tag": "препятствовать",
+      "head": "препятствовать",
+      "regency": "препятствовать кому? чему?",
+      "case": "дательный падеж",
+      "pt": "impedir, dificultar",
+      "chunk": "препятствовать внедрению",
+      "chunk_pt": "dificultar a implantação",
+      "chunk_wrong": ["препятствовать внедрение", "препятствовать от внедрения", "препятствовать к внедрению"],
+      "form_note": "Como способствовать: дательный sem preposição.",
+      "trap": "«Impedir algo» é transitivo direto em português. Em russo: препятствовать развитию (дательный).",
+      "example": {"ru": "Бюрократия препятствует развитию бизнеса.", "pt": "A burocracia dificulta o desenvolvimento dos negócios.", "extra": "развитие", "note": "развитию: дательный; бизнеса: родительный."},
+      "cloze": {"ru": "Плохая погода препятствовала ___.", "answer": "проведению эксперимента", "wrong": ["проведение эксперимента", "от проведения эксперимента", "к проведению эксперимента"], "pt": "O mau tempo dificultou a realização do experimento.", "note": "дательный: проведению."},
+      "hear": {"ru": "Закон не препятствует, а способствует конкуренции.", "pt": "A lei não impede a concorrência; ao contrário, a estimula.", "wrong": ["A lei não estimula a concorrência; ao contrário, a impede.", "A lei impede e estimula a concorrência ao mesmo tempo.", "A concorrência não impede a lei; ao contrário, a estimula."], "note": "не препятствует, а способствует — o segundo verbo vale."}
+    },
+    {
+      "key": "soprovozhdatsya",
+      "lemma": "сопровождаться",
+      "tag": "сопровождаться",
+      "head": "сопровождаться",
+      "regency": "сопровождаться чем? · × сопровождать кого? (acompanhar alguém)",
+      "case": "творительный падеж",
+      "pt": "vir acompanhado de",
+      "chunk": "сопровождаться побочными эффектами",
+      "chunk_pt": "vir acompanhado de efeitos colaterais",
+      "chunk_wrong": ["сопровождаться с побочными эффектами", "сопровождаться побочных эффектов", "сопровождаться побочные эффекты"],
+      "form_note": "творительный sem с.",
+      "trap": "«Acompanhado DE» sugere родительный ou с. Com сопровождаться, творительный puro: сопровождаться болью.",
+      "example": {"ru": "Грипп обычно сопровождается высокой температурой.", "pt": "A gripe geralmente vem acompanhada de febre alta.", "extra": "высокая", "note": "творительный feminino: высокой температурой."},
+      "cloze": {"ru": "Реформа сопровождалась ___.", "answer": "массовыми протестами", "wrong": ["с массовыми протестами", "массовых протестов", "массовые протесты"], "pt": "A reforma veio acompanhada de protestos em massa.", "note": "творительный plural: массовыми протестами."},
+      "hear": {"ru": "Выступление министра сопровождалось аплодисментами.", "pt": "O discurso do ministro foi acompanhado de aplausos.", "wrong": ["O ministro aplaudiu o discurso.", "O discurso do ministro foi interrompido por vaias.", "O ministro foi acompanhado até a saída."], "note": "выступление = sujeito; аплодисментами = творительный."}
+    },
+    {
+      "key": "zaklyuchatsya",
+      "lemma": "заключаться",
+      "tag": "заключаться в",
+      "head": "заключаться в",
+      "regency": "заключаться в ком? чём? · в том, что…",
+      "case": "предложный падеж",
+      "pt": "consistir em, estar em (o problema está em…)",
+      "chunk": "заключаться в нехватке денег",
+      "chunk_pt": "estar na falta de dinheiro",
+      "chunk_wrong": ["заключаться на нехватке денег", "заключаться нехваткой денег", "заключаться в нехватку денег"],
+      "form_note": "в + предложный. Com oração: Проблема заключается в том, что…",
+      "trap": "Não confunda com заключить договор (firmar contrato). O «é que» de «o problema é que…» = заключается в том, что…",
+      "example": {"ru": "Главная трудность заключается в произношении.", "pt": "A principal dificuldade está na pronúncia.", "extra": "произношение", "note": "в произношении: предложный neutro (-ии)."},
+      "cloze": {"ru": "Суть метода заключается ___.", "answer": "в постоянной проверке", "wrong": ["в постоянную проверку", "постоянной проверкой", "на постоянной проверке"], "pt": "A essência do método está na verificação constante.", "note": "в + предложный feminino: в постоянной проверке."},
+      "hear": {"ru": "Проблема заключается не в деньгах, а во времени.", "pt": "O problema não é o dinheiro, e sim o tempo.", "wrong": ["O problema não é o tempo, e sim o dinheiro.", "O problema é que não há dinheiro nem tempo.", "Nem o dinheiro nem o tempo são problema."], "note": "не в деньгах, а во времени."}
+    },
+    {
+      "key": "priyti_k_vyvodu",
+      "lemma": "вывод",
+      "tag": "прийти к выводу",
+      "head": "приходить / прийти к выводу",
+      "regency": "приходить / прийти к чему? (к выводу, к решению, к соглашению)",
+      "case": "дательный падеж",
+      "pt": "chegar a uma conclusão",
+      "chunk": "прийти к выводу",
+      "chunk_pt": "chegar à conclusão",
+      "chunk_wrong": ["прийти в вывод", "прийти на вывод", "прийти к выводе"],
+      "form_note": "к + дательный: прийти к решению, к компромиссу, к общему мнению.",
+      "trap": "«Chegar A» sugere в/на (como chegar a um lugar). Com ideias e acordos, é к + дательный.",
+      "example": {"ru": "Комиссия пришла к выводу, что авария была случайной.", "pt": "A comissão concluiu que o acidente foi casual.", "extra": "вывод", "note": "к выводу: дательный masculino."},
+      "cloze": {"ru": "После долгих споров мы пришли ___.", "answer": "к общему мнению", "wrong": ["в общее мнение", "к общем мнении", "на общее мнение"], "pt": "Depois de longas discussões, chegamos a uma opinião comum.", "note": "к + дательный neutro: к общему мнению."},
+      "hear": {"ru": "Учёные пришли к выводу, что климат меняется быстрее, чем считалось.", "pt": "Os cientistas concluíram que o clima está mudando mais rápido do que se pensava.", "wrong": ["Os cientistas concluíram que o clima está mudando mais devagar do que se pensava.", "Os cientistas ainda não sabem se o clima está mudando rápido.", "Os cientistas acham que o clima vai mudar mais rápido no futuro."], "note": "быстрее, чем считалось = mais rápido do que se pensava."}
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Que efeito colateral apareceu no tratamento?",
+      "options": [
+        "Dor de cabeça leve em três pessoas.",
+        "Febre alta em dois grupos de pacientes.",
+        "Nenhum efeito colateral foi registrado.",
+        "Recuperação mais lenta em alguns pacientes."
+      ],
+      "answer": "Dor de cabeça leve em três pessoas.",
+      "explanation": "«лёгкой головной болью у трёх человек» — сопровождаться чем? (творительный)."
+    },
+    {
+      "prompt": "O que impede o terceiro experimento?",
+      "options": ["A falta de financiamento.", "A falta de pacientes.", "A opinião dos revisores.", "Os efeitos colaterais."],
+      "answer": "A falta de financiamento.",
+      "explanation": "«Отсутствие денег препятствует третьему эксперименту»."
+    }
+  ],
+  "reconstruct": [
+    {"line": 0, "gap": "на чём они основываются", "wrong": ["на что они основываются", "от чего они основываются", "чем они основываются"], "note": "основываться на + предложный: на чём?"},
+    {"line": 2, "gap": "на слишком маленькую выборку", "wrong": ["на слишком маленькой выборке", "слишком маленькой выборкой", "от слишком маленькой выборки"], "note": "опираться на + винительный."},
+    {"line": 3, "gap": "способствует быстрому восстановлению", "wrong": ["способствует к быстрому восстановлению", "способствует быстрое восстановление", "способствует для быстрого восстановления"], "note": "способствовать + дательный, sem preposição."},
+    {"line": 7, "gap": "препятствует третьему эксперименту", "wrong": ["препятствует третий эксперимент", "препятствует от третьего эксперимента", "препятствует третьим экспериментом"], "note": "препятствовать + дательный."}
+  ],
+  "match": {
+    "instruction": "Relacione cada verbo ao complemento com a regência certa. Atenção a основываться × опираться.",
+    "prompt": "Qual complemento completa cada verbo?",
+    "pairs": [
+      {"left": "основываться", "right": "на надёжных данных"},
+      {"left": "опираться", "right": "на мнение экспертов"},
+      {"left": "способствовать", "right": "экономическому росту"},
+      {"left": "сопровождаться", "right": "сильной болью"},
+      {"left": "заключаться", "right": "в отсутствии контроля"},
+      {"left": "прийти", "right": "к неожиданному выводу"}
+    ],
+    "explanation": "основываться на + предложный (данных); опираться на + винительный (мнение); способствовать + дательный; сопровождаться + творительный; заключаться в + предложный; прийти к + дательный."
+  },
+  "replies": [
+    {
+      "speaker": "Наталья",
+      "you": "Игорь",
+      "ru": "Ваши результаты подтверждают гипотезу?",
+      "prompt": "Natalia pergunta se os resultados confirmam a hipótese. Responda: em parte — contribuem para confirmá-la, mas não a provam.",
+      "answer": "Частично: они способствуют её подтверждению, но не доказывают её.",
+      "wrong": ["Частично: они способствуют к её подтверждению, но не доказывают её.", "Частично: они способствуют её подтверждение, но не доказывают её.", "Частично: они способствуют для её подтверждения, но не доказывают её."],
+      "explanation": "способствовать + дательный: подтверждению."
+    },
+    {
+      "speaker": "Игорь",
+      "you": "Наталья",
+      "ru": "А в чём, по-вашему, слабость нашей статьи?",
+      "prompt": "Igor pergunta onde está a fraqueza do artigo. Responda: na amostra pequena.",
+      "answer": "Слабость заключается в маленькой выборке.",
+      "wrong": ["Слабость заключается маленькой выборкой.", "Слабость заключается в маленькую выборку.", "Слабость заключается на маленькой выборке."],
+      "explanation": "заключаться в + предложный: в маленькой выборке."
+    }
+  ],
+  "writing": {
+    "prompt": "Descreva uma pesquisa (real ou inventada): em que se baseia, que conclusão alcançou, o que a favoreceu e o que a atrapalhou.",
+    "use": ["основываться на", "опираться на", "способствовать", "препятствовать", "прийти к выводу"],
+    "words": "50–70",
+    "notes": "Verificar на + предложный × на + винительный, дательный sem preposição, к + дательный, registro científico."
+  }
+}

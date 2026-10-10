@@ -1,0 +1,580 @@
+{
+  "id": "v19",
+  "unit_id": "u19_sravnenie",
+  "order": 19,
+  "title": "Два города, две квартиры",
+  "theme": "Dois amigos comparam cidades e apartamentos antes de uma mudança",
+  "description": "Dois amigos comparam cidades e apartamentos antes de uma mudança. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Марина": "f",
+    "Игорь": "m"
+  },
+  "dialogue": {
+    "title": "Два города, две квартиры",
+    "setting": "Dois amigos comparam cidades e apartamentos antes de uma mudança",
+    "lines": [
+      {
+        "speaker": "Марина",
+        "ru": "Ты уверен в своём выборе? В маленьком городе возможностей меньше.",
+        "pt": "Você está seguro da sua escolha? Em uma cidade pequena, há menos oportunidades."
+      },
+      {
+        "speaker": "Игорь",
+        "ru": "Да, я доволен новым районом: до работы можно дойти пешком.",
+        "pt": "Sim, estou satisfeito com o bairro novo: dá para ir ao trabalho a pé."
+      },
+      {
+        "speaker": "Марина",
+        "ru": "Ты способен к самостоятельной жизни без помощи родителей?",
+        "pt": "Você é capaz de viver com autonomia, sem a ajuda dos pais?"
+      },
+      {
+        "speaker": "Игорь",
+        "ru": "Думаю, да. Этот город похож на родной город, поэтому мне спокойнее.",
+        "pt": "Acho que sim. Esta cidade é parecida com minha cidade natal, por isso fico mais tranquilo."
+      },
+      {
+        "speaker": "Марина",
+        "ru": "Я готова к долгому переезду, но ещё не выбрала квартиру.",
+        "pt": "Estou pronta para uma mudança longa, mas ainda não escolhi um apartamento."
+      },
+      {
+        "speaker": "Игорь",
+        "ru": "А я рад хорошей новости: хозяин разрешил держать собаку.",
+        "pt": "E eu estou contente com a boa notícia: o proprietário permitiu ter um cachorro."
+      },
+      {
+        "speaker": "Марина",
+        "ru": "Стоит сравнить квартиру с прежней по отоплению и шуму.",
+        "pt": "Vale comparar o apartamento com o anterior quanto ao aquecimento e ao barulho."
+      },
+      {
+        "speaker": "Игорь",
+        "ru": "Я уже знаком с будущим соседом. Он сказал, что зимой тепло.",
+        "pt": "Já conheço o futuro vizinho. Ele disse que faz calor no inverno."
+      },
+      {
+        "speaker": "Марина",
+        "ru": "Тогда я посмотрю второй вариант в воскресенье. Там аренда ниже.",
+        "pt": "Então vou ver a segunda opção no domingo. Lá o aluguel é mais baixo."
+      },
+      {
+        "speaker": "Игорь",
+        "ru": "Посмотри обе квартиры вечером, когда все соседи дома.",
+        "pt": "Veja os dois apartamentos à noite, quando todos os vizinhos estão em casa."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual decisão os amigos discutem?",
+      "options": [
+        "Escolher moradia ao mudar para uma cidade menor.",
+        "Comprar um cachorro para os vizinhos do bairro.",
+        "Trocar a escola dos pais por uma escola próxima.",
+        "Vender a casa sem visitar outros apartamentos."
+      ],
+      "answer": "Escolher moradia ao mudar para uma cidade menor.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "уверенный",
+      "tag": "уверен в",
+      "head": "уверен в",
+      "regency": "уверен в ком? в чём?",
+      "case": "предложный падеж",
+      "pt": "estar seguro da própria escolha",
+      "chunk": "уверен в своём выборе",
+      "chunk_pt": "estar seguro da própria escolha",
+      "chunk_wrong": [
+        "уверен в свой выбор",
+        "уверен в своего выбора",
+        "уверен в своим выбором"
+      ],
+      "form_note": "уверен в чём? recebe в + предложный падеж; não copie «seguro de» com от.",
+      "trap": "уверен в чём? recebe в + предложный падеж; não copie «seguro de» com от.",
+      "example": {
+        "ru": "Она уверена в надёжности дома.",
+        "pt": "Ela está segura da solidez da casa.",
+        "extra": "надёжность",
+        "note": "уверен в чём? recebe в + предложный падеж; não copie «seguro de» com от."
+      },
+      "cloze": {
+        "ru": "Я уверен ___.",
+        "answer": "в правильном решении",
+        "wrong": [
+          "в правильное решение",
+          "в правильного решения",
+          "в правильным решением"
+        ],
+        "pt": "Estou seguro da decisão correta.",
+        "note": "уверен в чём? recebe в + предложный падеж; não copie «seguro de» com от."
+      },
+      "hear": {
+        "ru": "Брат был уверен в выборе сестры.",
+        "pt": "O irmão estava seguro da escolha da irmã.",
+        "wrong": [
+          "A irmã estava segura da escolha do irmão.",
+          "O irmão não estava seguro da escolha da irmã.",
+          "O irmão estará seguro da escolha da irmã."
+        ],
+        "note": "уверен в чём? recebe в + предложный падеж; não copie «seguro de» com от."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "довольный",
+      "tag": "доволен",
+      "head": "доволен",
+      "regency": "доволен кем? чем?",
+      "case": "творительный падеж",
+      "pt": "estar satisfeito com o bairro novo",
+      "chunk": "доволен новым районом",
+      "chunk_pt": "estar satisfeito com o bairro novo",
+      "chunk_wrong": [
+        "доволен нового района",
+        "доволен новому району",
+        "доволен новый район"
+      ],
+      "form_note": "доволен чем? usa творительный падеж sem с, apesar de «satisfeito com».",
+      "trap": "доволен чем? usa творительный падеж sem с, apesar de «satisfeito com».",
+      "example": {
+        "ru": "Мы довольны качеством ремонта.",
+        "pt": "Estamos satisfeitos com a qualidade da reforma.",
+        "extra": "качеству",
+        "note": "доволен чем? usa творительный падеж sem с, apesar de «satisfeito com»."
+      },
+      "cloze": {
+        "ru": "Она довольна ___.",
+        "answer": "удобной квартирой",
+        "wrong": [
+          "удобную квартиру",
+          "удобной квартиры",
+          "удобной квартире"
+        ],
+        "pt": "Ela está satisfeita com o apartamento confortável.",
+        "note": "доволен чем? usa творительный падеж sem с, apesar de «satisfeito com»."
+      },
+      "hear": {
+        "ru": "Отец был доволен решением дочери.",
+        "pt": "O pai estava satisfeito com a decisão da filha.",
+        "wrong": [
+          "A filha estava satisfeita com a decisão do pai.",
+          "O pai não estava satisfeito com a decisão da filha.",
+          "O pai estará satisfeito com a decisão da filha."
+        ],
+        "note": "доволен чем? usa творительный падеж sem с, apesar de «satisfeito com»."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "способный",
+      "tag": "способен к",
+      "head": "способен к",
+      "regency": "способен к чему?",
+      "case": "дательный падеж",
+      "pt": "ser capaz de viver com autonomia",
+      "chunk": "способен к самостоятельной жизни",
+      "chunk_pt": "ser capaz de viver com autonomia",
+      "chunk_wrong": [
+        "способен к самостоятельную жизнь",
+        "способен к самостоятельной жизнью",
+        "способен к самостоятельная жизнь"
+      ],
+      "form_note": "способен к чему? usa к + дательный падеж; capaz de fazer também pode ser способен + infinitivo.",
+      "trap": "способен к чему? usa к + дательный падеж; capaz de fazer também pode ser способен + infinitivo.",
+      "example": {
+        "ru": "Этот материал способен к восстановлению.",
+        "pt": "Este material é capaz de se recuperar.",
+        "extra": "восстановление",
+        "note": "способен к чему? usa к + дательный падеж; capaz de fazer também pode ser способен + infinitivo."
+      },
+      "cloze": {
+        "ru": "Он способен ___.",
+        "answer": "к серьёзной работе",
+        "wrong": [
+          "к серьёзную работу",
+          "к серьёзной работой",
+          "к серьёзная работа"
+        ],
+        "pt": "Ele é capaz de realizar um trabalho sério.",
+        "note": "способен к чему? usa к + дательный падеж; capaz de fazer também pode ser способен + infinitivo."
+      },
+      "hear": {
+        "ru": "Сын был способен к самостоятельному решению задач.",
+        "pt": "O filho era capaz de resolver tarefas por conta própria.",
+        "wrong": [
+          "O filho não era capaz de resolver tarefas por conta própria.",
+          "O filho será capaz de resolver tarefas por conta própria.",
+          "O filho é capaz de resolver tarefas por conta própria."
+        ],
+        "note": "способен к чему? usa к + дательный падеж; capaz de fazer também pode ser способен + infinitivo."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "похожий",
+      "tag": "похож на",
+      "head": "похож на",
+      "regency": "похож на кого? что?",
+      "case": "винительный падеж",
+      "pt": "ser parecido com a cidade natal",
+      "chunk": "похож на родной город",
+      "chunk_pt": "ser parecido com a cidade natal",
+      "chunk_wrong": [
+        "похож на родного города",
+        "похож на родному городу",
+        "похож на родным городом"
+      ],
+      "form_note": "похож на кого? что? usa на + винительный падеж; sem с, mesmo que o português diga «com».",
+      "trap": "похож на кого? что? usa на + винительный падеж; sem с, mesmo que o português diga «com».",
+      "example": {
+        "ru": "Новый сосед похож на моего дядю.",
+        "pt": "O novo vizinho se parece com meu tio.",
+        "extra": "дяде",
+        "note": "похож на кого? что? usa на + винительный падеж; sem с, mesmo que o português diga «com»."
+      },
+      "cloze": {
+        "ru": "Этот дом похож ___.",
+        "answer": "на старую школу",
+        "wrong": [
+          "на старой школе",
+          "на старой школой",
+          "на старой школы"
+        ],
+        "pt": "Esta casa parece uma escola antiga.",
+        "note": "похож на кого? что? usa на + винительный падеж; sem с, mesmo que o português diga «com»."
+      },
+      "hear": {
+        "ru": "Дочь похожа на мать, а сын на отца.",
+        "pt": "A filha se parece com a mãe, e o filho com o pai.",
+        "wrong": [
+          "A filha se parece com o pai, e o filho com a mãe.",
+          "A filha não se parece com a mãe, e o filho com o pai.",
+          "A filha se parecerá com a mãe, e o filho com o pai."
+        ],
+        "note": "похож на кого? что? usa на + винительный падеж; sem с, mesmo que o português diga «com»."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "готовый",
+      "tag": "готов к",
+      "head": "готов к",
+      "regency": "готов к чему?",
+      "case": "дательный падеж",
+      "pt": "estar pronto para uma mudança longa",
+      "chunk": "готов к долгому переезду",
+      "chunk_pt": "estar pronto para uma mudança longa",
+      "chunk_wrong": [
+        "готов к долгий переезд",
+        "готов к долгого переезда",
+        "готов к долгим переездом"
+      ],
+      "form_note": "готов к чему? usa дательный падеж; estar pronto para fazer também permite готов + infinitivo.",
+      "trap": "готов к чему? usa дательный падеж; estar pronto para fazer também permite готов + infinitivo.",
+      "example": {
+        "ru": "Она готова к новым условиям.",
+        "pt": "Ela está pronta para as novas condições.",
+        "extra": "условия",
+        "note": "готов к чему? usa дательный падеж; estar pronto para fazer também permite готов + infinitivo."
+      },
+      "cloze": {
+        "ru": "Мы готовы ___.",
+        "answer": "к неожиданным трудностям",
+        "wrong": [
+          "к неожиданные трудности",
+          "к неожиданных трудностей",
+          "к неожиданными трудностями"
+        ],
+        "pt": "Estamos prontos para dificuldades inesperadas.",
+        "note": "готов к чему? usa дательный падеж; estar pronto para fazer também permite готов + infinitivo."
+      },
+      "hear": {
+        "ru": "Брат был готов к смене работы.",
+        "pt": "O irmão estava pronto para mudar de emprego.",
+        "wrong": [
+          "O irmão não estava pronto para mudar de emprego.",
+          "O irmão estará pronto para mudar de emprego.",
+          "A irmã estava pronta para mudar de emprego."
+        ],
+        "note": "готов к чему? usa дательный падеж; estar pronto para fazer também permite готов + infinitivo."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "рад",
+      "tag": "рад",
+      "head": "рад",
+      "regency": "рад кому? чему?",
+      "case": "дательный падеж",
+      "pt": "estar contente com a boa notícia",
+      "chunk": "рад хорошей новости",
+      "chunk_pt": "estar contente com a boa notícia",
+      "chunk_wrong": [
+        "рад хорошую новость",
+        "рад хорошей новостью",
+        "рад хорошая новость"
+      ],
+      "form_note": "рад чему? usa дательный падеж sem preposição; compare доволен чем?, que exige outro caso.",
+      "trap": "рад чему? usa дательный падеж sem preposição; compare доволен чем?, que exige outro caso.",
+      "example": {
+        "ru": "Бабушка рада приезду внука.",
+        "pt": "A avó está contente com a chegada do neto.",
+        "extra": "приезд",
+        "note": "рад чему? usa дательный падеж sem preposição; compare доволен чем?, que exige outro caso."
+      },
+      "cloze": {
+        "ru": "Я рад ___.",
+        "answer": "новому предложению",
+        "wrong": [
+          "новое предложение",
+          "нового предложения",
+          "новым предложением"
+        ],
+        "pt": "Estou contente com a nova proposta.",
+        "note": "рад чему? usa дательный падеж sem preposição; compare доволен чем?, que exige outro caso."
+      },
+      "hear": {
+        "ru": "Мать была рада встрече с дочерью.",
+        "pt": "A mãe estava contente com o encontro com a filha.",
+        "wrong": [
+          "A mãe não estava contente com o encontro com a filha.",
+          "A mãe estará contente com o encontro com a filha.",
+          "A mãe está contente com o encontro com a filha."
+        ],
+        "note": "рад чему? usa дательный падеж sem preposição; compare доволен чем?, que exige outro caso."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "сравнивать",
+      "tag": "сравнивать / сравнить с",
+      "head": "сравнивать / сравнить с",
+      "regency": "сравнивать / сравнить кого? что? с кем? чем?",
+      "case": "винительный падеж + творительный падеж",
+      "pt": "comparar o apartamento com o anterior",
+      "chunk": "сравнить квартиру с прежней",
+      "chunk_pt": "comparar o apartamento com o anterior",
+      "chunk_wrong": [
+        "сравнить квартиру с прежнюю",
+        "сравнить квартиру с прежней квартиры",
+        "сравнить квартиру с прежняя"
+      ],
+      "form_note": "Comparado: что?; referência: с чем? + творительный падеж. Não use o mesmo caso para os dois lados.",
+      "trap": "Comparado: что?; referência: с чем? + творительный падеж. Não use o mesmo caso para os dois lados.",
+      "example": {
+        "ru": "Мы сравнили цены с прошлогодними.",
+        "pt": "Comparamos os preços com os do ano passado.",
+        "extra": "прошлогодние",
+        "note": "Comparado: что?; referência: с чем? + творительный падеж. Não use o mesmo caso para os dois lados."
+      },
+      "cloze": {
+        "ru": "Попробуй сравнить этот район ___.",
+        "answer": "с соседним районом",
+        "wrong": [
+          "с соседний район",
+          "с соседнего района",
+          "с соседнему району"
+        ],
+        "pt": "Tente comparar este bairro com o bairro vizinho.",
+        "note": "Comparado: что?; referência: с чем? + творительный падеж. Não use o mesmo caso para os dois lados."
+      },
+      "hear": {
+        "ru": "Сестра сравнила новый дом со старым.",
+        "pt": "A irmã comparou a casa nova com a antiga.",
+        "wrong": [
+          "A irmã comparará a casa nova com a antiga.",
+          "A irmã não comparou a casa nova com a antiga.",
+          "O irmão comparou a casa nova com a antiga."
+        ],
+        "note": "Comparado: что?; referência: с чем? + творительный падеж. Não use o mesmo caso para os dois lados."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "знакомый",
+      "tag": "знаком с",
+      "head": "знаком с",
+      "regency": "знаком с кем? чем?",
+      "case": "творительный падеж",
+      "pt": "conhecer o futuro vizinho",
+      "chunk": "знаком с будущим соседом",
+      "chunk_pt": "conhecer o futuro vizinho",
+      "chunk_wrong": [
+        "знаком с будущего соседа",
+        "знаком с будущему соседу",
+        "знаком с будущий сосед"
+      ],
+      "form_note": "знаком с кем? чем? usa с + творительный падеж; знать кого? что? é uma construção transitiva diferente.",
+      "trap": "знаком с кем? чем? usa с + творительный падеж; знать кого? что? é uma construção transitiva diferente.",
+      "example": {
+        "ru": "Она знакома с местными правилами.",
+        "pt": "Ela conhece as regras locais.",
+        "extra": "правилам",
+        "note": "знаком с кем? чем? usa с + творительный падеж; знать кого? что? é uma construção transitiva diferente."
+      },
+      "cloze": {
+        "ru": "Ты знаком ___?",
+        "answer": "с новым владельцем",
+        "wrong": [
+          "с нового владельца",
+          "с новому владельцу",
+          "с новый владелец"
+        ],
+        "pt": "Você conhece o novo proprietário?",
+        "note": "знаком с кем? чем? usa с + творительный падеж; знать кого? что? é uma construção transitiva diferente."
+      },
+      "hear": {
+        "ru": "Брат был знаком с подругой сестры.",
+        "pt": "O irmão conhecia a amiga da irmã.",
+        "wrong": [
+          "A irmã conhecia a amiga do irmão.",
+          "O irmão não conhecia a amiga da irmã.",
+          "O irmão conhecerá a amiga da irmã."
+        ],
+        "note": "знаком с кем? чем? usa с + творительный падеж; знать кого? что? é uma construção transitiva diferente."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Qual vantagem Igor menciona?",
+      "options": [
+        "É possível ir ao trabalho a pé.",
+        "O proprietário paga o aquecimento.",
+        "Os pais vão morar na mesma casa.",
+        "Não há nenhum vizinho no prédio."
+      ],
+      "answer": "É possível ir ao trabalho a pé.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "O que o futuro vizinho contou?",
+      "options": [
+        "O apartamento fica aquecido no inverno.",
+        "O aluguel aumenta toda semana.",
+        "O prédio não permite nenhum cachorro.",
+        "O trabalho fica distante da residência."
+      ],
+      "answer": "O apartamento fica aquecido no inverno.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "в своём выборе",
+      "wrong": [
+        "в свой выбор",
+        "в своего выбора",
+        "в своим выбором"
+      ],
+      "note": "уверен в чём? recebe в + предложный падеж; não copie «seguro de» com от."
+    },
+    {
+      "line": 1,
+      "gap": "новым районом",
+      "wrong": [
+        "нового района",
+        "новому району",
+        "новый район"
+      ],
+      "note": "доволен чем? usa творительный падеж sem с, apesar de «satisfeito com»."
+    },
+    {
+      "line": 5,
+      "gap": "хорошей новости",
+      "wrong": [
+        "хорошую новость",
+        "хорошей новостью",
+        "хорошая новость"
+      ],
+      "note": "рад чему? usa дательный падеж sem preposição; compare доволен чем?, que exige outro caso."
+    },
+    {
+      "line": 7,
+      "gap": "с будущим соседом",
+      "wrong": [
+        "с будущего соседа",
+        "с будущему соседу",
+        "с будущий сосед"
+      ],
+      "note": "знаком с кем? чем? usa с + творительный падеж; знать кого? что? é uma construção transitiva diferente."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "уверен в своём выборе",
+        "right": "estar seguro da própria escolha"
+      },
+      {
+        "left": "доволен новым районом",
+        "right": "estar satisfeito com o bairro novo"
+      },
+      {
+        "left": "способен к самостоятельной жизни",
+        "right": "ser capaz de viver com autonomia"
+      },
+      {
+        "left": "похож на родной город",
+        "right": "ser parecido com a cidade natal"
+      },
+      {
+        "left": "готов к долгому переезду",
+        "right": "estar pronto para uma mudança longa"
+      },
+      {
+        "left": "рад хорошей новости",
+        "right": "estar contente com a boa notícia"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Марина",
+      "you": "Игорь",
+      "ru": "Ты уверен, что эта квартира тебе подходит?",
+      "prompt": "Responda sobre a certeza da escolha.",
+      "answer": "Я уверен в своём выборе.",
+      "wrong": [
+        "Я уверен в свой выбор.",
+        "Я уверен в своего выбора.",
+        "Я уверен в своим выбором."
+      ],
+      "explanation": "уверен в чём? recebe в + предложный падеж; não copie «seguro de» com от."
+    },
+    {
+      "speaker": "Игорь",
+      "you": "Марина",
+      "ru": "Как тебе район, в который ты переезжаешь?",
+      "prompt": "Responda sobre sua satisfação com o bairro.",
+      "answer": "Я довольна новым районом.",
+      "wrong": [
+        "Я довольна нового района.",
+        "Я довольна новому району.",
+        "Я довольна новый район."
+      ],
+      "explanation": "доволен чем? usa творительный падеж sem с, apesar de «satisfeito com»."
+    }
+  ],
+  "writing": {
+    "prompt": "Compare duas opções de moradia e justifique sua escolha. Inclua preparação, satisfação e uma dúvida concreta.",
+    "use": [
+      "уверен в",
+      "доволен",
+      "способен к",
+      "похож на",
+      "готов к"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: уверен в ком? в чём?; доволен кем? чем?; способен к чему?; похож на кого? что?; готов к чему?; рад кому? чему?; сравнивать / сравнить кого? что? с кем? чем?; знаком с кем? чем?."
+  }
+}

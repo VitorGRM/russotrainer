@@ -1,0 +1,688 @@
+{
+  "id": "u11_multikulturalizm",
+  "order": 11,
+  "title": "Мультикультурализм: деепричастие и причастие",
+  "description": "Introduz деепричастие (invariável) e причастие ativo (concorda em gênero, número e caso) como alternativas mais compactas a orações com когда e который, no vocabulário de diversidade e tolerância.",
+  "estimated_minutes": 44,
+  "objectives": [
+    "formar деепричастие incompleto e completo conforme o aspecto do verbo",
+    "formar причастие ativo presente e passado e concordá-lo em gênero, número e caso",
+    "escolher entre деепричастие (invariável) e причастие (concorda) conforme a função na frase",
+    "produzir уважение к, относиться к, гордиться, придерживаться, сосуществовать с e подвергаться com a regência correta"
+  ],
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção escrita com critérios de correção."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Деепричастие: uma ação a mais, sem concordância",
+      "paragraphs": [
+        "деепричастие (gerúndio) descreve uma ação adicional do mesmo sujeito da oração principal e é sempre invariável — não concorda com nada. O incompleto (несовершенный вид) indica ação simultânea e forma-se a partir do radical do presente (3ª pessoa plural menos a terminação) + -а/-я: жить → живут → живя; говорить → говорят → говоря. O completo (совершенный вид) indica uma ação anterior à principal e forma-se a partir do infinitivo perfectivo + -в (ou -вшись nos reflexivos): признать → признав; столкнуться → столкнувшись. Живя в многонациональном городе, человек учится уважать разные традиции substitui Когда человек живёт в многонациональном городе....",
+        "O деепричастие só pode ser usado quando o sujeito da ação adicional é o mesmo da oração principal. Se os sujeitos forem diferentes, é necessário usar когда/пока + oração completa, não деепричастие."
+      ],
+      "audio_script": "Деепричастие. Não existe nome bom para isso em português: alguns livros chamam de gerúndio, outros de particípio adverbial. O jeito mais útil de pensar nele é: é uma ação secundária, colada à ação principal, feita pelo MESMO sujeito. E a característica que facilita tudo: деепричастие não concorda com nada. Não tem gênero, não tem número, não tem caso. Uma forma só. Existem dois tipos, e a diferença entre eles é de tempo relativo. Tipo um, imperfectivo, indica ação SIMULTÂNEA à principal. Forma-se assim: pegue a terceira pessoa do plural do presente, tire a terminação, acrescente я. читают vira читая. говорят vira говоря. Se o verbo for reflexivo, acrescente сь no final: относятся vira относясь. Читая газету, он пил кофе. Lendo o jornal, ele tomava café. As duas ações ao mesmo tempo. Tipo dois, perfectivo, indica ação ANTERIOR à principal. Forma-se assim: pegue o infinitivo, tire o ть, acrescente в. признать vira признав. прочитать vira прочитав. Reflexivos ficam em вшись: вернувшись. Прочитав статью, он написал комментарий. Tendo lido o artigo, ele escreveu um comentário. Primeiro leu, depois escreveu. Agora as duas regras que decidem se a sua frase está certa ou errada. Regra um, e é inegociável: o sujeito do деепричастие tem que ser o MESMO da oração principal. Se em português você diz «lendo o jornal, o café esfriou», em russo isso é um erro grave, porque quem lê não é o café. Essa regra é ensinada nas escolas russas e a violação dela é percebida imediatamente como erro de gente que não sabe escrever. Regra dois: o деепричастие NÃO muda a regência do verbo. гордиться continua exigindo instrumental. Então: Гордясь своей культурой. Nunca гордясь свою культуру. Transformar o verbo em деепричастие muda a forma dele, não o caso do complemento.",
+      "examples": [
+        {
+          "ru": "Читая статью, он делал заметки.",
+          "pt": "Lendo o artigo, ele fazia anotações.",
+          "note": "Imperfectivo → simultâneo."
+        },
+        {
+          "ru": "Признав важность разнообразия, компания разработала программу.",
+          "pt": "Tendo reconhecido a importância da diversidade, a empresa desenvolveu um programa.",
+          "note": "Perfectivo → anterior."
+        },
+        {
+          "ru": "Гордясь своей культурой, она рассказывает о ней иностранцам.",
+          "pt": "Orgulhando-se da própria cultura, ela fala dela para estrangeiros.",
+          "note": "гордиться mantém o instrumental."
+        },
+        {
+          "ru": "Вернувшись домой, он сразу позвонил родителям.",
+          "pt": "Tendo voltado para casa, ele ligou imediatamente para os pais.",
+          "note": "Reflexivo perfectivo: -вшись."
+        }
+      ],
+      "pitfalls": [
+        "Usar sujeitos diferentes: «Читая газету, кофе остыл» é erro grave em russo.",
+        "Mudar o caso do complemento: гордясь свою культуру está errado — é своей культурой."
+      ]
+    },
+    {
+      "title": "Причастие ativo: um adjetivo feito de verbo",
+      "paragraphs": [
+        "причастие (particípio) é a forma adjetiva do verbo: concorda em gênero, número e caso com o substantivo que descreve, exatamente como which/который substituiria. O ativo presente (só de verbos imperfectivos) forma-se do radical do presente + -ущ-/-ющ- (1ª conjugação) ou -ащ-/-ящ- (2ª conjugação) + terminação de adjetivo: защищают → защищающий. O ativo passado forma-se do radical do passado + -вш- (depois de vogal) ou -ш- (depois de consoante) + terminação de adjetivo: приехать → приехавший; принести → принёсший.",
+        "Люди, живущие в этом районе, представляют более десяти национальностей equivale a Люди, которые живут в этом районе... — mas o particípio é mais compacto e típico de registro escrito/formal. Vocabulário deste tema: уважение к кому? чему? (дательный падеж); относиться к кому? чему? (дательный падеж); гордиться кем? чем? (творительный падеж); придерживаться кого? чего? (родительный падеж); сосуществовать с кем? чем? (творительный падеж); подвергаться кому? чему? (дательный падеж)."
+      ],
+      "audio_script": "Причастие, o particípio. Se o деепричастие é um advérbio feito de verbo, o причастие é um ADJETIVO feito de verbo. E como adjetivo, ele concorda em gênero, número e caso com o substantivo que qualifica. São quatro tipos, organizados em duas perguntas: ativo ou passivo, presente ou passado. Tipo um: ativo presente, quem faz agora. Forma-se da terceira pessoa do plural, trocando o т final por щ, mais terminação de adjetivo. защища(ют) vira защищающий. работа(ют) vira работающий. Организации, защищающие права меньшинств. Organizações que defendem os direitos das minorias. Tipo dois: ativo passado, quem fez. Forma-se do infinitivo, tirando o ть e acrescentando вш, mais terminação de adjetivo. приехать vira приехавший. Коллеги, приехавшие из других стран. Tipo três: passivo presente, o que é feito agora. É o mais raro dos quatro. Forma-se da primeira pessoa do plural mais terminação de adjetivo: обсуждаем vira обсуждаемый. Tipo quatro: passivo passado, o que foi feito. É o mais frequente em textos escritos. Forma-se com нн ou т: прочитанный, написанный, открытый. Agora a regra prática que evita o erro mais comum de todos. O particípio concorda com o substantivo que ele qualifica, e o CASO desse substantivo vem da frase, não do particípio. Он общается с коллегами, приехавшими из других стран. коллегами está no instrumental porque общаться pede с mais instrumental. Então приехавшими também vai para o instrumental plural. Concordância pura. E a advertência final, que vale para os dois: nem particípio nem деепричастие podem ser o verbo principal da frase. Люди, живущие здесь, не замечают… tem um verbo conjugado, не замечают, e está correto. Люди, живущие здесь, не замечающие… não tem verbo nenhum, e não é uma frase — é um pedaço solto.",
+      "examples": [
+        {
+          "ru": "Организации, защищающие права меньшинств, работают по всей стране.",
+          "pt": "As organizações que defendem os direitos das minorias atuam pelo país inteiro.",
+          "note": "Ativo presente, nominativo plural."
+        },
+        {
+          "ru": "Он общается с коллегами, приехавшими из других стран.",
+          "pt": "Ele convive com colegas que vieram de outros países.",
+          "note": "Ativo passado, instrumental plural (concorda com коллегами)."
+        },
+        {
+          "ru": "Статья, написанная известным социологом, вызвала споры.",
+          "pt": "O artigo escrito por um sociólogo conhecido gerou polêmica.",
+          "note": "Passivo passado + agente no instrumental."
+        },
+        {
+          "ru": "Обсуждаемые вопросы касаются всех.",
+          "pt": "As questões em discussão dizem respeito a todos.",
+          "note": "Passivo presente, o tipo mais raro."
+        }
+      ],
+      "pitfalls": [
+        "Usar particípio como predicado principal: a frase fica sem verbo conjugado.",
+        "Confundir защищающие (que defendem) com защищаемые (que são defendidos): ativo × passivo."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Деепричастие e причастие ativo",
+    "columns": [
+      "Infinitivo",
+      "Деепричастие (invariável)",
+      "Причастие ativo presente",
+      "Причастие ativo passado"
+    ],
+    "rows": [
+      [
+        "жить (несов.)",
+        "живя",
+        "живущий",
+        "живший"
+      ],
+      [
+        "говорить (несов.)",
+        "говоря",
+        "говорящий",
+        "говоривший"
+      ],
+      [
+        "вернуться (сов.)",
+        "вернувшись",
+        "—",
+        "вернувшийся"
+      ],
+      [
+        "сделать (сов.)",
+        "сделав",
+        "—",
+        "сделавший"
+      ]
+    ],
+    "note": "Деепричастие é sempre invariável. Причастие concorda em gênero, número e caso com o substantivo que descreve, como um adjetivo comum. Particípios ativos presentes só existem para verbos imperfectivos."
+  },
+  "reference": [
+    {
+      "construction": "уважение к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "respeito por",
+      "example": "уважение к чужой культуре"
+    },
+    {
+      "construction": "относиться к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "tratar, ter uma atitude em relação a",
+      "example": "относиться к меньшинствам с пониманием"
+    },
+    {
+      "construction": "гордиться",
+      "question": "кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "orgulhar-se de",
+      "example": "гордиться своими корнями"
+    },
+    {
+      "construction": "придерживаться",
+      "question": "кого? чего?",
+      "case": "РОДИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "aderir a, manter-se fiel a",
+      "example": "придерживаться своих традиций"
+    },
+    {
+      "construction": "сосуществовать с",
+      "question": "с кем? чем?",
+      "case": "ТВОРИТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "coexistir com",
+      "example": "сосуществовать с представителями других культур"
+    },
+    {
+      "construction": "подвергаться / подвергнуться",
+      "question": "кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "estar sujeito a, sofrer",
+      "example": "подвергаться дискриминации"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u11-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "уважение",
+      "back": "уважение к кому? чему?",
+      "explanation": "к + дательный падеж.",
+      "tags": [
+        "уважение к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u11-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "относиться",
+      "back": "относиться к кому? чему?",
+      "explanation": "к + дательный падеж.",
+      "tags": [
+        "относиться к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u11-e03",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "гордиться",
+      "back": "гордиться кем? чем?",
+      "explanation": "Sem preposição; творительный падеж.",
+      "tags": [
+        "гордиться",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u11-e04",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "придерживаться",
+      "back": "придерживаться кого? чего?",
+      "explanation": "Sem preposição; родительный падеж.",
+      "tags": [
+        "придерживаться",
+        "родительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u11-e05",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "сосуществовать",
+      "back": "сосуществовать с кем? чем?",
+      "explanation": "с + творительный падеж.",
+      "tags": [
+        "сосуществовать с",
+        "творительный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u11-e06",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "подвергаться / подвергнуться",
+      "back": "подвергаться/подвергнуться кому? чему?",
+      "explanation": "Sem preposição; дательный падеж.",
+      "tags": [
+        "подвергаться",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u11-e07",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 2,
+      "prompt": "___ в многонациональном городе, человек постепенно учится уважать чужие традиции.",
+      "options": [
+        "Живя",
+        "Жить",
+        "Живущий",
+        "Жил"
+      ],
+      "answer": "Живя",
+      "explanation": "деепричастие несовершенного вида: ação simultânea à principal, forma invariável.",
+      "tags": [
+        "деепричастие",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u11-e08",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 3,
+      "prompt": "___ дискриминацией на работе, она решила обратиться в суд.",
+      "options": [
+        "Столкнувшись с",
+        "Сталкиваясь с",
+        "Столкнуться с",
+        "Сталкивается с"
+      ],
+      "answer": "Столкнувшись с",
+      "explanation": "деепричастие совершенного вида: a ação de encontrar a discriminação é anterior à decisão.",
+      "tags": [
+        "деепричастие",
+        "aspecto",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u11-e09",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 2,
+      "prompt": "Люди, ___ в этом районе, представляют более десяти национальностей.",
+      "options": [
+        "живущие",
+        "живущий",
+        "живших",
+        "жившая"
+      ],
+      "answer": "живущие",
+      "explanation": "причастие ativo presente concordando com «люди» (nominativo plural).",
+      "tags": [
+        "причастие",
+        "concordância"
+      ]
+    },
+    {
+      "id": "u11-e10",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 3,
+      "prompt": "Помощь оказывается мигрантам, ___ с серьёзными трудностями адаптации.",
+      "options": [
+        "столкнувшимся",
+        "столкнувшиеся",
+        "сталкивающимся",
+        "столкнувшись"
+      ],
+      "answer": "столкнувшимся",
+      "explanation": "причастие concorda no mesmo caso do substantivo que descreve: мигрантам — дательный падеж plural. деепричастие (столкнувшись) seria agramatical aqui, pois só poderia se referir ao sujeito da oração principal (помощь), não a мигрантам.",
+      "tags": [
+        "причастие",
+        "concordância",
+        "дательный падеж"
+      ]
+    },
+    {
+      "id": "u11-e11",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 3,
+      "prompt": "Мы поговорили с людьми, ___ в этом городе с детства.",
+      "options": [
+        "живущими",
+        "живущие",
+        "живущий",
+        "живя"
+      ],
+      "answer": "живущими",
+      "explanation": "причастие concorda no mesmo caso do substantivo que descreve: с людьми — творительный падеж plural.",
+      "tags": [
+        "причастие",
+        "concordância",
+        "творительный падеж"
+      ]
+    },
+    {
+      "id": "u11-e12",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 2,
+      "prompt": "___ о своих корнях, она гордится своей культурой и охотно делится традициями.",
+      "options": [
+        "Рассказывая",
+        "Рассказать",
+        "Рассказавший",
+        "Рассказал"
+      ],
+      "answer": "Рассказывая",
+      "explanation": "деепричастие incompleto: ação simultânea (enquanto conta, ela se orgulha).",
+      "tags": [
+        "деепричастие",
+        "morfologia"
+      ]
+    },
+    {
+      "id": "u11-e13",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 3,
+      "instruction": "Escolha o деепричастие imperfectivo correto.",
+      "prompt": "___ терпимо к чужим традициям, легче избежать конфликтов. (относиться)",
+      "explanation": "Деепричастие imperfectivo = radical do PRESENTE + -я (+ -сь se o verbo for reflexivo): относятся → относ- + -я + -сь = относясь. Ele indica ação simultânea à do verbo principal.",
+      "tags": [
+        "деепричастие",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "Относясь",
+        "Относившись",
+        "Отнесясь",
+        "Относив"
+      ],
+      "answer": "Относясь"
+    },
+    {
+      "id": "u11-e14",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 3,
+      "instruction": "Escolha o деепричастие perfectivo correto.",
+      "prompt": "___ важность разнообразия, компания разработала программу инклюзии. (признать)",
+      "explanation": "Деепричастие perfectivo = radical do INFINITIVO + -в: признать → призна- + -в = признав. Ele marca ação ANTERIOR à do verbo principal («tendo reconhecido…, a empresa desenvolveu»).",
+      "tags": [
+        "деепричастие",
+        "aspecto",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "Признав",
+        "Признавая",
+        "Признавши",
+        "Признавав"
+      ],
+      "answer": "Признав"
+    },
+    {
+      "id": "u11-e15",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 3,
+      "instruction": "Escolha o particípio ativo presente correto.",
+      "prompt": "Существуют организации, ___ права меньшинств. (защищать)",
+      "explanation": "Particípio ativo presente = 3ª pessoa do plural sem -т + -щ- + terminação de adjetivo: защища(ют) → защищающий. Concorda com организации (именительный plural) → защищающие. «защищаемые» seria passivo (que SÃO defendidas).",
+      "tags": [
+        "причастие",
+        "morfologia",
+        "múltipla escolha"
+      ],
+      "options": [
+        "защищающие",
+        "защищавшие",
+        "защищаемые",
+        "защищающих"
+      ],
+      "answer": "защищающие"
+    },
+    {
+      "id": "u11-e16",
+      "type": "choice",
+      "stage": "gerund_participle",
+      "difficulty": 3,
+      "instruction": "Escolha o particípio ativo passado no caso exigido.",
+      "prompt": "Он много общается с коллегами, ___ из других стран. (приехать)",
+      "explanation": "Particípio ativo passado = radical do infinitivo + -вш- + adjetivo: приеха-вш-ий. Ele concorda com коллегами, que está no творительный plural (с кем?) → приехавшими.",
+      "tags": [
+        "причастие",
+        "morfologia",
+        "творительный падеж",
+        "múltipla escolha"
+      ],
+      "options": [
+        "приехавшими",
+        "приехавшие",
+        "приехавших",
+        "приезжающими"
+      ],
+      "answer": "приехавшими"
+    },
+    {
+      "id": "u11-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase preserva a regência de гордиться dentro do деепричастие?",
+      "explanation": "O деепричастие muda a FORMA do verbo, nunca a sua regência: гордиться кем? чем? continua exigindo творительный падеж (своей культурой). Regra de ouro: transformar em деепричастие não libera o complemento do caso.",
+      "tags": [
+        "деепричастие",
+        "гордиться",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Гордясь своей культурой, она охотно рассказывает о ней иностранцам.",
+        "Гордясь свою культуру, она охотно рассказывает о ней иностранцам.",
+        "Гордясь своей культуры, она охотно рассказывает о ней иностранцам.",
+        "Гордившись своей культурой, она охотно рассказывает о ней иностранцам."
+      ],
+      "answer": "Гордясь своей культурой, она охотно рассказывает о ней иностранцам."
+    },
+    {
+      "id": "u11-e18",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "prompt": "Qual frase tem um verbo conjugado na oração principal?",
+      "explanation": "Nem particípio nem деепричастие podem ser o predicado principal — eles são formas dependentes. Depois da oração relativa «живущие…», a frase ainda precisa de um verbo conjugado: не замечают.",
+      "tags": [
+        "причастие",
+        "múltipla escolha"
+      ],
+      "instruction": "Só uma das frases está correta. Qual?",
+      "options": [
+        "Люди, живущие в этом городе с детства, часто не замечают его культурного разнообразия.",
+        "Люди, живущие в этом городе с детства, часто не замечающие его культурного разнообразия.",
+        "Люди, живущие в этом городе с детства, часто не замечая его культурного разнообразия.",
+        "Люди, живущие в этом городе с детства, часто не замеченные его культурного разнообразия."
+      ],
+      "answer": "Люди, живущие в этом городе с детства, часто не замечают его культурного разнообразия."
+    },
+    {
+      "id": "u11-e19",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase com um деепричастие.",
+      "tokens": [
+        "Живя",
+        "в",
+        "многонациональном",
+        "городе,",
+        "человек",
+        "учится",
+        "уважать",
+        "разные",
+        "традиции"
+      ],
+      "answer": "Живя в многонациональном городе, человек учится уважать разные традиции",
+      "explanation": "деепричастие substitui «когда человек живёт...».",
+      "tags": [
+        "деепричастие",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u11-e20",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 3,
+      "prompt": "Monte a frase com um причастие.",
+      "tokens": [
+        "Люди,",
+        "придерживающиеся",
+        "своих",
+        "традиций,",
+        "заслуживают",
+        "уважения"
+      ],
+      "answer": "Люди, придерживающиеся своих традиций, заслуживают уважения",
+      "explanation": "придерживаться чего? своих традиций (родительный); заслуживать чего? уважения (родительный).",
+      "tags": [
+        "причастие",
+        "придерживаться",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u11-e21",
+      "type": "match_pairs",
+      "stage": "meaning",
+      "difficulty": 2,
+      "instruction": "Relacione a construção russa ao significado correspondente.",
+      "pairs": [
+        {
+          "left": "уважение к традициям",
+          "right": "respeito pelas tradições"
+        },
+        {
+          "left": "относиться с пониманием",
+          "right": "tratar com compreensão"
+        },
+        {
+          "left": "гордиться своими корнями",
+          "right": "orgulhar-se de suas raízes"
+        },
+        {
+          "left": "придерживаться традиций",
+          "right": "aderir às tradições"
+        },
+        {
+          "left": "сосуществовать с другими культурами",
+          "right": "coexistir com outras culturas"
+        },
+        {
+          "left": "подвергаться дискриминации",
+          "right": "estar sujeito a discriminação"
+        }
+      ],
+      "explanation": "Vocabulário-chave de diversidade e tolerância.",
+      "tags": [
+        "мультикультурализм",
+        "significado",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u11-e22",
+      "type": "open_text",
+      "stage": "writing_b2",
+      "difficulty": 3,
+      "instruction": "Escreva 90–110 palavras em russo. Não abra com «Я считаю, что». Use pelo menos um деепричастие ou причастие, além de pelo menos duas unidades da lista.",
+      "prompt": "«Мультикультурное общество: обогащение или источник конфликтов?»\n\nUnidades: уважение к · относиться к · придерживаться · сосуществовать с",
+      "review_notes": "Corrigir como produção B2 real: conteúdo, organização, coesão, gramática, regência, léxico, naturalidade e nível aproximado. Verificar concordância do причастие e a formação do деепричастие. Não suavizar a avaliação.",
+      "tags": [
+        "produção escrita",
+        "деепричастие",
+        "причастие",
+        "ТРКИ-II"
+      ]
+    },
+    {
+      "id": "u11-e23",
+      "type": "open_text",
+      "stage": "micro_writing",
+      "difficulty": 2,
+      "instruction": "Escreva 2–3 frases em russo sobre uma pessoa ou situação. Use pelo menos um деепричастие.",
+      "prompt": "Tema: человек, который живёт между двумя культурами\nUse: деепричастие (несовершенный ou совершенный вид) · гордиться",
+      "review_notes": "Verificar se o деепричастие tem o mesmo sujeito da oração principal e se a regência de гордиться está correta.",
+      "tags": [
+        "produção escrita",
+        "деепричастие",
+        "гордиться"
+      ]
+    },
+    {
+      "id": "u11-e24",
+      "type": "reading",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Leia e identifique a função das formas verbais destacadas pelo contexto.",
+      "context": "Живя в многонациональном районе, Ирина привыкла ежедневно слышать разные языки. Соседи, приехавшие из разных стран, организуют общие праздники и помогают новым жителям адаптироваться. Сталкиваясь с недопониманием, они обсуждают проблему, не отказываясь от собственных традиций.",
+      "prompt": "Qual princípio torna corretos «Живя» e «Сталкиваясь»?",
+      "options": [
+        "O sujeito implícito de cada деепричастие é o mesmo sujeito da oração principal correspondente.",
+        "Todo деепричастие deve se referir ao substantivo mais próximo.",
+        "As formas concordam em caso e número com «соседи».",
+        "As ações adicionais obrigatoriamente acontecem depois da ação principal."
+      ],
+      "answer": "O sujeito implícito de cada деепричастие é o mesmo sujeito da oração principal correspondente.",
+      "explanation": "Ирина vive e se acostumou; соседи se deparam e discutem. O sujeito compartilhado evita o erro de sujeito solto.",
+      "tags": [
+        "leitura",
+        "деепричастие",
+        "sujeito compartilhado"
+      ]
+    },
+    {
+      "id": "u11-e25",
+      "type": "listening",
+      "stage": "comprehension",
+      "difficulty": 3,
+      "instruction": "Ouça o depoimento e distinga convivência de assimilação total.",
+      "prompt": "Que posição a falante defende?",
+      "audio_text": "Переехав в другую страну, я не отказалась от своих традиций. Наоборот, общаясь с местными жителями, я научилась относиться к чужой культуре с большим пониманием и одновременно гордиться своими корнями.",
+      "options": [
+        "É possível integrar-se, respeitar outra cultura e manter orgulho das próprias raízes.",
+        "A adaptação exige abandonar completamente as tradições de origem.",
+        "A falante evita qualquer contato com os moradores locais.",
+        "O convívio intercultural necessariamente produz conflitos."
+      ],
+      "answer": "É possível integrar-se, respeitar outra cultura e manter orgulho das próprias raízes.",
+      "explanation": "переехав marca ação anterior; общаясь, ação simultânea; não há oposição entre compreensão e identidade.",
+      "tags": [
+        "аудирование",
+        "деепричастие",
+        "multiculturalismo"
+      ]
+    },
+    {
+      "id": "u11-e26",
+      "type": "listening",
+      "response_type": "input",
+      "stage": "noticing",
+      "difficulty": 3,
+      "instruction": "Ditado focalizado: digite a frase inteira e preserve a concordância do причастие.",
+      "prompt": "Escreva exatamente a frase ouvida.",
+      "audio_text": "Люди, живущие между двумя культурами, нередко гордятся своими корнями.",
+      "answer": "Люди, живущие между двумя культурами, нередко гордятся своими корнями.",
+      "explanation": "живущие concorda com люди; гордиться кем? чем? → своими корнями.",
+      "tags": [
+        "аудирование",
+        "ditado",
+        "причастие",
+        "гордиться"
+      ]
+    }
+  ],
+  "source_note": "Kagan/Kudyma/Miller, Глава 7 «Причастия» e Глава 9 «Деепричастия» · Кузьмина, Причастие e Деепричастие"
+}

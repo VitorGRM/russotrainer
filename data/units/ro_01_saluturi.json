@@ -1,0 +1,188 @@
+{
+  "id": "ro_u01_saluturi",
+  "course_id": "romanian",
+  "order": 1,
+  "level": "A1",
+  "title": "Salut! Primele conversații",
+  "description": "Cumprimentar, despedir-se, agradecer, perguntar como alguém está e pedir que fale mais devagar.",
+  "estimated_minutes": 40,
+  "source_note": "Sequência temática baseada na Unit 1 de Teach Yourself Romanian e conferida com Romanian: An Essential Grammar; atividades originais do aplicativo.",
+  "objectives": [
+    "escolher a saudação adequada ao horário e à situação",
+    "participar de uma troca formal curta usando Ce mai faceți?",
+    "pedir repetição ou fala mais lenta com cortesia",
+    "reconhecer e escrever corretamente ă, â/î, ș e ț",
+    "produzir um minidiálogo A1 sem depender de alternativas"
+  ],
+  "lesson_flow": [
+    {"title": "Notar", "description": "Ouça as expressões antes de analisar cada palavra."},
+    {"title": "Compreender", "description": "Identifique horário, intenção e grau de formalidade."},
+    {"title": "Recuperar", "description": "Produza as frases sem alternativas e com diacríticos."},
+    {"title": "Conversar", "description": "Monte e escreva uma troca social completa."}
+  ],
+  "grammar": [
+    {
+      "title": "Saudações dependem do momento",
+      "paragraphs": [
+        "Bună dimineața é bom dia pela manhã; Bună ziua funciona como olá ou boa tarde durante o dia; Bună seara é boa noite ao encontrar alguém. Ao ir dormir, use Noapte bună. Para se despedir de modo neutro, use La revedere.",
+        "Bună! é uma saudação informal entre pessoas próximas. Nesta primeira unidade, priorizamos as formas neutras e formais, porque funcionam com desconhecidos, atendentes e adultos que você acaba de conhecer."
+      ]
+    },
+    {
+      "title": "Cortesia e uma conversa mínima",
+      "paragraphs": [
+        "Ce mai faceți? significa Como vai? em tratamento formal ou plural. Uma resposta segura é Bine, mulțumesc. A continuação Dar dumneavoastră? devolve a pergunta formalmente: E o senhor/a senhora?.",
+        "Vă rog tem o valor de por favor. Se não entendeu, diga Poftim? para pedir repetição ou Vorbiți mai rar, vă rog para pedir que a pessoa fale mais devagar. Scuzați serve para pedir desculpa ou chamar a atenção com educação."
+      ]
+    },
+    {
+      "title": "Os sinais que mudam o som",
+      "paragraphs": [
+        "Romeno usa ă, â, î, ș e ț. Ș soa aproximadamente como ch em português; ț é uma sequência t+s; ă é uma vogal central curta. Â e î representam o mesmo som, mas aparecem em posições ortográficas diferentes.",
+        "Não elimine os diacríticos ao escrever: mulțumesc, dimineața, vorbiți e românește são as formas corretas. O i final de formas como vorbiți e scuzați pode soar muito breve, mas continua fazendo parte da palavra escrita."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Kit de sobrevivência da primeira conversa",
+    "columns": ["Situação", "Expressão", "Resposta ou continuação"],
+    "rows": [
+      ["manhã", "Bună dimineața!", "Bună dimineața!"],
+      ["durante o dia", "Bună ziua!", "Bună ziua!"],
+      ["encontro à noite", "Bună seara!", "Bună seara!"],
+      ["como vai? — formal", "Ce mai faceți?", "Bine, mulțumesc."],
+      ["não entendi", "Poftim?", "Vorbiți mai rar, vă rog."],
+      ["despedida", "La revedere!", "La revedere!"]
+    ],
+    "note": "Aprenda cada linha como uma ação comunicativa completa, não como palavras isoladas."
+  },
+  "reference": [
+    {"construction": "Bună dimineața!", "question": "saudação · manhã", "case": "EXPRESSÃO FIXA", "meaning": "Bom dia!", "example": "Bună dimineața, doamnă Popescu!"},
+    {"construction": "Bună ziua!", "question": "saudação · dia", "case": "EXPRESSÃO FIXA", "meaning": "Olá! / Boa tarde!", "example": "Bună ziua, domnule Ionescu!"},
+    {"construction": "Ce mai faceți?", "question": "formal ou plural", "case": "PERGUNTA", "meaning": "Como vai? / Como vão?", "example": "Bine, mulțumesc. Dar dumneavoastră?"},
+    {"construction": "Vorbiți mai rar, vă rog.", "question": "pedido cortês", "case": "FRASE ÚTIL", "meaning": "Fale mais devagar, por favor.", "example": "Poftim? Vorbiți mai rar, vă rog."},
+    {"construction": "La revedere!", "question": "despedida", "case": "EXPRESSÃO FIXA", "meaning": "Até logo! / Adeus!", "example": "Mulțumesc. La revedere!"}
+  ],
+  "exercises": [
+    {"id": "ro-u01-e01", "type": "flashcard", "stage": "recall", "difficulty": 1, "front": "Cumprimente alguém pela manhã.", "back": "Bună dimineața!", "explanation": "Use até o fim da manhã.", "tags": ["saluturi", "Bună dimineața", "A1"]},
+    {"id": "ro-u01-e02", "type": "flashcard", "stage": "recall", "difficulty": 1, "front": "Pergunte formalmente: Como vai?", "back": "Ce mai faceți?", "explanation": "faceți é a forma formal/plural usada nesta expressão.", "tags": ["Ce mai faceți", "formalidade", "A1"]},
+    {"id": "ro-u01-e03", "type": "flashcard", "stage": "recall", "difficulty": 1, "front": "Diga: Fale mais devagar, por favor.", "back": "Vorbiți mai rar, vă rog.", "explanation": "Memorize o pedido inteiro como um chunk.", "tags": ["Vorbiți mai rar", "cortesia", "A1"]},
+    {"id": "ro-u01-e04", "type": "flashcard", "stage": "recall", "difficulty": 1, "front": "Agradeça.", "back": "Mulțumesc.", "explanation": "Atenção ao ț e à sequência final -esc.", "tags": ["Mulțumesc", "diacríticos", "A1"]},
+    {"id": "ro-u01-e05", "type": "flashcard", "stage": "recall", "difficulty": 1, "front": "Despeça-se de maneira neutra.", "back": "La revedere!", "explanation": "Noapte bună é especificamente para desejar boa noite ao ir dormir.", "tags": ["La revedere", "saluturi", "A1"]},
+    {
+      "id": "ro-u01-e06", "type": "match_pairs", "stage": "meaning", "difficulty": 1,
+      "instruction": "Relacione cada situação à expressão que realmente a resolve.",
+      "pairs": [
+        {"left": "encontro pela manhã", "right": "Bună dimineața!"},
+        {"left": "encontro durante o dia", "right": "Bună ziua!"},
+        {"left": "encontro à noite", "right": "Bună seara!"},
+        {"left": "ir dormir", "right": "Noapte bună!"},
+        {"left": "não ouvi ou não entendi", "right": "Poftim?"},
+        {"left": "encerrar a conversa", "right": "La revedere!"}
+      ],
+      "explanation": "Bună seara abre um encontro à noite; Noapte bună encerra o dia ao ir dormir.",
+      "tags": ["saluturi", "situações", "match_pairs"]
+    },
+    {
+      "id": "ro-u01-e07", "type": "choice", "stage": "context", "difficulty": 1,
+      "prompt": "São 8h30 e você entra em uma padaria. O que diz?",
+      "options": ["La revedere!", "Bună dimineața!", "Noapte bună!", "Poftim?"],
+      "answer": "Bună dimineața!", "explanation": "De manhã: Bună dimineața!", "tags": ["Bună dimineața", "saluturi", "A1"]
+    },
+    {
+      "id": "ro-u01-e08", "type": "choice", "stage": "context", "difficulty": 1,
+      "prompt": "Você encontra uma professora às 19h. Escolha a saudação.",
+      "options": ["Noapte bună!", "Bună ziua!", "Bună seara!", "Scuzați!"],
+      "answer": "Bună seara!", "explanation": "Bună seara é a saudação de encontro à noite.", "tags": ["Bună seara", "saluturi", "A1"]
+    },
+    {
+      "id": "ro-u01-e09", "type": "choice", "stage": "meaning", "difficulty": 1,
+      "prompt": "Um amigo vai dormir. O que você diz?",
+      "options": ["Ce mai faceți?", "La revedere!", "Bună seara!", "Noapte bună!"],
+      "answer": "Noapte bună!", "explanation": "Noapte bună deseja boa noite a quem vai dormir.", "tags": ["Noapte bună", "saluturi", "A1"]
+    },
+    {
+      "id": "ro-u01-e10", "type": "choice", "stage": "dialogue", "difficulty": 1,
+      "prompt": "— Ce mai faceți?\n— ___",
+      "options": ["Poftim?", "Bine, mulțumesc.", "La revedere.", "Bună dimineața."],
+      "answer": "Bine, mulțumesc.", "explanation": "Resposta convencional: Bine, mulțumesc.", "tags": ["Ce mai faceți", "Mulțumesc", "diálogo"]
+    },
+    {
+      "id": "ro-u01-e11", "type": "choice", "stage": "dialogue", "difficulty": 2,
+      "prompt": "A pessoa fala rápido demais. Qual pedido é completo e cortês?",
+      "options": ["Vorbiți englezește?", "Mai rar.", "Vorbiți mai rar, vă rog.", "Nu, mulțumesc."],
+      "answer": "Vorbiți mai rar, vă rog.", "explanation": "A frase completa inclui o pedido e a marca de cortesia vă rog.", "tags": ["Vorbiți mai rar", "vă rog", "cortesia"]
+    },
+    {"id": "ro-u01-e12", "type": "input", "stage": "active_recall", "difficulty": 1, "instruction": "Escreva em romeno com os diacríticos.", "prompt": "Olá / boa tarde.", "answer": "Bună ziua.", "valid_answers": ["Bună ziua!"], "explanation": "Bună leva ă.", "tags": ["Bună ziua", "diacríticos", "produção"]},
+    {"id": "ro-u01-e13", "type": "input", "stage": "active_recall", "difficulty": 2, "instruction": "Traduza como um pedido cortês completo.", "prompt": "Fale mais devagar, por favor.", "answer": "Vorbiți mai rar, vă rog.", "explanation": "vorbiți + mai rar + vă rog.", "tags": ["Vorbiți mai rar", "vă rog", "produção"]},
+    {"id": "ro-u01-e14", "type": "input", "stage": "active_recall", "difficulty": 2, "instruction": "Complete a resposta formal.", "prompt": "— Bine, mulțumesc. ___?\n(E o senhor/a senhora?)", "answer": "Dar dumneavoastră", "valid_answers": ["Dar dumneavoastră?"], "explanation": "dumneavoastră é o pronome de tratamento formal.", "tags": ["dumneavoastră", "formalidade", "produção"]},
+    {
+      "id": "ro-u01-e15", "type": "sentence_order", "stage": "construction", "difficulty": 1,
+      "prompt": "Monte a pergunta formal.", "tokens": ["Ce", "mai", "faceți?"], "answer": "Ce mai faceți?",
+      "explanation": "A pergunta pode ser feita pela entonação, sem auxiliar equivalente a fazer em português.", "tags": ["Ce mai faceți", "ordem", "produção"]
+    },
+    {
+      "id": "ro-u01-e16", "type": "correction", "stage": "error_analysis", "difficulty": 2,
+      "instruction": "Corrija apenas ortografia e diacríticos.", "prompt": "Buna ziua. Multumesc.",
+      "answer": "Bună ziua. Mulțumesc.", "explanation": "As formas corretas são Bună e Mulțumesc.", "tags": ["diacríticos", "Bună ziua", "Mulțumesc"]
+    },
+    {
+      "id": "ro-u01-e17", "type": "reading", "stage": "comprehension", "difficulty": 2, "speak_options": false,
+      "instruction": "Leia o diálogo e identifique por que Andrei pede ajuda.",
+      "context": "— Bună ziua, domnule Andrei. Ce mai faceți?\n— Bine, mulțumesc. Poftim? Vorbiți mai rar, vă rog.\n— Desigur. Ce mai faceți?\n— Foarte bine, mulțumesc.",
+      "prompt": "Por que Andrei diz «Poftim?» e «Vorbiți mai rar»?",
+      "options": ["Ele quer encerrar a conversa.", "Ele não ouviu ou não compreendeu bem porque a pessoa falou rápido.", "Ele está recusando uma oferta.", "Ele quer saber a hora."],
+      "answer": "Ele não ouviu ou não compreendeu bem porque a pessoa falou rápido.",
+      "explanation": "Poftim? pede repetição; Vorbiți mai rar pede redução da velocidade.", "tags": ["leitura", "inferência", "cortesia"]
+    },
+    {
+      "id": "ro-u01-e18", "type": "reading", "stage": "comprehension", "difficulty": 2, "speak_options": false,
+      "instruction": "Leia e escolha a sequência social adequada.",
+      "context": "La ora nouă dimineața, Maria intră în hotel. Îl salută pe recepționer, cere ajutor și apoi pleacă.",
+      "prompt": "Qual sequência é apropriada?",
+      "options": ["Noapte bună → Poftim? → Bună seara", "Bună dimineața → Vă rog → La revedere", "La revedere → Mulțumesc → Bună ziua", "Bună seara → Nu, mulțumesc → Noapte bună"],
+      "answer": "Bună dimineața → Vă rog → La revedere",
+      "explanation": "ora nouă dimineața indica manhã; vă rog acompanha o pedido; la revedere encerra.", "tags": ["leitura", "sequência", "saluturi"]
+    },
+    {
+      "id": "ro-u01-e19", "type": "listening", "stage": "comprehension", "difficulty": 1, "speak_options": false,
+      "instruction": "Ouça sem transcrição e identifique o momento do encontro.", "prompt": "Quando essa conversa provavelmente acontece?",
+      "audio_text": "Bună seara, doamnă Popescu. Ce mai faceți? Bine, mulțumesc. Dar dumneavoastră?",
+      "options": ["Durante um encontro à noite.", "Ao ir dormir.", "No fim de uma chamada, como despedida.", "De manhã muito cedo."],
+      "answer": "Durante um encontro à noite.", "explanation": "Bună seara abre um encontro à noite.", "tags": ["listening", "Bună seara", "compreensão global"]
+    },
+    {
+      "id": "ro-u01-e20", "type": "listening", "stage": "comprehension", "difficulty": 2,
+      "instruction": "Ouça e escolha a frase exata usada para pedir menor velocidade.", "prompt": "O que a pessoa diz?",
+      "audio_text": "Poftim? Vorbiți mai rar, vă rog.",
+      "options": ["Vorbiți românește?", "Scuzați, vă rog.", "Vorbiți mai rar, vă rog.", "Bine, mulțumesc."],
+      "answer": "Vorbiți mai rar, vă rog.", "explanation": "Você pode ouvir Poftim? antes do pedido completo.", "tags": ["listening", "discriminação", "Vorbiți mai rar"]
+    },
+    {
+      "id": "ro-u01-e21", "type": "listening", "response_type": "input", "stage": "noticing", "difficulty": 2,
+      "instruction": "Ditado: escreva a troca inteira com diacríticos. A transcrição aparece após responder.", "prompt": "Escreva exatamente o que ouviu.",
+      "audio_text": "Bine, mulțumesc. Dar dumneavoastră?", "answer": "Bine, mulțumesc. Dar dumneavoastră?",
+      "explanation": "Observe ț em mulțumesc e ă em dumneavoastră.", "tags": ["listening", "ditado", "diacríticos"]
+    },
+    {
+      "id": "ro-u01-e22", "type": "sentence_order", "stage": "construction", "difficulty": 2,
+      "prompt": "Monte uma resposta completa e devolva a pergunta.",
+      "tokens": ["Bine,", "mulțumesc.", "Dar", "dumneavoastră?"], "answer": "Bine, mulțumesc. Dar dumneavoastră?",
+      "explanation": "Resposta + agradecimento + pergunta devolvida.", "tags": ["diálogo", "dumneavoastră", "produção"]
+    },
+    {
+      "id": "ro-u01-e23", "type": "open_text", "stage": "micro_writing", "difficulty": 2,
+      "instruction": "Escreva um diálogo de quatro falas entre você e uma pessoa que acaba de conhecer.",
+      "prompt": "Situação: encontro durante o dia. Inclua saudação, Ce mai faceți?, resposta e despedida.",
+      "review_notes": "Verificar adequação das saudações, sequência social, pontuação e diacríticos. O diálogo deve ter quatro falas completas.",
+      "tags": ["produção escrita", "diálogo", "A1"]
+    },
+    {
+      "id": "ro-u01-e24", "type": "open_text", "stage": "speaking_plan", "difficulty": 2,
+      "instruction": "Prepare cinco frases e depois leia-as em voz alta, sem traduzir durante a leitura.",
+      "prompt": "Você entra em um hotel à noite, cumprimenta a recepcionista, não entende uma pergunta, pede que fale devagar, agradece e se despede.",
+      "review_notes": "Esperar uma sequência equivalente a Bună seara → Poftim? → Vorbiți mai rar, vă rog → Mulțumesc → La revedere. Aceitar pequenas variações naturais.",
+      "tags": ["produção oral", "situação real", "A1"]
+    }
+  ]
+}

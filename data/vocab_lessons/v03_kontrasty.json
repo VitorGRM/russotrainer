@@ -1,0 +1,586 @@
+{
+  "id": "v03",
+  "unit_id": "u03_contrastes",
+  "order": 3,
+  "title": "Центр или пригород?",
+  "theme": "Жильё и решения",
+  "description": "Um casal decide entre alugar no centro e comprar no subúrbio. Oito construções em que o português engana: от, на e в com casos diferentes, e verbos sem preposição.",
+  "speakers": {
+    "Ира": "f",
+    "Антон": "m"
+  },
+  "dialogue": {
+    "title": "Семейный совет",
+    "setting": "Ira e Anton moram de aluguel no centro de Moscou e discutem se vale a pena comprar um apartamento financiado no subúrbio.",
+    "lines": [
+      {
+        "speaker": "Ира",
+        "ru": "Антон, я посмотрела ещё три квартиры. Честно, всё зависит от того, сколько мы готовы платить.",
+        "pt": "Anton, vi mais três apartamentos. Sinceramente, tudo depende de quanto estamos dispostos a pagar."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "Если мы получим кредит в банке, можно купить двушку в пригороде.",
+        "pt": "Se conseguirmos um financiamento no banco, dá para comprar um de dois quartos no subúrbio."
+      },
+      {
+        "speaker": "Ира",
+        "ru": "Кредит на двадцать лет? Я бы на это не рассчитывала. У тебя пока нестабильная зарплата.",
+        "pt": "Financiamento de vinte anos? Eu não contaria com isso. Seu salário ainda não é estável."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "Зато мы наконец избавимся от вечных переездов с одной съёмной квартиры на другую.",
+        "pt": "Em compensação, finalmente nos livraremos das eternas mudanças de um apartamento alugado para outro."
+      },
+      {
+        "speaker": "Ира",
+        "ru": "Это правда. Но пригород повлияет на всю нашу жизнь: полтора часа до работы каждый день.",
+        "pt": "É verdade. Mas o subúrbio vai afetar toda a nossa vida: uma hora e meia até o trabalho todo dia."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "Люди там, кстати, жалуются только на пробки. Всё остальное есть: школа, поликлиника, парк.",
+        "pt": "O pessoal de lá, aliás, só reclama dos engarrafamentos. Todo o resto tem: escola, posto de saúde, parque."
+      },
+      {
+        "speaker": "Ира",
+        "ru": "А мы нуждаемся не в парке, а во времени. Я не хочу отказываться от театров и встреч с друзьями.",
+        "pt": "Mas nós não precisamos de parque, precisamos de tempo. Não quero abrir mão de teatros e de encontros com os amigos."
+      },
+      {
+        "speaker": "Антон",
+        "ru": "Тогда давай сначала всё посчитаем. Решение не должно зависеть от эмоций.",
+        "pt": "Então vamos primeiro fazer as contas. A decisão não deve depender das emoções."
+      },
+      {
+        "speaker": "Ира",
+        "ru": "Согласна. В субботу съездим посмотреть квартиру в Мытищах, а потом решим.",
+        "pt": "Concordo. No sábado vamos ver o apartamento em Mytischi e depois decidimos."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual é o dilema do casal?",
+      "options": [
+        "Continuar alugando no centro ou comprar financiado no subúrbio.",
+        "Mudar de cidade ou continuar morando em Moscou.",
+        "Comprar um carro ou continuar usando o metrô.",
+        "Vender o apartamento ou alugá-lo para outra família."
+      ],
+      "answer": "Continuar alugando no centro ou comprar financiado no subúrbio.",
+      "explanation": "Кредит, двушка в пригороде, съёмные квартиры: a escolha é entre aluguel e financiamento."
+    },
+    {
+      "prompt": "Como termina a conversa?",
+      "options": [
+        "Eles vão visitar um apartamento e decidir depois.",
+        "Eles decidem ficar no centro de vez.",
+        "Anton desiste do financiamento para agradar Ira.",
+        "Ira aceita o financiamento sem fazer contas."
+      ],
+      "answer": "Eles vão visitar um apartamento e decidir depois.",
+      "explanation": "«В субботу съездим посмотреть квартиру… а потом решим»."
+    }
+  ],
+  "items": [
+    {
+      "key": "zaviset",
+      "lemma": "зависеть",
+      "tag": "зависеть от",
+      "head": "зависеть от",
+      "regency": "зависеть от кого? чего?",
+      "case": "родительный падеж",
+      "pt": "depender de",
+      "chunk": "зависеть от обстоятельств",
+      "chunk_pt": "depender das circunstâncias",
+      "chunk_wrong": [
+        "зависеть из обстоятельств",
+        "зависеть от обстоятельствах",
+        "зависеть на обстоятельства"
+      ],
+      "form_note": "от + родительный. «Depender de» nunca vira из.",
+      "trap": "O «de» português puxa из ou с. Com зависеть só existe от: зависеть от родителей, от погоды, от того, что…",
+      "example": {
+        "ru": "Цена билета зависит от сезона.",
+        "pt": "O preço da passagem depende da estação.",
+        "extra": "сезону",
+        "note": "от сезона: masculino no родительный (-а)."
+      },
+      "cloze": {
+        "ru": "Урожай во многом зависит ___.",
+        "answer": "от погоды",
+        "wrong": [
+          "из погоды",
+          "от погоде",
+          "погодой"
+        ],
+        "pt": "A colheita depende muito do tempo.",
+        "note": "от + родительный feminino: -ы."
+      },
+      "hear": {
+        "ru": "Успех проекта зависит от поддержки инвесторов.",
+        "pt": "O sucesso do projeto depende do apoio dos investidores.",
+        "wrong": [
+          "O apoio dos investidores depende do sucesso do projeto.",
+          "O sucesso do projeto não depende do apoio dos investidores.",
+          "O sucesso do projeto dependia do apoio de um investidor."
+        ],
+        "note": "успех = sujeito; от поддержки = родительный; инвесторов = plural."
+      }
+    },
+    {
+      "key": "otkazatsya",
+      "lemma": "отказываться",
+      "tag": "отказаться от",
+      "head": "отказываться / отказаться от",
+      "regency": "отказываться / отказаться от кого? чего? · + инфинитив",
+      "case": "родительный падеж",
+      "pt": "abrir mão de, recusar, desistir de",
+      "chunk": "отказаться от сладкого",
+      "chunk_pt": "abrir mão dos doces",
+      "chunk_wrong": [
+        "отказаться сладкое",
+        "отказаться от сладким",
+        "отказаться в сладком"
+      ],
+      "form_note": "Algo recusado → от + родительный. Recusar-se a fazer → infinitivo: отказаться помочь.",
+      "trap": "«Recusar a proposta» tem objeto direto em português. Em russo: отказаться от предложения.",
+      "example": {
+        "ru": "Он отказался от выгодного предложения.",
+        "pt": "Ele recusou uma proposta vantajosa.",
+        "extra": "выгодное",
+        "note": "от выгодного предложения: neutro no родительный (-ого, -я)."
+      },
+      "cloze": {
+        "ru": "Из-за кризиса компания отказалась ___.",
+        "answer": "от строительства нового офиса",
+        "wrong": [
+          "строительство нового офиса",
+          "от строительству нового офиса",
+          "из строительства нового офиса"
+        ],
+        "pt": "Por causa da crise, a empresa desistiu da construção do novo escritório.",
+        "note": "от строительства (родительный); нового офиса também é родительный (de quê)."
+      },
+      "hear": {
+        "ru": "Мы отказались от машины и теперь ездим на метро.",
+        "pt": "Abrimos mão do carro e agora andamos de metrô.",
+        "wrong": [
+          "Abrimos mão do metrô e agora andamos de carro.",
+          "Compramos um carro e não andamos mais de metrô.",
+          "Vamos abrir mão do carro e passar a andar de metrô."
+        ],
+        "note": "отказались (passado) от машины; теперь ездим на метро = agora."
+      }
+    },
+    {
+      "key": "vliyat",
+      "lemma": "влиять",
+      "tag": "влиять на",
+      "head": "влиять / повлиять на",
+      "regency": "влиять / повлиять на кого? что?",
+      "case": "винительный падеж",
+      "pt": "influenciar, afetar",
+      "chunk": "влиять на здоровье",
+      "chunk_pt": "afetar a saúde",
+      "chunk_wrong": [
+        "влиять здоровье",
+        "влиять на здоровью",
+        "влиять в здоровье"
+      ],
+      "form_note": "Objeto direto em português, mas на + винительный em russo.",
+      "trap": "«Influenciar alguém» parece transitivo direto. Sempre на: влиять на детей, на решение, на цены.",
+      "example": {
+        "ru": "Погода сильно влияет на моё настроение.",
+        "pt": "O tempo afeta muito o meu humor.",
+        "extra": "моему",
+        "note": "на моё настроение: neutro, винительный = nominativo."
+      },
+      "cloze": {
+        "ru": "Социальные сети влияют ___.",
+        "answer": "на мнение подростков",
+        "wrong": [
+          "мнение подростков",
+          "на мнении подростков",
+          "на мнению подростков"
+        ],
+        "pt": "As redes sociais influenciam a opinião dos adolescentes.",
+        "note": "на + винительный: на мнение; подростков = родительный plural."
+      },
+      "hear": {
+        "ru": "Родители повлияли на выбор её профессии.",
+        "pt": "Os pais influenciaram a escolha da profissão dela.",
+        "wrong": [
+          "A escolha da profissão dela influenciou os pais.",
+          "Os pais não influenciaram a escolha da profissão dela.",
+          "Os pais influenciam a escolha da profissão dela."
+        ],
+        "note": "родители = sujeito; на выбор = винительный; повлияли = passado perfectivo."
+      }
+    },
+    {
+      "key": "poluchit",
+      "lemma": "получать",
+      "tag": "получать / получить",
+      "head": "получать / получить",
+      "regency": "получать / получить кого? что? · от кого?",
+      "case": "винительный падеж",
+      "pt": "receber, obter",
+      "chunk": "получить разрешение на работу",
+      "chunk_pt": "obter a autorização de trabalho",
+      "chunk_wrong": [
+        "получить разрешения на работу",
+        "получить разрешение для работы",
+        "получить разрешением на работу"
+      ],
+      "form_note": "Objeto direto no винительный; разрешение на что? (autorização para quê).",
+      "trap": "«Autorização para trabalhar» → разрешение на работу, não «для работы». O documento é разрешение на…, виза на…, право на…",
+      "example": {
+        "ru": "Студентка получила стипендию за отличную учёбу.",
+        "pt": "A estudante recebeu uma bolsa pelo ótimo desempenho.",
+        "extra": "стипендией",
+        "note": "получить что? → стипендию (винительный feminino, -у)."
+      },
+      "cloze": {
+        "ru": "После долгого ожидания мы наконец получили ___.",
+        "answer": "ответ от банка",
+        "wrong": [
+          "ответа от банка",
+          "ответом от банка",
+          "на ответ от банка"
+        ],
+        "pt": "Depois de uma longa espera, finalmente recebemos a resposta do banco.",
+        "note": "получить что? → ответ (винительный); от кого? → от банка."
+      },
+      "hear": {
+        "ru": "Мой друг получил гражданство только через пять лет.",
+        "pt": "Meu amigo só obteve a cidadania depois de cinco anos.",
+        "wrong": [
+          "Meu amigo perdeu a cidadania depois de cinco anos.",
+          "Meu amigo obteve a cidadania em apenas cinco meses.",
+          "Meu amigo vai pedir a cidadania daqui a cinco anos."
+        ],
+        "note": "получил = passado perfectivo; через пять лет = cinco anos depois."
+      }
+    },
+    {
+      "key": "nuzhdatsya",
+      "lemma": "нуждаться",
+      "tag": "нуждаться в",
+      "head": "нуждаться в",
+      "regency": "нуждаться в ком? чём?",
+      "case": "предложный падеж",
+      "pt": "precisar de, necessitar de",
+      "chunk": "нуждаться в помощи",
+      "chunk_pt": "precisar de ajuda",
+      "chunk_wrong": [
+        "нуждаться помощи",
+        "нуждаться от помощи",
+        "нуждаться в помощь"
+      ],
+      "form_note": "в + предложный. Compare: мне нужна помощь (sem verbo, com дательный de quem precisa).",
+      "trap": "«Precisar de» sugere от ou родительный. Com нуждаться, sempre в + предложный.",
+      "example": {
+        "ru": "Эта больница нуждается в новом оборудовании.",
+        "pt": "Este hospital precisa de equipamento novo.",
+        "extra": "новое",
+        "note": "в новом оборудовании: neutro no предложный (-ом, -ии)."
+      },
+      "cloze": {
+        "ru": "Пожилые соседи нуждаются ___.",
+        "answer": "в постоянном уходе",
+        "wrong": [
+          "в постоянный уход",
+          "постоянного ухода",
+          "от постоянного ухода"
+        ],
+        "pt": "Os vizinhos idosos precisam de cuidados constantes.",
+        "note": "в + предложный masculino: -ом, -е."
+      },
+      "hear": {
+        "ru": "Не он нуждается в нас, а мы в нём.",
+        "pt": "Não é ele quem precisa de nós; somos nós que precisamos dele.",
+        "wrong": [
+          "Não somos nós que precisamos dele; é ele quem precisa de nós.",
+          "Nem ele precisa de nós, nem nós dele.",
+          "Ele não precisa de nós, e nós também não precisamos dele."
+        ],
+        "note": "не он…, а мы: quem precisa são «мы»; в нём = dele."
+      }
+    },
+    {
+      "key": "rasschityvat",
+      "lemma": "рассчитывать",
+      "tag": "рассчитывать на",
+      "head": "рассчитывать на",
+      "regency": "рассчитывать на кого? что?",
+      "case": "винительный падеж",
+      "pt": "contar com",
+      "chunk": "рассчитывать на поддержку семьи",
+      "chunk_pt": "contar com o apoio da família",
+      "chunk_wrong": [
+        "рассчитывать с поддержкой семьи",
+        "рассчитывать на поддержке семьи",
+        "рассчитывать поддержку семьи"
+      ],
+      "form_note": "на + винительный: рассчитывать на друзей, на успех, на скидку.",
+      "trap": "O «com» de «contar com» leva a с. Em russo é на + винительный.",
+      "example": {
+        "ru": "В трудную минуту можно рассчитывать на друзей.",
+        "pt": "Num momento difícil, dá para contar com os amigos.",
+        "extra": "друзьями",
+        "note": "на друзей: animado plural, винительный = родительный."
+      },
+      "cloze": {
+        "ru": "Не стоит рассчитывать ___ в первый год.",
+        "answer": "на большую прибыль",
+        "wrong": [
+          "с большой прибылью",
+          "на большой прибыли",
+          "большую прибыль"
+        ],
+        "pt": "Não vale a pena contar com grande lucro no primeiro ano.",
+        "note": "на + винительный feminino: -ую, -ь."
+      },
+      "hear": {
+        "ru": "Начальник рассчитывает на нас, а мы — на него.",
+        "pt": "O chefe conta conosco, e nós contamos com ele.",
+        "wrong": [
+          "Nós contamos com o chefe, mas ele não conta conosco.",
+          "O chefe desconfia de nós, e nós dele.",
+          "O chefe contava conosco, e nós com ele."
+        ],
+        "note": "Os dois lados contam um com o outro; presente (рассчитывает)."
+      }
+    },
+    {
+      "key": "zhalovatsya",
+      "lemma": "жаловаться",
+      "tag": "жаловаться на",
+      "head": "жаловаться / пожаловаться на",
+      "regency": "жаловаться / пожаловаться кому? на кого? что? · в + винительный (instituição)",
+      "case": "винительный падеж",
+      "pt": "reclamar de, queixar-se de",
+      "chunk": "жаловаться на шум",
+      "chunk_pt": "reclamar do barulho",
+      "chunk_wrong": [
+        "жаловаться от шума",
+        "жаловаться о шуме",
+        "жаловаться шумом"
+      ],
+      "form_note": "Do que se reclama: на + винительный. Para quem: дательный. Onde: в + винительный (в полицию).",
+      "trap": "«Reclamar de» puxa от ou о. Em russo, o motivo da queixa vem com на: жаловаться на соседей, на цены.",
+      "example": {
+        "ru": "Соседи жалуются на громкую музыку.",
+        "pt": "Os vizinhos reclamam da música alta.",
+        "extra": "громкой",
+        "note": "на громкую музыку: feminino no винительный (-ую, -у)."
+      },
+      "cloze": {
+        "ru": "Пациент жалуется ___.",
+        "answer": "на сильную головную боль",
+        "wrong": [
+          "от сильной головной боли",
+          "о сильной головной боли",
+          "на сильной головной боли"
+        ],
+        "pt": "O paciente se queixa de uma forte dor de cabeça.",
+        "note": "на + винительный: боль é feminino em -ь (винительный = nominativo)."
+      },
+      "hear": {
+        "ru": "Клиенты пожаловались директору на официанта.",
+        "pt": "Os clientes reclamaram do garçom com o diretor.",
+        "wrong": [
+          "Os clientes reclamaram do diretor com o garçom.",
+          "O garçom reclamou dos clientes com o diretor.",
+          "Os clientes elogiaram o garçom para o diretor."
+        ],
+        "note": "директору (дательный) = a quem; на официанта (винительный) = de quem."
+      }
+    },
+    {
+      "key": "izbavitsya",
+      "lemma": "избавляться",
+      "tag": "избавиться от",
+      "head": "избавляться / избавиться от",
+      "regency": "избавляться / избавиться от кого? чего?",
+      "case": "родительный падеж",
+      "pt": "livrar-se de",
+      "chunk": "избавиться от старых вещей",
+      "chunk_pt": "livrar-se das coisas velhas",
+      "chunk_wrong": [
+        "избавиться старых вещей",
+        "избавиться из старых вещей",
+        "избавиться от старыми вещами"
+      ],
+      "form_note": "от + родительный, como отказаться от.",
+      "trap": "Não use из: «livrar-se de» = избавиться от.",
+      "example": {
+        "ru": "Я никак не могу избавиться от этой привычки.",
+        "pt": "Não consigo de jeito nenhum me livrar deste hábito.",
+        "extra": "привычку",
+        "note": "от этой привычки: feminino no родительный (-ой, -и)."
+      },
+      "cloze": {
+        "ru": "Город наконец избавился ___.",
+        "answer": "от пробок в центре",
+        "wrong": [
+          "из пробок в центре",
+          "пробки в центре",
+          "от пробках в центре"
+        ],
+        "pt": "A cidade finalmente se livrou dos engarrafamentos no centro.",
+        "note": "от пробок: родительный plural sem terminação (пробка → пробок)."
+      },
+      "hear": {
+        "ru": "Чтобы избавиться от стресса, она начала бегать.",
+        "pt": "Para se livrar do estresse, ela começou a correr.",
+        "wrong": [
+          "Por causa do estresse, ela parou de correr.",
+          "Para se livrar do estresse, ela começou a nadar.",
+          "Para se livrar do estresse, ela vai começar a correr."
+        ],
+        "note": "чтобы + infinitivo = finalidade; начала = passado."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Do que Ira não quer abrir mão?",
+      "options": [
+        "Dos teatros e dos encontros com os amigos.",
+        "Do parque e da escola perto de casa.",
+        "Do salário estável que ela tem hoje.",
+        "Do apartamento alugado onde moram."
+      ],
+      "answer": "Dos teatros e dos encontros com os amigos.",
+      "explanation": "«Я не хочу отказываться от театров и встреч с друзьями»."
+    },
+    {
+      "prompt": "Segundo Anton, de que os moradores do subúrbio reclamam?",
+      "options": [
+        "Só dos engarrafamentos.",
+        "Da falta de escolas.",
+        "Do preço dos imóveis.",
+        "Do barulho dos vizinhos."
+      ],
+      "answer": "Só dos engarrafamentos.",
+      "explanation": "«жалуются только на пробки» — жаловаться на что?"
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "зависит от того",
+      "wrong": [
+        "зависит из того",
+        "зависит от тому",
+        "зависит на то"
+      ],
+      "note": "зависеть от чего? → от того, сколько…"
+    },
+    {
+      "line": 2,
+      "gap": "на это не рассчитывала",
+      "wrong": [
+        "с этим не рассчитывала",
+        "этого не рассчитывала",
+        "на этом не рассчитывала"
+      ],
+      "note": "рассчитывать на что? → на это (винительный)."
+    },
+    {
+      "line": 3,
+      "gap": "избавимся от вечных переездов",
+      "wrong": [
+        "избавимся вечных переездов",
+        "избавимся от вечными переездами",
+        "избавимся из вечных переездов"
+      ],
+      "note": "избавиться от + родительный plural."
+    },
+    {
+      "line": 6,
+      "gap": "во времени",
+      "wrong": [
+        "во время",
+        "время",
+        "от времени"
+      ],
+      "note": "нуждаться в чём? → во времени (предложный). «во время» = durante — outra coisa."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada verbo ao complemento que faz sentido e tem a regência certa.",
+    "prompt": "Qual complemento completa cada verbo?",
+    "pairs": [
+      {
+        "left": "зависеть",
+        "right": "от курса доллара"
+      },
+      {
+        "left": "нуждаться",
+        "right": "в срочном ремонте"
+      },
+      {
+        "left": "влиять",
+        "right": "на климат планеты"
+      },
+      {
+        "left": "получить",
+        "right": "визу за неделю"
+      },
+      {
+        "left": "избавиться",
+        "right": "от лишнего веса"
+      },
+      {
+        "left": "рассчитывать",
+        "right": "на скидку для студентов"
+      }
+    ],
+    "explanation": "от + родительный (зависеть, избавиться); в + предложный (нуждаться); на + винительный (влиять, рассчитывать); получить sem preposição."
+  },
+  "replies": [
+    {
+      "speaker": "Антон",
+      "you": "Ира",
+      "ru": "Ну что, ты согласна взять кредит?",
+      "prompt": "Anton pergunta se você concorda com o financiamento. Responda que ainda não, porque depende do novo salário dele.",
+      "answer": "Пока нет: всё зависит от твоей новой зарплаты.",
+      "wrong": [
+        "Пока нет: всё зависит твоей новой зарплаты.",
+        "Пока нет: всё зависит от твоей новой зарплате.",
+        "Пока нет: всё зависит на твою новую зарплату."
+      ],
+      "explanation": "зависеть от + родительный: от твоей новой зарплаты."
+    },
+    {
+      "speaker": "Ира",
+      "you": "Антон",
+      "ru": "Ты правда готов отказаться от машины?",
+      "prompt": "Ira pergunta se você abriria mão do carro. Responda que sim, se vocês se mudarem para perto do metrô.",
+      "answer": "Готов, если мы переедем ближе к метро.",
+      "wrong": [
+        "Готов, если мы переезжаем ближе к метро.",
+        "Готов, если мы переедем ближе метро.",
+        "Готов, если мы переедем ближе от метро."
+      ],
+      "explanation": "Condição futura: если + futuro perfectivo (переедем). ближе к чему? → к метро."
+    }
+  ],
+  "writing": {
+    "prompt": "Você precisa escolher entre morar no centro (caro, perto de tudo) e no subúrbio (barato, longe). Escreva qual escolheria e por quê.",
+    "use": [
+      "зависеть от",
+      "влиять на",
+      "нуждаться в",
+      "отказаться от",
+      "рассчитывать на"
+    ],
+    "words": "50–70",
+    "notes": "Verificar от + родительный, на + винительный, в + предложный; ausência de calques (зависеть из, рассчитывать с); aspecto de отказываться/отказаться."
+  }
+}

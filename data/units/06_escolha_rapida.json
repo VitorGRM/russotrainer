@@ -1,0 +1,655 @@
+{
+  "id": "u06_escolha_rapida",
+  "order": 6,
+  "title": "Recuperação intercalada: regências em contexto",
+  "description": "Alterna recuperação rápida, leitura, listening, correção e produção para transformar reconhecimento em uso ativo.",
+  "estimated_minutes": 35,
+  "objectives": [
+    "aumentar a velocidade de reconhecimento",
+    "comparar erros plausíveis de regência e terminação",
+    "preparar a passagem da escolha para a produção ativa"
+  ],
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e produção: usar a estrutura numa frase sua."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u06-e01",
+      "type": "choice",
+      "stage": "recognition",
+      "difficulty": 1,
+      "prompt": "Успешная адаптация во многом зависит ___ поддержки окружающих.",
+      "options": [
+        "от",
+        "к",
+        "с",
+        "на"
+      ],
+      "answer": "от",
+      "explanation": "зависеть от кого? чего?",
+      "tags": [
+        "зависеть от",
+        "родительный падеж",
+        "múltipla escolha"
+      ]
+    },
+    {
+      "id": "u06-e02",
+      "type": "choice",
+      "stage": "recognition",
+      "difficulty": 1,
+      "prompt": "После переезда человеку приходится привыкать ___ другому ритму жизни.",
+      "options": [
+        "к",
+        "от",
+        "в",
+        "с"
+      ],
+      "answer": "к",
+      "explanation": "привыкать к кому? чему?",
+      "tags": [
+        "привыкать к",
+        "дательный падеж",
+        "múltipla escolha"
+      ]
+    },
+    {
+      "id": "u06-e03",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Мигранты нередко сталкиваются с ___ процедурами.",
+      "options": [
+        "сложными административными",
+        "сложным административным",
+        "сложных административных",
+        "сложные административные"
+      ],
+      "answer": "сложными административными",
+      "explanation": "с кем? чем?; творительный падеж plural.",
+      "tags": [
+        "сталкиваться с",
+        "творительный падеж",
+        "terminação plural"
+      ]
+    },
+    {
+      "id": "u06-e04",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Новая транспортная линия может привести к ___ времени в пути.",
+      "options": [
+        "сокращению",
+        "сокращением",
+        "сокращения",
+        "сокращение"
+      ],
+      "answer": "сокращению",
+      "explanation": "привести к чему? к сокращению.",
+      "tags": [
+        "приводить к",
+        "дательный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u06-e05",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "prompt": "Социальные сети оказывают влияние ___ выбор места жительства.",
+      "options": [
+        "на",
+        "от",
+        "к",
+        "с"
+      ],
+      "answer": "на",
+      "explanation": "оказывать влияние на кого? что?, assim como влиять на.",
+      "tags": [
+        "влиять на",
+        "винительный падеж",
+        "estrutura B2"
+      ]
+    },
+    {
+      "id": "u06-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Молодая семья нуждается в ___ жилье.",
+      "options": [
+        "доступном",
+        "доступному",
+        "доступным",
+        "доступного"
+      ],
+      "answer": "доступном",
+      "explanation": "нуждаться в чём?; предложный падеж.",
+      "tags": [
+        "нуждаться в",
+        "предложный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u06-e07",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "prompt": "Qual frase afirma que os moradores estão insatisfeitos com a organização do transporte?",
+      "options": [
+        "Жители недовольны организацией транспорта.",
+        "Жители интересуются организацией транспорта.",
+        "Жители привыкают к организации транспорта.",
+        "Жители зависят от организации транспорта."
+      ],
+      "answer": "Жители недовольны организацией транспорта.",
+      "explanation": "быть недовольным кем? чем?",
+      "tags": [
+        "быть недовольным",
+        "significado",
+        "múltipla escolha"
+      ]
+    },
+    {
+      "id": "u06-e08",
+      "type": "choice",
+      "stage": "register",
+      "difficulty": 2,
+      "prompt": "Выберите естественное формальное предложение.",
+      "options": [
+        "Отсутствие опыта является серьёзным препятствием.",
+        "Отсутствие опыта является очень трудно.",
+        "Отсутствие опыта является у выпускников.",
+        "Отсутствие опыта является работать."
+      ],
+      "answer": "Отсутствие опыта является серьёзным препятствием.",
+      "explanation": "являться кем? чем? é apropriado para classificação.",
+      "tags": [
+        "являться",
+        "registro formal",
+        "múltipla escolha"
+      ]
+    },
+    {
+      "id": "u06-e09",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Благодаря ___ сотрудничеству проект получил финансирование.",
+      "options": [
+        "международному",
+        "международным",
+        "международного",
+        "международном"
+      ],
+      "answer": "международному",
+      "explanation": "благодаря чему?; neutro singular em дательный падеж.",
+      "tags": [
+        "благодаря",
+        "дательный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u06-e10",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 2,
+      "prompt": "Выбор профессии зависит ___ интересов человека и влияет ___ его будущее.",
+      "options": [
+        "от / на",
+        "на / от",
+        "с / к",
+        "в / с"
+      ],
+      "answer": "от / на",
+      "explanation": "зависеть от; влиять на.",
+      "tags": [
+        "зависеть от",
+        "влиять на",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u06-e11",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Учёные интересуются ___ последствиями реформы.",
+      "options": [
+        "долгосрочными",
+        "долгосрочным",
+        "долгосрочных",
+        "долгосрочные"
+      ],
+      "answer": "долгосрочными",
+      "explanation": "интересоваться чем?; творительный падеж plural.",
+      "tags": [
+        "интересоваться",
+        "творительный падеж",
+        "terminação plural"
+      ]
+    },
+    {
+      "id": "u06-e12",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "Наконец специалист ___ разрешение на работу.",
+      "options": [
+        "получил",
+        "получал",
+        "получать",
+        "получает обычно"
+      ],
+      "answer": "получил",
+      "explanation": "наконец destaca o resultado: совершенный вид.",
+      "tags": [
+        "получать / получить",
+        "aspecto",
+        "resultado"
+      ]
+    },
+    {
+      "id": "u06-e13",
+      "type": "choice",
+      "stage": "aspect",
+      "difficulty": 2,
+      "prompt": "В детстве семья часто ___ из города в город.",
+      "options": [
+        "переезжала",
+        "переехала",
+        "переедет",
+        "переехать"
+      ],
+      "answer": "переезжала",
+      "explanation": "часто marca repetição: несовершенный вид.",
+      "tags": [
+        "переезжать / переехать",
+        "aspecto",
+        "repetição"
+      ]
+    },
+    {
+      "id": "u06-e14",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "prompt": "Летом они живут ___, а осенью возвращаются в центр.",
+      "options": [
+        "за городом",
+        "за город",
+        "из города",
+        "в город"
+      ],
+      "answer": "за городом",
+      "explanation": "где? за городом.",
+      "tags": [
+        "за городом / за город",
+        "где куда откуда",
+        "творительный падеж"
+      ]
+    },
+    {
+      "id": "u06-e15",
+      "type": "choice",
+      "stage": "movement",
+      "difficulty": 2,
+      "prompt": "После экскурсии группа вернулась ___.",
+      "options": [
+        "в гостиницу",
+        "с гостиницы",
+        "из гостиницу",
+        "в гостинице"
+      ],
+      "answer": "в гостиницу",
+      "explanation": "A гостиница é o destino: куда? в гостиницу.",
+      "tags": [
+        "вернуться",
+        "где куда откуда",
+        "винительный падеж"
+      ]
+    },
+    {
+      "id": "u06-e16",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases tem a regência correta. Qual?",
+      "prompt": "Qual frase usa corretamente адаптироваться?",
+      "explanation": "адаптироваться К кому? чему? → к + дательный падеж. Sem o к a frase fica agramatical, e «с» pertence a outro verbo (сталкиваться с).",
+      "tags": [
+        "адаптироваться к",
+        "дательный падеж",
+        "contraste",
+        "múltipla escolha"
+      ],
+      "options": [
+        "Иностранцу трудно адаптироваться к местным нормам.",
+        "Иностранцу трудно адаптироваться с местными нормами.",
+        "Иностранцу трудно адаптироваться в местных нормах.",
+        "Иностранцу трудно адаптироваться местным нормам."
+      ],
+      "answer": "Иностранцу трудно адаптироваться к местным нормам."
+    },
+    {
+      "id": "u06-e17",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Só uma das frases tem a regência correta. Qual?",
+      "prompt": "Qual frase usa corretamente отказаться?",
+      "explanation": "отказаться ОТ кого? чего? → от + родительный падеж, com adjetivo em -ого e substantivo em -а. A opção 2 mistura a preposição certa com a terminação do дательный — é o erro mais comum.",
+      "tags": [
+        "отказаться от",
+        "родительный падеж",
+        "contraste",
+        "múltipla escolha"
+      ],
+      "options": [
+        "Компания отказалась от рискованного проекта.",
+        "Компания отказалась от рискованному проекту.",
+        "Компания отказалась рискованного проекта.",
+        "Компания отказалась с рискованным проектом."
+      ],
+      "answer": "Компания отказалась от рискованного проекта."
+    },
+    {
+      "id": "u06-e18",
+      "type": "choice",
+      "stage": "structure",
+      "difficulty": 3,
+      "instruction": "Escolha a forma exigida pela estrutura com «является».",
+      "prompt": "Одним из главных факторов миграции является ___. (поиск работы)",
+      "explanation": "Nesta ordem de palavras, «одним из факторов» já ocupa o творительный падеж; o que vem depois de является é o sujeito e fica em именительный: поиск работы. Se invertesse (Поиск работы является одним из факторов), o творительный estaria do outro lado.",
+      "tags": [
+        "являться",
+        "estrutura da frase",
+        "contraste",
+        "múltipla escolha"
+      ],
+      "options": [
+        "поиск работы",
+        "поиском работы",
+        "поиска работы",
+        "поиску работы"
+      ],
+      "answer": "поиск работы"
+    },
+    {
+      "id": "u06-e19",
+      "type": "choice",
+      "stage": "b2_phrase",
+      "difficulty": 3,
+      "instruction": "Escolha o bloco de consequência correto.",
+      "prompt": "Однако следует учитывать, что резкая смена среды может ___.",
+      "explanation": "приводить / привести К чему? → к + дательный падеж (к стрессу). «привести в…» existe com outro sentido, físico (привести в порядок = pôr em ordem), e não serve para consequência abstrata.",
+      "tags": [
+        "приводить к",
+        "estrutura B2",
+        "múltipla escolha"
+      ],
+      "options": [
+        "привести к стрессу",
+        "привести до стресса",
+        "привести стресс",
+        "привести в стресс"
+      ],
+      "answer": "привести к стрессу"
+    },
+    {
+      "id": "u06-e20",
+      "type": "choice",
+      "stage": "b2_phrase",
+      "difficulty": 3,
+      "instruction": "Escolha a forma correta do sintagma.",
+      "prompt": "В конечном счёте решение о переезде зависит ___. (личные приоритеты)",
+      "explanation": "зависеть ОТ → родительный падеж plural: adjetivo -ых, substantivo masculino -ов (приоритетов).",
+      "tags": [
+        "зависеть от",
+        "структура B2",
+        "múltipla escolha"
+      ],
+      "options": [
+        "от личных приоритетов",
+        "от личным приоритетам",
+        "личными приоритетами",
+        "на личные приоритеты"
+      ],
+      "answer": "от личных приоритетов"
+    },
+    {
+      "id": "u06-e21",
+      "type": "flashcard",
+      "stage": "spaced_review",
+      "difficulty": 2,
+      "front": "Sem olhar: produza as três construções completas — depender de · influenciar · deparar-se com",
+      "back": "зависеть от кого? чего? · влиять на кого? что? · сталкиваться с кем? чем?",
+      "explanation": "Recupere verbo + preposição + pergunta como uma única unidade lexical.",
+      "tags": [
+        "recuperação espaçada",
+        "regência",
+        "chunks"
+      ]
+    },
+    {
+      "id": "u06-e22",
+      "type": "reading",
+      "stage": "interleaving",
+      "difficulty": 3,
+      "instruction": "Leia o minicaso e identifique a cadeia causal completa.",
+      "context": "Из-за роста цен молодая семья была недовольна условиями аренды и решила переехать за город. Благодаря удалённой работе супруги быстро адаптировались к новому ритму. Однако нехватка транспорта по-прежнему влияет на их повседневную жизнь.",
+      "prompt": "Qual sequência representa corretamente o texto?",
+      "options": [
+        "preços altos → mudança para fora da cidade → adaptação facilitada pelo trabalho remoto → transporte ainda problemático",
+        "falta de trabalho → retorno ao centro → queda dos preços → abandono do transporte",
+        "insatisfação com o campo → imigração → obtenção de cidadania → novo emprego",
+        "transporte eficiente → mudança involuntária → dificuldade com trabalho remoto → retorno"
+      ],
+      "answer": "preços altos → mudança para fora da cidade → adaptação facilitada pelo trabalho remoto → transporte ainda problemático",
+      "explanation": "A tarefa exige integrar causa, consequência, concessão e quatro regências em vez de reconhecer uma lacuna isolada.",
+      "tags": [
+        "leitura",
+        "prática intercalada",
+        "causa e consequência"
+      ]
+    },
+    {
+      "id": "u06-e23",
+      "type": "listening",
+      "stage": "interleaving",
+      "difficulty": 2,
+      "instruction": "Ouça uma vez em velocidade normal antes de repetir. Identifique a construção incorreta mencionada pelo professor.",
+      "prompt": "Que correção o professor pede?",
+      "audio_text": "Обратите внимание: нельзя сказать адаптироваться с новыми условиями. Правильно: адаптироваться к новым условиям, потому что этот глагол требует дательного падежа.",
+      "options": [
+        "Trocar «с новыми условиями» por «к новым условиям».",
+        "Trocar «адаптироваться» por «интересоваться».",
+        "Usar «от новых условий» porque o verbo exige genitivo.",
+        "Retirar o complemento e manter apenas o verbo."
+      ],
+      "answer": "Trocar «с новыми условиями» por «к новым условиям».",
+      "explanation": "адаптироваться к кому? чему?; к новым условиям, дательный падеж plural.",
+      "tags": [
+        "аудирование",
+        "адаптироваться к",
+        "análise de erro"
+      ]
+    },
+    {
+      "id": "u06-e24",
+      "type": "listening",
+      "response_type": "input",
+      "stage": "noticing",
+      "difficulty": 3,
+      "instruction": "Ditado contrastivo: digite a frase inteira e preserve as duas regências.",
+      "prompt": "Escreva exatamente a frase ouvida.",
+      "audio_text": "Выбор места жительства зависит от дохода и влияет на качество жизни.",
+      "answer": "Выбор места жительства зависит от дохода и влияет на качество жизни.",
+      "explanation": "зависеть от кого? чего? contrasta com влиять на кого? что? na mesma frase.",
+      "tags": [
+        "аудирование",
+        "ditado",
+        "зависеть от",
+        "влиять на"
+      ]
+    },
+    {
+      "id": "u06-e25",
+      "type": "choice",
+      "stage": "retrieval",
+      "difficulty": 3,
+      "instruction": "Escolha a versão russa formal e correta.",
+      "prompt": "«A falta de experiência pode levar a dificuldades de adaptação.»",
+      "explanation": "привести К чему? → дательный падеж plural de трудность (fem. em -ь): трудностям. «адаптации» fica no родительный por depender de трудности (dificuldades DE adaptação).",
+      "tags": [
+        "recuperação ativa",
+        "приводить к",
+        "produção",
+        "múltipla escolha"
+      ],
+      "options": [
+        "Отсутствие опыта может привести к трудностям адаптации.",
+        "Отсутствие опыта может привести к трудности адаптации.",
+        "Отсутствие опыта может привести к трудностей адаптации.",
+        "Отсутствие опыта может привести трудностям адаптации."
+      ],
+      "answer": "Отсутствие опыта может привести к трудностям адаптации."
+    },
+    {
+      "id": "u06-e26",
+      "type": "open_text",
+      "stage": "transfer",
+      "difficulty": 3,
+      "instruction": "Escreva 4–5 frases conectadas, sem lista. Use pelo menos quatro construções abaixo.",
+      "prompt": "Почему люди меняют место жительства?\nUse: зависеть от · влиять на · адаптироваться к · сталкиваться с · привести к · благодаря",
+      "review_notes": "Avaliar se as construções foram recuperadas com preposição e caso corretos, se há cadeia lógica e se o texto ultrapassa frases isoladas.",
+      "tags": [
+        "produção escrita",
+        "prática intercalada",
+        "transferência"
+      ]
+    }
+  ],
+  "source_note": "Recuperação intercalada das regências dos урок 1-2 de «Время обсуждать» · princípio de prática intercalada (interleaving)",
+  "grammar": [
+    {
+      "title": "Por que esta unidade mistura tudo de propósito",
+      "paragraphs": [
+        "As unidades 1 a 3 treinaram cada regência em bloco: uma página inteira de дательный, depois uma página inteira de творительный. Isso é bom para aprender, mas cria uma ilusão perigosa — dentro de um bloco você acerta sem pensar, porque já sabe qual é a resposta antes de ler a frase. A pesquisa sobre aprendizagem chama isso de prática em bloco, e o efeito dela some rápido.",
+        "Esta unidade faz o contrário: prática intercalada (интерливинг). Cada item pode ser de qualquer caso, de qualquer verbo já visto, em qualquer ordem. Você vai acertar menos e demorar mais — e é exatamente esse o objetivo. Quando não há pista de contexto, o cérebro é obrigado a recuperar a construção inteira da memória, e é essa recuperação difícil que fixa.",
+        "Estratégia para responder: antes de olhar as alternativas, formule a pergunta russa em voz baixa. «привыкать… к кому? чему?» Se a pergunta vier, o caso vem junto. Se a pergunta não vier, marque o item como regência não automatizada — não como distração."
+      ],
+      "audio_script": "Uma pergunta antes de começar: por que esta unidade embaralha tudo de propósito? Nas unidades um a três você treinou cada regência em bloco. Uma página inteira de dativo, depois uma página inteira de instrumental. Isso é ótimo para aprender pela primeira vez, mas cria uma ilusão perigosa. Dentro de um bloco você acerta sem pensar, porque já sabe qual é a resposta antes mesmo de ler a frase. A pesquisa sobre aprendizagem chama isso de prática em bloco, e o efeito dela desaparece muito rápido depois que você fecha o livro. Esta unidade faz o contrário. Aqui a prática é intercalada. Cada exercício pode ser de qualquer caso, com qualquer verbo que você já viu, em qualquer ordem. Você vai acertar menos, e vai demorar mais para responder. E é exatamente esse o objetivo. Quando não existe pista de contexto, o seu cérebro é obrigado a recuperar a construção inteira da memória. É essa recuperação difícil que fixa o conteúdo de verdade. Agora, a estratégia para responder. Antes de olhar as alternativas, formule a pergunta russa em voz baixa. привыкать… к кому? чему? зависеть… от кого? чего? нуждаться… в ком? чём? Se a pergunta vier à cabeça, o caso vem junto com ela, de graça, porque a pergunta já está no caso certo. Se a pergunta não vier, isso é informação valiosa: significa que essa regência ainda não está automatizada. Marque o erro como regência, não como distração. A revisão espaçada vai trazer o item de volta mais cedo.",
+      "examples": [
+        {
+          "ru": "Он стремится к самореализации.",
+          "pt": "Ele aspira à autorrealização.",
+          "note": "к + дательный."
+        },
+        {
+          "ru": "Он интересуется этой проблемой.",
+          "pt": "Ele se interessa por esse problema.",
+          "note": "Instrumental sem preposição."
+        },
+        {
+          "ru": "Он отказался от этой идеи.",
+          "pt": "Ele desistiu dessa ideia.",
+          "note": "от + родительный."
+        },
+        {
+          "ru": "Он нуждается в этой информации.",
+          "pt": "Ele precisa dessa informação.",
+          "note": "в + предложный. Quatro casos, quatro verbos, o mesmo «он»."
+        }
+      ],
+      "pitfalls": [
+        "Interpretar a queda de acerto nesta unidade como retrocesso: prática intercalada sempre baixa o acerto imediato e aumenta a retenção.",
+        "Escolher pela «cara» da terminação sem formular a pergunta russa antes."
+      ]
+    },
+    {
+      "title": "Mapa único das regências do curso até aqui",
+      "paragraphs": [
+        "Todas as construções que aparecem nesta unidade se organizam em cinco grupos de acordo com a pergunta russa. Grupo к + дательный: стремиться, привыкать, адаптироваться, приводить, обращаться, готовиться. Grupo от + родительный: зависеть, отказаться, избавиться. Grupo на + винительный: влиять, надеяться, обращать внимание.",
+        "Grupo с + творительный: сталкиваться, справляться, знакомиться, соглашаться. Grupo в + предложный: нуждаться, разбираться, участвовать, сомневаться. E, fora dos grupos com preposição, o творительный puro: интересоваться, заниматься, гордиться, являться, стать.",
+        "Um verbo pode aparecer em mais de um grupo com sentidos diferentes — обратиться к человеку (à pessoa) e обратиться с просьбой (com um pedido) coexistem. Isso não é exceção: é a prova de que a preposição faz parte do significado, não é um enfeite gramatical."
+      ],
+      "audio_script": "Agora um mapa único de tudo o que você já viu, organizado pela pergunta russa. São cinco grupos, e vale ouvir esta parte mais de uma vez. Grupo um: к mais dativo. A pergunta é к кому? к чему? стремиться к, привыкать к, адаптироваться к, приводить к, обращаться к, готовиться к. Grupo dois: от mais genitivo. A pergunta é от кого? от чего? зависеть от, отказаться от, избавиться от. Grupo três: на mais acusativo. A pergunta é на кого? на что? влиять на, надеяться на, обращать внимание на. Grupo quatro: с mais instrumental. A pergunta é с кем? с чем? сталкиваться с, справляться с, знакомиться с, соглашаться с. Grupo cinco: в mais prepositivo. A pergunta é в ком? в чём? нуждаться в, разбираться в, участвовать в, сомневаться в. E fora dos cinco grupos existe o instrumental puro, sem preposição nenhuma: интересоваться, заниматься, гордиться, являться, стать. Uma observação final que costuma incomodar quem está aprendendo. Um mesmo verbo pode aparecer em dois grupos, com sentidos diferentes. обратиться к человеку é dirigir-se a uma pessoa. обратиться с просьбой é dirigir-se com um pedido. Isso não é exceção nem bagunça. É a prova de que a preposição carrega significado: ela não é um enfeite gramatical que o russo colocou ali para complicar.",
+      "examples": [
+        {
+          "ru": "Он обратился к директору с просьбой о переводе.",
+          "pt": "Ele se dirigiu ao diretor com um pedido de transferência.",
+          "note": "О mesmo verbo com к (pessoa), с (pedido) e о (assunto), numa frase só."
+        },
+        {
+          "ru": "Компания справилась с кризисом, но отказалась от расширения.",
+          "pt": "A empresa deu conta da crise, mas desistiu da expansão.",
+          "note": "с + творительный e от + родительный lado a lado."
+        }
+      ],
+      "pitfalls": [
+        "Achar que um verbo só pode ter uma regência: обратиться к / обратиться с / обратиться в têm sentidos distintos."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Cinco grupos de regência — mapa de recuperação",
+    "columns": [
+      "Pergunta russa",
+      "Preposição + caso",
+      "Verbos do curso"
+    ],
+    "rows": [
+      [
+        "к кому? к чему?",
+        "к + дательный",
+        "стремиться · привыкать · адаптироваться · приводить · обращаться · готовиться"
+      ],
+      [
+        "от кого? от чего?",
+        "от + родительный",
+        "зависеть · отказаться · избавиться"
+      ],
+      [
+        "на кого? на что?",
+        "на + винительный",
+        "влиять · надеяться · обращать внимание"
+      ],
+      [
+        "с кем? с чем?",
+        "с + творительный",
+        "сталкиваться · справляться · знакомиться · соглашаться"
+      ],
+      [
+        "в ком? в чём?",
+        "в + предложный",
+        "нуждаться · разбираться · участвовать · сомневаться"
+      ],
+      [
+        "кем? чем? (sem preposição)",
+        "творительный puro",
+        "интересоваться · заниматься · гордиться · являться · стать"
+      ]
+    ],
+    "note": "Recupere sempre pela pergunta, nunca pela tradução portuguesa: «depender DE» e «precisar DE» caem em grupos opostos."
+  }
+}

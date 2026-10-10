@@ -1,0 +1,712 @@
+{
+  "id": "u01_dativo",
+  "order": 1,
+  "title": "Дательный падеж: к e благодаря",
+  "description": "Automatiza стремиться, привыкать, адаптироваться, приводить, обращаться e graças a, com foco nas terminações.",
+  "estimated_minutes": 26,
+  "objectives": [
+    "recuperar a pergunta кому? чему? sem tradução",
+    "reconhecer adjetivos e substantivos no singular e plural em contexto (leitura e áudio)",
+    "contrastar regência correta com alternativas portuguesas"
+  ],
+  "grammar": [
+    {
+      "title": "Тема: город, посёлок или деревня?",
+      "paragraphs": [
+        "Урок 1 de «Время обсуждать» abre o programa com o eterno debate город × деревня. Vocabulário ativo desta unidade: город (cidade), мегаполис (metrópole), провинция (interior), деревня (zona rural), место жительства (local de residência), переезд (mudança individual/familiar) × переселение (reassentamento coletivo ou institucional), проживание (o ato de morar, custo de vida), преимущество × недостаток (vantagem × desvantagem), инфраструктура, самореализация, карьерный рост, качество жизни, темп жизни, благосостояние.",
+        "переезд e переселение não são sinônimos automáticos: «Наш переезд занял два дня» descreve uma mudança pessoal; «Государство организовало переселение жителей» descreve um processo coletivo ou forçado. место жительства é uma expressão fixa — жительства já está em родительный падеж, então não se declina жительство isoladamente."
+      ],
+      "audio_script": "Vamos começar pelo tema desta unidade: cidade ou campo? Em russo, город, мегаполис, провинция e деревня. Repare que essas quatro palavras não são só vocabulário: elas organizam o debate inteiro do primeiro capítulo do livro Время обсуждать. Duas palavras merecem atenção especial, porque parecem sinônimos e não são. A primeira é переезд: uma mudança pessoal, sua ou da sua família. Наш переезд занял два дня — nossa mudança levou dois dias. A segunda é переселение: um deslocamento coletivo, organizado por alguém de fora, muitas vezes forçado. Государство организовало переселение жителей — o Estado organizou o reassentamento dos moradores. Se você usar переселение para falar da sua própria mudança de apartamento, um russo vai estranhar bastante. Outra expressão fixa é место жительства, local de residência. Aqui жительства já está no genitivo, é parte da expressão, e não se declina sozinha. Você declina место: по месту жительства, о месте жительства. Mas жительства fica sempre igual. E para argumentar você vai precisar do par преимущество e недостаток: vantagem e desvantagem. Преимущество жизни в городе — a vantagem de morar na cidade. Недостаток жизни в деревне — a desvantagem de morar no campo.",
+      "examples": [
+        {
+          "ru": "Наш переезд занял два дня.",
+          "pt": "Nossa mudança levou dois dias.",
+          "note": "переезд = mudança pessoal, voluntária."
+        },
+        {
+          "ru": "Государство организовало переселение жителей.",
+          "pt": "O Estado organizou o reassentamento dos moradores.",
+          "note": "переселение = deslocamento coletivo ou institucional."
+        },
+        {
+          "ru": "Главное преимущество мегаполиса — карьерный рост.",
+          "pt": "A principal vantagem da metrópole é a ascensão profissional."
+        },
+        {
+          "ru": "В деревне темп жизни спокойнее, но инфраструктура слабее.",
+          "pt": "No campo o ritmo de vida é mais calmo, mas a infraestrutura é mais fraca."
+        }
+      ],
+      "pitfalls": [
+        "Usar переселение para a própria mudança de casa. O correto é переезд.",
+        "Declinar жительства em место жительства: a segunda palavra é fixa, só место muda de caso."
+      ]
+    },
+    {
+      "title": "Дательный падеж: como se forma",
+      "paragraphs": [
+        "O дательный падеж responde кому? (a quem) ou чему? (a quê). No singular, substantivos masculinos e neutros terminados em consoante, -о ou -е trocam para -у/-ю (друг → другу, окно → окну); substantivos femininos em -а/-я trocam para -е (подруга → подруге) e os em -ь trocam para -и (дверь → двери). Adjetivos seguem outra lógica: masculino/neutro -ому/-ему (новому, большому), feminino -ой/-ей (новой, синей). No plural, TODOS os gêneros convergem: substantivo -ам/-ям, adjetivo -ым/-им (новым друзьям, русским царям).",
+        "Regra ortográfica que vale para qualquer caso: depois de г, к, х, ж, ч, ш, щ nunca se escreve ы, ю ou я — usa-se и, у, а no lugar (por isso ма́ленький vira ма́ленькому, não -е́му). Há também substantivos com дательный irregular que aparecem com frequência em produção B2: мать → матери, дочь → дочери, друзья → друзьям, дети → детям, люди → людям.",
+        "O erro típico de falante de português não é escolher o caso errado — é esquecer que стремиться, привыкать, адаптироваться, приводить e обращаться já vêm com к fixo. Em português esses verbos variam de preposição («acostumar-se A», «levar A», «recorrer A» mas «depender DE»); em russo, a memorização é da combinação verbo + к + дательный падеж como bloco único, não peça por peça."
+      ],
+      "audio_script": "Agora o coração da unidade: o дательный падеж, o caso dativo. Ele responde a duas perguntas: кому? — a quem — e чему? — a quê. Vamos às terminações, e preste atenção porque elas se dividem em quatro grupos apenas. Primeiro grupo, substantivos masculinos e neutros. Eles terminam em consoante, ou em о, ou em е, e passam a у ou ю. друг vira другу. окно vira окну. музей vira музею. Segundo grupo, substantivos femininos terminados em а ou я. Eles passam a е. подруга vira подруге. неделя vira неделе. Terceiro grupo, femininos terminados em sinal brando, o ь. Esses passam a и. дверь vira двери. площадь vira площади. E o quarto grupo é o plural, que é a boa notícia do dativo: no plural todos os gêneros convergem. Substantivo termina em ам ou ям, adjetivo termina em ым ou им. Новым друзьям. Русским царям. Одна форма para tudo. Os adjetivos no singular seguem lógica própria: masculino e neutro terminam em ому ou ему — новому, большому, синему. Feminino termina em ой ou ей — новой, синей. Existe ainda uma regra ortográfica que vale para o russo inteiro, não só para o dativo: depois das letras г, к, х, ж, ч, ш e щ, nunca se escreve ы, ю ou я. No lugar delas entram и, у e а. É por isso que маленький faz маленькому e não маленьему. Por fim, guarde os irregulares que aparecem toda hora num texto de nível bê dois: мать vira матери. дочь vira дочери. дети vira детям. люди vira людям. друзья vira друзьям. E aqui vai o ponto mais importante desta aula inteira. O erro de quem fala português normalmente não é escolher o caso errado. É esquecer que стремиться, привыкать, адаптироваться, приводить e обращаться já vêm com a preposição к colada neles. Em português cada um desses verbos pede uma preposição diferente. Acostumar-se A. Levar A. Recorrer A. Mas depender DE. Em russo você não memoriza o verbo e depois a preposição. Você memoriza o bloco inteiro: verbo, mais к, mais dativo. Como uma palavra só.",
+      "examples": [
+        {
+          "ru": "Он привык к новому ритму жизни.",
+          "pt": "Ele se acostumou ao novo ritmo de vida.",
+          "note": "привыкать к + dativo masculino: новому ритму."
+        },
+        {
+          "ru": "Молодёжь стремится к самореализации.",
+          "pt": "A juventude aspira à autorrealização.",
+          "note": "стремиться к + dativo feminino em -ия: самореализации."
+        },
+        {
+          "ru": "Реформа привела к серьёзным изменениям.",
+          "pt": "A reforma levou a mudanças sérias.",
+          "note": "Plural: adjetivo -ым, substantivo -ам."
+        },
+        {
+          "ru": "Благодаря матери и детям он не уехал.",
+          "pt": "Graças à mãe e às crianças ele não foi embora.",
+          "note": "Irregulares: мать → матери, дети → детям."
+        }
+      ],
+      "pitfalls": [
+        "Esquecer a preposição к: «привыкать новому ритму» não existe. O к é parte do verbo.",
+        "Escrever «маленьему» em vez de маленькому — depois de к nunca vem ю, я ou ы.",
+        "Traduzir «depender de» com к. зависеть pede от + родительный, não к + дательный."
+      ]
+    },
+    {
+      "title": "Где? Куда? Откуда?: localização, destino e origem",
+      "paragraphs": [
+        "Três perguntas, três casos: где? (onde, localização) pede предложный падеж com в/на — жить в городе; куда? (para onde, destino) pede винительный падеж com в/на — переехать в город; откуда? (de onde, origem) pede родительный падеж com из/с — приехать из города, вернуться с дачи / с работы / с экскурсии. За city segue o mesmo padrão trocando de preposição e de caso: жить за городом (где? творительный) × переехать за город (куда? винительный).",
+        "A família ехать / приехать / уехать / переехать mostra o prefixo como pista semântica, não tradução fixa: при- aponta chegada, у- aponta saída, пере- aponta mudança de um lugar para outro (inclusive não-espacial: перенести встречу é adiar uma reunião, переписать é reescrever um texto — o núcleo semântico de пере- é sempre «passar de um estado/lugar a outro», e o significado exato depende do verbo completo, não de uma tradução isolada do prefixo."
+      ],
+      "audio_script": "Terceira parte: как localizar, para onde ir e de onde vir. São três perguntas e três casos diferentes, e eles nunca se misturam. Pergunta um: где? Onde? Isso é localização, e pede o предложный падеж com в ou на. Жить в городе. Работать на заводе. Pergunta dois: куда? Para onde? Isso é destino, e pede o винительный падеж, com as mesmas preposições в e на. Переехать в город. Пойти на завод. Pergunta três: откуда? De onde? Isso é origem, e pede o родительный падеж, mas agora com из ou с. Приехать из города. Вернуться с завода. E existe uma regra de emparelhamento que resolve metade dos erros: в combina com из, e на combina com с. Se você diz на даче, o retorno é с дачи, nunca из дачи. Se você diz в университете, o retorno é из университета. Sempre em par. A palavra город tem ainda um caso especial com a preposição за. Жить за городом, com instrumental, significa morar fora da cidade, no subúrbio. Переехать за город, com acusativo, significa mudar-se para fora da cidade. Mesma preposição, dois casos, duas perguntas diferentes: где e куда. Para terminar, a família ехать. Приехать é chegar. Уехать é ir embora. Переехать é mudar-se de um lugar para outro. Repare que o prefixo пере- não é uma palavra com tradução fixa: o núcleo de sentido dele é passar de um estado ou lugar a outro. Por isso перенести встречу é adiar uma reunião, e переписать текст é reescrever um texto. O prefixo dá a pista; o significado exato vem do verbo inteiro.",
+      "examples": [
+        {
+          "ru": "Где вы живёте? — Я живу в маленьком городе.",
+          "pt": "Onde você mora? — Moro numa cidade pequena.",
+          "note": "где? → предложный падеж."
+        },
+        {
+          "ru": "Куда вы переехали? — Мы переехали в Москву.",
+          "pt": "Para onde vocês se mudaram? — Nos mudamos para Moscou.",
+          "note": "куда? → винительный падеж."
+        },
+        {
+          "ru": "Откуда вы приехали? — Мы приехали из провинции.",
+          "pt": "De onde vocês vieram? — Viemos do interior.",
+          "note": "откуда? → родительный падеж."
+        },
+        {
+          "ru": "Летом мы живём за городом, а зимой переезжаем за город обратно.",
+          "pt": "No verão moramos fora da cidade; no inverno voltamos para fora da cidade.",
+          "note": "за городом (где?) × за город (куда?)."
+        }
+      ],
+      "pitfalls": [
+        "Dizer «из дачи»: como se diz на даче, a origem é с дачи. в ↔ из, на ↔ с, sempre em par.",
+        "Usar предложный com verbo de movimento: «переехать в городе» significaria mudar-se DENTRO da cidade, não para ela."
+      ]
+    }
+  ],
+  "memory_table": {
+    "title": "Дательный падеж — terminações",
+    "columns": [
+      "Grupo",
+      "Substantivo",
+      "Adjetivo",
+      "Exemplo"
+    ],
+    "rows": [
+      [
+        "Masculino/neutro (consoante, -о, -е)",
+        "-у / -ю",
+        "-ому / -ему",
+        "новому другу · большому морю"
+      ],
+      [
+        "Feminino (-а/-я, -ь)",
+        "-е / -и (-ь→-и)",
+        "-ой / -ей",
+        "новой подруге · синей двери"
+      ],
+      [
+        "Plural (todos os gêneros)",
+        "-ам / -ям",
+        "-ым / -им",
+        "новым друзьям · русским царям"
+      ]
+    ],
+    "note": "Depois de г, к, х, ж, ч, ш, щ nunca escreva ы, ю, я — troque por и, у, а. Irregulares frequentes: мать→матери, дочь→дочери, друзья→друзьям, дети→детям, люди→людям."
+  },
+  "reference": [
+    {
+      "construction": "стремиться к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "aspirar a, buscar",
+      "example": "стремиться к финансовой стабильности"
+    },
+    {
+      "construction": "привыкать / привыкнуть к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "acostumar-se a",
+      "example": "привыкнуть к гибкому графику"
+    },
+    {
+      "construction": "адаптироваться к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "adaptar-se a",
+      "example": "адаптироваться к новой среде"
+    },
+    {
+      "construction": "приводить / привести к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "levar a, causar",
+      "example": "привести к сокращению расходов"
+    },
+    {
+      "construction": "обращаться / обратиться к",
+      "question": "к кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "dirigir-se a, recorrer a",
+      "example": "обратиться к специалисту"
+    },
+    {
+      "construction": "благодаря",
+      "question": "кому? чему?",
+      "case": "ДАТЕЛЬНЫЙ ПАДЕЖ",
+      "meaning": "graças a",
+      "example": "благодаря поддержке коллег"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u01-e01",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "стремиться",
+      "back": "стремиться к кому? чему?",
+      "explanation": "Memorize o verbo junto com к e a pergunta do дательный падеж.",
+      "tags": [
+        "стремиться к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u01-e02",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "приводить / привести",
+      "back": "приводить / привести к кому? чему?",
+      "explanation": "A consequência vem depois de к + дательный падеж.",
+      "tags": [
+        "приводить к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u01-e03",
+      "type": "choice",
+      "stage": "recognition",
+      "difficulty": 1,
+      "prompt": "К какой форме стремятся молодые специалисты?",
+      "options": [
+        "к профессиональной самостоятельности",
+        "с профессиональной самостоятельностью",
+        "от профессиональной самостоятельности",
+        "в профессиональной самостоятельности"
+      ],
+      "answer": "к профессиональной самостоятельности",
+      "explanation": "стремиться к кому? чему?; feminina em дательный падеж: -ой/-ей.",
+      "tags": [
+        "стремиться к",
+        "дательный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u01-e04",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "После нескольких недель ребёнок привык к ___.\n(новая языковая среда)",
+      "options": [
+        "новой языковой среде",
+        "новую языковую среду",
+        "новой языковой среды",
+        "новым языковым средам"
+      ],
+      "answer": "новой языковой среде",
+      "explanation": "Feminino singular: новая → новой; среда → среде. As outras opções trocam o caso (винительный, родительный) ou o número (plural).",
+      "tags": [
+        "привыкать к",
+        "дательный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u01-e05",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Опыт помог ей адаптироваться к ___.\n(другой стиль общения)",
+      "options": [
+        "другому стилю общения",
+        "другой стиль общения",
+        "другого стиля общения",
+        "другим стилям общения"
+      ],
+      "answer": "другому стилю общения",
+      "explanation": "Masculino singular: другой → другому; стиль → стилю. Cuidado com formas não declinadas ou no genitivo/plural.",
+      "tags": [
+        "адаптироваться к",
+        "дательный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u01-e06",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Сотрудники быстро привыкли к ___.\n(необычные условия труда)",
+      "options": [
+        "необычным условиям труда",
+        "необычные условия труда",
+        "необычных условий труда",
+        "необычными условиями труда"
+      ],
+      "answer": "необычным условиям труда",
+      "explanation": "Plural: необычные → необычным; условия → условиям. A última opção já é o творительный падеж, que você verá na próxima unidade.",
+      "tags": [
+        "привыкать к",
+        "дательный падеж",
+        "terminação plural"
+      ]
+    },
+    {
+      "id": "u01-e07",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Изменение закона привело к ___.\n(непредвиденные последствия)",
+      "options": [
+        "непредвиденным последствиям",
+        "непредвиденные последствия",
+        "непредвиденных последствий",
+        "непредвиденными последствиями"
+      ],
+      "answer": "непредвиденным последствиям",
+      "explanation": "Plural de дательный падеж: adjetivo -ым/-им, substantivo -ам/-ям.",
+      "tags": [
+        "приводить к",
+        "дательный падеж",
+        "terminação plural"
+      ]
+    },
+    {
+      "id": "u01-e08",
+      "type": "choice",
+      "stage": "morphology",
+      "difficulty": 2,
+      "prompt": "Благодаря ___ переговоры завершились успешно.\n(взаимное доверие)",
+      "options": [
+        "взаимному доверию",
+        "взаимное доверие",
+        "взаимного доверия",
+        "взаимным доверием"
+      ],
+      "answer": "взаимному доверию",
+      "explanation": "Neutro singular: взаимное → взаимному; доверие → доверию.",
+      "tags": [
+        "благодаря",
+        "дательный падеж",
+        "terminação singular"
+      ]
+    },
+    {
+      "id": "u01-e09",
+      "type": "choice",
+      "stage": "meaning",
+      "difficulty": 2,
+      "prompt": "Qual frase expressa uma causa favorável?",
+      "options": [
+        "Благодаря помощи соседей семья быстро решила проблему.",
+        "Из-за помощи соседей семья быстро решила проблему.",
+        "Согласно от помощи соседей семья быстро решила проблему.",
+        "Несмотря помощи соседей семья быстро решила проблему."
+      ],
+      "answer": "Благодаря помощи соседей семья быстро решила проблему.",
+      "explanation": "благодаря normalmente apresenta algo que favoreceu o resultado.",
+      "tags": [
+        "благодаря",
+        "дательный падеж",
+        "significado"
+      ]
+    },
+    {
+      "id": "u01-e10",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Escolha a frase sem erro de regência ou terminação.",
+      "prompt": "Qual frase está correta?",
+      "options": [
+        "Благодаря постоянной поддержке коллег проект удалось завершить вовремя.",
+        "Благодаря постоянной поддержкой коллег проект удалось завершить вовремя.",
+        "Благодаря постоянную поддержку коллег проект удалось завершить вовремя.",
+        "Благодаря постоянная поддержка коллег проект удалось завершить вовремя."
+      ],
+      "answer": "Благодаря постоянной поддержке коллег проект удалось завершить вовремя.",
+      "explanation": "A preposição está certa nas quatro, mas só a primeira usa дательный падеж (поддержке); as outras usam творительный, винительный ou deixam o substantivo sem declinar.",
+      "tags": [
+        "благодаря",
+        "дательный падеж",
+        "correção de erro"
+      ]
+    },
+    {
+      "id": "u01-e11",
+      "type": "choice",
+      "stage": "error_analysis",
+      "difficulty": 3,
+      "instruction": "Escolha a frase sem erro de regência ou terminação.",
+      "prompt": "Qual frase está correta?",
+      "options": [
+        "Многие выпускники стремятся к быстрому карьерному росту.",
+        "Многие выпускники стремятся с быстрому карьерному росту.",
+        "Многие выпускники стремятся с быстрым карьерным ростом.",
+        "Многие выпускники стремятся на быстрый карьерный рост."
+      ],
+      "answer": "Многие выпускники стремятся к быстрому карьерному росту.",
+      "explanation": "стремиться é sempre com к + дательный падеж; as demais opções trocam a preposição (с, на), o que muda o caso exigido ou simplesmente está errado com este verbo.",
+      "tags": [
+        "стремиться к",
+        "дательный падеж",
+        "correção de erro"
+      ]
+    },
+    {
+      "id": "u01-e12",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte a frase que relaciona uma mudança a uma consequência.",
+      "tokens": [
+        "Новый",
+        "график",
+        "может",
+        "привести",
+        "к",
+        "снижению",
+        "стресса"
+      ],
+      "answer": "Новый график может привести к снижению стресса",
+      "explanation": "A construção é привести к снижению чего?: к + дательный, depois родительный.",
+      "tags": [
+        "приводить к",
+        "дательный падеж",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u01-e13",
+      "type": "sentence_order",
+      "stage": "construction",
+      "difficulty": 2,
+      "prompt": "Monte uma frase natural.",
+      "tokens": [
+        "Студент",
+        "обратился",
+        "к",
+        "опытному",
+        "преподавателю",
+        "за",
+        "советом"
+      ],
+      "answer": "Студент обратился к опытному преподавателю за советом",
+      "explanation": "обратиться к кому? чему?; к опытному преподавателю.",
+      "tags": [
+        "обращаться к",
+        "дательный падеж",
+        "produção de frase"
+      ]
+    },
+    {
+      "id": "u01-e14",
+      "type": "choice",
+      "stage": "contrast",
+      "difficulty": 3,
+      "prompt": "Em qual alternativa a preposição e todas as terminações estão corretas?",
+      "options": [
+        "адаптироваться к местным нормам поведения",
+        "адаптироваться с местными нормами поведения",
+        "адаптироваться к местными нормами поведения",
+        "адаптироваться на местных нормах поведения"
+      ],
+      "answer": "адаптироваться к местным нормам поведения",
+      "explanation": "к + дательный падеж plural: местным нормам.",
+      "tags": [
+        "адаптироваться к",
+        "дательный падеж",
+        "contraste"
+      ]
+    },
+    {
+      "id": "u01-e15",
+      "type": "choice",
+      "stage": "active_recall",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta para a combinação.",
+      "prompt": "aspirar a um reconhecimento mais amplo",
+      "options": [
+        "стремиться к более широкому признанию",
+        "стремиться с более широким признанием",
+        "стремиться к более широкое признание",
+        "привыкать к более широкому признанию"
+      ],
+      "answer": "стремиться к более широкому признанию",
+      "explanation": "A unidade a memorizar é стремиться к кому? чему?, com дательный падеж em todo o grupo (более широкому признанию). A última opção troca o verbo por привыкать, que também rege к, mas não significa 'aspirar a'.",
+      "tags": [
+        "стремиться к",
+        "дательный падеж",
+        "recuperação ativa"
+      ]
+    },
+    {
+      "id": "u01-e16",
+      "type": "choice",
+      "stage": "active_recall",
+      "difficulty": 3,
+      "instruction": "Escolha a tradução correta para a combinação.",
+      "prompt": "adaptar-se às exigências do mercado",
+      "options": [
+        "адаптироваться к требованиям рынка",
+        "адаптироваться с требованиями рынка",
+        "адаптироваться к требования рынка",
+        "привыкать к требованиям рынка"
+      ],
+      "answer": "адаптироваться к требованиям рынка",
+      "explanation": "требования → требованиям no plural de дательный падеж. A última opção usa o verbo привыкать (acostumar-se), próximo mas não idêntico a adaptar-se.",
+      "tags": [
+        "адаптироваться к",
+        "дательный падеж",
+        "recuperação ativa"
+      ]
+    },
+    {
+      "id": "u01-e17",
+      "type": "choice",
+      "stage": "case_question",
+      "difficulty": 2,
+      "prompt": "Na expressão «к новым условиям», qual pergunta se aplica ao grupo nominal?",
+      "options": [
+        "к чему?",
+        "с чем?",
+        "от чего?",
+        "на что?"
+      ],
+      "answer": "к чему?",
+      "explanation": "условия é inanimado plural; a pergunta da construção é к чему?.",
+      "tags": [
+        "дательный падеж",
+        "pergunta russa",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u01-e18",
+      "type": "flashcard",
+      "stage": "recall",
+      "difficulty": 1,
+      "front": "обращаться / обратиться",
+      "back": "обращаться / обратиться к кому? чему?",
+      "explanation": "Para pedir ajuda a uma pessoa ou instituição: обратиться к специалисту / к администрации.",
+      "tags": [
+        "обращаться к",
+        "дательный падеж",
+        "recuperação"
+      ]
+    },
+    {
+      "id": "u01-e19",
+      "type": "match_pairs",
+      "stage": "recognition",
+      "difficulty": 2,
+      "instruction": "Relacione cada construção com дательный падеж ao seu significado.",
+      "pairs": [
+        {
+          "left": "стремиться к",
+          "right": "aspirar a, buscar"
+        },
+        {
+          "left": "привыкать / привыкнуть к",
+          "right": "acostumar-se a"
+        },
+        {
+          "left": "адаптироваться к",
+          "right": "adaptar-se a"
+        },
+        {
+          "left": "приводить / привести к",
+          "right": "levar a, causar"
+        },
+        {
+          "left": "обращаться / обратиться к",
+          "right": "dirigir-se a, recorrer a"
+        },
+        {
+          "left": "благодаря",
+          "right": "graças a"
+        }
+      ],
+      "explanation": "Todas essas construções memorizam-se como bloco fixo verbo/preposição + дательный падеж; o significado muda, a regência não.",
+      "tags": [
+        "дательный падеж",
+        "regência",
+        "match_pairs"
+      ]
+    },
+    {
+      "id": "u01-e20",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 2,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Многие молодые специалисты стремятся к карьерному росту и поэтому переезжают из провинции в мегаполис. Сначала им трудно привыкнуть к быстрому темпу городской жизни, но со временем они адаптируются к новой среде. Благодаря развитой инфраструктуре — транспорту, образованию и медицине — в городе легче найти работу. Однако не все довольны этим выбором: некоторые жители деревни говорят, что качество жизни там выше, а темп спокойнее.",
+      "prompt": "Segundo o texto, por que os jovens especialistas se mudam para a metrópole?",
+      "options": [
+        "Porque querem crescimento de carreira e a infraestrutura facilita encontrar trabalho.",
+        "Porque a vida na aldeia é mais cara que na cidade.",
+        "Porque o governo organiza o reassentamento (переселение) deles.",
+        "Porque eles não gostam do clima da província."
+      ],
+      "answer": "Porque querem crescimento de carreira e a infraestrutura facilita encontrar trabalho.",
+      "explanation": "«стремятся к карьерному росту» e «благодаря развитой инфраструктуре... легче найти работу» são os dois motivos citados no texto.",
+      "tags": [
+        "дательный падеж",
+        "leitura",
+        "город e деревня"
+      ]
+    },
+    {
+      "id": "u01-e21",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 2,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Многие молодые специалисты стремятся к карьерному росту и поэтому переезжают из провинции в мегаполис. Сначала им трудно привыкнуть к быстрому темпу городской жизни, но со временем они адаптируются к новой среде. Благодаря развитой инфраструктуре — транспорту, образованию и медицине — в городе легче найти работу. Однако не все довольны этим выбором: некоторые жители деревни говорят, что качество жизни там выше, а темп спокойнее.",
+      "prompt": "De acordo com o texto, o que alguns moradores da деревня dizem sobre a vida lá?",
+      "options": [
+        "Que a qualidade de vida é maior e o ritmo é mais calmo.",
+        "Que a infraestrutura da aldeia é melhor que a da cidade.",
+        "Que eles também querem se mudar para a metrópole.",
+        "Que o salário na aldeia é maior."
+      ],
+      "answer": "Que a qualidade de vida é maior e o ritmo é mais calmo.",
+      "explanation": "A última frase do texto diz: «качество жизни там выше, а темп спокойнее».",
+      "tags": [
+        "дательный падеж",
+        "leitura",
+        "город e деревня"
+      ]
+    },
+    {
+      "id": "u01-e22",
+      "type": "reading",
+      "stage": "reading",
+      "difficulty": 3,
+      "instruction": "Leia o texto e responda com base nele.",
+      "context": "Многие молодые специалисты стремятся к карьерному росту и поэтому переезжают из провинции в мегаполис. Сначала им трудно привыкнуть к быстрому темпу городской жизни, но со временем они адаптируются к новой среде. Благодаря развитой инфраструктуре — транспорту, образованию и медицине — в городе легче найти работу. Однако не все довольны этим выбором: некоторые жители деревни говорят, что качество жизни там выше, а темп спокойнее.",
+      "prompt": "Qual trecho do texto está no дательный падеж (кому? чему?)?",
+      "options": [
+        "к карьерному росту",
+        "из провинции",
+        "в мегаполис",
+        "этим выбором"
+      ],
+      "answer": "к карьерному росту",
+      "explanation": "«из провинции» é родительный (откуда?), «в мегаполис» é винительный (куда?), «этим выбором» é творительный (чем? — assunto da próxima unidade). Só «к карьерному росту» responde к чему?.",
+      "tags": [
+        "дательный падеж",
+        "leitura",
+        "consciência gramatical"
+      ]
+    },
+    {
+      "id": "u01-e23",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 2,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Компания обратилась к известному эксперту за консультацией.",
+      "prompt": "O que a empresa fez, segundo o áudio?",
+      "options": [
+        "Ela recorreu a um especialista renomado para uma consultoria.",
+        "Ela contratou um novo especialista permanentemente.",
+        "Ela recusou a ajuda do especialista.",
+        "Ela se tornou uma especialista reconhecida."
+      ],
+      "answer": "Ela recorreu a um especialista renomado para uma consultoria.",
+      "explanation": "обратиться к кому? за чем? = recorrer/dirigir-se a alguém por (buscando) algo — aqui, «обратилась к эксперту за консультацией».",
+      "tags": [
+        "обращаться к",
+        "дательный падеж",
+        "audição"
+      ]
+    },
+    {
+      "id": "u01-e24",
+      "type": "listening",
+      "stage": "listening",
+      "difficulty": 3,
+      "instruction": "Ouça o áudio e escolha o que foi dito.",
+      "audio_text": "Благодаря упорному труду сотрудников компания смогла быстро адаптироваться к новым условиям рынка.",
+      "prompt": "Segundo o áudio, graças a quê a empresa conseguiu se adaptar?",
+      "options": [
+        "Graças ao trabalho dedicado dos funcionários.",
+        "Graças a um empréstimo do governo.",
+        "Graças à redução de preços dos concorrentes.",
+        "Graças a uma nova lei do mercado."
+      ],
+      "answer": "Graças ao trabalho dedicado dos funcionários.",
+      "explanation": "«Благодаря упорному труду сотрудников» = graças ao trabalho dedicado dos funcionários; благодаря + дательный падеж (упорному труду).",
+      "tags": [
+        "благодаря",
+        "дательный падеж",
+        "audição"
+      ]
+    }
+  ],
+  "source_note": "«Время обсуждать», урок 1 (город × деревня) · «Russian Grammar in Tables» (Кузьмина), Дательный падеж · Red Kalinka, Dative case",
+  "lesson_flow": [
+    {
+      "title": "Recuperar",
+      "description": "Flashcards e escolhas rápidas: trazer a construção de volta sem pistas."
+    },
+    {
+      "title": "Compreender",
+      "description": "Leitura e áudio: reconhecer a forma dentro de um texto real, não isolada."
+    },
+    {
+      "title": "Praticar",
+      "description": "Múltipla escolha com análise do erro: cada alternativa errada tem um porquê."
+    },
+    {
+      "title": "Transferir",
+      "description": "Montagem de frases e pares: usar a estrutura numa produção sua."
+    }
+  ]
+}

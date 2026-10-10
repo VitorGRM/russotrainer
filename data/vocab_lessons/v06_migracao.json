@@ -1,0 +1,246 @@
+{
+  "id": "v06",
+  "unit_id": "u06_escolha_rapida",
+  "order": 6,
+  "title": "В миграционном центре",
+  "theme": "Документы и новая жизнь",
+  "description": "Amir, que vive há dois anos no país, vai pedir a autorização de residência. Oito verbos do dia a dia do migrante com regências que o português engana: платить за, скучать по, извиниться перед, благодарить кого…",
+  "speakers": {"Ольга Сергеевна": "f", "Амир": "m"},
+  "dialogue": {
+    "title": "Приём у консультанта",
+    "setting": "Amir chega atrasado ao atendimento com Olga Sergeevna, consultora de um centro de migração.",
+    "lines": [
+      {"speaker": "Ольга Сергеевна", "ru": "Добрый день! Проходите. Чем могу помочь?", "pt": "Boa tarde! Entre. Em que posso ajudar?"},
+      {"speaker": "Амир", "ru": "Здравствуйте. Я хочу оформить вид на жительство. Я здесь уже два года, работаю, снимаю квартиру.", "pt": "Olá. Quero tirar a autorização de residência. Estou aqui há dois anos, trabalho, alugo um apartamento."},
+      {"speaker": "Ольга Сергеевна", "ru": "Хорошо. Договор аренды у вас есть? Хозяйка официально сдаёт вам квартиру?", "pt": "Certo. O senhor tem contrato de aluguel? A dona aluga o apartamento para o senhor oficialmente?"},
+      {"speaker": "Амир", "ru": "Да, всё официально. Я даже плачу за квартиру через банк.", "pt": "Sim, tudo oficial. Eu até pago o aluguel pelo banco."},
+      {"speaker": "Ольга Сергеевна", "ru": "Отлично. А почему вы решились на переезд именно сюда?", "pt": "Ótimo. E por que o senhor resolveu se mudar justamente para cá?"},
+      {"speaker": "Амир", "ru": "Здесь живёт мой брат. Честно говоря, первый год я очень скучал по дому, по маме.", "pt": "Meu irmão mora aqui. Para ser sincero, no primeiro ano senti muita falta de casa, da minha mãe."},
+      {"speaker": "Ольга Сергеевна", "ru": "Это нормально. А с соседями вы уже познакомились?", "pt": "Isso é normal. E o senhor já conheceu os vizinhos?"},
+      {"speaker": "Амир", "ru": "Да, они очень помогли мне в первые месяцы. Кстати, мне нужно извиниться перед вами за опоздание: сломался автобус.", "pt": "Sim, eles me ajudaram muito nos primeiros meses. Aliás, preciso lhe pedir desculpas pelo atraso: o ônibus quebrou."},
+      {"speaker": "Ольга Сергеевна", "ru": "Ничего страшного. Вот список документов. Через месяц приходите с ними.", "pt": "Não tem problema. Aqui está a lista de documentos. Volte com eles daqui a um mês."},
+      {"speaker": "Амир", "ru": "Спасибо большое! Не знаю, как вас благодарить за помощь.", "pt": "Muito obrigado! Não sei como lhe agradecer pela ajuda."},
+      {"speaker": "Ольга Сергеевна", "ru": "Благодарить пока рано — сначала соберите все бумаги.", "pt": "Ainda é cedo para agradecer — primeiro junte todos os papéis."}
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Por que Amir foi ao centro de migração?",
+      "options": [
+        "Para pedir a autorização de residência.",
+        "Para trazer o irmão para o país.",
+        "Para reclamar da dona do apartamento.",
+        "Para conseguir um emprego oficial."
+      ],
+      "answer": "Para pedir a autorização de residência.",
+      "explanation": "«Я хочу оформить вид на жительство»."
+    }
+  ],
+  "items": [
+    {
+      "key": "oformit",
+      "lemma": "оформлять",
+      "tag": "оформлять / оформить",
+      "head": "оформлять / оформить",
+      "regency": "оформлять / оформить что? · кого? куда? (на работу)",
+      "case": "винительный падеж",
+      "pt": "dar entrada em, regularizar (papelada), tirar (documento)",
+      "chunk": "оформить вид на жительство",
+      "chunk_pt": "tirar a autorização de residência",
+      "chunk_wrong": ["оформить видом на жительство", "оформить вид для жительства", "оформиться вид на жительство"],
+      "form_note": "Objeto direto: оформить визу, кредит, страховку. оформиться (на работу) = ser registrado.",
+      "trap": "«Tirar o passaporte» não é «взять паспорт»: é оформить (ou получить) паспорт.",
+      "example": {"ru": "Мне нужно срочно оформить визу.", "pt": "Preciso tirar o visto com urgência.", "extra": "визой", "note": "оформить что? → визу (винительный)."},
+      "cloze": {"ru": "Сколько времени нужно, чтобы оформить ___?", "answer": "страховку для детей", "wrong": ["страховкой для детей", "на страховку для детей", "страховке для детей"], "pt": "Quanto tempo leva para fazer o seguro das crianças?", "note": "Objeto direto feminino: страховку."},
+      "hear": {"ru": "Мы оформили кредит, но квартиру ещё не купили.", "pt": "Fizemos o financiamento, mas ainda não compramos o apartamento.", "wrong": ["Compramos o apartamento, mas ainda não fizemos o financiamento.", "Ainda não fizemos nem o financiamento nem a compra.", "Vamos fazer o financiamento para comprar o apartamento."], "note": "оформили (feito) × ещё не купили (ainda não)."}
+    },
+    {
+      "key": "platit",
+      "lemma": "платить",
+      "tag": "платить за",
+      "head": "платить / заплатить за",
+      "regency": "платить / заплатить за что? · кому? · сколько? (objeto direto)",
+      "case": "винительный падеж",
+      "pt": "pagar (por algo)",
+      "chunk": "платить за квартиру",
+      "chunk_pt": "pagar o aluguel",
+      "chunk_wrong": ["платить квартиру", "платить на квартиру", "платить для квартиры"],
+      "form_note": "O que se paga (serviço, coisa) → за + винительный. O valor → objeto direto: заплатить сто рублей.",
+      "trap": "«Pagar a conta» tem objeto direto em português. Em russo: платить за свет, за учёбу, за квартиру.",
+      "example": {"ru": "Каждый месяц я плачу за интернет пятьсот рублей.", "pt": "Todo mês pago quinhentos rublos pela internet.", "extra": "интернета", "note": "за интернет (винительный); пятьсот рублей = o valor."},
+      "cloze": {"ru": "Кто будет платить ___?", "answer": "за ремонт", "wrong": ["ремонт", "на ремонт", "для ремонта"], "pt": "Quem vai pagar a reforma?", "note": "за + винительный: за ремонт."},
+      "hear": {"ru": "Он заплатил за меня в кафе, а я за него в кино.", "pt": "Ele pagou por mim no café, e eu por ele no cinema.", "wrong": ["Eu paguei por ele no café, e ele por mim no cinema.", "Cada um pagou a sua parte no café e no cinema.", "Ele vai pagar por mim no café, e eu por ele no cinema."], "note": "Quem pagou onde: он → в кафе; я → в кино."}
+    },
+    {
+      "key": "snimat",
+      "lemma": "снимать",
+      "tag": "снимать × сдавать",
+      "head": "снимать / снять",
+      "regency": "снимать / снять что? у кого? · × сдавать / сдать что? кому?",
+      "case": "винительный падеж",
+      "pt": "alugar (como inquilino)",
+      "chunk": "снимать квартиру",
+      "chunk_pt": "alugar um apartamento (como inquilino)",
+      "chunk_wrong": ["сдавать квартиру", "снимать квартире", "снимать в квартиру"],
+      "form_note": "снимать = alugar de alguém (inquilino); сдавать = dar em aluguel (proprietário).",
+      "trap": "O português usa «alugar» para os dois lados. O russo separa: я снимаю квартиру у хозяйки; хозяйка сдаёт мне квартиру.",
+      "example": {"ru": "Мы снимаем квартиру у пожилой пары.", "pt": "Alugamos o apartamento de um casal de idosos.", "extra": "пожилую", "note": "снимать у кого? → у пожилой пары (родительный)."},
+      "cloze": {"ru": "Студенты обычно ___ комнату у хозяйки или живут в общежитии.", "answer": "снимают", "wrong": ["сдают", "снимут", "снимаются"], "pt": "Os estudantes geralmente alugam um quarto de uma senhoria ou moram no alojamento.", "note": "обычно → presente imperfectivo; снимаются = são filmados."},
+      "hear": {"ru": "Хозяйка сдаёт нам квартиру недорого.", "pt": "A dona nos aluga o apartamento barato.", "wrong": ["Nós alugamos o apartamento barato para a dona.", "A dona está vendendo o apartamento barato para nós.", "A dona aluga de nós um apartamento barato."], "note": "хозяйка сдаёт (proprietária) → нам (дательный, inquilinos)."}
+    },
+    {
+      "key": "poznakomitsya",
+      "lemma": "знакомиться",
+      "tag": "познакомиться с",
+      "head": "знакомиться / познакомиться с",
+      "regency": "знакомиться / познакомиться с кем? чем? · познакомить кого? с кем?",
+      "case": "творительный падеж",
+      "pt": "conhecer (alguém pela primeira vez)",
+      "chunk": "познакомиться с соседями",
+      "chunk_pt": "conhecer os vizinhos",
+      "chunk_wrong": ["познакомиться соседей", "познакомиться к соседям", "познакомить с соседями"],
+      "form_note": "познакомиться с кем? = conhecer; познакомить кого? с кем? = apresentar alguém a alguém.",
+      "trap": "«Conhecer alguém» não é знать (isso é já conhecer): o primeiro contato é познакомиться с + творительный.",
+      "example": {"ru": "На курсах я познакомился с интересными людьми.", "pt": "No curso conheci pessoas interessantes.", "extra": "интересных", "note": "с интересными людьми: творительный plural."},
+      "cloze": {"ru": "Я хочу ___ с моими родителями.", "answer": "познакомить тебя", "wrong": ["познакомиться тебя", "знакомиться тебя", "познакомить тебе"], "pt": "Quero apresentar você aos meus pais.", "note": "Apresentar alguém → познакомить кого? (винительный) с кем?"},
+      "hear": {"ru": "Она познакомилась с мужем на работе.", "pt": "Ela conheceu o marido no trabalho.", "wrong": ["Ela apresentou o marido aos colegas de trabalho.", "Ela conheceu o marido de uma colega no trabalho.", "Ela e o marido começaram a trabalhar juntos."], "note": "познакомилась с мужем = conheceu o (futuro) marido."}
+    },
+    {
+      "key": "skuchat",
+      "lemma": "скучать",
+      "tag": "скучать по",
+      "head": "скучать по",
+      "regency": "скучать по кому? чему? · (sem complemento: entediar-se)",
+      "case": "дательный падеж",
+      "pt": "sentir falta de, ter saudade de",
+      "chunk": "скучать по дому",
+      "chunk_pt": "sentir falta de casa",
+      "chunk_wrong": ["скучать за домом", "скучать дома", "скучать от дома"],
+      "form_note": "по + дательный. Com pronomes: скучать по тебе, по вам.",
+      "trap": "Sem complemento, скучать = entediar-se: скучать дома = ficar entediado em casa. Saudade exige по.",
+      "example": {"ru": "Дети очень скучают по бабушке.", "pt": "As crianças sentem muita falta da avó.", "extra": "бабушку", "note": "по бабушке: дательный feminino (-е)."},
+      "cloze": {"ru": "В первый год за границей я очень скучал ___.", "answer": "по родителям", "wrong": ["за родителями", "родителей", "от родителей"], "pt": "No primeiro ano no exterior senti muita falta dos meus pais.", "note": "по + дательный plural: по родителям."},
+      "hear": {"ru": "Я скучаю по тебе, а ты по мне — нет.", "pt": "Eu sinto sua falta, mas você não sente a minha.", "wrong": ["Você sente minha falta, mas eu não sinto a sua.", "Eu me entedio com você, e você comigo, não.", "Nós dois sentimos falta um do outro."], "note": "я скучаю по тебе; ты по мне — нет."}
+    },
+    {
+      "key": "reshitsya",
+      "lemma": "решаться",
+      "tag": "решиться на",
+      "head": "решаться / решиться на",
+      "regency": "решаться / решиться на что? · + инфинитив",
+      "case": "винительный падеж",
+      "pt": "criar coragem para, arriscar-se a",
+      "chunk": "решиться на переезд",
+      "chunk_pt": "criar coragem para a mudança",
+      "chunk_wrong": ["решиться в переезд", "решить на переезд", "решиться переездом"],
+      "form_note": "решить = decidir (resolver); решиться = vencer a hesitação. Com infinitivo não há на: решиться уехать.",
+      "trap": "Não confunda решить (decidir) com решиться (ter coragem). E não use на antes do infinitivo.",
+      "example": {"ru": "Он долго не мог решиться на серьёзный разговор.", "pt": "Ele demorou a criar coragem para uma conversa séria.", "extra": "серьёзного", "note": "на серьёзный разговор: винительный masculino inanimado."},
+      "cloze": {"ru": "Не каждый ___ начать всё с нуля в сорок лет.", "answer": "решится", "wrong": ["решится на", "решиться", "решаются"], "pt": "Nem todo mundo tem coragem de recomeçar do zero aos quarenta.", "note": "Com infinitivo, sem на; каждый é singular → решится."},
+      "hear": {"ru": "Она решилась на операцию только через год.", "pt": "Ela só criou coragem para fazer a cirurgia um ano depois.", "wrong": ["Ela decidiu não fazer a cirurgia depois de um ano.", "Ela fez a cirurgia há um ano.", "Ela vai criar coragem para a cirurgia daqui a um ano."], "note": "решилась = passado; через год = um ano depois."}
+    },
+    {
+      "key": "blagodarit",
+      "lemma": "благодарить",
+      "tag": "благодарить кого за что",
+      "head": "благодарить / поблагодарить",
+      "regency": "благодарить / поблагодарить кого? за что?",
+      "case": "винительный падеж",
+      "pt": "agradecer (a alguém, por algo)",
+      "chunk": "поблагодарить за помощь",
+      "chunk_pt": "agradecer pela ajuda",
+      "chunk_wrong": ["поблагодарить для помощи", "поблагодарить за помощью", "поблагодарить о помощи"],
+      "form_note": "Quem recebe o agradecimento → винительный; o motivo → за + винительный.",
+      "trap": "Em português se agradece A alguém. Em russo, a pessoa é objeto direto: поблагодарить врача (не «врачу»).",
+      "example": {"ru": "Я хочу поблагодарить вас за терпение.", "pt": "Quero agradecer-lhe pela paciência.", "extra": "вам", "note": "кого? → вас (винительный); за что? → за терпение."},
+      "cloze": {"ru": "Студенты поблагодарили ___ за интересный курс.", "answer": "преподавателя", "wrong": ["преподавателю", "преподавателем", "у преподавателя"], "pt": "Os alunos agradeceram ao professor pelo curso interessante.", "note": "Animado masculino no винительный = родительный: преподавателя."},
+      "hear": {"ru": "Мы поблагодарили хозяйку за ужин.", "pt": "Agradecemos à dona da casa pelo jantar.", "wrong": ["A dona da casa nos agradeceu pelo jantar.", "Agradecemos à dona da casa pelo almoço.", "Vamos agradecer à dona da casa pelo jantar."], "note": "мы = sujeito; хозяйку = a quem; за ужин = jantar."}
+    },
+    {
+      "key": "izvinitsya",
+      "lemma": "извиняться",
+      "tag": "извиниться перед",
+      "head": "извиняться / извиниться перед",
+      "regency": "извиняться / извиниться перед кем? за что?",
+      "case": "творительный падеж",
+      "pt": "pedir desculpas (a alguém)",
+      "chunk": "извиниться перед коллегой",
+      "chunk_pt": "pedir desculpas ao colega",
+      "chunk_wrong": ["извиниться коллеге", "извиниться у коллеги", "извиниться к коллеге"],
+      "form_note": "A pessoa → перед + творительный; o motivo → за + винительный: извиниться перед соседями за шум.",
+      "trap": "«Pedir desculpas A alguém» puxa o дательный. Em russo, é перед + творительный (diante de alguém).",
+      "example": {"ru": "Он извинился перед соседями за шум.", "pt": "Ele pediu desculpas aos vizinhos pelo barulho.", "extra": "соседям", "note": "перед соседями (творительный plural); за шум (винительный)."},
+      "cloze": {"ru": "Тебе нужно извиниться ___ за опоздание.", "answer": "перед учительницей", "wrong": ["учительнице", "у учительницы", "перед учительницу"], "pt": "Você precisa pedir desculpas à professora pelo atraso.", "note": "перед + творительный feminino: -ей."},
+      "hear": {"ru": "Директор извинился перед клиентами за задержку.", "pt": "O diretor pediu desculpas aos clientes pelo atraso.", "wrong": ["Os clientes pediram desculpas ao diretor pelo atraso.", "O diretor explicou aos clientes o motivo do atraso.", "O diretor pediu aos clientes que não se atrasassem."], "note": "директор = sujeito; перед клиентами = a quem; за задержку = motivo."}
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Por que Amir escolheu justamente esta cidade?",
+      "options": [
+        "Porque o irmão dele mora aqui.",
+        "Porque a mãe dele mora aqui.",
+        "Porque encontrou trabalho aqui.",
+        "Porque os vizinhos o convidaram."
+      ],
+      "answer": "Porque o irmão dele mora aqui.",
+      "explanation": "«Здесь живёт мой брат». A mãe é de quem ele sentia falta."
+    },
+    {
+      "prompt": "O que Amir precisa fazer agora?",
+      "options": [
+        "Juntar os documentos e voltar em um mês.",
+        "Pagar uma taxa pelo banco hoje mesmo.",
+        "Trazer o contrato de aluguel amanhã.",
+        "Voltar junto com a dona do apartamento."
+      ],
+      "answer": "Juntar os documentos e voltar em um mês.",
+      "explanation": "«Вот список документов. Через месяц приходите с ними»."
+    }
+  ],
+  "reconstruct": [
+    {"line": 1, "gap": "оформить вид на жительство", "wrong": ["оформить видом на жительство", "оформить вид для жительства", "оформиться вид на жительство"], "note": "оформить что? → вид на жительство."},
+    {"line": 3, "gap": "плачу за квартиру", "wrong": ["плачу квартиру", "плачу на квартиру", "плачу для квартиры"], "note": "платить за + винительный."},
+    {"line": 5, "gap": "скучал по дому", "wrong": ["скучал за домом", "скучал дома", "скучал от дома"], "note": "скучать по + дательный."},
+    {"line": 7, "gap": "извиниться перед вами", "wrong": ["извиниться вам", "извиниться у вас", "извиниться перед вас"], "note": "извиниться перед + творительный: перед вами."}
+  ],
+  "match": {
+    "instruction": "Relacione cada verbo ao complemento com a regência certa.",
+    "prompt": "Qual complemento completa cada verbo?",
+    "pairs": [
+      {"left": "извиниться", "right": "перед соседями за шум"},
+      {"left": "поблагодарить", "right": "друга за подарок"},
+      {"left": "скучать", "right": "по родному городу"},
+      {"left": "платить", "right": "за электричество"},
+      {"left": "познакомиться", "right": "с новыми коллегами"},
+      {"left": "решиться", "right": "на смелый шаг"}
+    ],
+    "explanation": "перед + творительный; кого? + за что?; по + дательный; за + винительный; с + творительный; на + винительный."
+  },
+  "replies": [
+    {
+      "speaker": "Ольга Сергеевна",
+      "you": "Амир",
+      "ru": "Вы уже познакомились с коллегами на новой работе?",
+      "prompt": "A consultora pergunta se você já conheceu os colegas. Responda: sim, todos, menos o diretor.",
+      "answer": "Да, со всеми, кроме директора.",
+      "wrong": ["Да, всех, кроме директора.", "Да, со всеми, кроме директором.", "Да, со всеми, кроме с директором."],
+      "explanation": "познакомиться с кем? → со всеми; кроме + родительный: кроме директора."
+    },
+    {
+      "speaker": "Амир",
+      "you": "Ольга Сергеевна",
+      "ru": "Сколько я должен заплатить за оформление?",
+      "prompt": "Amir pergunta quanto deve pagar pelo processo. Responda que ele não paga nada.",
+      "answer": "За оформление вы ничего не платите.",
+      "wrong": ["Оформление вы ничего не платите.", "На оформление вы ничего не платите.", "За оформлением вы ничего не платите."],
+      "explanation": "платить за + винительный: за оформление."
+    }
+  ],
+  "writing": {
+    "prompt": "Um amigo acabou de se mudar para o seu país. Escreva-lhe uma mensagem: que documentos tirar, como alugar moradia e como lidar com a saudade.",
+    "use": ["оформить", "снимать", "платить за", "скучать по", "познакомиться с"],
+    "words": "50–70",
+    "notes": "Verificar снимать × сдавать, за + винительный, по + дательный, с + творительный, aspecto dos conselhos (imperativo: оформи / снимай)."
+  }
+}

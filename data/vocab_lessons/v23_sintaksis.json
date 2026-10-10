@@ -1,0 +1,580 @@
+{
+  "id": "v23",
+  "unit_id": "u23_sintaksis",
+  "order": 23,
+  "title": "Климат: факты и решения",
+  "theme": "Uma apresentadora e um especialista debatem dados fictícios sobre clima na TV",
+  "description": "Uma apresentadora e um especialista debatem dados fictícios sobre clima na TV. Oito construções em uma cena, com recuperação da forma, escuta, reconstrução e escrita.",
+  "speakers": {
+    "Ведущая": "f",
+    "Эксперт": "m"
+  },
+  "dialogue": {
+    "title": "Климат: факты и решения",
+    "setting": "Uma apresentadora e um especialista debatem dados fictícios sobre clima na TV",
+    "lines": [
+      {
+        "speaker": "Ведущая",
+        "ru": "Согласно новому прогнозу, лето будет жарким. Как подготовиться?",
+        "pt": "Segundo a nova previsão, o verão será quente. Como se preparar?"
+      },
+      {
+        "speaker": "Эксперт",
+        "ru": "По данным местной станции, осадков уже меньше обычного.",
+        "pt": "Segundo os dados da estação local, já está chovendo menos que o habitual."
+      },
+      {
+        "speaker": "Ведущая",
+        "ru": "По мнению опытного эксперта, город должен изменить правила полива. Вы согласны?",
+        "pt": "Na opinião de um especialista experiente, a cidade precisa mudar as regras de irrigação. O senhor concorda?"
+      },
+      {
+        "speaker": "Эксперт",
+        "ru": "Да. В связи с сильной жарой расход воды растёт.",
+        "pt": "Sim. Em razão do calor intenso, o consumo de água aumenta."
+      },
+      {
+        "speaker": "Ведущая",
+        "ru": "В результате долгой засухи несколько хозяйств потеряли урожай.",
+        "pt": "Em consequência de uma seca longa, algumas propriedades perderam a colheita."
+      },
+      {
+        "speaker": "Эксперт",
+        "ru": "В отличие от прошлого года, теперь запас воды ниже. Это серьёзный сигнал.",
+        "pt": "Ao contrário do ano passado, agora a reserva de água está menor. Isso é um sinal sério."
+      },
+      {
+        "speaker": "Ведущая",
+        "ru": "А что можно сделать с целью снижения выбросов?",
+        "pt": "E o que se pode fazer com o objetivo de reduzir as emissões?"
+      },
+      {
+        "speaker": "Эксперт",
+        "ru": "Например, обновить транспорт за счёт городского бюджета, но сначала оценить расходы.",
+        "pt": "Por exemplo, renovar o transporte com recursos do orçamento municipal, mas primeiro avaliar as despesas."
+      },
+      {
+        "speaker": "Ведущая",
+        "ru": "То есть меры должны опираться на данные, а не только на мнение?",
+        "pt": "Ou seja, as medidas precisam se apoiar em dados, e não só em opiniões?"
+      },
+      {
+        "speaker": "Эксперт",
+        "ru": "Да. И нужно отдельно объяснять причину, результат, цель и источник средств.",
+        "pt": "Sim. E é preciso explicar separadamente a causa, o resultado, o objetivo e a fonte de recursos."
+      }
+    ]
+  },
+  "gist": [
+    {
+      "prompt": "Qual princípio o debate destaca?",
+      "options": [
+        "Justificar medidas com dados, objetivos e custos.",
+        "Tomar toda opinião como se fosse dado medido.",
+        "Atribuir a seca apenas ao orçamento municipal.",
+        "Renovar o transporte antes de avaliar despesas."
+      ],
+      "answer": "Justificar medidas com dados, objetivos e custos.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "items": [
+    {
+      "key": "item1",
+      "lemma": "согласно",
+      "tag": "согласно",
+      "head": "согласно",
+      "regency": "согласно чему?",
+      "case": "дательный падеж",
+      "pt": "segundo a nova previsão",
+      "chunk": "согласно новому прогнозу",
+      "chunk_pt": "segundo a nova previsão",
+      "chunk_wrong": [
+        "согласно нового прогноза",
+        "согласно новый прогноз",
+        "согласно новым прогнозом"
+      ],
+      "form_note": "согласно чему? exige дательный падеж; o родительный падеж é um erro frequente por analogia a outras fontes.",
+      "trap": "согласно чему? exige дательный падеж; o родительный падеж é um erro frequente por analogia a outras fontes.",
+      "example": {
+        "ru": "Согласно закону, доступ должен быть открытым.",
+        "pt": "Segundo a lei, o acesso deve ser aberto.",
+        "extra": "закона",
+        "note": "согласно чему? exige дательный падеж; o родительный падеж é um erro frequente por analogia a outras fontes."
+      },
+      "cloze": {
+        "ru": "___, работы начнутся в мае.",
+        "answer": "Согласно принятому плану",
+        "wrong": [
+          "Согласно принятого плана",
+          "Согласно принятый план",
+          "Согласно принятым планом"
+        ],
+        "pt": "Segundo o plano aprovado, as obras começarão em maio.",
+        "note": "согласно чему? exige дательный падеж; o родительный падеж é um erro frequente por analogia a outras fontes."
+      },
+      "hear": {
+        "ru": "Согласно отчёту, расходы выросли.",
+        "pt": "Segundo o relatório, as despesas aumentaram.",
+        "wrong": [
+          "Segundo o relatório, as despesas aumentarão.",
+          "Segundo o relatório, as despesas não aumentaram.",
+          "Segundo o relatório, as receitas aumentaram."
+        ],
+        "note": "согласно чему? exige дательный падеж; o родительный падеж é um erro frequente por analogia a outras fontes."
+      }
+    },
+    {
+      "key": "item2",
+      "lemma": "данные",
+      "tag": "по данным",
+      "head": "по данным",
+      "regency": "по данным чего? кого?",
+      "case": "родительный падеж",
+      "pt": "segundo os dados da estação local",
+      "chunk": "по данным местной станции",
+      "chunk_pt": "segundo os dados da estação local",
+      "chunk_wrong": [
+        "по данным местную станцию",
+        "по данным местной станцией",
+        "по данным местная станция"
+      ],
+      "form_note": "A expressão fixa é по данным; a fonte que vem depois fica no родительный падеж.",
+      "trap": "A expressão fixa é по данным; a fonte que vem depois fica no родительный падеж.",
+      "example": {
+        "ru": "По данным лаборатории, вода чистая.",
+        "pt": "Segundo os dados do laboratório, a água está limpa.",
+        "extra": "лабораторию",
+        "note": "A expressão fixa é по данным; a fonte que vem depois fica no родительный падеж."
+      },
+      "cloze": {
+        "ru": "___, воздух стал чище.",
+        "answer": "По данным нового исследования",
+        "wrong": [
+          "По данным новое исследование",
+          "По данным новому исследованию",
+          "По данным новым исследованием"
+        ],
+        "pt": "Segundo os dados da nova pesquisa, o ar ficou mais limpo.",
+        "note": "A expressão fixa é по данным; a fonte que vem depois fica no родительный падеж."
+      },
+      "hear": {
+        "ru": "По данным школы, ученики сократили расход воды.",
+        "pt": "Segundo os dados da escola, os alunos reduziram o consumo de água.",
+        "wrong": [
+          "Segundo os dados da escola, os alunos reduzirão o consumo de água.",
+          "Segundo os dados da escola, os alunos não reduziram o consumo de água.",
+          "Segundo os dados dos alunos, a escola reduziu o consumo de água."
+        ],
+        "note": "A expressão fixa é по данным; a fonte que vem depois fica no родительный падеж."
+      }
+    },
+    {
+      "key": "item3",
+      "lemma": "мнение",
+      "tag": "по мнению",
+      "head": "по мнению",
+      "regency": "по мнению кого?",
+      "case": "родительный падеж",
+      "pt": "na opinião do especialista experiente",
+      "chunk": "по мнению опытного эксперта",
+      "chunk_pt": "na opinião do especialista experiente",
+      "chunk_wrong": [
+        "по мнению опытный эксперт",
+        "по мнению опытному эксперту",
+        "по мнению опытным экспертом"
+      ],
+      "form_note": "по мнению кого? expressa uma avaliação, não um dado medido. A pessoa fica no родительный падеж.",
+      "trap": "по мнению кого? expressa uma avaliação, não um dado medido. A pessoa fica no родительный падеж.",
+      "example": {
+        "ru": "По мнению жителей, парк надо сохранить.",
+        "pt": "Na opinião dos moradores, é preciso preservar o parque.",
+        "extra": "жителям",
+        "note": "по мнению кого? expressa uma avaliação, não um dado medido. A pessoa fica no родительный падеж."
+      },
+      "cloze": {
+        "ru": "___, проект полезен.",
+        "answer": "По мнению нашей группы",
+        "wrong": [
+          "По мнению нашу группу",
+          "По мнению нашей группой",
+          "По мнению наша группа"
+        ],
+        "pt": "Na opinião do nosso grupo, o projeto é útil.",
+        "note": "по мнению кого? expressa uma avaliação, não um dado medido. A pessoa fica no родительный падеж."
+      },
+      "hear": {
+        "ru": "По мнению учителя, доклад ученицы был убедительным.",
+        "pt": "Na opinião do professor, a apresentação da aluna foi convincente.",
+        "wrong": [
+          "Na opinião da aluna, a apresentação do professor foi convincente.",
+          "Na opinião do professor, a apresentação da aluna não foi convincente.",
+          "Na opinião do professor, a apresentação da aluna será convincente."
+        ],
+        "note": "по мнению кого? expressa uma avaliação, não um dado medido. A pessoa fica no родительный падеж."
+      }
+    },
+    {
+      "key": "item4",
+      "lemma": "связь",
+      "tag": "в связи с",
+      "head": "в связи с",
+      "regency": "в связи с чем?",
+      "case": "творительный падеж",
+      "pt": "em razão do calor intenso",
+      "chunk": "в связи с сильной жарой",
+      "chunk_pt": "em razão do calor intenso",
+      "chunk_wrong": [
+        "в связи с сильную жару",
+        "в связи с сильной жары",
+        "в связи с сильной жаре"
+      ],
+      "form_note": "в связи с чем? mantém с + творительный падеж; não escolha o caso apenas pela tradução «devido a».",
+      "trap": "в связи с чем? mantém с + творительный падеж; não escolha o caso apenas pela tradução «devido a».",
+      "example": {
+        "ru": "В связи с ремонтом дорогу закрыли.",
+        "pt": "Em razão da reforma, fecharam a estrada.",
+        "extra": "ремонту",
+        "note": "в связи с чем? mantém с + творительный падеж; não escolha o caso apenas pela tradução «devido a»."
+      },
+      "cloze": {
+        "ru": "___ встречу перенесли.",
+        "answer": "В связи с плохой погодой",
+        "wrong": [
+          "В связи с плохую погоду",
+          "В связи с плохой погоды",
+          "В связи с плохой погоде"
+        ],
+        "pt": "Em razão do mau tempo, adiaram a reunião.",
+        "note": "в связи с чем? mantém с + творительный падеж; não escolha o caso apenas pela tradução «devido a»."
+      },
+      "hear": {
+        "ru": "В связи с засухой фермеры сократили посевы.",
+        "pt": "Em razão da seca, os agricultores reduziram o plantio.",
+        "wrong": [
+          "Em razão da seca, os agricultores reduzirão o plantio.",
+          "Em razão da seca, os agricultores não reduziram o plantio.",
+          "Em razão do plantio, os agricultores reduziram a seca."
+        ],
+        "note": "в связи с чем? mantém с + творительный падеж; não escolha o caso apenas pela tradução «devido a»."
+      }
+    },
+    {
+      "key": "item5",
+      "lemma": "результат",
+      "tag": "в результате",
+      "head": "в результате",
+      "regency": "в результате чего?",
+      "case": "родительный падеж",
+      "pt": "em consequência de uma seca longa",
+      "chunk": "в результате долгой засухи",
+      "chunk_pt": "em consequência de uma seca longa",
+      "chunk_wrong": [
+        "в результате долгую засуху",
+        "в результате долгой засухе",
+        "в результате долгой засухой"
+      ],
+      "form_note": "в результате чего? apresenta uma consequência efetiva; o evento causador fica no родительный падеж.",
+      "trap": "в результате чего? apresenta uma consequência efetiva; o evento causador fica no родительный падеж.",
+      "example": {
+        "ru": "В результате пожара лес пострадал.",
+        "pt": "Em consequência do incêndio, a floresta sofreu danos.",
+        "extra": "пожару",
+        "note": "в результате чего? apresenta uma consequência efetiva; o evento causador fica no родительный падеж."
+      },
+      "cloze": {
+        "ru": "___ река стала чище.",
+        "answer": "В результате новых мер",
+        "wrong": [
+          "В результате новые меры",
+          "В результате новым мерам",
+          "В результате новыми мерами"
+        ],
+        "pt": "Em consequência das novas medidas, o rio ficou mais limpo.",
+        "note": "в результате чего? apresenta uma consequência efetiva; o evento causador fica no родительный падеж."
+      },
+      "hear": {
+        "ru": "В результате дождей уровень воды поднялся.",
+        "pt": "Em consequência das chuvas, o nível da água subiu.",
+        "wrong": [
+          "Em consequência das chuvas, o nível da água subirá.",
+          "Em consequência das chuvas, o nível da água não subiu.",
+          "Em consequência do nível da água, as chuvas aumentaram."
+        ],
+        "note": "в результате чего? apresenta uma consequência efetiva; o evento causador fica no родительный падеж."
+      }
+    },
+    {
+      "key": "item6",
+      "lemma": "отличие",
+      "tag": "в отличие от",
+      "head": "в отличие от",
+      "regency": "в отличие от кого? чего?",
+      "case": "родительный падеж",
+      "pt": "ao contrário do ano passado",
+      "chunk": "в отличие от прошлого года",
+      "chunk_pt": "ao contrário do ano passado",
+      "chunk_wrong": [
+        "в отличие от прошлый год",
+        "в отличие от прошлому году",
+        "в отличие от прошлым годом"
+      ],
+      "form_note": "в отличие от кого? чего? usa от + родительный падеж; é um contraste explícito entre dois referentes.",
+      "trap": "в отличие от кого? чего? usa от + родительный падеж; é um contraste explícito entre dois referentes.",
+      "example": {
+        "ru": "В отличие от брата, она ездит на велосипеде.",
+        "pt": "Ao contrário do irmão, ela anda de bicicleta.",
+        "extra": "брату",
+        "note": "в отличие от кого? чего? usa от + родительный падеж; é um contraste explícito entre dois referentes."
+      },
+      "cloze": {
+        "ru": "___, мы экономим воду.",
+        "answer": "В отличие от соседей",
+        "wrong": [
+          "В отличие от соседи",
+          "В отличие от соседям",
+          "В отличие от соседями"
+        ],
+        "pt": "Ao contrário dos vizinhos, economizamos água.",
+        "note": "в отличие от кого? чего? usa от + родительный падеж; é um contraste explícito entre dois referentes."
+      },
+      "hear": {
+        "ru": "В отличие от отца, сын отказался от машины.",
+        "pt": "Ao contrário do pai, o filho abriu mão do carro.",
+        "wrong": [
+          "Ao contrário do filho, o pai abriu mão do carro.",
+          "Ao contrário do pai, o filho não abriu mão do carro.",
+          "Ao contrário do pai, o filho abrirá mão do carro."
+        ],
+        "note": "в отличие от кого? чего? usa от + родительный падеж; é um contraste explícito entre dois referentes."
+      }
+    },
+    {
+      "key": "item7",
+      "lemma": "цель",
+      "tag": "с целью",
+      "head": "с целью",
+      "regency": "с целью чего?",
+      "case": "родительный падеж",
+      "pt": "com o objetivo de reduzir as emissões",
+      "chunk": "с целью снижения выбросов",
+      "chunk_pt": "com o objetivo de reduzir as emissões",
+      "chunk_wrong": [
+        "с целью снижению выбросов",
+        "с целью снижением выбросов",
+        "с целью снижение выбросов"
+      ],
+      "form_note": "с целью чего? usa um substantivo no родительный падеж; não coloque um verbo conjugado depois de целью.",
+      "trap": "с целью чего? usa um substantivo no родительный падеж; não coloque um verbo conjugado depois de целью.",
+      "example": {
+        "ru": "С целью защиты леса создали заповедник.",
+        "pt": "Com o objetivo de proteger a floresta, criaram uma reserva.",
+        "extra": "защиту",
+        "note": "с целью чего? usa um substantivo no родительный падеж; não coloque um verbo conjugado depois de целью."
+      },
+      "cloze": {
+        "ru": "Закон приняли ___.",
+        "answer": "с целью экономии энергии",
+        "wrong": [
+          "с целью экономию энергии",
+          "с целью экономией энергии",
+          "с целью экономия энергии"
+        ],
+        "pt": "A lei foi aprovada com o objetivo de economizar energia.",
+        "note": "с целью чего? usa um substantivo no родительный падеж; não coloque um verbo conjugado depois de целью."
+      },
+      "hear": {
+        "ru": "Школа установила панели с целью снижения расходов.",
+        "pt": "A escola instalou painéis com o objetivo de reduzir as despesas.",
+        "wrong": [
+          "A escola instalará painéis com o objetivo de reduzir as despesas.",
+          "A escola não instalou painéis com o objetivo de reduzir as despesas.",
+          "A escola instalou painéis com o objetivo de aumentar as despesas."
+        ],
+        "note": "с целью чего? usa um substantivo no родительный падеж; não coloque um verbo conjugado depois de целью."
+      }
+    },
+    {
+      "key": "item8",
+      "lemma": "счёт",
+      "tag": "за счёт",
+      "head": "за счёт",
+      "regency": "за счёт чего? кого?",
+      "case": "родительный падеж",
+      "pt": "com recursos do orçamento municipal",
+      "chunk": "за счёт городского бюджета",
+      "chunk_pt": "com recursos do orçamento municipal",
+      "chunk_wrong": [
+        "за счёт городской бюджет",
+        "за счёт городскому бюджету",
+        "за счёт городским бюджетом"
+      ],
+      "form_note": "за счёт чего? indica recurso, mecanismo ou quem assume o custo; o complemento usa родительный падеж.",
+      "trap": "за счёт чего? indica recurso, mecanismo ou quem assume o custo; o complemento usa родительный падеж.",
+      "example": {
+        "ru": "Ремонт оплатили за счёт фонда.",
+        "pt": "Pagaram a reforma com recursos do fundo.",
+        "extra": "фонду",
+        "note": "за счёт чего? indica recurso, mecanismo ou quem assume o custo; o complemento usa родительный падеж."
+      },
+      "cloze": {
+        "ru": "Потребление снизили ___.",
+        "answer": "за счёт новых технологий",
+        "wrong": [
+          "за счёт новые технологии",
+          "за счёт новым технологиям",
+          "за счёт новыми технологиями"
+        ],
+        "pt": "Reduziram o consumo graças às novas tecnologias.",
+        "note": "за счёт чего? indica recurso, mecanismo ou quem assume o custo; o complemento usa родительный падеж."
+      },
+      "hear": {
+        "ru": "Дом утеплили за счёт помощи соседей.",
+        "pt": "A casa recebeu isolamento térmico com a ajuda dos vizinhos.",
+        "wrong": [
+          "A casa receberá isolamento térmico com a ajuda dos vizinhos.",
+          "A casa não recebeu isolamento térmico com a ajuda dos vizinhos.",
+          "A casa dos vizinhos recebeu isolamento térmico com nossa ajuda."
+        ],
+        "note": "за счёт чего? indica recurso, mecanismo ou quem assume o custo; o complemento usa родительный падеж."
+      }
+    }
+  ],
+  "detail": [
+    {
+      "prompt": "Como a reserva de água se compara à do ano passado?",
+      "options": [
+        "Está mais baixa, segundo o especialista.",
+        "Está mais alta, segundo a apresentadora.",
+        "Permanece igual, apesar da seca longa.",
+        "Foi substituída por uma estação nova."
+      ],
+      "answer": "Está mais baixa, segundo o especialista.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    },
+    {
+      "prompt": "De onde viriam os recursos para renovar o transporte?",
+      "options": [
+        "Do orçamento municipal, após avaliar os custos.",
+        "Da estação meteorológica, sem nenhum custo.",
+        "Da venda das colheitas que foram perdidas.",
+        "Do orçamento das escolas, antes da previsão."
+      ],
+      "answer": "Do orçamento municipal, após avaliar os custos.",
+      "explanation": "A resposta se apoia nas informações explícitas do diálogo; compare objetivo, participantes e sequência dos acontecimentos."
+    }
+  ],
+  "reconstruct": [
+    {
+      "line": 0,
+      "gap": "Согласно новому прогнозу",
+      "wrong": [
+        "Согласно нового прогноза",
+        "Согласно новый прогноз",
+        "Согласно новым прогнозом"
+      ],
+      "note": "согласно чему? exige дательный падеж; o родительный падеж é um erro frequente por analogia a outras fontes."
+    },
+    {
+      "line": 1,
+      "gap": "По данным местной станции",
+      "wrong": [
+        "По данным местную станцию",
+        "По данным местной станцией",
+        "По данным местная станция"
+      ],
+      "note": "A expressão fixa é по данным; a fonte que vem depois fica no родительный падеж."
+    },
+    {
+      "line": 3,
+      "gap": "В связи с сильной жарой",
+      "wrong": [
+        "В связи с сильную жару",
+        "В связи с сильной жары",
+        "В связи с сильной жаре"
+      ],
+      "note": "в связи с чем? mantém с + творительный падеж; não escolha o caso apenas pela tradução «devido a»."
+    },
+    {
+      "line": 7,
+      "gap": "за счёт городского бюджета",
+      "wrong": [
+        "за счёт городской бюджет",
+        "за счёт городскому бюджету",
+        "за счёт городским бюджетом"
+      ],
+      "note": "за счёт чего? indica recurso, mecanismo ou quem assume o custo; o complemento usa родительный падеж."
+    }
+  ],
+  "match": {
+    "instruction": "Relacione cada construção completa ao seu sentido em português.",
+    "prompt": "Considere o verbo, a preposição e o complemento juntos.",
+    "pairs": [
+      {
+        "left": "согласно новому прогнозу",
+        "right": "segundo a nova previsão"
+      },
+      {
+        "left": "по данным местной станции",
+        "right": "segundo os dados da estação local"
+      },
+      {
+        "left": "по мнению опытного эксперта",
+        "right": "na opinião do especialista experiente"
+      },
+      {
+        "left": "в связи с сильной жарой",
+        "right": "em razão do calor intenso"
+      },
+      {
+        "left": "в результате долгой засухи",
+        "right": "em consequência de uma seca longa"
+      },
+      {
+        "left": "в отличие от прошлого года",
+        "right": "ao contrário do ano passado"
+      }
+    ],
+    "explanation": "Cada construção completa tem um único sentido entre os seis pares; recupere a regência antes de conferir a tradução."
+  },
+  "replies": [
+    {
+      "speaker": "Ведущая",
+      "you": "Эксперт",
+      "ru": "На какой источник мы опираемся, говоря о будущем лете?",
+      "prompt": "Responda citando a previsão como fonte.",
+      "answer": "Согласно новому прогнозу.",
+      "wrong": [
+        "Согласно нового прогноза.",
+        "Согласно новый прогноз.",
+        "Согласно новым прогнозом."
+      ],
+      "explanation": "согласно чему? exige дательный падеж; o родительный падеж é um erro frequente por analogia a outras fontes."
+    },
+    {
+      "speaker": "Эксперт",
+      "you": "Ведущая",
+      "ru": "Откуда информация о количестве осадков?",
+      "prompt": "Responda citando a fonte dos dados.",
+      "answer": "По данным местной станции.",
+      "wrong": [
+        "По данным местную станцию.",
+        "По данным местной станцией.",
+        "По данным местная станция."
+      ],
+      "explanation": "A expressão fixa é по данным; a fonte que vem depois fica no родительный падеж."
+    }
+  ],
+  "writing": {
+    "prompt": "Escreva um comentário sobre um problema ambiental fictício. Identifique uma fonte de dados, uma opinião, uma causa e uma medida com finalidade.",
+    "use": [
+      "согласно",
+      "по данным",
+      "по мнению",
+      "в связи с",
+      "в результате"
+    ],
+    "words": "50–70",
+    "notes": "Verificar adequação à cena, coesão, aspecto verbal e as regências: согласно чему?; по данным чего? кого?; по мнению кого?; в связи с чем?; в результате чего?; в отличие от кого? чего?; с целью чего?; за счёт чего? кого?."
+  }
+}
