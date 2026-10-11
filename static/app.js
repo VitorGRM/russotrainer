@@ -9,7 +9,8 @@ const state = {
   bootstrap: null,
   summary: null,
   sessionId: null,
-  consultation: readPreference('russotrainer-consultation', 'SC'),
+  // Sem seletor de consulta: toda resposta conta como recuperação sem consulta (SC).
+  consultation: 'SC',
   queue: [],
   current: 0,
   sessionMode: 'study',
@@ -35,23 +36,28 @@ const state = {
   sessionClock: 0,
   activeSessions: [],
   saveChain: Promise.resolve(),
-  courseId: readPreference('lingualab-course', 'russian'),
+  // Foco no russo: os outros cursos continuam no servidor, mas não aparecem na interface.
+  courseId: 'russian',
+  lesson: null,
 };
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
 const baseViewMeta = {
-  home: ['ПОДГОТОВКА К ЭКЗАМЕНУ', 'Visão geral'],
-  study: ['АКТИВНАЯ ПРАКТИКА', 'Estudar'],
-  vocab: ['ЛЕКСИКА В ДИАЛОГЕ', 'Vocabulário'],
-  review: ['ИНТЕРВАЛЬНОЕ ПОВТОРЕНИЕ', 'Revisar'],
+  home: ['ПРОГРАММА', 'Aulas'],
+  lesson: ['УРОК', 'Aula'],
+  practice: ['ПРАКТИКА', 'Praticar'],
+  study: ['ПРАКТИКА', 'Praticar'],
+  vocab: ['ЛЕКСИКА В ДИАЛОГЕ', 'Vocabulário em diálogo'],
   errors: ['РАБОТА НАД ОШИБКАМИ', 'Caderno de erros'],
   reference: ['УПРАВЛЕНИЕ', 'Referência'],
   morphology: ['КАРТА ОКОНЧАНИЙ', 'Terminações e léxico B2'],
   prefixes: ['ГЛАГОЛЬНЫЕ ПРИСТАВКИ', 'Verbos com prefixo'],
-  data: ['ПРОГРЕСС И ЭКСПОРТ', 'Dados e análise'],
+  progress: ['ПРОГРЕСС', 'Progresso'],
 };
+// Telas que pertencem a "Praticar": o menu lateral continua marcando Praticar e aparece "← Praticar".
+const PRACTICE_VIEWS = new Set(['study', 'vocab', 'errors', 'morphology', 'prefixes']);
 
 const courseConfigs = {
   russian: {
@@ -93,7 +99,7 @@ function courseUnits() {
 
 function currentViewMeta(name) {
   const base = baseViewMeta[name] || ['', name];
-  return [`${currentConfig().eyebrow} · ${base[0]}`, base[1]];
+  return [`РУССКИЙ · B2 · ${base[0]}`, base[1]];
 }
 
 const typeLabels = {
@@ -167,22 +173,25 @@ function showToast(message) {
 }
 
 function setView(name) {
-  if (['morphology', 'prefixes', 'vocab'].includes(name) && state.courseId !== 'russian') name = 'home';
+  if (!$(`#${name}View`)) name = 'home';
   $$('.view').forEach(view => view.classList.remove('active'));
   $(`#${name}View`).classList.add('active');
-  $$('.nav-item').forEach(button => button.classList.toggle('active', button.dataset.view === name));
+  const navName = PRACTICE_VIEWS.has(name) ? 'practice' : name === 'lesson' ? 'home' : name;
+  $$('.nav-item').forEach(button => button.classList.toggle('active', button.dataset.view === navName));
+  $('#backToPractice').classList.toggle('hidden', !PRACTICE_VIEWS.has(name) || name === 'study');
   const meta = currentViewMeta(name);
   $('#viewEyebrow').textContent = meta[0];
-  $('#viewTitle').textContent = meta[1];
+  $('#viewTitle').textContent = name === 'lesson' && state.lesson ? lessonHeading(state.lesson.unit) : meta[1];
   $('.sidebar').classList.remove('open');
+  window.scrollTo({ top: 0 });
   if (name === 'errors') renderErrors();
   if (name === 'reference') renderReference();
-  if (name === 'morphology' && state.courseId === 'russian') loadMorphology();
-  if (name === 'prefixes' && state.courseId === 'russian') loadPrefixes();
-  if (name === 'vocab' && state.courseId === 'russian') loadVocab();
-  if (name === 'data') loadPendingWriting();
+  if (name === 'morphology') loadMorphology();
+  if (name === 'prefixes') loadPrefixes();
+  if (name === 'vocab') loadVocab();
+  if (name === 'progress') loadPendingWriting();
+  if (name === 'practice') renderPractice();
   if (name === 'home' && state.bootstrap) loadActiveSessions();
-  if (name === 'review') renderReviewIntro();
 }
 
 async function loadMorphology() {
@@ -364,7 +373,7 @@ function renderVocabModule() {
     const active = state.vocabLesson?.id === lesson.id;
     const vocabSaved = (state.activeSessions || []).filter(session => session.key.startsWith(`vocab:${lesson.id}:`));
     return `<button type="button" class="vocab-lesson-card${active ? ' active' : ''}${p.items_firm && p.items_firm >= p.items_total ? ' done' : ''}" data-lesson="${escapeHtml(lesson.id)}">
-      <span class="unit-index">${number ? `UNIDADE ${String(number).padStart(2, '0')}` : 'LIÇÃO'} · ${escapeHtml(lesson.theme)}</span>
+      <span class="unit-index">${number ? `AULA ${String(number).padStart(2, '0')}` : 'LIÇÃO'} · ${escapeHtml(lesson.theme)}</span>
       <b>${escapeHtml(lesson.title)}</b>
       <span class="vocab-heads">${lesson.item_heads.slice(0, 8).map(head => `<i>${escapeHtml(head)}</i>`).join('')}</span>
       <span class="vocab-bar"><i style="width:${percent}%"></i></span>
@@ -414,10 +423,10 @@ async function openVocabLesson(lessonId, scroll = true) {
   host.innerHTML = `<article class="panel vocab-detail" data-lesson="${escapeHtml(lesson.id)}">
     <div class="vocab-detail-head">
       <div>
-        <p class="eyebrow">${number ? `UNIDADE ${number} · ` : ''}${escapeHtml(lesson.theme)}</p>
+        <p class="eyebrow">${number ? `AULA ${number} · ` : ''}${escapeHtml(lesson.theme)}</p>
         <h2>${escapeHtml(lesson.title)}</h2>
         <p class="muted">${escapeHtml(lesson.description)}</p>
-        ${unit ? `<p class="source-note">Gramática correspondente: ${escapeHtml(unit.title)}</p>` : ''}
+        ${unit ? `<p class="source-note">Aula correspondente: ${escapeHtml(unit.title)}</p>` : ''}
       </div>
       <div class="vocab-detail-score"><strong>${p.items_firm || 0}/${p.items_total || lesson.items.length}</strong><span>construções firmes</span><small>${p.cleared || 0}/${p.total || lesson.graded_count} tarefas dominadas</small></div>
     </div>
@@ -850,7 +859,9 @@ function exitSession() {
   if (!key) { finish(); return; }
   if (hadProgress) {
     persistSession().then(() => {
-      showToast('Progresso salvo. Continue depois em Visão geral → Continuar de onde parou.');
+      showToast(state.sessionKind === 'lesson'
+        ? 'Progresso salvo. Ao abrir a aula de novo, ela continua de onde você parou.'
+        : 'Progresso salvo. Continue depois em Praticar → Continuar de onde parou.');
       finish();
     });
   } else {
@@ -872,7 +883,7 @@ async function loadActiveSessions() {
     state.activeSessions = [];
   }
   renderResumePanel();
-  if (state.bootstrap) renderUnits();
+  if (state.bootstrap) renderLessons();
   if (state.vocabData && $('#vocabView')?.classList.contains('active')) renderVocabModule();
   if (state.vocabLesson?.id && $('#vocabView')?.classList.contains('active') && !state.queue.length) markVocabParts();
 }
@@ -880,7 +891,10 @@ async function loadActiveSessions() {
 function renderResumePanel() {
   const panel = $('#resumePanel');
   if (!panel) return;
-  const sessions = state.activeSessions || [];
+  // Aulas em andamento aparecem na lista de Aulas; aqui ficam só os treinos. Sessões do antigo
+  // "Estudar por unidade" (study:<curso>:<unidade>:<modo>) foram substituídas pela aula e ficam de fora.
+  const sessions = (state.activeSessions || []).filter(session =>
+    session.kind !== 'lesson' && !(session.kind === 'study' && !session.key.includes(':all:')));
   panel.classList.toggle('hidden', sessions.length === 0);
   $('#resumeList').innerHTML = sessions.map(session => {
     const percent = session.total ? Math.round(100 * Math.min(session.resume_index, session.total) / session.total) : 0;
@@ -944,16 +958,17 @@ async function resolveResume(key, { jumpId = null } = {}) {
 }
 
 const SESSION_HOSTS = {
-  study: { host: '#sessionArea', view: 'study', content: '#studySetup' },
+  lesson: { host: '#lessonArea', view: 'lesson', content: null },
+  study: { host: '#sessionArea', view: 'study', content: null },
   vocab: { host: '#vocabGameArea', view: 'vocab', content: '#vocabContent' },
   prefix: { host: '#prefixGameArea', view: 'prefixes', content: '#prefixesContent' },
   morph: { host: '#morphologyGameArea', view: 'morphology', content: '#morphologyContent' },
 };
 
 function mountSessionHost(kind) {
-  const config = SESSION_HOSTS[kind];
+  const config = SESSION_HOSTS[kind] || SESSION_HOSTS.study;
   setView(config.view);
-  $(config.content).classList.add('hidden');
+  if (config.content) $(config.content).classList.add('hidden');
   $(config.host).classList.remove('hidden');
   state.sessionHost = config.host;
 }
@@ -982,8 +997,16 @@ async function resumeSession(key, { jumpId = null } = {}) {
   state.sessionKey = key;
   state.sessionKind = session.kind;
   state.sessionTitle = session.title;
-  state.sessionMeta = { lessonId: meta.lessonId || '' };
+  state.sessionMeta = { lessonId: meta.lessonId || '', unitId: meta.unitId || '' };
   state.sessionMode = meta.sessionMode || 'study';
+  if (session.kind === 'lesson') {
+    const unit = courseUnits().find(item => item.id === meta.unitId);
+    if (!unit) {
+      await discardSavedSession(key);
+      return false;
+    }
+    state.lesson = { unit, steps: unit.lesson_flow || [], unlocked: true };
+  }
   state.vocabRetries = meta.retries || {};
   state.vocabPart = meta.vocabPart || '';
   if (meta.lessonId) state.vocabLesson = { id: meta.lessonId };
@@ -1084,11 +1107,16 @@ function markVocabParts() {
 
 function renderDashboard() {
   const s = state.summary;
-  $('#dueBadge').textContent = s.due_count || 0;
+  const due = s.due_count || 0;
+  $('#dueBadge').textContent = due;
+  $('#dueBadge').classList.toggle('hidden', !due);
+  const units = trailUnits();
+  const progress = unitProgressMap();
+  const done = units.filter(unit => progress[unit.id]?.completed).length;
   $('#metrics').innerHTML = [
+    ['Aulas concluídas', `${done}/${units.length}`, done === units.length ? 'programa completo' : `próxima: aula ${done + 1}`],
     ['Precisão geral', s.accuracy == null ? '—' : `${s.accuracy}%`, `${s.correct} exatas · ${s.partial || 0} parciais`],
-    ['Sem consulta', s.sc_accuracy == null ? '—' : `${s.sc_accuracy}%`, `${s.sc_attempts} respostas SC`],
-    ['Revisões de hoje', s.due_count, 'itens vencidos agora'],
+    ['Revisões de hoje', due, 'itens vencidos agora'],
     ['Consolidados', s.mature_count, `de ${s.tracked_cards} itens praticados`],
   ].map(([label, value, note]) => `
     <article class="metric"><span>${label}</span><strong>${value}</strong><em>${note}</em></article>
@@ -1102,19 +1130,10 @@ function renderDashboard() {
       <div class="bar"><i class="${level}" style="width:${item.mastery}%"></i></div>
       <b>${item.mastery}%</b>
     </div>`;
-  }).join('') : '<div class="empty-state">Responda às atividades para formar seu mapa de domínio.</div>';
+  }).join('') : '<div class="empty-state">Faça a primeira aula para formar seu mapa de domínio.</div>';
 
-  const weakest = mastery.length ? mastery[0].tag : currentConfig().emptyFocus;
-  const next = [
-    [s.due_count ? `${s.due_count} revisões vencidas` : currentConfig().startLabel, s.due_count ? 'Recupere antes de reaprender.' : currentConfig().pathCopy],
-    [`Foco: ${weakest}`, 'O domínio ponderado considera SC, C e CC.'],
-    [`${s.pending_writing} produções · ${s.open_reports || 0} alertas`, 'Textos e problemas ficam salvos para revisão.'],
-  ];
-  $('#nextSteps').innerHTML = next.map((item, index) => `<div class="next-step">
-    <span class="step-number">${index + 1}</span><div><b>${escapeHtml(item[0])}</b><span>${escapeHtml(item[1])}</span></div>
-  </div>`).join('');
-
-  if (state.bootstrap) renderUnits();
+  if (state.bootstrap) renderLessons();
+  if ($('#practiceView').classList.contains('active')) renderPractice();
 }
 
 function unitProgressMap() {
@@ -1137,81 +1156,316 @@ function unitDisplayNumbers(units) {
   return map;
 }
 
-function renderUnits() {
-  const units = courseUnits();
-  const progress = unitProgressMap();
-  const numbers = unitDisplayNumbers(units);
-  $('#unitCount').textContent = `${units.length} unidades · ${units.reduce((sum, u) => sum + u.exercise_count, 0)} atividades`;
-  $('#unitsGrid').innerHTML = units.length ? units.map(unit => {
-    const p = progress[unit.id];
-    const locked = p && !p.unlocked;
-    const number = numbers[unit.id];
-    const progressNote = p && p.unlocked && !p.completed && p.total ? `<span class="unit-progress-note">${p.cleared}/${p.total} dominados</span>` : '';
-    const hasLesson = Array.isArray(unit.grammar) && unit.grammar.length;
-    const savedStudy = locked ? null : activeSession(sessionKeyForStudy('study', unit.id));
-    const action = locked
-      ? `<span class="lock-badge">🔒 bloqueada</span>${hasLesson ? `<button class="ghost" data-lesson="${escapeHtml(unit.id)}">Ver aula</button>` : ''}`
-      : `<span class="unit-actions">${savedStudy ? `<button type="button" class="resume-btn" data-resume="${escapeHtml(savedStudy.key)}" title="${escapeHtml(sessionLabel(savedStudy))}">▶ Continuar ${Math.min(savedStudy.resume_index + 1, savedStudy.total)}/${savedStudy.total}</button>` : ''}<button data-unit="${escapeHtml(unit.id)}">${p && p.completed ? 'Revisar' : 'Estudar'}</button></span>`;
-    return `<article class="unit-card${locked ? ' locked' : ''}">
-    <span class="unit-index">${number ? `UNIDADE ${String(number).padStart(2, '0')}` : 'DIAGNÓSTICO'}</span>
-    <h4>${number ? `${number}. ` : ''}${escapeHtml(unit.title)}</h4>
-    <p>${escapeHtml(unit.description || '')}</p>
-    ${progressNote}
-    <footer><span>${unit.exercise_count} itens · ${unit.estimated_minutes || 20} min</span>${action}</footer>
-  </article>`;
-  }).join('') : `<div class="empty-course"><b>${escapeHtml(currentConfig().startLabel)}</b><p>${escapeHtml(currentConfig().pathCopy)}</p></div>`;
-  $$('#unitsGrid button[data-unit]').forEach(button => button.addEventListener('click', () => {
-    setView('study');
-    $('#unitSelect').value = button.dataset.unit;
-    renderUnitIntro(button.dataset.unit);
-  }));
-  $$('#unitsGrid button[data-resume]').forEach(button => button.addEventListener('click', () => resumeSession(button.dataset.resume)));
-  $$('#unitsGrid button[data-lesson]').forEach(button => button.addEventListener('click', () => {
-    setView('study');
-    renderUnitIntro(button.dataset.lesson);
-    $('#unitIntro').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }));
+// ------------------------------- Aulas ---------------------------------
+// Cada unidade da trilha é uma aula de modelo único: abertura → explicação →
+// tabela → exercícios na ordem do roteiro (lesson_flow) → conclusão.
 
-  const previousSelection = $('#unitSelect').value;
-  $('#unitSelect').innerHTML = '<option value="">Todas as unidades</option>' + units.map(unit => {
-    const p = progress[unit.id];
-    const locked = p && !p.unlocked;
-    const number = numbers[unit.id];
-    return `<option value="${escapeHtml(unit.id)}"${locked ? ' disabled' : ''}>${locked ? '🔒 ' : ''}${number ? `${number}. ` : ''}${escapeHtml(unit.title)}</option>`;
-  }).join('');
-  if (previousSelection) $('#unitSelect').value = previousSelection;
-  $('#beginSession').disabled = units.length === 0;
+const LESSON_SCREENS = new Set(['lesson_intro', 'lesson_explain', 'lesson_table']);
 
-  renderStudyPath();
+function trailUnits() {
+  return courseUnits().filter(unit => unit.order > 0);
 }
 
-function renderStudyPath() {
-  const host = $('#studyPath');
-  if (!host) return;
-  const units = courseUnits();
-  const progress = unitProgressMap();
-  const numbers = unitDisplayNumbers(units);
-  host.innerHTML = units.length ? units.map((unit, index) => {
-    const p = progress[unit.id] || { unlocked: index === 0, completed: false, percent: 0 };
-    const state_ = p.completed ? 'completed' : p.unlocked ? 'current' : 'locked';
-    const number = numbers[unit.id];
-    const circleInner = p.completed ? '✓' : (number ? String(number) : '◆');
-    const ring = !p.completed && p.unlocked && p.percent
-      ? `<span class="path-percent" style="--pct:${p.percent}"></span>`
-      : '';
-    const progressHint = p.unlocked && !p.completed && p.total ? ` (${p.cleared}/${p.total} dominados)` : '';
-    const savedPath = p.unlocked ? activeSession(sessionKeyForStudy('study', unit.id)) : null;
-    return `<button type="button" class="path-node ${state_}${savedPath ? ' has-session' : ''}" data-unit="${escapeHtml(unit.id)}" data-locked="${p.unlocked ? '0' : '1'}"
-      title="${p.unlocked ? escapeHtml(unit.title) + progressHint + (savedPath ? ` — sessão em andamento (${Math.min(savedPath.resume_index + 1, savedPath.total)}/${savedPath.total})` : '') : escapeHtml(unit.title) + ' — bloqueada para exercícios; clique para ler e ouvir a aula'}">
-      <span class="path-circle">${ring}${circleInner}${savedPath ? '<span class="path-session" aria-hidden="true">▶</span>' : ''}</span>
-      <span class="path-label">${escapeHtml(unit.title)}</span>
-    </button>`;
-  }).join('') : `<div class="empty-state">${escapeHtml(currentConfig().pathCopy)}</div>`;
-  $$('.path-node[data-unit]').forEach(button => button.addEventListener('click', () => {
-    if (button.dataset.locked !== '1') $('#unitSelect').value = button.dataset.unit;
-    renderUnitIntro(button.dataset.unit);
-    $('#studySetup').scrollIntoView({ behavior: 'smooth', block: 'start' });
+function lessonNumber(unit) {
+  return unitDisplayNumbers(courseUnits())[unit.id];
+}
+
+function lessonHeading(unit) {
+  const number = lessonNumber(unit);
+  return number ? `Aula ${number} · ${unit.title}` : unit.title;
+}
+
+function lessonSessionKey(unitId, suffix = '') {
+  return `lesson:russian:${unitId}${suffix}`;
+}
+
+function lessonStatus(unit) {
+  const p = unitProgressMap()[unit.id] || { unlocked: true, completed: false, cleared: 0, total: 0, percent: 0 };
+  const saved = activeSession(lessonSessionKey(unit.id)) || activeSession(lessonSessionKey(unit.id, ':reforco'));
+  if (p.completed) return { ...p, saved, kind: 'done', label: 'Concluída' };
+  if (!p.unlocked) return { ...p, saved, kind: 'locked', label: 'Bloqueada' };
+  if (saved) return { ...p, saved, kind: 'progress', label: `Em andamento · ${Math.min(saved.resume_index + 1, saved.total)}/${saved.total}` };
+  if (p.cleared) return { ...p, saved, kind: 'progress', label: `${p.cleared}/${p.total} dominados` };
+  return { ...p, saved, kind: 'open', label: 'Disponível' };
+}
+
+function renderLessons() {
+  const units = trailUnits();
+  if (!units.length) return;
+  const statuses = Object.fromEntries(units.map(unit => [unit.id, lessonStatus(unit)]));
+  const done = units.filter(unit => statuses[unit.id].kind === 'done').length;
+  const current = units.find(unit => statuses[unit.id].kind !== 'done');
+  $('#lessonCount').textContent = `${done} de ${units.length} concluídas`;
+
+  if (current) {
+    const status = statuses[current.id];
+    const action = status.saved ? 'Continuar a aula' : 'Começar a aula';
+    $('#currentLesson').innerHTML = `<div>
+        <span class="hero-kicker">AULA ${lessonNumber(current)} DE ${units.length} · ${status.saved ? 'EM ANDAMENTO' : 'PRÓXIMA AULA'}</span>
+        <h2>${escapeHtml(current.title)}</h2>
+        <p>${escapeHtml(current.description || '')}</p>
+        ${(current.objectives || []).length ? `<ul class="hero-objectives">${current.objectives.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>` : ''}
+        <div class="hero-actions">
+          <button class="primary" data-open-lesson="${escapeHtml(current.id)}">${action}</button>
+          ${status.total ? `<span class="hero-progress">${status.cleared}/${status.total} exercícios dominados · ${current.estimated_minutes || 25} min</span>` : ''}
+        </div>
+      </div>
+      <div class="hero-number" aria-hidden="true">${lessonNumber(current)}</div>`;
+  } else {
+    $('#currentLesson').innerHTML = `<div>
+        <span class="hero-kicker">ПРОГРАММА ЗАВЕРШЕНА</span>
+        <h2>Você concluiu as ${units.length} aulas.</h2>
+        <p>Continue firme com a revisão espaçada e os treinos de Praticar. Qualquer aula pode ser refeita pela lista abaixo.</p>
+        <div class="hero-actions"><button class="primary" data-go-practice>Ir para Praticar</button></div>
+      </div><div class="hero-number" aria-hidden="true">✓</div>`;
+  }
+
+  $('#lessonList').innerHTML = units.map(unit => {
+    const status = statuses[unit.id];
+    return `<li><button type="button" class="lesson-row ${status.kind}${current && unit.id === current.id ? ' current' : ''}" data-open-lesson="${escapeHtml(unit.id)}">
+      <span class="lesson-num">${status.kind === 'done' ? '✓' : lessonNumber(unit)}</span>
+      <span class="lesson-text"><b>${escapeHtml(unit.title)}</b><small>${escapeHtml(unit.description || '')}</small></span>
+      <span class="lesson-state">${status.kind === 'locked' ? '🔒 ' : ''}${escapeHtml(status.label)}
+        ${status.total && status.kind !== 'locked' ? `<span class="vocab-bar"><i style="width:${status.percent}%"></i></span>` : ''}</span>
+    </button></li>`;
+  }).join('');
+  $$('[data-open-lesson]').forEach(button => button.addEventListener('click', () => openLesson(button.dataset.openLesson)));
+  $('[data-go-practice]')?.addEventListener('click', () => setView('practice'));
+}
+
+async function openLesson(unitId, { restart = false } = {}) {
+  const unit = courseUnits().find(item => item.id === unitId);
+  if (!unit) return;
+  stopAllAudio();
+  const key = lessonSessionKey(unitId);
+  state.lesson = { unit, steps: unit.lesson_flow || [], unlocked: true };
+  if (!restart) {
+    try {
+      state.activeSessions = (await api(`/api/session/active?course_id=russian`)).sessions || [];
+    } catch (_) { /* sem sessões salvas: começa do zero */ }
+    const reinforcement = lessonSessionKey(unitId, ':reforco');
+    if (activeSession(key) && await resumeSession(key)) return;
+    if (activeSession(reinforcement) && await resumeSession(reinforcement)) return;
+  } else {
+    await discardSavedSession(key);
+  }
+  let data;
+  try {
+    data = await api(`/api/lesson?unit_id=${encodeURIComponent(unitId)}`);
+  } catch (error) {
+    showToast(error.message);
+    return;
+  }
+  state.lesson = { unit: data.unit, steps: data.steps || [], unlocked: data.unlocked };
+  startLessonQueue(data.items, data.unlocked ? key : null, lessonHeading(unit));
+}
+
+function startLessonQueue(items, key, title) {
+  state.queue = items;
+  state.current = 0;
+  state.results = [];
+  state.sessionMode = 'lesson';
+  state.sessionHost = '#lessonArea';
+  // Aula bloqueada (só leitura) não gera sessão salva.
+  beginTracking({ key, kind: 'lesson', title, meta: { unitId: state.lesson.unit.id } });
+  setView('lesson');
+  renderExercise();
+}
+
+async function startLessonReinforcement(unitId) {
+  const unit = courseUnits().find(item => item.id === unitId);
+  let data;
+  let map;
+  try {
+    [data, map] = await Promise.all([
+      api(`/api/lesson?unit_id=${encodeURIComponent(unitId)}`),
+      api(`/api/progress/map?scope=${encodeURIComponent(`unit:${unitId}`)}`),
+    ]);
+  } catch (error) {
+    showToast(error.message);
+    return;
+  }
+  const missing = new Set(map.cells.filter(cell => !cell.mastered).map(cell => cell.id));
+  const items = data.items.filter(item => missing.has(item.id));
+  if (!items.length) { showToast('Nada a reforçar: todos os exercícios estão dominados.'); return; }
+  state.lesson = { unit: data.unit, steps: data.steps || [], unlocked: true };
+  startLessonQueue(items, lessonSessionKey(unitId, ':reforco'), `${lessonHeading(unit)} · reforço`);
+}
+
+function lessonStepInfo(ex) {
+  const steps = state.lesson?.steps || [];
+  if (state.sessionMode !== 'lesson' || ex.step == null || !steps.length) return null;
+  const index = Math.min(ex.step, steps.length - 1);
+  const previous = state.queue[state.current - 1];
+  return {
+    label: `PARTE ${index + 1} DE ${steps.length} · ${String(steps[index].title || '').toUpperCase()}`,
+    title: `Parte ${index + 1} · ${steps[index].title || ''}`,
+    description: steps[index].description || '',
+    starts: !previous || previous.step !== ex.step,
+  };
+}
+
+function sessionTopMarkup() {
+  const percentage = Math.round(100 * state.current / state.queue.length);
+  const lessonMode = state.sessionMode === 'lesson';
+  return `<div class="session-top">
+      <button class="quit-session" title="Sair e guardar onde você parou">← Sair</button>
+      <div class="session-progress"><i style="width:${percentage}%"></i></div>
+      <span class="session-counter">${state.current + 1} / ${state.queue.length}</span>
+      ${state.sessionKey && !lessonMode ? '<button type="button" class="map-session" title="Mapa das perguntas: ver o que já respondeu e pular para qualquer uma">▦ Mapa</button>' : ''}
+      ${state.sessionKey ? '<span id="saveState" class="save-state" role="status"></span>' : ''}
+    </div>`;
+}
+
+function lessonTablesMarkup(tables) {
+  return tables.map(table => `<div class="memory-table-block">
+      <h4>${escapeHtml(table.title || 'Tabela de memorização')}</h4>
+      <div class="table-scroll"><table class="ending-table memory-table">
+        <thead><tr>${(table.columns || []).map(col => `<th>${escapeHtml(col)}</th>`).join('')}</tr></thead>
+        <tbody>${(table.rows || []).map(row => `<tr>${row.map(cell => `<td>${interactiveRussianText(cell)}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table></div>
+      ${table.note ? `<p class="memory-note">${escapeHtml(table.note)}</p>` : ''}
+    </div>`).join('');
+}
+
+function renderLessonScreen(ex) {
+  const { unit, steps, unlocked } = state.lesson;
+  const next = state.queue[state.current + 1];
+  const previous = state.queue[state.current - 1];
+  let body = '';
+  let action = 'Continuar';
+  if (ex.type === 'lesson_intro') {
+    const objectives = unit.objectives || [];
+    body = `<p class="eyebrow">AULA ${lessonNumber(unit) || ''} · ABERTURA</p>
+      <h2 class="lesson-title">${escapeHtml(unit.title)}</h2>
+      <p class="lesson-lead">${escapeHtml(unit.description || '')}</p>
+      ${objectives.length ? `<h3 class="lesson-subtitle">Ao final desta aula você vai</h3><ul class="lesson-objectives">${objectives.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>` : ''}
+      <h3 class="lesson-subtitle">O caminho da aula</h3>
+      <ol class="lesson-path">
+        <li><b>Explicação</b><span>A gramática da aula, com exemplos para ouvir.</span></li>
+        ${steps.map(step => `<li><b>${escapeHtml(step.title || '')}</b><span>${escapeHtml(step.description || '')}</span></li>`).join('')}
+      </ol>
+      ${unlocked ? '' : '<p class="lesson-locked-note">🔒 Os exercícios desta aula abrem quando você concluir a aula anterior. A explicação você já pode ler e ouvir.</p>'}`;
+    action = 'Começar a aula';
+  } else if (ex.type === 'lesson_explain') {
+    body = `<p class="eyebrow">EXPLICAÇÃO · ${ex.block_index + 1} DE ${ex.block_total}</p>
+      ${renderGrammarBlock(unit.id, ex.block, ex.block_index)}`;
+  } else if (ex.type === 'lesson_table') {
+    body = `<p class="eyebrow">PARA GUARDAR</p>
+      <p class="lesson-lead">Antes dos exercícios, releia a tabela. Ela resume o que você vai usar a seguir.</p>
+      ${lessonTablesMarkup(ex.tables || [])}`;
+  }
+  if (!next) action = unlocked ? 'Concluir' : 'Terminar a leitura';
+  else if (!LESSON_SCREENS.has(next.type)) action = 'Começar os exercícios';
+  $(state.sessionHost).innerHTML = `${sessionTopMarkup()}
+    <article class="exercise-card lesson-screen">
+      ${body}
+      <div class="continue-row lesson-nav">
+        ${previous && LESSON_SCREENS.has(previous.type) ? '<button type="button" class="secondary lesson-back">← Voltar</button>' : ''}
+        <button type="button" class="primary continue-ungraded">${escapeHtml(action)}</button>
+      </div>
+    </article>`;
+  const host = $(state.sessionHost);
+  $('.quit-session', host).addEventListener('click', exitSession);
+  $('.lesson-back', host)?.addEventListener('click', () => { stopAllAudio(); state.current -= 1; renderExercise(); });
+  $('.continue-ungraded', host).addEventListener('click', () => { stopAllAudio(); nextExercise(); });
+  $$('.example-speak', host).forEach(button => button.addEventListener('click', () => speakText(button.dataset.text, button)));
+  bindInteractiveWords();
+  bindLessonAudio(host);
+  bindResponseEvents(ex);
+  persistSession();
+}
+
+async function renderLessonComplete() {
+  completeTracking();
+  const { unit, unlocked } = state.lesson;
+  const host = $(state.sessionHost);
+  const backButton = '<button class="secondary lesson-home">Voltar às aulas</button>';
+  if (!unlocked) {
+    host.innerHTML = `<article class="panel session-complete">
+      <p class="eyebrow">LEITURA CONCLUÍDA</p>
+      <h2>${escapeHtml(lessonHeading(unit))}</h2>
+      <p>Os exercícios desta aula abrem quando você concluir a aula anterior.</p>
+      <div class="hero-actions" style="justify-content:center">${backButton}</div>
+    </article>`;
+    $('.lesson-home', host).addEventListener('click', () => { quitSession(); });
+    return;
+  }
+  try {
+    state.summary = await api('/api/summary?course_id=russian');
+    renderDashboard();
+  } catch (_) { /* mostra com o resumo que já tinha */ }
+  const p = unitProgressMap()[unit.id] || { cleared: 0, total: 0, completed: false };
+  const graded = state.results.filter(item => item.is_correct != null);
+  const points = graded.reduce((sum, item) => sum + Number(item.score || 0), 0);
+  const score = graded.length ? Math.round(100 * points / graded.length) : 0;
+  const units = trailUnits();
+  const nextUnit = units[units.findIndex(item => item.id === unit.id) + 1];
+  const vocabLesson = (state.vocabData?.lessons || []).find(lesson => lesson.unit_id === unit.id);
+  const missed = [...new Map(state.results.filter(item => item.is_correct === false).map(item => [item.exercise_id, item])).values()];
+  const missedHtml = missed.length ? `<div class="vocab-missed"><p class="eyebrow">PARA REVER</p><ul>${missed.map(item => `<li><span>${interactiveRussianText(item.prompt)}</span><b>${escapeHtml(item.correct_answer || '')}</b></li>`).join('')}</ul></div>` : '';
+  if (p.completed) {
+    host.innerHTML = `<article class="panel session-complete">
+      <p class="eyebrow">AULA CONCLUÍDA</p>
+      <div class="result-ring" style="--score:${score}%"><b>${graded.length ? `${score}%` : '✓'}</b></div>
+      <h2>${escapeHtml(lessonHeading(unit))}</h2>
+      <p>Você domina ${p.cleared} de ${p.total} exercícios. ${nextUnit ? `A aula ${lessonNumber(nextUnit)} está liberada.` : 'Essa era a última aula do programa.'}</p>
+      ${missedHtml}
+      <div class="hero-actions" style="justify-content:center">
+        ${nextUnit ? `<button class="primary lesson-next">Próxima aula: ${escapeHtml(nextUnit.title)}</button>` : ''}
+        ${vocabLesson ? '<button class="secondary lesson-vocab">Praticar o vocabulário desta aula</button>' : ''}
+        ${backButton}
+      </div>
+    </article>`;
+  } else {
+    const needed = Math.max(1, Math.ceil(0.75 * p.total) - p.cleared);
+    host.innerHTML = `<article class="panel session-complete">
+      <p class="eyebrow">QUASE LÁ</p>
+      <div class="result-ring" style="--score:${p.percent || 0}%"><b>${p.cleared}/${p.total}</b></div>
+      <h2>Falta pouco para concluir a aula</h2>
+      <p>Para liberar a próxima aula, domine pelo menos 75% dos exercícios. Você domina ${p.cleared} de ${p.total}; faltam ${needed}.</p>
+      ${missedHtml}
+      <div class="hero-actions" style="justify-content:center">
+        <button class="primary lesson-reinforce">Refazer os exercícios que faltam</button>
+        ${backButton}
+      </div>
+    </article>`;
+  }
+  bindInteractiveWords();
+  $('.lesson-home', host).addEventListener('click', () => quitSession());
+  $('.lesson-next', host)?.addEventListener('click', () => openLesson(nextUnit.id));
+  $('.lesson-vocab', host)?.addEventListener('click', () => { quitSession({ silent: true }); goToVocabLesson(vocabLesson.id); });
+  $('.lesson-reinforce', host)?.addEventListener('click', () => startLessonReinforcement(unit.id));
+}
+
+// ------------------------------ Praticar --------------------------------
+
+function renderPractice() {
+  if (!state.summary) return;
+  const due = state.summary.due_count || 0;
+  const cards = [
+    { id: 'review', mark: '↻', title: 'Revisão espaçada', text: due ? `${due} ${due === 1 ? 'item vencido' : 'itens vencidos'} das aulas que você já fez. Um erro volta logo; um acerto volta cada vez mais tarde.` : 'Nada vencido agora. As respostas das aulas alimentam esta fila sozinhas.', action: due ? 'Revisar agora' : 'Sem revisões hoje', disabled: !due },
+    { id: 'difficult', mark: '△', title: 'Itens difíceis', text: 'Os exercícios em que você mais errou, todos juntos.', action: 'Treinar' },
+    { id: 'vocab', mark: 'Л', title: 'Vocabulário em diálogo', text: 'Uma cena com vozes por aula: ouvir, recuperar e usar as construções da aula.', action: 'Abrir' },
+    { id: 'morphology', mark: 'Ы', title: 'Terminações e léxico', text: 'Tabelas de casos e um jogo com palavras reais do léxico mínimo TRKI-II.', action: 'Abrir' },
+    { id: 'prefixes', mark: 'П', title: 'Verbos com prefixo', text: 'Prefixo por prefixo, e contrastes entre eles.', action: 'Abrir' },
+    { id: 'errors', mark: '✕', title: 'Caderno de erros', text: 'Seus erros mais recentes com a forma esperada ao lado.', action: 'Ver' },
+    { id: 'diagnostic', mark: '◆', title: 'Diagnóstico geral', text: 'Um teste sem pistas que mistura o conteúdo de todo o programa.', action: 'Fazer o teste' },
+  ];
+  $('#practiceGrid').innerHTML = cards.map(card => `<button type="button" class="practice-card" data-practice="${card.id}"${card.disabled ? ' disabled' : ''}>
+      <span class="practice-mark">${card.mark}</span>
+      <b>${escapeHtml(card.title)}</b>
+      <span>${escapeHtml(card.text)}</span>
+      <em>${escapeHtml(card.action)} →</em>
+    </button>`).join('');
+  $$('#practiceGrid [data-practice]').forEach(button => button.addEventListener('click', () => {
+    const target = button.dataset.practice;
+    if (target === 'review') startSession('review', '');
+    else if (target === 'difficult') startSession('difficult', '');
+    else if (target === 'diagnostic') startSession('diagnostic', '');
+    else setView(target);
   }));
+  renderResumePanel();
 }
 
 function lessonAudioPlayer(unitId, block, label) {
@@ -1297,75 +1551,6 @@ function renderGrammarBlock(unitId, block, index) {
     </div>`;
 }
 
-function renderUnitIntro(unitId) {
-  const container = $('#unitIntro');
-  const unit = courseUnits().find(item => item.id === unitId);
-  const hasGrammar = unit && Array.isArray(unit.grammar) && unit.grammar.length;
-  const hasTable = unit && unit.memory_table;
-  const hasTables = unit && Array.isArray(unit.memory_tables) && unit.memory_tables.length;
-  const hasFlow = unit && Array.isArray(unit.lesson_flow) && unit.lesson_flow.length;
-  if (!unit) {
-    container.classList.remove('hidden');
-    container.innerHTML = '<p class="muted">Selecione uma unidade específica acima para ver a aula de gramática, ouvir a explicação narrada e consultar a tabela de memorização.</p>';
-    return;
-  }
-  if (!hasGrammar && !hasTable && !hasTables && !hasFlow) {
-    container.classList.add('hidden');
-    container.innerHTML = '';
-    return;
-  }
-  const grammarHtml = hasGrammar
-    ? unit.grammar.map((block, index) => renderGrammarBlock(unit.id, block, index)).join('')
-    : '';
-  const tables = hasTables ? unit.memory_tables : (hasTable ? [unit.memory_table] : []);
-  const tableHtml = tables.map(table => `<div class="memory-table-block">
-      <h4>${escapeHtml(table.title || 'Tabela de memorização')}</h4>
-      <div class="table-scroll"><table class="ending-table memory-table">
-        <thead><tr>${(table.columns || []).map(col => `<th>${escapeHtml(col)}</th>`).join('')}</tr></thead>
-        <tbody>${(table.rows || []).map(row => `<tr>${row.map(cell => `<td>${interactiveRussianText(cell)}</td>`).join('')}</tr>`).join('')}</tbody>
-      </table></div>
-      ${table.note ? `<p class="memory-note">${escapeHtml(table.note)}</p>` : ''}
-    </div>`).join('');
-  const flowHtml = hasFlow ? `<div class="lesson-flow">
-      ${unit.lesson_flow.map((step, index) => `<div class="lesson-flow-step"><b>${index + 1}</b><span><strong>${escapeHtml(step.title || '')}</strong><small>${escapeHtml(step.description || '')}</small></span></div>`).join('')}
-    </div>` : '';
-  const locked = (unitProgressMap()[unit.id] || {}).unlocked === false;
-  const lockedNotice = locked
-    ? `<p class="lesson-locked-note">🔒 Os exercícios desta unidade ainda estão bloqueados na trilha, mas a aula você pode ler e ouvir desde já. Conclua as unidades anteriores para praticar aqui.</p>`
-    : '';
-  const headerHtml = hasGrammar ? `<div class="lesson-header">
-      <div>
-        <p class="eyebrow">AULA NARRADA</p>
-        <h3>${escapeHtml(unit.title || '')}</h3>
-        <p class="muted">${escapeHtml(unit.description || '')}</p>
-      </div>
-      ${lessonAudioPlayer(unit.id, 'all', 'Ouvir a aula inteira')}
-      <p class="lesson-hint">A narração é gerada pelo edge-tts em português, lendo os exemplos russos com pronúncia nativa. O primeiro clique gera o arquivo; depois ele fica em cache e toca offline.</p>
-    </div>` : '';
-  const sourceHtml = unit.source_note ? `<p class="source-note">Base pedagógica: ${escapeHtml(unit.source_note)}</p>` : '';
-  const vocabLesson = (state.vocabData?.lessons || []).find(lesson => lesson.unit_id === unit.id);
-  const vocabHtml = vocabLesson ? `<div class="vocab-link"><div><p class="eyebrow">VOCABULÁRIO DESTA UNIDADE</p><b>${escapeHtml(vocabLesson.title)}</b><span>Diálogo com vozes + ${vocabLesson.item_heads.length} construções: ${escapeHtml(vocabLesson.item_heads.join(' · '))}</span></div><button type="button" class="secondary open-vocab-lesson" data-lesson="${escapeHtml(vocabLesson.id)}">Abrir lição</button></div>` : '';
-  const registryHtml = !locked && unit.exercise_count
-    ? `<details class="unit-registry"><summary>Registro pergunta por pergunta desta unidade</summary><div class="unit-map-host"></div></details>`
-    : '';
-  container.innerHTML = `${lockedNotice}${vocabHtml}${registryHtml}${headerHtml}${hasFlow ? '<p class="eyebrow">ROTEIRO DE APRENDIZAGEM</p>' : ''}${flowHtml}${hasGrammar ? '<p class="eyebrow">GRAMÁTICA DA UNIDADE</p>' : ''}${grammarHtml}${tableHtml}${sourceHtml}`;
-  container.classList.remove('hidden');
-  bindInteractiveWords();
-  bindLessonAudio(container);
-  $$('.open-vocab-lesson', container).forEach(button => button.addEventListener('click', () => goToVocabLesson(button.dataset.lesson)));
-  const unitRegistry = $('.unit-registry', container);
-  if (unitRegistry) unitRegistry.addEventListener('toggle', () => {
-    if (!unitRegistry.open) return;
-    loadQuestionMap($('.unit-map-host', unitRegistry), `unit:${unit.id}`, {}, ({ id }) => {
-      $('#unitSelect').value = unit.id;
-      startSession('study', unit.id, { jumpId: id });
-    });
-  });
-  $$('.example-speak', container).forEach(button => button.addEventListener('click', () => {
-    speakText(button.dataset.text, button);
-  }));
-}
-
 function renderReference() {
   const references = [];
   const seen = new Set();
@@ -1398,15 +1583,6 @@ function renderErrors() {
     </div>
     <p class="muted">Crédito ${Math.round(Number(item.score || 0) * 100)}% · ${escapeHtml(errorLabels[item.category] || 'Erro ainda não classificado')}</p>
   </article>`).join('') : '<div class="empty-state">Ainda não há erros registrados.</div>';
-}
-
-function renderReviewIntro() {
-  const due = state.summary.due_count;
-  $('#reviewHeadline').textContent = due ? `${due} ${due === 1 ? 'item espera' : 'itens esperam'} por você.` : 'Nenhum item vencido agora.';
-  $('#reviewCopy').textContent = due
-    ? 'Faça esta sessão sem consulta. Um erro volta em dez minutos; um acerto reaparece em intervalos progressivamente maiores.'
-    : 'Você pode treinar os itens mais difíceis ou voltar mais tarde. Novas respostas alimentam a fila automaticamente.';
-  $('#launchReview').textContent = due ? 'Começar revisão' : 'Treinar itens difíceis';
 }
 
 async function loadPendingWriting() {
@@ -1477,7 +1653,7 @@ async function startSession(mode, unitId = '', opts = {}) {
   const studyJump = opts.jumpId ? items.findIndex(item => item.id === opts.jumpId) : -1;
   if (studyJump >= 0) state.current = studyJump;
   setView('study');
-  $('#studySetup').classList.add('hidden');
+  $('#viewTitle').textContent = MODE_TITLES[mode] || 'Praticar';
   $('#sessionArea').classList.remove('hidden');
   renderExercise();
 }
@@ -1581,19 +1757,16 @@ function openReportDialog(ex) {
 function renderExercise() {
   resetExerciseState();
   const ex = state.queue[state.current];
-  if (state.sessionMode === 'vocab_lesson') window.scrollTo({ top: 0 });
-  const percentage = Math.round(100 * state.current / state.queue.length);
+  if (['vocab_lesson', 'lesson'].includes(state.sessionMode)) window.scrollTo({ top: 0 });
+  if (LESSON_SCREENS.has(ex.type)) { renderLessonScreen(ex); return; }
+  const step = lessonStepInfo(ex);
   $(state.sessionHost).innerHTML = `
-    <div class="session-top">
-      <button class="quit-session" title="Sair e guardar onde você parou">← Sair</button>
-      <div class="session-progress"><i style="width:${percentage}%"></i></div>
-      <span class="session-counter">${state.current + 1} / ${state.queue.length}</span>
-      ${state.sessionKey ? `<button type="button" class="map-session" title="Mapa das perguntas: ver o que já respondeu e pular para qualquer uma">▦ Mapa</button><span id="saveState" class="save-state" role="status"></span>` : ''}
-    </div>
+    ${sessionTopMarkup()}
+    ${step && step.starts ? `<div class="step-banner"><b>${escapeHtml(step.title)}</b><span>${escapeHtml(step.description)}</span></div>` : ''}
     <article class="exercise-card">
       <div class="exercise-meta">
-        <div class="exercise-labels"><span class="exercise-phase">${escapeHtml(ex.phase || phaseLabel(ex, state.current))}</span><span class="exercise-type">${typeLabels[ex.type] || 'EXERCÍCIO'}</span></div>
-        <div class="exercise-tools"><button class="report-exercise">⚑ Notificar erro</button><span class="difficulty" aria-label="Dificuldade">${'●'.repeat(ex.difficulty || 1)}${'○'.repeat(Math.max(0, 3 - (ex.difficulty || 1)))}</span></div>
+        <div class="exercise-labels"><span class="exercise-phase">${escapeHtml(step ? step.label : (ex.phase || phaseLabel(ex, state.current)))}</span><span class="exercise-type">${typeLabels[ex.type] || 'EXERCÍCIO'}</span></div>
+        <div class="exercise-tools"><button class="report-exercise">⚑ Notificar erro</button>${step ? '' : `<span class="difficulty" aria-label="Dificuldade">${'●'.repeat(ex.difficulty || 1)}${'○'.repeat(Math.max(0, 3 - (ex.difficulty || 1)))}</span>`}</div>
       </div>
       <p class="instruction">${escapeHtml(ex.instruction || defaultInstruction(ex))}</p>
       ${ex.unit_id === 'lexical_minimum_morphology' ? `<div class="solve-steps"><b>Antes de responder:</b><span>1 · confirme caso e número</span><span>2 · reconheça a família da palavra</span><span>3 · aplique a terminação</span></div>` : ''}
@@ -1922,7 +2095,8 @@ function renderFeedback(result, ex, requeued = false) {
   if (result.after_audio?.text) details += `<p class="after-audio"><button type="button" class="secondary replay-correct" data-text="${escapeHtml(result.after_audio.text)}" data-voice="${escapeHtml(result.after_audio.voice || '')}">🔊 Ouvir a forma correta</button> <span>${interactiveRussianText(result.after_audio.text)}</span></p>`;
   if (requeued) details += '<p class="retry-note">↻ Este item volta daqui a algumas telas. A lição permite até duas novas tentativas por construção e uma por pergunta de diálogo.</p>';
   if (pending) details += `<p>${result.word_count} palavras registradas.</p>`;
-  if (!pending && !result.is_correct) details += classificationMarkup(result.attempt_id, ex);
+  // Na aula não há pergunta extra depois do erro: a explicação já vem acima e a aula segue.
+  if (!pending && !result.is_correct && state.sessionMode !== 'lesson') details += classificationMarkup(result.attempt_id, ex);
   $('#feedbackArea').innerHTML = `<div class="feedback-box ${css}" role="status" aria-live="polite" tabindex="-1">
     <h4><span class="feedback-icon" aria-hidden="true">${pending ? '◷' : result.is_correct ? '✓' : result.is_partial ? '≈' : '×'}</span>${pending ? 'Salvo' : result.is_correct ? 'Correto' : result.is_partial ? 'Quase' : 'Ainda não'}</h4>${details}
   </div><div class="continue-row"><button class="primary next-exercise">${state.current + 1 === state.queue.length ? 'Ver resultado' : 'Próximo item'}</button></div>`;
@@ -1961,7 +2135,7 @@ function bindClassification(attemptId) {
 
 function nextExercise() {
   const finished = state.queue[state.current];
-  if (finished && UNGRADED.has(finished.type) && state.itemStatus[state.current] === 'new') state.itemStatus[state.current] = 'seen';
+  if (finished && (UNGRADED.has(finished.type) || LESSON_SCREENS.has(finished.type)) && state.itemStatus[state.current] === 'new') state.itemStatus[state.current] = 'seen';
   state.current += 1;
   if (state.current >= state.queue.length) renderSessionComplete();
   else renderExercise();
@@ -2000,6 +2174,7 @@ function renderVocabComplete() {
 }
 
 function renderSessionComplete() {
+  if (state.sessionMode === 'lesson') { renderLessonComplete(); return; }
   completeTracking();
   if (state.sessionMode === 'vocab_lesson') { renderVocabComplete(); return; }
   const graded = state.results.filter(item => item.is_correct != null);
@@ -2017,17 +2192,22 @@ function renderSessionComplete() {
       <button class="secondary session-again">Nova sessão</button>
     </div>
   </article>`;
-  $('.session-home').addEventListener('click', () => { quitSession(); setView('home'); });
-  $('.session-again').addEventListener('click', quitSession);
+  $('.session-home').addEventListener('click', () => { quitSession({ silent: true }); setView('home'); });
+  $('.session-again').addEventListener('click', () => quitSession());
 }
 
-function quitSession() {
+function quitSession({ silent = false } = {}) {
   state.warmAudioController?.abort();
   state.responseKeys?.abort();
   state.queue = [];
   const host = $(state.sessionHost);
-  host.classList.add('hidden');
   host.innerHTML = '';
+  if (state.sessionHost === '#lessonArea') {
+    state.sessionHost = '#sessionArea';
+    if (!silent) setView('home');
+    return;
+  }
+  host.classList.add('hidden');
   if (state.sessionHost === '#morphologyGameArea') {
     $('#morphologyContent').classList.remove('hidden');
     state.sessionHost = '#sessionArea';
@@ -2041,81 +2221,20 @@ function quitSession() {
     $('#vocabContent').classList.remove('hidden');
     state.sessionHost = '#sessionArea';
     loadVocab();
-  } else {
-    $('#studySetup').classList.remove('hidden');
+  } else if (!silent) {
+    setView('practice');
   }
-}
-
-function renderCourseSwitcher() {
-  const courses = state.bootstrap?.courses || [];
-  $('#courseSwitcher').innerHTML = courses.map(course => `<button type="button" data-course="${escapeHtml(course.id)}" class="${course.id === state.courseId ? 'active' : ''}">
-    <span>${escapeHtml(course.mark)}</span><b>${escapeHtml(course.name)}</b><small>${escapeHtml(course.level)}</small>
-  </button>`).join('');
-  $$('#courseSwitcher button').forEach(button => button.addEventListener('click', () => switchCourse(button.dataset.course)));
 }
 
 function applyCourseInterface() {
   const config = currentConfig();
   document.body.dataset.course = state.courseId;
-  document.title = `${config.title} · LinguaLab`;
+  document.title = 'Русский тренажёр';
   $('#brandMark').textContent = config.mark;
   $('#brandName').textContent = config.brand;
   $('#brandLevel').textContent = config.level;
-  $('#navReferenceMark').textContent = config.mark;
-  $('#heroKicker').textContent = config.heroKicker;
-  $('#heroTitle').textContent = config.heroTitle;
-  $('#heroCopy').textContent = config.heroCopy;
-  $('#heroVisual').innerHTML = config.visual.map(([mark, label]) => `<div><b>${escapeHtml(mark)}</b><span>${escapeHtml(label)}</span></div>`).join('');
-  $('#pathTitle').textContent = config.pathTitle;
-  $('#pathCopy').textContent = config.pathCopy;
   $('#referenceTitle').textContent = config.referenceTitle;
   $('#referenceCopy').textContent = config.referenceCopy;
-  $('#startDiagnostic').textContent = config.primary;
-  $('#startDiagnostic').disabled = state.courseId === 'kazakh';
-  $('#startDue').classList.toggle('hidden', state.courseId === 'kazakh');
-  $$('[data-russian-only]').forEach(element => element.classList.toggle('hidden', state.courseId !== 'russian'));
-  const diagnosticOption = $('#modeSelect option[value="diagnostic"]');
-  diagnosticOption.hidden = state.courseId !== 'russian';
-  diagnosticOption.disabled = state.courseId !== 'russian';
-  if (state.courseId !== 'russian' && $('#modeSelect').value === 'diagnostic') $('#modeSelect').value = 'study';
-  renderCourseSwitcher();
-  const activeView = $('.view.active')?.id?.replace('View', '') || 'home';
-  const meta = currentViewMeta(['morphology', 'prefixes', 'vocab'].includes(activeView) && state.courseId !== 'russian' ? 'home' : activeView);
-  $('#viewEyebrow').textContent = meta[0];
-  $('#viewTitle').textContent = meta[1];
-}
-
-async function switchCourse(courseId) {
-  if (!courseConfigs[courseId] || courseId === state.courseId) return;
-  stopAllAudio();
-  state.warmAudioController?.abort();
-  state.responseKeys?.abort();
-  state.courseId = courseId;
-  savePreference('lingualab-course', courseId);
-  state.summary = await api(`/api/summary?course_id=${encodeURIComponent(courseId)}`);
-  state.queue = [];
-  state.current = 0;
-  state.sessionKey = null;
-  state.activeSessions = [];
-  $('#sessionArea').classList.add('hidden');
-  $('#sessionArea').innerHTML = '';
-  $('#studySetup').classList.remove('hidden');
-  applyCourseInterface();
-  renderDashboard();
-  renderReference();
-  renderUnitIntro('');
-  setView('home');
-  loadActiveSessions();
-}
-
-function startPrimaryAction() {
-  if (state.courseId === 'russian') {
-    startSession('diagnostic', '');
-    return;
-  }
-  const firstUnit = courseUnits().find(unit => unit.order > 0) || courseUnits()[0];
-  if (firstUnit) startSession('study', firstUnit.id);
-  else showToast('Este curso ainda está em preparação.');
 }
 
 function bindGlobalEvents() {
@@ -2149,18 +2268,10 @@ function bindGlobalEvents() {
   };
   themeSelect.addEventListener('change', () => { savePreference('lingualab-theme', themeSelect.value); applyTheme(); });
   systemTheme.addEventListener('change', applyTheme);
-  $$('#consultationSelector button').forEach(button => button.addEventListener('click', () => {
-    state.consultation = button.dataset.value;
-    savePreference('russotrainer-consultation', state.consultation);
-    $$('#consultationSelector button').forEach(item => item.classList.toggle('active', item === button));
-  }));
-  $$('#consultationSelector button').forEach(button => button.classList.toggle('active', button.dataset.value === state.consultation));
-
-  $('#unitSelect').addEventListener('change', () => renderUnitIntro($('#unitSelect').value));
-  $('#beginSession').addEventListener('click', () => startSession($('#modeSelect').value, $('#unitSelect').value));
-  $('#startDiagnostic').addEventListener('click', startPrimaryAction);
-  $('#startDue').addEventListener('click', () => startSession(state.summary.due_count ? 'review' : 'difficult', ''));
-  $('#launchReview').addEventListener('click', () => startSession(state.summary.due_count ? 'review' : 'difficult', ''));
+  $('#backToPractice').addEventListener('click', () => {
+    if (state.queue.length && state.sessionKey) exitSession();
+    else { if (state.queue.length) quitSession({ silent: true }); setView('practice'); }
+  });
   $('#morphKind').addEventListener('change', syncMorphFilters);
   $('#startMorphGame').addEventListener('click', startMorphologyGame);
   $('#startPrefixAll').addEventListener('click', () => startPrefixSession('all'));
@@ -2272,8 +2383,7 @@ function bindUpdate() {
 
 async function init() {
   try {
-    if (!courseConfigs[state.courseId]) state.courseId = 'russian';
-    state.bootstrap = await api(`/api/bootstrap?course_id=${encodeURIComponent(state.courseId)}`);
+    state.bootstrap = await api('/api/bootstrap?course_id=russian');
     state.summary = state.bootstrap.summary;
     state.sessionId = state.bootstrap.session_id;
     applyCourseInterface();
@@ -2282,10 +2392,7 @@ async function init() {
     bindGlobalEvents();
     bindUpdate();
     loadActiveSessions();
-    renderUnitIntro($('#unitSelect').value);
-    if (state.courseId === 'russian') {
-      api('/api/vocab/bootstrap').then(data => { state.vocabData = data; }).catch(() => {});
-    }
+    api('/api/vocab/bootstrap').then(data => { state.vocabData = data; }).catch(() => {});
     const requestedView = new URLSearchParams(window.location.search).get('view');
     if (requestedView && baseViewMeta[requestedView]) setView(requestedView);
   } catch (error) {

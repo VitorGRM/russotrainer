@@ -31,15 +31,10 @@
       </div>
 
       <nav id="nav" aria-label="Navegação principal">
-        <button class="nav-item active" data-view="home"><span>⌂</span> Visão geral</button>
-        <button class="nav-item" data-view="study"><span>✎</span> Estudar</button>
-        <button class="nav-item" data-view="vocab" data-russian-only><span>Л</span> Vocabulário</button>
-        <button class="nav-item" data-view="review"><span>↻</span> Revisar <b id="dueBadge" class="badge">0</b></button>
-        <button class="nav-item" data-view="errors"><span>△</span> Caderno de erros</button>
-        <button class="nav-item" data-view="reference"><span id="navReferenceMark">Ж</span> Referência</button>
-        <button class="nav-item" data-view="morphology" data-russian-only><span>Ы</span> Terminações</button>
-        <button class="nav-item" data-view="prefixes" data-russian-only><span>П</span> Prefixos</button>
-        <button class="nav-item" data-view="data"><span>↓</span> Dados e análise</button>
+        <button class="nav-item active" data-view="home"><span>⌂</span> Aulas</button>
+        <button class="nav-item" data-view="practice"><span>↻</span> Praticar <b id="dueBadge" class="badge hidden">0</b></button>
+        <button class="nav-item" data-view="reference"><span>Ж</span> Referência</button>
+        <button class="nav-item" data-view="progress"><span>↗</span> Progresso</button>
       </nav>
 
       <div class="sidebar-note">
@@ -57,18 +52,10 @@
     <main class="main" id="mainContent" tabindex="-1">
       <header class="topbar">
         <button id="mobileMenu" class="icon-button" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <button id="backToPractice" class="ghost-button back-link hidden" type="button">← Praticar</button>
         <div>
-          <p class="eyebrow" id="viewEyebrow">ПОДГОТОВКА К ЭКЗАМЕНУ</p>
-          <h1 id="viewTitle">Visão geral</h1>
-        </div>
-        <div class="course-switcher" id="courseSwitcher" aria-label="Escolher curso"></div>
-        <div class="consultation-global" title="Como você respondeu?">
-          <span>Consulta</span>
-          <div class="segmented" id="consultationSelector">
-            <button data-value="SC" class="active">SC</button>
-            <button data-value="C">C</button>
-            <button data-value="CC">CC</button>
-          </div>
+          <p class="eyebrow" id="viewEyebrow">РУССКИЙ · B2</p>
+          <h1 id="viewTitle">Aulas</h1>
         </div>
         <label class="theme-control" for="themeSelect"><span>Tema</span>
           <select id="themeSelect" aria-label="Tema da interface">
@@ -78,100 +65,39 @@
       </header>
 
       <section id="homeView" class="view active">
+        <div class="hero current-lesson" id="currentLesson"></div>
+
+        <article class="panel lessons-panel">
+          <div class="panel-header">
+            <div><p class="eyebrow">ПРОГРАММА</p><h3>Todas as aulas</h3></div>
+            <span id="lessonCount" class="muted"></span>
+          </div>
+          <p class="muted lessons-rule">Cada aula segue o mesmo caminho: explicação, depois os exercícios do roteiro até a produção final. A próxima aula abre quando você domina 75% dos exercícios desta.</p>
+          <ol id="lessonList" class="lesson-list"></ol>
+        </article>
+      </section>
+
+      <section id="lessonView" class="view">
+        <div id="lessonArea" class="session-area lesson-area"></div>
+      </section>
+
+      <section id="practiceView" class="view">
+        <div class="practice-intro">
+          <p class="eyebrow">ПРАКТИКА</p>
+          <h2>Treinos extras, fora da aula.</h2>
+          <p class="muted">A aula é o caminho principal. Aqui você reforça pontos específicos quando quiser.</p>
+        </div>
+        <div id="practiceGrid" class="practice-grid"></div>
         <article class="panel resume-panel hidden" id="resumePanel" aria-live="polite">
           <div class="panel-header">
-            <div><p class="eyebrow">CONTINUAR DE ONDE PAROU</p><h3>Sessões interrompidas</h3></div>
-            <span class="muted">salvas a cada pergunta</span>
+            <div><p class="eyebrow">CONTINUAR DE ONDE PAROU</p><h3>Treinos interrompidos</h3></div>
           </div>
           <div id="resumeList" class="resume-list"></div>
-        </article>
-
-        <div class="hero">
-          <div>
-            <span class="hero-kicker" id="heroKicker">СЕГОДНЯ</span>
-            <h2 id="heroTitle">Transforme regência em reflexo.</h2>
-            <p id="heroCopy">Reconhecer o caso é só o começo. O objetivo é recuperar a construção e produzir a terminação sem traduzir mentalmente.</p>
-            <div class="hero-actions">
-              <button class="primary" id="startDiagnostic">Fazer diagnóstico</button>
-              <button class="secondary" id="startDue">Revisar agora</button>
-            </div>
-          </div>
-          <div class="case-wheel" id="heroVisual" aria-label="Conteúdo em foco">
-            <div><b>Д</b><span>дательный</span></div>
-            <div><b>Т</b><span>творительный</span></div>
-            <div><b>Р</b><span>родительный</span></div>
-          </div>
-        </div>
-
-        <div class="metrics" id="metrics"></div>
-
-        <div class="dashboard-grid">
-          <article class="panel mastery-panel">
-            <div class="panel-header">
-              <div><p class="eyebrow">MAPA DE DOMÍNIO</p><h3>Construções e habilidades</h3></div>
-              <span class="muted">acerto ponderado por consulta</span>
-            </div>
-            <div id="masteryList" class="mastery-list empty-state">Responda ao diagnóstico para formar seu mapa.</div>
-          </article>
-          <article class="panel next-panel">
-            <div class="panel-header"><div><p class="eyebrow">PRÓXIMO PASSO</p><h3>Fila pedagógica</h3></div></div>
-            <div id="nextSteps"></div>
-          </article>
-        </div>
-
-        <article class="panel units-panel">
-          <div class="panel-header">
-            <div><p class="eyebrow">PERCURSO</p><h3>Unidades disponíveis</h3></div>
-            <span id="unitCount" class="muted"></span>
-          </div>
-          <div id="unitsGrid" class="units-grid"></div>
         </article>
       </section>
 
       <section id="studyView" class="view">
-        <article class="panel study-path-panel">
-          <p class="eyebrow">TRILHA</p>
-          <h2 id="pathTitle">Percorra as unidades em ordem.</h2>
-          <p class="muted" id="pathCopy">Conclua cada unidade para desbloquear a próxima. Revisão e itens difíceis continuam livres, sem depender da trilha.</p>
-          <div id="studyPath" class="study-path"></div>
-        </article>
-        <div id="studySetup" class="study-setup">
-          <article class="panel">
-            <p class="eyebrow">SESSÃO PERSONALIZADA</p>
-            <h2>O que vamos treinar?</h2>
-            <p class="muted">Escolher uma unidade roda todos os exercícios dela, na ordem da lição. Sem unidade, o treino mistura tudo o que já foi desbloqueado. As questões erradas voltam pela revisão espaçada com vocabulário diferente.</p>
-            <div class="form-grid">
-              <label>Unidade<select id="unitSelect"></select></label>
-              <label>Modo<select id="modeSelect">
-                <option value="study">Treino misto</option>
-                <option value="diagnostic">Diagnóstico sem pistas</option>
-                <option value="flashcards">Flashcards</option>
-                <option value="writing">Produção escrita</option>
-                <option value="difficult">Meus itens difíceis</option>
-              </select></label>
-            </div>
-            <div id="unitIntro" class="unit-intro hidden"></div>
-            <button class="primary wide" id="beginSession">Iniciar sessão</button>
-          </article>
-          <aside class="panel protocol-card">
-            <p class="eyebrow">PROTOCOLO SC · C · CC</p>
-            <dl>
-              <div><dt>SC</dt><dd>Sem consulta. Mede recuperação real.</dd></div>
-              <div><dt>C</dt><dd>Consultou antes de responder.</dd></div>
-              <div><dt>CC</dt><dd>Respondeu e conferiu depois.</dd></div>
-            </dl>
-          </aside>
-        </div>
         <div id="sessionArea" class="session-area hidden"></div>
-      </section>
-
-      <section id="reviewView" class="view">
-        <article class="panel review-intro">
-          <p class="eyebrow">REVISÃO ESPAÇADA</p>
-          <h2 id="reviewHeadline">Sua fila está pronta.</h2>
-          <p id="reviewCopy" class="muted"></p>
-          <button class="primary" id="launchReview">Começar revisão</button>
-        </article>
       </section>
 
       <section id="errorsView" class="view">
@@ -355,7 +281,15 @@
         <div id="prefixGameArea" class="session-area hidden"></div>
       </section>
 
-      <section id="dataView" class="view">
+      <section id="progressView" class="view">
+        <div class="metrics" id="metrics"></div>
+        <article class="panel mastery-panel">
+          <div class="panel-header">
+            <div><p class="eyebrow">MAPA DE DOMÍNIO</p><h3>Construções e habilidades</h3></div>
+            <span class="muted">acerto nas suas respostas</span>
+          </div>
+          <div id="masteryList" class="mastery-list empty-state">Faça a primeira aula para formar seu mapa.</div>
+        </article>
         <div class="data-grid">
           <article class="panel">
             <p class="eyebrow">ARQUIVOS DE ANÁLISE</p>

@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from typing import Callable
 
 
-SESSION_KINDS = {"study", "vocab", "prefix", "morph"}
+SESSION_KINDS = {"study", "vocab", "prefix", "morph", "lesson"}
 KEY_PATTERN = re.compile(r"^[A-Za-z0-9_:.\-]{3,140}$")
 MAX_QUEUE = 400
 STATUS_VALUES = {"new", "correct", "partial", "wrong", "pending", "seen", "retry"}
@@ -242,6 +242,29 @@ class SessionStore:
                 ),
             }
         return summary
+
+
+TRANSFER_STAGES = ("construction", "writing_b2", "micro_writing", "speaking_plan", "transfer")
+
+
+def lesson_step(exercise: dict) -> int:
+    """Parte do roteiro da aula (lesson_flow): 0 recuperar, 1 compreender, 2 praticar, 3 transferir."""
+    stage = exercise.get("stage")
+    kind = exercise.get("type")
+    if kind == "flashcard" or stage in ("recall", "retrieval", "spaced_review"):
+        return 0
+    if kind in ("reading", "listening"):
+        return 1
+    if kind == "open_text" or stage in TRANSFER_STAGES:
+        return 3
+    return 2
+
+
+def lesson_order(unit: dict) -> list[tuple[dict, int]]:
+    """Todos os exercícios da aula, inclusive a produção escrita, na ordem do roteiro."""
+    steps = len(unit.get("lesson_flow") or []) or 4
+    items = [(exercise, min(lesson_step(exercise), steps - 1)) for exercise in unit["exercises"]]
+    return sorted(items, key=lambda pair: pair[1])
 
 
 def unit_session_order(unit: dict) -> list[dict]:

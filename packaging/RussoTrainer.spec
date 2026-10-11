@@ -18,7 +18,8 @@ datas = [
 ]
 binaries = []
 hiddenimports = []
-for package in ("edge_tts",):
+# webview + pythonnet: janela própria com o WebView2 do Windows (DLLs e JS do pywebview).
+for package in ("edge_tts", "webview", "clr_loader", "pythonnet"):
     pkg_datas, pkg_binaries, pkg_hidden = collect_all(package)
     datas += pkg_datas
     binaries += pkg_binaries
@@ -40,7 +41,7 @@ exe = EXE(
     [],
     exclude_binaries=True,
     name="RussoTrainer",
-    console=True,  # a janela mostra o log e fechá-la encerra o app
+    console=False,  # app em janela própria; o log vai para %APPDATA%\RussoTrainer\app.log
     upx=False,
 )
 coll = COLLECT(exe, a.binaries, a.datas, name="RussoTrainer", upx=False)

@@ -10,7 +10,7 @@ $install = "$env:LOCALAPPDATA\RussoTrainer\app"
 $userData = "$env:APPDATA\RussoTrainer\data"
 
 if (-not (Test-Path "$root\dist\RussoTrainer\RussoTrainer.exe")) { throw "Rode build_windows.ps1 primeiro." }
-Get-Process RussoTrainer -ErrorAction SilentlyContinue | Stop-Process -Force
+Get-Process RussoTrainer -ErrorAction SilentlyContinue | Where-Object { $_.Path -like "$install\*" } | Stop-Process -Force
 New-Item -ItemType Directory -Force $install, $userData | Out-Null
 robocopy "$root\dist\RussoTrainer" $install /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
 if ($LASTEXITCODE -ge 8) { throw "Falha ao copiar os arquivos (robocopy $LASTEXITCODE)" }

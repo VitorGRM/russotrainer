@@ -35,15 +35,25 @@ from urllib.parse import parse_qs, unquote, urlparse
 
 try:
     import edge_tts
+    import edge_tts.communicate as edge_communicate
+    from edge_tts.constants import TRUSTED_CLIENT_TOKEN as EDGE_TOKEN
 except ImportError:  # O run.sh instala; fallback permite diagnóstico legível.
     edge_tts = None
 
-from sessions import SessionStore, unit_session_order
+# Em 10/10/2026 a Microsoft passou a recusar (403) o endereço antigo do edge-tts 7.2.8; o Edge
+# atual fala com api.msedgeservices.com (edge-tts issue #490). Tentamos o novo primeiro e o
+# antigo como reserva, caso a Microsoft volte atrás ou a biblioteca mude.
+EDGE_ENDPOINTS = (
+    "wss://api.msedgeservices.com/tts/cognitiveservices/websocket/v1?Ocp-Apim-Subscription-Key={token}",
+    "wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken={token}",
+)
+
+from sessions import SessionStore, lesson_order, lesson_step, unit_session_order
 from updater import Updater, UpdateError
 from vocab_lessons import UNGRADED_TYPES, VOCAB_UNIT_PREFIX, VocabLessonStore
 
 
-APP_VERSION = "1.5.3"
+APP_VERSION = "1.6.0"
 UNIT_COMPLETION_THRESHOLD = 0.75
 # Domínio cumulativo: um exercício é considerado "dominado" se o aluno atingiu
 # QUALQUER um destes patamares (nota mínima, nº de tentativas que bateram essa
@@ -55,7 +65,20 @@ FROZEN = bool(getattr(sys, "frozen", False))
 # No .exe, o conteúdo (somente leitura) vem empacotado; o que o aluno gera fica em
 # %APPDATA%\RussoTrainer para sobreviver às atualizações. Em desenvolvimento nada muda.
 BASE_DIR = Path(getattr(sys, "_MEIPASS", "") or Path(__file__).resolve().parent)
-USER_DIR = Path(os.environ.get("APPDATA") or Path.home()) / "RussoTrainer" if FROZEN else BASE_DIR
+def _early_arg(name: str) -> str:
+    """Lê um argumento antes do argparse: os caminhos abaixo são resolvidos já na importação."""
+    if name in sys.argv[:-1]:
+        return sys.argv[sys.argv.index(name) + 1]
+    return ""
+
+
+if _early_arg("--data-dir"):
+    os.environ["RUSSO_USER_DIR"] = _early_arg("--data-dir")
+if os.environ.get("RUSSO_USER_DIR"):
+    # Pasta de dados alternativa: permite rodar uma versão de teste sem tocar no progresso real.
+    USER_DIR = Path(os.environ["RUSSO_USER_DIR"])
+else:
+    USER_DIR = Path(os.environ.get("APPDATA") or Path.home()) / "RussoTrainer" if FROZEN else BASE_DIR
 STATIC_DIR = BASE_DIR / "static"
 DATA_DIR = BASE_DIR / "data"
 UNITS_DIR = DATA_DIR / "units"
@@ -326,6 +349,44 @@ class ContentStore:
             exercise_unit[ex_id] = self.vocab.exercise_unit[ex_id]
         self.exercises = exercises
         self.exercise_unit = exercise_unit
+        self.lesson_screens = self._build_lesson_screens()
+
+    def _build_lesson_screens(self) -> dict[str, dict]:
+        """Telas de leitura da aula (abertura, explicação, tabela) com id próprio.
+
+        Ficam fora de self.exercises — nunca entram em revisão, histórico ou
+        listas de exercícios —, mas têm id para que a sessão salva da aula
+        possa ser retomada exatamente na tela em que o aluno parou.
+        """
+        screens: dict[str, dict] = {}
+        for unit in self.units:
+            if not unit.get("grammar") and not unit.get("objectives"):
+                continue
+            uid = unit["id"]
+            screens[f"{uid}::intro"] = {"id": f"{uid}::intro", "type": "lesson_intro", "unit_id": uid}
+            blocks = unit.get("grammar") or []
+            for index, block in enumerate(blocks):
+                screens[f"{uid}::explain:{index}"] = {
+                    "id": f"{uid}::explain:{index}", "type": "lesson_explain", "unit_id": uid,
+                    "block": block, "block_index": index, "block_total": len(blocks),
+                }
+            tables = unit.get("memory_tables") or ([unit["memory_table"]] if unit.get("memory_table") else [])
+            if tables:
+                screens[f"{uid}::table"] = {"id": f"{uid}::table", "type": "lesson_table", "unit_id": uid, "tables": tables}
+        return screens
+
+    def lesson_items(self, unit: dict, with_exercises: bool = True) -> list[dict]:
+        """A aula inteira numa fila só: abertura → explicação → tabela → exercícios do roteiro."""
+        uid = unit["id"]
+        screens = [screen for key, screen in self.lesson_screens.items() if screen["unit_id"] == uid]
+        if not with_exercises:
+            return screens
+        exercises = []
+        for exercise, step in lesson_order(unit):
+            item = dict(exercise)
+            item["step"] = step
+            exercises.append(item)
+        return screens + session_exercises(exercises, self.public_exercise)
 
     def _load_prefix_module(self, exercises: dict, exercise_unit: dict) -> dict:
         """Módulo autônomo de verbos com prefixo (página "Prefixos", só russo).
@@ -726,6 +787,25 @@ class TTSService:
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self._lock = threading.Lock()
         self._edge_down_until = 0.0
+        self._endpoint_order = list(EDGE_ENDPOINTS)
+
+    def _edge_synthesize(self, text: str, voice: str, rate: str, pitch: str, path: Path) -> None:
+        """Gera o mp3 tentando cada endereço do Edge; o que funcionar passa a ser o primeiro."""
+        last_error: Exception | None = None
+        for endpoint in list(self._endpoint_order):
+            # communicate.py lê WSS_URL a cada conexão; o lock garante uma síntese por vez.
+            edge_communicate.WSS_URL = endpoint.format(token=EDGE_TOKEN)
+            try:
+                edge_tts.Communicate(text, voice, rate=rate, pitch=pitch).save_sync(str(path))
+            except Exception as exc:  # noqa: BLE001 - tenta o próximo endereço
+                last_error = exc
+                continue
+            if path.exists() and path.stat().st_size > 0:
+                self._endpoint_order.remove(endpoint)
+                self._endpoint_order.insert(0, endpoint)
+                return
+            last_error = RuntimeError("O Edge não devolveu áudio.")
+        raise last_error or RuntimeError("Nenhum endereço do Edge disponível.")
 
     def audio_for(self, text: str, course_id: str = "russian", mode: str = "target", speaker: str = "") -> Path:
         cleaned = re.sub(r"\s+", " ", text).strip()
@@ -760,9 +840,8 @@ class TTSService:
         with self._lock:
             if target.exists() and target.stat().st_size > 0:
                 return target
-            communicate = edge_tts.Communicate(cleaned, voice, rate=rate, pitch=pitch)
             try:
-                communicate.save_sync(str(temporary))
+                self._edge_synthesize(cleaned, voice, rate, pitch, temporary)
                 temporary.replace(target)
                 self._edge_down_until = 0.0
             except Exception:
@@ -1828,6 +1907,12 @@ class AppHandler(BaseHTTPRequestHandler):
             self.send_json({"ok": ok})
             return
 
+        if parsed.path == "/api/window/focus":
+            # Segundo clique no atalho: o novo processo pede para esta janela vir à frente e sai.
+            self.app.focus_window()
+            self.send_json({"ok": True, "window": self.app.window is not None})
+            return
+
         if parsed.path == "/api/update/apply":
             # Impede que outra página aberta no navegador dispare a atualização.
             origin = self.headers.get("Origin")
@@ -1853,6 +1938,22 @@ class AppHandler(BaseHTTPRequestHandler):
         self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
 
     def handle_api_get(self, path: str, query: dict[str, list[str]]) -> None:
+        if path == "/api/lesson":
+            unit = self.app.content.units_by_id.get(query.get("unit_id", [""])[0])
+            if not unit:
+                self.send_json({"error": "Aula não encontrada."}, HTTPStatus.NOT_FOUND)
+                return
+            progress = {row["unit_id"]: row for row in self.app.db.unit_progress(unit.get("course_id", "russian"))}
+            unlocked = progress.get(unit["id"], {}).get("unlocked", True)
+            # Aula bloqueada: dá para ler a explicação, mas os exercícios esperam a aula anterior.
+            self.send_json({
+                "unit": self.app.content.public_unit(unit),
+                "steps": unit.get("lesson_flow") or [],
+                "unlocked": unlocked,
+                "items": self.app.content.lesson_items(unit, with_exercises=unlocked),
+            })
+            return
+
         if path == "/api/update/check":
             self.send_json(self.app.updater.check(force=query.get("force", ["0"])[0] == "1"))
             return
@@ -2171,13 +2272,34 @@ class AppServer(ThreadingHTTPServer):
         self.db = Database(DB_PATH, self.content, self.lexical)
         self.dictionary = DictionaryStore(DICTIONARY_PATH, COURSE_LEXICON_PATH)
         self.tts = TTSService(TTS_CACHE_DIR)
-        self.updater = Updater(APP_VERSION, USER_DIR, on_restart=lambda: threading.Thread(target=self.shutdown).start())
+        self.window = None  # janela do pywebview, quando o app roda em janela própria
+        self.updater = Updater(APP_VERSION, USER_DIR, on_restart=self.request_quit)
         self.db.reconcile_unit_completion()
         self.db.write_live_exports()
         super().__init__(address, handler)
 
+    def request_quit(self) -> None:
+        """Encerra o app: fecha a janela (o que encerra o servidor em main) ou só o servidor."""
+        if self.window is not None:
+            self.window.destroy()
+        else:
+            threading.Thread(target=self.shutdown, daemon=True).start()
+
+    def focus_window(self) -> None:
+        if self.window is None:
+            return
+        self.window.restore()
+        self.window.show()
+        # Truque para trazer à frente no Windows sem deixar a janela sempre no topo.
+        self.window.on_top = True
+        self.window.on_top = False
+
     def exercise(self, exercise_id: str) -> dict | None:
-        return self.content.exercises.get(exercise_id) or self.lexical.exercise(exercise_id)
+        found = self.content.exercises.get(exercise_id) or self.lexical.exercise(exercise_id)
+        if found and found.get("unit_id") in self.content.units_by_id and "step" not in found:
+            # Exercícios da trilha levam a parte do roteiro, para a aula retomada mostrar o cabeçalho certo.
+            found = {**found, "step": lesson_step(found)}
+        return found or self.content.lesson_screens.get(exercise_id)
 
     def public_exercise(self, exercise: dict) -> dict:
         if str(exercise.get("id", "")).startswith(("lm-", "lv-")):
@@ -2296,31 +2418,88 @@ def already_running(url: str) -> bool:
         return False
 
 
+WINDOW_TITLE = "Русский тренажёр"
+LOG_MAX_BYTES = 2_000_000
+
+
+def redirect_output_if_windowless() -> None:
+    """O .exe em janela não tem console: sys.stdout é None e qualquer log derrubaria o servidor."""
+    if sys.stdout is not None and sys.stderr is not None:
+        return
+    USER_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = USER_DIR / "app.log"
+    if log_path.exists() and log_path.stat().st_size > LOG_MAX_BYTES:
+        log_path.unlink()
+    log = open(log_path, "a", encoding="utf-8", buffering=1)  # noqa: SIM115 - vive até o fim do processo
+    sys.stdout = sys.stdout or log
+    sys.stderr = sys.stderr or log
+
+
+def focus_running_window(url: str) -> bool:
+    request = urllib.request.Request(f"{url}/api/window/focus", data=b"{}", headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(request, timeout=3) as response:
+            return bool(json.load(response).get("window"))
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def run_in_window(server: AppServer, url: str, title: str = WINDOW_TITLE) -> bool:
+    """Abre a interface numa janela nativa (WebView2 do Windows). Devolve False se não der."""
+    try:
+        import webview
+    except ImportError:
+        return False
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    try:
+        server.window = webview.create_window(
+            title, url, width=1320, height=860, min_size=(960, 640), background_color="#0b1917",
+        )
+        # private_mode=False mantém tema e preferências (localStorage) entre aberturas.
+        webview.start(gui="edgechromium", private_mode=False, storage_path=str(USER_DIR / "webview"))
+    except Exception as exc:  # noqa: BLE001 - sem WebView2, o app continua no navegador
+        print(f"Janela própria indisponível ({exc}); abrindo no navegador.")
+        server.window = None
+        webbrowser.open(url)
+        thread.join()
+        return True
+    server.shutdown()
+    return True
+
+
 def main() -> None:
+    # Antes do argparse: no .exe sem console, até um erro de argumento precisa ir para o log.
+    redirect_output_if_windowless()
     parser = argparse.ArgumentParser(description="LinguaLab local")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
-    parser.add_argument("--no-browser", action="store_true")
+    parser.add_argument("--browser", action="store_true", help="abrir no navegador em vez da janela própria")
+    parser.add_argument("--no-browser", action="store_true", help="só o servidor, sem abrir interface")
+    parser.add_argument("--data-dir", help="pasta de dados do aluno (padrão: %%APPDATA%%\\RussoTrainer)")
+    parser.add_argument("--title", default=WINDOW_TITLE, help="título da janela")
     args = parser.parse_args()
 
     for stream in (sys.stdout, sys.stderr):
-        if stream is not None and hasattr(stream, "reconfigure"):
+        if hasattr(stream, "reconfigure"):
             stream.reconfigure(encoding="utf-8", errors="replace")
 
     url = f"http://{args.host}:{args.port}"
     if already_running(url):
-        # Segundo clique no atalho: só traz a página de volta ao navegador.
+        # Segundo clique no atalho: traz a janela já aberta para a frente (ou a página, no modo navegador).
         print(f"LinguaLab já está aberto em {url}")
-        if not args.no_browser:
+        if not focus_running_window(url) and not args.no_browser:
             webbrowser.open(url)
         return
 
     server = AppServer((args.host, args.port), AppHandler)
     print(f"LinguaLab disponível em {url}")
-    print("Feche esta janela (ou pressione Ctrl+C) para encerrar." if FROZEN else "Pressione Ctrl+C para encerrar.")
-    if not args.no_browser:
-        threading.Timer(0.7, lambda: webbrowser.open(url)).start()
     try:
+        if not args.browser and not args.no_browser and run_in_window(server, url, args.title):
+            return
+        print("Pressione Ctrl+C para encerrar.")
+        if not args.no_browser:
+            threading.Timer(0.7, lambda: webbrowser.open(url)).start()
         server.serve_forever()
     except KeyboardInterrupt:
         print("\nEncerrando.")
