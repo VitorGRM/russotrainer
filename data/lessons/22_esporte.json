@@ -1,0 +1,164 @@
+{
+  "id": "esporte1", "theme": "esporte", "order": 1,
+  "title": "За кого ты болеешь?", "title_pt": "Esporte: praticar, torcer e competir",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma conversa de torcedores e um boletim esportivo no rádio.",
+    "Ler um texto sobre o hóquei na Rússia e localizar dados e opiniões.",
+    "Usar заниматься + instrumental, играть в (esporte) × играть на (instrumento), болеть за, выиграть у, проиграть кому.",
+    "Escrever sobre a sua relação com o esporte e narrar oralmente uma partida."
+  ],
+  "grammar_focus": "заниматься спортом (Т. п.) · играть в футбол (В. п.) × играть на гитаре (П. п.) · болеть за команду · выиграть у кого · проиграть кому · со счётом 2:1",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de modalidades, competições e torcida.", "steps": [
+      {"t": "warmup", "questions": [
+        "Каким спортом вы занимаетесь или занимались?",
+        "За какую команду вы болеете?",
+        "Em português, «jogar futebol» e «tocar violão» usam verbos diferentes. Em russo, o verbo é o mesmo. O que você acha que muda?"
+      ]},
+      {"t": "vocab", "items": [
+        ["заниматься спортом", "praticar esporte", "заниматься плаванием, йогой (instrumental)"],
+        ["играть в", "jogar", "играть в футбол, в теннис (acusativo)"],
+        ["болеть за", "torcer por", "болельщик = torcedor"],
+        ["выиграть у", "ganhar de", "выиграть у «Зенита» (genitivo)"],
+        ["проиграть", "perder (para)", "проиграть «Спартаку» (dativo)"],
+        ["ничья", "empate", "сыграть вничью = empatar"],
+        ["счёт", "placar", "со счётом 2:1 (два — один)"],
+        ["забить гол", "marcar gol", "пропустить гол = sofrer gol"],
+        ["тренер / тренироваться", "treinador / treinar", "тренировка = treino"],
+        ["соревнование", "competição", "чемпионат, турнир, матч"],
+        ["сборная", "seleção", "сборная России"],
+        ["вратарь / нападающий", "goleiro / atacante", "защитник = zagueiro"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo ao complemento correto.", "pairs": [
+        ["играть в", "хоккей"], ["играть на", "пианино"], ["заниматься", "боксом"],
+        ["болеть за", "«Спартак»"], ["выиграть у", "соперника"], ["проиграть", "сопернику"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "«Зенит» выиграл у «ЦСКА» со счётом три — один.", "o": ["O Zenit ganhou do CSKA por 3 a 1.", "O CSKA ganhou do Zenit por 3 a 1.", "O Zenit e o CSKA empataram em 3 a 1.", "O Zenit perdeu para o CSKA por 1 a 3."], "e": "Выиграть у + genitivo = ganhar de."},
+        {"q": "Матч закончился вничью.", "o": ["A partida terminou empatada.", "A partida terminou sem público.", "A partida foi cancelada.", "A partida terminou à noite."], "e": "Вничью = empatado."},
+        {"q": "Мой брат с детства занимается плаванием.", "o": ["O meu irmão pratica natação desde criança.", "O meu irmão gosta de assistir natação.", "O meu irmão nada às vezes nas férias.", "O meu irmão ensina natação."], "e": "Заниматься + instrumental = praticar."}
+      ]}
+    ]},
+    {"title": "Escuta: torcedores no bar", "goal": "Acompanhar comentários sobre uma partida e reconhecer resultados.", "steps": [
+      {"t": "dialogue", "title": "Дерби", "setting": "Max e Ilia assistem ao clássico Spartak × CSKA num bar esportivo.",
+        "speakers": {"Макс": "m", "Илья": "m2"},
+        "lines": [
+          ["Макс", "Илья, ты за кого болеешь сегодня? Только не говори, что за ЦСКА!", "Ilia, para quem você está torcendo hoje? Só não diga que é para o CSKA!"],
+          ["Илья", "Ну, вообще-то за ЦСКА. Мой отец всю жизнь за них болеет.", "Bem, na verdade é para o CSKA. O meu pai torce por eles a vida toda."],
+          ["Макс", "Ну ладно, посмотрим, кто выиграет. В прошлом сезоне вы нам проиграли два раза.", "Tá bom, vamos ver quem ganha. Na temporada passada vocês perderam para nós duas vezes."],
+          ["Илья", "Зато в кубке мы у вас выиграли. Ой, смотри, гол! Один — ноль!", "Em compensação, na copa nós ganhamos de vocês. Olha, gol! Um a zero!"],
+          ["Макс", "Ну вот, вратарь опять ошибся. Наш тренер должен был его заменить ещё в прошлом матче.", "Pronto, o goleiro errou de novo. O nosso técnico devia tê-lo substituído já na partida passada."],
+          ["Илья", "Не расстраивайся, ещё целый тайм впереди.", "Não fique chateado, ainda tem um tempo inteiro pela frente."],
+          ["Макс", "Да! Пенальти! Если забьём, будет ничья.", "Isso! Pênalti! Se marcarmos, vai ficar empatado."],
+          ["Илья", "Забили… Один — один. Ну что ж, ничья тоже нормальный результат.", "Marcaram… Um a um. Bom, empate também é um resultado razoável."],
+          ["Макс", "Нормальный? Нам нужна только победа! А ты сам-то чем-нибудь занимаешься, кроме того, что смотришь футбол?", "Razoável? Para nós só serve a vitória! E você pratica algum esporte, além de ver futebol?"],
+          ["Илья", "Я играю в волейбол по средам. А ещё играю на гитаре, но это уже не спорт.", "Jogo vôlei às quartas. E também toco violão, mas isso já não é esporte."]
+        ],
+        "questions": [
+          {"q": "Por que Ilia torce para o CSKA?", "o": ["Porque o pai dele torce para o CSKA a vida toda.", "Porque mora perto do estádio.", "Porque o CSKA ganhou a copa.", "Porque Max torce para o Spartak."], "e": "«Мой отец всю жизнь за них болеет»."},
+          {"q": "O que aconteceu na temporada passada?", "o": ["O CSKA perdeu duas vezes para o Spartak.", "O Spartak perdeu duas vezes para o CSKA.", "Os dois times empataram.", "O CSKA foi campeão."], "e": "«Вы нам проиграли два раза» (dativo: para nós)."},
+          {"q": "Como ficou o placar?", "o": ["1 a 1.", "1 a 0 para o CSKA.", "2 a 1 para o Spartak.", "0 a 0."], "e": "«Один — один»."},
+          {"q": "Que esporte Ilia pratica?", "o": ["Vôlei.", "Futebol.", "Hóquei.", "Natação."], "e": "«Я играю в волейбол по средам»."}
+        ]},
+      {"t": "dictation", "voice": "m2", "text": "Я играю в волейбол по средам, а ещё играю на гитаре.", "pt": "Jogo vôlei às quartas e também toco violão.", "hint": "Hobbies de Ilia (11 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["За кого ты болеешь?", "Para quem você torce?"],
+        ["В прошлом сезоне вы нам проиграли.", "Na temporada passada vocês perderam para nós."],
+        ["Если забьём, будет ничья.", "Se marcarmos, fica empatado."],
+        ["Нам нужна только победа!", "Para nós só serve a vitória!"]
+      ]}
+    ]},
+    {"title": "Leitura: o hóquei, paixão nacional", "goal": "Ler um texto sobre esporte e cultura e localizar dados precisos.", "steps": [
+      {"t": "reading", "title": "Хоккей: больше чем спорт",
+        "text": "Если футбол в России любят, то хоккеем гордятся. Советская сборная выигрывала чемпионаты мира и Олимпийские игры десятки раз, а матчи с Канадой в 1972 году до сих пор называют «Суперсерией века».\n\nСегодня главная хоккейная лига страны — Континентальная хоккейная лига, КХЛ. В ней играют команды не только из России, но и из Беларуси, Казахстана и Китая. Самые популярные клубы, такие как СКА из Петербурга и ЦСКА из Москвы, собирают на матчах по десять–двенадцать тысяч болельщиков.\n\nХоккеем занимаются и дети: в стране работают сотни хоккейных школ. Многие родители отдают туда ребёнка уже в четыре-пять лет. Тренировки тяжёлые и дорогие: экипировка может стоить больше ста тысяч рублей. Зато, как говорят тренеры, хоккей учит дисциплине и умению играть в команде. Кроме того, во дворах зимой заливают каток, и любой желающий может бесплатно поиграть с друзьями.",
+        "pt": "Se na Rússia o futebol é amado, o hóquei é motivo de orgulho. A seleção soviética ganhou campeonatos mundiais e Jogos Olímpicos dezenas de vezes, e os jogos contra o Canadá em 1972 até hoje são chamados de «Supersérie do Século».\n\nHoje a principal liga de hóquei do país é a Liga Continental de Hóquei, a KHL. Nela jogam times não só da Rússia, mas também de Belarus, Cazaquistão e China. Os clubes mais populares, como o SKA de Petersburgo e o CSKA de Moscou, reúnem dez a doze mil torcedores por partida.\n\nAs crianças também praticam hóquei: no país funcionam centenas de escolas de hóquei. Muitos pais matriculam o filho já aos quatro ou cinco anos. Os treinos são pesados e caros: o equipamento pode custar mais de cem mil rublos. Em compensação, como dizem os treinadores, o hóquei ensina disciplina e capacidade de jogar em equipe. Além disso, no inverno os pátios dos prédios viram pistas de gelo, e qualquer pessoa pode jogar de graça com os amigos.",
+        "tf": [
+          ["Os jogos contra o Canadá em 1972 são chamados de «Supersérie do Século».", "V", "«Суперсерией века»."],
+          ["Na KHL jogam só times russos.", "F", "Também de Belarus, Cazaquistão e China."],
+          ["O equipamento de hóquei pode custar mais de cem mil rublos.", "V", "«Больше ста тысяч рублей»."],
+          ["As crianças começam no hóquei só aos dez anos.", "F", "«Уже в четыре-пять лет»."],
+          ["O texto informa o salário médio dos jogadores da KHL.", "N", "Não há dados de salário."]
+        ],
+        "questions": [
+          {"q": "Чему, по словам тренеров, учит хоккей?", "o": ["Дисциплине и умению играть в команде.", "Терпению и музыке.", "Быстро бегать.", "Экономить деньги."], "e": "«Хоккей учит дисциплине и умению играть в команде»."},
+          {"q": "Как можно играть в хоккей бесплатно?", "o": ["Зимой на катках во дворах.", "В хоккейных школах.", "На матчах КХЛ.", "Летом в парках."], "e": "«Во дворах зимой заливают каток»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta.",
+        "text": "Мой сын с пяти лет играет {в хоккей|на хоккей|хоккеем}. Дочь занимается {гимнастикой|гимнастику|в гимнастику}. Муж играет {на гитаре|в гитару|гитарой}. А я болею {за «Зенит»|«Зениту»|на «Зенит»}.",
+        "pt": "O meu filho joga hóquei desde os cinco anos. A minha filha faz ginástica. O meu marido toca violão. E eu torço para o Zenit.",
+        "e": "Играть в + acusativo (jogo, esporte); играть на + preposicional (instrumento); заниматься + instrumental; болеть за + acusativo."}
+    ]},
+    {"title": "Foco na forma: as regências do esporte", "goal": "Usar o caso e a preposição certos com os verbos de esporte e competição.", "steps": [
+      {"t": "grammar", "title": "Praticar, jogar, tocar, torcer, ganhar e perder",
+        "paragraphs": [
+          "Заниматься + instrumental, para qualquer atividade regular: заниматься спортом, бегом, плаванием, йогой, танцами. Também вести здоровый образ жизни.",
+          "Играть в + acusativo para jogos e esportes de equipe: играть в футбол, в теннис, в шахматы, в карты. Играть на + preposicional para instrumentos musicais: играть на гитаре, на скрипке, на пианино.",
+          "Torcer: болеть за + acusativo (болеть за «Спартак», за сборную Бразилии). Atenção: болеть sem за = estar doente.",
+          "Resultado: выиграть у + genitivo (ganhar de alguém): «Флуминенсе» выиграл у «Фламенго». Выиграть + acusativo (ganhar algo): выиграть матч, кубок. Проиграть + dativo (perder para alguém): проиграть сопернику. Placar: со счётом 2:1 (lê-se «два — один»). Empatar: сыграть вничью."
+        ],
+        "table": {"columns": ["Verbo", "Regência", "Exemplo"], "rows": [
+          ["заниматься", "+ instrumental", "заниматься теннисом"],
+          ["играть (esporte, jogo)", "в + acusativo", "играть в баскетбол"],
+          ["играть (instrumento)", "на + preposicional", "играть на барабане"],
+          ["болеть", "за + acusativo", "болеть за «Коринтианс»"],
+          ["выиграть", "у + genitivo / + acus.", "выиграть у Аргентины; выиграть кубок"],
+          ["проиграть", "+ dativo", "проиграть Германии"]
+        ]},
+        "examples": [
+          ["Сборная Бразилии выиграла у Франции со счётом два — один.", "A seleção brasileira ganhou da França por 2 a 1."],
+          ["Мы проиграли сопернику в последней минуте.", "Perdemos para o adversário no último minuto."],
+          ["Три раза в неделю я занимаюсь бегом, а по выходным играю в теннис.", "Três vezes por semana eu corro e nos fins de semana jogo tênis."]
+        ],
+        "pitfalls": [
+          "«Играть в гитару» está errado: instrumentos pedem на + preposicional, «играть на гитаре».",
+          "«Я болею» sozinho significa «estou doente». Para torcer, use sempre за: «Я болею за Палмейрас».",
+          "Para «ganhar de», não use acusativo: «выиграть у Аргентины», não «выиграть Аргентину»."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "В детстве я играл ___.", "o": ["в шахматы", "на шахматах", "шахматами", "шахматы"], "e": "Jogos: играть в + acusativo."},
+        {"q": "Моя сестра прекрасно играет ___.", "o": ["на скрипке", "в скрипку", "скрипкой", "на скрипку"], "e": "Instrumentos: играть на + preposicional."},
+        {"q": "Вчера «Флуминенсе» выиграл ___.", "o": ["у «Фламенго»", "«Фламенго»", "«Фламенго» у", "с «Фламенго»"], "e": "Выиграть у + genitivo."},
+        {"q": "Наша команда проиграла ___ в финале.", "o": ["сопернику", "у соперника", "соперника", "с соперником"], "e": "Проиграть + dativo."},
+        {"q": "Чем вы занимаетесь в свободное время? — Я занимаюсь ___.", "o": ["плаванием", "плавание", "в плавание", "плавания"], "e": "Заниматься + instrumental."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я играю в гитару уже пять лет.", "o": ["Я играю на гитаре уже пять лет.", "Я играю гитарой уже пять лет.", "Я играю на гитару уже пять лет."], "e": "Instrumento: на + preposicional."},
+        {"q": "Мы выиграли Аргентину со счётом два — ноль.", "o": ["Мы выиграли у Аргентины со счётом два — ноль.", "Мы выиграли Аргентине со счётом два — ноль.", "Мы выиграли с Аргентиной со счётом два — ноль."], "e": "Выиграть у + genitivo."},
+        {"q": "Она занимается йогу каждое утро.", "o": ["Она занимается йогой каждое утро.", "Она занимается в йогу каждое утро.", "Она занимается йоги каждое утро."], "e": "Заниматься + instrumental."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "За какую команду ты болеешь", "pt": "Para que time você torce?"},
+        {"a": "Мы выиграли у них со счётом три один", "pt": "Ganhamos deles por três a um."},
+        {"a": "Я занимаюсь плаванием два раза в неделю", "pt": "Faço natação duas vezes por semana."}
+      ]}
+    ]},
+    {"title": "Uso real: boletim esportivo, situações e produção", "goal": "Entender resultados no rádio e narrar e comentar esportes.", "steps": [
+      {"t": "listening", "kind": "Спортивные новости", "title": "Итоги тура", "voice": "m",
+        "text": "Спортивные новости. В центральном матче тура «Зенит» на своём поле выиграл у «Спартака» со счётом два — один. Победный гол на восемьдесят девятой минуте забил бразильский нападающий команды. ЦСКА сыграл вничью с «Локомотивом»: ноль — ноль. «Динамо» неожиданно проиграло «Ростову» со счётом один — три. После этого тура «Зенит» возглавляет таблицу, опережая ближайшего соперника на четыре очка. В хоккее СКА одержал уже пятую победу подряд.",
+        "pt": "Notícias esportivas. Na partida principal da rodada, o Zenit, em casa, ganhou do Spartak por dois a um. O gol da vitória foi marcado aos oitenta e nove minutos pelo atacante brasileiro do time. O CSKA empatou com o Lokomotiv: zero a zero. O Dínamo perdeu inesperadamente para o Rostov por um a três. Depois desta rodada, o Zenit lidera a tabela, quatro pontos à frente do adversário mais próximo. No hóquei, o SKA conquistou a quinta vitória seguida.",
+        "questions": [
+          {"q": "Quem marcou o gol da vitória do Zenit?", "o": ["O atacante brasileiro do time, aos 89 minutos.", "O goleiro.", "Um jogador do Spartak, contra.", "O capitão, de pênalti."], "e": "«Забил бразильский нападающий команды на восемьдесят девятой минуте»."},
+          {"q": "Qual foi o resultado de CSKA × Lokomotiv?", "o": ["0 a 0.", "2 a 1.", "1 a 3.", "1 a 1."], "e": "«Сыграл вничью … ноль — ноль»."},
+          {"q": "Quem perdeu inesperadamente?", "o": ["O Dínamo, para o Rostov.", "O Spartak, para o Zenit.", "O Rostov, para o Dínamo.", "O SKA, no hóquei."], "e": "«Динамо неожиданно проиграло Ростову»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você pergunta a um colega como terminou o jogo de ontem.", "o": ["С каким счётом закончился матч?", "Каким счётом закончился матч?", "На каком счёте закончился матч?", "Сколько счёт закончился матч?"], "e": "Со счётом = com o placar."},
+        {"q": "Você convida um amigo para jogar tênis.", "o": ["Давай сыграем в теннис в субботу!", "Давай сыграем теннисом в субботу!", "Давай сыграем на теннисе в субботу!", "Давай займёмся в теннис в субботу!"], "e": "Играть / сыграть в + acusativo."},
+        {"q": "Você diz que não pratica nenhum esporte.", "o": ["Я не занимаюсь никаким спортом.", "Я не занимаюсь никакой спорт.", "Я не играю ни в какой спортом.", "Я не занимаюсь ни спорт."], "e": "Заниматься + instrumental: никаким спортом."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva um texto (60 a 90 palavras) para um perfil de aplicativo de esportes: que esportes você pratica ou praticou, para quem torce, que instrumento ou jogo você gosta e o que procura (parceiro de treino, time amador etc.).",
+        "useful": ["Я занимаюсь … с …", "По выходным я играю в …", "Я болею за …", "А ещё я играю на …", "Ищу …"],
+        "model": "Привет! Меня зовут Бруно, мне тридцать лет. С детства я занимаюсь плаванием, а последние три года ещё и бегом: в прошлом году пробежал свой первый полумарафон. По выходным я играю в футбол с коллегами, но мы почти всегда проигрываем соседнему офису. Я болею за «Гремио» и за сборную Бразилии. А ещё я играю на гитаре, так что после матча могу устроить концерт. Сейчас ищу партнёра для пробежек по утрам в парке Горького. Пишите!",
+        "model_pt": "Oi! Meu nome é Bruno, tenho trinta anos. Desde criança faço natação, e nos últimos três anos também corrida: no ano passado corri a minha primeira meia maratona. Nos fins de semana jogo futebol com os colegas, mas quase sempre perdemos para o escritório vizinho. Torço para o Grêmio e para a seleção brasileira. E também toco violão, então depois da partida posso fazer um show. Agora procuro um parceiro para correr de manhã no parque Górki. Escrevam!",
+        "checklist": ["Usei заниматься + instrumental.", "Usei играть в e играть на corretamente.", "Usei болеть за + acusativo.", "Usei проиграть ou выиграть com a regência certa.", "Escrevi pelo menos 60 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Narre em voz alta, como um locutor esportivo, os momentos principais de uma partida real ou inventada: quem jogou, os gols, o placar final e a consequência na tabela.",
+        "useful": ["Сегодня встречались …", "На … минуте … забил гол", "… сравнял счёт", "Матч закончился со счётом …", "Благодаря этой победе …"],
+        "model": "Добрый вечер! Сегодня в финале кубка встречались «Палмейрас» и «Сантус». Уже на десятой минуте нападающий «Палмейраса» забил гол головой. Но во втором тайме «Сантус» сравнял счёт после красивой атаки. Всё решилось в конце: на девяностой минуте защитник «Палмейраса» забил с пенальти. Матч закончился со счётом два — один. Благодаря этой победе «Палмейрас» выиграл кубок в третий раз за пять лет.",
+        "model_pt": "Boa noite! Hoje, na final da copa, se enfrentaram Palmeiras e Santos. Já aos dez minutos o atacante do Palmeiras marcou de cabeça. Mas no segundo tempo o Santos empatou depois de um belo ataque. Tudo se decidiu no fim: aos noventa minutos, um zagueiro do Palmeiras marcou de pênalti. A partida terminou dois a um. Graças a essa vitória, o Palmeiras ganhou a copa pela terceira vez em cinco anos.",
+        "checklist": ["Usei забить гол e o placar com со счётом.", "Usei выиграть / проиграть com a regência certa.", "Organizei a narração no tempo (на … минуте, во втором тайме).", "Falei com ritmo de locução."]}
+    ]}
+  ]
+}

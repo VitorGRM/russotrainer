@@ -1,0 +1,165 @@
+{
+  "id": "essencial1", "theme": "essencial", "order": 1,
+  "title": "Во-первых, во-вторых", "title_pt": "Conectar ideias: argumentar com clareza",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma discussão em que duas pessoas defendem opiniões opostas.",
+    "Ler um texto argumentativo e identificar a estrutura (tese, argumentos, conclusão).",
+    "Usar conectores de enumeração, adição, contraste, causa, consequência e concessão.",
+    "Escrever um pequeno texto de opinião e defender oralmente um ponto de vista."
+  ],
+  "grammar_focus": "во-первых / кроме того / однако / зато / поэтому / так как / хотя / тем не менее / в итоге",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer os conectores e as fórmulas de opinião mais frequentes.", "steps": [
+      {"t": "warmup", "questions": [
+        "Как вы думаете, лучше учить язык с преподавателем или самостоятельно?",
+        "Какие слова вы используете, когда спорите на русском?",
+        "Em português, quais palavras você usa para organizar uma argumentação? (em primeiro lugar, além disso, porém, portanto…)"
+      ]},
+      {"t": "vocab", "items": [
+        ["во-первых, во-вторых", "em primeiro lugar, em segundo", "сначала e потом são para ordem no tempo"],
+        ["кроме того", "além disso", "= к тому же, также"],
+        ["однако", "porém, no entanto", "mais formal que но"],
+        ["зато", "em compensação", "Дорого, зато качественно."],
+        ["поэтому", "por isso", "consequência: поэтому = por isso"],
+        ["так как", "já que, uma vez que", "= потому что, mas pode abrir a frase"],
+        ["хотя", "embora", "Хотя было поздно, мы пошли гулять."],
+        ["тем не менее", "mesmo assim, ainda assim", "concessão forte"],
+        ["например", "por exemplo", "к примеру (coloquial)"],
+        ["в итоге", "no fim das contas", "= в конце концов, таким образом"],
+        ["с одной стороны … с другой стороны", "por um lado … por outro", "estrutura de equilíbrio"],
+        ["по-моему", "na minha opinião", "= на мой взгляд, я считаю, что"]
+      ]},
+      {"t": "match", "title": "Relacione cada conector à sua função.", "pairs": [
+        ["во-первых", "enumerar"], ["кроме того", "acrescentar"], ["однако", "contrastar"],
+        ["поэтому", "concluir uma consequência"], ["хотя", "conceder"], ["например", "exemplificar"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Квартира маленькая, зато в центре.", "o": ["O apartamento é pequeno, mas em compensação fica no centro.", "O apartamento é pequeno porque fica no centro.", "O apartamento é pequeno, portanto fica no centro.", "O apartamento é pequeno, embora fique no centro."], "e": "Зато compensa um ponto negativo com um positivo."},
+        {"q": "Хотя он много занимался, экзамен он не сдал.", "o": ["Embora tenha estudado muito, ele não passou na prova.", "Como estudou muito, ele passou na prova.", "Ele estudou muito, por isso não fez a prova.", "Ele estudou muito, além disso passou na prova."], "e": "Хотя introduz uma concessão (embora)."},
+        {"q": "Было уже поздно, тем не менее мы решили пойти.", "o": ["Já era tarde; mesmo assim decidimos ir.", "Já era tarde, por isso decidimos não ir.", "Já era tarde e decidimos ir mais cedo.", "Já era tarde, por exemplo decidimos ir."], "e": "Тем не менее = mesmo assim."}
+      ]}
+    ]},
+    {"title": "Escuta: um debate entre amigos", "goal": "Seguir os argumentos de cada lado e reconhecer os conectores na fala.", "steps": [
+      {"t": "dialogue", "title": "Курсы или приложение?", "setting": "Pável e Marina discutem a melhor forma de aprender uma língua estrangeira.",
+        "speakers": {"Павел": "m", "Марина": "f"},
+        "lines": [
+          ["Павел", "Я решил учить испанский. Буду заниматься по приложению: во-первых, это бесплатно, во-вторых, можно учиться где угодно.", "Decidi aprender espanhol. Vou estudar por um aplicativo: em primeiro lugar, é de graça; em segundo, dá para estudar em qualquer lugar."],
+          ["Марина", "С одной стороны, ты прав. Но, по-моему, без преподавателя трудно научиться говорить.", "Por um lado, você tem razão. Mas, na minha opinião, sem professor é difícil aprender a falar."],
+          ["Павел", "Почему? В приложении есть упражнения на произношение.", "Por quê? No aplicativo há exercícios de pronúncia."],
+          ["Марина", "Да, однако приложение не исправит твои ошибки в живом разговоре. Кроме того, на курсах есть группа, и это мотивирует.", "Sim, porém o aplicativo não vai corrigir os seus erros numa conversa real. Além disso, no curso há um grupo, e isso motiva."],
+          ["Павел", "Курсы стоят дорого, а у меня сейчас мало денег.", "Os cursos são caros, e agora estou com pouco dinheiro."],
+          ["Марина", "Понимаю. Зато ты потратишь меньше времени, так как будешь заниматься системно.", "Entendo. Em compensação, você vai gastar menos tempo, já que vai estudar de forma sistemática."],
+          ["Павел", "Хотя ты меня почти убедила, я всё-таки начну с приложения. А через месяц посмотрим.", "Embora você quase tenha me convencido, mesmo assim vou começar pelo aplicativo. Daqui a um mês a gente vê."],
+          ["Марина", "Хорошо. Тогда давай договоримся: если через месяц ты не сможешь рассказать о себе, идёшь на курсы.", "Está bem. Então vamos combinar: se daqui a um mês você não conseguir falar de si mesmo, vai para o curso."],
+          ["Павел", "Договорились!", "Combinado!"]
+        ],
+        "questions": [
+          {"q": "Quais são os dois argumentos de Pável a favor do aplicativo?", "o": ["É grátis e permite estudar em qualquer lugar.", "É rápido e tem professor.", "Tem grupo e corrige os erros.", "É divertido e tem certificado."], "e": "«Во-первых, это бесплатно, во-вторых, можно учиться где угодно»."},
+          {"q": "Que argumento Marina acrescenta com «кроме того»?", "o": ["No curso há um grupo, e isso motiva.", "O curso é mais barato.", "O aplicativo não funciona sem internet.", "O professor dá certificado."], "e": "«Кроме того, на курсах есть группа, и это мотивирует»."},
+          {"q": "O que Pável decide no fim?", "o": ["Começar pelo aplicativo e reavaliar em um mês.", "Matricular-se no curso imediatamente.", "Desistir do espanhol.", "Estudar com Marina."], "e": "«Я всё-таки начну с приложения. А через месяц посмотрим»."},
+          {"q": "Qual é o acordo entre eles?", "o": ["Se em um mês ele não souber falar de si, vai para o curso.", "Ela vai pagar o curso dele.", "Eles vão estudar juntos.", "Ele vai baixar outro aplicativo."], "e": "«Если через месяц ты не сможешь рассказать о себе, идёшь на курсы»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Однако приложение не исправит твои ошибки в живом разговоре.", "pt": "Porém o aplicativo não vai corrigir os seus erros numa conversa real.", "hint": "Argumento de Marina (8 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["С одной стороны, ты прав.", "Por um lado, você tem razão."],
+        ["Но, по-моему, без преподавателя трудно.", "Mas, na minha opinião, sem professor é difícil."],
+        ["Кроме того, на курсах есть группа.", "Além disso, no curso há um grupo."],
+        ["Зато ты потратишь меньше времени.", "Em compensação, você vai gastar menos tempo."]
+      ]}
+    ]},
+    {"title": "Leitura: um texto argumentativo", "goal": "Reconhecer a tese, os argumentos e a conclusão de um texto de opinião.", "steps": [
+      {"t": "reading", "title": "Нужно ли учить иностранный язык, если есть переводчик в телефоне?",
+        "text": "Сегодня многие считают, что учить иностранные языки больше не нужно: электронный переводчик всегда под рукой. Однако, на мой взгляд, это опасная иллюзия.\n\nВо-первых, машина переводит слова, но не всегда понимает контекст, юмор и интонацию. Например, шутка в переводе часто перестаёт быть смешной. Во-вторых, разговор через телефон медленный и неестественный, поэтому настоящего контакта между людьми не возникает. Кроме того, изучение языка тренирует память и помогает лучше понять другую культуру.\n\nКонечно, переводчики полезны: они выручают в путешествии, когда нужно быстро спросить дорогу. Тем не менее они не заменят живого общения. Таким образом, учить языки стоит, хотя это и требует времени и сил.",
+        "pt": "Hoje muitos acham que não é mais preciso aprender línguas estrangeiras: o tradutor eletrônico está sempre à mão. No entanto, na minha opinião, isso é uma ilusão perigosa.\n\nEm primeiro lugar, a máquina traduz palavras, mas nem sempre entende o contexto, o humor e a entonação. Por exemplo, uma piada traduzida muitas vezes deixa de ter graça. Em segundo lugar, uma conversa pelo celular é lenta e artificial, por isso não surge um contato real entre as pessoas. Além disso, aprender uma língua treina a memória e ajuda a entender melhor outra cultura.\n\nÉ claro que os tradutores são úteis: salvam a pátria numa viagem, quando é preciso perguntar o caminho rapidamente. Mesmo assim, eles não substituem a comunicação ao vivo. Portanto, vale a pena aprender línguas, embora isso exija tempo e esforço.",
+        "tf": [
+          ["O autor acha que os tradutores eletrônicos tornaram as línguas desnecessárias.", "F", "«На мой взгляд, это опасная иллюзия»."],
+          ["Segundo o texto, piadas costumam perder a graça na tradução automática.", "V", "«Шутка в переводе часто перестаёт быть смешной»."],
+          ["O autor reconhece que os tradutores são úteis em viagens.", "V", "«Они выручают в путешествии»."],
+          ["O autor recomenda um aplicativo específico de tradução.", "N", "Nenhum aplicativo é citado."],
+          ["A conclusão do texto é introduzida por «таким образом».", "V", "«Таким образом, учить языки стоит»."]
+        ],
+        "questions": [
+          {"q": "Какую функцию в тексте выполняет абзац, который начинается словом «Конечно»?", "o": ["Автор признаёт аргумент противников, а потом возражает.", "Автор приводит главный аргумент.", "Автор делает вывод.", "Автор рассказывает историю из жизни."], "e": "Конечно … тем не менее = concessão seguida de refutação."},
+          {"q": "Почему, по мнению автора, разговор через телефон не создаёт контакта?", "o": ["Потому что он медленный и неестественный.", "Потому что телефон дорогой.", "Потому что переводчик не работает без интернета.", "Потому что люди не любят технику."], "e": "«Разговор через телефон медленный и неестественный, поэтому…»."}
+        ]},
+      {"t": "cloze", "title": "Escolha o conector adequado.",
+        "text": "Я люблю путешествовать, {однако|поэтому|например} летать боюсь. {Поэтому|Хотя|Зато} я обычно езжу на поезде. Это долго, {зато|так как|во-первых} можно увидеть страну из окна. {Кроме того|Однако|Хотя}, в поезде легко познакомиться с интересными людьми.",
+        "pt": "Gosto de viajar, porém tenho medo de voar. Por isso costumo ir de trem. Demora, mas em compensação dá para ver o país pela janela. Além disso, no trem é fácil conhecer pessoas interessantes.",
+        "e": "Однако = contraste; поэтому = consequência; зато = compensação; кроме того = adição."}
+    ]},
+    {"title": "Foco na forma: os conectores e a pontuação", "goal": "Escolher o conector pela função lógica e pontuá-lo corretamente.", "steps": [
+      {"t": "grammar", "title": "Seis funções, seis famílias de conectores",
+        "paragraphs": [
+          "Enumerar: во-первых, во-вторых, в-третьих, наконец. Acrescentar: кроме того, к тому же, также, более того.",
+          "Contrastar: но, а, однако, зато (compensação positiva), тем не менее (mesmo assim). «А» opõe duas coisas comparáveis: Я люблю чай, а он кофе.",
+          "Causa: потому что, так как, поскольку. Consequência: поэтому, так что, в результате. Atenção: потому что vem depois da consequência; так как pode abrir a frase: Так как шёл дождь, мы остались дома.",
+          "Concessão: хотя (embora), несмотря на то что (apesar de que), всё-таки (mesmo assim). Conclusão: таким образом, в итоге, в конце концов, итак.",
+          "Pontuação: palavras introdutórias como во-первых, кроме того, однако (no início), например, по-моему e таким образом ficam entre vírgulas. Хотя, так как e потому что abrem uma oração subordinada, separada por vírgula."
+        ],
+        "table": {"columns": ["Função", "Conectores", "Exemplo"], "rows": [
+          ["enumerar", "во-первых, во-вторых, наконец", "Во-первых, это дёшево."],
+          ["acrescentar", "кроме того, к тому же, также", "Кроме того, это удобно."],
+          ["contrastar", "однако, зато, тем не менее", "Дорого, зато надёжно."],
+          ["causa", "потому что, так как, поскольку", "Так как я устал, я остался."],
+          ["consequência", "поэтому, так что, в результате", "Я устал, поэтому остался."],
+          ["concessão", "хотя, несмотря на то что", "Хотя я устал, я пошёл."],
+          ["conclusão", "таким образом, в итоге, итак", "Таким образом, план хороший."]
+        ]},
+        "examples": [
+          ["Я опоздал, потому что сломался автобус.", "Cheguei atrasado porque o ônibus quebrou."],
+          ["Автобус сломался, поэтому я опоздал.", "O ônibus quebrou, por isso cheguei atrasado."],
+          ["Несмотря на то что было холодно, мы купались.", "Apesar de estar frio, nadamos."]
+        ],
+        "pitfalls": [
+          "Não confunda поэтому (por isso, consequência) com потому что (porque, causa): a ordem lógica é inversa.",
+          "Сначала / потом indicam tempo; во-первых / во-вторых organizam argumentos.",
+          "Зато só se usa quando o segundo elemento compensa o primeiro: «Дорого, зато вкусно». Para um simples contraste, use но ou однако."
+        ]},
+      {"t": "choice", "title": "Escolha o conector correto.", "items": [
+        {"q": "Я не пошёл на работу, ___ у меня была температура.", "o": ["потому что", "поэтому", "зато", "хотя"], "e": "A causa vem depois: потому что."},
+        {"q": "У меня была температура, ___ я не пошёл на работу.", "o": ["поэтому", "потому что", "так как", "кроме того"], "e": "A consequência vem depois: поэтому."},
+        {"q": "___ погода была плохая, экскурсия нам понравилась.", "o": ["Хотя", "Поэтому", "Так что", "Во-первых"], "e": "Concessão: хотя."},
+        {"q": "Этот телефон не самый новый, ___ батарея держит два дня.", "o": ["зато", "поэтому", "так как", "во-первых"], "e": "Compensação positiva: зато."},
+        {"q": "Работа интересная. ___, коллектив очень дружный.", "o": ["Кроме того", "Однако", "Хотя", "Потому что"], "e": "Acrescentar um argumento do mesmo lado: кроме того."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я устал, потому что я пошёл спать.", "o": ["Я устал, поэтому пошёл спать.", "Я устал, хотя пошёл спать.", "Я устал, зато пошёл спать."], "e": "Ir dormir é consequência do cansaço: поэтому."},
+        {"q": "Сначала, это дорого. Потом, это неудобно.", "o": ["Во-первых, это дорого. Во-вторых, это неудобно.", "Первое, это дорого. Второе, это неудобно.", "Сначала это дорого, затем неудобно."], "e": "Para enumerar argumentos, use во-первых / во-вторых."},
+        {"q": "Хотя было холодно, но мы гуляли.", "o": ["Хотя было холодно, мы гуляли.", "Хотя было холодно, поэтому мы гуляли.", "Хотя было холодно, зато мы гуляли."], "e": "Depois de хотя, não se repete но na oração principal."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "С одной стороны это удобно с другой стороны дорого", "pt": "Por um lado é cômodo, por outro, caro."},
+        {"a": "Так как шёл дождь мы остались дома", "pt": "Como estava chovendo, ficamos em casa."},
+        {"a": "Таким образом у этого плана больше плюсов", "pt": "Portanto, este plano tem mais vantagens."}
+      ]}
+    ]},
+    {"title": "Uso real: podcast, situações e produção", "goal": "Reconhecer a argumentação no rádio e argumentar por escrito e oralmente.", "steps": [
+      {"t": "listening", "kind": "Подкаст", "title": "Пять минут о жизни: работа из дома", "voice": "m2",
+        "text": "Здравствуйте, вы слушаете подкаст «Пять минут о жизни». Сегодня поговорим о работе из дома. С одной стороны, удалённая работа экономит время: не нужно ехать в офис, а значит, можно спать на час дольше. Кроме того, многие говорят, что дома им легче сосредоточиться. Однако у удалёнки есть и минусы. Во-первых, трудно отделить работу от отдыха. Во-вторых, людям не хватает живого общения с коллегами. Поэтому сегодня многие компании выбирают гибридный формат: два-три дня в офисе, остальное время дома. Пишите нам, какой формат нравится вам.",
+        "pt": "Olá, você está ouvindo o podcast «Cinco minutos sobre a vida». Hoje vamos falar sobre o trabalho em casa. Por um lado, o trabalho remoto economiza tempo: não é preciso ir ao escritório, e isso significa que dá para dormir uma hora a mais. Além disso, muitos dizem que em casa é mais fácil se concentrar. Porém, o remoto também tem desvantagens. Em primeiro lugar, é difícil separar o trabalho do descanso. Em segundo lugar, as pessoas sentem falta do contato ao vivo com os colegas. Por isso, hoje muitas empresas escolhem o formato híbrido: dois ou três dias no escritório, o resto do tempo em casa. Escreva para nós dizendo qual formato você prefere.",
+        "questions": [
+          {"q": "Que vantagens do trabalho remoto são citadas?", "o": ["Economizar tempo e concentrar-se melhor.", "Ganhar mais e ter mais férias.", "Conhecer mais colegas.", "Ter um escritório maior."], "e": "«Экономит время … кроме того … легче сосредоточиться»."},
+          {"q": "Qual é a primeira desvantagem?", "o": ["É difícil separar trabalho e descanso.", "Falta contato com os colegas.", "A internet é lenta.", "O salário é menor."], "e": "«Во-первых, трудно отделить работу от отдыха»."},
+          {"q": "Que solução muitas empresas escolhem?", "o": ["O formato híbrido.", "Voltar totalmente ao escritório.", "Trabalho remoto total.", "Jornada reduzida."], "e": "«Поэтому … гибридный формат»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você concorda em parte com o interlocutor.", "o": ["В чём-то вы правы, однако я не совсем согласен.", "Вы правы, поэтому я не согласен.", "Вы правы, зато я не согласен.", "Вы правы, во-первых, я не согласен."], "e": "Concordar em parte e depois contrastar: однако."},
+        {"q": "Você quer dar um exemplo.", "o": ["Например, в прошлом году…", "Таким образом, в прошлом году…", "Поэтому, в прошлом году…", "Зато в прошлом году…"], "e": "Например = por exemplo."},
+        {"q": "Você quer fechar a sua argumentação.", "o": ["Таким образом, я считаю, что…", "Во-первых, я считаю, что…", "Хотя я считаю, что…", "Зато я считаю, что…"], "e": "Таким образом introduz a conclusão."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 80,
+        "task": "Escreva um texto de opinião (80 a 120 palavras): «Нужно ли запретить телефоны в школе?». Apresente a tese, dois argumentos, uma concessão e a conclusão.",
+        "useful": ["На мой взгляд, …", "Во-первых, … Во-вторых, …", "Кроме того, …", "Конечно, … Тем не менее …", "Таким образом, …"],
+        "model": "На мой взгляд, телефоны в школе нужно ограничить, но не запрещать полностью. Во-первых, на уроке телефон отвлекает: ученики проверяют сообщения и не слушают учителя. Во-вторых, на переменах дети перестают общаться друг с другом, поэтому страдают живые отношения. Кроме того, многие учителя жалуются, что из-за телефонов ученикам труднее сосредоточиться. Конечно, телефон бывает нужен: например, чтобы позвонить родителям или найти информацию для проекта. Тем не менее его можно хранить в сумке и доставать только с разрешения учителя. Таким образом, разумные правила лучше, чем полный запрет.",
+        "model_pt": "Na minha opinião, os celulares na escola devem ser limitados, mas não proibidos totalmente. Em primeiro lugar, na aula o celular distrai: os alunos olham as mensagens e não escutam o professor. Em segundo lugar, nos intervalos as crianças deixam de conversar entre si, por isso as relações ao vivo sofrem. Além disso, muitos professores reclamam que, por causa dos celulares, os alunos têm mais dificuldade de se concentrar. É claro que às vezes o celular é necessário: por exemplo, para ligar para os pais ou buscar informação para um trabalho. Mesmo assim, ele pode ficar na mochila e ser usado só com permissão do professor. Portanto, regras razoáveis são melhores do que a proibição total.",
+        "checklist": ["Apresentei a minha tese no início.", "Usei во-первых e во-вторых.", "Usei um conector de adição (кроме того).", "Fiz uma concessão (конечно … тем не менее / хотя).", "Fechei com таким образом ou в итоге.", "Escrevi pelo menos 80 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Defenda oralmente, em cerca de um minuto, a sua posição: «Жить в большом городе лучше, чем в маленьком?». Use pelo menos cinco conectores diferentes.",
+        "useful": ["Я считаю, что …", "С одной стороны, … с другой стороны, …", "Во-первых, …", "Зато …", "Хотя …", "В итоге …"],
+        "model": "Я считаю, что жить в большом городе лучше, хотя это не для всех. С одной стороны, в мегаполисе шумно и дорого. С другой стороны, там гораздо больше возможностей. Во-первых, легче найти хорошую работу. Во-вторых, есть театры, музеи, концерты. Кроме того, в большом городе живут люди из разных стран, поэтому можно познакомиться с разными культурами. Да, иногда устаёшь от толпы, зато никогда не бывает скучно. В итоге для меня плюсов больше, чем минусов.",
+        "model_pt": "Acho que viver numa cidade grande é melhor, embora isso não sirva para todos. Por um lado, na metrópole é barulhento e caro. Por outro lado, há muito mais oportunidades. Em primeiro lugar, é mais fácil encontrar um bom emprego. Em segundo, há teatros, museus, shows. Além disso, na cidade grande vivem pessoas de vários países, por isso dá para conhecer culturas diferentes. Sim, às vezes a gente se cansa da multidão, mas em compensação nunca é chato. No fim das contas, para mim há mais vantagens do que desvantagens.",
+        "checklist": ["Expressei a minha opinião logo no início.", "Usei с одной стороны … с другой стороны.", "Usei зато ou однако.", "Usei pelo menos cinco conectores diferentes.", "Terminei com uma conclusão."]}
+    ]}
+  ]
+}

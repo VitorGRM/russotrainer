@@ -15,3 +15,10 @@ data/openrussian.sqlite3-shm
 data/openrussian.sqlite3-wal
 data/lexical_minimum.sqlite3-shm
 data/lexical_minimum.sqlite3-wal
+
+# Curso temático: cache da base lexical, progresso do aluno e downloads da construção
+data/cache/
+data/lingualab.sqlite3
+data/lingualab.sqlite3-shm
+data/lingualab.sqlite3-wal
+.cache/

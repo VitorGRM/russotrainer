@@ -1,0 +1,163 @@
+{
+  "id": "compras1", "theme": "compras", "order": 1,
+  "title": "Мне нужно вернуть товар", "title_pt": "Compras, trocas e devoluções",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma devolução numa loja e um aviso no supermercado.",
+    "Ler um texto sobre os direitos do consumidor na Rússia.",
+    "Usar нужен / нужна / нужно / нужны com o dativo e formular pedidos educados.",
+    "Escrever uma reclamação a uma loja virtual e negociar oralmente uma troca."
+  ],
+  "grammar_focus": "кому нужен / нужна / нужно / нужны + что · нужно + инфинитив · вежливые просьбы: Не могли бы вы…? Можно…? Будьте добры…",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de compra, pagamento, troca e devolução.", "steps": [
+      {"t": "warmup", "questions": [
+        "Вы чаще покупаете в магазине или в интернете?",
+        "Вам когда-нибудь приходилось возвращать товар? Что случилось?",
+        "Em português, como você pede algo de forma educada numa loja?"
+      ]},
+      {"t": "vocab", "items": [
+        ["чек", "nota fiscal, recibo", "сохраните чек"],
+        ["вернуть деньги", "devolver o dinheiro", "возврат = devolução"],
+        ["обменять", "trocar", "обменять на другой размер"],
+        ["брак", "defeito de fabricação", "товар с браком"],
+        ["гарантия", "garantia", "на гарантии = dentro da garantia"],
+        ["касса", "caixa", "оплатить на кассе"],
+        ["оплатить картой / наличными", "pagar com cartão / em dinheiro", "наличные = dinheiro vivo"],
+        ["скидка", "desconto", "со скидкой; акция = promoção"],
+        ["доставка", "entrega", "бесплатная доставка"],
+        ["пункт выдачи", "ponto de retirada", "забрать заказ в пункте выдачи"],
+        ["жалоба", "reclamação", "написать жалобу; пожаловаться на"],
+        ["покупатель / продавец", "comprador / vendedor", "покупка = compra"]
+      ]},
+      {"t": "match", "title": "Relacione cada expressão à sua tradução.", "pairs": [
+        ["оформить заказ", "fazer o pedido"], ["оплатить при получении", "pagar na entrega"],
+        ["сохранить чек", "guardar a nota"], ["вернуть деньги на карту", "estornar no cartão"],
+        ["товар закончился", "o produto esgotou"], ["пакет нужен?", "precisa de sacola?"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Пакет нужен?", "o": ["Precisa de sacola?", "O pacote chegou?", "Quer embrulhar?", "O pacote é necessário para a devolução?"], "e": "Pergunta clássica do caixa no supermercado russo."},
+        {"q": "Этот товар обмену и возврату не подлежит.", "o": ["Este produto não pode ser trocado nem devolvido.", "Este produto está em promoção.", "Este produto não tem garantia de entrega.", "Este produto é vendido só por troca."], "e": "Не подлежит = não está sujeito a."},
+        {"q": "Заказ можно забрать в пункте выдачи до пятницы.", "o": ["O pedido pode ser retirado no ponto de retirada até sexta-feira.", "O pedido será entregue em casa na sexta.", "O pedido pode ser cancelado até sexta.", "O pedido sai do armazém na sexta."], "e": "Пункт выдачи = ponto de retirada."}
+      ]}
+    ]},
+    {"title": "Escuta: devolvendo um produto", "goal": "Entender um diálogo de reclamação e a solução proposta.", "steps": [
+      {"t": "dialogue", "title": "Чайник не работает", "setting": "Liudmila volta a uma loja de eletrodomésticos com uma chaleira elétrica comprada há uma semana.",
+        "speakers": {"Покупательница": "f2", "Продавец": "m"},
+        "lines": [
+          ["Покупательница", "Здравствуйте. Неделю назад я купила у вас этот чайник, а он уже не работает. Мне нужно его вернуть.", "Olá. Há uma semana comprei esta chaleira aqui e ela já não funciona. Preciso devolvê-la."],
+          ["Продавец", "Понимаю. Чек у вас сохранился?", "Entendo. A senhora ainda tem a nota?"],
+          ["Покупательница", "Да, вот чек и коробка.", "Sim, aqui estão a nota e a caixa."],
+          ["Продавец", "Что именно случилось?", "O que aconteceu exatamente?"],
+          ["Покупательница", "Он включается, но вода не нагревается. Я ничего не роняла, просто однажды утром он перестал греть.", "Ela liga, mas a água não esquenta. Não deixei cair nada, simplesmente uma manhã ela parou de aquecer."],
+          ["Продавец", "Похоже на брак. Мы можем обменять чайник на такой же или вернуть деньги. Что вам удобнее?", "Parece defeito de fabricação. Podemos trocar a chaleira por uma igual ou devolver o dinheiro. O que é melhor para a senhora?"],
+          ["Покупательница", "Знаете, такой же мне не нужен. А можно обменять на другую модель, подороже? Я доплачу разницу.", "Sabe, uma igual eu não quero. Posso trocar por outro modelo, um pouco mais caro? Eu pago a diferença."],
+          ["Продавец", "Конечно. Вот эта модель стоит на восемьсот рублей больше, у неё гарантия два года.", "Claro. Este modelo custa oitocentos rublos a mais e tem dois anos de garantia."],
+          ["Покупательница", "Отлично, беру. Не могли бы вы сразу проверить, что он работает?", "Ótimo, vou levar. O senhor poderia verificar agora mesmo se ela funciona?"],
+          ["Продавец", "Разумеется. Минуточку, сейчас нальём воды.", "Naturalmente. Um minutinho, vamos colocar água."]
+        ],
+        "questions": [
+          {"q": "Qual é o problema da chaleira?", "o": ["Liga, mas não esquenta a água.", "Não liga.", "Vaza água.", "Caiu e quebrou."], "e": "«Он включается, но вода не нагревается»."},
+          {"q": "Quais opções o vendedor oferece?", "o": ["Trocar por uma igual ou devolver o dinheiro.", "Consertar em duas semanas.", "Dar um desconto na próxima compra.", "Mandar para a fábrica."], "e": "«Обменять чайник на такой же или вернуть деньги»."},
+          {"q": "O que a cliente escolhe?", "o": ["Trocar por um modelo mais caro, pagando a diferença.", "Receber o dinheiro de volta.", "Uma chaleira igual.", "Um vale-compras."], "e": "«Обменять на другую модель, подороже? Я доплачу разницу»."},
+          {"q": "Que vantagem tem o novo modelo?", "o": ["Dois anos de garantia.", "Entrega grátis.", "Esquenta mais rápido.", "É mais barato."], "e": "«У неё гарантия два года»."}
+        ]},
+      {"t": "dictation", "voice": "m", "text": "Мы можем обменять чайник на такой же или вернуть деньги.", "pt": "Podemos trocar a chaleira por uma igual ou devolver o dinheiro.", "hint": "Proposta do vendedor (10 palavras)."},
+      {"t": "shadow", "voice": "f2", "lines": [
+        ["Мне нужно его вернуть.", "Preciso devolvê-lo."],
+        ["Вот чек и коробка.", "Aqui estão a nota e a caixa."],
+        ["Можно обменять на другую модель?", "Posso trocar por outro modelo?"],
+        ["Не могли бы вы сразу проверить?", "O senhor poderia verificar agora mesmo?"]
+      ]}
+    ]},
+    {"title": "Leitura: os direitos do consumidor", "goal": "Ler um texto informativo com regras e exceções.", "steps": [
+      {"t": "reading", "title": "Что делать, если покупка не подошла",
+        "text": "В России, как и во многих странах, права покупателей защищает закон. Если вы купили качественную вещь, но она вам не подошла по размеру, цвету или фасону, её можно обменять или вернуть в течение четырнадцати дней. Главное условие: товар не был в употреблении, сохранены ярлыки и упаковка. Чек желателен, но не обязателен: продавец не может отказать, если у вас есть другие доказательства покупки, например выписка из банка.\n\nОднако есть товары, которые нельзя вернуть, даже если они просто не понравились. Это, например, лекарства, косметика, нижнее бельё и технически сложные товары: телефоны, ноутбуки, холодильники.\n\nДругое дело, если в товаре обнаружен брак. Тогда покупатель может потребовать замену, ремонт или возврат денег, причём в течение всего гарантийного срока. При покупке в интернете правила ещё мягче: от товара можно отказаться в течение семи дней после получения.",
+        "pt": "Na Rússia, como em muitos países, a lei protege os direitos dos compradores. Se você comprou um produto em bom estado, mas ele não serviu pelo tamanho, cor ou modelo, é possível trocá-lo ou devolvê-lo em até catorze dias. A condição principal: o produto não ter sido usado e as etiquetas e a embalagem estarem preservadas. A nota é desejável, mas não obrigatória: o vendedor não pode recusar se você tiver outras provas da compra, por exemplo um extrato bancário.\n\nPorém, há produtos que não podem ser devolvidos, mesmo que simplesmente não tenham agradado. São, por exemplo, remédios, cosméticos, roupa íntima e produtos tecnicamente complexos: celulares, notebooks, geladeiras.\n\nOutra coisa é quando o produto tem defeito. Nesse caso, o comprador pode exigir substituição, conserto ou devolução do dinheiro, e durante todo o prazo de garantia. Nas compras pela internet, as regras são ainda mais brandas: é possível desistir do produto em até sete dias depois de recebê-lo.",
+        "tf": [
+          ["Um produto que não serviu pode ser trocado em até 14 dias.", "V", "«В течение четырнадцати дней»."],
+          ["Sem a nota fiscal, a devolução é impossível.", "F", "«Чек желателен, но не обязателен»."],
+          ["Um celular que simplesmente não agradou pode ser devolvido.", "F", "Produtos tecnicamente complexos estão na lista de exceções."],
+          ["Com defeito, o comprador pode exigir conserto durante a garantia.", "V", "«В течение всего гарантийного срока»."],
+          ["A loja precisa pagar a entrega da devolução.", "N", "O texto não fala de custos de entrega."]
+        ],
+        "questions": [
+          {"q": "Какое главное условие для возврата качественного товара?", "o": ["Товар не был в употреблении, ярлыки и упаковка сохранены.", "Обязательно должен быть чек.", "Товар куплен со скидкой.", "Покупатель живёт рядом с магазином."], "e": "«Товар не был в употреблении, сохранены ярлыки и упаковка»."},
+          {"q": "Сколько дней есть у покупателя, если он купил вещь в интернете?", "o": ["Семь дней после получения.", "Четырнадцать дней после заказа.", "Весь гарантийный срок.", "Один месяц."], "e": "«В течение семи дней после получения»."}
+        ]},
+      {"t": "cloze", "title": "Complete com нужен, нужна, нужно ou нужны.",
+        "text": "Для возврата вам {нужен|нужна|нужны} чек или выписка из банка. Мне {нужна|нужен|нужно} новая сумка. Покупателю {нужно|нужен|нужны} сохранить упаковку. Нам {нужны|нужен|нужна} батарейки для пульта.",
+        "pt": "Para a devolução, você precisa da nota ou de um extrato bancário. Preciso de uma bolsa nova. O comprador precisa guardar a embalagem. Precisamos de pilhas para o controle.",
+        "e": "Нужен concorda com o objeto necessário: чек (m.) нужен, сумка (f.) нужна, батарейки (pl.) нужны. Com infinitivo: нужно."}
+    ]},
+    {"title": "Foco na forma: нужен e pedidos educados", "goal": "Concordar нужен com o objeto e escolher o grau de cortesia adequado.", "steps": [
+      {"t": "grammar", "title": "Precisar e pedir",
+        "paragraphs": [
+          "Para «precisar de algo», o russo inverte a estrutura: quem precisa vai para o dativo, e o objeto necessário é o sujeito gramatical. Por isso, нужен concorda com o objeto: Мне нужен зонт. Ей нужна помощь. Нам нужно время. Детям нужны тёплые вещи.",
+          "No passado e no futuro, o verbo быть também concorda com o objeto: Мне нужна была помощь. Вам нужен будет паспорт. Com infinitivo, usa-se sempre нужно (надо): Мне нужно позвонить. Нам нужно было уйти.",
+          "Pedidos, do mais direto ao mais cortês: Дайте, пожалуйста… (imperativo + пожалуйста, perfeitamente normal numa loja); Можно…? (Можно посмотреть?); Вы не могли бы…? / Не могли бы вы…? (Poderia…?); Будьте добры / Будьте любезны… (Por gentileza…).",
+          "Numa loja, pedir pelo produto: Покажите, пожалуйста, вон тот свитер. Можно его примерить? Дайте, пожалуйста, два килограмма яблок."
+        ],
+        "table": {"columns": ["Objeto", "Forma", "Exemplo"], "rows": [
+          ["masculino", "нужен", "Мне нужен новый телефон."],
+          ["feminino", "нужна", "Ему нужна консультация."],
+          ["neutro / infinitivo", "нужно", "Нам нужно молоко. Нам нужно идти."],
+          ["plural", "нужны", "Вам нужны документы."]
+        ]},
+        "examples": [
+          ["Вам нужна помощь? — Нет, спасибо, я просто смотрю.", "Precisa de ajuda? Não, obrigado, só estou olhando."],
+          ["Не могли бы вы упаковать это как подарок?", "Poderia embrulhar para presente?"],
+          ["Будьте добры, пробейте ещё один пакет.", "Por gentileza, registre mais uma sacola."]
+        ],
+        "pitfalls": [
+          "Não diga «Я нужен зонт»: quem precisa vai no dativo, «Мне нужен зонт».",
+          "O objeto necessário fica no nominativo: «Мне нужна сумка» (não «сумку»).",
+          "«Я хочу» é aceitável numa loja, mas «Мне, пожалуйста,…» ou «Дайте, пожалуйста,…» soam mais naturais."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Извините, вам ___ пакет?", "o": ["нужен", "нужна", "нужно", "нужны"], "e": "Пакет é masculino."},
+        {"q": "Маме ___ новые очки.", "o": ["нужны", "нужен", "нужна", "нужно"], "e": "Очки é sempre plural."},
+        {"q": "___ нужна консультация по этому ноутбуку.", "o": ["Мне", "Я", "Меня", "Мной"], "e": "Quem precisa: dativo."},
+        {"q": "В прошлом месяце мне ___ новая куртка.", "o": ["была нужна", "был нужен", "было нужно", "были нужны"], "e": "No passado, быть concorda com куртка (f.)."},
+        {"q": "___ вы показать мне другой цвет?", "o": ["Не могли бы", "Можно", "Будьте добры", "Пожалуйста"], "e": "Не могли бы вы + infinitivo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я нужна новая сумка.", "o": ["Мне нужна новая сумка.", "Мне нужен новая сумка.", "Меня нужна новая сумка."], "e": "Dativo para quem precisa."},
+        {"q": "Мне нужно эти документы.", "o": ["Мне нужны эти документы.", "Мне нужен эти документы.", "Мне нужна эти документы."], "e": "Документы é plural: нужны."},
+        {"q": "Нам нужен был хлеб и нужны молоко.", "o": ["Нам нужен был хлеб и нужно было молоко.", "Нам нужен был хлеб и нужен было молоко.", "Нам нужно был хлеб и нужно молоко."], "e": "Cada objeto concorda: хлеб нужен был; молоко нужно было."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Покажите пожалуйста вон тот свитер", "pt": "Mostre aquele suéter ali, por favor."},
+        {"a": "Можно обменять это на другой размер", "pt": "Posso trocar isto por outro tamanho?"},
+        {"a": "Нам нужны документы для возврата", "pt": "Precisamos dos documentos para a devolução."}
+      ]}
+    ]},
+    {"title": "Uso real: aviso no supermercado, situações e produção", "goal": "Entender avisos de loja e resolver por escrito e oralmente um problema de compra.", "steps": [
+      {"t": "listening", "kind": "Объявление в супермаркете", "title": "Внимание, покупатели!", "voice": "f",
+        "text": "Уважаемые покупатели! Только до воскресенья в нашем магазине действует акция: при покупке двух упаковок кофе третья бесплатно. Владельцам карты постоянного покупателя скидка пятнадцать процентов на всю бытовую химию. Напоминаем, что кассы самообслуживания принимают оплату только картой. Для оплаты наличными, пожалуйста, обращайтесь на кассы номер один и два. Благодарим за покупки!",
+        "pt": "Prezados clientes! Somente até domingo, a nossa loja tem uma promoção: na compra de dois pacotes de café, o terceiro é grátis. Para quem tem o cartão de cliente fiel, desconto de quinze por cento em todos os produtos de limpeza. Lembramos que os caixas de autoatendimento aceitam pagamento só com cartão. Para pagar em dinheiro, dirija-se aos caixas número um e dois. Obrigado pelas compras!",
+        "questions": [
+          {"q": "Qual é a promoção do café?", "o": ["Leve três, pague dois.", "15% de desconto.", "Um pacote grátis para quem tem o cartão.", "Metade do preço."], "e": "«При покупке двух упаковок кофе третья бесплатно»."},
+          {"q": "Quem tem desconto nos produtos de limpeza?", "o": ["Quem tem o cartão de cliente fiel.", "Todos os clientes.", "Quem paga em dinheiro.", "Quem usa o autoatendimento."], "e": "«Владельцам карты постоянного покупателя»."},
+          {"q": "Onde se paga em dinheiro?", "o": ["Nos caixas 1 e 2.", "No autoatendimento.", "No balcão de informações.", "Em qualquer caixa."], "e": "«Для оплаты наличными … кассы номер один и два»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "O caixa pergunta como você vai pagar.", "o": ["Картой, пожалуйста.", "С картой, пожалуйста.", "На карту, пожалуйста.", "Картой нужна."], "e": "Pagar com cartão: картой (instrumental)."},
+        {"q": "Você pergunta se pode experimentar sapatos.", "o": ["Можно примерить эти туфли?", "Можно примериться эти туфли?", "Нужны примерить туфли?", "Не могли бы туфли примерить?"], "e": "Можно + infinitivo."},
+        {"q": "Você pede para embrulhar para presente.", "o": ["Не могли бы вы упаковать это как подарок?", "Не могли бы вы подарить упаковку?", "Мне нужен упаковать подарок.", "Можно подарок упаковка?"], "e": "Pedido cortês: не могли бы вы + infinitivo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 70,
+        "task": "Você comprou um fone de ouvido pela internet e ele chegou com defeito. Escreva uma reclamação (70 a 100 palavras) para a loja: descreva o problema, diga o que você precisa e o que espera da loja.",
+        "useful": ["Я оформил(а) заказ № …", "К сожалению, …", "Мне нужен / нужна …", "Прошу вас …", "Не могли бы вы …?", "Заранее спасибо"],
+        "model": "Здравствуйте! Десятого октября я оформил заказ № 48213 на беспроводные наушники. Заказ я получил вчера в пункте выдачи. К сожалению, левый наушник не работает: он не подключается к телефону, а индикатор не загорается. Я проверял его с двумя разными телефонами. Мне нужны рабочие наушники, поэтому прошу вас обменять товар на такой же. Если такой модели сейчас нет, прошу вернуть деньги на карту. Не могли бы вы сообщить, куда отправить бракованный товар? Фото и чек прилагаю. Заранее спасибо, Рафаэл Коста.",
+        "model_pt": "Olá! No dia dez de outubro fiz o pedido nº 48213 de fones de ouvido sem fio. Recebi o pedido ontem no ponto de retirada. Infelizmente, o fone esquerdo não funciona: não conecta ao celular e a luz indicadora não acende. Testei com dois celulares diferentes. Preciso de fones funcionando, por isso peço que troquem o produto por um igual. Se esse modelo não estiver disponível, peço o estorno no cartão. Poderiam me informar para onde enviar o produto com defeito? Anexo as fotos e a nota. Desde já agradeço, Rafael Costa.",
+        "checklist": ["Identifiquei o pedido e a data.", "Descrevi o defeito com precisão.", "Usei нужен / нужна / нужны concordando com o objeto.", "Fiz um pedido cortês (прошу / не могли бы вы).", "Propus uma alternativa.", "Escrevi pelo menos 70 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Simule em voz alta a conversa com o vendedor: você quer trocar um casaco que ficou pequeno, mas perdeu a nota. Explique a situação e negocie a troca.",
+        "useful": ["Я купил(а) у вас …", "Мне мало / мала …", "К сожалению, чек я потерял(а)", "У меня есть выписка из банка", "Можно обменять на …?"],
+        "model": "Здравствуйте! Три дня назад я купила у вас это пальто, но оно мне мало в плечах. Я его не носила, ярлыки на месте. К сожалению, чек я потеряла, но у меня есть выписка из банка, вот, посмотрите. Можно обменять пальто на размер больше? Если такого размера нет, я бы хотела вернуть деньги на карту. Спасибо большое!",
+        "model_pt": "Olá! Há três dias comprei este casaco aqui, mas ficou apertado nos ombros. Não usei, as etiquetas estão no lugar. Infelizmente perdi a nota, mas tenho o extrato do banco, veja. Posso trocar o casaco por um tamanho maior? Se não houver esse tamanho, gostaria do estorno no cartão. Muito obrigada!",
+        "checklist": ["Expliquei quando e o que comprei.", "Usei мал / мала para o tamanho.", "Ofereci uma prova alternativa da compra.", "Fiz o pedido com можно ou не могли бы вы."]}
+    ]}
+  ]
+}

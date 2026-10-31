@@ -1,0 +1,4750 @@
+# Curadoria do núcleo do vocabulário: lema, classe, tradução em português do Brasil (acepções separadas por ';'), temas.
+# Temas não excludentes (ids de data/themes.json); 'x' tira o verbete das sessões (nome próprio, palavrão, entrada duplicada).
+и	other	e	essencial
+быть	verb	ser; estar; haver	essencial
+тот	adjective	aquele; esse; o outro	essencial
+не	other	não	essencial
+в	other	em; para; dentro de	essencial
+я	other	eu	essencial
+человек	noun	pessoa; ser humano; homem	essencial,sociedade
+как	adjective	como	essencial
+этот	adjective	este; esse	essencial
+мочь	verb	poder; conseguir	essencial
+сказать	verb	dizer; falar	essencial,linguagem
+что	other	que; o quê	essencial
+знать	verb	saber; conhecer	essencial,linguagem
+на	other	em; sobre; para	essencial
+время	noun	tempo; época; vez	tempo
+он	other	ele	essencial
+год	noun	ano	tempo
+хотеть	verb	querer	essencial
+это	other	isto; isso; é	essencial
+мой	adjective	meu	essencial
+с	other	com; de; desde	essencial
+говорить	verb	falar; dizer	essencial,linguagem
+который	adjective	que; o qual; que (relativo)	essencial
+дело	noun	assunto; negócio; caso	essencial,trabalho
+такой	adjective	tal; assim; tão	essencial
+рука	noun	mão; braço	saude
+ты	other	tu; você	essencial
+раз	noun	vez	essencial,tempo
+думать	verb	pensar; achar	essencial,linguagem
+есть	verb	comer	comida
+день	noun	dia	tempo
+видеть	verb	ver	essencial
+жизнь	noun	vida	essencial
+свой	adjective	seu; próprio	essencial
+а	other	e; mas; já	essencial
+какой	adjective	qual; que; que tipo de	essencial
+мы	other	nós	essencial
+друг	noun	amigo	familia
+идти	verb	ir (a pé); andar	viagem
+но	other	mas; porém	essencial
+должный	adjective	devido; dever (deve)	essencial
+у	other	perto de; com (posse); na casa de	essencial
+она	other	ela	essencial
+вы	other	vós; vocês; o senhor	essencial
+твой	adjective	teu; seu	essencial
+место	noun	lugar; local; vaga	essencial,cidade
+сделать	verb	fazer	essencial
+делать	verb	fazer	essencial
+глаз	noun	olho	saude
+дом	noun	casa; lar; prédio	casa
+так	other	assim; tão; então	essencial
+самый	adjective	o mais; o mesmo	essencial
+другой	adjective	outro; diferente	essencial
+работа	noun	trabalho; emprego; obra	trabalho
+они	other	eles; elas	essencial
+сам	adjective	próprio; mesmo; sozinho	essencial
+тут	noun	amora (fruto)	x
+голова	noun	cabeça	saude
+да	other	sim	essencial
+слово	noun	palavra	linguagem
+за	other	atrás de; por; a favor de	essencial
+хороший	adjective	bom	essencial
+по	other	por; ao longo de; segundo	essencial
+иметь	verb	ter; possuir	essencial
+стать	noun	porte; estatura	x
+смотреть	verb	olhar; assistir	essencial
+к	other	para; em direção a; até	essencial
+стоять	verb	estar de pé; ficar; custar	essencial
+о	other	sobre; a respeito de	essencial
+из	other	de; dentre	essencial
+большой	adjective	grande	essencial,quantidade
+понять	verb	entender; compreender	linguagem
+ребёнок	noun	criança; filho	familia
+нужный	adjective	necessário	essencial
+жить	verb	viver; morar	essencial
+понимать	verb	entender; compreender	linguagem
+взять	verb	pegar; tomar; levar	essencial
+пойти	verb	ir; partir (a pé)	viagem
+первый	adjective	primeiro	essencial,quantidade
+правда	noun	verdade	linguagem
+отец	noun	pai	familia
+же	other	pois; mesmo; então (ênfase)	essencial
+бы	other	partícula do condicional (-ria)	essencial
+нет	other	não; não há	essencial
+конец	noun	fim; final	tempo
+лицо	noun	rosto; cara; pessoa	saude,aparencia
+сторона	noun	lado	essencial
+машина	noun	carro; máquina	viagem,tecnologia
+новый	adjective	novo	essencial
+каждый	adjective	cada; todo	essencial
+если	other	se	essencial
+город	noun	cidade	cidade
+дать	verb	dar	essencial
+женщина	noun	mulher	familia,sociedade
+ещё	other	ainda; mais	essencial
+час	noun	hora	tempo
+найти	verb	encontrar; achar	essencial
+давать	verb	dar	essencial
+спросить	verb	perguntar	linguagem
+казаться	verb	parecer	essencial
+ночь	noun	noite	tempo
+любить	verb	amar; gostar de	emocoes,familia
+нога	noun	perna; pé	saude
+работать	verb	trabalhar; funcionar	trabalho
+последний	adjective	último	essencial
+дверь	noun	porta	casa
+увидеть	verb	ver	essencial
+случай	noun	caso; ocasião; acaso	essencial
+от	other	de; desde; contra	essencial
+для	other	para	essencial
+вопрос	noun	pergunta; questão	linguagem
+значить	verb	significar; querer dizer	linguagem
+мир	noun	mundo; paz	politica,natureza
+уж	noun	cobra-d'água	x
+только	other	só; apenas	essencial
+остаться	verb	ficar; permanecer	essencial
+вид	noun	aspecto; vista; tipo; espécie	essencial
+чтобы	other	para que; a fim de	essencial
+когда	other	quando	essencial,tempo
+начать	verb	começar	tempo
+земля	noun	terra; solo; Terra	natureza
+сила	noun	força	essencial
+вернуться	verb	voltar; regressar	viagem
+посмотреть	verb	olhar; dar uma olhada	essencial
+мама	noun	mamãe; mãe	familia
+сидеть	verb	estar sentado; ficar	essencial
+жена	noun	esposa; mulher	familia
+прийти	verb	chegar; vir (a pé)	viagem
+выйти	verb	sair; ser publicado	viagem
+вот	other	eis; aqui está	essencial
+кто	other	quem	essencial
+ну	other	bem; então; ora	essencial
+получить	verb	receber; obter	essencial
+ждать	verb	esperar; aguardar	tempo
+парень	noun	rapaz; cara	familia
+подумать	verb	pensar um pouco	linguagem
+никакой	adjective	nenhum	essencial
+имя	noun	nome	linguagem
+уже	other	já	tempo
+слышать	verb	ouvir	essencial
+минута	noun	minuto	tempo
+мать	noun	mãe	familia
+голос	noun	voz; voto	essencial,politica
+слушать	verb	escutar; ouvir	essencial
+старый	adjective	velho; antigo	essencial
+или	other	ou	essencial
+вода	noun	água	natureza,comida
+часть	noun	parte	quantidade
+узнать	verb	saber; descobrir; reconhecer	linguagem
+сын	noun	filho	familia
+порядок	noun	ordem	essencial
+бог	noun	Deus; deus	religiao
+до	other	até; antes de	essencial
+чём	other	(o) quê (prepositivo de что)	essencial
+себя	other	si mesmo; se	essencial
+комната	noun	quarto; cômodo; sala	casa
+помнить	verb	lembrar; recordar	linguagem
+здесь	other	aqui	essencial
+утро	noun	manhã	tempo
+один	other	um; sozinho	quantidade
+решить	verb	decidir; resolver	linguagem
+уйти	verb	ir embora; sair	viagem
+где	other	onde	essencial
+история	noun	história	historia
+война	noun	guerra	guerra,historia
+второй	adjective	segundo	quantidade
+свет	noun	luz; mundo	natureza
+любой	adjective	qualquer	essencial
+страна	noun	país	politica
+очень	other	muito	essencial
+там	other	lá; ali	essencial
+считать	verb	considerar; contar; achar	linguagem,quantidade
+вечер	noun	noite; fim de tarde; sarau	tempo
+стол	noun	mesa	casa
+просто	other	simplesmente; simples	essencial
+девушка	noun	moça; garota; namorada	familia
+дорога	noun	estrada; caminho	viagem
+право	noun	direito	direito
+смерть	noun	morte	essencial
+пытаться	verb	tentar	essencial
+брат	noun	irmão	familia
+просить	verb	pedir	essencial
+даже	other	até; mesmo	essencial
+бояться	verb	ter medo de; temer	emocoes
+маленький	adjective	pequeno	essencial,quantidade
+месяц	noun	mês; lua	tempo
+чувствовать	verb	sentir	emocoes
+сейчас	other	agora; já	tempo
+оказаться	verb	revelar-se; acabar sendo; ir parar	essencial
+почему	other	por quê	essencial
+хорошо	other	bem; está bem	essencial
+книга	noun	livro	cultura
+пора	noun	hora; é hora de	tempo
+ни	other	nem	essencial
+путь	noun	caminho; via; trajeto	viagem
+проблема	noun	problema	essencial
+улица	noun	rua	cidade
+смочь	verb	conseguir; poder	essencial
+полный	adjective	cheio; completo	quantidade
+теперь	other	agora	tempo
+ребята	noun	pessoal; garotos; crianças	familia
+тело	noun	corpo	saude
+неделя	noun	semana	tempo
+простой	adjective	simples; comum	essencial
+забыть	verb	esquecer	linguagem
+рассказать	verb	contar; narrar	linguagem
+ответить	verb	responder	linguagem
+пять	noun	cinco	quantidade
+ли	other	se (interrogativo)	essencial
+готовый	adjective	pronto	essencial
+надо	other	é preciso; precisar	essencial
+похожий	adjective	parecido; semelhante	essencial
+собираться	verb	pretender; ir (fazer); reunir-se	essencial
+семья	noun	família	familia
+прошлый	adjective	passado; anterior	tempo
+школа	noun	escola	educacao
+потому	other	por isso; porque	essencial
+оставить	verb	deixar	essencial
+сердце	noun	coração	saude,emocoes
+пройти	verb	passar; atravessar	viagem
+ходить	verb	andar; ir (com frequência)	viagem
+помощь	noun	ajuda; socorro	essencial
+мальчик	noun	menino	familia
+кровь	noun	sangue	saude
+убить	verb	matar	direito
+мужчина	noun	homem	familia,sociedade
+отношение	noun	relação; atitude	familia,sociedade
+случиться	verb	acontecer	essencial
+любовь	noun	amor	familia,emocoes
+главный	adjective	principal	essencial
+тоже	other	também	essencial
+настоящий	adjective	verdadeiro; real; atual	essencial
+держать	verb	segurar; manter	essencial
+следующий	adjective	seguinte; próximo	essencial
+живой	adjective	vivo	essencial
+оставаться	verb	ficar; permanecer	essencial
+тысяча	noun	mil	quantidade
+вести	verb	conduzir; levar; guiar	viagem
+добрый	adjective	bom; bondoso	emocoes
+показать	verb	mostrar	essencial
+тогда	other	então; naquela época	tempo
+окно	noun	janela	casa
+доктор	noun	médico; doutor	saude
+лучший	adjective	melhor	essencial
+нравиться	verb	gostar de; agradar	emocoes
+момент	noun	momento	tempo
+искать	verb	procurar	essencial
+помочь	verb	ajudar	essencial
+разговор	noun	conversa	linguagem
+смысл	noun	sentido; significado	linguagem
+уверенный	adjective	confiante; seguro	emocoes
+пусть	verb	que (+ subjuntivo); deixe	essencial
+пока	other	enquanto; por enquanto; tchau	tempo
+муж	noun	marido	familia
+единственный	adjective	único	essencial
+об	other	sobre; a respeito de	essencial
+уходить	verb	ir embora; sair	viagem
+без	other	sem	essencial
+под	other	sob; debaixo de	essencial
+капитан	noun	capitão	guerra
+общий	adjective	comum; geral	essencial
+целый	adjective	inteiro	quantidade
+продолжать	verb	continuar	essencial
+народ	noun	povo	sociedade,politica
+верить	verb	acreditar; crer	religiao,linguagem
+некоторый	adjective	algum; certo	essencial
+внимание	noun	atenção	linguagem
+пол	noun	chão; sexo	casa
+играть	verb	jogar; brincar; tocar; atuar	esporte,cultura
+можно	other	pode-se; é possível	essencial
+мысль	noun	pensamento; ideia	linguagem
+умереть	verb	morrer	saude
+палец	noun	dedo	saude
+происходить	verb	acontecer; ocorrer	essencial
+ряд	noun	fila; série	essencial
+заметить	verb	notar; perceber	essencial
+бывать	verb	costumar estar; frequentar; acontecer	essencial
+душа	noun	alma	religiao,emocoes
+начинать	verb	começar	tempo
+написать	verb	escrever	linguagem
+номер	noun	número; quarto (de hotel)	quantidade,viagem
+писать	verb	escrever	linguagem
+собственный	adjective	próprio	essencial
+девочка	noun	menina	familia
+спать	verb	dormir	casa
+белый	adjective	branco	aparencia
+чёрный	adjective	preto; negro	aparencia
+сильный	adjective	forte	essencial
+образ	noun	imagem; modo; forma	cultura
+письмо	noun	carta; escrita	midia
+брать	verb	pegar; tomar	essencial
+молодой	adjective	jovem	sociedade
+конечно	other	claro; certamente	essencial
+бросить	verb	jogar; largar; abandonar	essencial
+потом	other	depois	tempo
+система	noun	sistema	essencial
+чувство	noun	sentimento; sensação	emocoes
+группа	noun	grupo	sociedade
+хотеться	verb	ter vontade de	emocoes
+читать	verb	ler	educacao,cultura
+никогда	other	nunca	tempo
+вещь	noun	coisa; objeto	casa
+через	other	através de; por; dentro de (tempo)	essencial
+ведь	other	afinal; pois	essencial
+ответ	noun	resposta	linguagem
+квартира	noun	apartamento	casa
+правый	adjective	direito; certo	essencial
+после	other	depois de; após	tempo
+всегда	other	sempre	tempo
+простить	verb	perdoar; desculpar	emocoes
+два	other	dois	quantidade
+поехать	verb	ir (de veículo); partir	viagem
+известный	adjective	conhecido; famoso	essencial
+огромный	adjective	enorme	quantidade
+произойти	verb	acontecer; ocorrer	essencial
+приехать	verb	chegar (de veículo)	viagem
+причина	noun	causa; motivo	linguagem
+план	noun	plano	trabalho
+следовать	verb	seguir; dever	essencial
+появиться	verb	aparecer; surgir	essencial
+находиться	verb	encontrar-se; estar localizado	essencial
+ехать	verb	ir (de veículo); viajar	viagem
+послать	verb	enviar; mandar	essencial
+заниматься	verb	ocupar-se de; praticar; estudar	essencial,educacao
+лежать	verb	estar deitado; estar (deitado)	essencial
+называть	verb	chamar; nomear	linguagem
+язык	noun	língua; idioma	linguagem
+возможность	noun	possibilidade; oportunidade	essencial
+взгляд	noun	olhar; ponto de vista	linguagem
+сегодня	other	hoje	tempo
+товарищ	noun	companheiro; camarada	sociedade
+сесть	verb	sentar-se	essencial
+спина	noun	costas	saude
+папа	noun	papai; pai	familia
+поговорить	verb	conversar	linguagem
+принять	verb	aceitar; receber; tomar	essencial
+высокий	adjective	alto	quantidade,aparencia
+игра	noun	jogo; brincadeira; atuação	esporte
+спрашивать	verb	perguntar	linguagem
+странный	adjective	estranho	essencial
+связь	noun	ligação; conexão; comunicação	midia
+надеяться	verb	esperar; ter esperança	emocoes
+телефон	noun	telefone	tecnologia
+много	other	muito; muitos	quantidade
+ладно	other	está bem; tudo bem	essencial
+власть	noun	poder; autoridade	politica
+спасибо	other	obrigado	essencial
+открыть	verb	abrir; descobrir	essencial
+хватить	verb	bastar; ser suficiente	quantidade
+никто	other	ninguém	essencial
+пара	noun	par; casal	quantidade,familia
+приходить	verb	chegar; vir	viagem
+идея	noun	ideia	linguagem
+сон	noun	sonho; sono	saude
+черта	noun	traço; linha; característica	emocoes
+попасть	verb	ir parar; acertar; chegar	essencial
+красивый	adjective	bonito; belo	aparencia
+многие	adjective	muitos	quantidade
+встреча	noun	encontro; reunião	sociedade
+красный	adjective	vermelho	aparencia
+великий	adjective	grande; magno	historia
+выглядеть	verb	parecer; ter aparência de	aparencia
+купить	verb	comprar	compras
+шаг	noun	passo	essencial
+разный	adjective	diferente; diverso	essencial
+старик	noun	velho; idoso	familia
+собака	noun	cachorro; cão	animais
+принести	verb	trazer	essencial
+господин	noun	senhor	sociedade
+важный	adjective	importante	essencial
+чёрт	noun	diabo	religiao
+бежать	verb	correr; fugir	esporte
+дорогой	adjective	caro; querido	compras,emocoes
+куда	other	para onde	essencial
+остановиться	verb	parar; hospedar-se	viagem
+воздух	noun	ar	natureza
+солдат	noun	soldado	guerra
+ум	noun	mente; inteligência; razão	linguagem
+рассказывать	verb	contar; narrar	linguagem
+решение	noun	decisão; solução	linguagem
+закон	noun	lei	direito
+позволить	verb	permitir	essencial
+поверить	verb	acreditar	linguagem
+плечо	noun	ombro	saude
+подойти	verb	aproximar-se; servir (caber)	essencial
+тяжёлый	adjective	pesado; difícil	essencial
+стена	noun	parede; muro	casa
+оружие	noun	arma; armamento	guerra
+состояние	noun	estado; condição; fortuna	essencial
+вспомнить	verb	lembrar-se; recordar	linguagem
+третий	adjective	terceiro	quantidade
+отвечать	verb	responder	linguagem
+компания	noun	empresa; companhia; turma	economia
+прийтись	verb	ter de; calhar	essencial
+позвонить	verb	ligar (telefonar); tocar	midia
+сюда	other	para cá	essencial
+услышать	verb	ouvir	essencial
+снова	other	de novo; novamente	tempo
+использовать	verb	usar; utilizar	essencial
+потерять	verb	perder	essencial
+счёт	noun	conta; placar	economia
+знакомый	adjective	conhecido; familiar	familia
+дядя	noun	tio	familia
+зачем	other	para quê	essencial
+привет	noun	oi; olá	essencial
+скорый	adjective	rápido; próximo (iminente)	tempo
+сестра	noun	irmã; enfermeira	familia
+президент	noun	presidente	politica
+войти	verb	entrar	essencial
+ранний	adjective	precoce; matinal; cedo	tempo
+дочь	noun	filha	familia
+вместе	other	juntos	essencial
+при	other	junto a; durante; na presença de	essencial
+небо	noun	céu	natureza
+провести	verb	passar (tempo); realizar; conduzir	essencial
+боль	noun	dor	saude
+быстрый	adjective	rápido	essencial
+врач	noun	médico	saude
+подобный	adjective	semelhante; tal	essencial
+огонь	noun	fogo	natureza
+становиться	verb	tornar-se; ficar	essencial
+несколько	other	alguns; vários	quantidade
+плохой	adjective	ruim; mau	essencial
+счастливый	adjective	feliz	emocoes
+попросить	verb	pedir	essencial
+подождать	verb	esperar (um pouco)	tempo
+выходить	verb	sair	viagem
+команда	noun	equipe; time; comando	esporte,trabalho
+прекрасный	adjective	maravilhoso; belo	essencial
+солнце	noun	sol	natureza
+встать	verb	levantar-se	essencial
+назад	other	atrás; para trás; há (tempo)	tempo
+успеть	verb	ter tempo de; conseguir a tempo	tempo
+лишь	other	apenas; só	essencial
+форма	noun	forma; uniforme	essencial
+совсем	other	completamente; nada (com negação)	essencial
+поднять	verb	levantar; erguer	essencial
+сколько	other	quanto; quantos	quantidade
+небольшой	adjective	pequeno	quantidade
+личный	adjective	pessoal; particular	essencial
+генерал	noun	general	guerra
+речь	noun	fala; discurso	linguagem
+армия	noun	exército	guerra
+лес	noun	floresta; bosque	natureza
+представлять	verb	representar; imaginar	linguagem
+три	other	três	quantidade
+отдать	verb	devolver; entregar; dar	essencial
+звать	verb	chamar	essencial
+именно	other	justamente; exatamente	essencial
+привести	verb	trazer; levar; conduzir	essencial
+бывший	adjective	ex-; antigo	essencial
+представить	verb	imaginar; apresentar	linguagem
+очередь	noun	fila; vez	compras
+секунда	noun	segundo	tempo
+цель	noun	objetivo; meta; alvo	essencial
+пить	verb	beber	comida
+объяснить	verb	explicar	linguagem
+дерево	noun	árvore; madeira	animais
+являться	verb	ser; constituir; aparecer	essencial
+начальник	noun	chefe	trabalho
+страшный	adjective	terrível; assustador	emocoes
+нос	noun	nariz	saude
+более	other	mais	quantidade
+газета	noun	jornal	midia
+снять	verb	tirar; alugar; filmar	essencial
+слишком	other	demais; demasiado	quantidade
+класс	noun	turma; classe; sala de aula	educacao
+поэтому	other	por isso	essencial
+ухо	noun	orelha; ouvido	saude
+данный	adjective	dado; presente	essencial
+милый	adjective	querido; fofo; gracioso	emocoes
+волос	noun	cabelo	aparencia
+мёртвый	adjective	morto	essencial
+пожалуйста	other	por favor; de nada	essencial
+результат	noun	resultado	essencial
+назвать	verb	chamar; nomear	linguagem
+мера	noun	medida	quantidade
+немного	other	um pouco	quantidade
+военный	adjective	militar	guerra
+про	other	sobre; a respeito de	essencial
+хозяин	noun	dono; anfitrião; patrão	economia
+Россия	noun	Rússia	x
+тип	noun	tipo; cara	essencial
+информация	noun	informação	midia
+выпить	verb	beber; tomar um drinque	comida
+придтись	verb	ter de (grafia antiga)	x
+возвращаться	verb	voltar; regressar	viagem
+перестать	verb	parar de; deixar de	essencial
+поставить	verb	colocar; pôr (em pé)	essencial
+над	other	sobre; acima de	essencial
+точно	other	exatamente; com certeza	essencial
+след	noun	rastro; pegada; vestígio	essencial
+русский	adjective	russo	linguagem
+звонить	verb	ligar (telefonar); tocar	midia
+уметь	verb	saber (fazer)	essencial
+король	noun	rei	historia
+проходить	verb	passar; atravessar	viagem
+хотя	other	embora; apesar de	essencial
+мужик	noun	homem; cara; camponês	sociedade
+центр	noun	centro	cidade
+получиться	verb	dar certo; resultar; sair (bem)	essencial
+принимать	verb	aceitar; receber; tomar	essencial
+камень	noun	pedra	natureza
+стоить	verb	custar; valer a pena	compras,economia
+далёкий	adjective	distante; longínquo	viagem
+гость	noun	convidado; visita; hóspede	familia,casa
+ситуация	noun	situação	essencial
+обычный	adjective	comum; habitual	essencial
+чистый	adjective	limpo; puro	casa
+всякий	adjective	qualquer; todo tipo de	essencial
+положить	verb	colocar; pôr (deitado)	essencial
+самолёт	noun	avião	viagem
+член	noun	membro	sociedade
+начаться	verb	começar	tempo
+действие	noun	ação; efeito; ato	essencial
+попробовать	verb	experimentar; provar; tentar	essencial
+угол	noun	canto; esquina; ângulo	cidade,quantidade
+совет	noun	conselho; sovietes	politica,historia
+судьба	noun	destino; sorte	religiao,emocoes
+документ	noun	documento	direito,trabalho
+уехать	verb	partir; ir embora (de veículo)	viagem
+серьёзный	adjective	sério	emocoes
+суд	noun	tribunal; julgamento; justiça	direito
+вообще	other	em geral; de modo algum	essencial
+стараться	verb	esforçar-se; procurar	essencial
+удар	noun	golpe; pancada; derrame	esporte,saude
+движение	noun	movimento; trânsito	viagem
+прямо	other	direto; em frente; francamente	essencial
+ж	other	pois; então (ênfase)	essencial
+грудь	noun	peito	saude
+общество	noun	sociedade	sociedade
+разговаривать	verb	conversar	linguagem
+длинный	adjective	longo; comprido	quantidade
+послушать	verb	escutar (um pouco)	essencial
+короткий	adjective	curto	quantidade
+ах	noun	ah	x
+магазин	noun	loja	compras
+зуб	noun	dente	saude
+прислать	verb	mandar; enviar	essencial
+больной	adjective	doente	saude
+убийство	noun	assassinato; homicídio	direito
+между	other	entre	essencial
+долгий	adjective	longo; demorado	tempo
+обещать	verb	prometer	linguagem
+сообщить	verb	informar; comunicar	midia
+оно	other	ele; ela (neutro)	essencial
+директор	noun	diretor	trabalho,educacao
+извинить	verb	desculpar	emocoes
+враг	noun	inimigo	guerra
+дух	noun	espírito; ânimo	religiao
+существовать	verb	existir	linguagem
+будущее	noun	futuro	tempo
+согласиться	verb	concordar; aceitar	linguagem
+вызвать	verb	chamar; provocar; desafiar	essencial
+закончить	verb	terminar; concluir	tempo
+близкий	adjective	próximo; íntimo	familia
+страх	noun	medo	emocoes
+будто	other	como se	essencial
+счастье	noun	felicidade; sorte	emocoes
+сэр	noun	senhor (sir)	x
+предложить	verb	propor; oferecer; sugerir	essencial
+разве	other	por acaso; será que	essencial
+помогать	verb	ajudar	essencial
+гора	noun	montanha	natureza
+бумага	noun	papel; documento	trabalho
+возможно	other	talvez; é possível	essencial
+дама	noun	dama; senhora	sociedade
+мистер	noun	senhor (mister)	x
+полиция	noun	polícia	direito
+нельзя	other	não se pode; é proibido	essencial
+заставить	verb	obrigar; forçar	essencial
+герой	noun	herói; personagem	cultura
+труд	noun	trabalho; esforço	trabalho
+почти	other	quase	essencial
+ход	noun	andamento; curso; jogada	essencial
+Москва	noun	Moscou	x
+достать	verb	alcançar; conseguir; tirar	essencial
+память	noun	memória; lembrança	linguagem
+эй	other	ei	essencial
+туда	other	para lá	essencial
+кричать	verb	gritar	emocoes
+офицер	noun	oficial	guerra
+половина	noun	metade	quantidade
+двор	noun	pátio; quintal; corte	casa,historia
+старший	adjective	mais velho; superior	familia
+встречаться	verb	encontrar-se; namorar; ocorrer	familia,sociedade
+перед	other	diante de; antes de	essencial
+положение	noun	posição; situação; regulamento	essencial
+хватать	verb	agarrar; bastar	essencial
+получать	verb	receber; obter	essencial
+тёмный	adjective	escuro	essencial
+встретить	verb	encontrar; receber	sociedade
+глава	noun	chefe; capítulo	cultura,politica
+операция	noun	operação; cirurgia	saude,guerra
+корабль	noun	navio	viagem
+хоть	other	pelo menos; embora	essencial
+домой	other	para casa	casa
+уровень	noun	nível	quantidade
+показаться	verb	parecer; aparecer	essencial
+свободный	adjective	livre; vago	essencial
+спасти	verb	salvar	essencial
+пустой	adjective	vazio	essencial
+встретиться	verb	encontrar-se	sociedade
+способ	noun	modo; meio; maneira	essencial
+молчать	verb	ficar calado	linguagem
+ко	other	para; em direção a (forma de к)	essencial
+верный	adjective	fiel; correto	emocoes
+передать	verb	transmitir; entregar; passar	midia
+средство	noun	meio; recurso; remédio	essencial
+держаться	verb	segurar-se; manter-se; aguentar	essencial
+мозг	noun	cérebro	saude,ciencia
+море	noun	mar	natureza,viagem
+спокойный	adjective	calmo; tranquilo	emocoes
+сразу	other	imediatamente; logo	tempo
+открытый	adjective	aberto; franco	essencial
+исчезнуть	verb	desaparecer	essencial
+карман	noun	bolso	aparencia
+музыка	noun	música	cultura
+необходимый	adjective	necessário; indispensável	essencial
+действительно	other	realmente; de fato	essencial
+смеяться	verb	rir	emocoes
+служба	noun	serviço; trabalho	trabalho
+взглянуть	verb	dar uma olhada	essencial
+точка	noun	ponto	linguagem
+проверить	verb	verificar; conferir	essencial
+ветер	noun	vento	natureza
+выход	noun	saída	cidade
+особый	adjective	especial; particular	essencial
+опять	other	de novo	tempo
+миллион	noun	milhão	quantidade
+против	other	contra	essencial
+откуда	other	de onde	essencial
+условие	noun	condição	essencial
+человеческий	adjective	humano	sociedade
+местный	adjective	local	cidade
+качество	noun	qualidade	essencial
+ошибка	noun	erro	educacao,linguagem
+река	noun	rio	natureza
+кабинет	noun	escritório; consultório; gabinete	trabalho
+узкий	adjective	estreito	quantidade
+роль	noun	papel (função)	cultura
+карта	noun	mapa; cartão; carta (baralho)	viagem
+стрелять	verb	atirar; disparar	guerra
+число	noun	número; data	quantidade
+течение	noun	corrente; decurso	natureza
+любимый	adjective	favorito; amado	emocoes
+ключ	noun	chave; fonte	casa
+тюрьма	noun	prisão	direito
+завтра	other	amanhã	tempo
+курс	noun	curso; ano (da faculdade); câmbio	educacao,economia
+лейтенант	noun	tenente	guerra
+картина	noun	quadro; pintura	cultura
+фильм	noun	filme	cultura
+надежда	noun	esperança	emocoes
+пожаловать	verb	conceder; vir (bem-vindo)	essencial
+наверное	other	provavelmente	essencial
+понравиться	verb	gostar; agradar	emocoes
+вернуть	verb	devolver	essencial
+остановить	verb	parar; deter	essencial
+звезда	noun	estrela	natureza,cultura
+род	noun	família; linhagem; gênero	familia,linguagem
+программа	noun	programa	tecnologia,midia
+ожидать	verb	esperar; aguardar	tempo
+быстро	other	rapidamente	essencial
+почувствовать	verb	sentir	emocoes
+процесс	noun	processo	direito,ciencia
+крайний	adjective	extremo; último	essencial
+прямой	adjective	reto; direto	essencial
+бой	noun	combate; batalha	guerra
+садиться	verb	sentar-se; embarcar	viagem
+профессор	noun	professor (universitário)	educacao
+жертва	noun	vítima; sacrifício	direito
+свобода	noun	liberdade	politica
+больший	adjective	maior	quantidade
+забрать	verb	buscar; pegar; levar	essencial
+начало	noun	começo; início	tempo
+подходить	verb	aproximar-se; servir; combinar	essencial
+проводить	verb	passar (tempo); realizar	essencial
+упасть	verb	cair	essencial
+возможный	adjective	possível	essencial
+мнение	noun	opinião	linguagem
+давно	other	há muito tempo	tempo
+родитель	noun	pai ou mãe; genitor	familia
+больница	noun	hospital	saude
+правительство	noun	governo	politica
+зелёный	adjective	verde	aparencia
+интересный	adjective	interessante	essencial
+петь	verb	cantar	cultura
+вдруг	other	de repente	essencial
+кроме	other	exceto; além de	essencial
+иногда	other	às vezes	tempo
+губа	noun	lábio	saude
+камера	noun	câmera; cela	tecnologia,direito
+желание	noun	desejo; vontade	emocoes
+способный	adjective	capaz; talentoso	educacao
+зайти	verb	passar (por); entrar	viagem
+захотеть	verb	querer	essencial
+банк	noun	banco	economia
+иной	adjective	outro; diferente	essencial
+берег	noun	margem; costa	natureza
+слава	noun	glória; fama	cultura
+виноватый	adjective	culpado	emocoes,direito
+еда	noun	comida	comida
+событие	noun	acontecimento; evento	historia
+его	other	o; dele (de он)	essencial
+учиться	verb	estudar; aprender	educacao
+подняться	verb	subir; levantar-se	essencial
+чей	adjective	de quem	essencial
+бутылка	noun	garrafa	comida
+показывать	verb	mostrar	essencial
+вроде	other	como; tipo; parece que	essencial
+умный	adjective	inteligente	linguagem,emocoes
+равно	other	igualmente; tanto faz	essencial
+кухня	noun	cozinha; culinária	casa,comida
+создать	verb	criar	essencial
+остальной	adjective	restante	quantidade
+носить	verb	usar (roupa); carregar	aparencia
+боже	other	meu Deus	religiao
+деревня	noun	aldeia; campo; vilarejo	cidade
+удовольствие	noun	prazer	emocoes
+трубка	noun	fone; cachimbo; tubo	tecnologia
+одежда	noun	roupa	aparencia
+нормальный	adjective	normal	essencial
+звук	noun	som	essencial
+точный	adjective	exato; preciso	essencial
+интерес	noun	interesse	emocoes
+также	other	também	essencial
+партия	noun	partido; partida; lote	politica,esporte
+приказ	noun	ordem; decreto	guerra
+долго	other	por muito tempo	tempo
+основной	adjective	básico; principal	essencial
+том	noun	volume; tomo	cultura
+выбрать	verb	escolher; eleger	politica
+отпустить	verb	soltar; liberar	essencial
+полагать	verb	supor; achar	linguagem
+глядеть	verb	olhar	essencial
+погибнуть	verb	morrer (em acidente, guerra)	guerra
+факт	noun	fato	linguagem
+следить	verb	acompanhar; vigiar	essencial
+здание	noun	prédio; edifício	cidade
+приходиться	verb	ter de; cair (em data)	essencial
+американский	adjective	americano	politica
+холодный	adjective	frio	natureza
+чужой	adjective	alheio; estranho	essencial
+отправить	verb	enviar; despachar	essencial
+называться	verb	chamar-se	linguagem
+здоровый	adjective	saudável	saude
+цена	noun	preço	compras,economia
+волноваться	verb	preocupar-se; ficar nervoso	emocoes
+колено	noun	joelho	saude
+поезд	noun	trem	viagem
+век	noun	século; era	tempo,historia
+придумать	verb	inventar; bolar	essencial
+кой	adjective	qual (arcaico)	x
+плакать	verb	chorar	emocoes
+край	noun	borda; região; terra	essencial
+отличный	adjective	excelente; ótimo	essencial
+рада	noun	rada (conselho)	x
+действовать	verb	agir; funcionar	essencial
+район	noun	bairro; distrito; região	cidade
+желать	verb	desejar	emocoes
+попытаться	verb	tentar	essencial
+ясно	other	claramente; está claro	essencial
+обнаружить	verb	descobrir; detectar	ciencia
+зал	noun	salão; sala	cidade
+снег	noun	neve	natureza
+лёт	noun	voo	x
+вера	noun	fé; crença	religiao
+золотой	adjective	de ouro; dourado	aparencia,economia
+учитель	noun	professor	educacao
+роман	noun	romance	cultura,familia
+чай	noun	chá	comida
+лошадь	noun	cavalo	animais
+поле	noun	campo	natureza
+убивать	verb	matar	direito
+фотография	noun	fotografia; foto	cultura
+отсюда	other	daqui	essencial
+крупный	adjective	grande; graúdo	quantidade
+бабушка	noun	avó	familia
+горячий	adjective	quente	essencial
+список	noun	lista	essencial
+платить	verb	pagar	economia,compras
+цвет	noun	cor	aparencia
+требовать	verb	exigir	essencial
+поймать	verb	pegar; capturar	essencial
+бить	verb	bater	essencial
+согласный	adjective	de acordo; consoante	linguagem
+устроить	verb	organizar; arranjar	essencial
+клуб	noun	clube	esporte
+нести	verb	carregar; levar	essencial
+оба	other	ambos	quantidade
+отказаться	verb	recusar; desistir	essencial
+немец	noun	alemão	x
+скоро	other	logo; em breve	tempo
+пистолет	noun	pistola	guerra
+доллар	noun	dólar	economia
+возраст	noun	idade	tempo
+сосед	noun	vizinho	familia,casa
+затем	other	depois; em seguida	tempo
+шея	noun	pescoço	saude
+командир	noun	comandante	guerra
+вызывать	verb	chamar; provocar	essencial
+вперёд	other	para frente; adiante	essencial
+безопасность	noun	segurança	politica
+радость	noun	alegria	emocoes
+входить	verb	entrar	essencial
+ради	other	por; em nome de	essencial
+правило	noun	regra	essencial
+вчера	other	ontem	tempo
+собраться	verb	reunir-se; preparar-se para	essencial
+тема	noun	tema; assunto	linguagem
+опыт	noun	experiência; experimento	ciencia
+приятель	noun	amigo; colega	familia
+цветок	noun	flor	animais
+кровать	noun	cama	casa
+преступление	noun	crime	direito
+болезнь	noun	doença	saude
+управление	noun	administração; gestão	trabalho,politica
+ничто	other	nada	essencial
+рот	noun	boca	saude
+кожа	noun	pele; couro	saude,aparencia
+борьба	noun	luta	esporte,politica
+дурак	noun	bobo; idiota	emocoes
+новость	noun	notícia; novidade	midia
+ага	noun	sapo-cururu	x
+большинство	noun	maioria	quantidade
+сначала	other	primeiro; no início	tempo
+обед	noun	almoço	comida
+двигаться	verb	mover-se	essencial
+выше	adjective	mais alto; acima	quantidade
+вино	noun	vinho	comida
+ненавидеть	verb	odiar	emocoes
+отправиться	verb	partir; ir	viagem
+выбор	noun	escolha	essencial
+полковник	noun	coronel	guerra
+убийца	noun	assassino	direito
+поступить	verb	ingressar; agir	educacao
+родной	adjective	natal; querido; materno	familia
+занятый	adjective	ocupado	trabalho
+глубокий	adjective	profundo	quantidade
+насчёт	other	a respeito de	essencial
+шанс	noun	chance	essencial
+снимать	verb	tirar; alugar; filmar	essencial
+заходить	verb	passar (por); entrar	viagem
+вставать	verb	levantar-se	essencial
+граница	noun	fronteira; limite; exterior	politica,viagem
+предложение	noun	proposta; oração (frase)	linguagem
+советский	adjective	soviético	historia
+знак	noun	sinal; símbolo	linguagem
+чтоб	other	para que	essencial
+предлагать	verb	propor; oferecer	essencial
+этаж	noun	andar	casa
+запах	noun	cheiro	essencial
+количество	noun	quantidade	quantidade
+плохо	other	mal	essencial
+чуть	other	um pouco; quase	essencial
+ужасный	adjective	horrível; terrível	emocoes
+ударить	verb	bater; golpear	essencial
+детский	adjective	infantil	familia
+относиться	verb	tratar; referir-se; pertencer	essencial
+познакомиться	verb	conhecer (alguém)	sociedade
+глупый	adjective	bobo; estúpido	emocoes
+кофе	noun	café	comida
+сознание	noun	consciência	linguagem
+получаться	verb	dar certo; resultar	essencial
+повод	noun	motivo; pretexto	linguagem
+слабый	adjective	fraco	essencial
+отдел	noun	departamento; seção	trabalho
+линия	noun	linha	essencial
+остров	noun	ilha	natureza
+разобраться	verb	entender; resolver	linguagem
+касаться	verb	tocar; dizer respeito a	essencial
+рождение	noun	nascimento	familia
+толстый	adjective	grosso; gordo	aparencia
+сообщение	noun	mensagem; comunicado	midia
+костюм	noun	terno; traje	aparencia
+название	noun	nome; título	linguagem
+опасный	adjective	perigoso	essencial
+достаточно	other	suficiente; bastante	quantidade
+означать	verb	significar	linguagem
+лето	noun	verão	tempo,natureza
+весёлый	adjective	alegre; divertido	emocoes
+верно	other	certo; corretamente	essencial
+песня	noun	canção	cultura
+дождь	noun	chuva	natureza
+внутренний	adjective	interno; interior	essencial
+круг	noun	círculo	essencial
+четыре	other	quatro	quantidade
+ящик	noun	caixa; gaveta	casa
+природа	noun	natureza	natureza
+успокоиться	verb	acalmar-se	emocoes
+наука	noun	ciência	ciencia
+звучать	verb	soar	essencial
+государство	noun	Estado	politica
+всё	other	tudo; sempre; ainda	essencial
+коридор	noun	corredor	casa
+шутка	noun	piada; brincadeira	emocoes
+адрес	noun	endereço	cidade
+отлично	other	excelente	essencial
+штука	noun	coisa; peça	essencial
+вокруг	other	em volta de	essencial
+связанный	adjective	ligado; relacionado	essencial
+звонок	noun	ligação; campainha	midia
+итак	other	então; portanto	essencial
+нож	noun	faca	comida
+хлеб	noun	pão	comida
+тихий	adjective	silencioso; calmo	essencial
+улыбаться	verb	sorrir	emocoes
+мне	other	me; a mim	essencial
+вытащить	verb	puxar; tirar	essencial
+подарок	noun	presente	familia
+совершенно	other	completamente	essencial
+значение	noun	significado; importância	linguagem
+лагерь	noun	acampamento; campo	viagem
+понятие	noun	conceito; noção	linguagem
+пригласить	verb	convidar	sociedade
+служить	verb	servir	trabalho,guerra
+прекратить	verb	parar; cessar	essencial
+синий	adjective	azul	aparencia
+приятный	adjective	agradável	emocoes
+ставить	verb	colocar; pôr (em pé); encenar	essencial
+удаться	verb	conseguir; dar certo	essencial
+закрыть	verb	fechar	essencial
+грязный	adjective	sujo	casa
+изменить	verb	mudar; trair	essencial
+рабочий	adjective	operário; de trabalho	trabalho
+америка	noun	América	x
+фамилия	noun	sobrenome	linguagem
+наконец	other	finalmente	tempo
+писатель	noun	escritor	cultura
+вещий	adjective	profético	x
+бедный	adjective	pobre	economia
+прежде	other	antes	tempo
+станция	noun	estação	viagem
+левый	adjective	esquerdo	essencial
+защита	noun	defesa; proteção	guerra
+злой	adjective	mau; zangado	emocoes
+кусок	noun	pedaço	quantidade
+повезти	verb	levar; ter sorte	viagem
+покой	noun	sossego; paz	emocoes
+толпа	noun	multidão	sociedade
+появляться	verb	aparecer	essencial
+автор	noun	autor	cultura
+крыша	noun	telhado	casa
+добро	noun	bem; bens	essencial
+меня	other	me; de mim	essencial
+пример	noun	exemplo	essencial
+серый	adjective	cinza	aparencia
+иначе	other	senão; de outro modo	essencial
+словно	other	como se	essencial
+разуметься	verb	ser óbvio (разумеется)	essencial
+её	other	a; dela	essencial
+сотня	noun	centena	quantidade
+например	other	por exemplo	essencial
+однажды	other	certa vez	tempo
+добраться	verb	chegar (com esforço)	viagem
+заняться	verb	dedicar-se a; ocupar-se	essencial
+агент	noun	agente	direito
+измениться	verb	mudar	essencial
+воля	noun	vontade; liberdade	emocoes
+сцена	noun	palco; cena	cultura
+мелкий	adjective	miúdo; raso; pequeno	quantidade
+билет	noun	bilhete; ingresso; passagem	viagem
+врать	verb	mentir	linguagem
+столько	other	tanto	quantidade
+довольно	other	bastante; razoavelmente	essencial
+особенный	adjective	especial	essencial
+проснуться	verb	acordar	casa
+государственный	adjective	estatal; público	politica
+господи	other	meu Deus	religiao
+мешать	verb	atrapalhar; misturar	essencial
+позволять	verb	permitir	essencial
+ночной	adjective	noturno	tempo
+метр	noun	metro	quantidade
+мыть	verb	lavar	casa
+малый	adjective	pequeno	quantidade
+честь	verb	honrar	x
+слеза	noun	lágrima	emocoes
+сложный	adjective	complicado; complexo	essencial
+успех	noun	sucesso	trabalho
+пиво	noun	cerveja	comida
+тёплый	adjective	morno; quente; caloroso	natureza
+справиться	verb	dar conta; lidar com	essencial
+умирать	verb	morrer	saude
+собрать	verb	reunir; juntar; montar	essencial
+подруга	noun	amiga; namorada	familia
+добавить	verb	acrescentar	essencial
+правильно	other	corretamente; certo	essencial
+свежий	adjective	fresco	comida
+США	noun	EUA	x
+открывать	verb	abrir	essencial
+дышать	verb	respirar	saude
+срок	noun	prazo; período	tempo
+серьёзно	other	a sério; seriamente	essencial
+планета	noun	planeta	ciencia,natureza
+тень	noun	sombra	natureza
+житься	verb	viver (impessoal)	essencial
+запись	noun	gravação; registro; inscrição	midia
+область	noun	região; área; campo	politica
+пуля	noun	bala	guerra
+политический	adjective	político	politica
+искусство	noun	arte	cultura
+сумасшедший	adjective	louco	emocoes
+реальный	adjective	real	essencial
+господь	noun	Senhor (Deus)	religiao
+крутой	adjective	íngreme; legal; durão	essencial
+птица	noun	pássaro; ave	animais
+победа	noun	vitória	guerra,esporte
+лететь	verb	voar	viagem
+частый	adjective	frequente	tempo
+закрытый	adjective	fechado	essencial
+лестница	noun	escada	casa
+церковь	noun	igreja	religiao
+широкий	adjective	largo; amplo	quantidade
+кстати	other	aliás; a propósito	essencial
+средний	adjective	médio	quantidade
+сад	noun	jardim; pomar	casa,animais
+попытка	noun	tentativa	essencial
+начинаться	verb	começar	tempo
+остальное	noun	o resto	quantidade
+свидание	noun	encontro (romântico); visita	familia
+обычно	other	normalmente	tempo
+рота	noun	companhia (militar)	guerra
+оставлять	verb	deixar	essencial
+наблюдать	verb	observar	ciencia
+пьяный	adjective	bêbado	comida
+лодка	noun	barco	viagem
+однако	other	no entanto	essencial
+оказываться	verb	revelar-se; acabar	essencial
+рыба	noun	peixe	animais,comida
+статья	noun	artigo	midia
+трава	noun	grama; erva	animais
+привезти	verb	trazer (de veículo)	viagem
+детство	noun	infância	familia
+чудо	noun	milagre	religiao
+терять	verb	perder	essencial
+родиться	verb	nascer	familia
+повторить	verb	repetir	educacao
+убитый	adjective	morto; arrasado	essencial
+специальный	adjective	especial; específico	essencial
+сожаление	noun	pena; lamento	emocoes
+продать	verb	vender	compras
+кресло	noun	poltrona	casa
+принадлежать	verb	pertencer	essencial
+сильно	other	fortemente; muito	essencial
+вариант	noun	opção; variante	essencial
+готовить	verb	cozinhar; preparar	comida
+тётя	noun	tia	familia
+пользоваться	verb	usar; aproveitar	essencial
+участок	noun	terreno; lote; delegacia	cidade
+жениться	verb	casar-se (o homem)	familia
+понадобиться	verb	ser necessário	essencial
+среди	other	entre; no meio de	essencial
+взрослый	adjective	adulto	familia
+долг	noun	dívida; dever	economia
+беспокоиться	verb	preocupar-se	emocoes
+фирма	noun	empresa; firma	economia,trabalho
+женский	adjective	feminino	sociedade
+обязанный	adjective	obrigado; em dívida	essencial
+ресторан	noun	restaurante	comida
+замечательный	adjective	notável; maravilhoso	essencial
+королева	noun	rainha	historia
+около	other	perto de; cerca de	essencial
+ясный	adjective	claro	essencial
+опасность	noun	perigo	essencial
+железный	adjective	de ferro	essencial
+союз	noun	união; aliança; conjunção	politica
+обращаться	verb	dirigir-se; tratar	sociedade
+жёлтый	adjective	amarelo	aparencia
+напоминать	verb	lembrar; parecer-se	essencial
+приём	noun	recepção; consulta; método	sociedade
+привыкнуть	verb	acostumar-se	essencial
+слух	noun	boato; audição	midia
+признать	verb	reconhecer; admitir	linguagem
+охрана	noun	guarda; segurança	direito
+учить	verb	estudar; ensinar	educacao
+дед	noun	avô	familia
+доказать	verb	provar	ciencia,linguagem
+либо	other	ou	essencial
+конечный	adjective	final	essencial
+бросать	verb	jogar; largar	essencial
+малыш	noun	garotinho; bebê	familia
+шутить	verb	brincar; fazer piada	emocoes
+убрать	verb	arrumar; retirar	casa
+дикий	adjective	selvagem	animais
+занять	verb	ocupar; pegar emprestado	essencial
+мало	other	pouco	quantidade
+особенно	other	especialmente	essencial
+задача	noun	tarefa; problema	trabalho
+рост	noun	crescimento; altura	aparencia,economia
+неизвестный	adjective	desconhecido	essencial
+трудный	adjective	difícil	essencial
+платье	noun	vestido	aparencia
+клиент	noun	cliente	compras
+несчастный	adjective	infeliz	emocoes
+майор	noun	major	guerra
+рассказ	noun	conto; relato	cultura
+десять	other	dez	quantidade
+обратно	other	de volta	viagem
+вон	other	lá; ali	essencial
+довольный	adjective	satisfeito; contente	emocoes
+выяснить	verb	esclarecer; descobrir	ciencia,direito
+развитие	noun	desenvolvimento	economia,sociedade
+свидетель	noun	testemunha	direito
+размер	noun	tamanho; dimensão	quantidade,aparencia
+ужас	noun	horror; pavor	emocoes
+правильный	adjective	correto	essencial
+тридцать	noun	trinta	quantidade
+журнал	noun	revista; diário (de classe)	midia
+улыбка	noun	sorriso	emocoes
+высший	adjective	superior; supremo	educacao
+кончиться	verb	acabar; terminar	tempo
+беда	noun	desgraça; problema	emocoes
+закончиться	verb	terminar; acabar	tempo
+далеко	other	longe	viagem
+автобус	noun	ônibus	viagem
+заставлять	verb	obrigar; forçar	essencial
+ездить	verb	andar (de veículo); viajar	viagem
+вспоминать	verb	lembrar; recordar	linguagem
+поиск	noun	busca; procura	essencial
+здоровье	noun	saúde	saude
+часто	other	frequentemente	tempo
+характер	noun	caráter; temperamento	emocoes
+пошлый	adjective	vulgar; banal	emocoes
+девчонка	noun	garota; menina	familia
+двое	other	dois (coletivo)	quantidade
+находить	verb	encontrar; achar	essencial
+министр	noun	ministro	politica
+ощущение	noun	sensação	emocoes
+организация	noun	organização	sociedade,trabalho
+интересно	other	interessante	essencial
+то	other	então; ora	essencial
+заплатить	verb	pagar	economia,compras
+богатый	adjective	rico	economia
+скорость	noun	velocidade	viagem,ciencia
+немецкий	adjective	alemão	linguagem
+животный	adjective	animal	x
+задний	adjective	traseiro; de trás	essencial
+определённый	adjective	determinado; certo	essencial
+произнести	verb	pronunciar	linguagem
+разница	noun	diferença	essencial
+материал	noun	material	ciencia
+энергия	noun	energia	ciencia
+понятно	other	compreensível; entendo	linguagem
+секрет	noun	segredo	essencial
+урок	noun	aula; lição	educacao
+сойти	verb	descer; desembarcar	viagem
+приказать	verb	ordenar	guerra
+погодить	verb	esperar um pouco	tempo
+важно	other	é importante	essencial
+стул	noun	cadeira	casa
+современный	adjective	moderno; contemporâneo	essencial
+повторять	verb	repetir	educacao
+схватить	verb	agarrar	essencial
+немой	adjective	mudo	saude
+ой	other	ai	essencial
+обстоятельство	noun	circunstância	essencial
+мечтать	verb	sonhar	emocoes
+молодец	noun	muito bem; rapaz valente	emocoes
+вместо	other	em vez de	essencial
+признаться	verb	confessar; admitir	linguagem
+шум	noun	barulho; ruído	cidade
+уничтожить	verb	destruir; aniquilar	guerra
+сумка	noun	bolsa; sacola	aparencia
+отойти	verb	afastar-se	essencial
+сомневаться	verb	duvidar	linguagem
+тебя	other	te; de ti	essencial
+контроль	noun	controle	essencial
+гореть	verb	queimar; arder	natureza
+обратиться	verb	dirigir-se; recorrer	sociedade
+перевод	noun	tradução; transferência	linguagem
+поздно	other	tarde	tempo
+морской	adjective	marítimo; do mar	natureza,viagem
+постоянный	adjective	constante; permanente	essencial
+очередной	adjective	próximo; mais um	essencial
+куча	noun	monte; pilha	quantidade
+странно	other	estranho	essencial
+их	other	os; deles	essencial
+крик	noun	grito	emocoes
+голубой	adjective	azul-claro	aparencia
+личность	noun	personalidade; pessoa	emocoes,sociedade
+падать	verb	cair	essencial
+пот	noun	suor	saude
+полицейский	adjective	policial	direito
+занятие	noun	ocupação; aula	educacao
+зрение	noun	visão	saude
+курить	verb	fumar	saude
+вкус	noun	gosto; sabor	comida
+прекрасно	other	perfeitamente; ótimo	essencial
+гражданин	noun	cidadão	politica
+живот	noun	barriga	saude
+сотрудник	noun	funcionário; colaborador	trabalho
+разрешить	verb	permitir; resolver	essencial
+голый	adjective	nu	aparencia
+процент	noun	porcentagem; juros	quantidade,economia
+собирать	verb	reunir; colecionar	essencial
+трудно	other	difícil	essencial
+острый	adjective	afiado; agudo; picante	essencial
+институт	noun	instituto; faculdade	educacao
+праздник	noun	feriado; festa	esporte,tempo
+решать	verb	decidir; resolver	linguagem
+лечение	noun	tratamento	saude
+шесть	other	seis	quantidade
+возникнуть	verb	surgir	essencial
+ближайший	adjective	mais próximo	essencial
+воспоминание	noun	lembrança; recordação	linguagem
+меч	noun	espada	historia,guerra
+стекло	noun	vidro	casa
+мечта	noun	sonho (desejo)	emocoes
+база	noun	base	essencial
+свадьба	noun	casamento (festa)	familia
+зеркало	noun	espelho	casa
+дон	noun	dom (título)	x
+мировой	adjective	mundial	politica
+тихо	other	baixinho; em silêncio	essencial
+съесть	verb	comer (tudo)	comida
+неужели	other	será possível; sério?	essencial
+территория	noun	território	politica
+сходить	verb	ir (e voltar); descer	viagem
+ох	other	oh; ai	essencial
+проект	noun	projeto	trabalho
+сомнение	noun	dúvida	linguagem
+труп	noun	cadáver	direito
+тонкий	adjective	fino; sutil	essencial
+четвёртый	adjective	quarto (ordinal)	quantidade
+подниматься	verb	subir	essencial
+пропустить	verb	deixar passar; faltar a	essencial
+городской	adjective	urbano; municipal	cidade
+установить	verb	instalar; estabelecer	tecnologia
+боевой	adjective	de combate	guerra
+сержант	noun	sargento	guerra
+здорово	other	ótimo; legal	essencial
+национальный	adjective	nacional	politica
+кольцо	noun	anel; argola	aparencia
+автомобиль	noun	automóvel	viagem
+дедушка	noun	avô	familia
+источник	noun	fonte	ciencia,midia
+повернуться	verb	virar-se	essencial
+темнота	noun	escuridão	natureza
+кино	noun	cinema	cultura
+рынок	noun	mercado	economia,compras
+бороться	verb	lutar	politica,esporte
+позвать	verb	chamar	essencial
+обо	other	sobre (forma de о)	essencial
+настроение	noun	humor; estado de espírito	emocoes
+мешок	noun	saco	essencial
+тайна	noun	mistério; segredo	essencial
+страница	noun	página	cultura
+знаменитый	adjective	famoso	cultura
+студент	noun	estudante universitário	educacao
+легко	other	facilmente; fácil	essencial
+направление	noun	direção; orientação	viagem
+даль	noun	distância; lonjura	x
+учёный	adjective	cientista; erudito	ciencia
+идиот	noun	idiota	emocoes
+мясо	noun	carne	comida
+удача	noun	sorte; êxito	emocoes
+судить	verb	julgar; arbitrar	direito
+западный	adjective	ocidental	politica
+уезжать	verb	partir (de veículo)	viagem
+опустить	verb	abaixar; pôr (na caixa)	essencial
+отель	noun	hotel	viagem
+степень	noun	grau	quantidade,educacao
+художник	noun	pintor; artista	cultura
+прочитать	verb	ler	cultura,educacao
+зона	noun	zona	cidade
+адвокат	noun	advogado	direito
+дно	noun	fundo	natureza
+убедиться	verb	certificar-se; convencer-se	linguagem
+нормально	other	normal; tudo bem	essencial
+пустить	verb	deixar entrar; soltar	essencial
+младший	adjective	mais novo; júnior	familia
+тайный	adjective	secreto	essencial
+улыбнуться	verb	sorrir	emocoes
+общественный	adjective	social; público	sociedade
+никак	other	de jeito nenhum	essencial
+внутри	other	dentro	essencial
+мастер	noun	mestre; artesão; especialista	trabalho
+шеф	noun	chefe	trabalho
+перейти	verb	atravessar; passar para	viagem
+существо	noun	criatura; ser	animais
+пространство	noun	espaço	ciencia
+украсть	verb	roubar	direito
+вполне	other	completamente; bastante	essencial
+баба	noun	mulher (coloquial)	sociedade
+выражение	noun	expressão	linguagem
+семейный	adjective	familiar	familia
+научиться	verb	aprender	educacao
+стен	noun	esteno (unidade)	x
+впечатление	noun	impressão	emocoes
+бизнес	noun	negócios	economia
+встречать	verb	encontrar; receber	sociedade
+Париж	noun	Paris	x
+тебе	other	te; a ti	essencial
+английский	adjective	inglês	linguagem
+равный	adjective	igual	quantidade
+сигнал	noun	sinal	tecnologia
+расти	verb	crescer	animais
+вырасти	verb	crescer	animais
+доказательство	noun	prova; evidência	direito,ciencia
+лист	noun	folha	animais
+северный	adjective	do norte; setentrional	natureza
+компьютер	noun	computador	tecnologia
+одинокий	adjective	solitário	emocoes
+выпустить	verb	soltar; lançar; publicar	essencial
+еврей	noun	judeu	religiao
+мост	noun	ponte	cidade
+тишина	noun	silêncio	essencial
+совершить	verb	realizar; cometer	essencial
+нужно	other	é preciso	essencial
+суть	noun	essência	linguagem
+доверять	verb	confiar	emocoes
+юный	adjective	jovem	sociedade
+театр	noun	teatro	cultura
+покинуть	verb	abandonar; deixar	essencial
+заявление	noun	declaração; requerimento	midia,direito
+сегодняшний	adjective	de hoje; atual	tempo
+председатель	noun	presidente (de órgão)	politica
+забывать	verb	esquecer	linguagem
+спасть	verb	baixar; diminuir	essencial
+выбирать	verb	escolher	politica
+выстрел	noun	tiro; disparo	guerra
+покупать	verb	comprar	compras
+договориться	verb	combinar; chegar a acordo	linguagem,politica
+дерьмо	noun	merda	x
+вниз	other	para baixo	essencial
+взяться	verb	pôr-se a; aparecer	essencial
+предмет	noun	objeto; disciplina (matéria)	educacao
+объяснять	verb	explicar	linguagem
+судья	noun	juiz; árbitro	direito,esporte
+пятый	adjective	quinto	quantidade
+полностью	other	totalmente	essencial
+житель	noun	habitante; morador	cidade
+участие	noun	participação	sociedade
+невозможно	other	impossível	essencial
+здравствовать	verb	passar bem (здравствуйте)	essencial
+святой	adjective	santo	religiao
+сбежать	verb	fugir	essencial
+объявить	verb	anunciar; declarar	midia
+труба	noun	cano; chaminé; trompete	casa
+зависеть	verb	depender	essencial
+кот	noun	gato	animais
+мягкий	adjective	macio; suave	essencial
+частный	adjective	particular; privado	economia
+велеть	verb	mandar; ordenar	essencial
+домашний	adjective	caseiro; doméstico	casa
+телевизор	noun	televisor	tecnologia,midia
+смешной	adjective	engraçado; ridículo	emocoes
+весь	adjective	todo; inteiro	essencial
+штат	noun	estado (federativo); quadro de pessoal	politica
+стакан	noun	copo	comida
+больше	other	mais; maior	quantidade
+крепкий	adjective	forte; resistente	essencial
+масло	noun	manteiga; óleo	comida
+медицинский	adjective	médico; de medicina	saude
+завод	noun	fábrica; usina	trabalho,tecnologia
+насколько	other	quanto; até que ponto	essencial
+вход	noun	entrada	cidade
+построить	verb	construir	cidade
+заявить	verb	declarar; afirmar	midia
+поступать	verb	agir; ingressar	essencial
+угроза	noun	ameaça	guerra
+социальный	adjective	social	sociedade
+запомнить	verb	memorizar; guardar na memória	educacao
+мальчишка	noun	garoto; moleque	familia
+водитель	noun	motorista	viagem
+представитель	noun	representante	politica
+некий	adjective	certo; um tal	essencial
+революция	noun	revolução	historia,politica
+приятно	other	agradável; prazer	emocoes
+площадь	noun	praça; área	cidade,quantidade
+десяток	noun	dezena	quantidade
+хвост	noun	rabo; cauda	animais
+ворот	noun	gola	aparencia
+редкий	adjective	raro	essencial
+спокойно	other	calmamente	emocoes
+вечный	adjective	eterno	tempo
+выиграть	verb	ganhar; vencer	esporte
+бегать	verb	correr (em várias direções)	esporte
+поведение	noun	comportamento	sociedade
+сохранить	verb	manter; preservar; salvar	essencial
+научный	adjective	científico	ciencia
+жалить	verb	picar; ferroar	animais
+победить	verb	vencer	esporte,guerra
+защищать	verb	defender; proteger	guerra,direito
+горло	noun	garganta	saude
+подписать	verb	assinar	direito
+зло	noun	mal	religiao
+впервые	other	pela primeira vez	tempo
+принцип	noun	princípio	linguagem
+позиция	noun	posição	essencial
+университет	noun	universidade	educacao
+постель	noun	cama; roupa de cama	casa
+красота	noun	beleza	aparencia
+исследование	noun	pesquisa; investigação	ciencia
+продавать	verb	vender	compras
+сигарета	noun	cigarro	saude
+взрыв	noun	explosão	guerra
+удивительный	adjective	surpreendente	essencial
+представление	noun	ideia; apresentação; espetáculo	linguagem,cultura
+тянуть	verb	puxar	essencial
+замечать	verb	notar; perceber	essencial
+нечего	other	não há o que	essencial
+готовиться	verb	preparar-se	educacao
+голодный	adjective	faminto; com fome	comida
+трогать	verb	tocar; comover	emocoes
+высота	noun	altura; altitude	quantidade
+инспектор	noun	inspetor	direito
+штаны	noun	calça	aparencia
+участвовать	verb	participar	sociedade
+яйцо	noun	ovo	comida
+сухой	adjective	seco	natureza
+предел	noun	limite	quantidade
+преступник	noun	criminoso	direito
+французский	adjective	francês	linguagem
+прибыть	verb	chegar	viagem
+настолько	other	tão; a tal ponto	essencial
+посадить	verb	plantar; sentar; prender	animais
+утверждать	verb	afirmar; aprovar	linguagem
+конь	noun	cavalo	animais
+приезжать	verb	chegar (de veículo)	viagem
+скрывать	verb	esconder	essencial
+танцевать	verb	dançar	cultura
+кость	noun	osso	saude
+менее	other	menos	quantidade
+Европа	noun	Europa	x
+глубина	noun	profundidade	quantidade
+честно	other	honestamente	emocoes
+запад	noun	oeste; Ocidente	natureza,politica
+ужин	noun	jantar	comida
+обязательно	other	sem falta; obrigatoriamente	essencial
+пахнуть	verb	cheirar (a)	essencial
+переживать	verb	preocupar-se; vivenciar	emocoes
+орган	noun	órgão	saude,politica
+сеть	noun	rede	tecnologia
+ручка	noun	caneta; maçaneta	educacao
+борт	noun	bordo	viagem
+испытывать	verb	sentir; testar	emocoes,ciencia
+выполнять	verb	cumprir; executar	trabalho
+лезть	verb	subir; meter-se	essencial
+худой	adjective	magro	aparencia
+множество	noun	grande quantidade	quantidade
+единый	adjective	único; unificado	essencial
+молоко	noun	leite	comida
+работник	noun	trabalhador	trabalho
+коллега	noun	colega	trabalho
+постоянно	other	constantemente	tempo
+километр	noun	quilômetro	quantidade
+поездка	noun	viagem; passeio	viagem
+дым	noun	fumaça	natureza
+лечь	verb	deitar-se	casa
+торопиться	verb	apressar-se	tempo
+подарить	verb	presentear	familia
+рана	noun	ferida	saude
+рубашка	noun	camisa	aparencia
+лоб	noun	testa	saude
+висеть	verb	estar pendurado	essencial
+период	noun	período	tempo
+видно	other	pelo visto; vê-se	essencial
+смех	noun	riso	emocoes
+секретарь	noun	secretário	trabalho
+бомба	noun	bomba	guerra
+поддерживать	verb	apoiar; manter	politica
+вовсе	other	de modo algum; totalmente	essencial
+лишний	adjective	supérfluo; a mais	essencial
+заговорить	verb	começar a falar	linguagem
+отряд	noun	destacamento; esquadrão	guerra
+немедленно	other	imediatamente	tempo
+арестовать	verb	prender	direito
+ученик	noun	aluno	educacao
+включить	verb	ligar; incluir	tecnologia
+пост	noun	posto; jejum	guerra,religiao
+изменение	noun	mudança	essencial
+школьный	adjective	escolar	educacao
+записать	verb	anotar; gravar; inscrever	educacao
+дворец	noun	palácio	historia,cidade
+производство	noun	produção	economia
+что-то	other	algo; alguma coisa	essencial
+очко	noun	ponto (no jogo)	esporte
+выступать	verb	apresentar-se; discursar	cultura,politica
+поэт	noun	poeta	cultura
+недавно	other	recentemente	tempo
+зима	noun	inverno	tempo,natureza
+ничего	noun	nada mal; tudo bem	essencial
+благодарить	verb	agradecer	essencial
+задание	noun	tarefa	educacao,trabalho
+страдать	verb	sofrer	emocoes
+побежать	verb	sair correndo	esporte
+отдавать	verb	devolver; entregar	essencial
+дыхание	noun	respiração	saude
+южный	adjective	do sul; meridional	natureza
+центральный	adjective	central	cidade
+сутки	noun	dia de 24 horas	tempo
+больно	other	dói; dolorosamente	saude
+продолжить	verb	continuar	essencial
+спуститься	verb	descer	essencial
+клетка	noun	gaiola; célula; quadrado	ciencia,animais
+услуга	noun	serviço; favor	compras
+полезный	adjective	útil	essencial
+уважение	noun	respeito	emocoes
+брак	noun	casamento; defeito	familia
+низкий	adjective	baixo	quantidade
+терпеть	verb	aguentar; tolerar	emocoes
+луна	noun	lua	natureza
+будущий	adjective	futuro	tempo
+видимый	adjective	visível	essencial
+продукт	noun	produto; alimento	comida,economia
+основание	noun	fundamento; fundação	essencial
+отсутствие	noun	ausência; falta	essencial
+собрание	noun	reunião; assembleia	politica,trabalho
+мисс	noun	senhorita (miss)	x
+считаться	verb	ser considerado; levar em conta	essencial
+едва	other	mal; apenas	essencial
+ладонь	noun	palma da mão	saude
+грех	noun	pecado	religiao
+захватить	verb	capturar; tomar; levar junto	guerra
+теория	noun	teoria	ciencia
+слать	verb	enviar	essencial
+сдать	verb	entregar; alugar; passar (em exame)	educacao
+зверь	noun	fera; animal selvagem	animais
+диван	noun	sofá	casa
+приготовить	verb	preparar	comida
+выбраться	verb	sair; escapar	essencial
+автомат	noun	fuzil automático; máquina automática	guerra,tecnologia
+спорить	verb	discutir; apostar	linguagem
+деятельность	noun	atividade	trabalho
+менять	verb	trocar; mudar	essencial
+водка	noun	vodca	comida
+проверять	verb	verificar; corrigir	educacao
+миссис	noun	senhora (mrs.)	x
+осторожный	adjective	cuidadoso	emocoes
+официальный	adjective	oficial	politica
+секс	noun	sexo	familia
+телефонный	adjective	telefônico	tecnologia
+напомнить	verb	lembrar (alguém de)	linguagem
+поддержка	noun	apoio	sociedade
+яркий	adjective	brilhante; vivo	aparencia
+помощник	noun	assistente; ajudante	trabalho
+догадаться	verb	adivinhar; perceber	linguagem
+приносить	verb	trazer	essencial
+гораздо	other	muito (mais)	quantidade
+семь	other	sete	quantidade
+человечество	noun	humanidade	sociedade
+образование	noun	educação; formação	educacao
+оттуда	other	de lá	essencial
+великолепный	adjective	magnífico	essencial
+состоять	verb	consistir; ser membro	essencial
+прочее	noun	o resto; outros	essencial
+болеть	verb	estar doente; doer; torcer	saude,esporte
+перевести	verb	traduzir; transferir	linguagem
+противник	noun	adversário	guerra,esporte
+мужской	adjective	masculino	sociedade
+польза	noun	proveito; utilidade	essencial
+одетый	adjective	vestido	aparencia
+сапог	noun	bota	aparencia
+газ	noun	gás	ciencia
+клясться	verb	jurar	linguagem
+летний	adjective	de verão	tempo
+поскольку	other	visto que; já que	essencial
+войско	noun	tropas; exército	guerra
+лёд	noun	gelo	natureza
+устраивать	verb	organizar; convir	essencial
+наступить	verb	pisar; chegar (época)	tempo
+прочесть	verb	ler	cultura
+удивиться	verb	surpreender-se	emocoes
+должность	noun	cargo; função	trabalho
+фронт	noun	frente (de batalha)	guerra
+прощать	verb	perdoar	emocoes
+восток	noun	leste; Oriente	natureza,politica
+офис	noun	escritório	trabalho
+парк	noun	parque; frota	cidade
+подтвердить	verb	confirmar	essencial
+различный	adjective	diverso; vário	essencial
+глупость	noun	bobagem; estupidez	emocoes
+прежний	adjective	anterior; antigo	tempo
+предупредить	verb	avisar; prevenir	essencial
+фраза	noun	frase	linguagem
+найтись	verb	ser encontrado; aparecer	essencial
+двадцать	other	vinte	quantidade
+прощение	noun	perdão	emocoes
+создание	noun	criação	cultura
+озеро	noun	lago	natureza
+рано	other	cedo	tempo
+раненый	adjective	ferido	saude,guerra
+определить	verb	definir; determinar	ciencia
+случаться	verb	acontecer	essencial
+видимо	other	aparentemente	essencial
+выдержать	verb	aguentar; resistir	essencial
+обратить	verb	voltar; dirigir (atenção)	essencial
+ответственность	noun	responsabilidade	trabalho
+тупой	adjective	cego (sem fio); burro	emocoes
+древний	adjective	antigo	historia
+внешний	adjective	externo	politica
+мадам	noun	madame	x
+нижний	adjective	inferior; de baixo	essencial
+суметь	verb	conseguir	essencial
+лаборатория	noun	laboratório	ciencia
+интересовать	verb	interessar	emocoes
+заглянуть	verb	dar uma espiada; passar rapidamente	essencial
+охота	noun	caça; vontade	esporte,animais
+сумма	noun	soma; quantia	quantidade,economia
+сыграть	verb	jogar; tocar; interpretar	esporte,cultura
+давай	other	vamos	essencial
+ложь	noun	mentira	linguagem
+очевидно	other	obviamente	essencial
+специалист	noun	especialista	trabalho
+культура	noun	cultura	cultura
+вызов	noun	desafio; chamada	essencial
+туалет	noun	banheiro	casa
+разрешение	noun	permissão; autorização	direito
+устать	verb	cansar-se	saude
+истинный	adjective	verdadeiro	linguagem
+колесо	noun	roda	viagem
+превратиться	verb	transformar-se	essencial
+среда	noun	quarta-feira; meio ambiente	tempo,natureza
+солнечный	adjective	ensolarado; solar	natureza
+могила	noun	túmulo; sepultura	religiao
+явиться	verb	comparecer; aparecer; ser	essencial
+гражданский	adjective	civil	politica,direito
+крыло	noun	asa	animais
+весьма	other	bastante; muito	essencial
+возвращение	noun	retorno; volta	viagem
+ужасно	other	terrivelmente	emocoes
+поздний	adjective	tardio	tempo
+отделение	noun	departamento; seção	trabalho
+розовый	adjective	cor-de-rosa	aparencia
+протянуть	verb	estender	essencial
+мокрый	adjective	molhado	natureza
+обвинение	noun	acusação	direito
+секретный	adjective	secreto	guerra
+кулак	noun	punho; kulak	saude,historia
+сто	other	cem	quantidade
+тьма	noun	escuridão	natureza
+деталь	noun	detalhe; peça	tecnologia
+танец	noun	dança	cultura
+состав	noun	composição; elenco	ciencia
+ангел	noun	anjo	religiao
+международный	adjective	internacional	politica
+сладкий	adjective	doce	comida
+штаб	noun	quartel-general; estado-maior	guerra
+возле	other	perto de; junto a	essencial
+тяжело	other	difícil; com dificuldade	essencial
+поднимать	verb	levantar	essencial
+говориться	verb	dizer-se	linguagem
+вероятно	other	provavelmente	essencial
+пациент	noun	paciente	saude
+грузовик	noun	caminhão	viagem
+доставить	verb	entregar; levar; proporcionar	compras
+посол	noun	embaixador	politica
+родственник	noun	parente	familia
+необходимость	noun	necessidade	essencial
+назначить	verb	nomear; marcar	trabalho
+сексуальный	adjective	sexual	familia
+канал	noun	canal	midia,natureza
+лёгкое	noun	pulmão	saude
+тревога	noun	alarme; ansiedade	emocoes
+сей	adjective	este (livresco)	essencial
+усилие	noun	esforço	essencial
+обойтись	verb	virar-se sem; custar; tratar	essencial
+доска	noun	tábua; quadro-negro	educacao
+жестокий	adjective	cruel	emocoes
+защитить	verb	defender; proteger	guerra,direito
+норма	noun	norma; padrão	essencial
+товар	noun	mercadoria	compras,economia
+устройство	noun	aparelho; estrutura	tecnologia
+отдельный	adjective	separado; individual	essencial
+отчёт	noun	relatório	trabalho
+жалкий	adjective	patético; lamentável	emocoes
+пункт	noun	ponto; item; posto	essencial
+светлый	adjective	claro; iluminado	aparencia
+существование	noun	existência	linguagem
+признак	noun	sinal; indício	essencial
+величество	noun	majestade	historia
+наверняка	other	com certeza	essencial
+гордиться	verb	orgulhar-se	emocoes
+способность	noun	capacidade; aptidão	educacao
+освободить	verb	libertar; liberar	politica
+объект	noun	objeto	ciencia
+уважать	verb	respeitar	emocoes
+везти	verb	levar (de veículo); transportar	viagem
+вывести	verb	retirar; deduzir	essencial
+нарушение	noun	violação; infração	direito
+отвести	verb	levar; afastar	essencial
+вина	noun	culpa	direito,emocoes
+верхний	adjective	superior; de cima	essencial
+страшно	other	assustador; muito	emocoes
+выполнить	verb	cumprir; executar	trabalho
+узнавать	verb	reconhecer; ficar sabendo	linguagem
+выдать	verb	entregar; revelar	essencial
+громкий	adjective	alto (som); sonoro	essencial
+научить	verb	ensinar	educacao
+ловить	verb	pegar; pescar	esporte
+минутка	noun	minutinho	tempo
+дойти	verb	chegar (a pé)	viagem
+физический	adjective	físico	ciencia,saude
+неплохо	other	nada mal	essencial
+файл	noun	arquivo	tecnologia
+абсолютно	other	absolutamente	essencial
+пожар	noun	incêndio	natureza
+мимо	other	ao lado; passando por	essencial
+литература	noun	literatura	cultura
+наверно	other	provavelmente	essencial
+актёр	noun	ator	cultura
+пыль	noun	poeira	casa
+восточный	adjective	oriental; do leste	natureza
+подходящий	adjective	adequado	essencial
+модель	noun	modelo	essencial
+гулять	verb	passear	esporte
+жалеть	verb	lamentar; ter pena	emocoes
+буква	noun	letra	linguagem
+задница	noun	bunda	x
+обращать	verb	dirigir (atenção)	essencial
+горе	noun	desgosto; mágoa	emocoes
+завести	verb	arranjar; ligar (motor)	essencial
+переводчик	noun	tradutor; intérprete	linguagem,trabalho
+смена	noun	turno; troca	trabalho
+серия	noun	série; episódio	midia
+неприятность	noun	aborrecimento; problema	emocoes
+требоваться	verb	ser necessário	essencial
+прочий	adjective	outro	essencial
+приближаться	verb	aproximar-se	essencial
+руководитель	noun	dirigente; orientador	trabalho
+спешить	verb	ter pressa	tempo
+записка	noun	bilhete	midia
+Германия	noun	Alemanha	x
+музей	noun	museu	cultura
+деньги	noun	dinheiro	economia
+вес	noun	peso	quantidade
+Франция	noun	França	x
+пёс	noun	cão	animais
+волна	noun	onda	natureza
+радио	noun	rádio	midia
+фигура	noun	figura	essencial
+обратный	adjective	contrário; de volta	essencial
+реакция	noun	reação	ciencia
+роза	noun	rosa	animais
+руководство	noun	direção; liderança; manual	trabalho
+Питер	noun	Petersburgo (coloquial)	x
+осторожно	other	com cuidado	essencial
+весело	other	alegremente; divertido	emocoes
+журналист	noun	jornalista	midia
+ошибаться	verb	enganar-se; errar	linguagem
+чудесный	adjective	maravilhoso	essencial
+деть	verb	enfiar; meter	essencial
+предполагать	verb	supor	linguagem
+беседа	noun	conversa	linguagem
+боец	noun	lutador; combatente	guerra
+анализ	noun	análise	ciencia
+талант	noun	talento	cultura
+показание	noun	depoimento; indicação	direito
+бок	noun	lado; flanco	saude
+останавливаться	verb	parar; hospedar-se	viagem
+политика	noun	política	politica
+вас	other	vos; vocês	essencial
+стиль	noun	estilo	aparencia,cultura
+нервный	adjective	nervoso	emocoes
+лидер	noun	líder	politica
+знание	noun	conhecimento	educacao
+население	noun	população	sociedade
+царь	noun	czar	historia
+добиться	verb	conseguir; alcançar	essencial
+усталый	adjective	cansado	saude
+кошка	noun	gata; gato	animais
+составить	verb	compor; elaborar; somar	essencial
+север	noun	norte	natureza
+соседний	adjective	vizinho	cidade
+заболевание	noun	doença	saude
+создавать	verb	criar	essencial
+угодный	adjective	agradável; conveniente	essencial
+никуда	other	a lugar nenhum	essencial
+чемодан	noun	mala	viagem
+подозревать	verb	suspeitar	direito
+хранить	verb	guardar; conservar	essencial
+восемь	other	oito	quantidade
+наверху	adjective	em cima	essencial
+столик	noun	mesinha; mesa (de restaurante)	comida
+инженер	noun	engenheiro	tecnologia,trabalho
+итог	noun	total; resultado	quantidade
+контакт	noun	contato	sociedade
+лучше	other	melhor	essencial
+навсегда	other	para sempre	tempo
+нынешний	adjective	atual	tempo
+шкаф	noun	armário	casa
+американец	noun	americano	x
+пережить	verb	sobreviver; passar por	essencial
+испугаться	verb	assustar-se	emocoes
+российский	adjective	russo (da Rússia)	politica
+нечто	other	algo	essencial
+присесть	verb	sentar-se (um pouco)	essencial
+радостный	adjective	alegre	emocoes
+нас	other	nos; de nós	essencial
+скучать	verb	ter saudade; entediar-se	emocoes
+дурацкий	adjective	bobo; idiota	emocoes
+прикрыть	verb	cobrir; proteger	essencial
+профессиональный	adjective	profissional	trabalho
+путешествие	noun	viagem	viagem
+отметить	verb	marcar; comemorar; mencionar	essencial
+песок	noun	areia	natureza
+вверх	other	para cima	essencial
+рубль	noun	rublo	economia
+идеальный	adjective	ideal; perfeito	essencial
+спрятать	verb	esconder	essencial
+завтрак	noun	café da manhã	comida
+вывод	noun	conclusão	ciencia,linguagem
+расследование	noun	investigação	direito
+проклятый	adjective	maldito	religiao
+давление	noun	pressão	ciencia,saude
+ожидание	noun	espera; expectativa	tempo
+отдохнуть	verb	descansar	esporte
+шляпа	noun	chapéu	aparencia
+воспользоваться	verb	aproveitar; utilizar	essencial
+несмотря	other	apesar de (несмотря на)	essencial
+просьба	noun	pedido	essencial
+рассчитывать	verb	contar com; calcular	quantidade
+вчерашний	adjective	de ontem	tempo
+чего	other	de quê (genitivo de что)	essencial
+зато	other	em compensação	essencial
+золото	noun	ouro	economia
+книжка	noun	livrinho; caderneta	cultura
+масса	noun	massa; monte	quantidade,ciencia
+владелец	noun	dono; proprietário	economia
+сынок	noun	filhinho	familia
+драться	verb	brigar	esporte
+мгновение	noun	instante	tempo
+вечеринка	noun	festa	esporte
+летать	verb	voar	viagem
+пятно	noun	mancha	casa
+занимать	verb	ocupar; pegar emprestado	essencial
+прожить	verb	viver (um período)	essencial
+избавиться	verb	livrar-se	essencial
+продолжаться	verb	continuar; durar	tempo
+волк	noun	lobo	animais
+невероятный	adjective	incrível	essencial
+расстояние	noun	distância	quantidade,viagem
+обсуждать	verb	discutir; debater	linguagem,midia
+постараться	verb	esforçar-se	essencial
+площадка	noun	área; quadra; plataforma	cidade,esporte
+танк	noun	tanque (de guerra)	guerra
+возражать	verb	objetar; opor-se	linguagem
+температура	noun	temperatura; febre	natureza,saude
+сезон	noun	temporada; estação	tempo
+страсть	noun	paixão	emocoes
+ад	noun	inferno	religiao
+задавать	verb	fazer (pergunta); passar (tarefa)	educacao
+волшебный	adjective	mágico	cultura
+медленно	other	devagar	essencial
+финансовый	adjective	financeiro	economia
+исключение	noun	exceção; expulsão	linguagem
+надоесть	verb	cansar; encher (a paciência)	emocoes
+дружба	noun	amizade	familia
+комитет	noun	comitê	politica
+вынужденный	adjective	forçado	essencial
+мощный	adjective	potente	tecnologia
+грубый	adjective	grosseiro; rude	emocoes
+наблюдение	noun	observação	ciencia
+примерно	other	aproximadamente	quantidade
+надеть	verb	vestir; pôr (roupa)	aparencia
+гостиница	noun	hotel	viagem
+приводить	verb	levar; trazer; citar	essencial
+помешать	verb	atrapalhar; impedir	essencial
+остаток	noun	resto; saldo	quantidade
+повесить	verb	pendurar	casa
+ложиться	verb	deitar-se	casa
+организм	noun	organismo	saude,ciencia
+принятый	adjective	aceito; adotado	essencial
+невеста	noun	noiva	familia
+жёсткий	adjective	duro; rígido	essencial
+потеря	noun	perda	essencial
+такси	noun	táxi	viagem
+лекарство	noun	remédio	saude
+прятаться	verb	esconder-se	essencial
+текст	noun	texto	linguagem
+ошибиться	verb	enganar-se; errar	linguagem
+выжить	verb	sobreviver	essencial
+вор	noun	ladrão	direito
+принц	noun	príncipe	historia
+увидеться	verb	ver-se; encontrar-se	sociedade
+партнёр	noun	parceiro; sócio	economia,familia
+заботиться	verb	cuidar; preocupar-se	familia
+тепло	noun	calor	natureza
+слегка	other	levemente	essencial
+леди	noun	dama (lady)	x
+смешно	other	engraçado	emocoes
+дочка	noun	filhinha	familia
+открыться	verb	abrir-se; inaugurar	essencial
+повернуть	verb	virar	viagem
+возникать	verb	surgir	essencial
+достойный	adjective	digno	emocoes
+экран	noun	tela	tecnologia,cultura
+задать	verb	fazer (pergunta); passar (tarefa)	educacao
+отвезти	verb	levar (de veículo)	viagem
+будет	other	chega; basta	x
+обернуться	verb	virar-se; olhar para trás	essencial
+комиссия	noun	comissão	politica
+прокурор	noun	promotor	direito
+совесть	noun	consciência (moral)	emocoes
+рыжий	adjective	ruivo	aparencia
+склад	noun	armazém; depósito	economia
+фон	noun	fundo; pano de fundo	essencial
+благодаря	other	graças a	essencial
+случайно	other	por acaso	essencial
+отличаться	verb	diferenciar-se; destacar-se	essencial
+заказать	verb	encomendar; reservar	compras
+влюблённый	adjective	apaixonado	familia,emocoes
+погода	noun	tempo (clima)	natureza
+разум	noun	razão; intelecto	linguagem
+впереди	other	à frente	essencial
+задержать	verb	deter; atrasar	direito
+естественный	adjective	natural	essencial
+голод	noun	fome	comida
+сметь	verb	ousar	essencial
+основа	noun	base; fundamento	essencial
+столица	noun	capital	politica,cidade
+отказываться	verb	recusar; renunciar	essencial
+люк	noun	alçapão; escotilha	x
+тон	noun	tom	cultura
+зарплата	noun	salário	trabalho,economia
+океан	noun	oceano	natureza
+вагон	noun	vagão	viagem
+благодарный	adjective	grato	emocoes
+строить	verb	construir	cidade
+поцеловать	verb	beijar	familia
+столь	other	tão	essencial
+куст	noun	arbusto	animais
+передача	noun	programa (de TV); transmissão	midia
+заработать	verb	ganhar (dinheiro)	trabalho,economia
+вам	other	vos; a vocês	essencial
+поколение	noun	geração	sociedade,familia
+честный	adjective	honesto	emocoes
+подвал	noun	porão	casa
+неплохой	adjective	nada mau	essencial
+режим	noun	regime; modo	politica
+замолчать	verb	calar-se	linguagem
+нуждаться	verb	precisar de; necessitar	essencial
+круглый	adjective	redondo	essencial
+понятный	adjective	compreensível; claro	linguagem
+технический	adjective	técnico	tecnologia
+случайный	adjective	casual; aleatório	essencial
+родина	noun	pátria; terra natal	politica
+доля	noun	parte; quota; sina	quantidade
+вновь	other	de novo	tempo
+обязанность	noun	obrigação; dever	trabalho
+дешёвый	adjective	barato	compras
+прыгать	verb	pular; saltar	esporte
+март	noun	março	tempo
+неожиданный	adjective	inesperado	essencial
+коробка	noun	caixa	casa
+блестящий	adjective	brilhante	essencial
+открытие	noun	descoberta; inauguração	ciencia
+внизу	other	embaixo	essencial
+медведь	noun	urso	animais
+судно	noun	navio; embarcação	viagem
+ракета	noun	foguete; míssil	ciencia,guerra
+помещение	noun	recinto; instalação	casa
+блин	noun	panqueca	comida
+договор	noun	contrato; tratado	direito,politica
+аппарат	noun	aparelho	tecnologia
+порог	noun	limiar; soleira	casa
+поддержать	verb	apoiar	politica
+отличие	noun	diferença; distinção	essencial
+дьявол	noun	diabo	religiao
+юг	noun	sul	natureza
+концерт	noun	concerto; show	cultura
+отпуск	noun	férias; licença	trabalho,viagem
+валить	verb	derrubar; ir embora (gíria)	essencial
+меняться	verb	mudar; trocar	essencial
+себе	other	a si mesmo; se	essencial
+направить	verb	direcionar; encaminhar	essencial
+куртка	noun	jaqueta	aparencia
+рисковать	verb	arriscar	essencial
+иметься	verb	haver; existir	essencial
+грязь	noun	sujeira; lama	casa
+подавать	verb	servir; apresentar	comida
+середина	noun	meio; centro	essencial
+поверхность	noun	superfície	ciencia
+вершина	noun	cume; topo	natureza
+пускать	verb	deixar entrar; soltar	essencial
+пакет	noun	pacote; sacola	compras
+док	noun	doca	x
+божий	adjective	divino; de Deus	religiao
+гений	noun	gênio	cultura
+близко	other	perto	essencial
+тратить	verb	gastar	economia
+всего	other	ao todo; apenas	quantidade
+ладный	adjective	bem-feito; harmonioso	x
+продажа	noun	venda	compras
+начальство	noun	chefia	trabalho
+разбитый	adjective	quebrado	essencial
+забота	noun	cuidado; preocupação	familia
+сломать	verb	quebrar	essencial
+таки	other	afinal (ênfase)	essencial
+вынести	verb	levar para fora; aguentar	essencial
+нападение	noun	ataque; agressão	guerra,direito
+сделка	noun	negócio; transação	economia
+китайский	adjective	chinês	linguagem
+предпочитать	verb	preferir	essencial
+глянуть	verb	dar uma olhada	essencial
+восторг	noun	entusiasmo; encanto	emocoes
+инструмент	noun	ferramenta; instrumento	tecnologia,cultura
+водить	verb	dirigir; conduzir	viagem
+стихи	noun	poesia; versos	cultura
+обстановка	noun	situação; mobília	essencial
+нам	other	nos; a nós	essencial
+дополнительный	adjective	adicional	essencial
+поступок	noun	ato; atitude	emocoes
+сквозь	other	através de	essencial
+двигатель	noun	motor	tecnologia,viagem
+проверка	noun	verificação; inspeção	essencial
+толк	noun	sentido; proveito	essencial
+шестой	adjective	sexto	quantidade
+кусочек	noun	pedacinho	quantidade
+краска	noun	tinta	cultura
+тащить	verb	arrastar; carregar	essencial
+торчать	verb	sobressair; ficar parado	essencial
+вряд	other	dificilmente (вряд ли)	essencial
+убежать	verb	fugir	essencial
+угадать	verb	adivinhar	essencial
+песнь	noun	canto (poema)	cultura
+сравнение	noun	comparação	linguagem
+опоздать	verb	atrasar-se	tempo
+руль	noun	volante; leme	viagem
+ботинок	noun	sapato; botina	aparencia
+пила	noun	serra	tecnologia
+Лондон	noun	Londres	x
+предположить	verb	supor	linguagem
+дальнейший	adjective	posterior; seguinte	essencial
+неправильный	adjective	incorreto	essencial
+присутствие	noun	presença	essencial
+истина	noun	verdade	linguagem
+карьера	noun	carreira	trabalho
+удобный	adjective	confortável; conveniente	casa
+принцесса	noun	princesa	historia
+строгий	adjective	rigoroso; severo	emocoes
+беспокоить	verb	incomodar; preocupar	emocoes
+подготовить	verb	preparar	educacao
+дальний	adjective	distante	viagem
+из-за	other	por causa de; de trás de	essencial
+щека	noun	bochecha	saude
+ведьма	noun	bruxa	religiao
+библиотека	noun	biblioteca	educacao,cultura
+поесть	verb	comer (um pouco)	comida
+версия	noun	versão	essencial
+жаловаться	verb	queixar-se	emocoes
+воин	noun	guerreiro	guerra
+слепой	adjective	cego	saude
+экзамен	noun	exame; prova	educacao
+убедить	verb	convencer	linguagem
+организовать	verb	organizar	trabalho
+необычный	adjective	incomum	essencial
+испортить	verb	estragar	essencial
+пробовать	verb	experimentar; tentar	essencial
+дождаться	verb	esperar até	tempo
+домик	noun	casinha	casa
+весна	noun	primavera	tempo,natureza
+стремиться	verb	aspirar a; esforçar-se	essencial
+доступ	noun	acesso	tecnologia
+влияние	noun	influência	politica,sociedade
+кормить	verb	alimentar	comida
+ха	other	ha	x
+обида	noun	ofensa; mágoa	emocoes
+радоваться	verb	alegrar-se	emocoes
+попасться	verb	ser pego; aparecer	essencial
+заслужить	verb	merecer	essencial
+сказка	noun	conto de fadas	cultura
+исторический	adjective	histórico	historia
+составлять	verb	compor; constituir	essencial
+изучать	verb	estudar	educacao,ciencia
+плюс	noun	vantagem; mais	quantidade
+корова	noun	vaca	animais
+облако	noun	nuvem	natureza
+отдых	noun	descanso; lazer	esporte
+связаться	verb	entrar em contato	midia
+временный	adjective	temporário	tempo
+отдыхать	verb	descansar	esporte
+смелый	adjective	corajoso	emocoes
+детектив	noun	detetive; romance policial	direito,cultura
+посылать	verb	enviar	essencial
+пресса	noun	imprensa	midia
+артист	noun	artista	cultura
+хозяйка	noun	dona; anfitriã	casa
+поцелуй	noun	beijo	familia
+тарелка	noun	prato	comida
+видеться	verb	ver-se	sociedade
+волновать	verb	preocupar; emocionar	emocoes
+замуж	other	casar (para mulheres: выйти замуж)	familia
+посидеть	verb	ficar sentado um pouco	essencial
+спустя	other	depois de	tempo
+обезьяна	noun	macaco	animais
+плевать	verb	cuspir; não ligar	essencial
+полёт	noun	voo	viagem
+палатка	noun	barraca	viagem
+спортивный	adjective	esportivo	esporte
+трое	other	três (coletivo)	quantidade
+передавать	verb	transmitir; passar	midia
+разбираться	verb	entender de; resolver	linguagem
+печальный	adjective	triste	emocoes
+видать	verb	ver (coloquial)	essencial
+пятнадцать	noun	quinze	quantidade
+туман	noun	neblina	natureza
+неприятный	adjective	desagradável	emocoes
+подготовка	noun	preparação; formação	educacao
+госпожа	noun	senhora	sociedade
+майка	noun	camiseta	aparencia
+ствол	noun	tronco; cano (de arma)	animais,guerra
+глухой	adjective	surdo	saude
+капля	noun	gota	natureza
+миг	noun	instante	tempo
+космический	adjective	espacial; cósmico	ciencia
+быль	noun	história verídica	x
+паспорт	noun	passaporte	viagem
+закричать	verb	gritar	emocoes
+спускаться	verb	descer	essencial
+поглядеть	verb	olhar (um pouco)	essencial
+арест	noun	prisão (detenção)	direito
+последствие	noun	consequência	essencial
+симпатичный	adjective	simpático; bonito	emocoes,aparencia
+выбросить	verb	jogar fora	casa
+обладать	verb	possuir	essencial
+задуматься	verb	refletir	linguagem
+шар	noun	bola; esfera; balão	essencial
+свинья	noun	porco	animais
+разрушить	verb	destruir	guerra
+ценный	adjective	valioso	economia
+сообщать	verb	informar; comunicar	midia
+появление	noun	aparecimento	essencial
+поворот	noun	curva; virada	viagem
+вооружённый	adjective	armado	guerra
+реальность	noun	realidade	linguagem
+рассматривать	verb	examinar; considerar	essencial
+явно	other	claramente	essencial
+покончить	verb	acabar com	essencial
+делаться	verb	tornar-se; ser feito	essencial
+федеральный	adjective	federal	politica
+безумный	adjective	louco; insano	emocoes
+муха	noun	mosca	animais
+пальто	noun	casaco; sobretudo	aparencia
+закрывать	verb	fechar	essencial
+благородный	adjective	nobre	emocoes
+мол	noun	(diz ele); quebra-mar	x
+атака	noun	ataque	guerra
+полоса	noun	faixa; listra	essencial
+практически	other	praticamente	essencial
+комиссар	noun	comissário	politica
+подробность	noun	detalhe	essencial
+дар	noun	dom; presente	cultura
+старуха	noun	velha	familia
+двойной	adjective	duplo	quantidade
+забирать	verb	levar; recolher	essencial
+королевский	adjective	real (do rei)	historia
+кто-то	other	alguém	essencial
+ерунда	noun	bobagem	essencial
+бельё	noun	roupa de cama; roupa íntima	casa,aparencia
+традиция	noun	tradição	sociedade,cultura
+разведка	noun	serviço de inteligência; reconhecimento	guerra
+суббота	noun	sábado	tempo
+обмануть	verb	enganar	direito
+одиночество	noun	solidão	emocoes
+болтать	verb	tagarelar; mexer	linguagem
+цифра	noun	algarismo; número	quantidade
+переходить	verb	atravessar; passar	viagem
+таковой	adjective	tal	essencial
+орудие	noun	arma; ferramenta; canhão	guerra
+алло	other	alô	essencial
+босс	noun	chefe	trabalho
+разбудить	verb	acordar (alguém)	casa
+повести	verb	levar; conduzir	essencial
+ткань	noun	tecido	aparencia
+торговый	adjective	comercial	economia
+круто	other	demais; legal	essencial
+заткнуться	verb	calar a boca	x
+участник	noun	participante	sociedade
+марка	noun	selo; marca	compras
+твёрдый	adjective	duro; firme	essencial
+пассажир	noun	passageiro	viagem
+запас	noun	reserva; estoque	economia
+предыдущий	adjective	anterior	tempo
+мина	noun	mina (explosivo); expressão facial	guerra
+башня	noun	torre	cidade
+строй	noun	sistema; formação	politica
+надпись	noun	inscrição	linguagem
+объяснение	noun	explicação	linguagem
+достоинство	noun	dignidade; virtude	emocoes
+иностранный	adjective	estrangeiro	politica,viagem
+приглашать	verb	convidar	sociedade
+воскресенье	noun	domingo	tempo
+привычка	noun	hábito	essencial
+деревянный	adjective	de madeira	casa
+допустить	verb	admitir; permitir	essencial
+сработать	verb	funcionar; dar certo	essencial
+статус	noun	status; condição	sociedade
+собственность	noun	propriedade	economia,direito
+образец	noun	modelo; amostra	essencial
+август	noun	agosto	tempo
+извиняться	verb	desculpar-se	emocoes
+портрет	noun	retrato	cultura
+воздушный	adjective	aéreo	viagem
+ценить	verb	valorizar; apreciar	emocoes
+женатый	adjective	casado (homem)	familia
+виновный	adjective	culpado	direito
+выступление	noun	apresentação; discurso	cultura,politica
+спальня	noun	quarto (de dormir)	casa
+драка	noun	briga	essencial
+допрос	noun	interrogatório	direito
+аэропорт	noun	aeroporto	viagem
+предстоять	verb	estar por vir	tempo
+орать	verb	berrar	emocoes
+предприятие	noun	empresa; empreendimento	economia,trabalho
+охотник	noun	caçador	esporte
+проиграть	verb	perder (jogo)	esporte
+воевать	verb	guerrear	guerra
+нежный	adjective	terno; delicado	emocoes
+зря	other	à toa; em vão	essencial
+поток	noun	fluxo; torrente	natureza
+справа	noun	à direita	essencial
+седьмой	adjective	sétimo	quantidade
+славный	adjective	glorioso; simpático	essencial
+сок	noun	suco; seiva	comida
+акция	noun	ação (bolsa); campanha	economia
+риск	noun	risco	essencial
+красавица	noun	beldade; mulher bonita	aparencia
+фонд	noun	fundo; fundação	economia
+броситься	verb	lançar-se; precipitar-se	essencial
+общаться	verb	conviver; comunicar-se	sociedade
+храм	noun	templo	religiao
+раскрыть	verb	revelar; abrir	essencial
+холм	noun	colina	natureza
+Англия	noun	Inglaterra	x
+выступить	verb	apresentar-se; pronunciar-se	politica
+есть	other	há; existe	essencial
+потолок	noun	teto	casa
+кандидат	noun	candidato	politica
+отправляться	verb	partir	viagem
+молчание	noun	silêncio	essencial
+верёвка	noun	corda	essencial
+наоборот	other	ao contrário	essencial
+поздравлять	verb	parabenizar	sociedade
+худший	adjective	pior	essencial
+спасать	verb	salvar	essencial
+заснуть	verb	adormecer	casa
+мелочь	noun	trocado; ninharia	economia
+везде	other	em toda parte	essencial
+управлять	verb	governar; dirigir; administrar	politica,trabalho
+палата	noun	enfermaria; câmara	saude,politica
+одинаковый	adjective	igual; idêntico	essencial
+жуткий	adjective	horrível; arrepiante	emocoes
+ему	other	lhe; a ele	essencial
+ввести	verb	introduzir	essencial
+значительный	adjective	considerável	quantidade
+утренний	adjective	matinal	tempo
+режиссёр	noun	diretor (de cinema, teatro)	cultura
+элемент	noun	elemento	ciencia
+корпус	noun	corpo; prédio; casco	essencial
+злиться	verb	zangar-se	emocoes
+охранник	noun	segurança; guarda	direito
+ненависть	noun	ódio	emocoes
+предупреждать	verb	avisar	essencial
+наказание	noun	castigo; pena	direito
+следователь	noun	investigador	direito
+рукав	noun	manga	aparencia
+картошка	noun	batata	comida
+кнопка	noun	botão; tachinha	tecnologia
+спасение	noun	salvação; resgate	essencial
+что-нибудь	other	alguma coisa	essencial
+сентябрь	noun	setembro	tempo
+подушка	noun	travesseiro; almofada	casa
+напряжение	noun	tensão	ciencia,emocoes
+достаточный	adjective	suficiente	quantidade
+оценка	noun	nota; avaliação	educacao
+пообещать	verb	prometer	linguagem
+лифт	noun	elevador	casa
+заменить	verb	substituir	essencial
+уволить	verb	demitir	trabalho
+состояться	verb	realizar-se	essencial
+костёр	noun	fogueira	viagem
+почта	noun	correio	compras,midia
+губернатор	noun	governador	politica
+целовать	verb	beijar	familia
+вечно	other	eternamente	tempo
+музыкальный	adjective	musical	cultura
+указывать	verb	indicar	essencial
+карточка	noun	cartão; ficha	essencial
+зад	noun	traseiro; parte de trás	saude
+знакомство	noun	conhecimento; apresentação	sociedade
+сменить	verb	trocar; substituir	essencial
+обмен	noun	troca; intercâmbio	economia
+техника	noun	técnica; equipamentos	tecnologia
+выслушать	verb	ouvir até o fim	linguagem
+гигантский	adjective	gigantesco	quantidade
+позаботиться	verb	cuidar de	familia
+произвести	verb	produzir; realizar	economia
+пауза	noun	pausa	tempo
+запереть	verb	trancar	casa
+визит	noun	visita	sociedade
+совершенный	adjective	perfeito; completo	essencial
+шевелиться	verb	mexer-se	essencial
+пугать	verb	assustar	emocoes
+жирный	adjective	gorduroso; gordo	comida
+оборона	noun	defesa	guerra
+эхо	noun	eco	essencial
+владеть	verb	possuir; dominar	essencial
+мирный	adjective	pacífico	politica
+кафе	noun	café; lanchonete	comida
+мэр	noun	prefeito	politica
+переехать	verb	mudar-se; atropelar	casa
+милиция	noun	milícia; polícia (soviética)	direito
+пляж	noun	praia	viagem,natureza
+расчёт	noun	cálculo; acerto de contas	quantidade
+дыра	noun	buraco	essencial
+остановка	noun	ponto (de ônibus); parada	viagem
+пояс	noun	cinto; faixa; zona	aparencia
+экономический	adjective	econômico	economia
+лгать	verb	mentir	linguagem
+палка	noun	vara; bengala	essencial
+земной	adjective	terrestre	natureza
+ответственный	adjective	responsável	trabalho
+поражение	noun	derrota	guerra,esporte
+дрожать	verb	tremer	emocoes
+пиджак	noun	paletó	aparencia
+цепь	noun	corrente; cadeia	essencial
+император	noun	imperador	historia
+очнуться	verb	voltar a si	saude
+крест	noun	cruz	religiao
+услать	verb	mandar embora	essencial
+мак	noun	papoula	animais
+напасть	verb	atacar	guerra
+пища	noun	alimento	comida
+заместитель	noun	substituto; vice	trabalho
+корень	noun	raiz	animais,linguagem
+скрытый	adjective	oculto	essencial
+сбить	verb	derrubar; atropelar	essencial
+редактор	noun	editor	midia
+похоже	other	parece que	essencial
+нерв	noun	nervo	saude
+луч	noun	raio (de luz)	natureza
+интересоваться	verb	interessar-se	emocoes
+политик	noun	político	politica
+таблетка	noun	comprimido	saude
+сзади	other	atrás	essencial
+морда	noun	focinho; cara (pej.)	animais
+маска	noun	máscara	cultura
+пожилой	adjective	idoso	sociedade
+одеяло	noun	cobertor	casa
+обсудить	verb	discutir	linguagem
+совершать	verb	realizar; cometer	essencial
+вещество	noun	substância	ciencia
+преследовать	verb	perseguir	direito
+подружка	noun	amiguinha; namorada	familia
+деловой	adjective	de negócios; prático	economia
+шоссе	noun	rodovia	viagem
+захотеться	verb	dar vontade	emocoes
+пожалеть	verb	ter pena; arrepender-se	emocoes
+сюрприз	noun	surpresa	emocoes
+брюки	noun	calça	aparencia
+стоящий	adjective	que vale a pena	essencial
+заключить	verb	concluir; firmar (contrato)	direito
+октябрь	noun	outubro	tempo
+дурной	adjective	mau; ruim	essencial
+интервью	noun	entrevista	midia
+очевидный	adjective	óbvio	essencial
+слабость	noun	fraqueza	essencial
+грустный	adjective	triste	emocoes
+мяч	noun	bola	esporte
+де	other	(diz que)	x
+министерство	noun	ministério	politica
+осмотреть	verb	examinar; visitar	essencial
+трус	noun	covarde	emocoes
+гордость	noun	orgulho	emocoes
+сжечь	verb	queimar	essencial
+дома	other	em casa	casa
+подвести	verb	decepcionar; aproximar	essencial
+дача	noun	casa de campo; datcha	casa,esporte
+бандит	noun	bandido	direito
+каменный	adjective	de pedra	essencial
+дура	noun	boba; idiota	emocoes
+перерыв	noun	intervalo; pausa	tempo
+бег	noun	corrida	esporte
+вскоре	other	logo depois	tempo
+чисто	other	limpo; puramente	essencial
+действительный	adjective	real; válido	essencial
+сырой	adjective	cru; úmido	comida
+совместный	adjective	conjunto	essencial
+внезапно	other	de repente	tempo
+конкретный	adjective	concreto; específico	essencial
+указать	verb	indicar; apontar	essencial
+рай	noun	paraíso	religiao
+холод	noun	frio	natureza
+экономика	noun	economia	economia
+неожиданно	other	inesperadamente	essencial
+обеспечить	verb	garantir; fornecer	essencial
+девять	other	nove	quantidade
+естественно	other	naturalmente	essencial
+кролик	noun	coelho	animais
+заключение	noun	conclusão; prisão	direito,linguagem
+достаться	verb	caber; tocar a alguém	essencial
+крикнуть	verb	gritar	emocoes
+заказ	noun	encomenda; pedido	compras
+госпиталь	noun	hospital (militar)	saude
+ставка	noun	taxa; aposta; quartel-general	economia
+налить	verb	servir (bebida); despejar	comida
+печать	noun	carimbo; imprensa; impressão	midia
+скромный	adjective	modesto	emocoes
+доложить	verb	relatar; informar	trabalho
+вкусный	adjective	gostoso; saboroso	comida
+суп	noun	sopa	comida
+перенести	verb	adiar; transferir; suportar	tempo
+борода	noun	barba	aparencia
+внутрь	other	para dentro	essencial
+империя	noun	império	historia
+безопасный	adjective	seguro	essencial
+хрен	noun	raiz-forte	comida
+доверие	noun	confiança	emocoes
+пожелать	verb	desejar	emocoes
+ранее	other	antes; anteriormente	tempo
+сахар	noun	açúcar	comida
+вовремя	other	a tempo	tempo
+похороны	noun	enterro; funeral	religiao
+лев	noun	leão	animais
+копия	noun	cópia	essencial
+намного	other	muito (mais)	quantidade
+биться	verb	bater-se; lutar; bater (coração)	essencial
+передний	adjective	dianteiro	essencial
+разбить	verb	quebrar; derrotar	essencial
+костя	noun	Kóstia	x
+реклама	noun	publicidade	midia,economia
+набрать	verb	discar; juntar; ganhar (peso)	essencial
+симптом	noun	sintoma	saude
+японский	adjective	japonês	linguagem
+признание	noun	reconhecimento; confissão	sociedade
+прятать	verb	esconder	essencial
+публика	noun	público	cultura
+помолчать	verb	ficar calado	linguagem
+бред	noun	delírio; disparate	saude
+боб	noun	feijão; fava	comida
+незнакомый	adjective	desconhecido	essencial
+удивлённый	adjective	surpreso	emocoes
+неважно	other	não importa	essencial
+подать	noun	tributo (antigo)	x
+содержание	noun	conteúdo; manutenção	linguagem
+ружьё	noun	espingarda	guerra
+обнять	verb	abraçar	familia
+угрожать	verb	ameaçar	direito
+квартал	noun	quarteirão; trimestre	cidade,tempo
+впрочем	other	aliás; no entanto	essencial
+приступ	noun	ataque; crise	saude
+гнев	noun	ira	emocoes
+битва	noun	batalha	guerra
+заседание	noun	sessão; reunião	politica
+причём	other	além disso	essencial
+подобрать	verb	escolher; recolher	essencial
+ранить	verb	ferir	saude
+требование	noun	exigência	essencial
+плавать	verb	nadar; navegar	esporte
+поделать	verb	fazer (a respeito)	essencial
+расстаться	verb	separar-se	familia
+гроб	noun	caixão	religiao
+оглянуться	verb	olhar para trás	essencial
+исчезать	verb	desaparecer	essencial
+вне	other	fora de	essencial
+разумный	adjective	sensato; racional	linguagem
+ванный	adjective	de banho (ванная)	casa
+эксперимент	noun	experimento	ciencia
+превратить	verb	transformar	essencial
+заслуживать	verb	merecer	essencial
+игрушка	noun	brinquedo	familia
+согласно	other	de acordo com	essencial
+поход	noun	caminhada; expedição; campanha	viagem,esporte
+мусор	noun	lixo	casa
+лапа	noun	pata	animais
+гнать	verb	perseguir; tocar (animais); destilar	essencial
+дважды	other	duas vezes	quantidade
+пенсия	noun	aposentadoria; pensão	trabalho,economia
+флот	noun	frota; marinha	guerra
+распоряжение	noun	ordem; disposição	trabalho
+удаваться	verb	conseguir; dar certo	essencial
+использование	noun	uso; utilização	essencial
+жизненный	adjective	vital	essencial
+испытание	noun	teste; provação	ciencia
+нажать	verb	apertar	tecnologia
+профессия	noun	profissão	trabalho
+вздохнуть	verb	suspirar	emocoes
+контракт	noun	contrato	direito,trabalho
+тем	other	tanto (quanto mais...)	essencial
+хозяйство	noun	economia; fazenda; casa	economia,casa
+популярный	adjective	popular	cultura
+страдание	noun	sofrimento	emocoes
+спутник	noun	companheiro de viagem; satélite	viagem,ciencia
+миля	noun	milha	quantidade
+вступить	verb	entrar; ingressar	essencial
+ремень	noun	cinto; correia	aparencia
+сдаваться	verb	render-se; desistir	guerra
+одновременно	other	ao mesmo tempo	tempo
+внук	noun	neto	familia
+эффект	noun	efeito	essencial
+ощущать	verb	sentir	emocoes
+намерение	noun	intenção	essencial
+яблоко	noun	maçã	comida
+ибо	other	pois; porque	essencial
+уважаемый	adjective	prezado; respeitado	sociedade
+предоставить	verb	conceder; fornecer	essencial
+явление	noun	fenômeno	ciencia
+вокзал	noun	estação ferroviária; rodoviária	viagem
+справедливость	noun	justiça; equidade	direito,sociedade
+беременный	adjective	grávida	familia,saude
+духовный	adjective	espiritual	religiao
+невозможный	adjective	impossível	essencial
+неправда	noun	mentira; inverdade	linguagem
+чашка	noun	xícara	comida
+абсолютный	adjective	absoluto	essencial
+сценарий	noun	roteiro; cenário	cultura
+призрак	noun	fantasma	religiao
+следствие	noun	consequência; inquérito	direito
+уснуть	verb	adormecer	casa
+глупо	other	é bobagem; tolamente	essencial
+республика	noun	república	politica
+отвратительный	adjective	nojento; repugnante	emocoes
+награда	noun	prêmio; condecoração	cultura
+кое-что	other	alguma coisa	essencial
+плащ	noun	capa; capa de chuva	aparencia
+протокол	noun	ata; protocolo	direito
+лампа	noun	lâmpada; luminária	casa
+судебный	adjective	judicial	direito
+желудок	noun	estômago	saude
+барин	noun	senhor (proprietário rural)	historia
+забавный	adjective	engraçado	emocoes
+функция	noun	função	ciencia
+ванна	noun	banheira; banho	casa
+умолять	verb	implorar	emocoes
+замечательно	other	maravilhosamente	essencial
+уверенность	noun	confiança; certeza	emocoes
+присоединиться	verb	juntar-se; aderir	sociedade
+кровавый	adjective	sangrento	guerra
+травма	noun	trauma; lesão	saude
+выборы	noun	eleições	politica
+решиться	verb	decidir-se; ousar	essencial
+технология	noun	tecnologia	tecnologia
+наверх	other	para cima	essencial
+туфля	noun	sapato (de salto)	aparencia
+надёжный	adjective	confiável	essencial
+классный	adjective	legal; de classe	essencial
+уход	noun	saída; cuidado	essencial
+нарушить	verb	violar; perturbar	direito
+напиток	noun	bebida	comida
+чиновник	noun	funcionário público	politica
+китай	noun	China	x
+пятница	noun	sexta-feira	tempo
+звонкий	adjective	sonoro	essencial
+снимок	noun	foto; imagem	cultura
+минимум	noun	mínimo	quantidade
+забор	noun	cerca; muro	casa
+плыть	verb	nadar; navegar	esporte,viagem
+жаль	other	é uma pena	emocoes
+полететь	verb	voar; sair voando	viagem
+народный	adjective	popular; folclórico	cultura,sociedade
+внимательно	other	atentamente	essencial
+строительство	noun	construção	cidade,economia
+понимание	noun	compreensão	linguagem
+проявить	verb	demonstrar; manifestar	essencial
+контролировать	verb	controlar	essencial
+генеральный	adjective	geral	essencial
+структура	noun	estrutura	ciencia
+груз	noun	carga	viagem
+дружок	noun	amiguinho	familia
+достигнуть	verb	alcançar; atingir	essencial
+вечерний	adjective	noturno; da noite	tempo
+позади	other	atrás	essencial
+бригада	noun	brigada; equipe	trabalho,guerra
+приёмный	adjective	de recepção; adotivo	familia
+легенда	noun	lenda	cultura,historia
+отстать	verb	ficar para trás	essencial
+банда	noun	bando; quadrilha	direito
+изображение	noun	imagem; representação	cultura
+малейший	adjective	mínimo; menor	quantidade
+сложно	other	é complicado	essencial
+пустыня	noun	deserto	natureza
+игрок	noun	jogador	esporte
+слуга	noun	criado; servo	historia
+массовый	adjective	de massa	sociedade
+воображение	noun	imaginação	linguagem
+священник	noun	padre; sacerdote	religiao
+подпись	noun	assinatura	direito
+никой	adjective	nenhum (arcaico)	x
+мотор	noun	motor	tecnologia
+бесконечный	adjective	infinito	essencial
+настаивать	verb	insistir	linguagem
+московский	adjective	moscovita	cidade
+полюбить	verb	apaixonar-se; passar a gostar	familia,emocoes
+перо	noun	pena; caneta	animais
+соль	noun	sal	comida
+рассвет	noun	amanhecer	tempo
+заболеть	verb	adoecer	saude
+зритель	noun	espectador	cultura
+мило	other	gentilmente; que fofo	emocoes
+сверху	other	de cima	essencial
+резкий	adjective	brusco; ríspido	essencial
+родить	verb	dar à luz	familia
+гриб	noun	cogumelo	animais,comida
+спорт	noun	esporte	esporte
+стрелок	noun	atirador	guerra
+сущность	noun	essência	linguagem
+минуть	verb	passar (tempo)	tempo
+Израиль	noun	Israel	x
+выставить	verb	expor; pôr para fora	essencial
+прибыль	noun	lucro	economia
+мода	noun	moda	aparencia
+скандал	noun	escândalo; briga	sociedade
+блюдо	noun	prato (comida)	comida
+метро	noun	metrô	viagem,cidade
+жених	noun	noivo	familia
+бродить	verb	vagar; perambular	essencial
+привлечь	verb	atrair	essencial
+ух	other	uh	x
+жар	noun	calor; febre	saude
+беречь	verb	poupar; cuidar	essencial
+кладбище	noun	cemitério	religiao
+рисовать	verb	desenhar; pintar	cultura
+молиться	verb	rezar	religiao
+сплошной	adjective	contínuo; total	essencial
+серебряный	adjective	de prata	essencial
+дата	noun	data	tempo
+юноша	noun	jovem; rapaz	sociedade
+скучный	adjective	chato; entediante	emocoes
+подозрение	noun	suspeita	direito
+скрыться	verb	esconder-se; sumir	essencial
+приглашение	noun	convite	sociedade
+направляться	verb	dirigir-se	viagem
+покидать	verb	deixar; abandonar	essencial
+упустить	verb	deixar escapar	essencial
+фото	noun	foto	cultura
+безумие	noun	loucura	emocoes
+специально	other	de propósito	essencial
+приключение	noun	aventura	viagem
+произносить	verb	pronunciar	linguagem
+ниже	other	abaixo; mais baixo	quantidade
+стучать	verb	bater (na porta)	essencial
+козёл	noun	bode	animais
+мрачный	adjective	sombrio	emocoes
+ввиду	other	em vista de	essencial
+особо	other	especialmente	essencial
+девица	noun	donzela; moça	familia
+галстук	noun	gravata	aparencia
+полк	noun	regimento	guerra
+обожать	verb	adorar	emocoes
+переговоры	noun	negociações	politica,economia
+недостаток	noun	defeito; falta	essencial
+сбор	noun	coleta; arrecadação	economia
+удивляться	verb	surpreender-se	emocoes
+отчаяние	noun	desespero	emocoes
+порт	noun	porto	viagem
+исправить	verb	corrigir; consertar	essencial
+сердечный	adjective	cardíaco; cordial	saude,emocoes
+напротив	other	em frente; ao contrário	essencial
+верх	noun	topo; parte de cima	essencial
+чувак	noun	cara (gíria)	x
+шапка	noun	gorro	aparencia
+удивление	noun	surpresa; espanto	emocoes
+пушок	noun	penugem	x
+выключить	verb	desligar	tecnologia
+полчаса	other	meia hora	tempo
+назначение	noun	nomeação; finalidade	trabalho
+отпечаток	noun	impressão; marca	direito
+приличный	adjective	decente	essencial
+заключённый	adjective	preso; detento	direito
+застрять	verb	ficar preso; encalhar	essencial
+удивительно	other	surpreendentemente	essencial
+расслабиться	verb	relaxar	esporte
+последовать	verb	seguir	essencial
+одиночка	noun	solitário; solitária (cela)	sociedade
+запретить	verb	proibir	direito
+посетитель	noun	visitante	cultura
+механизм	noun	mecanismo	tecnologia
+крыса	noun	rato	animais
+советник	noun	conselheiro	politica
+сбросить	verb	jogar abaixo; perder (peso)	essencial
+постой	noun	alojamento	x
+глубоко	other	profundamente	essencial
+акт	noun	ato; auto (documento)	direito
+картинка	noun	figura; imagem	cultura
+кошмар	noun	pesadelo	emocoes
+налог	noun	imposto	economia,politica
+выясниться	verb	esclarecer-se; vir à tona	essencial
+рыцарь	noun	cavaleiro	historia
+холодно	other	frio; friamente	natureza
+академия	noun	academia	educacao
+бар	noun	bar	comida
+топор	noun	machado	tecnologia
+невероятно	other	incrivelmente	essencial
+наслать	verb	enviar (castigo)	x
+срочно	other	urgentemente	tempo
+сорок	other	quarenta	quantidade
+проехать	verb	passar (de veículo)	viagem
+потребовать	verb	exigir	essencial
+тренер	noun	treinador	esporte
+благодарность	noun	gratidão	emocoes
+столовый	adjective	de mesa (столовая: refeitório)	comida
+бесплатный	adjective	gratuito	compras
+гараж	noun	garagem	casa
+просыпаться	verb	acordar	casa
+снаружи	other	do lado de fora	essencial
+сражаться	verb	combater	guerra
+решётка	noun	grade	casa
+сведение	noun	informação	midia
+выстрелить	verb	atirar	guerra
+самоубийство	noun	suicídio	direito
+сфера	noun	esfera; área	essencial
+чушь	noun	besteira	essencial
+сволочь	noun	canalha	x
+городок	noun	cidadezinha	cidade
+пачка	noun	maço; pacote	compras
+кружок	noun	círculo; grupo (de atividades)	educacao
+зарабатывать	verb	ganhar (dinheiro)	trabalho,economia
+пламя	noun	chama	natureza
+шпион	noun	espião	guerra
+стыдный	adjective	vergonhoso	emocoes
+любопытство	noun	curiosidade	emocoes
+полгода	noun	meio ano	tempo
+жест	noun	gesto	linguagem
+выдавать	verb	entregar; emitir; revelar	essencial
+благо	noun	bem; benefício	essencial
+пожать	verb	apertar (a mão); encolher (ombros)	essencial
+ведро	noun	balde	casa
+далее	other	adiante; em seguida	essencial
+стрела	noun	flecha	guerra
+папка	noun	pasta; papai	trabalho
+присутствовать	verb	estar presente	essencial
+молодость	noun	juventude	sociedade
+перемена	noun	mudança; recreio	essencial
+альбом	noun	álbum	cultura
+наслаждаться	verb	desfrutar	emocoes
+доставать	verb	tirar; alcançar; incomodar	essencial
+мамочка	noun	mãezinha	familia
+торговля	noun	comércio	economia
+обойти	verb	contornar	essencial
+лекция	noun	aula expositiva; palestra	educacao
+лить	verb	despejar; fundir	essencial
+дневник	noun	diário; caderneta escolar	educacao
+редакция	noun	redação; edição	midia
+класть	verb	colocar (deitado)	essencial
+побывать	verb	visitar; estar em	viagem
+включать	verb	ligar; incluir	tecnologia
+буквально	other	literalmente	linguagem
+магия	noun	magia	religiao
+подросток	noun	adolescente	familia,sociedade
+патрон	noun	cartucho; patrão	guerra
+пещера	noun	caverna	natureza
+июнь	noun	junho	tempo
+ей	other	lhe; a ela	essencial
+стоп	other	pare	essencial
+выходной	adjective	de folga; dia de folga	trabalho
+головной	adjective	da cabeça; principal	essencial
+отменить	verb	cancelar	essencial
+слой	noun	camada	essencial
+пацан	noun	moleque; garoto	familia
+отнести	verb	levar	essencial
+кивнуть	verb	acenar com a cabeça	essencial
+скала	noun	rocha; penhasco	natureza
+попадать	verb	ir parar; acertar	essencial
+противный	adjective	nojento; desagradável	emocoes
+присяжный	adjective	jurado	direito
+пропасть	noun	abismo	natureza
+разойтись	verb	dispersar-se; separar-se	essencial
+осень	noun	outono	tempo,natureza
+убираться	verb	arrumar; sumir	casa
+активный	adjective	ativo	essencial
+СССР	noun	URSS	x
+вынуть	verb	tirar	essencial
+холодильник	noun	geladeira	casa
+расход	noun	gasto; despesa	economia
+потребоваться	verb	ser necessário	essencial
+молодёжь	noun	juventude (os jovens)	sociedade
+ловушка	noun	armadilha	essencial
+мм	other	hum	x
+стать	verb	tornar-se; começar a	essencial
+джентльмен	noun	cavalheiro	sociedade
+колоть	verb	picar; rachar (lenha)	essencial
+смертельный	adjective	mortal; letal	saude
+смертный	adjective	mortal	religiao
+наступать	verb	avançar; pisar; chegar	guerra
+советовать	verb	aconselhar	essencial
+процедура	noun	procedimento	saude
+явный	adjective	evidente	essencial
+пришлый	adjective	forasteiro	x
+кадр	noun	quadro (de filme); pessoal	cultura
+бледный	adjective	pálido	aparencia
+бровь	noun	sobrancelha	saude
+конкурс	noun	concurso	educacao,cultura
+описать	verb	descrever	linguagem
+произведение	noun	obra	cultura
+рисунок	noun	desenho	cultura
+понедельник	noun	segunda-feira	tempo
+двести	noun	duzentos	quantidade
+согласие	noun	consentimento; acordo	linguagem
+развод	noun	divórcio	familia
+красиво	other	lindamente	aparencia
+доказывать	verb	provar	linguagem
+сунуть	verb	enfiar	essencial
+диск	noun	disco	tecnologia
+ковёр	noun	tapete	casa
+постоять	verb	ficar de pé (um pouco)	essencial
+покупка	noun	compra	compras
+таинственный	adjective	misterioso	essencial
+июль	noun	julho	tempo
+несчастье	noun	desgraça; infortúnio	emocoes
+дорожка	noun	caminho; trilha	cidade
+повышение	noun	aumento; promoção	trabalho
+нужда	noun	necessidade; miséria	economia
+бюджет	noun	orçamento	economia
+еврейский	adjective	judaico	religiao
+выгнать	verb	expulsar	essencial
+мороз	noun	geada; frio intenso	natureza
+наиболее	other	o mais	essencial
+коричневый	adjective	marrom	aparencia
+обещание	noun	promessa	linguagem
+невидимый	adjective	invisível	essencial
+мотив	noun	motivo; melodia	linguagem
+соответствующий	adjective	correspondente; adequado	essencial
+космос	noun	espaço sideral	ciencia
+стенка	noun	parede	casa
+ноготь	noun	unha	saude
+молния	noun	relâmpago; zíper	natureza
+велосипед	noun	bicicleta	viagem,esporte
+авария	noun	acidente; pane	viagem
+прогулка	noun	passeio	esporte
+выпускать	verb	soltar; lançar; publicar	essencial
+экипаж	noun	tripulação; carruagem	viagem
+потратить	verb	gastar	economia
+винтовка	noun	fuzil	guerra
+интернет	noun	internet	tecnologia
+бассейн	noun	piscina	esporte
+звание	noun	título; patente	guerra
+ноябрь	noun	novembro	tempo
+лечить	verb	tratar; curar	saude
+записывать	verb	anotar; gravar	educacao
+атмосфера	noun	atmosfera; ambiente	natureza
+поразить	verb	impressionar; atingir	emocoes
+уголовный	adjective	criminal; penal	direito
+опасно	other	perigosamente; é perigoso	essencial
+медленный	adjective	lento	essencial
+девка	noun	moça (vulgar)	x
+катастрофа	noun	catástrofe	natureza
+направиться	verb	dirigir-se	viagem
+небесный	adjective	celeste	natureza,religiao
+выразить	verb	expressar	linguagem
+тоска	noun	melancolia; saudade	emocoes
+тронуть	verb	tocar; comover	emocoes
+содержать	verb	conter; sustentar	essencial
+спектакль	noun	espetáculo; peça	cultura
+звёздный	adjective	estelar	natureza
+извиниться	verb	pedir desculpas	emocoes
+поискать	verb	procurar (um pouco)	essencial
+сперва	other	primeiramente	tempo
+конфликт	noun	conflito	sociedade,guerra
+Япония	noun	Japão	x
+питание	noun	alimentação	comida,saude
+совпадение	noun	coincidência	essencial
+отказать	verb	recusar; negar	essencial
+отказ	noun	recusa	essencial
+победитель	noun	vencedor	esporte
+осознать	verb	perceber; tomar consciência	linguagem
+восстановить	verb	restaurar; recuperar	essencial
+полдень	noun	meio-dia	tempo
+бокал	noun	taça	comida
+платок	noun	lenço	aparencia
+вождь	noun	líder; chefe	politica,historia
+администрация	noun	administração	politica
+полок	noun	banco de sauna	x
+уверять	verb	assegurar	linguagem
+ярость	noun	fúria	emocoes
+ложка	noun	colher	comida
+меньший	adjective	menor	quantidade
+опытный	adjective	experiente; experimental	trabalho
+миссия	noun	missão	politica
+поработать	verb	trabalhar um pouco	trabalho
+пострадать	verb	sofrer; ferir-se	essencial
+недавний	adjective	recente	tempo
+половой	adjective	sexual; do chão	saude
+блок	noun	bloco	politica
+символ	noun	símbolo	linguagem
+свернуть	verb	enrolar; dobrar (a esquina)	viagem
+догадываться	verb	suspeitar; adivinhar	linguagem
+падение	noun	queda	essencial
+электронный	adjective	eletrônico	tecnologia
+ледяной	adjective	gelado; de gelo	natureza
+улика	noun	prova; indício	direito
+этап	noun	etapa	essencial
+обидеть	verb	ofender; magoar	emocoes
+рождество	noun	Natal	religiao
+вырваться	verb	escapar; libertar-se	essencial
+производить	verb	produzir	economia
+фонарь	noun	lanterna; poste de luz	cidade
+фургон	noun	furgão	viagem
+кампания	noun	campanha	politica
+точность	noun	precisão	essencial
+завидовать	verb	invejar	emocoes
+талантливый	adjective	talentoso	cultura
+прочь	other	fora; embora	essencial
+заплакать	verb	começar a chorar	emocoes
+сука	noun	cadela	x
+раньше	other	antes; antigamente	tempo
+соглашение	noun	acordo	politica,direito
+творить	verb	criar	cultura
+миллиард	noun	bilhão	quantidade
+действительность	noun	realidade	linguagem
+эпоха	noun	época; era	historia
+тоня	noun	pesqueiro	x
+зависимость	noun	dependência; vício	saude
+моряк	noun	marinheiro	viagem
+старушка	noun	velhinha	familia
+новенький	adjective	novinho; novato	essencial
+сдаться	verb	render-se	guerra
+проникнуть	verb	penetrar; infiltrar-se	essencial
+окружающий	adjective	circundante	natureza
+пожарный	adjective	bombeiro; de incêndio	trabalho
+особенность	noun	particularidade	essencial
+эпизод	noun	episódio	midia
+жалость	noun	pena; compaixão	emocoes
+сиденье	noun	assento	viagem
+британский	adjective	britânico	politica
+Италия	noun	Itália	x
+эмоция	noun	emoção	emocoes
+батарея	noun	bateria; aquecedor	tecnologia
+суровый	adjective	severo; rigoroso	natureza
+нервничать	verb	ficar nervoso	emocoes
+успокоить	verb	acalmar	emocoes
+устроиться	verb	instalar-se; arranjar emprego	trabalho
+срочный	adjective	urgente	tempo
+пятьдесят	other	cinquenta	quantidade
+электрический	adjective	elétrico	tecnologia
+музыкант	noun	músico	cultura
+положенный	adjective	devido; estabelecido	x
+громко	other	alto (som)	essencial
+доклад	noun	relatório; palestra	educacao,ciencia
+яд	noun	veneno	saude
+мотоцикл	noun	motocicleta	viagem
+Рим	noun	Roma	x
+получение	noun	recebimento	essencial
+непонятный	adjective	incompreensível	linguagem
+служебный	adjective	de serviço; oficial	trabalho
+кризис	noun	crise	economia
+метода	noun	método (arcaico)	x
+свеча	noun	vela	casa,religiao
+ценность	noun	valor	sociedade
+нигде	other	em lugar nenhum	essencial
+читатель	noun	leitor	cultura
+раб	noun	escravo	historia
+повсюду	other	em toda parte	essencial
+указание	noun	indicação; instrução	trabalho
+подозрительный	adjective	suspeito; desconfiado	direito
+внезапный	adjective	repentino	essencial
+загадочный	adjective	enigmático	essencial
+посвятить	verb	dedicar	essencial
+законный	adjective	legal; legítimo	direito
+фабрика	noun	fábrica	trabalho,economia
+сердиться	verb	zangar-se	emocoes
+видный	adjective	visível; proeminente	essencial
+восьмой	adjective	oitavo	quantidade
+сопротивление	noun	resistência	guerra,ciencia
+лорд	noun	lorde	x
+декабрь	noun	dezembro	tempo
+полно	other	cheio; basta	quantidade
+череп	noun	crânio	saude
+старшина	noun	sargento-mor; chefe	guerra
+густой	adjective	denso; espesso	essencial
+выставка	noun	exposição	cultura
+оборудование	noun	equipamento	tecnologia
+соответствовать	verb	corresponder	essencial
+посторонний	adjective	estranho; alheio	essencial
+соседка	noun	vizinha	familia
+гордый	adjective	orgulhoso	emocoes
+исключить	verb	excluir	essencial
+вред	noun	dano; prejuízo	saude
+тереть	verb	esfregar; ralar	casa
+поблагодарить	verb	agradecer	essencial
+стрельба	noun	tiroteio	guerra
+эксперт	noun	perito; especialista	trabalho
+недовольный	adjective	insatisfeito	emocoes
+мыслить	verb	pensar; raciocinar	linguagem
+скрыть	verb	esconder; ocultar	essencial
+избежать	verb	evitar; escapar	essencial
+ремонт	noun	reforma; conserto	casa
+беспокойство	noun	preocupação; inquietação	emocoes
+недостаточно	other	insuficientemente	quantidade
+обвинять	verb	acusar	direito
+ровно	other	exatamente; em ponto	quantidade
+напугать	verb	assustar	emocoes
+прибор	noun	aparelho; instrumento	tecnologia
+насилие	noun	violência	direito
+всякая	adjective	qualquer (fem.)	x
+май	noun	maio	tempo
+орден	noun	ordem; condecoração	historia
+ветка	noun	galho; linha (de metrô)	animais
+металлический	adjective	metálico	ciencia
+выскочить	verb	saltar para fora	essencial
+посреди	other	no meio de	essencial
+немножко	other	um pouquinho	quantidade
+разделить	verb	dividir	quantidade
+наряд	noun	traje; roupa	aparencia
+сложиться	verb	formar-se; dar-se	essencial
+фантазия	noun	fantasia; imaginação	cultura
+заключаться	verb	consistir	essencial
+побрать	verb	levar (diabo)	x
+нанести	verb	causar; aplicar	essencial
+телевидение	noun	televisão	midia
+локоть	noun	cotovelo	saude
+кончить	verb	terminar	tempo
+гибель	noun	morte; ruína	essencial
+сожалеть	verb	lamentar	emocoes
+налоговый	adjective	fiscal	economia
+классический	adjective	clássico	cultura
+отвернуться	verb	virar o rosto	essencial
+включая	other	incluindo	essencial
+приобрести	verb	adquirir	compras
+полотенце	noun	toalha	casa
+течь	verb	escorrer; fluir; vazar	natureza
+пилот	noun	piloto	viagem
+наличие	noun	presença; existência	essencial
+медсестра	noun	enfermeira	saude
+спрятаться	verb	esconder-se	essencial
+рассмотреть	verb	examinar; considerar	essencial
+вдвоём	other	a dois	quantidade
+лук	noun	cebola; arco	comida
+подход	noun	abordagem	essencial
+вырвать	verb	arrancar; vomitar	essencial
+окончание	noun	término; desinência	linguagem
+искусственный	adjective	artificial	tecnologia
+инструкция	noun	instrução; manual	tecnologia
+придурок	noun	imbecil	x
+препарат	noun	medicamento; preparado	saude
+преимущество	noun	vantagem	essencial
+достижение	noun	conquista; realização	essencial
+трагедия	noun	tragédia	cultura
+нарисовать	verb	desenhar	cultura
+стук	noun	batida	essencial
+коммунист	noun	comunista	politica,historia
+отправлять	verb	enviar	essencial
+стесняться	verb	ter vergonha; ser tímido	emocoes
+нация	noun	nação	politica
+яма	noun	buraco; cova	natureza
+открываться	verb	abrir-se	essencial
+путём	other	por meio de	essencial
+дина	noun	dina (unidade)	x
+дракон	noun	dragão	cultura
+шкура	noun	pele (de animal)	animais
+переть	verb	arrastar (coloquial)	x
+удачный	adjective	bem-sucedido	essencial
+разрыв	noun	ruptura; rompimento	essencial
+полезть	verb	subir; enfiar-se	essencial
+убегать	verb	fugir	essencial
+фальшивый	adjective	falso	direito
+обманывать	verb	enganar	direito
+задержаться	verb	demorar-se; atrasar	tempo
+проход	noun	passagem	cidade
+покупатель	noun	comprador; cliente	compras
+округ	noun	distrito	politica
+задумать	verb	planejar; conceber	essencial
+влюбиться	verb	apaixonar-se	familia,emocoes
+халат	noun	roupão; jaleco	aparencia
+эмоциональный	adjective	emocional	emocoes
+объявление	noun	anúncio; aviso	midia
+детка	noun	criança; benzinho	x
+змея	noun	cobra	animais
+итальянский	adjective	italiano	linguagem
+им	other	lhes; a eles	essencial
+сукин	adjective	filho da puta (сукин сын)	x
+отъезд	noun	partida	viagem
+общение	noun	convivência; comunicação	sociedade
+поделиться	verb	compartilhar	sociedade
+предок	noun	antepassado	familia,historia
+стоимость	noun	custo; valor	economia
+Петербург	noun	Petersburgo	x
+обувь	noun	calçado	aparencia
+освобождение	noun	libertação	politica
+засунуть	verb	enfiar	essencial
+изо	other	de (forma de из)	essencial
+химический	adjective	químico	ciencia
+увести	verb	levar embora	essencial
+ген	noun	gene	ciencia
+крыльцо	noun	varanda de entrada; alpendre	casa
+тута	noun	aqui (coloquial)	x
+мебель	noun	móveis	casa
+кукла	noun	boneca	familia
+плод	noun	fruto; feto	animais
+описание	noun	descrição	linguagem
+жалоба	noun	queixa; reclamação	direito
+доход	noun	renda; receita	economia
+отпускать	verb	soltar; liberar	essencial
+рис	noun	arroz	comida
+щит	noun	escudo; painel	guerra
+долина	noun	vale	natureza
+переход	noun	travessia; transição; passagem	cidade
+упомянуть	verb	mencionar	linguagem
+совещание	noun	reunião; conferência	trabalho
+определённо	other	definitivamente	essencial
+тварь	noun	criatura	animais
+подряд	noun	seguido; em sequência	tempo
+заведение	noun	estabelecimento	cidade
+приговор	noun	sentença	direito
+кабина	noun	cabine	viagem
+волнение	noun	emoção; nervosismo; agitação	emocoes
+перчатка	noun	luva	aparencia
+ложный	adjective	falso	essencial
+исполнение	noun	execução; interpretação	cultura
+парочка	noun	casalzinho; uns dois	familia
+вдоль	other	ao longo de	essencial
+хм	other	hum	x
+посоветовать	verb	aconselhar	essencial
+внести	verb	introduzir; depositar	economia
+ого	other	uau	essencial
+давить	verb	apertar; pressionar	essencial
+догнать	verb	alcançar	essencial
+набор	noun	conjunto; kit	essencial
+нету	other	não tem (coloquial)	essencial
+марш	noun	marcha	guerra
+надел	noun	lote de terra	x
+папочка	noun	paizinho	familia
+приветствовать	verb	saudar	sociedade
+столкнуться	verb	colidir; deparar-se	essencial
+соглашаться	verb	concordar	linguagem
+чудовище	noun	monstro	cultura
+узел	noun	nó; entroncamento	essencial
+одеваться	verb	vestir-se	aparencia
+пьеса	noun	peça (de teatro)	cultura
+сарай	noun	galpão	casa
+шофёр	noun	motorista	viagem
+взвод	noun	pelotão	guerra
+прыгнуть	verb	pular	esporte
+сниться	verb	aparecer em sonho	emocoes
+многочисленный	adjective	numeroso	quantidade
+сорвать	verb	arrancar; frustrar	essencial
+кончать	verb	terminar	tempo
+хитрый	adjective	astuto	emocoes
+крестьянин	noun	camponês	historia,sociedade
+жила	noun	veia; filão	saude
+веко	noun	pálpebra	saude
+отложить	verb	adiar; guardar	tempo
+посуда	noun	louça	casa,comida
+маршал	noun	marechal	guerra
+побег	noun	fuga; broto	direito
+болото	noun	pântano	natureza
+редко	other	raramente	tempo
+жалко	other	é uma pena	emocoes
+довести	verb	levar até; levar a (estado)	essencial
+алкоголь	noun	álcool	comida,saude
+цру	noun	CIA	x
+конференция	noun	conferência	ciencia,politica
+январь	noun	janeiro	tempo
+ругаться	verb	xingar; brigar	emocoes
+моральный	adjective	moral	sociedade
+курица	noun	galinha; frango	animais,comida
+нанять	verb	contratar	trabalho
+превращаться	verb	transformar-se	essencial
+покрыть	verb	cobrir	essencial
+затылок	noun	nuca	saude
+лесной	adjective	florestal	natureza
+обыкновенный	adjective	comum	essencial
+слева	other	à esquerda	essencial
+уставиться	verb	fitar	essencial
+мудрый	adjective	sábio	linguagem
+слон	noun	elefante; bispo (xadrez)	animais
+бумажка	noun	papelzinho	essencial
+вообще-то	other	na verdade	essencial
+облегчение	noun	alívio	emocoes
+любитель	noun	amador; apreciador	esporte
+делиться	verb	compartilhar; dividir-se	sociedade
+европейский	adjective	europeu	politica
+прервать	verb	interromper	essencial
+девятый	adjective	nono	quantidade
+снежный	adjective	de neve	natureza
+горизонт	noun	horizonte	natureza
+заранее	other	antecipadamente	tempo
+настать	verb	chegar (tempo)	tempo
+отнять	verb	tirar; subtrair	essencial
+охранять	verb	guardar; proteger	direito
+заполнить	verb	preencher	essencial
+бюро	noun	escritório; agência	trabalho
+приступить	verb	começar; dar início	essencial
+потребность	noun	necessidade	essencial
+притворяться	verb	fingir	emocoes
+надолго	other	por muito tempo	tempo
+схема	noun	esquema	essencial
+маршрут	noun	itinerário; rota	viagem
+свидетельство	noun	certidão; testemunho	direito
+кожаный	adjective	de couro	aparencia
+оказать	verb	prestar; exercer	essencial
+эфир	noun	transmissão ao vivo; éter	midia
+рядом	other	ao lado	essencial
+соединить	verb	unir; conectar	essencial
+крышка	noun	tampa	casa
+терпение	noun	paciência	emocoes
+свести	verb	reduzir; juntar	essencial
+футбол	noun	futebol	esporte
+трудность	noun	dificuldade	essencial
+завтрашний	adjective	de amanhã	tempo
+четверть	noun	quarto (1/4); bimestre	quantidade,educacao
+загадка	noun	enigma; charada	essencial
+вена	noun	veia	saude
+надевать	verb	vestir; pôr	aparencia
+террорист	noun	terrorista	guerra,direito
+потерпеть	verb	aguentar; sofrer	essencial
+полтора	other	um e meio	quantidade
+жидкость	noun	líquido	ciencia
+наркотика	noun	droga	x
+демон	noun	demônio	religiao
+испытать	verb	testar; experimentar; sentir	essencial
+попрощаться	verb	despedir-se	sociedade
+величайший	adjective	o maior	essencial
+ублюдок	noun	bastardo	x
+контора	noun	escritório	trabalho
+фунт	noun	libra	economia,quantidade
+править	verb	governar; corrigir	politica
+практика	noun	prática; estágio	educacao,trabalho
+выпасть	verb	cair; calhar	essencial
+юмор	noun	humor	emocoes
+застрелить	verb	matar a tiros	direito
+сводить	verb	levar; reduzir	essencial
+пустота	noun	vazio	essencial
+градус	noun	grau	quantidade,natureza
+выкинуть	verb	jogar fora	casa
+издеваться	verb	zombar; maltratar	emocoes
+хан	noun	cã	historia
+наркотик	noun	droga; narcótico	saude,direito
+душевный	adjective	sincero; da alma	emocoes
+скрываться	verb	esconder-se	essencial
+зимний	adjective	de inverno	tempo
+почва	noun	solo; terreno	natureza
+творческий	adjective	criativo	cultura
+слышно	other	ouve-se	essencial
+годиться	verb	servir; prestar	essencial
+планировать	verb	planejar	trabalho
+студия	noun	estúdio	cultura
+горький	adjective	amargo	comida
+недалеко	other	não longe	essencial
+командовать	verb	comandar	guerra
+цивилизация	noun	civilização	historia
+свалить	verb	derrubar; ir embora (gíria)	essencial
+замереть	verb	ficar imóvel	essencial
+предатель	noun	traidor	guerra
+учебный	adjective	escolar; didático	educacao
+крайне	other	extremamente	essencial
+деться	verb	ir parar; sumir	essencial
+религиозный	adjective	religioso	religiao
+лента	noun	fita	essencial
+юридический	adjective	jurídico	direito
+жильё	noun	moradia	casa
+пришелец	noun	alienígena; forasteiro	ciencia
+ай	other	ai	essencial
+обрадоваться	verb	alegrar-se	emocoes
+шампанский	adjective	de champanhe (шампанское)	comida
+скучно	other	chato; entediante	emocoes
+обязательный	adjective	obrigatório	essencial
+репутация	noun	reputação	sociedade
+двинуться	verb	mover-se; pôr-se a caminho	essencial
+нелепый	adjective	absurdo; ridículo	essencial
+похитить	verb	sequestrar; roubar	direito
+виски	noun	uísque	comida
+ровный	adjective	plano; uniforme; reto	essencial
+навестить	verb	visitar	sociedade
+запустить	verb	lançar; negligenciar	tecnologia
+имущество	noun	bens; patrimônio	economia,direito
+хирург	noun	cirurgião	saude
+князь	noun	príncipe; cnez	historia
+флаг	noun	bandeira	politica
+примета	noun	sinal; superstição	religiao
+церемония	noun	cerimônia	sociedade
+протяжение	noun	extensão; decurso	x
+агентство	noun	agência	economia
+мероприятие	noun	evento; medida	sociedade
+рядовой	adjective	comum; soldado raso	guerra
+учесть	verb	levar em conta	essencial
+волшебник	noun	mago; feiticeiro	cultura
+метод	noun	método	ciencia
+матч	noun	partida (esportiva)	esporte
+происхождение	noun	origem	historia
+кто-нибудь	other	alguém	essencial
+предать	verb	trair	guerra
+обращение	noun	apelo; tratamento	sociedade
+жаркий	adjective	quente; ardente	natureza
+грустно	other	triste; tristemente	emocoes
+олень	noun	cervo; rena	animais
+катить	verb	rolar; empurrar (rodando)	essencial
+обман	noun	engano; fraude	direito
+передумать	verb	mudar de ideia	linguagem
+пригодиться	verb	ser útil	essencial
+стальной	adjective	de aço	essencial
+француз	noun	francês	x
+плоть	noun	carne; corpo	religiao
+глоток	noun	gole	comida
+собственно	other	propriamente; na verdade	essencial
+бензин	noun	gasolina	viagem
+милость	noun	graça; mercê	religiao
+происшествие	noun	incidente; ocorrência	essencial
+тюремный	adjective	carcerário	direito
+лавка	noun	banco; vendinha	compras
+ножка	noun	perninha; pé (de móvel)	casa
+ура	other	viva; hurra	essencial
+пройтись	verb	dar uma volta	esporte
+седой	adjective	grisalho	aparencia
+ядерный	adjective	nuclear	ciencia,guerra
+выпивка	noun	bebida (alcoólica)	comida
+психологический	adjective	psicológico	ciencia,saude
+Берлин	noun	Berlim	x
+приход	noun	chegada; paróquia	religiao
+убеждённый	adjective	convicto	linguagem
+незнакомец	noun	estranho; desconhecido	sociedade
+сейф	noun	cofre	economia
+съёмка	noun	filmagem; sessão de fotos	cultura
+приезд	noun	chegada	viagem
+потянуть	verb	puxar	essencial
+приняться	verb	pôr-se a	essencial
+конверт	noun	envelope	midia
+тянуться	verb	estender-se; arrastar-se	essencial
+старинный	adjective	antigo	historia
+валяться	verb	estar jogado; ficar à toa	essencial
+ноль	noun	zero	quantidade
+алый	adjective	escarlate	aparencia
+монета	noun	moeda	economia
+максимальный	adjective	máximo	quantidade
+применение	noun	aplicação; uso	essencial
+неудача	noun	fracasso; azar	emocoes
+удивить	verb	surpreender	emocoes
+карандаш	noun	lápis	educacao
+верховный	adjective	supremo	politica
+прилететь	verb	chegar (voando)	viagem
+мышца	noun	músculo	saude
+сдавать	verb	alugar; prestar (exame)	educacao
+башка	noun	cabeça (coloquial)	saude
+обедать	verb	almoçar	comida
+железо	noun	ferro	ciencia
+резать	verb	cortar	comida
+напиться	verb	embebedar-se; matar a sede	comida
+полагаться	verb	confiar em; ter direito a	essencial
+строка	noun	linha (de texto)	linguagem
+уложить	verb	deitar; arrumar; colocar	essencial
+нарушать	verb	violar; infringir	direito
+воздействие	noun	influência; impacto	essencial
+дежурный	adjective	de plantão	trabalho
+турист	noun	turista	viagem
+жопа	noun	bunda (vulgar)	x
+сенатор	noun	senador	politica
+некуда	other	não há para onde	essencial
+неловко	other	constrangedor; sem jeito	emocoes
+подземный	adjective	subterrâneo	cidade
+апрель	noun	abril	tempo
+приложить	verb	anexar; aplicar	essencial
+провалиться	verb	fracassar; afundar	essencial
+напряжённый	adjective	tenso	emocoes
+всеобщий	adjective	universal; geral	sociedade
+выехать	verb	partir (de veículo); sair	viagem
+учительница	noun	professora	educacao
+очаровательный	adjective	encantador	emocoes
+каков	other	qual; como é	essencial
+аппетит	noun	apetite	comida
+профессионал	noun	profissional	trabalho
+бесполезный	adjective	inútil	essencial
+крошечный	adjective	minúsculo	quantidade
+палочка	noun	varinha; bacilo; pauzinho	essencial
+ломать	verb	quebrar	essencial
+бабка	noun	velha; avó (coloquial)	familia
+охотиться	verb	caçar	esporte,animais
+уникальный	adjective	único	essencial
+предположение	noun	suposição; hipótese	linguagem
+шуметь	verb	fazer barulho	essencial
+раздаться	verb	soar; ressoar	essencial
+положительный	adjective	positivo	essencial
+гвоздь	noun	prego	casa
+бак	noun	tanque; reservatório	essencial
+прижать	verb	apertar; encostar	essencial
+рамка	noun	moldura; quadro	essencial
+металл	noun	metal	ciencia
+изображать	verb	retratar; representar	cultura
+плёнка	noun	filme; película	cultura
+печень	noun	fígado	saude
+отобрать	verb	tirar; selecionar	essencial
+псих	noun	maluco	x
+спокойствие	noun	tranquilidade; calma	emocoes
+перспектива	noun	perspectiva	essencial
+подхватить	verb	apanhar; pegar (doença)	essencial
+столб	noun	poste; pilar	cidade
+предупреждение	noun	aviso; advertência	essencial
+чемпион	noun	campeão	esporte
+раздражать	verb	irritar	emocoes
+горный	adjective	montanhoso; de mineração	natureza
+подставить	verb	pôr embaixo; armar para alguém	essencial
+ус	noun	bigode	aparencia
+крепко	other	firmemente	essencial
+налево	other	à esquerda	essencial
+рыбак	noun	pescador	esporte,trabalho
+вылететь	verb	decolar; sair voando	viagem
+искра	noun	faísca	natureza
+добыча	noun	extração; presa	economia
+колонна	noun	coluna	cidade
+побыть	verb	ficar um tempo	essencial
+оторвать	verb	arrancar	essencial
+новичок	noun	novato	essencial
+позор	noun	vergonha; desonra	emocoes
+высоко	other	alto	quantidade
+прогресс	noun	progresso	sociedade
+психический	adjective	psíquico; mental	saude
+батальон	noun	batalhão	guerra
+мышь	noun	camundongo; mouse	animais
+наружу	other	para fora	essencial
+пустяк	noun	ninharia	essencial
+юрист	noun	jurista; advogado	direito
+прыжок	noun	salto	esporte
+твориться	verb	acontecer	essencial
+богатство	noun	riqueza	economia
+резко	other	bruscamente	essencial
+ступать	verb	pisar; caminhar	essencial
+разорвать	verb	rasgar; romper	essencial
+готовность	noun	prontidão	essencial
+отставка	noun	demissão; reforma (militar)	trabalho
+чтение	noun	leitura	educacao,cultura
+переулок	noun	travessa; viela	cidade
+сложить	verb	dobrar; empilhar; somar	quantidade
+священный	adjective	sagrado	religiao
+подразделение	noun	subdivisão; unidade	guerra
+выбить	verb	arrancar; derrubar	essencial
+попалить	verb	atirar (coloquial)	x
+каковой	adjective	o qual	x
+гитара	noun	violão; guitarra	cultura
+проститутка	noun	prostituta	sociedade
+спустить	verb	abaixar; soltar	essencial
+соревнование	noun	competição	esporte
+выпуск	noun	edição; formatura; turma	midia,educacao
+дальше	other	mais longe; adiante	essencial
+любовник	noun	amante	familia
+сыр	noun	queijo	comida
+вставить	verb	inserir	essencial
+прикрытие	noun	cobertura; disfarce	guerra
+разобрать	verb	desmontar; decifrar	essencial
+африка	noun	África	x
+заканчивать	verb	terminar	tempo
+разглядеть	verb	distinguir; enxergar	essencial
+койка	noun	beliche; leito	casa
+отсутствовать	verb	estar ausente	essencial
+растение	noun	planta	animais
+десятый	adjective	décimo	quantidade
+сгореть	verb	queimar-se	natureza
+орёл	noun	águia	animais
+запасной	adjective	reserva; sobressalente	essencial
+лишённый	adjective	privado de	essencial
+плотный	adjective	denso; compacto	essencial
+округа	noun	arredores	cidade
+медаль	noun	medalha	esporte
+оркестр	noun	orquestra	cultura
+монах	noun	monge	religiao
+увезти	verb	levar embora (de veículo)	viagem
+шёпот	noun	sussurro	essencial
+юбка	noun	saia	aparencia
+исполнить	verb	cumprir; executar; interpretar	cultura
+сохранять	verb	manter; conservar	essencial
+поза	noun	pose; postura	essencial
+балкон	noun	varanda; sacada	casa
+справляться	verb	dar conta; informar-se	essencial
+учёба	noun	estudos	educacao
+двух	adjective	dois (genitivo)	x
+хор	noun	coro	cultura
+упоминать	verb	mencionar	linguagem
+блеск	noun	brilho	essencial
+медицина	noun	medicina	saude,ciencia
+шок	noun	choque	saude
+сопровождать	verb	acompanhar	essencial
+супруг	noun	cônjuge; marido	familia
+связать	verb	amarrar; ligar	essencial
+опуститься	verb	descer; baixar	essencial
+несомненно	other	indubitavelmente	essencial
+похоронить	verb	enterrar	religiao
+цветной	adjective	colorido; em cores	aparencia
+справедливый	adjective	justo	direito
+носок	noun	meia	aparencia
+премия	noun	prêmio; bônus	trabalho,cultura
+мыло	noun	sabão	casa
+предпочесть	verb	preferir	essencial
+сюжет	noun	enredo; tema	cultura
+опаздывать	verb	atrasar-se	tempo
+плач	noun	choro	emocoes
+монастырь	noun	mosteiro	religiao
+независимый	adjective	independente	politica
+противоположный	adjective	oposto	essencial
+заинтересованный	adjective	interessado	emocoes
+бедро	noun	coxa; quadril	saude
+дрова	noun	lenha	casa
+младенец	noun	bebê	familia
+тонна	noun	tonelada	quantidade
+пар	noun	vapor	ciencia
+монстр	noun	monstro	cultura
+портфель	noun	pasta; carteira (de ações)	trabalho
+окружение	noun	entorno; meio; cerco	sociedade
+доза	noun	dose	saude
+сталь	noun	aço	ciencia
+грозить	verb	ameaçar	essencial
+задумываться	verb	refletir	linguagem
+напарник	noun	parceiro (de trabalho)	trabalho
+рад	adjective	contente; feliz	emocoes
+постепенно	other	gradualmente	tempo
+наказать	verb	castigar	direito
+братец	noun	irmãozinho	familia
+толкнуть	verb	empurrar	essencial
+весть	noun	notícia	midia
+отрицать	verb	negar	linguagem
+могучий	adjective	poderoso	essencial
+воспринимать	verb	perceber; encarar	linguagem
+засмеяться	verb	começar a rir	emocoes
+подбородок	noun	queixo	saude
+вероятность	noun	probabilidade	ciencia,quantidade
+рухнуть	verb	desabar	essencial
+повар	noun	cozinheiro	comida,trabalho
+внимательный	adjective	atento; atencioso	emocoes
+холл	noun	saguão	casa
+тонуть	verb	afundar; afogar-se	natureza
+тряпка	noun	pano; trapo	casa
+ресурс	noun	recurso	economia
+молитва	noun	oração	religiao
+клиника	noun	clínica	saude
+официально	other	oficialmente	politica
+застать	verb	encontrar; flagrar	essencial
+баня	noun	sauna russa (bânia)	casa,cultura
+религия	noun	religião	religiao
+продавец	noun	vendedor	compras
+гениальный	adjective	genial	essencial
+взорваться	verb	explodir	guerra
+командование	noun	comando	guerra
+художественный	adjective	artístico; literário	cultura
+мука	noun	tormento	emocoes
+пастух	noun	pastor	animais
+дивизия	noun	divisão	guerra
+каша	noun	mingau	comida
+село	noun	aldeia	cidade
+заканчиваться	verb	terminar	tempo
+таков	other	tal	essencial
+кончаться	verb	acabar	tempo
+оперативный	adjective	operacional; ágil	essencial
+фрукт	noun	fruta	comida
+обвинить	verb	acusar	direito
+барон	noun	barão	historia
+паника	noun	pânico	emocoes
+темно	other	escuro	natureza
+заяц	noun	lebre	animais
+традиционный	adjective	tradicional	cultura,sociedade
+соответствие	noun	correspondência; conformidade	essencial
+установленный	adjective	estabelecido	essencial
+уголок	noun	cantinho	casa
+длиться	verb	durar	tempo
+цирк	noun	circo	cultura
+какой-то	other	algum; um tal	essencial
+удержать	verb	segurar; reter	essencial
+варить	verb	cozinhar (ferver)	comida
+всерьёз	other	a sério	essencial
+отыскать	verb	encontrar	essencial
+ком	noun	bolo; torrão	essencial
+уговорить	verb	persuadir	linguagem
+слушаться	verb	obedecer	essencial
+длина	noun	comprimento	quantidade
+местечко	noun	lugarzinho; vilarejo	cidade
+менеджер	noun	gerente	trabalho
+представиться	verb	apresentar-se	sociedade
+чепуха	noun	bobagem	essencial
+полночь	noun	meia-noite	tempo
+извинение	noun	desculpa	emocoes
+направо	other	à direita	essencial
+жажда	noun	sede; ânsia	comida
+отчаянный	adjective	desesperado	emocoes
+банка	noun	pote; lata	comida
+подтверждать	verb	confirmar	essencial
+жарко	other	quente (faz calor)	natureza
+слыхать	verb	ouvir (coloquial)	essencial
+жир	noun	gordura	comida,saude
+крошка	noun	migalha; pequeno	comida
+негодяй	noun	canalha	emocoes
+драгоценный	adjective	precioso	economia
+любопытный	adjective	curioso	emocoes
+руководить	verb	dirigir; liderar	trabalho
+влезть	verb	entrar; subir; caber	essencial
+успешный	adjective	bem-sucedido	trabalho
+тут	other	aqui	essencial
+конфета	noun	bala; bombom	comida
+крепость	noun	fortaleza	historia,guerra
+прелесть	noun	encanto	emocoes
+экспедиция	noun	expedição	viagem,ciencia
+мэри	other	Mary	x
+развиваться	verb	desenvolver-se	essencial
+кинуть	verb	jogar; atirar	essencial
+кататься	verb	andar (de bicicleta, patins etc.)	esporte
+извините	other	desculpe	essencial
+переставать	verb	deixar de	essencial
+федерация	noun	federação	politica
+терапия	noun	terapia	saude
+тим	noun	Tim	x
+письменный	adjective	escrito; de escrever	educacao
+пошло	other	vulgarmente	emocoes
+спичка	noun	fósforo	casa
+ток	noun	corrente (elétrica)	ciencia
+фактически	other	de fato	essencial
+тяжесть	noun	peso	quantidade
+рог	noun	chifre	animais
+установка	noun	instalação; atitude	tecnologia
+улететь	verb	partir (voando)	viagem
+гном	noun	gnomo	cultura
+гостиный	adjective	de visitas (гостиная: sala)	casa
+приготовиться	verb	preparar-se	essencial
+поправить	verb	corrigir; ajeitar	essencial
+бессмысленный	adjective	sem sentido	essencial
+сорваться	verb	soltar-se; fracassar	essencial
+архив	noun	arquivo	historia
+фокус	noun	truque; foco	essencial
+посадка	noun	embarque; pouso; plantio	viagem
+вздыхать	verb	suspirar	emocoes
+ночевать	verb	pernoitar	viagem
+вмешиваться	verb	intrometer-se; intervir	essencial
+обучение	noun	ensino; treinamento	educacao
+привлекать	verb	atrair	essencial
+наедине	other	a sós	essencial
+стойка	noun	balcão; posição	essencial
+забавно	other	engraçado	emocoes
+строго	other	rigorosamente	essencial
+раскрытый	adjective	aberto; revelado	x
+здешний	adjective	local; daqui	cidade
+любезный	adjective	gentil; amável	emocoes
+учреждение	noun	instituição; fundação	politica
+типичный	adjective	típico	essencial
+оглядываться	verb	olhar ao redor	essencial
+изучить	verb	estudar a fundo	educacao,ciencia
+дружище	noun	amigão	familia
+стыд	noun	vergonha	emocoes
+персонаж	noun	personagem	cultura
+вложить	verb	investir; colocar dentro	economia
+наивный	adjective	ingênuo	emocoes
+привлекательный	adjective	atraente	aparencia
+коллекция	noun	coleção	cultura
+рекомендовать	verb	recomendar	essencial
+неподалёку	other	perto	essencial
+демократия	noun	democracia	politica
+вечером	other	à noite	tempo
+корпорация	noun	corporação	economia
+отрезать	verb	cortar fora	essencial
+здравствуйте	other	olá; bom dia	essencial
+транспорт	noun	transporte	viagem
+тщательно	other	cuidadosamente	essencial
+рюкзак	noun	mochila	viagem
+обидеться	verb	ofender-se	emocoes
+англичанин	noun	inglês	x
+когда-нибудь	other	algum dia	tempo
+модный	adjective	da moda	aparencia
+возразить	verb	objetar	linguagem
+ощутить	verb	sentir	emocoes
+ступенька	noun	degrau	casa
+провал	noun	fracasso; buraco	essencial
+веселье	noun	alegria; diversão	emocoes
+сокровище	noun	tesouro	economia
+исход	noun	desfecho	essencial
+почка	noun	rim; broto	saude
+уличный	adjective	de rua	cidade
+челюсть	noun	mandíbula	saude
+намёк	noun	alusão; indireta	linguagem
+вспышка	noun	clarão; surto	essencial
+техник	noun	técnico	tecnologia,trabalho
+двенадцать	other	doze	quantidade
+лопата	noun	pá	tecnologia
+посольство	noun	embaixada	politica
+живо	other	vivamente; rápido	essencial
+гад	noun	réptil; canalha	x
+шахта	noun	mina; poço	trabalho
+племя	noun	tribo	sociedade,historia
+доходить	verb	chegar a	essencial
+длительный	adjective	prolongado	tempo
+окончательно	other	definitivamente	essencial
+относительно	other	relativamente	essencial
+реально	other	realmente	essencial
+доступный	adjective	acessível	essencial
+полевой	adjective	de campo	natureza
+повреждение	noun	dano; lesão	essencial
+виза	noun	visto	viagem
+пилить	verb	serrar; atazanar	essencial
+отходить	verb	afastar-se; partir	viagem
+поиграть	verb	brincar; jogar um pouco	esporte
+убирать	verb	arrumar; remover	casa
+комплекс	noun	complexo	essencial
+поздороваться	verb	cumprimentar	sociedade
+молча	other	em silêncio	essencial
+салон	noun	salão; interior (de carro)	cidade
+деревенский	adjective	rural; da aldeia	cidade
+ненадолго	other	por pouco tempo	tempo
+государь	noun	soberano	historia
+заехать	verb	passar (de veículo)	viagem
+съездить	verb	ir e voltar (de veículo)	viagem
+плита	noun	fogão; placa	casa
+почитать	verb	ler um pouco; venerar	cultura
+справка	noun	atestado; informação	direito
+порвать	verb	rasgar; romper	essencial
+дитя	noun	criança	familia
+кругом	other	em volta	essencial
+защитник	noun	defensor; zagueiro	direito,esporte
+душить	verb	sufocar; estrangular	essencial
+шрам	noun	cicatriz	saude
+урод	noun	monstro; aberração	x
+выдающийся	adjective	eminente; notável	essencial
+оборот	noun	volta; giro; circulação	essencial
+шарик	noun	bolinha; balão	essencial
+текущий	adjective	atual; corrente	tempo
+компьютерный	adjective	de computador	tecnologia
+помимо	other	além de	essencial
+четверо	other	quatro (coletivo)	quantidade
+где-то	other	em algum lugar	essencial
+нефть	noun	petróleo	economia
+залезть	verb	subir; entrar	essencial
+акцент	noun	sotaque; ênfase	linguagem
+бык	noun	touro	animais
+почтовый	adjective	postal	midia
+тяжкий	adjective	grave; penoso	essencial
+раствор	noun	solução (química)	ciencia
+сиять	verb	brilhar	essencial
+разрешать	verb	permitir; resolver	essencial
+испанский	adjective	espanhol	linguagem
+огонёк	noun	luzinha; brilho	essencial
+безусловно	other	sem dúvida	essencial
+реагировать	verb	reagir	essencial
+исполнять	verb	cumprir; executar; interpretar	cultura
+сотрудничество	noun	cooperação	politica,economia
+прикрывать	verb	cobrir; acobertar	essencial
+собачий	adjective	de cachorro	animais
+браться	verb	pôr-se a; encarregar-se	essencial
+ненормальный	adjective	anormal	essencial
+причинить	verb	causar	essencial
+официант	noun	garçom	comida
+передо	other	diante de (forma de перед)	essencial
+как-то	other	de algum modo; certa vez	essencial
+случайность	noun	acaso	essencial
+пошутить	verb	fazer uma piada	emocoes
+определение	noun	definição	ciencia,linguagem
+целоваться	verb	beijar-se	familia
+тренировка	noun	treino	esporte
+кислота	noun	ácido; acidez	ciencia
+милорд	noun	milorde	x
+корзина	noun	cesta	compras
+кол	noun	estaca; nota um (escola)	essencial
+проследить	verb	acompanhar; rastrear	essencial
+проявление	noun	manifestação	essencial
+торговать	verb	comerciar; vender	economia
+подъём	noun	subida; ascensão	essencial
+злость	noun	raiva	emocoes
+покойник	noun	falecido	religiao
+мерзкий	adjective	asqueroso	emocoes
+лишить	verb	privar	essencial
+любовный	adjective	amoroso	familia
+унести	verb	levar embora	essencial
+тест	noun	teste	educacao
+роскошный	adjective	luxuoso	economia
+нашить	verb	costurar (em)	x
+перебить	verb	interromper; matar (muitos)	essencial
+слышный	adjective	audível	essencial
+замужем	adjective	casada	familia
+масштаб	noun	escala	quantidade
+обречённый	adjective	condenado; fadado	essencial
+обрести	verb	adquirir; encontrar	essencial
+невыносимый	adjective	insuportável	emocoes
+поместить	verb	colocar; internar	essencial
+убежище	noun	abrigo; asilo	politica
+изменять	verb	mudar; trair	essencial
+буря	noun	tempestade	natureza
+сопротивляться	verb	resistir	guerra
+великолепно	other	magnificamente	essencial
+навстречу	other	ao encontro de	essencial
+давний	adjective	antigo; de longa data	tempo
+освободиться	verb	libertar-se; ficar livre	essencial
+рожа	noun	cara (pej.)	x
+исходить	verb	partir de; provir	essencial
+вылезать	verb	sair (rastejando)	essencial
+порция	noun	porção	comida
+храбрый	adjective	corajoso	emocoes
+внешность	noun	aparência	aparencia
+обижаться	verb	ofender-se	emocoes
+шлюха	noun	vagabunda (vulgar)	x
+февраль	noun	fevereiro	tempo
+определять	verb	determinar; definir	ciencia
+проговорить	verb	dizer; falar por um tempo	linguagem
+казнь	noun	execução (pena de morte)	direito,historia
+закат	noun	pôr do sol	natureza
+замечание	noun	observação; advertência	linguagem
+наступление	noun	ofensiva; chegada	guerra
+машинка	noun	maquininha; máquina de escrever	tecnologia
+уничтожение	noun	destruição	guerra
+тост	noun	brinde	comida
+палуба	noun	convés	viagem
+посёлок	noun	povoado	cidade
+посетить	verb	visitar	viagem
+завалить	verb	soterrar; reprovar	essencial
+откровенный	adjective	franco	emocoes
+дорожный	adjective	rodoviário; de viagem	viagem
+натура	noun	natureza; temperamento	emocoes
+лысый	adjective	careca	aparencia
+вселенная	noun	universo	ciencia
+нехорошо	other	não é bom	essencial
+дрянь	noun	porcaria	essencial
+электричество	noun	eletricidade	ciencia,tecnologia
+чёртов	adjective	maldito	x
+увеличить	verb	aumentar	quantidade
+римский	adjective	romano	historia
+еле	other	mal; a custo	essencial
+сектор	noun	setor	economia
+воровать	verb	roubar	direito
+прозвучать	verb	soar	essencial
+наплевать	verb	não ligar a mínima	essencial
+добиваться	verb	buscar alcançar	essencial
+плоский	adjective	plano; chato	essencial
+памятник	noun	monumento	cidade,historia
+биологический	adjective	biológico	ciencia
+департамент	noun	departamento	politica
+кит	noun	baleia	animais
+пробить	verb	perfurar; furar	essencial
+иностранец	noun	estrangeiro	viagem,sociedade
+змей	noun	serpente; pipa	animais
+усмехнуться	verb	sorrir ironicamente	emocoes
+кирпич	noun	tijolo	cidade
+частность	noun	particularidade	essencial
+категория	noun	categoria	essencial
+вслух	other	em voz alta	linguagem
+толкать	verb	empurrar	essencial
+счесть	verb	considerar	linguagem
+шлем	noun	capacete	esporte,guerra
+бесплатно	other	de graça	compras
+штучка	noun	coisinha	essencial
+соврать	verb	mentir	linguagem
+вонючий	adjective	fedorento	essencial
+снаряд	noun	projétil; aparelho (ginástica)	guerra
+отступать	verb	recuar	guerra
+оправдание	noun	justificativa; absolvição	direito
+побережье	noun	litoral	natureza
+инфекция	noun	infecção	saude
+стандартный	adjective	padrão	essencial
+сообразить	verb	sacar; entender	linguagem
+той	noun	festa (centro-asiática)	x
+вечность	noun	eternidade	tempo
+каюта	noun	cabine (de navio)	viagem
+торт	noun	bolo; torta	comida
+кислород	noun	oxigênio	ciencia
+отступить	verb	recuar	guerra
+нетерпение	noun	impaciência	emocoes
+актриса	noun	atriz	cultura
+тесный	adjective	apertado; estreito	essencial
+старость	noun	velhice	familia
+килограмм	noun	quilograma	quantidade
+окончательный	adjective	definitivo	essencial
+пешком	other	a pé	viagem
+увы	other	infelizmente	essencial
+рак	noun	câncer; lagostim	saude
+племянник	noun	sobrinho	familia
+простите	other	perdão; com licença	essencial
+оператор	noun	operador; cinegrafista	tecnologia
+стеклянный	adjective	de vidro	essencial
+махать	verb	acenar; agitar	essencial
+литературный	adjective	literário	cultura
+туча	noun	nuvem carregada	natureza
+значок	noun	distintivo; ícone	essencial
+пузырь	noun	bolha	essencial
+заложить	verb	penhorar; lançar (base)	essencial
+преподаватель	noun	professor; docente	educacao
+грозный	adjective	terrível; ameaçador	essencial
+щель	noun	fresta	essencial
+проявлять	verb	mostrar; manifestar	essencial
+телеграмма	noun	telegrama	midia
+повредить	verb	danificar; prejudicar	essencial
+дырка	noun	buraco	essencial
+пасть	verb	cair; tombar	essencial
+китаец	noun	chinês	x
+перевернуть	verb	virar; revirar	essencial
+непременно	other	sem falta	essencial
+избранный	adjective	escolhido; eleito	essencial
+исчезновение	noun	desaparecimento	essencial
+дружить	verb	ser amigo	familia
+рок	noun	destino; rock	cultura
+посещать	verb	frequentar; visitar	essencial
+отверстие	noun	abertura; orifício	essencial
+спалить	verb	queimar	essencial
+кража	noun	furto	direito
+хорошенький	adjective	bonitinho	aparencia
+влажный	adjective	úmido	natureza
+вампир	noun	vampiro	cultura
+пульс	noun	pulso	saude
+опухоль	noun	tumor; inchaço	saude
+докладывать	verb	relatar	trabalho
+высказать	verb	expressar	linguagem
+рвать	verb	rasgar; arrancar; vomitar	essencial
+проведение	noun	realização	essencial
+признавать	verb	reconhecer; admitir	linguagem
+некогда	other	não há tempo; outrora	tempo
+сосредоточиться	verb	concentrar-se	educacao
+лампочка	noun	lâmpada	casa
+гнездо	noun	ninho	animais
+расстройство	noun	transtorno; desgosto	saude,emocoes
+неверный	adjective	errado; infiel	essencial
+душ	noun	chuveiro	casa
+пропадать	verb	sumir; perder-se	essencial
+сук	noun	galho	animais
+манера	noun	maneira	essencial
+катиться	verb	rolar	essencial
+Ленинград	noun	Leningrado	x
+пробка	noun	rolha; engarrafamento	viagem
+общежитие	noun	alojamento; república estudantil	educacao,casa
+крючок	noun	gancho; anzol	essencial
+смириться	verb	conformar-se	emocoes
+выслать	verb	enviar; deportar	essencial
+топливо	noun	combustível	economia
+предварительный	adjective	preliminar	essencial
+книжный	adjective	de livro; livresco	cultura
+кровотечение	noun	hemorragia	saude
+удерживать	verb	segurar; reter	essencial
+аргумент	noun	argumento	linguagem
+оплата	noun	pagamento	economia
+искренний	adjective	sincero	emocoes
+заслуга	noun	mérito	essencial
+скамейка	noun	banco (de praça)	cidade
+выделить	verb	destacar; alocar	essencial
+развлечение	noun	diversão	esporte
+портить	verb	estragar	essencial
+солнышко	noun	solzinho	natureza
+торговец	noun	comerciante	economia
+яхта	noun	iate	viagem
+ущерб	noun	dano; prejuízo	economia
+сосуд	noun	vaso; recipiente	saude
+немало	other	bastante	quantidade
+извлечь	verb	extrair	essencial
+причёска	noun	penteado	aparencia
+четверг	noun	quinta-feira	tempo
+инстинкт	noun	instinto	animais
+заклинание	noun	feitiço	religiao
+снятой	adjective	desnatado	x
+зажечь	verb	acender	casa
+союзник	noun	aliado	guerra,politica
+дневной	adjective	diurno	tempo
+месть	noun	vingança	emocoes
+выражать	verb	expressar	linguagem
+воспитание	noun	educação; criação	familia,educacao
+одиннадцать	noun	onze	quantidade
+вытянуть	verb	esticar; tirar	essencial
+правление	noun	governo; diretoria	politica
+робот	noun	robô	tecnologia
+королевство	noun	reino	historia
+связывать	verb	ligar; amarrar	essencial
+оказывать	verb	prestar; exercer	essencial
+лунный	adjective	lunar	natureza
+светиться	verb	brilhar	essencial
+добыть	verb	obter; extrair	essencial
+лишиться	verb	perder	essencial
+фантастический	adjective	fantástico	cultura
+местность	noun	localidade; terreno	natureza
+проделать	verb	fazer; realizar	essencial
+эффективный	adjective	eficaz	essencial
+последующий	adjective	subsequente	tempo
+кривой	adjective	torto	essencial
+вежливый	adjective	educado; cortês	emocoes
+праздничный	adjective	festivo	esporte
+бешеный	adjective	furioso; raivoso	emocoes
+воскликнуть	verb	exclamar	linguagem
+милая	noun	querida	familia
+вмешаться	verb	intervir	essencial
+нуль	noun	zero	quantidade
+романтический	adjective	romântico	cultura,familia
+вирус	noun	vírus	saude,tecnologia
+отрицательный	adjective	negativo	essencial
+формула	noun	fórmula	ciencia
+ранение	noun	ferimento	saude,guerra
+поспешить	verb	apressar-se	tempo
+вскочить	verb	pular; levantar-se de um salto	essencial
+учёт	noun	registro; contabilidade	economia
+платформа	noun	plataforma	viagem
+чертовски	other	diabolicamente	essencial
+пропускать	verb	deixar passar; faltar	essencial
+пулемёт	noun	metralhadora	guerra
+спора	noun	esporo	x
+искренне	other	sinceramente	emocoes
+рецепт	noun	receita	comida,saude
+угодно	other	qualquer (что угодно)	essencial
+забить	verb	pregar; marcar (gol); abater	esporte
+отчего	other	por quê	essencial
+необыкновенный	adjective	extraordinário	essencial
+тигр	noun	tigre	animais
+грань	noun	limite; faceta	essencial
+нелегко	other	não é fácil	essencial
+печаль	noun	tristeza	emocoes
+зрелище	noun	espetáculo	cultura
+взорвать	verb	explodir	guerra
+выносить	verb	levar para fora; suportar	essencial
+щенок	noun	filhote (de cão)	animais
+пан	noun	senhor (polonês)	x
+смесь	noun	mistura	ciencia
+аккуратно	other	cuidadosamente	essencial
+мерзавец	noun	canalha	emocoes
+склон	noun	encosta	natureza
+переводить	verb	traduzir; transferir	linguagem
+персонал	noun	pessoal; equipe	trabalho
+забытый	adjective	esquecido	essencial
+листок	noun	folhinha; folheto	essencial
+рукопись	noun	manuscrito	cultura
+провод	noun	fio	tecnologia
+веселиться	verb	divertir-se	esporte
+возиться	verb	mexer em; perder tempo com	essencial
+коснуться	verb	tocar	essencial
+термин	noun	termo	linguagem,ciencia
+объятие	noun	abraço	familia
+видео	noun	vídeo	tecnologia,midia
+осёл	noun	burro; asno	animais
+незаконный	adjective	ilegal	direito
+вдова	noun	viúva	familia
+кишка	noun	intestino; mangueira	saude
+склонный	adjective	propenso; inclinado	emocoes
+стража	noun	guarda	guerra
+протест	noun	protesto	politica
+поменять	verb	trocar	essencial
+приблизиться	verb	aproximar-se	essencial
+трезвый	adjective	sóbrio	saude
+упрямый	adjective	teimoso	emocoes
+Испания	noun	Espanha	x
+бал	noun	baile	cultura
+маг	noun	mago	cultura
+угу	other	aham	x
+окружить	verb	cercar	guerra
+отмечать	verb	comemorar; marcar; notar	esporte
+преданный	adjective	dedicado; leal	emocoes
+смелость	noun	coragem	emocoes
+преступный	adjective	criminoso	direito
+бабочка	noun	borboleta; gravata-borboleta	animais
+неудачный	adjective	malsucedido	essencial
+беспомощный	adjective	indefeso	emocoes
+цепочка	noun	correntinha; cadeia	aparencia
+повышенный	adjective	elevado	quantidade
+мороженый	adjective	congelado (мороженое: sorvete)	comida
+преодолеть	verb	superar	essencial
+поручить	verb	encarregar	trabalho
+бочок	noun	ladinho	x
+порошок	noun	pó	casa
+ссора	noun	briga; desentendimento	familia
+мудрость	noun	sabedoria	linguagem
+мучить	verb	atormentar	emocoes
+расстрелять	verb	fuzilar	guerra,historia
+прислушиваться	verb	prestar atenção; escutar	essencial
+удобно	other	confortável; conveniente	essencial
+гонка	noun	corrida	esporte
+часы	noun	relógio	tempo
+физика	noun	física	ciencia
+замена	noun	substituição	essencial
+печально	other	tristemente	emocoes
+чрезвычайно	other	extremamente	essencial
+сражение	noun	batalha	guerra
+жареный	adjective	frito; assado	comida
+культурный	adjective	cultural; culto	cultura
+понести	verb	levar; sofrer (perdas)	essencial
+выписать	verb	copiar; receitar; dar alta	saude
+магический	adjective	mágico	religiao
+утром	other	de manhã	tempo
+соображение	noun	consideração; raciocínio	linguagem
+беседовать	verb	conversar	linguagem
+стоянка	noun	estacionamento; ponto	viagem
+предчувствие	noun	pressentimento	emocoes
+весенний	adjective	primaveril	tempo
+обсуждение	noun	discussão	linguagem
+тётка	noun	tia; mulher	familia
+чистота	noun	limpeza; pureza	casa
+философия	noun	filosofia	linguagem
+пирог	noun	torta	comida
+продолжение	noun	continuação	essencial
+крупнейший	adjective	o maior	quantidade
+белок	noun	proteína; clara de ovo	comida,ciencia
+уголь	noun	carvão	economia
+возвращать	verb	devolver	essencial
+математика	noun	matemática	ciencia,educacao
+ти	noun	si (nota)	x
+вправду	other	de verdade	essencial
+публичный	adjective	público	sociedade
+поспать	verb	tirar um cochilo	casa
+мамин	adjective	da mamãe	familia
+уронить	verb	deixar cair	essencial
+отозваться	verb	responder; repercutir	essencial
+денежный	adjective	monetário	economia
+открытка	noun	cartão-postal	midia
+расписание	noun	horário; quadro de horários	viagem,educacao
+путешествовать	verb	viajar	viagem
+вслед	other	atrás; em seguida	essencial
+промышленность	noun	indústria	economia
+джин	noun	gim; gênio	comida
+коммерческий	adjective	comercial	economia
+одеться	verb	vestir-se	aparencia
+заложник	noun	refém	direito
+разведчик	noun	espião; batedor	guerra
+вторник	noun	terça-feira	tempo
+вкусно	other	gostoso	comida
+недолго	other	por pouco tempo	tempo
+ритм	noun	ritmo	cultura
+очистить	verb	limpar; descascar	casa
+оригинальный	adjective	original	essencial
+мена	noun	troca	x
+постучать	verb	bater (à porta)	essencial
+исключительно	other	exclusivamente; excepcionalmente	essencial
+прощаться	verb	despedir-se	sociedade
+вступать	verb	entrar; ingressar	essencial
+минуточка	noun	minutinho	tempo
+пребывание	noun	estadia	viagem
+расположение	noun	localização; simpatia	essencial
+колледж	noun	faculdade; colégio técnico	educacao
+пушка	noun	canhão	guerra
+заодно	other	de quebra; ao mesmo tempo	essencial
+звон	noun	toque; tilintar	essencial
+скорее	other	antes; mais rápido	essencial
+успевать	verb	dar tempo; ir bem (nos estudos)	educacao,tempo
+бросаться	verb	lançar-se	essencial
+восстановление	noun	restauração; recuperação	essencial
+петля	noun	laço; nó corrediço	essencial
+юность	noun	juventude	sociedade
+почерк	noun	caligrafia	educacao
+коньяк	noun	conhaque	comida
+опубликовать	verb	publicar	midia
+якобы	other	supostamente	linguagem
+удержаться	verb	conter-se; segurar-se	essencial
+передовой	adjective	avançado; de vanguarda	essencial
+ребро	noun	costela; borda	saude
+выполнение	noun	cumprimento; execução	trabalho
+тачка	noun	carrinho de mão; carro (gíria)	x
+банковский	adjective	bancário	economia
+касса	noun	caixa; bilheteria	compras
+сохраниться	verb	conservar-se	essencial
+мастерский	adjective	magistral	x
+некоторые	noun	alguns	x
+Канада	noun	Canadá	x
+око	noun	olho (poético)	x
+б	other	(forma de бы)	x
+дорого	other	caro	compras
+тревожный	adjective	inquietante; ansioso	emocoes
+разработать	verb	desenvolver; elaborar	tecnologia
+здравый	adjective	são; sensato	linguagem
+повязка	noun	curativo; faixa	saude
+корея	noun	Coreia	x
+печь	verb	assar	comida
+сумочка	noun	bolsinha	aparencia
+неудобно	other	desconfortável; sem jeito	emocoes
+прозвище	noun	apelido	linguagem
+поклонник	noun	admirador; fã	cultura
+код	noun	código	tecnologia
+капуста	noun	repolho	comida
+няня	noun	babá	familia
+поэзия	noun	poesia	cultura
+крутиться	verb	girar; virar-se	essencial
+пуговица	noun	botão	aparencia
+заявлять	verb	declarar	midia
+закурить	verb	acender um cigarro	saude
+огненный	adjective	de fogo; ardente	natureza
+заново	other	de novo; do zero	essencial
+крутить	verb	girar; torcer	essencial
+сирена	noun	sirene	essencial
+походить	verb	parecer-se; andar um pouco	essencial
+оранжевый	adjective	laranja (cor)	aparencia
+поинтересоваться	verb	perguntar; interessar-se	essencial
+оторваться	verb	soltar-se; desligar-se	essencial
+привязать	verb	amarrar	essencial
+комментарий	noun	comentário	midia
+фюрер	noun	Führer	x
+вольный	adjective	livre	essencial
+рискнуть	verb	arriscar	essencial
+шикарный	adjective	chique	aparencia
+матушка	noun	mãezinha; madre	familia
+размышлять	verb	refletir; meditar	linguagem
+превосходный	adjective	excelente	essencial
+послышаться	verb	ouvir-se	essencial
+неприятно	other	desagradável	emocoes
+накрыть	verb	cobrir; pôr (a mesa)	casa
+часовой	adjective	sentinela; de relógio	guerra,tempo
+нора	noun	toca	animais
+обязательство	noun	compromisso; obrigação	direito
+удостоверение	noun	carteira de identidade; certificado	direito
+служащий	adjective	funcionário	trabalho
+стадо	noun	rebanho	animais
+чёткий	adjective	nítido; preciso	essencial
+колония	noun	colônia	historia
+всадник	noun	cavaleiro	animais,historia
+микрофон	noun	microfone	tecnologia
+гарантия	noun	garantia	compras
+чётко	other	nitidamente	essencial
+шоколад	noun	chocolate	comida
+сонный	adjective	sonolento	saude
+показатель	noun	indicador	economia,ciencia
+мёд	noun	mel	comida
+пластинка	noun	disco; placa	cultura
+забраться	verb	subir; entrar	essencial
+весить	verb	pesar	quantidade
+стремление	noun	aspiração	emocoes
+тетрадь	noun	caderno	educacao
+овца	noun	ovelha	animais
+купол	noun	cúpula	cidade
+эм	noun	hum	x
+голосовать	verb	votar	politica
+рыбка	noun	peixinho	animais
+зубной	adjective	dental	saude
+фестиваль	noun	festival	cultura
+наделать	verb	fazer (muito); causar	essencial
+усталость	noun	cansaço	saude
+вздох	noun	suspiro	emocoes
+пытка	noun	tortura	direito
+позже	other	mais tarde	tempo
+неудачник	noun	fracassado	emocoes
+подтверждение	noun	confirmação	essencial
+птичка	noun	passarinho	animais
+капитал	noun	capital	economia
+учение	noun	ensino; doutrina	educacao
+чистить	verb	limpar; escovar	casa
+сельский	adjective	rural	cidade
+злобный	adjective	maldoso	emocoes
+привычный	adjective	habitual	essencial
+кушать	verb	comer	comida
+мелодия	noun	melodia	cultura
+трон	noun	trono	historia
+совпадать	verb	coincidir	essencial
+пропуск	noun	crachá; passe; falta	trabalho
+простыня	noun	lençol	casa
+применять	verb	aplicar; usar	essencial
+ордер	noun	mandado	direito
+свадебный	adjective	nupcial	familia
+квадратный	adjective	quadrado	quantidade
+трасса	noun	estrada; pista	viagem
+вытереть	verb	enxugar	casa
+непонятно	other	incompreensível	linguagem
+рослый	adjective	alto; corpulento	aparencia
+грандиозный	adjective	grandioso	essencial
+стан	noun	acampamento; estatura	x
+чрезвычайный	adjective	extraordinário; de emergência	essencial
+чин	noun	patente; posto	guerra
+трудовой	adjective	de trabalho; trabalhista	trabalho
+предъявить	verb	apresentar (documento)	direito
+семя	noun	semente	animais
+ближний	adjective	próximo	essencial
+развести	verb	diluir; criar; divorciar; acender (fogo)	essencial
+рубить	verb	cortar (com machado)	essencial
+посещение	noun	visita	essencial
+сдача	noun	troco; entrega; rendição	compras
+подъехать	verb	aproximar-se (de veículo)	viagem
+депутат	noun	deputado	politica
+грубо	other	grosseiramente	emocoes
+опера	noun	ópera	cultura
+орех	noun	noz	comida
+атомный	adjective	atômico	ciencia
+подчиняться	verb	obedecer; submeter-se	essencial
+объём	noun	volume	quantidade
+колодец	noun	poço	cidade
+танцор	noun	dançarino	cultura
+поблизости	other	nas proximidades	essencial
+секретарша	noun	secretária	trabalho
+корейский	adjective	coreano	linguagem
+колбаса	noun	linguiça; salame	comida
+Польша	noun	Polônia	x
+хаос	noun	caos	essencial
+повесть	noun	novela (gênero literário)	cultura
+константин	noun	Konstantin	x
+познакомить	verb	apresentar (alguém)	sociedade
+уточнить	verb	precisar; esclarecer	essencial
+торопливый	adjective	apressado	tempo
+смог	noun	smog; névoa poluída	natureza
+снизу	other	de baixo	essencial
+заглядывать	verb	espiar; passar por	essencial
+шагать	verb	caminhar a passos	essencial
+беременность	noun	gravidez	saude,familia
+избегать	verb	evitar	essencial
+сочинение	noun	redação; composição	educacao,cultura
+починить	verb	consertar	casa
+паренёк	noun	rapazinho	familia
+бормотать	verb	resmungar	linguagem
+царство	noun	reino	historia
+криминальный	adjective	criminal	direito
+подсказать	verb	sugerir; soprar (a resposta)	educacao
+утонуть	verb	afogar-se; afundar	natureza
+мужество	noun	coragem	emocoes
+заметно	other	visivelmente	essencial
+возить	verb	transportar (de veículo)	viagem
+идеал	noun	ideal	linguagem
+изучение	noun	estudo	ciencia,educacao
+изнутри	other	por dentro	essencial
+рваться	verb	rasgar-se; ansiar	essencial
+коммунистический	adjective	comunista	politica,historia
+дарить	verb	presentear	familia
+ди	other	(sílaba)	x
+критический	adjective	crítico	essencial
+пират	noun	pirata	historia
+осколок	noun	estilhaço; caco	guerra
+прокуратура	noun	promotoria; Ministério Público	direito
+авторитет	noun	autoridade; prestígio	sociedade
+копейка	noun	copeque	economia
+аж	other	até; tanto que	essencial
+отомстить	verb	vingar-se	emocoes
+посметь	verb	ousar	essencial
+гром	noun	trovão	natureza
+видение	noun	visão	religiao
+пожениться	verb	casar-se (o casal)	familia
+грохот	noun	estrondo	essencial
+издание	noun	edição; publicação	midia,cultura
+верность	noun	fidelidade	familia,emocoes
+каникулы	noun	férias (escolares)	educacao
+рубеж	noun	fronteira; marco	politica
+гей	noun	gay	sociedade
+разрушение	noun	destruição	guerra
+десятилетие	noun	década	tempo
+прозрачный	adjective	transparente	essencial
+тротуар	noun	calçada	cidade
+су	other	soldo (moeda)	x
+японец	noun	japonês	x
+зависть	noun	inveja	emocoes
+рация	noun	rádio comunicador	tecnologia
+кучка	noun	montinho	quantidade
+салат	noun	salada; alface	comida
+творчество	noun	criação; obra criativa	cultura
+оболочка	noun	invólucro; membrana	ciencia
+мощность	noun	potência	tecnologia,ciencia
+дуть	verb	soprar	natureza
+попадаться	verb	ser pego; aparecer	essencial
+сантиметр	noun	centímetro	quantidade
+обширный	adjective	extenso; vasto	quantidade
+покойный	adjective	falecido; tranquilo	religiao
+разряд	noun	categoria; descarga	essencial
+столетие	noun	século; centenário	tempo,historia
+инициатива	noun	iniciativa	trabalho
+стая	noun	bando; matilha	animais
+темп	noun	ritmo; andamento	essencial
+нехороший	adjective	ruim	essencial
+премьера	noun	estreia	cultura
+молочный	adjective	lácteo; de leite	comida
+убеждение	noun	convicção	linguagem
+хранение	noun	armazenamento; guarda	essencial
+милиционер	noun	policial (miliciano)	direito
+гот	noun	godo; gótico	x
+греть	verb	aquecer	casa
+перелом	noun	fratura; reviravolta	saude
+диплом	noun	diploma	educacao
+адмирал	noun	almirante	guerra
+сложность	noun	complexidade; dificuldade	essencial
+двигать	verb	mover	essencial
+махнуть	verb	acenar; ir (de repente)	essencial
+умение	noun	habilidade	trabalho
+графа	noun	coluna (de formulário)	x
+любовница	noun	amante	familia
+парнишка	noun	rapazinho	familia
+заводить	verb	ligar (motor); adquirir; iniciar	essencial
+бессмертный	adjective	imortal	religiao
+разработка	noun	desenvolvimento; exploração	tecnologia
+частица	noun	partícula	ciencia,linguagem
+ограбление	noun	assalto; roubo	direito
+наткнуться	verb	esbarrar; deparar-se	essencial
+закуска	noun	petisco; entrada	comida
+иллюзия	noun	ilusão	linguagem
+свидетельствовать	verb	testemunhar; atestar	direito
+прибытие	noun	chegada	viagem
+натворить	verb	aprontar	essencial
+поворачивать	verb	virar	viagem
+вытаскивать	verb	tirar; puxar	essencial
+набирать	verb	discar; reunir; recrutar	essencial
+партийный	adjective	partidário	politica
+фбр	noun	FBI	x
+серебро	noun	prata	economia
+восхитительный	adjective	encantador; delicioso	emocoes
+значительно	other	consideravelmente	quantidade
+перехватить	verb	interceptar	essencial
+регион	noun	região	politica
+рекламный	adjective	publicitário	midia
+проглотить	verb	engolir	comida
+подъезд	noun	entrada (de prédio)	casa
+тыл	noun	retaguarda	guerra
+измена	noun	traição	familia,guerra
+вешать	verb	pendurar; pesar	essencial
+винить	verb	culpar	emocoes
+неожиданность	noun	imprevisto	essencial
+инвалид	noun	pessoa com deficiência	saude
+э	other	eh	x
+приказывать	verb	ordenar	guerra
+шерсть	noun	lã; pelo	animais,aparencia
+допустимый	adjective	admissível	essencial
+выгода	noun	vantagem; lucro	economia
+каблук	noun	salto (de sapato)	aparencia
+влиять	verb	influenciar	essencial
+порядочный	adjective	decente; honesto	emocoes
+храниться	verb	ser guardado	essencial
+граф	noun	conde; grafo	historia
+опасаться	verb	temer	emocoes
+мораль	noun	moral	sociedade
+занести	verb	trazer; anotar	essencial
+отвалить	verb	cair fora (gíria)	x
+делить	verb	dividir; compartilhar	quantidade
+жестокость	noun	crueldade	emocoes
+действующий	adjective	vigente; em atividade	essencial
+пожить	verb	viver um tempo	essencial
+пересечь	verb	atravessar	viagem
+открыто	other	abertamente	essencial
+подлинный	adjective	autêntico	essencial
+диагноз	noun	diagnóstico	saude
+коробок	noun	caixinha (de fósforos)	casa
+зерно	noun	grão	animais,comida
+блестеть	verb	brilhar	essencial
+завязать	verb	amarrar; largar (vício)	essencial
+проводник	noun	guia; condutor; cobrador de trem	viagem
+фу	other	eca	x
+предательство	noun	traição	guerra
+контейнер	noun	contêiner	economia
+активность	noun	atividade	essencial
+побить	verb	bater; quebrar (recorde)	essencial
+добавлять	verb	acrescentar	essencial
+папаша	noun	papai; velho	familia
+материя	noun	matéria; tecido	ciencia
+анекдот	noun	piada; anedota	cultura
+напрасно	other	em vão	essencial
+оплатить	verb	pagar	economia
+кодекс	noun	código (legal)	direito
+шинель	noun	capote militar	guerra
+заметный	adjective	notável; perceptível	essencial
+коза	noun	cabra	animais
+видимость	noun	visibilidade; aparência	essencial
+послание	noun	mensagem; epístola	midia
+страховка	noun	seguro	economia
+трудиться	verb	trabalhar arduamente	trabalho
+повториться	verb	repetir-se	essencial
+сдохнуть	verb	bater as botas	x
+представляться	verb	apresentar-se; parecer	essencial
+бригадир	noun	chefe de equipe	trabalho
+осмотр	noun	exame; vistoria	saude
+сайт	noun	site	tecnologia
+съезд	noun	congresso	politica
+ми	other	mi (nota)	x
+стратегия	noun	estratégia	guerra,economia
+придавать	verb	conferir; atribuir	essencial
+свободно	other	livremente; fluentemente	essencial
+наполнить	verb	encher	essencial
+фактор	noun	fator	ciencia
+прошедший	adjective	passado	tempo
+коллектив	noun	equipe; coletivo	trabalho
+обыск	noun	revista; busca policial	direito
+правительственный	adjective	governamental	politica
+подержать	verb	segurar um pouco	essencial
+захват	noun	tomada; captura	guerra
+запрет	noun	proibição	direito
+сталкиваться	verb	colidir; deparar-se	essencial
+громадный	adjective	enorme	quantidade
+ползти	verb	rastejar	essencial
+чайник	noun	chaleira; bule	comida,casa
+дверца	noun	portinha	casa
+растить	verb	criar; cultivar	familia
+таять	verb	derreter	natureza
+наследство	noun	herança	familia,direito
+кличка	noun	apelido (de animal)	animais
+сидя	other	sentado	essencial
+достичь	verb	alcançar	essencial
+кгб	noun	KGB	x
+безнадёжный	adjective	sem esperança	emocoes
+си	noun	si (nota)	x
+увеличение	noun	aumento	quantidade
+сеанс	noun	sessão	cultura
+болван	noun	imbecil	emocoes
+предпринять	verb	empreender; tomar (medidas)	essencial
+запрос	noun	solicitação; consulta	essencial
+трясти	verb	sacudir	essencial
+ирония	noun	ironia	linguagem
+скот	noun	gado	animais
+ёлка	noun	árvore de Natal; abeto	animais,religiao
+сериал	noun	série (de TV)	midia
+справедливо	other	com justiça	direito
+нынче	other	hoje em dia	tempo
+прах	noun	cinzas; pó	religiao
+целиком	other	inteiramente	quantidade
+соображать	verb	raciocinar; sacar	linguagem
+образоваться	verb	formar-se	essencial
+гадость	noun	nojeira; maldade	emocoes
+перец	noun	pimenta; pimentão	comida
+продукция	noun	produção; produtos	economia
+доставлять	verb	entregar; proporcionar	compras
+потенциальный	adjective	potencial	essencial
+головка	noun	cabecinha; cabeça (de alho)	essencial
+мертвец	noun	morto	religiao
+кошелёк	noun	carteira; porta-moedas	economia
+отравить	verb	envenenar	direito
+природный	adjective	natural	natureza
+оправдать	verb	justificar; absolver	direito
+наложить	verb	impor; aplicar	essencial
+поначалу	other	no começo	tempo
+оттого	other	por isso	essencial
+студенческий	adjective	estudantil	educacao
+изобразить	verb	retratar	cultura
+беспорядок	noun	bagunça; desordem	casa
+командировка	noun	viagem a trabalho	trabalho,viagem
+широко	other	amplamente	essencial
+практик	noun	praticante	x
+пароль	noun	senha	tecnologia
+аудитория	noun	sala de aula; público	educacao
+незаметно	other	despercebidamente	essencial
+выразиться	verb	expressar-se	linguagem
+экскурсия	noun	excursão; passeio guiado	viagem
+ныть	verb	choramingar; doer	emocoes
+наслаждение	noun	deleite	emocoes
+замёрзнуть	verb	congelar; ficar com frio	natureza
+шоу	noun	show	cultura
+кора	noun	casca; córtex	animais
+ручей	noun	riacho	natureza
+галерея	noun	galeria	cultura
+препятствие	noun	obstáculo	essencial
+грамм	noun	grama (peso)	quantidade
+подвиг	noun	façanha; proeza	historia
+хорошенько	other	direitinho	essencial
+мсьё	noun	monsieur	x
+общественность	noun	opinião pública; sociedade	sociedade
+калифорний	noun	califórnio	x
+присаживаться	verb	sentar-se	essencial
+таскать	verb	arrastar; carregar	essencial
+окончить	verb	concluir; formar-se	educacao
+изба	noun	isbá (casa de madeira)	casa,historia
+немедленный	adjective	imediato	tempo
+табак	noun	tabaco	saude
+нарочно	other	de propósito	essencial
+мягко	other	suavemente	essencial
+браслет	noun	pulseira	aparencia
+рака	noun	relicário	x
+котёнок	noun	gatinho	animais
+ссылка	noun	link; referência; exílio	tecnologia,historia
+будить	verb	acordar (alguém)	casa
+объявлять	verb	anunciar	midia
+засада	noun	emboscada	guerra
+любопытно	other	curioso	emocoes
+трястись	verb	tremer	emocoes
+выдумать	verb	inventar	essencial
+помочь	noun	ajuda (arcaico)	x
+максимум	noun	máximo	quantidade
+божественный	adjective	divino	religiao
+закрой	noun	corte (de roupa)	x
+обеспечение	noun	fornecimento; garantia	essencial
+развернуться	verb	virar-se; desdobrar-se	essencial
+автомобильный	adjective	automobilístico	viagem
+замысел	noun	plano; ideia	essencial
+начальный	adjective	inicial	educacao
+самостоятельно	other	por conta própria	essencial
+развернуть	verb	desdobrar; virar	essencial
+известно	other	sabe-se	essencial
+наследник	noun	herdeiro	familia,direito
+продаваться	verb	vender-se; estar à venda	compras
+похищение	noun	sequestro	direito
+осуждать	verb	condenar; censurar	direito
+завершить	verb	concluir	tempo
+независимость	noun	independência	politica
+расходиться	verb	dispersar-se; divergir	essencial
+чердак	noun	sótão	casa
+библия	noun	Bíblia	religiao
+психиатр	noun	psiquiatra	saude
+окружающее	noun	o que nos rodeia	x
+фашист	noun	fascista	politica,historia
+печенье	noun	biscoito	comida
+испуганный	adjective	assustado	emocoes
+набитый	adjective	abarrotado	essencial
+бедняга	noun	coitado	emocoes
+поручение	noun	incumbência; recado	trabalho
+бизнесмен	noun	empresário	economia
+отражение	noun	reflexo	ciencia
+меря	noun	(forma de мерить)	x
+гладкий	adjective	liso	essencial
+травка	noun	graminha; maconha	x
+укол	noun	injeção; picada	saude
+профиль	noun	perfil	essencial
+зовут	other	chama-se (меня зовут)	essencial
+жрать	verb	comer (vulgar)	x
+мышка	noun	ratinho; mouse	animais
+рюмка	noun	cálice; dose	comida
+отечественный	adjective	nacional; pátrio	politica
+заинтересовать	verb	interessar	emocoes
+выложить	verb	dispor; despejar	essencial
+ссориться	verb	brigar	familia
+распространяться	verb	espalhar-se	essencial
+правитель	noun	governante	politica,historia
+гаснуть	verb	apagar-se	essencial
+бревно	noun	tora; tronco	casa
+заметка	noun	nota; artigo curto	midia
+статуя	noun	estátua	cultura
+кран	noun	torneira; guindaste	casa
+тайга	noun	taiga	natureza
+счастливо	other	felizmente; boa sorte	emocoes
+пресс	noun	prensa; abdominais	tecnologia
+мгновенно	other	instantaneamente	tempo
+клятва	noun	juramento	direito
+сытый	adjective	saciado	comida
+дева	noun	donzela; Virgem	religiao
+кода	noun	coda	x
+разделять	verb	dividir; compartilhar	essencial
+подобно	other	à semelhança de	essencial
+скотина	noun	animal; bruto	x
+копьё	noun	lança	historia,guerra
+жук	noun	besouro	animais
+сообщество	noun	comunidade	sociedade
+по-моему	other	na minha opinião	linguagem
+стадия	noun	estágio; fase	essencial
+поторопиться	verb	apressar-se	tempo
+диета	noun	dieta	saude,comida
+кредит	noun	crédito	economia
+соперник	noun	rival	esporte
+красавец	noun	homem bonito	aparencia
+мари	noun	Mari (povo)	x
+вероятный	adjective	provável	essencial
+стресс	noun	estresse	saude
+копать	verb	cavar	essencial
+соус	noun	molho	comida
+знать	noun	nobreza	historia
+обморок	noun	desmaio	saude
+облик	noun	aspecto; aparência	aparencia
+кара	noun	castigo	direito
+эль	noun	cerveja ale	x
+наполовину	other	pela metade	quantidade
+крохотный	adjective	minúsculo	quantidade
+жаждать	verb	ansiar	emocoes
+навык	noun	habilidade	educacao
+прошлое	noun	passado	tempo,historia
+прима	noun	prima-dona; tônica	x
+описывать	verb	descrever	linguagem
+парламент	noun	parlamento	politica
+трещина	noun	rachadura	essencial
+питаться	verb	alimentar-se	comida
+бесполезно	other	inútil	essencial
+догадка	noun	suposição; palpite	linguagem
+официантка	noun	garçonete	comida
+чересчур	other	excessivamente	quantidade
+обычай	noun	costume	sociedade,cultura
+ассоциация	noun	associação	sociedade
+прекратиться	verb	cessar	essencial
+пруд	noun	lagoa; açude	natureza
+тормоз	noun	freio	viagem
+отключить	verb	desligar; desconectar	tecnologia
+композитор	noun	compositor	cultura
+чемпионат	noun	campeonato	esporte
+проклятье	other	maldição	religiao
+школьник	noun	estudante (escolar)	educacao
+задыхаться	verb	sufocar; ofegar	saude
+торжественный	adjective	solene	sociedade
+впустить	verb	deixar entrar	essencial
+пульт	noun	controle remoto; painel	tecnologia
+дружеский	adjective	amigável	familia
+тощий	adjective	magricela	aparencia
+урожай	noun	colheita	animais,economia
+решительно	other	decididamente	essencial
+ленинградский	adjective	de Leningrado	x
+молоток	noun	martelo	tecnologia
+биография	noun	biografia	cultura,historia
+пристрелить	verb	matar com um tiro	direito
+плюнуть	verb	cuspir	essencial
+вылезть	verb	sair (rastejando)	x
+чувствительный	adjective	sensível	emocoes
+жевать	verb	mastigar	comida
+обеспечивать	verb	garantir; fornecer	essencial
+граната	noun	granada	guerra
+успешно	other	com sucesso	essencial
+Австралия	noun	Austrália	x
+разочарование	noun	decepção	emocoes
+ограниченный	adjective	limitado	essencial
+твёрдо	other	firmemente	essencial
+заказывать	verb	encomendar; pedir	compras
+подослать	verb	enviar às escondidas	essencial
+неизбежный	adjective	inevitável	essencial
+пепел	noun	cinza	natureza
+учебник	noun	livro didático	educacao
+чудесно	other	maravilhosamente	essencial
+сорт	noun	tipo; variedade	essencial
+блондинка	noun	loira	aparencia
+будка	noun	cabine; casinha de cachorro	cidade
+соединение	noun	conexão; união; composto	ciencia
+особняк	noun	mansão	casa
+миро	noun	crisma (óleo)	x
+седло	noun	sela	animais
+обслуживание	noun	atendimento; manutenção	compras
+равновесие	noun	equilíbrio	ciencia
+решительный	adjective	decidido	emocoes
+восхищаться	verb	admirar	emocoes
+переносить	verb	transferir; suportar; adiar	essencial
+скука	noun	tédio	emocoes
+связываться	verb	entrar em contato; envolver-se	midia
+отныне	other	de agora em diante	tempo
+приз	noun	prêmio	esporte
+корона	noun	coroa	historia
+столикий	adjective	de cem faces	x
+катер	noun	lancha	viagem
+коляска	noun	carrinho de bebê; carruagem	familia
+откровенно	other	francamente	emocoes
+подбросить	verb	jogar para cima; dar carona	viagem
+господа	other	senhores	sociedade
+шина	noun	pneu; tala	viagem
+м	other	m	x
+химия	noun	química	ciencia
+бумажник	noun	carteira (de dinheiro)	economia
+напечатать	verb	imprimir; digitar	midia
+лужа	noun	poça	natureza
+входной	adjective	de entrada	essencial
+училище	noun	escola técnica	educacao
+отослать	verb	despachar; mandar de volta	essencial
+смотреться	verb	olhar-se; ter aparência	aparencia
+обложка	noun	capa	cultura
+нисколько	other	nem um pouco	essencial
+просмотреть	verb	examinar; deixar passar	essencial
+болезненный	adjective	doloroso; doentio	saude
+неведомый	adjective	desconhecido	essencial
+потерянный	adjective	perdido	essencial
+заряд	noun	carga	ciencia
+треть	noun	um terço	quantidade
+стоя	other	de pé	essencial
+штраф	noun	multa	direito
+ручной	adjective	manual; domesticado	essencial
+поживать	verb	passar; ir (как поживаете)	essencial
+обнимать	verb	abraçar	familia
+бродяга	noun	vagabundo	sociedade
+ограбить	verb	roubar; assaltar	direito
+нить	noun	fio; linha	aparencia
+роса	noun	orvalho	natureza
+свитер	noun	suéter	aparencia
+перезвонить	verb	ligar de volta	midia
+закрыться	verb	fechar-se	essencial
+парад	noun	desfile; parada	guerra,esporte
+репетиция	noun	ensaio	cultura
+конгресс	noun	congresso	politica
+укусить	verb	morder; picar	animais
+взамен	other	em troca	essencial
+окружать	verb	cercar; rodear	essencial
+мусорный	adjective	de lixo	casa
+майя	noun	maia	x
+проводиться	verb	ser realizado	essencial
+гарантировать	verb	garantir	essencial
+строительный	adjective	de construção	cidade
+малость	noun	um pouquinho	x
+единица	noun	unidade; nota um	quantidade
+коктейль	noun	coquetel	comida
+близость	noun	proximidade; intimidade	familia
+аренда	noun	aluguel; arrendamento	casa,economia
+успокаивать	verb	acalmar	emocoes
+сломаться	verb	quebrar-se	essencial
+свойство	noun	propriedade; característica	ciencia
+жилец	noun	inquilino; morador	casa
+ненужный	adjective	desnecessário	essencial
+одинаково	other	igualmente	essencial
+задеть	verb	esbarrar; ferir (sentimentos)	emocoes
+удивлять	verb	surpreender	emocoes
+бутерброд	noun	sanduíche	comida
+употреблять	verb	usar; consumir	essencial
+стукнуть	verb	bater	essencial
+потрясти	verb	chocar; sacudir	emocoes
+переодеться	verb	trocar de roupa	aparencia
+фантастика	noun	ficção científica; fantasia	cultura
+преданность	noun	devoção; lealdade	emocoes
+ветвь	noun	ramo	animais
+подчеркнуть	verb	sublinhar; enfatizar	linguagem
+подонок	noun	canalha	x
+репортёр	noun	repórter	midia
+песенка	noun	cançãozinha	cultura
+кисть	noun	pincel; pulso (mão); cacho	cultura
+наставник	noun	mentor; tutor	educacao
+группировка	noun	agrupamento; facção	guerra
+отчаянно	other	desesperadamente	emocoes
+исполниться	verb	completar (idade); realizar-se	essencial
+удовлетворение	noun	satisfação	emocoes
+утверждение	noun	afirmação; aprovação	linguagem

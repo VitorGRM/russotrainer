@@ -1,0 +1,164 @@
+{
+  "id": "aparencia1", "theme": "aparencia", "order": 1,
+  "title": "Как вы выглядите?", "title_pt": "Roupa, estilo e aparência",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma compra de roupa numa loja e um aviso de promoção.",
+    "Ler um texto sobre costumes russos de vestimenta (teatro, гардероб, тапочки).",
+    "Descrever pessoas e roupas com с + instrumental, в + preposicional, мал / велик e идти кому.",
+    "Descrever a própria aparência numa mensagem e descrever alguém oralmente."
+  ],
+  "grammar_focus": "с + творительный (с бородой) · в + предложный (в синем платье) · мне мал / велик · тебе идёт",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer as palavras de roupa, tamanho e aparência física.", "steps": [
+      {"t": "warmup", "questions": [
+        "Что вы обычно носите на работу или на учёбу?",
+        "Вы любите ходить по магазинам одежды?",
+        "No seu país, há regras de vestimenta para o teatro, para o trabalho ou para visitar alguém?"
+      ]},
+      {"t": "vocab", "items": [
+        ["примерить", "experimentar (roupa)", "примерочная = provador"],
+        ["размер", "tamanho", "Какой у вас размер? Сорок шестой."],
+        ["тебе идёт", "fica bem em você", "идти кому: Это платье тебе очень идёт."],
+        ["мне велико / мало", "está grande / pequeno para mim", "велик, велика, велико, велики; мал, мала, мало, малы"],
+        ["в клетку / в полоску", "xadrez / listrado", "рубашка в клетку, свитер в полоску"],
+        ["светлые волосы", "cabelo claro", "тёмные, кудрявые, прямые, короткие волосы"],
+        ["носить очки", "usar óculos", "носить = usar habitualmente"],
+        ["одет в", "vestido de", "одет в джинсы (в + винительный)"],
+        ["среднего роста", "de estatura média", "высокого роста = alto"],
+        ["полный", "gordo (forma educada)", "худой = magro"],
+        ["внешность", "aparência física", "по внешности = pela aparência"],
+        ["выглядеть", "parecer, aparentar", "Ты отлично выглядишь!"]
+      ]},
+      {"t": "match", "title": "Relacione cada palavra ao seu contrário.", "pairs": [
+        ["высокий", "низкий"], ["худой", "полный"], ["светлые волосы", "тёмные волосы"],
+        ["прямые волосы", "кудрявые волосы"], ["узкий", "широкий"], ["надеть", "снять"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Эта куртка тебе не идёт.", "o": ["Essa jaqueta não fica bem em você.", "Essa jaqueta não serve para sair.", "Essa jaqueta não é sua.", "Você não vai com essa jaqueta."], "e": "Идти кому = ficar bem em alguém."},
+        {"q": "Брюки мне велики.", "o": ["A calça está grande para mim.", "A calça é comprida e estreita.", "A calça é cara para mim.", "Gosto muito da calça."], "e": "Forma curta велики (plural, como брюки) + dativo."},
+        {"q": "Он похудел и отрастил бороду.", "o": ["Ele emagreceu e deixou a barba crescer.", "Ele engordou e raspou a barba.", "Ele emagreceu e cortou o cabelo.", "Ele cresceu e ficou forte."], "e": "Похудеть = emagrecer; отрастить = deixar crescer."}
+      ]}
+    ]},
+    {"title": "Escuta: na loja de roupas", "goal": "Entender tamanhos, ajustes, cores e preços numa compra.", "steps": [
+      {"t": "dialogue", "title": "Костюм на свадьбу", "setting": "Denis procura um terno numa loja de roupas masculinas. Quem atende é uma vendedora.",
+        "speakers": {"Продавщица": "f2", "Денис": "m"},
+        "lines": [
+          ["Продавщица", "Добрый день! Вам что-нибудь подсказать?", "Boa tarde! Posso ajudar?"],
+          ["Денис", "Да, мне нужен костюм на свадьбу друга. Что-нибудь не слишком строгое.", "Sim, preciso de um terno para o casamento de um amigo. Algo não muito formal."],
+          ["Продавщица", "Какой у вас размер?", "Qual é o seu tamanho?"],
+          ["Денис", "Пятидесятый, рост сто восемьдесят два.", "Cinquenta, altura um metro e oitenta e dois."],
+          ["Продавщица", "Посмотрите вот этот, тёмно-синий. Сейчас это очень модно. Примерочная вон там.", "Veja este, azul-marinho. Está muito na moda. O provador é ali."],
+          ["Денис", "Пиджак хорошо сидит, а брюки, по-моему, длинноваты.", "O paletó caiu bem, mas a calça me parece um pouco comprida."],
+          ["Продавщица", "Брюки мы можем укоротить, это бесплатно и займёт один день. Хотите к нему рубашку? Белая подойдёт к любому галстуку.", "Podemos fazer a barra da calça, é grátis e leva um dia. Quer uma camisa para acompanhar? A branca combina com qualquer gravata."],
+          ["Денис", "Лучше светло-голубую. А галстук не нужен, я хочу без галстука.", "Prefiro azul-clara. E gravata não precisa, quero sem gravata."],
+          ["Продавщица", "Тогда расстегните верхнюю пуговицу, так будет стильнее. Вам очень идёт!", "Então desabotoe o primeiro botão, fica mais elegante. Ficou muito bem no senhor!"],
+          ["Денис", "Спасибо. Сколько всё вместе?", "Obrigado. Quanto fica tudo junto?"],
+          ["Продавщица", "Костюм двадцать четыре тысячи, рубашка четыре. Сегодня скидка десять процентов на всё.", "O terno é vinte e quatro mil, a camisa quatro. Hoje há dez por cento de desconto em tudo."]
+        ],
+        "questions": [
+          {"q": "Para que Denis precisa do terno?", "o": ["Para o casamento de um amigo.", "Para uma entrevista de emprego.", "Para o próprio casamento.", "Para uma reunião de trabalho."], "e": "«Костюм на свадьбу друга»: на + acusativo indica finalidade."},
+          {"q": "Qual é o problema da calça?", "o": ["Está um pouco comprida.", "Está apertada.", "Está curta.", "É de outra cor."], "e": "«Брюки, по-моему, длинноваты»: o sufixo -оват- = um pouco."},
+          {"q": "Que camisa ele escolhe?", "o": ["Azul-clara.", "Branca.", "Listrada.", "Xadrez."], "e": "«Лучше светло-голубую»."},
+          {"q": "Quanto ele paga com o desconto?", "o": ["25 200 rublos.", "28 000 rublos.", "24 000 rublos.", "22 400 rublos."], "e": "24 000 + 4 000 = 28 000; menos 10% = 25 200."}
+        ]},
+      {"t": "dictation", "voice": "f2", "text": "Брюки мы можем укоротить, это займёт один день.", "pt": "Podemos fazer a barra da calça, isso leva um dia.", "hint": "Frase da vendedora sobre o ajuste (8 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["Мне нужен костюм на свадьбу друга.", "Preciso de um terno para o casamento de um amigo."],
+        ["Пиджак хорошо сидит.", "O paletó caiu bem."],
+        ["Брюки, по-моему, длинноваты.", "A calça me parece um pouco comprida."],
+        ["Сколько всё вместе?", "Quanto fica tudo junto?"]
+      ]}
+    ]},
+    {"title": "Leitura: costumes de vestimenta na Rússia", "goal": "Ler um texto cultural e reconhecer costumes e regras implícitas.", "steps": [
+      {"t": "reading", "title": "Как одеваются в России",
+        "text": "Иностранцы, которые впервые приезжают в Россию, часто удивляются: многие русские одеваются довольно нарядно даже для похода в магазин. Женщины нередко носят каблуки, а мужчины в офисе по-прежнему выбирают костюм, хотя деловой стиль постепенно становится свободнее.\n\nВ театре особенно заметны традиции. Раньше в театр было принято приходить в вечернем платье или в костюме, а верхнюю одежду обязательно оставлять в гардеробе. Гардероб и сегодня есть в каждом театре, музее и даже в университете: ходить по зданию в пальто считается невежливым.\n\nЗимой главное правило простое: одеваться тепло, но в несколько слоёв, потому что в метро и в помещениях жарко. А заходя в чужую квартиру, принято снимать обувь: хозяева обычно предлагают гостям тапочки.",
+        "pt": "Os estrangeiros que chegam pela primeira vez à Rússia costumam se surpreender: muitos russos se vestem com bastante esmero até para ir à loja. As mulheres frequentemente usam salto, e os homens, no escritório, continuam escolhendo terno, embora o estilo de trabalho esteja ficando mais livre aos poucos.\n\nNo teatro, as tradições são especialmente visíveis. Antigamente era costume ir ao teatro de vestido de noite ou de terno e deixar sempre os agasalhos na chapelaria. A chapelaria existe até hoje em todo teatro, museu e até na universidade: andar pelo prédio de casaco é considerado falta de educação.\n\nNo inverno, a regra principal é simples: vestir-se bem, mas em camadas, porque no metrô e nos ambientes fechados faz calor. E, ao entrar na casa de alguém, é costume tirar os sapatos: os anfitriões costumam oferecer chinelos aos convidados.",
+        "tf": [
+          ["Muitos russos se vestem com esmero mesmo para ir à loja.", "V", "«Одеваются довольно нарядно даже для похода в магазин»."],
+          ["No escritório, os homens russos já não usam terno.", "F", "«По-прежнему выбирают костюм»."],
+          ["É descortês andar de casaco dentro de um teatro ou museu.", "V", "«Ходить по зданию в пальто считается невежливым»."],
+          ["Os anfitriões costumam oferecer chinelos às visitas.", "V", "«Хозяева обычно предлагают гостям тапочки»."],
+          ["Os teatros russos multam quem não usa roupa formal.", "N", "O texto fala de costume, não de multa."]
+        ],
+        "questions": [
+          {"q": "Зачем зимой одеваться в несколько слоёв?", "o": ["Потому что в метро и в помещениях жарко.", "Потому что это модно.", "Потому что в гардеробе холодно.", "Потому что так дешевле."], "e": "«Потому что в метро и в помещениях жарко»."},
+          {"q": "Что принято делать, заходя в чужую квартиру?", "o": ["Снимать обувь.", "Надевать костюм.", "Оставлять пальто в гардеробе.", "Приносить свои тапочки."], "e": "Заходя (gerúndio) = ao entrar."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta em cada lacuna.",
+        "text": "В театре верхнюю одежду оставляют {в гардеробе|на гардероб|в гардеробу}. Ходить по музею {в пальто|в пальте|на пальто} невежливо. Зимой одеваются {в несколько слоёв|в нескольких слоях|несколько слоя}. В гостях хозяева предлагают {гостям|гостей|гостями} тапочки.",
+        "pt": "No teatro, os agasalhos ficam na chapelaria. Andar pelo museu de casaco é falta de educação. No inverno, as pessoas se vestem em camadas. Na casa dos outros, os anfitriões oferecem chinelos às visitas.",
+        "e": "Пальто não declina; одеваться в несколько слоёв (acusativo); предлагать кому? (dativo)."}
+    ]},
+    {"title": "Foco na forma: descrever pessoas e roupas", "goal": "Usar с + instrumental, в + preposicional, as formas curtas мал / велик e идти кому.", "steps": [
+      {"t": "grammar", "title": "Como descrever alguém",
+        "paragraphs": [
+          "Traços físicos: с + instrumental: девушка с длинными волосами, мужчина с бородой, человек с голубыми глазами. Numa frase completa, também se diz: У неё длинные волосы.",
+          "O que a pessoa veste: в + preposicional: женщина в красном платье, он был в очках, в джинсах. Com одет, usa-se в + acusativo: Он одет в чёрный костюм.",
+          "Tamanho que não serve: forma curta + dativo: Платье мне мало. Брюки мне малы. Куртка тебе велика. A forma curta concorda com a roupa: мал, мала, мало, малы.",
+          "Ficar bem: идти кому: Тебе идёт этот цвет. Тебе идут очки. Combinar com algo: подходить к + dativo: Рубашка подходит к галстуку."
+        ],
+        "table": {"columns": ["Função", "Estrutura", "Exemplo"], "rows": [
+          ["traço físico", "с + instrumental", "человек с короткими волосами"],
+          ["roupa", "в + preposicional", "девочка в жёлтой куртке"],
+          ["tamanho", "кому + мал / велик", "Ботинки мне малы."],
+          ["ficar bem", "кому + идёт / идут", "Тебе идут очки."],
+          ["combinar", "подходить к + dativo", "Сумка подходит к туфлям."]
+        ]},
+        "examples": [
+          ["Мужчина в сером пальто и с зонтом стоял у входа.", "Um homem de casaco cinza e com um guarda-chuva estava na entrada."],
+          ["У неё кудрявые рыжие волосы.", "Ela tem cabelo ruivo cacheado."],
+          ["Эти ботинки мне малы, дайте на размер больше.", "Estas botas estão pequenas, me dê um número maior."]
+        ],
+        "pitfalls": [
+          "«Платье мне маленькое» descreve o vestido; para dizer que não serve, use a forma curta: «Платье мне мало».",
+          "Идти concorda com a roupa: «Тебе идут эти брюки» (plural).",
+          "Пальто, кафе e метро não declinam: в пальто, в кафе, в метро. E «надеть рубашку», não «одеть рубашку» (одеть é vestir outra pessoa)."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Кто эта девушка ___?", "o": ["с рыжими волосами", "в рыжих волосах", "рыжими волосами", "с рыжие волосы"], "e": "Traço físico: с + instrumental plural."},
+        {"q": "Вчера на вечеринке он был ___.", "o": ["в белой рубашке", "с белой рубашкой", "в белую рубашку", "белой рубашкой"], "e": "Roupa vestida: в + preposicional. «С белой рубашкой» = levando uma camisa na mão."},
+        {"q": "Эти туфли мне ___, дайте, пожалуйста, на размер больше.", "o": ["малы", "мал", "маленькие", "мало"], "e": "Forma curta plural concordando com туфли."},
+        {"q": "Тебе очень ___ этот зелёный свитер!", "o": ["идёт", "идут", "подходит к", "выглядит"], "e": "Свитер é singular: идёт."},
+        {"q": "Эта сумка не подходит ___.", "o": ["к моему пальто", "с моим пальто", "на моё пальто", "моего пальто"], "e": "Combinar com: подходить к + dativo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Мне это платье маленькое.", "o": ["Мне это платье мало.", "Мне это платье малое.", "Мне этому платью мало."], "e": "Para «não serve», use a forma curta: мало."},
+        {"q": "Мужчина в бороде сидит у окна.", "o": ["Мужчина с бородой сидит у окна.", "Мужчина с борода сидит у окна.", "Мужчина на бороде сидит у окна."], "e": "Traço físico: с + instrumental."},
+        {"q": "Эти джинсы тебе очень идёт.", "o": ["Эти джинсы тебе очень идут.", "Эти джинсы тебя очень идут.", "Эти джинсы ты очень идёшь."], "e": "Джинсы é plural: идут."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Он высокого роста и носит очки", "pt": "Ele é alto e usa óculos."},
+        {"a": "Мне нужна рубашка на размер больше", "pt": "Preciso de uma camisa um número maior."},
+        {"a": "Тебе очень идёт этот цвет", "pt": "Essa cor fica muito bem em você."}
+      ]}
+    ]},
+    {"title": "Uso real: aviso, situações e produção", "goal": "Entender um aviso de shopping, comprar roupa e descrever pessoas.", "steps": [
+      {"t": "listening", "kind": "Объявление в торговом центре", "title": "Скидки дня", "voice": "f",
+        "text": "Уважаемые покупатели! Только сегодня во всех магазинах второго этажа действуют скидки до пятидесяти процентов на зимнюю одежду и обувь. В магазине «Метелица» при покупке двух вещей третья в подарок. Напоминаем, что примерочные работают до двадцати одного часа, а торговый центр закрывается в двадцать два часа. Детская комната находится на третьем этаже, рядом с фуд-кортом.",
+        "pt": "Prezados clientes! Só hoje, em todas as lojas do segundo andar, há descontos de até cinquenta por cento em roupas e calçados de inverno. Na loja Metélitsa, na compra de duas peças, a terceira sai de graça. Lembramos que os provadores funcionam até as 21 horas e o shopping fecha às 22 horas. O espaço infantil fica no terceiro andar, ao lado da praça de alimentação.",
+        "questions": [
+          {"q": "Em que há descontos de até 50%?", "o": ["Em roupas e calçados de inverno, no 2º andar.", "Em todos os produtos do shopping.", "Em roupas infantis, no 3º andar.", "Em roupas de verão."], "e": "«На зимнюю одежду и обувь … второго этажа»."},
+          {"q": "Que promoção há na loja Metélitsa?", "o": ["Comprando duas peças, a terceira é grátis.", "50% em todas as peças.", "Um presente para as crianças.", "Ajustes grátis."], "e": "«При покупке двух вещей третья в подарок»."},
+          {"q": "Até que horas funcionam os provadores?", "o": ["Até as 21h.", "Até as 22h.", "Até as 20h.", "Até o shopping fechar."], "e": "Os provadores até as 21h; o shopping fecha às 22h."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você quer experimentar uma camisa.", "o": ["Можно примерить эту рубашку?", "Можно примериться в эту рубашку?", "Можно одеть рубашку в примерочной?", "Можно попробовать рубашкой?"], "e": "Примерить что? (acusativo)."},
+        {"q": "A calça ficou grande; você pede um número menor.", "o": ["Брюки мне велики. Есть на размер меньше?", "Брюки мне маленькие. Есть больше?", "Брюки мне велико. Есть меньше размер?", "Брюки большие для мой."], "e": "Велики concorda com брюки; на размер меньше = um número menor."},
+        {"q": "Você elogia a roupa de uma amiga.", "o": ["Тебе очень идёт это платье!", "Ты очень идёшь в этом платье!", "Это платье тебя очень идёт!", "Это платье подходит к тебе!"], "e": "Идти кому (dativo): тебе идёт."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 50,
+        "task": "Uma pessoa que não conhece você vai buscá-lo(a) no aeroporto. Escreva uma mensagem de 50 a 80 palavras descrevendo a sua aparência e o que vai vestir.",
+        "useful": ["Меня легко узнать: …", "я высокого / среднего роста", "у меня … волосы", "я ношу очки", "я буду в …", "со мной будет …"],
+        "model": "Здравствуйте, Ирина! Спасибо, что встретите меня. Меня легко узнать: я высокого роста, у меня короткие тёмные волосы и борода, я ношу очки в чёрной оправе. Я буду в светлых джинсах, в зелёной куртке и с большим красным рюкзаком. Самолёт прилетает в восемнадцать сорок. Буду ждать вас у выхода номер два. До встречи! Педро.",
+        "model_pt": "Olá, Irina! Obrigado por ir me buscar. É fácil me reconhecer: sou alto, tenho cabelo curto escuro e barba, e uso óculos de armação preta. Vou estar de jeans claro, jaqueta verde e com uma mochila vermelha grande. O avião chega às 18h40. Espero você na saída número dois. Até logo! Pedro.",
+        "checklist": ["Usei в + preposicional para a roupa (в зелёной куртке).", "Descrevi traços com у меня … ou с + instrumental.", "Usei o futuro (я буду в …).", "Indiquei um detalhe fácil de reconhecer.", "Escrevi pelo menos 50 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Descreva em voz alta, durante um minuto, uma pessoa famosa sem dizer o nome: aparência, roupa típica e estilo. No fim, revele quem é.",
+        "useful": ["Это мужчина / женщина …", "с … волосами", "обычно он(а) носит …", "его / её стиль …", "Конечно, это …"],
+        "model": "Это мужчина, невысокого роста, с короткими тёмными волосами и в круглых очках. Обычно он носил простую чёрную водолазку, синие джинсы и кроссовки. Он почти никогда не выступал в костюме и галстуке. Многие считают его стиль минималистским. Он основал очень известную компанию, которая делает телефоны и компьютеры. Конечно, это Стив Джобс!",
+        "model_pt": "É um homem de estatura baixa, cabelo curto escuro e óculos redondos. Ele costumava usar uma simples blusa preta de gola alta, jeans azul e tênis. Quase nunca se apresentava de terno e gravata. Muitos consideram o estilo dele minimalista. Ele fundou uma empresa muito conhecida que faz celulares e computadores. É claro, é Steve Jobs!",
+        "checklist": ["Usei с + instrumental ou у него / у неё para traços.", "Usei носить ou в + preposicional para a roupa.", "Usei pelo menos três adjetivos de aparência."]}
+    ]}
+  ]
+}

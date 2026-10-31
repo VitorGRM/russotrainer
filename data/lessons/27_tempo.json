@@ -1,0 +1,166 @@
+{
+  "id": "tempo1", "theme": "tempo", "order": 1,
+  "title": "Когда вам удобно?", "title_pt": "Tempo: horários, prazos e rotina",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender a marcação de uma reunião e uma mensagem com horários de funcionamento.",
+    "Ler um texto sobre os onze fusos horários da Rússia.",
+    "Dominar as expressões de tempo: в + acusativo / preposicional, на + preposicional, через, назад, за … до, на + acusativo, по + dativo e as horas (в половине третьего, без пяти три).",
+    "Escrever uma mensagem para marcar ou remarcar um compromisso e descrever oralmente a sua semana."
+  ],
+  "grammar_focus": "в понедельник / в три часа (В. п.) · в мае / в этом году (П. п.) · на этой неделе · через час · час назад · за час до · на неделю · по понедельникам · в половине третьего · без пяти три · к пяти",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer as palavras e locuções de tempo mais frequentes.", "steps": [
+      {"t": "warmup", "questions": [
+        "Вы обычно приходите вовремя или опаздываете?",
+        "Как выглядит ваша обычная неделя?",
+        "Em português, «daqui a uma hora», «há uma hora» e «por uma hora» são muito diferentes. Como você acha que o russo marca essas diferenças?"
+      ]},
+      {"t": "vocab", "items": [
+        ["через час", "daqui a uma hora", "через + acusativo"],
+        ["час назад", "há uma hora", "назад vem depois"],
+        ["за час до", "uma hora antes de", "за час до начала"],
+        ["на неделю", "por uma semana (planejado)", "уехать на неделю"],
+        ["по понедельникам", "às segundas (sempre)", "по + dativo plural"],
+        ["в половине третьего", "às duas e meia", "lit. «na metade da terceira hora»"],
+        ["без пяти три", "cinco para as três", "без + genitivo"],
+        ["в четверть шестого", "às cinco e quinze", "четверть = um quarto"],
+        ["вовремя", "na hora certa", "опоздать на десять минут = atrasar dez minutos"],
+        ["к пятнице", "até sexta (prazo)", "к + dativo"],
+        ["перенести на", "remarcar para", "перенести встречу на четверг"],
+        ["часовой пояс", "fuso horário", "разница во времени"]
+      ]},
+      {"t": "match", "title": "Relacione a expressão ao sentido.", "pairs": [
+        ["через неделю", "daqui a uma semana"], ["неделю назад", "há uma semana"], ["на неделю", "por uma semana (planejado)"],
+        ["за неделю", "em uma semana (prazo de realização)"], ["всю неделю", "a semana toda"], ["к концу недели", "até o fim da semana"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Приходите за десять минут до начала.", "o": ["Cheguem dez minutos antes do início.", "Cheguem dez minutos depois do início.", "Cheguem daqui a dez minutos.", "Fiquem dez minutos depois do fim."], "e": "За + acusativo + до + genitivo = tanto tempo antes de."},
+        {"q": "Встреча в половине пятого.", "o": ["A reunião é às quatro e meia.", "A reunião é às cinco e meia.", "A reunião dura meia hora.", "A reunião é na quinta."], "e": "В половине пятого = na metade da quinta hora = 4h30."},
+        {"q": "Я уезжаю в Казань на три дня.", "o": ["Vou para Kazan por três dias.", "Vou para Kazan daqui a três dias.", "Fui para Kazan há três dias.", "Vou para Kazan em três dias de viagem."], "e": "На + acusativo = duração planejada."}
+      ]}
+    ]},
+    {"title": "Escuta: marcando uma reunião", "goal": "Entender propostas de horário, impedimentos e acordos.", "steps": [
+      {"t": "dialogue", "title": "Давайте созвонимся", "setting": "Elena, de Moscou, e Rodrigo, de Vladivostok, tentam marcar uma videochamada de trabalho.",
+        "speakers": {"Елена": "f", "Родриго": "m"},
+        "lines": [
+          ["Елена", "Родриго, нам нужно обсудить проект на этой неделе. Когда вам удобно?", "Rodrigo, precisamos discutir o projeto nesta semana. Quando é melhor para você?"],
+          ["Родриго", "Давайте в среду. Только не забывайте, что у нас разница во времени семь часов.", "Pode ser na quarta. Só não esqueça que temos sete horas de diferença."],
+          ["Елена", "Точно! Если у меня девять утра, у вас уже четыре дня?", "É verdade! Se aqui são nove da manhã, aí já são quatro da tarde?"],
+          ["Родриго", "Именно. А в шесть вечера я ухожу с работы. Так что по вашему времени лучше до одиннадцати.", "Exatamente. E às seis da tarde eu saio do trabalho. Então, pelo seu horário, melhor antes das onze."],
+          ["Елена", "Тогда в среду в половине десятого по Москве? Это будет полпятого у вас.", "Então quarta às nove e meia, horário de Moscou? Aí vão ser quatro e meia."],
+          ["Родриго", "Подходит. Сколько времени займёт разговор?", "Combinado. Quanto tempo vai durar a conversa?"],
+          ["Елена", "Думаю, минут сорок. Я пришлю презентацию за день до встречи, чтобы вы успели посмотреть.", "Acho que uns quarenta minutos. Vou mandar a apresentação um dia antes da reunião, para você ter tempo de olhar."],
+          ["Родриго", "Отлично. А отчёт нужно сдать к пятнице?", "Ótimo. E o relatório tem que ser entregue até sexta?"],
+          ["Елена", "Да, к пятнице, до конца рабочего дня. И ещё: через две недели я уезжаю в отпуск на десять дней, так что всё важное лучше решить до этого.", "Sim, até sexta, até o fim do expediente. E mais: daqui a duas semanas saio de férias por dez dias, então é melhor resolver tudo o que é importante antes disso."],
+          ["Родриго", "Понял. Тогда до среды!", "Entendido. Então até quarta!"]
+        ],
+        "questions": [
+          {"q": "Qual é a diferença de horário entre eles?", "o": ["Sete horas.", "Quatro horas.", "Nove horas.", "Onze horas."], "e": "«У нас разница во времени семь часов»."},
+          {"q": "Que horário eles combinam?", "o": ["Quarta às 9h30 de Moscou, 16h30 em Vladivostok.", "Quarta às 9h em Vladivostok.", "Sexta às 11h de Moscou.", "Quarta às 18h de Moscou."], "e": "«В среду в половине десятого по Москве… полпятого у вас»."},
+          {"q": "Quando Elena vai mandar a apresentação?", "o": ["Um dia antes da reunião.", "Depois da reunião.", "Na sexta.", "Daqui a duas semanas."], "e": "«Я пришлю презентацию за день до встречи»."},
+          {"q": "O que acontece daqui a duas semanas?", "o": ["Elena sai de férias por dez dias.", "O projeto termina.", "Rodrigo vai a Moscou.", "Há outra reunião."], "e": "«Через две недели я уезжаю в отпуск на десять дней»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Через две недели я уезжаю в отпуск на десять дней.", "pt": "Daqui a duas semanas saio de férias por dez dias.", "hint": "Duas expressões de tempo diferentes (10 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Когда вам удобно?", "Quando é melhor para você?"],
+        ["Тогда в среду в половине десятого.", "Então na quarta às nove e meia."],
+        ["Я пришлю презентацию за день до встречи.", "Vou mandar a apresentação um dia antes da reunião."],
+        ["Отчёт нужно сдать к пятнице.", "O relatório tem que ser entregue até sexta."]
+      ]}
+    ]},
+    {"title": "Leitura: onze fusos horários", "goal": "Ler um texto informativo e calcular diferenças de horário.", "steps": [
+      {"t": "reading", "title": "Страна, где всегда где-то утро",
+        "text": "Россия занимает одиннадцать часовых поясов: от Калининграда на западе до Камчатки на востоке. Когда в Калининграде полночь, на Камчатке уже десять часов утра следующего дня. Поэтому новогодние поздравления президента показывают по телевизору несколько раз: сначала для Дальнего Востока, а потом, через несколько часов, для Москвы.\n\nРазница во времени влияет и на работу. Компании, у которых есть офисы в разных регионах, проводят общие совещания обычно в первой половине дня по московскому времени: в это время на востоке ещё не закончился рабочий день. Всё расписание поездов раньше составлялось по московскому времени, и пассажиры в Сибири часто путались. Сейчас на билетах указывают местное время.\n\nЖители Владивостока шутят, что живут «в будущем»: они узнают о новом дне на семь часов раньше москвичей. Зато, когда в Москве начинается вечер пятницы, во Владивостоке уже глубокая ночь, и звонить друзьям в столицу приходится по субботам.",
+        "pt": "A Rússia ocupa onze fusos horários: de Kaliningrado, no oeste, a Kamtchatka, no leste. Quando é meia-noite em Kaliningrado, em Kamtchatka já são dez da manhã do dia seguinte. Por isso, a mensagem de Ano-Novo do presidente é exibida várias vezes na televisão: primeiro para o Extremo Oriente e depois, algumas horas mais tarde, para Moscou.\n\nA diferença de horário também influencia o trabalho. Empresas com escritórios em regiões diferentes costumam fazer reuniões conjuntas na primeira metade do dia, pelo horário de Moscou: nesse momento, no leste, o expediente ainda não terminou. Antigamente, todos os horários de trens eram feitos pelo horário de Moscou, e os passageiros na Sibéria se confundiam com frequência. Hoje, as passagens indicam o horário local.\n\nOs moradores de Vladivostok brincam que vivem «no futuro»: ficam sabendo do novo dia sete horas antes dos moscovitas. Em compensação, quando em Moscou começa a noite de sexta-feira, em Vladivostok já é madrugada, e é preciso ligar para os amigos da capital aos sábados.",
+        "tf": [
+          ["A Rússia tem onze fusos horários.", "V", "«Одиннадцать часовых поясов»."],
+          ["A mensagem de Ano-Novo do presidente é transmitida uma única vez.", "F", "«Показывают … несколько раз»."],
+          ["Hoje as passagens de trem indicam o horário local.", "V", "«Сейчас на билетах указывают местное время»."],
+          ["Vladivostok está sete horas à frente de Moscou.", "V", "«На семь часов раньше москвичей»."],
+          ["Em Kamtchatka, as lojas abrem às sete da manhã.", "N", "O texto não fala de lojas."]
+        ],
+        "questions": [
+          {"q": "Почему общие совещания проводят в первой половине дня по Москве?", "o": ["Потому что на востоке ещё не закончился рабочий день.", "Потому что в Москве утром тише.", "Потому что так требует закон.", "Потому что на западе ещё ночь."], "e": "«В это время на востоке ещё не закончился рабочий день»."},
+          {"q": "Когда в Калининграде полночь, сколько времени на Камчатке?", "o": ["Десять утра следующего дня.", "Полночь.", "Семь вечера.", "Десять вечера того же дня."], "e": "«На Камчатке уже десять часов утра следующего дня»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a expressão de tempo correta.",
+        "text": "Я приехал в Москву {месяц назад|через месяц|на месяц}. {На этой неделе|В эту неделе|На эту неделю} у меня много работы. Совещание начнётся {через|назад|за} пятнадцать минут. По {понедельникам|понедельники|понедельниках} я хожу в бассейн.",
+        "pt": "Cheguei a Moscou há um mês. Nesta semana tenho muito trabalho. A reunião começa daqui a quinze minutos. Às segundas eu vou à piscina.",
+        "e": "Назад = há; на этой неделе (preposicional); через = daqui a; по + dativo plural para hábito."}
+    ]},
+    {"title": "Foco na forma: as expressões de tempo", "goal": "Escolher a preposição e o caso para cada tipo de referência temporal.", "steps": [
+      {"t": "grammar", "title": "Quando, por quanto tempo, até quando",
+        "paragraphs": [
+          "В + acusativo: dias da semana e horas: в понедельник, в три часа, в эту минуту, в такую погоду. В + preposicional: meses, anos, séculos e «neste / no último»: в мае, в 2025 году, в этом месяце, в прошлом году. На + preposicional: semana: на этой неделе, на прошлой неделе.",
+          "Relativo ao momento presente: через + acusativo (daqui a): через час. Acusativo + назад (há): час назад. Duração: acusativo sem preposição: Я ждал час. Мы работали всю ночь. Duração planejada depois de uma ação: на + acusativo: Он уехал на неделю.",
+          "Prazo para concluir: за + acusativo: Я прочитал книгу за два дня. Antecedência: за + acusativo + до + genitivo: за час до поезда. Limite: к + dativo (até, no máximo): к пятнице, к пяти часам. Hábito: по + dativo plural: по средам, по утрам.",
+          "Horas: в час, в два часа, в пять часов. Minutos depois da hora: в пять минут третьего (2h05), в четверть третьего (2h15), в половине третьего (2h30): conta-se a hora que está em curso. Minutos antes da hora: без пяти три (2h55), без четверти три (2h45). Na fala informal: в два тридцать, полтретьего."
+        ],
+        "table": {"columns": ["Pergunta", "Forma", "Exemplo"], "rows": [
+          ["Em que dia / hora?", "в + acusativo", "в среду, в семь часов"],
+          ["Em que mês / ano?", "в + preposicional", "в июле, в этом году"],
+          ["Em que semana?", "на + preposicional", "на следующей неделе"],
+          ["Daqui a / há quanto?", "через + acus. / acus. + назад", "через год / год назад"],
+          ["Por quanto tempo (planejado)?", "на + acusativo", "приехать на месяц"],
+          ["Em quanto tempo (prazo)?", "за + acusativo", "сделать за час"],
+          ["Até quando?", "к + dativo", "к понедельнику"],
+          ["Com que frequência?", "по + dativo plural", "по выходным"]
+        ]},
+        "examples": [
+          ["Поезд отправляется без четверти восемь.", "O trem parte quinze para as oito."],
+          ["Мы переехали сюда три года назад и за это время ни разу не пожалели.", "Mudamos para cá há três anos e nesse tempo não nos arrependemos nenhuma vez."],
+          ["Он взял отпуск на две недели, но вернулся через неделю.", "Ele tirou férias de duas semanas, mas voltou depois de uma semana."]
+        ],
+        "pitfalls": [
+          "Não diga «в этой неделе»: semana pede на, «на этой неделе».",
+          "Não confunda за (prazo de realização) com на (duração depois da ação): «Я сделал работу за час» (levei uma hora), «Я ушёл на час» (saí e fiquei fora uma hora).",
+          "Atenção à contagem das horas: «в половине третьего» é 2h30, não 3h30. Em russo, conta-se a hora que está em curso."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Мы встретимся ___ пятницу.", "o": ["в", "на", "по", "к"], "e": "Dia da semana: в + acusativo."},
+        {"q": "Я жил в Бразилии ___ прошлом году.", "o": ["в", "на", "за", "через"], "e": "Ano: в + preposicional."},
+        {"q": "Она прочитала роман ___ три дня.", "o": ["за", "на", "через", "в"], "e": "Prazo de realização: за + acusativo."},
+        {"q": "Урок начинается в ___ (14h30).", "o": ["половине третьего", "половине второго", "половину третьего", "половине три"], "e": "14h30 = na metade da terceira hora: в половине третьего."},
+        {"q": "Мы уезжаем на дачу ___ все выходные.", "o": ["на", "за", "через", "в"], "e": "Duração planejada: на + acusativo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "В этой неделе я очень занят.", "o": ["На этой неделе я очень занят.", "В эту неделю я очень занят.", "За этой неделей я очень занят."], "e": "Неделя pede на + preposicional."},
+        {"q": "Я приехал в Москву назад два года.", "o": ["Я приехал в Москву два года назад.", "Я приехал в Москву через два года.", "Я приехал в Москву за два года назад."], "e": "Назад vem depois da expressão."},
+        {"q": "Я хожу в спортзал в вторники.", "o": ["Я хожу в спортзал по вторникам.", "Я хожу в спортзал на вторники.", "Я хожу в спортзал вторниками."], "e": "Hábito: по + dativo plural."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Совещание перенесли на следующую неделю", "pt": "A reunião foi remarcada para a semana que vem."},
+        {"a": "Приходите за десять минут до начала", "pt": "Cheguem dez minutos antes do início."},
+        {"a": "По утрам я бегаю в парке", "pt": "De manhã eu corro no parque."}
+      ]}
+    ]},
+    {"title": "Uso real: horário de funcionamento, situações e produção", "goal": "Entender horários e organizar compromissos por escrito e oralmente.", "steps": [
+      {"t": "listening", "kind": "Автоответчик", "title": "Режим работы музея", "voice": "f2",
+        "text": "Здравствуйте! Вы позвонили в Музей современного искусства. Музей работает со вторника по воскресенье с одиннадцати до девяти вечера. По понедельникам музей закрыт. Касса закрывается за час до закрытия музея. В последний четверг каждого месяца вход бесплатный. Экскурсии на русском языке проходят по субботам в половине первого, на английском по воскресеньям в три часа. Билеты на экскурсию нужно купить заранее, не позднее чем за сутки. Спасибо за звонок!",
+        "pt": "Olá! Você ligou para o Museu de Arte Contemporânea. O museu funciona de terça a domingo, das onze às nove da noite. Às segundas-feiras o museu fica fechado. A bilheteria fecha uma hora antes do fechamento do museu. Na última quinta-feira de cada mês a entrada é gratuita. As visitas guiadas em russo acontecem aos sábados ao meio-dia e meia, e em inglês aos domingos às três. Os ingressos para a visita guiada devem ser comprados com antecedência, no máximo até vinte e quatro horas antes. Obrigado pela ligação!",
+        "questions": [
+          {"q": "Até que horas funciona a bilheteria?", "o": ["Até as oito da noite.", "Até as nove da noite.", "Até as onze.", "Até meio-dia e meia."], "e": "O museu fecha às 21h; a bilheteria fecha uma hora antes."},
+          {"q": "Quando a entrada é gratuita?", "o": ["Na última quinta-feira de cada mês.", "Toda segunda-feira.", "Aos domingos.", "No primeiro sábado do mês."], "e": "«В последний четверг каждого месяца вход бесплатный»."},
+          {"q": "Quando há visita guiada em russo?", "o": ["Aos sábados às 12h30.", "Aos domingos às 15h.", "Às terças às 11h.", "Aos sábados às 13h30."], "e": "«По субботам в половине первого» = 12h30."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você precisa remarcar a consulta de quinta para sexta.", "o": ["Можно перенести приём с четверга на пятницу?", "Можно перенести приём из четверга в пятницу?", "Можно перенести приём от четверга к пятнице?", "Можно перенести приём четверг на пятницу?"], "e": "Перенести с + genitivo на + acusativo."},
+        {"q": "Você pergunta a que horas fecha a loja.", "o": ["До которого часа работает магазин?", "До какой час работает магазин?", "На сколько часов работает магазин?", "В которых часах закрывается магазин?"], "e": "До которого часа? = até que horas?"},
+        {"q": "Você avisa que vai se atrasar dez minutos.", "o": ["Я опоздаю на десять минут.", "Я опоздаю за десять минут.", "Я опоздаю через десять минут.", "Я опоздаю десять минутами."], "e": "Опоздать на + acusativo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva uma mensagem (60 a 90 palavras) a um professor ou colega russo para remarcar um compromisso: explique o motivo, proponha duas alternativas de dia e hora e indique um prazo para algo que você vai enviar.",
+        "useful": ["К сожалению, в … я не смогу …", "Можно перенести … на …?", "Мне было бы удобно в … или в …", "Я пришлю … к …", "Заранее спасибо"],
+        "model": "Здравствуйте, Ольга Николаевна! К сожалению, в четверг в половине третьего я не смогу прийти на консультацию: в это время у меня экзамен по истории. Можно перенести нашу встречу на следующую неделю? Мне было бы удобно в понедельник после двенадцати или во вторник в четверть пятого. Черновик второй главы я пришлю вам к пятнице, чтобы вы успели его посмотреть за несколько дней до встречи. Заранее спасибо за понимание! С уважением, Карлос.",
+        "model_pt": "Olá, Olga Nikoláievna! Infelizmente, na quinta às duas e meia não vou poder ir à orientação: nesse horário tenho prova de história. Podemos remarcar o nosso encontro para a semana que vem? Para mim seria bom na segunda depois do meio-dia ou na terça às quatro e quinze. Vou mandar o rascunho do segundo capítulo até sexta, para a senhora ter tempo de olhar alguns dias antes do encontro. Desde já agradeço a compreensão! Atenciosamente, Carlos.",
+        "checklist": ["Usei в + acusativo para dia e hora.", "Usei на + preposicional ou acusativo corretamente.", "Usei к + dativo para um prazo.", "Usei uma hora com половина ou четверть.", "Escrevi pelo menos 60 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Descreva em voz alta a sua semana típica (cerca de um minuto): o que você faz por hábito (по …), em que horários, quanto tempo leva cada coisa e o que planeja para daqui a um mês.",
+        "useful": ["По будням я встаю в …", "По понедельникам и средам …", "Дорога занимает …", "На выходных …", "Через месяц я …"],
+        "model": "По будням я встаю без четверти семь и выхожу из дома в половине восьмого. Дорога до университета занимает сорок минут. По понедельникам и средам у меня лекции до трёх, а по вторникам я работаю в библиотеке. Статьи для семинара я обычно читаю за два-три дня до занятия. На выходных стараюсь отдыхать: по субботам играю в футбол, а в воскресенье звоню родителям в Бразилию. Через месяц у меня каникулы, и я уеду на десять дней в Петербург.",
+        "model_pt": "Nos dias de semana acordo quinze para as sete e saio de casa às sete e meia. O trajeto até a universidade leva quarenta minutos. Às segundas e quartas tenho aulas até as três, e às terças trabalho na biblioteca. Os artigos para o seminário eu costumo ler dois ou três dias antes da aula. Nos fins de semana tento descansar: aos sábados jogo futebol e no domingo ligo para os meus pais no Brasil. Daqui a um mês tenho férias e vou para Petersburgo por dez dias.",
+        "checklist": ["Usei по + dativo para hábitos.", "Disse pelo menos duas horas com половина, четверть ou без.", "Usei за … до ou через.", "Usei на + acusativo para uma duração planejada."]}
+    ]}
+  ]
+}

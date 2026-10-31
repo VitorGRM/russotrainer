@@ -1,0 +1,163 @@
+{
+  "id": "cultura1", "theme": "cultura", "order": 1,
+  "title": "Книга лучше фильма?", "title_pt": "Cultura: cinema, teatro e críticas",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma conversa sobre um filme adaptado de um livro e um aviso antes de um espetáculo.",
+    "Ler uma crítica de cinema e identificar a avaliação do autor.",
+    "Comparar e avaliar com comparativos simples e compostos, чем / genitivo, гораздо, самый e o superlativo em -ейший.",
+    "Escrever uma crítica curta e recomendar oralmente uma obra."
+  ],
+  "grammar_focus": "интереснее, лучше, длиннее (чем / Р. п.) · более / менее + прил. · гораздо / намного · самый / -ейший / лучший из · чем…, тем…",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de cinema, teatro e avaliação.", "steps": [
+      {"t": "warmup", "questions": [
+        "Какой фильм или спектакль вы видели последним?",
+        "Что вы предпочитаете: читать книгу или смотреть экранизацию?",
+        "Como você diria em português que um filme é «mais longo, porém menos interessante» que o livro?"
+      ]},
+      {"t": "vocab", "items": [
+        ["экранизация", "adaptação para o cinema", "экранизировать роман"],
+        ["режиссёр", "diretor (de cinema, teatro)", "фильм режиссёра … (genitivo)"],
+        ["сюжет", "enredo", "захватывающий сюжет"],
+        ["главная роль", "papel principal", "играть главную роль"],
+        ["актёрская игра", "atuação", "актёр, актриса"],
+        ["спектакль", "espetáculo, peça", "постановка = encenação"],
+        ["зритель", "espectador", "зрительный зал = plateia"],
+        ["рецензия", "crítica, resenha", "критик = crítico"],
+        ["затянутый", "arrastado, longo demais", "фильм затянут"],
+        ["захватывающий", "empolgante", "= увлекательный"],
+        ["скучный", "chato, entediante", "скучнее = mais chato"],
+        ["советовать посмотреть", "recomendar ver", "Рекомендую! = Recomendo!"]
+      ]},
+      {"t": "match", "title": "Relacione o adjetivo ao comparativo.", "pairs": [
+        ["хороший", "лучше"], ["плохой", "хуже"], ["длинный", "длиннее"],
+        ["короткий", "короче"], ["интересный", "интереснее"], ["дорогой", "дороже"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Фильм гораздо короче романа.", "o": ["O filme é bem mais curto que o romance.", "O filme é um pouco mais longo que o romance.", "O filme é tão curto quanto o romance.", "O romance é mais curto que o filme."], "e": "Гораздо + comparativo = muito mais; романа = genitivo de comparação."},
+        {"q": "Это одна из лучших постановок сезона.", "o": ["É uma das melhores montagens da temporada.", "É a pior montagem da temporada.", "É melhor do que a montagem da temporada passada.", "É uma montagem razoável."], "e": "Одна из лучших = uma das melhores."},
+        {"q": "Вторая половина фильма немного затянута.", "o": ["A segunda metade do filme é um pouco arrastada.", "A segunda metade do filme é muito curta.", "A segunda metade do filme foi cortada.", "A segunda metade é a melhor."], "e": "Затянутый = arrastado."}
+      ]}
+    ]},
+    {"title": "Escuta: saindo do cinema", "goal": "Entender comparações e avaliações numa conversa informal.", "steps": [
+      {"t": "dialogue", "title": "Мастер и Маргарита", "setting": "Vika e Roman saem do cinema depois de ver uma nova adaptação de «O Mestre e Margarida».",
+        "speakers": {"Вика": "f", "Роман": "m"},
+        "lines": [
+          ["Вика", "Ну как тебе? По-моему, это лучшая экранизация Булгакова, которую я видела.", "E aí, o que achou? Para mim, é a melhor adaptação de Bulgákov que eu já vi."],
+          ["Роман", "Мне тоже понравилось, но книга, конечно, глубже. В фильме многое упростили.", "Eu também gostei, mas o livro, é claro, é mais profundo. No filme simplificaram muita coisa."],
+          ["Вика", "Согласна, но кино и не может быть таким же подробным, как роман. Зато визуально всё гораздо ярче, чем я представляла.", "Concordo, mas um filme também não pode ser tão detalhado quanto um romance. Em compensação, visualmente tudo é muito mais vivo do que eu imaginava."],
+          ["Роман", "Это правда. Сцена бала самая красивая во всём фильме.", "É verdade. A cena do baile é a mais bonita do filme todo."],
+          ["Вика", "А актёры? Мне кажется, Воланд получился даже страшнее, чем в книге.", "E os atores? Acho que o Woland ficou ainda mais assustador do que no livro."],
+          ["Роман", "Воланд отличный. А вот Маргарита, по-моему, слабее, чем в старом сериале.", "O Woland está ótimo. Já a Margarida, para mim, está mais fraca do que na série antiga."],
+          ["Вика", "Не согласна! Она гораздо живее и современнее. Только фильм длинноват: больше двух с половиной часов.", "Não concordo! Ela está muito mais viva e moderna. Só que o filme é um pouco longo: mais de duas horas e meia."],
+          ["Роман", "Да, вторая половина немного затянута. Но в целом я бы поставил восемь из десяти.", "É, a segunda metade é um pouco arrastada. Mas no geral eu daria oito de dez."],
+          ["Вика", "А я девять. Чем больше думаю о фильме, тем больше он мне нравится.", "E eu, nove. Quanto mais eu penso no filme, mais eu gosto dele."]
+        ],
+        "questions": [
+          {"q": "O que Roman acha do livro em comparação com o filme?", "o": ["O livro é mais profundo.", "O livro é mais chato.", "O filme é mais fiel.", "Os dois são iguais."], "e": "«Книга, конечно, глубже»."},
+          {"q": "Qual é a cena mais bonita, segundo Roman?", "o": ["A cena do baile.", "A cena final.", "A primeira cena.", "A cena com Woland."], "e": "«Сцена бала самая красивая»."},
+          {"q": "Em que eles discordam?", "o": ["Na atuação de quem faz Margarida.", "No Woland.", "Na duração do filme.", "No visual do filme."], "e": "Roman acha Margarida mais fraca; Vika acha mais viva e moderna."},
+          {"q": "Que notas eles dão?", "o": ["Roman 8, Vika 9.", "Roman 9, Vika 8.", "Os dois dão 10.", "Roman 7, Vika 9."], "e": "«Я бы поставил восемь из десяти» / «А я девять»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Чем больше думаю о фильме, тем больше он мне нравится.", "pt": "Quanto mais penso no filme, mais gosto dele.", "hint": "Estrutura чем…, тем… (10 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["Книга, конечно, глубже.", "O livro, é claro, é mais profundo."],
+        ["Сцена бала самая красивая во всём фильме.", "A cena do baile é a mais bonita do filme todo."],
+        ["Маргарита слабее, чем в старом сериале.", "A Margarida está mais fraca do que na série antiga."],
+        ["В целом я бы поставил восемь из десяти.", "No geral, eu daria oito de dez."]
+      ]}
+    ]},
+    {"title": "Leitura: uma crítica de cinema", "goal": "Ler uma crítica e separar fatos, avaliações positivas e negativas.", "steps": [
+      {"t": "reading", "title": "Рецензия: «Ледокол надежды»",
+        "text": "Новый фильм молодого режиссёра Анны Белой рассказывает о команде ледокола, застрявшего во льдах Арктики. Сюжет несложный, но держит в напряжении до самого конца. Это, пожалуй, самый амбициозный российский фильм года: бюджет картины в два раза больше, чем у большинства отечественных блокбастеров.\n\nСильнейшая сторона фильма, безусловно, актёрская игра. Исполнитель главной роли создаёт образ капитана гораздо тоньше и глубже, чем можно было ожидать от жанра катастрофы. Музыка тоже заслуживает похвалы: она звучит сдержаннее, чем обычно в подобных картинах, и от этого сцены становятся ещё драматичнее.\n\nК сожалению, сценарий слабее, чем режиссура. Второстепенные персонажи почти не раскрыты, а финал кажется слишком предсказуемым. Кроме того, фильм длиннее, чем нужно: двадцать минут можно было бы смело вырезать. И всё же это одна из лучших работ сезона, которую стоит посмотреть на большом экране. Моя оценка: семь с половиной из десяти.",
+        "pt": "O novo filme da jovem diretora Anna Bélaia conta a história da tripulação de um quebra-gelo preso no gelo do Ártico. O enredo é simples, mas mantém a tensão até o fim. Este é, talvez, o filme russo mais ambicioso do ano: o orçamento é o dobro do da maioria dos blockbusters nacionais.\n\nO ponto mais forte do filme é, sem dúvida, a atuação. O protagonista constrói o capitão de forma muito mais sutil e profunda do que se poderia esperar de um filme-catástrofe. A música também merece elogios: soa mais contida do que o habitual em filmes do gênero, e com isso as cenas ficam ainda mais dramáticas.\n\nInfelizmente, o roteiro é mais fraco que a direção. Os personagens secundários quase não são desenvolvidos, e o final parece previsível demais. Além disso, o filme é mais longo do que o necessário: vinte minutos poderiam ser cortados sem medo. Mesmo assim, é um dos melhores trabalhos da temporada, que vale a pena ver na tela grande. Minha nota: sete e meio de dez.",
+        "tf": [
+          ["O orçamento do filme é o dobro do da maioria dos blockbusters russos.", "V", "«Бюджет картины в два раза больше»."],
+          ["Para o crítico, a atuação é o ponto mais fraco.", "F", "«Сильнейшая сторона фильма … актёрская игра»."],
+          ["O crítico acha o roteiro mais fraco do que a direção.", "V", "«Сценарий слабее, чем режиссура»."],
+          ["O crítico acha que o filme deveria ser mais longo.", "F", "«Фильм длиннее, чем нужно»."],
+          ["O filme ganhou um prêmio num festival.", "N", "O texto não menciona prêmios."]
+        ],
+        "questions": [
+          {"q": "Чем музыка в фильме отличается от музыки в похожих картинах?", "o": ["Она звучит сдержаннее.", "Она громче.", "Её почти нет.", "Она веселее."], "e": "«Звучит сдержаннее, чем обычно в подобных картинах»."},
+          {"q": "Какова общая оценка критика?", "o": ["Фильм с недостатками, но стоит посмотреть.", "Фильм провальный.", "Это шедевр без недостатков.", "Фильм интересен только детям."], "e": "«И всё же это одна из лучших работ сезона… семь с половиной из десяти»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta do comparativo.",
+        "text": "Роман {интереснее|интересный|интереснейший} фильма. Билеты в театр {дороже|дорогие|дороги}, чем в кино. Это {самая|самый|самое} смешная комедия года. Второй сезон сериала {гораздо|очень|много} лучше первого.",
+        "pt": "O romance é mais interessante que o filme. Os ingressos de teatro são mais caros do que os de cinema. Esta é a comédia mais engraçada do ano. A segunda temporada da série é muito melhor que a primeira.",
+        "e": "Comparativo + genitivo (фильма) ou + чем. Самый concorda com o substantivo. Para intensificar o comparativo: гораздо / намного, nunca очень."}
+    ]},
+    {"title": "Foco na forma: comparar e avaliar", "goal": "Formar comparativos e superlativos e usá-los com чем, genitivo e intensificadores.", "steps": [
+      {"t": "grammar", "title": "Mais, menos, o mais",
+        "paragraphs": [
+          "Comparativo simples: radical + -ее (-ей na fala): интересный → интереснее, длинный → длиннее, быстрый → быстрее. É invariável e funciona como predicado: Книга интереснее фильма.",
+          "Formas com alternância ou irregulares: хороший → лучше, плохой → хуже, большой → больше, маленький → меньше, дорогой → дороже, дешёвый → дешевле, короткий → короче, простой → проще, высокий → выше, громкий → громче, молодой → моложе, старый → старше (para pessoas).",
+          "O segundo termo: чем + nominativo (Фильм длиннее, чем книга) ou genitivo sem чем (Фильм длиннее книги). Com pronomes e expressões complexas, use чем: лучше, чем в прошлом году. Intensificadores: гораздо, намного (muito), чуть, немного (um pouco), ещё (ainda).",
+          "Comparativo composto: более / менее + adjetivo completo, que concorda: более интересный фильм, менее известная актриса. Superlativo: самый + adjetivo (самый красивый); -ейший / -айший em textos expressivos (сильнейший, интереснейший); лучший / худший (o melhor / o pior); один из лучших (um dos melhores) + genitivo plural.",
+          "Proporção: чем + comparativo…, тем + comparativo: Чем дольше смотришь, тем интереснее."
+        ],
+        "table": {"columns": ["Adjetivo", "Comparativo", "Superlativo"], "rows": [
+          ["интересный", "интереснее / более интересный", "самый интересный / интереснейший"],
+          ["хороший", "лучше", "самый лучший / лучший"],
+          ["плохой", "хуже", "худший / самый плохой"],
+          ["короткий", "короче", "самый короткий / кратчайший"],
+          ["известный", "известнее / более известный", "самый известный / известнейший"]
+        ]},
+        "examples": [
+          ["Этот спектакль намного смешнее, чем я думал.", "Esta peça é muito mais engraçada do que eu pensava."],
+          ["«Война и мир» — один из самых длинных романов в мировой литературе.", "«Guerra e Paz» é um dos romances mais longos da literatura mundial."],
+          ["Чем старше я становлюсь, тем больше люблю Чехова.", "Quanto mais velho fico, mais gosto de Tchékhov."]
+        ],
+        "pitfalls": [
+          "Não use очень com o comparativo: «гораздо лучше», nunca «очень лучше».",
+          "Não misture as duas formas: «более интересный» ou «интереснее», nunca «более интереснее».",
+          "Depois de один из, o substantivo e o adjetivo vão ao genitivo plural: «один из лучших фильмов»."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Новый сериал ___ старого.", "o": ["скучнее", "более скучнее", "очень скучнее", "скучный"], "e": "Comparativo simples + genitivo."},
+        {"q": "Это была ___ интересная выставка в этом году.", "o": ["самая", "самый", "более", "лучше"], "e": "Самая concorda com выставка."},
+        {"q": "Большой театр ___ Мариинского?", "o": ["старше", "старее", "более старый чем", "старший"], "e": "Para instituições e pessoas: старше."},
+        {"q": "«Анна Каренина» — один из ___ романов Толстого.", "o": ["самых известных", "самый известный", "самым известным", "самые известные"], "e": "Один из + genitivo plural."},
+        {"q": "Чем дольше я живу в России, ___ понимаю русское кино.", "o": ["тем лучше", "так лучше", "чем лучше", "тем хорошо"], "e": "Чем…, тем + comparativo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Этот фильм очень лучше, чем тот.", "o": ["Этот фильм гораздо лучше, чем тот.", "Этот фильм очень хороше, чем тот.", "Этот фильм более лучше, чем тот."], "e": "Intensificador do comparativo: гораздо / намного."},
+        {"q": "Книга более интереснее фильма.", "o": ["Книга интереснее фильма.", "Книга более интереснее, чем фильм.", "Книга самая интереснее фильма."], "e": "Ou интереснее, ou более интересная: nunca as duas formas juntas."},
+        {"q": "Это один из лучший спектакль сезона.", "o": ["Это один из лучших спектаклей сезона.", "Это один из лучшие спектакли сезона.", "Это одна из лучших спектакль сезона."], "e": "Один из + genitivo plural."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Книга гораздо глубже чем фильм", "pt": "O livro é muito mais profundo do que o filme."},
+        {"a": "Это самая красивая сцена во всём фильме", "pt": "Esta é a cena mais bonita do filme todo."},
+        {"a": "Чем больше читаешь тем интереснее", "pt": "Quanto mais você lê, mais interessante fica."}
+      ]}
+    ]},
+    {"title": "Uso real: aviso no teatro, situações e produção", "goal": "Entender avisos de espetáculo e recomendar obras com argumentos.", "steps": [
+      {"t": "listening", "kind": "Объявление в театре", "title": "Перед началом спектакля", "voice": "f2",
+        "text": "Уважаемые зрители! Через пять минут начнётся спектакль «Вишнёвый сад». Просим вас выключить мобильные телефоны. Фото- и видеосъёмка во время спектакля запрещена. Продолжительность спектакля три часа с одним антрактом. Во время антракта работает буфет на втором этаже. Опоздавшие зрители смогут пройти в зал только после антракта. Благодарим вас и желаем приятного вечера!",
+        "pt": "Prezados espectadores! Em cinco minutos começará o espetáculo «O Jardim das Cerejeiras». Pedimos que desliguem os celulares. É proibido fotografar e filmar durante o espetáculo. A duração é de três horas, com um intervalo. Durante o intervalo, funciona o bufê no segundo andar. Os espectadores que chegarem atrasados só poderão entrar na sala depois do intervalo. Agradecemos e desejamos uma ótima noite!",
+        "questions": [
+          {"q": "Quanto dura o espetáculo?", "o": ["Três horas, com um intervalo.", "Duas horas, sem intervalo.", "Três horas, com dois intervalos.", "Uma hora e meia."], "e": "«Три часа с одним антрактом»."},
+          {"q": "Onde fica o bufê?", "o": ["No segundo andar.", "No térreo.", "Ao lado da chapelaria.", "Não há bufê."], "e": "«Буфет на втором этаже»."},
+          {"q": "O que acontece com quem chegar atrasado?", "o": ["Só entra depois do intervalo.", "Não pode entrar.", "Entra em silêncio.", "Recebe o dinheiro de volta."], "e": "«Смогут пройти в зал только после антракта»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Um amigo pergunta se vale ver um filme. Você recomenda muito.", "o": ["Обязательно посмотри, это лучший фильм года!", "Обязательно посмотри, это самый лучше фильм года!", "Обязательно посмотри, это более лучший фильм!", "Обязательно посмотри, это очень лучший фильм!"], "e": "Лучший = o melhor."},
+        {"q": "Você diz que o livro é melhor que o filme.", "o": ["Книга лучше фильма.", "Книга лучше фильм.", "Книга лучшая чем фильм.", "Книга более хорошая фильма."], "e": "Лучше + genitivo."},
+        {"q": "Você compra ingresso e pede lugares mais baratos.", "o": ["А есть места подешевле?", "А есть места более дешёвее?", "А есть самые дешевле места?", "А есть места очень дешевле?"], "e": "Подешевле = um pouco mais barato (coloquial)."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 80,
+        "task": "Escreva uma crítica (80 a 120 palavras) de um filme, série, livro ou espetáculo que você conheça. Compare-o com outra obra e dê uma nota. Use pelo menos quatro comparativos ou superlativos.",
+        "useful": ["… рассказывает о …", "Самая сильная сторона …", "… гораздо … , чем …", "К сожалению, … слабее …", "Это один из лучших …", "Моя оценка: …"],
+        "model": "Сериал «Город Бога: борьба продолжается» рассказывает о жизни молодых людей в фавеле Рио-де-Жанейро. Он снят по мотивам знаменитого фильма, но сюжет здесь гораздо подробнее, а персонажи сложнее и интереснее. Самая сильная сторона сериала, по-моему, актёрская игра: многие актёры из фильма вернулись в свои роли через двадцать лет, и от этого история выглядит ещё реалистичнее. К сожалению, некоторые серии длиннее, чем нужно, и середина сезона немного затянута. И всё же это один из лучших бразильских сериалов последних лет. Чем дальше смотришь, тем сильнее он затягивает. Моя оценка: восемь из десяти.",
+        "model_pt": "A série «Cidade de Deus: A Luta Não Para» conta a vida de jovens numa favela do Rio de Janeiro. Ela se inspira no famoso filme, mas aqui o enredo é muito mais detalhado, e os personagens são mais complexos e interessantes. O ponto mais forte da série, na minha opinião, é a atuação: muitos atores do filme voltaram aos seus papéis vinte anos depois, e por isso a história parece ainda mais realista. Infelizmente, alguns episódios são mais longos do que o necessário, e o meio da temporada é um pouco arrastado. Mesmo assim, é uma das melhores séries brasileiras dos últimos anos. Quanto mais você assiste, mais ela prende. Minha nota: oito de dez.",
+        "checklist": ["Apresentei a obra e o enredo.", "Usei pelo menos quatro comparativos ou superlativos.", "Usei гораздо / намного, e não очень, com o comparativo.", "Apontei um ponto forte e um fraco.", "Terminei com uma nota.", "Escrevi pelo menos 80 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Grave cerca de um minuto comparando duas formas de cultura de que você gosta (por exemplo, cinema e teatro, livro e série, música ao vivo e streaming). Diga qual prefere e por quê.",
+        "useful": ["Я предпочитаю … , потому что …", "… гораздо … , чем …", "Зато …", "Самое главное для меня …", "Чем …, тем …"],
+        "model": "Я люблю и кино, и театр, но всё-таки предпочитаю театр. Билеты в театр, конечно, дороже, чем в кино, и спектакли обычно длиннее. Зато в театре всё происходит здесь и сейчас, и эмоции гораздо сильнее. Каждый спектакль немного отличается от предыдущего, поэтому даже знакомая пьеса может удивить. Самое главное для меня — живой контакт с актёрами. А кино удобнее: можно посмотреть фильм дома, когда хочешь. Но чем чаще я хожу в театр, тем меньше мне хочется смотреть сериалы.",
+        "model_pt": "Gosto de cinema e de teatro, mas ainda assim prefiro o teatro. Os ingressos de teatro, claro, são mais caros do que os de cinema, e os espetáculos costumam ser mais longos. Em compensação, no teatro tudo acontece aqui e agora, e as emoções são muito mais fortes. Cada espetáculo é um pouco diferente do anterior, por isso até uma peça conhecida pode surpreender. O mais importante para mim é o contato ao vivo com os atores. Já o cinema é mais prático: dá para ver um filme em casa quando você quiser. Mas quanto mais vou ao teatro, menos vontade tenho de ver séries.",
+        "checklist": ["Usei pelo menos três comparativos.", "Usei зато para uma compensação.", "Usei чем…, тем….", "Deixei clara a minha preferência."]}
+    ]}
+  ]
+}

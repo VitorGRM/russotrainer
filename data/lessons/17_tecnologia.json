@@ -1,0 +1,165 @@
+{
+  "id": "tecnologia1", "theme": "tecnologia", "order": 1,
+  "title": "Нажмите и введите", "title_pt": "Tecnologia: suporte, instruções e segurança digital",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma ligação para o suporte técnico e um menu telefônico automático.",
+    "Ler um texto sobre segurança digital e distinguir regras de recomendações.",
+    "Dar instruções com o imperativo no aspecto adequado e formular condições com если + futuro perfectivo.",
+    "Escrever um passo a passo para um aplicativo e explicar oralmente como resolver um problema técnico."
+  ],
+  "grammar_focus": "императив: СВ (нажмите, введите) × НСВ (не нажимайте, вводите!) · не забудьте (предупреждение) · если + будущее СВ (если вы нажмёте, откроется окно)",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer os verbos e substantivos de uso de aparelhos e aplicativos.", "steps": [
+      {"t": "warmup", "questions": [
+        "Сколько времени в день вы проводите в телефоне?",
+        "Вы обычно сами решаете технические проблемы или звоните в поддержку?",
+        "Em português, o manual diz «clique» e o aviso diz «não clique». Em russo, os dois usam o mesmo aspecto?"
+      ]},
+      {"t": "vocab", "items": [
+        ["нажать на кнопку", "apertar o botão", "нажимать (imperf.) / нажать (perf.)"],
+        ["ввести пароль", "digitar a senha", "вводить / ввести; логин = nome de usuário"],
+        ["скачать / установить", "baixar / instalar", "скачать приложение"],
+        ["обновить", "atualizar", "обновление = atualização"],
+        ["перезагрузить", "reiniciar", "перезагрузка"],
+        ["зарядить", "carregar (bateria)", "зарядка = carregador"],
+        ["подключиться к", "conectar-se a", "подключиться к вай-фаю"],
+        ["сохранить", "salvar", "сохранить файл"],
+        ["удалить", "apagar, excluir", "удалить сообщение"],
+        ["зависать", "travar", "Телефон завис."],
+        ["настройки", "configurações", "зайти в настройки"],
+        ["служба поддержки", "suporte técnico", "техподдержка (coloquial)"]
+      ]},
+      {"t": "match", "title": "Relacione os pares imperfectivo / perfectivo.", "pairs": [
+        ["нажимать", "нажать"], ["вводить", "ввести"], ["скачивать", "скачать"],
+        ["устанавливать", "установить"], ["удалять", "удалить"], ["сохранять", "сохранить"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Если телефон завис, зажмите кнопку питания на десять секунд.", "o": ["Se o celular travar, segure o botão de ligar por dez segundos.", "Se o celular desligar, aperte o botão de volume dez vezes.", "Se o celular esquentar, desligue por dez segundos.", "Se o celular travar, espere dez minutos."], "e": "Зависнуть = travar; зажать = segurar apertado."},
+        {"q": "Не открывайте ссылки от незнакомых отправителей.", "o": ["Não abra links de remetentes desconhecidos.", "Não envie links para desconhecidos.", "Abra só links de conhecidos com cuidado.", "Não feche os links dos remetentes."], "e": "Proibição geral: imperativo imperfectivo negativo."},
+        {"q": "Не забудьте сохранить изменения.", "o": ["Não esqueça de salvar as alterações.", "Não salve as alterações.", "Esqueça as alterações.", "As alterações não foram salvas."], "e": "Не забудьте: advertência com perfectivo."}
+      ]}
+    ]},
+    {"title": "Escuta: ligação para o suporte", "goal": "Seguir instruções passo a passo e entender condições.", "steps": [
+      {"t": "dialogue", "title": "Не работает интернет", "setting": "Luísa liga para o suporte do provedor porque a internet de casa caiu.",
+        "speakers": {"Оператор": "m", "Луиза": "f"},
+        "lines": [
+          ["Оператор", "Служба поддержки, меня зовут Антон. Чем могу помочь?", "Suporte técnico, meu nome é Anton. Em que posso ajudar?"],
+          ["Луиза", "Здравствуйте. С утра не работает интернет. Телефон видит сеть, но страницы не открываются.", "Olá. Desde a manhã a internet não funciona. O celular vê a rede, mas as páginas não abrem."],
+          ["Оператор", "Понял. Посмотрите, пожалуйста, на роутер. Какие лампочки горят?", "Entendi. Por favor, olhe para o roteador. Quais luzes estão acesas?"],
+          ["Луиза", "Горит зелёная, а та, что с надписью «WAN», мигает красным.", "A verde está acesa, e a que tem a inscrição WAN está piscando em vermelho."],
+          ["Оператор", "Хорошо. Выключите роутер из розетки, подождите тридцать секунд и включите снова.", "Certo. Tire o roteador da tomada, espere trinta segundos e ligue de novo."],
+          ["Луиза", "Сделала. Ничего не изменилось.", "Fiz. Não mudou nada."],
+          ["Оператор", "Тогда проверьте кабель, который идёт из стены в роутер. Только не выдёргивайте его, просто нажмите, чтобы он плотно сидел.", "Então verifique o cabo que vai da parede ao roteador. Só não o puxe, apenas aperte para que fique bem encaixado."],
+          ["Луиза", "О, он был немного выдернут! Теперь лампочка зелёная.", "Ah, ele estava um pouco solto! Agora a luz está verde."],
+          ["Оператор", "Отлично. Если через пару минут страницы не откроются, перезвоните нам, и мы пришлём мастера.", "Ótimo. Se em alguns minutos as páginas não abrirem, ligue de novo, e mandaremos um técnico."],
+          ["Луиза", "Всё работает! Спасибо большое.", "Está tudo funcionando! Muito obrigada."],
+          ["Оператор", "Пожалуйста. И не ставьте роутер за телевизор, так сигнал будет лучше.", "De nada. E não coloque o roteador atrás da televisão, assim o sinal fica melhor."]
+        ],
+        "questions": [
+          {"q": "Qual é o problema de Luísa?", "o": ["O celular vê a rede, mas as páginas não abrem.", "O celular não liga.", "O roteador está sem luz nenhuma.", "A conta não foi paga."], "e": "«Телефон видит сеть, но страницы не открываются»."},
+          {"q": "Qual foi a primeira instrução?", "o": ["Desligar o roteador, esperar 30 segundos e religar.", "Trocar o cabo.", "Reiniciar o celular.", "Chamar um técnico."], "e": "«Выключите роутер из розетки, подождите тридцать секунд и включите снова»."},
+          {"q": "Qual era a causa do problema?", "o": ["O cabo da parede estava um pouco solto.", "O roteador estava quebrado.", "A conta estava atrasada.", "O sinal estava fraco por causa da TV."], "e": "«Он был немного выдернут»."},
+          {"q": "Que conselho final o atendente dá?", "o": ["Não deixar o roteador atrás da televisão.", "Trocar de roteador.", "Desligar o roteador à noite.", "Atualizar o celular."], "e": "«Не ставьте роутер за телевизор»."}
+        ]},
+      {"t": "dictation", "voice": "m", "text": "Выключите роутер из розетки, подождите тридцать секунд и включите снова.", "pt": "Tire o roteador da tomada, espere trinta segundos e ligue de novo.", "hint": "Instrução do atendente (10 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["Посмотрите, пожалуйста, на роутер.", "Por favor, olhe para o roteador."],
+        ["Подождите тридцать секунд и включите снова.", "Espere trinta segundos e ligue de novo."],
+        ["Только не выдёргивайте кабель.", "Só não puxe o cabo."],
+        ["Если страницы не откроются, перезвоните нам.", "Se as páginas não abrirem, ligue de novo para nós."]
+      ]}
+    ]},
+    {"title": "Leitura: segurança digital", "goal": "Ler um texto de orientação e separar regras, motivos e exceções.", "steps": [
+      {"t": "reading", "title": "Семь правил цифровой безопасности",
+        "text": "Мошенники становятся всё изобретательнее, но большинство атак можно предотвратить, если соблюдать простые правила.\n\nВо-первых, используйте разные пароли для разных сервисов. Если злоумышленник узнает один пароль, он не получит доступ ко всем вашим аккаунтам. Во-вторых, включите двухфакторную аутентификацию: даже если пароль украдут, без кода из СМС войти не получится.\n\nНикогда не сообщайте коды из СМС по телефону, даже если звонящий представляется сотрудником банка. Настоящий банк никогда не попросит назвать код. Не переходите по ссылкам из подозрительных писем и не скачивайте приложения из неофициальных источников.\n\nРегулярно обновляйте операционную систему: обновления закрывают уязвимости. Делайте резервные копии важных файлов. И наконец, если вы всё-таки стали жертвой мошенников, сразу заблокируйте карту и обратитесь в банк.",
+        "pt": "Os golpistas estão cada vez mais criativos, mas a maioria dos ataques pode ser evitada se você seguir regras simples.\n\nEm primeiro lugar, use senhas diferentes para serviços diferentes. Se um criminoso descobrir uma senha, não terá acesso a todas as suas contas. Em segundo lugar, ative a autenticação em dois fatores: mesmo que roubem a senha, sem o código do SMS não será possível entrar.\n\nNunca informe códigos de SMS por telefone, mesmo que quem ligue se apresente como funcionário do banco. Um banco de verdade nunca vai pedir que você diga o código. Não clique em links de e-mails suspeitos e não baixe aplicativos de fontes não oficiais.\n\nAtualize regularmente o sistema operacional: as atualizações fecham vulnerabilidades. Faça cópias de segurança dos arquivos importantes. E, por fim, se mesmo assim você for vítima de golpistas, bloqueie o cartão imediatamente e procure o banco.",
+        "tf": [
+          ["O texto recomenda usar a mesma senha em todos os serviços.", "F", "«Используйте разные пароли»."],
+          ["Um banco de verdade nunca pede o código do SMS.", "V", "«Настоящий банк никогда не попросит назвать код»."],
+          ["As atualizações do sistema fecham vulnerabilidades.", "V", "«Обновления закрывают уязвимости»."],
+          ["O texto recomenda um antivírus específico.", "N", "Nenhum programa é citado."],
+          ["Em caso de golpe, é preciso bloquear o cartão.", "V", "«Сразу заблокируйте карту»."]
+        ],
+        "questions": [
+          {"q": "Почему в тексте сказано «не переходите», а не «не перейдите»?", "o": ["Это общий запрет, правило на все случаи.", "Это одно конкретное действие.", "Это вежливая просьба о помощи.", "Это ошибка."], "e": "Proibição geral: imperativo imperfectivo negativo."},
+          {"q": "Зачем нужна двухфакторная аутентификация?", "o": ["Чтобы без кода из СМС никто не смог войти, даже зная пароль.", "Чтобы не нужно было вводить пароль.", "Чтобы быстрее обновлять систему.", "Чтобы делать резервные копии."], "e": "«Даже если пароль украдут, без кода из СМС войти не получится»."}
+        ]},
+      {"t": "cloze", "title": "Escolha o aspecto do imperativo.",
+        "text": "{Введите|Вводите} пароль и {нажмите|нажимайте} «Войти». Никогда не {сообщайте|сообщите} код незнакомым людям. Регулярно {делайте|сделайте} резервные копии. И не {забудьте|забывайте} выйти из аккаунта на чужом компьютере!",
+        "pt": "Digite a senha e clique em «Entrar». Nunca informe o código a desconhecidos. Faça cópias de segurança regularmente. E não esqueça de sair da conta num computador alheio!",
+        "e": "Instrução única: perfectivo. Regra geral, repetição ou proibição: imperfectivo. Advertência contra um descuido: не + perfectivo (не забудьте)."}
+    ]},
+    {"title": "Foco na forma: o imperativo e a condição", "goal": "Escolher o aspecto do imperativo e construir condições reais.", "steps": [
+      {"t": "grammar", "title": "Instruções, proibições e advertências",
+        "paragraphs": [
+          "Instrução concreta e única: imperativo perfectivo. Нажмите кнопку. Введите код. Перезагрузите телефон. É a forma típica de manuais e atendentes.",
+          "Imperfectivo: (1) regras gerais e ações repetidas: Регулярно обновляйте систему; (2) proibições: Не нажимайте, Не открывайте; (3) convite a começar ou continuar algo já esperado: Вводите! (pode digitar), Проходите, садитесь.",
+          "Не + perfectivo é uma advertência contra algo involuntário: Не забудьте пароль! Не потеряйте карту! Не упадите!",
+          "Condição real no futuro: если + futuro perfectivo, e na oração principal futuro ou imperativo: Если вы нажмёте на эту кнопку, откроется меню. Если код не придёт, нажмите «Отправить снова». Em português usamos o futuro do subjuntivo («se você apertar»), mas em russo é futuro simples."
+        ],
+        "table": {"columns": ["Situação", "Forma", "Exemplo"], "rows": [
+          ["instrução única", "perfectivo", "Скачайте приложение."],
+          ["regra geral / hábito", "imperfectivo", "Делайте копии каждую неделю."],
+          ["proibição", "не + imperfectivo", "Не открывайте подозрительные ссылки."],
+          ["advertência", "не + perfectivo", "Не забудьте зарядить телефон!"],
+          ["convite / «pode»", "imperfectivo", "Говорите, я вас слушаю."],
+          ["condição real", "если + futuro perf.", "Если ты обновишь систему, ошибка исчезнет."]
+        ]},
+        "examples": [
+          ["Если приложение зависнет, закройте его и откройте снова.", "Se o aplicativo travar, feche-o e abra de novo."],
+          ["Не выключайте компьютер во время обновления.", "Não desligue o computador durante a atualização."],
+          ["Не потеряйте эту карточку: на ней ваш код восстановления.", "Não perca este cartão: nele está o seu código de recuperação."]
+        ],
+        "pitfalls": [
+          "«Не нажмите эту кнопку» soa como «cuidado para não apertar sem querer». Para proibir, diga «Не нажимайте».",
+          "Depois de если, não use o presente para o futuro: «Если ты нажмёшь…» (não «если ты нажимаешь…»), salvo para hábitos.",
+          "Imperativo formal ou plural: -те (нажмите, введите). Informal singular: sem -те (нажми, введи)."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Чтобы войти, ___ свой логин.", "o": ["введите", "вводите", "не вводите", "введёте"], "e": "Instrução única: perfectivo."},
+        {"q": "Никогда не ___ пароль в общественных сетях.", "o": ["вводите", "введите", "введёте", "ввели"], "e": "Proibição geral: не + imperfectivo."},
+        {"q": "___ зарядить ноутбук перед презентацией!", "o": ["Не забудьте", "Не забывайте", "Забывайте", "Не забыли"], "e": "Advertência: не + perfectivo."},
+        {"q": "Если вы ___ на эту ссылку, откроется новое окно.", "o": ["нажмёте", "нажимаете", "нажали бы", "нажать"], "e": "Если + futuro perfectivo."},
+        {"q": "Оператор слушает: «___, пожалуйста, я вас внимательно слушаю».", "o": ["Говорите", "Скажите", "Не говорите", "Поговорите"], "e": "Convite a falar (começar algo esperado): imperfectivo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Не выключите компьютер во время обновления.", "o": ["Не выключайте компьютер во время обновления.", "Не выключили компьютер во время обновления.", "Не выключать компьютер во время обновления бы."], "e": "Proibição: не + imperfectivo."},
+        {"q": "Если ты нажимаешь эту кнопку завтра, всё удалится.", "o": ["Если ты нажмёшь эту кнопку завтра, всё удалится.", "Если ты нажимал эту кнопку завтра, всё удалится.", "Если ты нажать эту кнопку завтра, всё удалится."], "e": "Condição futura única: если + futuro perfectivo."},
+        {"q": "Каждую неделю сделайте резервную копию.", "o": ["Каждую неделю делайте резервную копию.", "Каждую неделю сделаете резервную копию.", "Каждую неделю не сделайте резервную копию."], "e": "Ação repetida: imperfectivo."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Зайдите в настройки и выберите язык", "pt": "Entre nas configurações e escolha o idioma."},
+        {"a": "Не открывайте ссылки от незнакомых людей", "pt": "Não abra links de pessoas desconhecidas."},
+        {"a": "Если код не придёт нажмите отправить снова", "pt": "Se o código não chegar, clique em enviar de novo."}
+      ]}
+    ]},
+    {"title": "Uso real: menu telefônico, situações e produção", "goal": "Navegar em menus automáticos e dar instruções claras.", "steps": [
+      {"t": "listening", "kind": "Голосовое меню", "title": "Банк «Северный»: голосовое меню", "voice": "f",
+        "text": "Здравствуйте! Вы позвонили в банк «Северный». Если вы хотите узнать баланс карты, нажмите один. Если ваша карта потеряна или украдена, нажмите два: карта будет заблокирована немедленно. Для вопросов о кредитах нажмите три. Чтобы поговорить с оператором, оставайтесь на линии. Внимание! Сотрудники банка никогда не спрашивают код из СМС. Не сообщайте его никому. Время ожидания ответа оператора около пяти минут.",
+        "pt": "Olá! Você ligou para o banco Severny. Se quiser saber o saldo do cartão, digite um. Se o seu cartão foi perdido ou roubado, digite dois: o cartão será bloqueado imediatamente. Para dúvidas sobre empréstimos, digite três. Para falar com um atendente, permaneça na linha. Atenção! Os funcionários do banco nunca pedem o código do SMS. Não o informe a ninguém. O tempo de espera pelo atendente é de cerca de cinco minutos.",
+        "questions": [
+          {"q": "Que número digitar se o cartão foi roubado?", "o": ["Dois.", "Um.", "Três.", "Nenhum, é preciso esperar."], "e": "«Если ваша карта потеряна или украдена, нажмите два»."},
+          {"q": "Como falar com um atendente?", "o": ["Permanecer na linha.", "Digitar três.", "Digitar zero.", "Ligar para outro número."], "e": "«Чтобы поговорить с оператором, оставайтесь на линии»."},
+          {"q": "Que aviso de segurança o menu dá?", "o": ["Nunca informar o código do SMS.", "Trocar a senha todo mês.", "Não usar o cartão no exterior.", "Não ligar à noite."], "e": "«Не сообщайте его никому»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você pede a um colega que salve o arquivo antes de fechar.", "o": ["Сохрани файл, прежде чем закрыть программу.", "Не сохраняй файл, прежде чем закрыть программу.", "Не сохрани файл перед закрытием.", "Сохранишь файл, закрыть программу."], "e": "Instrução única: perfectivo."},
+        {"q": "Você avisa a mãe para não abrir um e-mail estranho.", "o": ["Мама, не открывай это письмо!", "Мама, не открой это письмо!", "Мама, открывай это письмо!", "Мама, не откроешь это письмо?"], "e": "Proibição: не + imperfectivo."},
+        {"q": "Você explica a consequência de apertar um botão.", "o": ["Если ты нажмёшь сюда, видео начнётся.", "Если ты нажимаешь сюда завтра, видео начнётся.", "Если ты нажал бы сюда, видео начнётся.", "Если нажать ты, видео начнётся."], "e": "Если + futuro perfectivo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva um passo a passo (60 a 90 palavras) para um avô ou uma avó instalar e usar um aplicativo de videochamada. Inclua pelo menos uma proibição, uma advertência e uma condição com если.",
+        "useful": ["Сначала откройте …", "Нажмите на …", "Введите …", "Если …, …", "Не нажимайте …", "Не забудьте …"],
+        "model": "Бабушка, вот как поговорить со мной по видео. Сначала откройте магазин приложений и найдите программу «Видеозвонок». Нажмите «Установить» и подождите минуту. Потом откройте приложение и введите свой номер телефона. Вам придёт код в СМС: введите его в поле. Если код не придёт, нажмите «Отправить снова». Чтобы позвонить мне, выберите моё имя и нажмите на зелёную камеру. Не нажимайте на рекламу, которая иногда появляется внизу. И не забудьте зарядить телефон перед звонком!",
+        "model_pt": "Vó, é assim que se fala comigo por vídeo. Primeiro abra a loja de aplicativos e procure o programa «Videochamada». Toque em «Instalar» e espere um minuto. Depois abra o aplicativo e digite o seu número de telefone. Vai chegar um código por SMS: digite-o no campo. Se o código não chegar, toque em «Enviar de novo». Para me ligar, escolha o meu nome e toque na câmera verde. Não toque na propaganda que às vezes aparece embaixo. E não esqueça de carregar o celular antes da ligação!",
+        "checklist": ["Usei o imperativo perfectivo para os passos.", "Incluí uma proibição com не + imperfectivo.", "Incluí uma advertência com не забудьте / не потеряйте.", "Usei если + futuro perfectivo.", "Organizei os passos com сначала / потом.", "Escrevi pelo menos 60 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Explique em voz alta, como um atendente de suporte, como resolver um problema comum: o celular está lento ou sem espaço. Dê pelo menos quatro instruções.",
+        "useful": ["Давайте попробуем …", "Зайдите в …", "Удалите …", "Если это не поможет, …", "Не удаляйте …"],
+        "model": "Давайте попробуем решить проблему вместе. Сначала зайдите в настройки и откройте раздел «Память». Посмотрите, какие приложения занимают больше всего места. Удалите те, которыми вы не пользуетесь. Потом очистите кэш браузера. Только не удаляйте папку с фотографиями, пока не сделаете резервную копию. Если это не поможет, перезагрузите телефон. А если он и после этого будет тормозить, приходите к нам в сервисный центр.",
+        "model_pt": "Vamos tentar resolver o problema juntos. Primeiro entre nas configurações e abra a seção «Armazenamento». Veja quais aplicativos ocupam mais espaço. Apague os que você não usa. Depois limpe o cache do navegador. Só não apague a pasta de fotos antes de fazer uma cópia de segurança. Se isso não ajudar, reinicie o celular. E se mesmo assim ele continuar lento, venha à nossa assistência técnica.",
+        "checklist": ["Dei pelo menos quatro instruções com o perfectivo.", "Usei uma proibição com не + imperfectivo.", "Usei если para a alternativa.", "Falei de forma clara e ordenada."]}
+    ]}
+  ]
+}

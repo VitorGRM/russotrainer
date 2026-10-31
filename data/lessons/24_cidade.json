@@ -1,0 +1,165 @@
+{
+  "id": "cidade1", "theme": "cidade", "order": 1,
+  "title": "Как пройти?", "title_pt": "Cidade: bairro, direções e transporte urbano",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender indicações de caminho na rua e os avisos do metrô.",
+    "Ler a descrição de um bairro e localizar lugares num mapa mental.",
+    "Usar as preposições de lugar e de trajeto: напротив, рядом с, между, за, перед, вдоль, по, через, мимо, на углу.",
+    "Descrever por escrito o seu bairro e orientar oralmente alguém pela cidade."
+  ],
+  "grammar_focus": "напротив / около / возле / вдоль / мимо + Р. п. · рядом с / между / за / перед / над + Т. п. · по + Д. п. · через + В. п. · на углу · идите прямо, поверните налево",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário urbano e as expressões de localização.", "steps": [
+      {"t": "warmup", "questions": [
+        "Что есть рядом с вашим домом?",
+        "Вам нравится ваш район? Почему?",
+        "Em português, «em frente a», «ao lado de», «entre» e «ao longo de» são locuções. Em russo, que casos você acha que elas pedem?"
+      ]},
+      {"t": "vocab", "items": [
+        ["район", "bairro", "спальный район = bairro-dormitório"],
+        ["перекрёсток", "cruzamento", "на перекрёстке"],
+        ["светофор", "semáforo", "у светофора"],
+        ["переход", "faixa, passagem de pedestres", "подземный переход = passagem subterrânea"],
+        ["набережная", "beira-rio, orla", "гулять по набережной"],
+        ["напротив", "em frente a", "напротив банка (genitivo)"],
+        ["рядом с", "ao lado de", "рядом с парком (instrumental)"],
+        ["на углу", "na esquina", "на углу улицы и проспекта"],
+        ["повернуть налево / направо", "virar à esquerda / à direita", "идти прямо = seguir reto"],
+        ["остановка", "ponto (de ônibus)", "на остановке"],
+        ["пробка", "engarrafamento", "стоять в пробке"],
+        ["заблудиться", "perder-se", "Я заблудился."]
+      ]},
+      {"t": "match", "title": "Relacione a preposição ao seu caso.", "pairs": [
+        ["напротив", "+ genitivo"], ["рядом с", "+ instrumental"], ["по (улице)", "+ dativo"],
+        ["через (дорогу)", "+ acusativo"], ["между", "+ instrumental de dois termos"], ["на (углу)", "+ preposicional"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Аптека находится между банком и почтой.", "o": ["A farmácia fica entre o banco e o correio.", "A farmácia fica atrás do banco e do correio.", "A farmácia fica em frente ao banco e ao correio.", "A farmácia fica longe do banco e do correio."], "e": "Между + instrumental."},
+        {"q": "Идите вдоль реки до моста.", "o": ["Siga ao longo do rio até a ponte.", "Atravesse o rio pela ponte.", "Passe pelo rio e volte.", "Vá para o outro lado do rio."], "e": "Вдоль + genitivo = ao longo de."},
+        {"q": "Мы живём в спальном районе, далеко от центра.", "o": ["Moramos num bairro residencial, longe do centro.", "Moramos num bairro onde se dorme pouco.", "Moramos num quarto no centro.", "Moramos perto do centro, num bairro calmo."], "e": "Спальный район = bairro-dormitório, residencial."}
+      ]}
+    ]},
+    {"title": "Escuta: pedindo informação na rua", "goal": "Seguir indicações de caminho com várias etapas.", "steps": [
+      {"t": "dialogue", "title": "Где здесь аптека?", "setting": "Renata, recém-chegada a São Petersburgo, pede informação a um senhor na rua.",
+        "speakers": {"Рената": "f", "Мужчина": "m2"},
+        "lines": [
+          ["Рената", "Извините, вы не подскажете, где здесь ближайшая аптека?", "Com licença, o senhor poderia me dizer onde fica a farmácia mais próxima?"],
+          ["Мужчина", "Аптека? Есть одна на Садовой. Идите прямо по этой улице до светофора.", "Farmácia? Tem uma na rua Sadóvaia. Siga reto por esta rua até o semáforo."],
+          ["Рената", "До светофора. А потом?", "Até o semáforo. E depois?"],
+          ["Мужчина", "Потом перейдите через дорогу и поверните налево. Пройдите мимо большого книжного магазина.", "Depois atravesse a rua e vire à esquerda. Passe pela grande livraria."],
+          ["Рената", "Мимо книжного… Поняла.", "Pela livraria… Entendi."],
+          ["Мужчина", "Аптека будет на углу, напротив станции метро «Сенная площадь». Рядом с ней ещё есть кафе с зелёной вывеской.", "A farmácia vai estar na esquina, em frente à estação de metrô Sennáia Plóchtchad. Do lado dela ainda tem um café com letreiro verde."],
+          ["Рената", "Это далеко?", "É longe?"],
+          ["Мужчина", "Минут десять пешком. Можно проехать одну остановку на трамвае, но пешком быстрее: на Садовой всегда пробки.", "Uns dez minutos a pé. Dá para ir uma parada de bonde, mas a pé é mais rápido: na Sadóvaia sempre tem engarrafamento."],
+          ["Рената", "Спасибо огромное! Я здесь только второй день и всё время теряюсь.", "Muitíssimo obrigada! Estou aqui só há dois dias e me perco o tempo todo."],
+          ["Мужчина", "Ничего, Петербург быстро становится родным. Удачи!", "Não tem problema, Petersburgo logo vira a sua casa. Boa sorte!"]
+        ],
+        "questions": [
+          {"q": "Qual é a primeira indicação?", "o": ["Seguir reto por esta rua até o semáforo.", "Atravessar a rua.", "Pegar o bonde.", "Virar à direita."], "e": "«Идите прямо по этой улице до светофора»."},
+          {"q": "Por onde Renata deve passar?", "o": ["Pela grande livraria.", "Pela estação de metrô.", "Pelo café verde.", "Pelo semáforo de novo."], "e": "«Пройдите мимо большого книжного магазина»."},
+          {"q": "Onde fica a farmácia?", "o": ["Na esquina, em frente à estação de metrô.", "Ao lado da livraria.", "Dentro da estação de metrô.", "Atrás do café verde."], "e": "«На углу, напротив станции метро»."},
+          {"q": "Por que é melhor ir a pé?", "o": ["Porque na rua Sadóvaia sempre há engarrafamento.", "Porque o bonde está quebrado.", "Porque a farmácia fica a duas quadras.", "Porque o bonde é caro."], "e": "«На Садовой всегда пробки»."}
+        ]},
+      {"t": "dictation", "voice": "m2", "text": "Перейдите через дорогу и поверните налево. Пройдите мимо книжного магазина.", "pt": "Atravesse a rua e vire à esquerda. Passe pela livraria.", "hint": "Duas instruções seguidas (10 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Вы не подскажете, где здесь аптека?", "O senhor poderia me dizer onde fica a farmácia?"],
+        ["Идите прямо до светофора.", "Siga reto até o semáforo."],
+        ["Аптека на углу, напротив метро.", "A farmácia fica na esquina, em frente ao metrô."],
+        ["Я здесь только второй день и всё время теряюсь.", "Estou aqui só há dois dias e me perco o tempo todo."]
+      ]}
+    ]},
+    {"title": "Leitura: o meu bairro", "goal": "Ler a descrição de um bairro e reconstruir a localização dos lugares.", "steps": [
+      {"t": "reading", "title": "Мой район: Васильевский остров",
+        "text": "Я живу на Васильевском острове уже пять лет и не хочу никуда переезжать. Наш дом стоит на тихой линии между Средним и Малым проспектами. Прямо под моим окном растут старые липы, а за домом есть маленький двор со скамейками и детской площадкой.\n\nВсё необходимое находится рядом. Напротив дома работает булочная, где по утрам пахнет свежим хлебом. На углу нашей линии и Среднего проспекта находится станция метро «Василеостровская», а возле неё рынок, куда я хожу по субботам за овощами. Перед школой, в которой учится мой сын, недавно сделали новый пешеходный переход со светофором.\n\nНо больше всего я люблю набережную. Вечером я иду по линии к Неве, перехожу через дорогу и гуляю вдоль реки до Стрелки. Оттуда видны Зимний дворец и Петропавловская крепость. Единственный минус района: в часы пик на мостах огромные пробки, а летом мосты ночью разводят, и, если не успеешь вернуться домой до часа ночи, придётся ждать до утра.",
+        "pt": "Moro na Ilha Vassílievski há cinco anos e não quero me mudar para lugar nenhum. O nosso prédio fica numa linha tranquila entre a avenida Sriédni e a avenida Mály. Bem embaixo da minha janela crescem tílias antigas, e atrás do prédio há um pequeno pátio com bancos e um parquinho.\n\nTudo de que preciso fica perto. Em frente ao prédio funciona uma padaria onde de manhã cheira a pão fresco. Na esquina da nossa linha com a avenida Sriédni fica a estação de metrô Vassileostróvskaia, e perto dela um mercado aonde vou aos sábados comprar legumes. Em frente à escola onde o meu filho estuda, fizeram recentemente uma nova faixa de pedestres com semáforo.\n\nMas o que mais adoro é a orla. À noite vou pela linha até o Nevá, atravesso a rua e passeio ao longo do rio até a Strelka. De lá se veem o Palácio de Inverno e a Fortaleza de Pedro e Paulo. O único ponto negativo do bairro: na hora do rush há engarrafamentos enormes nas pontes, e no verão as pontes se abrem à noite, e, se você não conseguir voltar para casa até a uma da manhã, vai ter que esperar até de manhã.",
+        "tf": [
+          ["Há uma padaria em frente ao prédio da autora.", "V", "«Напротив дома работает булочная»."],
+          ["A estação de metrô fica atrás do prédio.", "F", "Fica «на углу нашей линии и Среднего проспекта»; atrás do prédio há um pátio."],
+          ["A autora vai ao mercado aos sábados.", "V", "«По субботам за овощами»."],
+          ["No verão, as pontes se abrem à noite.", "V", "«Летом мосты ночью разводят»."],
+          ["A autora pensa em se mudar para o centro.", "F", "«Не хочу никуда переезжать»."]
+        ],
+        "questions": [
+          {"q": "Что находится за домом?", "o": ["Маленький двор со скамейками и детской площадкой.", "Станция метро.", "Булочная.", "Набережная Невы."], "e": "«За домом есть маленький двор…»."},
+          {"q": "Что неудобно в районе летом?", "o": ["Ночью разводят мосты, и можно не попасть домой.", "Закрывают метро.", "Нет магазинов.", "На рынке нет овощей."], "e": "«Если не успеешь вернуться домой до часа ночи, придётся ждать до утра»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta.",
+        "text": "Булочная находится напротив {дома|дом|домом}. Рынок рядом с {метро|метра|метром}. Мы гуляем по {набережной|набережную|набережная}. Мой сын учится в школе за {парком|парк|парка}.",
+        "pt": "A padaria fica em frente ao prédio. O mercado fica ao lado do metrô. Passeamos pela orla. O meu filho estuda na escola atrás do parque.",
+        "e": "Напротив + genitivo; рядом с + instrumental (метро não declina); по + dativo; за + instrumental (localização)."}
+    ]},
+    {"title": "Foco na forma: onde fica e por onde passar", "goal": "Escolher a preposição e o caso para localização e trajeto.", "steps": [
+      {"t": "grammar", "title": "Preposições de lugar e de trajeto",
+        "paragraphs": [
+          "Com genitivo: напротив (em frente a), около / возле / у (perto de, junto a), вдоль (ao longo de), мимо (passando por), недалеко от, далеко от, посреди (no meio de): напротив театра, возле метро, вдоль реки, мимо банка.",
+          "Com instrumental: рядом с (ao lado de), между (entre), перед (em frente a, diante de), за (atrás de), над (acima de), под (abaixo de): рядом с домом, между почтой и банком, перед школой, за парком.",
+          "Trajeto: по + dativo (por, ao longo de uma superfície): идти по улице, гулять по парку. Через + acusativo (através de, atravessando): перейти через дорогу, пройти через парк. До + genitivo (até): дойти до угла.",
+          "Movimento × localização: за, под e перед com movimento pedem acusativo: Машина стоит за домом (instrumental: onde?), mas Машина уехала за дом (acusativo: para onde?). Na esquina: на углу (forma especial do preposicional).",
+          "Indicações: идите прямо, поверните налево / направо, идите до конца улицы, на втором перекрёстке, перейдите на другую сторону."
+        ],
+        "table": {"columns": ["Preposição", "Caso", "Exemplo"], "rows": [
+          ["напротив, около, возле, у", "genitivo", "напротив вокзала"],
+          ["вдоль, мимо, до", "genitivo", "вдоль набережной"],
+          ["рядом с, между", "instrumental", "между домами"],
+          ["перед, за, над, под (onde?)", "instrumental", "за углом"],
+          ["по", "dativo", "по проспекту"],
+          ["через", "acusativo", "через площадь"]
+        ]},
+        "examples": [
+          ["Остановка находится прямо перед торговым центром.", "O ponto fica bem em frente ao shopping."],
+          ["Пройдите через парк, и вы выйдете к реке.", "Atravesse o parque e você vai sair no rio."],
+          ["За углом есть хорошее кафе.", "Virando a esquina tem um café bom."]
+        ],
+        "pitfalls": [
+          "Напротив pede genitivo: «напротив банка», nunca «напротив банк».",
+          "Não confunda по e через: «идти по мосту» (andar sobre a ponte), «перейти через мост» (atravessar a ponte de um lado ao outro).",
+          "Перед também é temporal (перед уроком = antes da aula); no espaço, significa «diante de», com instrumental."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Банкомат находится ___ магазина.", "o": ["напротив", "рядом", "между", "через"], "e": "Напротив + genitivo; рядом exigiria с + instrumental."},
+        {"q": "Почта стоит между ___.", "o": ["банком и кафе", "банка и кафе", "банк и кафе", "банку и кафе"], "e": "Между + instrumental (кафе não declina)."},
+        {"q": "Мы долго гуляли ___ старому городу.", "o": ["по", "через", "вдоль", "мимо"], "e": "По + dativo: passear por."},
+        {"q": "Чтобы попасть на рынок, нужно пройти ___ площадь.", "o": ["через", "по", "мимо", "вдоль"], "e": "Через + acusativo: atravessar."},
+        {"q": "Машина стоит ___.", "o": ["за домом", "за дом", "за дома", "за доме"], "e": "Localização (onde?): за + instrumental."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Кафе находится напротив парк.", "o": ["Кафе находится напротив парка.", "Кафе находится напротив парком.", "Кафе находится напротив с парком."], "e": "Напротив + genitivo."},
+        {"q": "Я живу рядом с метро и с парка.", "o": ["Я живу рядом с метро и с парком.", "Я живу рядом метро и парка.", "Я живу рядом с метро и с парку."], "e": "Рядом с + instrumental."},
+        {"q": "Перейдите по дороге на зелёный свет.", "o": ["Перейдите через дорогу на зелёный свет.", "Перейдите вдоль дороги на зелёный свет.", "Перейдите мимо дороги на зелёный свет."], "e": "Atravessar: через + acusativo."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Аптека на углу напротив метро", "pt": "A farmácia fica na esquina, em frente ao metrô."},
+        {"a": "Идите прямо до второго перекрёстка", "pt": "Siga reto até o segundo cruzamento."},
+        {"a": "Вечером мы гуляем вдоль реки", "pt": "À noite passeamos ao longo do rio."}
+      ]}
+    ]},
+    {"title": "Uso real: avisos do metrô, situações e produção", "goal": "Entender avisos do transporte urbano e orientar pessoas.", "steps": [
+      {"t": "listening", "kind": "Объявление в метро", "title": "Следующая станция…", "voice": "m",
+        "text": "Осторожно, двери закрываются. Следующая станция «Театральная». Переход на Сокольническую и Арбатско-Покровскую линии. Уважаемые пассажиры! С двенадцатого по девятнадцатое ноября станция «Охотный Ряд» будет закрыта на вход и выход в связи с ремонтом. Поезда будут проходить станцию без остановки. Пожалуйста, пользуйтесь соседними станциями «Театральная» и «Площадь Революции». При выходе из поезда не забывайте свои вещи.",
+        "pt": "Atenção, as portas estão se fechando. Próxima estação: Teatrálnaia. Baldeação para as linhas Sokólnitcheskaia e Arbátsko-Pokróvskaia. Prezados passageiros! De doze a dezenove de novembro, a estação Okhótny Riad estará fechada para entrada e saída por causa de obras. Os trens vão passar pela estação sem parar. Por favor, usem as estações vizinhas Teatrálnaia e Plóchtchad Revoliútsii. Ao sair do trem, não esqueçam os seus pertences.",
+        "questions": [
+          {"q": "Qual é a próxima estação?", "o": ["Teatrálnaia.", "Okhótny Riad.", "Plóchtchad Revoliútsii.", "Sokólnitcheskaia."], "e": "«Следующая станция «Театральная»»."},
+          {"q": "O que acontece com a estação Okhótny Riad?", "o": ["Fica fechada por obras de 12 a 19 de novembro.", "Muda de nome.", "Abre uma nova saída.", "Funciona só de manhã."], "e": "«Будет закрыта на вход и выход в связи с ремонтом»."},
+          {"q": "O que farão os trens?", "o": ["Vão passar pela estação sem parar.", "Vão parar só na saída.", "Não vão circular.", "Vão mudar de linha."], "e": "«Поезда будут проходить станцию без остановки»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você se perdeu e pede ajuda.", "o": ["Извините, я заблудился. Вы не подскажете, где здесь метро?", "Извините, я потерял. Где метро есть?", "Извините, вы заблудились метро?", "Извините, подскажите метро где проходить?"], "e": "Заблудиться = perder-se; Вы не подскажете… = fórmula cortês."},
+        {"q": "Você explica que o café fica atrás do banco.", "o": ["Кафе находится за банком.", "Кафе находится за банк.", "Кафе находится за банка.", "Кафе находится после банка."], "e": "Localização: за + instrumental."},
+        {"q": "Você indica que é preciso virar na segunda rua à direita.", "o": ["Поверните на второй улице направо.", "Поверните второй улицей на право.", "Поверните на втором улице направо.", "Повернитесь вторая улица направо."], "e": "На второй улице (preposicional feminino) + направо."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 70,
+        "task": "Descreva o seu bairro (70 a 100 palavras) para um amigo russo que vai visitá-lo: onde fica a sua casa, o que há em volta e por onde vale passear. Use pelo menos seis preposições de lugar ou trajeto.",
+        "useful": ["Мой дом находится …", "Напротив …", "Рядом с …", "Между … и …", "За …", "По вечерам я гуляю по / вдоль …"],
+        "model": "Я живу в районе Пиньейрус в Сан-Паулу. Мой дом стоит на тихой улице между двумя большими проспектами. Напротив дома есть маленький рынок, где продают фрукты, а рядом с рынком моя любимая пекарня. За домом находится площадь с деревьями и скамейками. До станции метро идти пять минут: нужно пройти мимо школы и перейти через проспект на светофоре. По выходным я гуляю по парку Вилла-Лобус или катаюсь на велосипеде вдоль реки Пиньейрус. Приезжай, я всё тебе покажу!",
+        "model_pt": "Moro no bairro de Pinheiros, em São Paulo. O meu prédio fica numa rua tranquila entre duas avenidas grandes. Em frente ao prédio há um pequeno mercado onde se vendem frutas, e ao lado do mercado fica a minha padaria preferida. Atrás do prédio há uma praça com árvores e bancos. Até a estação de metrô são cinco minutos a pé: é preciso passar pela escola e atravessar a avenida no semáforo. Nos fins de semana passeio pelo Parque Villa-Lobos ou ando de bicicleta ao longo do rio Pinheiros. Venha, que eu te mostro tudo!",
+        "checklist": ["Usei pelo menos seis preposições de lugar ou trajeto.", "Usei o caso certo com cada preposição.", "Indiquei um trajeto (через, мимо, до).", "Escrevi pelo menos 70 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Um turista pergunta como ir de um ponto conhecido da sua cidade (uma praça, uma estação) até um lugar que você recomenda. Dê as indicações em voz alta, com pelo menos cinco etapas.",
+        "useful": ["Выйдите из … и идите прямо …", "На … перекрёстке поверните …", "Перейдите через …", "Пройдите мимо …", "… будет справа / слева, напротив …"],
+        "model": "От площади Се идите прямо по улице Пятнадцатого ноября до конца. На втором перекрёстке поверните направо и пройдите мимо старого монастыря. Потом перейдите через широкий проспект по подземному переходу. Идите вдоль парка ещё метров двести. Ресторан будет слева, напротив маленькой церкви, рядом с книжным магазином. Если заблудитесь, спросите любого прохожего: все его знают.",
+        "model_pt": "Da Praça da Sé, siga reto pela rua Quinze de Novembro até o fim. No segundo cruzamento, vire à direita e passe pelo antigo mosteiro. Depois atravesse a avenida larga pela passagem subterrânea. Siga ao longo do parque mais uns duzentos metros. O restaurante vai estar à esquerda, em frente a uma igrejinha, ao lado de uma livraria. Se se perder, pergunte a qualquer pessoa na rua: todo mundo conhece.",
+        "checklist": ["Dei pelo menos cinco etapas.", "Usei o imperativo formal.", "Usei pelo menos quatro preposições com o caso correto.", "Indiquei um ponto de referência final."]}
+    ]}
+  ]
+}

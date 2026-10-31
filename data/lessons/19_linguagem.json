@@ -1,0 +1,164 @@
+{
+  "id": "linguagem1", "theme": "linguagem", "order": 1,
+  "title": "Говорим правильно", "title_pt": "Língua, comunicação e opinião",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma conversa de intercâmbio linguístico e um programa de rádio sobre a norma culta.",
+    "Ler um texto sobre anglicismos no russo e identificar posições a favor e contra.",
+    "Distinguir os verbos de fala (говорить, сказать, рассказать, разговаривать, обсуждать, спорить) e as suas regências.",
+    "Expressar e defender uma opinião por escrito e oralmente com fórmulas variadas."
+  ],
+  "grammar_focus": "говорить / сказать / рассказать о · разговаривать с · обсуждать что (без «о») · спорить с кем о чём · по-моему, мне кажется, я считаю · согласен с кем / с тем, что",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer os verbos de comunicação e o vocabulário da linguística do cotidiano.", "steps": [
+      {"t": "warmup", "questions": [
+        "Что для вас самое трудное в русском языке?",
+        "В вашем языке много английских слов? Вам это нравится?",
+        "Em português, «falar», «dizer», «contar» e «conversar» são diferentes. Você acha que o russo faz as mesmas distinções?"
+      ]},
+      {"t": "vocab", "items": [
+        ["говорить / сказать", "falar / dizer", "говорить по-русски; сказать правду"],
+        ["рассказать о", "contar sobre", "рассказать о поездке (preposicional)"],
+        ["разговаривать с", "conversar com", "= беседовать с"],
+        ["обсуждать", "discutir (um tema)", "обсуждать проблему (sem о!)"],
+        ["спорить", "discutir, debater, brigar", "спорить с другом о политике"],
+        ["произношение", "pronúncia", "произносить = pronunciar"],
+        ["ударение", "acento tônico", "ставить ударение"],
+        ["заимствование", "empréstimo (linguístico)", "заимствовать слово из английского"],
+        ["носитель языка", "falante nativo", "носитель русского языка"],
+        ["сленг", "gíria", "молодёжный сленг"],
+        ["по-моему", "na minha opinião", "= мне кажется, на мой взгляд"],
+        ["согласен с", "concordo com", "согласна (f.), согласны (pl.)"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo à sua construção típica.", "pairs": [
+        ["рассказать", "о путешествии"], ["разговаривать", "с соседом"], ["обсуждать", "новый проект"],
+        ["спорить", "с братом о футболе"], ["сказать", "правду"], ["согласиться", "с мнением"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Мы долго спорили о том, как правильно ставить ударение.", "o": ["Discutimos por muito tempo sobre onde colocar o acento.", "Brigamos porque um de nós falou errado.", "Concordamos sobre o acento.", "Estudamos o acento por muito tempo."], "e": "Спорить о + preposicional = discutir, debater."},
+        {"q": "Мне кажется, ты не совсем прав.", "o": ["Acho que você não está totalmente certo.", "Parece que você está muito certo.", "Para mim você está errado e pronto.", "Você parece cansado."], "e": "Мне кажется = me parece, acho."},
+        {"q": "Это слово заимствовано из французского.", "o": ["Essa palavra foi emprestada do francês.", "Essa palavra é usada na França.", "Essa palavra foi traduzida para o francês.", "Essa palavra não existe em francês."], "e": "Заимствовать = tomar emprestado."}
+      ]}
+    ]},
+    {"title": "Escuta: intercâmbio linguístico", "goal": "Entender opiniões, concordância e discordância numa conversa.", "steps": [
+      {"t": "dialogue", "title": "Языковой обмен", "setting": "Num encontro de intercâmbio, Gabriel, brasileiro, conversa com Liza, que aprende português.",
+        "speakers": {"Лиза": "f", "Габриэл": "m"},
+        "lines": [
+          ["Лиза", "Габриэл, скажи честно, что для тебя самое трудное в русском?", "Gabriel, diz com sinceridade, o que é mais difícil para você no russo?"],
+          ["Габриэл", "По-моему, ударение. В учебниках его не ставят, и я всё время ошибаюсь. Вчера я сказал «зво́нит», и меня сразу поправили.", "Na minha opinião, o acento tônico. Nos livros ele não aparece, e eu erro o tempo todo. Ontem eu disse «zvónit», e me corrigiram na hora."],
+          ["Лиза", "Ха, об этом слове спорят даже носители! Правильно «звони́т», но многие говорят «зво́нит».", "Ha, sobre essa palavra até os nativos discutem! O certo é «zvonít», mas muita gente fala «zvónit»."],
+          ["Габриэл", "А мне кажется, если все так говорят, значит, это уже норма.", "Mas eu acho que, se todo mundo fala assim, então já é norma."],
+          ["Лиза", "Не совсем согласна. Язык меняется, но на собеседовании или по телевизору лучше говорить правильно.", "Não concordo totalmente. A língua muda, mas numa entrevista de emprego ou na televisão é melhor falar certo."],
+          ["Габриэл", "Тут ты права. А что сложнее всего для тебя в португальском?", "Aí você tem razão. E o que é mais difícil para você no português?"],
+          ["Лиза", "Носовые звуки! И ещё то, что бразильцы и португальцы говорят так по-разному. Я разговаривала с девушкой из Лиссабона и почти ничего не поняла.", "Os sons nasais! E também o fato de brasileiros e portugueses falarem de forma tão diferente. Conversei com uma moça de Lisboa e quase não entendi nada."],
+          ["Габриэл", "Это нормально. Давай в следующий раз обсудим сленг? Я расскажу тебе о бразильских выражениях, а ты мне о русских.", "É normal. Que tal discutirmos gírias da próxima vez? Eu te conto sobre expressões brasileiras, e você me conta sobre as russas."],
+          ["Лиза", "Договорились! Только без мата.", "Combinado! Só sem palavrão."]
+        ],
+        "questions": [
+          {"q": "O que é mais difícil para Gabriel no russo?", "o": ["O acento tônico.", "Os casos.", "Os sons nasais.", "As gírias."], "e": "«По-моему, ударение»."},
+          {"q": "Qual é a opinião de Gabriel sobre «zvónit»?", "o": ["Se todos falam assim, já é norma.", "É um erro grave.", "Só os jovens falam assim.", "É a forma antiga."], "e": "«Если все так говорят, значит, это уже норма»."},
+          {"q": "Por que Liza discorda em parte?", "o": ["Em situações formais é melhor seguir a norma.", "Porque a língua nunca muda.", "Porque ninguém fala «zvónit».", "Porque o dicionário aceita as duas formas."], "e": "«На собеседовании или по телевизору лучше говорить правильно»."},
+          {"q": "O que eles combinam para o próximo encontro?", "o": ["Discutir gírias.", "Estudar o acento.", "Ver um filme português.", "Conversar com a moça de Lisboa."], "e": "«Давай в следующий раз обсудим сленг?»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Язык меняется, но на собеседовании лучше говорить правильно.", "pt": "A língua muda, mas numa entrevista de emprego é melhor falar certo.", "hint": "Opinião de Liza (8 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["По-моему, самое трудное ударение.", "Na minha opinião, o mais difícil é o acento."],
+        ["А мне кажется, это уже норма.", "Mas eu acho que isso já é norma."],
+        ["Тут ты права.", "Aí você tem razão."],
+        ["Давай в следующий раз обсудим сленг.", "Vamos discutir gírias da próxima vez."]
+      ]}
+    ]},
+    {"title": "Leitura: anglicismos no russo", "goal": "Ler um texto de opinião e separar os argumentos de cada lado.", "steps": [
+      {"t": "reading", "title": "Дедлайн, фидбэк, кринж: портят ли английские слова русский язык?",
+        "text": "Откройте любой деловой чат, и вы увидите: «Скинь фидбэк до дедлайна», «У нас митинг в три». Многие пожилые люди говорят, что не понимают собственных внуков, а некоторые политики даже предлагают штрафовать за лишние иностранные слова.\n\nЛингвисты относятся к этому спокойнее. Они напоминают, что русский язык всегда заимствовал слова: в восемнадцатом веке из голландского пришли «верфь» и «флаг», в девятнадцатом из французского «пляж» и «вокзал» (последнее, правда, через английское название лондонского района). По их словам, большинство модных слов исчезает через несколько лет, а остаются только те, которые действительно нужны.\n\nОднако и лингвисты согласны, что проблема есть, когда заимствование ничего не добавляет. Зачем говорить «локация», если есть «место»? Мне кажется, главное не запрещать, а чувствовать стиль: то, что уместно в чате с коллегами, звучит странно в письме директору школы.",
+        "pt": "Abra qualquer chat de trabalho e você verá: «Manda o feedback antes do deadline», «Temos um meeting às três». Muitos idosos dizem que não entendem os próprios netos, e alguns políticos até propõem multar o excesso de palavras estrangeiras.\n\nOs linguistas encaram isso com mais calma. Eles lembram que o russo sempre tomou palavras emprestadas: no século XVIII, do holandês vieram «verf» (estaleiro) e «flag» (bandeira); no século XIX, do francês, «pliaj» (praia) e «vokzal» (estação), esta última, na verdade, através do nome inglês de um bairro de Londres. Segundo eles, a maioria das palavras da moda desaparece em poucos anos, e ficam só as que são realmente necessárias.\n\nNo entanto, até os linguistas concordam que há um problema quando o empréstimo não acrescenta nada. Por que dizer «lokátsia» se existe «miesto» (lugar)? Parece-me que o principal não é proibir, mas ter sensibilidade de estilo: o que é adequado num chat com colegas soa estranho numa carta ao diretor da escola.",
+        "tf": [
+          ["Alguns políticos propõem multar o excesso de palavras estrangeiras.", "V", "«Некоторые политики даже предлагают штрафовать»."],
+          ["Segundo os linguistas, o russo só começou a tomar palavras emprestadas recentemente.", "F", "«Русский язык всегда заимствовал слова»."],
+          ["A palavra «vokzal» está ligada a um bairro de Londres.", "V", "«Через английское название лондонского района»."],
+          ["O autor defende proibir todas as palavras inglesas.", "F", "«Главное не запрещать, а чувствовать стиль»."],
+          ["O texto informa quantos anglicismos há no russo atual.", "N", "Nenhum número é dado."]
+        ],
+        "questions": [
+          {"q": "Что, по словам лингвистов, происходит с большинством модных слов?", "o": ["Они исчезают через несколько лет.", "Они становятся литературной нормой.", "Их запрещают.", "Их используют только политики."], "e": "«Большинство модных слов исчезает через несколько лет»."},
+          {"q": "Какова позиция автора?", "o": ["Не запрещать, а учитывать стиль ситуации.", "Запретить все заимствования.", "Использовать как можно больше английских слов.", "Вернуть старые голландские слова."], "e": "«Главное не запрещать, а чувствовать стиль»."}
+        ]},
+      {"t": "cloze", "title": "Escolha o verbo adequado.",
+        "text": "Вчера мы {обсуждали|говорили|рассказывали} новый проект. Коллега {рассказал|обсудил|разговаривал} о конференции в Казани. Потом я долго {разговаривал|сказал|обсуждал} с директором. Он {сказал|рассказал|разговаривал}, что проект нужно закончить к маю.",
+        "pt": "Ontem discutimos o novo projeto. Um colega contou sobre a conferência em Kazan. Depois conversei muito tempo com o diretor. Ele disse que o projeto precisa ser concluído até maio.",
+        "e": "Обсуждать что (objeto direto); рассказать о чём; разговаривать с кем; сказать, что…"}
+    ]},
+    {"title": "Foco na forma: verbos de fala e fórmulas de opinião", "goal": "Escolher o verbo de comunicação pela regência e variar as fórmulas de opinião.", "steps": [
+      {"t": "grammar", "title": "Falar, dizer, contar, conversar, discutir",
+        "paragraphs": [
+          "Говорить (imperf.) é falar em geral, falar uma língua ou falar sobre algo: говорить по-русски, говорить о погоде. Сказать (perf.) é dizer algo concreto: сказать правду, сказать, что… Não existe «сказать по-русски» como habilidade: o perfectivo de говорить nesse sentido não se usa.",
+          "Рассказывать / рассказать о + preposicional ou что: contar uma história, narrar: рассказать о поездке, рассказать сказку. Разговаривать / беседовать с + instrumental: conversar com alguém: разговаривать с мамой по телефону.",
+          "Обсуждать / обсудить + acusativo, sem preposição: обсудить план, обсудить новости. Спорить / поспорить с кем о чём: debater, discutir com alguém sobre algo. Сообщить кому что / о чём: comunicar oficialmente.",
+          "Opinião: по-моему, на мой взгляд, мне кажется, что…, я считаю, что…, я думаю, что… Concordar: я согласен (согласна) с тобой / с тем, что… Discordar: я не согласен с …; не могу согласиться с тем, что…; тут я с тобой поспорю."
+        ],
+        "table": {"columns": ["Verbo", "Regência", "Exemplo"], "rows": [
+          ["говорить", "о + prep. / по-русски", "говорить о кино"],
+          ["сказать", "что / кому что", "сказать маме правду"],
+          ["рассказать", "о + prep. / что", "рассказать о детстве"],
+          ["разговаривать", "с + instr.", "разговаривать с соседом"],
+          ["обсуждать", "+ acus. (sem о)", "обсуждать проблему"],
+          ["спорить", "с + instr. о + prep.", "спорить с другом о политике"],
+          ["согласиться", "с + instr. / с тем, что", "согласиться с мнением"]
+        ]},
+        "examples": [
+          ["Расскажи, пожалуйста, о своём городе.", "Conte, por favor, sobre a sua cidade."],
+          ["Мы обсудили все детали и пришли к согласию.", "Discutimos todos os detalhes e chegamos a um acordo."],
+          ["Я не могу согласиться с тем, что сленг портит язык.", "Não posso concordar com a ideia de que a gíria estraga a língua."]
+        ],
+        "pitfalls": [
+          "Não diga «обсуждать о проблеме»: обсуждать pede objeto direto, «обсуждать проблему». Com о, use говорить: «говорить о проблеме».",
+          "«Я согласен» concorda em gênero: uma mulher diz «я согласна».",
+          "«Discutir» em português pode ser «debater» (спорить, обсуждать) ou «brigar» (ругаться, ссориться). Escolha pelo contexto."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "На собрании мы ___ бюджет на следующий год.", "o": ["обсудили", "обсудили о", "рассказали", "разговаривали"], "e": "Обсудить + acusativo, sem о."},
+        {"q": "Бабушка часто ___ нам о своём детстве.", "o": ["рассказывает", "разговаривает", "обсуждает", "говорит с"], "e": "Contar sobre: рассказывать о."},
+        {"q": "Я вчера два часа ___ с подругой по телефону.", "o": ["разговаривала", "рассказала", "обсудила", "сказала"], "e": "Conversar com: разговаривать с."},
+        {"q": "Я полностью ___ с вами.", "o": ["согласен", "согласен вам", "соглашаю", "согласие"], "e": "Согласен с + instrumental."},
+        {"q": "Братья всегда ___ о футболе.", "o": ["спорят", "обсуждают", "рассказывают", "говорят с"], "e": "Спорить о + preposicional."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Давай обсудим о твоём плане.", "o": ["Давай обсудим твой план.", "Давай обсудим с твоим планом.", "Давай обсудим твоего плана."], "e": "Обсудить + acusativo."},
+        {"q": "Она сказала мне о своей поездке весь вечер.", "o": ["Она весь вечер рассказывала мне о своей поездке.", "Она весь вечер сказала мне о своей поездке.", "Она весь вечер обсуждала мне о поездке."], "e": "Contar uma história ao longo do tempo: рассказывать."},
+        {"q": "Я не согласна тебе.", "o": ["Я не согласна с тобой.", "Я не согласна тебя.", "Я не согласна о тебе."], "e": "Согласен с + instrumental."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Мне кажется что сленг не портит язык", "pt": "Acho que a gíria não estraga a língua."},
+        {"a": "Расскажи мне о своей стране", "pt": "Me conte sobre o seu país."},
+        {"a": "Тут я с тобой не согласна", "pt": "Aqui eu não concordo com você."}
+      ]}
+    ]},
+    {"title": "Uso real: programa de rádio, situações e produção", "goal": "Entender uma explicação normativa e defender uma opinião.", "steps": [
+      {"t": "listening", "kind": "Радиопередача", "title": "«Говорим правильно»", "voice": "f2",
+        "text": "Здравствуйте, в эфире передача «Говорим правильно». Нам пишут слушатели: правда ли, что слово «кофе» теперь можно употреблять в среднем роде? Отвечаем. Да, словари допускают «горячее кофе» в разговорной речи, но в официальной речи и на письме по-прежнему рекомендуется мужской род: «горячий кофе». Второй вопрос: как правильно, «зво́нит» или «звони́т»? Норма одна: «звони́т», «звонят», «позвони́т». А в слове «договор» ударение на последний слог, хотя многие говорят «до́говор». Пишите нам, и мы обсудим ваши вопросы в следующем выпуске.",
+        "pt": "Olá, está no ar o programa «Falando corretamente». Os ouvintes nos escrevem: é verdade que a palavra «kofe» agora pode ser usada no gênero neutro? Respondemos. Sim, os dicionários admitem «goriátcheie kofe» na fala coloquial, mas na fala formal e na escrita continua recomendado o masculino: «goriátchi kofe». Segunda pergunta: qual é o certo, «zvónit» ou «zvonít»? Há uma só norma: «zvonít», «zvoniát», «pozvonít». E na palavra «dogovor» o acento cai na última sílaba, embora muitos digam «dógovor». Escreva para nós, e vamos discutir as suas perguntas na próxima edição.",
+        "questions": [
+          {"q": "O que dizem os dicionários sobre «кофе» no neutro?", "o": ["É admitido na fala coloquial, mas no registro formal se recomenda o masculino.", "É sempre errado.", "Agora é a única forma correta.", "Só se usa no plural."], "e": "«Допускают … в разговорной речи, но в официальной … мужской род»."},
+          {"q": "Qual é a pronúncia normativa?", "o": ["звони́т", "зво́нит", "As duas são corretas.", "звони́т só no plural."], "e": "«Норма одна: звони́т»."},
+          {"q": "Onde cai o acento em «договор»?", "o": ["Na última sílaba.", "Na primeira sílaba.", "Na sílaba do meio.", "Varia conforme a região."], "e": "«Ударение на последний слог»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você discorda educadamente de um colega numa reunião.", "o": ["Боюсь, я не могу с этим согласиться.", "Ты говоришь глупости.", "Я не согласен тебе.", "Я обсуждаю с тобой о этом."], "e": "Fórmula cortês de discordância."},
+        {"q": "Você pede a um russo que conte sobre a cidade dele.", "o": ["Расскажите, пожалуйста, о вашем городе.", "Скажите, пожалуйста, о вашем городе весь.", "Обсудите, пожалуйста, о вашем городе.", "Разговаривайте о вашем городе."], "e": "Рассказать о + preposicional."},
+        {"q": "Você pergunta como se pronuncia uma palavra.", "o": ["Как правильно произносится это слово?", "Как правильно говорит это слово?", "Как правильно сказать этому слову?", "Как правильно рассказать это слово?"], "e": "Произноситься = pronunciar-se."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 80,
+        "task": "Escreva um comentário de opinião (80 a 120 palavras) para um fórum: «Нужно ли бороться с иностранными словами в родном языке?». Use pelo menos três fórmulas de opinião e uma de concordância ou discordância.",
+        "useful": ["На мой взгляд, …", "Мне кажется, что …", "Я согласен(на) с теми, кто …", "Однако я не могу согласиться с тем, что …", "Я считаю, что …"],
+        "model": "На мой взгляд, бороться с иностранными словами запретами бессмысленно. Язык живой, и он сам решает, какие слова оставить. Я согласна с теми, кто говорит, что многие заимствования исчезают сами. Например, в португальском когда-то было модно говорить «рендеву» вместо «встреча», а сегодня так почти никто не говорит. Однако я не могу согласиться с тем, что это вообще не проблема. Мне кажется, когда человек говорит «локация» вместо «место», он просто хочет казаться современным. Поэтому я считаю, что важнее учить людей чувствовать стиль, чем штрафовать их.",
+        "model_pt": "Na minha opinião, combater as palavras estrangeiras com proibições não faz sentido. A língua é viva e decide sozinha quais palavras ficam. Concordo com quem diz que muitos empréstimos desaparecem por si mesmos. Por exemplo, em português já foi moda dizer «rendez-vous» em vez de «encontro», e hoje quase ninguém fala assim. No entanto, não posso concordar com a ideia de que isso não seja problema algum. Parece-me que, quando alguém diz «location» em vez de «lugar», só quer parecer moderno. Por isso, acho mais importante ensinar as pessoas a ter sensibilidade de estilo do que multá-las.",
+        "checklist": ["Usei pelo menos três fórmulas de opinião diferentes.", "Usei согласен / не могу согласиться с тем, что.", "Dei um exemplo concreto.", "Usei corretamente um verbo de fala com a sua regência.", "Escrevi pelo menos 80 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Grave cerca de um minuto respondendo: «Какой язык, по-вашему, самый трудный и почему?». Conte uma experiência sua e reaja a uma opinião contrária («Многие говорят, что…, но…»).",
+        "useful": ["По-моему, …", "Многие говорят, что …, но я с этим не согласен(на)", "Я помню, как однажды …", "Мне кажется, всё зависит от …"],
+        "model": "По-моему, самый трудный язык тот, который очень далёк от родного. Многие говорят, что русский самый трудный из-за падежей, но я с этим не совсем согласен. Падежи можно выучить по таблицам, а вот ударение и интонация намного сложнее. Я помню, как однажды сказал продавщице, что хочу купить «за́мок», то есть дворец, а не «замо́к» для двери, и она долго смеялась. Мне кажется, всё зависит от мотивации: когда язык тебе нравится, даже трудное становится интересным.",
+        "model_pt": "Na minha opinião, a língua mais difícil é aquela que está muito distante da nossa. Muitos dizem que o russo é a mais difícil por causa dos casos, mas não concordo totalmente. Os casos dá para aprender com tabelas, mas o acento e a entonação são muito mais complicados. Lembro que uma vez disse à vendedora que queria comprar um «zámok», isto é, um castelo, e não um «zamók» para a porta, e ela riu muito. Acho que tudo depende da motivação: quando você gosta de uma língua, até o difícil fica interessante.",
+        "checklist": ["Usei pelo menos duas fórmulas de opinião.", "Reagi a uma opinião contrária.", "Contei uma experiência com o passado.", "Usei pelo menos um verbo de fala com a regência correta."]}
+    ]}
+  ]
+}

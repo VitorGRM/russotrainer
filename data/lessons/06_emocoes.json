@@ -1,0 +1,165 @@
+{
+  "id": "emocoes1", "theme": "emocoes", "order": 1,
+  "title": "Что ты чувствуешь?", "title_pt": "Sentimentos e estados de espírito",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma conversa entre amigos sobre preocupação, alívio e alegria.",
+    "Ler um texto de divulgação sobre como lidar com o estresse.",
+    "Dominar a regência dos verbos de emoção: бояться, радоваться, гордиться, скучать, злиться, волноваться.",
+    "Contar por escrito e oralmente um momento que despertou uma emoção forte."
+  ],
+  "grammar_focus": "бояться + Р. п. · радоваться + Д. п. · гордиться / интересоваться + Т. п. · скучать по + Д. п. · злиться на + В. п. · волноваться за / из-за",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer os verbos e adjetivos que expressam emoções.", "steps": [
+      {"t": "warmup", "questions": [
+        "Что вас радует в обычной жизни?",
+        "Из-за чего вы обычно волнуетесь?",
+        "Em português, dizemos «tenho medo de», «tenho orgulho de». Que preposições você espera em russo?"
+      ]},
+      {"t": "vocab", "items": [
+        ["радоваться", "alegrar-se", "радоваться чему? успеху, весне (dativo)"],
+        ["бояться", "ter medo", "бояться чего? темноты, экзамена (genitivo)"],
+        ["гордиться", "ter orgulho", "гордиться кем? сыном (instrumental)"],
+        ["скучать по", "sentir saudade de", "скучать по дому, по маме (dativo)"],
+        ["злиться на", "ficar com raiva de", "злиться на брата (acusativo)"],
+        ["волноваться", "ficar nervoso, preocupar-se", "волноваться за детей, перед экзаменом"],
+        ["обидеться на", "ficar magoado com", "Она обиделась на меня."],
+        ["стыдно", "ter vergonha", "Мне стыдно. (dativo + стыдно)"],
+        ["облегчение", "alívio", "вздохнуть с облегчением = suspirar aliviado"],
+        ["раздражать", "irritar", "Меня раздражает шум."],
+        ["расстроиться", "ficar chateado, abalado", "Не расстраивайся!"],
+        ["равнодушный", "indiferente", "равнодушие = indiferença"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo ao seu complemento típico.", "pairs": [
+        ["бояться", "собак"], ["гордиться", "дочерью"], ["радоваться", "подарку"],
+        ["скучать", "по родителям"], ["злиться", "на начальника"], ["интересоваться", "музыкой"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Мне было так стыдно, что я покраснел.", "o": ["Fiquei com tanta vergonha que fiquei vermelho.", "Fiquei com tanto medo que fiquei pálido.", "Fiquei com tanta raiva que gritei.", "Fiquei tão feliz que chorei."], "e": "Стыдно = vergonha; покраснеть = ficar vermelho."},
+        {"q": "Не обижайся, я не хотел тебя расстроить.", "o": ["Não fique magoado, eu não queria te chatear.", "Não se preocupe, eu não queria te acordar.", "Não tenha medo, eu não queria te assustar.", "Não fique bravo, eu não queria te ofender em público."], "e": "Обижаться = magoar-se; расстроить = chatear, abalar."},
+        {"q": "Когда пришли результаты, все вздохнули с облегчением.", "o": ["Quando os resultados chegaram, todos suspiraram aliviados.", "Quando os resultados chegaram, todos ficaram decepcionados.", "Quando os resultados chegaram, todos riram.", "Quando os resultados chegaram, todos se assustaram."], "e": "С облегчением = com alívio."}
+      ]}
+    ]},
+    {"title": "Escuta: uma conversa entre amigas", "goal": "Acompanhar a mudança de emoções numa conversa informal.", "steps": [
+      {"t": "dialogue", "title": "Наконец-то!", "setting": "Ana encontra a amiga Kátia num café, depois de muito tempo sem se verem.",
+        "speakers": {"Катя": "f", "Аня": "f2"},
+        "lines": [
+          ["Катя", "Аня, привет! Сто лет тебя не видела! Как ты?", "Ánia, oi! Faz séculos que não te vejo! Como você está?"],
+          ["Аня", "Ой, честно говоря, последний месяц был ужасный. Я так волновалась из-за переезда, что почти не спала.", "Ai, para ser sincera, o último mês foi horrível. Fiquei tão nervosa com a mudança que quase não dormi."],
+          ["Катя", "Переезда? Куда?", "Mudança? Para onde?"],
+          ["Аня", "В Петербург. Мне предложили работу в музее. Я, конечно, обрадовалась, но потом стало страшно: новый город, никого не знаю.", "Para Petersburgo. Me ofereceram um emprego num museu. Claro que fiquei contente, mas depois deu medo: cidade nova, não conheço ninguém."],
+          ["Катя", "Понимаю. А родители что сказали?", "Entendo. E os seus pais, o que disseram?"],
+          ["Аня", "Мама сначала расстроилась, а папа сказал, что гордится мной. Это было очень важно для меня.", "A minha mãe primeiro ficou chateada, mas o meu pai disse que tem orgulho de mim. Isso foi muito importante para mim."],
+          ["Катя", "Ещё бы! А ты не боишься одиночества?", "Pudera! E você não tem medo da solidão?"],
+          ["Аня", "Немного боюсь. Я уже заранее скучаю по вам всем. Но я решила: если не попробую, потом буду жалеть.", "Um pouco. Já estou com saudade de vocês todos. Mas decidi: se eu não tentar, depois vou me arrepender."],
+          ["Катя", "Правильно! Я за тебя очень рада. И обещаю приезжать в гости.", "Isso mesmo! Fico muito feliz por você. E prometo ir te visitar."],
+          ["Аня", "Спасибо, Катя. Мне сразу стало легче.", "Obrigada, Kátia. Já me sinto mais leve."]
+        ],
+        "questions": [
+          {"q": "Por que Ánia quase não dormiu no último mês?", "o": ["Estava nervosa com a mudança.", "Estava doente.", "Trabalhava à noite no museu.", "Brigou com os pais."], "e": "«Волновалась из-за переезда» (из-за + genitivo = causa negativa)."},
+          {"q": "Como reagiu o pai dela?", "o": ["Disse que tem orgulho dela.", "Ficou chateado.", "Ficou com raiva.", "Não disse nada."], "e": "«Папа сказал, что гордится мной» (instrumental)."},
+          {"q": "Do que Ánia tem um pouco de medo?", "o": ["Da solidão.", "Do novo emprego.", "Do frio de Petersburgo.", "De perder o dinheiro."], "e": "«Не боишься одиночества?» «Немного боюсь»."},
+          {"q": "Por que ela decidiu ir mesmo assim?", "o": ["Para não se arrepender depois.", "Porque os pais insistiram.", "Porque o salário é alto.", "Porque Kátia também vai."], "e": "«Если не попробую, потом буду жалеть»."}
+        ]},
+      {"t": "dictation", "voice": "f2", "text": "Папа сказал, что гордится мной. Это было очень важно для меня.", "pt": "O meu pai disse que tem orgulho de mim. Isso foi muito importante para mim.", "hint": "Duas frases de Ánia sobre o pai (11 palavras)."},
+      {"t": "shadow", "voice": "f2", "lines": [
+        ["Я так волновалась, что почти не спала.", "Fiquei tão nervosa que quase não dormi."],
+        ["Папа сказал, что гордится мной.", "O pai disse que tem orgulho de mim."],
+        ["Я уже заранее скучаю по вам всем.", "Já estou com saudade de vocês todos."],
+        ["Мне сразу стало легче.", "Já me sinto mais leve."]
+      ]}
+    ]},
+    {"title": "Leitura: como lidar com o estresse", "goal": "Ler um texto de divulgação e distinguir conselhos de constatações.", "steps": [
+      {"t": "reading", "title": "Стресс: враг или помощник?",
+        "text": "Мы привыкли считать стресс чем-то плохим. Однако психологи напоминают, что кратковременный стресс полезен: перед экзаменом или выступлением организм мобилизуется, и мы лучше концентрируемся. Опасен стресс хронический, когда человек неделями живёт в тревоге и не может расслабиться.\n\nКак понять, что стресса слишком много? Человека раздражают мелочи, он плохо спит, часто злится на близких и теряет интерес к тому, что раньше радовало. В таком состоянии важно не стыдиться своих чувств и не держать их в себе.\n\nСпециалисты советуют простые вещи: каждый день гулять хотя бы полчаса, меньше времени проводить в соцсетях, говорить о своих переживаниях с друзьями. А если тревога не проходит месяцами, стоит обратиться к психологу: в этом нет ничего постыдного.",
+        "pt": "Estamos acostumados a considerar o estresse algo ruim. No entanto, os psicólogos lembram que o estresse de curta duração é útil: antes de uma prova ou apresentação, o organismo se mobiliza e nos concentramos melhor. Perigoso é o estresse crônico, quando a pessoa vive semanas em ansiedade e não consegue relaxar.\n\nComo saber que há estresse demais? A pessoa se irrita com coisas pequenas, dorme mal, fica com raiva dos próximos com frequência e perde o interesse pelo que antes a alegrava. Nesse estado, é importante não ter vergonha dos próprios sentimentos e não guardá-los para si.\n\nOs especialistas recomendam coisas simples: caminhar todos os dias pelo menos meia hora, passar menos tempo nas redes sociais, falar das próprias angústias com os amigos. E se a ansiedade não passa durante meses, vale a pena procurar um psicólogo: não há nada de vergonhoso nisso.",
+        "tf": [
+          ["Segundo o texto, todo estresse é prejudicial.", "F", "«Кратковременный стресс полезен»."],
+          ["Irritar-se com coisas pequenas pode ser sinal de estresse excessivo.", "V", "«Человека раздражают мелочи»."],
+          ["Os especialistas recomendam caminhar pelo menos meia hora por dia.", "V", "«Каждый день гулять хотя бы полчаса»."],
+          ["O texto recomenda um medicamento específico contra a ansiedade.", "N", "O texto não fala de medicamentos."],
+          ["Procurar um psicólogo é apresentado como algo vergonhoso.", "F", "«В этом нет ничего постыдного»."]
+        ],
+        "questions": [
+          {"q": "Чем опасен хронический стресс?", "o": ["Человек долго живёт в тревоге и не может расслабиться.", "Человек лучше концентрируется.", "Человек много спит.", "Человек перестаёт пользоваться соцсетями."], "e": "«Неделями живёт в тревоге и не может расслабиться»."},
+          {"q": "Когда, по мнению автора, стоит обратиться к психологу?", "o": ["Если тревога не проходит месяцами.", "Перед каждым экзаменом.", "Если человек злится один раз.", "Только если об этом попросят друзья."], "e": "«Если тревога не проходит месяцами»."}
+        ]},
+      {"t": "cloze", "title": "Complete com as palavras do quadro.", "bank": true,
+        "text": "Когда человек живёт в постоянной {тревоге}, его {раздражают} даже мелочи. Он часто {злится} на близких и перестаёт {радоваться} простым вещам. Важно не {стыдиться} своих чувств и {говорить} о них с друзьями.",
+        "pt": "Quando a pessoa vive em ansiedade constante, até as coisas pequenas a irritam. Ela fica com raiva dos próximos e deixa de se alegrar com coisas simples. É importante não ter vergonha dos próprios sentimentos e falar deles com os amigos.",
+        "e": "Observe a regência: злиться на + acusativo; радоваться + dativo; стыдиться + genitivo."}
+    ]},
+    {"title": "Foco na forma: a regência dos verbos de emoção", "goal": "Escolher o caso e a preposição certos depois de cada verbo de emoção.", "steps": [
+      {"t": "grammar", "title": "Cada emoção pede o seu caso",
+        "paragraphs": [
+          "Em português, quase tudo é «de»: medo de, orgulho de, saudade de. Em russo, cada verbo exige um caso próprio, e esse caso precisa ser memorizado junto com o verbo.",
+          "Genitivo (sem preposição): бояться, пугаться, стыдиться, избегать. Я боюсь высоты. Он стыдится своей ошибки.",
+          "Dativo: радоваться, удивляться, завидовать. Мы радуемся весне. Я удивился его ответу. Com preposição по: скучать по дому, по друзьям.",
+          "Instrumental: гордиться, интересоваться, восхищаться, увлекаться. Она гордится сыном. Он увлекается фотографией.",
+          "Acusativo com на: злиться на, сердиться на, обижаться на. Не злись на меня. Para preocupação: волноваться за кого (por alguém) e волноваться из-за чего (por causa de algo)."
+        ],
+        "table": {"columns": ["Caso", "Verbos", "Exemplo"], "rows": [
+          ["genitivo", "бояться, стыдиться, избегать", "бояться темноты"],
+          ["dativo", "радоваться, удивляться, завидовать", "радоваться подарку"],
+          ["по + dativo", "скучать", "скучать по маме"],
+          ["instrumental", "гордиться, интересоваться, увлекаться, восхищаться", "гордиться сестрой"],
+          ["на + acusativo", "злиться, сердиться, обижаться", "обидеться на друга"],
+          ["за + acusativo", "волноваться, переживать, радоваться", "волноваться за детей"]
+        ]},
+        "examples": [
+          ["Я очень рад за тебя!", "Fico muito feliz por você!"],
+          ["Дети боятся грозы, а взрослые боятся налоговой.", "As crianças têm medo de trovoada, e os adultos, da Receita."],
+          ["Он всегда интересовался историей, а теперь увлекается археологией.", "Ele sempre se interessou por história e agora está apaixonado por arqueologia."]
+        ],
+        "pitfalls": [
+          "Não diga «бояться от собак»: бояться não leva preposição. Correto: бояться собак.",
+          "Скучать pede по + dativo: «скучаю по тебе», nunca «скучаю тебя».",
+          "Рад + dativo (рад встрече) é alegria por algo; рад за + acusativo (рад за тебя) é alegria por outra pessoa."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Мой младший брат очень боится ___.", "o": ["темноты", "темнотой", "темноте", "от темноты"], "e": "Бояться + genitivo, sem preposição."},
+        {"q": "Родители гордятся ___.", "o": ["своими детьми", "своих детей", "своим детям", "за своих детей"], "e": "Гордиться + instrumental."},
+        {"q": "Я так скучаю ___!", "o": ["по тебе", "тебя", "о тебе", "за тебя"], "e": "Скучать по + dativo."},
+        {"q": "Почему ты злишься ___?", "o": ["на меня", "мне", "меня", "со мной"], "e": "Злиться на + acusativo."},
+        {"q": "Мы все радуемся ___ нашей команды.", "o": ["победе", "победу", "победы", "победой"], "e": "Радоваться + dativo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я очень боюсь от экзамена.", "o": ["Я очень боюсь экзамена.", "Я очень боюсь экзаменом.", "Я очень боюсь на экзамен."], "e": "Бояться + genitivo, sem preposição."},
+        {"q": "Мама гордится моих успехов.", "o": ["Мама гордится моими успехами.", "Мама гордится моим успехам.", "Мама гордится на мои успехи."], "e": "Гордиться + instrumental."},
+        {"q": "Она интересуется о политике.", "o": ["Она интересуется политикой.", "Она интересуется политики.", "Она интересуется в политике."], "e": "Интересоваться + instrumental, sem preposição."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Я очень рад за тебя", "pt": "Fico muito feliz por você."},
+        {"a": "Она всегда скучает по родному городу", "pt": "Ela sempre sente saudade da cidade natal."},
+        {"a": "Не обижайся на меня пожалуйста", "pt": "Não fique magoado comigo, por favor."}
+      ]}
+    ]},
+    {"title": "Uso real: mensagem de voz, situações e produção", "goal": "Entender e expressar emoções em situações reais.", "steps": [
+      {"t": "listening", "kind": "Голосовое сообщение", "title": "Сообщение от бабушки", "voice": "f2",
+        "text": "Сашенька, здравствуй, это бабушка. Я вчера смотрела твоё выступление по телевизору и даже заплакала, так я за тебя радовалась! Дедушка говорит, что гордится тобой, и всем соседям уже рассказал. Только ты, пожалуйста, не переживай из-за того, что забыл одно слово, никто этого не заметил. Мы очень по тебе скучаем. Приезжай в субботу на пироги, я испеку твои любимые, с капустой. Целую!",
+        "pt": "Sáchenka, olá, é a vovó. Ontem vi a sua apresentação na televisão e até chorei, de tanta alegria por você! O vovô diz que tem orgulho de você e já contou para todos os vizinhos. Só não fique preocupado, por favor, por ter esquecido uma palavra, ninguém percebeu. Estamos com muita saudade de você. Venha no sábado comer pirozhki, vou fazer os seus preferidos, de repolho. Beijos!",
+        "questions": [
+          {"q": "Por que a avó chorou?", "o": ["De alegria por ver a apresentação do neto.", "Porque o neto esqueceu uma palavra.", "Porque está com saudade e doente.", "Porque o avô brigou com os vizinhos."], "e": "«Даже заплакала, так я за тебя радовалась»."},
+          {"q": "Com que o neto não deve se preocupar?", "o": ["Com uma palavra que esqueceu.", "Com a visita de sábado.", "Com o que os vizinhos dizem.", "Com o horário do programa."], "e": "«Не переживай из-за того, что забыл одно слово»."},
+          {"q": "O que a avó propõe?", "o": ["Vir no sábado comer pirozhki de repolho.", "Assistir juntos à televisão.", "Ligar para o avô.", "Visitar os vizinhos."], "e": "«Приезжай в субботу на пироги … с капустой»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Um amigo conta que passou na prova difícil.", "o": ["Поздравляю! Я очень рад за тебя!", "Поздравляю! Я очень рад тебе!", "Поздравляю! Я горжусь тебя!", "Поздравляю! Я радуюсь за твой."], "e": "Рад за + acusativo: alegria pela outra pessoa."},
+        {"q": "Você quer acalmar uma colega antes da entrevista.", "o": ["Не волнуйся, всё будет хорошо!", "Не бойся меня, всё будет хорошо!", "Не злись, всё будет хорошо!", "Не обижайся, всё будет хорошо!"], "e": "Волноваться = ficar nervoso."},
+        {"q": "Você pede desculpas por ter magoado alguém.", "o": ["Прости, я не хотел тебя обидеть.", "Прости, я не хотел тебе обидеть.", "Прости, я не хотел обидеться на тебя.", "Прости, я не хотел тебя бояться."], "e": "Обидеть кого? (acusativo) = magoar alguém."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva um post de diário (60 a 90 palavras) sobre um momento em que você sentiu uma emoção forte: medo, orgulho, saudade, alegria ou alívio. Conte o que aconteceu e como se sentiu.",
+        "useful": ["Я никогда не забуду, как …", "Сначала я очень волновался(лась) из-за …", "Мне было страшно / стыдно / обидно", "Я гордился(лась) …", "Потом я вздохнул(а) с облегчением"],
+        "model": "Я никогда не забуду свой первый день в Москве. Сначала я очень волновался из-за языка: боялся, что ничего не пойму. В аэропорту я спросил дорогу, и мне ответили так быстро, что мне стало стыдно и немного обидно. Но вечером я сам купил билет в метро и поговорил с хозяйкой квартиры. Она сказала, что я хорошо говорю по-русски. Я вздохнул с облегчением и даже гордился собой. Конечно, я очень скучал по семье, но радовался каждому новому слову.",
+        "model_pt": "Nunca vou esquecer o meu primeiro dia em Moscou. No começo, fiquei muito nervoso por causa da língua: tinha medo de não entender nada. No aeroporto, perguntei o caminho e me responderam tão rápido que fiquei envergonhado e um pouco magoado. Mas à noite comprei sozinho o bilhete do metrô e conversei com a dona do apartamento. Ela disse que eu falo bem russo. Suspirei aliviado e até fiquei orgulhoso de mim. Claro que sentia muita saudade da família, mas me alegrava com cada palavra nova.",
+        "checklist": ["Usei pelo menos três verbos de emoção com a regência correta.", "Usei uma construção impessoal (мне было страшно / стыдно).", "Organizei a história no tempo (сначала, потом, вечером).", "Usei o passado com o gênero correto.", "Escrevi pelo menos 60 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Grave uma mensagem de voz (cerca de 40 segundos) para um amigo que acabou de conseguir um emprego no exterior: parabenize, diga como você se sente e o que vai sentir quando ele partir.",
+        "useful": ["Я так рад(а) за тебя!", "Я горжусь тобой", "Мне будет тебя не хватать", "Я буду скучать по …", "Не волнуйся, …"],
+        "model": "Привет, Миша! Только что узнал новости. Поздравляю! Я так рад за тебя, ты это заслужил. Честно, я горжусь тобой. Конечно, мне будет тебя не хватать, я буду скучать по нашим вечерам в баре. Но не волнуйся, мы будем созваниваться. И я обязательно приеду в гости. Давай встретимся до твоего отъезда!",
+        "model_pt": "Oi, Micha! Acabei de saber a notícia. Parabéns! Fico muito feliz por você, você mereceu. Sinceramente, tenho orgulho de você. Claro que vou sentir a sua falta, vou ter saudade das nossas noites no bar. Mas não se preocupe, vamos nos falar. E com certeza vou te visitar. Vamos nos encontrar antes da sua partida!",
+        "checklist": ["Usei рад за + acusativo.", "Usei гордиться + instrumental.", "Usei скучать по + dativo.", "Terminei com uma proposta concreta."]}
+    ]}
+  ]
+}

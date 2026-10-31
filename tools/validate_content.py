@@ -17,7 +17,7 @@ TYPES = {
     "choice", "input", "correction", "sentence_order", "flashcard", "open_text",
     "match_pairs", "reading", "listening",
 }
-COURSES = {"russian", "romanian", "kazakh"}
+COURSES = {"russian"}
 
 
 def norm(value: object) -> str:
@@ -133,118 +133,93 @@ def main() -> int:
     else:
         prefix_module = {}
 
-    # Lições «Лексика в диалоге»: o gerador já recusa falas/lacunas
-    # inconsistentes; aqui conferimos o que ele produz e procuramos
-    # alternativas que entreguem a resposta.
-    warnings: list[str] = []
-    vocab_files = sorted(VOCAB_LESSONS.glob("*.json")) if VOCAB_LESSONS.exists() else []
-    vocab_count = 0
-    try:
-        from vocab_lessons import UNGRADED_TYPES, VocabLessonStore, gapped_answer_warnings
-        store = VocabLessonStore(VOCAB_LESSONS)
-        store.load()
-    except Exception as exc:
-        store = None
-        errors.append(f"vocab_lessons: {exc}")
-    if store:
-        unit_ids = set()
-        for path in sorted(UNITS.glob("*.json")):
-            try:
-                unit_ids.add(json.loads(path.read_text(encoding="utf-8"))["id"])
-            except Exception:
-                pass
-        for lesson in store.lessons:
-            if lesson["unit_id"] not in unit_ids:
-                errors.append(f"{lesson['id']}: unit_id inexistente {lesson['unit_id']}")
-            if len(lesson["items"]) != 8:
-                warnings.append(f"{lesson['id']}: {len(lesson['items'])} construções (o modelo prevê 8)")
-            for line in lesson["dialogue"]["lines"]:
-                if not line.get("pt"):
-                    errors.append(f"{lesson['id']}: fala sem tradução: {line['ru'][:40]}")
-            for item in lesson["items"]:
-                for field, size in (("chunk_wrong", 3),):
-                    if len(item.get(field, [])) != size:
-                        errors.append(f"{lesson['id']}/{item['key']}: {field} precisa de {size} distratores")
-                for field in ("trap", "form_note", "pt", "chunk_pt"):
-                    if " или " in item.get(field, ""):
-                        errors.append(f"{lesson['id']}/{item['key']}: «или» num texto em português ({field})")
-                if len(item["cloze"].get("wrong", [])) != 3 or len(item["hear"].get("wrong", [])) != 3:
-                    errors.append(f"{lesson['id']}/{item['key']}: lacuna e escuta precisam de 3 distratores")
-            for exercise in lesson["generated"]:
-                vocab_count += 1
-                ex_id = exercise["id"]
-                if ex_id in ids:
-                    errors.append(f"{ex_id}: ID duplicado")
-                ids.add(ex_id)
-                if exercise["type"] in UNGRADED_TYPES:
-                    continue
-                options = exercise.get("options", [])
-                if options:
-                    if len(set(options)) != len(options):
-                        errors.append(f"{ex_id}: alternativas repetidas {options}")
-                    if exercise.get("answer") not in options:
-                        errors.append(f"{ex_id}: gabarito fora das opções")
-                    for warning in gapped_answer_warnings(exercise):
-                        warnings.append(f"{ex_id}: {warning}")
-                if exercise["type"] == "sentence_order":
-                    tokens = list(exercise["tokens"])
-                    if exercise.get("extra_block"):
-                        tokens = tokens[:-1]
-                    if norm(" ".join(tokens)) != norm(exercise["answer"]):
-                        errors.append(f"{ex_id}: blocos não reconstroem a frase")
-                if exercise["type"] == "match_pairs":
-                    rights = [pair["right"] for pair in exercise["pairs"]]
-                    lefts = [pair["left"] for pair in exercise["pairs"]]
-                    if len(set(rights)) != len(rights) or len(set(lefts)) != len(lefts):
-                        errors.append(f"{ex_id}: pares repetidos")
-        total += vocab_count
-
-    import re as _re
-    stray = _re.compile(r"[\u00ad\u200b-\u200f\ufeff\u2e80-\u9fff\u3000-\u30ff\uac00-\ud7af]")
-    token = _re.compile(r"[A-Za-zÀ-ÿА-Яа-яЁё]+")
-    cyrillic = _re.compile(r"[А-Яа-яЁё]")
-    latin = _re.compile(r"[A-Za-zÀ-ÿ]")
-
-    def _scan(value: object, where: str) -> None:
-        if isinstance(value, str):
-            found = stray.search(value)
-            if found:
-                errors.append(f"{where}: caractere estranho {hex(ord(found.group()))} em '…{value[max(0, found.start() - 20):found.start() + 20]}…'")
-            # palavra que mistura cirílico e latino é sempre erro de digitação
-            # (ex.: «дативo», com o final latino) e quebra o clicador de palavras
-            for word in token.findall(value):
-                if cyrillic.search(word) and latin.search(word):
-                    errors.append(f"{where}: palavra com escrita mista cirílico/latino: {word!r}")
-        elif isinstance(value, dict):
-            for key, item in value.items():
-                _scan(item, f"{where}.{key}")
-        elif isinstance(value, list):
-            for index, item in enumerate(value):
-                _scan(item, f"{where}[{index}]")
-
-    for path in sorted(UNITS.glob("*.json")):
+    # Construções (data/vocab_lessons): o app usa chunk, chunk_wrong, cloze e hear como perguntas.
+    for path in sorted(VOCAB_LESSONS.glob("*.json")) if VOCAB_LESSONS.exists() else []:
         try:
-            _scan(json.loads(path.read_text(encoding="utf-8")), path.name)
-        except Exception:
-            pass
-    _scan(prefix_module, PREFIX_VERBS.name)
-    for path in vocab_files:
-        try:
-            _scan(json.loads(path.read_text(encoding="utf-8")), path.name)
+            lesson = json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:
             errors.append(f"{path.name}: JSON inválido: {exc}")
+            continue
+        for item in lesson.get("items", []):
+            key = f"{lesson.get('id')}:{item.get('key')}"
+            total += 1
+            if not item.get("head") or not item.get("pt"):
+                errors.append(f"{key}: construção sem head ou pt")
+            if item.get("chunk") and item["chunk"] in item.get("chunk_wrong", []):
+                errors.append(f"{key}: chunk correto repetido entre os errados")
+            cloze = item.get("cloze") or {}
+            if cloze and (not cloze.get("answer") or cloze["answer"] in cloze.get("wrong", [])):
+                errors.append(f"{key}: lacuna sem resposta ou com resposta entre as erradas")
+            hear = item.get("hear") or {}
+            if hear and (not hear.get("ru") or hear.get("pt") in hear.get("wrong", [])):
+                errors.append(f"{key}: escuta incompleta")
 
-    if warnings:
-        print("Avisos (respostas possivelmente óbvias ou fora do modelo):")
-        for warning in warnings:
-            print(f"- {warning}")
+    # Base lexical: temas declarados, verbetes estudáveis com tradução, nenhum tema vazio.
+    lexicon_gz = BASE / "data" / "lexicon.sqlite3.gz"
+    themes = [t["id"] for t in json.loads((BASE / "data" / "themes.json").read_text(encoding="utf-8"))["themes"]]
+    stats = ""
+
+    # Aulas temáticas: estrutura, gabaritos e um tema existente por aula.
+    sys.path.insert(0, str(BASE))
+    from lessons import LessonStore, validate as validate_lesson
+
+    lesson_files = sorted((BASE / "data" / "lessons").glob("*.json"))
+    lesson_items = 0
+    lesson_themes = set()
+    for path in lesson_files:
+        try:
+            lesson = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            errors.append(f"{path.name}: JSON inválido ({exc})")
+            continue
+        for problem in validate_lesson(lesson, set(themes)):
+            errors.append(f"{path.name}: {problem}")
+        lesson_themes.add(lesson.get("theme"))
+        lesson_items += sum(LessonStore.graded_count(step) for part in lesson.get("parts", []) for step in part.get("steps", []))
+    for theme in themes:
+        if theme != "geral" and theme not in lesson_themes:
+            errors.append(f"aulas: tema {theme} sem aula temática")
+    total += lesson_items
+
+    if not lexicon_gz.exists():
+        errors.append("data/lexicon.sqlite3.gz ausente: rode tools/build_lexicon.py")
+    else:
+        import gzip
+        import sqlite3
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as folder:
+            raw = Path(folder) / "lexicon.sqlite3"
+            with gzip.open(lexicon_gz, "rb") as source:
+                raw.write_bytes(source.read())
+            conn = sqlite3.connect(raw)
+            entries = conn.execute("SELECT COUNT(*) FROM entries").fetchone()[0]
+            studyable = conn.execute("SELECT COUNT(*) FROM entries WHERE study = 1").fetchone()[0]
+            missing = conn.execute("SELECT COUNT(*) FROM entries WHERE study = 1 AND (pt IS NULL OR pt = '')").fetchone()[0]
+            if missing:
+                errors.append(f"lexicon: {missing} verbetes estudáveis sem tradução")
+            used = {row[0] for row in conn.execute("SELECT DISTINCT theme_id FROM entry_themes")}
+            for theme in sorted(used - set(themes)):
+                errors.append(f"lexicon: tema {theme} não existe em themes.json")
+            for theme in themes:
+                if theme not in used:
+                    errors.append(f"lexicon: tema {theme} sem nenhuma palavra")
+            unthemed = conn.execute("SELECT COUNT(*) FROM entries e WHERE NOT EXISTS (SELECT 1 FROM entry_themes t WHERE t.entry_id = e.id)").fetchone()[0]
+            if unthemed:
+                errors.append(f"lexicon: {unthemed} verbetes sem tema")
+            content_ids = {row[0] for row in conn.execute("SELECT item_id FROM content_themes")}
+            missing_content = sorted(i for i in ids if i not in content_ids)
+            if missing_content:
+                errors.append(f"lexicon: {len(missing_content)} exercícios sem tema (reconstrua a base): {', '.join(missing_content[:5])}")
+            conn.close()
+            stats = f", {entries} verbetes ({studyable} estudáveis), {len(themes)} temas"
 
     if errors:
-        print("Conteúdo inválido:")
+        print("Erros encontrados:")
         for error in errors:
             print(f"- {error}")
         return 1
-    print(f"OK: {len(list(UNITS.glob('*.json')))} unidades, {len(vocab_files)} lições de vocabulário, {total} exercícios, {diagnostic} diagnósticos.")
+    print(f"OK: {total} itens de conteúdo{stats}.")
     return 0
 
 

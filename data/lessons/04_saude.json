@@ -1,0 +1,164 @@
+{
+  "id": "saude1", "theme": "saude", "order": 1,
+  "title": "На приёме у врача", "title_pt": "Na consulta médica",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender uma consulta médica: sintomas, exame, diagnóstico e recomendações.",
+    "Ler um texto de divulgação sobre o sono e a saúde.",
+    "Expressar dor e estados com у меня болит e com o dativo (мне плохо, вам нельзя).",
+    "Justificar uma falta por doença por escrito e descrever sintomas oralmente."
+  ],
+  "grammar_focus": "у кого болит + именительный · кому + плохо / холодно / нужно / нельзя · заболеть + творительный",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer sintomas, termos de consulta e de farmácia.", "steps": [
+      {"t": "warmup", "questions": [
+        "Как часто вы болеете? Что вы делаете, когда простудились?",
+        "Вы предпочитаете лекарства или народные средства?",
+        "Como funciona a saúde pública no seu país? É fácil marcar consulta?"
+      ]},
+      {"t": "vocab", "items": [
+        ["записаться к врачу", "marcar consulta com o médico", "записаться к + dativo: к терапевту"],
+        ["у меня болит горло", "estou com dor de garganta", "болит + nominativo; болят зубы (plural)"],
+        ["температура", "febre; temperatura", "у меня температура = estou com febre"],
+        ["простудиться", "resfriar-se", "простуда = resfriado"],
+        ["кашлять", "tossir", "кашель = tosse"],
+        ["насморк", "coriza, nariz escorrendo", "у меня насморк"],
+        ["выписать рецепт", "receitar, passar receita", "врач выписал лекарство"],
+        ["принимать лекарство", "tomar remédio", "по таблетке три раза в день"],
+        ["больничный", "atestado médico (licença por doença)", "взять больничный, быть на больничном"],
+        ["поликлиника", "posto de saúde, ambulatório", "больница = hospital (internação)"],
+        ["лекарство без рецепта", "remédio sem receita", "аптека = farmácia"],
+        ["чувствовать себя", "sentir-se", "Как вы себя чувствуете?"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo ao complemento.", "pairs": [
+        ["измерить", "температуру"], ["сдать", "анализ крови"], ["выписать", "рецепт"],
+        ["вызвать", "скорую помощь"], ["принимать", "таблетки"], ["записаться", "к врачу"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Меня тошнит.", "o": ["Estou enjoado.", "Estou com tosse.", "Estou com frio.", "Estou com sono."], "e": "Construção impessoal: меня (acusativo) тошнит."},
+        {"q": "Ему наложили гипс.", "o": ["Engessaram-no (puseram gesso nele).", "Deram-lhe uma injeção.", "Fizeram-lhe um curativo.", "Mediram a pressão dele."], "e": "Наложить гипс = engessar."},
+        {"q": "Выздоравливайте!", "o": ["Melhoras!", "Saúde! (depois de um espirro)", "Agasalhe-se!", "Bom apetite!"], "e": "Выздоравливать = recuperar-se. Ao espirro diz-se «Будьте здоровы!»."}
+      ]}
+    ]},
+    {"title": "Escuta: no consultório", "goal": "Entender sintomas, exame e recomendações numa consulta real.", "steps": [
+      {"t": "dialogue", "title": "Приём у терапевта", "setting": "Olga vai ao clínico geral do posto de saúde.",
+        "speakers": {"Врач": "m", "Ольга": "f"},
+        "lines": [
+          ["Врач", "Здравствуйте, садитесь. На что жалуетесь?", "Olá, sente-se. Qual é a queixa?"],
+          ["Ольга", "Здравствуйте, доктор. Уже три дня болит горло, а сегодня утром поднялась температура: тридцать восемь и пять.", "Olá, doutor. Já faz três dias que estou com dor de garganta, e hoje de manhã a febre subiu: trinta e oito e meio."],
+          ["Врач", "Кашель есть?", "Tem tosse?"],
+          ["Ольга", "Да, сухой кашель, особенно ночью. И голова болит.", "Sim, tosse seca, principalmente à noite. E dor de cabeça."],
+          ["Врач", "Откройте рот, скажите «а». Да, горло красное. Сейчас послушаю лёгкие. Дышите глубже. Хорошо, в лёгких чисто.", "Abra a boca, diga «a». Sim, a garganta está vermelha. Agora vou auscultar os pulmões. Respire fundo. Bom, os pulmões estão limpos."],
+          ["Ольга", "Это что-то серьёзное?", "É algo sério?"],
+          ["Врач", "Нет, похоже на обычную вирусную инфекцию. Антибиотики не нужны. Пейте больше тёплой жидкости, полощите горло и принимайте жаропонижающее, если температура выше тридцати восьми.", "Não, parece uma infecção viral comum. Antibióticos não são necessários. Beba mais líquidos quentes, gargareje e tome antitérmico se a febre passar de trinta e oito."],
+          ["Ольга", "А на работу мне можно?", "E posso ir trabalhar?"],
+          ["Врач", "Ни в коем случае. Я выпишу вам больничный на пять дней. Если через три дня не станет лучше, приходите снова.", "De jeito nenhum. Vou lhe dar atestado de cinco dias. Se em três dias não melhorar, volte."],
+          ["Ольга", "Спасибо, доктор.", "Obrigada, doutor."],
+          ["Врач", "Выздоравливайте!", "Melhoras!"]
+        ],
+        "questions": [
+          {"q": "Há quanto tempo Olga está com dor de garganta?", "o": ["Há três dias.", "Desde hoje de manhã.", "Há uma semana.", "Há cinco dias."], "e": "«Уже три дня болит горло». A febre começou hoje de manhã."},
+          {"q": "O que o médico diz sobre os pulmões?", "o": ["Estão limpos.", "Estão inflamados.", "É preciso fazer raio X.", "Não os examinou."], "e": "«В лёгких чисто»."},
+          {"q": "O que o médico recomenda?", "o": ["Líquidos quentes, gargarejo e antitérmico se a febre passar de 38.", "Antibióticos durante cinco dias.", "Ir ao hospital imediatamente.", "Voltar ao trabalho amanhã."], "e": "«Антибиотики не нужны. Пейте больше тёплой жидкости…»"},
+          {"q": "Por quantos dias é o atestado?", "o": ["Cinco dias.", "Três dias.", "Uma semana.", "Dois dias."], "e": "«Выпишу вам больничный на пять дней». Três dias é o prazo para voltar se não melhorar."}
+        ]},
+      {"t": "dictation", "voice": "m", "text": "Пейте больше тёплой жидкости и полощите горло.", "pt": "Beba mais líquidos quentes e gargareje.", "hint": "Recomendação do médico (7 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Уже три дня болит горло.", "Já faz três dias que estou com dor de garganta."],
+        ["Мне что-то нехорошо.", "Não estou me sentindo bem."],
+        ["Это что-то серьёзное?", "É algo sério?"],
+        ["А на работу мне можно?", "E posso ir trabalhar?"]
+      ]}
+    ]},
+    {"title": "Leitura: quanto precisamos dormir?", "goal": "Ler um texto de divulgação científica e separar dados, causas e conselhos.", "steps": [
+      {"t": "reading", "title": "Сколько нужно спать?",
+        "text": "Сон — не роскошь, а необходимость. Взрослому человеку, по мнению большинства врачей, нужно спать семь–девять часов в сутки. Подросткам требуется ещё больше: около девяти часов.\n\nНедостаток сна влияет не только на настроение. Люди, которые постоянно спят меньше шести часов, чаще болеют простудой, им труднее сосредоточиться, а риск сердечно-сосудистых заболеваний у них выше.\n\nЧто же мешает нам высыпаться? Прежде всего телефоны и компьютеры: яркий экран вечером «обманывает» мозг, и он думает, что ещё день. Кроме того, многие пьют кофе после обеда, не зная, что кофеин действует шесть–восемь часов.\n\nВрачи советуют ложиться и вставать в одно и то же время, даже в выходные, проветривать спальню и за час до сна откладывать гаджеты. А если бессонница продолжается больше месяца, нужно обратиться к специалисту.",
+        "pt": "O sono não é luxo, é necessidade. Segundo a maioria dos médicos, um adulto precisa dormir de sete a nove horas por dia. Os adolescentes precisam ainda mais: cerca de nove horas.\n\nA falta de sono não afeta só o humor. Pessoas que dormem constantemente menos de seis horas pegam resfriado com mais frequência, têm mais dificuldade de concentração e correm maior risco de doenças cardiovasculares.\n\nO que nos impede de dormir bem? Antes de tudo, celulares e computadores: a tela brilhante à noite «engana» o cérebro, que pensa que ainda é dia. Além disso, muitos tomam café depois do almoço sem saber que a cafeína age de seis a oito horas.\n\nOs médicos aconselham deitar e levantar no mesmo horário, mesmo nos fins de semana, arejar o quarto e deixar os aparelhos de lado uma hora antes de dormir. E, se a insônia durar mais de um mês, é preciso procurar um especialista.",
+        "tf": [
+          ["Os adolescentes precisam de mais sono que os adultos.", "V", "«Подросткам требуется ещё больше»."],
+          ["Quem dorme pouco pega resfriado com mais frequência.", "V", "«Чаще болеют простудой»."],
+          ["A cafeína age por cerca de uma hora.", "F", "Age de seis a oito horas."],
+          ["Os médicos aconselham dormir mais nos fins de semana.", "F", "Aconselham o mesmo horário, «даже в выходные»."],
+          ["Quem dorme pouco engorda mais depressa.", "N", "O texto não fala de peso."]
+        ],
+        "questions": [
+          {"q": "Почему вечером вредно смотреть в телефон?", "o": ["Яркий экран заставляет мозг думать, что ещё день.", "Телефон нагревает спальню.", "Телефон мешает соседям.", "От экрана болят зубы."], "e": "«Яркий экран вечером «обманывает» мозг»."},
+          {"q": "Что делать, если бессонница длится больше месяца?", "o": ["Обратиться к специалисту.", "Пить больше кофе.", "Спать днём.", "Ложиться позже."], "e": "Обратиться к + dativo = procurar alguém (um especialista)."}
+        ]},
+      {"t": "cloze", "bank": true, "title": "Complete o resumo com as palavras do banco.",
+        "text": "Взрослым нужно спать семь–девять часов в {сутки}. Недостаток сна влияет на {настроение} и на здоровье. Яркий {экран} вечером обманывает мозг. Врачи советуют ложиться в одно и то же {время} и {проветривать} спальню.",
+        "pt": "Os adultos precisam dormir de sete a nove horas por dia. A falta de sono afeta o humor e a saúde. A tela brilhante à noite engana o cérebro. Os médicos aconselham deitar sempre no mesmo horário e arejar o quarto.",
+        "e": "Влиять на + acusativo (на настроение); в сутки = por dia (24 horas)."}
+    ]},
+    {"title": "Foco na forma: dor, estados e necessidade", "goal": "Usar у меня болит, o dativo dos estados e нужно / можно / нельзя.", "steps": [
+      {"t": "grammar", "title": "Como dizer o que se sente",
+        "paragraphs": [
+          "Dor: у меня (у тебя, у него…) болит + nominativo singular; болят + plural. У меня болит голова. У ребёнка болят уши. No passado, o verbo concorda com a parte do corpo: У меня болела спина.",
+          "Estados físicos e emocionais usam dativo + advérbio: Мне плохо (estou mal), Ему холодно, Бабушке лучше, Тебе не жарко? Passado: Мне было плохо. Futuro: Мне будет лучше.",
+          "Necessidade, permissão e proibição: dativo + нужно / надо / можно / нельзя + infinitivo: Вам нужно лежать. Мне можно пить кофе? Тебе нельзя выходить на улицу.",
+          "Adoecer de algo: заболеть + instrumental (заболеть гриппом, ангиной). Cuidado: болеть за команду é «torcer por um time»."
+        ],
+        "table": {"columns": ["Estrutura", "Exemplo"], "rows": [
+          ["у кого + болит / болят + nominativo", "У меня болит горло."],
+          ["кому + advérbio", "Мне холодно. Ему уже лучше."],
+          ["кому + нужно / можно / нельзя + infinitivo", "Вам нельзя курить."],
+          ["заболеть + instrumental", "Он заболел ангиной."],
+          ["чувствовать себя + advérbio", "Я плохо себя чувствую."]
+        ]},
+        "examples": [
+          ["У меня со вчерашнего дня болят глаза.", "Meus olhos estão doendo desde ontem."],
+          ["Ребёнку стало лучше.", "A criança melhorou."],
+          ["Тебе нужно больше отдыхать.", "Você precisa descansar mais."]
+        ],
+        "pitfalls": [
+          "Não diga «я болею голову» nem «моя голова болит»: o natural é «у меня болит голова».",
+          "«Я холодный» descreve caráter (sou frio). Para a sensação, diga «мне холодно».",
+          "Partes duplas ou plurais pedem болят: болят глаза, болят зубы, болят ноги."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "У меня ___ зубы, нужно к стоматологу.", "o": ["болят", "болит", "больны", "болею"], "e": "Зубы é plural: болят."},
+        {"q": "___ холодно, закрой окно, пожалуйста.", "o": ["Мне", "Я", "Меня", "Мной"], "e": "Sensação: dativo + advérbio."},
+        {"q": "Вам ___ пить алкоголь, пока вы принимаете антибиотики.", "o": ["нельзя", "не можно", "не болит", "не надоело"], "e": "Proibição: кому + нельзя + infinitivo. «Не можно» não existe."},
+        {"q": "Сын заболел ___ и не пошёл в школу.", "o": ["гриппом", "грипп", "на грипп", "гриппа"], "e": "Заболеть + instrumental."},
+        {"q": "Как вы себя ___? Спасибо, уже лучше.", "o": ["чувствуете", "чувствуетесь", "чувствовали бы", "чувство"], "e": "Чувствовать себя: o reflexivo está em себя, não em -ся."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я болит голова.", "o": ["У меня болит голова.", "Мне болит голова.", "Меня болит голова."], "e": "Quem sente a dor vai para у + genitivo; a parte do corpo é o sujeito."},
+        {"q": "Он холодный, дай ему одеяло.", "o": ["Ему холодно, дай ему одеяло.", "Он холодно, дай ему одеяло.", "Его холодно, дай ему одеяло."], "e": "Sensação: dativo + advérbio (ему холодно)."},
+        {"q": "Мне нужно принимаю таблетки.", "o": ["Мне нужно принимать таблетки.", "Я нужно принимать таблетки.", "Мне нужен принимать таблетки."], "e": "Нужно + infinitivo, com quem precisa no dativo."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "У меня со вчерашнего дня болит горло", "pt": "Estou com dor de garganta desde ontem."},
+        {"a": "Вам нужно лежать и пить много воды", "pt": "O senhor precisa ficar deitado e beber muita água."},
+        {"a": "Врач выписал мне больничный на неделю", "pt": "O médico me deu atestado de uma semana."}
+      ]}
+    ]},
+    {"title": "Uso real: aviso, situações e produção", "goal": "Entender um aviso de posto de saúde, agir na farmácia e numa emergência, justificar uma falta.", "steps": [
+      {"t": "listening", "kind": "Объявление в поликлинике", "title": "Изменение порядка приёма", "voice": "m",
+        "text": "Уважаемые пациенты! В связи с эпидемией гриппа с понедельника изменяется порядок приёма. Пациентов с температурой принимает дежурный терапевт в кабинете номер три на первом этаже, без предварительной записи. Плановые приёмы у других специалистов переносятся на следующую неделю. Пожалуйста, не забывайте надевать маску в здании поликлиники. Записаться к врачу можно по телефону или через портал госуслуг.",
+        "pt": "Prezados pacientes! Por causa da epidemia de gripe, a partir de segunda-feira muda a forma de atendimento. Pacientes com febre são atendidos pelo clínico de plantão no consultório número três, no térreo, sem agendamento. As consultas de rotina com outros especialistas ficam adiadas para a semana seguinte. Por favor, não esqueçam de usar máscara dentro do posto. É possível marcar consulta por telefone ou pelo portal de serviços públicos.",
+        "questions": [
+          {"q": "Quem atende os pacientes com febre?", "o": ["O clínico de plantão, na sala 3, sem agendamento.", "Um especialista, com agendamento.", "Qualquer médico do segundo andar.", "Ninguém: só atendimento por telefone."], "e": "«Дежурный терапевт в кабинете номер три … без предварительной записи»."},
+          {"q": "O que acontece com as consultas de rotina?", "o": ["Ficam adiadas para a semana seguinte.", "Foram canceladas definitivamente.", "Continuam normalmente.", "Passam a ser online."], "e": "«Переносятся на следующую неделю»."},
+          {"q": "Como se pode marcar consulta?", "o": ["Por telefone ou pelo portal de serviços públicos.", "Só pessoalmente.", "Só por e-mail.", "Na farmácia."], "e": "«По телефону или через портал госуслуг»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Na farmácia, você quer um remédio para tosse.", "o": ["У вас есть что-нибудь от кашля?", "У вас есть что-нибудь для кашель?", "Дайте мне кашель, пожалуйста.", "Я хочу кашлять, помогите."], "e": "Лекарство от + genitivo (от кашля, от головной боли)."},
+        {"q": "Você liga para a emergência: o seu amigo desmaiou.", "o": ["Алло, скорая? Моему другу стало плохо, он потерял сознание.", "Алло, скорая? Мой друг потерял голову.", "Мой друг уснул, приезжайте завтра.", "Мне хорошо, вызовите врача."], "e": "Кому стало плохо = alguém passou mal; потерять сознание = desmaiar."},
+        {"q": "Você deseja melhoras a um colega doente.", "o": ["Выздоравливай скорее!", "Будь здоров на работе!", "Приятного аппетита!", "Болей за нас!"], "e": "«Болей за нас!» significaria «torça por nós!»."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva um e-mail de 60 a 100 palavras ao seu professor ou chefe explicando que está doente: sintomas, o que o médico disse e quando você volta.",
+        "useful": ["К сожалению, я заболел(а) …", "у меня болит …", "поднялась температура", "врач выписал больничный на …", "я не смогу прийти …", "надеюсь вернуться в …", "С уважением, …"],
+        "model": "Уважаемая Анна Сергеевна! К сожалению, вчера вечером я заболела: поднялась температура, сильно болят горло и голова. Сегодня утром я была у врача. Он сказал, что это вирусная инфекция, и выписал мне больничный на пять дней. Поэтому я не смогу прийти на занятия до пятницы. Домашнее задание я пришлю по электронной почте. Надеюсь вернуться в понедельник. Прошу прощения за неудобства. С уважением, Камила Силва.",
+        "model_pt": "Prezada Anna Serguéievna! Infelizmente, ontem à noite fiquei doente: a febre subiu e estou com muita dor de garganta e de cabeça. Hoje de manhã fui ao médico. Ele disse que é uma infecção viral e me deu atestado de cinco dias. Por isso não poderei ir às aulas até sexta. Mando o dever de casa por e-mail. Espero voltar na segunda-feira. Desculpe pelo transtorno. Atenciosamente, Camila Silva.",
+        "checklist": ["Abri com a fórmula formal (Уважаемый / Уважаемая + nome e patronímico).", "Descrevi os sintomas com у меня болит / болят ou поднялась температура.", "Expliquei o que o médico disse ou receitou.", "Disse quando volto (в понедельник, через … дней).", "Terminei com С уважением."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Você está no médico. Descreva em voz alta, durante um minuto, os seus sintomas (desde quando, o que dói, se tem febre) e pergunte o que pode e o que não pode fazer.",
+        "useful": ["Я плохо себя чувствую уже …", "у меня болит / болят …", "поднялась температура", "мне холодно", "Скажите, мне нужно …?", "Можно ли мне …?"],
+        "model": "Здравствуйте, доктор. Я плохо себя чувствую уже два дня. У меня болят голова и горло, а вчера вечером поднялась температура, тридцать восемь. Ночью я сильно кашляю и почти не сплю. Мне холодно, хотя в комнате тепло. Скажите, пожалуйста, мне нужно принимать антибиотики? И можно ли мне завтра лететь в командировку?",
+        "model_pt": "Olá, doutor. Não me sinto bem há dois dias. Estou com dor de cabeça e de garganta, e ontem à noite a febre subiu para trinta e oito. À noite tusso muito e quase não durmo. Sinto frio, embora o quarto esteja quente. Diga, por favor, preciso tomar antibióticos? E posso viajar a trabalho amanhã?",
+        "checklist": ["Usei у меня болит / болят e мне + advérbio.", "Disse desde quando (уже … дня, со вчерашнего дня).", "Fiz pelo menos uma pergunta com нужно ou можно."]}
+    ]}
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "trabalho1", "theme": "trabalho", "order": 1,
+  "title": "Собеседование", "title_pt": "Entrevista de emprego e vida profissional",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender uma entrevista de emprego e uma mensagem de voz do RH.",
+    "Ler um anúncio de vaga e identificar requisitos, condições e benefícios.",
+    "Usar работать кем (instrumental) e orações relativas com который em todos os casos.",
+    "Escrever uma carta de apresentação e apresentar-se oralmente numa entrevista."
+  ],
+  "grammar_focus": "работать / быть / стать + Т. п. · который (все падежи) · опыт работы с + Т. п.",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de vagas, entrevistas e condições de trabalho.", "steps": [
+      {"t": "warmup", "questions": [
+        "Кем вы работаете или кем хотите работать?",
+        "Что для вас важнее в работе: зарплата, коллектив или интересные задачи?",
+        "Você já fez uma entrevista de emprego? Que perguntas fizeram?"
+      ]},
+      {"t": "vocab", "items": [
+        ["вакансия", "vaga", "открытая вакансия, откликнуться на вакансию"],
+        ["резюме", "currículo", "não declina: отправить резюме"],
+        ["собеседование", "entrevista de emprego", "пройти собеседование"],
+        ["опыт работы", "experiência profissional", "опыт работы с клиентами"],
+        ["обязанности", "atribuições, responsabilidades", "в мои обязанности входит…"],
+        ["зарплата", "salário", "зарплата до вычета налогов = salário bruto"],
+        ["график работы", "horário de trabalho", "гибкий график = horário flexível"],
+        ["испытательный срок", "período de experiência", "испытательный срок три месяца"],
+        ["руководитель", "chefe, gestor", "непосредственный руководитель"],
+        ["уволиться", "pedir demissão", "уволить кого = demitir alguém"],
+        ["повышение", "promoção", "получить повышение"],
+        ["отпуск", "férias", "оплачиваемый отпуск, уйти в отпуск"]
+      ]},
+      {"t": "match", "title": "Relacione cada expressão à sua tradução.", "pairs": [
+        ["откликнуться на вакансию", "candidatar-se a uma vaga"], ["пройти собеседование", "passar pela entrevista"],
+        ["получить повышение", "ser promovido"], ["уйти в отпуск", "sair de férias"],
+        ["уволиться с работы", "pedir demissão"], ["работать на полную ставку", "trabalhar em tempo integral"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "В мои обязанности входило общение с клиентами.", "o": ["Entre as minhas atribuições estava o contato com clientes.", "Eu tinha obrigação de entrar em contato com os clientes à noite.", "Os clientes me deviam dinheiro.", "Eu entrava na sala dos clientes."], "e": "Входить в обязанности = fazer parte das atribuições."},
+        {"q": "Её уволили после испытательного срока.", "o": ["Ela foi demitida depois do período de experiência.", "Ela pediu demissão antes do período de experiência.", "Ela foi promovida depois do período de experiência.", "Ela tirou férias depois do período de experiência."], "e": "Уволили (terceira pessoa do plural impessoal) = foi demitida."},
+        {"q": "У нас гибкий график и удалённая работа два дня в неделю.", "o": ["Temos horário flexível e trabalho remoto dois dias por semana.", "Temos horário fixo e trabalho no escritório.", "Trabalhamos duas vezes por semana.", "Temos um gráfico de trabalho remoto."], "e": "Гибкий график = horário flexível; удалёнка = trabalho remoto."}
+      ]}
+    ]},
+    {"title": "Escuta: a entrevista", "goal": "Entender perguntas típicas de entrevista e respostas sobre experiência.", "steps": [
+      {"t": "dialogue", "title": "Расскажите о себе", "setting": "Diego, brasileiro, é entrevistado para uma vaga de gerente de projetos numa empresa de logística em Moscou.",
+        "speakers": {"Рекрутер": "f", "Диего": "m"},
+        "lines": [
+          ["Рекрутер", "Диего, добрый день. Расскажите, пожалуйста, немного о себе.", "Diego, boa tarde. Fale um pouco sobre você, por favor."],
+          ["Диего", "Я из Бразилии, по образованию инженер. Последние четыре года я работал менеджером проектов в компании, которая занимается морскими перевозками.", "Sou do Brasil, engenheiro de formação. Nos últimos quatro anos trabalhei como gerente de projetos numa empresa que trabalha com transporte marítimo."],
+          ["Рекрутер", "Что входило в ваши обязанности?", "Quais eram as suas atribuições?"],
+          ["Диего", "Я руководил командой из восьми человек и отвечал за сроки и бюджет. Кроме того, я вёл переговоры с партнёрами, с которыми мы работали в Европе.", "Eu coordenava uma equipe de oito pessoas e era responsável pelos prazos e pelo orçamento. Além disso, negociava com os parceiros com quem trabalhávamos na Europa."],
+          ["Рекрутер", "Почему вы решили сменить работу?", "Por que decidiu mudar de emprego?"],
+          ["Диего", "Мне хочется расти. Ваша компания выходит на новые рынки, и мне интересны задачи, о которых говорится в вакансии.", "Quero crescer. A sua empresa está entrando em novos mercados, e me interessam as tarefas de que fala a vaga."],
+          ["Рекрутер", "Какие у вас слабые стороны?", "Quais são os seus pontos fracos?"],
+          ["Диего", "Иногда я слишком много беру на себя. Сейчас учусь делегировать задачи.", "Às vezes assumo coisas demais. Agora estou aprendendo a delegar tarefas."],
+          ["Рекрутер", "Хорошо. Испытательный срок у нас три месяца, график гибкий. Какие у вас ожидания по зарплате?", "Muito bem. O período de experiência é de três meses, o horário é flexível. Qual é a sua expectativa salarial?"],
+          ["Диего", "Я рассчитываю на сумму, которая указана в вакансии, но готов обсудить.", "Conto com o valor indicado na vaga, mas estou disposto a conversar."],
+          ["Рекрутер", "Отлично. Мы свяжемся с вами до конца недели.", "Ótimo. Entraremos em contato com o senhor até o fim da semana."]
+        ],
+        "questions": [
+          {"q": "O que Diego fazia no emprego anterior?", "o": ["Era gerente de projetos numa empresa de transporte marítimo.", "Era engenheiro numa fábrica de carros.", "Era professor de logística.", "Era motorista de caminhão."], "e": "«Работал менеджером проектов в компании, которая занимается морскими перевозками»."},
+          {"q": "Por quanto era responsável?", "o": ["Pelos prazos e pelo orçamento.", "Pela contratação de pessoal.", "Pelas vendas na Rússia.", "Pela contabilidade."], "e": "«Отвечал за сроки и бюджет»."},
+          {"q": "Qual ponto fraco ele menciona?", "o": ["Assume coisas demais.", "Chega atrasado.", "Não fala bem russo.", "Não gosta de trabalhar em equipe."], "e": "«Иногда я слишком много беру на себя»."},
+          {"q": "Qual é a expectativa salarial dele?", "o": ["O valor indicado na vaga, com abertura para negociar.", "O dobro do salário anterior.", "Ele não quis responder.", "Um valor abaixo do anunciado."], "e": "«Рассчитываю на сумму, которая указана в вакансии, но готов обсудить»."}
+        ]},
+      {"t": "dictation", "voice": "m", "text": "Я руководил командой из восьми человек и отвечал за сроки и бюджет.", "pt": "Eu coordenava uma equipe de oito pessoas e era responsável pelos prazos e pelo orçamento.", "hint": "Resposta de Diego sobre as atribuições (12 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["Я работал менеджером проектов.", "Trabalhei como gerente de projetos."],
+        ["Я руководил командой из восьми человек.", "Coordenava uma equipe de oito pessoas."],
+        ["Мне хочется расти.", "Quero crescer."],
+        ["Я рассчитываю на сумму, которая указана в вакансии.", "Conto com o valor indicado na vaga."]
+      ]}
+    ]},
+    {"title": "Leitura: um anúncio de vaga", "goal": "Localizar informação precisa num anúncio e distinguir requisitos de benefícios.", "steps": [
+      {"t": "reading", "title": "Вакансия: менеджер по работе с клиентами",
+        "text": "Международная туристическая компания «Глобус» ищет менеджера по работе с клиентами в московский офис.\n\nОбязанности: консультировать клиентов по телефону и в офисе, подбирать туры, оформлять документы, решать проблемы, которые возникают у туристов во время поездки.\n\nТребования: высшее образование, опыт работы в продажах от одного года, свободный английский. Знание испанского или португальского языка будет преимуществом. Мы ищем человека, который умеет работать в команде и не боится сложных клиентов.\n\nУсловия: официальное оформление, зарплата от 90 000 рублей плюс процент от продаж, график пять дней в неделю с 10 до 19, оплачиваемый отпуск 28 дней, скидки на туры для сотрудников. Испытательный срок два месяца.\n\nРезюме отправляйте на адрес hr@globus-travel.ru с пометкой «Менеджер».",
+        "pt": "A agência de turismo internacional Globus procura um gerente de atendimento ao cliente para o escritório de Moscou.\n\nAtribuições: orientar clientes por telefone e no escritório, montar pacotes, emitir documentos, resolver problemas que os turistas tenham durante a viagem.\n\nRequisitos: ensino superior, experiência em vendas a partir de um ano, inglês fluente. Conhecimento de espanhol ou português será um diferencial. Procuramos alguém que saiba trabalhar em equipe e não tenha medo de clientes difíceis.\n\nCondições: contrato formal, salário a partir de 90 000 rublos mais porcentagem sobre as vendas, jornada de cinco dias por semana das 10h às 19h, 28 dias de férias remuneradas, descontos em pacotes para funcionários. Período de experiência de dois meses.\n\nEnvie o currículo para hr@globus-travel.ru com a indicação «Gerente».",
+        "tf": [
+          ["Saber português é obrigatório para a vaga.", "F", "«Будет преимуществом» = será um diferencial, não obrigatório."],
+          ["O salário inclui uma porcentagem sobre as vendas.", "V", "«Плюс процент от продаж»."],
+          ["O trabalho é seis dias por semana.", "F", "«Пять дней в неделю»."],
+          ["Os funcionários têm desconto nos pacotes de viagem.", "V", "«Скидки на туры для сотрудников»."],
+          ["A empresa oferece plano de saúde.", "N", "O anúncio não menciona plano de saúde."]
+        ],
+        "questions": [
+          {"q": "Какой опыт нужен кандидату?", "o": ["Опыт работы в продажах от одного года.", "Опыт работы гидом.", "Опыт работы в Москве.", "Опыт не нужен."], "e": "«Опыт работы в продажах от одного года»."},
+          {"q": "Как откликнуться на вакансию?", "o": ["Отправить резюме по электронной почте с пометкой «Менеджер».", "Позвонить в офис.", "Прийти на собеседование без записи.", "Заполнить анкету на сайте."], "e": "«Резюме отправляйте на адрес…»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta de который.",
+        "text": "Мы ищем человека, {который|которого|которым} умеет работать в команде. Это проблемы, {которые|которых|которыми} возникают во время поездки. Компания, в {которой|которая|которую} я работаю, находится в центре. Это коллега, с {которым|который|которому} я делю кабинет.",
+        "pt": "Procuramos alguém que saiba trabalhar em equipe. São problemas que surgem durante a viagem. A empresa em que eu trabalho fica no centro. Este é o colega com quem divido a sala.",
+        "e": "O gênero e o número vêm do antecedente; o caso vem da função de который na oração relativa."}
+    ]},
+    {"title": "Foco na forma: работать кем e который", "goal": "Usar o instrumental para profissões e declinar который pela função na oração.", "steps": [
+      {"t": "grammar", "title": "Profissões e orações relativas",
+        "paragraphs": [
+          "Profissão e função pedem instrumental depois de работать, быть (no passado e no futuro), стать, являться e назначить: Он работает врачом. Она стала директором. Я хочу быть переводчиком. No presente, sem verbo, usa-se o nominativo: Он врач.",
+          "Который concorda em gênero e número com o substantivo a que se refere, mas o caso depende da função dentro da oração relativa. Пишу коллеге, который работает в Казани (sujeito: nominativo). Это коллега, которого я давно знаю (objeto: acusativo animado = genitivo). Это коллега, которому я помогаю (помогать кому: dativo).",
+          "A preposição vai antes de который: компания, в которой я работаю; проект, над которым мы работаем; люди, с которыми я общаюсь.",
+          "Опыт работы с + instrumental: опыт работы с клиентами, с документами. Отвечать за + acusativo: отвечать за бюджет."
+        ],
+        "table": {"columns": ["Caso", "Masculino / neutro", "Feminino", "Plural"], "rows": [
+          ["Nominativo", "который / которое", "которая", "которые"],
+          ["Genitivo", "которого", "которой", "которых"],
+          ["Dativo", "которому", "которой", "которым"],
+          ["Acusativo", "который (inan.) / которого (anim.)", "которую", "которые / которых"],
+          ["Instrumental", "которым", "которой", "которыми"],
+          ["Preposicional", "о котором", "о которой", "о которых"]
+        ]},
+        "examples": [
+          ["Мой брат работает программистом в банке.", "O meu irmão trabalha como programador num banco."],
+          ["Это проект, над которым я работаю уже год.", "Este é o projeto em que trabalho há um ano."],
+          ["Вчера я встретил коллегу, о которой ты мне рассказывал.", "Ontem encontrei a colega de quem você me falou."]
+        ],
+        "pitfalls": [
+          "Não diga «работаю как врач»: o russo usa o instrumental sem preposição, «работаю врачом».",
+          "Não use что no lugar de который depois de substantivos em linguagem cuidada: «человек, который» é a forma padrão.",
+          "A preposição nunca vai para o fim da frase: «компания, в которой я работаю», nunca «компания, которой я работаю в»."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "После университета моя сестра стала ___.", "o": ["юристом", "юрист", "юриста", "как юрист"], "e": "Стать + instrumental."},
+        {"q": "Это начальник, ___ я отправил отчёт.", "o": ["которому", "который", "которого", "которым"], "e": "Отправить кому? (dativo): которому."},
+        {"q": "Вот фирма, ___ я проходил стажировку.", "o": ["в которой", "которая", "которой", "в которую"], "e": "Проходить стажировку где? в + preposicional: в которой."},
+        {"q": "Мы ищем специалиста с опытом работы ___.", "o": ["с клиентами", "клиентам", "клиентов", "для клиентов"], "e": "Опыт работы с + instrumental."},
+        {"q": "Коллеги, ___ я работаю, очень дружные.", "o": ["с которыми", "которые", "которых", "с которых"], "e": "Работать с кем? с + instrumental plural."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я работаю как учитель в школе.", "o": ["Я работаю учителем в школе.", "Я работаю учитель в школе.", "Я работаю учителя в школе."], "e": "Работать кем? instrumental, sem как."},
+        {"q": "Это коллега, который я давно знаю.", "o": ["Это коллега, которого я давно знаю.", "Это коллега, которому я давно знаю.", "Это коллега, с которым я давно знаю."], "e": "Знать кого? acusativo animado: которого."},
+        {"q": "Это компания, которой я работаю в.", "o": ["Это компания, в которой я работаю.", "Это компания, которая я работаю.", "Это компания, в которую я работаю."], "e": "A preposição vem antes de который: в которой."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Последние три года я работал менеджером", "pt": "Nos últimos três anos trabalhei como gerente."},
+        {"a": "Это задачи о которых говорится в вакансии", "pt": "Estas são as tarefas de que fala a vaga."},
+        {"a": "Мы свяжемся с вами до конца недели", "pt": "Entraremos em contato até o fim da semana."}
+      ]}
+    ]},
+    {"title": "Uso real: mensagem do RH, situações e produção", "goal": "Entender recados profissionais e apresentar-se com segurança.", "steps": [
+      {"t": "listening", "kind": "Голосовое сообщение", "title": "Звонок из отдела кадров", "voice": "f",
+        "text": "Добрый день, Диего! Это Анна Сергеевна из отдела кадров компании «ЛогиТранс». Рада сообщить, что вы успешно прошли первый этап. Мы приглашаем вас на второе собеседование с руководителем отдела во вторник, пятнадцатого числа, в одиннадцать часов. Возьмите, пожалуйста, с собой паспорт и диплом. Собеседование пройдёт в нашем офисе на Тверской, третий этаж, кабинет триста двенадцать. Если время вам не подходит, перезвоните мне по номеру, с которого я звоню. Всего доброго!",
+        "pt": "Boa tarde, Diego! Aqui é Anna Serguéievna, do RH da empresa LogiTrans. Tenho o prazer de informar que o senhor passou na primeira etapa. Convidamos o senhor para a segunda entrevista com o chefe do departamento na terça-feira, dia quinze, às onze horas. Por favor, traga o passaporte e o diploma. A entrevista será no nosso escritório da rua Tverskáia, terceiro andar, sala trezentos e doze. Se o horário não for conveniente, retorne a ligação para o número de onde estou ligando. Tudo de bom!",
+        "questions": [
+          {"q": "Com quem será a segunda entrevista?", "o": ["Com o chefe do departamento.", "Com o diretor-geral.", "Com Anna Serguéievna.", "Com a equipe inteira."], "e": "«С руководителем отдела»."},
+          {"q": "O que Diego deve levar?", "o": ["Passaporte e diploma.", "Currículo e fotos.", "Carta de recomendação.", "Notebook."], "e": "«Возьмите … паспорт и диплом»."},
+          {"q": "O que fazer se o horário não servir?", "o": ["Retornar a ligação para o mesmo número.", "Mandar um e-mail.", "Ir ao escritório no dia seguinte.", "Esperar outra ligação."], "e": "«Перезвоните мне по номеру, с которого я звоню»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Na entrevista, você diz que já trabalhou como tradutor.", "o": ["Раньше я работал переводчиком.", "Раньше я работал как переводчик.", "Раньше я работал переводчик.", "Раньше я был работать переводчиком."], "e": "Работать + instrumental."},
+        {"q": "Você pede para remarcar a entrevista.", "o": ["Можно перенести собеседование на четверг?", "Можно переносить собеседование в четверг?", "Можно отменить в четверг собеседование?", "Можно собеседование на четверге?"], "e": "Перенести на + acusativo = remarcar para."},
+        {"q": "Você pergunta sobre o horário de trabalho.", "o": ["Какой у вас график работы?", "Какая у вас карта работы?", "Сколько у вас работы в часы?", "Какое у вас время работать?"], "e": "График работы = horário de trabalho."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 80,
+        "task": "Escreva uma carta de apresentação (80 a 120 palavras) para a vaga da agência Globus. Diga quem você é, que experiência tem, por que se interessa e por que é o candidato ideal.",
+        "useful": ["Меня заинтересовала вакансия …", "Я работаю / работал(а) … (кем)", "В мои обязанности входило …", "У меня есть опыт работы с …", "Буду рад(а) возможности …"],
+        "model": "Здравствуйте! Меня заинтересовала вакансия менеджера по работе с клиентами в компании «Глобус». Меня зовут Мариана, я из Бразилии. Последние два года я работаю менеджером по продажам в турагентстве в Сан-Паулу. В мои обязанности входит консультирование клиентов, подбор туров и оформление документов. У меня есть опыт работы со сложными клиентами, которые часто меняют планы. Я свободно говорю на английском, а португальский мой родной язык. Мне интересна ваша компания, потому что вы работаете с Латинской Америкой. Буду рада возможности пройти собеседование. С уважением, Мариана Силва.",
+        "model_pt": "Olá! Interessei-me pela vaga de gerente de atendimento ao cliente na empresa Globus. Meu nome é Mariana, sou do Brasil. Nos últimos dois anos trabalho como gerente de vendas numa agência de turismo em São Paulo. Entre as minhas atribuições estão orientar clientes, montar pacotes e emitir documentos. Tenho experiência com clientes difíceis, que mudam de planos com frequência. Falo inglês fluentemente, e o português é a minha língua materna. Tenho interesse na sua empresa porque vocês trabalham com a América Latina. Terei prazer em participar de uma entrevista. Atenciosamente, Mariana Silva.",
+        "checklist": ["Usei работать + instrumental.", "Usei pelo menos uma oração com который.", "Mencionei atribuições (в мои обязанности входит).", "Expliquei por que me interesso pela empresa.", "Usei uma fórmula de encerramento formal.", "Escrevi pelo menos 80 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Responda em voz alta, como numa entrevista, às perguntas: «Расскажите о себе» e «Почему мы должны выбрать именно вас?» (cerca de um minuto).",
+        "useful": ["По образованию я …", "Сейчас я работаю …", "Я отвечаю за …", "Моя сильная сторона …", "Я уверен(а), что …"],
+        "model": "По образованию я экономист. Сейчас я работаю аналитиком в банке, который специализируется на кредитах для малого бизнеса. Я отвечаю за отчёты и прогнозы, а также работаю с клиентами, которым нужна консультация. Моя сильная сторона: я умею объяснять сложные вещи простыми словами. Кроме того, я быстро учусь и люблю работать в команде. Я уверен, что мой опыт поможет вашему отделу, и мне очень интересны задачи, о которых вы рассказали.",
+        "model_pt": "Sou economista de formação. Atualmente trabalho como analista num banco especializado em crédito para pequenas empresas. Sou responsável pelos relatórios e previsões, e também atendo clientes que precisam de consultoria. O meu ponto forte é saber explicar coisas complexas com palavras simples. Além disso, aprendo rápido e gosto de trabalhar em equipe. Tenho certeza de que a minha experiência vai ajudar o seu departamento, e me interessam muito as tarefas de que vocês falaram.",
+        "checklist": ["Usei o instrumental com profissões.", "Usei который pelo menos duas vezes.", "Citei uma qualidade concreta com exemplo.", "Terminei mostrando interesse pela vaga."]}
+    ]}
+  ]
+}

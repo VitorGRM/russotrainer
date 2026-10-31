@@ -1,0 +1,160 @@
+{
+  "id": "economia1", "theme": "economia", "order": 1,
+  "title": "Цены растут", "title_pt": "Preços, inflação e orçamento",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender uma conversa sobre orçamento familiar e um boletim econômico no rádio.",
+    "Ler uma notícia sobre inflação e interpretar números e tendências.",
+    "Concordar números com рубль e процент e usar вырасти / снизиться на e до.",
+    "Descrever por escrito um gráfico simples e explicar oralmente o seu orçamento."
+  ],
+  "grammar_focus": "1 рубль · 2–4 рубля · 5+ рублей · процент · вырасти / упасть на (quanto) и до (até onde) · с … до …",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de preços, renda e tendências econômicas.", "steps": [
+      {"t": "warmup", "questions": [
+        "Как изменились цены в вашем городе за последний год?",
+        "Вы планируете свой бюджет? Как?",
+        "Em português, qual é a diferença entre «subiu 5%» e «subiu para 5%»?"
+      ]},
+      {"t": "vocab", "items": [
+        ["инфляция", "inflação", "годовая инфляция = inflação anual"],
+        ["подорожать", "ficar mais caro", "подешеветь = ficar mais barato"],
+        ["вырасти на / до", "crescer em / para", "вырасти на 5% (em), до 8% (para)"],
+        ["снизиться", "cair, diminuir", "= упасть, сократиться"],
+        ["доход", "renda", "расход = despesa"],
+        ["бюджет", "orçamento", "семейный бюджет"],
+        ["копить на", "economizar para", "копить на машину"],
+        ["кредит", "empréstimo", "взять кредит; ипотека = financiamento imobiliário"],
+        ["курс валют", "câmbio", "курс доллара вырос"],
+        ["ставка", "taxa (de juros)", "ключевая ставка = taxa básica"],
+        ["зарплата выросла", "o salário aumentou", "повысить зарплату = dar aumento"],
+        ["в среднем", "em média", "средняя зарплата = salário médio"]
+      ]},
+      {"t": "match", "title": "Relacione os contrários.", "pairs": [
+        ["доход", "расход"], ["подорожать", "подешеветь"], ["вырасти", "снизиться"],
+        ["взять кредит", "вернуть кредит"], ["тратить", "копить"], ["рост", "падение"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "За год хлеб подорожал на десять процентов.", "o": ["Em um ano, o pão ficou 10% mais caro.", "Em um ano, o pão ficou 10% mais barato.", "Em um ano, o pão passou a custar 10 rublos.", "O pão custa 10% do salário."], "e": "Подорожать на = ficar mais caro em (diferença)."},
+        {"q": "Мы копим на отпуск.", "o": ["Estamos economizando para as férias.", "Estamos gastando nas férias.", "Estamos pedindo empréstimo para as férias.", "Estamos de férias."], "e": "Копить на + acusativo = juntar dinheiro para."},
+        {"q": "Центробанк снизил ключевую ставку до 15 %.", "o": ["O Banco Central baixou a taxa básica para 15%.", "O Banco Central baixou a taxa básica em 15%.", "O Banco Central subiu a taxa básica para 15%.", "A inflação caiu 15%."], "e": "До = até (valor final)."}
+      ]}
+    ]},
+    {"title": "Escuta: o orçamento da família", "goal": "Entender números, comparações e decisões numa conversa sobre dinheiro.", "steps": [
+      {"t": "dialogue", "title": "Где сэкономить?", "setting": "Ígor e Svieta, um casal, revisam as despesas do mês.",
+        "speakers": {"Игорь": "m", "Света": "f"},
+        "lines": [
+          ["Света", "Игорь, посмотри: в этом месяце мы потратили на продукты двадцать восемь тысяч рублей. Это на четыре тысячи больше, чем в прошлом.", "Ígor, olha: neste mês gastamos vinte e oito mil rublos com comida. É quatro mil a mais do que no mês passado."],
+          ["Игорь", "Всё подорожало. Сыр стоил девятьсот рублей за килограмм, а теперь больше тысячи.", "Tudo ficou mais caro. O queijo custava novecentos rublos o quilo, agora custa mais de mil."],
+          ["Света", "А коммунальные услуги выросли на одиннадцать процентов. Ещё ипотека: тридцать две тысячи каждый месяц.", "E as contas de casa subiram onze por cento. E ainda o financiamento: trinta e dois mil todo mês."],
+          ["Игорь", "Да, а моя зарплата за год выросла только на пять процентов. Надо где-то экономить.", "Pois é, e o meu salário em um ano só subiu cinco por cento. Precisamos economizar em algum lugar."],
+          ["Света", "Давай меньше ездить на такси. Мы тратим на него почти шесть тысяч в месяц.", "Vamos andar menos de táxi. Gastamos quase seis mil por mês com isso."],
+          ["Игорь", "Согласен. И отключим подписки, которыми не пользуемся. Это ещё тысяча двести.", "Concordo. E vamos cancelar as assinaturas que não usamos. São mais mil e duzentos."],
+          ["Света", "Тогда к лету накопим на отпуск. Я хочу на море.", "Assim até o verão juntamos dinheiro para as férias. Quero ir para a praia."],
+          ["Игорь", "Если всё получится, будем откладывать по десять тысяч в месяц.", "Se der tudo certo, vamos guardar dez mil por mês."]
+        ],
+        "questions": [
+          {"q": "Quanto o casal gastou com comida neste mês?", "o": ["28 000 rublos.", "24 000 rublos.", "32 000 rublos.", "4 000 rublos."], "e": "«Двадцать восемь тысяч рублей», quatro mil a mais que no mês anterior."},
+          {"q": "Quanto subiram as contas de casa?", "o": ["11%.", "5%.", "4 000 rublos.", "Dobraram."], "e": "«Коммунальные услуги выросли на одиннадцать процентов»."},
+          {"q": "Em que eles decidem economizar?", "o": ["Táxi e assinaturas que não usam.", "Comida e financiamento.", "Férias e roupa.", "Contas de casa."], "e": "«Меньше ездить на такси … отключим подписки»."},
+          {"q": "Quanto pretendem guardar por mês?", "o": ["10 000 rublos.", "6 000 rublos.", "1 200 rublos.", "32 000 rublos."], "e": "«Будем откладывать по десять тысяч в месяц»."}
+        ]},
+      {"t": "dictation", "voice": "m", "text": "Моя зарплата за год выросла только на пять процентов.", "pt": "O meu salário em um ano só subiu cinco por cento.", "hint": "Frase de Ígor (9 palavras). Escreva os números por extenso."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Мы потратили на продукты двадцать восемь тысяч рублей.", "Gastamos vinte e oito mil rublos com comida."],
+        ["Это на четыре тысячи больше, чем в прошлом месяце.", "É quatro mil a mais do que no mês passado."],
+        ["Коммунальные услуги выросли на одиннадцать процентов.", "As contas de casa subiram onze por cento."],
+        ["К лету накопим на отпуск.", "Até o verão juntamos para as férias."]
+      ]}
+    ]},
+    {"title": "Leitura: uma notícia sobre inflação", "goal": "Interpretar números, variações e causas numa notícia econômica.", "steps": [
+      {"t": "reading", "title": "Инфляция замедлилась, но цены на овощи растут",
+        "text": "По данным статистики, в сентябре годовая инфляция в России снизилась до 6,8 процента. Месяцем ранее она составляла 7,4 процента. Экономисты объясняют замедление высокой ключевой ставкой: кредиты стали дороже, поэтому люди и компании берут их реже и тратят меньше.\n\nОднако не все товары дешевеют. За год картофель подорожал на 25 процентов, а огурцы почти в два раза. Причина в плохом урожае и в росте стоимости перевозок. Зато электроника подешевела в среднем на 3 процента: на рынок вернулись крупные поставщики.\n\nСредняя зарплата за тот же период выросла на 12 процентов, то есть быстрее, чем цены. Тем не менее многие семьи говорят, что не чувствуют этого роста: основные расходы у них приходятся на продукты и коммунальные услуги.",
+        "pt": "Segundo as estatísticas, em setembro a inflação anual na Rússia caiu para 6,8 por cento. Um mês antes, ela era de 7,4 por cento. Os economistas explicam a desaceleração pela taxa básica de juros alta: os empréstimos ficaram mais caros, por isso as pessoas e as empresas os tomam com menos frequência e gastam menos.\n\nPorém, nem todos os produtos estão ficando mais baratos. Em um ano, a batata subiu 25 por cento, e o pepino quase dobrou de preço. A causa é a safra ruim e o aumento do custo do transporte. Em compensação, os eletrônicos ficaram em média 3 por cento mais baratos: grandes fornecedores voltaram ao mercado.\n\nO salário médio no mesmo período cresceu 12 por cento, ou seja, mais rápido do que os preços. Mesmo assim, muitas famílias dizem que não sentem esse aumento: as suas principais despesas são com comida e contas de casa.",
+        "tf": [
+          ["Em setembro, a inflação anual caiu para 6,8%.", "V", "«Снизилась до 6,8 процента» (до = valor final)."],
+          ["A inflação caiu 6,8 pontos em um mês.", "F", "Caiu de 7,4% para 6,8%, não «em» 6,8."],
+          ["O pepino ficou quase duas vezes mais caro.", "V", "«Огурцы почти в два раза»."],
+          ["Os salários cresceram mais devagar que os preços.", "F", "«Выросла на 12 процентов, то есть быстрее, чем цены»."],
+          ["O governo congelou o preço da batata.", "N", "O texto não fala de congelamento."]
+        ],
+        "questions": [
+          {"q": "Почему, по мнению экономистов, инфляция замедлилась?", "o": ["Из-за высокой ключевой ставки кредиты стали дороже.", "Из-за хорошего урожая.", "Потому что зарплаты упали.", "Потому что электроника подешевела."], "e": "«Объясняют замедление высокой ключевой ставкой»."},
+          {"q": "Почему семьи не чувствуют роста зарплат?", "o": ["Основные расходы идут на продукты и коммунальные услуги, которые дорожают.", "Зарплаты на самом деле не выросли.", "Они много тратят на электронику.", "Они не берут кредиты."], "e": "«Основные расходы у них приходятся на продукты и коммунальные услуги»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta.",
+        "text": "Билет на автобус стоит сорок два {рубля|рублей|рубль}. Чашка кофе стоит двести пятьдесят {рублей|рубля|рубль}. Цены выросли на три {процента|процентов|процент}. Ставка снизилась {до|на|с} шестнадцати процентов, то есть на один {процент|процента|процентов}.",
+        "pt": "A passagem de ônibus custa quarenta e dois rublos. Uma xícara de café custa duzentos e cinquenta rublos. Os preços subiram três por cento. A taxa caiu para dezesseis por cento, ou seja, um ponto percentual.",
+        "e": "A forma depende do último algarismo: 2, 3 e 4 pedem genitivo singular; 0 e 5 a 9 pedem genitivo plural; 1 pede nominativo singular."}
+    ]},
+    {"title": "Foco na forma: números, рубль, процент e variações", "goal": "Concordar substantivos com números e distinguir на (diferença) de до (valor final).", "steps": [
+      {"t": "grammar", "title": "Quanto custa e quanto mudou",
+        "paragraphs": [
+          "Depois de um número, a forma do substantivo depende do último algarismo: 1 (21, 31…) pede nominativo singular: один рубль, двадцать один процент. 2, 3, 4 (22, 33…) pedem genitivo singular: два рубля, три процента. 5 a 20 e os terminados em 0 ou 5 a 9 pedem genitivo plural: пять рублей, двенадцать процентов, сто рублей.",
+          "Números com 11 a 14 no final sempre pedem genitivo plural: одиннадцать рублей, сто тринадцать процентов. Números decimais pedem genitivo singular: 6,8 процента (шесть целых восемь десятых процента).",
+          "Variações: вырасти / увеличиться / подорожать на + acusativo indica a diferença (subir 5%); до + genitivo indica o valor final (subir para 8%); с + genitivo indica o valor inicial: Цена выросла с 80 до 100 рублей, то есть на 20 рублей.",
+          "Multiplicação: в два раза больше (o dobro), вырасти в три раза (triplicar). Comparação: на 5 тысяч больше, чем…"
+        ],
+        "table": {"columns": ["Último algarismo", "рубль", "процент", "тысяча"], "rows": [
+          ["1 (exceto 11)", "рубль", "процент", "тысяча"],
+          ["2, 3, 4 (exceto 12–14)", "рубля", "процента", "тысячи"],
+          ["0, 5–9, 11–14", "рублей", "процентов", "тысяч"],
+          ["decimal (6,8)", "рубля", "процента", "тысячи"]
+        ]},
+        "examples": [
+          ["Цена на бензин выросла с пятидесяти до шестидесяти рублей.", "O preço da gasolina subiu de cinquenta para sessenta rublos."],
+          ["Продажи упали на треть.", "As vendas caíram um terço."],
+          ["За десять лет население города выросло в полтора раза.", "Em dez anos, a população da cidade aumentou uma vez e meia."]
+        ],
+        "pitfalls": [
+          "«Вырасти на 10%» é crescer 10 pontos ou 10% a mais; «вырасти до 10%» é chegar a 10%. A confusão muda o sentido da notícia.",
+          "21 pede singular: двадцать один рубль (não «рублей»).",
+          "Тысяча é feminino: две тысячи, пять тысяч; рубль, depois de тысяч, fica no genitivo plural: две тысячи рублей."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Проезд в метро стоит шестьдесят три ___.", "o": ["рубля", "рублей", "рубль", "рублём"], "e": "Termina em 3: genitivo singular."},
+        {"q": "Зарплата выросла ___ 50 ___ 60 тысяч рублей.", "o": ["с … до", "на … до", "до … на", "от … на"], "e": "С (valor inicial) … до (valor final)."},
+        {"q": "Инфляция за месяц снизилась ___ 0,5 процентного пункта.", "o": ["на", "до", "с", "в"], "e": "A diferença: на."},
+        {"q": "В нашей группе двадцать один ___.", "o": ["студент", "студента", "студентов", "студенты"], "e": "Termina em 1 (não 11): nominativo singular."},
+        {"q": "Цены на билеты выросли ___ два раза.", "o": ["в", "на", "до", "с"], "e": "Multiplicação: в два раза."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Кофе стоит двести пятьдесят рубля.", "o": ["Кофе стоит двести пятьдесят рублей.", "Кофе стоит двести пятьдесят рубль.", "Кофе стоит двести пятьдесят рублях."], "e": "Termina em 0: genitivo plural."},
+        {"q": "Цены выросли до 5 %, раньше они были 100 рублей, теперь 105.", "o": ["Цены выросли на 5 %: раньше 100 рублей, теперь 105.", "Цены выросли с 5 %: раньше 100 рублей, теперь 105.", "Цены выросли в 5 %: раньше 100 рублей, теперь 105."], "e": "Diferença de 5%: на."},
+        {"q": "Это стоит одиннадцать рубля.", "o": ["Это стоит одиннадцать рублей.", "Это стоит одиннадцать рубль.", "Это стоит одиннадцать рублю."], "e": "11 a 14 sempre pedem genitivo plural."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "За год хлеб подорожал на десять процентов", "pt": "Em um ano, o pão ficou dez por cento mais caro."},
+        {"a": "Мы откладываем по пять тысяч в месяц", "pt": "Guardamos cinco mil por mês."},
+        {"a": "Ставка снизилась до шестнадцати процентов", "pt": "A taxa caiu para dezesseis por cento."}
+      ]}
+    ]},
+    {"title": "Uso real: boletim no rádio, situações e produção", "goal": "Entender um boletim econômico e falar do próprio dinheiro com precisão.", "steps": [
+      {"t": "listening", "kind": "Новости на радио", "title": "Экономика за минуту", "voice": "m2",
+        "text": "Экономические новости. Курс доллара сегодня снизился на сорок копеек и составил девяносто один рубль двадцать копеек. Курс евро, наоборот, вырос до девяноста восьми рублей. Нефть марки «Брент» подорожала на два процента. Министерство экономики ожидает, что к концу года инфляция замедлится до шести процентов. А с первого января минимальная зарплата увеличится на восемнадцать процентов и составит почти двадцать три тысячи рублей.",
+        "pt": "Notícias econômicas. O dólar hoje caiu quarenta copeques e ficou em noventa e um rublos e vinte copeques. O euro, ao contrário, subiu para noventa e oito rublos. O petróleo Brent ficou dois por cento mais caro. O Ministério da Economia espera que até o fim do ano a inflação desacelere para seis por cento. E a partir de primeiro de janeiro o salário mínimo vai aumentar dezoito por cento e chegar a quase vinte e três mil rublos.",
+        "questions": [
+          {"q": "Quanto está o dólar hoje?", "o": ["91,20 rublos.", "98 rublos.", "91,60 rublos.", "90,40 rublos."], "e": "«Составил девяносто один рубль двадцать копеек»."},
+          {"q": "O que aconteceu com o euro?", "o": ["Subiu para 98 rublos.", "Subiu 98 rublos.", "Caiu 40 copeques.", "Ficou estável."], "e": "«Вырос до девяноста восьми рублей» (до = valor final)."},
+          {"q": "Quanto vai aumentar o salário mínimo?", "o": ["18%, chegando a quase 23 000 rublos.", "23%, chegando a 18 000 rublos.", "6%.", "2%."], "e": "«Увеличится на восемнадцать процентов и составит почти двадцать три тысячи»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você reclama que o aluguel subiu de 40 para 45 mil.", "o": ["Аренда подорожала с сорока до сорока пяти тысяч.", "Аренда подорожала на сорок до сорока пяти тысяч.", "Аренда подорожала до сорока на сорок пять тысяч.", "Аренда подорожала в сорок пять тысяч."], "e": "С (início) … до (fim)."},
+        {"q": "Você diz que está juntando dinheiro para um carro.", "o": ["Я коплю на машину.", "Я коплю для машины.", "Я коплю машину.", "Я коплю в машину."], "e": "Копить на + acusativo."},
+        {"q": "Você pergunta o câmbio do dia numa casa de câmbio.", "o": ["Какой сегодня курс доллара?", "Какая сегодня цена на доллар курса?", "Сколько стоит курс?", "Какой доллар сегодня?"], "e": "Курс доллара = cotação do dólar."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Descreva por escrito (60 a 90 palavras) como mudaram os seus gastos mensais no último ano: o que ficou mais caro, quanto, e o que você fez para economizar. Use números e as preposições на, до e с.",
+        "useful": ["За последний год … подорожал(а/и) на …", "Раньше я тратил(а) …, а теперь …", "… выросли с … до …", "Чтобы сэкономить, я …", "Сейчас я коплю на …"],
+        "model": "За последний год мои расходы заметно выросли. Аренда квартиры подорожала с тридцати пяти до сорока тысяч рублей, то есть на пять тысяч. Продукты подорожали примерно на пятнадцать процентов: раньше я тратил на еду двенадцать тысяч в месяц, а теперь почти четырнадцать. Чтобы сэкономить, я стал готовить дома и отказался от двух подписок. Кроме того, я езжу на работу на велосипеде. Сейчас я коплю на поездку в Бразилию и откладываю по три тысячи рублей в месяц.",
+        "model_pt": "No último ano, as minhas despesas aumentaram bastante. O aluguel subiu de trinta e cinco para quarenta mil rublos, ou seja, cinco mil. A comida ficou uns quinze por cento mais cara: antes eu gastava doze mil por mês com comida, agora quase catorze. Para economizar, passei a cozinhar em casa e cancelei duas assinaturas. Além disso, vou de bicicleta para o trabalho. Agora estou juntando dinheiro para uma viagem ao Brasil e guardo três mil rublos por mês.",
+        "checklist": ["Concordei corretamente рубль, процент e тысяча com os números.", "Usei на para a diferença.", "Usei с … до para o valor inicial e final.", "Usei копить на ou откладывать.", "Escrevi pelo menos 60 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Leia em voz alta, como um apresentador de rádio, um boletim que você mesmo inventar com quatro números: o câmbio, um preço que subiu, um que caiu e uma previsão.",
+        "useful": ["Курс … составил …", "… вырос / снизился на …", "… подорожал до …", "Эксперты ожидают, что …"],
+        "model": "Добрый вечер, в эфире экономические новости. Курс доллара сегодня составил девяносто рублей пятьдесят копеек. Бензин за неделю подорожал на один рубль и теперь стоит шестьдесят два рубля за литр. Зато цены на авиабилеты в Сочи снизились на двадцать процентов. Эксперты ожидают, что к весне ключевая ставка снизится до четырнадцати процентов.",
+        "model_pt": "Boa noite, no ar as notícias econômicas. O dólar hoje ficou em noventa rublos e cinquenta copeques. A gasolina ficou um rublo mais cara em uma semana e agora custa sessenta e dois rublos o litro. Em compensação, as passagens aéreas para Sóchi caíram vinte por cento. Os especialistas esperam que até a primavera a taxa básica caia para catorze por cento.",
+        "checklist": ["Li os números por extenso com a forma correta de рубль / процент.", "Usei на e до corretamente.", "Usei pelo menos três verbos de variação.", "Mantive o ritmo de leitura de rádio."]}
+    ]}
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "id": "midia1", "theme": "midia", "order": 1,
+  "title": "Он сказал, что…", "title_pt": "Mídia, notícias e discurso indireto",
+  "level": "B2", "minutes": 60,
+  "objectives": [
+    "Entender uma conversa sobre uma notícia falsa e um telejornal com declarações.",
+    "Ler um texto sobre como verificar informações e identificar fontes.",
+    "Relatar afirmações (что), perguntas (ли, где, когда) e pedidos (чтобы + passado / просить + infinitivo).",
+    "Escrever uma notícia curta com declarações indiretas e recontar oralmente uma entrevista."
+  ],
+  "grammar_focus": "косвенная речь: сказал, что … · спросил, … ли … · спросил, где / когда … · попросил, чтобы + прош. вр. · время в придаточном не меняется",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário da imprensa e os verbos que introduzem discurso.", "steps": [
+      {"t": "warmup", "questions": [
+        "Откуда вы узнаёте новости: из телевизора, из соцсетей, из газет?",
+        "Вам когда-нибудь попадались фейковые новости?",
+        "Em português, «Ele disse: Vou amanhã» vira «Ele disse que ia no dia seguinte». O que muda? Em russo, muda tanto?"
+      ]},
+      {"t": "vocab", "items": [
+        ["СМИ", "mídia, meios de comunicação", "средства массовой информации"],
+        ["источник", "fonte", "по данным источника = segundo a fonte"],
+        ["заявить", "declarar", "заявление = declaração"],
+        ["сообщить", "informar, comunicar", "сообщается, что… = informa-se que…"],
+        ["опровергнуть", "desmentir", "опровержение = desmentido"],
+        ["фейк", "notícia falsa", "= ложная информация"],
+        ["заголовок", "manchete, título", "громкий заголовок"],
+        ["ведущий", "apresentador", "ведущий новостей"],
+        ["корреспондент", "correspondente, repórter", "наш корреспондент сообщает"],
+        ["по словам", "segundo (alguém)", "по словам министра (genitivo)"],
+        ["прямой эфир", "transmissão ao vivo", "в прямом эфире"],
+        ["проверить информацию", "checar a informação", "проверка фактов = checagem"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo de discurso ao seu sentido.", "pairs": [
+        ["заявить", "declarar oficialmente"], ["спросить", "perguntar"], ["попросить", "pedir"],
+        ["ответить", "responder"], ["подтвердить", "confirmar"], ["опровергнуть", "desmentir"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "По словам очевидцев, пожар начался около полуночи.", "o": ["Segundo testemunhas, o incêndio começou por volta da meia-noite.", "As testemunhas causaram o incêndio à meia-noite.", "O incêndio foi apagado à meia-noite.", "As testemunhas chegaram à meia-noite."], "e": "По словам + genitivo = segundo."},
+        {"q": "Пресс-служба опровергла эту информацию.", "o": ["A assessoria de imprensa desmentiu essa informação.", "A assessoria de imprensa confirmou essa informação.", "A assessoria de imprensa publicou essa informação.", "A assessoria não comentou a informação."], "e": "Опровергнуть = desmentir."},
+        {"q": "Журналист спросил, будет ли повышение цен.", "o": ["O jornalista perguntou se haveria aumento de preços.", "O jornalista disse que haveria aumento de preços.", "O jornalista pediu um aumento de preços.", "O jornalista negou o aumento de preços."], "e": "Ли = se (pergunta indireta)."}
+      ]}
+    ]},
+    {"title": "Escuta: será que é verdade?", "goal": "Acompanhar o relato do que outras pessoas disseram e perguntaram.", "steps": [
+      {"t": "dialogue", "title": "Ты это видел?", "setting": "Ígor mostra a Nastia uma notícia que viu numa rede social.",
+        "speakers": {"Игорь": "m", "Настя": "f2"},
+        "lines": [
+          ["Игорь", "Настя, ты видела? Пишут, что с понедельника метро будет бесплатным для всех!", "Nastia, você viu? Estão escrevendo que a partir de segunda o metrô vai ser grátis para todos!"],
+          ["Настя", "Серьёзно? А кто это пишет?", "Sério? E quem está escrevendo isso?"],
+          ["Игорь", "Какой-то канал в мессенджере. Там сказано, что мэр заявил об этом вчера на пресс-конференции.", "Um canal num aplicativo de mensagens. Lá diz que o prefeito anunciou isso ontem numa coletiva."],
+          ["Настя", "Подожди. Я как раз смотрела вчера эту пресс-конференцию. Мэр сказал, что бесплатным будет проезд только для школьников, и только в сентябре.", "Espera. Eu justamente assisti ontem a essa coletiva. O prefeito disse que a passagem vai ser grátis só para estudantes do ensino fundamental e médio, e só em setembro."],
+          ["Игорь", "Ну вот, а я уже всем переслал…", "Pronto, e eu já encaminhei para todo mundo…"],
+          ["Настя", "А ещё журналист спросил его, повысят ли цену на билеты в следующем году. И он ответил, что пока это не обсуждается.", "E um jornalista ainda perguntou a ele se vão aumentar o preço das passagens no ano que vem. E ele respondeu que por enquanto isso não está sendo discutido."],
+          ["Игорь", "Понятно. Значит, канал всё перепутал. Или специально исказил.", "Entendi. Então o canal confundiu tudo. Ou distorceu de propósito."],
+          ["Настя", "Скорее всего. Моя мама всегда просит, чтобы я проверяла новости на официальных сайтах. Теперь я понимаю почему.", "Muito provavelmente. A minha mãe sempre pede que eu cheque as notícias nos sites oficiais. Agora entendo por quê."],
+          ["Игорь", "Ладно, напишу ребятам, что это неправда. Неудобно получилось.", "Tá bom, vou escrever para o pessoal que não é verdade. Que situação chata."]
+        ],
+        "questions": [
+          {"q": "O que dizia a notícia que Ígor viu?", "o": ["Que o metrô ficaria grátis para todos a partir de segunda.", "Que o preço do metrô ia subir.", "Que o metrô ia fechar em setembro.", "Que o prefeito tinha renunciado."], "e": "«Пишут, что с понедельника метро будет бесплатным для всех»."},
+          {"q": "O que o prefeito realmente disse?", "o": ["Que a passagem seria grátis só para estudantes escolares e só em setembro.", "Que o metrô seria grátis para todos.", "Que não haveria mudança nenhuma.", "Que os preços iam subir."], "e": "«Бесплатным будет проезд только для школьников, и только в сентябре»."},
+          {"q": "O que um jornalista perguntou ao prefeito?", "o": ["Se o preço das passagens ia subir no ano seguinte.", "Quando o metrô ficaria grátis.", "Por que o metrô atrasa.", "Quantos estudantes usam o metrô."], "e": "«Спросил его, повысят ли цену на билеты»."},
+          {"q": "O que a mãe de Nastia sempre pede?", "o": ["Que ela cheque as notícias em sites oficiais.", "Que ela não use redes sociais.", "Que ela assista ao telejornal.", "Que ela leia jornais impressos."], "e": "«Просит, чтобы я проверяла новости на официальных сайтах»."}
+        ]},
+      {"t": "dictation", "voice": "f2", "text": "Журналист спросил, повысят ли цену на билеты в следующем году.", "pt": "O jornalista perguntou se vão aumentar o preço das passagens no ano que vem.", "hint": "Pergunta indireta com ли (10 palavras)."},
+      {"t": "shadow", "voice": "f2", "lines": [
+        ["Мэр сказал, что проезд будет бесплатным только для школьников.", "O prefeito disse que a passagem será grátis só para escolares."],
+        ["Журналист спросил, повысят ли цену.", "O jornalista perguntou se vão aumentar o preço."],
+        ["Он ответил, что пока это не обсуждается.", "Ele respondeu que por enquanto isso não está em discussão."],
+        ["Мама просит, чтобы я проверяла новости.", "A mãe pede que eu cheque as notícias."]
+      ]}
+    ]},
+    {"title": "Leitura: como checar uma notícia", "goal": "Ler um texto de orientação e reconhecer a atribuição de falas.", "steps": [
+      {"t": "reading", "title": "Как отличить фейк от новости",
+        "text": "Социологи в ходе недавнего опроса выяснили, что почти половина пользователей хотя бы раз в месяц пересылает новости, не проверив их. По словам авторов исследования, чаще всего люди верят сообщениям, которые вызывают сильные эмоции: страх, возмущение или радость.\n\nЭксперты по проверке фактов советуют задать себе несколько вопросов. Во-первых, указан ли источник информации? Если в тексте сказано лишь, что «учёные доказали» или «врачи предупреждают», но не названы имена и организации, стоит насторожиться. Во-вторых, сообщают ли об этом другие крупные СМИ? Настоящая важная новость редко появляется только в одном канале.\n\nКроме того, полезно проверить, когда была опубликована информация. Многие фейки оказываются старыми новостями, которые снова начинают распространять через несколько лет. Специалисты также просят, чтобы пользователи не пересылали сообщения «на всякий случай»: именно так ложная информация распространяется быстрее всего.",
+        "pt": "Sociólogos descobriram numa pesquisa recente que quase metade dos usuários pelo menos uma vez por mês encaminha notícias sem checá-las. Segundo os autores do estudo, as pessoas acreditam com mais frequência em mensagens que despertam emoções fortes: medo, indignação ou alegria.\n\nOs especialistas em checagem de fatos aconselham a fazer algumas perguntas a si mesmo. Em primeiro lugar, a fonte da informação está indicada? Se o texto diz apenas que «cientistas provaram» ou que «médicos alertam», mas não cita nomes e organizações, vale desconfiar. Em segundo lugar, outros grandes veículos estão noticiando isso? Uma notícia importante de verdade raramente aparece num único canal.\n\nAlém disso, é útil verificar quando a informação foi publicada. Muitas notícias falsas acabam sendo notícias antigas que voltam a circular alguns anos depois. Os especialistas também pedem que os usuários não encaminhem mensagens «por via das dúvidas»: é exatamente assim que a informação falsa se espalha mais rápido.",
+        "tf": [
+          ["Quase metade dos usuários encaminha notícias sem checar pelo menos uma vez por mês.", "V", "«Почти половина пользователей хотя бы раз в месяц пересылает новости, не проверив их»."],
+          ["As pessoas acreditam mais em notícias que despertam emoções fortes.", "V", "«Вызывают сильные эмоции»."],
+          ["Uma notícia importante costuma aparecer num único canal.", "F", "«Редко появляется только в одном канале»."],
+          ["O texto ensina a usar um aplicativo de checagem.", "N", "Nenhum aplicativo é citado."],
+          ["Muitas notícias falsas são notícias antigas recirculadas.", "V", "«Оказываются старыми новостями»."]
+        ],
+        "questions": [
+          {"q": "Почему фразы «учёные доказали» или «врачи предупреждают» должны насторожить?", "o": ["Потому что в них не названы конкретные имена и организации.", "Потому что учёные всегда ошибаются.", "Потому что такие новости слишком старые.", "Потому что их пишут врачи."], "e": "«Не названы имена и организации»."},
+          {"q": "Что просят специалисты?", "o": ["Чтобы пользователи не пересылали сообщения «на всякий случай».", "Чтобы пользователи не читали новости.", "Чтобы люди смотрели только телевизор.", "Чтобы СМИ публиковали меньше новостей."], "e": "«Просят, чтобы пользователи не пересылали сообщения…»."}
+        ]},
+      {"t": "cloze", "title": "Escolha что, ли ou чтобы.",
+        "text": "Эксперты считают, {что|ли|чтобы} фейки распространяются быстрее правды. Нужно проверить, указан {ли|что|чтобы} источник. Учитель попросил, {чтобы|что|ли} мы прочитали статью до пятницы. Я спросил коллегу, {где|что|чтобы} он нашёл эту новость.",
+        "pt": "Os especialistas acham que as notícias falsas se espalham mais rápido que a verdade. É preciso verificar se a fonte está indicada. O professor pediu que lêssemos o artigo até sexta. Perguntei ao colega onde ele encontrou essa notícia.",
+        "e": "Что: afirmação. Ли: pergunta de sim ou não. Чтобы + passado: pedido ou desejo. Pronome interrogativo (где, когда, почему): pergunta aberta."}
+    ]},
+    {"title": "Foco na forma: o discurso indireto", "goal": "Transformar falas diretas em indiretas sem trocar o tempo verbal.", "steps": [
+      {"t": "grammar", "title": "Relatar o que alguém disse, perguntou ou pediu",
+        "paragraphs": [
+          "Grande diferença em relação ao português: em russo, o tempo verbal da fala original não muda. «Я приду завтра», — сказал он → Он сказал, что придёт завтра (literalmente «que virá»; em português, «que viria»). Mudam apenas os pronomes e as pessoas: я → он, мы → они.",
+          "Afirmação: что. Мэр сказал: «Метро будет бесплатным» → Мэр сказал, что метро будет бесплатным.",
+          "Pergunta de sim ou não: a palavra em foco + ли, no início da oração: «Ты придёшь?» → Она спросила, приду ли я. «Повысят цены?» → Журналист спросил, повысят ли цены. Atenção: não se usa если aqui.",
+          "Pergunta aberta: o pronome interrogativo se mantém: «Где ты был?» → Мама спросила, где я был.",
+          "Pedido ou ordem: попросить / сказать, чтобы + passado: «Позвони мне!» → Она попросила, чтобы я позвонил. Ou попросить + infinitivo: Она попросила меня позвонить."
+        ],
+        "table": {"columns": ["Tipo", "Discurso direto", "Discurso indireto"], "rows": [
+          ["afirmação", "«Я устал».", "Он сказал, что устал."],
+          ["sim / não", "«Ты будешь чай?»", "Она спросила, буду ли я чай."],
+          ["pergunta aberta", "«Когда начало?»", "Он спросил, когда начало."],
+          ["pedido", "«Закройте окно».", "Она попросила, чтобы мы закрыли окно."],
+          ["pedido (inf.)", "«Помоги мне».", "Он попросил меня помочь ему."]
+        ]},
+        "examples": [
+          ["Министр заявил, что реформа начнётся в январе.", "O ministro declarou que a reforma começará (começaria) em janeiro."],
+          ["Корреспондент спросил, знают ли власти о проблеме.", "O repórter perguntou se as autoridades sabem (sabiam) do problema."],
+          ["Редактор сказал, чтобы я переписал заголовок.", "O editor disse para eu reescrever a manchete."]
+        ],
+        "pitfalls": [
+          "Não use если para perguntas indiretas: «Я не знаю, придёт ли он», nunca «если он придёт».",
+          "Não «recue» o tempo como em português: «Он сказал, что живёт в Москве» (que morava / mora), não «что жил», a não ser que a fala original estivesse no passado.",
+          "Depois de чтобы com outro sujeito, o verbo vai ao passado: «Я хочу, чтобы ты пришёл», nunca «чтобы ты придёшь»."
+        ]},
+      {"t": "choice", "title": "Transforme em discurso indireto.", "items": [
+        {"q": "«Я работаю в газете», — сказала Аня. → Аня сказала, что ___.", "o": ["работает в газете", "работала в газете", "я работаю в газете", "будет работать в газете"], "e": "O tempo se mantém (presente); muda a pessoa: я → она."},
+        {"q": "«Вы смотрели новости?» — спросил он. → Он спросил, ___.", "o": ["смотрели ли мы новости", "если мы смотрели новости", "что мы смотрели новости", "чтобы мы смотрели новости"], "e": "Pergunta de sim ou não: verbo + ли."},
+        {"q": "«Позвоните в редакцию!» — сказал шеф. → Шеф сказал, чтобы мы ___ в редакцию.", "o": ["позвонили", "позвоним", "позвонить", "звоните"], "e": "Чтобы + passado."},
+        {"q": "«Когда выйдет статья?» — спросила мама. → Мама спросила, ___.", "o": ["когда выйдет статья", "выйдет ли когда статья", "что когда выйдет статья", "чтобы вышла статья"], "e": "Pergunta aberta: mantém-se o pronome interrogativo."},
+        {"q": "«Я приеду в пятницу», — сказал он. → Он сказал, что ___ в пятницу.", "o": ["приедет", "приехал бы", "приезжал", "приеду"], "e": "Futuro se mantém, pessoa muda: я приеду → он приедет."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Он спросил, если я читал эту статью.", "o": ["Он спросил, читал ли я эту статью.", "Он спросил, что я читал эту статью.", "Он спросил, чтобы я читал эту статью."], "e": "Pergunta indireta: ли, nunca если."},
+        {"q": "Мама попросила, чтобы я позвоню ей вечером.", "o": ["Мама попросила, чтобы я позвонил ей вечером.", "Мама попросила, что я позвоню ей вечером.", "Мама попросила, позвоню ли я ей вечером."], "e": "Чтобы + passado."},
+        {"q": "Она сказала: что она устала.", "o": ["Она сказала, что устала.", "Она сказала, ли она устала.", "Она сказала, чтобы она устала."], "e": "Discurso indireto: vírgula + что, sem dois-pontos."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Министр заявил что реформа начнётся в январе", "pt": "O ministro declarou que a reforma começará em janeiro."},
+        {"a": "Я не знаю правда ли это", "pt": "Não sei se isso é verdade."},
+        {"a": "Редактор попросил чтобы я проверил факты", "pt": "O editor pediu que eu checasse os fatos."}
+      ]}
+    ]},
+    {"title": "Uso real: telejornal, situações e produção", "goal": "Entender declarações citadas e relatar falas de outras pessoas.", "steps": [
+      {"t": "listening", "kind": "Телевизионные новости", "title": "Вечерний выпуск", "voice": "m2",
+        "text": "Добрый вечер. Главная тема выпуска: сильный снегопад в Москве. Как сообщили в мэрии, на улицы вышли более десяти тысяч единиц техники. Глава городского транспорта заявил, что метро будет работать на час дольше обычного. Журналисты спросили, закроют ли школы. Министр образования ответил, что решение примут завтра утром, в зависимости от погоды. Синоптики просят, чтобы водители по возможности оставили машины дома и пользовались общественным транспортом.",
+        "pt": "Boa noite. O tema principal da edição: uma forte nevasca em Moscou. Como informou a prefeitura, mais de dez mil veículos de limpeza foram às ruas. O chefe do transporte municipal declarou que o metrô vai funcionar uma hora a mais do que o normal. Os jornalistas perguntaram se as escolas vão fechar. O ministro da Educação respondeu que a decisão será tomada amanhã de manhã, dependendo do tempo. Os meteorologistas pedem que os motoristas, se possível, deixem o carro em casa e usem o transporte público.",
+        "questions": [
+          {"q": "O que declarou o chefe do transporte municipal?", "o": ["Que o metrô vai funcionar uma hora a mais.", "Que o metrô vai fechar.", "Que os ônibus serão gratuitos.", "Que as escolas vão fechar."], "e": "«Заявил, что метро будет работать на час дольше обычного»."},
+          {"q": "O que os jornalistas perguntaram?", "o": ["Se as escolas vão fechar.", "Quando a neve vai parar.", "Quantos veículos há nas ruas.", "Onde estacionar."], "e": "«Спросили, закроют ли школы»."},
+          {"q": "O que pedem os meteorologistas?", "o": ["Que os motoristas deixem o carro em casa.", "Que as pessoas fiquem em casa.", "Que as escolas fechem.", "Que todos limpem a neve."], "e": "«Просят, чтобы водители … оставили машины дома»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você conta a um amigo que o chefe pediu para você ficar até mais tarde.", "o": ["Шеф попросил, чтобы я остался подольше.", "Шеф попросил, что я останусь подольше.", "Шеф попросил, останусь ли я подольше.", "Шеф попросил, если я остался подольше."], "e": "Pedido: чтобы + passado."},
+        {"q": "Você diz que não sabe se o show vai acontecer.", "o": ["Я не знаю, будет ли концерт.", "Я не знаю, если будет концерт.", "Я не знаю, что будет концерт ли.", "Я не знаю, чтобы был концерт."], "e": "Ли = se."},
+        {"q": "Você relata o que a sua irmã disse: «Estou grávida!».", "o": ["Сестра сказала, что она беременна!", "Сестра сказала, что я беременна!", "Сестра сказала, чтобы она беременна!", "Сестра сказала, беременна ли она!"], "e": "Afirmação: что; pessoa muda (я → она)."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 70,
+        "task": "Escreva uma notícia curta (70 a 100 palavras) sobre um acontecimento real ou inventado na sua cidade, com pelo menos três declarações indiretas: uma afirmação (что), uma pergunta (ли) e um pedido (чтобы).",
+        "useful": ["Как сообщили в …, …", "По словам …, …", "… заявил(а), что …", "Журналисты спросили, … ли …", "… просят, чтобы …"],
+        "model": "Вчера в центре Белу-Оризонти прошёл первый фестиваль уличной еды. Как сообщили организаторы, его посетили более тридцати тысяч человек. По словам мэра, фестиваль станет ежегодным. Журналисты спросили, не будет ли он мешать жителям центра. Мэр ответил, что на следующий год праздник перенесут в парк. Организаторы также заявили, что весь мусор будет переработан, и попросили, чтобы гости приходили со своей посудой. Следующий фестиваль запланирован на май.",
+        "model_pt": "Ontem, no centro de Belo Horizonte, aconteceu o primeiro festival de comida de rua. Como informaram os organizadores, mais de trinta mil pessoas o visitaram. Segundo o prefeito, o festival vai se tornar anual. Os jornalistas perguntaram se ele não vai incomodar os moradores do centro. O prefeito respondeu que no ano que vem a festa será transferida para um parque. Os organizadores também declararam que todo o lixo será reciclado e pediram que os visitantes viessem com a própria louça. O próximo festival está previsto para maio.",
+        "checklist": ["Usei pelo menos uma afirmação com что.", "Usei uma pergunta indireta com ли.", "Usei um pedido com чтобы + passado.", "Citei uma fonte (по словам, как сообщили).", "Mantive o tempo verbal original nas orações indiretas.", "Escrevi pelo menos 70 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Leia mentalmente o diálogo da parte 2 e reconte-o em voz alta, em discurso indireto, como se contasse a outra pessoa o que Ígor e Nastia disseram.",
+        "useful": ["Игорь сказал, что …", "Настя спросила, …", "Она объяснила, что …", "Журналист спросил мэра, … ли …", "Мама просит, чтобы …"],
+        "model": "Игорь сказал Насте, что с понедельника метро будет бесплатным для всех. Настя спросила, кто это пишет. Игорь ответил, что это какой-то канал в мессенджере. Тогда Настя объяснила, что вчера смотрела пресс-конференцию и что мэр говорил только о школьниках. Она рассказала, что журналист спросил мэра, повысят ли цены, а мэр ответил, что это пока не обсуждается. В конце Настя сказала, что мама всегда просит, чтобы она проверяла новости, и Игорь решил написать друзьям, что это неправда.",
+        "model_pt": "Ígor disse a Nastia que a partir de segunda o metrô seria grátis para todos. Nastia perguntou quem estava escrevendo isso. Ígor respondeu que era um canal num aplicativo de mensagens. Então Nastia explicou que tinha assistido à coletiva no dia anterior e que o prefeito tinha falado só dos estudantes. Ela contou que um jornalista perguntou ao prefeito se os preços iam subir, e o prefeito respondeu que isso ainda não estava em discussão. No fim, Nastia disse que a mãe sempre pede que ela cheque as notícias, e Ígor decidiu escrever aos amigos que aquilo não era verdade.",
+        "checklist": ["Usei что, ли e чтобы.", "Mudei corretamente as pessoas (я → он / она).", "Não alterei os tempos verbais sem necessidade.", "Contei a conversa em ordem."]}
+    ]}
+  ]
+}

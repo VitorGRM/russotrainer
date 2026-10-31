@@ -1,0 +1,164 @@
+{
+  "id": "guerra1", "theme": "guerra", "order": 1,
+  "title": "Память о войне", "title_pt": "Guerra, memória e relato de fatos",
+  "level": "B2", "minutes": 60,
+  "objectives": [
+    "Entender um relato familiar sobre o cerco de Leningrado e um audioguia de museu.",
+    "Ler um texto histórico sobre a «Estrada da Vida» e ordenar os acontecimentos.",
+    "Usar o aspecto verbal na narração: perfectivo para a sequência de fatos, imperfectivo para o pano de fundo, a duração e a repetição.",
+    "Narrar por escrito uma história familiar e contar oralmente um acontecimento histórico."
+  ],
+  "grammar_focus": "вид глагола в рассказе: цепочка событий (СВ) × фон, длительность, повторение (НСВ) · когда + СВ / НСВ",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de conflitos, sobrevivência e memória histórica.", "steps": [
+      {"t": "warmup", "questions": [
+        "Какие исторические события важны для вашей семьи?",
+        "Что вы знаете о Дне Победы в России?",
+        "Ao contar uma história em português, quando usamos o pretérito perfeito («fui») e quando o imperfeito («ia»)?"
+      ]},
+      {"t": "vocab", "items": [
+        ["война", "guerra", "Великая Отечественная война (1941–1945)"],
+        ["блокада", "cerco, bloqueio", "блокада Ленинграда (872 дня)"],
+        ["эвакуировать", "evacuar", "эвакуация = evacuação"],
+        ["фронт", "front de batalha", "уйти на фронт = partir para a guerra"],
+        ["погибнуть", "morrer (em guerra, acidente)", "погибший = vítima, morto"],
+        ["выжить", "sobreviver", "выживший = sobrevivente"],
+        ["голод", "fome", "голодать = passar fome"],
+        ["бомбёжка", "bombardeio", "= обстрел (bombardeio de artilharia)"],
+        ["мирные жители", "civis", "мирное население"],
+        ["освободить", "libertar", "освобождение = libertação"],
+        ["ветеран", "veterano", "ветеран войны"],
+        ["помнить", "lembrar, guardar na memória", "память = memória; памятник = monumento"]
+      ]},
+      {"t": "match", "title": "Relacione os contrários ou complementos.", "pairs": [
+        ["война", "мир"], ["погибнуть", "выжить"], ["начало", "конец"],
+        ["нападение", "оборона"], ["голод", "хлеб"], ["забыть", "помнить"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Её отец ушёл на фронт в первые дни войны.", "o": ["O pai dela foi para a guerra nos primeiros dias do conflito.", "O pai dela fugiu da guerra nos primeiros dias.", "O pai dela morreu nos primeiros dias da guerra.", "O pai dela voltou do front."], "e": "Уйти на фронт = partir para a guerra."},
+        {"q": "Детей эвакуировали на Урал.", "o": ["As crianças foram evacuadas para os Urais.", "As crianças fugiram sozinhas para os Urais.", "As crianças voltaram dos Urais.", "As crianças nasceram nos Urais."], "e": "Terceira pessoa do plural impessoal = voz passiva."},
+        {"q": "Город выжил, несмотря на голод и обстрелы.", "o": ["A cidade sobreviveu, apesar da fome e dos bombardeios.", "A cidade se rendeu por causa da fome.", "A cidade foi destruída pelos bombardeios.", "A cidade evitou a fome."], "e": "Выжить = sobreviver; несмотря на = apesar de."}
+      ]}
+    ]},
+    {"title": "Escuta: uma memória de família", "goal": "Acompanhar um relato oral e distinguir fatos pontuais de situações duradouras.", "steps": [
+      {"t": "dialogue", "title": "Бабушка рассказывает", "setting": "Kirill prepara um trabalho escolar e pergunta à avó sobre a infância da mãe dela durante o cerco de Leningrado.",
+        "speakers": {"Кирилл": "m", "Бабушка": "f2"},
+        "lines": [
+          ["Кирилл", "Бабушка, расскажи, пожалуйста, про прабабушку Нину. Она ведь была в блокаду в Ленинграде?", "Vó, me conta, por favor, sobre a bisavó Nina. Ela estava em Leningrado durante o cerco, não estava?"],
+          ["Бабушка", "Да. Когда началась война, ей было девять лет. Её отец сразу ушёл на фронт, а она осталась с мамой и младшим братом.", "Sim. Quando a guerra começou, ela tinha nove anos. O pai dela foi logo para o front, e ela ficou com a mãe e o irmão mais novo."],
+          ["Кирилл", "А почему они не уехали?", "E por que eles não foram embora?"],
+          ["Бабушка", "Мама работала на заводе, её не отпускали. А в сентябре город окружили, и уехать стало почти невозможно.", "A mãe trabalhava numa fábrica, não a deixavam sair. E em setembro a cidade foi cercada, e sair ficou quase impossível."],
+          ["Кирилл", "Что она рассказывала о той зиме?", "O que ela contava daquele inverno?"],
+          ["Бабушка", "Было очень холодно, в домах не было ни света, ни воды. Каждый день она ходила с санками на Неву за водой. А хлеба давали сто двадцать пять граммов в день.", "Fazia muito frio, nas casas não havia nem luz nem água. Todos os dias ela ia com um trenó até o Nevá buscar água. E davam cento e vinte e cinco gramas de pão por dia."],
+          ["Кирилл", "Как они выжили?", "Como eles sobreviveram?"],
+          ["Бабушка", "Брат заболел, и в феврале их эвакуировали по Дороге жизни, по льду Ладожского озера. Нина потом говорила, что всю дорогу держала брата за руку и молилась.", "O irmão ficou doente, e em fevereiro eles foram evacuados pela Estrada da Vida, sobre o gelo do lago Ladoga. Nina depois dizia que passou a viagem inteira segurando a mão do irmão e rezando."],
+          ["Кирилл", "А отец вернулся?", "E o pai voltou?"],
+          ["Бабушка", "Вернулся в сорок пятом, раненый, но живой. Они встретились на вокзале, и он её сначала не узнал: она так выросла.", "Voltou em quarenta e cinco, ferido, mas vivo. Eles se encontraram na estação, e no começo ele não a reconheceu: ela tinha crescido tanto."]
+        ],
+        "questions": [
+          {"q": "Quantos anos Nina tinha quando a guerra começou?", "o": ["Nove.", "Doze.", "Seis.", "Quinze."], "e": "«Когда началась война, ей было девять лет»."},
+          {"q": "Por que a família não deixou a cidade logo?", "o": ["A mãe trabalhava numa fábrica e não a liberavam.", "O pai não deixou.", "Não havia trens.", "O irmão estava doente."], "e": "«Мама работала на заводе, её не отпускали»."},
+          {"q": "O que Nina fazia todos os dias no inverno?", "o": ["Ia buscar água no rio Nevá com um trenó.", "Trabalhava na fábrica.", "Ia à escola.", "Esperava o pai na estação."], "e": "«Каждый день она ходила с санками на Неву за водой» (repetição: imperfectivo)."},
+          {"q": "O que aconteceu na volta do pai?", "o": ["No começo ele não reconheceu a filha.", "Ele não encontrou a família.", "Ele voltou sem ferimentos.", "Ele chegou de avião."], "e": "«Он её сначала не узнал: она так выросла»."}
+        ]},
+      {"t": "dictation", "voice": "f2", "text": "Каждый день она ходила с санками на Неву за водой.", "pt": "Todos os dias ela ia com um trenó até o Nevá buscar água.", "hint": "Ação repetida no relato da avó (10 palavras)."},
+      {"t": "shadow", "voice": "f2", "lines": [
+        ["Когда началась война, ей было девять лет.", "Quando a guerra começou, ela tinha nove anos."],
+        ["Её отец сразу ушёл на фронт.", "O pai dela foi logo para o front."],
+        ["Каждый день она ходила за водой.", "Todos os dias ela ia buscar água."],
+        ["Они встретились на вокзале.", "Eles se encontraram na estação."]
+      ]}
+    ]},
+    {"title": "Leitura: a Estrada da Vida", "goal": "Ler um texto histórico e reconstruir a ordem dos acontecimentos.", "steps": [
+      {"t": "reading", "title": "Дорога жизни",
+        "text": "Восьмого сентября 1941 года немецкие войска замкнули кольцо вокруг Ленинграда. В городе оставалось около двух с половиной миллионов человек. Продовольствия хватало лишь на несколько недель, и уже в ноябре начался страшный голод.\n\nЕдинственным путём, связывавшим город со страной, было Ладожское озеро. Пока озеро не замёрзло, грузы перевозили на баржах. Когда же лёд стал достаточно толстым, по нему проложили автомобильную дорогу. Двадцать второго ноября по льду прошла первая колонна грузовиков. Машины ехали ночью, без света, часто под обстрелом, и многие из них проваливались под лёд.\n\nЗа зиму по Дороге жизни в город доставили больше трёхсот тысяч тонн грузов, а из города вывезли более полумиллиона человек, в основном детей, женщин и больных. Блокада продолжалась 872 дня и была полностью снята двадцать седьмого января 1944 года. Сегодня на берегу озера стоит памятник «Разорванное кольцо».",
+        "pt": "Em 8 de setembro de 1941, as tropas alemãs fecharam o cerco em torno de Leningrado. Na cidade restavam cerca de dois milhões e meio de pessoas. Os alimentos davam para apenas algumas semanas, e já em novembro começou uma fome terrível.\n\nO único caminho que ligava a cidade ao resto do país era o lago Ladoga. Enquanto o lago não congelou, as cargas eram transportadas em barcaças. Quando o gelo ficou grosso o suficiente, abriu-se sobre ele uma estrada para veículos. Em 22 de novembro, a primeira coluna de caminhões passou pelo gelo. Os veículos andavam à noite, sem faróis, muitas vezes sob bombardeio, e muitos afundavam no gelo.\n\nDurante o inverno, pela Estrada da Vida foram levadas à cidade mais de trezentas mil toneladas de carga, e mais de meio milhão de pessoas foram retiradas, sobretudo crianças, mulheres e doentes. O cerco durou 872 dias e foi totalmente levantado em 27 de janeiro de 1944. Hoje, às margens do lago, há o monumento «Anel Rompido».",
+        "tf": [
+          ["O cerco foi fechado em setembro de 1941.", "V", "«Восьмого сентября 1941 года … замкнули кольцо»."],
+          ["Antes de congelar, o lago era usado com barcaças.", "V", "«Пока озеро не замёрзло, грузы перевозили на баржах»."],
+          ["Os caminhões andavam de dia, com faróis acesos.", "F", "«Ехали ночью, без света»."],
+          ["O cerco durou 872 dias.", "V", "«Блокада продолжалась 872 дня»."],
+          ["O texto informa quantos caminhões afundaram no gelo.", "N", "Diz apenas «многие»."]
+        ],
+        "questions": [
+          {"q": "Почему в тексте сказано «машины ехали ночью», а не «поехали»?", "o": ["Это повторяющееся действие, фон всей зимы.", "Это одно действие в прошлом.", "Это действие в будущем.", "Это ошибка автора."], "e": "Imperfectivo: ação habitual, repetida durante o inverno."},
+          {"q": "Когда по льду прошла первая колонна?", "o": ["Двадцать второго ноября.", "Восьмого сентября.", "Двадцать седьмого января.", "В феврале."], "e": "«Двадцать второго ноября … прошла первая колонна» (evento único: perfectivo)."}
+        ]},
+      {"t": "cloze", "title": "Escolha o aspecto adequado.",
+        "text": "Осенью город {окружили|окружали}, и начался голод. Всю зиму машины {возили|привезли} хлеб по льду. Однажды ночью грузовик {провалился|проваливался} под лёд, но водитель {успел|успевал} выпрыгнуть.",
+        "pt": "No outono a cidade foi cercada, e começou a fome. Durante todo o inverno os caminhões levaram pão sobre o gelo. Certa noite, um caminhão afundou no gelo, mas o motorista conseguiu pular para fora.",
+        "e": "Fatos únicos e encadeados: perfectivo (окружили, провалился, успел). Duração «всю зиму»: imperfectivo (возили)."}
+    ]},
+    {"title": "Foco na forma: o aspecto na narração", "goal": "Escolher o aspecto pela função do verbo dentro da história.", "steps": [
+      {"t": "grammar", "title": "Primeiro plano e pano de fundo",
+        "paragraphs": [
+          "Toda narrativa tem um primeiro plano (os fatos que fazem a história avançar) e um pano de fundo (as circunstâncias). O perfectivo conta os fatos em sequência: Он встал, оделся и вышел. O imperfectivo descreve o cenário: Было холодно, шёл снег, люди спешили домой.",
+          "Imperfectivo também para duração (долго, весь день, три года: Три года он воевал), repetição (каждый день, часто, обычно: Каждое утро она ходила за водой) e para nomear a ação sem interesse no resultado (Ты читал «Войну и мир»?).",
+          "Perfectivo para um resultado alcançado (Город выжил), para um fato único com data (Двадцать второго ноября прошла колонна) e para ações com limite (за час, сразу, наконец: Наконец он вернулся).",
+          "Когда + perfectivo, perfectivo: sequência (Когда он вернулся, все обрадовались = primeiro voltou, depois se alegraram). Когда + imperfectivo, perfectivo: uma ação interrompe outra (Когда мы ехали, начался обстрел). Когда + imperfectivo, imperfectivo: simultaneidade (Когда он писал, она читала)."
+        ],
+        "table": {"columns": ["Função", "Aspecto", "Exemplo"], "rows": [
+          ["sequência de fatos", "perfectivo", "Он вернулся и обнял дочь."],
+          ["cenário, descrição", "imperfectivo", "Шёл снег, было темно."],
+          ["duração", "imperfectivo", "Блокада продолжалась 872 дня."],
+          ["repetição", "imperfectivo", "Каждый день она ходила за водой."],
+          ["resultado", "perfectivo", "Город выжил."],
+          ["ação interrompida", "НСВ + СВ", "Когда мы ехали, начался обстрел."]
+        ]},
+        "examples": [
+          ["Мы долго ждали, и наконец поезд пришёл.", "Esperamos muito tempo e finalmente o trem chegou."],
+          ["Пока дети спали, мама написала письмо на фронт.", "Enquanto as crianças dormiam, a mãe escreveu uma carta para o front."],
+          ["Он часто вспоминал войну, но никогда о ней не рассказывал.", "Ele lembrava muitas vezes da guerra, mas nunca falava dela."]
+        ],
+        "pitfalls": [
+          "O português ajuda pouco: «esperei três horas» é pretérito perfeito, mas em russo pede imperfectivo (ждал три часа), porque indica duração.",
+          "Depois de начать, кончить, продолжать e перестать, use sempre o imperfectivo: начал писать, перестал курить.",
+          "A negação de um fato esperado costuma ser imperfectiva: «Он не звонил» (não houve ligação nenhuma); «Он не позвонил» (a ligação esperada não aconteceu)."
+        ]},
+      {"t": "choice", "title": "Escolha o aspecto correto.", "items": [
+        {"q": "Всю ночь солдаты ___ мост.", "o": ["строили", "построили", "построят", "строят"], "e": "Duração (всю ночь): imperfectivo."},
+        {"q": "Когда отец ___ с фронта, Нина сразу его обняла.", "o": ["вернулся", "возвращался", "вернётся", "возвращается"], "e": "Sequência: primeiro voltou, depois abraçou."},
+        {"q": "Когда мы ___ через озеро, начался обстрел.", "o": ["ехали", "поехали", "приехали", "доехали"], "e": "Ação de fundo interrompida: imperfectivo."},
+        {"q": "Дети каждый день ___ письма отцу.", "o": ["писали", "написали", "напишут", "написали бы"], "e": "Repetição: imperfectivo."},
+        {"q": "Наконец блокаду ___.", "o": ["сняли", "снимали", "снимают", "снимет"], "e": "Resultado alcançado (наконец): perfectivo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Он построил дом три года.", "o": ["Он строил дом три года.", "Он построил дом в три года.", "Он строит дом три года назад."], "e": "Duração: imperfectivo. (Com «за три года», o perfectivo seria possível.)"},
+        {"q": "Она начала написать письмо.", "o": ["Она начала писать письмо.", "Она начала написала письмо.", "Она начинала написать письмо."], "e": "Начать + infinitivo imperfectivo."},
+        {"q": "Каждое утро он встал в шесть и пошёл на завод.", "o": ["Каждое утро он вставал в шесть и шёл на завод.", "Каждое утро он встанет в шесть и пойдёт на завод.", "Каждое утро он встал в шесть и шёл на завод."], "e": "Repetição (каждое утро): imperfectivo nos dois verbos."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Когда началась война ей было девять лет", "pt": "Quando a guerra começou, ela tinha nove anos."},
+        {"a": "Машины ехали ночью без света", "pt": "Os carros andavam à noite, sem faróis."},
+        {"a": "Отец вернулся домой в сорок пятом году", "pt": "O pai voltou para casa em quarenta e cinco."}
+      ]}
+    ]},
+    {"title": "Uso real: audioguia, situações e produção", "goal": "Entender um audioguia histórico e narrar acontecimentos com o aspecto correto.", "steps": [
+      {"t": "listening", "kind": "Аудиогид в музее", "title": "Зал № 3: Дневник Тани Савичевой", "voice": "m2",
+        "text": "Вы находитесь в третьем зале музея обороны и блокады Ленинграда. Перед вами копия дневника Тани Савичевой. Таня была обычной ленинградской школьницей. Зимой тысяча девятьсот сорок первого года она начала записывать в маленькую записную книжку даты, когда умирали её родные. Последняя запись гласит: «Осталась одна Таня». Девочку эвакуировали летом сорок второго года, но спасти её не смогли: она умерла в сорок четвёртом. Дневник стал одним из самых известных документов войны, а оригинал сегодня хранится в Музее истории Санкт-Петербурга.",
+        "pt": "Você está na terceira sala do Museu da Defesa e do Cerco de Leningrado. À sua frente está uma cópia do diário de Tânia Savitcheva. Tânia era uma estudante comum de Leningrado. No inverno de mil novecentos e quarenta e um, ela começou a anotar numa caderneta pequena as datas em que os seus parentes morriam. A última anotação diz: «Só restou Tânia». A menina foi evacuada no verão de quarenta e dois, mas não conseguiram salvá-la: ela morreu em quarenta e quatro. O diário se tornou um dos documentos mais conhecidos da guerra, e o original está hoje no Museu de História de São Petersburgo.",
+        "questions": [
+          {"q": "O que Tânia anotava na caderneta?", "o": ["As datas em que os parentes morriam.", "Os bombardeios da cidade.", "O que comia todos os dias.", "Cartas para o pai."], "e": "«Записывать … даты, когда умирали её родные»."},
+          {"q": "O que diz a última anotação?", "o": ["«Só restou Tânia».", "«A guerra acabou».", "«Fomos evacuados».", "«O pai voltou»."], "e": "«Осталась одна Таня»."},
+          {"q": "Onde está hoje o original do diário?", "o": ["No Museu de História de São Petersburgo.", "Nesta sala do museu.", "Num arquivo em Moscou.", "Com a família de Tânia."], "e": "«Оригинал сегодня хранится в Музее истории Санкт-Петербурга»; na sala há uma cópia."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você pergunta a um idoso como era a vida depois da guerra.", "o": ["Расскажите, как вы жили после войны?", "Расскажите, как вы прожили после войны?", "Расскажите, как вы поживёте после войны?", "Расскажите, как вы пожили после войны?"], "e": "Descrição de um período: imperfectivo (жили)."},
+        {"q": "Num museu, você pergunta quando a cidade foi libertada.", "o": ["Когда город освободили?", "Когда город освобождали каждый день?", "Когда город освобождается?", "Когда город освободит?"], "e": "Fato único com data: perfectivo."},
+        {"q": "Você conta que o seu avô lutou por quatro anos.", "o": ["Мой дедушка воевал четыре года.", "Мой дедушка повоевал четыре года назад.", "Мой дедушка завоевал четыре года.", "Мой дедушка воюет четыре года."], "e": "Duração: imperfectivo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 80,
+        "task": "Conte por escrito (80 a 120 palavras) uma história real ou inventada de alguém da sua família num período difícil (guerra, migração, crise). Separe o pano de fundo (imperfectivo) da sequência de fatos (perfectivo).",
+        "useful": ["Это было в … году.", "Тогда … жил(а) в …", "Каждый день …", "Однажды …", "Когда …, …", "В конце концов …"],
+        "model": "Это было в тысяча девятьсот пятьдесят втором году. Мой прадедушка жил в маленькой деревне в Португалии. Работы не было, семья часто голодала. Каждый вечер он слушал по радио новости о Бразилии и мечтал о новой жизни. Однажды он продал единственную корову, купил билет на корабль и уплыл в Сантус. Плавание продолжалось почти три недели. Когда корабль наконец пришёл в порт, у него было только два доллара. Он долго искал работу, сначала таскал мешки в порту, потом открыл маленькую булочную. Через пять лет он привёз в Бразилию жену и детей.",
+        "model_pt": "Foi em mil novecentos e cinquenta e dois. O meu bisavô morava numa aldeia pequena em Portugal. Não havia trabalho, e a família passava fome com frequência. Todas as noites ele ouvia no rádio notícias sobre o Brasil e sonhava com uma vida nova. Um dia vendeu a única vaca, comprou uma passagem de navio e partiu para Santos. A viagem durou quase três semanas. Quando o navio finalmente chegou ao porto, ele tinha só dois dólares. Procurou trabalho por muito tempo; primeiro carregou sacos no porto, depois abriu uma pequena padaria. Cinco anos depois, trouxe a esposa e os filhos para o Brasil.",
+        "checklist": ["Descrevi o cenário com o imperfectivo.", "Contei a sequência de fatos com o perfectivo.", "Usei pelo menos uma expressão de repetição (каждый день, часто).", "Usei когда com o aspecto correto.", "Usei marcadores de tempo (однажды, потом, через … лет).", "Escrevi pelo menos 80 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Conte em voz alta, em cerca de um minuto, um acontecimento histórico importante do seu país: o que acontecia antes, o que aconteceu e qual foi o resultado.",
+        "useful": ["В … году …", "В то время …", "Всё началось, когда …", "Сначала … Потом …", "В результате …"],
+        "model": "В тысяча восемьсот восемьдесят восьмом году в Бразилии отменили рабство. В то время на плантациях кофе работали сотни тысяч рабов, и многие политики долго выступали против отмены. Всё изменилось, когда в стране усилилось движение аболиционистов. Сначала приняли законы, которые освобождали детей и пожилых, а потом, тринадцатого мая, принцесса Изабелла подписала «Золотой закон». В результате Бразилия стала последней страной Америки, которая отменила рабство.",
+        "model_pt": "Em mil oitocentos e oitenta e oito, a escravidão foi abolida no Brasil. Naquela época, centenas de milhares de escravizados trabalhavam nas fazendas de café, e muitos políticos se opuseram à abolição por muito tempo. Tudo mudou quando o movimento abolicionista ganhou força no país. Primeiro, foram aprovadas leis que libertavam as crianças e os idosos, e depois, em treze de maio, a princesa Isabel assinou a Lei Áurea. Como resultado, o Brasil se tornou o último país das Américas a abolir a escravidão.",
+        "checklist": ["Situei o fato no tempo.", "Usei o imperfectivo para o contexto.", "Usei o perfectivo para os fatos decisivos.", "Terminei com o resultado (в результате)."]}
+    ]}
+  ]
+}

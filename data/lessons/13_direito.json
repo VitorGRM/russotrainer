@@ -1,0 +1,163 @@
+{
+  "id": "direito1", "theme": "direito", "order": 1,
+  "title": "Договор подписан", "title_pt": "Contratos, direitos e linguagem jurídica",
+  "level": "B2", "minutes": 60,
+  "objectives": [
+    "Entender uma consulta com um advogado e uma mensagem automática de um serviço público.",
+    "Ler um texto sobre contratos de aluguel e identificar direitos e obrigações.",
+    "Usar a voz passiva: particípios passivos curtos (подписан, оплачен) e verbos em -ся (договор заключается).",
+    "Escrever uma notificação formal ao proprietário e explicar oralmente um problema jurídico."
+  ],
+  "grammar_focus": "краткие страдательные причастия (договор подписан, квартира сдана) · пассив на -ся (закон принимается) · кем? (творительный агента)",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de contratos, direitos e procedimentos legais.", "steps": [
+      {"t": "warmup", "questions": [
+        "Вы когда-нибудь снимали квартиру? Был ли у вас договор?",
+        "Когда вы в последний раз обращались к юристу?",
+        "Em português, «o contrato foi assinado» e «o contrato está assinado» têm sentidos diferentes? E em russo?"
+      ]},
+      {"t": "vocab", "items": [
+        ["договор", "contrato", "заключить договор = firmar contrato"],
+        ["подписать", "assinar", "подписан = assinado"],
+        ["арендатор / арендодатель", "inquilino / locador", "аренда = aluguel"],
+        ["залог", "caução, depósito", "вернуть залог"],
+        ["юрист / адвокат", "jurista, advogado / advogado de defesa", "обратиться к юристу"],
+        ["суд", "tribunal", "подать в суд на кого = processar"],
+        ["нарушить", "violar, infringir", "нарушение закона, нарушить договор"],
+        ["штраф", "multa", "выписать штраф = aplicar multa"],
+        ["права и обязанности", "direitos e deveres", "иметь право на …"],
+        ["доверенность", "procuração", "оформить доверенность"],
+        ["расторгнуть договор", "rescindir o contrato", "расторжение = rescisão"],
+        ["в соответствии с", "em conformidade com", "в соответствии с законом (instrumental)"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo ao particípio passivo curto.", "pairs": [
+        ["подписать", "подписан"], ["оплатить", "оплачен"], ["нарушить", "нарушен"],
+        ["заключить", "заключён"], ["закрыть", "закрыт"], ["принять", "принят"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Договор расторгнут по инициативе арендатора.", "o": ["O contrato foi rescindido por iniciativa do inquilino.", "O contrato foi renovado pelo inquilino.", "O contrato foi assinado pelo locador.", "O inquilino rompeu a porta."], "e": "Расторгнут = rescindido."},
+        {"q": "Вам выписан штраф за превышение скорости.", "o": ["Foi aplicada uma multa ao senhor por excesso de velocidade.", "O senhor pagou a multa por velocidade.", "O senhor recebeu um prêmio por velocidade.", "A multa foi cancelada."], "e": "Выписан = emitido, aplicado (passivo curto)."},
+        {"q": "Он подал в суд на бывшего работодателя.", "o": ["Ele processou o antigo empregador.", "Ele foi ao tribunal com o antigo empregador.", "Ele foi demitido pelo tribunal.", "Ele perdeu o processo contra o empregador."], "e": "Подать в суд на + acusativo = processar."}
+      ]}
+    ]},
+    {"title": "Escuta: consulta com um advogado", "goal": "Entender a descrição de um problema e a orientação jurídica.", "steps": [
+      {"t": "dialogue", "title": "Мне не возвращают залог", "setting": "Tiago, estudante estrangeiro em Kazan, consulta uma advogada porque o proprietário não devolve a caução.",
+        "speakers": {"Юрист": "f", "Тьягу": "m"},
+        "lines": [
+          ["Тьягу", "Здравствуйте. Я съехал с квартиры месяц назад, а хозяин не возвращает мне залог, двадцать пять тысяч рублей.", "Olá. Saí do apartamento há um mês, e o proprietário não me devolve a caução, vinte e cinco mil rublos."],
+          ["Юрист", "Договор аренды был заключён в письменной форме?", "O contrato de aluguel foi firmado por escrito?"],
+          ["Тьягу", "Да, он подписан нами обоими. Вот он.", "Sim, foi assinado por nós dois. Aqui está."],
+          ["Юрист", "Хорошо. Здесь сказано, что залог возвращается в течение десяти дней после передачи ключей, если квартира не повреждена. Акт передачи у вас есть?", "Certo. Aqui diz que a caução é devolvida em até dez dias após a entrega das chaves, se o apartamento não estiver danificado. O senhor tem o termo de entrega?"],
+          ["Тьягу", "Нет… Мы просто встретились, я отдал ключи. Он сказал, что всё в порядке.", "Não… A gente só se encontrou e eu entreguei as chaves. Ele disse que estava tudo certo."],
+          ["Юрист", "Это хуже, но не безнадёжно. Переписка с хозяином сохранилась?", "Isso complica, mas não é um caso perdido. As mensagens com o proprietário foram guardadas?"],
+          ["Тьягу", "Да, в мессенджере. Он писал, что деньги будут переведены на следующей неделе.", "Sim, no aplicativo de mensagens. Ele escreveu que o dinheiro seria transferido na semana seguinte."],
+          ["Юрист", "Отлично, это доказательство. Сначала отправьте ему письменную претензию. Если ответа не будет, можно обратиться в суд. Такие дела обычно рассматриваются быстро.", "Ótimo, isso é uma prova. Primeiro, envie a ele uma notificação por escrito. Se não houver resposta, é possível ir à Justiça. Casos assim costumam ser julgados rapidamente."],
+          ["Тьягу", "А если я иностранец, это что-то меняет?", "E o fato de eu ser estrangeiro muda alguma coisa?"],
+          ["Юрист", "Нет. Ваши права защищены законом так же, как права любого гражданина.", "Não. Os seus direitos são protegidos pela lei da mesma forma que os de qualquer cidadão."]
+        ],
+        "questions": [
+          {"q": "Qual é o problema de Tiago?", "o": ["O proprietário não devolve a caução.", "O proprietário quer aumentar o aluguel.", "Ele perdeu as chaves.", "Ele foi multado."], "e": "«Хозяин не возвращает мне залог»."},
+          {"q": "Que documento falta a Tiago?", "o": ["O termo de entrega das chaves.", "O contrato.", "O passaporte.", "O recibo da caução."], "e": "«Акт передачи у вас есть?» «Нет…»."},
+          {"q": "O que serve como prova?", "o": ["As mensagens em que o proprietário promete transferir o dinheiro.", "Uma testemunha.", "Fotos do apartamento.", "O extrato bancário."], "e": "«Он писал, что деньги будут переведены»."},
+          {"q": "Qual é o primeiro passo recomendado?", "o": ["Enviar uma notificação por escrito.", "Ir direto ao tribunal.", "Chamar a polícia.", "Ligar para a embaixada."], "e": "«Сначала отправьте ему письменную претензию»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Ваши права защищены законом так же, как права любого гражданина.", "pt": "Os seus direitos são protegidos pela lei da mesma forma que os de qualquer cidadão.", "hint": "Última frase da advogada (10 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Договор был заключён в письменной форме?", "O contrato foi firmado por escrito?"],
+        ["Залог возвращается в течение десяти дней.", "A caução é devolvida em até dez dias."],
+        ["Такие дела обычно рассматриваются быстро.", "Casos assim costumam ser julgados rapidamente."],
+        ["Ваши права защищены законом.", "Os seus direitos são protegidos pela lei."]
+      ]}
+    ]},
+    {"title": "Leitura: o contrato de aluguel", "goal": "Ler um texto jurídico-informativo e localizar obrigações, prazos e condições.", "steps": [
+      {"t": "reading", "title": "Договор аренды: на что обратить внимание",
+        "text": "Договор аренды квартиры заключается в письменной форме и подписывается обеими сторонами. Если договор заключён на срок более одного года, он должен быть зарегистрирован в Росреестре. В договоре обязательно указываются адрес квартиры, размер арендной платы, срок аренды и порядок оплаты коммунальных услуг.\n\nОсобое внимание следует уделить залогу. Сумма залога и условия его возврата должны быть прописаны в договоре. К договору прилагается акт приёма-передачи, в котором описано состояние квартиры и перечислена мебель. Без этого документа арендатору трудно доказать, что повреждения были сделаны не им.\n\nДоговор может быть расторгнут досрочно по соглашению сторон или по решению суда, например если арендная плата не вносится более двух раз подряд. Об этом арендатор должен быть предупреждён заранее, как правило, за месяц.",
+        "pt": "O contrato de aluguel de apartamento é firmado por escrito e assinado por ambas as partes. Se o contrato for firmado por mais de um ano, deve ser registrado no Rosreestr. No contrato, indicam-se obrigatoriamente o endereço do apartamento, o valor do aluguel, o prazo e a forma de pagamento das contas de consumo.\n\nDeve-se dar atenção especial à caução. O valor e as condições de devolução precisam estar previstos no contrato. Ao contrato anexa-se o termo de entrega e recebimento, no qual se descreve o estado do apartamento e se listam os móveis. Sem esse documento, é difícil para o inquilino provar que os danos não foram causados por ele.\n\nO contrato pode ser rescindido antes do prazo por acordo entre as partes ou por decisão judicial, por exemplo se o aluguel não for pago mais de duas vezes seguidas. O inquilino deve ser avisado com antecedência, em geral com um mês.",
+        "tf": [
+          ["Contratos de mais de um ano precisam ser registrados.", "V", "«Должен быть зарегистрирован в Росреестре»."],
+          ["O termo de entrega descreve o estado do apartamento.", "V", "«В котором описано состояние квартиры»."],
+          ["O contrato só pode ser rescindido por decisão judicial.", "F", "Também «по соглашению сторон»."],
+          ["Atrasar o aluguel uma única vez permite rescindir o contrato.", "F", "«Более двух раз подряд»."],
+          ["O valor máximo da caução é fixado por lei.", "N", "O texto não fala de limite."]
+        ],
+        "questions": [
+          {"q": "Что обязательно указывается в договоре?", "o": ["Адрес, арендная плата, срок аренды и порядок оплаты коммунальных услуг.", "Только имя арендатора.", "Профессия арендатора.", "Количество гостей."], "e": "«Обязательно указываются адрес квартиры, размер арендной платы…»."},
+          {"q": "Зачем нужен акт приёма-передачи?", "o": ["Чтобы зафиксировать состояние квартиры и мебель.", "Чтобы зарегистрировать договор.", "Чтобы получить скидку.", "Чтобы рассчитать коммунальные услуги."], "e": "«Описано состояние квартиры и перечислена мебель»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma passiva correta.",
+        "text": "Договор {подписан|подписана|подписано} обеими сторонами. Квартира {сдана|сдан|сданы} на один год. Деньги будут {переведены|переведён|переведено} в понедельник. Все документы {проверены|проверен|проверена} юристом.",
+        "pt": "O contrato está assinado por ambas as partes. O apartamento foi alugado por um ano. O dinheiro será transferido na segunda-feira. Todos os documentos foram verificados pelo advogado.",
+        "e": "O particípio curto concorda com o sujeito: договор подписан, квартира сдана, деньги переведены (plural)."}
+    ]},
+    {"title": "Foco na forma: a voz passiva", "goal": "Escolher entre particípio passivo curto e verbo em -ся e indicar o agente.", "steps": [
+      {"t": "grammar", "title": "Duas maneiras de dizer «é feito»",
+        "paragraphs": [
+          "Resultado de uma ação concluída: particípio passivo curto de verbo perfectivo. Formação: подписать → подписан, сделать → сделан (-ан/-ян); решить → решён, оплатить → оплачен (-ен/-ён); закрыть → закрыт, принять → принят (-т).",
+          "O particípio curto concorda com o sujeito em gênero e número: договор подписан, квартира сдана, решение принято, документы готовы и подписаны. O tempo é indicado por быть: был подписан (passado), будет подписан (futuro), sem быть no presente.",
+          "Processo habitual ou em andamento: verbo imperfectivo + -ся: Договор заключается в письменной форме. Такие дела рассматриваются быстро. Это не делается за один день.",
+          "O agente vai ao instrumental: Договор подписан директором. Закон принят Думой. Em textos legais, é muito comum omitir o agente."
+        ],
+        "table": {"columns": ["Sentido", "Forma", "Exemplo"], "rows": [
+          ["resultado (perfectivo)", "particípio curto", "Счёт оплачен."],
+          ["resultado no passado", "был / была / было / были + part.", "Договор был расторгнут."],
+          ["resultado no futuro", "будет / будут + part.", "Деньги будут переведены."],
+          ["processo, regra (imperf.)", "verbo + -ся", "Залог возвращается через 10 дней."],
+          ["agente", "instrumental", "подписан директором"]
+        ]},
+        "examples": [
+          ["Магазин закрыт на ремонт.", "A loja está fechada para reforma."],
+          ["Решение было принято единогласно.", "A decisão foi tomada por unanimidade."],
+          ["Паспорта выдаются в течение месяца.", "Os passaportes são emitidos no prazo de um mês."]
+        ],
+        "pitfalls": [
+          "Não use o particípio curto de verbo imperfectivo para resultado: «договор подписывается» é um processo; «договор подписан» é o resultado.",
+          "Não confunda a forma curta (predicado) com a longa (atributo): «Договор подписан» (está assinado) e «подписанный договор» (o contrato assinado).",
+          "Atenção à alternância: оплатить → оплачен, перевести → переведён, принять → принят."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Счёт уже ___, можете не волноваться.", "o": ["оплачен", "оплачена", "оплачивается", "оплатился"], "e": "Resultado: particípio curto masculino (счёт)."},
+        {"q": "В нашей стране паспорт ___ в шестнадцать лет.", "o": ["выдаётся", "выдан", "выдана", "выдался"], "e": "Regra geral, processo habitual: imperfectivo + -ся."},
+        {"q": "Закон был ___ Думой в прошлом году.", "o": ["принят", "принята", "принимается", "приняли"], "e": "Закон (m.) был принят."},
+        {"q": "Все решения будут ___ после собрания.", "o": ["приняты", "принят", "принята", "приняты будут"], "e": "Решения (pl.): будут приняты."},
+        {"q": "Договор подписан ___.", "o": ["директором", "директор", "директора", "от директора"], "e": "Agente: instrumental."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Квартира был сдан в аренду.", "o": ["Квартира была сдана в аренду.", "Квартира было сдано в аренду.", "Квартира были сданы в аренду."], "e": "Concordância com квартира (f.)."},
+        {"q": "Документы проверено юристом.", "o": ["Документы проверены юристом.", "Документы проверен юристом.", "Документы проверены юрист."], "e": "Документы (pl.): проверены; agente no instrumental."},
+        {"q": "Договор подписан от арендатора.", "o": ["Договор подписан арендатором.", "Договор подписан арендатору.", "Договор подписан у арендатора."], "e": "O agente vai ao instrumental, sem preposição."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Договор был заключён на один год", "pt": "O contrato foi firmado por um ano."},
+        {"a": "Деньги будут переведены на следующей неделе", "pt": "O dinheiro será transferido na semana que vem."},
+        {"a": "Такие дела рассматриваются в суде быстро", "pt": "Casos assim são julgados rapidamente no tribunal."}
+      ]}
+    ]},
+    {"title": "Uso real: notificação oficial, situações e produção", "goal": "Entender mensagens oficiais e defender os próprios direitos por escrito e oralmente.", "steps": [
+      {"t": "listening", "kind": "Автоматическое сообщение госуслуг", "title": "Уведомление о штрафе", "voice": "m2",
+        "text": "Здравствуйте! Это автоматическое сообщение портала государственных услуг. Вам начислен штраф в размере пятисот рублей за превышение скорости. Нарушение зафиксировано камерой двенадцатого октября в четырнадцать часов на Ленинском проспекте. Штраф должен быть оплачен в течение шестидесяти дней. При оплате в течение двадцати дней предоставляется скидка пятьдесят процентов. Постановление может быть обжаловано в течение десяти дней. Подробная информация доступна в личном кабинете.",
+        "pt": "Olá! Esta é uma mensagem automática do portal de serviços públicos. Foi lançada ao senhor uma multa de quinhentos rublos por excesso de velocidade. A infração foi registrada por câmera no dia doze de outubro, às catorze horas, na avenida Leninski. A multa deve ser paga em até sessenta dias. Com pagamento em até vinte dias, concede-se um desconto de cinquenta por cento. A decisão pode ser contestada em até dez dias. Informações detalhadas estão disponíveis na área pessoal.",
+        "questions": [
+          {"q": "Por que foi aplicada a multa?", "o": ["Excesso de velocidade.", "Estacionamento proibido.", "Sinal vermelho.", "Falta de documentos."], "e": "«За превышение скорости»."},
+          {"q": "Quanto se paga se a multa for quitada em 15 dias?", "o": ["250 rublos.", "500 rublos.", "50 rublos.", "Nada."], "e": "Até 20 dias, desconto de 50%: 250 rublos."},
+          {"q": "Qual é o prazo para contestar?", "o": ["Dez dias.", "Vinte dias.", "Sessenta dias.", "Não é possível contestar."], "e": "«Может быть обжаловано в течение десяти дней»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você pergunta se o contrato já está assinado.", "o": ["Договор уже подписан?", "Договор уже подписался?", "Договор уже подписывает?", "Договор уже подписали его?"], "e": "Resultado: particípio curto."},
+        {"q": "Você quer saber em quanto tempo o documento fica pronto.", "o": ["Через сколько дней будет готов документ?", "Через сколько дней документ готовится был?", "Сколько дней документ готовый будет сделан?", "Когда документ будет готовым сделан?"], "e": "Будет готов = ficará pronto."},
+        {"q": "Você diz que vai processar a empresa.", "o": ["Я подам на компанию в суд.", "Я подам компанию в суд.", "Я подам в суд компании.", "Я подам суд на компанию."], "e": "Подать в суд на + acusativo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 70,
+        "task": "Escreva a notificação formal (претензия) de Tiago ao proprietário (70 a 100 palavras): cite o contrato, os fatos, a exigência e o prazo. Use pelo menos três formas passivas.",
+        "useful": ["Между нами был заключён договор аренды от …", "Ключи были переданы …", "В соответствии с пунктом … договора …", "Прошу вернуть … в течение …", "В противном случае я буду вынужден обратиться в суд."],
+        "model": "Уважаемый Андрей Викторович! Между нами был заключён договор аренды квартиры от первого марта. Пятнадцатого сентября квартира была освобождена, а ключи переданы вам лично. Вы подтвердили, что квартира не повреждена. В соответствии с пунктом 4.2 договора залог в размере 25 000 рублей должен быть возвращён в течение десяти дней. Однако до сих пор деньги не переведены. Прошу вернуть залог в течение семи дней с момента получения этого письма. В противном случае я буду вынужден обратиться в суд. С уважением, Тьягу Перейра.",
+        "model_pt": "Prezado Andrei Viktorovitch! Entre nós foi firmado um contrato de aluguel de apartamento em primeiro de março. Em quinze de setembro, o apartamento foi desocupado e as chaves foram entregues ao senhor pessoalmente. O senhor confirmou que o apartamento não estava danificado. Conforme a cláusula 4.2 do contrato, a caução de 25 000 rublos deve ser devolvida em até dez dias. No entanto, até agora o dinheiro não foi transferido. Peço que devolva a caução em até sete dias a partir do recebimento desta carta. Caso contrário, serei obrigado a recorrer à Justiça. Atenciosamente, Tiago Pereira.",
+        "checklist": ["Citei o contrato e a data.", "Usei pelo menos três formas passivas (был заключён, переданы, не переведены).", "Usei в соответствии с + instrumental.", "Indiquei uma exigência e um prazo.", "Mantive o registro formal.", "Escrevi pelo menos 70 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Explique em voz alta a um advogado, em cerca de um minuto, um problema real ou inventado: uma compra, um aluguel ou um contrato de trabalho. Diga o que foi combinado, o que não foi cumprido e o que você quer.",
+        "useful": ["Был подписан договор …", "Мне было обещано, что …", "Однако … так и не был(а) …", "Скажите, пожалуйста, какие у меня права?", "Что мне делать дальше?"],
+        "model": "Здравствуйте. В мае я заказал ремонт ванной комнаты. Договор был подписан, предоплата в размере пятидесяти тысяч рублей была внесена сразу. Мне было обещано, что работы будут закончены за три недели. Однако прошло два месяца, а плитка так и не положена. Мастер не отвечает на звонки. Скажите, пожалуйста, какие у меня права? Могу ли я расторгнуть договор и потребовать вернуть деньги?",
+        "model_pt": "Olá. Em maio contratei a reforma do banheiro. O contrato foi assinado, e o adiantamento de cinquenta mil rublos foi pago na hora. Foi-me prometido que a obra seria concluída em três semanas. No entanto, passaram-se dois meses e o azulejo ainda não foi colocado. O profissional não atende as ligações. Por favor, quais são os meus direitos? Posso rescindir o contrato e exigir o dinheiro de volta?",
+        "checklist": ["Usei pelo menos três formas passivas.", "Expliquei a sequência dos fatos.", "Fiz uma pergunta clara sobre os meus direitos.", "Mantive um tom calmo e objetivo."]}
+    ]}
+  ]
+}

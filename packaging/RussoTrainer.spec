@@ -11,9 +11,10 @@ datas = [
     (str(ROOT / "static"), "static"),
     (str(ROOT / "data" / "units"), "data/units"),
     (str(ROOT / "data" / "vocab_lessons"), "data/vocab_lessons"),
-    (str(ROOT / "data" / "course_lexicon.json"), "data"),
+    (str(ROOT / "data" / "lessons"), "data/lessons"),
     (str(ROOT / "data" / "prefix_verbs.json"), "data"),
-    (str(ROOT / "data" / "openrussian.sqlite3"), "data"),
+    (str(ROOT / "data" / "themes.json"), "data"),
+    (str(ROOT / "data" / "lexicon.sqlite3.gz"), "data"),
     (str(ROOT / "third_party"), "third_party"),
 ]
 binaries = []

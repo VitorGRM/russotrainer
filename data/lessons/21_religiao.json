@@ -1,0 +1,165 @@
+{
+  "id": "religiao1", "theme": "religiao", "order": 1,
+  "title": "С праздником!", "title_pt": "Festas, tradições e religião",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma conversa sobre o Natal ortodoxo e o Ano-Novo e um aviso de horários de feriado.",
+    "Ler um texto sobre as tradições da Páscoa ortodoxa.",
+    "Situar ações em relação a festas com на, к, перед, после, в e felicitar com поздравлять с + instrumental e желать + genitivo.",
+    "Escrever um cartão de felicitações e descrever oralmente uma festa do seu país."
+  ],
+  "grammar_focus": "на Новый год, на Пасху (на + В. п.) · к Новому году (к + Д. п.) · перед праздником · после праздников · поздравлять с + Т. п. · желать кому + Р. п.",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário das festas religiosas e civis.", "steps": [
+      {"t": "warmup", "questions": [
+        "Какой праздник самый важный в вашей семье?",
+        "Что вы знаете о русских праздниках?",
+        "Em português, dizemos «no Natal», «para o Natal», «antes do Natal». Que preposições você espera em russo?"
+      ]},
+      {"t": "vocab", "items": [
+        ["праздник", "festa, feriado", "праздничный = festivo; с праздником! = boas festas!"],
+        ["Рождество", "Natal", "православное Рождество: 7 января"],
+        ["Пасха", "Páscoa", "кулич = pão doce de Páscoa"],
+        ["отмечать / праздновать", "comemorar, celebrar", "отмечать Новый год"],
+        ["поздравлять с", "felicitar por", "поздравлять с днём рождения (instrumental)"],
+        ["желать", "desejar", "желать счастья (genitivo)"],
+        ["верующий", "crente, religioso", "вера = fé; верить в Бога"],
+        ["церковь / храм", "igreja / templo", "ходить в церковь"],
+        ["пост", "jejum, quaresma", "Великий пост"],
+        ["служба", "missa, culto", "ночная служба"],
+        ["подарок", "presente", "дарить подарки"],
+        ["выходной", "dia de folga", "новогодние каникулы = recesso de Ano-Novo"]
+      ]},
+      {"t": "match", "title": "Relacione a festa à tradição.", "pairs": [
+        ["Новый год", "ёлка и Дед Мороз"], ["Пасха", "кулич и крашеные яйца"], ["Масленица", "блины"],
+        ["Крещение", "купание в проруби"], ["Рождество", "ночная служба в церкви"], ["день рождения", "торт со свечами"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Поздравляю тебя с Новым годом! Желаю счастья и здоровья!", "o": ["Feliz Ano-Novo! Desejo felicidade e saúde!", "Parabéns pelo aniversário! Felicidades!", "Feliz Natal! Muita paz!", "Boa sorte no ano novo de trabalho!"], "e": "Поздравлять с + instrumental; желать + genitivo."},
+        {"q": "К Пасхе мама всегда печёт куличи.", "o": ["Para a Páscoa, a mãe sempre assa kulitch.", "Depois da Páscoa, a mãe assa kulitch.", "Durante a Páscoa, a mãe não cozinha.", "Na Páscoa, a mãe compra kulitch."], "e": "К + dativo = para (prazo, preparação)."},
+        {"q": "Во время поста верующие не едят мяса.", "o": ["Durante a quaresma, os fiéis não comem carne.", "Na festa, os fiéis comem muita carne.", "Os fiéis não comem carne nunca.", "Depois do jejum, os fiéis comem carne."], "e": "Пост = jejum, quaresma."}
+      ]}
+    ]},
+    {"title": "Escuta: dois natais?", "goal": "Entender a explicação de diferenças culturais e de calendário.", "steps": [
+      {"t": "dialogue", "title": "Почему Рождество в январе?", "setting": "Laura, estudante brasileira em Moscou, pergunta à amiga Tânia sobre as festas de fim de ano.",
+        "speakers": {"Лаура": "f", "Таня": "f2"},
+        "lines": [
+          ["Лаура", "Таня, а правда, что в России Рождество отмечают в январе?", "Tânia, é verdade que na Rússia o Natal é comemorado em janeiro?"],
+          ["Таня", "Да, седьмого января. Православная церковь живёт по старому, юлианскому календарю, поэтому разница почти две недели.", "Sim, em sete de janeiro. A Igreja Ortodoxa segue o calendário antigo, juliano, por isso a diferença é de quase duas semanas."],
+          ["Лаура", "А что важнее: Новый год или Рождество?", "E o que é mais importante: o Ano-Novo ou o Natal?"],
+          ["Таня", "Для большинства, конечно, Новый год. На Новый год собирается вся семья, ставят ёлку, дарят подарки. В советское время Рождество не праздновали, и все традиции перешли на Новый год.", "Para a maioria, é claro, o Ano-Novo. No Ano-Novo a família toda se reúne, monta-se a árvore, trocam-se presentes. Na época soviética não se comemorava o Natal, e todas as tradições passaram para o Ano-Novo."],
+          ["Лаура", "Поэтому Дед Мороз приходит не на Рождество, а на Новый год?", "Por isso o Ded Moroz vem no Ano-Novo e não no Natal?"],
+          ["Таня", "Именно. А на Рождество верующие идут на ночную службу в церковь. Моя бабушка перед Рождеством постится сорок дней.", "Exatamente. E no Natal os fiéis vão à missa da noite. A minha avó jejua quarenta dias antes do Natal."],
+          ["Лаура", "Сорок дней! А что вы делаете после праздников?", "Quarenta dias! E o que vocês fazem depois das festas?"],
+          ["Таня", "Отдыхаем! С первого по восьмое января выходные. А ещё есть Старый Новый год, тринадцатого января.", "Descansamos! De primeiro a oito de janeiro é folga. E ainda tem o Ano-Novo Velho, em treze de janeiro."],
+          ["Лаура", "Старый Новый год? Это как?", "Ano-Novo Velho? Como assim?"],
+          ["Таня", "Это Новый год по старому календарю. Его отмечают скромнее, но многие рады ещё одному поводу собраться. Приходи к нам, познакомишься с бабушкой!", "É o Ano-Novo pelo calendário antigo. É comemorado de forma mais modesta, mas muita gente fica feliz com mais um motivo para se reunir. Venha à nossa casa, você vai conhecer a minha avó!"]
+        ],
+        "questions": [
+          {"q": "Por que o Natal ortodoxo é em janeiro?", "o": ["Porque a Igreja Ortodoxa segue o calendário juliano.", "Porque em dezembro faz muito frio.", "Porque foi decidido na época soviética.", "Porque coincide com o Ano-Novo Velho."], "e": "«Живёт по старому, юлианскому календарю»."},
+          {"q": "Por que o Ano-Novo é mais importante para a maioria?", "o": ["Porque na época soviética as tradições do Natal passaram para o Ano-Novo.", "Porque há mais dias de folga.", "Porque é uma festa religiosa.", "Porque o Ded Moroz vem no Natal."], "e": "«В советское время Рождество не праздновали, и все традиции перешли на Новый год»."},
+          {"q": "O que a avó de Tânia faz antes do Natal?", "o": ["Jejua quarenta dias.", "Viaja para a igreja.", "Monta a árvore.", "Prepara kulitch."], "e": "«Перед Рождеством постится сорок дней»."},
+          {"q": "O que é o «Ano-Novo Velho»?", "o": ["O Ano-Novo pelo calendário antigo, em 13 de janeiro.", "O último dia do ano.", "Uma festa só para idosos.", "O Natal católico."], "e": "«Это Новый год по старому календарю»."}
+        ]},
+      {"t": "dictation", "voice": "f2", "text": "На Новый год собирается вся семья, ставят ёлку, дарят подарки.", "pt": "No Ano-Novo a família toda se reúne, monta-se a árvore, trocam-se presentes.", "hint": "Tradições de Ano-Novo (11 palavras)."},
+      {"t": "shadow", "voice": "f2", "lines": [
+        ["Рождество отмечают седьмого января.", "O Natal é comemorado em sete de janeiro."],
+        ["На Новый год собирается вся семья.", "No Ano-Novo a família toda se reúne."],
+        ["Бабушка перед Рождеством постится.", "A avó jejua antes do Natal."],
+        ["С первого по восьмое января выходные.", "De primeiro a oito de janeiro é folga."]
+      ]}
+    ]},
+    {"title": "Leitura: a Páscoa ortodoxa", "goal": "Ler um texto sobre tradições e situar cada costume no tempo.", "steps": [
+      {"t": "reading", "title": "Пасха: главный праздник православного года",
+        "text": "Для православных верующих Пасха важнее Рождества: это главный праздник года. Дата Пасхи меняется каждый год и обычно не совпадает с католической.\n\nК празднику готовятся заранее. Перед Пасхой продолжается Великий пост, который длится семь недель. В последнюю неделю перед праздником хозяйки убирают дом, пекут куличи и делают творожную пасху. В четверг, который называют Чистым, красят яйца, чаще всего в красный цвет луковой шелухой.\n\nВ ночь на воскресенье в храмах проходит торжественная служба. Люди приносят куличи и яйца, чтобы их освятить. После службы все поздравляют друг друга словами «Христос воскресе!» и отвечают: «Воистину воскресе!». Потом начинается праздничный завтрак, а дети устраивают игры с крашеными яйцами. Даже многие неверующие россияне на Пасху покупают кулич и красят яйца: для них это скорее семейная традиция, чем религиозный обряд.",
+        "pt": "Para os fiéis ortodoxos, a Páscoa é mais importante que o Natal: é a principal festa do ano. A data da Páscoa muda todo ano e geralmente não coincide com a católica.\n\nA preparação para a festa começa com antecedência. Antes da Páscoa há a Grande Quaresma, que dura sete semanas. Na última semana antes da festa, as donas de casa limpam a casa, assam o kulitch e fazem a paskha de requeijão. Na quinta-feira, chamada de Quinta-Feira Limpa, tingem-se os ovos, em geral de vermelho, com casca de cebola.\n\nNa noite de sábado para domingo, há uma missa solene nas igrejas. As pessoas levam o kulitch e os ovos para benzê-los. Depois da missa, todos se cumprimentam com as palavras «Cristo ressuscitou!» e respondem: «Em verdade ressuscitou!». Em seguida começa o café da manhã festivo, e as crianças brincam com os ovos tingidos. Até muitos russos não religiosos compram kulitch e tingem ovos na Páscoa: para eles, isso é mais uma tradição familiar do que um rito religioso.",
+        "tf": [
+          ["Para os ortodoxos, a Páscoa é mais importante que o Natal.", "V", "«Пасха важнее Рождества»."],
+          ["A Páscoa ortodoxa é sempre no mesmo dia que a católica.", "F", "«Обычно не совпадает с католической»."],
+          ["Os ovos costumam ser tingidos na Quinta-Feira Limpa.", "V", "«В четверг, который называют Чистым, красят яйца»."],
+          ["A Grande Quaresma dura sete semanas.", "V", "«Длится семь недель»."],
+          ["Na Páscoa, as crianças procuram ovos de chocolate escondidos.", "N", "O texto fala de jogos com ovos tingidos, não de chocolate."]
+        ],
+        "questions": [
+          {"q": "Что отвечают на приветствие «Христос воскресе!»?", "o": ["«Воистину воскресе!»", "«С праздником!»", "«И тебя тоже!»", "«Спасибо!»"], "e": "Saudação pascal tradicional."},
+          {"q": "Что Пасха значит для многих неверующих россиян?", "o": ["Семейную традицию.", "Обычный выходной без традиций.", "Религиозный обряд.", "Начало поста."], "e": "«Скорее семейная традиция, чем религиозный обряд»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a preposição correta.",
+        "text": "{К|На|После} Пасхе хозяйки пекут куличи. {На|К|В} Пасху все поздравляют друг друга. {Перед|После|К} праздником люди убирают дом. {После|Перед|На} службы начинается праздничный завтрак.",
+        "pt": "Para a Páscoa, as donas de casa assam kulitch. Na Páscoa, todos se cumprimentam. Antes da festa, as pessoas limpam a casa. Depois da missa, começa o café da manhã festivo.",
+        "e": "К + dativo: preparação, prazo. На + acusativo: durante a festa. Перед + instrumental: antes. После + genitivo: depois."}
+    ]},
+    {"title": "Foco na forma: situar no tempo e felicitar", "goal": "Usar as preposições temporais com festas e as fórmulas de felicitação.", "steps": [
+      {"t": "grammar", "title": "Antes, durante, para e depois da festa",
+        "paragraphs": [
+          "Durante uma festa: на + acusativo: на Новый год, на Рождество, на Пасху, на Масленицу, на день рождения, на праздники. Ex.: Что ты подаришь маме на день рождения?",
+          "Para (preparação, prazo): к + dativo: К Новому году мы украсили квартиру. Подарок нужно купить к пятнице. Antes: перед + instrumental: перед Рождеством, перед праздником. Depois: после + genitivo: после праздников, после службы.",
+          "Data: em que dia? genitivo: седьмого января. Dia da semana: в + acusativo: в воскресенье. Período: во время + genitivo: во время поста.",
+          "Felicitar: поздравлять / поздравить кого с + instrumental: Поздравляю тебя с днём рождения! С Новым годом! (forma curta, sem verbo). Desejar: желать / пожелать кому + genitivo: Желаю тебе счастья, здоровья, успехов. Com verbo: Желаю тебе хорошо отдохнуть."
+        ],
+        "table": {"columns": ["Sentido", "Preposição + caso", "Exemplo"], "rows": [
+          ["na festa", "на + acusativo", "на Рождество"],
+          ["para a festa", "к + dativo", "к Рождеству"],
+          ["antes da festa", "перед + instrumental", "перед Рождеством"],
+          ["depois da festa", "после + genitivo", "после Рождества"],
+          ["durante", "во время + genitivo", "во время праздника"],
+          ["felicitar por", "с + instrumental", "с Рождеством!"],
+          ["desejar", "+ genitivo", "желаю счастья"]
+        ]},
+        "examples": [
+          ["На Масленицу мы всегда ездим к бабушке есть блины.", "No Carnaval russo, sempre vamos à casa da avó comer bliny."],
+          ["Поздравляю вас с Пасхой! Желаю мира и добра вашей семье.", "Feliz Páscoa! Desejo paz e bem à sua família."],
+          ["К празднику город украсили гирляндами.", "Para a festa, a cidade foi enfeitada com guirlandas."]
+        ],
+        "pitfalls": [
+          "Não diga «в Новый год» para «no Ano-Novo» como festa: o padrão é «на Новый год». (В новогоднюю ночь se usa para a noite.)",
+          "Желать pede genitivo: «желаю счастья», não «желаю счастье».",
+          "С праздником! já é uma frase completa: o verbo поздравляю fica subentendido."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Что тебе подарили ___?", "o": ["на день рождения", "в день рождения подарок", "к дню рождению", "день рождения"], "e": "На + acusativo: no aniversário (como ocasião)."},
+        {"q": "___ Новому году нужно купить ёлку.", "o": ["К", "На", "Перед", "После"], "e": "К + dativo: para / até o Ano-Novo."},
+        {"q": "Поздравляю вас ___!", "o": ["с Рождеством", "Рождество", "на Рождество", "к Рождеству"], "e": "Поздравлять с + instrumental."},
+        {"q": "Желаю тебе ___ и ___!", "o": ["здоровья … удачи", "здоровье … удача", "здоровьем … удачей", "здоровью … удаче"], "e": "Желать + genitivo."},
+        {"q": "___ праздников все возвращаются на работу.", "o": ["После", "Перед", "К", "На"], "e": "После + genitivo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Поздравляю тебя на день рождения!", "o": ["Поздравляю тебя с днём рождения!", "Поздравляю тебя в день рождения!", "Поздравляю тебя к дню рождения!"], "e": "Поздравлять с + instrumental."},
+        {"q": "Желаю тебе большое счастье.", "o": ["Желаю тебе большого счастья.", "Желаю тебе большим счастьем.", "Желаю тебя большое счастье."], "e": "Желать + genitivo."},
+        {"q": "Перед Пасхи хозяйки убирают дом.", "o": ["Перед Пасхой хозяйки убирают дом.", "Перед Пасху хозяйки убирают дом.", "Перед Пасхе хозяйки убирают дом."], "e": "Перед + instrumental."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Поздравляю тебя с Новым годом", "pt": "Feliz Ano-Novo para você."},
+        {"a": "На Пасху мы красим яйца", "pt": "Na Páscoa, tingimos ovos."},
+        {"a": "Желаю вам счастья и здоровья", "pt": "Desejo a vocês felicidade e saúde."}
+      ]}
+    ]},
+    {"title": "Uso real: horário de feriado, situações e produção", "goal": "Entender avisos de feriado e felicitar com naturalidade.", "steps": [
+      {"t": "listening", "kind": "Объявление на радио", "title": "Как работает город в новогоднюю ночь", "voice": "m",
+        "text": "Дорогие москвичи и гости столицы! В новогоднюю ночь метро будет работать круглосуточно, без перерыва. Наземный транспорт будет ходить до двух часов ночи. Первого января большинство магазинов откроется в двенадцать часов дня, а поликлиники не будут работать до третьего января. Напоминаем, что запускать фейерверки во дворах жилых домов запрещено. Поздравляем вас с наступающим Новым годом и желаем счастья, тепла и благополучия!",
+        "pt": "Queridos moradores e visitantes da capital! Na noite de Ano-Novo, o metrô vai funcionar a noite toda, sem interrupção. O transporte de superfície vai circular até as duas da manhã. Em primeiro de janeiro, a maioria das lojas vai abrir ao meio-dia, e os postos de saúde não funcionarão até três de janeiro. Lembramos que é proibido soltar fogos nos pátios dos prédios residenciais. Desejamos a vocês um feliz Ano-Novo que se aproxima, com felicidade, calor humano e prosperidade!",
+        "questions": [
+          {"q": "Como vai funcionar o metrô na noite de Ano-Novo?", "o": ["A noite toda, sem interrupção.", "Até as duas da manhã.", "Não vai funcionar.", "Só até meia-noite."], "e": "«Метро будет работать круглосуточно»."},
+          {"q": "Quando abrem as lojas em 1º de janeiro?", "o": ["Ao meio-dia.", "Às duas da manhã.", "Só em 3 de janeiro.", "No horário normal."], "e": "«Откроется в двенадцать часов дня»."},
+          {"q": "O que é proibido?", "o": ["Soltar fogos nos pátios dos prédios.", "Andar de metrô depois da meia-noite.", "Abrir lojas em 1º de janeiro.", "Fazer festa em casa."], "e": "«Запускать фейерверки во дворах жилых домов запрещено»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "É 30 de dezembro; você cumprimenta um colega.", "o": ["С наступающим!", "С прошедшим!", "С днём рождения!", "Христос воскресе!"], "e": "С наступающим (Новым годом) = boas festas antes da data."},
+        {"q": "Alguém te diz «Христос воскресе!».", "o": ["Воистину воскресе!", "И тебя тоже!", "Спасибо, взаимно!", "С праздником тебя!"], "e": "Resposta tradicional."},
+        {"q": "Você pergunta a uma amiga o que ela vai fazer no Natal.", "o": ["Что ты будешь делать на Рождество?", "Что ты будешь делать к Рождеству в?", "Что ты будешь делать с Рождеством?", "Что ты будешь делать Рождество?"], "e": "На + acusativo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 50,
+        "task": "Escreva um cartão de felicitações (50 a 80 palavras) para uma família russa amiga, por uma festa à sua escolha (Ano-Novo, Natal, Páscoa ou aniversário). Felicite, deseje pelo menos três coisas e conte como você vai comemorar.",
+        "useful": ["Дорогие …!", "Поздравляю вас с …!", "Желаю вам …, … и …", "На … я буду …", "Обнимаю, …"],
+        "model": "Дорогие Ирина Петровна и Сергей Иванович! Поздравляю вас с наступающим Новым годом! Желаю вам крепкого здоровья, тепла, уюта и много радостных встреч. Спасибо вам за прошлую зиму, когда вы научили меня делать оливье и петь «В лесу родилась ёлочка». На Новый год я буду в Бразилии, у нас будет тридцать градусов, и мы будем встречать праздник на пляже. Но в полночь я обязательно подниму бокал за вас! Обнимаю, ваша Лаура.",
+        "model_pt": "Queridos Irina Petrovna e Serguei Ivánovitch! Feliz Ano-Novo que se aproxima! Desejo a vocês muita saúde, carinho, aconchego e muitos encontros alegres. Obrigada pelo inverno passado, quando vocês me ensinaram a fazer salada olivier e a cantar «Na floresta nasceu um pinheirinho». No Ano-Novo vou estar no Brasil, vai fazer trinta graus e vamos receber o ano na praia. Mas à meia-noite com certeza vou erguer uma taça por vocês! Um abraço, sua Laura.",
+        "checklist": ["Usei поздравлять с + instrumental.", "Usei желать + genitivo com pelo menos três desejos.", "Usei на + acusativo para a festa.", "Mantive um tom caloroso e respeitoso.", "Escrevi pelo menos 50 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Descreva em voz alta, em cerca de um minuto, como se comemora uma festa importante no seu país: o que se faz antes, durante e depois.",
+        "useful": ["Самый важный праздник в Бразилии …", "К празднику …", "Перед … люди …", "На … все …", "После праздника …"],
+        "model": "Один из самых любимых праздников в Бразилии — это Июньские праздники, Феста Жунина. К празднику школы и города украшают разноцветными флажками. Перед праздником все ищут костюмы в деревенском стиле: клетчатые рубашки и соломенные шляпы. На Феста Жунина люди танцуют кадриль, едят кукурузу, сладости из арахиса и пьют горячее вино с пряностями. Праздник посвящён святым Антонию, Иоанну и Петру. После праздников в июле начинаются школьные каникулы.",
+        "model_pt": "Uma das festas mais queridas do Brasil é a Festa Junina. Para a festa, escolas e cidades são enfeitadas com bandeirinhas coloridas. Antes da festa, todo mundo procura roupas caipiras: camisas xadrez e chapéus de palha. Na Festa Junina, as pessoas dançam quadrilha, comem milho, doces de amendoim e tomam vinho quente. A festa é dedicada a Santo Antônio, São João e São Pedro. Depois das festas, em julho, começam as férias escolares.",
+        "checklist": ["Usei к, перед, на e после com os casos corretos.", "Descrevi pelo menos três tradições.", "Usei a terceira pessoa do plural ou impessoal (украшают, едят).", "Falei de forma organizada no tempo."]}
+    ]}
+  ]
+}

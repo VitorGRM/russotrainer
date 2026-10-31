@@ -1,0 +1,163 @@
+{
+  "id": "familia1", "theme": "familia", "order": 1,
+  "title": "Семейный праздник", "title_pt": "Uma festa de família",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender a organização de uma festa de família e um recado de voz.",
+    "Ler um texto sobre a família russa de ontem e de hoje.",
+    "Distinguir свой de его/её/их e usar a regência de жениться, выйти замуж, ладить.",
+    "Apresentar a sua família por escrito e falar de um parente querido."
+  ],
+  "grammar_focus": "свой × его / её / их · жениться на + предл. · выйти замуж за + вин.",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer os termos de parentesco e as expressões de relação familiar.", "steps": [
+      {"t": "warmup", "questions": [
+        "Какая у вас семья: большая или маленькая?",
+        "На кого вы похожи: на маму или на папу?",
+        "Na sua família, quem organiza as festas? Que datas vocês comemoram juntos?"
+      ]},
+      {"t": "vocab", "items": [
+        ["жениться на ком", "casar-se (o homem) com", "жениться на + предложный: он женился на Ане"],
+        ["выйти замуж за кого", "casar-se (a mulher) com", "выйти замуж за + винительный: она вышла замуж за Олега"],
+        ["развестись", "divorciar-se", "развестись с кем? (творительный)"],
+        ["воспитывать детей", "criar e educar os filhos", "воспитание = criação, educação familiar"],
+        ["свекровь", "sogra (mãe do marido)", "тёща = mãe da esposa"],
+        ["двоюродный брат", "primo", "двоюродная сестра = prima"],
+        ["внуки", "netos", "внук, внучка"],
+        ["отмечать юбилей", "comemorar um aniversário redondo", "юбилей = 50, 60, 70 anos; годовщина = aniversário de um evento"],
+        ["ладить с кем", "dar-se bem com alguém", "ладить с родителями (творительный); я лажу"],
+        ["ссориться / поссориться", "brigar, desentender-se", "поссориться с братом"],
+        ["быть похожим на кого", "parecer-se com alguém", "Он похож на отца (на + винительный)"],
+        ["поколение", "geração", "связь поколений, конфликт поколений"]
+      ]},
+      {"t": "match", "title": "Relacione a descrição ao termo de parentesco.", "pairs": [
+        ["мать мужа", "свекровь"], ["мать жены", "тёща"], ["сын брата", "племянник"],
+        ["отец отца", "дедушка"], ["сестра мамы", "тётя"], ["дочь дочери", "внучка"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Они поженились пять лет назад.", "o": ["Eles se casaram há cinco anos.", "Eles se separaram há cinco anos.", "Eles se conheceram há cinco anos.", "Eles ficaram noivos há cinco anos."], "e": "Пожениться é casar-se, dito do casal."},
+        {"q": "Дети давно живут отдельно.", "o": ["Os filhos moram longe dos pais há muito tempo.", "Os filhos moram juntos há muito tempo.", "Os filhos se divorciaram há muito tempo.", "Os filhos visitam os pais com frequência."], "e": "Жить отдельно = morar separado (dos pais)."},
+        {"q": "Она очень похожа на бабушку.", "o": ["Ela se parece muito com a avó.", "Ela gosta muito da avó.", "Ela cuida muito da avó.", "Ela mora com a avó."], "e": "Похожа на + винительный (на бабушку)."}
+      ]}
+    ]},
+    {"title": "Escuta: preparando o aniversário da avó", "goal": "Acompanhar uma conversa entre irmãos sobre parentes, lugares e presentes.", "steps": [
+      {"t": "dialogue", "title": "Юбилей бабушки", "setting": "Os irmãos Ira e Kóstia conversam por telefone sobre os 80 anos da avó.",
+        "speakers": {"Ира": "f", "Костя": "m"},
+        "lines": [
+          ["Ира", "Костя, ты не забыл, что в субботу у бабушки юбилей? Восемьдесят лет!", "Kóstia, você não esqueceu que no sábado é o aniversário de 80 anos da vovó?"],
+          ["Костя", "Помню, конечно. А где будем отмечать: у неё дома или в ресторане?", "Lembro, claro. E onde vamos comemorar: na casa dela ou num restaurante?"],
+          ["Ира", "Мама хочет в ресторане, а бабушка говорит, что в своей квартире ей удобнее.", "A mamãe quer num restaurante, mas a vovó diz que no apartamento dela é mais confortável."],
+          ["Костя", "Ну, это же её праздник. Пусть решает сама.", "Bom, a festa é dela. Que ela decida."],
+          ["Ира", "Я тоже так думаю. Кстати, тётя Галя приедет из Самары со своими детьми.", "Eu também acho. Aliás, a tia Gália vem de Samara com os filhos."],
+          ["Костя", "С двоюродными братьями? Мы не виделись лет десять! Они, наверное, уже совсем взрослые.", "Com os primos? Não nos vemos há uns dez anos! Devem estar bem adultos."],
+          ["Ира", "Старший уже женился, а младший учится в институте.", "O mais velho já casou, e o mais novo está na faculdade."],
+          ["Костя", "А что подарим? У бабушки вроде бы всё есть.", "E o que vamos dar? A vovó parece ter de tudo."],
+          ["Ира", "Я подумала: давай сделаем альбом со старыми семейными фотографиями. Она любит вспоминать молодость.", "Pensei: vamos fazer um álbum com fotos antigas da família. Ela adora relembrar a juventude."],
+          ["Костя", "Отличная идея! У папы в шкафу лежит целая коробка фотографий. Я их отсканирую.", "Ótima ideia! No armário do papai tem uma caixa inteira de fotos. Eu escaneio."]
+        ],
+        "questions": [
+          {"q": "Onde a avó prefere comemorar?", "o": ["No apartamento dela.", "Num restaurante.", "Na casa da Ira.", "Em Samara."], "e": "«В своей квартире ей удобнее»: свой remete à avó, sujeito da oração."},
+          {"q": "Quem vem de Samara?", "o": ["A tia Gália com os filhos.", "Os avós paternos.", "O irmão mais velho de Kóstia.", "Os pais de Ira."], "e": "«Тётя Галя приедет из Самары со своими детьми»."},
+          {"q": "O que se sabe sobre os primos?", "o": ["O mais velho já casou e o mais novo está na faculdade.", "Os dois ainda estão na escola.", "Os dois moram em Moscou.", "O mais novo já casou."], "e": "«Старший уже женился, а младший учится в институте»."},
+          {"q": "Que presente eles decidem dar?", "o": ["Um álbum com fotos antigas da família.", "Uma viagem a Samara.", "Uma câmera fotográfica.", "Um jantar num restaurante."], "e": "«Альбом со старыми семейными фотографиями»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Бабушка говорит, что в своей квартире ей удобнее.", "pt": "A vovó diz que no apartamento dela é mais confortável.", "hint": "Frase da Ira sobre a avó (8 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Ты не забыл, что в субботу у бабушки юбилей?", "Você não esqueceu que no sábado é o aniversário da vovó?"],
+        ["Это же её праздник. Пусть решает сама.", "A festa é dela. Que ela decida."],
+        ["Мы не виделись лет десять!", "Não nos vemos há uns dez anos!"],
+        ["У бабушки вроде бы всё есть.", "A vovó parece ter de tudo."]
+      ]}
+    ]},
+    {"title": "Leitura: a família russa ontem e hoje", "goal": "Ler um texto de sociedade e identificar mudanças e permanências.", "steps": [
+      {"t": "reading", "title": "Русская семья: тогда и сейчас",
+        "text": "Ещё пятьдесят лет назад в русской семье под одной крышей часто жили три поколения: бабушка и дедушка, родители и дети. Бабушка забирала внуков из школы, готовила обед и помогала их воспитывать, пока родители были на работе.\n\nСегодня ситуация меняется. Молодые люди позже создают семью: средний возраст вступления в первый брак заметно вырос. Всё больше пар живут вместе без регистрации брака, а многие откладывают рождение первого ребёнка, потому что сначала хотят получить образование и купить своё жильё.\n\nОднако роль бабушек по-прежнему огромна. По данным опросов, многие семьи с маленькими детьми регулярно обращаются к ним за помощью, а бабушки, выйдя на пенсию, часто становятся для внуков второй мамой. Связь поколений остаётся одной из главных ценностей русской культуры.",
+        "pt": "Há apenas cinquenta anos, numa família russa, era comum três gerações morarem sob o mesmo teto: avós, pais e filhos. A avó buscava os netos na escola, fazia o almoço e ajudava a criá-los enquanto os pais estavam no trabalho.\n\nHoje a situação está mudando. Os jovens formam família mais tarde: a idade média do primeiro casamento aumentou visivelmente. Cada vez mais casais moram juntos sem registrar o casamento, e muitos adiam o primeiro filho porque antes querem estudar e comprar a própria moradia.\n\nNo entanto, o papel das avós continua enorme. Segundo pesquisas, muitas famílias com filhos pequenos recorrem regularmente a elas, e as avós, ao se aposentarem, muitas vezes se tornam uma segunda mãe para os netos. A ligação entre as gerações continua sendo um dos principais valores da cultura russa.",
+        "tf": [
+          ["Há cinquenta anos, era comum três gerações morarem juntas.", "V", "«Под одной крышей часто жили три поколения»."],
+          ["Hoje os jovens russos se casam mais cedo do que antes.", "F", "«Молодые люди позже создают семью»."],
+          ["Muitos casais adiam o primeiro filho para estudar e comprar moradia.", "V", "«Откладывают рождение первого ребёнка, потому что сначала хотят получить образование и купить своё жильё»."],
+          ["A maioria dos avós russos mora no campo.", "N", "O texto não diz onde os avós moram."],
+          ["As avós deixaram de ter um papel importante na família.", "F", "«Роль бабушек по-прежнему огромна»."]
+        ],
+        "questions": [
+          {"q": "Что делала бабушка, пока родители были на работе?", "o": ["Забирала внуков из школы и готовила обед.", "Работала в школе.", "Покупала квартиру для детей.", "Ездила на дачу одна."], "e": "Primeiro parágrafo."},
+          {"q": "Что значит «жить вместе без регистрации брака»?", "o": ["Жить вместе, не оформив брак официально.", "Жить отдельно после развода.", "Жить вместе с родителями мужа.", "Жить без детей."], "e": "Регистрация брака = registro civil do casamento."},
+          {"q": "Какая главная мысль последнего абзаца?", "o": ["Помощь бабушек и связь поколений по-прежнему важны.", "Бабушки больше не помогают семьям.", "Молодые семьи живут без детей.", "Пенсионеры работают дольше, чем раньше."], "e": "«Однако роль бабушек по-прежнему огромна»: однако marca o contraste com o parágrafo anterior."}
+        ]},
+      {"t": "cloze", "bank": true, "title": "Complete o resumo com as palavras do banco.",
+        "text": "Раньше три {поколения} жили под одной крышей. Сегодня молодые люди позже создают {семью}. Многие пары живут вместе без {регистрации} брака. Но бабушки по-прежнему помогают {воспитывать} внуков и часто становятся для них второй {мамой}.",
+        "pt": "Antes, três gerações viviam sob o mesmo teto. Hoje os jovens formam família mais tarde. Muitos casais moram juntos sem registrar o casamento. Mas as avós continuam ajudando a criar os netos e muitas vezes se tornam uma segunda mãe para eles.",
+        "e": "Três поколения (genitivo singular depois de три); становиться + instrumental (второй мамой)."}
+    ]},
+    {"title": "Foco na forma: свой × его, её, их", "goal": "Saber de quem é a coisa possuída, sem a ambiguidade do «seu» português.", "steps": [
+      {"t": "grammar", "title": "Свой: o possessivo que aponta para o sujeito",
+        "paragraphs": [
+          "Em português, «seu» é ambíguo. O russo resolve isso: свой (своя, своё, свои) indica que o possuidor é o sujeito da mesma oração; его, её, их indicam outra pessoa. Олег любит свою жену: a própria mulher. Олег любит его жену: a mulher de outro homem.",
+          "Na 1ª e na 2ª pessoa, свой e мой/твой são quase equivalentes: Я взял свою (= мою) сумку. Na 3ª pessoa, a escolha muda o sentido.",
+          "Свой declina como мой e concorda com o objeto: своего брата, своей сестре, со своими детьми. Его, её, их nunca mudam: с её мужем, к их детям.",
+          "Свой não aparece no sujeito: «Его брат живёт в Москве», nunca «Свой брат живёт…»."
+        ],
+        "table": {"columns": ["Frase", "De quem é?"], "rows": [
+          ["Анна позвонила своей маме.", "a mãe da própria Anna"],
+          ["Анна позвонила её маме.", "a mãe de outra mulher"],
+          ["Дети любят своих бабушек.", "as avós das próprias crianças"],
+          ["Дети любят их бабушек.", "as avós de outras pessoas"]
+        ]},
+        "examples": [
+          ["Бабушка отмечает юбилей в своей квартире.", "A avó comemora o aniversário no apartamento dela (próprio)."],
+          ["Тётя Галя приедет со своими детьми.", "A tia Gália vem com os filhos dela."],
+          ["Это Игорь, а это его жена.", "Este é o Ígor, e esta é a mulher dele."]
+        ],
+        "pitfalls": [
+          "Na 3ª pessoa, его no lugar de свой muda o sentido: «Он продал его машину» = vendeu o carro de outro homem.",
+          "Его, её e их não declinam: «к её отцу», «с их детьми».",
+          "Жениться на + preposicional (o homem); выйти замуж за + acusativo (a mulher). Não troque as preposições."
+        ]},
+      {"t": "choice", "title": "Escolha o possessivo ou a forma correta.", "items": [
+        {"q": "Таня часто звонит ___ бабушке.", "o": ["своей", "её", "свою", "своя"], "e": "A avó é da própria Tânia (sujeito) e o verbo pede dativo: своей."},
+        {"q": "Это Игорь. Ты знаешь ___ жену?", "o": ["его", "свою", "своей", "свой"], "e": "O sujeito é ты; a mulher é do Ígor, outra pessoa: его."},
+        {"q": "Родители гордятся ___ детьми.", "o": ["своими", "их", "своих", "свои"], "e": "Гордиться + instrumental; os filhos são dos próprios pais: своими."},
+        {"q": "Маша пришла с подругой и ___ мужем (мужем подруги).", "o": ["её", "своим", "своей", "свой"], "e": "O marido é da amiga, não de Macha (sujeito): её."},
+        {"q": "Дед отмечал юбилей в ___ квартире, а не в ресторане.", "o": ["своей", "свою", "своя", "своём"], "e": "Где? в + preposicional feminino: в своей квартире."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Своя сестра живёт в Казани.", "o": ["Моя сестра живёт в Казани.", "Свою сестру живёт в Казани.", "Своей сестры живёт в Казани."], "e": "Свой não pode estar no sujeito."},
+        {"q": "Он часто ссорится с его женой (com a própria mulher).", "o": ["Он часто ссорится со своей женой.", "Он часто ссорится со свою жену.", "Он часто ссорится на своей жене."], "e": "A mulher é do próprio sujeito: со своей женой (с + instrumental)."},
+        {"q": "Она вышла замуж на Олега.", "o": ["Она вышла замуж за Олега.", "Она вышла замуж с Олегом.", "Она вышла замуж Олега."], "e": "Выйти замуж за + acusativo."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Он женился на своей однокурснице", "pt": "Ele se casou com uma colega de turma."},
+        {"a": "Дети очень похожи на своих родителей", "pt": "Os filhos se parecem muito com os pais."},
+        {"a": "Мы отмечаем юбилей бабушки в субботу", "pt": "Vamos comemorar os anos redondos da avó no sábado."}
+      ]}
+    ]},
+    {"title": "Uso real: recado, situações e produção", "goal": "Entender um recado de voz com tarefas e falar da própria família.", "steps": [
+      {"t": "listening", "kind": "Голосовое сообщение", "title": "Мама звонит Ире", "voice": "f2",
+        "text": "Ирочка, привет, это мама. Звоню по поводу субботы. Бабушка всё-таки согласилась отмечать в ресторане, но недолго, часа три, не больше. Столик заказан на два часа дня в кафе «Берёзка», рядом с её домом. Папа заберёт бабушку на машине, а ты, пожалуйста, купи цветы. Только не розы: она любит тюльпаны. И не забудь позвонить тёте Гале, узнать, во сколько приходит их поезд. Целую!",
+        "pt": "Irotchka, oi, é a mamãe. Estou ligando por causa de sábado. A vovó acabou aceitando comemorar num restaurante, mas por pouco tempo, umas três horas, não mais. A mesa está reservada para as duas da tarde no café Berióska, perto da casa dela. O papai vai buscar a vovó de carro, e você, por favor, compre flores. Só não rosas: ela gosta de tulipas. E não esqueça de ligar para a tia Gália para saber a que horas chega o trem deles. Beijos!",
+        "questions": [
+          {"q": "Onde será a comemoração?", "o": ["No café Berióska, perto da casa da avó.", "No apartamento da avó.", "Na casa da mãe.", "Num restaurante no centro."], "e": "«В кафе «Берёзка», рядом с её домом»."},
+          {"q": "Que tarefas a mãe dá a Ira?", "o": ["Comprar flores e ligar para a tia Gália.", "Buscar a avó de carro.", "Reservar a mesa.", "Fazer o bolo."], "e": "Quem busca a avó é o pai; Ira compra flores e liga para a tia."},
+          {"q": "Que flores a avó prefere?", "o": ["Tulipas.", "Rosas.", "Margaridas.", "Lírios."], "e": "«Только не розы: она любит тюльпаны»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você parabeniza uma amiga pelo casamento.", "o": ["Поздравляю со свадьбой! Совет да любовь!", "Поздравляю с свадьбой, желаю развода!", "Сочувствую вашей свадьбе.", "Извините за вашу свадьбу."], "e": "Поздравлять с + instrumental; «Совет да любовь» é o voto tradicional aos noivos."},
+        {"q": "Você quer saber se a pessoa tem irmãos.", "o": ["У тебя есть братья или сёстры?", "У тебя есть братьев или сестёр?", "Ты имеешь брата или сестру?", "Сколько у тебя есть братья?"], "e": "У + genitivo + есть + nominativo."},
+        {"q": "Você conta que se dá muito bem com a sogra (mãe do marido).", "o": ["Я прекрасно лажу со свекровью.", "Я прекрасно лажу свекровь.", "Я прекрасно ладю со свекровью.", "Я прекрасно лажу с тёщей."], "e": "Ладить: я лажу (alternância д/ж); ладить с + instrumental; mãe do marido é свекровь."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 80,
+        "task": "Escreva uma carta de 80 a 120 palavras a um amigo russo apresentando a sua família: quem são, onde moram, com quem você se parece, com quem se dá bem e uma tradição familiar.",
+        "useful": ["у меня большая / небольшая семья", "мои родители живут в …", "я похож(а) на …", "я хорошо лажу с …", "у нас есть традиция …", "каждый год мы собираемся …"],
+        "model": "Привет, Саша! Ты спрашивал о моей семье. Она у меня небольшая: родители, старший брат и бабушка. Родители живут в Ресифи, на северо-востоке Бразилии, а брат с женой и своими детьми переехал в Сан-Паулу. Все говорят, что я очень похожа на маму, и не только внешне: мы обе любим музыку и много говорим. С братом в детстве мы часто ссорились, но сейчас прекрасно ладим. У нас есть традиция: каждое Рождество вся семья собирается у бабушки, и она готовит свой знаменитый пирог. А какая у тебя семья? Обнимаю, Мариана.",
+        "model_pt": "Oi, Sacha! Você perguntou sobre a minha família. Ela é pequena: meus pais, meu irmão mais velho e a minha avó. Meus pais moram em Recife, no Nordeste do Brasil, e meu irmão se mudou para São Paulo com a esposa e os filhos. Todos dizem que eu me pareço muito com a minha mãe, e não só na aparência: nós duas adoramos música e falamos muito. Na infância eu e meu irmão brigávamos muito, mas agora nos damos muito bem. Temos uma tradição: todo Natal a família inteira se reúne na casa da avó, e ela faz a sua famosa torta. E como é a sua família? Um abraço, Mariana.",
+        "checklist": ["Usei свой corretamente pelo menos uma vez.", "Usei похож(а) на + acusativo.", "Usei ладить ou ссориться с + instrumental.", "Falei de uma tradição (каждый год, каждое Рождество …).", "Comecei e terminei como uma carta (Привет …, Обнимаю …)."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Fale durante um minuto sobre um parente de quem você gosta muito: quem é, como é e o que vocês fazem juntos.",
+        "useful": ["я хочу рассказать о …", "ему / ей … лет", "мы с ним / с ней часто …", "я похож(а) на него / на неё …"],
+        "model": "Я хочу рассказать о своём дедушке. Ему восемьдесят два года, но он очень энергичный: каждое утро гуляет в парке и читает газеты. В молодости он работал инженером и строил мосты. Мы с ним часто играем в шахматы, и он почти всегда выигрывает. Я похож на него характером: мы оба спокойные и упрямые. Когда у меня проблемы, я звоню ему, и он всегда даёт мудрый совет.",
+        "model_pt": "Quero falar do meu avô. Ele tem oitenta e dois anos, mas é muito enérgico: toda manhã caminha no parque e lê jornais. Na juventude trabalhou como engenheiro e construía pontes. Nós jogamos xadrez com frequência, e ele quase sempre ganha. Pareço-me com ele no temperamento: somos os dois calmos e teimosos. Quando tenho problemas, ligo para ele, e ele sempre dá um conselho sábio.",
+        "checklist": ["Usei свой ou его/её de forma coerente.", "Disse a idade com dativo (ему / ей … лет).", "Usei pelo menos dois verbos no passado e dois no presente.", "Dei um exemplo concreto do que vocês fazem juntos."]}
+    ]}
+  ]
+}

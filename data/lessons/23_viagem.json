@@ -1,0 +1,166 @@
+{
+  "id": "viagem1", "theme": "viagem", "order": 1,
+  "title": "Поезд прибывает", "title_pt": "Viagens: trens, chegadas e partidas",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender uma conversa numa estação e os avisos sonoros de trens.",
+    "Ler um blog de viagem pelo Transiberiano e reconstruir o itinerário.",
+    "Usar os verbos de movimento com prefixos (при-, у-, вы-, в-, до-, пере-, про-, за-, под-, от-) e as preposições correspondentes.",
+    "Escrever um relato de viagem e explicar oralmente um trajeto."
+  ],
+  "grammar_focus": "приехать в / к · уехать из / от · выйти из · войти в · доехать до · переехать через · проехать мимо · заехать к / за · подъехать к · отъехать от",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de transporte e os verbos de movimento com prefixos.", "steps": [
+      {"t": "warmup", "questions": [
+        "Какое ваше самое длинное путешествие?",
+        "Вы предпочитаете поезд или самолёт? Почему?",
+        "Em português, «chegar», «sair», «entrar», «atravessar» e «passar por» são verbos diferentes. Em russo, como você acha que se formam?"
+      ]},
+      {"t": "vocab", "items": [
+        ["приехать / прийти", "chegar (de veículo / a pé)", "при- = chegada"],
+        ["уехать / уйти", "ir embora, partir", "у- = afastamento definitivo"],
+        ["выйти из", "sair de", "вы- = para fora"],
+        ["войти в / сесть в", "entrar em / embarcar", "сесть в поезд = embarcar no trem"],
+        ["доехать до", "chegar até", "Как доехать до вокзала?"],
+        ["переехать", "atravessar; mudar-se", "переехать через мост; переехать в Москву"],
+        ["проехать", "passar (de veículo)", "проехать мимо; проехать свою остановку"],
+        ["пересадка", "baldeação, conexão", "делать пересадку"],
+        ["вагон / купе / плацкарт", "vagão / cabine / vagão aberto", "верхняя полка = leito de cima"],
+        ["проводник", "comissário de trem", "проводница (f.)"],
+        ["опоздать на поезд", "perder o trem", "опоздать на + acusativo"],
+        ["отправление / прибытие", "partida / chegada", "время отправления"]
+      ]},
+      {"t": "match", "title": "Relacione o prefixo ao sentido.", "pairs": [
+        ["при-", "chegada"], ["у-", "partida, afastamento"], ["вы-", "saída para fora"],
+        ["пере-", "atravessar"], ["про-", "passar por, passar do ponto"], ["до-", "alcançar um limite"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Я заснул и проехал свою остановку.", "o": ["Dormi e passei do meu ponto.", "Dormi e cheguei ao meu ponto.", "Dormi e saí no meu ponto.", "Dormi e mudei de ônibus."], "e": "Проехать = passar (também passar do ponto)."},
+        {"q": "Поезд отправляется с третьего пути.", "o": ["O trem parte da terceira linha.", "O trem chega à terceira plataforma.", "O trem tem três vagões.", "O trem está atrasado três minutos."], "e": "Отправляться = partir; путь = linha."},
+        {"q": "Мы заехали к друзьям по дороге в аэропорт.", "o": ["Passamos na casa dos amigos a caminho do aeroporto.", "Levamos os amigos ao aeroporto.", "Fomos com os amigos ao aeroporto.", "Os amigos nos buscaram no aeroporto."], "e": "Заехать к = dar uma passada na casa de alguém."}
+      ]}
+    ]},
+    {"title": "Escuta: na estação", "goal": "Entender um problema de viagem e as soluções com verbos de movimento.", "steps": [
+      {"t": "dialogue", "title": "Мы опоздали на поезд?", "setting": "Júlia e o marido, Pedro, chegam correndo à estação Kazanski, em Moscou, e falam com uma funcionária.",
+        "speakers": {"Юлия": "f", "Сотрудница": "f2"},
+        "lines": [
+          ["Юлия", "Извините, наш поезд на Казань уже ушёл? Мы застряли в пробке и только что приехали.", "Com licença, o nosso trem para Kazan já partiu? Ficamos presos no trânsito e acabamos de chegar."],
+          ["Сотрудница", "Покажите билет… Да, к сожалению, он отошёл от платформы пять минут назад.", "Mostre a passagem… Sim, infelizmente ele saiu da plataforma há cinco minutos."],
+          ["Юлия", "Что же нам делать? Завтра утром у нас экскурсия в Казанском кремле.", "E agora, o que fazemos? Amanhã de manhã temos um passeio no Kremlin de Kazan."],
+          ["Сотрудница", "Не волнуйтесь. Через сорок минут уходит ещё один ночной поезд, он доезжает до Казани за двенадцать часов. Билет можно обменять в кассе.", "Não se preocupem. Daqui a quarenta minutos sai outro trem noturno, ele chega até Kazan em doze horas. A passagem pode ser trocada na bilheteria."],
+          ["Юлия", "А где касса?", "E onde fica a bilheteria?"],
+          ["Сотрудница", "Выйдите из этого зала, перейдите через переход и войдите в главное здание. Касса сразу справа.", "Saiam deste saguão, atravessem pela passagem e entrem no prédio principal. A bilheteria fica logo à direita."],
+          ["Юлия", "Спасибо! А с какого пути он отправляется?", "Obrigada! E de que linha ele parte?"],
+          ["Сотрудница", "Посмотрите на табло, обычно поезд подают за двадцать минут до отправления. И не проходите мимо контроля: билет проверяют на входе на платформу.", "Olhem no painel, normalmente ele é posicionado vinte minutos antes da partida. E não passem direto pelo controle: a passagem é conferida na entrada da plataforma."],
+          ["Юлия", "Педро, бежим! Мы ещё успеем доехать до Казани к утру!", "Pedro, corre! Ainda dá tempo de chegar a Kazan até de manhã!"]
+        ],
+        "questions": [
+          {"q": "Por que Júlia e Pedro perderam o trem?", "o": ["Ficaram presos no trânsito.", "Erraram a estação.", "Dormiram demais.", "Perderam as passagens."], "e": "«Мы застряли в пробке»."},
+          {"q": "Há quanto tempo o trem partiu?", "o": ["Cinco minutos.", "Quarenta minutos.", "Vinte minutos.", "Doze horas."], "e": "«Он отошёл от платформы пять минут назад»."},
+          {"q": "Que solução a funcionária propõe?", "o": ["Trocar a passagem por outro trem noturno, que sai em 40 minutos.", "Pegar um avião.", "Ir amanhã de manhã.", "Ir de ônibus."], "e": "«Через сорок минут уходит ещё один ночной поезд… Билет можно обменять»."},
+          {"q": "Como se chega à bilheteria?", "o": ["Sair do saguão, atravessar a passagem e entrar no prédio principal.", "Subir ao segundo andar.", "Ir até a plataforma três.", "Sair da estação e virar à esquerda."], "e": "«Выйдите из этого зала, перейдите через переход и войдите в главное здание»."}
+        ]},
+      {"t": "dictation", "voice": "f2", "text": "Выйдите из этого зала, перейдите через переход и войдите в главное здание.", "pt": "Saiam deste saguão, atravessem pela passagem e entrem no prédio principal.", "hint": "Instrução com três verbos prefixados (12 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Наш поезд уже ушёл?", "O nosso trem já partiu?"],
+        ["Мы только что приехали.", "Acabamos de chegar."],
+        ["Он доезжает до Казани за двенадцать часов.", "Ele chega até Kazan em doze horas."],
+        ["Мы ещё успеем доехать до Казани к утру!", "Ainda dá tempo de chegar a Kazan até de manhã!"]
+      ]}
+    ]},
+    {"title": "Leitura: um blog do Transiberiano", "goal": "Ler um relato de viagem e reconstruir o trajeto pelos verbos de movimento.", "steps": [
+      {"t": "reading", "title": "Семь дней в поезде: мой Транссиб",
+        "text": "Мы выехали из Москвы в понедельник вечером с Ярославского вокзала. Первые сутки поезд шёл через леса и маленькие города, а на второй день мы переехали через Волгу и подъехали к Уралу. Где-то перед Екатеринбургом мы пересекли границу Европы и Азии: проводница заранее предупредила, и все пассажиры вышли в коридор, чтобы сфотографировать обелиск.\n\nВ Новосибирске стоянка была почти час, и мы успели выйти из вагона, дойти до вокзальной площади и купить горячих пирожков. Потом поезд долго ехал по степи, а на пятый день доехал до Байкала. Мы сошли в Иркутске, заехали на два дня к знакомым и съездили на озеро.\n\nСамое удивительное в Транссибе — это люди. За неделю к нам в купе подсаживались учительница из Омска, военный из Читы и студент, который ехал домой на каникулы. Кто-то уходил, кто-то приходил, а чай из стакана с подстаканником оставался неизменным. До Владивостока мы так и не доехали, но обязательно вернёмся.",
+        "pt": "Saímos de Moscou numa segunda-feira à noite, da estação Iaroslávski. No primeiro dia o trem passou por florestas e cidades pequenas, e no segundo dia atravessamos o Volga e nos aproximamos dos Urais. Em algum lugar antes de Iekaterinburgo cruzamos a fronteira entre a Europa e a Ásia: a comissária avisou com antecedência, e todos os passageiros saíram para o corredor para fotografar o obelisco.\n\nEm Novosibirsk a parada durou quase uma hora, e deu tempo de sair do vagão, ir até a praça da estação e comprar pirozhki quentes. Depois o trem andou muito tempo pela estepe, e no quinto dia chegou ao Baikal. Descemos em Irkutsk, passamos dois dias na casa de conhecidos e fizemos um bate-volta até o lago.\n\nO mais surpreendente do Transiberiano são as pessoas. Ao longo da semana, sentaram-se na nossa cabine uma professora de Omsk, um militar de Tchitá e um estudante que voltava para casa nas férias. Uns saíam, outros chegavam, mas o chá no copo com porta-copo de metal continuava o mesmo. Não chegamos até Vladivostok, mas com certeza vamos voltar.",
+        "tf": [
+          ["A viagem começou na estação Iaroslávski, em Moscou.", "V", "«С Ярославского вокзала»."],
+          ["Os passageiros fotografaram o obelisco na fronteira entre Europa e Ásia.", "V", "«Чтобы сфотографировать обелиск»."],
+          ["Em Novosibirsk, a parada foi de dez minutos.", "F", "«Стоянка была почти час»."],
+          ["Os viajantes chegaram até Vladivostok.", "F", "«До Владивостока мы так и не доехали»."],
+          ["A passagem custou mais de cem mil rublos.", "N", "O texto não fala de preço."]
+        ],
+        "questions": [
+          {"q": "Что авторы сделали в Иркутске?", "o": ["Сошли с поезда, заехали к знакомым и съездили на Байкал.", "Пересели на самолёт.", "Купили пирожки на вокзале.", "Встретили учительницу из Омска."], "e": "«Мы сошли в Иркутске, заехали на два дня к знакомым и съездили на озеро»."},
+          {"q": "Что, по мнению автора, самое удивительное в Транссибе?", "o": ["Люди, с которыми знакомишься в дороге.", "Скорость поезда.", "Еда в вагоне-ресторане.", "Граница Европы и Азии."], "e": "«Самое удивительное в Транссибе — это люди»."}
+        ]},
+      {"t": "cloze", "title": "Escolha o verbo com o prefixo adequado.",
+        "text": "Поезд {выехал|приехал|доехал} из Москвы вечером. На второй день мы {переехали|проехали|заехали} через Волгу. В Новосибирске мы {вышли|вошли|ушли} из вагона на час. Наконец поезд {доехал|уехал|выехал} до Байкала.",
+        "pt": "O trem saiu de Moscou à noite. No segundo dia atravessamos o Volga. Em Novosibirsk saímos do vagão por uma hora. Finalmente o trem chegou até o Baikal.",
+        "e": "Вы- + из (sair de); пере- + через (atravessar); вы- + из (sair de um lugar fechado); до- + до (chegar até)."}
+    ]},
+    {"title": "Foco na forma: prefixos de movimento", "goal": "Escolher o prefixo e a preposição pelo sentido do deslocamento.", "steps": [
+      {"t": "grammar", "title": "O prefixo indica a direção",
+        "paragraphs": [
+          "Os verbos de movimento (идти / ходить, ехать / ездить, бежать, лететь, нести…) recebem prefixos que indicam a direção. Com prefixo, o par se torna aspectual: приходить (imperf.) / прийти (perf.), приезжать / приехать, уезжать / уехать.",
+          "Cada prefixo combina com certas preposições: при- (chegar) в / на / к: приехать в Москву, к маме. у- (partir) из / с / от: уехать из Москвы. вы- (sair) из: выйти из дома. в- (entrar) в: войти в зал. до- (alcançar) до: доехать до центра. пере- (atravessar) через ou só acusativo: перейти (через) улицу. про- (passar ao lado / percorrer) мимо, через: пройти мимо магазина, проехать десять километров. за- (passar rapidamente / buscar) к, за + instrumental: зайти к другу, зайти за хлебом. под- (aproximar-se) к: подойти к окну. от- (afastar-se um pouco) от: отойти от двери.",
+          "Atenção a dois detalhes de forma: идти com prefixo vira -йти (прийти, выйти, зайти, уйти, дойти), e ехать vira -ехать com o imperfectivo -езжать (приезжать, уезжать, выезжать).",
+          "O imperfectivo com prefixo indica ação repetida ou em andamento: Поезд приходит в восемь (sempre). O perfectivo, uma ação única e concluída: Поезд пришёл в восемь."
+        ],
+        "table": {"columns": ["Prefixo", "Sentido", "Preposição", "Exemplo"], "rows": [
+          ["при-", "chegar", "в / на / к", "приехать на вокзал"],
+          ["у-", "partir", "из / с / от", "уйти с работы"],
+          ["вы-", "sair", "из", "выйти из вагона"],
+          ["в-", "entrar", "в", "войти в метро"],
+          ["до-", "alcançar", "до", "дойти до угла"],
+          ["пере-", "atravessar", "через / acus.", "перейти через мост"],
+          ["про-", "passar por", "мимо / через", "проехать мимо музея"],
+          ["за-", "passar em / buscar", "к / в / за + instr.", "зайти в аптеку"],
+          ["под- / от-", "aproximar / afastar", "к / от", "подойти к кассе"]
+        ]},
+        "examples": [
+          ["Когда поезд подошёл к платформе, все встали.", "Quando o trem se aproximou da plataforma, todos se levantaram."],
+          ["По дороге домой я зашёл в магазин за молоком.", "No caminho para casa, passei na loja para comprar leite."],
+          ["Мы прошли мимо Большого театра и дошли до Красной площади.", "Passamos pelo Teatro Bolshoi e chegamos até a Praça Vermelha."]
+        ],
+        "pitfalls": [
+          "Уйти / уехать é partir; выйти é sair de um espaço fechado. «Он вышел» pode ser «saiu da sala» por um minuto; «он ушёл» indica que foi embora.",
+          "Não confunda проехать (passar por, inclusive passar do ponto) com переехать (atravessar ou mudar de cidade).",
+          "Lembre a forma: прийти, mas приду, пришёл. Зайти → зайду, зашёл. Дойти → дойду, дошёл."
+        ]},
+      {"t": "choice", "title": "Escolha o verbo correto.", "items": [
+        {"q": "Как ___ до Эрмитажа?", "o": ["дойти", "прийти", "уйти", "выйти"], "e": "Alcançar um ponto: до- + до."},
+        {"q": "Осторожно, двери закрываются! Следующая станция: «Арбатская». Вы ___ на следующей?", "o": ["выходите", "уходите", "входите", "приходите"], "e": "Sair do vagão: выходить."},
+        {"q": "По дороге на работу я всегда ___ мимо этого кафе.", "o": ["прохожу", "перехожу", "захожу", "дохожу"], "e": "Passar ao lado: про- + мимо."},
+        {"q": "Чтобы попасть в парк, нужно ___ через мост.", "o": ["перейти", "пройти мимо", "уйти", "дойти"], "e": "Atravessar: пере- + через."},
+        {"q": "Мама позвонила и попросила меня ___ к ней после работы.", "o": ["зайти", "выйти", "перейти", "отойти"], "e": "Dar uma passada: за- + к."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Мы вышли из Москвы на поезде в восемь.", "o": ["Мы выехали из Москвы на поезде в восемь.", "Мы ушли из Москвы на поезде в восемь.", "Мы вошли из Москвы на поезде в восемь."], "e": "De veículo: -ехать (выехать)."},
+        {"q": "Я заснул и переехал свою станцию.", "o": ["Я заснул и проехал свою станцию.", "Я заснул и доехал свою станцию.", "Я заснул и уехал свою станцию."], "e": "Passar do ponto: проехать."},
+        {"q": "Она пришла с работы в семь и приехала домой в восемь.", "o": ["Она ушла с работы в семь и пришла домой в восемь.", "Она вышла с работы в семь и ушла домой в восемь.", "Она пришла с работы в семь и ушла домой в восемь."], "e": "Sair do trabalho (ir embora): уйти с; chegar em casa: прийти домой."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Поезд отошёл от платформы пять минут назад", "pt": "O trem saiu da plataforma há cinco minutos."},
+        {"a": "Мы зашли к друзьям по дороге в аэропорт", "pt": "Passamos na casa dos amigos a caminho do aeroporto."},
+        {"a": "Как доехать до центра города", "pt": "Como chegar ao centro da cidade?"}
+      ]}
+    ]},
+    {"title": "Uso real: avisos de estação, situações e produção", "goal": "Entender avisos de trens e descrever trajetos.", "steps": [
+      {"t": "listening", "kind": "Объявление на вокзале", "title": "Внимание, пассажиры!", "voice": "f",
+        "text": "Внимание! Скорый поезд номер шестнадцать Москва — Мурманск прибывает на четвёртый путь. Стоянка поезда двадцать минут. Нумерация вагонов начинается с головы поезда. Повторяю: скорый поезд Москва — Мурманск прибывает на четвёртый путь. Пассажиров, отъезжающих в Санкт-Петербург поездом «Сапсан», просим пройти на посадку на второй путь. Посадка заканчивается за две минуты до отправления. Будьте внимательны: не подходите близко к краю платформы.",
+        "pt": "Atenção! O trem rápido número dezesseis Moscou–Murmansk está chegando à linha quatro. A parada do trem é de vinte minutos. A numeração dos vagões começa pela frente do trem. Repito: o trem rápido Moscou–Murmansk está chegando à linha quatro. Os passageiros que partem para São Petersburgo no trem Sapsan devem se dirigir ao embarque na linha dois. O embarque termina dois minutos antes da partida. Tenham cuidado: não se aproximem da borda da plataforma.",
+        "questions": [
+          {"q": "Em que linha chega o trem para Murmansk?", "o": ["Na quatro.", "Na dois.", "Na dezesseis.", "Na vinte."], "e": "«Прибывает на четвёртый путь»."},
+          {"q": "Quanto tempo o trem fica parado?", "o": ["Vinte minutos.", "Dois minutos.", "Quatro minutos.", "Dezesseis minutos."], "e": "«Стоянка поезда двадцать минут»."},
+          {"q": "O que os passageiros do Sapsan devem fazer?", "o": ["Ir ao embarque na linha dois.", "Esperar na linha quatro.", "Ir à bilheteria.", "Embarcar pela frente do trem."], "e": "«Просим пройти на посадку на второй путь»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "No metrô lotado, você precisa sair na próxima e pede passagem.", "o": ["Вы выходите на следующей?", "Вы уходите на следующей?", "Вы приходите на следующей?", "Вы переходите на следующей?"], "e": "Fórmula clássica: Вы выходите на следующей?"},
+        {"q": "Você pergunta a um passante como chegar à estação.", "o": ["Скажите, как дойти до вокзала?", "Скажите, как прийти до вокзала?", "Скажите, как уйти в вокзал?", "Скажите, как войти до вокзала?"], "e": "Дойти до = chegar até."},
+        {"q": "Você avisa que vai passar na farmácia antes de ir para casa.", "o": ["Я зайду в аптеку и потом приду домой.", "Я выйду в аптеку и потом уйду домой.", "Я перейду в аптеку и потом дойду домой.", "Я подойду в аптеку и потом отойду домой."], "e": "Зайти в = passar em; прийти домой = chegar em casa."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 80,
+        "task": "Escreva um relato de viagem (80 a 120 palavras) para um blog: de onde você saiu, por onde passou, o que atravessou, onde parou e aonde chegou. Use pelo menos seis verbos de movimento com prefixos diferentes.",
+        "useful": ["Мы выехали из … в …", "По дороге мы проехали мимо …", "Потом переехали через …", "Заехали к / в …", "Наконец доехали до …"],
+        "model": "В прошлом году мы с друзьями поехали на машине из Сан-Паулу в Рио по старой прибрежной дороге. Мы выехали из города рано утром, чтобы не стоять в пробках. Сначала проехали мимо порта Сантус, потом переехали через горы Серра-ду-Мар. В Убатубе мы зашли в маленький ресторан и попробовали свежую рыбу. Вечером заехали к знакомым в Парати и остались у них на ночь. На следующий день мы подъехали к Рио с юга, и вид на залив был невероятный. До центра города доехали только к обеду из-за пробок, но это было лучшее путешествие года.",
+        "model_pt": "No ano passado, eu e uns amigos fomos de carro de São Paulo ao Rio pela antiga estrada litorânea. Saímos da cidade de manhã cedo para não pegar trânsito. Primeiro passamos pelo porto de Santos, depois atravessamos a Serra do Mar. Em Ubatuba paramos num restaurante pequeno e provamos peixe fresco. À noite passamos na casa de conhecidos em Paraty e ficamos lá para dormir. No dia seguinte nos aproximamos do Rio pelo sul, e a vista da baía era incrível. Só chegamos ao centro da cidade na hora do almoço por causa do trânsito, mas foi a melhor viagem do ano.",
+        "checklist": ["Usei pelo menos seis prefixos diferentes.", "Usei a preposição correta para cada prefixo.", "Usei -ехать para veículos e -йти para deslocamentos a pé.", "Organizei o trajeto no tempo.", "Escrevi pelo menos 80 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Explique em voz alta a um turista russo como ir do aeroporto da sua cidade até o centro: que transporte pegar, onde descer, onde atravessar e por onde passar.",
+        "useful": ["Когда вы выйдете из аэропорта, …", "Сядьте на … и доезжайте до …", "Выйдите на остановке …", "Перейдите через …", "Пройдите мимо …, и вы дойдёте до …"],
+        "model": "Когда вы выйдете из терминала, сразу увидите остановку автобуса. Сядьте на экспресс до центра и доезжайте до конечной станции, это около часа. Там выйдите из автобуса, перейдите через площадь и спуститесь в метро. Проедьте три станции и выйдите на станции «Республика». Потом пройдите мимо театра, поверните направо и через пять минут дойдёте до гостиницы. Если заблудитесь, зайдите в любое кафе и спросите дорогу, люди здесь очень отзывчивые.",
+        "model_pt": "Quando sair do terminal, você vai ver logo o ponto de ônibus. Pegue o expresso para o centro e vá até a estação final, é cerca de uma hora. Lá desça do ônibus, atravesse a praça e desça para o metrô. Passe três estações e desça na estação República. Depois passe pelo teatro, vire à direita e em cinco minutos você chega ao hotel. Se se perder, entre em qualquer café e pergunte o caminho, as pessoas aqui são muito prestativas.",
+        "checklist": ["Usei pelo menos cinco verbos de movimento prefixados.", "Usei o imperativo para dar as instruções.", "Usei as preposições corretas (из, до, через, мимо).", "Dei uma alternativa em caso de problema."]}
+    ]}
+  ]
+}

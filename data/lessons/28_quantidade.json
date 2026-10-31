@@ -1,0 +1,164 @@
+{
+  "id": "quantidade1", "theme": "quantidade", "order": 1,
+  "title": "Около двадцати человек", "title_pt": "Quantidades, estatísticas e números em uso",
+  "level": "B2", "minutes": 60,
+  "objectives": [
+    "Entender a organização de uma festa com números de pessoas e objetos e uma pesquisa de opinião no rádio.",
+    "Ler um texto com dados estatísticos sobre Moscou.",
+    "Declinar os numerais depois de preposições e verbos (около двадцати, более ста, с пятью, о трёх) e usar os coletivos двое, трое.",
+    "Escrever um pequeno relatório com dados e apresentar oralmente os resultados de uma pesquisa."
+  ],
+  "grammar_focus": "склонение числительных: два → двух / двум / двумя · пять → пяти / пятью · сорок, девяносто, сто → сорока, девяноста, ста · около / более / менее / из + Р. п. · собирательные: двое, трое, нас было пятеро",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer as palavras de quantidade, medida e estatística.", "steps": [
+      {"t": "warmup", "questions": [
+        "Сколько человек обычно приходит к вам на день рождения?",
+        "Вы доверяете опросам и статистике?",
+        "Em português os números quase não mudam de forma. Em russo, você acha que «vinte» muda depois de «cerca de» ou «com»?"
+      ]},
+      {"t": "vocab", "items": [
+        ["около", "cerca de", "около двадцати (genitivo)"],
+        ["более / менее", "mais de / menos de", "более ста человек"],
+        ["не хватает", "falta(m)", "не хватает пяти стульев (genitivo)"],
+        ["половина / треть / четверть", "metade / um terço / um quarto", "половина опрошенных"],
+        ["большинство / меньшинство", "maioria / minoria", "большинство россиян"],
+        ["опрос", "pesquisa de opinião", "опрошенные = entrevistados"],
+        ["население", "população", "численность населения"],
+        ["в среднем", "em média", "средний возраст = idade média"],
+        ["вдвое / втрое", "duas vezes / três vezes", "вдвое больше = o dobro"],
+        ["двое / трое", "dois / três (pessoas)", "нас было трое = éramos três"],
+        ["каждый пятый", "um em cada cinco", "каждый третий житель"],
+        ["примерно", "aproximadamente", "= приблизительно, где-то"]
+      ]},
+      {"t": "match", "title": "Relacione o numeral à forma do genitivo.", "pairs": [
+        ["два", "двух"], ["три", "трёх"], ["пять", "пяти"],
+        ["сорок", "сорока"], ["сто", "ста"], ["двести", "двухсот"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "В опросе приняли участие более двух тысяч человек.", "o": ["Mais de duas mil pessoas participaram da pesquisa.", "Menos de duas mil pessoas participaram da pesquisa.", "Exatamente duas mil pessoas participaram da pesquisa.", "Duas pessoas em mil participaram da pesquisa."], "e": "Более + genitivo: более двух тысяч."},
+        {"q": "Каждый третий житель города пользуется велосипедом.", "o": ["Um em cada três moradores da cidade usa bicicleta.", "Três moradores da cidade usam bicicleta.", "O terceiro morador da cidade usa bicicleta.", "Os moradores usam bicicleta três vezes por semana."], "e": "Каждый третий = um em cada três."},
+        {"q": "Нас было трое: я и двое друзей.", "o": ["Éramos três: eu e dois amigos.", "Éramos três amigos e eu.", "Éramos duas pessoas e três amigos.", "Fomos três vezes com dois amigos."], "e": "Coletivos двое, трое para grupos de pessoas."}
+      ]}
+    ]},
+    {"title": "Escuta: organizando uma festa", "goal": "Acompanhar contas e quantidades numa conversa.", "steps": [
+      {"t": "dialogue", "title": "Сколько нужно стульев?", "setting": "Liuba e Artur organizam a festa de formatura da turma.",
+        "speakers": {"Люба": "f", "Артур": "m"},
+        "lines": [
+          ["Люба", "Так, сколько человек придёт? У меня в списке около тридцати.", "Bom, quantas pessoas vêm? Na minha lista há umas trinta."],
+          ["Артур", "Двадцать восемь подтвердили, ещё двое не ответили. Значит, готовимся к тридцати.", "Vinte e oito confirmaram, dois não responderam. Então nos preparamos para trinta."],
+          ["Люба", "В зале двадцать пять стульев. Не хватает пяти.", "No salão há vinte e cinco cadeiras. Faltam cinco."],
+          ["Артур", "Я возьму у соседей. У них есть четыре складных, а ещё один принесёт Миша.", "Eu pego com os vizinhos. Eles têm quatro dobráveis, e mais uma o Micha traz."],
+          ["Люба", "Хорошо. Пиццу заказываем из расчёта по два куска на человека?", "Ótimo. A pizza a gente pede calculando dois pedaços por pessoa?"],
+          ["Артур", "Лучше по три. Если в пицце восемь кусков, на тридцать человек нужно… около двенадцати пицц.", "Melhor três. Se a pizza tem oito pedaços, para trinta pessoas precisamos de… umas doze pizzas."],
+          ["Люба", "Двенадцать? Это примерно девять тысяч рублей. А у нас в бюджете чуть больше семи.", "Doze? Isso dá uns nove mil rublos. E no nosso orçamento tem pouco mais de sete."],
+          ["Артур", "Тогда давай соберём ещё по сто рублей с каждого. С тридцати человек как раз три тысячи.", "Então vamos juntar mais cem rublos de cada um. De trinta pessoas dá exatamente três mil."],
+          ["Люба", "Отлично. И не забудь: из тридцати гостей пятеро не едят мяса.", "Ótimo. E não esqueça: dos trinta convidados, cinco não comem carne."],
+          ["Артур", "Понял, закажем две вегетарианские. Справимся!", "Entendi, pedimos duas vegetarianas. Vamos dar conta!"]
+        ],
+        "questions": [
+          {"q": "Para quantas pessoas eles se preparam?", "o": ["Trinta.", "Vinte e oito.", "Vinte e cinco.", "Doze."], "e": "«Готовимся к тридцати»."},
+          {"q": "Quantas cadeiras faltam?", "o": ["Cinco.", "Quatro.", "Duas.", "Trinta."], "e": "«Не хватает пяти»."},
+          {"q": "Como resolvem a falta de dinheiro?", "o": ["Juntando mais cem rublos de cada convidado.", "Pedindo menos pizza.", "Pedindo um empréstimo.", "Cancelando a festa."], "e": "«Соберём ещё по сто рублей с каждого»."},
+          {"q": "Quantos convidados não comem carne?", "o": ["Cinco.", "Dois.", "Três.", "Doze."], "e": "«Из тридцати гостей пятеро не едят мяса»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Из тридцати гостей пятеро не едят мяса.", "pt": "Dos trinta convidados, cinco não comem carne.", "hint": "Números depois de из e um coletivo (7 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["Двадцать восемь подтвердили, ещё двое не ответили.", "Vinte e oito confirmaram, dois não responderam."],
+        ["В зале не хватает пяти стульев.", "No salão faltam cinco cadeiras."],
+        ["Давай соберём по сто рублей с каждого.", "Vamos juntar cem rublos de cada um."],
+        ["С тридцати человек как раз три тысячи.", "De trinta pessoas dá exatamente três mil."]
+      ]}
+    ]},
+    {"title": "Leitura: Moscou em números", "goal": "Ler um texto estatístico e interpretar números declinados.", "steps": [
+      {"t": "reading", "title": "Москва в цифрах",
+        "text": "Москва — самый большой город Европы по численности населения: здесь официально живут более тринадцати миллионов человек, а вместе с пригородами около двадцати. Каждый день в город приезжают на работу сотни тысяч жителей Подмосковья.\n\nМосковское метро — одно из самых загруженных в мире. В нём более двухсот пятидесяти станций, а в обычный будний день им пользуются около восьми миллионов пассажиров. Интервал между поездами в час пик составляет менее двух минут.\n\nГород быстро меняется. За последние десять лет здесь открыли больше ста новых станций метро и благоустроили сотни парков и скверов. По данным опросов, примерно две трети москвичей довольны своим районом, а каждый четвёртый хотел бы переехать ближе к центру. Средний возраст жителя столицы около сорока лет. Интересно, что женщин в столице заметно больше, чем мужчин: примерно тысяча сто пятьдесят на каждую тысячу мужчин.",
+        "pt": "Moscou é a maior cidade da Europa em população: oficialmente vivem aqui mais de treze milhões de pessoas, e com os subúrbios, cerca de vinte. Todos os dias, centenas de milhares de moradores da região de Moscou vêm trabalhar na cidade.\n\nO metrô de Moscou é um dos mais movimentados do mundo. Ele tem mais de duzentas e cinquenta estações, e num dia útil comum é usado por cerca de oito milhões de passageiros. O intervalo entre os trens na hora do rush é de menos de dois minutos.\n\nA cidade muda rapidamente. Nos últimos dez anos foram abertas mais de cem novas estações de metrô e foram reformados centenas de parques e praças. Segundo pesquisas, cerca de dois terços dos moscovitas estão satisfeitos com o seu bairro, e um em cada quatro gostaria de se mudar para mais perto do centro. A idade média do morador da capital é de cerca de quarenta anos. Curiosamente, há bem mais mulheres do que homens na capital: cerca de mil cento e cinquenta para cada mil homens.",
+        "tf": [
+          ["Oficialmente, Moscou tem mais de treze milhões de habitantes.", "V", "«Более тринадцати миллионов человек»."],
+          ["O intervalo entre trens na hora do rush é de mais de cinco minutos.", "F", "«Менее двух минут»."],
+          ["Cerca de dois terços dos moscovitas estão satisfeitos com o bairro.", "V", "«Примерно две трети москвичей довольны своим районом»."],
+          ["Um em cada quatro moscovitas quer se mudar para outra cidade.", "F", "Quer se mudar «ближе к центру», não para outra cidade."],
+          ["O texto informa a renda média dos moscovitas.", "N", "Não há dados de renda."]
+        ],
+        "questions": [
+          {"q": "Сколько пассажиров пользуется метро в будний день?", "o": ["Около восьми миллионов.", "Более тринадцати миллионов.", "Около двухсот пятидесяти тысяч.", "Около двадцати миллионов."], "e": "«Около восьми миллионов пассажиров»."},
+          {"q": "Какой факт автор называет интересным?", "o": ["В Москве женщин больше, чем мужчин.", "Средний возраст жителя сорок лет.", "Метро открылось сто лет назад.", "Все москвичи хотят жить в центре."], "e": "«Женщин в столице заметно больше, чем мужчин»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta do numeral.",
+        "text": "В опросе участвовали около {двухсот|двести|двумстам} человек. Я живу в квартире с {тремя|три|трёх} соседями. Поезд пришёл с опозданием более {сорока|сорок|сороками} минут. Мы говорили о {двух|два|двумя} проектах.",
+        "pt": "Cerca de duzentas pessoas participaram da pesquisa. Moro num apartamento com três colegas. O trem chegou com mais de quarenta minutos de atraso. Falamos sobre dois projetos.",
+        "e": "Около / более + genitivo (двухсот, сорока); с + instrumental (тремя); о + preposicional (двух)."}
+    ]},
+    {"title": "Foco na forma: declinar os numerais", "goal": "Pôr o numeral e o substantivo no caso exigido pela frase.", "steps": [
+      {"t": "grammar", "title": "Os números também têm casos",
+        "paragraphs": [
+          "No nominativo e no acusativo inanimado, o número «governa» o substantivo: два стола (genitivo singular), пять столов (genitivo plural). Nos outros casos, número e substantivo concordam: около двух столов, к двум столам, с двумя столами, о двух столах.",
+          "Два, три, четыре: genitivo e preposicional двух / трёх / четырёх; dativo двум / трём / четырём; instrumental двумя / тремя / четырьмя. De пять a двадцать e тридцать: terminam em -и (пяти, десяти, двадцати), instrumental -ью (пятью, десятью).",
+          "Сорок, девяносто e сто têm só duas formas: nominativo-acusativo e o resto em -а: около сорока, к девяноста, со ста. As centenas declinam as duas partes: двести → двухсот, двумстам, двумястами. Тысяча declina como substantivo feminino: с тысячей, около тысячи. Миллион, como masculino: более миллиона.",
+          "Em números compostos, todas as partes se declinam: около двадцати пяти человек, с тридцатью двумя студентами. Na fala, muitos russos simplificam, mas na escrita a norma é declinar tudo.",
+          "Coletivos (двое, трое, четверо, пятеро…) para grupos de pessoas, sobretudo com substantivos masculinos, pronomes e substantivos só plurais: двое детей, нас было трое, трое суток."
+        ],
+        "table": {"columns": ["Caso", "2", "3", "5", "40", "100"], "rows": [
+          ["Nominativo", "два / две", "три", "пять", "сорок", "сто"],
+          ["Genitivo", "двух", "трёх", "пяти", "сорока", "ста"],
+          ["Dativo", "двум", "трём", "пяти", "сорока", "ста"],
+          ["Instrumental", "двумя", "тремя", "пятью", "сорока", "ста"],
+          ["Preposicional", "о двух", "о трёх", "о пяти", "о сорока", "о ста"]
+        ]},
+        "examples": [
+          ["В конференции приняли участие более трёхсот учёных из сорока стран.", "Mais de trezentos cientistas de quarenta países participaram da conferência."],
+          ["Я позвонил всем пятерым друзьям.", "Liguei para todos os cinco amigos."],
+          ["Музей работает с десяти до восемнадцати часов.", "O museu funciona das dez às dezoito horas."]
+        ],
+        "pitfalls": [
+          "Depois de около, более, менее, из e до, o numeral vai ao genitivo: «около двадцати», nunca «около двадцать».",
+          "Com a preposição с (com), o numeral vai ao instrumental: «с тремя друзьями», «с пятью детьми».",
+          "Сорок, девяносто e сто não seguem o modelo de пять: «около сорока» (não «сороки»), «со ста рублями»."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "На концерт пришло около ___ человек.", "o": ["пятисот", "пятьсот", "пятистам", "пятисотен"], "e": "Около + genitivo: пятисот."},
+        {"q": "Учительница работает с ___ группами.", "o": ["четырьмя", "четыре", "четырёх", "четырём"], "e": "С + instrumental: четырьмя."},
+        {"q": "Эта книга о ___ сёстрах.", "o": ["трёх", "три", "тремя", "трём"], "e": "О + preposicional: о трёх."},
+        {"q": "Цена выросла до ___ рублей.", "o": ["сорока", "сорок", "сороки", "сороками"], "e": "До + genitivo: сорока."},
+        {"q": "У них ___ детей: два сына и дочь.", "o": ["трое", "три", "трёх", "третье"], "e": "Coletivo com дети: трое детей."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я разговаривал с двое коллег.", "o": ["Я разговаривал с двумя коллегами.", "Я разговаривал с двух коллег.", "Я разговаривал с два коллеги."], "e": "С + instrumental: с двумя коллегами."},
+        {"q": "В зале было более сто человек.", "o": ["В зале было более ста человек.", "В зале было более стами человек.", "В зале было более сотни человека."], "e": "Более + genitivo: ста."},
+        {"q": "Мы ждали автобус около двадцать минут.", "o": ["Мы ждали автобус около двадцати минут.", "Мы ждали автобус около двадцатью минут.", "Мы ждали автобус около двадцатых минут."], "e": "Около + genitivo: двадцати."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "В опросе участвовали более тысячи человек", "pt": "Mais de mil pessoas participaram da pesquisa."},
+        {"a": "Я живу в квартире с двумя друзьями", "pt": "Moro num apartamento com dois amigos."},
+        {"a": "Нам не хватает пяти стульев", "pt": "Faltam-nos cinco cadeiras."}
+      ]}
+    ]},
+    {"title": "Uso real: pesquisa no rádio, situações e produção", "goal": "Entender e comunicar dados numéricos com precisão.", "steps": [
+      {"t": "listening", "kind": "Результаты опроса на радио", "title": "Как россияне проводят отпуск", "voice": "m2",
+        "text": "Социологи опросили более полутора тысяч человек из пятидесяти регионов страны. Оказалось, что около сорока процентов россиян проводят отпуск дома или на даче. Каждый четвёртый путешествует по России, а за границу ездят менее пятнадцати процентов опрошенных. Самые популярные направления внутри страны: Сочи, Петербург и Калининград. Интересно, что среди молодых людей до тридцати лет путешествуют почти в два раза чаще, чем среди тех, кому больше шестидесяти. В среднем россияне тратят на отпуск около семидесяти тысяч рублей.",
+        "pt": "Os sociólogos entrevistaram mais de mil e quinhentas pessoas de cinquenta regiões do país. Descobriu-se que cerca de quarenta por cento dos russos passam as férias em casa ou na datcha. Um em cada quatro viaja pela Rússia, e menos de quinze por cento dos entrevistados vão para o exterior. Os destinos mais populares dentro do país são Sóchi, Petersburgo e Kaliningrado. Curiosamente, entre os jovens de até trinta anos, as pessoas viajam quase duas vezes mais do que entre os maiores de sessenta. Em média, os russos gastam cerca de setenta mil rublos nas férias.",
+        "questions": [
+          {"q": "Quantas pessoas foram entrevistadas?", "o": ["Mais de 1 500.", "Mais de 500.", "Cerca de 50.", "Cerca de 15 000."], "e": "«Более полутора тысяч человек»."},
+          {"q": "Que parte dos russos passa as férias em casa ou na datcha?", "o": ["Cerca de 40%.", "Um quarto.", "Menos de 15%.", "Metade."], "e": "«Около сорока процентов»."},
+          {"q": "Quanto os russos gastam em média nas férias?", "o": ["Cerca de 70 000 rublos.", "Cerca de 7 000 rublos.", "Cerca de 17 000 rublos.", "Cerca de 40 000 rublos."], "e": "«Около семидесяти тысяч рублей»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você reserva uma mesa para seis pessoas.", "o": ["Можно столик на шесть человек?", "Можно столик на шестью человек?", "Можно столик для шесть человека?", "Можно столик на шести людей?"], "e": "На + acusativo: на шесть человек."},
+        {"q": "Você diz que esperou cerca de quarenta minutos.", "o": ["Я ждал около сорока минут.", "Я ждал около сорок минут.", "Я ждал около сороки минут.", "Я ждал около сороками минутами."], "e": "Около + genitivo: сорока."},
+        {"q": "Você conta que viajou com três amigos.", "o": ["Я ездил с тремя друзьями.", "Я ездил с три друзья.", "Я ездил с трёх друзей.", "Я ездил с трое друзьями."], "e": "С + instrumental: с тремя."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 70,
+        "task": "Faça uma pequena pesquisa com amigos ou invente dados e escreva um relatório (70 a 100 palavras): quantas pessoas responderam, o que a maioria e a minoria disseram, e uma conclusão. Use pelo menos cinco numerais declinados.",
+        "useful": ["В опросе приняли участие …", "Из … опрошенных …", "Около … процентов …", "Большинство / каждый третий …", "Менее / более …", "Таким образом, …"],
+        "model": "В нашем опросе приняли участие двадцать четыре студента из трёх групп. Из двадцати четырёх опрошенных восемнадцать учат русский меньше двух лет. Около половины занимаются каждый день, а каждый четвёртый только по выходным. Более двадцати человек сказали, что самое трудное для них падежи, и только двое назвали произношение. Менее пяти студентов смотрят фильмы на русском без субтитров. Таким образом, большинству не хватает практики аудирования, поэтому мы предлагаем раз в неделю смотреть фильм вместе с преподавателем.",
+        "model_pt": "Participaram da nossa pesquisa vinte e quatro estudantes de três turmas. Dos vinte e quatro entrevistados, dezoito estudam russo há menos de dois anos. Cerca de metade estuda todos os dias, e um em cada quatro, só nos fins de semana. Mais de vinte pessoas disseram que o mais difícil são os casos, e só duas citaram a pronúncia. Menos de cinco estudantes veem filmes em russo sem legenda. Portanto, falta prática de compreensão auditiva à maioria, por isso propomos ver um filme por semana com o professor.",
+        "checklist": ["Usei pelo menos cinco numerais declinados (около, более, менее, из, с).", "Usei um coletivo (двое, трое).", "Usei большинство ou каждый … .", "Fechei com uma conclusão.", "Escrevi pelo menos 70 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Apresente em voz alta, em cerca de um minuto, três ou quatro números curiosos sobre a sua cidade ou o seu país (população, distâncias, preços, recordes). Declare os números com as preposições corretas.",
+        "useful": ["В … живёт более / около …", "От … до … около … километров", "Каждый … житель …", "Это почти в … раза больше, чем …"],
+        "model": "В Бразилии живёт более двухсот миллионов человек, и около двадцати двух миллионов из них в Большом Сан-Паулу. От Сан-Паулу до Рио около четырёхсот тридцати километров, а до Манауса почти четыре тысячи. На Амазонку приходится около шестидесяти процентов территории страны. Каждый год в Рио на карнавал приезжает более миллиона туристов. Бразилия почти в два раза меньше России по площади, но население у неё больше примерно на шестьдесят миллионов.",
+        "model_pt": "No Brasil vivem mais de duzentos milhões de pessoas, e cerca de vinte e dois milhões delas na Grande São Paulo. De São Paulo ao Rio são cerca de quatrocentos e trinta quilômetros, e até Manaus quase quatro mil. A Amazônia corresponde a cerca de sessenta por cento do território do país. Todo ano, mais de um milhão de turistas vão ao Rio para o carnaval. O Brasil tem quase metade da área da Rússia, mas a população é maior em cerca de sessenta milhões.",
+        "checklist": ["Usei около / более / от … до com o genitivo.", "Declinei corretamente números compostos.", "Usei uma comparação (в … раза, на …).", "Pronunciei todos os números por extenso."]}
+    ]}
+  ]
+}

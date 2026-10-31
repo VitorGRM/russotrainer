@@ -1,0 +1,164 @@
+{
+  "id": "sociedade1", "theme": "sociedade", "order": 1,
+  "title": "Люди, помогающие другим", "title_pt": "Voluntariado e vida em sociedade",
+  "level": "B2", "minutes": 60,
+  "objectives": [
+    "Entender uma entrevista com uma voluntária e um anúncio de uma fundação beneficente.",
+    "Ler um artigo sobre o crescimento do voluntariado e interpretar dados sociais.",
+    "Reconhecer e formar particípios ativos presentes (-ущий, -ящий) e passados (-вший, -ший) e trocá-los por который.",
+    "Escrever um anúncio para recrutar voluntários e falar sobre um problema social da sua cidade."
+  ],
+  "grammar_focus": "действительные причастия: читающий (= который читает), прочитавший (= который прочитал) · согласование причастия с существительным",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de problemas sociais, ajuda e participação cívica.", "steps": [
+      {"t": "warmup", "questions": [
+        "Вы когда-нибудь были волонтёром? Где?",
+        "Какие социальные проблемы самые острые в вашем городе?",
+        "Em português, dizemos «pessoas que precisam de ajuda» ou «pessoas necessitadas». Qual forma é mais escrita, qual é mais falada?"
+      ]},
+      {"t": "vocab", "items": [
+        ["волонтёр", "voluntário", "= доброволец; волонтёрство"],
+        ["благотворительный фонд", "fundação beneficente", "благотворительность = caridade, filantropia"],
+        ["пожилые люди", "idosos", "= пенсионеры, люди старшего возраста"],
+        ["нуждающийся", "necessitado", "particípio: который нуждается"],
+        ["бездомный", "morador de rua", "приют для бездомных животных = abrigo"],
+        ["неравенство", "desigualdade", "социальное неравенство"],
+        ["поколение", "geração", "старшее / молодое поколение"],
+        ["помогать кому", "ajudar alguém", "помощь = ajuda (dativo: помогать детям)"],
+        ["собирать пожертвования", "arrecadar doações", "пожертвовать = doar"],
+        ["общественный", "público, social", "общественный транспорт, общественная организация"],
+        ["равнодушие", "indiferença", "не оставаться равнодушным"],
+        ["участвовать в", "participar de", "участник = participante"]
+      ]},
+      {"t": "match", "title": "Relacione o particípio à sua paráfrase com который.", "pairs": [
+        ["работающий", "который работает"], ["работавший", "который работал"], ["живущие", "которые живут"],
+        ["помогающая", "которая помогает"], ["пришедший", "который пришёл"], ["нуждающиеся", "которые нуждаются"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Фонд помогает семьям, оказавшимся в трудной ситуации.", "o": ["A fundação ajuda famílias que se encontram em situação difícil.", "A fundação ajuda famílias que ajudaram outras.", "A fundação procura famílias para trabalhar.", "A fundação ajuda famílias a mudar de casa."], "e": "Оказавшимся = которые оказались (particípio passado, dativo plural)."},
+        {"q": "Работающие пенсионеры составляют треть всех пенсионеров.", "o": ["Os aposentados que trabalham são um terço de todos os aposentados.", "Os aposentados trabalharam um terço da vida.", "Um terço dos trabalhadores são aposentados.", "Os aposentados trabalham três dias."], "e": "Работающие = которые работают."},
+        {"q": "Нельзя оставаться равнодушным к чужой беде.", "o": ["Não se pode ficar indiferente ao sofrimento alheio.", "Não se pode ficar sozinho num momento difícil.", "Não se pode ajudar estranhos.", "Não se pode falar da desgraça dos outros."], "e": "Равнодушный к + dativo = indiferente a."}
+      ]}
+    ]},
+    {"title": "Escuta: entrevista com uma voluntária", "goal": "Entender motivações, rotina e dificuldades do trabalho voluntário.", "steps": [
+      {"t": "dialogue", "title": "Почему я стала волонтёром", "setting": "Um jornalista de uma rádio local entrevista Vera, uma estudante que faz trabalho voluntário com idosos.",
+        "speakers": {"Журналист": "m", "Вера": "f2"},
+        "lines": [
+          ["Журналист", "Вера, вы уже три года помогаете пожилым людям. С чего всё началось?", "Vera, há três anos você ajuda idosos. Como tudo começou?"],
+          ["Вера", "Моя бабушка жила одна в другом городе, и я всё время за неё волновалась. Потом я узнала о фонде, который ищет волонтёров для одиноких пенсионеров.", "A minha avó morava sozinha em outra cidade, e eu vivia preocupada com ela. Depois soube de uma fundação que procura voluntários para aposentados que vivem sozinhos."],
+          ["Журналист", "А что именно вы делаете?", "E o que exatamente você faz?"],
+          ["Вера", "Раз в неделю я прихожу к Анне Петровне, бывшей учительнице, живущей в нашем районе. Покупаю продукты, помогаю с телефоном, но главное, мы разговариваем.", "Uma vez por semana vou à casa de Anna Petrovna, uma ex-professora que mora no nosso bairro. Compro mantimentos, ajudo com o celular, mas o principal é que a gente conversa."],
+          ["Журналист", "Это не тяжело? Вы же учитесь.", "Não é pesado? Afinal, você estuda."],
+          ["Вера", "Бывает трудно. Но человек, проживший девяносто лет, может рассказать столько интересного! Она пережила войну, видела, как строили метро.", "Às vezes é difícil. Mas uma pessoa que viveu noventa anos pode contar tanta coisa interessante! Ela sobreviveu à guerra, viu construírem o metrô."],
+          ["Журналист", "Как вы думаете, почему молодые люди всё чаще становятся волонтёрами?", "Na sua opinião, por que os jovens estão se tornando voluntários com cada vez mais frequência?"],
+          ["Вера", "Мне кажется, многим не хватает ощущения, что они делают что-то настоящее. А тут ты сразу видишь результат: человек, ждущий тебя у окна, улыбается.", "Acho que muitos sentem falta da sensação de fazer algo real. E aqui você vê o resultado na hora: a pessoa que te espera na janela sorri."],
+          ["Журналист", "Что бы вы сказали тем, кто сомневается?", "O que você diria a quem está em dúvida?"],
+          ["Вера", "Начните с малого. Даже один час в неделю меняет чью-то жизнь. И вашу тоже.", "Comece com pouco. Até uma hora por semana muda a vida de alguém. E a sua também."]
+        ],
+        "questions": [
+          {"q": "O que levou Vera ao voluntariado?", "o": ["A preocupação com a avó, que morava sozinha.", "Um trabalho da faculdade.", "Um convite da professora.", "A vontade de ganhar experiência profissional."], "e": "«Моя бабушка жила одна … я всё время за неё волновалась»."},
+          {"q": "Quem é Anna Petrovna?", "o": ["Uma ex-professora que mora no bairro de Vera.", "A avó de Vera.", "A diretora da fundação.", "Uma voluntária mais velha."], "e": "«Бывшей учительнице, живущей в нашем районе»."},
+          {"q": "Segundo Vera, o que é mais importante nas visitas?", "o": ["A conversa.", "As compras.", "A ajuda com o celular.", "A limpeza da casa."], "e": "«Но главное, мы разговариваем»."},
+          {"q": "Por que, segundo ela, os jovens viram voluntários?", "o": ["Sentem falta de fazer algo real e ver o resultado.", "Recebem pontos na universidade.", "Os pais obrigam.", "É moda nas redes sociais."], "e": "«Многим не хватает ощущения, что они делают что-то настоящее»."}
+        ]},
+      {"t": "dictation", "voice": "f2", "text": "Человек, проживший девяносто лет, может рассказать столько интересного.", "pt": "Uma pessoa que viveu noventa anos pode contar tanta coisa interessante.", "hint": "Frase de Vera com um particípio passado (8 palavras)."},
+      {"t": "shadow", "voice": "f2", "lines": [
+        ["Я узнала о фонде, который ищет волонтёров.", "Soube de uma fundação que procura voluntários."],
+        ["Человек, проживший девяносто лет…", "Uma pessoa que viveu noventa anos…"],
+        ["Человек, ждущий тебя у окна, улыбается.", "A pessoa que te espera na janela sorri."],
+        ["Начните с малого.", "Comece com pouco."]
+      ]}
+    ]},
+    {"title": "Leitura: o voluntariado em números", "goal": "Ler um artigo com dados sociais e reconhecer particípios em contexto.", "steps": [
+      {"t": "reading", "title": "Волонтёрство: мода или потребность?",
+        "text": "За последние десять лет число россиян, участвующих в волонтёрских проектах, выросло почти в три раза. По данным опросов, каждый пятый взрослый хотя бы раз в год помогает людям, нуждающимся в поддержке, или животным, живущим в приютах.\n\nСоциологи отмечают, что меняется и портрет волонтёра. Раньше в основном это были студенты, искавшие опыт для резюме. Сегодня всё больше работающих людей среднего возраста и даже пенсионеров, вышедших на пенсию и не желающих сидеть дома.\n\nОсобенно популярны так называемые «умные» формы помощи: юристы бесплатно консультируют семьи, попавшие в сложную ситуацию, программисты делают сайты для небольших фондов, а переводчики помогают мигрантам, плохо говорящим по-русски. Эксперты считают, что такое профессиональное волонтёрство приносит обществу особенно большую пользу.",
+        "pt": "Nos últimos dez anos, o número de russos que participam de projetos voluntários quase triplicou. Segundo pesquisas, um em cada cinco adultos pelo menos uma vez por ano ajuda pessoas que precisam de apoio ou animais que vivem em abrigos.\n\nOs sociólogos observam que o perfil do voluntário também está mudando. Antes eram principalmente estudantes que buscavam experiência para o currículo. Hoje há cada vez mais pessoas de meia-idade que trabalham e até aposentados que deixaram o emprego e não querem ficar em casa.\n\nSão especialmente populares as chamadas formas «inteligentes» de ajuda: advogados orientam gratuitamente famílias que se encontram em situação difícil, programadores fazem sites para pequenas fundações e tradutores ajudam migrantes que falam mal russo. Os especialistas acham que esse voluntariado profissional traz um benefício especialmente grande à sociedade.",
+        "tf": [
+          ["O número de voluntários quase triplicou em dez anos.", "V", "«Выросло почти в три раза»."],
+          ["Um em cada cinco adultos faz trabalho voluntário toda semana.", "F", "«Хотя бы раз в год», não toda semana."],
+          ["Antes, os voluntários eram sobretudo estudantes.", "V", "«Раньше в основном это были студенты»."],
+          ["Advogados voluntários atendem famílias em situação difícil.", "V", "«Юристы бесплатно консультируют семьи, попавшие в сложную ситуацию»."],
+          ["O governo paga os voluntários profissionais.", "N", "O texto não fala de pagamento."]
+        ],
+        "questions": [
+          {"q": "Кто такие «пенсионеры, вышедшие на пенсию и не желающие сидеть дома»?", "o": ["Люди, которые перестали работать, но хотят быть активными.", "Люди, которые ещё работают.", "Люди, которые не хотят помогать.", "Люди, которые живут в приютах."], "e": "Вышедшие = которые вышли; не желающие = которые не желают."},
+          {"q": "Что такое «умное» волонтёрство?", "o": ["Помощь с использованием профессиональных знаний.", "Помощь через интернет.", "Волонтёрство для студентов.", "Работа в научных лабораториях."], "e": "Юристы, программисты и переводчики usam a própria profissão."}
+        ]},
+      {"t": "cloze", "title": "Escolha o particípio correto.",
+        "text": "Фонд помогает детям, {живущим|живущие|жившим} в детских домах. Волонтёры, {работавшие|работающий|работавших} летом в лагере, получили благодарность. Мы ищем людей, {говорящих|говорящие|говорившим} по-английски. Пенсионерка, {пришедшая|пришедший|пришедшую} на встречу, рассказала свою историю.",
+        "pt": "A fundação ajuda crianças que vivem em orfanatos. Os voluntários que trabalharam no acampamento no verão receberam um agradecimento. Procuramos pessoas que falem inglês. A aposentada que veio ao encontro contou a sua história.",
+        "e": "O particípio concorda em gênero, número e caso com o substantivo: детям живущим (dativo pl.), людей говорящих (genitivo pl. animado)."}
+    ]},
+    {"title": "Foco na forma: particípios ativos", "goal": "Formar particípios ativos, concordá-los e trocá-los por который.", "steps": [
+      {"t": "grammar", "title": "Particípios ativos: o adjetivo que vem do verbo",
+        "paragraphs": [
+          "O particípio ativo descreve um substantivo pela ação que ele mesmo realiza. Equivale a uma oração com который no nominativo: студент, читающий книгу = студент, который читает книгу.",
+          "Presente: tira-se o -т da 3ª pessoa do plural e acrescenta-se -щий: читают → читающий, живут → живущий, говорят → говорящий, нуждаются → нуждающийся. Só existe para verbos imperfectivos.",
+          "Passado: tira-se o -л do passado e acrescenta-se -вший; se o radical termina em consoante, -ший: читал → читавший, прочитал → прочитавший, пришёл → пришедший, вырос → выросший. Existe para os dois aspectos.",
+          "Os particípios se declinam como adjetivos (как хороший) e concordam com o substantivo em gênero, número e caso. O -ся fica sempre -ся, mesmo depois de vogal: занимающаяся.",
+          "Uso: são típicos da escrita (jornal, ciência, documentos). Na fala, prefere-se который. Reconhecê-los é essencial para ler; usá-los dá um registro mais formal ao texto."
+        ],
+        "table": {"columns": ["Infinitivo", "Presente", "Passado", "= который…"], "rows": [
+          ["работать", "работающий", "работавший", "который работает / работал"],
+          ["жить", "живущий", "живший", "который живёт / жил"],
+          ["говорить", "говорящий", "говоривший", "который говорит / говорил"],
+          ["прийти", "(não há)", "пришедший", "который пришёл"],
+          ["заниматься", "занимающийся", "занимавшийся", "который занимается / занимался"]
+        ]},
+        "examples": [
+          ["Мы благодарим всех, участвовавших в акции.", "Agradecemos a todos que participaram da ação."],
+          ["Число детей, занимающихся спортом, растёт.", "O número de crianças que praticam esporte cresce."],
+          ["Я познакомился с девушкой, приехавшей из Казани.", "Conheci uma moça que veio de Kazan."]
+        ],
+        "pitfalls": [
+          "Particípio presente de verbo perfectivo não existe: não diga «прочитающий». Use прочитавший (passado) ou который прочитает.",
+          "O particípio concorda com o substantivo a que se refere, não com o sujeito da frase: «Я помогаю людям, живущим рядом» (dativo, como людям).",
+          "A oração participial vem entre vírgulas quando está depois do substantivo: «Студенты, сдавшие экзамен, могут идти»."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Девушка, ___ в соседней квартире, работает врачом.", "o": ["живущая", "живущий", "живущую", "живущей"], "e": "Concorda com девушка (f., nominativo)."},
+        {"q": "Мы поблагодарили волонтёров, ___ нам с переездом.", "o": ["помогавших", "помогавшие", "помогающим", "помогавший"], "e": "Волонтёров (acusativo animado plural = genitivo): помогавших."},
+        {"q": "Студент, ___ экзамен первым, вышел из аудитории.", "o": ["сдавший", "сдающий", "сдавшего", "сдадущий"], "e": "Ação concluída: particípio passado perfectivo."},
+        {"q": "Фонд поддерживает семьи, ___ в трудной ситуации.", "o": ["оказавшиеся", "оказавшихся", "оказывающий", "оказавшая"], "e": "Семьи (acusativo inanimado plural = nominativo): оказавшиеся."},
+        {"q": "Как сказать «люди, которые нуждаются в помощи»?", "o": ["люди, нуждающиеся в помощи", "люди, нуждающие в помощи", "люди, нуждавшие в помощи", "люди, нуждающихся в помощи"], "e": "O -ся permanece: нуждающиеся."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я знаю человека, работающий в этом фонде.", "o": ["Я знаю человека, работающего в этом фонде.", "Я знаю человека, работающим в этом фонде.", "Я знаю человека, работавший в этом фонде."], "e": "Concorda com человека (acusativo animado = genitivo)."},
+        {"q": "Студенты, прочитающие текст, могут отвечать.", "o": ["Студенты, прочитавшие текст, могут отвечать.", "Студенты, прочитанные текст, могут отвечать.", "Студенты, прочитающих текст, могут отвечать."], "e": "Perfectivo não tem particípio presente: прочитавшие."},
+        {"q": "Дети, занимающие спортом, реже болеют.", "o": ["Дети, занимающиеся спортом, реже болеют.", "Дети, занимающихся спортом, реже болеют.", "Дети, занимавшие спортом, реже болеют."], "e": "Заниматься mantém -ся: занимающиеся."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Мы ищем волонтёров говорящих по-английски", "pt": "Procuramos voluntários que falem inglês."},
+        {"a": "Число людей участвующих в акции растёт", "pt": "O número de pessoas que participam da ação cresce."},
+        {"a": "Спасибо всем пришедшим на встречу", "pt": "Obrigado a todos que vieram ao encontro."}
+      ]}
+    ]},
+    {"title": "Uso real: anúncio de fundação, situações e produção", "goal": "Entender um anúncio beneficente e mobilizar pessoas por escrito e oralmente.", "steps": [
+      {"t": "listening", "kind": "Социальная реклама на радио", "title": "Фонд «Тёплый дом» ищет помощников", "voice": "f",
+        "text": "Благотворительный фонд «Тёплый дом» приглашает всех желающих принять участие в зимней акции «Подари тепло». Мы собираем тёплую одежду, одеяла и средства гигиены для людей, оставшихся без жилья. Вещи принимаются до двадцатого декабря по адресу: улица Мира, дом пять, ежедневно с десяти до двадцати часов. Нам также нужны волонтёры, имеющие автомобиль, чтобы развозить вещи по пунктам помощи. Подробности на сайте фонда. Не оставайтесь равнодушными!",
+        "pt": "A fundação beneficente Lar Aquecido convida todos os interessados a participar da campanha de inverno «Doe calor». Arrecadamos roupas quentes, cobertores e produtos de higiene para pessoas que ficaram sem moradia. As doações são recebidas até 20 de dezembro na rua Mira, número cinco, todos os dias das 10h às 20h. Também precisamos de voluntários com carro para levar as doações aos pontos de ajuda. Mais detalhes no site da fundação. Não fique indiferente!",
+        "questions": [
+          {"q": "Para quem são as doações?", "o": ["Para pessoas que ficaram sem moradia.", "Para idosos que moram sozinhos.", "Para crianças de orfanatos.", "Para animais de abrigos."], "e": "«Для людей, оставшихся без жилья»."},
+          {"q": "Até quando se recebem as doações?", "o": ["Até 20 de dezembro.", "Até o fim do inverno.", "Até 5 de dezembro.", "Só aos fins de semana."], "e": "«До двадцатого декабря»."},
+          {"q": "Que tipo de voluntário a fundação procura?", "o": ["Pessoas que têm carro.", "Médicos.", "Pessoas que falam inglês.", "Costureiras."], "e": "«Волонтёры, имеющие автомобиль»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você quer saber como participar de uma ação beneficente.", "o": ["Как можно принять участие в акции?", "Как можно принимать участие на акцию?", "Как можно участвовать акцию?", "Как можно взять участие в акции?"], "e": "Принять участие в + preposicional."},
+        {"q": "Você agradece formalmente a quem participou.", "o": ["Спасибо всем, кто принял участие!", "Спасибо всем, кто взял участие!", "Спасибо всех, кто принял участие!", "Спасибо каждому, кто участвовал на!"], "e": "Спасибо + dativo; принять участие."},
+        {"q": "Você oferece ajuda a uma vizinha idosa.", "o": ["Вам помочь донести сумки?", "Вас помочь нести сумки?", "Вам помогать сумки донесли?", "Вы помочь донести сумки?"], "e": "Помочь кому (dativo)."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva um anúncio (60 a 90 palavras) para recrutar voluntários para um projeto social que você inventar. Use pelo menos três particípios ativos.",
+        "useful": ["Приглашаем всех, желающих …", "Мы ищем людей, умеющих / имеющих …", "Наша цель: помочь …, живущим …", "Ждём вас по адресу …", "Спасибо всем, поддержавшим …"],
+        "model": "Проект «Читаем вместе» приглашает всех, желающих помочь детям, плохо читающим по-русски. Многие дети мигрантов, недавно приехавших в Россию, испытывают трудности в школе. Мы ищем волонтёров, любящих книги и умеющих объяснять просто. Занятия проходят по субботам в районной библиотеке с одиннадцати до часу. Опыт работы с детьми не обязателен, но приветствуется. Спасибо всем, уже поддержавшим наш проект! Подробности по телефону или в нашей группе в соцсети.",
+        "model_pt": "O projeto «Lendo juntos» convida todos que queiram ajudar crianças que leem mal em russo. Muitos filhos de migrantes que chegaram há pouco à Rússia têm dificuldades na escola. Procuramos voluntários que gostem de livros e saibam explicar de forma simples. As atividades acontecem aos sábados na biblioteca do bairro, das onze à uma. Experiência com crianças não é obrigatória, mas é bem-vinda. Obrigado a todos que já apoiaram o nosso projeto! Mais detalhes por telefone ou no nosso grupo na rede social.",
+        "checklist": ["Usei pelo menos três particípios ativos.", "Concordei os particípios com os substantivos.", "Indiquei quando e onde acontece o projeto.", "Terminei com um agradecimento ou apelo.", "Escrevi pelo menos 60 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Fale durante um minuto sobre um problema social da sua cidade: quem é afetado, o que já se faz e o que mais poderia ser feito.",
+        "useful": ["Одна из главных проблем моего города …", "Больше всего страдают люди, …", "Уже существуют организации, …", "По-моему, нужно …", "Каждый из нас может …"],
+        "model": "Одна из главных проблем моего города — это бездомность. Больше всего страдают люди, потерявшие работу и не имеющие семьи, которая могла бы помочь. Уже существуют организации, раздающие горячую еду и одежду, но мест в приютах не хватает. По-моему, нужно не только кормить людей, но и помогать им найти работу и жильё. Каждый из нас может хотя бы не оставаться равнодушным и поддерживать фонды, работающие в этой сфере.",
+        "model_pt": "Um dos principais problemas da minha cidade é a população em situação de rua. Sofrem mais as pessoas que perderam o emprego e não têm uma família que possa ajudar. Já existem organizações que distribuem comida quente e roupas, mas faltam vagas nos abrigos. Na minha opinião, é preciso não só alimentar as pessoas, mas também ajudá-las a encontrar trabalho e moradia. Cada um de nós pode pelo menos não ficar indiferente e apoiar as fundações que atuam nessa área.",
+        "checklist": ["Identifiquei quem é afetado.", "Usei pelo menos dois particípios ativos ou orações com который.", "Dei uma opinião com по-моему / я считаю.", "Terminei com o que cada pessoa pode fazer."]}
+    ]}
+  ]
+}

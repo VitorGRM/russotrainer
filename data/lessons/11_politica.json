@@ -1,0 +1,164 @@
+{
+  "id": "politica1", "theme": "politica", "order": 1,
+  "title": "Выборы и власть", "title_pt": "Eleições, instituições e linguagem política",
+  "level": "B2", "minutes": 60,
+  "objectives": [
+    "Entender uma conversa sobre eleições municipais e um boletim político no rádio.",
+    "Ler um texto informativo sobre a estrutura do poder na Rússia.",
+    "Transformar verbos em substantivos verbais e montar cadeias de genitivo do estilo oficial.",
+    "Escrever uma nota de imprensa curta e expor oralmente uma proposta para a sua cidade."
+  ],
+  "grammar_focus": "отглагольные существительные (принять → принятие) · цепочки родительного падежа (проект закона о повышении налогов)",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de eleições, instituições e decisões políticas.", "steps": [
+      {"t": "warmup", "questions": [
+        "Вы следите за политическими новостями? Где?",
+        "Как часто в вашей стране проходят выборы?",
+        "Em português, notícias usam muitos substantivos: «aprovação», «aumento», «redução». Por que esse estilo é comum na imprensa?"
+      ]},
+      {"t": "vocab", "items": [
+        ["выборы", "eleições", "sempre plural: выборы мэра, на выборах"],
+        ["голосовать за / против", "votar a favor de / contra", "проголосовать (perfectivo)"],
+        ["избиратель", "eleitor", "избирательный участок = seção eleitoral"],
+        ["кандидат", "candidato", "выдвинуть кандидата = lançar candidato"],
+        ["депутат", "deputado", "Государственная дума"],
+        ["принять закон", "aprovar uma lei", "принятие закона = aprovação da lei"],
+        ["законопроект", "projeto de lei", "внести законопроект = apresentar"],
+        ["правительство", "governo", "премьер-министр; министерство"],
+        ["оппозиция", "oposição", "оппозиционная партия"],
+        ["явка", "comparecimento (às urnas)", "явка составила 45 %"],
+        ["предвыборная программа", "programa eleitoral", "предвыборная кампания"],
+        ["местная власть", "poder local", "мэрия, городская дума"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo ao substantivo derivado.", "pairs": [
+        ["принять", "принятие"], ["повысить", "повышение"], ["снизить", "снижение"],
+        ["обсудить", "обсуждение"], ["выбрать", "выборы"], ["решить", "решение"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Явка на выборах составила около сорока процентов.", "o": ["O comparecimento às eleições foi de cerca de quarenta por cento.", "O candidato teve quarenta por cento dos votos.", "Quarenta por cento dos deputados votaram.", "As eleições custaram quarenta por cento a mais."], "e": "Явка = comparecimento; составить = ser de, totalizar."},
+        {"q": "Законопроект прошёл первое чтение.", "o": ["O projeto de lei foi aprovado em primeira votação.", "O projeto de lei foi lido em voz alta.", "O projeto de lei foi rejeitado.", "O projeto de lei foi publicado no jornal."], "e": "Чтение (leitura) é cada etapa de votação na Duma."},
+        {"q": "Оппозиция выступила против повышения налогов.", "o": ["A oposição se manifestou contra o aumento dos impostos.", "A oposição propôs aumentar os impostos.", "A oposição venceu as eleições sobre impostos.", "A oposição não se manifestou."], "e": "Выступить против + genitivo."}
+      ]}
+    ]},
+    {"title": "Escuta: eleições no bairro", "goal": "Entender opiniões e argumentos numa conversa sobre política local.", "steps": [
+      {"t": "dialogue", "title": "За кого ты будешь голосовать?", "setting": "Dois vizinhos, Nikolai e Olga, conversam no pátio do prédio antes das eleições para a câmara municipal.",
+        "speakers": {"Николай": "m2", "Ольга": "f"},
+        "lines": [
+          ["Николай", "Ольга, вы пойдёте в воскресенье на выборы?", "Olga, você vai votar no domingo?"],
+          ["Ольга", "Конечно. Я всегда голосую. Если не голосовать, потом нельзя жаловаться.", "Claro. Eu sempre voto. Se a gente não vota, depois não pode reclamar."],
+          ["Николай", "А я ещё не решил. Все кандидаты обещают одно и то же: ремонт дорог, строительство детских садов…", "Eu ainda não decidi. Todos os candidatos prometem a mesma coisa: conserto das ruas, construção de creches…"],
+          ["Ольга", "Не все. Я читала предвыборную программу Кузнецовой. Она предлагает сохранение парка и запрет на строительство торгового центра на его месте.", "Nem todos. Li o programa da Kuznetsova. Ela propõe a preservação do parque e a proibição da construção de um shopping no lugar dele."],
+          ["Николай", "Это важно. Но где она возьмёт деньги?", "Isso é importante. Mas de onde ela vai tirar o dinheiro?"],
+          ["Ольга", "Она говорит о сокращении расходов на рекламу мэрии. Это, по-моему, разумно.", "Ela fala em redução dos gastos com publicidade da prefeitura. Isso me parece razoável."],
+          ["Николай", "Возможно. А явка у нас обычно низкая, процентов тридцать. Один голос ничего не решает.", "Pode ser. Mas aqui o comparecimento costuma ser baixo, uns trinta por cento. Um voto não decide nada."],
+          ["Ольга", "Как раз наоборот! Когда явка низкая, каждый голос весит больше.", "Justamente o contrário! Quando o comparecimento é baixo, cada voto pesa mais."],
+          ["Николай", "Убедили. Где наш избирательный участок?", "Você me convenceu. Onde fica a nossa seção eleitoral?"],
+          ["Ольга", "В школе номер двенадцать, с восьми утра до восьми вечера. Не забудьте паспорт.", "Na escola número doze, das oito da manhã às oito da noite. Não esqueça o passaporte."]
+        ],
+        "questions": [
+          {"q": "Por que Olga sempre vota?", "o": ["Porque quem não vota não pode reclamar depois.", "Porque é obrigatório.", "Porque é candidata.", "Porque trabalha na seção eleitoral."], "e": "«Если не голосовать, потом нельзя жаловаться»."},
+          {"q": "O que propõe a candidata Kuznetsova?", "o": ["Preservar o parque e proibir o shopping no lugar dele.", "Construir um shopping no parque.", "Consertar as ruas.", "Aumentar a publicidade da prefeitura."], "e": "«Сохранение парка и запрет на строительство торгового центра»."},
+          {"q": "Com que dinheiro ela pretende fazer isso?", "o": ["Com a redução dos gastos de publicidade da prefeitura.", "Com aumento de impostos.", "Com um empréstimo federal.", "Com doações dos moradores."], "e": "«О сокращении расходов на рекламу мэрии»."},
+          {"q": "Qual é o argumento final de Olga?", "o": ["Com comparecimento baixo, cada voto pesa mais.", "Todos os candidatos são iguais.", "A seção fica perto.", "O voto é secreto."], "e": "«Когда явка низкая, каждый голос весит больше»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Она предлагает сохранение парка и запрет на строительство торгового центра.", "pt": "Ela propõe a preservação do parque e a proibição da construção de um shopping.", "hint": "Proposta da candidata (10 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Если не голосовать, потом нельзя жаловаться.", "Se a gente não vota, depois não pode reclamar."],
+        ["Она говорит о сокращении расходов.", "Ela fala em redução dos gastos."],
+        ["Когда явка низкая, каждый голос весит больше.", "Quando o comparecimento é baixo, cada voto pesa mais."],
+        ["Не забудьте паспорт.", "Não esqueça o passaporte."]
+      ]}
+    ]},
+    {"title": "Leitura: como se organiza o poder", "goal": "Ler um texto institucional e identificar funções e relações entre órgãos.", "steps": [
+      {"t": "reading", "title": "Как устроена власть в России",
+        "text": "Согласно Конституции, Россия является федеративной республикой с президентской формой правления. Главой государства является президент, которого избирают на шесть лет путём прямого голосования.\n\nЗаконодательную власть осуществляет Федеральное собрание, состоящее из двух палат. Нижняя палата, Государственная дума, включает 450 депутатов и отвечает за рассмотрение и принятие законов. Верхняя палата, Совет Федерации, состоит из представителей регионов; её задача заключается в одобрении законов, принятых Думой.\n\nИсполнительную власть возглавляет правительство во главе с председателем, назначение которого происходит с согласия Думы. На уровне регионов действуют губернаторы и местные парламенты, а в городах органы местного самоуправления, отвечающие за решение вопросов транспорта, благоустройства и школьного образования.",
+        "pt": "Segundo a Constituição, a Rússia é uma república federativa com forma de governo presidencialista. O chefe de Estado é o presidente, eleito por seis anos por voto direto.\n\nO poder legislativo é exercido pela Assembleia Federal, composta por duas câmaras. A câmara baixa, a Duma de Estado, tem 450 deputados e é responsável pelo exame e pela aprovação das leis. A câmara alta, o Conselho da Federação, é composta por representantes das regiões; a sua tarefa consiste na aprovação das leis votadas pela Duma.\n\nO poder executivo é chefiado pelo governo, liderado por um presidente do governo cuja nomeação ocorre com a anuência da Duma. No nível regional, atuam os governadores e os parlamentos locais, e nas cidades os órgãos de autogoverno local, responsáveis pela solução de questões de transporte, urbanização e ensino escolar.",
+        "tf": [
+          ["O presidente é eleito por seis anos.", "V", "«Избирают на шесть лет»."],
+          ["A Duma de Estado é a câmara alta.", "F", "«Нижняя палата, Государственная дума»."],
+          ["O Conselho da Federação é composto por representantes das regiões.", "V", "«Состоит из представителей регионов»."],
+          ["A nomeação do chefe do governo depende da anuência da Duma.", "V", "«Назначение которого происходит с согласия Думы»."],
+          ["O texto informa quantos membros tem o Conselho da Federação.", "N", "Só o número de deputados da Duma é dado."]
+        ],
+        "questions": [
+          {"q": "За что отвечает Государственная дума?", "o": ["За рассмотрение и принятие законов.", "За назначение губернаторов.", "За решение вопросов транспорта в городах.", "За одобрение бюджета регионов."], "e": "«Отвечает за рассмотрение и принятие законов»."},
+          {"q": "Какие вопросы решают органы местного самоуправления?", "o": ["Транспорт, благоустройство и школьное образование.", "Оборона и внешняя политика.", "Принятие федеральных законов.", "Выборы президента."], "e": "«Отвечающие за решение вопросов транспорта, благоустройства и школьного образования»."}
+        ]},
+      {"t": "cloze", "title": "Complete com o substantivo verbal adequado.", "bank": true,
+        "text": "Дума начала {обсуждение} нового законопроекта. Оппозиция выступила против {повышения} пенсионного возраста. Правительство объявило о {снижении} налогов для малого бизнеса. После {принятия} закона его отправят в Совет Федерации.",
+        "pt": "A Duma começou a discussão do novo projeto de lei. A oposição se manifestou contra o aumento da idade de aposentadoria. O governo anunciou a redução de impostos para pequenas empresas. Depois da aprovação da lei, ela será enviada ao Conselho da Federação.",
+        "e": "Cada substantivo vem no caso pedido pela preposição ou pelo verbo: начать что (acusativo), против чего (genitivo), объявить о чём (preposicional), после чего (genitivo)."}
+    ]},
+    {"title": "Foco na forma: o estilo nominal", "goal": "Converter verbos em substantivos e montar cadeias de genitivo sem perder a clareza.", "steps": [
+      {"t": "grammar", "title": "Do verbo ao substantivo",
+        "paragraphs": [
+          "A linguagem jornalística e oficial prefere substantivos verbais a verbos. Em vez de «Правительство решило повысить налоги» lê-se «Правительство приняло решение о повышении налогов».",
+          "Sufixos mais produtivos: -ние / -ение (принять → принятие, решить → решение, снизить → снижение, обсудить → обсуждение); -ка (подготовить → подготовка, проверить → проверка); -ство (руководить → руководство); radical puro (выбрать → выбор, запретить → запрет, рост de расти).",
+          "O objeto do verbo passa ao genitivo: принять закон → принятие закона; повысить цены → повышение цен. O agente, quando aparece, vai ao instrumental: принятие закона Думой (a aprovação da lei pela Duma).",
+          "Cadeias de genitivo: cada novo substantivo depende do anterior: проект закона о повышении зарплат учителей (projeto de lei sobre o aumento dos salários dos professores). Para não perder a clareza, leia de trás para a frente e identifique o núcleo."
+        ],
+        "table": {"columns": ["Verbo + objeto", "Substantivo + genitivo", "Tradução"], "rows": [
+          ["принять закон", "принятие закона", "aprovação da lei"],
+          ["снизить налоги", "снижение налогов", "redução de impostos"],
+          ["построить мост", "строительство моста", "construção da ponte"],
+          ["проверить документы", "проверка документов", "verificação dos documentos"],
+          ["запретить рекламу", "запрет на рекламу / рекламы", "proibição da publicidade"],
+          ["выбрать мэра", "выборы мэра", "eleição do prefeito"]
+        ]},
+        "examples": [
+          ["Начало строительства новой линии метро перенесли на весну.", "O início da construção da nova linha do metrô foi adiado para a primavera."],
+          ["Обсуждение законопроекта депутатами продолжалось шесть часов.", "A discussão do projeto pelos deputados durou seis horas."],
+          ["Мэрия сообщила о закрытии моста на ремонт.", "A prefeitura informou o fechamento da ponte para reforma."]
+        ],
+        "pitfalls": [
+          "Na fala cotidiana, o estilo nominal soa pesado. Diga «Мост закроют на ремонт», e reserve «закрытие моста» para textos formais.",
+          "O objeto vai ao genitivo, não ao acusativo: «снижение налогов», nunca «снижение налоги».",
+          "Verbos que regem preposição a mantêm: влиять на → влияние на; участвовать в → участие в выборах."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Депутаты проголосовали за ___ закона.", "o": ["принятие", "принять", "принятия", "приём"], "e": "Голосовать за + acusativo: принятие."},
+        {"q": "Мэрия объявила о ___ новой школы.", "o": ["строительстве", "строительство", "строить", "строительства"], "e": "Объявить о + preposicional."},
+        {"q": "Граждане выступают против ___ цен на транспорт.", "o": ["повышения", "повышение", "повышению", "повысить"], "e": "Против + genitivo."},
+        {"q": "Участие ___ выборах — право каждого гражданина.", "o": ["в", "на", "о", "за"], "e": "Участвовать в → участие в."},
+        {"q": "Правительство приняло решение ___ налогов.", "o": ["о снижении", "снизить", "снижение", "за снижение"], "e": "Решение о + preposicional."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Обсуждение закон продолжалось три часа.", "o": ["Обсуждение закона продолжалось три часа.", "Обсуждение законом продолжалось три часа.", "Обсуждение о законе продолжалось три часа."], "e": "O objeto vai ao genitivo: закона."},
+        {"q": "Мы говорили о снижение налогов.", "o": ["Мы говорили о снижении налогов.", "Мы говорили о снижения налогов.", "Мы говорили о снижению налогов."], "e": "О + preposicional: снижении."},
+        {"q": "Влияние СМИ к выборам растёт.", "o": ["Влияние СМИ на выборы растёт.", "Влияние СМИ о выборах растёт.", "Влияние СМИ выборов растёт."], "e": "Влиять на → влияние на + acusativo."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Дума одобрила проект закона о защите животных", "pt": "A Duma aprovou o projeto de lei sobre proteção dos animais."},
+        {"a": "Явка на выборах составила сорок процентов", "pt": "O comparecimento às eleições foi de quarenta por cento."},
+        {"a": "Оппозиция выступила против повышения налогов", "pt": "A oposição se manifestou contra o aumento de impostos."}
+      ]}
+    ]},
+    {"title": "Uso real: boletim político, situações e produção", "goal": "Entender notícias políticas e expor uma proposta com linguagem adequada.", "steps": [
+      {"t": "listening", "kind": "Новости на радио", "title": "Политика: главное за день", "voice": "m",
+        "text": "Главные новости дня. Государственная дума приняла в первом чтении законопроект о повышении штрафов за нарушение правил парковки. За проголосовали триста двенадцать депутатов, против сорок. Второе чтение запланировано на конец месяца. Тем временем в Новосибирске завершился подсчёт голосов на выборах мэра. Явка составила тридцать восемь процентов, это на пять процентов больше, чем пять лет назад. Новый мэр пообещал начать строительство двух мостов уже следующей весной.",
+        "pt": "As principais notícias do dia. A Duma de Estado aprovou em primeira votação o projeto de lei sobre o aumento das multas por infração das regras de estacionamento. Votaram a favor trezentos e doze deputados, contra, quarenta. A segunda votação está prevista para o fim do mês. Enquanto isso, em Novosibirsk, terminou a apuração dos votos da eleição para prefeito. O comparecimento foi de trinta e oito por cento, cinco por cento a mais do que há cinco anos. O novo prefeito prometeu começar a construção de duas pontes já na próxima primavera.",
+        "questions": [
+          {"q": "Sobre o que é o projeto aprovado?", "o": ["Aumento das multas por estacionamento irregular.", "Redução de impostos.", "Construção de pontes.", "Eleições municipais."], "e": "«О повышении штрафов за нарушение правил парковки»."},
+          {"q": "Quantos deputados votaram a favor?", "o": ["312.", "40.", "450.", "38."], "e": "«За проголосовали триста двенадцать депутатов»."},
+          {"q": "O que prometeu o novo prefeito de Novosibirsk?", "o": ["Começar a construir duas pontes na próxima primavera.", "Aumentar o comparecimento.", "Reduzir as multas.", "Fazer novas eleições."], "e": "«Начать строительство двух мостов уже следующей весной»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você pergunta a um amigo em quem ele vai votar.", "o": ["За кого ты будешь голосовать?", "Кого ты будешь голосовать?", "О ком ты будешь голосовать?", "Кому ты будешь голосовать?"], "e": "Голосовать за + acusativo."},
+        {"q": "Num debate, você quer dizer que é contra a proposta.", "o": ["Я выступаю против этого предложения.", "Я выступаю против это предложение.", "Я выступаю за против этого предложения.", "Я против к этому предложению."], "e": "Выступать против + genitivo."},
+        {"q": "Você pergunta onde fica a sua seção eleitoral.", "o": ["Где находится мой избирательный участок?", "Где мой голосовальный пункт?", "Где выборы для меня?", "Где избиратель участок?"], "e": "Избирательный участок = seção eleitoral."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva uma nota de imprensa (60 a 90 palavras) da prefeitura da sua cidade sobre uma decisão real ou inventada. Use pelo menos quatro substantivos verbais (принятие, строительство, снижение, обсуждение…).",
+        "useful": ["Мэрия города … сообщает о …", "Решение о … было принято …", "Начало … запланировано на …", "Обсуждение проекта …", "Это позволит …"],
+        "model": "Мэрия города Куритиба сообщает о начале строительства новой велосипедной дорожки вдоль реки. Решение о строительстве было принято городским советом после общественного обсуждения, в котором приняли участие более двух тысяч жителей. Завершение работ запланировано на декабрь. Одновременно мэрия объявляет о снижении стоимости проезда в автобусах для студентов на тридцать процентов. Реализация этих мер позволит сократить количество автомобилей в центре города и улучшить качество воздуха.",
+        "model_pt": "A prefeitura de Curitiba informa o início da construção de uma nova ciclovia ao longo do rio. A decisão sobre a construção foi tomada pela câmara municipal depois de uma consulta pública da qual participaram mais de dois mil moradores. A conclusão das obras está prevista para dezembro. Ao mesmo tempo, a prefeitura anuncia a redução de trinta por cento na tarifa de ônibus para estudantes. A implementação dessas medidas permitirá reduzir a quantidade de carros no centro e melhorar a qualidade do ar.",
+        "checklist": ["Usei pelo menos quatro substantivos verbais.", "Coloquei o objeto no genitivo (строительство дорожки).", "Usei pelo menos uma preposição regida (решение о, участие в).", "Mantive um tom formal e impessoal.", "Escrevi pelo menos 60 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Imagine que você é candidato(a) à câmara do seu bairro. Apresente em um minuto duas propostas e explique como pretende financiá-las.",
+        "useful": ["Дорогие соседи!", "Я предлагаю …", "Во-первых, … Во-вторых, …", "Деньги на это можно найти за счёт …", "Прошу вас поддержать …"],
+        "model": "Дорогие соседи! Меня зовут Камила, и я баллотируюсь в районный совет. Я предлагаю две вещи. Во-первых, ремонт детской площадки во дворе школы номер пять: сейчас там опасно играть. Во-вторых, установку освещения в парке, потому что вечером там темно и люди боятся гулять. Деньги на это можно найти за счёт сокращения расходов на праздничные украшения района. Прошу вас прийти на выборы и поддержать мою программу. Спасибо!",
+        "model_pt": "Queridos vizinhos! Meu nome é Camila, e sou candidata ao conselho do bairro. Proponho duas coisas. Em primeiro lugar, a reforma do parquinho no pátio da escola número cinco: hoje é perigoso brincar lá. Em segundo lugar, a instalação de iluminação no parque, porque à noite está escuro e as pessoas têm medo de passear. O dinheiro para isso pode vir da redução dos gastos com enfeites festivos do bairro. Peço que vocês compareçam às eleições e apoiem o meu programa. Obrigada!",
+        "checklist": ["Usei substantivos verbais nas propostas (ремонт, установка).", "Organizei com во-первых / во-вторых.", "Expliquei o financiamento (за счёт + genitivo).", "Terminei com um apelo ao voto."]}
+    ]}
+  ]
+}

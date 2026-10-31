@@ -1,0 +1,163 @@
+{
+  "id": "historia1", "theme": "historia", "order": 1,
+  "title": "В каком веке?", "title_pt": "História: datas, séculos e épocas",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender uma visita guiada e um quiz de história no rádio.",
+    "Ler uma cronologia de São Petersburgo e localizar datas e períodos.",
+    "Dizer anos, datas completas, séculos e décadas com os ordinais no caso correto.",
+    "Escrever uma pequena cronologia da sua cidade e apresentar oralmente um personagem histórico."
+  ],
+  "grammar_focus": "в 1703 году (П. п.) · 27 мая 1703 года (Р. п.) · в XVIII веке · с 1712 по 1918 год · в 1990-е годы · в начале / в середине / в конце века",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de períodos históricos e de cronologia.", "steps": [
+      {"t": "warmup", "questions": [
+        "Какой исторический период вам интереснее всего?",
+        "В каком году был основан ваш город?",
+        "Em português, dizemos «em 1703» e «no século XVIII». Como você acha que se dizem esses números em russo?"
+      ]},
+      {"t": "vocab", "items": [
+        ["век", "século", "в восемнадцатом веке; = столетие"],
+        ["эпоха", "época", "эпоха Петра Первого"],
+        ["основать", "fundar", "основан в 1703 году = fundado em 1703"],
+        ["царь / императрица", "czar / imperatriz", "царствовать = reinar"],
+        ["правление", "reinado, governo", "во время правления Екатерины II"],
+        ["столица", "capital", "перенести столицу = transferir a capital"],
+        ["революция", "revolução", "Февральская и Октябрьская революции 1917 года"],
+        ["переименовать", "renomear", "город переименовали в Ленинград"],
+        ["до нашей эры / нашей эры", "antes de Cristo / depois de Cristo", "абр.: до н. э. / н. э."],
+        ["десятилетие", "década", "в девяностые годы = nos anos noventa"],
+        ["в начале / в конце", "no início / no fim", "в середине века = em meados do século"],
+        ["летопись", "crônica (medieval)", "летописец = cronista"]
+      ]},
+      {"t": "match", "title": "Relacione o algarismo romano ao século.", "pairs": [
+        ["X век", "десятый век"], ["XII век", "двенадцатый век"], ["XV век", "пятнадцатый век"],
+        ["XVIII век", "восемнадцатый век"], ["XIX век", "девятнадцатый век"], ["XXI век", "двадцать первый век"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Город был основан в начале восемнадцатого века.", "o": ["A cidade foi fundada no início do século XVIII.", "A cidade foi fundada no fim do século XVIII.", "A cidade foi fundada em 1800.", "A cidade foi fundada há dezoito séculos."], "e": "В начале + genitivo = no início de."},
+        {"q": "С 1712 по 1918 год столицей был Петербург.", "o": ["De 1712 a 1918, a capital foi Petersburgo.", "Em 1712 e em 1918, a capital foi Petersburgo.", "Depois de 1918, a capital foi Petersburgo.", "Antes de 1712, a capital foi Petersburgo."], "e": "С … по … = de … a … (incluindo o último ano)."},
+        {"q": "В девяностые годы страна сильно изменилась.", "o": ["Nos anos noventa, o país mudou muito.", "Há noventa anos, o país mudou muito.", "Em noventa anos, o país mudou muito.", "No ano noventa, o país mudou muito."], "e": "Девяностые годы = a década de 1990."}
+      ]}
+    ]},
+    {"title": "Escuta: uma visita guiada", "goal": "Entender datas, séculos e períodos num discurso de guia.", "steps": [
+      {"t": "dialogue", "title": "Экскурсия по Петропавловской крепости", "setting": "Uma guia apresenta a Fortaleza de Pedro e Paulo a um grupo; Mateus, turista brasileiro, faz perguntas.",
+        "speakers": {"Экскурсовод": "f", "Матеус": "m"},
+        "lines": [
+          ["Экскурсовод", "Дорогие гости, мы находимся там, где родился Петербург. Крепость была заложена двадцать седьмого мая тысяча семьсот третьего года. Эта дата считается днём рождения города.", "Queridos visitantes, estamos onde nasceu Petersburgo. A fortaleza teve a pedra fundamental lançada em vinte e sete de maio de mil setecentos e três. Essa data é considerada o aniversário da cidade."],
+          ["Матеус", "Её построили, чтобы защищать город от шведов?", "Ela foi construída para defender a cidade dos suecos?"],
+          ["Экскурсовод", "Да, в то время шла Северная война со Швецией. Но крепость ни разу не участвовала в боях. Уже в восемнадцатом веке её стали использовать как тюрьму.", "Sim, naquela época estava em curso a Grande Guerra do Norte contra a Suécia. Mas a fortaleza nunca participou de combates. Já no século XVIII começaram a usá-la como prisão."],
+          ["Матеус", "А что это за собор с высоким шпилем?", "E que catedral é essa com essa torre alta?"],
+          ["Экскурсовод", "Это Петропавловский собор. Его строили с тысяча семьсот двенадцатого по тысяча семьсот тридцать третий год. Здесь похоронены почти все российские императоры, начиная с Петра Первого.", "É a Catedral de Pedro e Paulo. Ela foi construída de mil setecentos e doze a mil setecentos e trinta e três. Aqui estão sepultados quase todos os imperadores russos, a partir de Pedro, o Grande."],
+          ["Матеус", "Почти все? А кто нет?", "Quase todos? E quem não está?"],
+          ["Экскурсовод", "Пётр Второй похоронен в Москве, а Иван Шестой неизвестно где. А останки последнего императора, Николая Второго, перенесли сюда только в тысяча девятьсот девяносто восьмом году.", "Pedro II está sepultado em Moscou, e o local de Ivã VI é desconhecido. E os restos mortais do último imperador, Nicolau II, só foram trasladados para cá em mil novecentos e noventa e oito."],
+          ["Матеус", "Как интересно! А пушка, которую мы слышали, стреляет каждый день?", "Que interessante! E o canhão que ouvimos dispara todos os dias?"],
+          ["Экскурсовод", "Да, ровно в полдень, с середины девятнадцатого века, с небольшими перерывами. Это одна из самых старых традиций города.", "Sim, exatamente ao meio-dia, desde meados do século XIX, com pequenas interrupções. É uma das tradições mais antigas da cidade."]
+        ],
+        "questions": [
+          {"q": "Que data é considerada o aniversário de Petersburgo?", "o": ["27 de maio de 1703.", "12 de junho de 1712.", "27 de maio de 1733.", "1º de janeiro de 1703."], "e": "«Двадцать седьмого мая тысяча семьсот третьего года»."},
+          {"q": "Para que a fortaleza foi usada já no século XVIII?", "o": ["Como prisão.", "Como palácio.", "Como museu.", "Como porto."], "e": "«Её стали использовать как тюрьму»."},
+          {"q": "Quando foi construída a catedral?", "o": ["De 1712 a 1733.", "Em 1703.", "No século XIX.", "Em 1998."], "e": "«С тысяча семьсот двенадцатого по тысяча семьсот тридцать третий год»."},
+          {"q": "Desde quando dispara o canhão do meio-dia?", "o": ["Desde meados do século XIX.", "Desde 1703.", "Desde 1998.", "Desde o início do século XX."], "e": "«С середины девятнадцатого века»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Крепость была заложена двадцать седьмого мая тысяча семьсот третьего года.", "pt": "A fortaleza teve a pedra fundamental lançada em 27 de maio de 1703.", "hint": "Data por extenso (9 palavras). Escreva os números com letras."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Эта дата считается днём рождения города.", "Essa data é considerada o aniversário da cidade."],
+        ["В то время шла Северная война.", "Naquela época estava em curso a Guerra do Norte."],
+        ["Его строили с тысяча семьсот двенадцатого по тысяча семьсот тридцать третий год.", "Foi construída de 1712 a 1733."],
+        ["Пушка стреляет ровно в полдень.", "O canhão dispara exatamente ao meio-dia."]
+      ]}
+    ]},
+    {"title": "Leitura: três nomes, três séculos", "goal": "Ler uma cronologia e relacionar datas a fatos.", "steps": [
+      {"t": "reading", "title": "Санкт-Петербург, Петроград, Ленинград",
+        "text": "Санкт-Петербург был основан Петром Первым в 1703 году на берегах Невы. Уже в 1712 году царь перенёс сюда столицу из Москвы, и в течение двух столетий город оставался главным центром Российской империи. Во второй половине XVIII века, в эпоху Екатерины Второй, были построены многие дворцы, а в 1764 году был основан Эрмитаж.\n\nВ начале XX века город пережил бурные события. В 1914 году, после начала Первой мировой войны, ему дали русское название Петроград, потому что немецкое звучание показалось непатриотичным. В 1917 году именно здесь произошли обе революции, а в марте 1918 года большевики вернули столицу в Москву.\n\nВ 1924 году, после смерти Ленина, город переименовали в Ленинград. Это имя он носил почти семьдесят лет. В 1991 году жители на референдуме проголосовали за возвращение исторического названия, и с тех пор город снова называется Санкт-Петербургом.",
+        "pt": "São Petersburgo foi fundada por Pedro, o Grande, em 1703, às margens do rio Nevá. Já em 1712, o czar transferiu para cá a capital, que estava em Moscou, e durante dois séculos a cidade continuou sendo o principal centro do Império Russo. Na segunda metade do século XVIII, na época de Catarina II, foram construídos muitos palácios, e em 1764 foi fundado o Hermitage.\n\nNo início do século XX, a cidade viveu acontecimentos turbulentos. Em 1914, depois do início da Primeira Guerra Mundial, ela recebeu o nome russo de Petrogrado, porque a sonoridade alemã pareceu antipatriótica. Em 1917, foi justamente aqui que ocorreram as duas revoluções, e em março de 1918 os bolcheviques levaram a capital de volta para Moscou.\n\nEm 1924, depois da morte de Lênin, a cidade foi renomeada para Leningrado. Ela teve esse nome por quase setenta anos. Em 1991, os moradores votaram num referendo pela volta do nome histórico, e desde então a cidade se chama novamente São Petersburgo.",
+        "tf": [
+          ["Petersburgo foi capital da Rússia por cerca de dois séculos.", "V", "De 1712 a 1918: «в течение двух столетий»."],
+          ["O Hermitage foi fundado no século XIX.", "F", "«В 1764 году», século XVIII."],
+          ["O nome Petrogrado foi adotado por causa da Primeira Guerra Mundial.", "V", "«Немецкое звучание показалось непатриотичным»."],
+          ["A cidade se chamou Leningrado de 1924 a 1991.", "V", "«Почти семьдесят лет»."],
+          ["No referendo de 1991, a maioria votou por mais de 70%.", "N", "O texto não dá o resultado percentual."]
+        ],
+        "questions": [
+          {"q": "Когда столицу вернули в Москву?", "o": ["В марте 1918 года.", "В 1712 году.", "В 1924 году.", "В 1991 году."], "e": "«В марте 1918 года большевики вернули столицу в Москву»."},
+          {"q": "Сколько названий было у города?", "o": ["Три: Санкт-Петербург, Петроград, Ленинград.", "Два: Петербург и Ленинград.", "Четыре.", "Одно."], "e": "Санкт-Петербург → Петроград (1914) → Ленинград (1924) → Санкт-Петербург (1991)."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta da data.",
+        "text": "Эрмитаж был основан в {1764 году|1764 год|1764 года}. Город назывался Ленинградом с 1924 {по|до|на} 1991 год. Петербург стал столицей в начале {XVIII века|XVIII век|XVIII веке}. Я родился {пятого марта|пятое марта|в пятом марте} 1995 года.",
+        "pt": "O Hermitage foi fundado em 1764. A cidade se chamou Leningrado de 1924 a 1991. Petersburgo se tornou capital no início do século XVIII. Eu nasci em cinco de março de 1995.",
+        "e": "В + preposicional para o ano; с … по + acusativo; в начале + genitivo; data completa em genitivo, sem preposição."}
+    ]},
+    {"title": "Foco na forma: como dizer datas", "goal": "Usar o ordinal no caso exigido por cada tipo de expressão temporal.", "steps": [
+      {"t": "grammar", "title": "Anos, datas e séculos",
+        "paragraphs": [
+          "Em russo, só o último número do ano é ordinal e se declina; os anteriores ficam como cardinais: 1703 = тысяча семьсот третий год. Em que ano? в + preposicional: в тысяча семьсот третьем году. No dia a dia, também se diz «в семьсот третьем» quando o século está claro.",
+          "Data completa (em que dia?): ordinal no genitivo, sem preposição, e o ano também no genitivo: двадцать седьмого мая тысяча семьсот третьего года. Que dia é hoje? nominativo: Сегодня двадцать седьмое мая.",
+          "Século: в + preposicional: в восемнадцатом веке. Com начало, середина, конец: в начале / в середине / в конце восемнадцатого века (genitivo). Década: в девяностые годы / в 90-е годы (preposicional plural: в девяностых годах).",
+          "Intervalos: с 1712 по 1918 год (по + acusativo, ano final incluído); с 1712 до 1918 года (до + genitivo). Antes e depois: до 1917 года, после 1991 года (genitivo)."
+        ],
+        "table": {"columns": ["Pergunta", "Forma", "Exemplo"], "rows": [
+          ["Em que ano?", "в + preposicional", "в тысяча девятьсот девяносто первом году"],
+          ["Em que data?", "genitivo sem preposição", "пятого марта две тысячи десятого года"],
+          ["Que data é hoje?", "nominativo (neutro)", "Сегодня первое сентября."],
+          ["Em que século?", "в + preposicional", "в двадцатом веке"],
+          ["No início do século…", "в начале + genitivo", "в начале двадцатого века"],
+          ["De … a …", "с + gen. … по + acus.", "с 1941 по 1945 год"]
+        ]},
+        "examples": [
+          ["Пётр Первый родился девятого июня тысяча шестьсот семьдесят второго года.", "Pedro, o Grande, nasceu em 9 de junho de 1672."],
+          ["В две тысячи третьем году Петербургу исполнилось триста лет.", "Em 2003, Petersburgo completou trezentos anos."],
+          ["В конце девятнадцатого века в городе появился первый трамвай.", "No fim do século XIX, apareceu o primeiro bonde na cidade."]
+        ],
+        "pitfalls": [
+          "Ano 2000 e seguintes: в двухтысячном году, в две тысячи пятом году (две тысячи não muda, só o último ordinal).",
+          "Não use в com a data completa: «пятого марта», nunca «в пятое марта».",
+          "Na escrita, séculos aparecem em algarismos romanos (XVIII век), mas se leem como ordinais: восемнадцатый век."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Москва впервые упоминается в летописи ___.", "o": ["в 1147 году", "в 1147 год", "1147 года", "на 1147 году"], "e": "Em que ano? в + preposicional."},
+        {"q": "Гагарин полетел в космос ___ 1961 года.", "o": ["двенадцатого апреля", "двенадцатое апреля", "в двенадцатом апреле", "двенадцатым апреля"], "e": "Data completa: genitivo sem preposição."},
+        {"q": "Пушкин жил ___ девятнадцатого века.", "o": ["в первой половине", "в первую половину", "первой половиной", "на первой половине"], "e": "В + preposicional: в первой половине века."},
+        {"q": "Сегодня ___ октября.", "o": ["тридцать первое", "тридцать первого", "в тридцать первом", "тридцать первый"], "e": "Que dia é hoje? nominativo neutro (число)."},
+        {"q": "Ленинград был в блокаде ___ 1941 ___ 1944 год.", "o": ["с … по", "в … в", "от … на", "из … до"], "e": "С … по + acusativo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я родился в пятое мая.", "o": ["Я родился пятого мая.", "Я родился в пятом мае.", "Я родился пятым мая."], "e": "Data completa: genitivo sem в."},
+        {"q": "Это было в девятнадцатый век.", "o": ["Это было в девятнадцатом веке.", "Это было в девятнадцатого века.", "Это было на девятнадцатом веке."], "e": "В + preposicional."},
+        {"q": "Они жили там в две тысячи пятый год.", "o": ["Они жили там в две тысячи пятом году.", "Они жили там в двух тысячах пятом году.", "Они жили там две тысячи пятого года."], "e": "Só o último número se declina: в две тысячи пятом году."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Город был основан в начале восемнадцатого века", "pt": "A cidade foi fundada no início do século XVIII."},
+        {"a": "Это случилось в девяностые годы", "pt": "Isso aconteceu nos anos noventa."},
+        {"a": "Пётр Первый перенёс столицу в Петербург", "pt": "Pedro, o Grande, transferiu a capital para Petersburgo."}
+      ]}
+    ]},
+    {"title": "Uso real: quiz no rádio, situações e produção", "goal": "Entender e dizer datas com rapidez e apresentar fatos históricos.", "steps": [
+      {"t": "listening", "kind": "Радиовикторина", "title": "Угадай год!", "voice": "m",
+        "text": "Добрый вечер! В эфире викторина «Угадай год». Первый вопрос: в каком веке была основана Москва? Правильный ответ: в двенадцатом веке, впервые она упоминается в летописи в тысяча сто сорок седьмом году. Второй вопрос: когда в Москве открылась первая линия метро? Ответ: пятнадцатого мая тысяча девятьсот тридцать пятого года. И последний вопрос: в каком году Россия впервые принимала чемпионат мира по футболу? Правильно, в две тысячи восемнадцатом. Наш победитель, Марина из Казани, ответила на все три вопроса и получает билеты в Большой театр!",
+        "pt": "Boa noite! No ar, o quiz «Adivinhe o ano». Primeira pergunta: em que século Moscou foi fundada? Resposta correta: no século XII; ela é mencionada pela primeira vez numa crônica em mil cento e quarenta e sete. Segunda pergunta: quando foi inaugurada a primeira linha do metrô de Moscou? Resposta: em quinze de maio de mil novecentos e trinta e cinco. E a última pergunta: em que ano a Rússia sediou pela primeira vez a Copa do Mundo de futebol? Correto, em dois mil e dezoito. A nossa vencedora, Marina, de Kazan, acertou as três perguntas e ganha ingressos para o Teatro Bolshoi!",
+        "questions": [
+          {"q": "Em que ano Moscou aparece pela primeira vez numa crônica?", "o": ["1147.", "1247.", "1703.", "1935."], "e": "«В тысяча сто сорок седьмом году»."},
+          {"q": "Quando foi inaugurado o metrô de Moscou?", "o": ["15 de maio de 1935.", "15 de março de 1953.", "5 de maio de 1935.", "15 de maio de 1925."], "e": "«Пятнадцатого мая тысяча девятьсот тридцать пятого года»."},
+          {"q": "O que ganha a vencedora?", "o": ["Ingressos para o Teatro Bolshoi.", "Uma viagem a Moscou.", "Um livro de história.", "Ingressos para a Copa."], "e": "«Получает билеты в Большой театр»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você pergunta a data de nascimento de alguém num formulário oral.", "o": ["Какого числа и в каком году вы родились?", "Какое число и какой год вы родились?", "В каком числе вы родились?", "Когда число вы родились?"], "e": "Какого числа? (genitivo) + в каком году?"},
+        {"q": "Você pergunta a um guia de que século é a igreja.", "o": ["Какого века эта церковь?", "Какой век эта церковь?", "В каком веку эта церковь?", "Сколько веков эта церковь?"], "e": "Какого века? (genitivo de qualidade)."},
+        {"q": "Você diz que mora em Moscou desde 2019.", "o": ["Я живу в Москве с две тысячи девятнадцатого года.", "Я живу в Москве от две тысячи девятнадцатый год.", "Я живу в Москве с две тысячи девятнадцатом году.", "Я живу в Москве в две тысячи девятнадцать года."], "e": "С + genitivo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva uma cronologia comentada da sua cidade (60 a 90 palavras) com pelo menos cinco datas: fundação, um século importante, uma década e um intervalo (с … по …).",
+        "useful": ["Город был основан в … году", "В начале / в конце … века …", "С … по … год …", "В …-е годы …", "Сегодня …"],
+        "model": "Рио-де-Жанейро был основан первого марта тысяча пятьсот шестьдесят пятого года португальцами. В начале девятнадцатого века, в тысяча восемьсот восьмом году, сюда переехал португальский королевский двор. С тысяча семьсот шестьдесят третьего по тысяча девятьсот шестидесятый год Рио был столицей страны. В тысяча девятьсот тридцать первом году на горе Корковаду установили статую Христа. В пятидесятые годы город стал родиной босановы. Сегодня это второй по величине город Бразилии.",
+        "model_pt": "O Rio de Janeiro foi fundado pelos portugueses em primeiro de março de mil quinhentos e sessenta e cinco. No início do século XIX, em mil oitocentos e oito, a corte real portuguesa se mudou para cá. De mil setecentos e sessenta e três a mil novecentos e sessenta, o Rio foi a capital do país. Em mil novecentos e trinta e um, a estátua do Cristo foi instalada no Corcovado. Nos anos cinquenta, a cidade se tornou o berço da bossa nova. Hoje é a segunda maior cidade do Brasil.",
+        "checklist": ["Usei в + preposicional para os anos.", "Usei pelo menos uma data completa no genitivo.", "Usei um século com в начале / в конце.", "Usei с … по … para um intervalo.", "Escrevi pelo menos 60 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Apresente em voz alta, em cerca de um minuto, um personagem histórico: quando nasceu, o que fez e quando morreu. Diga todas as datas por extenso.",
+        "useful": ["… родился / родилась … (data) …", "В … году он / она …", "В … веке …", "С … по … год …", "Умер / умерла в … году"],
+        "model": "Дмитрий Иванович Менделеев родился восьмого февраля тысяча восемьсот тридцать четвёртого года в Тобольске. В тысяча восемьсот шестьдесят девятом году он открыл периодический закон химических элементов. Многие элементы, которые он предсказал, были найдены только через несколько лет. С тысяча восемьсот девяносто третьего года до самой смерти он руководил Главной палатой мер и весов. Менделеев умер в тысяча девятьсот седьмом году, в начале двадцатого века.",
+        "model_pt": "Dmítri Ivánovitch Mendeléiev nasceu em 8 de fevereiro de 1834, em Tobolsk. Em 1869, descobriu a lei periódica dos elementos químicos. Muitos elementos que ele previu só foram encontrados alguns anos depois. De 1893 até a morte, dirigiu a Câmara Central de Pesos e Medidas. Mendeléiev morreu em 1907, no início do século XX.",
+        "checklist": ["Disse a data de nascimento completa no genitivo.", "Usei в + preposicional para os anos.", "Usei pelo menos um século ou uma década.", "Pronunciei os números por extenso."]}
+    ]}
+  ]
+}

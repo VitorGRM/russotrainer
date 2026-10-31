@@ -1,70 +1,61 @@
 #!/usr/bin/env python3
-"""LinguaLab — servidor local, corretor e registro pedagógico multilíngue.
+"""LinguaLab Russo: curso temático de vocabulário e gramática, nível intermediário e avançado.
 
-A interface e a persistência usam a biblioteca padrão. O áudio usa edge-tts.
-O conteúdo fica em data/units/*.json; respostas em data/progress.sqlite3.
+O vocabulário inteiro do OpenRussian fica em data/lexicon.sqlite3.gz (ver tools/build_lexicon.py),
+classificado por eixos temáticos não excludentes e ordenado por utilidade. Os exercícios de
+gramática e as construções das versões anteriores são redistribuídos pelos mesmos temas.
+O progresso do aluno fica em <pasta de dados>/data/lingualab.sqlite3.
 """
 
 from __future__ import annotations
 
 import argparse
-import csv
 import difflib
+import gzip
 import hashlib
-import io
 import json
 import os
 import random
 import re
 import secrets
+import shutil
 import sqlite3
-import sys
 import subprocess
+import sys
 import threading
 import time
 import unicodedata
+import urllib.request
 import webbrowser
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-import urllib.request
 from urllib.parse import parse_qs, unquote, urlparse
-
 
 try:
     import edge_tts
     import edge_tts.communicate as edge_communicate
     from edge_tts.constants import TRUSTED_CLIENT_TOKEN as EDGE_TOKEN
-except ImportError:  # O run.sh instala; fallback permite diagnóstico legível.
+except ImportError:  # o app continua funcionando sem áudio
     edge_tts = None
 
 # Em 10/10/2026 a Microsoft passou a recusar (403) o endereço antigo do edge-tts 7.2.8; o Edge
-# atual fala com api.msedgeservices.com (edge-tts issue #490). Tentamos o novo primeiro e o
-# antigo como reserva, caso a Microsoft volte atrás ou a biblioteca mude.
+# atual fala com api.msedgeservices.com (edge-tts issue #490). Tentamos o novo primeiro.
 EDGE_ENDPOINTS = (
     "wss://api.msedgeservices.com/tts/cognitiveservices/websocket/v1?Ocp-Apim-Subscription-Key={token}",
     "wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken={token}",
 )
 
-from sessions import SessionStore, lesson_order, lesson_step, unit_session_order
+from lessons import LessonStore, grade_cloze, grade_match
 from updater import Updater, UpdateError
-from vocab_lessons import UNGRADED_TYPES, VOCAB_UNIT_PREFIX, VocabLessonStore
 
-
-APP_VERSION = "1.6.0"
-UNIT_COMPLETION_THRESHOLD = 0.75
-# Domínio cumulativo: um exercício é considerado "dominado" se o aluno atingiu
-# QUALQUER um destes patamares (nota mínima, nº de tentativas que bateram essa
-# nota). Isto recompensa quem acerta "quase certo" com consistência tanto
-# quanto quem acerta de primeira com nota alta — em vez de exigir nota máxima
-# numa única tentativa.
-MASTERY_TIERS: list[tuple[float, int]] = [(0.75, 1), (0.60, 3), (0.50, 5)]
+APP_VERSION = "1.6.1"
 FROZEN = bool(getattr(sys, "frozen", False))
-# No .exe, o conteúdo (somente leitura) vem empacotado; o que o aluno gera fica em
-# %APPDATA%\RussoTrainer para sobreviver às atualizações. Em desenvolvimento nada muda.
 BASE_DIR = Path(getattr(sys, "_MEIPASS", "") or Path(__file__).resolve().parent)
+
+
 def _early_arg(name: str) -> str:
     """Lê um argumento antes do argparse: os caminhos abaixo são resolvidos já na importação."""
     if name in sys.argv[:-1]:
@@ -81,110 +72,79 @@ else:
     USER_DIR = Path(os.environ.get("APPDATA") or Path.home()) / "RussoTrainer" if FROZEN else BASE_DIR
 STATIC_DIR = BASE_DIR / "static"
 DATA_DIR = BASE_DIR / "data"
+LEXICON_GZ = DATA_DIR / "lexicon.sqlite3.gz"
+THEMES_PATH = DATA_DIR / "themes.json"
 UNITS_DIR = DATA_DIR / "units"
-PREFIX_VERBS_PATH = DATA_DIR / "prefix_verbs.json"
-PREFIX_VERBS_UNIT_ID = "prefix_verbs"
-VOCAB_LESSONS_DIR = DATA_DIR / "vocab_lessons"
-EXPORT_DIR = Path(os.environ.get("RUSSO_EXPORT_DIR", str(USER_DIR / "exports")))
-DB_PATH = Path(os.environ.get("RUSSO_DB_PATH", str(USER_DIR / "data" / "progress.sqlite3")))
-DICTIONARY_PATH = DATA_DIR / "openrussian.sqlite3"
-# O índice do Лексический минимум vem de um livro e não é publicado no release do GitHub:
-# no .exe ele fica em %APPDATA% (copiado pela instalação), onde as atualizações não mexem.
-LEXICAL_MINIMUM_PATH = next(
-    (path for path in (USER_DIR / "data" / "lexical_minimum.sqlite3", DATA_DIR / "lexical_minimum.sqlite3") if path.exists()),
-    DATA_DIR / "lexical_minimum.sqlite3",
-)
-COURSE_LEXICON_PATH = DATA_DIR / "course_lexicon.json"
+VOCAB_DIR = DATA_DIR / "vocab_lessons"
+PREFIX_PATH = DATA_DIR / "prefix_verbs.json"
+LESSONS_DIR = DATA_DIR / "lessons"
+CACHE_DIR = USER_DIR / "data" / "cache"
+DB_PATH = Path(os.environ.get("RUSSO_DB_PATH", str(USER_DIR / "data" / "lingualab.sqlite3")))
 TTS_CACHE_DIR = USER_DIR / "data" / "tts_cache"
 
-COURSES = [
-    {"id": "russian", "name": "Russo", "native_name": "Русский", "level": "ТРКИ-II · B2", "mark": "Я", "available": True},
-    {"id": "kazakh", "name": "Cazaque", "native_name": "Қазақ тілі", "level": "Em preparação", "mark": "Қ", "available": False},
-    {"id": "romanian", "name": "Romeno", "native_name": "Română", "level": "CEFR · A1", "mark": "Ă", "available": True},
+LEVELS = ["A2", "B1", "B2", "C1", "C2"]
+ASPECTS = [
+    {"id": "verbos", "label": "Verbos", "kind": "word", "pos": "verb"},
+    {"id": "substantivos", "label": "Substantivos", "kind": "word", "pos": "noun"},
+    {"id": "adjetivos", "label": "Adjetivos", "kind": "word", "pos": "adjective"},
+    {"id": "outros", "label": "Advérbios e outras palavras", "kind": "word", "pos": "other"},
+    {"id": "estruturas", "label": "Estruturas gramaticais", "kind": "structure"},
+    {"id": "expressoes", "label": "Expressões e construções", "kind": "expression"},
+    {"id": "leitura", "label": "Leitura", "kind": "lesson"},
+    {"id": "escuta", "label": "Compreensão oral", "kind": "lesson"},
+    {"id": "producao", "label": "Produção escrita e oral", "kind": "lesson"},
 ]
+POS_ASPECT = {a["pos"]: a["id"] for a in ASPECTS if a["kind"] == "word"}
+POS_LABEL = {"noun": "substantivo", "verb": "verbo", "adjective": "adjetivo", "other": "advérbio / outra classe"}
+GENDER_LABEL = {"m": "masculino", "f": "feminino", "n": "neutro", "pl": "só plural"}
+# Revisão espaçada: estágio -> intervalo até a próxima revisão.
+INTERVALS = [timedelta(minutes=10), timedelta(days=1), timedelta(days=3), timedelta(days=7),
+             timedelta(days=14), timedelta(days=30), timedelta(days=60), timedelta(days=120), timedelta(days=240)]
+MASTERED_STAGE = 4  # passou por uma revisão de 7 dias e outra de 14
+DEFAULT_SETTINGS = {"min_level": "B1", "session_size": 8}
+STRUCTURE_TYPES = {"choice", "reading", "listening", "flashcard", "sentence_order"}
 
 
 def now_utc() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def iso(dt: datetime | None = None) -> str:
-    return (dt or now_utc()).isoformat(timespec="seconds")
+def iso(moment: datetime | None = None) -> str:
+    return (moment or now_utc()).isoformat(timespec="seconds")
 
 
-def session_exercises(items: list[dict], publicizer) -> list[dict]:
-    """Prepara alternativas sem expor o gabarito e equilibra sua posição.
-
-    Um simples ``shuffle`` independente pode, por acaso, pôr várias respostas
-    seguidas na mesma coluna. Aqui cada bloco de N questões usa todas as N
-    posições em ordem aleatória antes de repetir uma delas. Os distratores
-    também são embaralhados, portanto não há uma sequência fixa para decorar.
-    """
-    position_bags: dict[int, list[int]] = {}
-    last_positions: dict[int, int] = {}
-    prepared: list[dict] = []
-
-    for original in items:
-        exercise = dict(original)
-        options = list(exercise.get("options") or [])
-        answer = exercise.get("answer")
-        objective = exercise.get("type") in {"choice", "reading", "listening", "dialogue"}
-        if objective and len(options) > 1 and answer in options:
-            size = len(options)
-            bag = position_bags.get(size, [])
-            if not bag:
-                bag = list(range(size))
-                random.shuffle(bag)
-                previous = last_positions.get(size)
-                if previous is not None and bag[-1] == previous:
-                    swap_index = 0 if bag[0] != previous else 1
-                    bag[-1], bag[swap_index] = bag[swap_index], bag[-1]
-                position_bags[size] = bag
-            target = bag.pop()
-            last_positions[size] = target
-            distractors = [option for option in options if option != answer]
-            random.shuffle(distractors)
-            distractors.insert(target, answer)
-            exercise["options"] = distractors
-        prepared.append(publicizer(exercise))
-    return prepared
+def plain(value: str) -> str:
+    text = unicodedata.normalize("NFD", str(value or "").lower())
+    text = text.replace("́", "").replace("'", "")
+    text = unicodedata.normalize("NFC", text).replace("ё", "е")
+    return re.sub(r"\s+", " ", text).strip()
 
 
+def first_variant(value: str) -> str:
+    return (value or "").split(",")[0].strip()
+
+
+def main_meaning(pt: str) -> str:
+    return (pt or "").split(";")[0].strip()
+
+
+def normalize_answer(value: object) -> str:
+    text = plain(str(value or ""))
+    return re.sub(r"[.!?…]+$", "", text).strip()
+
+
+# ============================================================================ áudio
 SPOKEN_REPLACEMENTS = [
-    (r"«([^»]*)»", r"\1"),
-    (r"[“”\"]", ""),
-    (r"\s*→\s*", " vira "),
-    (r"\s*×\s*", " contra "),
-    (r"\s*↔\s*", " e "),
-    (r"\s*—\s*", ", "),
-    (r"\s*–\s*", ", "),
+    (r"«([^»]*)»", r"\1"), (r"[“”\"]", ""), (r"\s*→\s*", " vira "), (r"\s*×\s*", " contra "),
+    (r"\s*↔\s*", " e "), (r"\s*—\s*", ", "), (r"\s*–\s*", ", "),
     (r"(?<=[а-яёА-ЯЁa-zA-Z])\s*/\s*(?=[а-яёА-ЯЁa-zA-Z-])", " ou "),
-    (r"\(([^()]{1,60})\)", r", \1,"),
-    (r"\bTRKI[- ]?II\b", "Térki dois"),
-    (r"\bТРКИ[- ]?II\b", "Térki dois"),
-    (r"\bB2\b", "bê dois"),
-    (r"\bB1\b", "bê um"),
-    (r"\bA1\b", "á um"),
-    (r"\bA2\b", "á dois"),
-    (r"\bPT\b", "português"),
-    (r"\bRU\b", "russo"),
-    (r"(?<![\wа-яёА-ЯЁ])-(?=[а-яёА-ЯЁ])", ""),
-    (r"\s*;\s*", ". "),
-    (r"\s*:\s*", ", "),
-    (r"\s*\.{3,}\s*", ". "),
-    (r"\s{2,}", " "),
-    (r"\s+([,.!?])", r"\1"),
-    (r"([,.])\s*([,.])+", r"\1"),
+    (r"\(([^()]{1,60})\)", r", \1,"), (r"\bB2\b", "bê dois"), (r"\bB1\b", "bê um"),
+    (r"(?<![\wа-яёА-ЯЁ])-(?=[а-яёА-ЯЁ])", ""), (r"\s*;\s*", ". "), (r"\s*:\s*", ", "),
+    (r"\s*\.{3,}\s*", ". "), (r"\s{2,}", " "), (r"\s+([,.!?])", r"\1"), (r"([,.])\s*([,.])+", r"\1"),
 ]
 
 
 def spoken_text(text: str) -> str:
-    """Adapta um texto escrito para leitura em voz alta.
-
-    Setas, barras, aspas tipográficas e abreviações de nível viram palavras
-    faladas; travessões viram pausas curtas. Sem isso a voz lê "-ому/-ему"
-    como uma sequência ininteligível de símbolos.
-    """
     result = str(text or "")
     for pattern, replacement in SPOKEN_REPLACEMENTS:
         result = re.sub(pattern, replacement, result)
@@ -192,594 +152,35 @@ def spoken_text(text: str) -> str:
 
 
 def lesson_script(unit: dict, block_index: int | None = None) -> str:
-    """Monta o roteiro falado da explicação de gramática de uma unidade.
-
-    Cada bloco de ``grammar`` pode trazer ``audio_script`` — a versão escrita
-    para o ouvido, com exemplos lidos por extenso. Sem esse campo, o roteiro
-    cai para o texto escrito (título + parágrafos + exemplos), que continua
-    inteligível depois de passar por ``spoken_text``.
-    """
     blocks = unit.get("grammar") or []
     if block_index is not None:
         if block_index < 0 or block_index >= len(blocks):
-            raise ValueError("Bloco de gramática inexistente nesta unidade.")
-        selected = [blocks[block_index]]
-        parts: list[str] = []
+            raise ValueError("Bloco de gramática inexistente nesta aula.")
+        selected, parts = [blocks[block_index]], []
     else:
-        selected = blocks
-        parts = [f"Unidade: {unit.get('title', '')}."]
-        if unit.get("description"):
-            parts.append(str(unit["description"]))
+        selected, parts = blocks, [f"Aula: {unit.get('title', '')}."]
     if not selected:
-        raise ValueError("Esta unidade ainda não tem explicação de gramática.")
+        raise ValueError("Esta aula não tem explicação de gramática.")
     for block in selected:
-        script = block.get("audio_script")
-        if script:
-            parts.append(str(script))
+        if block.get("audio_script"):
+            parts.append(str(block["audio_script"]))
             continue
         if block.get("title"):
             parts.append(f"{block['title']}.")
-        parts.extend(str(paragraph) for paragraph in block.get("paragraphs", []))
+        parts.extend(str(p) for p in block.get("paragraphs", []))
         for example in block.get("examples", []):
-            russian = example.get("ru", "")
-            portuguese = example.get("pt", "")
-            if russian:
-                parts.append(f"Exemplo: {russian}. Em português: {portuguese}.")
-    return " ".join(part.strip() for part in parts if str(part).strip())
-
-
-def normalize_answer(value: object) -> str:
-    """Normalização tolerante a caixa, espaços, ё/е e pontuação final."""
-    text = unicodedata.normalize("NFC", str(value or "")).strip().lower()
-    text = text.replace("ё", "е")
-    text = re.sub(r"\s+", " ", text)
-    text = re.sub(r"[.!?…]+$", "", text).strip()
-    return text
-
-
-def edit_distance(left: str, right: str) -> int:
-    """Distância de Levenshtein com memória linear."""
-    if len(left) < len(right):
-        left, right = right, left
-    previous = list(range(len(right) + 1))
-    for index_left, char_left in enumerate(left, 1):
-        current = [index_left]
-        for index_right, char_right in enumerate(right, 1):
-            current.append(min(
-                current[-1] + 1,
-                previous[index_right] + 1,
-                previous[index_right - 1] + (char_left != char_right),
-            ))
-        previous = current
-    return previous[-1]
-
-
-def partial_score(answer: str, expected: str) -> tuple[float, str, str]:
-    """Calcula crédito parcial sem aceitar uma regência trocada como correta."""
-    given = normalize_answer(answer)
-    target = normalize_answer(expected)
-    if given == target:
-        return 1.0, "correct", "Resposta exata."
-    if not given or not target:
-        return 0.0, "wrong", "Resposta ausente ou incompatível."
-
-    given_tokens = given.split()
-    target_tokens = target.split()
-    critical = {"к", "от", "с", "в", "на", "за", "из", "по", "для"}
-    critical_given = [token for token in given_tokens if token in critical]
-    critical_target = [token for token in target_tokens if token in critical]
-    regency_changed = critical_given != critical_target
-    ratio = difflib.SequenceMatcher(None, given, target).ratio()
-    distance = edit_distance(given, target)
-
-    if len(target_tokens) == 1 and len(target) <= 3:
-        return 0.0, "wrong", "Em respostas curtas, outra preposição muda a regência."
-    if regency_changed and ratio >= 0.62:
-        return 0.5, "partial", "A maior parte está reconhecível, mas a preposição/regência mudou."
-    if distance == 1 and ratio >= 0.88:
-        return 0.85, "minor_error", "Há apenas um provável erro pequeno de digitação ou ortografia."
-    if ratio >= 0.90:
-        return 0.75, "partial", "A construção está próxima, mas há um provável erro de forma ou terminação."
-    if ratio >= 0.78:
-        return 0.65, "partial", "A estrutura principal está próxima; revise formas ou terminações."
-    if ratio >= 0.62:
-        return 0.4, "partial", "Há elementos corretos, mas a resposta ainda precisa de revisão importante."
-    return 0.0, "wrong", "A resposta diverge da construção esperada."
-
-
-def mastery_having_sql() -> str:
-    """HAVING que marca um exercício como dominado por qualquer patamar de MASTERY_TIERS."""
-    clauses = [
-        f"SUM(CASE WHEN COALESCE(score, is_correct) >= {min_score} THEN 1 ELSE 0 END) >= {min_count}"
-        for min_score, min_count in MASTERY_TIERS
-    ]
-    return " OR ".join(clauses)
-
-
-class ContentStore:
-    def __init__(self, units_dir: Path):
-        self.units_dir = units_dir
-        self.units: list[dict] = []
-        self.units_by_id: dict[str, dict] = {}
-        self.exercises: dict[str, dict] = {}
-        self.exercise_unit: dict[str, dict] = {}
-        self.prefix_module: dict = {}
-        self.vocab = VocabLessonStore(VOCAB_LESSONS_DIR)
-        self.load()
-
-    def load(self) -> None:
-        units: list[dict] = []
-        exercises: dict[str, dict] = {}
-        exercise_unit: dict[str, dict] = {}
-        for path in sorted(self.units_dir.glob("*.json")):
-            with path.open(encoding="utf-8") as handle:
-                unit = json.load(handle)
-            unit.setdefault("course_id", "russian")
-            required = {"id", "title", "exercises"}
-            missing = required - unit.keys()
-            if missing:
-                raise ValueError(f"{path.name}: campos ausentes: {sorted(missing)}")
-            for exercise in unit["exercises"]:
-                ex_id = exercise.get("id")
-                if not ex_id:
-                    raise ValueError(f"{path.name}: exercício sem id")
-                if ex_id in exercises:
-                    raise ValueError(f"ID de exercício duplicado: {ex_id}")
-                exercise.setdefault("tags", [])
-                exercise.setdefault("difficulty", 1)
-                exercise.setdefault("stage", "practice")
-                exercise["unit_id"] = unit["id"]
-                if exercise.get("type") == "match_pairs":
-                    pairs = exercise.get("pairs", [])
-                    exercise["left_items"] = [pair["left"] for pair in pairs]
-                    shuffled_right = [pair["right"] for pair in pairs]
-                    random.shuffle(shuffled_right)
-                    exercise["right_items"] = shuffled_right
-                exercises[ex_id] = exercise
-                exercise_unit[ex_id] = unit
-            units.append(unit)
-        self.units = sorted(units, key=lambda item: item.get("order", 999))
-        self.units_by_id = {unit["id"]: unit for unit in self.units}
-        self.prefix_module = self._load_prefix_module(exercises, exercise_unit)
-        self.vocab.load()
-        for ex_id, exercise in self.vocab.exercises.items():
-            if ex_id in exercises:
-                raise ValueError(f"ID de exercício duplicado: {ex_id}")
-            exercises[ex_id] = exercise
-            exercise_unit[ex_id] = self.vocab.exercise_unit[ex_id]
-        self.exercises = exercises
-        self.exercise_unit = exercise_unit
-        self.lesson_screens = self._build_lesson_screens()
-
-    def _build_lesson_screens(self) -> dict[str, dict]:
-        """Telas de leitura da aula (abertura, explicação, tabela) com id próprio.
-
-        Ficam fora de self.exercises — nunca entram em revisão, histórico ou
-        listas de exercícios —, mas têm id para que a sessão salva da aula
-        possa ser retomada exatamente na tela em que o aluno parou.
-        """
-        screens: dict[str, dict] = {}
-        for unit in self.units:
-            if not unit.get("grammar") and not unit.get("objectives"):
-                continue
-            uid = unit["id"]
-            screens[f"{uid}::intro"] = {"id": f"{uid}::intro", "type": "lesson_intro", "unit_id": uid}
-            blocks = unit.get("grammar") or []
-            for index, block in enumerate(blocks):
-                screens[f"{uid}::explain:{index}"] = {
-                    "id": f"{uid}::explain:{index}", "type": "lesson_explain", "unit_id": uid,
-                    "block": block, "block_index": index, "block_total": len(blocks),
-                }
-            tables = unit.get("memory_tables") or ([unit["memory_table"]] if unit.get("memory_table") else [])
-            if tables:
-                screens[f"{uid}::table"] = {"id": f"{uid}::table", "type": "lesson_table", "unit_id": uid, "tables": tables}
-        return screens
-
-    def lesson_items(self, unit: dict, with_exercises: bool = True) -> list[dict]:
-        """A aula inteira numa fila só: abertura → explicação → tabela → exercícios do roteiro."""
-        uid = unit["id"]
-        screens = [screen for key, screen in self.lesson_screens.items() if screen["unit_id"] == uid]
-        if not with_exercises:
-            return screens
-        exercises = []
-        for exercise, step in lesson_order(unit):
-            item = dict(exercise)
-            item["step"] = step
-            exercises.append(item)
-        return screens + session_exercises(exercises, self.public_exercise)
-
-    def _load_prefix_module(self, exercises: dict, exercise_unit: dict) -> dict:
-        """Módulo autônomo de verbos com prefixo (página "Prefixos", só russo).
-
-        Não entra em self.units: fica fora da trilha "Estudar" e da cadeia de
-        travamento. Os exercícios, porém, entram em self.exercises para que
-        /api/answer, a revisão espaçada e o histórico funcionem normalmente.
-        """
-        if not PREFIX_VERBS_PATH.exists():
-            return {}
-        with PREFIX_VERBS_PATH.open(encoding="utf-8") as handle:
-            module = json.load(handle)
-        module.setdefault("id", PREFIX_VERBS_UNIT_ID)
-        module.setdefault("course_id", "russian")
-        synthetic_unit = {
-            "id": module["id"],
-            "title": module.get("title", "Verbos com prefixo"),
-            "course_id": module.get("course_id", "russian"),
-            "exercises": module.get("exercises", []),
-        }
-        stage_ids = {stage["id"] for stage in module.get("stages", [])}
-        for exercise in module.get("exercises", []):
-            ex_id = exercise.get("id")
-            if not ex_id:
-                raise ValueError("prefix_verbs.json: exercício sem id")
-            if ex_id in exercises:
-                raise ValueError(f"ID de exercício duplicado: {ex_id}")
-            if exercise.get("stage") not in stage_ids:
-                raise ValueError(f"prefix_verbs.json: {ex_id} referencia stage inexistente")
-            exercise.setdefault("tags", [])
-            exercise.setdefault("difficulty", 1)
-            exercise["unit_id"] = module["id"]
-            exercises[ex_id] = exercise
-            exercise_unit[ex_id] = synthetic_unit
-        counts: dict[str, int] = {}
-        for exercise in module.get("exercises", []):
-            counts[exercise["stage"]] = counts.get(exercise["stage"], 0) + 1
-        module["stage_counts"] = counts
-        return module
-
-    def public_unit(self, unit: dict) -> dict:
-        return {
-            key: value
-            for key, value in unit.items()
-            if key != "exercises"
-        } | {"exercise_count": len(unit["exercises"])}
-
-    def public_exercise(self, exercise: dict) -> dict:
-        hidden = {
-            "answer",
-            "valid_answers",
-            "back",
-            "explanation",
-            "feedback",
-            "review_notes",
-            "pairs",
-            "after_audio",
-        }
-        return {key: value for key, value in exercise.items() if key not in hidden}
-
-    def module_unit_ids(self, course_id: str) -> set[str]:
-        """IDs internos dos módulos fora da trilha (Prefixos, Terminações, Vocabulário)."""
-        if course_id not in ("", "russian"):
-            return set()
-        ids = {"lexical_minimum_morphology", "lexical_minimum_vocabulary", PREFIX_VERBS_UNIT_ID}
-        ids.update(lesson["unit_key"] for lesson in self.vocab.lessons)
-        return ids
-
-    def course_unit_ids(self, course_id: str) -> set[str]:
-        ids = {unit["id"] for unit in self.units if unit.get("course_id", "russian") == course_id}
-        return ids | self.module_unit_ids(course_id)
-
-    def reveal(self, exercise: dict) -> dict:
-        answer = exercise.get("answer")
-        if not answer:
-            answers = exercise.get("valid_answers", [])
-            answer = answers[0] if answers else exercise.get("back", "")
-        return {
-            "answer": answer,
-            "back": exercise.get("back", answer),
-            "explanation": exercise.get("explanation", ""),
-            "feedback": exercise.get("feedback", ""),
-        }
-
-
-class LexicalMinimumStore:
-    """Inventário TRKI-II e exercícios gerados a partir das formas do OpenRussian."""
-
-    def __init__(self, path: Path):
-        self.path = path
-        self._vocab_pool: list[tuple[str, str, str]] | None = None
-        self._vocab_options: dict[str, list[str]] = {}
-
-    def connect(self) -> sqlite3.Connection:
-        conn = sqlite3.connect(self.path)
-        conn.row_factory = sqlite3.Row
-        return conn
-
-    STOPWORDS_EN = {"to", "the", "a", "an", "of", "be", "in", "on", "with", "for", "and", "or", "one's", "oneself", "sb", "sth", "at", "by"}
-
-    @classmethod
-    def _meaning_words(cls, translation: str) -> set[str]:
-        words = re.findall(r"[a-z']+", (translation or "").lower())
-        return {word for word in words if word not in cls.STOPWORDS_EN and len(word) > 2}
-
-    def _vocabulary_options(self, conn: sqlite3.Connection, row: sqlite3.Row) -> list[str]:
-        """Distratores da mesma classe e com final parecido, sem sinônimos.
-
-        O inventário original sorteava distratores ao acaso: «блины» aparecia
-        contra «недавно, никогда, шестнадцать», e a classe gramatical entregava
-        a resposta. Aqui os candidatos têm a mesma classe (ou, sem classe, o
-        mesmo final), comprimento próximo e raiz diferente; palavras cuja
-        tradução inglesa compartilha um termo com a resposta são descartadas
-        para não criar duas alternativas corretas. A escolha é determinística
-        por cartão, para que a revisão espaçada mostre o mesmo conjunto.
-        """
-        cached = self._vocab_options.get(row["id"])
-        if cached:
-            return cached
-        if self._vocab_pool is None:
-            self._vocab_pool = [
-                (item["display_lemma"], item["translation_en"] or "", item["parts_of_speech"] or "")
-                for item in conn.execute("SELECT display_lemma, translation_en, parts_of_speech FROM vocabulary_cards")
-            ]
-        answer = row["display_lemma"]
-        answer_pos = set(filter(None, (row["parts_of_speech"] or "").split(",")))
-        answer_words = self._meaning_words(row["translation_en"])
-        rng = random.Random(row["id"])
-
-        def score(candidate: str, pos: str) -> float:
-            value = 0.0
-            if answer_pos and answer_pos & set(filter(None, pos.split(","))):
-                value += 4
-            if candidate[-3:] == answer[-3:]:
-                value += 3
-            elif candidate[-2:] == answer[-2:]:
-                value += 2
-            elif candidate[-1:] == answer[-1:]:
-                value += 1
-            value -= min(3, abs(len(candidate) - len(answer)) / 2)
-            if (" " in candidate) != (" " in answer):
-                value -= 3
-            return value + rng.random()
-
-        candidates = []
-        for candidate, translation, pos in self._vocab_pool:
-            if candidate == answer or candidate[:4] == answer[:4]:
-                continue
-            if answer_words & self._meaning_words(translation):
-                continue
-            candidates.append((score(candidate, pos), candidate))
-        candidates.sort(reverse=True)
-        top = [candidate for _, candidate in candidates[:10]]
-        rng.shuffle(top)
-        options = [answer] + top[:3]
-        self._vocab_options[row["id"]] = options
-        return options
-
-    def metadata(self) -> dict[str, object]:
-        if not self.path.exists():
-            return {"available": False}
-        with self.connect() as conn:
-            values = {row["key"]: row["value"] for row in conn.execute("SELECT key, value FROM metadata")}
-        for key in ("parsed_entries", "unique_lemmas", "matched_entries", "morphology_lemmas", "morphology_cards", "vocabulary_cards"):
-            if key in values:
-                values[key] = int(values[key])
-        values["available"] = True
-        return values
-
-    @staticmethod
-    def public_exercise(exercise: dict) -> dict:
-        hidden = {"answer", "valid_answers", "explanation", "feedback"}
-        return {key: value for key, value in exercise.items() if key not in hidden}
-
-    def exercise(self, exercise_id: str) -> dict | None:
-        if not self.path.exists() or not (exercise_id.startswith("lm-") or exercise_id.startswith("lv-")):
-            return None
-        with self.connect() as conn:
-            if exercise_id.startswith("lm-"):
-                row = conn.execute("SELECT * FROM morphology_cards WHERE id = ?", (exercise_id,)).fetchone()
-                return self._morphology_exercise(row) if row else None
-            row = conn.execute("SELECT * FROM vocabulary_cards WHERE id = ?", (exercise_id,)).fetchone()
-            return self._vocabulary_exercise(row, self._vocabulary_options(conn, row)) if row else None
-
-    def questions(
-        self,
-        kind: str,
-        limit: int,
-        pos: str = "",
-        case_code: str = "",
-        number_code: str = "",
-        excluded_lemmas: set[str] | None = None,
-    ) -> list[dict]:
-        if not self.path.exists():
-            return []
-        excluded = excluded_lemmas or set()
-        limit = max(1, min(limit, 100))
-        with self.connect() as conn:
-            if kind == "vocabulary":
-                sql = "SELECT * FROM vocabulary_cards WHERE 1=1"
-                args: list[str] = []
-                if pos:
-                    sql += " AND (',' || parts_of_speech || ',') LIKE ?"
-                    args.append(f"%,{pos},%")
-                rows = list(conn.execute(sql, args))
-                random.shuffle(rows)
-                selected = [row for row in rows if row["lemma"] not in excluded][:limit]
-                return [self._vocabulary_exercise(row, self._vocabulary_options(conn, row)) for row in selected]
-
-            sql = "SELECT * FROM morphology_cards WHERE 1=1"
-            args = []
-            if pos:
-                sql += " AND pos = ?"
-                args.append(pos)
-            if case_code:
-                sql += " AND case_code = ?"
-                args.append(case_code)
-            if number_code:
-                sql += " AND number_code = ?"
-                args.append(number_code)
-            rows = list(conn.execute(sql, args))
-            random.shuffle(rows)
-            selected: list[sqlite3.Row] = []
-            used_lemmas: set[str] = set()
-            for row in rows:
-                if row["lemma"] in excluded or row["lemma"] in used_lemmas:
-                    continue
-                selected.append(row)
-                used_lemmas.add(row["lemma"])
-                if len(selected) >= limit:
-                    break
-            return [self._morphology_exercise(row) for row in selected]
-
-    @staticmethod
-    def _morphology_exercise(row: sqlite3.Row) -> dict:
-        target = f"{row['number_ru']}"
-        if row["target_gender"]:
-            target += f", {row['target_gender']}"
-        label = "substantivo" if row["pos"] == "noun" else "adjetivo"
-        explanation = (
-            f"{row['display_lemma']} → {row['answer']}: base «{row['stem']}» + "
-            f"terminação «{row['ending']}». {row['case_ru']}, {target}. "
-            f"Fonte lexical: página {row['source_page']} do Лексический минимум ТРКИ-II."
-        )
-        return {
-            "id": row["id"],
-            "unit_id": "lexical_minimum_morphology",
-            "type": "choice",
-            "stage": "practice",
-            "difficulty": 2,
-            "instruction": f"Escolha a flexão correta deste {label}.",
-            "prompt": f"Qual é a forma de «{row['display_lemma']}» em {row['case_ru']} ({target})?",
-            "options": json.loads(row["options_json"]),
-            "answer": row["answer"],
-            "explanation": explanation,
-            "tags": [
-                f"lexeme:{row['lemma']}", "Лексический минимум TRKI-II", "terminações",
-                row["pos"], row["case_ru"], row["number_ru"],
-            ],
-            "lemma": row["lemma"],
-            "display_lemma": row["display_lemma"],
-            "translation_en": row["translation_en"] or "",
-            "stem": row["stem"],
-            "ending": row["ending"],
-            "case_code": row["case_code"],
-            "case_ru": row["case_ru"],
-            "number_code": row["number_code"],
-            "source_page": row["source_page"],
-        }
-
-    @staticmethod
-    def _vocabulary_exercise(row: sqlite3.Row, options: list[str]) -> dict:
-        return {
-            "id": row["id"],
-            "unit_id": "lexical_minimum_vocabulary",
-            "type": "choice",
-            "stage": "recognition",
-            "difficulty": 2,
-            "instruction": "Escolha a palavra russa correspondente ao significado em inglês.",
-            "prompt": f"Qual palavra russa corresponde a “{row['translation_en']}”?",
-            "options": options,
-            "answer": row["display_lemma"],
-            "explanation": (
-                f"{row['display_lemma']} — {row['translation_en']}. "
-                f"Fonte lexical: página {row['source_page']} do Лексический минимум ТРКИ-II."
-            ),
-            "tags": [f"lexeme:{row['lemma']}", "Лексический минимум TRKI-II", "vocabulário B2"],
-            "lemma": row["lemma"],
-            "display_lemma": row["display_lemma"],
-            "translation_en": row["translation_en"],
-            "source_page": row["source_page"],
-        }
-class DictionaryStore:
-    """Consulta formas flexionadas no índice local do OpenRussian."""
-
-    POS_LABELS = {
-        "noun": "substantivo",
-        "adjective": "adjetivo",
-        "verb": "verbo",
-        "other": "outra classe",
-    }
-
-    def __init__(self, path: Path, lexicon_path: Path):
-        self.path = path
-        self.course_lexicon = json.loads(lexicon_path.read_text(encoding="utf-8")) if lexicon_path.exists() else {}
-
-    @staticmethod
-    def normalize_word(value: str) -> str:
-        text = unicodedata.normalize("NFC", value).lower().replace("ё", "е")
-        text = text.replace("'", "").replace("´", "").replace("*", "")
-        return re.sub(r"[^а-я-]", "", text)
-
-    def lookup(self, word: str) -> dict:
-        form = self.normalize_word(word)
-        if not form or not self.path.exists():
-            return {"word": word, "entries": [], "available": self.path.exists()}
-        conn = sqlite3.connect(self.path)
-        conn.row_factory = sqlite3.Row
-        try:
-            rows = conn.execute(
-                """
-                SELECT e.lemma, e.accented, e.pos, e.translations_en,
-                       e.gender, e.aspect, e.partner,
-                       GROUP_CONCAT(f.grammar, ' · ') AS grammar
-                FROM form_index f
-                JOIN entries e ON e.id = f.entry_id
-                WHERE f.form = ?
-                GROUP BY e.id
-                ORDER BY CASE WHEN e.lemma = ? THEN 0 ELSE 1 END, e.id
-                LIMIT 8
-                """,
-                (form, form),
-            ).fetchall()
-        finally:
-            conn.close()
-
-        entries = []
-        for row in rows:
-            course = self.course_lexicon.get(row["lemma"], {})
-            entries.append({
-                "lemma": row["lemma"],
-                "accented": row["accented"] or row["lemma"],
-                "pos": self.POS_LABELS.get(row["pos"], row["pos"]),
-                "translation_pt": course.get("translation_pt", ""),
-                "translation_en": row["translations_en"] or "",
-                "grammar": row["grammar"] or "",
-                "gender": row["gender"] or "",
-                "aspect": row["aspect"] or "",
-                "partner": row["partner"] or "",
-                "regency": course.get("regency", ""),
-                "case": course.get("case", ""),
-            })
-        return {
-            "word": word,
-            "normalized": form,
-            "available": True,
-            "entries": entries,
-            "source": "OpenRussian (CC BY-SA 4.0) + glossário português do curso",
-        }
+            if example.get("ru"):
+                parts.append(f"Exemplo: {example['ru']}. Em português: {example.get('pt', '')}.")
+    return " ".join(p.strip() for p in parts if str(p).strip())
 
 
 class TTSService:
-    """Gera MP3 com edge-tts e mantém cache por texto/voz.
+    """MP3 com edge-tts em cache; no Windows, cai para a voz russa instalada se o Edge recusar."""
 
-    Dois modos:
-
-    - ``target``  → voz nativa do idioma estudado, ritmo lento (-12%), textos
-      curtos (frases de exercício, alternativas, palavras do dicionário);
-    - ``lesson``  → voz multilíngue em português do Brasil, ritmo levemente
-      reduzido (-6%), textos longos (a explicação de gramática da unidade).
-      A voz multilíngue pronuncia os exemplos em russo dentro da narração em
-      português sem trocar de motor, que é o que torna possível uma "aula
-      falada" com exemplos reais.
-    """
-
-    VOICES = {
-        "russian": "ru-RU-SvetlanaNeural",
-        "romanian": "ro-RO-AlinaNeural",
-        "kazakh": "kk-KZ-AigulNeural",
-    }
+    VOICE = "ru-RU-SvetlanaNeural"
+    VOICES = {"f": ("ru-RU-SvetlanaNeural", "+0Hz"), "m": ("ru-RU-DmitryNeural", "+0Hz"),
+              "f2": ("ru-RU-SvetlanaNeural", "-14Hz"), "m2": ("ru-RU-DmitryNeural", "+12Hz")}
     LESSON_VOICE = "pt-BR-ThalitaMultilingualNeural"
-    LESSON_MAX_CHARS = 7000
-    # Vozes dos diálogos russos. Só há duas vozes neurais russas no edge-tts;
-    # a terceira e a quarta pessoa usam a mesma voz com outro tom, o que basta
-    # para o ouvido separar os falantes numa cena.
-    DIALOGUE_VOICES = {
-        "f": ("ru-RU-SvetlanaNeural", "+0Hz"),
-        "m": ("ru-RU-DmitryNeural", "+0Hz"),
-        "f2": ("ru-RU-SvetlanaNeural", "-14Hz"),
-        "m2": ("ru-RU-DmitryNeural", "+12Hz"),
-    }
-    DIALOGUE_RATE = "-6%"
-
     EDGE_RETRY_SECONDS = 300
 
     def __init__(self, cache_dir: Path):
@@ -790,10 +191,8 @@ class TTSService:
         self._endpoint_order = list(EDGE_ENDPOINTS)
 
     def _edge_synthesize(self, text: str, voice: str, rate: str, pitch: str, path: Path) -> None:
-        """Gera o mp3 tentando cada endereço do Edge; o que funcionar passa a ser o primeiro."""
         last_error: Exception | None = None
         for endpoint in list(self._endpoint_order):
-            # communicate.py lê WSS_URL a cada conexão; o lock garante uma síntese por vez.
             edge_communicate.WSS_URL = endpoint.format(token=EDGE_TOKEN)
             try:
                 edge_tts.Communicate(text, voice, rate=rate, pitch=pitch).save_sync(str(path))
@@ -807,35 +206,30 @@ class TTSService:
             last_error = RuntimeError("O Edge não devolveu áudio.")
         raise last_error or RuntimeError("Nenhum endereço do Edge disponível.")
 
-    def audio_for(self, text: str, course_id: str = "russian", mode: str = "target", speaker: str = "") -> Path:
+    def audio_for(self, text: str, mode: str = "target", speaker: str = "") -> Path:
         cleaned = re.sub(r"\s+", " ", text).strip()
         pitch = "+0Hz"
         if mode == "lesson":
-            voice, rate, limit = self.LESSON_VOICE, "-6%", self.LESSON_MAX_CHARS
+            voice, rate, limit = self.LESSON_VOICE, "-6%", 7000
             cleaned = spoken_text(cleaned)
-        elif speaker and course_id == "russian":
-            if speaker not in self.DIALOGUE_VOICES:
-                raise ValueError("Voz de diálogo desconhecida.")
-            voice, pitch = self.DIALOGUE_VOICES[speaker]
-            rate, limit = self.DIALOGUE_RATE, 800
+        elif speaker:
+            if speaker not in self.VOICES:
+                raise ValueError("Voz desconhecida.")
+            voice, pitch = self.VOICES[speaker]
+            rate, limit = "-6%", 800
         else:
-            voice = self.VOICES.get(course_id)
-            rate, limit = "-12%", 800
-        if not voice:
-            raise ValueError("Curso sem voz TTS configurada.")
-        if not cleaned or len(cleaned) > limit or not re.search(r"[A-Za-zÀ-žА-Яа-яЁёӘәҒғҚқҢңӨөҰұҮүҺһІі]", cleaned):
-            raise ValueError(f"O texto de áudio deve conter texto legível e ter até {limit} caracteres.")
-        # O tom só entra na chave quando difere do padrão: o cache antigo continua válido.
+            voice, rate, limit = self.VOICE, "-12%", 800
+        if not cleaned or len(cleaned) > limit or not re.search(r"[A-Za-zÀ-žА-Яа-яЁё]", cleaned):
+            raise ValueError(f"O texto do áudio deve ter de 1 a {limit} caracteres.")
         key = f"{voice}|{rate}|{cleaned}" if pitch == "+0Hz" else f"{voice}|{rate}|{pitch}|{cleaned}"
-        digest = hashlib.sha256(key.encode("utf-8")).hexdigest()
-        target = self.cache_dir / f"{digest}.mp3"
+        target = self.cache_dir / f"{hashlib.sha256(key.encode('utf-8')).hexdigest()}.mp3"
         if target.exists() and target.stat().st_size > 0:
             return target
-        offline_ok = mode != "lesson" and voice.startswith("ru-") and sys.platform == "win32"
+        offline_ok = mode != "lesson" and sys.platform == "win32"
         if edge_tts is None or (offline_ok and time.monotonic() < self._edge_down_until):
             if offline_ok:
                 return self._offline_audio(cleaned)
-            raise RuntimeError("edge-tts não está instalado; execute o aplicativo pelo run.sh.")
+            raise RuntimeError("edge-tts não está instalado.")
         temporary = target.with_suffix(f".{secrets.token_hex(6)}.tmp")
         with self._lock:
             if target.exists() and target.stat().st_size > 0:
@@ -845,8 +239,6 @@ class TTSService:
                 temporary.replace(target)
                 self._edge_down_until = 0.0
             except Exception:
-                # A Microsoft já recusou conexões do edge-tts de uma hora para outra (erro 403).
-                # Em vez de falhar, o russo cai na voz offline do Windows e o Edge fica de lado por um tempo.
                 if not offline_ok:
                     raise
                 self._edge_down_until = time.monotonic() + self.EDGE_RETRY_SECONDS
@@ -856,7 +248,6 @@ class TTSService:
         return target
 
     def _offline_audio(self, text: str) -> Path:
-        """Voz russa instalada no Windows (SAPI). Fica em pasta própria para nunca se misturar ao cache do Edge."""
         folder = self.cache_dir.parent / "tts_offline"
         folder.mkdir(parents=True, exist_ok=True)
         target = folder / f"{hashlib.sha256(text.encode('utf-8')).hexdigest()}.wav"
@@ -875,10 +266,10 @@ class TTSService:
         try:
             result = subprocess.run(
                 ["powershell.exe", "-NoProfile", "-NonInteractive", "-Command", script],
-                env=env, capture_output=True, timeout=30, creationflags=0x08000000,  # CREATE_NO_WINDOW
+                env=env, capture_output=True, timeout=30, creationflags=0x08000000,
             )
             if result.returncode == 3:
-                raise RuntimeError("O Windows não tem uma voz em russo instalada (Configurações > Hora e idioma > Fala).")
+                raise RuntimeError("O Windows não tem voz em russo instalada (Configurações > Hora e idioma > Fala).")
             if result.returncode != 0 or not temporary.exists() or temporary.stat().st_size == 0:
                 raise RuntimeError("A voz offline do Windows falhou.")
             temporary.replace(target)
@@ -887,913 +278,888 @@ class TTSService:
         return target
 
 
-class Database:
-    def __init__(self, path: Path, content: ContentStore, lexical: LexicalMinimumStore):
+# ============================================================================ léxico
+GRAMMAR_LABELS = {
+    "sg_nom": "nominativo sing.", "sg_gen": "genitivo sing.", "sg_dat": "dativo sing.", "sg_acc": "acusativo sing.",
+    "sg_inst": "instrumental sing.", "sg_prep": "preposicional sing.", "pl_nom": "nominativo pl.", "pl_gen": "genitivo pl.",
+    "pl_dat": "dativo pl.", "pl_acc": "acusativo pl.", "pl_inst": "instrumental pl.", "pl_prep": "preposicional pl.",
+    "presfut_sg1": "1ª pessoa sing.", "presfut_sg2": "2ª pessoa sing.", "presfut_sg3": "3ª pessoa sing.",
+    "presfut_pl1": "1ª pessoa pl.", "presfut_pl2": "2ª pessoa pl.", "presfut_pl3": "3ª pessoa pl.",
+    "past_m": "passado masc.", "past_f": "passado fem.", "past_n": "passado neutro", "past_pl": "passado pl.",
+    "imperative_sg": "imperativo", "imperative_pl": "imperativo pl.", "comparative": "comparativo",
+    "superlative": "superlativo", "short_m": "forma curta masc.", "short_f": "forma curta fem.",
+    "short_n": "forma curta neutra", "short_pl": "forma curta pl.",
+}
+
+
+CASE_LABELS = {"nom": "nominativo", "gen": "genitivo", "dat": "dativo", "acc": "acusativo", "inst": "instrumental", "prep": "preposicional"}
+NUMBER_GENDER = {"m": "masc.", "f": "fem.", "n": "neutro", "pl": "pl."}
+
+
+def grammar_label(column: str) -> str:
+    if column.startswith("decl_"):
+        _, gender, case = column.split("_")
+        return f"{CASE_LABELS.get(case, case)} {NUMBER_GENDER.get(gender, gender)}"
+    return GRAMMAR_LABELS.get(column, column)
+
+
+def public_entry(entry: dict) -> dict:
+    return {
+        "id": entry["id"], "lemma": entry["lemma"], "accented": entry["accented"] or entry["lemma"],
+        "pos": entry["pos"], "pos_label": POS_LABEL.get(entry["pos"], entry["pos"]),
+        "level": entry["level"], "rank": entry["rank"], "pt": entry["pt"] or "",
+        "gender": GENDER_LABEL.get(entry.get("gender") or "", ""),
+        "aspect": {"imperfective": "imperfectivo", "perfective": "perfectivo", "both": "biaspectual"}.get(entry.get("aspect") or "", ""),
+        "study": bool(entry["study"]),
+    }
+
+
+class Lexicon:
+    """Base lexical somente leitura. Descompacta uma vez para a pasta de cache do aluno."""
+
+    def __init__(self, gz_path: Path, cache_dir: Path):
+        self.gz_path = gz_path
+        self.cache_dir = cache_dir
+        self.path, self.forms_path = self._prepare()
+        self._local = threading.local()
+        self.forms_ready = self.forms_path.exists()
+        self._load()
+        if not self.forms_ready:
+            threading.Thread(target=self._build_form_index, daemon=True).start()
+
+    def _prepare(self) -> tuple[Path, Path]:
+        if not self.gz_path.exists():
+            raise SystemExit(f"Base lexical ausente: {self.gz_path}. Rode tools/build_lexicon.py.")
+        digest = hashlib.sha1()
+        digest.update(str(self.gz_path.stat().st_size).encode())
+        with open(self.gz_path, "rb") as handle:
+            digest.update(handle.read(4 * 1024 * 1024))
+        tag = digest.hexdigest()[:12]
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        target = self.cache_dir / f"lexicon-{tag}.sqlite3"
+        forms = self.cache_dir / f"forms-{tag}.sqlite3"
+        if not target.exists():
+            print("Preparando a base lexical (só na primeira abertura)...", flush=True)
+            temporary = target.with_suffix(".tmp")
+            with gzip.open(self.gz_path, "rb") as source, open(temporary, "wb") as out:
+                shutil.copyfileobj(source, out)
+            temporary.replace(target)
+            for old in list(self.cache_dir.glob("lexicon-*.sqlite3")) + list(self.cache_dir.glob("forms-*.sqlite3")):
+                if old not in (target, forms):
+                    old.unlink(missing_ok=True)
+        return target, forms
+
+    def _build_form_index(self) -> None:
+        """Índice forma -> verbete para o dicionário de clique; montado em segundo plano na primeira abertura."""
+        temporary = self.forms_path.with_suffix(".tmp")
+        temporary.unlink(missing_ok=True)
+        source = sqlite3.connect(f"file:{self.path}?mode=ro", uri=True)
+        out = sqlite3.connect(temporary)
+        out.executescript("PRAGMA journal_mode=OFF; PRAGMA synchronous=OFF; CREATE TABLE form_index (form TEXT, entry_id INTEGER, grammar TEXT);")
+        batch: list[tuple] = []
+        for entry_id, lemma, forms in source.execute("SELECT id, lemma, forms FROM entries"):
+            rows = {(plain(lemma), entry_id, "lemma")}
+            for column, value in json.loads(forms or "{}").items():
+                for variant in value.split(","):
+                    form = plain(variant)
+                    if form:
+                        rows.add((form, entry_id, column))
+            batch.extend(rows)
+            if len(batch) > 50000:
+                out.executemany("INSERT INTO form_index VALUES (?,?,?)", batch)
+                batch = []
+        out.executemany("INSERT INTO form_index VALUES (?,?,?)", batch)
+        out.execute("CREATE INDEX idx_form ON form_index(form)")
+        out.commit()
+        out.close()
+        source.close()
+        temporary.replace(self.forms_path)
+        self.forms_ready = True
+
+    def conn(self) -> sqlite3.Connection:
+        conn = getattr(self._local, "conn", None)
+        if conn is None:
+            conn = sqlite3.connect(f"file:{self.path}?mode=ro", uri=True, check_same_thread=False)
+            conn.row_factory = sqlite3.Row
+            self._local.conn = conn
+        return conn
+
+    def _load(self) -> None:
+        conn = sqlite3.connect(f"file:{self.path}?mode=ro", uri=True)
+        conn.row_factory = sqlite3.Row
+        order = [t["id"] for t in json.loads(THEMES_PATH.read_text(encoding="utf-8"))["themes"]]
+        stored = {row["id"]: json.loads(row["data"]) for row in conn.execute("SELECT id, data FROM themes")}
+        self.themes = [stored[t] for t in order if t in stored] + [v for k, v in stored.items() if k not in order]
+        self.theme_ids = [t["id"] for t in self.themes]
+        self.entries: dict[int, dict] = {}
+        for row in conn.execute(
+            "SELECT id, lemma, accented, pos, rank, level, pt, study, gender, animate, aspect, partner, sg_only, pl_only, indeclinable FROM entries"
+        ):
+            self.entries[row["id"]] = dict(row)
+        self.entry_themes: dict[int, list[str]] = defaultdict(list)
+        self.theme_words: dict[str, list[int]] = defaultdict(list)
+        for entry_id, theme in conn.execute("SELECT entry_id, theme_id FROM entry_themes ORDER BY score DESC"):
+            self.entry_themes[entry_id].append(theme)
+            self.theme_words[theme].append(entry_id)
+        for ids in self.theme_words.values():
+            ids.sort(key=lambda i: self.entries[i]["rank"])
+        self.expressions: dict[int, dict] = {r["id"]: dict(r) for r in conn.execute("SELECT id, ru, pt, rank FROM expressions")}
+        self.theme_expressions: dict[str, list[int]] = defaultdict(list)
+        self.expression_themes: dict[int, list[str]] = defaultdict(list)
+        for expr_id, theme in conn.execute("SELECT expression_id, theme_id FROM expression_themes"):
+            self.theme_expressions[theme].append(expr_id)
+            self.expression_themes[expr_id].append(theme)
+        for ids in self.theme_expressions.values():
+            ids.sort(key=lambda i: self.expressions[i]["rank"])
+        self.content_themes: dict[str, list[str]] = defaultdict(list)
+        for item_id, theme in conn.execute("SELECT item_id, theme_id FROM content_themes ORDER BY score DESC"):
+            self.content_themes[item_id].append(theme)
+        self.by_lemma: dict[str, list[int]] = defaultdict(list)
+        self.pos_pool: dict[str, list[int]] = defaultdict(list)
+        for entry_id, entry in sorted(self.entries.items(), key=lambda kv: kv[1]["rank"]):
+            self.by_lemma[plain(entry["lemma"])].append(entry_id)
+            if entry["study"]:
+                self.pos_pool[entry["pos"]].append(entry_id)
+        conn.close()
+
+    def forms(self, entry_id: int) -> dict:
+        row = self.conn().execute("SELECT forms FROM entries WHERE id = ?", (entry_id,)).fetchone()
+        return json.loads(row["forms"] or "{}") if row else {}
+
+    def detail(self, entry_id: int) -> dict | None:
+        entry = self.entries.get(entry_id)
+        if not entry:
+            return None
+        partner = []
+        for name in (entry.get("partner") or "").split(","):
+            name = name.strip()
+            if name:
+                ids = self.by_lemma.get(plain(name), [])
+                partner.append(self.entries[ids[0]]["accented"] if ids else name)
+        return {**public_entry(entry), "forms": self.forms(entry_id), "themes": self.entry_themes.get(entry_id, []), "partner": partner}
+
+    def lookup(self, word: str) -> dict:
+        form = plain(word)
+        if not form:
+            return {"word": word, "entries": []}
+        rows: list[tuple[int, str]] = []
+        if self.forms_ready:
+            conn = sqlite3.connect(f"file:{self.forms_path}?mode=ro", uri=True)
+            try:
+                rows = conn.execute("SELECT entry_id, GROUP_CONCAT(grammar, ',') FROM form_index WHERE form = ? GROUP BY entry_id", (form,)).fetchall()
+            finally:
+                conn.close()
+        else:
+            rows = [(i, "lemma") for i in self.by_lemma.get(form, [])]
+        found = [(self.entries[i], g) for i, g in rows if i in self.entries]
+        found.sort(key=lambda pair: (0 if plain(pair[0]["lemma"]) == form else 1, pair[0]["rank"]))
+        return {
+            "word": word, "ready": self.forms_ready,
+            "entries": [
+                {**public_entry(e), "themes": self.entry_themes.get(e["id"], []),
+                 "grammar": [grammar_label(g) for g in dict.fromkeys((gram or "").split(",")) if g and g != "lemma"][:4]}
+                for e, gram in found[:6]
+            ],
+        }
+
+    def search(self, query: str, limit: int = 40) -> list[dict]:
+        text = plain(query)
+        if len(text) < 2:
+            return []
+        cyrillic = bool(re.search(r"[а-я]", text))
+        results = []
+        for entry in sorted(self.entries.values(), key=lambda e: e["rank"]):
+            if cyrillic:
+                hit = plain(entry["lemma"]).startswith(text)
+            else:
+                hit = bool(entry["pt"]) and any(
+                    part.strip().lower().startswith(text) or f" {text}" in part.lower() for part in entry["pt"].split(";")
+                )
+            if hit:
+                results.append(entry)
+                if len(results) >= limit:
+                    break
+        return [{**public_entry(e), "themes": self.entry_themes.get(e["id"], [])} for e in results]
+
+
+# ============================================================================ conteúdo reaproveitado
+class Content:
+    """Exercícios de gramática (unidades), construções (lições de vocabulário) e aulas narradas."""
+
+    def __init__(self, lexicon: Lexicon):
+        self.structures: dict[str, dict] = {}
+        self.constructions: dict[str, dict] = {}
+        self.units: dict[str, dict] = {}
+        self.theme_structures: dict[str, list[str]] = defaultdict(list)
+        self.theme_constructions: dict[str, list[str]] = defaultdict(list)
+        self.theme_lessons: dict[str, list[str]] = defaultdict(list)
+        unit_votes: dict[str, Counter] = defaultdict(Counter)
+        for path in sorted(UNITS_DIR.glob("*.json")):
+            unit = json.loads(path.read_text(encoding="utf-8"))
+            if unit.get("course_id", "russian") != "russian":
+                continue
+            self.units[unit["id"]] = unit
+            for exercise in unit.get("exercises", []):
+                if exercise.get("type") not in STRUCTURE_TYPES:
+                    continue
+                item_id = f"g:{exercise['id']}"
+                self.structures[item_id] = {**exercise, "unit_id": unit["id"], "unit_title": unit.get("title", "")}
+                for theme in lexicon.content_themes.get(exercise["id"], ["essencial"]):
+                    self.theme_structures[theme].append(item_id)
+                    unit_votes[unit["id"]][theme] += 1
+        if PREFIX_PATH.exists():
+            prefix = json.loads(PREFIX_PATH.read_text(encoding="utf-8"))
+            for exercise in prefix.get("exercises", []):
+                item_id = f"g:{exercise['id']}"
+                self.structures[item_id] = {**exercise, "type": exercise.get("type", "choice"), "unit_id": "", "unit_title": "Verbos com prefixo"}
+                for theme in lexicon.content_themes.get(exercise["id"], ["essencial"]):
+                    self.theme_structures[theme].append(item_id)
+        for path in sorted(VOCAB_DIR.glob("*.json")):
+            lesson = json.loads(path.read_text(encoding="utf-8"))
+            for item in lesson.get("items", []):
+                item_id = f"c:{lesson['id']}:{item['key']}"
+                self.constructions[item_id] = {**item, "lesson_title": lesson.get("title", "")}
+                for theme in lexicon.content_themes.get(f"{lesson['id']}:{item['key']}", ["essencial"]):
+                    self.theme_constructions[theme].append(item_id)
+        for unit_id, votes in unit_votes.items():
+            if not self.units[unit_id].get("grammar"):
+                continue
+            total = sum(votes.values())
+            for theme, count in votes.most_common(3):
+                if count / total >= 0.2:
+                    self.theme_lessons[theme].append(unit_id)
+
+    def lesson_summary(self, unit_id: str) -> dict:
+        unit = self.units[unit_id]
+        return {"id": unit_id, "title": unit.get("title", ""), "minutes": unit.get("estimated_minutes")}
+
+
+# ============================================================================ progresso
+class Progress:
+    def __init__(self, path: Path):
         self.path = path
-        self.content = content
-        self.lexical = lexical
+        self.path.parent.mkdir(parents=True, exist_ok=True)
         self._lock = threading.Lock()
-        self.sessions = SessionStore(self.connect, self._lock)
-        self.initialize()
+        with self.connect() as conn:
+            conn.executescript(
+                """
+                CREATE TABLE IF NOT EXISTS items (
+                    item_id TEXT PRIMARY KEY, kind TEXT NOT NULL, theme_id TEXT,
+                    stage INTEGER NOT NULL DEFAULT 0, due_at TEXT, seen_at TEXT NOT NULL, last_at TEXT,
+                    last_success_day TEXT, correct INTEGER NOT NULL DEFAULT 0, wrong INTEGER NOT NULL DEFAULT 0,
+                    lapses INTEGER NOT NULL DEFAULT 0
+                );
+                CREATE TABLE IF NOT EXISTS attempts (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT NOT NULL, item_id TEXT NOT NULL,
+                    theme_id TEXT, exercise TEXT, mode TEXT, score REAL, answer TEXT, expected TEXT
+                );
+                CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value TEXT NOT NULL);
+                CREATE INDEX IF NOT EXISTS idx_items_due ON items(due_at);
+                """
+            )
 
     def connect(self) -> sqlite3.Connection:
         conn = sqlite3.connect(self.path, timeout=10)
         conn.row_factory = sqlite3.Row
-        conn.execute("PRAGMA foreign_keys = ON")
-        conn.execute("PRAGMA journal_mode = WAL")
+        conn.execute("PRAGMA journal_mode=WAL")
         return conn
 
-    def initialize(self) -> None:
-        self.path.parent.mkdir(parents=True, exist_ok=True)
-        EXPORT_DIR.mkdir(parents=True, exist_ok=True)
+    def settings(self) -> dict:
         with self.connect() as conn:
-            conn.executescript(
-                """
-                CREATE TABLE IF NOT EXISTS attempts (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    created_at TEXT NOT NULL,
-                    session_id TEXT NOT NULL,
-                    unit_id TEXT NOT NULL,
-                    exercise_id TEXT NOT NULL,
-                    exercise_type TEXT NOT NULL,
-                    stage TEXT,
-                    mode TEXT NOT NULL,
-                    consultation TEXT NOT NULL,
-                    prompt_snapshot TEXT NOT NULL,
-                    answer_text TEXT NOT NULL,
-                    expected_snapshot TEXT,
-                    is_correct INTEGER,
-                    response_ms INTEGER,
-                    self_error_type TEXT,
-                    tags_json TEXT NOT NULL,
-                    app_version TEXT NOT NULL
-                );
+            stored = {r["key"]: json.loads(r["value"]) for r in conn.execute("SELECT key, value FROM settings")}
+        return {**DEFAULT_SETTINGS, **stored}
 
-                CREATE TABLE IF NOT EXISTS progress (
-                    exercise_id TEXT PRIMARY KEY,
-                    repetitions INTEGER NOT NULL DEFAULT 0,
-                    interval_days REAL NOT NULL DEFAULT 0,
-                    ease REAL NOT NULL DEFAULT 2.5,
-                    due_at TEXT NOT NULL,
-                    lapses INTEGER NOT NULL DEFAULT 0,
-                    last_result INTEGER,
-                    last_consultation TEXT,
-                    updated_at TEXT NOT NULL
-                );
+    def save_settings(self, values: dict) -> dict:
+        clean = {}
+        if values.get("min_level") in LEVELS:
+            clean["min_level"] = values["min_level"]
+        if str(values.get("session_size", "")).isdigit() and 4 <= int(values["session_size"]) <= 20:
+            clean["session_size"] = int(values["session_size"])
+        with self._lock, self.connect() as conn:
+            conn.executemany("INSERT OR REPLACE INTO settings VALUES (?, ?)", [(k, json.dumps(v)) for k, v in clean.items()])
+        return self.settings()
 
-                CREATE TABLE IF NOT EXISTS settings (
-                    key TEXT PRIMARY KEY,
-                    value TEXT NOT NULL
-                );
+    def states(self) -> dict[str, sqlite3.Row]:
+        with self.connect() as conn:
+            return {r["item_id"]: r for r in conn.execute("SELECT * FROM items")}
 
-                CREATE TABLE IF NOT EXISTS content_reports (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    created_at TEXT NOT NULL,
-                    session_id TEXT NOT NULL,
-                    unit_id TEXT NOT NULL,
-                    exercise_id TEXT NOT NULL,
-                    prompt_snapshot TEXT NOT NULL,
-                    reason TEXT NOT NULL,
-                    note TEXT,
-                    status TEXT NOT NULL DEFAULT 'open',
-                    context_json TEXT NOT NULL
-                );
-
-                CREATE TABLE IF NOT EXISTS lexeme_progress (
-                    lemma TEXT PRIMARY KEY,
-                    first_seen TEXT NOT NULL,
-                    last_seen TEXT NOT NULL,
-                    exposures INTEGER NOT NULL DEFAULT 0,
-                    best_score REAL NOT NULL DEFAULT 0,
-                    exact_sc INTEGER NOT NULL DEFAULT 0
-                );
-
-                CREATE TABLE IF NOT EXISTS unit_completion (
-                    unit_id TEXT PRIMARY KEY,
-                    completed_at TEXT NOT NULL
-                );
-
-                CREATE INDEX IF NOT EXISTS idx_attempts_exercise
-                    ON attempts(exercise_id, created_at);
-                CREATE INDEX IF NOT EXISTS idx_attempts_unit
-                    ON attempts(unit_id, created_at);
-                CREATE INDEX IF NOT EXISTS idx_progress_due
-                    ON progress(due_at);
-                CREATE INDEX IF NOT EXISTS idx_content_reports_status
-                    ON content_reports(status, created_at);
-                CREATE INDEX IF NOT EXISTS idx_lexeme_progress_mastery
-                    ON lexeme_progress(exact_sc, last_seen);
-                """
+    def mark_seen(self, item_id: str, kind: str, theme_id: str) -> None:
+        with self._lock, self.connect() as conn:
+            conn.execute(
+                "INSERT OR IGNORE INTO items (item_id, kind, theme_id, stage, due_at, seen_at) VALUES (?,?,?,0,?,?)",
+                (item_id, kind, theme_id, iso(now_utc() + INTERVALS[0]), iso()),
             )
-            self._ensure_column(conn, "attempts", "score", "REAL")
-            self._ensure_column(conn, "attempts", "verdict", "TEXT")
-            SessionStore.init_schema(conn)
 
-    @staticmethod
-    def _ensure_column(conn: sqlite3.Connection, table: str, column: str, declaration: str) -> None:
-        columns = {row[1] for row in conn.execute(f"PRAGMA table_info({table})")}
-        if column not in columns:
-            conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {declaration}")
-
-    def save_attempt(self, payload: dict, exercise: dict, result: dict) -> int:
-        prompt = exercise.get("prompt") or exercise.get("front") or exercise.get("question", "")
-        answer_text = payload.get("answer", "")
-        if isinstance(answer_text, list):
-            if answer_text and all(isinstance(item, dict) for item in answer_text):
-                answer_text = "; ".join(f"{item.get('left', '')} = {item.get('right', '')}" for item in answer_text)
+    def record(self, item_id: str, kind: str, theme_id: str, exercise: str, mode: str, score: float, answer: str, expected: str) -> dict:
+        now = now_utc()
+        today = now.astimezone().date().isoformat()
+        with self._lock, self.connect() as conn:
+            conn.execute(
+                "INSERT OR IGNORE INTO items (item_id, kind, theme_id, stage, due_at, seen_at) VALUES (?,?,?,0,?,?)",
+                (item_id, kind, theme_id, iso(now), iso(now)),
+            )
+            row = conn.execute("SELECT * FROM items WHERE item_id = ?", (item_id,)).fetchone()
+            stage = row["stage"]
+            if score >= 1:
+                # O estágio sobe no máximo uma vez por dia: acertar três vezes na mesma sessão não prova memória de longo prazo.
+                if row["last_success_day"] != today:
+                    stage = min(stage + 1, len(INTERVALS) - 1)
+                due = now + INTERVALS[stage]
+                conn.execute(
+                    "UPDATE items SET stage=?, due_at=?, last_at=?, last_success_day=?, correct=correct+1 WHERE item_id=?",
+                    (stage, iso(due), iso(now), today, item_id),
+                )
+            elif score > 0:
+                due = now + timedelta(hours=6)
+                conn.execute("UPDATE items SET due_at=?, last_at=?, wrong=wrong+1 WHERE item_id=?", (iso(due), iso(now), item_id))
             else:
-                answer_text = " ".join(str(item) for item in answer_text)
-        expected = result.get("correct_answer")
-        with self._lock, self.connect() as conn:
-            cursor = conn.execute(
-                """
-                INSERT INTO attempts (
-                    created_at, session_id, unit_id, exercise_id, exercise_type,
-                    stage, mode, consultation, prompt_snapshot, answer_text,
-                    expected_snapshot, is_correct, response_ms, self_error_type,
-                    tags_json, app_version, score, verdict
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NULL, ?, ?, ?, ?)
-                """,
-                (
-                    iso(),
-                    str(payload.get("session_id") or "sem-sessao"),
-                    exercise["unit_id"],
-                    exercise["id"],
-                    exercise.get("type", "unknown"),
-                    exercise.get("stage", "practice"),
-                    str(payload.get("mode") or "study"),
-                    str(payload.get("consultation") or "SC"),
-                    prompt,
-                    str(answer_text),
-                    expected,
-                    None if result["is_correct"] is None else int(result["is_correct"]),
-                    max(0, int(payload.get("response_ms") or 0)),
-                    json.dumps(exercise.get("tags", []), ensure_ascii=False),
-                    APP_VERSION,
-                    result.get("score"),
-                    result.get("verdict"),
-                ),
-            )
-            attempt_id = int(cursor.lastrowid)
-            if result["is_correct"] is not None:
-                self._update_progress(
-                    conn,
-                    exercise["id"],
-                    float(result.get("score") or 0),
-                    str(payload.get("consultation") or "SC"),
-                    payload.get("rating"),
+                stage = max(0, stage - 2)
+                due = now + INTERVALS[0]
+                conn.execute(
+                    "UPDATE items SET stage=?, due_at=?, last_at=?, wrong=wrong+1, lapses=lapses+1 WHERE item_id=?",
+                    (stage, iso(due), iso(now), item_id),
                 )
-                self._update_lexeme_progress(
-                    conn,
-                    exercise.get("tags", []),
-                    float(result.get("score") or 0),
-                    str(payload.get("consultation") or "SC"),
-                )
-                self._maybe_complete_unit(conn, exercise["unit_id"])
-            conn.commit()
-        self.write_live_exports()
-        return attempt_id
-
-    @staticmethod
-    def _update_lexeme_progress(
-        conn: sqlite3.Connection,
-        tags: list[str],
-        score: float,
-        consultation: str,
-    ) -> None:
-        lemmas = {tag.split(":", 1)[1] for tag in tags if tag.startswith("lexeme:") and ":" in tag}
-        for lemma in lemmas:
-            timestamp = iso()
-            exact_increment = int(score >= 1 and consultation == "SC")
             conn.execute(
-                """
-                INSERT INTO lexeme_progress (
-                    lemma, first_seen, last_seen, exposures, best_score, exact_sc
-                ) VALUES (?, ?, ?, 1, ?, ?)
-                ON CONFLICT(lemma) DO UPDATE SET
-                    last_seen=excluded.last_seen,
-                    exposures=lexeme_progress.exposures + 1,
-                    best_score=MAX(lexeme_progress.best_score, excluded.best_score),
-                    exact_sc=lexeme_progress.exact_sc + excluded.exact_sc
-                """,
-                (lemma, timestamp, timestamp, score, exact_increment),
+                "INSERT INTO attempts (at, item_id, theme_id, exercise, mode, score, answer, expected) VALUES (?,?,?,?,?,?,?,?)",
+                (iso(now), item_id, theme_id, exercise, mode, score, answer[:4000], expected[:4000]),
             )
+        return {"stage": stage, "due_at": iso(due), "mastered": stage >= MASTERED_STAGE}
 
-    def lexeme_seen(self) -> set[str]:
+    def totals(self) -> dict:
+        today = now_utc().astimezone().date()
         with self.connect() as conn:
-            rows = conn.execute("SELECT lemma FROM lexeme_progress").fetchall()
-        return {row["lemma"] for row in rows}
+            days = {r[0] for r in conn.execute("SELECT DISTINCT substr(at, 1, 10) FROM attempts ORDER BY 1 DESC LIMIT 400")}
+            seen_total = conn.execute("SELECT COUNT(*) FROM items").fetchone()[0]
+            mastered = conn.execute("SELECT COUNT(*) FROM items WHERE stage >= ?", (MASTERED_STAGE,)).fetchone()[0]
+            due = conn.execute("SELECT COUNT(*) FROM items WHERE due_at <= ?", (iso(),)).fetchone()[0]
+        streak, day = 0, now_utc().date()
+        if day.isoformat() not in days:
+            day -= timedelta(days=1)
+        while day.isoformat() in days:
+            streak += 1
+            day -= timedelta(days=1)
+        return {"seen": seen_total, "mastered": mastered, "due": due, "streak": streak, "today": today.isoformat()}
 
-    def lexical_coverage(self) -> dict[str, object]:
-        metadata = self.lexical.metadata()
-        total = int(metadata.get("unique_lemmas", 0))
-        with self.connect() as conn:
-            row = conn.execute(
-                """
-                SELECT COUNT(*) AS seen,
-                       SUM(CASE WHEN exact_sc >= 2 THEN 1 ELSE 0 END) AS mastered,
-                       SUM(exposures) AS exposures
-                FROM lexeme_progress
-                """
-            ).fetchone()
-        seen = int(row["seen"] or 0)
-        mastered = int(row["mastered"] or 0)
-        return {
-            "total": total,
-            "seen": seen,
-            "mastered": mastered,
-            "exposures": int(row["exposures"] or 0),
-            "seen_percent": round(100 * seen / total, 2) if total else 0,
-            "mastered_percent": round(100 * mastered / total, 2) if total else 0,
-            "mastery_rule": "2 acertos exatos sem consulta",
-        }
 
-    def _update_progress(
-        self,
-        conn: sqlite3.Connection,
-        exercise_id: str,
-        score: float,
-        consultation: str,
-        rating: object,
-    ) -> None:
-        row = conn.execute(
-            "SELECT * FROM progress WHERE exercise_id = ?", (exercise_id,)
-        ).fetchone()
-        repetitions = int(row["repetitions"]) if row else 0
-        ease = float(row["ease"]) if row else 2.5
-        lapses = int(row["lapses"]) if row else 0
+# ============================================================================ motor do curso
+class Course:
+    def __init__(self, lexicon: Lexicon, content: Content, progress: Progress, lessons: LessonStore):
+        self.lex = lexicon
+        self.content = content
+        self.progress = progress
+        self.lessons = lessons
+        self.pending: dict[str, dict] = {}  # token -> gabarito; o navegador só vê a resposta depois de responder
+        self._lock = threading.Lock()
 
-        try:
-            rating_value = int(rating) if rating is not None else None
-        except (TypeError, ValueError):
-            rating_value = None
+    # -- pertencimento e contagens
+    def item_themes(self, item_id: str) -> list[str]:
+        kind, _, rest = item_id.partition(":")
+        if kind == "w":
+            return self.lex.entry_themes.get(int(rest), [])
+        if kind == "x":
+            return self.lex.expression_themes.get(int(rest), [])
+        if kind in ("g", "c"):
+            return self.lex.content_themes.get(rest, ["essencial"])
+        if kind == "l" and item_id in self.lessons.graded:
+            return [self.lessons.lessons[self.lessons.graded[item_id][0]]["theme"]]
+        return []
 
-        if score <= 0:
-            repetitions = 0
-            lapses += 1
-            ease = max(1.3, ease - 0.2)
-            interval = 10 / (24 * 60)  # dez minutos
-        elif score < 1:
-            repetitions = 0
-            ease = max(1.3, ease - 0.08)
-            interval = 0.25  # seis horas: reconheceu parte, mas ainda não dominou
-        else:
-            repetitions += 1
-            base_intervals = [1, 3, 7, 14, 30, 60, 120]
-            interval = base_intervals[min(repetitions - 1, len(base_intervals) - 1)]
-            if consultation == "C":
-                interval = min(interval, 1)
-                ease = max(1.3, ease - 0.08)
-            elif consultation == "CC":
-                interval = min(interval, 3)
-            elif rating_value == 4:
-                interval *= 1.5
-                ease = min(3.0, ease + 0.08)
-            elif rating_value == 2:
-                interval = max(1, interval * 0.6)
-                ease = max(1.3, ease - 0.05)
+    def exists(self, item_id: str) -> bool:
+        kind, _, rest = item_id.partition(":")
+        if kind == "w":
+            return rest.isdigit() and int(rest) in self.lex.entries
+        if kind == "x":
+            return rest.isdigit() and int(rest) in self.lex.expressions
+        if kind == "g":
+            return item_id in self.content.structures
+        if kind == "c":
+            return item_id in self.content.constructions
+        if kind == "l":
+            return item_id in self.lessons.graded
+        return False
 
-        due_at = now_utc() + timedelta(days=interval)
-        conn.execute(
-            """
-            INSERT INTO progress (
-                exercise_id, repetitions, interval_days, ease, due_at,
-                lapses, last_result, last_consultation, updated_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(exercise_id) DO UPDATE SET
-                repetitions=excluded.repetitions,
-                interval_days=excluded.interval_days,
-                ease=excluded.ease,
-                due_at=excluded.due_at,
-                lapses=excluded.lapses,
-                last_result=excluded.last_result,
-                last_consultation=excluded.last_consultation,
-                updated_at=excluded.updated_at
-            """,
-            (
-                exercise_id,
-                repetitions,
-                interval,
-                ease,
-                iso(due_at),
-                lapses,
-                score,
-                consultation,
-                iso(),
-            ),
-        )
+    def word_ids(self, theme_id: str, min_level: str) -> list[int]:
+        allowed = set(LEVELS[LEVELS.index(min_level):])
+        entries = self.lex.entries
+        return [i for i in self.lex.theme_words.get(theme_id, []) if entries[i]["study"] and entries[i]["level"] in allowed]
 
-    def _maybe_complete_unit(self, conn: sqlite3.Connection, unit_id: str) -> None:
-        unit = self.content.units_by_id.get(unit_id)
-        if not unit:
-            return
-        gradable_ids = [
-            exercise["id"] for exercise in unit["exercises"] if exercise.get("type") != "open_text"
-        ]
-        if not gradable_ids:
-            return
-        already = conn.execute(
-            "SELECT 1 FROM unit_completion WHERE unit_id = ?", (unit_id,)
-        ).fetchone()
-        if already:
-            return
-        placeholders = ",".join("?" for _ in gradable_ids)
-        cleared = conn.execute(
-            f"""
-            SELECT COUNT(*) AS c FROM (
-                SELECT exercise_id
-                FROM attempts
-                WHERE is_correct IS NOT NULL AND exercise_id IN ({placeholders})
-                GROUP BY exercise_id
-                HAVING {mastery_having_sql()}
-            )
-            """,
-            gradable_ids,
-        ).fetchone()["c"]
-        if cleared / len(gradable_ids) >= UNIT_COMPLETION_THRESHOLD:
-            conn.execute(
-                "INSERT OR IGNORE INTO unit_completion (unit_id, completed_at) VALUES (?, ?)",
-                (unit_id, iso()),
-            )
+    def expression_ids(self, theme_id: str) -> list[str]:
+        return list(self.content.theme_constructions.get(theme_id, [])) + [f"x:{i}" for i in self.lex.theme_expressions.get(theme_id, [])]
 
-    def reconcile_unit_completion(self) -> None:
-        """Reaplica a regra de conclusão a todas as unidades.
+    def theme(self, theme_id: str) -> dict:
+        return next(t for t in self.lex.themes if t["id"] == theme_id)
 
-        Necessário porque `_maybe_complete_unit` só roda ao salvar uma nova
-        tentativa: sem isto, mudar MASTERY_TIERS/UNIT_COMPLETION_THRESHOLD não
-        destrava quem já tinha nota suficiente sob a regra nova mas não
-        respondeu mais nada desde então.
-        """
-        with self._lock, self.connect() as conn:
-            for unit in self.content.units:
-                self._maybe_complete_unit(conn, unit["id"])
-
-    def unit_progress(self, course_id: str = "") -> list[dict]:
-        with self.connect() as conn:
-            completed_ids = {
-                row["unit_id"] for row in conn.execute("SELECT unit_id FROM unit_completion")
-            }
-            # "Dominado" = domínio cumulativo (ver MASTERY_TIERS): nota alta numa
-            # tentativa conta tanto quanto nota média repetida várias vezes. Um erro
-            # isolado numa revisão espaçada posterior não faz o exercício "regredir"
-            # e travar o desbloqueio da próxima unidade, pois olhamos o histórico
-            # inteiro de tentativas, não só a última.
-            cleared_ids = {
-                row["exercise_id"]
-                for row in conn.execute(
-                    f"""
-                    SELECT exercise_id
-                    FROM attempts
-                    WHERE is_correct IS NOT NULL
-                    GROUP BY exercise_id
-                    HAVING {mastery_having_sql()}
-                    """
-                )
-            }
+    def overview(self) -> dict:
+        settings = self.progress.settings()
+        states = self.progress.states()
+        now = iso()
         result = []
-        previous_completed: dict[str, bool] = defaultdict(lambda: True)
-        units = [unit for unit in self.content.units if not course_id or unit.get("course_id") == course_id]
-        for unit in units:
-            unit_course = unit.get("course_id", "russian")
-            # Unidades de order 0 (diagnóstico) ficam sempre disponíveis, fora da trilha
-            # sequencial: não são bloqueadas nem servem de pré-requisito para as demais.
-            standalone = unit.get("order", 999) == 0
-            gradable = [ex for ex in unit["exercises"] if ex.get("type") != "open_text"]
-            total = len(gradable)
-            cleared = sum(1 for ex in gradable if ex["id"] in cleared_ids)
-            completed = unit["id"] in completed_ids
+        for theme in self.lex.themes:
+            tid = theme["id"]
+            words = self.word_ids(tid, settings["min_level"])
+            aspects = {a["id"]: {"id": a["id"], "label": a["label"], "total": 0, "seen": 0, "mastered": 0} for a in ASPECTS}
+            levels = {lvl: {"total": 0, "seen": 0} for lvl in LEVELS}
+            counters = {"due": 0}
+
+            def tally(aspect_id: str, item_id: str) -> bool:
+                bucket = aspects[aspect_id]
+                bucket["total"] += 1
+                state = states.get(item_id)
+                if state is None:
+                    return False
+                bucket["seen"] += 1
+                if state["stage"] >= MASTERED_STAGE:
+                    bucket["mastered"] += 1
+                if state["due_at"] and state["due_at"] <= now:
+                    counters["due"] += 1
+                return True
+
+            new_words = 0
+            for entry_id in words:
+                entry = self.lex.entries[entry_id]
+                seen = tally(POS_ASPECT[entry["pos"]], f"w:{entry_id}")
+                levels[entry["level"]]["total"] += 1
+                if seen:
+                    levels[entry["level"]]["seen"] += 1
+                else:
+                    new_words += 1
+            for item_id in self.content.theme_structures.get(tid, []):
+                tally("estruturas", item_id)
+            for item_id in self.expression_ids(tid):
+                tally("expressoes", item_id)
+            for item_id in self.lessons.theme_items(tid):
+                tally(self.lessons.aspect(item_id), item_id)
+            total = sum(a["total"] for a in aspects.values())
             result.append({
-                "unit_id": unit["id"],
+                **theme,
                 "total": total,
-                "cleared": cleared,
-                "percent": round(100 * cleared / total) if total else 100,
-                "completed": completed,
-                "unlocked": True if standalone else previous_completed[unit_course],
+                "seen": sum(a["seen"] for a in aspects.values()),
+                "mastered": sum(a["mastered"] for a in aspects.values()),
+                "due": counters["due"], "new_words": new_words,
+                "aspects": list(aspects.values()),
+                "levels": [{"level": k, **v} for k, v in levels.items() if v["total"]],
+                "grammar_lessons": [self.content.lesson_summary(u) for u in self.content.theme_lessons.get(tid, [])],
+                "modules": [self.lessons.summary(l, states) for l in self.lessons.by_theme.get(tid, [])],
+                "preview": [self.lex.entries[i]["accented"] for i in words[:5]],
             })
-            if not standalone:
-                previous_completed[unit_course] = completed
-        return result
+        return {"themes": result, "settings": settings, "totals": self.progress.totals()}
 
-    def prefix_progress(self) -> dict:
-        """Domínio por prefixo no módulo "Verbos com prefixo".
+    # -- exercícios
+    def _token(self, payload: dict) -> str:
+        token = secrets.token_urlsafe(9)
+        with self._lock:
+            if len(self.pending) > 20000:
+                self.pending.clear()
+            self.pending[token] = payload
+        return token
 
-        Mesma regra cumulativa de MASTERY_TIERS usada na trilha. Retorna
-        {stage_id: {"total", "cleared"}} mais um total geral.
-        """
-        module = self.content.prefix_module
-        exercises = module.get("exercises", [])
-        if not exercises:
-            return {"stages": {}, "total": 0, "cleared": 0}
-        with self.connect() as conn:
-            cleared_ids = {
-                row["exercise_id"]
-                for row in conn.execute(
-                    f"""
-                    SELECT exercise_id
-                    FROM attempts
-                    WHERE is_correct IS NOT NULL
-                    GROUP BY exercise_id
-                    HAVING {mastery_having_sql()}
-                    """
-                )
-            }
-        stages: dict[str, dict] = {}
-        for exercise in exercises:
-            bucket = stages.setdefault(exercise["stage"], {"total": 0, "cleared": 0})
-            bucket["total"] += 1
-            if exercise["id"] in cleared_ids:
-                bucket["cleared"] += 1
-        return {
-            "stages": stages,
-            "total": len(exercises),
-            "cleared": sum(1 for ex in exercises if ex["id"] in cleared_ids),
-        }
+    def _distractors(self, entry: dict, theme_id: str, field: str, count: int = 3) -> list[dict]:
+        target_meanings = {m.strip().lower() for m in (entry["pt"] or "").split(";")}
+        target_lemma = plain(entry["lemma"])
+        entries = self.lex.entries
+        pool = [i for i in self.lex.theme_words.get(theme_id, []) if entries[i]["pos"] == entry["pos"] and entries[i]["study"]]
+        if len(pool) < 12:
+            pool = self.lex.pos_pool[entry["pos"]]
+        nearby = sorted(pool, key=lambda i: abs(entries[i]["rank"] - entry["rank"]))[:80]
+        random.shuffle(nearby)
+        chosen, seen_values = [], set()
+        for candidate_id in nearby:
+            candidate = entries[candidate_id]
+            meaning = main_meaning(candidate["pt"]).lower()
+            if candidate_id == entry["id"] or plain(candidate["lemma"]) == target_lemma or meaning in target_meanings:
+                continue
+            value = main_meaning(candidate["pt"]) if field == "pt" else candidate["accented"]
+            if not value or value.lower() in seen_values:
+                continue
+            seen_values.add(value.lower())
+            chosen.append(candidate)
+            if len(chosen) >= count:
+                break
+        return chosen
 
-    def cleared_exercise_ids(self) -> set[str]:
-        with self.connect() as conn:
-            return {
-                row["exercise_id"]
-                for row in conn.execute(
-                    f"""
-                    SELECT exercise_id
-                    FROM attempts
-                    WHERE is_correct IS NOT NULL
-                    GROUP BY exercise_id
-                    HAVING {mastery_having_sql()}
-                    """
-                )
-            }
+    def word_intro(self, entry_id: int, theme_id: str) -> dict:
+        return {"type": "intro", "kind": "word", "item_id": f"w:{entry_id}", "theme_id": theme_id, "word": self.lex.detail(entry_id)}
 
-    def vocab_progress(self) -> dict[str, dict]:
-        """Domínio por lição de vocabulário (mesma regra cumulativa da trilha).
+    def word_exercise(self, entry_id: int, theme_id: str, variant: str) -> dict | None:
+        entry = self.lex.entries[entry_id]
+        base = {"item_id": f"w:{entry_id}", "theme_id": theme_id, "kind": "word", "aspect": POS_ASPECT[entry["pos"]]}
+        meaning = main_meaning(entry["pt"])
+        if variant == "form":
+            built = self._form_exercise(entry)
+            if built:
+                prompt, hint, answer, options = built
+                token = self._token({**base, "exercise": "form", "answer": answer, "accept": [answer], "full": entry["pt"]})
+                return {**base, "type": "choice", "exercise": "form", "token": token, "instruction": "Escolha a forma correta.",
+                        "prompt": prompt, "prompt_ru": True, "hint": hint, "options": options, "ru_options": True}
+            variant = "pt_ru"
+        if variant == "type":
+            token = self._token({**base, "exercise": "type", "answer": entry["accented"], "accept": [entry["lemma"]], "typed": True, "full": entry["pt"]})
+            return {**base, "type": "input", "exercise": "type", "token": token, "instruction": "Escreva em russo (forma de dicionário).",
+                    "prompt": meaning, "hint": POS_LABEL[entry["pos"]]}
+        if variant == "pt_ru":
+            others = self._distractors(entry, theme_id, "ru")
+            options = [entry["accented"]] + [o["accented"] for o in others]
+            random.shuffle(options)
+            token = self._token({**base, "exercise": "pt_ru", "answer": entry["accented"], "accept": [entry["accented"]], "full": entry["pt"]})
+            return {**base, "type": "choice", "exercise": "pt_ru", "token": token, "instruction": "Qual é a palavra russa?",
+                    "prompt": meaning, "hint": POS_LABEL[entry["pos"]], "options": options, "ru_options": True}
+        others = self._distractors(entry, theme_id, "pt")
+        options = [meaning] + [main_meaning(o["pt"]) for o in others]
+        random.shuffle(options)
+        token = self._token({**base, "exercise": variant, "answer": meaning, "accept": [meaning], "full": entry["pt"],
+                             "transcript": entry["accented"] if variant == "audio" else ""})
+        if variant == "audio":
+            return {**base, "type": "choice", "exercise": "audio", "token": token, "instruction": "Ouça e escolha o significado.",
+                    "audio": entry["lemma"], "prompt": "", "options": options}
+        return {**base, "type": "choice", "exercise": "ru_pt", "token": token, "instruction": "O que significa?",
+                "prompt": entry["accented"], "prompt_ru": True, "audio": entry["lemma"], "options": options}
 
-        Além dos exercícios, conta quantas das oito construções já estão
-        firmes: uma construção conta quando suas tarefas de forma e de contexto
-        (form, cloze, build) atingiram o patamar de domínio.
-        """
-        cleared = self.cleared_exercise_ids()
-        with self.connect() as conn:
-            attempted_ids = {
-                row["exercise_id"]
-                for row in conn.execute(
-                    "SELECT DISTINCT exercise_id FROM attempts WHERE unit_id LIKE ?",
-                    (VOCAB_UNIT_PREFIX + "%",),
-                )
-            }
-        result: dict[str, dict] = {}
-        for lesson in self.content.vocab.lessons:
-            graded = [
-                exercise["id"] for exercise in lesson["generated"]
-                if exercise["type"] not in UNGRADED_TYPES and exercise["type"] != "open_text"
-            ]
-            items_firm = sum(
-                1 for item in lesson["items"]
-                if all(f"vx-{lesson['id']}-{item['key']}-{role}" in cleared for role in ("form", "cloze", "build"))
-            )
-            result[lesson["id"]] = {
-                "total": len(graded),
-                "cleared": sum(1 for ex_id in graded if ex_id in cleared),
-                "attempted": sum(1 for ex_id in graded if ex_id in attempted_ids),
-                "items_total": len(lesson["items"]),
-                "items_firm": items_firm,
-            }
-        return result
-
-    def classify_attempt(self, attempt_id: int, category: str) -> bool:
-        allowed = {"regencia", "terminacao", "vocabulario", "aspecto", "gramatica", "ortografia", "pronuncia", "digitacao", "nao_sei"}
-        if category not in allowed:
-            return False
-        with self.connect() as conn:
-            cursor = conn.execute(
-                "UPDATE attempts SET self_error_type = ? WHERE id = ?",
-                (category, attempt_id),
-            )
-            conn.commit()
-        self.write_live_exports()
-        return cursor.rowcount == 1
-
-    def save_content_report(self, payload: dict, exercise: dict) -> int:
-        prompt = exercise.get("prompt") or exercise.get("front") or ""
-        reason = str(payload.get("reason") or "outro")[:80]
-        note = str(payload.get("note") or "").strip()[:2000]
-        context = {
-            "exercise_type": exercise.get("type"),
-            "stage": exercise.get("stage"),
-            "answer_during_report": payload.get("answer", ""),
-            "app_version": APP_VERSION,
-        }
-        with self.connect() as conn:
-            cursor = conn.execute(
-                """
-                INSERT INTO content_reports (
-                    created_at, session_id, unit_id, exercise_id,
-                    prompt_snapshot, reason, note, status, context_json
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, 'open', ?)
-                """,
-                (
-                    iso(),
-                    str(payload.get("session_id") or "sem-sessao"),
-                    exercise["unit_id"],
-                    exercise["id"],
-                    prompt,
-                    reason,
-                    note,
-                    json.dumps(context, ensure_ascii=False),
-                ),
-            )
-            report_id = int(cursor.lastrowid)
-            conn.commit()
-        self.write_live_exports()
-        return report_id
-
-    def content_reports(self, status: str = "open", course_id: str = "") -> list[dict]:
-        with self.connect() as conn:
-            rows = conn.execute(
-                """
-                SELECT id, created_at, session_id, unit_id, exercise_id,
-                       prompt_snapshot, reason, note, status, context_json
-                FROM content_reports
-                WHERE status = ?
-                ORDER BY created_at DESC
-                """,
-                (status,),
-            ).fetchall()
-        reports = [dict(row) for row in rows]
-        if course_id:
-            allowed = self.content.course_unit_ids(course_id)
-            reports = [report for report in reports if report["unit_id"] in allowed]
-        return reports
-
-    def due_ids(self) -> list[str]:
-        with self.connect() as conn:
-            rows = conn.execute(
-                "SELECT exercise_id FROM progress WHERE due_at <= ? ORDER BY due_at",
-                (iso(),),
-            ).fetchall()
-        return [row["exercise_id"] for row in rows]
-
-    def difficult_ids(self, limit: int = 30) -> list[str]:
-        with self.connect() as conn:
-            rows = conn.execute(
-                """
-                SELECT exercise_id,
-                       SUM(CASE WHEN COALESCE(score, is_correct) < 1 THEN 1 ELSE 0 END) AS errors,
-                       COUNT(*) AS attempts
-                FROM attempts
-                WHERE is_correct IS NOT NULL
-                GROUP BY exercise_id
-                HAVING errors > 0
-                ORDER BY CAST(errors AS REAL) / attempts DESC, errors DESC
-                LIMIT ?
-                """,
-                (limit,),
-            ).fetchall()
-        return [row["exercise_id"] for row in rows]
-
-    def pending_writing(self, course_id: str = "") -> list[dict]:
-        with self.connect() as conn:
-            rows = conn.execute(
-                """
-                SELECT id, created_at, unit_id, exercise_id, prompt_snapshot,
-                       answer_text, consultation, response_ms
-                FROM attempts
-                WHERE is_correct IS NULL
-                ORDER BY created_at DESC
-                """
-            ).fetchall()
-        items = [dict(row) for row in rows]
-        if course_id:
-            allowed = self.content.course_unit_ids(course_id)
-            items = [item for item in items if item["unit_id"] in allowed]
-        return items
-
-    def summary(self, course_id: str = "") -> dict:
-        with self.connect() as conn:
-            attempts = conn.execute(
-                "SELECT * FROM attempts ORDER BY created_at"
-            ).fetchall()
-            progress = conn.execute("SELECT * FROM progress").fetchall()
-
-        if course_id:
-            allowed_units = self.content.course_unit_ids(course_id)
-            attempts = [row for row in attempts if row["unit_id"] in allowed_units]
-            allowed_exercises = {
-                exercise["id"] for exercise in self.content.exercises.values()
-                if exercise.get("unit_id") in allowed_units
-            }
-            if course_id == "russian":
-                progress = [row for row in progress if row["exercise_id"] in allowed_exercises or row["exercise_id"].startswith(("lm-", "lv-"))]
-            else:
-                progress = [row for row in progress if row["exercise_id"] in allowed_exercises]
-
-        graded_rows = [row for row in attempts if row["is_correct"] is not None]
-        total_graded = len(graded_rows)
-        scores = [float(row["score"] if row["score"] is not None else row["is_correct"]) for row in graded_rows]
-        correct = sum(score >= 1 for score in scores)
-        partial = sum(0 < score < 1 for score in scores)
-        sc_rows = [row for row in attempts if row["is_correct"] is not None and row["consultation"] == "SC"]
-        sc_points = sum(float(row["score"] if row["score"] is not None else row["is_correct"]) for row in sc_rows)
-        by_tag: dict[str, dict] = defaultdict(lambda: {"attempts": 0, "correct": 0, "partial": 0, "points": 0.0, "weighted": 0.0})
-        error_types: Counter[str] = Counter()
-        by_unit: dict[str, dict] = defaultdict(lambda: {"attempts": 0, "correct": 0, "partial": 0, "points": 0.0})
-        recent_errors: list[dict] = []
-        response_times: list[int] = []
-
-        weights = {"SC": 1.0, "CC": 0.75, "C": 0.5}
-        for row in attempts:
-            if row["is_correct"] is not None:
-                score = float(row["score"] if row["score"] is not None else row["is_correct"])
-                by_unit[row["unit_id"]]["attempts"] += 1
-                by_unit[row["unit_id"]]["correct"] += int(score >= 1)
-                by_unit[row["unit_id"]]["partial"] += int(0 < score < 1)
-                by_unit[row["unit_id"]]["points"] += score
-                if row["response_ms"]:
-                    response_times.append(int(row["response_ms"]))
-            if row["self_error_type"]:
-                error_types[row["self_error_type"]] += 1
-            tags = json.loads(row["tags_json"] or "[]")
-            for tag in tags:
-                if row["is_correct"] is None:
+    def _form_exercise(self, entry: dict):
+        forms = self.lex.forms(entry["id"])
+        if entry["pos"] == "noun" and not entry.get("indeclinable"):
+            numbers = ["pl"] if entry.get("pl_only") else ["sg"] if entry.get("sg_only") else ["sg", "sg", "pl"]
+            number = random.choice(numbers)
+            templates = [("gen", "без", "genitivo"), ("dat", "к", "dativo"), ("inst", "с", "instrumental"),
+                         ("prep", "о", "preposicional"), ("acc", "Я вижу", "acusativo")]
+            random.shuffle(templates)
+            for case, lead, label in templates:
+                target = first_variant(forms.get(f"{number}_{case}", ""))
+                if not target or plain(target) == plain(first_variant(forms.get(f"{number}_nom", ""))):
                     continue
-                score = float(row["score"] if row["score"] is not None else row["is_correct"])
-                by_tag[tag]["attempts"] += 1
-                by_tag[tag]["correct"] += int(score >= 1)
-                by_tag[tag]["partial"] += int(0 < score < 1)
-                by_tag[tag]["points"] += score
-                by_tag[tag]["weighted"] += score * weights.get(row["consultation"], 1)
-            if row["is_correct"] is not None and float(row["score"] if row["score"] is not None else row["is_correct"]) < 1:
-                recent_errors.append({
-                    "attempt_id": row["id"],
-                    "created_at": row["created_at"],
-                    "exercise_id": row["exercise_id"],
-                    "prompt": row["prompt_snapshot"],
-                    "answer": row["answer_text"],
-                    "expected": row["expected_snapshot"],
-                    "category": row["self_error_type"],
-                    "score": row["score"] if row["score"] is not None else row["is_correct"],
-                    "verdict": row["verdict"] or ("wrong" if row["is_correct"] == 0 else "correct"),
-                })
+                if lead == "о" and plain(target)[:1] in "аоуэиы":
+                    lead = "об"
+                pool = [first_variant(forms.get(f"{number}_{c}", "")) for c in ("nom", "gen", "dat", "acc", "inst", "prep")]
+                pool.append(first_variant(forms.get(f"{'pl' if number == 'sg' else 'sg'}_{case}", "")))
+                others = list({plain(f): f for f in pool if f and plain(f) != plain(target)}.values())
+                if len(others) < 3:
+                    continue
+                options = [target] + random.sample(others, 3)
+                random.shuffle(options)
+                return f"{lead} ___", f"{entry['accented']} · {label} {'singular' if number == 'sg' else 'plural'}", target, options
+        if entry["pos"] == "verb":
+            persons = [("presfut_sg1", "я"), ("presfut_sg2", "ты"), ("presfut_sg3", "она"), ("presfut_pl1", "мы"),
+                       ("presfut_pl2", "вы"), ("presfut_pl3", "они"), ("past_f", "вчера она"), ("past_pl", "вчера они")]
+            random.shuffle(persons)
+            for column, pronoun in persons:
+                target = first_variant(forms.get(column, ""))
+                if not target:
+                    continue
+                pool = [first_variant(forms.get(c, "")) for c, _ in persons if c != column]
+                others = list({plain(f): f for f in pool if f and plain(f) != plain(target)}.values())
+                if len(others) < 3:
+                    continue
+                options = [target] + random.sample(others, 3)
+                random.shuffle(options)
+                tense = "passado" if column.startswith("past") else ("futuro" if entry.get("aspect") == "perfective" else "presente")
+                return f"{pronoun[0].upper()}{pronoun[1:]} ___", f"{entry['accented']} · {tense}", target, options
+        if entry["pos"] == "adjective":
+            choices = [("decl_f_nom", "___ книга", "feminino"), ("decl_n_nom", "___ место", "neutro"),
+                       ("decl_pl_nom", "___ люди", "plural"), ("decl_m_gen", "без ___ стола", "genitivo masculino"),
+                       ("decl_f_inst", "с ___ книгой", "instrumental feminino")]
+            random.shuffle(choices)
+            for column, frame, label in choices:
+                target = first_variant(forms.get(column, ""))
+                if not target:
+                    continue
+                pool = [first_variant(forms.get(c, "")) for c in ("decl_m_nom", "decl_f_nom", "decl_n_nom", "decl_pl_nom", "decl_m_gen", "decl_f_acc", "decl_f_inst")]
+                others = list({plain(f): f for f in pool if f and plain(f) != plain(target)}.values())
+                if len(others) < 3:
+                    continue
+                options = [target] + random.sample(others, 3)
+                random.shuffle(options)
+                return frame, f"{entry['accented']} · {label}", target, options
+        return None
 
-        tag_stats = []
-        for tag, values in by_tag.items():
-            attempts_count = values["attempts"]
-            tag_stats.append({
-                "tag": tag,
-                **values,
-                "accuracy": round(100 * values["points"] / attempts_count) if attempts_count else None,
-                "mastery": round(100 * values["weighted"] / attempts_count) if attempts_count else None,
-            })
-        tag_stats.sort(key=lambda item: (item["mastery"], item["tag"]))
+    def structure_exercise(self, item_id: str, theme_id: str) -> dict:
+        exercise = self.content.structures[item_id]
+        base = {"item_id": item_id, "theme_id": theme_id, "kind": "structure", "aspect": "estruturas",
+                "unit_title": exercise.get("unit_title", ""), "instruction": exercise.get("instruction", ""), "prompt": exercise.get("prompt", "")}
+        etype = exercise["type"]
+        if etype == "flashcard":
+            token = self._token({**base, "exercise": "flashcard", "answer": exercise.get("back", ""), "self_rated": True,
+                                 "explanation": exercise.get("explanation", "")})
+            return {**base, "type": "flashcard", "exercise": "flashcard", "token": token, "front": exercise.get("front", ""),
+                    "back": exercise.get("back", ""), "explanation": exercise.get("explanation", ""),
+                    "instruction": "Lembre a regência e depois confira."}
+        if etype == "sentence_order":
+            tokens = list(exercise.get("tokens", []))
+            while len(tokens) > 1 and tokens == list(exercise.get("tokens", [])):
+                random.shuffle(tokens)
+            token = self._token({**base, "exercise": "order", "answer": exercise.get("answer", ""), "accept": [exercise.get("answer", "")],
+                                 "explanation": exercise.get("explanation", "")})
+            return {**base, "type": "order", "exercise": "order", "token": token, "tokens": tokens}
+        options = list(exercise.get("options", []))
+        random.shuffle(options)
+        accept = [exercise.get("answer", "")] + list(exercise.get("valid_answers", []))
+        token = self._token({**base, "exercise": etype, "answer": exercise.get("answer", ""), "accept": accept,
+                             "explanation": exercise.get("explanation", ""), "transcript": exercise.get("audio_text", "")})
+        public = {**base, "type": "choice", "exercise": etype, "token": token, "options": options,
+                  "prompt_ru": bool(re.search(r"[а-яё]", (exercise.get("prompt") or "").lower())),
+                  "ru_options": bool(options and re.search(r"[а-яё]", str(options[0]).lower()))}
+        if etype == "reading":
+            public["context"] = exercise.get("context", "")
+        if etype == "listening":
+            public["audio"] = exercise.get("audio_text", "")
+        return public
 
-        unit_stats = []
-        unit_titles = {unit["id"]: unit["title"] for unit in self.content.units}
-        if self.content.prefix_module:
-            unit_titles[PREFIX_VERBS_UNIT_ID] = self.content.prefix_module.get("title", "Verbos com prefixo")
-        for lesson in self.content.vocab.lessons:
-            unit_titles[lesson["unit_key"]] = f"Vocabulário · {lesson['title']}"
-        unit_titles.setdefault("lexical_minimum_morphology", "Terminações · flexão")
-        unit_titles.setdefault("lexical_minimum_vocabulary", "Terminações · cobertura lexical")
-        for unit_id, values in by_unit.items():
-            count = values["attempts"]
-            unit_stats.append({
-                "unit_id": unit_id,
-                "title": unit_titles.get(unit_id, unit_id),
-                **values,
-                "accuracy": round(100 * values["points"] / count) if count else None,
-            })
+    def construction_intro(self, item_id: str, theme_id: str) -> dict:
+        item = self.content.constructions[item_id]
+        keys = ("head", "regency", "case", "pt", "chunk", "chunk_pt", "form_note", "trap", "example")
+        return {"type": "intro", "kind": "construction", "item_id": item_id, "theme_id": theme_id,
+                "construction": {k: item.get(k) for k in keys}}
 
-        now_text = iso()
-        due_count = sum(row["due_at"] <= now_text for row in progress)
-        mature_count = sum(row["repetitions"] >= 4 for row in progress)
+    def construction_exercise(self, item_id: str, theme_id: str, variant: str | None = None) -> dict:
+        item = self.content.constructions[item_id]
+        base = {"item_id": item_id, "theme_id": theme_id, "kind": "construction", "aspect": "expressoes"}
+        variants = [v for v in ("chunk", "cloze", "hear") if item.get("chunk_wrong" if v == "chunk" else v)]
+        variant = variant if variant in variants else random.choice(variants or ["chunk"])
+        if variant == "cloze":
+            cloze = item["cloze"]
+            options = [cloze["answer"]] + list(cloze.get("wrong", []))[:3]
+            random.shuffle(options)
+            token = self._token({**base, "exercise": "cloze", "answer": cloze["answer"], "accept": [cloze["answer"]],
+                                 "explanation": cloze.get("note", ""), "translation": cloze.get("pt", "")})
+            return {**base, "type": "choice", "exercise": "cloze", "token": token, "instruction": "Complete a frase.",
+                    "prompt": cloze["ru"], "prompt_ru": True, "options": options, "ru_options": True}
+        if variant == "hear":
+            hear = item["hear"]
+            options = [hear["pt"]] + list(hear.get("wrong", []))[:3]
+            random.shuffle(options)
+            token = self._token({**base, "exercise": "hear", "answer": hear["pt"], "accept": [hear["pt"]],
+                                 "explanation": hear.get("note", ""), "transcript": hear["ru"]})
+            return {**base, "type": "choice", "exercise": "hear", "token": token, "instruction": "Ouça e escolha a tradução.",
+                    "audio": hear["ru"], "prompt": "", "options": options}
+        options = [item["chunk"]] + list(item.get("chunk_wrong", []))[:3]
+        random.shuffle(options)
+        token = self._token({**base, "exercise": "chunk", "answer": item["chunk"], "accept": [item["chunk"]],
+                             "explanation": item.get("form_note", ""), "translation": item.get("chunk_pt", "")})
+        return {**base, "type": "choice", "exercise": "chunk", "token": token, "instruction": "Qual construção está correta?",
+                "prompt": item.get("chunk_pt") or item.get("pt", ""), "options": options, "ru_options": True}
+
+    def expression_intro(self, expr_id: int, theme_id: str) -> dict:
+        expr = self.lex.expressions[expr_id]
+        return {"type": "intro", "kind": "expression", "item_id": f"x:{expr_id}", "theme_id": theme_id,
+                "expression": {"ru": expr["ru"], "pt": expr["pt"]}}
+
+    def expression_exercise(self, expr_id: int, theme_id: str, variant: str = "ru_pt") -> dict:
+        expr = self.lex.expressions[expr_id]
+        pool = [i for i in self.lex.theme_expressions.get(theme_id, []) if i != expr_id]
+        if len(pool) < 6:
+            pool = list(self.lex.expressions)
+        sample = random.sample(pool, min(14, len(pool)))
+        base = {"item_id": f"x:{expr_id}", "theme_id": theme_id, "kind": "expression", "aspect": "expressoes"}
+        to_pt = variant == "ru_pt"
+        target = main_meaning(expr["pt"]) if to_pt else expr["ru"]
+        others: list[str] = []
+        for candidate in sample:
+            value = main_meaning(self.lex.expressions[candidate]["pt"]) if to_pt else self.lex.expressions[candidate]["ru"]
+            if value and value != target and value not in others:
+                others.append(value)
+            if len(others) == 3:
+                break
+        options = [target] + others
+        random.shuffle(options)
+        token = self._token({**base, "exercise": variant, "answer": target, "accept": [target], "translation": expr["pt"]})
+        if to_pt:
+            return {**base, "type": "choice", "exercise": "ru_pt", "token": token, "instruction": "O que significa a expressão?",
+                    "prompt": expr["ru"], "prompt_ru": True, "audio": expr["ru"], "options": options}
+        return {**base, "type": "choice", "exercise": "pt_ru", "token": token, "instruction": "Como se diz em russo?",
+                "prompt": main_meaning(expr["pt"]), "options": options, "ru_options": True}
+
+    def retry(self, item_id: str, theme_id: str, variant: str) -> dict | None:
+        """Nova versão da mesma pergunta para voltar mais adiante na sessão depois de um erro."""
+        kind, _, rest = item_id.partition(":")
+        if not self.exists(item_id):
+            return None
+        if kind == "w":
+            return self.word_exercise(int(rest), theme_id, variant if variant in ("ru_pt", "pt_ru", "audio", "form", "type") else "ru_pt")
+        if kind == "x":
+            return self.expression_exercise(int(rest), theme_id, variant if variant in ("ru_pt", "pt_ru") else "ru_pt")
+        if kind == "c":
+            return self.construction_exercise(item_id, theme_id, variant)
+        if kind == "l":
+            return self.lessons.screen(item_id, theme_id, self._token)
+        return self.structure_exercise(item_id, theme_id)
+
+    # -- sessões
+    def study_session(self, theme_id: str) -> dict:
+        settings = self.progress.settings()
+        states = self.progress.states()
+        size = int(settings["session_size"])
+        new_words = [i for i in self.word_ids(theme_id, settings["min_level"]) if f"w:{i}" not in states][:size]
+        new_structures = [i for i in self.content.theme_structures.get(theme_id, []) if i not in states][:2]
+        new_expressions = [i for i in self.expression_ids(theme_id) if i not in states][:2]
+        steps: list[dict | None] = []
+        for start in range(0, len(new_words), 4):
+            chunk = new_words[start:start + 4]
+            steps += [self.word_intro(i, theme_id) for i in chunk]
+            for variant in ("ru_pt", "pt_ru"):
+                quiz = [self.word_exercise(i, theme_id, variant) for i in chunk]
+                random.shuffle(quiz)
+                steps += quiz
+        for item_id in new_expressions:
+            if item_id.startswith("c:"):
+                steps += [self.construction_intro(item_id, theme_id), self.construction_exercise(item_id, theme_id, "chunk")]
+            else:
+                expr_id = int(item_id[2:])
+                steps += [self.expression_intro(expr_id, theme_id), self.expression_exercise(expr_id, theme_id, "ru_pt")]
+        steps += [self.structure_exercise(item_id, theme_id) for item_id in new_structures]
+        recap = [self.word_exercise(i, theme_id, "form") for i in new_words if self.lex.entries[i]["pos"] != "other"]
+        random.shuffle(recap)
+        steps += recap[:4]
+        return {"mode": "study", "theme": self.theme(theme_id), "steps": [s for s in steps if s],
+                "new_items": len(new_words) + len(new_structures) + len(new_expressions)}
+
+    def review_session(self, theme_id: str, extra: bool = False) -> dict:
+        states = self.progress.states()
+        now = iso()
+        mine = [s for s in states.values() if self.exists(s["item_id"]) and theme_id in self.item_themes(s["item_id"])
+                and (not s["item_id"].startswith("l:") or self.lessons.reviewable(s["item_id"]))]
+        due = sorted([s for s in mine if s["due_at"] and s["due_at"] <= now], key=lambda s: s["due_at"])
+        size = 20
+        chosen = due[:size]
+        if (extra or not chosen) and len(chosen) < size:
+            taken = {s["item_id"] for s in chosen}
+            rest = sorted([s for s in mine if s["item_id"] not in taken], key=lambda s: (s["stage"], -s["lapses"], s["last_at"] or ""))
+            chosen += rest[: size - len(chosen)]
+        steps = []
+        for state in chosen:
+            item_id, stage = state["item_id"], state["stage"]
+            kind, _, rest = item_id.partition(":")
+            if kind == "w":
+                variants = ["ru_pt", "pt_ru"] if stage <= 1 else ["audio", "form", "pt_ru"] if stage <= 3 else ["type", "form", "audio"]
+                steps.append(self.word_exercise(int(rest), theme_id, random.choice(variants)))
+            elif kind == "g":
+                steps.append(self.structure_exercise(item_id, theme_id))
+            elif kind == "c":
+                steps.append(self.construction_exercise(item_id, theme_id))
+            elif kind == "x":
+                steps.append(self.expression_exercise(int(rest), theme_id, random.choice(["ru_pt", "pt_ru"])))
+            elif kind == "l" and self.lessons.reviewable(item_id):
+                steps.append(self.lessons.screen(item_id, theme_id, self._token))
+        random.shuffle(steps)
+        return {"mode": "review", "theme": self.theme(theme_id), "steps": [s for s in steps if s], "due": len(due)}
+
+    def lesson_session(self, lesson_id: str, part: int) -> dict:
+        if lesson_id not in self.lessons.lessons:
+            raise ValueError("Aula desconhecida.")
+        lesson = self.lessons.lessons[lesson_id]
+        if not 0 <= part < len(lesson["parts"]):
+            raise ValueError("Parte inexistente.")
+        theme_id = lesson["theme"]
+        steps = self.lessons.screens(lesson_id, part, theme_id, self._token)
+        return {"mode": "lesson", "theme": self.theme(theme_id), "steps": steps, "lesson_id": lesson_id, "part": part,
+                "part_title": lesson["parts"][part]["title"], "lesson_title": lesson["title"]}
+
+    def answer(self, payload: dict) -> dict:
+        with self._lock:
+            pending = self.pending.pop(str(payload.get("token", "")), None)
+        if not pending:
+            raise ValueError("Esta pergunta expirou. Feche a sessão e comece outra.")
+        given = payload.get("answer", "")
+        note = ""
+        extra: dict = {}
+        if "answers" in pending:  # texto com lacunas
+            score, marks = grade_cloze(pending, given if isinstance(given, list) else [])
+            extra = {"marks": marks, "answers": pending["answers"]}
+            given = " | ".join(str(g) for g in given) if isinstance(given, list) else str(given)
+        elif "pairs" in pending:  # relacionar
+            score, pairs = grade_match(pending, given if isinstance(given, list) else [])
+            extra = {"pairs": pairs}
+            given = "; ".join(f"{p.get('left')} = {p.get('right')}" for p in given if isinstance(p, dict)) if isinstance(given, list) else ""
+        elif pending.get("exercise") == "produce":
+            checklist = pending.get("checklist") or []
+            checked = max(0, min(len(checklist), int(payload.get("checked", 0) or 0)))
+            score = checked / len(checklist) if checklist else 1.0
+            extra = {"model": pending.get("answer", "")}
+        elif pending.get("self_rated"):
+            score = {1: 0.0, 2: 0.5, 3: 1.0}.get(int(payload.get("rating", 0) or 0), 0.0)
+        elif pending.get("exercise") == "dictation":
+            score, words = dictation_score(str(given), pending["answer"])
+            extra = {"words": words}
+            note = "" if score >= 1 else "Palavras em vermelho faltaram ou foram escritas de outro modo."
+        elif pending.get("typed"):
+            score, note = typed_score(str(given), pending["accept"])
+        else:
+            score = 1.0 if any(normalize_answer(given) == normalize_answer(a) for a in pending.get("accept", []) if a) else 0.0
+        state = self.progress.record(pending["item_id"], pending["kind"], pending["theme_id"], pending.get("exercise", ""),
+                                     str(payload.get("mode", "")), score, str(given), str(pending.get("answer", "")))
         return {
-            "generated_at": iso(),
-            "app_version": APP_VERSION,
-            "total_attempts": len(attempts),
-            "graded_attempts": total_graded,
-            "correct": correct,
-            "partial": partial,
-            "accuracy": round(100 * sum(scores) / total_graded) if total_graded else None,
-            "sc_attempts": len(sc_rows),
-            "sc_accuracy": round(100 * sc_points / len(sc_rows)) if sc_rows else None,
-            "due_count": due_count,
-            "mature_count": mature_count,
-            "tracked_cards": len(progress),
-            "pending_writing": sum(row["is_correct"] is None for row in attempts),
-            "open_reports": len(self.content_reports(course_id=course_id)),
-            "median_response_ms": sorted(response_times)[len(response_times) // 2] if response_times else None,
-            "by_tag": tag_stats,
-            "by_unit": unit_stats,
-            "error_types": dict(error_types),
-            "recent_errors": list(reversed(recent_errors[-20:])),
-            "lexical_coverage": self.lexical_coverage() if course_id in ("", "russian") else {},
-            "unit_progress": self.unit_progress(course_id),
+            "score": score, "correct": score >= 1, "partial": 0 < score < 1, "note": note,
+            "answer": pending.get("answer", ""), "full": pending.get("full", ""),
+            "explanation": pending.get("explanation", ""), "translation": pending.get("translation", ""),
+            "transcript": pending.get("transcript", ""), "state": state, **extra,
         }
 
-    def all_attempts(self) -> list[dict]:
-        with self.connect() as conn:
-            rows = conn.execute("SELECT * FROM attempts ORDER BY created_at").fetchall()
-        return [dict(row) for row in rows]
-
-    def write_live_exports(self) -> None:
-        summary = self.summary()
-        attempts = self.all_attempts()
-        pending = self.pending_writing()
-        reports = self.content_reports()
-
-        (EXPORT_DIR / "analise_atual.json").write_text(
-            json.dumps(
-                {"summary": summary, "pending_writing": pending, "content_reports": reports, "attempts": attempts},
-                ensure_ascii=False,
-                indent=2,
-            ),
-            encoding="utf-8",
-        )
-
-        fields = [
-            "id", "created_at", "session_id", "unit_id", "exercise_id",
-            "exercise_type", "stage", "mode", "consultation", "prompt_snapshot",
-            "answer_text", "expected_snapshot", "is_correct", "response_ms",
-            "self_error_type", "tags_json", "app_version", "score", "verdict",
-        ]
-        with (EXPORT_DIR / "respostas.csv").open("w", encoding="utf-8", newline="") as handle:
-            writer = csv.DictWriter(handle, fieldnames=fields)
-            writer.writeheader()
-            writer.writerows(attempts)
-
-        lines = [
-            "# Relatório atual — Русский тренажёр",
-            "",
-            f"Gerado em: {summary['generated_at']}",
-            f"Tentativas: {summary['total_attempts']}",
-            f"Precisão geral: {summary['accuracy'] if summary['accuracy'] is not None else '—'}%",
-            f"Precisão sem consulta: {summary['sc_accuracy'] if summary['sc_accuracy'] is not None else '—'}%",
-            f"Revisões vencidas: {summary['due_count']}",
-            f"Léxico TRKI-II visto: {summary['lexical_coverage']['seen']} / {summary['lexical_coverage']['total']} ({summary['lexical_coverage']['seen_percent']}%)",
-            f"Léxico TRKI-II dominado: {summary['lexical_coverage']['mastered']} ({summary['lexical_coverage']['mastered_percent']}%)",
-            f"Produções pendentes de correção: {summary['pending_writing']}",
-            f"Problemas de conteúdo sinalizados: {summary['open_reports']}",
-            "",
-            "## Domínio por etiqueta",
-            "",
-        ]
-        if summary["by_tag"]:
-            for item in summary["by_tag"]:
-                lines.append(
-                    f"- {item['tag']}: domínio {item['mastery']}%, "
-                    f"exatos {item['correct']}, parciais {item['partial']}, tentativas {item['attempts']}"
-                )
-        else:
-            lines.append("Ainda não há respostas.")
-        active_sessions = self.sessions.active()
-        lines += ["", "## Sessões em andamento (podem ser retomadas)", ""]
-        if active_sessions:
-            for session in active_sessions:
-                lines.append(
-                    f"- {session['title']}: tela {min(session['resume_index'] + 1, session['total'])} de "
-                    f"{session['total']}, {session['answered']} respostas, salva em {session['updated_at']}"
-                )
-        else:
-            lines.append("Nenhuma sessão interrompida.")
-        lines += ["", "## Erros recentes", ""]
-        if summary["recent_errors"]:
-            for item in summary["recent_errors"][:10]:
-                lines += [
-                    f"- **{item['exercise_id']}** — {item['prompt']}",
-                    f"  - Resposta: {item['answer']}",
-                    f"  - Esperado: {item['expected']}",
-                    f"  - Categoria: {item['category'] or 'não classificado'}",
-                    f"  - Crédito: {round(float(item['score']) * 100)}% ({item['verdict']})",
-                ]
-        else:
-            lines.append("Ainda não há erros registrados.")
-        (EXPORT_DIR / "relatorio_atual.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-        report_lines = ["# Problemas de conteúdo sinalizados", ""]
-        if reports:
-            for report in reports:
-                report_lines += [
-                    f"## #{report['id']} · {report['exercise_id']}",
-                    "",
-                    f"- Data: {report['created_at']}",
-                    f"- Unidade: {report['unit_id']}",
-                    f"- Motivo: {report['reason']}",
-                    f"- Enunciado: {report['prompt_snapshot']}",
-                    f"- Observação: {report['note'] or 'sem observação'}",
-                    "",
-                ]
-        else:
-            report_lines.append("Nenhum problema aberto.")
-        (EXPORT_DIR / "problemas_reportados.md").write_text("\n".join(report_lines) + "\n", encoding="utf-8")
+    def theme_items(self, theme_id: str, aspect: str, offset: int) -> dict:
+        settings = self.progress.settings()
+        states = self.progress.states()
+        if aspect in ("estruturas", "expressoes", "leitura", "escuta", "producao"):
+            lesson_ids = [i for i in self.lessons.theme_items(theme_id) if self.lessons.aspect(i) == aspect]
+            ids = lesson_ids + (self.content.theme_structures.get(theme_id, []) if aspect == "estruturas"
+                                else self.expression_ids(theme_id) if aspect == "expressoes" else [])
+            rows = []
+            for item_id in ids[offset:offset + 60]:
+                state = states.get(item_id)
+                if item_id.startswith("l:"):
+                    ru, pt = self.lessons.label(item_id)
+                elif item_id.startswith("g:"):
+                    ex = self.content.structures[item_id]
+                    ru, pt = ex.get("prompt") or ex.get("front", ""), ex.get("unit_title", "")
+                elif item_id.startswith("c:"):
+                    item = self.content.constructions[item_id]
+                    ru, pt = item.get("head", ""), item.get("pt", "")
+                else:
+                    expr = self.lex.expressions[int(item_id[2:])]
+                    ru, pt = expr["ru"], expr["pt"]
+                rows.append({"item_id": item_id, "ru": ru, "pt": pt, "stage": state["stage"] if state else None})
+            return {"items": rows, "total": len(ids), "offset": offset}
+        pos = next((a["pos"] for a in ASPECTS if a["id"] == aspect and a["kind"] == "word"), None)
+        ids = [i for i in self.word_ids(theme_id, settings["min_level"]) if pos is None or self.lex.entries[i]["pos"] == pos]
+        rows = []
+        for entry_id in ids[offset:offset + 60]:
+            entry = self.lex.entries[entry_id]
+            state = states.get(f"w:{entry_id}")
+            rows.append({**public_entry(entry), "ru": entry["accented"], "item_id": f"w:{entry_id}", "stage": state["stage"] if state else None})
+        return {"items": rows, "total": len(ids), "offset": offset}
 
 
-def grade(exercise: dict, payload: dict) -> dict:
-    exercise_type = exercise.get("type", "input")
-    answer = payload.get("answer", "")
-
-    if exercise_type in UNGRADED_TYPES:
-        raise ValueError("Este cartão é de apresentação e não é corrigido.")
-
-    if exercise_type == "open_text":
-        text = str(answer).strip()
-        return {
-            "is_correct": None,
-            "is_partial": False,
-            "score": None,
-            "verdict": "pending_review",
-            "correct_answer": None,
-            "message": "Produção salva para correção posterior.",
-            "explanation": exercise.get("review_notes", ""),
-            "word_count": len(re.findall(r"[\wА-Яа-яЁё-]+", text, flags=re.UNICODE)),
-        }
-
-    if exercise_type == "match_pairs":
-        pairs = exercise.get("pairs", [])
-        correct_map = {pair["left"]: pair["right"] for pair in pairs}
-        total = len(correct_map) or 1
-        given = answer if isinstance(answer, list) else []
-        matched = 0
-        seen_left: set[str] = set()
-        for item in given:
-            if not isinstance(item, dict):
-                continue
-            left = item.get("left")
-            if left in seen_left:
-                continue
-            seen_left.add(left)
-            if left in correct_map and correct_map[left] == item.get("right"):
-                matched += 1
-        score = matched / total
-        correct = matched == total and len(given) == total
-        verdict = "correct" if correct else "partial" if matched else "wrong"
-        correct_answer = "; ".join(f"{pair['left']} — {pair['right']}" for pair in pairs)
-        return {
-            "is_correct": correct,
-            "is_partial": 0 < score < 1,
-            "score": score,
-            "verdict": verdict,
-            "correct_answer": correct_answer,
-            "message": "Correto." if correct else "Quase." if score > 0 else "Ainda não.",
-            "proximity_note": f"{matched}/{total} pares corretos.",
-            "explanation": exercise.get("explanation", ""),
-            "correct_pairs": [{"left": pair["left"], "right": pair["right"]} for pair in pairs],
-        }
-
-    if exercise_type == "flashcard":
-        try:
-            rating = int(payload.get("rating", 0))
-        except (TypeError, ValueError):
-            rating = 0
-        score = {1: 0.0, 2: 0.65, 3: 1.0, 4: 1.0}.get(rating, 0.0)
-        correct = score >= 1
-        return {
-            "is_correct": correct,
-            "is_partial": 0 < score < 1,
-            "score": score,
-            "verdict": "correct" if correct else "partial" if score else "wrong",
-            "correct_answer": exercise.get("back") or exercise.get("answer", ""),
-            "message": "Autoavaliação registrada.",
-            "explanation": exercise.get("explanation", ""),
-        }
-
-    answer_text = " ".join(answer) if isinstance(answer, list) else str(answer)
-    valid = list(exercise.get("valid_answers", []))
-    if exercise.get("answer") is not None:
-        valid.insert(0, str(exercise["answer"]))
-    canonical = valid[0] if valid else ""
-    # Um cartão de morfologia pode ser apresentado sem alternativas. Nesse
-    # modo, um deslize de terminação recebe crédito parcial em vez de ser
-    # tratado como uma escolha objetiva completamente errada.
-    displayed_as_input = payload.get("response_format") == "input"
-    is_objective = not displayed_as_input and (exercise_type in ("choice", "reading", "dialogue") or (
-        exercise_type == "listening" and exercise.get("response_type") != "input"
-    ))
-    if is_objective:
-        correct = any(normalize_answer(answer_text) == normalize_answer(item) for item in valid)
-        score = 1.0 if correct else 0.0
-        verdict = "correct" if correct else "wrong"
-        proximity_note = "Resposta exata." if correct else "A alternativa escolhida muda a construção ou o sentido."
-    else:
-        comparisons = [(*partial_score(answer_text, item), item) for item in valid]
-        score, verdict, proximity_note, closest = max(comparisons, key=lambda item: item[0]) if comparisons else (0.0, "wrong", "Sem gabarito.", canonical)
-        canonical = closest or canonical
-        correct = score >= 1
-    return {
-        "is_correct": correct,
-        "is_partial": 0 < score < 1,
-        "score": score,
-        "verdict": verdict,
-        "correct_answer": canonical,
-        "message": "Correto." if correct else "Quase." if score > 0 else "Ainda não.",
-        "proximity_note": proximity_note,
-        "explanation": exercise.get("explanation", ""),
-        "feedback": exercise.get("feedback", ""),
-        "transcript": exercise.get("audio_text", "") if exercise_type == "listening" else "",
-        "after_audio": exercise.get("after_audio"),
-    }
+WORD = re.compile(r"[\wЁё-]+")
 
 
+def dictation_score(given: str, expected: str) -> tuple[float, list[dict]]:
+    """Ditado: compara palavra por palavra (sem caixa, pontuação, acento e ё) e dá crédito proporcional."""
+    target_words = WORD.findall(expected)
+    target = [normalize_answer(w) for w in target_words]
+    typed = [normalize_answer(w) for w in WORD.findall(given)]
+    matcher = difflib.SequenceMatcher(None, typed, target, autojunk=False)
+    hits: set[int] = set()
+    for block in matcher.get_matching_blocks():
+        hits.update(range(block.b, block.b + block.size))
+    words = [{"w": word, "ok": index in hits} for index, word in enumerate(target_words)]
+    if not target:
+        return 0.0, words
+    score = len(hits) / len(target)
+    if score >= 1 and len(typed) != len(target):
+        score = 0.9  # palavras a mais
+    return round(score, 2), words
+
+
+def typed_score(given: str, accepted: list[str]) -> tuple[float, str]:
+    answer = normalize_answer(given)
+    best = 0.0
+    for target in accepted:
+        expected = normalize_answer(target)
+        if answer == expected:
+            return 1.0, ""
+        if difflib.SequenceMatcher(None, answer, expected).ratio() >= 0.85:
+            best = 0.5
+    return best, ("Quase: confira a grafia." if best else "")
+
+
+# ============================================================================ HTTP
 class AppHandler(BaseHTTPRequestHandler):
-    server_version = "LinguaLab/1.0"
+    server_version = "LinguaLab/2.0"
 
     @property
     def app(self) -> "AppServer":
@@ -1813,32 +1179,33 @@ class AppHandler(BaseHTTPRequestHandler):
 
     def send_audio(self, path: Path) -> None:
         raw = path.read_bytes()
-        self.send_response(HTTPStatus.OK)
         offline = path.suffix == ".wav"
+        self.send_response(HTTPStatus.OK)
         self.send_header("Content-Type", "audio/wav" if offline else "audio/mpeg")
         self.send_header("Content-Length", str(len(raw)))
-        # A voz offline é provisória: o navegador não deve guardá-la para sempre.
         self.send_header("Cache-Control", "no-store" if offline else "public, max-age=31536000, immutable")
         self.end_headers()
         try:
             self.wfile.write(raw)
         except (BrokenPipeError, ConnectionResetError):
-            # O navegador cancelou o áudio (troca de fala, "Parar", próxima tela).
             pass
 
     def read_json(self) -> dict:
         length = int(self.headers.get("Content-Length", "0"))
-        if length > 2_000_000:
+        if length > 1_000_000:
             raise ValueError("Corpo da requisição grande demais")
         raw = self.rfile.read(length)
         return json.loads(raw.decode("utf-8")) if raw else {}
 
     def do_GET(self) -> None:  # noqa: N802
         parsed = urlparse(self.path)
-        if parsed.path.startswith("/api/"):
-            self.handle_api_get(parsed.path, parse_qs(parsed.query))
+        if not parsed.path.startswith("/api/"):
+            self.serve_static(parsed.path)
             return
-        self.serve_static(parsed.path)
+        try:
+            self.handle_get(parsed.path, {k: v[0] for k, v in parse_qs(parsed.query).items()})
+        except (KeyError, ValueError, StopIteration) as exc:
+            self.send_json({"error": str(exc) or "Pedido inválido."}, HTTPStatus.BAD_REQUEST)
 
     def do_POST(self) -> None:  # noqa: N802
         parsed = urlparse(self.path)
@@ -1847,395 +1214,104 @@ class AppHandler(BaseHTTPRequestHandler):
         except (ValueError, json.JSONDecodeError) as exc:
             self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
             return
+        app = self.app
+        try:
+            if parsed.path == "/api/answer":
+                self.send_json(app.course.answer(payload))
+            elif parsed.path == "/api/seen":
+                item_id = str(payload.get("item_id", ""))
+                if not app.course.exists(item_id):
+                    raise ValueError("Item desconhecido.")
+                app.progress.mark_seen(item_id, item_id.split(":")[0], str(payload.get("theme_id", "")))
+                self.send_json({"ok": True})
+            elif parsed.path == "/api/settings":
+                self.send_json(app.progress.save_settings(payload))
+            elif parsed.path == "/api/window/focus":
+                app.focus_window()
+                self.send_json({"ok": True, "window": app.window is not None})
+            elif parsed.path == "/api/update/apply":
+                origin = self.headers.get("Origin")
+                if origin and urlparse(origin).netloc != self.headers.get("Host"):
+                    self.send_json({"error": "Origem não permitida."}, HTTPStatus.FORBIDDEN)
+                    return
+                app.updater.start_apply()
+                self.send_json({"ok": True})
+            else:
+                self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
+        except (ValueError, UpdateError) as exc:
+            self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
 
-        if parsed.path == "/api/answer":
-            ex_id = str(payload.get("exercise_id", ""))
-            exercise = self.app.exercise(ex_id)
-            if not exercise:
-                self.send_json({"error": "Exercício não encontrado"}, HTTPStatus.NOT_FOUND)
-                return
-            try:
-                result = grade(exercise, payload)
-            except ValueError as exc:
-                self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
-                return
-            attempt_id = self.app.db.save_attempt(payload, exercise, result)
-            result["attempt_id"] = attempt_id
-            result["summary"] = self.app.db.summary(str(payload.get("course_id") or ""))
-            self.send_json(result)
-            return
-
-        if parsed.path == "/api/classify":
-            ok = self.app.db.classify_attempt(
-                int(payload.get("attempt_id", 0)), str(payload.get("category", ""))
-            )
-            self.send_json({"ok": ok}, 200 if ok else 400)
-            return
-
-        if parsed.path == "/api/report":
-            ex_id = str(payload.get("exercise_id", ""))
-            exercise = self.app.exercise(ex_id)
-            if not exercise:
-                self.send_json({"error": "Exercício não encontrado"}, HTTPStatus.NOT_FOUND)
-                return
-            report_id = self.app.db.save_content_report(payload, exercise)
-            self.send_json({"ok": True, "report_id": report_id})
-            return
-
-        if parsed.path == "/api/reload-content":
-            try:
-                self.app.content.load()
-                self.send_json({"ok": True, "count": len(self.app.content.exercises)})
-            except Exception as exc:  # conteúdo local: devolver erro legível
-                self.send_json({"error": str(exc)}, 400)
-            return
-
-        if parsed.path == "/api/session/save":
-            try:
-                saved = self.app.db.sessions.save(payload)
-            except ValueError as exc:
-                self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
-                return
-            self.send_json({"ok": True, **saved})
-            return
-
-        if parsed.path in ("/api/session/complete", "/api/session/discard"):
-            status = "completed" if parsed.path.endswith("complete") else "discarded"
-            ok = self.app.db.sessions.finish(str(payload.get("key") or ""), status)
-            if ok:
-                self.app.db.write_live_exports()
-            self.send_json({"ok": ok})
-            return
-
-        if parsed.path == "/api/window/focus":
-            # Segundo clique no atalho: o novo processo pede para esta janela vir à frente e sai.
-            self.app.focus_window()
-            self.send_json({"ok": True, "window": self.app.window is not None})
-            return
-
-        if parsed.path == "/api/update/apply":
-            # Impede que outra página aberta no navegador dispare a atualização.
-            origin = self.headers.get("Origin")
-            if origin and urlparse(origin).netloc != self.headers.get("Host"):
-                self.send_json({"error": "Origem não permitida."}, HTTPStatus.FORBIDDEN)
-                return
-            try:
-                self.app.updater.start_apply()
-            except UpdateError as exc:
-                self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
-                return
-            self.send_json({"ok": True})
-            return
-
-        if parsed.path == "/api/export":
-            self.app.db.write_live_exports()
+    def handle_get(self, path: str, q: dict[str, str]) -> None:
+        app = self.app
+        if path == "/api/bootstrap":
+            lex = app.lexicon
             self.send_json({
-                "ok": True,
-                "files": ["analise_atual.json", "respostas.csv", "relatorio_atual.md", "problemas_reportados.md"],
+                "app_version": APP_VERSION, "aspects": ASPECTS, "levels": LEVELS,
+                "features": {"tts": edge_tts is not None or sys.platform == "win32", "self_update": FROZEN},
+                "counts": {"entries": len(lex.entries), "studyable": sum(1 for e in lex.entries.values() if e["study"]),
+                           "expressions": len(lex.expressions) + len(app.content.constructions),
+                           "structures": len(app.content.structures), "themes": len(lex.themes),
+                           "lessons": len(app.lessons.lessons), "lesson_items": len(app.lessons.graded)},
+                **app.course.overview(),
             })
-            return
-
-        self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
-
-    def handle_api_get(self, path: str, query: dict[str, list[str]]) -> None:
-        if path == "/api/lesson":
-            unit = self.app.content.units_by_id.get(query.get("unit_id", [""])[0])
+        elif path == "/api/themes":
+            self.send_json(app.course.overview())
+        elif path == "/api/session":
+            theme_id = q.get("theme", "")
+            if theme_id not in app.lexicon.theme_ids:
+                raise ValueError("Tema desconhecido.")
+            if q.get("mode") == "review":
+                self.send_json(app.course.review_session(theme_id, extra=q.get("extra") == "1"))
+            else:
+                self.send_json(app.course.study_session(theme_id))
+        elif path == "/api/aula":
+            self.send_json(app.course.lesson_session(q.get("id", ""), int(q.get("part", "0") or 0)))
+        elif path == "/api/retry":
+            self.send_json(app.course.retry(q.get("item_id", ""), q.get("theme", ""), q.get("variant", "")) or {"error": "Item desconhecido."})
+        elif path == "/api/theme/items":
+            self.send_json(app.course.theme_items(q.get("theme", ""), q.get("aspect", ""), max(0, int(q.get("offset", "0") or 0))))
+        elif path == "/api/word":
+            detail = app.lexicon.detail(int(q.get("id", "0")))
+            if not detail:
+                self.send_json({"error": "Palavra não encontrada."}, HTTPStatus.NOT_FOUND)
+                return
+            state = app.progress.states().get(f"w:{detail['id']}")
+            detail["state"] = {"stage": state["stage"], "due_at": state["due_at"]} if state else None
+            self.send_json(detail)
+        elif path == "/api/dictionary":
+            self.send_json(app.lexicon.lookup(q.get("word", "")))
+        elif path == "/api/search":
+            self.send_json({"results": app.lexicon.search(q.get("q", ""))})
+        elif path == "/api/lesson":
+            unit = app.content.units.get(q.get("unit_id", ""))
             if not unit:
                 self.send_json({"error": "Aula não encontrada."}, HTTPStatus.NOT_FOUND)
                 return
-            progress = {row["unit_id"]: row for row in self.app.db.unit_progress(unit.get("course_id", "russian"))}
-            unlocked = progress.get(unit["id"], {}).get("unlocked", True)
-            # Aula bloqueada: dá para ler a explicação, mas os exercícios esperam a aula anterior.
-            self.send_json({
-                "unit": self.app.content.public_unit(unit),
-                "steps": unit.get("lesson_flow") or [],
-                "unlocked": unlocked,
-                "items": self.app.content.lesson_items(unit, with_exercises=unlocked),
-            })
-            return
-
-        if path == "/api/update/check":
-            self.send_json(self.app.updater.check(force=query.get("force", ["0"])[0] == "1"))
-            return
-
-        if path == "/api/update/status":
-            self.send_json(self.app.updater.status())
-            return
-
-        if path == "/api/bootstrap":
-            course_id = query.get("course_id", ["russian"])[0]
-            if course_id not in {course["id"] for course in COURSES}:
-                course_id = "russian"
-            self.send_json({
-                "app_version": APP_VERSION,
-                "session_id": secrets.token_urlsafe(10),
-                "courses": COURSES,
-                "features": {
-                    "tts": edge_tts is not None,
-                    "dictionary": DICTIONARY_PATH.exists(),
-                    "lexical_minimum": LEXICAL_MINIMUM_PATH.exists(),
-                    "self_update": FROZEN,
-                },
-                "units": [self.app.content.public_unit(unit) for unit in self.app.content.units],
-                "summary": self.app.db.summary(course_id),
-            })
-            return
-
-        if path == "/api/exercises":
-            unit_id = query.get("unit_id", [""])[0]
-            course_id = query.get("course_id", ["russian"])[0]
-            mode = query.get("mode", ["study"])[0]
-            if unit_id:
-                lock_state = {row["unit_id"]: row["unlocked"] for row in self.app.db.unit_progress(course_id)}
-                if unit_id in lock_state and not lock_state[unit_id]:
-                    self.send_json({"error": "Unidade bloqueada: conclua a unidade anterior primeiro."}, HTTPStatus.FORBIDDEN)
-                    return
-            items = list(self.app.content.exercises.values())
-            items = [item for item in items if self.app.content.exercise_unit[item["id"]].get("course_id", "russian") == course_id]
-            if unit_id:
-                items = [item for item in items if item["unit_id"] == unit_id]
-            if mode == "diagnostic":
-                items = [item for item in items if item.get("diagnostic")]
-            elif mode == "review":
-                due = set(self.app.db.due_ids())
-                items = [item for item in items if item["id"] in due]
-                if course_id == "russian":
-                    items.extend(filter(None, (self.app.lexical.exercise(item_id) for item_id in due if item_id.startswith(("lm-", "lv-")))))
-            elif mode == "difficult":
-                difficult = set(self.app.db.difficult_ids())
-                items = [item for item in items if item["id"] in difficult]
-                if course_id == "russian":
-                    items.extend(filter(None, (self.app.lexical.exercise(item_id) for item_id in difficult if item_id.startswith(("lm-", "lv-")))))
-            elif mode == "flashcards":
-                items = [item for item in items if item.get("type") == "flashcard"]
-            elif mode == "writing":
-                items = [item for item in items if item.get("type") == "open_text"]
-            elif mode == "study":
-                items = [item for item in items if item.get("type") != "open_text"]
-            # O módulo "Prefixos" tem página própria: nunca vaza para uma
-            # sessão genérica de "Estudar" sem unidade escolhida.
-            if not unit_id and mode not in {"review", "difficult"}:
-                items = [
-                    item for item in items
-                    if item["unit_id"] != PREFIX_VERBS_UNIT_ID
-                    and not (item["unit_id"].startswith(VOCAB_UNIT_PREFIX) and mode != "writing")
-                ]
-            # Cartões de apresentação não têm correção: nunca entram em revisão.
-            items = [item for item in items if item.get("type") not in UNGRADED_TYPES]
-            self.send_json({
-                "exercises": session_exercises(items, self.app.content.public_exercise),
-            })
-            return
-
-        if path == "/api/session/active":
-            course_id = query.get("course_id", [""])[0]
-            self.send_json({"sessions": self.app.db.sessions.active(course_id)})
-            return
-
-        if path == "/api/session/get":
-            row = self.app.db.sessions.row(query.get("key", [""])[0])
-            if not row:
-                self.send_json({"error": "Sessão não encontrada ou já concluída."}, HTTPStatus.NOT_FOUND)
-                return
-            self.send_json(self.app.rebuild_session(row))
-            return
-
-        if path == "/api/progress/map":
-            data = self.app.progress_map(query.get("scope", [""])[0])
-            if data is None:
-                self.send_json({"error": "Escopo desconhecido."}, HTTPStatus.NOT_FOUND)
-                return
-            self.send_json(data)
-            return
-
-        if path == "/api/vocab/bootstrap":
-            store = self.app.content.vocab
-            self.send_json({
-                "lessons": [store.public_lesson(lesson) for lesson in store.lessons],
-                "progress": self.app.db.vocab_progress(),
-                "coverage": self.app.db.lexical_coverage(),
-            })
-            return
-
-        if path == "/api/vocab/lesson":
-            store = self.app.content.vocab
-            lesson = store.lessons_by_id.get(query.get("id", [""])[0])
-            if not lesson:
-                self.send_json({"error": "Lição não encontrada."}, HTTPStatus.NOT_FOUND)
-                return
-            self.send_json({
-                "lesson": store.public_lesson(lesson, with_dialogue=True),
-                "progress": self.app.db.vocab_progress().get(lesson["id"], {}),
-            })
-            return
-
-        if path == "/api/vocab/session":
-            store = self.app.content.vocab
-            lesson_id = query.get("id", [""])[0]
-            part = query.get("part", ["all"])[0]
-            if lesson_id not in store.lessons_by_id:
-                self.send_json({"error": "Lição não encontrada."}, HTTPStatus.NOT_FOUND)
-                return
-            self.send_json({
-                "exercises": session_exercises(store.session(lesson_id, part), self.app.content.public_exercise),
-            })
-            return
-
-        if path == "/api/prefixes/bootstrap":
-            module = self.app.content.prefix_module
-            counts = module.get("stage_counts", {})
-            self.send_json({
-                "title": module.get("title", "Verbos com prefixo"),
-                "description": module.get("description", ""),
-                "intro": module.get("intro", []),
-                "stages": [
-                    {**stage, "count": counts.get(stage["id"], 0)}
-                    for stage in module.get("stages", [])
-                ],
-                "total": len(module.get("exercises", [])),
-                "progress": self.app.db.prefix_progress(),
-            })
-            return
-
-        if path == "/api/prefixes/questions":
-            module = self.app.content.prefix_module
-            stage = query.get("stage", ["all"])[0]
+            keys = ("id", "title", "description", "objectives", "grammar", "memory_table", "memory_tables", "source_note")
+            self.send_json({k: unit.get(k) for k in keys if unit.get(k) is not None})
+        elif path in ("/api/tts", "/api/lesson-audio"):
             try:
-                limit = int(query.get("limit", ["16"])[0])
-            except ValueError:
-                limit = 16
-            limit = max(1, min(limit, 60))
-            pool = [
-                dict(item) for item in module.get("exercises", [])
-                if stage in ("all", "") or item.get("stage") == stage
-            ]
-            random.shuffle(pool)
-            pool = pool[:limit]
-            self.send_json({
-                "exercises": session_exercises(pool, self.app.content.public_exercise),
-            })
-            return
-
-        if path == "/api/morphology/bootstrap":
-            self.send_json({
-                "inventory": self.app.lexical.metadata(),
-                "coverage": self.app.db.lexical_coverage(),
-            })
-            return
-
-        if path == "/api/morphology/questions":
-            kind = query.get("kind", ["morphology"])[0]
-            if kind not in {"morphology", "vocabulary"}:
-                kind = "morphology"
-            pos = query.get("pos", [""])[0]
-            if pos not in {"", "noun", "adjective", "verb", "adverb", "other"}:
-                pos = ""
-            case_code = query.get("case", [""])[0]
-            if case_code not in {"", "gen", "dat", "acc", "inst", "prep"}:
-                case_code = ""
-            number_code = query.get("number", [""])[0]
-            if number_code not in {"", "sg", "pl"}:
-                number_code = ""
-            try:
-                limit = int(query.get("limit", ["20"])[0])
-            except ValueError:
-                limit = 20
-            unseen = query.get("unseen", ["0"])[0] == "1"
-            response_type = query.get("response", ["choice"])[0]
-            if response_type not in {"choice", "input"}:
-                response_type = "choice"
-            excluded = self.app.db.lexeme_seen() if unseen else set()
-            exercises = self.app.lexical.questions(
-                kind, limit, pos, case_code, number_code, excluded
-            )
-            if kind == "morphology" and response_type == "input":
-                # O gabarito continua apenas no servidor. O POST /api/answer
-                # corrige pelo exercício original, identificado pelo mesmo ID.
-                exercises = [
-                    {
-                        **exercise,
-                        "type": "input",
-                        "instruction": "Produza a forma completa sem olhar alternativas.",
-                        "options": [],
-                    }
-                    for exercise in exercises
-                ]
-            self.send_json({
-                "exercises": session_exercises(exercises, self.app.lexical.public_exercise),
-                "coverage": self.app.db.lexical_coverage(),
-            })
-            return
-
-        if path == "/api/reveal":
-            ex_id = query.get("id", [""])[0]
-            exercise = self.app.exercise(ex_id)
-            if not exercise:
-                self.send_json({"error": "Exercício não encontrado"}, 404)
-                return
-            self.send_json(self.app.content.reveal(exercise))
-            return
-
-        if path == "/api/summary":
-            course_id = query.get("course_id", [""])[0]
-            self.send_json(self.app.db.summary(course_id))
-            return
-
-        if path == "/api/pending-writing":
-            course_id = query.get("course_id", [""])[0]
-            self.send_json({"items": self.app.db.pending_writing(course_id)})
-            return
-
-        if path == "/api/reports":
-            course_id = query.get("course_id", [""])[0]
-            self.send_json({"items": self.app.db.content_reports(course_id=course_id)})
-            return
-
-        if path == "/api/dictionary":
-            word = query.get("word", [""])[0]
-            self.send_json(self.app.dictionary.lookup(word))
-            return
-
-        if path == "/api/tts":
-            text_value = query.get("text", [""])[0]
-            course_id = query.get("course_id", ["russian"])[0]
-            mode = query.get("mode", ["target"])[0]
-            speaker = query.get("voice", [""])[0]
-            try:
-                audio_path = self.app.tts.audio_for(text_value, course_id, mode=mode, speaker=speaker)
+                if path == "/api/tts":
+                    audio = app.tts.audio_for(q.get("text", ""), speaker=q.get("voice", ""))
+                else:
+                    unit = app.content.units.get(q.get("unit_id", ""))
+                    if not unit:
+                        raise ValueError("Aula não encontrada.")
+                    block = q.get("block", "all")
+                    audio = app.tts.audio_for(lesson_script(unit, None if block in ("", "all") else int(block)), mode="lesson")
             except ValueError as exc:
                 self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
                 return
-            except Exception as exc:
+            except Exception as exc:  # noqa: BLE001
                 self.send_json({"error": f"Não foi possível gerar o áudio: {exc}"}, HTTPStatus.SERVICE_UNAVAILABLE)
                 return
-            self.send_audio(audio_path)
-            return
-
-        if path == "/api/lesson-audio":
-            unit_id = query.get("unit_id", [""])[0]
-            block_raw = query.get("block", ["all"])[0]
-            unit = self.app.content.units_by_id.get(unit_id)
-            if not unit:
-                self.send_json({"error": "Unidade não encontrada."}, HTTPStatus.NOT_FOUND)
-                return
-            try:
-                block_index = None if block_raw in ("", "all") else int(block_raw)
-            except ValueError:
-                self.send_json({"error": "Índice de bloco inválido."}, HTTPStatus.BAD_REQUEST)
-                return
-            try:
-                script = lesson_script(unit, block_index)
-                audio_path = self.app.tts.audio_for(script, unit.get("course_id", "russian"), mode="lesson")
-            except ValueError as exc:
-                self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
-                return
-            except Exception as exc:
-                self.send_json({"error": f"Não foi possível gerar o áudio: {exc}"}, HTTPStatus.SERVICE_UNAVAILABLE)
-                return
-            self.send_audio(audio_path)
-            return
-
-        self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
+            self.send_audio(audio)
+        elif path == "/api/update/check":
+            self.send_json(app.updater.check(force=q.get("force") == "1"))
+        elif path == "/api/update/status":
+            self.send_json(app.updater.status())
+        else:
+            self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
 
     def serve_static(self, path: str) -> None:
         path = unquote(path)
@@ -2250,36 +1326,32 @@ class AppHandler(BaseHTTPRequestHandler):
         if not candidate.is_file():
             self.send_error(HTTPStatus.NOT_FOUND)
             return
-        suffix_types = {
-            ".html": "text/html; charset=utf-8",
-            ".css": "text/css; charset=utf-8",
-            ".js": "text/javascript; charset=utf-8",
-            ".svg": "image/svg+xml",
-            ".png": "image/png",
-        }
+        types = {".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8",
+                 ".js": "text/javascript; charset=utf-8", ".svg": "image/svg+xml", ".png": "image/png"}
         raw = candidate.read_bytes()
         self.send_response(HTTPStatus.OK)
-        self.send_header("Content-Type", suffix_types.get(candidate.suffix, "application/octet-stream"))
+        self.send_header("Content-Type", types.get(candidate.suffix, "application/octet-stream"))
         self.send_header("Content-Length", str(len(raw)))
+        self.send_header("Cache-Control", "no-cache")
         self.end_headers()
         self.wfile.write(raw)
 
 
 class AppServer(ThreadingHTTPServer):
+    daemon_threads = True
+
     def __init__(self, address: tuple[str, int], handler: type[BaseHTTPRequestHandler]):
-        self.content = ContentStore(UNITS_DIR)
-        self.lexical = LexicalMinimumStore(LEXICAL_MINIMUM_PATH)
-        self.db = Database(DB_PATH, self.content, self.lexical)
-        self.dictionary = DictionaryStore(DICTIONARY_PATH, COURSE_LEXICON_PATH)
+        self.lexicon = Lexicon(LEXICON_GZ, CACHE_DIR)
+        self.content = Content(self.lexicon)
+        self.progress = Progress(DB_PATH)
+        self.lessons = LessonStore(LESSONS_DIR)
+        self.course = Course(self.lexicon, self.content, self.progress, self.lessons)
         self.tts = TTSService(TTS_CACHE_DIR)
-        self.window = None  # janela do pywebview, quando o app roda em janela própria
+        self.window = None
         self.updater = Updater(APP_VERSION, USER_DIR, on_restart=self.request_quit)
-        self.db.reconcile_unit_completion()
-        self.db.write_live_exports()
         super().__init__(address, handler)
 
     def request_quit(self) -> None:
-        """Encerra o app: fecha a janela (o que encerra o servidor em main) ou só o servidor."""
         if self.window is not None:
             self.window.destroy()
         else:
@@ -2290,147 +1362,30 @@ class AppServer(ThreadingHTTPServer):
             return
         self.window.restore()
         self.window.show()
-        # Truque para trazer à frente no Windows sem deixar a janela sempre no topo.
         self.window.on_top = True
         self.window.on_top = False
-
-    def exercise(self, exercise_id: str) -> dict | None:
-        found = self.content.exercises.get(exercise_id) or self.lexical.exercise(exercise_id)
-        if found and found.get("unit_id") in self.content.units_by_id and "step" not in found:
-            # Exercícios da trilha levam a parte do roteiro, para a aula retomada mostrar o cabeçalho certo.
-            found = {**found, "step": lesson_step(found)}
-        return found or self.content.lesson_screens.get(exercise_id)
-
-    def public_exercise(self, exercise: dict) -> dict:
-        if str(exercise.get("id", "")).startswith(("lm-", "lv-")):
-            return self.lexical.public_exercise(exercise)
-        return self.content.public_exercise(exercise)
-
-    def rebuild_session(self, row: dict) -> dict:
-        """Reconstrói a fila de uma sessão salva, sem gabarito.
-
-        As alternativas voltam na mesma ordem em que o aluno as viu. Exercícios
-        que não existem mais (conteúdo editado desde então) são descartados e
-        o ponto de retomada é recalculado.
-        """
-        payload = row["payload"]
-        resume = int(row["resume_index"])
-        exercises: list[dict] = []
-        statuses: list[str] = []
-        dropped_before = dropped = 0
-        for index, entry in enumerate(payload["queue"]):
-            base = self.exercise(entry["id"])
-            if not base:
-                dropped += 1
-                if index < resume:
-                    dropped_before += 1
-                continue
-            public = dict(self.public_exercise(base))
-            options = entry.get("options")
-            if options and set(options) == set(public.get("options") or []):
-                public["options"] = list(options)
-            if entry.get("fmt") == "input":
-                public.update(type="input", options=[], instruction="Produza a forma completa sem olhar alternativas.")
-            if entry.get("retry"):
-                public["retry"] = True
-                public["phase"] = "↻ RECUPERAR DE NOVO"
-            exercises.append(public)
-            statuses.append(payload["status"][index] if index < len(payload["status"]) else "new")
-        resume = max(0, min(len(exercises), resume - dropped_before))
-        session = {key: row[key] for key in (
-            "key", "kind", "course_id", "title", "answered", "elapsed_ms", "created_at", "updated_at",
-        )}
-        session.update(resume_index=resume, total=len(exercises))
-        return {
-            "session": session,
-            "exercises": exercises,
-            "status": statuses,
-            "results": payload["results"],
-            "meta": payload["meta"],
-            "dropped": dropped,
-        }
-
-    def progress_map(self, scope: str) -> dict | None:
-        """Mapa pergunta a pergunta de uma unidade ou lição de vocabulário.
-
-        Cada célula traz o último resultado, o número de tentativas e se o
-        item já está dominado (mesma regra cumulativa da trilha).
-        """
-        kind, _, ident = scope.partition(":")
-        entries: list[tuple[dict, str]] = []
-        title = ""
-        if kind == "vocab":
-            store = self.content.vocab
-            lesson = store.lessons_by_id.get(ident)
-            if not lesson:
-                return None
-            title = lesson["title"]
-            order = {exercise["id"]: position for position, exercise in enumerate(lesson["generated"])}
-            parts = store.lesson_parts(lesson)
-            parts["2"] = sorted(parts["2"], key=lambda exercise: order[exercise["id"]])
-            for part in ("1", "2", "3"):
-                entries.extend((exercise, part) for exercise in parts[part] if exercise["type"] not in UNGRADED_TYPES)
-        elif kind == "unit":
-            unit = self.content.units_by_id.get(ident)
-            if not unit:
-                return None
-            title = unit["title"]
-            entries = [(exercise, "") for exercise in unit_session_order(unit)]
-        else:
-            return None
-        ids = [exercise["id"] for exercise, _ in entries]
-        summary = self.db.sessions.attempt_summary(ids)
-        cleared = self.db.cleared_exercise_ids()
-        cells = []
-        counts = {"new": 0, "correct": 0, "partial": 0, "wrong": 0, "pending": 0}
-        for position, (exercise, part) in enumerate(entries, start=1):
-            info = summary.get(exercise["id"])
-            if not info:
-                state = "new"
-            elif info["pending"]:
-                state = "pending"
-            elif (info["last_score"] or 0) >= 1:
-                state = "correct"
-            elif (info["last_score"] or 0) > 0:
-                state = "partial"
-            else:
-                state = "wrong"
-            counts[state] += 1
-            cells.append({
-                "id": exercise["id"],
-                "n": position,
-                "part": part,
-                "type": exercise.get("type"),
-                "label": str(exercise.get("prompt") or exercise.get("front") or exercise.get("head") or "")[:110],
-                "state": state,
-                "mastered": exercise["id"] in cleared,
-                "attempts": info["attempts"] if info else 0,
-                "last_at": info["last_at"] if info else None,
-            })
-        return {"scope": scope, "title": title, "cells": cells, "counts": counts, "total": len(cells)}
 
 
 def already_running(url: str) -> bool:
     try:
         with urllib.request.urlopen(f"{url}/api/update/status", timeout=1.5) as response:
             return "phase" in json.load(response)
-    except Exception:  # noqa: BLE001 - qualquer falha significa "não há servidor nosso nessa porta"
+    except Exception:  # noqa: BLE001
         return False
 
 
-WINDOW_TITLE = "Русский тренажёр"
+WINDOW_TITLE = "LinguaLab · Русский"
 LOG_MAX_BYTES = 2_000_000
 
 
 def redirect_output_if_windowless() -> None:
-    """O .exe em janela não tem console: sys.stdout é None e qualquer log derrubaria o servidor."""
     if sys.stdout is not None and sys.stderr is not None:
         return
     USER_DIR.mkdir(parents=True, exist_ok=True)
     log_path = USER_DIR / "app.log"
     if log_path.exists() and log_path.stat().st_size > LOG_MAX_BYTES:
         log_path.unlink()
-    log = open(log_path, "a", encoding="utf-8", buffering=1)  # noqa: SIM115 - vive até o fim do processo
+    log = open(log_path, "a", encoding="utf-8", buffering=1)  # noqa: SIM115
     sys.stdout = sys.stdout or log
     sys.stderr = sys.stderr or log
 
@@ -2445,7 +1400,6 @@ def focus_running_window(url: str) -> bool:
 
 
 def run_in_window(server: AppServer, url: str, title: str = WINDOW_TITLE) -> bool:
-    """Abre a interface numa janela nativa (WebView2 do Windows). Devolve False se não der."""
     try:
         import webview
     except ImportError:
@@ -2453,12 +1407,9 @@ def run_in_window(server: AppServer, url: str, title: str = WINDOW_TITLE) -> boo
     thread = threading.Thread(target=server.serve_forever, daemon=True)
     thread.start()
     try:
-        server.window = webview.create_window(
-            title, url, width=1320, height=860, min_size=(960, 640), background_color="#0b1917",
-        )
-        # private_mode=False mantém tema e preferências (localStorage) entre aberturas.
+        server.window = webview.create_window(title, url, width=1320, height=880, min_size=(900, 640), background_color="#E9ECE8")
         webview.start(gui="edgechromium", private_mode=False, storage_path=str(USER_DIR / "webview"))
-    except Exception as exc:  # noqa: BLE001 - sem WebView2, o app continua no navegador
+    except Exception as exc:  # noqa: BLE001
         print(f"Janela própria indisponível ({exc}); abrindo no navegador.")
         server.window = None
         webbrowser.open(url)
@@ -2469,9 +1420,8 @@ def run_in_window(server: AppServer, url: str, title: str = WINDOW_TITLE) -> boo
 
 
 def main() -> None:
-    # Antes do argparse: no .exe sem console, até um erro de argumento precisa ir para o log.
     redirect_output_if_windowless()
-    parser = argparse.ArgumentParser(description="LinguaLab local")
+    parser = argparse.ArgumentParser(description="LinguaLab Russo")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--browser", action="store_true", help="abrir no navegador em vez da janela própria")
@@ -2479,19 +1429,15 @@ def main() -> None:
     parser.add_argument("--data-dir", help="pasta de dados do aluno (padrão: %%APPDATA%%\\RussoTrainer)")
     parser.add_argument("--title", default=WINDOW_TITLE, help="título da janela")
     args = parser.parse_args()
-
     for stream in (sys.stdout, sys.stderr):
         if hasattr(stream, "reconfigure"):
             stream.reconfigure(encoding="utf-8", errors="replace")
-
     url = f"http://{args.host}:{args.port}"
     if already_running(url):
-        # Segundo clique no atalho: traz a janela já aberta para a frente (ou a página, no modo navegador).
         print(f"LinguaLab já está aberto em {url}")
         if not focus_running_window(url) and not args.no_browser:
             webbrowser.open(url)
         return
-
     server = AppServer((args.host, args.port), AppHandler)
     print(f"LinguaLab disponível em {url}")
     try:

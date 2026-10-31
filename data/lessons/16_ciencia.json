@@ -1,0 +1,163 @@
+{
+  "id": "ciencia1", "theme": "ciencia", "order": 1,
+  "title": "Причины и следствия", "title_pt": "Ciência: descobertas, causas e efeitos",
+  "level": "B2", "minutes": 60,
+  "objectives": [
+    "Entender uma conversa no laboratório e uma notícia científica no rádio.",
+    "Ler um texto sobre a descoberta da penicilina e reconstruir a cadeia de causas.",
+    "Expressar causa e consequência com благодаря, из-за, от, в результате, так как, поэтому, вследствие.",
+    "Escrever o resumo de um experimento e explicar oralmente um fenômeno natural."
+  ],
+  "grammar_focus": "благодаря + Д. п. (causa positiva) · из-за + Р. п. (causa negativa) · от + Р. п. (causa física) · в результате / вследствие + Р. п. · так как · поэтому · что привело к …",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário da pesquisa científica e do raciocínio causal.", "steps": [
+      {"t": "warmup", "questions": [
+        "Какое научное открытие, по-вашему, изменило мир больше всего?",
+        "Вы любили естественные науки в школе: физику, химию, биологию?",
+        "Em português, «graças a» e «por causa de» têm a mesma conotação? Pense em exemplos."
+      ]},
+      {"t": "vocab", "items": [
+        ["открытие", "descoberta", "сделать открытие; открыть = descobrir"],
+        ["исследование", "pesquisa", "проводить исследование; исследователь"],
+        ["опыт / эксперимент", "experimento", "ставить опыт"],
+        ["гипотеза", "hipótese", "подтвердить / опровергнуть гипотезу"],
+        ["доказать", "provar", "доказательство = prova"],
+        ["причина", "causa", "следствие = consequência"],
+        ["привести к", "levar a, resultar em", "привести к открытию (dativo)"],
+        ["вызывать", "provocar, causar", "вызывать болезнь"],
+        ["влиять на", "influir em", "влияние на климат"],
+        ["учёный", "cientista", "научный = científico"],
+        ["образец", "amostra", "образцы почвы"],
+        ["случайно", "por acaso", "случайность = acaso"]
+      ]},
+      {"t": "match", "title": "Relacione cada conector à sua regência.", "pairs": [
+        ["благодаря", "+ dativo"], ["из-за", "+ genitivo"], ["в результате", "+ genitivo (locução)"],
+        ["привести", "к + dativo"], ["влиять", "на + acusativo"], ["так как", "+ oração"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Благодаря новому телескопу учёные увидели далёкую галактику.", "o": ["Graças ao novo telescópio, os cientistas viram uma galáxia distante.", "Por causa do novo telescópio, os cientistas não viram a galáxia.", "Apesar do novo telescópio, os cientistas viram uma galáxia.", "Os cientistas agradeceram pelo novo telescópio."], "e": "Благодаря = graças a (resultado positivo)."},
+        {"q": "Из-за ошибки в расчётах эксперимент пришлось повторить.", "o": ["Por causa de um erro nos cálculos, foi preciso repetir o experimento.", "Graças a um erro nos cálculos, o experimento deu certo.", "O experimento foi repetido para encontrar um erro.", "O erro nos cálculos foi descoberto pelo experimento."], "e": "Из-за = por causa de (resultado negativo)."},
+        {"q": "Рост температуры приводит к таянию ледников.", "o": ["O aumento da temperatura leva ao derretimento das geleiras.", "O derretimento das geleiras leva ao aumento da temperatura.", "A temperatura impede o derretimento das geleiras.", "As geleiras aumentam com a temperatura."], "e": "Приводить к + dativo: causa → efeito."}
+      ]}
+    ]},
+    {"title": "Escuta: no laboratório", "goal": "Entender a análise de um experimento que deu errado e a hipótese de causa.", "steps": [
+      {"t": "dialogue", "title": "Почему не получилось?", "setting": "Dois pesquisadores de biologia, Artiom e Dacha, analisam um experimento com plantas.",
+        "speakers": {"Артём": "m", "Даша": "f"},
+        "lines": [
+          ["Даша", "Артём, посмотри на образцы: половина растений в третьей группе погибла.", "Artiom, olha as amostras: metade das plantas do terceiro grupo morreu."],
+          ["Артём", "Странно. Условия у всех групп были одинаковые. Может, из-за света?", "Estranho. As condições de todos os grupos eram iguais. Será por causa da luz?"],
+          ["Даша", "Не думаю, свет мы проверяли каждый день. Скорее, из-за температуры. На выходных в лаборатории сломался кондиционер.", "Acho que não, verificamos a luz todos os dias. Mais provável que seja por causa da temperatura. No fim de semana o ar-condicionado do laboratório quebrou."],
+          ["Артём", "Но тогда погибли бы все группы, а не только третья.", "Mas então todos os grupos teriam morrido, não só o terceiro."],
+          ["Даша", "Верно. Третья группа стояла ближе всех к окну, поэтому растения нагрелись сильнее.", "É verdade. O terceiro grupo estava mais perto da janela, por isso as plantas esquentaram mais."],
+          ["Артём", "Логично. Значит, они погибли не от болезни, а от перегрева.", "Faz sentido. Então elas não morreram de doença, e sim de superaquecimento."],
+          ["Даша", "Похоже на то. Хорошо, что мы записывали температуру: благодаря этим данным мы сможем это доказать.", "Parece que sim. Ainda bem que registramos a temperatura: graças a esses dados poderemos provar isso."],
+          ["Артём", "Значит, эксперимент придётся повторить?", "Então vamos ter que repetir o experimento?"],
+          ["Даша", "Только для третьей группы. И на этот раз поставим её подальше от окна.", "Só para o terceiro grupo. E desta vez vamos colocá-lo mais longe da janela."]
+        ],
+        "questions": [
+          {"q": "Qual foi o problema no experimento?", "o": ["Metade das plantas do terceiro grupo morreu.", "Todas as plantas morreram.", "As plantas cresceram demais.", "As amostras se perderam."], "e": "«Половина растений в третьей группе погибла»."},
+          {"q": "Por que Dacha descarta a luz como causa?", "o": ["Porque verificavam a luz todos os dias.", "Porque a luz estava desligada.", "Porque as plantas não precisam de luz.", "Porque a janela estava fechada."], "e": "«Свет мы проверяли каждый день»."},
+          {"q": "Qual é a causa provável?", "o": ["Superaquecimento perto da janela, com o ar-condicionado quebrado.", "Uma doença das plantas.", "Falta de água.", "Erro nos cálculos."], "e": "«Погибли не от болезни, а от перегрева»."},
+          {"q": "O que vão fazer?", "o": ["Repetir só o terceiro grupo, longe da janela.", "Repetir todo o experimento.", "Mudar de laboratório.", "Publicar os resultados assim mesmo."], "e": "«Только для третьей группы … подальше от окна»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Третья группа стояла ближе всех к окну, поэтому растения нагрелись сильнее.", "pt": "O terceiro grupo estava mais perto da janela, por isso as plantas esquentaram mais.", "hint": "Explicação de Dacha (11 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["Может, из-за света?", "Será por causa da luz?"],
+        ["Они погибли не от болезни, а от перегрева.", "Morreram não de doença, mas de superaquecimento."],
+        ["Благодаря этим данным мы сможем это доказать.", "Graças a esses dados poderemos provar isso."],
+        ["Эксперимент придётся повторить.", "Vai ser preciso repetir o experimento."]
+      ]}
+    ]},
+    {"title": "Leitura: uma descoberta por acaso", "goal": "Ler um texto de divulgação científica e reconstruir a cadeia causa → efeito.", "steps": [
+      {"t": "reading", "title": "Как был открыт пенициллин",
+        "text": "В 1928 году британский бактериолог Александр Флеминг уехал в отпуск, оставив в лаборатории чашки с бактериями. Так как он не отличался аккуратностью, чашки остались неубранными. Вернувшись, учёный заметил, что в одной из них выросла плесень, а вокруг неё бактерии погибли.\n\nФлеминг предположил, что плесень выделяет вещество, которое убивает бактерии, и назвал его пенициллином. Однако получить чистое вещество ему не удалось из-за технических трудностей, и об открытии на несколько лет почти забыли.\n\nТолько в начале 1940-х годов Говард Флори и Эрнст Чейн разработали способ получения пенициллина в больших количествах. В результате их работы во время Второй мировой войны лекарство спасло тысячи раненых, которые раньше умирали от инфекций. В 1945 году все трое получили Нобелевскую премию. Благодаря антибиотикам средняя продолжительность жизни людей заметно выросла. Сегодня, однако, учёные бьют тревогу: из-за слишком частого использования антибиотиков многие бактерии стали к ним устойчивыми.",
+        "pt": "Em 1928, o bacteriologista britânico Alexander Fleming saiu de férias deixando no laboratório placas com bactérias. Como ele não era conhecido pela organização, as placas ficaram sem ser guardadas. Ao voltar, o cientista notou que numa delas tinha crescido mofo e que, em volta dele, as bactérias tinham morrido.\n\nFleming supôs que o mofo liberava uma substância que matava as bactérias e a chamou de penicilina. No entanto, ele não conseguiu obter a substância pura por causa de dificuldades técnicas, e a descoberta ficou quase esquecida por alguns anos.\n\nSó no início da década de 1940 Howard Florey e Ernst Chain desenvolveram um método para produzir penicilina em grande quantidade. Como resultado desse trabalho, durante a Segunda Guerra Mundial o remédio salvou milhares de feridos que antes morriam de infecções. Em 1945, os três receberam o Prêmio Nobel. Graças aos antibióticos, a expectativa média de vida aumentou visivelmente. Hoje, porém, os cientistas dão o alarme: por causa do uso excessivo de antibióticos, muitas bactérias se tornaram resistentes a eles.",
+        "tf": [
+          ["Fleming descobriu a penicilina graças à sua organização rigorosa.", "F", "Ao contrário: «он не отличался аккуратностью»."],
+          ["Fleming não conseguiu obter a penicilina pura.", "V", "«Получить чистое вещество ему не удалось»."],
+          ["A produção em massa foi desenvolvida por Florey e Chain.", "V", "«Разработали способ получения … в больших количествах»."],
+          ["O Prêmio Nobel foi dado só a Fleming.", "F", "«Все трое получили Нобелевскую премию»."],
+          ["Fleming trabalhou depois na produção industrial do remédio.", "N", "O texto não diz isso."]
+        ],
+        "questions": [
+          {"q": "Почему об открытии на несколько лет почти забыли?", "o": ["Из-за того, что не удалось получить чистое вещество.", "Потому что Флеминг уехал в отпуск.", "Потому что началась война.", "Из-за того, что плесень погибла."], "e": "«Из-за технических трудностей»."},
+          {"q": "Какую проблему называют учёные сегодня?", "o": ["Бактерии стали устойчивыми к антибиотикам из-за их частого использования.", "Пенициллин слишком дорогой.", "Плесень опасна для людей.", "Продолжительность жизни уменьшилась."], "e": "«Из-за слишком частого использования антибиотиков многие бактерии стали к ним устойчивыми»."}
+        ]},
+      {"t": "cloze", "title": "Escolha благодаря, из-за ou от.",
+        "text": "{Благодаря|Из-за|От} случайности Флеминг сделал великое открытие. Раньше многие раненые умирали {от|благодаря|из-за} инфекций. {Из-за|Благодаря|От} технических трудностей работа остановилась. {Благодаря|Из-за|От} антибиотикам люди живут дольше.",
+        "pt": "Graças a um acaso, Fleming fez uma grande descoberta. Antes, muitos feridos morriam de infecções. Por causa de dificuldades técnicas, o trabalho parou. Graças aos antibióticos, as pessoas vivem mais.",
+        "e": "Благодаря + dativo: causa de algo bom. Из-за + genitivo: causa de algo ruim. От + genitivo: causa física de um estado (умереть от, дрожать от холода)."}
+    ]},
+    {"title": "Foco na forma: causa e consequência", "goal": "Escolher o conector de causa pela conotação, pela regência e pelo registro.", "steps": [
+      {"t": "grammar", "title": "Graças a, por causa de, de, como resultado de",
+        "paragraphs": [
+          "Благодаря + dativo indica uma causa com resultado positivo: Благодаря вакцинам исчезли многие болезни. Из-за + genitivo indica uma causa com resultado negativo: Из-за дождя матч отменили.",
+          "От + genitivo indica a causa física ou emocional de um estado involuntário: умереть от рака, плакать от радости, устать от шума. Por + genitivo para a causa de uma ação consciente: Он сделал это по ошибке, по глупости.",
+          "Registro científico e oficial: в результате + genitivo (como resultado de), вследствие + genitivo (em consequência de), в связи с + instrumental (em razão de): В связи с ремонтом лаборатория закрыта.",
+          "Com orações: потому что (depois da consequência), так как / поскольку (podem abrir a frase), поэтому / так что / вследствие этого (introduzem a consequência). Verbos: приводить к + dativo (levar a), вызывать + acusativo (provocar), объясняться + instrumental (explicar-se por)."
+        ],
+        "table": {"columns": ["Expressão", "Caso", "Exemplo"], "rows": [
+          ["благодаря (positivo)", "dativo", "благодаря новому методу"],
+          ["из-за (negativo)", "genitivo", "из-за ошибки"],
+          ["от (estado físico)", "genitivo", "погибнуть от перегрева"],
+          ["в результате", "genitivo", "в результате эксперимента"],
+          ["вследствие (formal)", "genitivo", "вследствие аварии"],
+          ["приводить к", "dativo", "приводить к потеплению"]
+        ]},
+        "examples": [
+          ["Благодаря спутникам мы точно знаем прогноз погоды.", "Graças aos satélites, sabemos a previsão do tempo com precisão."],
+          ["Из-за загрязнения воздуха в городе растёт число аллергий.", "Por causa da poluição do ar, o número de alergias na cidade cresce."],
+          ["Изменение климата объясняется ростом выбросов CO₂.", "A mudança climática se explica pelo aumento das emissões de CO₂."]
+        ],
+        "pitfalls": [
+          "Благодаря com sentido negativo soa irônico: «Благодаря тебе мы опоздали» = graças a você (ironia).",
+          "Não confunda от e из-за: «Он дрожал от холода» (estado físico), mas «Из-за холода занятия отменили» (consequência negativa de um fato).",
+          "Благодаря pede dativo, não genitivo: «благодаря учёным», nunca «благодаря учёных»."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "___ интернету учёные из разных стран легко работают вместе.", "o": ["Благодаря", "Из-за", "От", "Вследствие"], "e": "Resultado positivo + dativo: благодаря."},
+        {"q": "Полёт отменили ___ плохой погоды.", "o": ["из-за", "благодаря", "от", "к"], "e": "Resultado negativo + genitivo: из-за."},
+        {"q": "Мы не могли уснуть ___ жары.", "o": ["от", "благодаря", "к", "по"], "e": "Estado físico involuntário: от."},
+        {"q": "Курение приводит ___ серьёзным болезням.", "o": ["к", "в", "на", "до"], "e": "Приводить к + dativo."},
+        {"q": "___ ремонтом библиотека закрыта до понедельника.", "o": ["В связи с", "Благодаря", "От", "Из-за к"], "e": "Registro oficial: в связи с + instrumental."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Благодаря дождя мы не пошли гулять.", "o": ["Из-за дождя мы не пошли гулять.", "Благодаря дождю мы не пошли гулять.", "От дождю мы не пошли гулять."], "e": "Resultado negativo: из-за + genitivo."},
+        {"q": "Благодаря новых лекарств люди живут дольше.", "o": ["Благодаря новым лекарствам люди живут дольше.", "Из-за новых лекарств люди живут дольше.", "Благодаря новыми лекарствами люди живут дольше."], "e": "Благодаря + dativo."},
+        {"q": "Это открытие привело в революцию в медицине.", "o": ["Это открытие привело к революции в медицине.", "Это открытие привело на революцию в медицине.", "Это открытие привело революции в медицине."], "e": "Привести к + dativo."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Благодаря этим данным мы сможем всё доказать", "pt": "Graças a esses dados poderemos provar tudo."},
+        {"a": "Из-за ошибки эксперимент пришлось повторить", "pt": "Por causa de um erro, foi preciso repetir o experimento."},
+        {"a": "Рост температуры приводит к таянию льда", "pt": "O aumento da temperatura leva ao derretimento do gelo."}
+      ]}
+    ]},
+    {"title": "Uso real: notícia científica, situações e produção", "goal": "Entender notícias científicas e explicar fenômenos com precisão.", "steps": [
+      {"t": "listening", "kind": "Научные новости на радио", "title": "Жизнь подо льдом", "voice": "m2",
+        "text": "Научные новости. Российские исследователи опубликовали новые результаты изучения озера Восток в Антарктиде. Озеро находится под ледником толщиной почти четыре километра и миллионы лет было изолировано от поверхности. Буровая скважина впервые достигла воды в феврале две тысячи двенадцатого года. Благодаря анализу образцов учёные обнаружили следы микроорганизмов. Из-за риска загрязнения озера работы ведутся очень медленно. Исследование важно не только для биологии: оно помогает понять, может ли существовать жизнь подо льдом на спутниках Юпитера и Сатурна.",
+        "pt": "Notícias científicas. Pesquisadores russos publicaram novos resultados do estudo do lago Vostok, na Antártida. O lago fica sob uma geleira de quase quatro quilômetros de espessura e esteve isolado da superfície por milhões de anos. A perfuração alcançou a água pela primeira vez em fevereiro de dois mil e doze. Graças à análise das amostras, os cientistas encontraram vestígios de microrganismos. Por causa do risco de contaminar o lago, os trabalhos avançam muito devagar. A pesquisa é importante não só para a biologia: ela ajuda a entender se pode existir vida sob o gelo nas luas de Júpiter e Saturno.",
+        "questions": [
+          {"q": "Qual é a espessura do gelo sobre o lago?", "o": ["Quase quatro quilômetros.", "Quatrocentos metros.", "Quarenta quilômetros.", "Quase um quilômetro."], "e": "«Толщиной почти четыре километра»."},
+          {"q": "Por que os trabalhos são lentos?", "o": ["Por causa do risco de contaminar o lago.", "Por falta de dinheiro.", "Por causa do frio extremo.", "Porque a perfuração quebrou."], "e": "«Из-за риска загрязнения озера»."},
+          {"q": "Por que a pesquisa interessa além da biologia?", "o": ["Ajuda a entender se há vida sob o gelo das luas de Júpiter e Saturno.", "Ajuda a prever terremotos.", "Mostra a idade da Terra.", "Fornece água potável."], "e": "«Может ли существовать жизнь подо льдом на спутниках Юпитера и Сатурна»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você agradece à orientadora pelo sucesso da pesquisa.", "o": ["Благодаря вашей помощи исследование удалось.", "Из-за вашей помощи исследование удалось.", "От вашей помощи исследование удалось.", "Благодаря вашей помощи исследование не удалось."], "e": "Благодаря + dativo, resultado positivo."},
+        {"q": "Você explica por que chegou atrasado ao seminário.", "o": ["Я опоздал из-за пробок.", "Я опоздал благодаря пробкам.", "Я опоздал от пробок.", "Я опоздал к пробкам."], "e": "Из-за + genitivo, resultado negativo."},
+        {"q": "Você pergunta qual é a causa de um fenômeno.", "o": ["Чем объясняется это явление?", "Что объясняется это явление?", "Почему объясняется это явление?", "Чем это явление объясняет?"], "e": "Объясняться + instrumental: чем?"}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 70,
+        "task": "Escreva um resumo (70 a 100 palavras) de um experimento real ou inventado: hipótese, método, resultado inesperado e explicação da causa. Use pelo menos quatro expressões de causa e consequência.",
+        "useful": ["Целью эксперимента было …", "Мы предположили, что …", "Однако в результате …", "Это объясняется тем, что …", "Из-за … / Благодаря …", "Поэтому в будущем …"],
+        "model": "Целью эксперимента было проверить, как музыка влияет на рост растений. Мы предположили, что растения, которые слушают классическую музыку, будут расти быстрее. Две группы растений получали одинаковое количество воды и света. Однако в результате быстрее росла контрольная группа, стоявшая в тишине. Это объясняется тем, что колонки сильно нагревались, и из-за этого земля в первой группе высыхала быстрее. Благодаря этой ошибке мы поняли, как важно контролировать все условия. Поэтому в будущем мы повторим опыт с колонками, установленными дальше от растений.",
+        "model_pt": "O objetivo do experimento era verificar como a música influencia o crescimento das plantas. Supusemos que as plantas que ouvem música clássica cresceriam mais rápido. Dois grupos de plantas receberam a mesma quantidade de água e luz. No entanto, como resultado, cresceu mais rápido o grupo de controle, que ficava em silêncio. Isso se explica pelo fato de que as caixas de som esquentavam muito, e por causa disso a terra do primeiro grupo secava mais rápido. Graças a esse erro, entendemos como é importante controlar todas as condições. Por isso, no futuro repetiremos o experimento com as caixas de som instaladas mais longe das plantas.",
+        "checklist": ["Apresentei a hipótese.", "Usei благодаря e из-за corretamente.", "Usei в результате ou это объясняется тем, что.", "Usei поэтому para a consequência.", "Escrevi pelo menos 70 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Explique em voz alta, como para uma criança curiosa, um fenômeno natural (o arco-íris, as estações do ano, as marés ou outro) mostrando a causa e o efeito.",
+        "useful": ["Это происходит, потому что …", "Из-за того, что …", "В результате …", "Поэтому …", "Благодаря этому …"],
+        "model": "Знаешь, почему летом жарко, а зимой холодно? Это происходит не потому, что Земля ближе к Солнцу. Всё дело в том, что ось Земли наклонена. Из-за этого наклона летом солнечные лучи падают на нас почти прямо, и земля нагревается сильнее. А зимой лучи падают под углом, поэтому тепла меньше. В результате в Бразилии и в России времена года противоположные: когда у нас лето, там зима. Благодаря этому можно отмечать Новый год и на пляже, и в снегу!",
+        "model_pt": "Sabe por que no verão faz calor e no inverno faz frio? Isso não acontece porque a Terra está mais perto do Sol. A questão é que o eixo da Terra é inclinado. Por causa dessa inclinação, no verão os raios do sol caem quase retos sobre nós, e a terra esquenta mais. No inverno os raios caem inclinados, por isso há menos calor. Como resultado, no Brasil e na Rússia as estações são opostas: quando aqui é verão, lá é inverno. Graças a isso, dá para comemorar o Ano-Novo tanto na praia quanto na neve!",
+        "checklist": ["Expliquei a causa principal.", "Usei из-за ou благодаря.", "Usei поэтому ou в результате.", "Usei linguagem simples e um exemplo concreto."]}
+    ]}
+  ]
+}

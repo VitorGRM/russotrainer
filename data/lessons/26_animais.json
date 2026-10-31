@@ -1,0 +1,164 @@
+{
+  "id": "animais1", "theme": "animais", "order": 1,
+  "title": "Возьми котёнка!", "title_pt": "Animais de estimação e vida selvagem",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender uma conversa num abrigo de animais e uma mensagem sobre um cachorro perdido.",
+    "Ler um texto sobre os gatos do museu Hermitage.",
+    "Aplicar a regra da animação no acusativo (вижу кота, котов, собак) e formar diminutivos e nomes de filhotes (котёнок, щенок, -ята).",
+    "Escrever um anúncio de animal perdido ou para adoção e falar oralmente sobre um animal da sua vida."
+  ],
+  "grammar_focus": "одушевлённость: В. п. = Р. п. (м. р. ед. ч., все роды во мн. ч.): вижу кота, котов, собак · уменьшительные: кот → котик, собака → собачка · детёныши: котёнок / котята, щенок / щенята",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer os nomes de animais, filhotes e o vocabulário de cuidado.", "steps": [
+      {"t": "warmup", "questions": [
+        "У вас есть домашнее животное? Как его зовут?",
+        "Вы бы взяли животное из приюта?",
+        "Em português dizemos «vejo um gato» e «vejo um livro» com a mesma forma. Em russo, «gato» e «livro» se comportam igual no acusativo?"
+      ]},
+      {"t": "vocab", "items": [
+        ["домашнее животное", "animal de estimação", "= питомец"],
+        ["кошка / кот", "gata / gato", "котёнок, мн. котята = filhote(s)"],
+        ["собака / пёс", "cachorro", "щенок, мн. щенята = filhote(s)"],
+        ["приют для животных", "abrigo de animais", "взять из приюта = adotar"],
+        ["хозяин / хозяйка", "dono / dona", "без хозяина = sem dono"],
+        ["кормить", "alimentar", "корм = ração"],
+        ["гулять с собакой", "passear com o cachorro", "выгуливать (coloquial)"],
+        ["ветеринар", "veterinário", "прививка = vacina"],
+        ["бездомный", "abandonado, de rua", "бездомная собака"],
+        ["дикое животное", "animal selvagem", "медведь, волк, лиса"],
+        ["хвост / лапа / шерсть", "rabo / pata / pelo", "пушистый = peludo, fofo"],
+        ["ласковый", "carinhoso, dócil", "≠ агрессивный"]
+      ]},
+      {"t": "match", "title": "Relacione o animal ao filhote.", "pairs": [
+        ["кошка", "котёнок"], ["собака", "щенок"], ["корова", "телёнок"],
+        ["курица", "цыплёнок"], ["медведь", "медвежонок"], ["лиса", "лисёнок"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Соседи нашли во дворе трёх котят.", "o": ["Os vizinhos acharam três gatinhos no pátio.", "Os vizinhos acharam três gatos adultos no pátio.", "Os vizinhos perderam três gatinhos.", "Os vizinhos têm três gatos em casa."], "e": "Котята = filhotes de gato."},
+        {"q": "Собака очень ласковая, любит детей.", "o": ["A cachorra é muito carinhosa, gosta de crianças.", "A cachorra é muito brava com crianças.", "A cachorra é pequena e tem medo de crianças.", "A cachorra precisa de muito carinho e cuidado médico."], "e": "Ласковый = carinhoso, dócil."},
+        {"q": "Котику нужно сделать все прививки.", "o": ["O gatinho precisa tomar todas as vacinas.", "O gatinho precisa ser castrado.", "O gatinho precisa de ração especial.", "O gatinho já tomou todas as vacinas."], "e": "Прививка = vacina."}
+      ]}
+    ]},
+    {"title": "Escuta: no abrigo de animais", "goal": "Entender características de animais e condições de adoção.", "steps": [
+      {"t": "dialogue", "title": "Кого вы хотите взять?", "setting": "Ana e o filho Miguel visitam um abrigo de animais em Moscou; uma voluntária os recebe.",
+        "speakers": {"Волонтёр": "f2", "Анна": "f"},
+        "lines": [
+          ["Волонтёр", "Здравствуйте! Вы хотите взять собаку или кошку?", "Olá! Vocês querem adotar um cachorro ou um gato?"],
+          ["Анна", "Мы ещё не решили. Сын мечтает о собаке, но мы живём в маленькой квартире.", "Ainda não decidimos. O meu filho sonha com um cachorro, mas moramos num apartamento pequeno."],
+          ["Волонтёр", "Тогда посмотрите вот этого пса, Бублика. Он небольшой, спокойный, ему три года.", "Então vejam este cachorro, o Búblik. Ele é pequeno, calmo, tem três anos."],
+          ["Анна", "Какой милый! А с ним нужно много гулять?", "Que fofo! E é preciso passear muito com ele?"],
+          ["Волонтёр", "Два раза в день, утром и вечером. А ещё у нас недавно появились щенята, мы нашли их у дороги. И есть котята, им по два месяца.", "Duas vezes por dia, de manhã e à noite. E há pouco tempo chegaram uns filhotinhos de cachorro, nós os encontramos na beira da estrada. E também há gatinhos, de dois meses cada."],
+          ["Анна", "Мигел, смотри, какие котята! Вон тот, рыжий, совсем как наш старый кот.", "Miguel, olha que gatinhos! Aquele ali, ruivo, igualzinho ao nosso gato antigo."],
+          ["Волонтёр", "Этот рыжий очень ласковый. Если хотите взять котёнка, нужно заполнить анкету и подписать договор. Мы просим хозяев сделать животному все прививки.", "Esse ruivo é muito carinhoso. Se quiserem adotar um gatinho, é preciso preencher um formulário e assinar um contrato. Pedimos aos donos que deem todas as vacinas ao animal."],
+          ["Анна", "А можно взять и Бублика, и котёнка?", "E dá para adotar o Búblik e o gatinho?"],
+          ["Волонтёр", "Можно, они уже знакомы, Бублик любит кошек. Но подумайте хорошо: это ответственность на много лет.", "Dá, eles já se conhecem, o Búblik gosta de gatos. Mas pensem bem: é uma responsabilidade de muitos anos."],
+          ["Анна", "Мы подумаем до выходных и вернёмся. Спасибо вам за вашу работу!", "Vamos pensar até o fim de semana e voltamos. Obrigada pelo trabalho de vocês!"]
+        ],
+        "questions": [
+          {"q": "Por que Ana hesita em adotar um cachorro?", "o": ["Porque moram num apartamento pequeno.", "Porque o filho tem alergia.", "Porque já têm um gato.", "Porque trabalham o dia todo."], "e": "«Мы живём в маленькой квартире»."},
+          {"q": "Como é o Búblik?", "o": ["Pequeno, calmo e com três anos.", "Grande e agitado.", "Um filhote de dois meses.", "Um gato ruivo."], "e": "«Он небольшой, спокойный, ему три года»."},
+          {"q": "O que o abrigo pede aos novos donos?", "o": ["Que deem todas as vacinas ao animal.", "Que paguem uma taxa.", "Que visitem o abrigo todo mês.", "Que morem numa casa com quintal."], "e": "«Просим хозяев сделать животному все прививки»."},
+          {"q": "O que Ana decide?", "o": ["Pensar até o fim de semana e voltar.", "Adotar só o gatinho hoje.", "Adotar os dois imediatamente.", "Desistir da adoção."], "e": "«Мы подумаем до выходных и вернёмся»."}
+        ]},
+      {"t": "dictation", "voice": "f2", "text": "Если хотите взять котёнка, нужно заполнить анкету и подписать договор.", "pt": "Se quiserem adotar um gatinho, é preciso preencher um formulário e assinar um contrato.", "hint": "Condição de adoção (10 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Сын мечтает о собаке.", "O meu filho sonha com um cachorro."],
+        ["Посмотрите вот этого пса.", "Vejam este cachorro."],
+        ["Бублик любит кошек.", "O Búblik gosta de gatos."],
+        ["Это ответственность на много лет.", "É uma responsabilidade de muitos anos."]
+      ]}
+    ]},
+    {"title": "Leitura: os gatos do Hermitage", "goal": "Ler um texto curioso e localizar datas, números e funções.", "steps": [
+      {"t": "reading", "title": "Коты на службе в Эрмитаже",
+        "text": "Мало кто знает, что у одного из крупнейших музеев мира есть особые сотрудники: коты. По легенде, первого кота привёз во дворец ещё Пётр Первый, а императрица Елизавета в середине XVIII века издала указ привезти в Петербург лучших котов из Казани, чтобы защищать дворец от мышей.\n\nСегодня в подвалах Эрмитажа живут около пятидесяти котов и кошек. У каждого есть имя, а ещё паспорт с фотографией. Музей кормит их, лечит и делает всем прививки. Помогают и посетители: многие приносят корм или жертвуют деньги. Если котов становится слишком много, музей ищет для них новых хозяев, и взять «эрмитажного кота» считается большой честью.\n\nКаждый год в конце мая в музее проходит «День эрмитажного кота». В этот день открывают обычно закрытые подвалы, устраивают выставки детских рисунков и рассказывают, как живут пушистые сторожа. Котов, конечно, в залы с картинами не пускают, но туристы всё равно мечтают их увидеть.",
+        "pt": "Pouca gente sabe que um dos maiores museus do mundo tem funcionários especiais: gatos. Segundo a lenda, o primeiro gato foi trazido ao palácio ainda por Pedro, o Grande, e a imperatriz Isabel, em meados do século XVIII, mandou por decreto trazer a Petersburgo os melhores gatos de Kazan para proteger o palácio dos ratos.\n\nHoje, nos porões do Hermitage, vivem cerca de cinquenta gatos e gatas. Cada um tem nome e ainda um passaporte com foto. O museu os alimenta, trata e vacina todos. Os visitantes também ajudam: muitos trazem ração ou doam dinheiro. Se os gatos ficam numerosos demais, o museu procura novos donos para eles, e adotar um «gato do Hermitage» é considerado uma grande honra.\n\nTodo ano, no fim de maio, o museu realiza o «Dia do Gato do Hermitage». Nesse dia, abrem-se os porões normalmente fechados, organizam-se exposições de desenhos infantis e conta-se como vivem os guardiões peludos. É claro que os gatos não entram nas salas com quadros, mas mesmo assim os turistas sonham em vê-los.",
+        "tf": [
+          ["A imperatriz Isabel mandou trazer gatos de Kazan.", "V", "«Привезти в Петербург лучших котов из Казани»."],
+          ["Hoje vivem cerca de quinhentos gatos no museu.", "F", "«Около пятидесяти»."],
+          ["Cada gato tem um passaporte com foto.", "V", "«Паспорт с фотографией»."],
+          ["Os gatos passeiam pelas salas de pintura.", "F", "«В залы с картинами не пускают»."],
+          ["O museu cobra para adotar um gato.", "N", "O texto não fala de pagamento pela adoção."]
+        ],
+        "questions": [
+          {"q": "Зачем во дворце появились коты?", "o": ["Чтобы защищать дворец от мышей.", "Чтобы развлекать императрицу.", "Чтобы привлекать туристов.", "Чтобы охранять картины от воров."], "e": "«Чтобы защищать дворец от мышей»."},
+          {"q": "Что происходит в «День эрмитажного кота»?", "o": ["Открывают подвалы, устраивают выставки детских рисунков.", "Котов выпускают в залы.", "Продают котят.", "Музей закрыт для посетителей."], "e": "«Открывают обычно закрытые подвалы, устраивают выставки детских рисунков…»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta do acusativo.",
+        "text": "Туристы мечтают увидеть {котов|коты|кот}. Музей кормит {кошек|кошки|кошка} каждый день. Я люблю {свою собаку|своя собака|своей собаки}. Мы взяли из приюта {рыжего котёнка|рыжий котёнок|рыжему котёнку}.",
+        "pt": "Os turistas sonham em ver os gatos. O museu alimenta as gatas todos os dias. Amo a minha cachorra. Adotamos um gatinho ruivo do abrigo.",
+        "e": "Animados no plural (todos os gêneros) e masculinos animados no singular: acusativo = genitivo. Femininos em -а no singular: acusativo regular em -у."}
+    ]},
+    {"title": "Foco na forma: animação e diminutivos", "goal": "Aplicar a regra do acusativo animado e formar diminutivos e filhotes.", "steps": [
+      {"t": "grammar", "title": "Seres vivos no acusativo e palavras carinhosas",
+        "paragraphs": [
+          "Em russo, o acusativo distingue seres vivos (pessoas e animais) de coisas. Para masculinos no singular e para todos os gêneros no plural, o acusativo animado é igual ao genitivo: вижу стол (coisa), mas вижу кота (animal); вижу столы, mas вижу котов, кошек, собак, птиц.",
+          "Femininos em -а / -я no singular seguem a regra normal, sem diferença: вижу кошку, собаку, лошадь. Neutros inanimados também: вижу окно. Adjetivos acompanham o substantivo: вижу большого пса, больших собак.",
+          "Filhotes: sufixo -онок / -ёнок, plural -ята / -ата: котёнок → котята, медвежонок → медвежата, лисёнок → лисята. Exceção comum: щенок → щенята. No acusativo plural animado: вижу котят, щенят.",
+          "Diminutivos expressam tamanho pequeno ou carinho: кот → котик, собака → собачка, мышь → мышка, птица → птичка, хвост → хвостик, лапа → лапка. São muito comuns ao falar com animais e crianças."
+        ],
+        "table": {"columns": ["Substantivo", "Acusativo singular", "Acusativo plural"], "rows": [
+          ["кот (m., animado)", "кота", "котов"],
+          ["стол (m., inanimado)", "стол", "столы"],
+          ["собака (f.)", "собаку", "собак"],
+          ["лошадь (f.)", "лошадь", "лошадей"],
+          ["котёнок (m.)", "котёнка", "котят"],
+          ["животное (n., animado)", "животное", "животных"]
+        ]},
+        "examples": [
+          ["В зоопарке мы видели медведей, волков и маленьких медвежат.", "No zoológico vimos ursos, lobos e ursinhos pequenos."],
+          ["Бабушка кормит голубей каждое утро.", "A avó dá comida aos pombos toda manhã."],
+          ["Смотри, какая у котика маленькая лапка!", "Olha que patinha pequena o gatinho tem!"]
+        ],
+        "pitfalls": [
+          "Não diga «Я люблю коты»: animados no plural pedem acusativo = genitivo, «Я люблю котов».",
+          "Животное é neutro, mas no plural é animado: «вижу животных».",
+          "Femininos em -а não mudam pela animação no singular: «вижу кошку», como «вижу книгу»."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Мой сын боится ___, но обожает кошек.", "o": ["собак", "собаки", "собакам", "собаками"], "e": "Бояться + genitivo plural (aqui igual ao acusativo animado)."},
+        {"q": "Вчера в парке я видел ___.", "o": ["белого кролика", "белый кролик", "белого кролик", "белому кролику"], "e": "Masculino animado: acusativo = genitivo."},
+        {"q": "Девочка гладит ___.", "o": ["котят", "котята", "котятами", "котёнки"], "e": "Plural animado: котят."},
+        {"q": "Мы купили новый ___ для собаки.", "o": ["ошейник", "ошейника", "ошейнику", "ошейником"], "e": "Objeto inanimado: acusativo = nominativo."},
+        {"q": "Как ласково назвать собаку?", "o": ["собачка", "собакин", "собачий", "собакёнок"], "e": "Diminutivo: собачка."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я очень люблю лошади.", "o": ["Я очень люблю лошадей.", "Я очень люблю лошадям.", "Я очень люблю лошадями."], "e": "Plural animado: acusativo = genitivo (лошадей)."},
+        {"q": "Мы взяли из приюта маленький щенок.", "o": ["Мы взяли из приюта маленького щенка.", "Мы взяли из приюта маленькую щенка.", "Мы взяли из приюта маленьким щенком."], "e": "Masculino animado: маленького щенка."},
+        {"q": "В лесу мы видели два лисёнка и много лисёнков.", "o": ["В лесу мы видели двух лисят и много лисят.", "В лесу мы видели два лисята и много лисёнков.", "В лесу мы видели двое лисёнок и много лисят."], "e": "Plural de filhotes: -ята; acusativo animado: двух лисят."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Бабушка кормит голубей каждое утро", "pt": "A avó dá comida aos pombos toda manhã."},
+        {"a": "Мы взяли из приюта рыжего котёнка", "pt": "Adotamos um gatinho ruivo do abrigo."},
+        {"a": "Мой сын давно мечтает о собаке", "pt": "O meu filho sonha há tempos com um cachorro."}
+      ]}
+    ]},
+    {"title": "Uso real: cachorro perdido, situações e produção", "goal": "Entender e redigir anúncios sobre animais e contar histórias com eles.", "steps": [
+      {"t": "listening", "kind": "Голосовое сообщение", "title": "Пропала собака!", "voice": "m2",
+        "text": "Добрый вечер, это Виктор из сорок второй квартиры. Извините, что беспокою. Сегодня утром во дворе у нас убежала собака, такса по кличке Марта. Она маленькая, коричневая, с красным ошейником. Её испугал салют, и она убежала в сторону парка. Если вы увидите таксу, пожалуйста, не пытайтесь её поймать, она боится чужих. Лучше сразу позвоните мне или напишите в чат дома. За помощь обещаю вознаграждение. Спасибо!",
+        "pt": "Boa noite, aqui é o Víktor, do apartamento quarenta e dois. Desculpem incomodar. Hoje de manhã, no pátio, a nossa cachorra fugiu, uma salsicha chamada Marta. Ela é pequena, marrom, com coleira vermelha. Os fogos a assustaram, e ela correu na direção do parque. Se virem uma salsicha, por favor, não tentem pegá-la, ela tem medo de estranhos. É melhor me ligar logo ou escrever no grupo do prédio. Prometo uma recompensa pela ajuda. Obrigado!",
+        "questions": [
+          {"q": "Como é a cachorra Marta?", "o": ["Pequena, marrom, com coleira vermelha.", "Grande, preta, sem coleira.", "Pequena, branca, com coleira azul.", "Um filhote ruivo."], "e": "«Маленькая, коричневая, с красным ошейником»."},
+          {"q": "Por que ela fugiu?", "o": ["Os fogos a assustaram.", "Um gato a perseguiu.", "A porta ficou aberta à noite.", "Ela viu outro cachorro."], "e": "«Её испугал салют»."},
+          {"q": "O que Víktor pede que façam ao vê-la?", "o": ["Não tentar pegá-la e ligar para ele.", "Pegá-la e levá-la ao veterinário.", "Dar comida a ela.", "Chamar a polícia."], "e": "«Не пытайтесь её поймать … позвоните мне»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "No parque, você pergunta se pode fazer carinho num cachorro.", "o": ["Можно погладить вашу собаку?", "Можно погладить ваша собака?", "Можно погладить вашей собаке?", "Можно погладить с вашей собакой?"], "e": "Погладить + acusativo: вашу собаку."},
+        {"q": "Você conta que tem dois gatos.", "o": ["У меня два кота.", "У меня два кот.", "У меня два котов.", "У меня двое коты."], "e": "Два + genitivo singular: два кота."},
+        {"q": "Você diz que ama cachorros.", "o": ["Я обожаю собак.", "Я обожаю собаки.", "Я обожаю собакам.", "Я обожаю собаками."], "e": "Plural animado: собак."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 50,
+        "task": "Escreva um anúncio (50 a 80 palavras) para uma rede social: ou de um animal perdido, ou de um animal para adoção. Descreva o animal, o caráter, onde foi visto ou onde está e como entrar em contato.",
+        "useful": ["Ищем / пропал(а) …", "Отдадим в добрые руки …", "Он(а) …, с …", "Очень ласковый(ая) …", "Если вы видели …, позвоните …"],
+        "model": "Отдадим в добрые руки двух котят! Мы нашли их у подъезда месяц назад. Брат и сестра, им примерно три месяца. Котик рыжий, с белым пятном на груди, очень любопытный. Кошечка серая, пушистая и ласковая, любит спать на коленях. Котята привыкли к лотку, едят сухой корм, все прививки сделаны. Очень хотим, чтобы кто-то взял обоих: они не могут друг без друга. Пишите в личные сообщения!",
+        "model_pt": "Doamos dois gatinhos para um lar responsável! Nós os encontramos na entrada do prédio há um mês. São irmão e irmã, com uns três meses. O gatinho é ruivo, com uma mancha branca no peito, muito curioso. A gatinha é cinza, peluda e carinhosa, adora dormir no colo. Os filhotes estão acostumados com a caixa de areia, comem ração seca, e todas as vacinas foram dadas. Queremos muito que alguém adote os dois: eles não vivem um sem o outro. Mandem mensagem privada!",
+        "checklist": ["Descrevi o animal com adjetivos e с + instrumental.", "Usei pelo menos um diminutivo ou nome de filhote.", "Usei o acusativo animado corretamente (взять котят).", "Indiquei como entrar em contato.", "Escrevi pelo menos 50 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Conte em voz alta, em cerca de um minuto, a história de um animal importante na sua vida: como ele chegou, como era e uma lembrança marcante.",
+        "useful": ["Когда мне было … лет, у нас появился …", "Мы нашли / взяли его …", "Он(а) был(а) …", "Я помню, как однажды …", "Я до сих пор скучаю по …"],
+        "model": "Когда мне было десять лет, у нас появилась собака. Папа нашёл её под дождём у рынка: маленького мокрого щенка без хозяина. Мы назвали её Пипока. Она выросла в большую, смешную собаку, которая боялась кошек и обожала детей. Я помню, как однажды она украла со стола целую курицу, и вся семья гонялась за ней по двору. Пипока прожила с нами пятнадцать лет. Я до сих пор скучаю по ней.",
+        "model_pt": "Quando eu tinha dez anos, chegou uma cachorra na nossa casa. O meu pai a encontrou na chuva, perto do mercado: um filhotinho molhado e sem dono. Demos o nome de Pipoca. Ela cresceu e virou uma cachorra grande e engraçada, que tinha medo de gatos e adorava crianças. Lembro que uma vez ela roubou um frango inteiro da mesa, e a família toda correu atrás dela pelo quintal. A Pipoca viveu quinze anos com a gente. Até hoje sinto saudade dela.",
+        "checklist": ["Usei o acusativo animado pelo menos duas vezes.", "Usei um nome de filhote ou diminutivo.", "Contei uma lembrança com o passado.", "Usei скучать по + dativo ou outro verbo de emoção."]}
+    ]}
+  ]
+}

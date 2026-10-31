@@ -1,0 +1,166 @@
+{
+  "id": "educacao1", "theme": "educacao", "order": 1,
+  "title": "Поступление и учёба", "title_pt": "Entrar na universidade e estudar",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender uma conversa entre estudantes sobre provas, notas e planos de mestrado.",
+    "Ler um texto informativo sobre o ensino superior russo (ЕГЭ, сессия, бюджет).",
+    "Escolher entre учиться, изучать, учить e заниматься com a regência correta.",
+    "Contar por escrito e oralmente a sua trajetória de estudos."
+  ],
+  "grammar_focus": "учиться · изучать · учить · заниматься · поступить в/на + винительный",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer e recuperar as expressões da vida acadêmica.", "steps": [
+      {"t": "warmup", "questions": [
+        "Где вы учились или учитесь? Что вам больше всего нравилось?",
+        "Какой экзамен в вашей жизни был самым трудным?",
+        "Como se entra na universidade no seu país? Há provas, notas, concorrência?"
+      ]},
+      {"t": "vocab", "items": [
+        ["поступить в университет", "entrar na universidade", "в + винительный: куда?"],
+        ["подать документы", "candidatar-se; entregar a documentação", "подать документы в вуз, на факультет"],
+        ["сдать экзамен", "passar numa prova", "сдавать (impf.) = fazer a prova; сдать (pf.) = ser aprovado"],
+        ["провалить экзамен", "ser reprovado numa prova", "= не сдать экзамен"],
+        ["пересдать экзамен", "refazer uma prova", "пере- = de novo"],
+        ["учиться на первом курсе", "estar no primeiro ano da faculdade", "на + предложный"],
+        ["получать стипендию", "receber bolsa de estudos", "стипендия: ajuda mensal do Estado ou da universidade"],
+        ["бюджетное место", "vaga gratuita (paga pelo Estado)", "учиться на бюджете × учиться платно"],
+        ["посещать лекции", "frequentar as aulas expositivas", "registro neutro; coloquial: ходить на лекции"],
+        ["научный руководитель", "orientador acadêmico", "под руководством кого? (родительный)"],
+        ["защитить дипломную работу", "defender o trabalho de conclusão de curso", "защищать / защитить что?"],
+        ["окончить университет", "formar-se na universidade", "окончить что? sem preposição"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo ao complemento que forma a colocação mais natural.", "pairs": [
+        ["сдавать", "экзамен"], ["посещать", "лекции"], ["получать", "стипендию"],
+        ["писать", "дипломную работу"], ["готовиться", "к сессии"], ["поступать", "в магистратуру"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Начинается сессия, и студенты почти не спят.", "o": ["Começa o período de provas, e os estudantes quase não dormem.", "Começa o ano letivo, e os estudantes quase não dormem.", "Começa a festa de formatura, e os estudantes quase não dormem.", "Começam as férias, e os estudantes quase não dormem."], "e": "Сессия é o período de provas e avaliações no fim de cada semestre."},
+        {"q": "Он учится на третьем курсе.", "o": ["Ele está no terceiro ano da faculdade.", "Ele faz três cursos ao mesmo tempo.", "Ele estuda há três meses.", "Ele dá aulas para o terceiro ano."], "e": "Курс = ano da faculdade; учиться на + предложный."},
+        {"q": "Она провалила экзамен по истории.", "o": ["Ela foi reprovada na prova de história.", "Ela passou na prova de história.", "Ela adiou a prova de história.", "Ela corrigiu a prova de história."], "e": "Провалить = não passar. Observe экзамен по + дательный (по истории)."}
+      ]}
+    ]},
+    {"title": "Escuta: depois da prova", "goal": "Entender uma conversa sobre notas, reprovação e planos, sem apoio do texto escrito.", "steps": [
+      {"t": "dialogue", "title": "В университетской столовой", "setting": "Marina e Oleg, colegas de curso, encontram-se no refeitório no fim da sessão de provas.",
+        "speakers": {"Олег": "m", "Марина": "f"},
+        "lines": [
+          ["Олег", "Марина, привет! Ну как, сдала историю?", "Marina, oi! E aí, passou em história?"],
+          ["Марина", "Сдала, но на тройку. Честно говоря, я готовилась всего два дня.", "Passei, mas com três. Para ser sincera, só estudei dois dias."],
+          ["Олег", "Ничего, главное, что сдала. А я вчера провалил экономику. Придётся пересдавать в сентябре.", "Tudo bem, o importante é que passou. Já eu fui reprovado em economia ontem. Vou ter de refazer em setembro."],
+          ["Марина", "Ой, сочувствую. А что случилось? Ты же весь семестр ходил на лекции.", "Ai, sinto muito. O que aconteceu? Você foi às aulas o semestre inteiro."],
+          ["Олег", "Ходил, но почти не занимался дома. Думал, что всё запомню на лекциях.", "Fui, mas quase não estudava em casa. Achei que ia guardar tudo nas aulas."],
+          ["Марина", "Понятно. Слушай, а ты решил, будешь поступать в магистратуру?", "Entendi. Escuta, você já decidiu se vai tentar o mestrado?"],
+          ["Олег", "Хочу, но не здесь. Подам документы в Петербург, там сильная кафедра финансов.", "Quero, mas não aqui. Vou me candidatar em Petersburgo, lá o departamento de finanças é forte."],
+          ["Марина", "А на бюджет пройдёшь? Там же огромный конкурс.", "E você consegue vaga gratuita? Lá a concorrência é enorme."],
+          ["Олег", "Попробую. Если не пройду на бюджет, буду учиться платно и работать по вечерам.", "Vou tentar. Se não conseguir vaga gratuita, vou pagar e trabalhar à noite."],
+          ["Марина", "Смело! А я, наверное, сначала поработаю год, а потом решу.", "Corajoso! Eu acho que primeiro vou trabalhar um ano e depois decido."]
+        ],
+        "questions": [
+          {"q": "Como Marina passou na prova de história?", "o": ["Com nota três, a mais baixa que aprova.", "Com a nota máxima.", "Ela foi reprovada.", "Ela ainda não fez a prova."], "e": "«Сдала, но на тройку»: тройка é a nota 3, suficiente para passar."},
+          {"q": "Por que Oleg foi reprovado em economia?", "o": ["Ia às aulas, mas quase não estudava em casa.", "Faltou a quase todas as aulas.", "Ficou doente na semana da prova.", "Estudou só dois dias."], "e": "«Ходил, но почти не занимался дома». Quem estudou só dois dias foi Marina."},
+          {"q": "O que Oleg vai precisar fazer?", "o": ["Refazer a prova em setembro.", "Trocar de curso.", "Devolver a bolsa de estudos.", "Abandonar a universidade."], "e": "«Придётся пересдавать в сентябре»: придётся + infinitivo = vou ter de."},
+          {"q": "Qual é o plano de Oleg se não conseguir vaga gratuita?", "o": ["Pagar o mestrado e trabalhar à noite.", "Trabalhar um ano antes de decidir.", "Fazer o mestrado na mesma universidade.", "Desistir do mestrado."], "e": "«Буду учиться платно и работать по вечерам». Trabalhar um ano é o plano de Marina."}
+        ]},
+      {"t": "dictation", "voice": "m", "text": "Если не пройду на бюджет, буду учиться платно.", "pt": "Se eu não conseguir vaga gratuita, vou estudar pagando.", "hint": "Uma frase de Oleg sobre o plano B (8 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Ну как, сдала историю?", "E aí, passou em história?"],
+        ["Придётся пересдавать в сентябре.", "Vou ter de refazer em setembro."],
+        ["Там же огромный конкурс.", "Lá a concorrência é enorme."],
+        ["Сначала поработаю год, а потом решу.", "Primeiro vou trabalhar um ano e depois decido."]
+      ]}
+    ]},
+    {"title": "Leitura: o ensino superior na Rússia", "goal": "Ler um texto informativo, separar o que é dito do que não é dito e retomar o vocabulário.", "steps": [
+      {"t": "reading", "title": "Как устроено высшее образование в России",
+        "text": "Чтобы поступить в российский вуз, выпускники школ сдают Единый государственный экзамен, или ЕГЭ. Результаты ЕГЭ заменяют вступительные экзамены: абитуриент подаёт документы сразу в несколько университетов, и каждый вуз составляет рейтинг поступающих. Лучшие получают бюджетные места, то есть учатся бесплатно, а остальные могут учиться на платной основе.\n\nУчебный год делится на два семестра, и каждый заканчивается сессией. Во время сессии студенты сдают зачёты и экзамены. Тот, кто хорошо учится, получает стипендию, а тот, кто проваливает экзамены, может её потерять или даже быть отчислен.\n\nБакалавриат длится четыре года. На последнем курсе студент пишет выпускную работу под руководством научного руководителя и защищает её перед комиссией. После бакалавриата можно поступить в магистратуру, а затем в аспирантуру, если человек хочет заниматься наукой.",
+        "pt": "Para entrar numa universidade russa, os concluintes do ensino médio fazem o Exame Estatal Unificado, o ЕГЭ. Os resultados do ЕГЭ substituem as provas de admissão: o candidato se inscreve em várias universidades ao mesmo tempo, e cada instituição monta uma classificação dos candidatos. Os melhores recebem vagas orçamentárias, ou seja, estudam de graça; os demais podem estudar pagando.\n\nO ano letivo se divide em dois semestres, e cada um termina com a sessão de provas. Durante a sessão, os estudantes fazem avaliações e exames. Quem estuda bem recebe bolsa; quem é reprovado pode perdê-la ou até ser desligado.\n\nO bacharelado dura quatro anos. No último ano, o estudante escreve o trabalho de conclusão sob a orientação do orientador e o defende diante de uma banca. Depois do bacharelado, é possível fazer mestrado e, em seguida, doutorado, se a pessoa quiser se dedicar à ciência.",
+        "tf": [
+          ["Os resultados do ЕГЭ substituem as provas de admissão das universidades.", "V", "«Результаты ЕГЭ заменяют вступительные экзамены»."],
+          ["O candidato só pode se inscrever em uma universidade.", "F", "«Подаёт документы сразу в несколько университетов»: em várias ao mesmo tempo."],
+          ["Quem ocupa uma vaga orçamentária não paga pelos estudos.", "V", "«Бюджетные места, то есть учатся бесплатно»."],
+          ["A maioria dos estudantes mora em alojamentos universitários.", "N", "O texto não fala de moradia estudantil."],
+          ["Um estudante pode ser desligado se for reprovado nas provas.", "V", "«Может её потерять или даже быть отчислен»."]
+        ],
+        "questions": [
+          {"q": "Что такое «сессия» в этом тексте?", "o": ["Период зачётов и экзаменов в конце семестра.", "Первый день учебного года.", "Защита выпускной работы.", "Рейтинг поступающих."], "e": "«Каждый семестр заканчивается сессией. Во время сессии студенты сдают зачёты и экзамены»."},
+          {"q": "Кто помогает студенту писать выпускную работу?", "o": ["Научный руководитель.", "Комиссия.", "Другие абитуриенты.", "Ректор университета."], "e": "«Под руководством научного руководителя». A banca (комиссия) só avalia a defesa."},
+          {"q": "Куда можно поступить после магистратуры, если хочешь заниматься наукой?", "o": ["В аспирантуру.", "В бакалавриат.", "В школу.", "На бюджетное место в колледже."], "e": "Аспирантура corresponde ao doutorado."}
+        ]},
+      {"t": "cloze", "bank": true, "title": "Complete o resumo com as palavras do banco.",
+        "text": "Чтобы {поступить} в вуз, школьники сдают ЕГЭ. Лучшие абитуриенты получают {бюджетные} места. Каждый семестр заканчивается {сессией}. Тот, кто хорошо учится, получает {стипендию}. На последнем курсе студент пишет и {защищает} выпускную работу.",
+        "pt": "Para entrar na universidade, os alunos fazem o ЕГЭ. Os melhores candidatos recebem vagas orçamentárias. Cada semestre termina com a sessão de provas. Quem estuda bem recebe bolsa. No último ano, o estudante escreve e defende o trabalho de conclusão.",
+        "e": "Observe as formas: сессией (instrumental depois de заканчиваться), стипендию (acusativo)."}
+    ]},
+    {"title": "Foco na forma: os verbos de «estudar»", "goal": "Escolher entre учиться, изучать, учить e заниматься e usar a regência de cada um.", "steps": [
+      {"t": "grammar", "title": "Quatro verbos para «estudar»",
+        "paragraphs": [
+          "Учиться fala da condição de estudante e não tem objeto direto: учиться в университете, учиться на юридическом факультете, учиться хорошо. Com dativo, significa aprender uma habilidade: учиться музыке, учиться водить машину.",
+          "Изучать / изучить + винительный é estudar a fundo uma disciplina ou um objeto de pesquisa: изучать русский язык, изучать историю России. Esse verbo sempre pede complemento.",
+          "Учить / выучить + винительный é decorar um conteúdo concreto: учить слова, выучить стихотворение. Учить кого + чему também significa «ensinar»: учить детей математике.",
+          "Заниматься + творительный é dedicar-se a uma atividade ou estudar por conta própria: заниматься русским языком, заниматься спортом. Sem complemento, «Вечером я занимаюсь» quer dizer «à noite eu estudo».",
+          "Para a entrada: поступить в университет, в институт (в + винительный), mas поступить на факультет, на курс, на бюджет (на + винительный)."
+        ],
+        "table": {"columns": ["Verbo", "Pergunta", "Exemplo"], "rows": [
+          ["учиться", "где? как? чему?", "Я учусь в МГУ на втором курсе."],
+          ["изучать / изучить", "что?", "Мы изучаем русскую литературу."],
+          ["учить / выучить", "что?", "Я учу новые слова каждый день."],
+          ["заниматься", "чем?", "Она занимается физикой с репетитором."],
+          ["поступать / поступить", "куда? в/на + вин.", "Он поступил на филологический факультет."]
+        ]},
+        "examples": [
+          ["Где ты учишься? В медицинском институте.", "Onde você estuda? No instituto de medicina."],
+          ["Он изучает экономику Китая.", "Ele estuda a economia da China."],
+          ["Я выучил все глаголы движения.", "Decorei todos os verbos de movimento."],
+          ["Дети учатся читать в первом классе.", "As crianças aprendem a ler no primeiro ano."]
+        ],
+        "pitfalls": [
+          "«Я изучаю в университете» está errado: изучать pede objeto. Diga «я учусь в университете».",
+          "Окончить университет, sem preposição. «Окончить из университета» é decalque do português.",
+          "Поступить в университет, mas на факультет: a preposição depende do substantivo, não do verbo."
+        ]},
+      {"t": "choice", "title": "Escolha o verbo adequado.", "items": [
+        {"q": "Моя сестра ___ в Казанском университете.", "o": ["учится", "изучает", "учит", "занимается"], "e": "Onde a pessoa estuda (condição de estudante): учиться в + предложный."},
+        {"q": "Студенты-историки ___ архивные документы XVII века.", "o": ["изучают", "учатся", "занимаются", "поступают"], "e": "Objeto de pesquisa no acusativo: изучать что?"},
+        {"q": "Перед экзаменом мне нужно ___ сорок дат.", "o": ["выучить", "учиться", "изучиться", "заниматься"], "e": "Decorar um conteúdo concreto: выучить что?"},
+        {"q": "По вечерам он ___ английским с преподавателем.", "o": ["занимается", "изучает", "учит", "учится"], "e": "Английским está no instrumental, que só combina com заниматься чем?"},
+        {"q": "Она мечтает ___ на медицинский факультет.", "o": ["поступить", "учиться", "изучать", "окончить"], "e": "Мечтать + infinitivo; на факультет (куда?) pede поступить."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я изучаю в университете уже три года.", "o": ["Я учусь в университете уже три года.", "Я изучаю университет уже три года.", "Я занимаюсь в университет уже три года."], "e": "Para dizer onde se estuda, use учиться в + предложный."},
+        {"q": "Он окончил из университета в прошлом году.", "o": ["Он окончил университет в прошлом году.", "Он окончил в университете в прошлом году.", "Он окончил с университета в прошлом году."], "e": "Окончить что? pede acusativo, sem preposição."},
+        {"q": "Мы поступили в филологический факультет.", "o": ["Мы поступили на филологический факультет.", "Мы поступили к филологическому факультету.", "Мы поступили в филологическом факультете."], "e": "Факультет pede на: поступить на факультет."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Она поступила на юридический факультет", "pt": "Ela entrou na faculdade de Direito."},
+        {"a": "Я каждый день учу десять новых слов", "pt": "Todo dia eu decoro dez palavras novas."},
+        {"a": "Брат занимается математикой с репетитором", "pt": "Meu irmão estuda matemática com um professor particular."}
+      ]}
+    ]},
+    {"title": "Uso real: anúncio, situações e produção", "goal": "Entender um aviso oficial, reagir em situações do dia a dia universitário e falar da sua formação.", "steps": [
+      {"t": "listening", "kind": "Объявление в деканате", "title": "Запись на летнюю практику", "voice": "f",
+        "text": "Уважаемые студенты! Напоминаем, что запись на летнюю практику заканчивается в пятницу, двадцать третьего мая. Заявления принимаются в деканате, в аудитории двести пятнадцать, с десяти до шестнадцати часов. Студентам, у которых есть академические задолженности, необходимо сначала пересдать экзамены. Расписание пересдач уже опубликовано на сайте факультета.",
+        "pt": "Prezados estudantes! Lembramos que a inscrição no estágio de verão termina na sexta-feira, 23 de maio. Os requerimentos são recebidos na secretaria da faculdade, sala 215, das 10 às 16 horas. Os estudantes com pendências acadêmicas devem primeiro refazer as provas. O calendário das reavaliações já foi publicado no site da faculdade.",
+        "questions": [
+          {"q": "Até quando é possível se inscrever no estágio de verão?", "o": ["Até sexta-feira, 23 de maio.", "Até segunda-feira, 23 de maio.", "Até sexta-feira, 13 de maio.", "Até o fim de junho."], "e": "«В пятницу, двадцать третьего мая»."},
+          {"q": "Onde se entregam os requerimentos?", "o": ["Na secretaria, sala 215, das 10 às 16 horas.", "Na biblioteca, sala 215.", "Somente pelo site da faculdade.", "Na sala 250, depois das 16 horas."], "e": "«В деканате, в аудитории двести пятнадцать, с десяти до шестнадцати часов»."},
+          {"q": "O que precisam fazer primeiro os alunos com pendências?", "o": ["Refazer as provas em que foram reprovados.", "Pagar uma taxa.", "Conversar com o orientador.", "Inscrever-se no estágio de inverno."], "e": "Академическая задолженность = disciplina pendente; пересдать экзамены = refazer as provas."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você faltou à aula e quer pedir as anotações a um colega.", "o": ["Можно взять твои конспекты? Я пропустил лекцию.", "Можно поступить в твои конспекты?", "Дай мне сдать твою лекцию.", "Я провалил твои конспекты."], "e": "Конспект = anotações de aula; пропустить лекцию = faltar à aula."},
+        {"q": "Você quer saber em que ano da faculdade a pessoa está.", "o": ["На каком курсе ты учишься?", "В каком курсе ты изучаешь?", "Какой курс ты окончил в?", "Сколько курсов ты учишь?"], "e": "На каком курсе? (на + предложный) com учиться."},
+        {"q": "Você quer dizer que terá de refazer a prova.", "o": ["Мне придётся пересдавать экзамен.", "Мне придётся проваливать экзамен.", "Я буду поступать экзамен.", "Я уже сдал экзамен."], "e": "Придётся + infinitivo; пересдавать = fazer a prova de novo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 80,
+        "task": "Escreva de 80 a 120 palavras para um fórum de estudantes estrangeiros na Rússia: onde e o que você estudou ou estuda, qual foi a prova mais difícil da sua vida e quais são os seus planos de estudo.",
+        "useful": ["я учился / училась на … факультете", "я изучал(а) …", "сдать экзамен по + дательный", "самым трудным был экзамен по …", "поступить в магистратуру", "в будущем я хотел(а) бы …"],
+        "model": "Меня зовут Луиза, я из Бразилии. Я учусь на третьем курсе инженерного факультета в Сан-Паулу и изучаю русский язык уже два года. Самым трудным в моей жизни был вступительный экзамен по математике: я готовилась к нему целый год и занималась каждый день с репетитором. Поступила с первого раза, и это была большая радость! Сейчас я пишу курсовую работу под руководством очень строгого профессора. После бакалавриата я хотела бы поступить в магистратуру в России, поэтому много читаю по-русски и учу новые слова каждый день.",
+        "model_pt": "Meu nome é Luísa, sou do Brasil. Estou no terceiro ano de engenharia em São Paulo e estudo russo há dois anos. A prova mais difícil da minha vida foi o vestibular de matemática: me preparei um ano inteiro e estudava todo dia com um professor particular. Passei de primeira, foi uma grande alegria! Agora escrevo um trabalho semestral com um professor muito exigente. Depois do bacharelado, gostaria de fazer mestrado na Rússia, por isso leio muito em russo e decoro palavras novas todos os dias.",
+        "checklist": ["Usei учиться e изучать corretamente (onde × o quê).", "Usei поступить в/на + acusativo pelo menos uma vez.", "Falei de uma prova com сдать, сдавать, готовиться к ou провалить.", "Falei de planos com хотел(а) бы ou буду + infinitivo.", "Escrevi pelo menos 80 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Fale durante um minuto (grave-se, se quiser): explique a um colega russo como funciona a entrada na universidade no seu país e compare com o ЕГЭ.",
+        "useful": ["у нас в стране …", "чтобы поступить, нужно …", "в отличие от России …", "мне кажется, что наша система …"],
+        "model": "У нас в Бразилии, чтобы поступить в государственный университет, нужно сдать вступительный экзамен или национальный экзамен ЭНЕМ. Это похоже на ЕГЭ: результаты можно использовать в разных университетах. Но в отличие от России, в государственных университетах у нас все учатся бесплатно, а конкурс на престижные факультеты огромный. Мне кажется, что наша система справедливая, но очень стрессовая для школьников.",
+        "model_pt": "No Brasil, para entrar numa universidade pública, é preciso fazer o vestibular ou o exame nacional, o ENEM. Parece com o ЕГЭ: os resultados podem ser usados em várias universidades. Mas, diferente da Rússia, nas universidades públicas todos estudam de graça, e a concorrência nos cursos de prestígio é enorme. Acho que o nosso sistema é justo, mas muito estressante para os alunos.",
+        "checklist": ["Falei sem parar por cerca de um minuto.", "Usei чтобы поступить, нужно … corretamente.", "Fiz pelo menos uma comparação (похоже на, в отличие от).", "Dei a minha opinião (мне кажется, по-моему)."]}
+    ]}
+  ]
+}

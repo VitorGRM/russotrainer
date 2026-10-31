@@ -1,0 +1,165 @@
+{
+  "id": "natureza1", "theme": "natureza", "order": 1,
+  "title": "Какая будет погода?", "title_pt": "Natureza, clima e ecologia",
+  "level": "B1–B2", "minutes": 55,
+  "objectives": [
+    "Entender a preparação de uma trilha e uma previsão do tempo no rádio.",
+    "Ler um texto sobre o lago Baikal e a sua proteção ambiental.",
+    "Usar orações impessoais: холодно, мне холодно, стало темно, темнеет, пахнет, дорогу замело снегом.",
+    "Escrever sobre o clima da sua região e descrever oralmente uma paisagem."
+  ],
+  "grammar_focus": "безличные предложения: (мне) холодно / было / будет / стало холодно · темнеет, светает, морозит · пахнет + Т. п. · дорогу замело снегом · идёт дождь, дует ветер",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer o vocabulário de tempo, paisagem e meio ambiente.", "steps": [
+      {"t": "warmup", "questions": [
+        "Какое время года вы любите больше всего и почему?",
+        "Вы любите ходить в походы?",
+        "Em português dizemos «está frio» e «estou com frio». Em russo, como você acha que se distinguem?"
+      ]},
+      {"t": "vocab", "items": [
+        ["погода", "tempo (clima do dia)", "прогноз погоды = previsão do tempo"],
+        ["мороз", "frio intenso, geada", "минус двадцать, сильный мороз"],
+        ["жара", "calor forte", "Жарко! = Está quente!"],
+        ["идёт дождь / снег", "está chovendo / nevando", "пошёл дождь = começou a chover"],
+        ["дует ветер", "venta, o vento sopra", "сильный ветер, порывы ветра"],
+        ["гроза", "tempestade com raios", "гром = trovão; молния = raio"],
+        ["темнеет / светает", "está escurecendo / amanhecendo", "verbos impessoais"],
+        ["поход", "trilha, acampamento", "ходить в поход"],
+        ["берег", "margem, costa", "на берегу озера"],
+        ["заповедник", "reserva natural", "национальный парк"],
+        ["загрязнение", "poluição", "загрязнять = poluir"],
+        ["беречь природу", "proteger a natureza", "беречь = cuidar, poupar"]
+      ]},
+      {"t": "match", "title": "Relacione o fenômeno à sensação.", "pairs": [
+        ["мороз", "холодно"], ["жара", "жарко"], ["туман", "плохо видно"],
+        ["ливень", "мокро"], ["вечер", "темнеет"], ["ветер", "дует"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Мне холодно, закрой, пожалуйста, окно.", "o": ["Estou com frio, feche a janela, por favor.", "Está frio lá fora, abra a janela.", "Eu sou uma pessoa fria, feche a janela.", "Fiquei resfriado por causa da janela."], "e": "Мне холодно = eu sinto frio (dativo + advérbio)."},
+        {"q": "Ночью дорогу замело снегом.", "o": ["À noite a estrada ficou coberta pela neve.", "À noite limparam a neve da estrada.", "À noite nevou um pouco na estrada.", "À noite a estrada foi fechada."], "e": "Construção impessoal: замело (neutro) + instrumental (снегом)."},
+        {"q": "Зимой в Якутске светает только в десять утра.", "o": ["No inverno, em Iakutsk, só amanhece às dez da manhã.", "No inverno, em Iakutsk, escurece às dez da manhã.", "No inverno, em Iakutsk, a luz acaba às dez.", "No inverno, em Iakutsk, o sol nunca aparece."], "e": "Светает = amanhece (verbo impessoal)."}
+      ]}
+    ]},
+    {"title": "Escuta: planejando uma trilha", "goal": "Entender previsões, condições e precauções numa conversa.", "steps": [
+      {"t": "dialogue", "title": "Идём в поход?", "setting": "Kólia e Marta planejam uma trilha de dois dias nas montanhas perto de Sóchi.",
+        "speakers": {"Коля": "m", "Марта": "f"},
+        "lines": [
+          ["Коля", "Марта, ты посмотрела прогноз на выходные? Мы же собирались в горы.", "Marta, você viu a previsão para o fim de semana? A gente ia para as montanhas."],
+          ["Марта", "Посмотрела. В субботу будет солнечно и тепло, днём до двадцати пяти градусов. А вот в воскресенье после обеда обещают грозу.", "Vi. No sábado vai fazer sol e calor, até vinte e cinco graus durante o dia. Mas no domingo à tarde estão prevendo tempestade."],
+          ["Коля", "Тогда в воскресенье надо будет спуститься до обеда. В горах во время грозы опасно.", "Então no domingo vamos ter que descer antes do almoço. Nas montanhas, durante uma tempestade, é perigoso."],
+          ["Марта", "Согласна. И не забудь тёплую куртку: ночью наверху может быть холодно, даже летом.", "Concordo. E não esqueça a jaqueta quente: à noite lá em cima pode fazer frio, mesmo no verão."],
+          ["Коля", "Помню, в прошлом году мне было так холодно в палатке, что я не спал до утра.", "Lembro que no ano passado eu fiquei com tanto frio na barraca que não dormi até de manhã."],
+          ["Марта", "Вот именно. А ещё возьми фонарик: в горах темнеет очень быстро, в девять уже ничего не видно.", "Exatamente. E leve também uma lanterna: nas montanhas escurece muito rápido, às nove já não se vê nada."],
+          ["Коля", "А где будем ставить палатку?", "E onde vamos montar a barraca?"],
+          ["Марта", "На берегу озера, там есть разрешённое место для лагеря. Только костёр разводить нельзя, это заповедник.", "Na margem do lago, lá tem um lugar permitido para acampar. Só não pode fazer fogueira, é uma reserva."],
+          ["Коля", "Ясно. И весь мусор забираем с собой.", "Entendi. E levamos todo o lixo conosco."],
+          ["Марта", "Конечно. Природу надо беречь.", "Claro. É preciso proteger a natureza."]
+        ],
+        "questions": [
+          {"q": "Como vai estar o tempo no sábado?", "o": ["Sol e calor, até 25 graus.", "Chuva e frio.", "Tempestade à tarde.", "Neve nas montanhas."], "e": "«В субботу будет солнечно и тепло, днём до двадцати пяти градусов»."},
+          {"q": "Por que eles precisam descer antes do almoço no domingo?", "o": ["Porque está prevista uma tempestade à tarde.", "Porque o parque fecha.", "Porque vai nevar.", "Porque escurece cedo."], "e": "«В воскресенье после обеда обещают грозу»."},
+          {"q": "Por que Marta pede para levar uma lanterna?", "o": ["Porque nas montanhas escurece muito rápido.", "Porque a barraca não tem luz.", "Porque vão andar de madrugada.", "Porque é obrigatório na reserva."], "e": "«В горах темнеет очень быстро»."},
+          {"q": "O que é proibido no local do acampamento?", "o": ["Fazer fogueira.", "Montar barraca.", "Nadar no lago.", "Levar cachorro."], "e": "«Костёр разводить нельзя, это заповедник»."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "В горах темнеет очень быстро, в девять уже ничего не видно.", "pt": "Nas montanhas escurece muito rápido, às nove já não se vê nada.", "hint": "Duas orações impessoais (11 palavras)."},
+      {"t": "shadow", "voice": "m", "lines": [
+        ["В субботу будет солнечно и тепло.", "No sábado vai fazer sol e calor."],
+        ["В горах во время грозы опасно.", "Nas montanhas, durante uma tempestade, é perigoso."],
+        ["Мне было так холодно, что я не спал.", "Eu estava com tanto frio que não dormi."],
+        ["Природу надо беречь.", "É preciso proteger a natureza."]
+      ]}
+    ]},
+    {"title": "Leitura: o lago Baikal", "goal": "Ler um texto de divulgação ambiental e identificar dados, ameaças e soluções.", "steps": [
+      {"t": "reading", "title": "Байкал: жемчужина Сибири",
+        "text": "Байкал — самое глубокое озеро на планете: его глубина достигает 1642 метров. В нём содержится около двадцати процентов всей пресной воды Земли. Учёные считают, что озеру больше двадцати пяти миллионов лет, и это делает его одним из древнейших озёр мира. В 1996 году Байкал был включён в список Всемирного наследия ЮНЕСКО.\n\nЗимой здесь очень холодно: температура опускается до минус тридцати, а озеро замерзает так, что по льду ездят машины. Лёд на Байкале удивительно прозрачный, и в солнечный день кажется, что идёшь по стеклу. Летом на берегу тепло, но вода остаётся холодной: даже в августе в ней редко бывает больше пятнадцати градусов.\n\nОднако озеру угрожают серьёзные проблемы. Из-за туризма и строительства в воду попадают сточные воды, и у берегов разрастаются водоросли. Экологи предупреждают, что, если ничего не делать, уникальная экосистема может пострадать. Поэтому в последние годы строят новые очистные сооружения, а волонтёры каждое лето собирают на берегах тонны мусора.",
+        "pt": "O Baikal é o lago mais profundo do planeta: a sua profundidade chega a 1642 metros. Ele contém cerca de vinte por cento de toda a água doce da Terra. Os cientistas acreditam que o lago tem mais de vinte e cinco milhões de anos, o que faz dele um dos lagos mais antigos do mundo. Em 1996, o Baikal foi incluído na lista do Patrimônio Mundial da UNESCO.\n\nNo inverno faz muito frio aqui: a temperatura cai a trinta graus negativos, e o lago congela tanto que carros andam sobre o gelo. O gelo do Baikal é surpreendentemente transparente, e num dia de sol parece que se anda sobre vidro. No verão faz calor na margem, mas a água continua fria: mesmo em agosto ela raramente passa de quinze graus.\n\nNo entanto, o lago enfrenta problemas sérios. Por causa do turismo e das construções, esgoto chega à água, e as algas se espalham perto das margens. Os ecologistas alertam que, se nada for feito, o ecossistema único pode ser prejudicado. Por isso, nos últimos anos estão sendo construídas novas estações de tratamento, e voluntários recolhem toneladas de lixo nas margens todo verão.",
+        "tf": [
+          ["O Baikal é o lago mais profundo do mundo.", "V", "«Самое глубокое озеро на планете»."],
+          ["No inverno, carros andam sobre o gelo do lago.", "V", "«По льду ездят машины»."],
+          ["Em agosto, a água costuma passar de vinte graus.", "F", "«Редко бывает больше пятнадцати градусов»."],
+          ["O turismo é citado como uma das causas da poluição.", "V", "«Из-за туризма и строительства в воду попадают сточные воды»."],
+          ["O governo proibiu o turismo no Baikal.", "N", "O texto não fala de proibição."]
+        ],
+        "questions": [
+          {"q": "Какую часть пресной воды Земли содержит Байкал?", "o": ["Около двадцати процентов.", "Половину.", "Около пяти процентов.", "Около двух процентов."], "e": "«Около двадцати процентов всей пресной воды Земли»."},
+          {"q": "Что делают, чтобы защитить озеро?", "o": ["Строят очистные сооружения, а волонтёры собирают мусор.", "Запрещают купаться.", "Закрывают озеро зимой.", "Выращивают водоросли."], "e": "«Строят новые очистные сооружения, а волонтёры … собирают … мусор»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma impessoal correta.",
+        "text": "Зимой на Байкале очень {холодно|холодный|холодная}. Вчера {было|был|была} минус тридцать. Вечером {стало|стал|стала} темно, и мы вернулись в лагерь. В лесу {пахнет|пахнут|пахнешь} хвоей.",
+        "pt": "No inverno, no Baikal, faz muito frio. Ontem fez trinta graus negativos. À noite escureceu, e voltamos ao acampamento. Na floresta há cheiro de pinheiro.",
+        "e": "Nas orações impessoais o predicado é um advérbio (холодно) e o verbo fica no neutro singular (было, стало) ou na 3ª pessoa do singular (пахнет)."}
+    ]},
+    {"title": "Foco na forma: as orações impessoais", "goal": "Construir frases sem sujeito para tempo, sensações e fenômenos naturais.", "steps": [
+      {"t": "grammar", "title": "Frases sem sujeito",
+        "paragraphs": [
+          "Tempo e ambiente: advérbio em -о sem sujeito: Холодно. Жарко. Тепло. Ветрено. Сыро. Темно. No passado e no futuro, usa-se быть no neutro: Было холодно. Будет жарко. Mudança: стать: Стало холодно (esfriou).",
+          "Sensação de uma pessoa: dativo + advérbio: Мне холодно (estou com frio), Детям жарко, Ему было страшно. Compare: «Я холодный» descreve a pessoa (sou frio), não a sensação.",
+          "Verbos impessoais da natureza: темнеет (escurece), светает (amanhece), холодает (esfria), морозит (gela), моросит (garoa). Пахнет + instrumental: Пахнет дождём (cheira a chuva).",
+          "Fenômenos com sujeito em russo: идёт дождь, идёт снег (não «дождит»), дует ветер, светит солнце, гремит гром. Começar: пошёл дождь (começou a chover).",
+          "Força da natureza como causa: verbo no neutro + instrumental: Дорогу замело снегом. Лодку унесло ветром. Крышу сорвало ураганом. A força natural vai ao instrumental, e o objeto afetado fica no acusativo."
+        ],
+        "table": {"columns": ["Tipo", "Estrutura", "Exemplo"], "rows": [
+          ["ambiente", "advérbio (+ быть no neutro)", "Вчера было ветрено."],
+          ["sensação", "dativo + advérbio", "Мне жарко."],
+          ["mudança", "стало + advérbio", "Стало теплее."],
+          ["verbo da natureza", "3ª pessoa do singular", "Темнеет."],
+          ["cheiro", "пахнет + instrumental", "Пахнет морем."],
+          ["força natural", "verbo neutro + instr.", "Поле залило водой."]
+        ]},
+        "examples": [
+          ["Осенью рано темнеет, и становится холодно.", "No outono escurece cedo, e fica frio."],
+          ["После дождя в лесу пахнет грибами.", "Depois da chuva, na floresta, cheira a cogumelos."],
+          ["Ночью дерево повалило ветром.", "À noite, o vento derrubou a árvore."]
+        ],
+        "pitfalls": [
+          "Não diga «Я холодно»: a pessoa que sente vai ao dativo, «Мне холодно».",
+          "No passado, o verbo fica no neutro mesmo com números: «Было минус двадцать», nunca «был минус двадцать» (na fala, ouve-se, mas evite).",
+          "Para chover e nevar, use идти: «Идёт дождь». Não existe verbo «дождить»."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "___ холодно, дай мне, пожалуйста, плед.", "o": ["Мне", "Я", "Меня", "Мной"], "e": "Sensação: dativo + advérbio."},
+        {"q": "Вчера весь день ___ дождь.", "o": ["шёл", "было", "дождило", "шла"], "e": "Идти: дождь шёл (masculino)."},
+        {"q": "Когда мы вышли из леса, уже ___ темно.", "o": ["было", "был", "была", "были"], "e": "Passado impessoal: neutro."},
+        {"q": "На кухне вкусно пахнет ___.", "o": ["пирогами", "пироги", "пирогов", "пирогам"], "e": "Пахнуть + instrumental."},
+        {"q": "Ночью машину замело ___.", "o": ["снегом", "снег", "снега", "со снегом"], "e": "Força natural: instrumental sem preposição."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Я очень холодно сегодня.", "o": ["Мне очень холодно сегодня.", "Меня очень холодно сегодня.", "Я очень холодный сегодня."], "e": "Dativo + advérbio."},
+        {"q": "Вчера была очень жарко.", "o": ["Вчера было очень жарко.", "Вчера был очень жарко.", "Вчера были очень жарко."], "e": "Impessoal: быть no neutro."},
+        {"q": "В лесу пахнет грибы.", "o": ["В лесу пахнет грибами.", "В лесу пахнут грибов.", "В лесу пахнет грибам."], "e": "Пахнуть + instrumental."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Зимой здесь очень рано темнеет", "pt": "No inverno aqui escurece muito cedo."},
+        {"a": "Нам было холодно в палатке", "pt": "Estávamos com frio na barraca."},
+        {"a": "После дождя стало прохладно", "pt": "Depois da chuva ficou fresco."}
+      ]}
+    ]},
+    {"title": "Uso real: previsão do tempo, situações e produção", "goal": "Entender previsões e descrever clima e paisagens.", "steps": [
+      {"t": "listening", "kind": "Прогноз погоды", "title": "Погода на завтра", "voice": "f2",
+        "text": "Прогноз погоды на завтра. В Москве будет облачно, временами пойдёт мокрый снег. Ночью до минус пяти, днём около нуля. Дует сильный северный ветер, поэтому будет казаться, что холоднее, чем на самом деле. На дорогах скользко, водителей просят быть особенно внимательными. В Сочи, наоборот, тепло и солнечно: днём до плюс восемнадцати. А вот в Якутске настоящая зима: ночью мороз до минус сорока пяти. К выходным в центральной России потеплеет до плюс трёх.",
+        "pt": "Previsão do tempo para amanhã. Em Moscou vai estar nublado, com neve molhada em alguns momentos. À noite até cinco graus negativos, de dia cerca de zero. Sopra um vento forte do norte, por isso a sensação será de mais frio do que na realidade. As estradas estão escorregadias, e os motoristas devem ter atenção redobrada. Em Sóchi, ao contrário, faz calor e sol: até dezoito graus durante o dia. Já em Iakutsk é inverno de verdade: à noite, frio de até quarenta e cinco negativos. Para o fim de semana, na Rússia central, a temperatura sobe para três graus positivos.",
+        "questions": [
+          {"q": "Como vai estar o tempo em Moscou?", "o": ["Nublado, com neve molhada e vento forte.", "Sol e calor.", "Frio extremo de -45 graus.", "Chuva forte e trovoadas."], "e": "«Облачно, временами пойдёт мокрый снег … дует сильный северный ветер»."},
+          {"q": "Por que se pede atenção aos motoristas?", "o": ["Porque as estradas estão escorregadias.", "Porque há neblina.", "Porque haverá obras.", "Porque o vento derruba árvores."], "e": "«На дорогах скользко»."},
+          {"q": "O que vai acontecer no fim de semana?", "o": ["Vai esquentar até +3 na Rússia central.", "Vai esfriar até -45.", "Vai nevar em Sóchi.", "Vai chover em Iakutsk."], "e": "«К выходным … потеплеет до плюс трёх»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você chega a uma casa muito aquecida e quer tirar o casaco.", "o": ["Здесь так жарко! Можно снять куртку?", "Я так жаркий! Можно снять куртку?", "Здесь так жара! Можно снять куртку?", "Мне так жаркая! Можно снять куртку?"], "e": "Здесь жарко (impessoal)."},
+        {"q": "Você pergunta a previsão para amanhã.", "o": ["Какая завтра будет погода?", "Какой завтра будет погода?", "Как погода будет завтрашний?", "Что погода завтра?"], "e": "Погода é feminino: какая."},
+        {"q": "Começa a chover durante o passeio.", "o": ["Ой, пошёл дождь! Давай спрячемся.", "Ой, начал дождить! Давай спрячемся.", "Ой, дождь пришёл! Давай спрячемся.", "Ой, стало дождь! Давай спрячемся."], "e": "Пошёл дождь = começou a chover."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 70,
+        "task": "Escreva um texto (70 a 100 palavras) para um amigo russo que vai visitar a sua região: como é o clima em cada estação, o que vestir e que paisagens ver. Use pelo menos cinco construções impessoais.",
+        "useful": ["Летом у нас обычно жарко и …", "Зимой бывает …", "Часто идёт дождь …", "Вечером быстро темнеет …", "Тебе будет … , поэтому возьми …"],
+        "model": "В Салвадоре почти весь год тепло, но времена года всё-таки есть. С декабря по март очень жарко и солнечно: днём бывает до тридцати двух градусов, а у моря всегда пахнет солью и кокосами. С апреля по июль часто идёт дождь, иногда целыми днями, и становится немного прохладнее. Вечером темнеет рано, около шести, даже летом. Тебе вряд ли будет холодно, поэтому бери лёгкую одежду, но обязательно возьми зонт. И не забудь крем от солнца: здесь легко сгореть даже в облачный день.",
+        "model_pt": "Em Salvador faz calor quase o ano todo, mas há estações, sim. De dezembro a março faz muito calor e sol: de dia chega a trinta e dois graus, e perto do mar sempre cheira a sal e a coco. De abril a julho chove com frequência, às vezes dias inteiros, e fica um pouco mais fresco. À noite escurece cedo, por volta das seis, mesmo no verão. Dificilmente você vai sentir frio, então traga roupa leve, mas não deixe de trazer um guarda-chuva. E não esqueça o protetor solar: aqui é fácil se queimar até num dia nublado.",
+        "checklist": ["Usei pelo menos cinco construções impessoais.", "Usei dativo + advérbio para uma sensação.", "Usei идёт дождь / снег corretamente.", "Dei conselhos práticos.", "Escrevi pelo menos 70 palavras."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Descreva em voz alta, em cerca de um minuto, uma paisagem natural que você ama: onde fica, como é o tempo, o que se vê, que cheiros e sensações há.",
+        "useful": ["Это место находится …", "Там всегда …", "Пахнет …", "Утром … , а вечером …", "Мне там спокойно / хорошо"],
+        "model": "Моё любимое место — Шапада-Диамантина, национальный парк в штате Баия. Там огромные столовые горы, водопады и пещеры с голубой водой. Утром в горах прохладно и туманно, а днём становится жарко. После дождя в лесу пахнет мокрой землёй и цветами. Вечером быстро темнеет, и небо полностью покрывается звёздами. Когда сидишь на краю скалы и смотришь вниз, немного страшно, но очень красиво. Мне там всегда спокойно и хорошо.",
+        "model_pt": "O meu lugar preferido é a Chapada Diamantina, um parque nacional no estado da Bahia. Lá há enormes montanhas tabulares, cachoeiras e grutas de água azul. De manhã, nas montanhas, faz frio e há neblina, e durante o dia fica quente. Depois da chuva, na mata, cheira a terra molhada e a flores. À noite escurece rápido, e o céu se cobre inteiramente de estrelas. Quando você se senta na beira de um penhasco e olha para baixo, dá um pouco de medo, mas é muito bonito. Lá eu sempre me sinto em paz.",
+        "checklist": ["Usei pelo menos quatro construções impessoais.", "Usei пахнет + instrumental.", "Usei стать ou быть no neutro.", "Descrevi sensações com o dativo (мне спокойно)."]}
+    ]}
+  ]
+}

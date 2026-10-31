@@ -1,0 +1,163 @@
+{
+  "id": "casa1", "theme": "casa", "order": 1,
+  "title": "Новая квартира", "title_pt": "O apartamento novo",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender a visita a um apartamento para alugar e negociar condições.",
+    "Ler um texto sobre a коммуналка e as хрущёвки, parte da história da moradia russa.",
+    "Dizer onde as coisas estão e onde colocá-las: стоять/ставить, лежать/класть, висеть/вешать.",
+    "Escrever um anúncio de aluguel e descrever o próprio quarto."
+  ],
+  "grammar_focus": "стоять · лежать · висеть × ставить · класть · вешать; где? (предложный) × куда? (винительный)",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer e recuperar as expressões de moradia e aluguel.", "steps": [
+      {"t": "warmup", "questions": [
+        "Где вы живёте: в квартире или в доме? Что вам там нравится?",
+        "Вы когда-нибудь снимали квартиру? Какие были проблемы?",
+        "No seu país, quem paga as contas de luz e água num aluguel: o inquilino ou o proprietário?"
+      ]},
+      {"t": "vocab", "items": [
+        ["снимать квартиру", "alugar um apartamento (como inquilino)", "снимать / снять что?"],
+        ["сдавать квартиру", "alugar um apartamento (como proprietário)", "Сдаётся квартира = aluga-se apartamento"],
+        ["хозяин квартиры", "proprietário do apartamento", "хозяйка (f.)"],
+        ["однокомнатная квартира", "apartamento de um cômodo (quarto e sala juntos)", "двухкомнатная, трёхкомнатная …"],
+        ["коммунальные услуги", "contas da moradia (luz, água, gás, aquecimento)", "coloquial: коммуналка"],
+        ["залог", "depósito de garantia (caução)", "залог в размере месячной платы"],
+        ["переезжать / переехать", "mudar-se", "переехать в новую квартиру (в + винительный)"],
+        ["делать ремонт", "reformar a casa", "ремонт = reforma, conserto"],
+        ["окна выходят во двор", "as janelas dão para o pátio", "выходить на улицу, во двор"],
+        ["на последнем этаже", "no último andar", "на + предложный: на пятом этаже"],
+        ["соседи сверху", "os vizinhos de cima", "снизу = de baixo"],
+        ["выносить мусор", "levar o lixo para fora", "вы- = para fora"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo ao complemento das tarefas da casa.", "pairs": [
+        ["делать", "ремонт"], ["снимать", "квартиру"], ["мыть", "посуду"],
+        ["выносить", "мусор"], ["платить", "за свет"], ["пылесосить", "ковёр"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Мы переехали в новостройку на окраине.", "o": ["Mudamo-nos para um prédio novo na periferia.", "Reformamos um prédio antigo no centro.", "Compramos um terreno na periferia.", "Visitamos um prédio novo na periferia."], "e": "Новостройка = prédio recém-construído; окраина = periferia, bairro afastado."},
+        {"q": "Квартплата выросла на десять процентов.", "o": ["As despesas de moradia subiram dez por cento.", "O aluguel caiu dez por cento.", "O apartamento ficou dez por cento maior.", "Os vizinhos pagam dez por cento a mais."], "e": "Квартплата = o que se paga mensalmente pela moradia; вырасти на + винительный = aumentar em."},
+        {"q": "Соседи сверху опять делают ремонт.", "o": ["Os vizinhos de cima estão reformando de novo.", "Os vizinhos de baixo estão reformando de novo.", "Os vizinhos de cima estão de mudança.", "Os vizinhos de cima estão dando uma festa de novo."], "e": "Сверху = de cima; делать ремонт = reformar (com barulho, normalmente)."}
+      ]}
+    ]},
+    {"title": "Escuta: a visita ao apartamento", "goal": "Entender preços, condições e características de um imóvel numa conversa real.", "steps": [
+      {"t": "dialogue", "title": "Смотрим квартиру", "setting": "Svetlana visita um apartamento para alugar. Quem mostra é o proprietário, Viktor Petrovitch.",
+        "speakers": {"Виктор Петрович": "m", "Света": "f"},
+        "lines": [
+          ["Виктор Петрович", "Проходите, пожалуйста. Вот это и есть квартира. Однокомнатная, тридцать восемь квадратных метров.", "Entre, por favor. Este é o apartamento. Um cômodo, trinta e oito metros quadrados."],
+          ["Света", "Какая светлая! А окна куда выходят?", "Que claro! E as janelas dão para onde?"],
+          ["Виктор Петрович", "На тихий двор, так что шума почти нет. Кухня, правда, маленькая, но там есть всё необходимое: плита, холодильник, стиральная машина.", "Para um pátio tranquilo, então quase não há barulho. A cozinha é pequena, é verdade, mas tem tudo o que é preciso: fogão, geladeira, máquina de lavar."],
+          ["Света", "А мебель остаётся?", "E os móveis ficam?"],
+          ["Виктор Петрович", "Да, диван, шкаф и стол остаются. Кровати нет, но диван раскладывается.", "Sim, o sofá, o armário e a mesa ficam. Cama não há, mas o sofá é sofá-cama."],
+          ["Света", "Понятно. Сколько стоит в месяц?", "Entendi. Quanto custa por mês?"],
+          ["Виктор Петрович", "Тридцать пять тысяч плюс коммунальные услуги. Летом это где-то три тысячи, зимой побольше.", "Trinta e cinco mil mais as contas. No verão dá uns três mil, no inverno um pouco mais."],
+          ["Света", "А залог нужен?", "E é preciso depósito?"],
+          ["Виктор Петрович", "Да, залог в размере месячной платы. И договор на год, не меньше.", "Sim, um depósito no valor de um mês. E contrato de um ano, no mínimo."],
+          ["Света", "Хорошо. Можно, я подумаю до завтра? Мне нравится, но я хочу посмотреть ещё одну квартиру рядом с метро.", "Certo. Posso pensar até amanhã? Gostei, mas quero ver mais um apartamento perto do metrô."],
+          ["Виктор Петрович", "Конечно, только не затягивайте: желающих много.", "Claro, só não demore: há muitos interessados."]
+        ],
+        "questions": [
+          {"q": "Para onde dão as janelas?", "o": ["Para um pátio tranquilo.", "Para uma avenida movimentada.", "Para a estação de metrô.", "Para um parque."], "e": "«На тихий двор, так что шума почти нет»."},
+          {"q": "O que NÃO há no apartamento?", "o": ["Uma cama.", "Um sofá.", "Uma geladeira.", "Uma máquina de lavar."], "e": "«Кровати нет, но диван раскладывается»: o sofá vira cama."},
+          {"q": "Quanto Sveta pagará por mês, ao todo, no verão?", "o": ["Cerca de 38 mil rublos.", "Exatamente 35 mil rublos.", "Cerca de 3 mil rublos.", "Cerca de 70 mil rublos."], "e": "35 mil de aluguel + cerca de 3 mil de contas (где-то три тысячи)."},
+          {"q": "Por que Sveta pede um dia para pensar?", "o": ["Quer ver outro apartamento perto do metrô.", "Acha o aluguel caro demais.", "Não gostou da cozinha.", "Precisa conversar com a família."], "e": "«Хочу посмотреть ещё одну квартиру рядом с метро»."}
+        ]},
+      {"t": "dictation", "voice": "m", "text": "Окна выходят на тихий двор, так что шума почти нет.", "pt": "As janelas dão para um pátio tranquilo, então quase não há barulho.", "hint": "Frase do proprietário sobre as janelas (10 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Какая светлая квартира!", "Que apartamento claro!"],
+        ["А мебель остаётся?", "E os móveis ficam?"],
+        ["Можно, я подумаю до завтра?", "Posso pensar até amanhã?"],
+        ["Только не затягивайте: желающих много.", "Só não demore: há muitos interessados."]
+      ]}
+    ]},
+    {"title": "Leitura: a коммуналка e a хрущёвка", "goal": "Ler um texto de cultura, distinguir o que é dito do que não é e reutilizar as formas.", "steps": [
+      {"t": "reading", "title": "Коммунальная квартира",
+        "text": "В советских городах миллионы людей жили в коммунальных квартирах, или коммуналках. В такой квартире несколько семей занимали по одной комнате, а кухня, ванная и туалет были общими. Утром у ванной стояла очередь, а на кухне у каждой семьи был свой стол и своя полка в шкафу.\n\nЖизнь в коммуналке требовала терпения. Соседи спорили о том, кто должен убирать коридор и сколько каждый платит за свет. Зато люди хорошо знали друг друга: могли присмотреть за чужим ребёнком или одолжить соль.\n\nМассовое строительство отдельных квартир началось в конце пятидесятых годов. Пятиэтажные дома того времени называют «хрущёвками», по имени Никиты Хрущёва. Квартиры в них маленькие, но для многих семей это было первое собственное жильё. Коммуналки сохранились и сегодня, особенно в центре Петербурга.",
+        "pt": "Nas cidades soviéticas, milhões de pessoas moravam em apartamentos comunitários, as коммуналки. Num apartamento assim, várias famílias ocupavam um quarto cada, e a cozinha, o banheiro e o vaso sanitário eram comuns. De manhã havia fila na porta do banheiro, e na cozinha cada família tinha a sua mesa e a sua prateleira no armário.\n\nA vida na коммуналка exigia paciência. Os vizinhos discutiam sobre quem devia limpar o corredor e quanto cada um pagava pela luz. Em compensação, as pessoas se conheciam bem: podiam cuidar do filho de outra família ou emprestar sal.\n\nA construção em massa de apartamentos individuais começou no fim dos anos cinquenta. Os prédios de cinco andares dessa época são chamados de «хрущёвки», em referência a Nikita Khruschov. Os apartamentos neles são pequenos, mas para muitas famílias foi a primeira moradia própria. As коммуналки existem até hoje, sobretudo no centro de Petersburgo.",
+        "tf": [
+          ["Numa коммуналка, cada família tinha a sua própria cozinha.", "F", "A cozinha era comum; cada família tinha a sua mesa (свой стол)."],
+          ["Os vizinhos discutiam sobre a limpeza e as contas de luz.", "V", "«Спорили о том, кто должен убирать коридор и сколько каждый платит за свет»."],
+          ["Os apartamentos das хрущёвки são espaçosos.", "F", "«Квартиры в них маленькие»."],
+          ["Hoje não existe mais nenhuma коммуналка.", "F", "«Коммуналки сохранились и сегодня»."],
+          ["Morar numa коммуналка era mais barato do que num apartamento individual.", "N", "O texto não compara preços."]
+        ],
+        "questions": [
+          {"q": "Что было общим в коммунальной квартире?", "o": ["Кухня, ванная и туалет.", "Только комнаты.", "Вся мебель.", "Шкафы и столы."], "e": "«Кухня, ванная и туалет были общими»."},
+          {"q": "Почему пятиэтажки называют «хрущёвками»?", "o": ["Их начали массово строить при Никите Хрущёве.", "Их спроектировал архитектор Хрущёв.", "Они стоят на улице Хрущёва.", "В одной из них жил Хрущёв."], "e": "«По имени Никиты Хрущёва»: a construção em massa começou no governo dele."},
+          {"q": "Какой плюс жизни в коммуналке упоминается в тексте?", "o": ["Соседи хорошо знали друг друга и помогали.", "Квартплата была очень низкой.", "В комнатах было много места.", "Не было очередей."], "e": "«Зато люди хорошо знали друг друга»: зато introduz a compensação."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta em cada lacuna.",
+        "text": "В коммуналке несколько семей жили {в одной квартире|в одну квартиру|одной квартирой}. Кухня была {общей|общая|общую}. Соседи спорили о том, кто будет {убирать|убрать|уборку} коридор. Первые отдельные квартиры появились {в конце|к концу|на конце} пятидесятых годов.",
+        "pt": "Na коммуналка, várias famílias moravam num só apartamento. A cozinha era comum. Os vizinhos discutiam sobre quem ia limpar o corredor. Os primeiros apartamentos individuais surgiram no fim dos anos cinquenta.",
+        "e": "Жить где? в + предложный; быть + instrumental (была общей); будет + infinitivo imperfectivo; в конце + genitivo."}
+    ]},
+    {"title": "Foco na forma: onde está e onde colocar", "goal": "Usar os verbos de posição e de colocação com где? e куда?.", "steps": [
+      {"t": "grammar", "title": "Стоять, лежать, висеть × ставить, класть, вешать",
+        "paragraphs": [
+          "O russo não diz simplesmente «estar» ou «colocar»: escolhe o verbo pela posição do objeto. Стоять é estar em pé ou apoiado na base (móveis, garrafas, livros na estante, carros). Лежать é estar deitado (tapete, celular, livro deitado, documentos). Висеть é estar pendurado (quadro, lustre, roupa no armário).",
+          "Para a ação de colocar, cada posição tem o seu par: ставить / поставить (pôr em pé), класть / положить (deitar, pôr sobre), вешать / повесить (pendurar). Atenção: o perfectivo de класть é положить, de outra raiz.",
+          "Posição responde a где? e pede в/на + предложный: на столе, в шкафу. Ação responde a куда? e pede в/на + винительный: на стол, в шкаф."
+        ],
+        "table": {"columns": ["Posição (где?)", "Ação (куда?)", "Exemplo"], "rows": [
+          ["стоять", "ставить / поставить", "Стол стоит у окна. → Поставь стол к окну."],
+          ["лежать", "класть / положить", "Книга лежит на столе. → Положи книгу на стол."],
+          ["висеть", "вешать / повесить", "Картина висит на стене. → Повесь картину на стену."]
+        ]},
+        "examples": [
+          ["Одежда висит в шкафу, а обувь стоит в прихожей.", "A roupa está pendurada no armário e os sapatos ficam na entrada."],
+          ["Куда ты положил мои ключи?", "Onde você pôs as minhas chaves?"],
+          ["Давай поставим диван у стены.", "Vamos colocar o sofá junto à parede."],
+          ["Деньги лежат в кошельке.", "O dinheiro está na carteira."]
+        ],
+        "pitfalls": [
+          "Roupa no armário fica pendurada: «Куртка висит в шкафу», não «лежит», se estiver no cabide.",
+          "Não troque где e куда: «Положи молоко в холодильник» (куда?), mas «Молоко стоит в холодильнике» (где?).",
+          "Pratos, copos e garrafas «стоят»; talheres, papéis e tapetes «лежат»."
+        ]},
+      {"t": "choice", "title": "Escolha o verbo adequado.", "items": [
+        {"q": "Твоя куртка ___ в шкафу.", "o": ["висит", "лежит", "стоит", "вешает"], "e": "Roupa no cabide está pendurada: висеть."},
+        {"q": "Куда ты ___ ключи? Я не могу их найти.", "o": ["положил", "лежал", "поставил", "повесил"], "e": "Ação (куда?) com objeto deitado: положить."},
+        {"q": "Давай ___ диван к стене.", "o": ["поставим", "положим", "повесим", "стоим"], "e": "Móvel colocado em pé, na sua base: поставить."},
+        {"q": "Ваза с цветами ___ на подоконнике.", "o": ["стоит", "лежит", "висит", "ставит"], "e": "Posição (где?) de objeto em pé: стоять."},
+        {"q": "Не ___ телефон на край стола: он упадёт.", "o": ["клади", "вешай", "лежи", "стой"], "e": "Imperativo de класть (ação, objeto deitado): клади."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Картина висит на стену.", "o": ["Картина висит на стене.", "Картина вешает на стене.", "Картину висит на стене."], "e": "Висеть é posição: где? → на стене (preposicional)."},
+        {"q": "Он поставил ковёр на пол.", "o": ["Он положил ковёр на пол.", "Он повесил ковёр на пол.", "Он поставил ковёр на полу."], "e": "Tapete fica deitado no chão: положить на пол (куда?)."},
+        {"q": "Положи молоко в холодильнике.", "o": ["Поставь молоко в холодильник.", "Поставь молоко в холодильнике.", "Положи молоко на холодильнике."], "e": "Dois problemas: a garrafa fica em pé (поставь) e a ação pede куда? → в холодильник."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Повесь пальто в шкаф, пожалуйста", "pt": "Pendure o casaco no armário, por favor."},
+        {"a": "Новый диван стоит у окна в гостиной", "pt": "O sofá novo fica perto da janela, na sala."},
+        {"a": "Мы сняли квартиру недалеко от метро", "pt": "Alugamos um apartamento perto do metrô."}
+      ]}
+    ]},
+    {"title": "Uso real: aviso, situações e produção", "goal": "Entender um aviso de condomínio, resolver problemas domésticos e descrever uma moradia.", "steps": [
+      {"t": "listening", "kind": "Объявление для жильцов", "title": "Плановые работы", "voice": "m",
+        "text": "Уважаемые жильцы! Двенадцатого и тринадцатого апреля в нашем доме будут проводиться плановые работы. С девяти утра до шести вечера не будет горячей воды. Просим заранее набрать воду. Также напоминаем, что старую мебель нельзя оставлять у подъезда: её нужно вывозить на специальную площадку за домом. Спасибо за понимание. Управляющая компания.",
+        "pt": "Prezados moradores! Nos dias 12 e 13 de abril serão realizadas obras de manutenção no nosso prédio. Das nove da manhã às seis da tarde não haverá água quente. Pedimos que armazenem água com antecedência. Lembramos também que móveis velhos não podem ser deixados na entrada do prédio: devem ser levados para a área especial atrás do edifício. Obrigado pela compreensão. A administradora.",
+        "questions": [
+          {"q": "O que acontecerá nos dias 12 e 13 de abril?", "o": ["Não haverá água quente das 9h às 18h.", "Não haverá luz o dia inteiro.", "O elevador ficará parado.", "A água fria será cortada à noite."], "e": "«С девяти утра до шести вечера не будет горячей воды»: genitivo depois de не будет."},
+          {"q": "O que se pede aos moradores?", "o": ["Que armazenem água com antecedência.", "Que saiam de casa durante as obras.", "Que paguem uma taxa extra.", "Que deixem os móveis velhos na entrada."], "e": "«Просим заранее набрать воду»."},
+          {"q": "Onde devem ficar os móveis velhos?", "o": ["Numa área especial atrás do prédio.", "Na entrada do prédio.", "No porão.", "Na calçada em frente ao prédio."], "e": "«На специальную площадку за домом»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você liga para o proprietário porque a torneira da cozinha está pingando.", "o": ["У меня на кухне течёт кран. Можно прислать сантехника?", "У меня на кухне висит кран. Можно прислать сантехника?", "Мой кран стоит на кухне. Пришлите повара.", "Я положил кран на кухню, помогите."], "e": "Течёт кран = a torneira está vazando; сантехник = encanador."},
+        {"q": "Você quer saber se pode ter um gato no apartamento.", "o": ["Можно держать в квартире кошку?", "Можно стоять в квартире кошку?", "Можно класть кошку в квартиру?", "Кошка висит в квартире?"], "e": "Держать животное = ter (criar) um animal."},
+        {"q": "Você pede ao vizinho de cima que faça menos barulho à noite.", "o": ["Извините, не могли бы вы по вечерам шуметь потише?", "Извините, вы могли бы шуметь громче по вечерам?", "Сосед, положите шум, пожалуйста.", "Извините, вы поставили шум над нами."], "e": "Не могли бы вы … ? é o pedido cortês; потише = um pouco mais baixo."}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 60,
+        "task": "Escreva um anúncio de 60 a 90 palavras para alugar um apartamento: número de cômodos, andar, móveis, o que há perto, preço e condições.",
+        "useful": ["Сдаётся двухкомнатная квартира …", "окна выходят …", "в гостиной стоит …", "рядом находится …", "стоимость … рублей в месяц", "залог за один месяц", "без животных"],
+        "model": "Сдаётся двухкомнатная квартира в тихом районе, в пятнадцати минутах пешком от метро. Квартира светлая, на шестом этаже, окна выходят во двор. В гостиной стоят диван и большой книжный шкаф, в спальне есть двуспальная кровать и шкаф для одежды. Кухня полностью оборудована: холодильник, плита, посудомоечная машина. Рядом находятся парк, школа и супермаркет. Стоимость сорок пять тысяч рублей в месяц плюс коммунальные услуги. Залог за один месяц. Без животных.",
+        "model_pt": "Aluga-se apartamento de dois cômodos num bairro tranquilo, a quinze minutos a pé do metrô. O apartamento é claro, fica no sexto andar e as janelas dão para o pátio. Na sala há um sofá e uma grande estante; no quarto há uma cama de casal e um armário. A cozinha é completa: geladeira, fogão, lava-louças. Perto há um parque, uma escola e um supermercado. Preço: quarenta e cinco mil rublos por mês mais as contas. Depósito de um mês. Não se aceitam animais.",
+        "checklist": ["Indiquei o número de cômodos e o andar (на … этаже).", "Usei стоит, лежит ou висит para descrever os móveis.", "Escrevi o preço com рублей (genitivo plural depois do número).", "Mencionei pelo menos uma condição (залог, договор, без животных).", "Usei a fórmula «Сдаётся квартира»."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Descreva o seu quarto em voz alta durante um minuto: o que há nele e onde cada coisa está.",
+        "useful": ["слева от двери", "у окна", "над кроватью", "на полу лежит …", "на стене висит …"],
+        "model": "Моя комната небольшая, но уютная. Слева от двери стоит кровать, над кроватью висит большая фотография моря. У окна стоит письменный стол, на столе лежат ноутбук и книги. Справа стоит шкаф, в шкафу висит одежда. На полу лежит мягкий ковёр, а на подоконнике стоят цветы.",
+        "model_pt": "O meu quarto é pequeno, mas aconchegante. À esquerda da porta fica a cama, e acima da cama está pendurada uma grande foto do mar. Junto à janela fica a escrivaninha; sobre ela estão o notebook e os livros. À direita fica o armário, com as roupas penduradas. No chão há um tapete macio, e no parapeito há flores.",
+        "checklist": ["Usei стоит, лежит e висит conforme a posição de cada objeto.", "Usei preposições de lugar (у, над, слева от, справа, на).", "Usei в/на + preposicional para dizer onde as coisas estão."]}
+    ]}
+  ]
+}

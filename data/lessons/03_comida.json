@@ -1,0 +1,166 @@
+{
+  "id": "comida1", "theme": "comida", "order": 1,
+  "title": "Блины на Масленицу", "title_pt": "Panquecas para a Máslenitsa",
+  "level": "B1–B2", "minutes": 60,
+  "objectives": [
+    "Entender uma receita explicada oralmente e as recomendações de um garçom.",
+    "Ler um texto sobre a Máslenitsa, festa russa de despedida do inverno.",
+    "Dar instruções com o imperativo e expressar quantidades com o genitivo.",
+    "Escrever uma receita do seu país e fazer um pedido completo num restaurante."
+  ],
+  "grammar_focus": "imperativo (нарежьте, добавьте, не открывайте) · genitivo de quantidade (стакан муки, пять яиц, налить чаю)",
+  "parts": [
+    {"title": "Vocabulário em contexto", "goal": "Reconhecer os verbos de cozinha, as medidas e as fórmulas do restaurante.", "steps": [
+      {"t": "warmup", "questions": [
+        "Вы любите готовить? Какое блюдо у вас получается лучше всего?",
+        "Какую русскую еду вы пробовали?",
+        "Qual prato típico do seu país você ensinaria a um amigo russo?"
+      ]},
+      {"t": "vocab", "items": [
+        ["нарезать кубиками", "cortar em cubos", "кубиками: instrumental de modo; соломкой = em tiras"],
+        ["варить / сварить", "cozinhar em água, ferver", "сварить суп, сварить картошку"],
+        ["жарить / пожарить", "fritar", "жарить на сковороде, на масле"],
+        ["добавить по вкусу", "acrescentar a gosto", "соль и перец по вкусу"],
+        ["довести до кипения", "levar à fervura", "кипеть = ferver"],
+        ["на медленном огне", "em fogo baixo", "на сильном огне = em fogo alto"],
+        ["щепотка соли", "uma pitada de sal", "щепотка + genitivo"],
+        ["столовая ложка", "colher de sopa", "чайная ложка = colher de chá"],
+        ["заказать столик", "reservar uma mesa", "заказать столик на двоих"],
+        ["принесите счёт", "traga a conta", "Принесите, пожалуйста, счёт."],
+        ["острый", "picante; afiado", "острый соус, острый нож"],
+        ["вегетарианское блюдо", "prato vegetariano", "блюдо = prato (a comida)"]
+      ]},
+      {"t": "match", "title": "Relacione o verbo ao alimento.", "pairs": [
+        ["варить", "суп"], ["жарить", "котлеты"], ["резать", "хлеб"],
+        ["печь", "пирог"], ["мыть", "овощи"], ["чистить", "картошку"]
+      ]},
+      {"t": "choice", "title": "O que significa no contexto?", "items": [
+        {"q": "Суп пересолили.", "o": ["Puseram sal demais na sopa.", "A sopa está sem sal.", "A sopa esfriou.", "A sopa ficou apimentada demais."], "e": "Пере- = em excesso: пересолить, пережарить."},
+        {"q": "Мне, пожалуйста, без сахара: я на диете.", "o": ["Para mim sem açúcar, por favor: estou de dieta.", "Para mim com bastante açúcar, por favor.", "Não tenho açúcar, estou de dieta.", "Estou de dieta, por isso não vou comer."], "e": "Без + genitivo: без сахара."},
+        {"q": "Приятного аппетита!", "o": ["Bom apetite!", "Saúde!", "Volte sempre!", "Está servido?"], "e": "Fórmula em genitivo (желаю приятного аппетита)."}
+      ]}
+    ]},
+    {"title": "Escuta: a primeira panqueca", "goal": "Seguir uma receita explicada oralmente: ingredientes, ordem e cuidados.", "steps": [
+      {"t": "dialogue", "title": "Учимся печь блины", "setting": "Na véspera da Máslenitsa, Ánia ensina o amigo Nick, estudante estrangeiro, a fazer блины.",
+        "speakers": {"Ник": "m", "Аня": "f"},
+        "lines": [
+          ["Ник", "Аня, научи меня печь блины! Завтра Масленица, а я ни разу их не делал.", "Ánia, me ensina a fazer блины! Amanhã é Máslenitsa e eu nunca fiz."],
+          ["Аня", "Легко! Нам нужны мука, молоко, яйца, немного сахара, щепотка соли и растительное масло.", "Fácil! Precisamos de farinha, leite, ovos, um pouco de açúcar, uma pitada de sal e óleo."],
+          ["Ник", "А сколько муки?", "E quanto de farinha?"],
+          ["Аня", "Стакан муки на пол-литра молока. Сначала взбей два яйца с сахаром и солью, потом добавь молоко.", "Um copo de farinha para meio litro de leite. Primeiro bata dois ovos com açúcar e sal, depois acrescente o leite."],
+          ["Ник", "А муку когда?", "E a farinha, quando?"],
+          ["Аня", "Потом, понемногу, и всё время мешай, чтобы не было комочков. Тесто должно получиться жидким, примерно как кефир.", "Depois, aos poucos, mexendo o tempo todo para não empelotar. A massa tem de ficar líquida, mais ou menos como kefir."],
+          ["Ник", "А сковородку надо смазывать?", "E precisa untar a frigideira?"],
+          ["Аня", "Да, перед первым блином обязательно. И огонь не слишком сильный, а то блины подгорят.", "Sim, antes da primeira panqueca é obrigatório. E o fogo não muito alto, senão queimam."],
+          ["Ник", "А правда говорят, что первый блин комом?", "É verdade o que dizem, que a primeira panqueca sai empelotada?"],
+          ["Аня", "Правда! Первый почти всегда не получается. Не расстраивайся и пеки дальше.", "É! A primeira quase nunca dá certo. Não desanime e continue fazendo."],
+          ["Ник", "А с чем их едят?", "E com que se comem?"],
+          ["Аня", "С чем угодно: со сметаной, с мёдом, с вареньем. А если хочешь по-праздничному, то с красной икрой.", "Com o que quiser: creme azedo, mel, geleia. E, se quiser algo festivo, com caviar vermelho."]
+        ],
+        "questions": [
+          {"q": "Qual é a proporção de farinha?", "o": ["Um copo para meio litro de leite.", "Meio litro de farinha para um copo de leite.", "Dois copos para um litro de leite.", "Uma colher de sopa por ovo."], "e": "«Стакан муки на пол-литра молока»: genitivo de quantidade."},
+          {"q": "Por que é preciso mexer o tempo todo?", "o": ["Para não formar grumos.", "Para a massa esfriar.", "Para a massa crescer.", "Para não queimar a frigideira."], "e": "«Чтобы не было комочков»: комочек = grumo."},
+          {"q": "O que quer dizer «первый блин комом»?", "o": ["A primeira tentativa costuma dar errado.", "A primeira panqueca é a mais gostosa.", "A primeira panqueca deve ser comida quente.", "A primeira panqueca é para os convidados."], "e": "Provérbio: a primeira tentativa raramente sai bem."},
+          {"q": "Com que se comem as блины, segundo Ánia?", "o": ["Com creme azedo, mel, geleia ou caviar vermelho.", "Só com caviar.", "Com carne e batata.", "Com açúcar e canela."], "e": "«Со сметаной, с мёдом, с вареньем … с красной икрой»: с + instrumental."}
+        ]},
+      {"t": "dictation", "voice": "f", "text": "Тесто должно получиться жидким, примерно как кефир.", "pt": "A massa tem de ficar líquida, mais ou menos como kefir.", "hint": "Frase de Ánia sobre a consistência da massa (7 palavras)."},
+      {"t": "shadow", "voice": "f", "lines": [
+        ["Научи меня печь блины!", "Me ensina a fazer блины!"],
+        ["А сколько муки нужно?", "E quanto de farinha precisa?"],
+        ["Первый блин комом.", "A primeira panqueca sempre sai errada."],
+        ["Не расстраивайся и пеки дальше.", "Não desanime e continue fazendo."]
+      ]}
+    ]},
+    {"title": "Leitura: a Máslenitsa", "goal": "Ler um texto sobre uma festa tradicional e reconhecer costumes e símbolos.", "steps": [
+      {"t": "reading", "title": "Масленица",
+        "text": "Масленица — один из самых весёлых праздников в России. Она длится неделю перед Великим постом и провожает зиму. Главное блюдо Масленицы — блины: круглые и горячие, они напоминают солнце, которое возвращается после долгой зимы.\n\nКаждый день масленичной недели имел своё название и свои традиции. В среду, например, зять приходил к тёще на блины, а в пятницу, наоборот, тёща шла в гости к зятю. Люди катались с гор на санках, устраивали ярмарки и весёлые игры.\n\nПоследний день называется Прощёным воскресеньем. В этот день принято просить друг у друга прощения за обиды. Вечером сжигают чучело Масленицы — большую соломенную куклу. Считается, что вместе с ней уходит и зима. Сегодня в больших городах Масленицу отмечают на площадях и в парках: с концертами, играми и, конечно, с блинами.",
+        "pt": "A Máslenitsa é uma das festas mais alegres da Rússia. Dura a semana anterior à Grande Quaresma e se despede do inverno. O prato principal da Máslenitsa são as блины: redondas e quentes, lembram o sol que volta depois do longo inverno.\n\nCada dia da semana da Máslenitsa tinha o seu nome e as suas tradições. Na quarta-feira, por exemplo, o genro ia à casa da sogra comer блины, e na sexta, ao contrário, a sogra visitava o genro. As pessoas desciam colinas de trenó, organizavam feiras e brincadeiras.\n\nO último dia se chama Domingo do Perdão. Nesse dia, é costume pedir perdão uns aos outros pelas ofensas. À noite, queima-se o boneco da Máslenitsa, uma grande boneca de palha. Acredita-se que com ela vai embora também o inverno. Hoje, nas grandes cidades, a Máslenitsa é comemorada nas praças e nos parques: com shows, brincadeiras e, claro, com блины.",
+        "tf": [
+          ["A Máslenitsa dura uma semana.", "V", "«Она длится неделю»: длиться + acusativo de duração."],
+          ["As блины lembram o sol por serem redondas e quentes.", "V", "«Круглые и горячие, они напоминают солнце»."],
+          ["Na quarta-feira, a sogra visitava o genro.", "F", "Na quarta, o genro ia à casa da sogra; na sexta, o contrário."],
+          ["No último dia, as pessoas pedem perdão umas às outras.", "V", "«Принято просить друг у друга прощения»."],
+          ["Durante a Máslenitsa, os russos têm uma semana de folga do trabalho.", "N", "O texto não fala de folgas."]
+        ],
+        "questions": [
+          {"q": "Что сжигают в последний день Масленицы?", "o": ["Соломенную куклу, чучело Масленицы.", "Старые блины.", "Санки.", "Новогоднюю ёлку."], "e": "«Вечером сжигают чучело Масленицы»."},
+          {"q": "Что символизирует Масленица?", "o": ["Проводы зимы и встречу весны.", "Начало лета.", "Сбор урожая.", "Начало учебного года."], "e": "«Провожает зиму … вместе с ней уходит и зима»."}
+        ]},
+      {"t": "cloze", "title": "Escolha a forma correta em cada lacuna.",
+        "text": "Масленица длится {неделю|неделей|недели}. Блины напоминают {солнце|солнцем|солнца}. В среду зять ходил к тёще {на блины|за блинами|с блинами}. В воскресенье принято просить {прощения|прощение|прощением} за обиды.",
+        "pt": "A Máslenitsa dura uma semana. As блины lembram o sol. Na quarta, o genro ia à casa da sogra comer блины. No domingo, é costume pedir perdão pelas ofensas.",
+        "e": "Длиться + acusativo; напоминать + acusativo; ходить на блины = ir comer блины; просить прощения (genitivo)."}
+    ]},
+    {"title": "Foco na forma: instruções e quantidades", "goal": "Dar instruções com o imperativo e expressar quantidades com o genitivo.", "steps": [
+      {"t": "grammar", "title": "Imperativo nas receitas e genitivo de quantidade",
+        "paragraphs": [
+          "Receitas e instruções usam o imperativo. Ele se forma a partir do tema do presente: нарежут → нарежь(те), добавят → добавь(те), мешают → мешай(те), положат → положи(те). Com вы, acrescenta-se -те.",
+          "Aspecto: o perfectivo indica uma ação única e completa (Добавьте соль). O imperfectivo indica processo, repetição ou maneira (Всё время помешивайте). Na negação, usa-se o imperfectivo: Не открывайте духовку!",
+          "Quantidades pedem genitivo: стакан муки, литр молока, много сахара, немного соли, пять яиц, килограмм картошки. Substantivos contáveis vão para o genitivo plural (пять помидоров); os incontáveis, para o genitivo singular (немного воды).",
+          "Com verbos como налить, купить, добавить, o genitivo indica «um pouco de»: Налей мне чаю (um pouco de chá) × Налей мне чай (o chá todo, o chá que está ali)."
+        ],
+        "table": {"columns": ["Infinitivo", "Imperativo (ты / вы)", "Na receita"], "rows": [
+          ["нарезать (pf.)", "нарежь / нарежьте", "Нарежьте лук кубиками."],
+          ["добавить (pf.)", "добавь / добавьте", "Добавьте щепотку соли."],
+          ["помешивать (impf.)", "помешивай / помешивайте", "Всё время помешивайте."],
+          ["положить (pf.)", "положи / положите", "Положите масло на сковороду."],
+          ["варить (impf.)", "вари / варите", "Варите десять минут."],
+          ["не открывать (impf.)", "не открывай / не открывайте", "Не открывайте духовку."]
+        ]},
+        "examples": [
+          ["Купи, пожалуйста, литр молока и десяток яиц.", "Compre, por favor, um litro de leite e uma dúzia de ovos."],
+          ["Налей мне ещё чаю.", "Me sirva mais um pouco de chá."],
+          ["Не забудь выключить плиту!", "Não esqueça de desligar o fogão!"]
+        ],
+        "pitfalls": [
+          "Depois de números a partir de cinco, use genitivo plural: пять яиц, шесть помидоров.",
+          "O imperativo negativo pede imperfectivo: «Не открывайте». «Не откройте» soa como advertência (cuidado para não abrir).",
+          "Литр молока, não «литр молоко»: a medida rege genitivo."
+        ]},
+      {"t": "choice", "title": "Escolha a forma correta.", "items": [
+        {"q": "Для блинов нужно два стакана ___.", "o": ["муки", "мука", "муку", "мукой"], "e": "Medida + genitivo: стакан муки."},
+        {"q": "___ лук мелко и обжарьте его на масле.", "o": ["Нарежьте", "Нарезаете", "Нарезали", "Нарежете"], "e": "Instrução única e completa: imperativo perfectivo нарежьте."},
+        {"q": "Купи, пожалуйста, пять ___.", "o": ["помидоров", "помидоры", "помидор", "помидорами"], "e": "Пять + genitivo plural: помидоров."},
+        {"q": "Пока суп варится, всё время его ___.", "o": ["помешивайте", "помешайте", "мешали", "мешаете"], "e": "Всё время indica processo contínuo: imperfectivo."},
+        {"q": "Не ___ дверцу духовки первые двадцать минут!", "o": ["открывайте", "откройте", "открыли", "открываете"], "e": "Proibição: не + imperativo imperfectivo."}
+      ]},
+      {"t": "fix", "items": [
+        {"q": "Налей мне стакан вода.", "o": ["Налей мне стакан воды.", "Налей мне стакан водой.", "Налей мне стакан воду."], "e": "Стакан + genitivo: воды."},
+        {"q": "Не добавьте сахар в соус.", "o": ["Не добавляйте сахар в соус.", "Не добавить сахар в соус.", "Не добавляете сахар в соус."], "e": "Proibição com imperfectivo: не добавляйте."},
+        {"q": "Я купил пять яйца.", "o": ["Я купил пять яиц.", "Я купил пять яйцо.", "Я купил пять яйцами."], "e": "Пять + genitivo plural: яиц."}
+      ]},
+      {"t": "order", "title": "Monte a frase.", "items": [
+        {"a": "Нарежьте картошку кубиками и посолите", "pt": "Corte a batata em cubos e salgue."},
+        {"a": "Варите суп на медленном огне полчаса", "pt": "Cozinhe a sopa em fogo baixo por meia hora."},
+        {"a": "Мы хотели бы заказать столик на двоих", "pt": "Gostaríamos de reservar uma mesa para dois."}
+      ]}
+    ]},
+    {"title": "Uso real: restaurante e produção", "goal": "Entender as sugestões de um garçom, pedir num restaurante e escrever uma receita.", "steps": [
+      {"t": "listening", "kind": "В ресторане", "title": "Официант рассказывает о меню", "voice": "m",
+        "text": "Добрый вечер! Сегодня у нас в меню несколько особых блюд. На первое предлагаем борщ со сметаной или грибной суп. На второе пельмени ручной работы и котлеты по-киевски с картофельным пюре. Для вегетарианцев есть овощное рагу. Обратите внимание: котлеты по-киевски готовятся около двадцати минут. Из десертов рекомендую домашний медовик. Что будете пить? Есть клюквенный морс, чай и кофе.",
+        "pt": "Boa noite! Hoje temos alguns pratos especiais no cardápio. De entrada, sugerimos борщ com creme azedo ou sopa de cogumelos. De prato principal, pelmeni artesanais e frango à Kiev com purê de batata. Para os vegetarianos, há ensopado de legumes. Atenção: o frango à Kiev leva cerca de vinte minutos para ficar pronto. De sobremesa, recomendo a torta de mel caseira. O que vão beber? Temos suco de oxicoco, chá e café.",
+        "questions": [
+          {"q": "Qual prato demora cerca de vinte minutos?", "o": ["O frango à Kiev.", "Os pelmeni.", "O борщ.", "O ensopado de legumes."], "e": "«Котлеты по-киевски готовятся около двадцати минут»: около + genitivo."},
+          {"q": "O que o garçom recomenda de sobremesa?", "o": ["A torta de mel caseira (медовик).", "O suco de oxicoco.", "Panquecas com mel.", "Sorvete."], "e": "«Из десертов рекомендую домашний медовик»."},
+          {"q": "Qual é a opção para vegetarianos?", "o": ["Ensopado de legumes.", "Pelmeni artesanais.", "Frango à Kiev.", "Борщ com creme azedo."], "e": "«Для вегетарианцев есть овощное рагу»."}
+        ]},
+      {"t": "choice", "title": "Situações: o que você diz?", "items": [
+        {"q": "Você quer reservar uma mesa para quatro pessoas às oito horas.", "o": ["Я хотел бы заказать столик на четверых на восемь часов.", "Я хотел бы заказать стол для четыре в восемь часов.", "Можно купить столик на четверых?", "Дайте мне четыре стола на восемь."], "e": "Заказать столик на + coletivo (на двоих, на четверых) + на + hora."},
+        {"q": "Você tem alergia a nozes e quer saber se o prato as contém.", "o": ["Скажите, в этом блюде есть орехи? У меня аллергия.", "Скажите, это блюдо любит орехи?", "У меня аллергия на орехами.", "Можно мне блюдо с орехов?"], "e": "В блюде есть + nominativo; аллергия на + acusativo."},
+        {"q": "Você quer pedir a conta.", "o": ["Принесите, пожалуйста, счёт.", "Принесите, пожалуйста, считать.", "Дайте мне расчёт, пожалуйста.", "Можно заплатить меню?"], "e": "Счёт = a conta. «Дайте мне расчёт» significa pedir demissão!"}
+      ]},
+      {"t": "produce", "mode": "write", "min_words": 70,
+        "task": "Escreva uma receita simples de um prato ou doce do seu país (70 a 110 palavras): ingredientes com quantidades e modo de preparo no imperativo.",
+        "useful": ["Нам понадобится: …", "банка / стакан / столовая ложка + genitivo", "положите …", "добавьте …", "готовьте … минут", "подавайте с …", "Приятного аппетита!"],
+        "model": "Бригадейру — самый популярный бразильский десерт. Нам понадобится: банка сгущённого молока, две столовые ложки какао, одна столовая ложка сливочного масла и шоколадная посыпка. Положите в кастрюлю сгущённое молоко, масло и какао. Готовьте на медленном огне и всё время помешивайте, примерно десять минут, пока масса не станет густой и не начнёт отходить от дна. Затем снимите кастрюлю с огня и дайте массе остыть. Смажьте руки маслом, скатайте маленькие шарики и обваляйте их в посыпке. Подавайте в бумажных формочках. Приятного аппетита!",
+        "model_pt": "O brigadeiro é o doce brasileiro mais popular. Vamos precisar de: uma lata de leite condensado, duas colheres de sopa de cacau, uma colher de sopa de manteiga e granulado de chocolate. Coloque na panela o leite condensado, a manteiga e o cacau. Cozinhe em fogo baixo, mexendo sempre, por cerca de dez minutos, até a massa engrossar e desgrudar do fundo. Depois tire a panela do fogo e deixe a massa esfriar. Unte as mãos com manteiga, faça bolinhas e passe-as no granulado. Sirva em forminhas de papel. Bom apetite!",
+        "checklist": ["Listei os ingredientes com genitivo de quantidade (банка молока, две ложки какао).", "Usei o imperativo com -те em todos os passos.", "Usei imperfectivo para processos (помешивайте) e perfectivo para ações únicas (положите).", "Indiquei o tempo de preparo (… минут).", "Terminei com uma fórmula (Приятного аппетита!)."]},
+      {"t": "produce", "mode": "speak",
+        "task": "Você está num restaurante russo. Faça em voz alta o pedido completo (entrada, prato principal e bebida), pergunte por um ingrediente e peça a conta.",
+        "useful": ["Можно меню?", "На первое я возьму …", "На второе …", "Скажите, а в … есть …?", "Принесите, пожалуйста, счёт.", "Можно оплатить картой?"],
+        "model": "Добрый вечер! Можно меню? Спасибо. На первое я возьму борщ, а на второе пельмени со сметаной. Скажите, а в салате есть орехи? У меня аллергия. Тогда, пожалуйста, без салата. Из напитков клюквенный морс. Всё было очень вкусно! Принесите, пожалуйста, счёт. Можно оплатить картой?",
+        "model_pt": "Boa noite! Pode me trazer o cardápio? Obrigado. De entrada vou querer борщ, e de prato principal pelmeni com creme azedo. Diga, a salada tem nozes? Tenho alergia. Então, por favor, sem salada. Para beber, suco de oxicoco. Estava tudo muito gostoso! Traga a conta, por favor. Posso pagar com cartão?",
+        "checklist": ["Usei на первое / на второе.", "Pedi com возьму, можно … ou принесите …", "Fiz uma pergunta sobre ingredientes.", "Pedi a conta e perguntei sobre o pagamento."]}
+    ]}
+  ]
+}
