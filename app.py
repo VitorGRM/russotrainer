@@ -51,7 +51,7 @@ EDGE_ENDPOINTS = (
 from lessons import LessonStore, grade_cloze, grade_match
 from updater import Updater, UpdateError
 
-APP_VERSION = "1.6.1"
+APP_VERSION = "1.6.2"
 FROZEN = bool(getattr(sys, "frozen", False))
 BASE_DIR = Path(getattr(sys, "_MEIPASS", "") or Path(__file__).resolve().parent)
 
