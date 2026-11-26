@@ -1,0 +1,93 @@
+/* LinguaLab · Қазақша — página do curso de cazaque.
+   Reaproveita os estilos do francês (fr-*) e acrescenta a trilha em zigue-zague, os sons e o diálogo.
+   O azul-celeste e o dourado lembram a bandeira do Cazaquistão. */
+
+:root { --kz-sky: #1b8fb5; --kz-sky-soft: #e3f3f9; --kz-sun: #d7a21a; }
+:root[data-theme="dark"] { --kz-sky: #4fb7d9; --kz-sky-soft: #15303a; --kz-sun: #e7bd4c; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --kz-sky: #4fb7d9; --kz-sky-soft: #15303a; --kz-sun: #e7bd4c; } }
+
+.kz-badge { background: linear-gradient(135deg, var(--kz-sky), color-mix(in srgb, var(--kz-sky) 60%, var(--kz-sun))); }
+.kz-badge small { text-transform: none; letter-spacing: 0; }
+.kz-finished { padding: 10px 14px; border-radius: var(--radius-card); background: var(--gold-soft); font-weight: 600; }
+.kz-check { display: flex !important; gap: 8px; align-items: center; flex-direction: row !important; }
+.kz-subtitle { font-size: 19px; color: var(--kz-sky); margin: 0 0 6px; }
+.kz-left { justify-content: flex-start; flex-wrap: wrap; align-items: center; }
+
+/* trilha */
+.kz-module { margin-bottom: 34px; }
+.kz-module header { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.kz-module h2 { font-size: 21px; }
+.kz-path { position: relative; display: grid; gap: 10px; max-width: 760px; margin: 0 auto; padding: 6px 0; }
+.kz-path::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; border-left: 3px dashed color-mix(in srgb, var(--kz-sky) 45%, transparent); transform: translateX(-50%); }
+.kz-node { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 12px; align-items: center; width: min(430px, 92%); text-align: left; padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); transition: transform 140ms ease, border-color 140ms ease; }
+.kz-node.left { justify-self: start; }
+.kz-node.mid { justify-self: center; }
+.kz-node.right { justify-self: end; }
+.kz-node:hover { transform: translateY(-2px); border-color: var(--kz-sky); }
+.kz-node-dot { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; font-weight: 800; font-size: 19px; background: var(--surface-2); border: 3px solid var(--line); }
+.kz-node.done .kz-node-dot { background: var(--kz-sky); color: #fff; border-color: var(--kz-sky); }
+.kz-node.current { border-color: var(--kz-sun); box-shadow: 0 0 0 3px color-mix(in srgb, var(--kz-sun) 30%, transparent), var(--shadow); }
+.kz-node.current .kz-node-dot { background: var(--kz-sun); color: #fff; border-color: var(--kz-sun); animation: kz-beat 1.6s ease-in-out infinite; }
+.kz-node.open .kz-node-dot { border-color: var(--kz-sky); color: var(--kz-sky); }
+.kz-node.locked { opacity: 0.55; box-shadow: none; }
+.kz-node.locked .kz-node-dot { font-size: 18px; }
+.kz-node-text { display: grid; gap: 1px; min-width: 0; }
+.kz-node-text small { color: var(--muted); font-size: 12px; }
+.kz-node-text strong { line-height: 1.25; }
+.kz-node-kz { color: var(--kz-sky); font-size: 14.5px; }
+.kz-node-foot { display: flex; gap: 10px; align-items: center; font-size: 12.5px; color: var(--muted); }
+.kz-node-foot .due { color: var(--warn); font-weight: 600; }
+@keyframes kz-beat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+
+/* alfabeto */
+.kz-alphabet { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); }
+.kz-letter { display: grid; gap: 2px; justify-items: center; padding: 12px 8px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); }
+.kz-letter b { font-size: 28px; font-weight: 400; }
+.kz-letter span { font-size: 16px; }
+.kz-letter small { color: var(--muted); font-size: 11.5px; text-align: center; }
+.kz-letter.special { border-color: var(--kz-sky); background: var(--kz-sky-soft); }
+.kz-letter.special b { color: var(--kz-sky); }
+.kz-letter.playing, .kz-letter:hover { border-color: var(--kz-sun); }
+
+/* sons e vocabulário */
+.kz-narrate { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 6px 0 14px; }
+.kz-sounds { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); margin-bottom: 16px; }
+.kz-sound { background: var(--kz-sky-soft); border-radius: var(--radius-control); padding: 12px 14px; }
+.kz-sound-letter { font-size: 34px; color: var(--kz-sky); line-height: 1; }
+.kz-sound p { margin: 4px 0 8px; }
+.kz-sound-words { display: grid; gap: 4px; }
+.kz-sound-word { display: flex; align-items: center; gap: 8px; }
+.kz-sound-word b { font-size: 18px; font-weight: 400; }
+.kz-sound-word small { color: var(--muted); }
+.kz-words { display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); margin: 10px 0; }
+.kz-word { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 10px; align-items: center; padding: 8px 10px; border: 1px solid var(--line); border-radius: var(--radius-control); background: var(--surface); }
+.kz-word > .fr-text { font-size: 18.5px; }
+.kz-word small, .kz-word em { grid-column: 2; }
+.kz-word .status-dot { position: absolute; }
+.kz-word { position: relative; }
+.kz-word .status-dot { right: 8px; top: 8px; }
+.kz-word.speaking, .kz-line.speaking .kz-bubble, .kz-paragraph.speaking { border-color: var(--kz-sun); box-shadow: 0 0 0 2px color-mix(in srgb, var(--kz-sun) 35%, transparent); }
+
+/* diálogo */
+.kz-dialog { display: grid; gap: 10px; margin: 12px 0; }
+.kz-line { display: flex; gap: 10px; align-items: flex-start; max-width: 88%; }
+.kz-line.b { flex-direction: row-reverse; justify-self: end; }
+.kz-avatar { flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; color: #fff; font-weight: 700; background: var(--kz-sky); }
+.kz-line.b .kz-avatar { background: var(--kz-sun); }
+.kz-bubble { display: grid; gap: 3px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.kz-bubble > div { display: flex; gap: 8px; align-items: center; }
+.kz-bubble .fr-text { font-size: 19px; }
+.kz-line.b .kz-bubble { background: var(--kz-sky-soft); }
+
+/* leitura */
+.kz-paragraph { border: 1px solid var(--line); border-radius: var(--radius-control); padding: 10px 14px; margin: 10px 0; background: var(--surface); }
+.kz-paragraph > .fr-text { font-size: 19px; line-height: 1.55; margin: 6px 0 0; }
+.kz-paragraph-head { display: flex; gap: 10px; align-items: center; }
+.kz-unlock { margin: 14px 0; }
+.kz-modal h3 { display: flex; align-items: center; gap: 12px; }
+
+@media (max-width: 700px) {
+  .kz-node, .kz-node.left, .kz-node.right { justify-self: center; width: 100%; }
+  .kz-path::before { left: 40px; }
+  .kz-line { max-width: 100%; }
+}

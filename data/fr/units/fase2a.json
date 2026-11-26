@@ -1,0 +1,268 @@
+{
+  "units": [
+    {
+      "id": "u15", "n": 15, "phase": 2, "prio": 3, "theme": "midia",
+      "title": "Discurso indireto e verbos introdutores",
+      "goal": "Relatar falas no passado com a concordância dos tempos e verbos precisos.",
+      "rules": [
+        {"title": "Transformações", "points": [
+          "Declarativa → que; pergunta sim/não → si; pergunta aberta → ce que / ce qui / où / quand…; ordem → de + infinitivo.",
+          "Verbo introdutor no passado: presente → imparfait; passé composé → plus-que-parfait; futuro → condicional; futuro anterior → condicional passado.",
+          "Marcadores: hier → la veille; demain → le lendemain; la semaine prochaine → la semaine suivante; ici → là."],
+         "ex": [["« Je viendrai demain. » → Il a dit qu'il viendrait le lendemain.", "Ele disse que viria no dia seguinte."]]},
+        {"title": "Não diga sempre «dire»", "points": [
+          "affirmer, déclarer, assurer, préciser, souligner, rappeler, ajouter, expliquer, reconnaître, admettre, avouer, nier, répliquer, s'interroger, annoncer, promettre.",
+          "prétendre = alegar (com dúvida de quem relata) — não é «pretender»."]}
+      ],
+      "items": [
+        {"id": "u15-01", "t": "mc", "q": "Elle m'a dit qu'elle ___ malade.", "a": "était", "w": ["est", "serait été", "soit"], "c": "G5", "e": "Presente da fala → imparfait no relato passado."},
+        {"id": "u15-02", "t": "mc", "q": "Il m'a demandé ___ je voulais boire.", "a": "ce que", "w": ["qu'est-ce que", "que", "si"], "c": "G3", "e": "Pergunta aberta indireta sobre objeto: ce que."},
+        {"id": "u15-03", "t": "mc", "q": "Le ministre a annoncé que la réforme ___ en janvier.", "a": "entrerait en vigueur", "w": ["entrera en vigueur", "entre en vigueur", "entrait en vigueur"], "c": "G5", "e": "Futuro → condicional no relato passado."},
+        {"id": "u15-04", "t": "mc", "q": "Le directeur nous a ordonné ___ le bureau.", "a": "de quitter", "w": ["que nous quittons", "quitter", "à quitter"], "c": "G2", "e": "Ordem → de + infinitivo."},
+        {"id": "u15-05", "t": "mc", "q": "Le suspect ___ avoir été chez lui toute la soirée, mais personne ne le croit.", "a": "prétend", "w": ["pretend", "a l'intention d'", "assure qu'il"], "c": "L1", "e": "Prétendre = alegar (e quem relata duvida)."},
+        {"id": "u15-06", "t": "gap", "q": "Il m'a demandé ___ j'avais fini le rapport.", "a": ["si"], "c": "G3", "e": "Pergunta sim/não → si."},
+        {"id": "u15-07", "t": "gap", "q": "Elle a expliqué qu'elle ___ (perdre) ses clés la veille.", "a": ["avait perdu"], "c": "G5", "e": "Passé composé → plus-que-parfait."},
+        {"id": "u15-08", "t": "gap", "q": "Il a dit qu'il passerait nous voir le ___.", "a": ["lendemain"], "c": "L2", "e": "Demain → le lendemain."},
+        {"id": "u15-09", "t": "fix", "q": "Il m'a demandé qu'est-ce que je faisais là.", "bad": "qu'est-ce que", "a": ["ce que"], "full": "Il m'a demandé ce que je faisais là.", "c": "G3", "e": "Na indireta: ce que."},
+        {"id": "u15-10", "t": "fix", "q": "Les supermarchés ont prétendu qu'ils travaillent avec les producteurs locaux.", "bad": "travaillent", "a": ["travaillaient"], "full": "Les supermarchés ont prétendu qu'ils travaillaient avec les producteurs locaux.", "c": "G5", "e": "Erro real (Wattier): concordância no passado."},
+        {"id": "u15-11", "t": "transform", "p": "Passe para o discurso indireto: «Il a dit que…».", "q": "Il a dit : « Je partirai demain. »", "a": ["Il a dit qu'il partirait le lendemain"], "start": "Il a dit qu", "c": "G5", "e": "Futuro → condicional; demain → le lendemain."},
+        {"id": "u15-12", "t": "transform", "p": "Passe para o discurso indireto: «Elle m'a demandé…».", "q": "Elle m'a demandé : « Où est-ce que tu habites ? »", "a": ["Elle m'a demandé où j'habitais"], "start": "Elle m'a demandé ", "c": "G5", "e": "Sem est-ce que; presente → imparfait."},
+        {"id": "u15-13", "t": "pairs", "p": [["avouer", "admitir uma culpa"], ["nier", "negar"], ["souligner", "sublinhar, destacar"], ["préciser", "especificar"], ["répliquer", "retrucar"]], "c": "L2", "e": "Verbos introdutores precisos."}
+      ]
+    },
+    {
+      "id": "u16", "n": 16, "phase": 2, "prio": 3, "theme": "ciencia",
+      "title": "Subjuntivo II: opinião, dúvida e gatilhos enganosos",
+      "goal": "Saber quando a opinião pede indicativo e quando pede subjuntivo.",
+      "rules": [
+        {"title": "Opinião", "points": [
+          "Je pense / crois / trouve que + INDICATIVO: «Je pense que c'est possible.»",
+          "Negada ou interrogada (inversão): subjuntivo. «Je ne pense pas que ce soit possible.» «Penses-tu qu'il vienne ?»",
+          "Il est probable que + indicativo; il est possible / il se peut / il est peu probable que + subjuntivo."]},
+        {"title": "Gatilhos enganosos", "points": [
+          "espérer que + INDICATIVO (futuro): «J'espère que tu viendras.» × souhaiter que + subjuntivo.",
+          "il semble que + subjuntivo × il me semble que + indicativo.",
+          "douter que + subjuntivo × se douter que + indicativo (= desconfiar).",
+          "il est heureux que + subjuntivo × heureusement que + indicativo."],
+         "trap": "«Espero que você venha» puxa para «j'espère que tu viennes»: errado. Espérer pede indicativo."}
+      ],
+      "items": [
+        {"id": "u16-01", "t": "mc", "q": "J'espère que vous ___ un bon voyage.", "a": "ferez", "w": ["fassiez", "faites", "feriez"], "c": "G5", "e": "Espérer + indicativo (futuro)."},
+        {"id": "u16-02", "t": "mc", "q": "Je ne crois pas que cette méthode ___ efficace.", "a": "soit", "w": ["est", "sera", "serait"], "c": "G5", "e": "Opinião negada → subjuntivo."},
+        {"id": "u16-03", "t": "mc", "q": "Il me semble que tu ___ raison.", "a": "as", "w": ["aies", "aurais eu", "ayes"], "c": "G5", "e": "Il me semble que + indicativo."},
+        {"id": "u16-04", "t": "mc", "q": "Il semble que la situation ___ s'améliorer.", "a": "puisse", "w": ["peut", "pourra", "pouvait"], "c": "G5", "e": "Il semble que (sem me) + subjuntivo."},
+        {"id": "u16-05", "t": "mc", "q": "Il est probable que les résultats ___ publiés en mai.", "a": "seront", "w": ["soient", "seraient été", "soit"], "c": "G5", "e": "Il est probable que + indicativo."},
+        {"id": "u16-06", "t": "gap", "q": "Il se peut que l'expérience ___ (échouer).", "a": ["échoue"], "c": "G5", "e": "Il se peut que + subjuntivo."},
+        {"id": "u16-07", "t": "gap", "q": "Je me doute qu'il ___ (être) déçu.", "a": ["est", "sera"], "c": "G5", "e": "Se douter que (= desconfiar) + indicativo."},
+        {"id": "u16-08", "t": "gap", "q": "Heureusement que tu ___ (être) là !", "a": ["es", "étais"], "c": "G5", "e": "Heureusement que + indicativo."},
+        {"id": "u16-09", "t": "fix", "q": "Nous ne croyons pas que la vente de produits locaux peut être rentable.", "bad": "peut", "a": ["puisse"], "full": "Nous ne croyons pas que la vente de produits locaux puisse être rentable.", "c": "G5", "e": "Erro real (Wattier): opinião negada → subjuntivo."},
+        {"id": "u16-10", "t": "fix", "q": "J'espère que tu sois en bonne santé.", "bad": "sois", "a": ["es", "vas bien"], "full": "J'espère que tu es en bonne santé.", "c": "G5", "e": "Espérer + indicativo."},
+        {"id": "u16-11", "t": "transform", "p": "Ponha na forma negativa: «Je ne pense pas que…».", "q": "Je pense que c'est la meilleure solution.", "a": ["Je ne pense pas que ce soit la meilleure solution"], "start": "Je ne pense pas que ", "c": "G5", "e": "Negação da opinião → subjuntivo."},
+        {"id": "u16-12", "t": "order", "a": "Il est peu probable que le projet aboutisse", "x": ["aboutit"], "c": "G5", "e": "Il est peu probable que + subjuntivo."}
+      ]
+    },
+    {
+      "id": "u17", "n": 17, "phase": 2, "prio": 3, "theme": "trabalho",
+      "title": "Subjuntivo III: conjunções × preposições",
+      "goal": "Escolher entre conjunção + subjuntivo e preposição + infinitivo.",
+      "rules": [
+        {"title": "Conjunções com subjuntivo", "points": [
+          "Fim: pour que, afin que, de sorte que (fim). Concessão: bien que, quoique.",
+          "Condição e restrição: à condition que, pourvu que, à moins que (ne).",
+          "Tempo: avant que (ne), jusqu'à ce que, en attendant que. Outras: sans que, de peur que (ne)."]},
+        {"title": "Mesmo sujeito → infinitivo", "points": [
+          "pour, afin de, avant de, sans, de peur de, à condition de, à moins de + infinitivo.",
+          "«Je travaille pour gagner ma vie» (e não «pour que je gagne»).",
+          "Bien que, à moins que, pourvu que, jusqu'à ce que mantêm o subjuntivo mesmo com um só sujeito.",
+          "après que e même si pedem INDICATIVO."]}
+      ],
+      "items": [
+        {"id": "u17-01", "t": "mc", "q": "Je t'explique tout pour que tu ___ la situation.", "a": "comprennes", "w": ["comprends", "comprendras", "comprendrais"], "c": "G5", "e": "Pour que + subjuntivo."},
+        {"id": "u17-02", "t": "mc", "q": "Bien qu'il ___ tard, nous continuons la réunion.", "a": "soit", "w": ["est", "était", "sera"], "c": "G5", "e": "Bien que + subjuntivo."},
+        {"id": "u17-03", "t": "mc", "q": "Même s'il ___, nous sortirons.", "a": "pleut", "w": ["pleuve", "pleuvait déjà", "pleuvrait"], "c": "G5", "e": "Même si + indicativo."},
+        {"id": "u17-04", "t": "mc", "q": "Je prends des notes ___ oublier les détails.", "a": "pour ne pas", "w": ["pour que je n'oublie pas", "afin que ne pas", "pour ne"], "c": "G5", "e": "Mesmo sujeito: pour + infinitivo."},
+        {"id": "u17-05", "t": "mc", "q": "Partez avant qu'il ne ___ trop tard.", "a": "soit", "w": ["est", "sera", "serait"], "c": "G5", "e": "Avant que (ne) + subjuntivo; o ne é expletivo."},
+        {"id": "u17-06", "t": "gap", "q": "J'accepte, à condition que vous ___ (prendre) en charge le transport.", "a": ["preniez"], "c": "G5", "e": "À condition que + subjuntivo."},
+        {"id": "u17-07", "t": "gap", "q": "On attend jusqu'à ce qu'il ___ (revenir).", "a": ["revienne"], "c": "G5", "e": "Jusqu'à ce que + subjuntivo."},
+        {"id": "u17-08", "t": "gap", "q": "Il est parti sans ___ (dire) au revoir.", "a": ["dire"], "c": "G5", "e": "Sans + infinitivo (mesmo sujeito)."},
+        {"id": "u17-09", "t": "fix", "q": "Je travaille le week-end pour que je gagne plus d'argent.", "bad": "pour que je gagne", "a": ["pour gagner"], "full": "Je travaille le week-end pour gagner plus d'argent.", "c": "G5", "e": "Mesmo sujeito → pour + infinitivo."},
+        {"id": "u17-10", "t": "fix", "q": "Après qu'il soit parti, nous avons fermé la porte.", "bad": "soit", "a": ["est"], "full": "Après qu'il est parti, nous avons fermé la porte.", "c": "G5", "e": "Après que + indicativo (no escrito avaliado)."},
+        {"id": "u17-11", "t": "transform", "p": "Junte com «bien que».", "q": "Il est malade. Il va travailler.", "a": ["Bien qu'il soit malade, il va travailler", "Il va travailler bien qu'il soit malade"], "start": "Bien qu", "c": "G5", "e": "Bien que + subjuntivo."},
+        {"id": "u17-12", "t": "order", "a": "Je vous envoie le contrat afin que vous puissiez le signer", "x": ["pouvez"], "c": "G5", "e": "Afin que + subjuntivo."}
+      ]
+    },
+    {
+      "id": "u18", "n": 18, "phase": 2, "prio": 3, "theme": "ambiente",
+      "title": "Expressar a causa",
+      "goal": "Variar a causa em três registros, também com verbos.",
+      "rules": [
+        {"title": "Conjunções e preposições", "points": [
+          "Neutro: parce que, car (escrito), puisque (causa conhecida), comme (no início da frase).",
+          "grâce à (causa positiva) × à cause de (negativa); en raison de, faute de, étant donné que, vu que, sous prétexte que, dans la mesure où (formal)."],
+         "trap": "«Por causa da sua ajuda» = grâce à ton aide (à cause de é para o que é negativo)."},
+        {"title": "Verbos de causa (escrito)", "points": [
+          "être dû à, s'expliquer par, résulter de, provenir de, découler de, tenir à.",
+          "«La pollution est due à la circulation.» «La pollution s'explique par la circulation.»"]}
+      ],
+      "items": [
+        {"id": "u18-01", "t": "mc", "q": "J'ai réussi l'examen ___ tes conseils.", "a": "grâce à", "w": ["à cause de", "parce que", "car"], "c": "G2", "e": "Causa positiva: grâce à."},
+        {"id": "u18-02", "t": "mc", "q": "___ il pleuvait, nous sommes restés à la maison.", "a": "Comme", "w": ["Car", "Parce qu'", "Grâce à"], "c": "G2", "e": "No início da frase: comme."},
+        {"id": "u18-03", "t": "mc", "q": "Le vol a été annulé ___ mauvais temps.", "a": "en raison du", "w": ["grâce au", "parce que le", "puisque le"], "c": "G2", "e": "En raison de + nome (formal, neutro)."},
+        {"id": "u18-04", "t": "mc", "q": "L'augmentation des prix ___ la hausse du coût de l'énergie.", "a": "s'explique par", "w": ["est due de", "résulte à", "provient par"], "c": "G2", "e": "S'expliquer par; être dû à; résulter de; provenir de."},
+        {"id": "u18-05", "t": "mc", "q": "___ d'argent, le projet a été abandonné.", "a": "Faute", "w": ["Manque", "À cause", "Grâce"], "c": "L2", "e": "Faute de = por falta de."},
+        {"id": "u18-06", "t": "gap", "q": "Ce retard est ___ à une grève des transports.", "a": ["dû"], "c": "G4", "e": "Être dû à (masculino singular: dû)."},
+        {"id": "u18-07", "t": "gap", "q": "Ces problèmes de santé résultent ___ une mauvaise alimentation.", "a": ["d'"], "c": "G2", "e": "Résulter de."},
+        {"id": "u18-08", "t": "gap", "q": "___ tu es là, aide-moi à porter ces cartons.", "a": ["Puisque"], "c": "G2", "e": "Causa evidente para o interlocutor: puisque."},
+        {"id": "u18-09", "t": "fix", "q": "La pollution est due de l'augmentation du nombre de voitures.", "bad": "de", "a": ["à"], "full": "La pollution est due à l'augmentation du nombre de voitures.", "c": "G2", "e": "Être dû à."},
+        {"id": "u18-10", "t": "fix", "q": "Grâce à la tempête, les routes sont fermées.", "bad": "Grâce", "a": ["À cause de", "En raison de"], "full": "À cause de la tempête, les routes sont fermées.", "c": "L2", "e": "Causa negativa: à cause de / en raison de."},
+        {"id": "u18-11", "t": "transform", "p": "Reescreva com o verbo «s'expliquer par».", "q": "Les embouteillages viennent du nombre croissant de véhicules.", "a": ["Les embouteillages s'expliquent par le nombre croissant de véhicules"], "c": "L2", "e": "S'expliquer par + nome."},
+        {"id": "u18-12", "t": "register", "q": "Étant donné que les délais sont dépassés, nous annulons la commande.", "a": "formal", "c": "R", "e": "Étant donné que: conector formal."}
+      ]
+    },
+    {
+      "id": "u19", "n": 19, "phase": 2, "prio": 3, "theme": "economia",
+      "title": "Consequência e finalidade",
+      "goal": "Encadear efeitos e objetivos sem repetir donc e pour.",
+      "rules": [
+        {"title": "Consequência", "points": [
+          "donc, alors (oral), c'est pourquoi, par conséquent, de ce fait, si bien que + indicativo, tellement / si… que.",
+          "Verbos: entraîner, provoquer, causer, susciter (positivo ou negativo), permettre, favoriser, aboutir à, avoir pour conséquence de."]},
+        {"title": "Finalidade", "points": [
+          "pour / afin de / en vue de / de manière à / dans le but de + infinitivo.",
+          "pour que / afin que / de sorte que + subjuntivo (sujeitos diferentes).",
+          "permettre À qqn DE faire: «Ce logiciel permet aux clients de payer en ligne.»"],
+         "trap": "«permite aos clientes fazer» → «permet aux clients à faire»: errado. Permettre à qqn DE faire."}
+      ],
+      "items": [
+        {"id": "u19-01", "t": "mc", "q": "Il a beaucoup neigé, ___ les écoles sont fermées.", "a": "si bien que", "w": ["pour que", "afin que", "bien que"], "c": "G2", "e": "Consequência: si bien que + indicativo."},
+        {"id": "u19-02", "t": "mc", "q": "Ce service permet aux usagers ___ gagner du temps.", "a": "de", "w": ["à", "pour", "que"], "c": "G2", "e": "Permettre à qqn de faire."},
+        {"id": "u19-03", "t": "mc", "q": "La fermeture de l'usine a ___ la colère des habitants.", "a": "suscité", "w": ["permis", "favorisé", "abouti"], "c": "L2", "e": "Susciter: provocar (uma reação)."},
+        {"id": "u19-04", "t": "mc", "q": "Il parle ___ vite que personne ne le comprend.", "a": "si", "w": ["tant", "tellement de", "aussi"], "c": "G2", "e": "Si / tellement + adjetivo/advérbio + que."},
+        {"id": "u19-05", "t": "mc", "q": "Ils économisent ___ acheter une maison.", "a": "en vue d'", "w": ["pour qu'", "afin qu'", "de sorte d'"], "c": "G2", "e": "Mesmo sujeito: en vue de + infinitivo."},
+        {"id": "u19-06", "t": "gap", "q": "Le budget est en baisse ; ___ conséquent, plusieurs projets seront reportés.", "a": ["par"], "c": "G2", "e": "Par conséquent."},
+        {"id": "u19-07", "t": "gap", "q": "Cette mesure a ___ effet de réduire le chômage.", "a": ["pour"], "c": "G2", "e": "Avoir pour effet / pour conséquence de."},
+        {"id": "u19-08", "t": "gap", "q": "Parle plus fort de sorte que tout le monde ___ (entendre).", "a": ["entende"], "c": "G5", "e": "De sorte que (fim) + subjuntivo."},
+        {"id": "u19-09", "t": "fix", "q": "Les supermarchés permettent aux clients à faire leurs courses en une seule fois.", "bad": "à faire", "a": ["de faire"], "full": "Les supermarchés permettent aux clients de faire leurs courses en une seule fois.", "c": "G2", "e": "Erro real (Wattier)."},
+        {"id": "u19-10", "t": "fix", "q": "L'ouverture d'une usine fait des emplois dans la région.", "bad": "fait", "a": ["crée"], "full": "L'ouverture d'une usine crée des emplois dans la région.", "c": "L2", "e": "Verbo preciso: créer des emplois (Wattier)."},
+        {"id": "u19-11", "t": "transform", "p": "Junte as frases com «c'est pourquoi».", "q": "Les loyers ont beaucoup augmenté. Beaucoup de familles quittent le centre-ville.", "a": ["Les loyers ont beaucoup augmenté, c'est pourquoi beaucoup de familles quittent le centre-ville", "Les loyers ont beaucoup augmenté. C'est pourquoi beaucoup de familles quittent le centre-ville"], "c": "G2", "e": "C'est pourquoi introduz a consequência."},
+        {"id": "u19-12", "t": "pairs", "p": [["entraîner", "acarretar"], ["favoriser", "favorecer"], ["aboutir à", "resultar em"], ["susciter", "suscitar, provocar"], ["freiner", "frear, conter"]], "c": "L2", "e": "Verbos de consequência."}
+      ]
+    },
+    {
+      "id": "u20", "n": 20, "phase": 2, "prio": 3, "theme": "politica",
+      "title": "Oposição e concessão",
+      "goal": "Conceder e depois contra-argumentar, o movimento central do texto argumentativo.",
+      "rules": [
+        {"title": "Oposição", "points": [
+          "mais, alors que, tandis que, en revanche, au contraire, contrairement à, par contre (oral, aceito)."]},
+        {"title": "Concessão (reconhecer para depois rebater)", "points": [
+          "bien que + subjuntivo; même si + indicativo; malgré / en dépit de + nome.",
+          "pourtant, cependant, toutefois, néanmoins; certes… mais; il est vrai que… mais.",
+          "avoir beau + infinitivo: «Il a beau essayer, il n'y arrive pas.»",
+          "il n'en reste pas moins que / il n'empêche que (formal); quand même / tout de même (neutro)."],
+         "trap": "«Malgré que» é condenado pela norma: use bien que."}
+      ],
+      "items": [
+        {"id": "u20-01", "t": "mc", "q": "___ ses efforts, il n'a pas obtenu le poste.", "a": "Malgré", "w": ["Bien que", "Même si", "Pourtant"], "c": "G2", "e": "Malgré + nome."},
+        {"id": "u20-02", "t": "mc", "q": "Il a beau ___, personne ne l'écoute.", "a": "crier", "w": ["crie", "criant", "qu'il crie"], "c": "G5", "e": "Avoir beau + infinitivo."},
+        {"id": "u20-03", "t": "mc", "q": "Ma sœur adore la ville, ___ moi, je préfère la campagne.", "a": "tandis que", "w": ["bien que", "malgré", "pourtant que"], "c": "G2", "e": "Oposição simultânea: tandis que / alors que."},
+        {"id": "u20-04", "t": "mc", "q": "___, cette mesure coûte cher, mais elle sauvera des vies.", "a": "Certes", "w": ["Malgré", "Bien que", "Alors que"], "c": "L2", "e": "Certes… mais: concessão."},
+        {"id": "u20-05", "t": "gap", "q": "Le projet est coûteux. Il ___ reste pas moins indispensable.", "a": ["n'en"], "c": "G3", "e": "Il n'en reste pas moins que…"},
+        {"id": "u20-06", "t": "gap", "q": "___ que le festival perde de l'argent, il reste essentiel pour la ville.", "a": ["Bien"], "c": "G2", "e": "Bien que + subjuntivo (perde)."},
+        {"id": "u20-07", "t": "gap", "q": "Il était fatigué ; il est ___ venu à la fête.", "a": ["quand même", "tout de même"], "c": "L2", "e": "Quand même / tout de même."},
+        {"id": "u20-08", "t": "fix", "q": "Malgré que le temps soit mauvais, la course aura lieu.", "bad": "Malgré que", "a": ["Bien que"], "full": "Bien que le temps soit mauvais, la course aura lieu.", "c": "G2", "e": "Use bien que."},
+        {"id": "u20-09", "t": "fix", "q": "Même si le festival soit déficitaire, il attire des milliers de visiteurs.", "bad": "soit", "a": ["est"], "full": "Même si le festival est déficitaire, il attire des milliers de visiteurs.", "c": "G5", "e": "Même si + indicativo."},
+        {"id": "u20-10", "t": "transform", "p": "Reescreva com «avoir beau».", "q": "Bien qu'il travaille beaucoup, il n'avance pas.", "a": ["Il a beau travailler beaucoup, il n'avance pas"], "start": "Il a beau ", "c": "G5", "e": "Avoir beau + infinitivo."},
+        {"id": "u20-11", "t": "order", "a": "Il est vrai que la mesure est impopulaire mais elle est nécessaire", "x": ["malgré"], "c": "L2", "e": "Concessão em dois tempos."},
+        {"id": "u20-12", "t": "register", "q": "Il n'empêche que cette décision soulève de nombreuses questions.", "a": "formal", "c": "R", "e": "Il n'empêche que: concessão em registro formal."}
+      ]
+    },
+    {
+      "id": "u21", "n": 21, "phase": 2, "prio": 3, "theme": "ciencia",
+      "title": "Condição e hipótese completas",
+      "goal": "Dominar todas as combinações com si e as alternativas formais.",
+      "rules": [
+        {"title": "Si", "points": [
+          "si + presente → presente / futuro / imperativo: «Si tu as fini, tu peux sortir.»",
+          "si + imparfait → condicional; si + plus-que-parfait → condicional passado ou presente («Si j'avais étudié, je serais médecin aujourd'hui»).",
+          "dupla hipótese: si… et que + subjuntivo."]},
+        {"title": "Outras formas", "points": [
+          "au cas où / dans le cas où / dans l'hypothèse où + CONDICIONAL.",
+          "à condition que, à supposer que, en admettant que + subjuntivo.",
+          "si jamais + presente/imparfait; sans + nome → condicional passado: «Sans ton aide, j'aurais échoué.»"],
+         "trap": "«Caso você venha» puxa para «au cas où tu viennes»: errado. Au cas où tu viendrais."}
+      ],
+      "items": [
+        {"id": "u21-01", "t": "mc", "q": "Au cas où tu ___ en retard, préviens-moi.", "a": "serais", "w": ["sois", "es", "seras"], "c": "G5", "e": "Au cas où + condicional."},
+        {"id": "u21-02", "t": "mc", "q": "Si les chercheurs ___ plus de moyens, ils auraient trouvé un vaccin plus tôt.", "a": "avaient eu", "w": ["auraient eu", "avaient", "ont eu"], "c": "G5", "e": "Hipótese sobre o passado: si + plus-que-parfait."},
+        {"id": "u21-03", "t": "mc", "q": "En admettant que cette hypothèse ___ vraie, que faudrait-il faire ?", "a": "soit", "w": ["est", "serait", "sera"], "c": "G5", "e": "En admettant que + subjuntivo."},
+        {"id": "u21-04", "t": "mc", "q": "Sans ton aide, je n'___ jamais ___ ce projet.", "a": "aurais … terminé", "w": ["avais … terminé", "aurai … terminé", "aurais … terminer"], "c": "G5", "e": "Sans + nome → condicional passado."},
+        {"id": "u21-05", "t": "gap", "q": "Si tu ___ (avoir) le temps demain, passe me voir.", "a": ["as"], "c": "G5", "e": "Si + presente → imperativo."},
+        {"id": "u21-06", "t": "gap", "q": "S'il fait beau et qu'il ___ (avoir) du vent, on ira faire de la voile.", "a": ["ait", "y ait"], "c": "G5", "e": "Si… et que + subjuntivo."},
+        {"id": "u21-07", "t": "gap", "q": "Si j'avais accepté ce poste, je ___ (vivre) à Montréal aujourd'hui.", "a": ["vivrais"], "c": "G5", "e": "Consequência no presente de hipótese passada: condicional presente."},
+        {"id": "u21-08", "t": "fix", "q": "Au cas où il pleuve, la fête aura lieu à l'intérieur.", "bad": "pleuve", "a": ["pleuvrait"], "full": "Au cas où il pleuvrait, la fête aura lieu à l'intérieur.", "c": "G5", "e": "Au cas où + condicional."},
+        {"id": "u21-09", "t": "fix", "q": "Si on aurait plus de temps, on ferait plus d'expériences.", "bad": "aurait", "a": ["avait"], "full": "Si on avait plus de temps, on ferait plus d'expériences.", "c": "G5", "e": "Nunca condicional depois de si."},
+        {"id": "u21-10", "t": "transform", "p": "Reescreva com «à condition que».", "q": "Je viendrai si tu m'invites.", "a": ["Je viendrai à condition que tu m'invites"], "c": "G5", "e": "À condition que + subjuntivo (invites: mesma forma do presente)."},
+        {"id": "u21-11", "t": "order", "a": "Si jamais tu changes d'avis appelle-moi", "x": ["changerais"], "c": "G5", "e": "Si jamais + presente."},
+        {"id": "u21-12", "t": "dict", "a": "Si nous avions su, nous serions partis plus tôt.", "c": "G5", "e": "Si + plus-que-parfait → condicional passado."}
+      ]
+    },
+    {
+      "id": "u22", "n": 22, "phase": 2, "prio": 2, "theme": "tecnologia",
+      "title": "Relativos compostos",
+      "goal": "Usar preposição + lequel/qui e escolher entre dont e duquel.",
+      "rules": [
+        {"title": "Com preposição", "points": [
+          "Coisa: sur lequel, avec laquelle, pour lesquels, grâce auquel… «L'application grâce à laquelle je réserve…»",
+          "à + lequel = auquel / à laquelle / auxquels / auxquelles. de + lequel = duquel / de laquelle / desquels / desquelles.",
+          "Pessoa: preposição + qui. «La collègue avec qui je travaille.»"]},
+        {"title": "Dont × duquel", "points": [
+          "dont: complemento com de ligado diretamente ao verbo ou nome.",
+          "duquel: depois de locução com de (au milieu de, à côté de, près de, à cause de): «le parc au milieu duquel…».",
+          "O gênero vem do antecedente: «quelque chose auquel» (quelque chose é masculino)."]}
+      ],
+      "items": [
+        {"id": "u22-01", "t": "mc", "q": "C'est le logiciel ___ je travaille depuis un an.", "a": "sur lequel", "w": ["que", "dont", "sur laquelle"], "c": "G3", "e": "Travailler sur qqch → sur lequel (logiciel, masc.)."},
+        {"id": "u22-02", "t": "mc", "q": "Ce sont des questions ___ nous devons réfléchir.", "a": "auxquelles", "w": ["dont", "auxquels", "à qui"], "c": "G3", "e": "Réfléchir à + questions (fem. pl.) → auxquelles."},
+        {"id": "u22-03", "t": "mc", "q": "Voici l'ami ___ j'ai créé cette entreprise.", "a": "avec qui", "w": ["avec lequel que", "dont", "qui"], "c": "G3", "e": "Pessoa: preposição + qui (avec lequel também é possível)."},
+        {"id": "u22-04", "t": "mc", "q": "Le bâtiment à côté ___ se trouve la gare est en travaux.", "a": "duquel", "w": ["dont", "de qui", "auquel"], "c": "G3", "e": "Locução à côté de → duquel (não dont)."},
+        {"id": "u22-05", "t": "gap", "q": "Le réseau social ___ il est inscrit compte un milliard d'utilisateurs.", "a": ["auquel"], "c": "G3", "e": "S'inscrire à → auquel."},
+        {"id": "u22-06", "t": "gap", "q": "Les raisons pour ___ il a démissionné restent obscures.", "a": ["lesquelles"], "c": "G3", "e": "Raisons (fem. pl.) → pour lesquelles."},
+        {"id": "u22-07", "t": "fix", "q": "C'est quelque chose à laquelle on ne peut rester insensible.", "bad": "à laquelle", "a": ["auquel"], "full": "C'est quelque chose auquel on ne peut rester insensible.", "c": "G4", "e": "Erro real (Réussir): quelque chose é masculino."},
+        {"id": "u22-08", "t": "fix", "q": "L'application que je vous ai parlé est gratuite.", "bad": "que", "a": ["dont"], "full": "L'application dont je vous ai parlé est gratuite.", "c": "G3", "e": "Parler de → dont."},
+        {"id": "u22-09", "t": "transform", "p": "Junte com um relativo composto.", "q": "J'ai acheté un ordinateur. Grâce à cet ordinateur, je travaille à la maison.", "a": ["J'ai acheté un ordinateur grâce auquel je travaille à la maison"], "c": "G3", "e": "Grâce à + lequel = grâce auquel."},
+        {"id": "u22-10", "t": "order", "a": "La plateforme sur laquelle je publie mes vidéos est gratuite", "x": ["dont"], "c": "G3", "e": "Sur laquelle (plateforme, fem.)."},
+        {"id": "u22-11", "t": "pairs", "p": [["à + lequel", "auquel"], ["à + lesquelles", "auxquelles"], ["de + lequel", "duquel"], ["de + lesquels", "desquels"]], "c": "G3", "e": "Contrações dos relativos compostos."}
+      ]
+    },
+    {
+      "id": "u23", "n": 23, "phase": 2, "prio": 2, "theme": "justica",
+      "title": "Voz passiva e alternativas",
+      "goal": "Usar a passiva quando ela serve e as alternativas francesas quando soam melhor.",
+      "rules": [
+        {"title": "Passiva", "points": [
+          "être + particípio que concorda com o sujeito: «Le suspect a été interpellé.» «Les lois ont été votées.»",
+          "Agente: par (ação); de (estado, sentimento): «aimé de tous», «entouré de policiers»."]},
+        {"title": "Alternativas (mais naturais)", "points": [
+          "on: «On a volé ma voiture.»",
+          "pronominal passivo: «Ce livre se vend bien.» «Le français se parle au Québec.»",
+          "se faire + infinitivo (sujeito sofre): «Il s'est fait voler son portefeuille.»",
+          "se voir + infinitivo: «Elle s'est vu refuser l'entrée.»",
+          "impessoal: «Il a été décidé que…»"]}
+      ],
+      "items": [
+        {"id": "u23-01", "t": "mc", "q": "Les deux suspects ___ hier soir.", "a": "ont été arrêtés", "w": ["ont arrêté", "sont arrêté", "ont été arrêté"], "c": "G4", "e": "Passiva no passé composé; concorda com o sujeito (arrêtés)."},
+        {"id": "u23-02", "t": "mc", "q": "Il ___ voler son vélo devant la gare.", "a": "s'est fait", "w": ["a été", "s'est été", "a fait"], "c": "G5", "e": "Se faire + infinitivo."},
+        {"id": "u23-03", "t": "mc", "q": "Ce professeur est respecté ___ ses élèves.", "a": "de", "w": ["à", "pour", "chez"], "c": "G2", "e": "Sentimento/estado: de (par também é aceito)."},
+        {"id": "u23-04", "t": "mc", "q": "Ce genre de vin ___ avec du fromage.", "a": "se boit", "w": ["est bu par", "boit", "se bu"], "c": "G5", "e": "Pronominal passivo: uso geral."},
+        {"id": "u23-05", "t": "gap", "q": "La nouvelle loi a été ___ (adopter) par l'Assemblée.", "a": ["adoptée"], "c": "G4", "e": "Concorda com la loi."},
+        {"id": "u23-06", "t": "gap", "q": "Elle s'est ___ (voir) refuser l'accès au tribunal.", "a": ["vu"], "c": "G4", "e": "Se voir + infinitivo: vu invariável."},
+        {"id": "u23-07", "t": "fix", "q": "Ces maisons se vend très bien en ce moment.", "bad": "vend", "a": ["vendent"], "full": "Ces maisons se vendent très bien en ce moment.", "c": "G4", "e": "O pronominal passivo concorda com o sujeito (ces maisons)."},
+        {"id": "u23-08", "t": "transform", "p": "Passe para a voz passiva.", "q": "La police a interpellé le suspect.", "a": ["Le suspect a été interpellé par la police"], "c": "G5", "e": "Le suspect + a été + interpellé + par."},
+        {"id": "u23-09", "t": "transform", "p": "Reescreva com «on».", "q": "Mon portefeuille a été volé dans le métro.", "a": ["On a volé mon portefeuille dans le métro", "On m'a volé mon portefeuille dans le métro"], "start": "On ", "c": "G5", "e": "O francês prefere on à passiva sem agente."},
+        {"id": "u23-10", "t": "order", "a": "Il a été décidé que la séance serait reportée", "x": ["par"], "c": "G5", "e": "Impessoal: il a été décidé que."},
+        {"id": "u23-11", "t": "dict", "a": "L'accusé a été condamné à cinq ans de prison.", "c": "G4", "e": "Condamné à + pena."}
+      ]
+    }
+  ]
+}

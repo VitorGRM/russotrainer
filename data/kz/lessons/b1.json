@@ -1,0 +1,2260 @@
+{
+ "lessons": [
+  {
+   "id": "k33",
+   "n": 33,
+   "level": "B1",
+   "module": "B1 · Тәуелсіз",
+   "title": "Кесемше — encadear ações e verbos compostos",
+   "kz": "Көсемше. Күрделі етістік",
+   "goal": "Encadear ações com -ып/-іп e dar nuances com verbos auxiliares (ал, бер, шық, қой, көр, кет).",
+   "rules": [
+    {
+     "title": "Encadear: -ып/-іп/-п",
+     "points": [
+      "O converbo liga ações em sequência; só o último verbo leva tempo e pessoa: Ол үйге келіп, тамақ ішіп, демалды (chegou em casa, comeu e descansou).",
+      "Também indica o modo: Ол күліп сөйледі (falou rindo), жүгіріп келді (veio correndo)."
+     ]
+    },
+    {
+     "title": "Verbos auxiliares",
+     "points": [
+      "ал — para si: жазып алдым (anotei para mim). бер — para outro: айтып берші (me conta).",
+      "шық — até o fim: оқып шықтым (li o livro inteiro). қой — ação concluída, «já»: ішіп қойды (bebeu tudo).",
+      "көр — tentar: киіп көріңіз (experimente). кет — de repente, «sem querer»: ұмытып кеттім (acabei esquecendo).",
+      "отыр / тұр / жүр — continuidade: ойлап отырмын (estou pensando), жұмыс істеп жүр (anda trabalhando)."
+     ],
+     "ex": [
+      [
+       "Мына көйлекті киіп көріңізші.",
+       "Experimente este vestido, por favor."
+      ],
+      [
+       "Кітапты бір күнде оқып шықтым.",
+       "Li o livro inteiro em um dia."
+      ]
+     ],
+     "trap": "O verbo principal fica no converbo e o auxiliar perde o sentido literal: «алу» em «жазып алу» não é «pegar»."
+    }
+   ],
+   "vocab": [
+    [
+     "жүгіру",
+     "correr"
+    ],
+    [
+     "күлу",
+     "rir"
+    ],
+    [
+     "ұмыту",
+     "esquecer"
+    ],
+    [
+     "кию",
+     "vestir"
+    ],
+    [
+     "шешу",
+     "tirar; resolver"
+    ],
+    [
+     "ойлау",
+     "pensar"
+    ],
+    [
+     "тырысу",
+     "tentar, esforçar-se"
+    ],
+    [
+     "аяқтау",
+     "terminar"
+    ],
+    [
+     "жиналыс",
+     "reunião"
+    ],
+    [
+     "тапсырма",
+     "tarefa"
+    ],
+    [
+     "бірден",
+     "imediatamente"
+    ],
+    [
+     "сосын",
+     "depois"
+    ]
+   ],
+   "dialog": {
+    "title": "O dia cheio",
+    "lines": [
+     [
+      "A",
+      "Бүгін не істедің? Айтып берші.",
+      "O que você fez hoje? Me conta."
+     ],
+     [
+      "B",
+      "Таңертең тұрып, жуынып, жұмысқа жүгіріп бардым.",
+      "De manhã levantei, me lavei e fui correndo para o trabalho."
+     ],
+     [
+      "B",
+      "Жиналыста бәрін жазып алдым, сосын есепті жазып шықтым.",
+      "Na reunião anotei tudo, depois escrevi o relatório inteiro."
+     ],
+     [
+      "A",
+      "Түскі ас ішуге үлгердің бе?",
+      "Deu tempo de almoçar?"
+     ],
+     [
+      "B",
+      "Жоқ, ұмытып кетіппін! Қазір бірдеңе жеп алайын.",
+      "Não, acabei esquecendo! Vou comer alguma coisa agora."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k33-01",
+     "t": "mc",
+     "q": "«Chegou em casa e comeu»:",
+     "a": "Үйге келіп, тамақ ішті.",
+     "w": [
+      "Үйге келді, тамақ ішіп.",
+      "Үйге келу, тамақ ішті.",
+      "Үйге келе, тамақ ішіп."
+     ],
+     "c": "V",
+     "e": "Só o último verbo leva tempo."
+    },
+    {
+     "id": "k33-02",
+     "t": "mc",
+     "q": "«Li o livro inteiro»:",
+     "a": "Кітапты оқып шықтым.",
+     "w": [
+      "Кітапты оқып бердім.",
+      "Кітапты оқып көрдім.",
+      "Кітапты оқып кеттім."
+     ],
+     "c": "V",
+     "e": "Шық = até o fim."
+    },
+    {
+     "id": "k33-03",
+     "t": "mc",
+     "q": "«Experimente (a roupa)», formal:",
+     "a": "Киіп көріңіз.",
+     "w": [
+      "Киіп алыңыз.",
+      "Киіп шығыңыз.",
+      "Киіп қойыңыз."
+     ],
+     "c": "V",
+     "e": "Көр = tentar."
+    },
+    {
+     "id": "k33-04",
+     "t": "mc",
+     "q": "«Me conta»:",
+     "a": "Айтып берші.",
+     "w": [
+      "Айтып алшы.",
+      "Айтып көрші.",
+      "Айтып кетші."
+     ],
+     "c": "V",
+     "e": "Бер = ação para outra pessoa."
+    },
+    {
+     "id": "k33-05",
+     "t": "mc",
+     "q": "«Anotei (para mim)»:",
+     "a": "Жазып алдым.",
+     "w": [
+      "Жазып бердім.",
+      "Жазып көрдім.",
+      "Жазып шықтым."
+     ],
+     "c": "V",
+     "e": "Ал = para si."
+    },
+    {
+     "id": "k33-06",
+     "t": "mc",
+     "q": "Ұмытып кеттім significa:",
+     "a": "Acabei esquecendo.",
+     "w": [
+      "Fui embora e esqueci.",
+      "Tentei esquecer.",
+      "Esqueci de propósito."
+     ],
+     "c": "V",
+     "e": "Кет = de repente, sem querer."
+    },
+    {
+     "id": "k33-07",
+     "t": "gap",
+     "q": "Ол жүгір___ келді. (Veio correndo.)",
+     "a": [
+      "іп"
+     ],
+     "c": "V",
+     "e": "Жүгіріп."
+    },
+    {
+     "id": "k33-08",
+     "t": "gap",
+     "q": "Мен ойлап ___мын. (Estou pensando — sentado.)",
+     "a": [
+      "отыр"
+     ],
+     "c": "V",
+     "e": "Ойлап отырмын."
+    },
+    {
+     "id": "k33-09",
+     "t": "pairs",
+     "p": [
+      [
+       "оқып шығу",
+       "ler até o fim"
+      ],
+      [
+       "жазып алу",
+       "anotar"
+      ],
+      [
+       "айтып беру",
+       "contar a alguém"
+      ],
+      [
+       "киіп көру",
+       "experimentar"
+      ],
+      [
+       "ұмытып кету",
+       "acabar esquecendo"
+      ]
+     ],
+     "c": "V",
+     "e": "Verbos compostos."
+    },
+    {
+     "id": "k33-10",
+     "t": "listen",
+     "audio": "Таңертең тұрып, жуынып, жұмысқа бардым.",
+     "q": "Quantas ações em sequência?",
+     "a": "três",
+     "w": [
+      "duas",
+      "uma",
+      "quatro"
+     ],
+     "c": "L",
+     "e": "Тұрып, жуынып, бардым."
+    },
+    {
+     "id": "k33-11",
+     "t": "order",
+     "a": "Ол үйге келіп тамақ ішті",
+     "x": [
+      "келді"
+     ],
+     "c": "S",
+     "e": "Chegou em casa e comeu."
+    },
+    {
+     "id": "k33-12",
+     "t": "dict",
+     "a": "Мына көйлекті киіп көріңізші.",
+     "c": "F",
+     "e": "Киіп көріңізші."
+    }
+   ]
+  },
+  {
+   "id": "k34",
+   "n": 34,
+   "level": "B1",
+   "module": "B1 · Тәуелсіз",
+   "title": "Есімше — orações relativas (particípios)",
+   "kz": "Есімше",
+   "goal": "Descrever pessoas e coisas com particípios no lugar de «que».",
+   "rules": [
+    {
+     "title": "O cazaque não tem «que»",
+     "points": [
+      "Em vez de «o homem que veio ontem», diz-se «ontem veio-do homem»: кеше келген адам.",
+      "-ған/-ген (passado): мен оқыған кітап (o livro que eu li), кеше келген қонақ.",
+      "-атын/-етін/-йтын/-йтін (habitual ou futuro): Алматыда тұратын досым (meu amigo que mora em Almaty), ертең болатын жиналыс (a reunião de amanhã).",
+      "-ар/-ер/-р (futuro): келер жыл (o ano que vem), айтар сөз (palavra a dizer)."
+     ]
+    },
+    {
+     "title": "Sujeito da relativa",
+     "points": [
+      "O sujeito pode ficar no nominativo (мен оқыған кітап) ou no genitivo com possessivo (менің оқыған кітабым).",
+      "Negativo: -ма + ған: мен көрмеген фильм (o filme que eu não vi).",
+      "Agente: -ушы/-уші: оқушы (aluno), жазушы (escritor), сатушы (vendedor)."
+     ],
+     "ex": [
+      [
+       "Кеше көрген фильм өте қызық болды.",
+       "O filme que vi ontem foi muito interessante."
+      ],
+      [
+       "Қазақша сөйлейтін шетелдіктер көбейіп жатыр.",
+       "Estão aumentando os estrangeiros que falam cazaque."
+      ]
+     ],
+     "trap": "A relativa vem ANTES do nome, inteira: [мен кеше кітапханадан алған] кітап."
+    }
+   ],
+   "vocab": [
+    [
+     "жазушы",
+     "escritor"
+    ],
+    [
+     "сатушы",
+     "vendedor"
+    ],
+    [
+     "оқырман",
+     "leitor"
+    ],
+    [
+     "қонақ",
+     "visita, hóspede"
+    ],
+    [
+     "көрші",
+     "vizinho"
+    ],
+    [
+     "таныс",
+     "conhecido"
+    ],
+    [
+     "атақты",
+     "famoso"
+    ],
+    [
+     "жас",
+     "jovem"
+    ],
+    [
+     "сыйлау",
+     "respeitar"
+    ],
+    [
+     "тану",
+     "reconhecer, conhecer"
+    ],
+    [
+     "көбею",
+     "aumentar"
+    ],
+    [
+     "келер жыл",
+     "o ano que vem"
+    ]
+   ],
+   "dialog": {
+    "title": "A festa",
+    "lines": [
+     [
+      "A",
+      "Анау қызыл көйлек киген қыз кім?",
+      "Quem é aquela moça de vestido vermelho?"
+     ],
+     [
+      "B",
+      "Ол — Алматыда тұратын менің әпкем.",
+      "É minha irmã que mora em Almaty."
+     ],
+     [
+      "A",
+      "Ал оның қасында тұрған жігіт ше?",
+      "E o rapaz que está ao lado dela?"
+     ],
+     [
+      "B",
+      "Ол — атақты жазушы. Мен оқыған кітаптың авторы.",
+      "É um escritor famoso. O autor do livro que eu li."
+     ],
+     [
+      "A",
+      "Сен айтқан кітап па?",
+      "O livro de que você falou?"
+     ],
+     [
+      "B",
+      "Иә! Келер жылы жаңа кітабы шығады.",
+      "Sim! No ano que vem sai o novo livro dele."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k34-01",
+     "t": "mc",
+     "q": "«O homem que veio ontem»:",
+     "a": "кеше келген адам",
+     "w": [
+      "адам кеше келген",
+      "кеше келді адам",
+      "кеше келетін адам"
+     ],
+     "c": "V",
+     "e": "Relativa antes do nome, -ген."
+    },
+    {
+     "id": "k34-02",
+     "t": "mc",
+     "q": "«Meu amigo que mora em Almaty»:",
+     "a": "Алматыда тұратын досым",
+     "w": [
+      "Алматыда тұрған досым",
+      "Алматыда тұрады досым",
+      "досым Алматыда тұратын"
+     ],
+     "c": "V",
+     "e": "-атын = habitual."
+    },
+    {
+     "id": "k34-03",
+     "t": "mc",
+     "q": "«O filme que eu não vi»:",
+     "a": "мен көрмеген фильм",
+     "w": [
+      "мен көрген емес фильм",
+      "мен көрмедім фильм",
+      "мен көрмейтін фильм"
+     ],
+     "c": "V",
+     "e": "Көр + ме + ген."
+    },
+    {
+     "id": "k34-04",
+     "t": "mc",
+     "q": "«O ano que vem»:",
+     "a": "келер жыл",
+     "w": [
+      "келген жыл",
+      "келетін жылы",
+      "келді жыл"
+     ],
+     "c": "V",
+     "e": "-ер = futuro."
+    },
+    {
+     "id": "k34-05",
+     "t": "mc",
+     "q": "«O livro que eu li» (com genitivo):",
+     "a": "менің оқыған кітабым",
+     "w": [
+      "менің оқыған кітап",
+      "мен оқыған кітабым",
+      "менің оқыдым кітабым"
+     ],
+     "c": "P",
+     "e": "Genitivo + possessivo no nome."
+    },
+    {
+     "id": "k34-06",
+     "t": "gap",
+     "q": "Кеше көр___ фильм қызық болды. (O filme que vi ontem…)",
+     "a": [
+      "ген"
+     ],
+     "c": "V",
+     "e": "Көрген."
+    },
+    {
+     "id": "k34-07",
+     "t": "gap",
+     "q": "Ертең бол___ жиналыс. (A reunião que vai acontecer amanhã.)",
+     "a": [
+      "атын"
+     ],
+     "c": "V",
+     "e": "Болатын."
+    },
+    {
+     "id": "k34-08",
+     "t": "mc",
+     "q": "сату (vender) → quem vende:",
+     "a": "сатушы",
+     "w": [
+      "сатқыш",
+      "сатаушы",
+      "сатшы"
+     ],
+     "c": "H",
+     "e": "-ушы = agente."
+    },
+    {
+     "id": "k34-09",
+     "t": "pairs",
+     "p": [
+      [
+       "жазушы",
+       "escritor"
+      ],
+      [
+       "оқырман",
+       "leitor"
+      ],
+      [
+       "таныс",
+       "conhecido"
+      ],
+      [
+       "атақты",
+       "famoso"
+      ],
+      [
+       "қонақ",
+       "visita"
+      ]
+     ],
+     "c": "L",
+     "e": "Pessoas."
+    },
+    {
+     "id": "k34-10",
+     "t": "listen",
+     "audio": "Анау қызыл көйлек киген қыз кім?",
+     "q": "Sobre quem perguntam?",
+     "a": "a moça de vestido vermelho",
+     "w": [
+      "a moça que vai cantar",
+      "o rapaz de camisa vermelha",
+      "a irmã que mora em Almaty"
+     ],
+     "c": "L",
+     "e": "Көйлек киген = que veste o vestido."
+    },
+    {
+     "id": "k34-11",
+     "t": "order",
+     "a": "Мен оқыған кітап өте қызық",
+     "x": [
+      "оқыдым"
+     ],
+     "c": "S",
+     "e": "O livro que li é muito interessante."
+    },
+    {
+     "id": "k34-12",
+     "t": "dict",
+     "a": "Бұл — Алматыда тұратын досым.",
+     "c": "F",
+     "e": "Тұратын."
+    }
+   ]
+  },
+  {
+   "id": "k35",
+   "n": 35,
+   "level": "B1",
+   "module": "B1 · Тәуелсіз",
+   "title": "Етіс — vozes do verbo",
+   "kz": "Етіс",
+   "goal": "Usar a passiva, a reflexiva, a recíproca e a causativa.",
+   "rules": [
+    {
+     "title": "Quatro vozes, quatro sufixos",
+     "points": [
+      "Passiva -ыл/-іл (ou -л depois de vogal; -ын/-ін depois de л): жазу → жазылу (ser escrito), салу → салыну (ser construído), оқу → оқылу.",
+      "Reflexiva -ын/-ін/-н: жуу → жуыну (lavar-se), кию → киіну (vestir-se), дайындау → дайындалу (preparar-se).",
+      "Recíproca -ыс/-іс/-с: сөйлесу (conversar), көрісу (ver-se), амандасу (cumprimentar-se), көмектесу (ajudar).",
+      "Causativa -дыр/-дір/-тыр/-тір, -ғыз/-гіз/-қыз/-кіз, -т: оқу → оқыту (ensinar = fazer ler), жүру → жүргізу (conduzir), пісу → пісіру (cozinhar), білу → білдіру (informar)."
+     ]
+    },
+    {
+     "title": "A passiva na prática",
+     "points": [
+      "O agente quase nunca aparece; se aparecer, usa-se тарапынан (por parte de): Бұл үй 1990 жылы салынды.",
+      "Muito comum em notícias e avisos: Дүкен жабылды (a loja fechou/foi fechada), Сабақ басталды."
+     ],
+     "ex": [
+      [
+       "Кітап қазақ тіліне аударылды.",
+       "O livro foi traduzido para o cazaque."
+      ],
+      [
+       "Ол балаларға математика оқытады.",
+       "Ele ensina matemática às crianças."
+      ]
+     ],
+     "trap": "Сөйлеу = falar; сөйлесу = conversar (um com o outro)."
+    }
+   ],
+   "vocab": [
+    [
+     "салу",
+     "construir; pôr"
+    ],
+    [
+     "аудару",
+     "traduzir"
+    ],
+    [
+     "ашу",
+     "abrir"
+    ],
+    [
+     "жабу",
+     "fechar"
+    ],
+    [
+     "оқыту",
+     "ensinar"
+    ],
+    [
+     "үйрету",
+     "ensinar (uma habilidade)"
+    ],
+    [
+     "пісіру",
+     "cozinhar"
+    ],
+    [
+     "хабарлау",
+     "anunciar"
+    ],
+    [
+     "көмектесу",
+     "ajudar"
+    ],
+    [
+     "амандасу",
+     "cumprimentar-se"
+    ],
+    [
+     "ғимарат",
+     "prédio"
+    ],
+    [
+     "жарияландыру",
+     "publicar"
+    ]
+   ],
+   "dialog": {
+    "title": "Notícias da cidade",
+    "lines": [
+     [
+      "A",
+      "Естідің бе? Біздің көшеде жаңа кітапхана ашылды.",
+      "Ouviu? Abriram uma biblioteca nova na nossa rua."
+     ],
+     [
+      "B",
+      "Қашан салынды?",
+      "Quando foi construída?"
+     ],
+     [
+      "A",
+      "Өткен жылы салынды. Ол жерде тіл курстары да өткізіледі.",
+      "Foi construída no ano passado. Lá também acontecem cursos de idiomas."
+     ],
+     [
+      "B",
+      "Кім оқытады?",
+      "Quem ensina?"
+     ],
+     [
+      "A",
+      "Менің көршім қазақ тілін оқытады. Кешке сонда кездесіп, сөйлесейік.",
+      "Meu vizinho ensina cazaque. À noite vamos nos encontrar lá e conversar."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k35-01",
+     "t": "mc",
+     "q": "жазу → passiva (ser escrito)",
+     "a": "жазылу",
+     "w": [
+      "жазыну",
+      "жазысу",
+      "жаздыру"
+     ],
+     "c": "V",
+     "e": "-ыл = passiva."
+    },
+    {
+     "id": "k35-02",
+     "t": "mc",
+     "q": "салу → passiva (ser construído)",
+     "a": "салыну",
+     "w": [
+      "салылу",
+      "салысу",
+      "салдыру"
+     ],
+     "c": "V",
+     "e": "Radical em л → -ын."
+    },
+    {
+     "id": "k35-03",
+     "t": "mc",
+     "q": "«conversar (um com o outro)»:",
+     "a": "сөйлесу",
+     "w": [
+      "сөйлеу",
+      "сөйленү",
+      "сөйлету"
+     ],
+     "c": "V",
+     "e": "-с = recíproca."
+    },
+    {
+     "id": "k35-04",
+     "t": "mc",
+     "q": "оқу → «ensinar» (fazer ler)",
+     "a": "оқыту",
+     "w": [
+      "оқылу",
+      "оқысу",
+      "оқыну"
+     ],
+     "c": "V",
+     "e": "-т = causativa."
+    },
+    {
+     "id": "k35-05",
+     "t": "mc",
+     "q": "«vestir-se»:",
+     "a": "киіну",
+     "w": [
+      "киілу",
+      "киісу",
+      "кигізу"
+     ],
+     "c": "V",
+     "e": "-н = reflexiva."
+    },
+    {
+     "id": "k35-06",
+     "t": "mc",
+     "q": "«O livro foi traduzido»:",
+     "a": "Кітап аударылды.",
+     "w": [
+      "Кітап аударды.",
+      "Кітап аударысты.",
+      "Кітап аудартты."
+     ],
+     "c": "V",
+     "e": "Аудар + ыл + ды."
+    },
+    {
+     "id": "k35-07",
+     "t": "gap",
+     "q": "Біздің көшеде жаңа дүкен аш___ды. (Abriram uma loja nova.)",
+     "a": [
+      "ыл"
+     ],
+     "c": "V",
+     "e": "Ашылды."
+    },
+    {
+     "id": "k35-08",
+     "t": "gap",
+     "q": "Анам тамақ піс___ жатыр. (Mamãe está cozinhando.)",
+     "a": [
+      "іріп"
+     ],
+     "c": "V",
+     "e": "Пісіру → пісіріп."
+    },
+    {
+     "id": "k35-09",
+     "t": "pairs",
+     "p": [
+      [
+       "ашылу",
+       "abrir-se, ser aberto"
+      ],
+      [
+       "жабылу",
+       "fechar-se"
+      ],
+      [
+       "амандасу",
+       "cumprimentar-se"
+      ],
+      [
+       "үйрету",
+       "ensinar"
+      ],
+      [
+       "көмектесу",
+       "ajudar"
+      ]
+     ],
+     "c": "V",
+     "e": "Vozes."
+    },
+    {
+     "id": "k35-10",
+     "t": "listen",
+     "audio": "Бұл ғимарат бір мың тоғыз жүз жетпісінші жылы салынды.",
+     "q": "Quando foi construído o prédio?",
+     "a": "em 1970",
+     "w": [
+      "em 1917",
+      "em 1990",
+      "em 1907"
+     ],
+     "c": "L",
+     "e": "Жетпісінші жылы = no ano setenta."
+    },
+    {
+     "id": "k35-11",
+     "t": "order",
+     "a": "Ол балаларға математика оқытады",
+     "x": [
+      "оқылады"
+     ],
+     "c": "S",
+     "e": "Ele ensina matemática às crianças."
+    },
+    {
+     "id": "k35-12",
+     "t": "dict",
+     "a": "Дүкен сағат онда жабылады.",
+     "c": "F",
+     "e": "A loja fecha às dez."
+    }
+   ]
+  },
+  {
+   "id": "k36",
+   "n": 36,
+   "level": "B1",
+   "module": "B1 · Тәуелсіз",
+   "title": "Құрмалас сөйлем — causa, tempo, concessão, finalidade",
+   "kz": "Құрмалас сөйлем",
+   "goal": "Ligar orações para argumentar: porque, quando, embora, para, depois de.",
+   "rules": [
+    {
+     "title": "Orações com sufixo",
+     "points": [
+      "Causa: -ғандықтан/-гендіктен: Жаңбыр жауғандықтан, біз үйде қалдық (como choveu, ficamos em casa).",
+      "Tempo: -ғанда/-генде (quando): Мен келгенде, ол ұйықтап жатыр еді. Depois: -ғаннан кейін. Antes: -мас бұрын / -уден бұрын.",
+      "Concessão: -са да/-се де (embora, mesmo que): Шаршасам да, жұмысты бітірдім.",
+      "Finalidade: -у үшін (para): Қазақ тілін үйрену үшін күнде оқимын."
+     ]
+    },
+    {
+     "title": "Conjunções",
+     "points": [
+      "бірақ (mas), сондықтан (por isso), өйткені / себебі (porque), әйтпесе (senão), сол себепті (por esse motivo).",
+      "Өйткені vem no começo da segunda oração: Мен бармаймын, өйткені ауырып тұрмын."
+     ],
+     "ex": [
+      [
+       "Тамақ ішкеннен кейін серуендедік.",
+       "Depois de comer, passeamos."
+      ],
+      [
+       "Ерте тұр, әйтпесе кешігесің.",
+       "Levante cedo, senão você se atrasa."
+      ]
+     ],
+     "trap": "-ғандықтан e өйткені dizem a mesma coisa; o primeiro é mais formal e a causa vem antes."
+    }
+   ],
+   "vocab": [
+    [
+     "бірақ",
+     "mas"
+    ],
+    [
+     "сондықтан",
+     "por isso"
+    ],
+    [
+     "өйткені",
+     "porque"
+    ],
+    [
+     "себебі",
+     "porque, a razão é"
+    ],
+    [
+     "әйтпесе",
+     "senão"
+    ],
+    [
+     "үшін",
+     "para, por"
+    ],
+    [
+     "кейін",
+     "depois"
+    ],
+    [
+     "бұрын",
+     "antes"
+    ],
+    [
+     "қалу",
+     "ficar"
+    ],
+    [
+     "кешігу",
+     "atrasar-se"
+    ],
+    [
+     "бітіру",
+     "terminar"
+    ],
+    [
+     "серуендеу",
+     "passear"
+    ]
+   ],
+   "dialog": {
+    "title": "Por que você aprende cazaque?",
+    "lines": [
+     [
+      "A",
+      "Сен неге қазақ тілін үйреніп жүрсің?",
+      "Por que você está aprendendo cazaque?"
+     ],
+     [
+      "B",
+      "Келесі жылы Астанада жұмыс істеймін, сондықтан тіл білуім керек.",
+      "No ano que vem vou trabalhar em Astana, por isso preciso saber a língua."
+     ],
+     [
+      "A",
+      "Қиын емес пе?",
+      "Não é difícil?"
+     ],
+     [
+      "B",
+      "Қиын болса да, қызық. Грамматикасы логикалы.",
+      "Embora seja difícil, é interessante. A gramática é lógica."
+     ],
+     [
+      "A",
+      "Қалай үйренесің?",
+      "Como você estuda?"
+     ],
+     [
+      "B",
+      "Жұмыстан келгеннен кейін бір сағат оқимын. Тез сөйлеу үшін күнде тыңдаймын.",
+      "Depois de voltar do trabalho, estudo uma hora. Para falar rápido, escuto todo dia."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k36-01",
+     "t": "mc",
+     "q": "«Como choveu, ficamos em casa»:",
+     "a": "Жаңбыр жауғандықтан, үйде қалдық.",
+     "w": [
+      "Жаңбыр жауса да, үйде қалдық.",
+      "Жаңбыр жауу үшін, үйде қалдық.",
+      "Жаңбыр жауғанда кейін, үйде қалдық."
+     ],
+     "c": "S",
+     "e": "-ғандықтан = causa."
+    },
+    {
+     "id": "k36-02",
+     "t": "mc",
+     "q": "«Embora estivesse cansado, terminei»:",
+     "a": "Шаршасам да, бітірдім.",
+     "w": [
+      "Шаршағандықтан, бітірдім.",
+      "Шаршау үшін, бітірдім.",
+      "Шаршағанда, бітірдім."
+     ],
+     "c": "S",
+     "e": "-са да = concessão."
+    },
+    {
+     "id": "k36-03",
+     "t": "mc",
+     "q": "«Para aprender cazaque»:",
+     "a": "қазақ тілін үйрену үшін",
+     "w": [
+      "қазақ тілін үйренгенде",
+      "қазақ тілін үйренсе де",
+      "қазақ тілін үйренгендіктен"
+     ],
+     "c": "S",
+     "e": "-у үшін = finalidade."
+    },
+    {
+     "id": "k36-04",
+     "t": "mc",
+     "q": "«Quando eu cheguei»:",
+     "a": "мен келгенде",
+     "w": [
+      "мен келсем де",
+      "мен келу үшін",
+      "мен келгеннен бұрын"
+     ],
+     "c": "S",
+     "e": "-генде = quando."
+    },
+    {
+     "id": "k36-05",
+     "t": "gap",
+     "q": "Тамақ іш___ кейін серуендедік. (Depois de comer…)",
+     "a": [
+      "кеннен"
+     ],
+     "c": "S",
+     "e": "Ішкеннен кейін."
+    },
+    {
+     "id": "k36-06",
+     "t": "gap",
+     "q": "Ерте тұр, ___ кешігесің. (…senão você se atrasa.)",
+     "a": [
+      "әйтпесе"
+     ],
+     "c": "S",
+     "e": "Әйтпесе."
+    },
+    {
+     "id": "k36-07",
+     "t": "gap",
+     "q": "Мен бармаймын, ___ ауырып тұрмын. (…porque estou doente.)",
+     "a": [
+      "өйткені",
+      "себебі"
+     ],
+     "c": "S",
+     "e": "Өйткені / себебі."
+    },
+    {
+     "id": "k36-08",
+     "t": "pairs",
+     "p": [
+      [
+       "бірақ",
+       "mas"
+      ],
+      [
+       "сондықтан",
+       "por isso"
+      ],
+      [
+       "өйткені",
+       "porque"
+      ],
+      [
+       "әйтпесе",
+       "senão"
+      ],
+      [
+       "үшін",
+       "para"
+      ]
+     ],
+     "c": "L",
+     "e": "Conjunções."
+    },
+    {
+     "id": "k36-09",
+     "t": "listen",
+     "audio": "Қиын болса да, қызық.",
+     "q": "O que a pessoa disse?",
+     "a": "Embora seja difícil, é interessante.",
+     "w": [
+      "É difícil, por isso não é interessante.",
+      "Se for difícil, não é interessante.",
+      "É interessante porque é difícil."
+     ],
+     "c": "L",
+     "e": "Болса да = embora seja."
+    },
+    {
+     "id": "k36-10",
+     "t": "transform",
+     "p": "Junte com -ғандықтан.",
+     "q": "Ол ауырды. Сабаққа келмеді.",
+     "a": [
+      "Ол ауырғандықтан, сабаққа келмеді.",
+      "Ол ауырғандықтан сабаққа келмеді."
+     ],
+     "c": "S",
+     "e": "Ауыр + ған + дықтан."
+    },
+    {
+     "id": "k36-11",
+     "t": "order",
+     "a": "Жұмыстан келгеннен кейін бір сағат оқимын",
+     "x": [
+      "келгенде"
+     ],
+     "c": "S",
+     "e": "Depois de voltar do trabalho, estudo uma hora."
+    },
+    {
+     "id": "k36-12",
+     "t": "dict",
+     "a": "Тіл үйрену үшін күнде тыңдаймын.",
+     "c": "F",
+     "e": "Үйрену үшін."
+    }
+   ]
+  },
+  {
+   "id": "k37",
+   "n": 37,
+   "level": "B1",
+   "module": "B1 · Тәуелсіз",
+   "title": "Төл сөз — discurso direto e indireto",
+   "kz": "Төл сөз, төлеу сөз",
+   "goal": "Contar o que alguém disse, perguntou ou pensou com деп, деді e -атынын/-ғанын.",
+   "rules": [
+    {
+     "title": "Деп: as aspas do cazaque",
+     "points": [
+      "Depois da fala vem деп (dizendo) + verbo de dizer: Ол «Ертең келемін» деп айтты. Ou só деді: «Ертең келемін», — деді.",
+      "É muito comum manter a fala sem mudar a pessoa: Ол ертең келемін деді (ele disse que vem amanhã).",
+      "деп ойлау (achar que), деп сұрау (perguntar), деп сену (acreditar que), деп үміттену (esperar que)."
+     ]
+    },
+    {
+     "title": "Indireto com particípio",
+     "points": [
+      "Particípio + possessivo + acusativo: Ол ертең келетінін айтты (disse que viria amanhã), Оның Алматыда тұратынын білемін (sei que ele mora em Almaty).",
+      "Passado: -ғанын: Оның кеткенін естідім (ouvi dizer que ele foi embora).",
+      "Pergunta indireta: Ол менің қайда баратынымды сұрады (perguntou aonde eu ia)."
+     ],
+     "ex": [
+      [
+       "Мен сен дұрыс айтасың деп ойлаймын.",
+       "Acho que você tem razão."
+      ],
+      [
+       "Ол сабақтың басталғанын білмеді.",
+       "Ele não sabia que a aula tinha começado."
+      ]
+     ],
+     "trap": "«Acho que…» = …деп ойлаймын, com деп no fim da oração, não no começo."
+    }
+   ],
+   "vocab": [
+    [
+     "айту",
+     "dizer"
+    ],
+    [
+     "деу",
+     "dizer (com citação)"
+    ],
+    [
+     "сұрау",
+     "perguntar; pedir"
+    ],
+    [
+     "жауап беру",
+     "responder"
+    ],
+    [
+     "есту",
+     "ouvir"
+    ],
+    [
+     "сену",
+     "acreditar"
+    ],
+    [
+     "үміттену",
+     "ter esperança"
+    ],
+    [
+     "хабар",
+     "notícia"
+    ],
+    [
+     "өтірік",
+     "mentira"
+    ],
+    [
+     "шындық",
+     "verdade"
+    ],
+    [
+     "уәде беру",
+     "prometer"
+    ],
+    [
+     "ескерту",
+     "avisar"
+    ]
+   ],
+   "dialog": {
+    "title": "Recado",
+    "lines": [
+     [
+      "A",
+      "Асқар қоңырау шалды ма?",
+      "O Asqar ligou?"
+     ],
+     [
+      "B",
+      "Иә. Ол бүгін кешігемін деді.",
+      "Sim. Disse que hoje vai se atrasar."
+     ],
+     [
+      "A",
+      "Тағы не айтты?",
+      "O que mais ele disse?"
+     ],
+     [
+      "B",
+      "Сенің кітабыңды әкелетінін айтты. Және жиналыстың қай сағатта болатынын сұрады.",
+      "Disse que vai trazer o seu livro. E perguntou a que horas é a reunião."
+     ],
+     [
+      "A",
+      "Ол уәде берді ме?",
+      "Ele prometeu?"
+     ],
+     [
+      "B",
+      "Иә, «Міндетті түрде әкелемін» деп уәде берді.",
+      "Sim, prometeu: «Trago sem falta»."
+     ],
+     [
+      "A",
+      "Онда келеді деп ойлаймын.",
+      "Então acho que ele vem."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k37-01",
+     "t": "mc",
+     "q": "«Acho que você tem razão»:",
+     "a": "Сен дұрыс айтасың деп ойлаймын.",
+     "w": [
+      "Деп ойлаймын сен дұрыс айтасың.",
+      "Сен дұрыс айтасың ойлаймын деп.",
+      "Ойлаймын, сен дұрыс деп айтасың."
+     ],
+     "c": "S",
+     "e": "…деп ойлаймын no fim."
+    },
+    {
+     "id": "k37-02",
+     "t": "mc",
+     "q": "«Ele disse que viria amanhã» (particípio):",
+     "a": "Ол ертең келетінін айтты.",
+     "w": [
+      "Ол ертең келетін айтты.",
+      "Ол ертең келетіні айтты.",
+      "Ол ертең келді деп айтты."
+     ],
+     "c": "S",
+     "e": "Келетін + і + н (acusativo)."
+    },
+    {
+     "id": "k37-03",
+     "t": "mc",
+     "q": "«Ouvi que ele foi embora»:",
+     "a": "Оның кеткенін естідім.",
+     "w": [
+      "Оның кететінін естідім.",
+      "Ол кетті естідім.",
+      "Оның кеткені естідім."
+     ],
+     "c": "S",
+     "e": "-ғанын = fato passado."
+    },
+    {
+     "id": "k37-04",
+     "t": "mc",
+     "q": "«Perguntou aonde eu ia»:",
+     "a": "Ол менің қайда баратынымды сұрады.",
+     "w": [
+      "Ол мен қайда барамын сұрады.",
+      "Ол менің қайда барғанын сұрады.",
+      "Ол қайда барасың деп сұрамады."
+     ],
+     "c": "S",
+     "e": "Possessivo de 1ª: баратыным + ды."
+    },
+    {
+     "id": "k37-05",
+     "t": "gap",
+     "q": "«Ертең келемін», — ___. (…disse ele.)",
+     "a": [
+      "деді"
+     ],
+     "c": "S",
+     "e": "Деді."
+    },
+    {
+     "id": "k37-06",
+     "t": "gap",
+     "q": "Ол бүгін кешігемін ___ айтты.",
+     "a": [
+      "деп"
+     ],
+     "c": "S",
+     "e": "Деп + айтты."
+    },
+    {
+     "id": "k37-07",
+     "t": "pairs",
+     "p": [
+      [
+       "сұрау",
+       "perguntar"
+      ],
+      [
+       "сену",
+       "acreditar"
+      ],
+      [
+       "уәде беру",
+       "prometer"
+      ],
+      [
+       "ескерту",
+       "avisar"
+      ],
+      [
+       "шындық",
+       "verdade"
+      ]
+     ],
+     "c": "L",
+     "e": "Verbos de fala."
+    },
+    {
+     "id": "k37-08",
+     "t": "listen",
+     "audio": "Ол бүгін кешігемін деді.",
+     "q": "Qual foi o recado?",
+     "a": "Ele vai se atrasar hoje.",
+     "w": [
+      "Ele não vem hoje.",
+      "Ele chegou cedo.",
+      "Ele vem amanhã."
+     ],
+     "c": "L",
+     "e": "Кешігемін = vou me atrasar."
+    },
+    {
+     "id": "k37-09",
+     "t": "transform",
+     "p": "Passe para o indireto com -атынын.",
+     "q": "Айгүл: «Мен Алматыға барамын.»",
+     "a": [
+      "Айгүл Алматыға баратынын айтты."
+     ],
+     "c": "S",
+     "e": "Бар + атын + ы + н."
+    },
+    {
+     "id": "k37-10",
+     "t": "order",
+     "a": "Онда келеді деп ойлаймын",
+     "x": [
+      "деді"
+     ],
+     "c": "S",
+     "e": "Então acho que ele vem."
+    },
+    {
+     "id": "k37-11",
+     "t": "dict",
+     "a": "Ол міндетті түрде келемін деп уәде берді.",
+     "c": "F",
+     "e": "Уәде com ә."
+    }
+   ]
+  },
+  {
+   "id": "k38",
+   "n": 38,
+   "level": "B1",
+   "module": "B1 · Тәуелсіз",
+   "title": "Жұмыс — trabalho e registro formal",
+   "kz": "Ресми стиль",
+   "goal": "Falar do trabalho, fazer uma entrevista e escrever uma mensagem formal.",
+   "rules": [
+    {
+     "title": "Registro formal",
+     "points": [
+      "Sempre сіз e o imperativo em -ыңыз, com -шы para suavizar: айтып беріңізші.",
+      "Pedidos indiretos: -уыңызды сұраймын (peço que o senhor…), -уға рұқсат етіңіз (permita-me…).",
+      "Cartas: Құрметті Асқар Болатұлы! (Prezado…) — Құрметпен, … (Atenciosamente). O patronímico: -ұлы (filho de), -қызы (filha de)."
+     ]
+    },
+    {
+     "title": "Vocabulário de entrevista",
+     "points": [
+      "түйіндеме (currículo), тәжірибе (experiência), жалақы (salário), кесте (horário), лауазым (cargo), басшы (chefe), әріптес (colega).",
+      "Өзіңіз туралы айтып беріңізші = Fale um pouco sobre o senhor. Неге бізде жұмыс істегіңіз келеді? = Por que quer trabalhar conosco?"
+     ],
+     "ex": [
+      [
+       "Құжаттарды жіберуіңізді сұраймын.",
+       "Peço que envie os documentos."
+      ],
+      [
+       "Менің бес жылдық тәжірибем бар.",
+       "Tenho cinco anos de experiência."
+      ]
+     ],
+     "trap": "-лық/-лік faz adjetivos de tempo: бес жылдық тәжірибе (experiência de cinco anos)."
+    }
+   ],
+   "vocab": [
+    [
+     "түйіндеме",
+     "currículo"
+    ],
+    [
+     "тәжірибе",
+     "experiência"
+    ],
+    [
+     "жалақы",
+     "salário"
+    ],
+    [
+     "лауазым",
+     "cargo"
+    ],
+    [
+     "басшы",
+     "chefe"
+    ],
+    [
+     "әріптес",
+     "colega"
+    ],
+    [
+     "кеңсе",
+     "escritório"
+    ],
+    [
+     "компания",
+     "empresa"
+    ],
+    [
+     "өтініш",
+     "requerimento, pedido"
+    ],
+    [
+     "Құрметті…",
+     "Prezado(a)…"
+    ],
+    [
+     "Құрметпен",
+     "Atenciosamente"
+    ],
+    [
+     "жауапкершілік",
+     "responsabilidade"
+    ]
+   ],
+   "dialog": {
+    "title": "Entrevista de emprego",
+    "lines": [
+     [
+      "A",
+      "Қош келдіңіз! Отырыңыз. Өзіңіз туралы айтып беріңізші.",
+      "Bem-vinda! Sente-se. Fale um pouco sobre a senhora."
+     ],
+     [
+      "B",
+      "Менің атым Ана. Мен аудармашымын, бес жылдық тәжірибем бар.",
+      "Meu nome é Ana. Sou tradutora, tenho cinco anos de experiência."
+     ],
+     [
+      "A",
+      "Қандай тілдерді білесіз?",
+      "Que línguas a senhora sabe?"
+     ],
+     [
+      "B",
+      "Португал, ағылшын, орыс тілдерін жақсы білемін, қазақ тілін үйреніп жүрмін.",
+      "Sei bem português, inglês e russo, e estou aprendendo cazaque."
+     ],
+     [
+      "A",
+      "Неге бізде жұмыс істегіңіз келеді?",
+      "Por que quer trabalhar conosco?"
+     ],
+     [
+      "B",
+      "Сіздердің компанияңыз Бразилиямен жұмыс істейді, сондықтан мен пайдалы бола аламын деп ойлаймын.",
+      "Sua empresa trabalha com o Brasil, por isso acho que posso ser útil."
+     ],
+     [
+      "A",
+      "Жақсы. Түйіндемеңізді поштаға жіберуіңізді сұраймын.",
+      "Muito bem. Peço que envie seu currículo por e-mail."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k38-01",
+     "t": "mc",
+     "q": "Início de carta formal:",
+     "a": "Құрметті Асқар Болатұлы!",
+     "w": [
+      "Сәлем, Асқар!",
+      "Қымбатты досым!",
+      "Ей, Асқар!"
+     ],
+     "c": "U",
+     "e": "Құрметті + nome + patronímico."
+    },
+    {
+     "id": "k38-02",
+     "t": "mc",
+     "q": "Fecho de carta formal:",
+     "a": "Құрметпен, Ана.",
+     "w": [
+      "Сау бол, Ана.",
+      "Құшақтаймын, Ана.",
+      "Рақмет, Ана."
+     ],
+     "c": "U",
+     "e": "Құрметпен = atenciosamente."
+    },
+    {
+     "id": "k38-03",
+     "t": "mc",
+     "q": "«Peço que o senhor envie os documentos»:",
+     "a": "Құжаттарды жіберуіңізді сұраймын.",
+     "w": [
+      "Құжаттарды жібер!",
+      "Құжаттарды жіберемін сұраймын.",
+      "Құжаттарды жіберуің керек."
+     ],
+     "c": "U",
+     "e": "-уыңызды сұраймын."
+    },
+    {
+     "id": "k38-04",
+     "t": "mc",
+     "q": "«Experiência de cinco anos»:",
+     "a": "бес жылдық тәжірибе",
+     "w": [
+      "бес жыл тәжірибе",
+      "бес жылғы тәжірибесі",
+      "бесінші жыл тәжірибе"
+     ],
+     "c": "H",
+     "e": "-дық forma o adjetivo."
+    },
+    {
+     "id": "k38-05",
+     "t": "mc",
+     "q": "Patronímico de uma mulher, filha de Болат:",
+     "a": "Болатқызы",
+     "w": [
+      "Болатұлы",
+      "Болатовна",
+      "Болаткызы"
+     ],
+     "c": "L",
+     "e": "-қызы = filha de."
+    },
+    {
+     "id": "k38-06",
+     "t": "gap",
+     "q": "Өзіңіз туралы айтып беріңіз___. (…, por favor.)",
+     "a": [
+      "ші"
+     ],
+     "c": "U",
+     "e": "Беріңізші."
+    },
+    {
+     "id": "k38-07",
+     "t": "gap",
+     "q": "Неге бізде жұмыс істе___ келеді? (Por que quer trabalhar conosco?)",
+     "a": [
+      "гіңіз"
+     ],
+     "c": "V",
+     "e": "Істегіңіз келеді."
+    },
+    {
+     "id": "k38-08",
+     "t": "pairs",
+     "p": [
+      [
+       "түйіндеме",
+       "currículo"
+      ],
+      [
+       "жалақы",
+       "salário"
+      ],
+      [
+       "әріптес",
+       "colega"
+      ],
+      [
+       "басшы",
+       "chefe"
+      ],
+      [
+       "лауазым",
+       "cargo"
+      ]
+     ],
+     "c": "L",
+     "e": "Trabalho."
+    },
+    {
+     "id": "k38-09",
+     "t": "listen",
+     "audio": "Менің бес жылдық тәжірибем бар.",
+     "q": "Quanta experiência a pessoa tem?",
+     "a": "cinco anos",
+     "w": [
+      "quinze anos",
+      "cinco meses",
+      "nenhuma"
+     ],
+     "c": "L",
+     "e": "Бес жылдық."
+    },
+    {
+     "id": "k38-10",
+     "t": "transform",
+     "p": "Torne o pedido formal (-уыңызды сұраймын).",
+     "q": "Ертең кел!",
+     "a": [
+      "Ертең келуіңізді сұраймын."
+     ],
+     "c": "U",
+     "e": "Келу + іңіз + ді + сұраймын."
+    },
+    {
+     "id": "k38-11",
+     "t": "order",
+     "a": "Мен пайдалы бола аламын деп ойлаймын",
+     "x": [
+      "деді"
+     ],
+     "c": "S",
+     "e": "Acho que posso ser útil."
+    },
+    {
+     "id": "k38-12",
+     "t": "dict",
+     "a": "Құрметпен, Ана.",
+     "c": "F",
+     "e": "Fecho formal."
+    }
+   ]
+  },
+  {
+   "id": "k39",
+   "n": 39,
+   "level": "B1",
+   "module": "B1 · Тәуелсіз",
+   "title": "Қазақстан — leitura",
+   "kz": "Мәтін: Қазақстан",
+   "goal": "Ler e entender um texto informativo sobre a geografia e a história do Cazaquistão.",
+   "rules": [
+    {
+     "title": "Como ler um texto B1",
+     "points": [
+      "Leia primeiro sem traduzir, procurando os nomes e números; depois releia frase por frase com o áudio.",
+      "Repare nos sufixos que já conhece: -дағы (que está em: Орталық Азиядағы), -ған (passado: өмір сүрген), -лы/-лі (com: тұзды, salgado).",
+      "Formas do texto escrito: орналасқан (está situado), алып жатыр (ocupa), саналады (é considerado)."
+     ]
+    }
+   ],
+   "reading": {
+    "title": "Қазақстан",
+    "paragraphs": [
+     [
+      "Қазақстан — Орталық Азиядағы үлкен мемлекет. Аумағы бойынша ол әлемде тоғызыншы орында. Елдің астанасы — Астана, ал ең үлкен қаласы — Алматы. Қазақстанда жиырма миллионнан астам адам тұрады.",
+      "O Cazaquistão é um grande Estado da Ásia Central. Em território, está em nono lugar no mundo. A capital do país é Astana, e a maior cidade é Almaty. Mais de vinte milhões de pessoas vivem no Cazaquistão."
+     ],
+     [
+      "Елдің көп бөлігін кең дала алып жатыр. Оңтүстік пен шығыста биік таулар бар: Алатау мен Алтай. Батыста Каспий теңізі орналасқан. Балқаш көлінің бір жағы тұщы, екінші жағы тұзды.",
+      "Grande parte do país é ocupada pela estepe. No sul e no leste há montanhas altas: o Alatau e o Altai. No oeste fica o mar Cáspio. O lago Balkhash tem um lado de água doce e o outro de água salgada."
+     ],
+     [
+      "Қазақстанда қысы суық, жазы ыстық. Бұрын қазақтар көшпелі өмір сүрген: олар малын бағып, киіз үйде тұрған. Қазір де мерекелерде киіз үй тігеді.",
+      "No Cazaquistão o inverno é frio e o verão é quente. Antigamente os cazaques viviam como nômades: criavam gado e moravam na iurta. Ainda hoje se montam iurtas nas festas."
+     ],
+     [
+      "Қазақстан ғарышпен де байланысты: Байқоңыр ғарыш айлағынан әлемдегі алғашқы адам ғарышқа ұшқан.",
+      "O Cazaquistão também está ligado ao espaço: do cosmódromo de Baikonur o primeiro homem do mundo voou ao espaço."
+     ]
+    ]
+   },
+   "vocab": [
+    [
+     "мемлекет",
+     "Estado"
+    ],
+    [
+     "аумақ",
+     "território"
+    ],
+    [
+     "әлем",
+     "mundo"
+    ],
+    [
+     "дала",
+     "estepe"
+    ],
+    [
+     "тау",
+     "montanha"
+    ],
+    [
+     "көл",
+     "lago"
+    ],
+    [
+     "тұщы",
+     "doce (água)"
+    ],
+    [
+     "тұзды",
+     "salgado"
+    ],
+    [
+     "көшпелі",
+     "nômade"
+    ],
+    [
+     "мал",
+     "gado"
+    ],
+    [
+     "киіз үй",
+     "iurta"
+    ],
+    [
+     "ғарыш",
+     "espaço sideral"
+    ]
+   ],
+   "dialog": {
+    "title": "Guia turístico",
+    "lines": [
+     [
+      "A",
+      "Қазақстанда қандай жерлерді көруге болады?",
+      "Que lugares dá para ver no Cazaquistão?"
+     ],
+     [
+      "B",
+      "Алматыдағы тауларды, Шарын шатқалын, Балқаш көлін міндетті түрде көріңіз.",
+      "Veja sem falta as montanhas de Almaty, o cânion Charyn e o lago Balkhash."
+     ],
+     [
+      "A",
+      "Киіз үйде түнеуге бола ма?",
+      "Dá para dormir numa iurta?"
+     ],
+     [
+      "B",
+      "Әрине! Ауылда қонақтарды киіз үйге шақырады, қымыз ұсынады.",
+      "Claro! Nas aldeias convidam os hóspedes para a iurta e oferecem kumis."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k39-01",
+     "t": "mc",
+     "q": "Segundo o texto, em território o Cazaquistão é:",
+     "a": "o 9º do mundo",
+     "w": [
+      "o maior da Ásia",
+      "o 19º do mundo",
+      "o 2º da Ásia Central"
+     ],
+     "c": "R",
+     "e": "Әлемде тоғызыншы орында."
+    },
+    {
+     "id": "k39-02",
+     "t": "mc",
+     "q": "Qual é a maior cidade?",
+     "a": "Алматы",
+     "w": [
+      "Астана",
+      "Шымкент",
+      "Байқоңыр"
+     ],
+     "c": "R",
+     "e": "Ең үлкен қаласы — Алматы."
+    },
+    {
+     "id": "k39-03",
+     "t": "mc",
+     "q": "O que ocupa a maior parte do país?",
+     "a": "a estepe",
+     "w": [
+      "as montanhas",
+      "o deserto de areia",
+      "as florestas"
+     ],
+     "c": "R",
+     "e": "Көп бөлігін кең дала алып жатыр."
+    },
+    {
+     "id": "k39-04",
+     "t": "mc",
+     "q": "O que há de especial no lago Balkhash?",
+     "a": "metade doce, metade salgada",
+     "w": [
+      "é o mais fundo do mundo",
+      "fica no oeste",
+      "nunca congela"
+     ],
+     "c": "R",
+     "e": "Бір жағы тұщы, екінші жағы тұзды."
+    },
+    {
+     "id": "k39-05",
+     "t": "mc",
+     "q": "Como viviam os cazaques antigamente?",
+     "a": "como nômades, em iurtas",
+     "w": [
+      "em cidades de pedra",
+      "como pescadores do Cáspio",
+      "nas montanhas do Altai"
+     ],
+     "c": "R",
+     "e": "Көшпелі өмір сүрген, киіз үйде тұрған."
+    },
+    {
+     "id": "k39-06",
+     "t": "mc",
+     "q": "«Орталық Азиядағы» significa:",
+     "a": "que fica na Ásia Central",
+     "w": [
+      "para a Ásia Central",
+      "da Ásia Central (origem)",
+      "sem a Ásia Central"
+     ],
+     "c": "C",
+     "e": "-дағы = que está em."
+    },
+    {
+     "id": "k39-07",
+     "t": "gap",
+     "q": "Батыста Каспий теңізі ___. (No oeste fica o mar Cáspio.)",
+     "a": [
+      "орналасқан"
+     ],
+     "c": "L",
+     "e": "Орналасқан = está situado."
+    },
+    {
+     "id": "k39-08",
+     "t": "pairs",
+     "p": [
+      [
+       "дала",
+       "estepe"
+      ],
+      [
+       "тұщы",
+       "doce (água)"
+      ],
+      [
+       "тұзды",
+       "salgado"
+      ],
+      [
+       "көшпелі",
+       "nômade"
+      ],
+      [
+       "ғарыш",
+       "espaço"
+      ]
+     ],
+     "c": "L",
+     "e": "Vocabulário do texto."
+    },
+    {
+     "id": "k39-09",
+     "t": "listen",
+     "audio": "Қазақстанда қысы суық, жазы ыстық.",
+     "q": "O que diz sobre o clima?",
+     "a": "inverno frio, verão quente",
+     "w": [
+      "inverno ameno, verão fresco",
+      "chove o ano todo",
+      "verão frio, inverno quente"
+     ],
+     "c": "L",
+     "e": "Қысы суық, жазы ыстық."
+    },
+    {
+     "id": "k39-10",
+     "t": "order",
+     "a": "Елдің астанасы Астана",
+     "x": [
+      "Алматы"
+     ],
+     "c": "S",
+     "e": "A capital do país é Astana."
+    },
+    {
+     "id": "k39-11",
+     "t": "dict",
+     "a": "Елдің көп бөлігін кең дала алып жатыр.",
+     "c": "F",
+     "e": "Frase do texto."
+    }
+   ]
+  },
+  {
+   "id": "k40",
+   "n": 40,
+   "level": "B1",
+   "module": "B1 · Тәуелсіз",
+   "title": "Абай және мақалдар — Abai e os provérbios",
+   "kz": "Абай. Мақал-мәтелдер",
+   "goal": "Ler sobre Abai, entender provérbios e revisar a gramática do curso.",
+   "rules": [
+    {
+     "title": "Provérbios: gramática em miniatura",
+     "points": [
+      "Os provérbios (мақал) usam formas condensadas: condicional sem «егер» (Еңбек етсең, емерсің), futuro negativo em -мас (Бірлік болмай, тірлік болмас), comparação com ablativo (Отан — оттан да ыстық).",
+      "Cazaques citam provérbios em conversas formais e brindes; conhecer alguns abre portas.",
+      "Esta aula revisa tudo: casos, possessivos, tempos, particípios e converbos aparecem no texto e nos exercícios."
+     ]
+    }
+   ],
+   "reading": {
+    "title": "Абай Құнанбайұлы",
+    "paragraphs": [
+     [
+      "Абай Құнанбайұлы 1845 жылы Шыңғыстау баурайында туған. Ол — ұлы қазақ ақыны, ойшыл және аудармашы. Абай қазақ жазба әдебиетінің негізін қалаушы саналады.",
+      "Abai Qunanbaiuly nasceu em 1845 nas encostas do Shyngystau. É um grande poeta, pensador e tradutor cazaque. Abai é considerado o fundador da literatura escrita cazaque."
+     ],
+     [
+      "Абай орыс және шығыс әдебиетін жақсы білген. Ол Пушкин мен Лермонтовтың өлеңдерін қазақ тіліне аударған.",
+      "Abai conhecia bem a literatura russa e oriental. Traduziu poemas de Púchkin e Lérmontov para o cazaque."
+     ],
+     [
+      "Оның «Қара сөздері» — қырық бес қысқа философиялық мәтін. Абай онда білімнің, еңбектің, адалдықтың маңызы туралы жазады. Ол жастарды оқуға шақырған: оның «Ғылым таппай мақтанба» деген өлеңі бар.",
+      "As suas «Palavras de edificação» são quarenta e cinco textos filosóficos curtos. Nelas Abai escreve sobre a importância do saber, do trabalho e da honestidade. Ele chamava os jovens a estudar: tem um poema chamado «Não te gabes antes de alcançar o saber»."
+     ],
+     [
+      "Абай 1904 жылы қайтыс болды. Бүгін оның есімі көшелерге, мектептерге, театрларға берілген.",
+      "Abai morreu em 1904. Hoje o seu nome está em ruas, escolas e teatros."
+     ]
+    ]
+   },
+   "vocab": [
+    [
+     "мақал",
+     "provérbio"
+    ],
+    [
+     "ақын",
+     "poeta"
+    ],
+    [
+     "ойшыл",
+     "pensador"
+    ],
+    [
+     "әдебиет",
+     "literatura"
+    ],
+    [
+     "өлең",
+     "poema"
+    ],
+    [
+     "білім",
+     "conhecimento"
+    ],
+    [
+     "еңбек",
+     "trabalho, esforço"
+    ],
+    [
+     "адалдық",
+     "honestidade"
+    ],
+    [
+     "бірлік",
+     "união"
+    ],
+    [
+     "Отан",
+     "Pátria"
+    ],
+    [
+     "ақыл",
+     "inteligência, juízo"
+    ],
+    [
+     "сабыр",
+     "paciência"
+    ]
+   ],
+   "dialog": {
+    "title": "Provérbios",
+    "lines": [
+     [
+      "A",
+      "Жеті рет өлшеп, бір рет кес.",
+      "Meça sete vezes e corte uma."
+     ],
+     [
+      "A",
+      "Отан — оттан да ыстық.",
+      "A pátria é mais quente que o fogo."
+     ],
+     [
+      "B",
+      "Бірлік болмай, тірлік болмас.",
+      "Sem união não há vida."
+     ],
+     [
+      "B",
+      "Еңбек етсең, емерсің.",
+      "Se trabalhares, colherás."
+     ],
+     [
+      "A",
+      "Оқу — инемен құдық қазғандай.",
+      "Estudar é como cavar um poço com uma agulha."
+     ],
+     [
+      "B",
+      "Ағаш тамырымен мықты, адам досымен мықты.",
+      "A árvore é forte pelas raízes, a pessoa pelos amigos."
+     ],
+     [
+      "A",
+      "Сабыр түбі — сары алтын.",
+      "No fundo da paciência há ouro."
+     ],
+     [
+      "B",
+      "Аз сөз — алтын, көп сөз — көмір.",
+      "Pouca palavra é ouro, muita palavra é carvão."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k40-01",
+     "t": "mc",
+     "q": "Quando nasceu Abai?",
+     "a": "1845",
+     "w": [
+      "1904",
+      "1854",
+      "1945"
+     ],
+     "c": "R",
+     "e": "1845 жылы туған."
+    },
+    {
+     "id": "k40-02",
+     "t": "mc",
+     "q": "Que autores Abai traduziu?",
+     "a": "Púchkin e Lérmontov",
+     "w": [
+      "Tolstói e Dostoiévski",
+      "Goethe e Schiller",
+      "Ferdowsi e Hafez"
+     ],
+     "c": "R",
+     "e": "Пушкин мен Лермонтовтың өлеңдерін."
+    },
+    {
+     "id": "k40-03",
+     "t": "mc",
+     "q": "Quantos textos tem «Қара сөздер»?",
+     "a": "45",
+     "w": [
+      "40",
+      "54",
+      "15"
+     ],
+     "c": "R",
+     "e": "Қырық бес."
+    },
+    {
+     "id": "k40-04",
+     "t": "mc",
+     "q": "«Жеті рет өлшеп, бір рет кес» aconselha:",
+     "a": "pensar bem antes de agir",
+     "w": [
+      "trabalhar sete dias por semana",
+      "cortar o mal pela raiz",
+      "contar o dinheiro"
+     ],
+     "c": "U",
+     "e": "Meça sete vezes, corte uma."
+    },
+    {
+     "id": "k40-05",
+     "t": "mc",
+     "q": "«Отан — оттан да ыстық»: qual caso faz a comparação?",
+     "a": "ablativo (оттан)",
+     "w": [
+      "dativo",
+      "locativo",
+      "genitivo"
+     ],
+     "c": "C",
+     "e": "От + тан = que o fogo."
+    },
+    {
+     "id": "k40-06",
+     "t": "mc",
+     "q": "Em «Еңбек етсең, емерсің», етсең é:",
+     "a": "condicional (se trabalhares)",
+     "w": [
+      "passado",
+      "imperativo",
+      "particípio"
+     ],
+     "c": "V",
+     "e": "Ет + се + ң."
+    },
+    {
+     "id": "k40-07",
+     "t": "gap",
+     "q": "Бірлік болмай, тірлік бол___. (Sem união não há vida.)",
+     "a": [
+      "мас"
+     ],
+     "c": "V",
+     "e": "Болмас = futuro negativo."
+    },
+    {
+     "id": "k40-08",
+     "t": "gap",
+     "q": "Ағаш тамырымен мықты, адам дос___ мықты.",
+     "a": [
+      "ымен"
+     ],
+     "c": "C",
+     "e": "Дос + ы + мен."
+    },
+    {
+     "id": "k40-09",
+     "t": "pairs",
+     "p": [
+      [
+       "ақын",
+       "poeta"
+      ],
+      [
+       "өлең",
+       "poema"
+      ],
+      [
+       "білім",
+       "conhecimento"
+      ],
+      [
+       "еңбек",
+       "trabalho"
+      ],
+      [
+       "сабыр",
+       "paciência"
+      ]
+     ],
+     "c": "L",
+     "e": "Vocabulário."
+    },
+    {
+     "id": "k40-10",
+     "t": "listen",
+     "audio": "Оқу — инемен құдық қазғандай.",
+     "q": "Com o que se compara o estudo?",
+     "a": "cavar um poço com uma agulha",
+     "w": [
+      "subir uma montanha",
+      "atravessar a estepe",
+      "acender o fogo"
+     ],
+     "c": "L",
+     "e": "Инемен = com uma agulha."
+    },
+    {
+     "id": "k40-11",
+     "t": "mc",
+     "q": "Revisão: «Fui à loja com meu amigo ontem»:",
+     "a": "Кеше досыммен дүкенге бардым.",
+     "w": [
+      "Кеше досыма дүкенде бардым.",
+      "Кеше досымен дүкенге барамын.",
+      "Кеше досыммен дүкенде бардым."
+     ],
+     "c": "C",
+     "e": "Instrumental + dativo + passado."
+    },
+    {
+     "id": "k40-12",
+     "t": "mc",
+     "q": "Revisão: «O livro que li ontem é interessante»:",
+     "a": "Кеше оқыған кітабым қызық.",
+     "w": [
+      "Кеше оқыдым кітабым қызық.",
+      "Кеше оқитын кітабым қызық.",
+      "Кітабым кеше оқыған қызық."
+     ],
+     "c": "V",
+     "e": "Particípio -ған antes do nome."
+    },
+    {
+     "id": "k40-13",
+     "t": "order",
+     "a": "Абай Пушкиннің өлеңдерін қазақ тіліне аударған",
+     "x": [
+      "аударылды"
+     ],
+     "c": "S",
+     "e": "Abai traduziu os poemas de Púchkin para o cazaque."
+    },
+    {
+     "id": "k40-14",
+     "t": "dict",
+     "a": "Аз сөз — алтын, көп сөз — көмір.",
+     "c": "F",
+     "e": "Provérbio."
+    }
+   ]
+  }
+ ]
+}

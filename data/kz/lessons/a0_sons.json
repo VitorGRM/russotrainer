@@ -1,0 +1,2549 @@
+{
+ "lessons": [
+  {
+   "id": "k01",
+   "n": 1,
+   "level": "A1.0",
+   "module": "Әліппе · sons e letras",
+   "title": "Сәлем! O alfabeto cazaque",
+   "kz": "Сәлем! Қазақ әліпбиі",
+   "goal": "Conhecer as 42 letras, ler as vogais comuns ao russo e cumprimentar.",
+   "rules": [
+    {
+     "title": "Um alfabeto que você já conhece em parte",
+     "points": [
+      "O cazaque usa o cirílico russo (33 letras) mais 9 letras próprias: Ә Ғ Қ Ң Ө Ұ Ү Һ І.",
+      "Hoje o país está passando para o alfabeto latino, mas livros, placas e a internet ainda usam o cirílico; é ele que você aprende aqui.",
+      "As letras próprias são justamente os sons difíceis; cada uma ganha uma aula no módulo 0."
+     ],
+     "ex": [
+      [
+       "Сәлем!",
+       "Oi!"
+      ],
+      [
+       "Сәлеметсіз бе!",
+       "Olá! (formal)"
+      ],
+      [
+       "Рақмет!",
+       "Obrigado!"
+      ]
+     ]
+    },
+    {
+     "title": "As vogais «fáceis»",
+     "points": [
+      "А а — como o «a» de «casa». О о — como «ô» de «avô», sempre fechado.",
+      "Е е — «iê» no começo da palavra (ел = iêl), «ê» no meio.",
+      "Ы ы — vogal do meio da boca, sem equivalente em português: diga «i» puxando a língua para trás.",
+      "И и e У у — em cazaque são ditongos: и = [ɯj]/[ij] (ый/ій) e у = [ʊw]/[үw]; aprendemos na aula 4."
+     ],
+     "trap": "O «е» inicial soa «iê»: ел (povo) é [jel], ет (carne) é [jet]."
+    }
+   ],
+   "sounds": [
+    {
+     "l": "А а",
+     "pt": "a aberto de «casa»",
+     "words": [
+      [
+       "ата",
+       "avô"
+      ],
+      [
+       "ана",
+       "mãe"
+      ],
+      [
+       "ал",
+       "pegue"
+      ]
+     ]
+    },
+    {
+     "l": "О о",
+     "pt": "ô fechado de «avô»; só na primeira sílaba",
+     "words": [
+      [
+       "он",
+       "dez"
+      ],
+      [
+       "бол",
+       "seja"
+      ],
+      [
+       "ол",
+       "ele, ela"
+      ]
+     ]
+    },
+    {
+     "l": "Е е",
+     "pt": "«iê» no início, «ê» no meio",
+     "words": [
+      [
+       "ел",
+       "povo, país"
+      ],
+      [
+       "ет",
+       "carne"
+      ],
+      [
+       "бес",
+       "cinco"
+      ]
+     ]
+    },
+    {
+     "l": "Ы ы",
+     "pt": "«i» com a língua para trás (como o ы russo)",
+     "words": [
+      [
+       "қыз",
+       "moça"
+      ],
+      [
+       "ыстық",
+       "quente"
+      ],
+      [
+       "бы",
+       "este (dial.)"
+      ]
+     ]
+    }
+   ],
+   "vocab": [
+    [
+     "Сәлем!",
+     "Oi! (informal)"
+    ],
+    [
+     "Сәлеметсіз бе!",
+     "Olá! Bom dia! (formal)",
+     "Literalmente «está bem de saúde?»."
+    ],
+    [
+     "Рақмет!",
+     "Obrigado(a)!"
+    ],
+    [
+     "Үлкен рақмет!",
+     "Muito obrigado!"
+    ],
+    [
+     "Иә",
+     "Sim"
+    ],
+    [
+     "Жоқ",
+     "Não"
+    ],
+    [
+     "Кешіріңіз",
+     "Desculpe / com licença"
+    ],
+    [
+     "Сау бол!",
+     "Tchau! (informal)"
+    ],
+    [
+     "Сау болыңыз!",
+     "Até logo! (formal)"
+    ],
+    [
+     "Қош келдіңіз!",
+     "Bem-vindo(a)!"
+    ],
+    [
+     "ана",
+     "mãe"
+    ],
+    [
+     "ата",
+     "avô"
+    ]
+   ],
+   "dialog": {
+    "title": "No corredor da universidade",
+    "lines": [
+     [
+      "A",
+      "Сәлеметсіз бе!",
+      "Olá!"
+     ],
+     [
+      "B",
+      "Сәлеметсіз бе! Қош келдіңіз!",
+      "Olá! Bem-vinda!"
+     ],
+     [
+      "A",
+      "Рақмет!",
+      "Obrigada!"
+     ],
+     [
+      "B",
+      "Кешіріңіз, сіз студентсіз бе?",
+      "Desculpe, a senhora é estudante?"
+     ],
+     [
+      "A",
+      "Иә.",
+      "Sim."
+     ],
+     [
+      "B",
+      "Жақсы! Сау болыңыз!",
+      "Ótimo! Até logo!"
+     ],
+     [
+      "A",
+      "Сау болыңыз!",
+      "Até logo!"
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k01-01",
+     "t": "mc",
+     "q": "Como dizer «obrigado» em cazaque?",
+     "a": "Рақмет",
+     "w": [
+      "Сәлем",
+      "Кешіріңіз",
+      "Жоқ"
+     ],
+     "c": "L",
+     "e": "Рақмет = obrigado; Үлкен рақмет = muito obrigado."
+    },
+    {
+     "id": "k01-02",
+     "t": "listen",
+     "audio": "Сәлеметсіз бе!",
+     "q": "O que você ouviu?",
+     "a": "Olá! (formal)",
+     "w": [
+      "Obrigado!",
+      "Até logo!",
+      "Desculpe"
+     ],
+     "c": "L",
+     "e": "Сәлеметсіз бе — cumprimento formal, a qualquer hora."
+    },
+    {
+     "id": "k01-03",
+     "t": "mc",
+     "q": "Quantas letras tem o alfabeto cazaque (cirílico)?",
+     "a": "42",
+     "w": [
+      "33",
+      "26",
+      "38"
+     ],
+     "c": "F",
+     "e": "33 do russo + 9 próprias = 42."
+    },
+    {
+     "id": "k01-04",
+     "t": "mc",
+     "q": "Qual destas letras NÃO existe em russo?",
+     "a": "Қ",
+     "w": [
+      "К",
+      "Ы",
+      "Е"
+     ],
+     "c": "F",
+     "e": "As letras próprias são Ә Ғ Қ Ң Ө Ұ Ү Һ І."
+    },
+    {
+     "id": "k01-05",
+     "t": "listen",
+     "audio": "Сау болыңыз!",
+     "q": "O que você ouviu?",
+     "a": "Até logo! (formal)",
+     "w": [
+      "Bem-vindo!",
+      "Muito obrigado!",
+      "Sim"
+     ],
+     "c": "L",
+     "e": "Сау болыңыз (formal) × Сау бол (informal)."
+    },
+    {
+     "id": "k01-06",
+     "t": "pairs",
+     "p": [
+      [
+       "Иә",
+       "Sim"
+      ],
+      [
+       "Жоқ",
+       "Não"
+      ],
+      [
+       "Рақмет",
+       "Obrigado"
+      ],
+      [
+       "Кешіріңіз",
+       "Desculpe"
+      ],
+      [
+       "Сәлем",
+       "Oi"
+      ]
+     ],
+     "c": "L",
+     "e": "As palavras de sobrevivência."
+    },
+    {
+     "id": "k01-07",
+     "t": "mc",
+     "q": "Como soa o «е» de «ел» (povo)?",
+     "a": "«iêl», com «i» no começo",
+     "w": [
+      "«él», como em português",
+      "«íl»",
+      "«al»"
+     ],
+     "c": "F",
+     "e": "No início da palavra, е = [je]."
+    },
+    {
+     "id": "k01-08",
+     "t": "mc",
+     "q": "Você chega a um escritório. Qual cumprimento usar?",
+     "a": "Сәлеметсіз бе!",
+     "w": [
+      "Сәлем!",
+      "Сау бол!",
+      "Жоқ!"
+     ],
+     "c": "U",
+     "e": "Com desconhecidos e mais velhos, a forma formal: Сәлеметсіз бе."
+    },
+    {
+     "id": "k01-09",
+     "t": "order",
+     "a": "Қош келдіңіз",
+     "x": [
+      "Сау"
+     ],
+     "c": "S",
+     "e": "Қош келдіңіз! = Bem-vindo(a)!"
+    },
+    {
+     "id": "k01-10",
+     "t": "gap",
+     "q": "Үлкен ___ ! (Muito obrigado!)",
+     "a": [
+      "рақмет"
+     ],
+     "c": "L",
+     "e": "Үлкен рақмет = muito obrigado."
+    },
+    {
+     "id": "k01-11",
+     "t": "dict",
+     "a": "Сәлем! Рақмет!",
+     "c": "F",
+     "e": "Atenção ao ә e ao қ."
+    }
+   ]
+  },
+  {
+   "id": "k02",
+   "n": 2,
+   "level": "A1.0",
+   "module": "Әліппе · sons e letras",
+   "title": "Vogais duras e brandas: Ә Ө Ұ Ү І",
+   "kz": "Жуан және жіңішке дауыстылар",
+   "goal": "Distinguir e pronunciar os pares а–ә, о–ө, ұ–ү, ы–і.",
+   "rules": [
+    {
+     "title": "Vogais em pares",
+     "points": [
+      "O cazaque divide as vogais em DURAS (pronunciadas atrás: а о ұ ы) e BRANDAS (na frente: ә ө ү і е).",
+      "Ә ә — «é» bem aberto, entre «a» e «é»: әке (pai).",
+      "Ө ө — «ô» com os lábios de «ê»: como o «eu» do francês; өт (passe).",
+      "Ұ ұ — «u» curto e relaxado, posterior: ұл (filho).",
+      "Ү ү — «i» com os lábios arredondados, como o «u» francês: үй (casa).",
+      "І і — «i» curto e relaxado, frontal: іс (assunto). Não é o «и»!"
+     ],
+     "ex": [
+      [
+       "қол — көл",
+       "mão — lago"
+      ],
+      [
+       "ұн — үн",
+       "farinha — voz"
+      ],
+      [
+       "тыс — тіс",
+       "lado de fora — dente"
+      ]
+     ],
+     "trap": "Trocar ұ por у ou і por и muda a palavra e a escrita. No teclado, as letras próprias ficam na fileira de números (layout cazaque do Windows)."
+    }
+   ],
+   "sounds": [
+    {
+     "l": "Ә ә",
+     "pt": "«é» bem aberto",
+     "words": [
+      [
+       "әке",
+       "pai"
+      ],
+      [
+       "әже",
+       "avó"
+      ],
+      [
+       "сәлем",
+       "oi"
+      ]
+     ]
+    },
+    {
+     "l": "Ө ө",
+     "pt": "«ê» com lábios de «ô» (eu francês)",
+     "words": [
+      [
+       "көл",
+       "lago"
+      ],
+      [
+       "өмір",
+       "vida"
+      ],
+      [
+       "төрт",
+       "quatro"
+      ]
+     ]
+    },
+    {
+     "l": "Ұ ұ",
+     "pt": "«u» curto, posterior",
+     "words": [
+      [
+       "ұл",
+       "filho"
+      ],
+      [
+       "ұн",
+       "farinha"
+      ],
+      [
+       "бұл",
+       "este"
+      ]
+     ]
+    },
+    {
+     "l": "Ү ү",
+     "pt": "«i» com lábios redondos (u francês)",
+     "words": [
+      [
+       "үй",
+       "casa"
+      ],
+      [
+       "үш",
+       "três"
+      ],
+      [
+       "гүл",
+       "flor"
+      ]
+     ]
+    },
+    {
+     "l": "І і",
+     "pt": "«i» curto, frontal",
+     "words": [
+      [
+       "іс",
+       "assunto"
+      ],
+      [
+       "бір",
+       "um"
+      ],
+      [
+       "кім",
+       "quem"
+      ]
+     ]
+    }
+   ],
+   "vocab": [
+    [
+     "әке",
+     "pai"
+    ],
+    [
+     "әже",
+     "avó"
+    ],
+    [
+     "үй",
+     "casa"
+    ],
+    [
+     "ұл",
+     "filho"
+    ],
+    [
+     "көл",
+     "lago"
+    ],
+    [
+     "гүл",
+     "flor"
+    ],
+    [
+     "бір",
+     "um"
+    ],
+    [
+     "үш",
+     "três"
+    ],
+    [
+     "төрт",
+     "quatro"
+    ],
+    [
+     "Бұл не?",
+     "O que é isto?"
+    ],
+    [
+     "Бұл — үй.",
+     "Isto é uma casa.",
+     "O travessão substitui o verbo «ser»."
+    ],
+    [
+     "өмір",
+     "vida"
+    ]
+   ],
+   "dialog": {
+    "title": "Olhando fotos",
+    "lines": [
+     [
+      "A",
+      "Бұл не?",
+      "O que é isto?"
+     ],
+     [
+      "B",
+      "Бұл — үй.",
+      "É uma casa."
+     ],
+     [
+      "A",
+      "Ал бұл не?",
+      "E isto?"
+     ],
+     [
+      "B",
+      "Бұл — көл.",
+      "É um lago."
+     ],
+     [
+      "A",
+      "Бұл кім?",
+      "Quem é este?"
+     ],
+     [
+      "B",
+      "Бұл — әкем.",
+      "É o meu pai."
+     ],
+     [
+      "A",
+      "Ал бұл?",
+      "E esta?"
+     ],
+     [
+      "B",
+      "Бұл — әжем.",
+      "É a minha avó."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k02-01",
+     "t": "listen",
+     "audio": "үй",
+     "q": "Qual palavra você ouviu?",
+     "a": "үй",
+     "w": [
+      "уй",
+      "ұй",
+      "ой"
+     ],
+     "c": "F",
+     "e": "Үй (casa): ү com lábios arredondados e língua na frente."
+    },
+    {
+     "id": "k02-02",
+     "t": "listen",
+     "audio": "көл",
+     "q": "Qual palavra você ouviu?",
+     "a": "көл",
+     "w": [
+      "қол",
+      "кол",
+      "кел"
+     ],
+     "c": "F",
+     "e": "Көл (lago) × қол (mão)."
+    },
+    {
+     "id": "k02-03",
+     "t": "listen",
+     "audio": "тіс",
+     "q": "Qual palavra você ouviu?",
+     "a": "тіс",
+     "w": [
+      "тыс",
+      "тис",
+      "тус"
+     ],
+     "c": "F",
+     "e": "Тіс (dente) × тыс (fora)."
+    },
+    {
+     "id": "k02-04",
+     "t": "mc",
+     "q": "Qual vogal é BRANDA (frontal)?",
+     "a": "ү",
+     "w": [
+      "ұ",
+      "о",
+      "ы"
+     ],
+     "c": "F",
+     "e": "Brandas: ә ө ү і е. Duras: а о ұ ы."
+    },
+    {
+     "id": "k02-05",
+     "t": "mc",
+     "q": "Qual vogal é DURA (posterior)?",
+     "a": "ұ",
+     "w": [
+      "ү",
+      "ө",
+      "і"
+     ],
+     "c": "F",
+     "e": "Ұ é a parceira dura do ү."
+    },
+    {
+     "id": "k02-06",
+     "t": "pairs",
+     "p": [
+      [
+       "а",
+       "ә"
+      ],
+      [
+       "о",
+       "ө"
+      ],
+      [
+       "ұ",
+       "ү"
+      ],
+      [
+       "ы",
+       "і"
+      ]
+     ],
+     "c": "F",
+     "e": "Cada vogal dura tem uma parceira branda."
+    },
+    {
+     "id": "k02-07",
+     "t": "pairs",
+     "p": [
+      [
+       "үй",
+       "casa"
+      ],
+      [
+       "ұл",
+       "filho"
+      ],
+      [
+       "көл",
+       "lago"
+      ],
+      [
+       "әке",
+       "pai"
+      ],
+      [
+       "гүл",
+       "flor"
+      ]
+     ],
+     "c": "L",
+     "e": "Palavras da aula."
+    },
+    {
+     "id": "k02-08",
+     "t": "gap",
+     "q": "Б___л — үй. (Isto é uma casa.)",
+     "a": [
+      "ұ"
+     ],
+     "c": "F",
+     "e": "Бұл (este) se escreve com ұ."
+    },
+    {
+     "id": "k02-09",
+     "t": "gap",
+     "q": "___ш (três)",
+     "a": [
+      "ү"
+     ],
+     "c": "F",
+     "e": "Үш = três."
+    },
+    {
+     "id": "k02-10",
+     "t": "order",
+     "a": "Бұл менің әкем",
+     "x": [
+      "не"
+     ],
+     "c": "S",
+     "e": "Бұл — әкем = Este é o meu pai."
+    },
+    {
+     "id": "k02-11",
+     "t": "mc",
+     "q": "Como perguntar «O que é isto?»",
+     "a": "Бұл не?",
+     "w": [
+      "Бұл кім?",
+      "Бұл қайда?",
+      "Бұл ма?"
+     ],
+     "c": "S",
+     "e": "не = o quê; кім = quem."
+    },
+    {
+     "id": "k02-12",
+     "t": "dict",
+     "a": "Бұл — үй.",
+     "c": "F",
+     "e": "Бұл com ұ; үй com ү."
+    }
+   ]
+  },
+  {
+   "id": "k03",
+   "n": 3,
+   "level": "A1.0",
+   "module": "Әліппе · sons e letras",
+   "title": "Қ e Ғ: as consoantes do fundo da garganta",
+   "kz": "Қ және Ғ дыбыстары",
+   "goal": "Pronunciar e escrever қ e ғ e distinguir de к e г.",
+   "rules": [
+    {
+     "title": "Dois sons uvulares",
+     "points": [
+      "Қ қ — «k» pronunciado bem no fundo, na úvula. Aparece com vogais DURAS: қала (cidade), қыз (moça).",
+      "К к — «k» comum, aparece com vogais BRANDAS: кітап (livro), көл (lago).",
+      "Ғ ғ — «r» gutural, parecido com o «r» do português carioca ou o «r» francês, mas sonoro: ғалым (cientista), ағаш (árvore).",
+      "Г г — «g» de «gato», com vogais brandas: гүл (flor), өгіз (boi)."
+     ],
+     "ex": [
+      [
+       "қала",
+       "cidade"
+      ],
+      [
+       "кітап",
+       "livro"
+      ],
+      [
+       "ағаш",
+       "árvore"
+      ],
+      [
+       "гүл",
+       "flor"
+      ]
+     ],
+     "trap": "Regra prática: com vogais duras → қ/ғ; com vogais brandas → к/г. Em palavras russas emprestadas (компьютер, газет) fica к/г."
+    }
+   ],
+   "sounds": [
+    {
+     "l": "Қ қ",
+     "pt": "k profundo (úvula)",
+     "words": [
+      [
+       "қыз",
+       "moça"
+      ],
+      [
+       "қала",
+       "cidade"
+      ],
+      [
+       "қол",
+       "mão"
+      ]
+     ]
+    },
+    {
+     "l": "Ғ ғ",
+     "pt": "r gutural sonoro (r francês)",
+     "words": [
+      [
+       "ағаш",
+       "árvore"
+      ],
+      [
+       "ғалым",
+       "cientista"
+      ],
+      [
+       "тау",
+       "montanha (sem ғ)"
+      ]
+     ]
+    },
+    {
+     "l": "К к",
+     "pt": "k comum",
+     "words": [
+      [
+       "кітап",
+       "livro"
+      ],
+      [
+       "көл",
+       "lago"
+      ],
+      [
+       "кім",
+       "quem"
+      ]
+     ]
+    },
+    {
+     "l": "Г г",
+     "pt": "g de gato",
+     "words": [
+      [
+       "гүл",
+       "flor"
+      ],
+      [
+       "өгіз",
+       "boi"
+      ],
+      [
+       "егін",
+       "colheita"
+      ]
+     ]
+    }
+   ],
+   "vocab": [
+    [
+     "қыз",
+     "moça, menina"
+    ],
+    [
+     "қала",
+     "cidade"
+    ],
+    [
+     "қол",
+     "mão"
+    ],
+    [
+     "қалам",
+     "caneta"
+    ],
+    [
+     "ағаш",
+     "árvore"
+    ],
+    [
+     "ғалым",
+     "cientista"
+    ],
+    [
+     "кітап",
+     "livro"
+    ],
+    [
+     "дәптер",
+     "caderno"
+    ],
+    [
+     "Бұл кім?",
+     "Quem é este?"
+    ],
+    [
+     "бала",
+     "criança"
+    ],
+    [
+     "жақсы",
+     "bom, bem"
+    ],
+    [
+     "Қазақстан",
+     "Cazaquistão"
+    ]
+   ],
+   "dialog": {
+    "title": "Quem é quem?",
+    "lines": [
+     [
+      "A",
+      "Бұл кім?",
+      "Quem é?"
+     ],
+     [
+      "B",
+      "Бұл — Айгүл.",
+      "É a Aigul."
+     ],
+     [
+      "A",
+      "Айгүл қыз ба?",
+      "A Aigul é uma moça? (menina)"
+     ],
+     [
+      "B",
+      "Иә, Айгүл — қыз.",
+      "Sim, a Aigul é uma moça."
+     ],
+     [
+      "A",
+      "Ал бұл кім?",
+      "E este?"
+     ],
+     [
+      "B",
+      "Бұл — Асқар. Ол — ғалым.",
+      "É o Asqar. Ele é cientista."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k03-01",
+     "t": "listen",
+     "audio": "қала",
+     "q": "Qual palavra você ouviu?",
+     "a": "қала",
+     "w": [
+      "кала",
+      "ғала",
+      "гала"
+     ],
+     "c": "F",
+     "e": "Қала: қ profundo + vogais duras."
+    },
+    {
+     "id": "k03-02",
+     "t": "listen",
+     "audio": "ағаш",
+     "q": "Qual palavra você ouviu?",
+     "a": "ағаш",
+     "w": [
+      "агаш",
+      "ақаш",
+      "акаш"
+     ],
+     "c": "F",
+     "e": "Ағаш (árvore) com ғ gutural."
+    },
+    {
+     "id": "k03-03",
+     "t": "mc",
+     "q": "Complete: ___ітап (livro)",
+     "a": "к",
+     "w": [
+      "қ",
+      "ғ",
+      "г"
+     ],
+     "c": "F",
+     "e": "Vogal branda (і) → к."
+    },
+    {
+     "id": "k03-04",
+     "t": "mc",
+     "q": "Complete: ___ыз (moça)",
+     "a": "қ",
+     "w": [
+      "к",
+      "ғ",
+      "г"
+     ],
+     "c": "F",
+     "e": "Vogal dura (ы) → қ."
+    },
+    {
+     "id": "k03-05",
+     "t": "mc",
+     "q": "Complete: ___үл (flor)",
+     "a": "г",
+     "w": [
+      "ғ",
+      "қ",
+      "к"
+     ],
+     "c": "F",
+     "e": "Vogal branda (ү) → г."
+    },
+    {
+     "id": "k03-06",
+     "t": "mc",
+     "q": "Complete: а___аш (árvore)",
+     "a": "ғ",
+     "w": [
+      "г",
+      "к",
+      "қ"
+     ],
+     "c": "F",
+     "e": "Entre vogais duras, sonoro: ғ."
+    },
+    {
+     "id": "k03-07",
+     "t": "pairs",
+     "p": [
+      [
+       "қала",
+       "cidade"
+      ],
+      [
+       "кітап",
+       "livro"
+      ],
+      [
+       "ағаш",
+       "árvore"
+      ],
+      [
+       "қол",
+       "mão"
+      ],
+      [
+       "ғалым",
+       "cientista"
+      ]
+     ],
+     "c": "L",
+     "e": "Vocabulário da aula."
+    },
+    {
+     "id": "k03-08",
+     "t": "gap",
+     "q": "Бұл ___ ? — Бұл Асқар. (Quem é?)",
+     "a": [
+      "кім"
+     ],
+     "c": "S",
+     "e": "Кім = quem."
+    },
+    {
+     "id": "k03-09",
+     "t": "order",
+     "a": "Асқар ғалым",
+     "x": [
+      "қыз"
+     ],
+     "c": "S",
+     "e": "Асқар — ғалым = Asqar é cientista."
+    },
+    {
+     "id": "k03-10",
+     "t": "type",
+     "q": "Escreva em cazaque: cidade",
+     "a": [
+      "қала"
+     ],
+     "c": "F",
+     "e": "Қала com қ."
+    },
+    {
+     "id": "k03-11",
+     "t": "dict",
+     "a": "Бұл — қыз. Бұл — кітап.",
+     "c": "F",
+     "e": "Қыз com қ; кітап com к."
+    }
+   ]
+  },
+  {
+   "id": "k04",
+   "n": 4,
+   "level": "A1.0",
+   "module": "Әліппе · sons e letras",
+   "title": "Ң, Һ e os ditongos У e И",
+   "kz": "Ң, Һ, У, И",
+   "goal": "Pronunciar ң, һ, у e и e perguntar «tudo bem?».",
+   "rules": [
+    {
+     "title": "Quatro letras traiçoeiras",
+     "points": [
+      "Ң ң — o «n» de «manga»/«inglês», feito com o fundo da língua: таң (amanhecer), Қалың қалай?",
+      "Һ һ — «h» aspirado (de palavras árabes e persas): гауһар (diamante).",
+      "У у — sozinho é ditongo: [uw] ou [üw]; depois de vogal é «w»: тау (montanha) = [taw].",
+      "И и — é ditongo [ɯj] em palavras duras e [ij] em brandas: ит (cão) = [ɯjt], сиыр (vaca)."
+     ],
+     "ex": [
+      [
+       "Қалың қалай?",
+       "Como vai? (informal)"
+      ],
+      [
+       "Жақсы, рақмет!",
+       "Bem, obrigado!"
+      ],
+      [
+       "тау",
+       "montanha"
+      ]
+     ],
+     "trap": "Não pronuncie ң como «n» + «g»: é um som só, nasal, no fundo da boca."
+    }
+   ],
+   "sounds": [
+    {
+     "l": "Ң ң",
+     "pt": "n velar, como em «manga»",
+     "words": [
+      [
+       "таң",
+       "amanhecer"
+      ],
+      [
+       "жаңа",
+       "novo"
+      ],
+      [
+       "мың",
+       "mil"
+      ]
+     ]
+    },
+    {
+     "l": "Һ һ",
+     "pt": "h aspirado",
+     "words": [
+      [
+       "гауһар",
+       "diamante"
+      ],
+      [
+       "қаһарман",
+       "herói"
+      ]
+     ]
+    },
+    {
+     "l": "У у",
+     "pt": "ditongo [uw] / [w]",
+     "words": [
+      [
+       "тау",
+       "montanha"
+      ],
+      [
+       "су",
+       "água"
+      ],
+      [
+       "ауыл",
+       "aldeia"
+      ]
+     ]
+    },
+    {
+     "l": "И и",
+     "pt": "ditongo [ɯj]/[ij]",
+     "words": [
+      [
+       "ит",
+       "cão"
+      ],
+      [
+       "сиыр",
+       "vaca"
+      ],
+      [
+       "киім",
+       "roupa"
+      ]
+     ]
+    }
+   ],
+   "vocab": [
+    [
+     "Қалың қалай?",
+     "Como vai? (informal)"
+    ],
+    [
+     "Қалыңыз қалай?",
+     "Como vai? (formal)"
+    ],
+    [
+     "Жақсы.",
+     "Bem."
+    ],
+    [
+     "Жаман емес.",
+     "Nada mal."
+    ],
+    [
+     "Өзің ше?",
+     "E você?"
+    ],
+    [
+     "жаңа",
+     "novo"
+    ],
+    [
+     "тау",
+     "montanha"
+    ],
+    [
+     "су",
+     "água"
+    ],
+    [
+     "ауыл",
+     "aldeia"
+    ],
+    [
+     "ит",
+     "cão"
+    ],
+    [
+     "мың",
+     "mil"
+    ],
+    [
+     "таң",
+     "amanhecer"
+    ]
+   ],
+   "dialog": {
+    "title": "Encontro na rua",
+    "lines": [
+     [
+      "A",
+      "Сәлем, Дәулет! Қалың қалай?",
+      "Oi, Daulet! Como vai?"
+     ],
+     [
+      "B",
+      "Жақсы, рақмет! Өзің ше?",
+      "Bem, obrigado! E você?"
+     ],
+     [
+      "A",
+      "Жаман емес.",
+      "Nada mal."
+     ],
+     [
+      "B",
+      "Бұл кім?",
+      "Quem é?"
+     ],
+     [
+      "A",
+      "Бұл — менің итім.",
+      "É o meu cachorro."
+     ],
+     [
+      "B",
+      "Әдемі ит!",
+      "Que cachorro bonito!"
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k04-01",
+     "t": "listen",
+     "audio": "Қалың қалай?",
+     "q": "O que significa?",
+     "a": "Como vai? (informal)",
+     "w": [
+      "Quem é?",
+      "O que é isto?",
+      "Onde fica?"
+     ],
+     "c": "L",
+     "e": "Қалың қалай? — informal; Қалыңыз қалай? — formal."
+    },
+    {
+     "id": "k04-02",
+     "t": "mc",
+     "q": "Como responder «Bem, obrigado»?",
+     "a": "Жақсы, рақмет.",
+     "w": [
+      "Жоқ, рақмет.",
+      "Сау бол, рақмет.",
+      "Иә, кешіріңіз."
+     ],
+     "c": "L",
+     "e": "Жақсы = bem."
+    },
+    {
+     "id": "k04-03",
+     "t": "listen",
+     "audio": "мың",
+     "q": "Qual palavra você ouviu?",
+     "a": "мың",
+     "w": [
+      "мын",
+      "минг",
+      "мұң"
+     ],
+     "c": "F",
+     "e": "Мың (mil) termina em ң."
+    },
+    {
+     "id": "k04-04",
+     "t": "mc",
+     "q": "Como se pronuncia «тау» (montanha)?",
+     "a": "[taw], com «w» no fim",
+     "w": [
+      "[tau] com «u» longo",
+      "[tav]",
+      "[ta]"
+     ],
+     "c": "F",
+     "e": "Depois de vogal, у = [w]."
+    },
+    {
+     "id": "k04-05",
+     "t": "mc",
+     "q": "Qual pergunta é FORMAL?",
+     "a": "Қалыңыз қалай?",
+     "w": [
+      "Қалың қалай?",
+      "Өзің ше?",
+      "Сәлем!"
+     ],
+     "c": "U",
+     "e": "O -ыңыз marca o tratamento formal (сіз)."
+    },
+    {
+     "id": "k04-06",
+     "t": "pairs",
+     "p": [
+      [
+       "су",
+       "água"
+      ],
+      [
+       "тау",
+       "montanha"
+      ],
+      [
+       "ит",
+       "cão"
+      ],
+      [
+       "жаңа",
+       "novo"
+      ],
+      [
+       "ауыл",
+       "aldeia"
+      ]
+     ],
+     "c": "L",
+     "e": "Vocabulário da aula."
+    },
+    {
+     "id": "k04-07",
+     "t": "gap",
+     "q": "Жақсы, рақмет! Өзің ___ ?",
+     "a": [
+      "ше"
+     ],
+     "c": "S",
+     "e": "Өзің ше? = E você?"
+    },
+    {
+     "id": "k04-08",
+     "t": "gap",
+     "q": "Жаман ___ . (Nada mal.)",
+     "a": [
+      "емес"
+     ],
+     "c": "S",
+     "e": "Емес = não é (negação de nomes)."
+    },
+    {
+     "id": "k04-09",
+     "t": "order",
+     "a": "Сәлем Дәулет қалың қалай",
+     "x": [
+      "кім"
+     ],
+     "c": "S",
+     "e": "Сәлем, Дәулет! Қалың қалай?"
+    },
+    {
+     "id": "k04-10",
+     "t": "type",
+     "q": "Escreva em cazaque: novo",
+     "a": [
+      "жаңа"
+     ],
+     "c": "F",
+     "e": "Жаңа com ң."
+    },
+    {
+     "id": "k04-11",
+     "t": "dict",
+     "a": "Қалың қалай? Жақсы, рақмет!",
+     "c": "F",
+     "e": "Atenção a ң, қ e ә."
+    }
+   ]
+  },
+  {
+   "id": "k05",
+   "n": 5,
+   "level": "A1.0",
+   "module": "Әліппе · sons e letras",
+   "title": "Harmonia vocálica e o plural",
+   "kz": "Үндестік заңы. Көптік жалғау",
+   "goal": "Saber se uma palavra é dura ou branda e escolher -лар/-лер, -дар/-дер, -тар/-тер.",
+   "rules": [
+    {
+     "title": "A lei da harmonia (сингармонизм)",
+     "points": [
+      "Numa palavra cazaque, as vogais são todas DURAS (ата, қала, бала) ou todas BRANDAS (әке, үй, мектеп).",
+      "O sufixo segue a ÚLTIMA vogal: palavra dura → sufixo com а/ы; palavra branda → sufixo com е/і.",
+      "Isso vale para TODOS os sufixos do curso: plural, casos, possessivos, verbos."
+     ]
+    },
+    {
+     "title": "Plural: 6 formas",
+     "points": [
+      "Depois de vogal e de р, у, й: -лар/-лер → қалалар, үйлер, тауларды…",
+      "Depois de л, м, н, ң, з, ж: -дар/-дер → адамдар, қыздар, гүлдер.",
+      "Depois de consoante surda (к, қ, п, с, т, ш…): -тар/-тер → кітаптар, мектептер."
+     ],
+     "ex": [
+      [
+       "бала → балалар",
+       "criança → crianças"
+      ],
+      [
+       "үй → үйлер",
+       "casa → casas"
+      ],
+      [
+       "қыз → қыздар",
+       "moça → moças"
+      ],
+      [
+       "кітап → кітаптар",
+       "livro → livros"
+      ]
+     ],
+     "trap": "Com números o nome fica no singular: үш кітап (três livros), nunca «үш кітаптар»."
+    }
+   ],
+   "vocab": [
+    [
+     "бала",
+     "criança"
+    ],
+    [
+     "адам",
+     "pessoa"
+    ],
+    [
+     "мектеп",
+     "escola"
+    ],
+    [
+     "оқушы",
+     "aluno (escolar)"
+    ],
+    [
+     "мұғалім",
+     "professor"
+    ],
+    [
+     "есік",
+     "porta"
+    ],
+    [
+     "терезе",
+     "janela"
+    ],
+    [
+     "үстел",
+     "mesa"
+    ],
+    [
+     "орындық",
+     "cadeira"
+    ],
+    [
+     "сөмке",
+     "bolsa"
+    ],
+    [
+     "қалам",
+     "caneta"
+    ],
+    [
+     "дәптер",
+     "caderno"
+    ]
+   ],
+   "dialog": {
+    "title": "Na sala de aula",
+    "lines": [
+     [
+      "A",
+      "Мұнда не бар?",
+      "O que tem aqui?"
+     ],
+     [
+      "B",
+      "Мұнда үстелдер, орындықтар бар.",
+      "Aqui tem mesas e cadeiras."
+     ],
+     [
+      "A",
+      "Кітаптар қайда?",
+      "Onde estão os livros?"
+     ],
+     [
+      "B",
+      "Кітаптар — сөмкеде.",
+      "Os livros estão na bolsa."
+     ],
+     [
+      "A",
+      "Оқушылар қайда?",
+      "Onde estão os alunos?"
+     ],
+     [
+      "B",
+      "Оқушылар — мектепте.",
+      "Os alunos estão na escola."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k05-01",
+     "t": "mc",
+     "q": "Plural de бала (criança):",
+     "a": "балалар",
+     "w": [
+      "балалер",
+      "баладар",
+      "балатар"
+     ],
+     "c": "H",
+     "e": "Dura + termina em vogal → -лар."
+    },
+    {
+     "id": "k05-02",
+     "t": "mc",
+     "q": "Plural de үй (casa):",
+     "a": "үйлер",
+     "w": [
+      "үйлар",
+      "үйдер",
+      "үйтер"
+     ],
+     "c": "H",
+     "e": "Branda + й → -лер."
+    },
+    {
+     "id": "k05-03",
+     "t": "mc",
+     "q": "Plural de қыз (moça):",
+     "a": "қыздар",
+     "w": [
+      "қызлар",
+      "қыздер",
+      "қызтар"
+     ],
+     "c": "H",
+     "e": "Dura + з → -дар."
+    },
+    {
+     "id": "k05-04",
+     "t": "mc",
+     "q": "Plural de мектеп (escola):",
+     "a": "мектептер",
+     "w": [
+      "мектептар",
+      "мектеплер",
+      "мектепдер"
+     ],
+     "c": "H",
+     "e": "Branda + п (surda) → -тер."
+    },
+    {
+     "id": "k05-05",
+     "t": "mc",
+     "q": "Plural de адам (pessoa):",
+     "a": "адамдар",
+     "w": [
+      "адамлар",
+      "адамтар",
+      "адамдер"
+     ],
+     "c": "H",
+     "e": "Dura + м → -дар."
+    },
+    {
+     "id": "k05-06",
+     "t": "mc",
+     "q": "Qual palavra é BRANDA?",
+     "a": "мектеп",
+     "w": [
+      "қала",
+      "адам",
+      "бала"
+     ],
+     "c": "H",
+     "e": "Мектеп tem е: branda."
+    },
+    {
+     "id": "k05-07",
+     "t": "gap",
+     "q": "кітап → кітап___ (livros)",
+     "a": [
+      "тар"
+     ],
+     "c": "H",
+     "e": "Dura + п → -тар."
+    },
+    {
+     "id": "k05-08",
+     "t": "gap",
+     "q": "гүл → гүл___ (flores)",
+     "a": [
+      "дер"
+     ],
+     "c": "H",
+     "e": "Branda + л → -дер."
+    },
+    {
+     "id": "k05-09",
+     "t": "gap",
+     "q": "терезе → терезе___ (janelas)",
+     "a": [
+      "лер"
+     ],
+     "c": "H",
+     "e": "Branda + vogal → -лер."
+    },
+    {
+     "id": "k05-10",
+     "t": "mc",
+     "q": "«Três livros» em cazaque:",
+     "a": "үш кітап",
+     "w": [
+      "үш кітаптар",
+      "кітап үш",
+      "үштер кітап"
+     ],
+     "c": "H",
+     "e": "Com número, o nome fica no singular."
+    },
+    {
+     "id": "k05-11",
+     "t": "pairs",
+     "p": [
+      [
+       "оқушы",
+       "aluno"
+      ],
+      [
+       "мұғалім",
+       "professor"
+      ],
+      [
+       "үстел",
+       "mesa"
+      ],
+      [
+       "есік",
+       "porta"
+      ],
+      [
+       "терезе",
+       "janela"
+      ]
+     ],
+     "c": "L",
+     "e": "Vocabulário da sala."
+    },
+    {
+     "id": "k05-12",
+     "t": "order",
+     "a": "Мұнда үстелдер мен орындықтар бар",
+     "x": [
+      "үстелдар"
+     ],
+     "c": "H",
+     "e": "Үстелдер (branda + л → -дер)."
+    }
+   ]
+  },
+  {
+   "id": "k06",
+   "n": 6,
+   "level": "A1.0",
+   "module": "Әліппе · sons e letras",
+   "title": "Consoantes, acento e números 1–10",
+   "kz": "Дауыссыздар, екпін, сандар",
+   "goal": "Entender a assimilação de consoantes, o acento final e contar até 10.",
+   "rules": [
+    {
+     "title": "Surdas e sonoras",
+     "points": [
+      "Consoantes surdas: п, т, к, қ, с, ш, ф, х, ц, ч, щ. Sonoras: б, д, г, ғ, з, ж. Sonorantes: л, м, н, ң, р, й, у.",
+      "O sufixo «copia» a última consoante: depois de surda vem sufixo surdo (-тар, -те, -қа); depois de sonora, sonoro.",
+      "Entre vogais, п → б, к → г, қ → ғ: кітап + ы → кітабы; жүрек + і → жүрегі; тарақ + ы → тарағы."
+     ]
+    },
+    {
+     "title": "Acento",
+     "points": [
+      "O acento cai quase sempre na ÚLTIMA sílaba, e se desloca quando entra sufixo: қала́ → қалалар́ → қалаларда́.",
+      "Isso dá ao cazaque o ritmo «de frase que cresce para o fim»."
+     ]
+    }
+   ],
+   "vocab": [
+    [
+     "бір",
+     "1"
+    ],
+    [
+     "екі",
+     "2"
+    ],
+    [
+     "үш",
+     "3"
+    ],
+    [
+     "төрт",
+     "4"
+    ],
+    [
+     "бес",
+     "5"
+    ],
+    [
+     "алты",
+     "6"
+    ],
+    [
+     "жеті",
+     "7"
+    ],
+    [
+     "сегіз",
+     "8"
+    ],
+    [
+     "тоғыз",
+     "9"
+    ],
+    [
+     "он",
+     "10"
+    ],
+    [
+     "Қанша?",
+     "Quanto? Quantos?"
+    ],
+    [
+     "Неше?",
+     "Quantos? (contável)"
+    ]
+   ],
+   "dialog": {
+    "title": "Contando no mercado",
+    "lines": [
+     [
+      "A",
+      "Алма қанша?",
+      "Quanto custam as maçãs?"
+     ],
+     [
+      "B",
+      "Бір келі — бес жүз теңге.",
+      "Um quilo, quinhentos tenges."
+     ],
+     [
+      "A",
+      "Екі келі беріңізші.",
+      "Me dê dois quilos, por favor."
+     ],
+     [
+      "B",
+      "Мінеки. Мың теңге.",
+      "Aqui está. Mil tenges."
+     ],
+     [
+      "A",
+      "Рақмет!",
+      "Obrigado!"
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k06-01",
+     "t": "listen",
+     "audio": "жеті",
+     "q": "Que número você ouviu?",
+     "a": "7",
+     "w": [
+      "6",
+      "8",
+      "2"
+     ],
+     "c": "L",
+     "e": "Жеті = 7."
+    },
+    {
+     "id": "k06-02",
+     "t": "listen",
+     "audio": "тоғыз",
+     "q": "Que número você ouviu?",
+     "a": "9",
+     "w": [
+      "4",
+      "10",
+      "8"
+     ],
+     "c": "L",
+     "e": "Тоғыз = 9 (com ғ)."
+    },
+    {
+     "id": "k06-03",
+     "t": "listen",
+     "audio": "төрт",
+     "q": "Que número você ouviu?",
+     "a": "4",
+     "w": [
+      "3",
+      "5",
+      "1"
+     ],
+     "c": "L",
+     "e": "Төрт = 4 (com ө)."
+    },
+    {
+     "id": "k06-04",
+     "t": "pairs",
+     "p": [
+      [
+       "бір",
+       "1"
+      ],
+      [
+       "екі",
+       "2"
+      ],
+      [
+       "үш",
+       "3"
+      ],
+      [
+       "бес",
+       "5"
+      ],
+      [
+       "он",
+       "10"
+      ]
+     ],
+     "c": "L",
+     "e": "Números."
+    },
+    {
+     "id": "k06-05",
+     "t": "mc",
+     "q": "кітап + ы (o livro dele) =",
+     "a": "кітабы",
+     "w": [
+      "кітапы",
+      "кітаппы",
+      "кітабі"
+     ],
+     "c": "H",
+     "e": "Entre vogais, п → б."
+    },
+    {
+     "id": "k06-06",
+     "t": "mc",
+     "q": "жүрек + і (o coração dele) =",
+     "a": "жүрегі",
+     "w": [
+      "жүрекі",
+      "жүрегы",
+      "жүрекгі"
+     ],
+     "c": "H",
+     "e": "Entre vogais, к → г."
+    },
+    {
+     "id": "k06-07",
+     "t": "mc",
+     "q": "Onde cai o acento em «балалар»?",
+     "a": "na última sílaba: балалáр",
+     "w": [
+      "na primeira: бáлалар",
+      "na do meio: балáлар",
+      "não tem acento"
+     ],
+     "c": "F",
+     "e": "O acento acompanha o fim da palavra."
+    },
+    {
+     "id": "k06-08",
+     "t": "type",
+     "q": "Escreva em cazaque: oito",
+     "a": [
+      "сегіз"
+     ],
+     "c": "F",
+     "e": "Сегіз = 8."
+    },
+    {
+     "id": "k06-09",
+     "t": "gap",
+     "q": "Екі келі ___ беріңізші. (Me dê dois quilos de maçã)",
+     "a": [
+      "алма"
+     ],
+     "c": "L",
+     "e": "Алма = maçã."
+    },
+    {
+     "id": "k06-10",
+     "t": "order",
+     "a": "Бір келі бес жүз теңге",
+     "x": [
+      "қанша"
+     ],
+     "c": "S",
+     "e": "Um quilo, quinhentos tenges."
+    },
+    {
+     "id": "k06-11",
+     "t": "dict",
+     "a": "Бір, екі, үш, төрт, бес.",
+     "c": "F",
+     "e": "Contar de 1 a 5."
+    }
+   ]
+  },
+  {
+   "id": "k07",
+   "n": 7,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Танысу — apresentar-se",
+   "kz": "Танысу",
+   "goal": "Dizer o nome, perguntar o nome e usar os pronomes pessoais.",
+   "rules": [
+    {
+     "title": "Pronomes pessoais",
+     "points": [
+      "мен (eu), сен (você, informal), сіз (o senhor / a senhora), ол (ele, ela), біз (nós), сендер (vocês, informal), сіздер (os senhores), олар (eles).",
+      "Сіз é o tratamento padrão com desconhecidos e mais velhos; сен, com amigos, família e crianças.",
+      "Não há gênero: ол = ele ou ela."
+     ]
+    },
+    {
+     "title": "Nome",
+     "points": [
+      "Менің атым Ана. = Meu nome é Ana. (literalmente «o meu nome Ana»)",
+      "Сенің атың кім? / Сіздің атыңыз кім? = Qual é o seu nome?",
+      "Танысқаныма қуаныштымын. = Prazer em conhecer."
+     ],
+     "ex": [
+      [
+       "Менің атым Педро.",
+       "Meu nome é Pedro."
+      ],
+      [
+       "Сіздің атыңыз кім?",
+       "Qual é o seu nome?"
+      ]
+     ]
+    }
+   ],
+   "vocab": [
+    [
+     "мен",
+     "eu"
+    ],
+    [
+     "сен",
+     "você (informal)"
+    ],
+    [
+     "сіз",
+     "o senhor, a senhora"
+    ],
+    [
+     "ол",
+     "ele, ela"
+    ],
+    [
+     "біз",
+     "nós"
+    ],
+    [
+     "олар",
+     "eles, elas"
+    ],
+    [
+     "ат",
+     "nome"
+    ],
+    [
+     "Менің атым…",
+     "Meu nome é…"
+    ],
+    [
+     "Сенің атың кім?",
+     "Qual é o seu nome? (informal)"
+    ],
+    [
+     "Сіздің атыңыз кім?",
+     "Qual é o seu nome? (formal)"
+    ],
+    [
+     "Танысқаныма қуаныштымын.",
+     "Prazer em conhecer."
+    ],
+    [
+     "дос",
+     "amigo"
+    ]
+   ],
+   "dialog": {
+    "title": "No curso de idiomas",
+    "lines": [
+     [
+      "A",
+      "Сәлеметсіз бе! Менің атым Айгүл. Сіздің атыңыз кім?",
+      "Olá! Meu nome é Aigul. Qual é o seu nome?"
+     ],
+     [
+      "B",
+      "Сәлеметсіз бе! Менің атым Педро.",
+      "Olá! Meu nome é Pedro."
+     ],
+     [
+      "A",
+      "Танысқаныма қуаныштымын, Педро.",
+      "Prazer em conhecer, Pedro."
+     ],
+     [
+      "B",
+      "Мен де қуаныштымын. Ал бұл кім?",
+      "O prazer é meu. E quem é este?"
+     ],
+     [
+      "A",
+      "Бұл — Дәулет. Ол — менің досым.",
+      "É o Daulet. Ele é meu amigo."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k07-01",
+     "t": "mc",
+     "q": "«Ele» ou «ela» em cazaque:",
+     "a": "ол",
+     "w": [
+      "сен",
+      "біз",
+      "олар"
+     ],
+     "c": "P",
+     "e": "Ол serve para os dois gêneros."
+    },
+    {
+     "id": "k07-02",
+     "t": "mc",
+     "q": "Com o professor, você usa:",
+     "a": "сіз",
+     "w": [
+      "сен",
+      "ол",
+      "мен"
+     ],
+     "c": "U",
+     "e": "Сіз = tratamento respeitoso."
+    },
+    {
+     "id": "k07-03",
+     "t": "mc",
+     "q": "Менің ___ Ана. (Meu nome é Ana.)",
+     "a": "атым",
+     "w": [
+      "атың",
+      "аты",
+      "атыңыз"
+     ],
+     "c": "P",
+     "e": "Менің атым — o meu nome."
+    },
+    {
+     "id": "k07-04",
+     "t": "mc",
+     "q": "Сіздің ___ кім? (Qual é o seu nome?)",
+     "a": "атыңыз",
+     "w": [
+      "атым",
+      "атың",
+      "аты"
+     ],
+     "c": "P",
+     "e": "Сіздің → -ыңыз."
+    },
+    {
+     "id": "k07-05",
+     "t": "listen",
+     "audio": "Танысқаныма қуаныштымын.",
+     "q": "O que significa?",
+     "a": "Prazer em conhecer.",
+     "w": [
+      "Até logo.",
+      "Muito obrigado.",
+      "Bem-vindo."
+     ],
+     "c": "L",
+     "e": "Expressão fixa."
+    },
+    {
+     "id": "k07-06",
+     "t": "pairs",
+     "p": [
+      [
+       "мен",
+       "eu"
+      ],
+      [
+       "сен",
+       "você"
+      ],
+      [
+       "біз",
+       "nós"
+      ],
+      [
+       "олар",
+       "eles"
+      ],
+      [
+       "сіз",
+       "o senhor"
+      ]
+     ],
+     "c": "P",
+     "e": "Pronomes."
+    },
+    {
+     "id": "k07-07",
+     "t": "gap",
+     "q": "Сенің атың ___ ? (Qual é o seu nome?)",
+     "a": [
+      "кім"
+     ],
+     "c": "S",
+     "e": "Para nome se pergunta кім (quem)."
+    },
+    {
+     "id": "k07-08",
+     "t": "order",
+     "a": "Менің атым Педро",
+     "x": [
+      "сенің"
+     ],
+     "c": "S",
+     "e": "Менің атым + nome."
+    },
+    {
+     "id": "k07-09",
+     "t": "order",
+     "a": "Ол менің досым",
+     "x": [
+      "сен"
+     ],
+     "c": "S",
+     "e": "Ол — менің досым = Ele é meu amigo."
+    },
+    {
+     "id": "k07-10",
+     "t": "transform",
+     "p": "Passe para o formal (сіз).",
+     "q": "Сенің атың кім?",
+     "a": [
+      "Сіздің атыңыз кім?"
+     ],
+     "c": "U",
+     "e": "Сенің → Сіздің; атың → атыңыз."
+    },
+    {
+     "id": "k07-11",
+     "t": "dict",
+     "a": "Менің атым Айгүл. Танысқаныма қуаныштымын.",
+     "c": "F",
+     "e": "Expressões da apresentação."
+    }
+   ]
+  },
+  {
+   "id": "k08",
+   "n": 8,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Мен студентпін — eu sou…",
+   "kz": "Жіктік жалғау",
+   "goal": "Dizer profissão e nacionalidade com as terminações de pessoa.",
+   "rules": [
+    {
+     "title": "«Ser» é um sufixo",
+     "points": [
+      "Em cazaque, «eu sou estudante» = Мен студентпін: a terminação -пін faz o papel do verbo.",
+      "Eu: -мын/-мін depois de vogal e de л, м, н, ң, р, у, й (мұғаліммін, дәрігермін); -бын/-бін depois de з, ж (қызбын); -пын/-пін depois de consoante surda (студентпін, қазақпын).",
+      "Você (сен): -сың/-сің. O senhor (сіз): -сыз/-сіз. Nós: -мыз/-міз, -быз/-біз, -пыз/-піз, pela mesma regra. Ele/ela/eles: sem terminação."
+     ],
+     "ex": [
+      [
+       "Мен дәрігермін.",
+       "Sou médico."
+      ],
+      [
+       "Мен мұғаліммін.",
+       "Sou professor."
+      ],
+      [
+       "Сен студентсің.",
+       "Você é estudante."
+      ],
+      [
+       "Ол инженер.",
+       "Ele é engenheiro."
+      ]
+     ]
+    },
+    {
+     "title": "Nacionalidade",
+     "points": [
+      "-лық/-лік/-дық/-дік/-тық/-тік forma o gentílico: Бразилия → бразилиялық, Португалия → португалиялық.",
+      "Мен бразилиялықпын. = Sou brasileiro(a). Мен қазақпын. = Sou cazaque."
+     ]
+    }
+   ],
+   "vocab": [
+    [
+     "студент",
+     "estudante (universitário)"
+    ],
+    [
+     "мұғалім",
+     "professor"
+    ],
+    [
+     "дәрігер",
+     "médico"
+    ],
+    [
+     "инженер",
+     "engenheiro"
+    ],
+    [
+     "аудармашы",
+     "tradutor"
+    ],
+    [
+     "жүргізуші",
+     "motorista"
+    ],
+    [
+     "бразилиялық",
+     "brasileiro"
+    ],
+    [
+     "қазақ",
+     "cazaque"
+    ],
+    [
+     "орыс",
+     "russo"
+    ],
+    [
+     "жұмыс",
+     "trabalho"
+    ],
+    [
+     "Сіз кімсіз?",
+     "Quem é o senhor? (profissão)"
+    ],
+    [
+     "Сен кімсің?",
+     "Quem é você?"
+    ]
+   ],
+   "dialog": {
+    "title": "No avião",
+    "lines": [
+     [
+      "A",
+      "Кешіріңіз, сіз қазақсыз ба?",
+      "Desculpe, o senhor é cazaque?"
+     ],
+     [
+      "B",
+      "Иә, мен қазақпын. Ал сіз?",
+      "Sim, sou cazaque. E a senhora?"
+     ],
+     [
+      "A",
+      "Мен бразилиялықпын.",
+      "Sou brasileira."
+     ],
+     [
+      "B",
+      "Сіз кімсіз?",
+      "Qual é a sua profissão?"
+     ],
+     [
+      "A",
+      "Мен аудармашымын. Ал сіз?",
+      "Sou tradutora. E o senhor?"
+     ],
+     [
+      "B",
+      "Мен дәрігермін.",
+      "Sou médico."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k08-01",
+     "t": "mc",
+     "q": "Мен студент___.",
+     "a": "пін",
+     "w": [
+      "мін",
+      "бін",
+      "пын"
+     ],
+     "c": "P",
+     "e": "Branda + т (surda) → -пін."
+    },
+    {
+     "id": "k08-02",
+     "t": "mc",
+     "q": "Мен дәрігер___.",
+     "a": "мін",
+     "w": [
+      "пін",
+      "бін",
+      "мын"
+     ],
+     "c": "P",
+     "e": "Branda + р → -мін."
+    },
+    {
+     "id": "k08-03",
+     "t": "mc",
+     "q": "Мен мұғалім___.",
+     "a": "мін",
+     "w": [
+      "бін",
+      "пін",
+      "мын"
+     ],
+     "c": "P",
+     "e": "Depois de м → -мін: мұғаліммін."
+    },
+    {
+     "id": "k08-13",
+     "t": "mc",
+     "q": "Мен қыз___. (Sou uma moça.)",
+     "a": "бын",
+     "w": [
+      "мын",
+      "пын",
+      "бін"
+     ],
+     "c": "P",
+     "e": "Depois de з/ж → -бын/-бін: қызбын."
+    },
+    {
+     "id": "k08-04",
+     "t": "mc",
+     "q": "Мен қазақ___.",
+     "a": "пын",
+     "w": [
+      "пін",
+      "мын",
+      "бын"
+     ],
+     "c": "P",
+     "e": "Dura + қ (surda) → -пын."
+    },
+    {
+     "id": "k08-05",
+     "t": "mc",
+     "q": "Сен аудармашы___.",
+     "a": "сың",
+     "w": [
+      "сің",
+      "сыз",
+      "мын"
+     ],
+     "c": "P",
+     "e": "Сен → -сың/-сің; dura → -сың."
+    },
+    {
+     "id": "k08-06",
+     "t": "mc",
+     "q": "Сіз инженер___.",
+     "a": "сіз",
+     "w": [
+      "сыз",
+      "сің",
+      "біз"
+     ],
+     "c": "P",
+     "e": "Сіз → -сыз/-сіз; branda → -сіз."
+    },
+    {
+     "id": "k08-07",
+     "t": "mc",
+     "q": "Ол дәрігер___.",
+     "a": "— (sem terminação)",
+     "w": [
+      "мін",
+      "сің",
+      "ды"
+     ],
+     "c": "P",
+     "e": "3ª pessoa: sem terminação."
+    },
+    {
+     "id": "k08-08",
+     "t": "gap",
+     "q": "Мен бразилиялық___. (Sou brasileiro.)",
+     "a": [
+      "пын"
+     ],
+     "c": "P",
+     "e": "Dura + қ → -пын."
+    },
+    {
+     "id": "k08-09",
+     "t": "gap",
+     "q": "Біз студент___. (Somos estudantes.)",
+     "a": [
+      "піз"
+     ],
+     "c": "P",
+     "e": "Nós, branda + т → -піз."
+    },
+    {
+     "id": "k08-10",
+     "t": "pairs",
+     "p": [
+      [
+       "дәрігер",
+       "médico"
+      ],
+      [
+       "мұғалім",
+       "professor"
+      ],
+      [
+       "аудармашы",
+       "tradutor"
+      ],
+      [
+       "жүргізуші",
+       "motorista"
+      ],
+      [
+       "инженер",
+       "engenheiro"
+      ]
+     ],
+     "c": "L",
+     "e": "Profissões."
+    },
+    {
+     "id": "k08-11",
+     "t": "order",
+     "a": "Мен аудармашымын ал сіз",
+     "x": [
+      "сен"
+     ],
+     "c": "S",
+     "e": "Sou tradutor; e o senhor?"
+    },
+    {
+     "id": "k08-12",
+     "t": "type",
+     "q": "Escreva em cazaque: Sou médico.",
+     "a": [
+      "Мен дәрігермін",
+      "Дәрігермін"
+     ],
+     "c": "P",
+     "e": "Мен дәрігермін."
+    }
+   ]
+  }
+ ]
+}

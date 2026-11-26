@@ -1,0 +1,236 @@
+{
+  "units": [
+    {
+      "id": "u01", "n": 1, "phase": 1, "prio": 3, "theme": "alimentacao",
+      "title": "Artigos, partitivos e de",
+      "goal": "Escolher sempre o determinante certo antes do nome.",
+      "rules": [
+        {"title": "Geral × quantidade", "points": [
+          "Sentido geral (gostar, detestar, preferir): artigo definido. «J'aime le café.»",
+          "Quantidade que não se conta: partitivo du / de la / de l' / des. «Je bois du café.»",
+          "O português não tem partitivo; por isso «bebo café» vira, por engano, «je bois café»."],
+         "ex": [["J'adore le fromage, mais je mange du fromage seulement le week-end.", "Adoro queijo, mas só como queijo no fim de semana."]]},
+        {"title": "Quando tudo vira de", "points": [
+          "Depois de negação: «Je ne bois pas de café.» Exceção com être: «Ce n'est pas du café.»",
+          "Depois de quantidade: beaucoup de, un peu de, assez de, trop de, un kilo de.",
+          "Com avoir besoin de, avoir envie de, manquer de: sem artigo. «J'ai besoin d'argent.»",
+          "Adjetivo antes do nome no plural: «de bonnes idées» (no oral, ouve-se des)."],
+         "ex": [["Il n'y a plus de lait.", "Não tem mais leite."], ["Elle a beaucoup d'amis.", "Ela tem muitos amigos."]],
+         "trap": "La plupart DES gens (e não «de gens»): la plupart pede des."},
+        {"title": "Corpo e profissão", "points": [
+          "Parte do corpo: artigo definido, não possessivo. «Il a levé la main.» «Elle s'est cassé la jambe.»",
+          "Profissão depois de être: sem artigo. «Il est médecin.» Mas: «C'est un médecin célèbre.»"]}
+      ],
+      "items": [
+        {"id": "u01-01", "t": "mc", "q": "Le matin, je bois ___ café.", "a": "du", "w": ["le", "de", "un"], "c": "G1", "e": "Quantidade não contada de café: partitivo du.", "p": "De manhã, eu bebo café."},
+        {"id": "u01-02", "t": "mc", "q": "Je ne mange pas ___ viande.", "a": "de", "w": ["de la", "la", "des"], "c": "G1", "e": "Depois de negação, o partitivo vira de."},
+        {"id": "u01-03", "t": "mc", "q": "Ce n'est pas ___ sucre, c'est du sel !", "a": "du", "w": ["de", "le", "des"], "c": "G1", "e": "Com être o partitivo se mantém: ce n'est pas du sucre."},
+        {"id": "u01-04", "t": "mc", "q": "J'adore ___ chocolat noir.", "a": "le", "w": ["du", "de", "un"], "c": "G1", "e": "Adorer, aimer, détester: sentido geral, artigo definido."},
+        {"id": "u01-05", "t": "mc", "q": "La plupart ___ étudiants travaillent le week-end.", "a": "des", "w": ["de", "d'", "les"], "c": "G1", "e": "La plupart des + plural."},
+        {"id": "u01-06", "t": "gap", "q": "Nous avons besoin ___ temps pour réfléchir.", "a": ["de"], "c": "G1", "e": "Avoir besoin de + nome sem artigo.", "p": "Precisamos de tempo para pensar."},
+        {"id": "u01-07", "t": "gap", "q": "Il y a beaucoup ___ touristes en été.", "a": ["de"], "c": "G1", "e": "Beaucoup de + nome, sem artigo."},
+        {"id": "u01-08", "t": "gap", "q": "Ils ont ___ bonnes raisons de protester.", "a": ["de"], "c": "G1", "e": "Adjetivo anteposto no plural: de bonnes raisons (no escrito cuidado).", "h": "O adjetivo bonnes vem antes do nome."},
+        {"id": "u01-09", "t": "fix", "q": "Il est un médecin très connu dans la région.", "bad": "Il est un", "a": ["C'est un", "c'est un"], "full": "C'est un médecin très connu dans la région.", "c": "G1", "e": "Profissão com artigo e adjetivo: c'est un médecin… (il est médecin, sem artigo)."},
+        {"id": "u01-10", "t": "fix", "q": "Elle a levé sa main pour poser une question.", "bad": "sa", "a": ["la"], "full": "Elle a levé la main pour poser une question.", "c": "G1", "e": "Parte do corpo: artigo definido."},
+        {"id": "u01-11", "t": "fix", "q": "Je bois café sans sucre.", "bad": "café", "a": ["du café"], "full": "Je bois du café sans sucre.", "c": "G1", "e": "Falta o partitivo: du café."},
+        {"id": "u01-12", "t": "transform", "p": "Responda negativamente (frase completa).", "q": "Tu veux du thé ?", "a": ["Non, je ne veux pas de thé", "Non, je ne veux pas de thé, merci"], "start": "Non, ", "c": "G1", "e": "Negação: du → de."},
+        {"id": "u01-13", "t": "order", "a": "Il n'y a plus de pain à la maison", "x": ["du"], "c": "G1", "e": "Ne… plus + de."},
+        {"id": "u01-14", "t": "dict", "a": "Je ne prends pas de sucre dans mon café.", "p": "Não ponho açúcar no meu café.", "c": "G1", "e": "Ouça o de depois da negação."}
+      ]
+    },
+    {
+      "id": "u02", "n": 2, "phase": 1, "prio": 3, "theme": "viagem",
+      "title": "Preposições de lugar, países e cidades",
+      "goal": "Acertar à, en, au, aux, dans e chez sem pensar.",
+      "rules": [
+        {"title": "Cidades e países", "points": [
+          "Cidade: à (à Paris, à Lyon). Origem: de (de Rio).",
+          "País feminino (termina em -e) ou começando por vogal: en (en France, en Iran).",
+          "País masculino: au (au Brésil, au Canada). Plural: aux (aux États-Unis).",
+          "Origem: de France, du Brésil, des États-Unis."],
+         "ex": [["J'habite à Lyon, en France, mais je suis né au Brésil.", "Moro em Lyon, na França, mas nasci no Brasil."]],
+         "trap": "O português usa «em» para tudo: «em Paris, no Brasil». Em francês, cada caso tem a sua preposição."},
+        {"title": "Dans, chez, sur", "points": [
+          "Dans + região ou lugar com artigo: dans le Puy-de-Dôme, dans la rue.",
+          "Chez + pessoa ou empresa: chez moi, chez le médecin, chez Renault.",
+          "Sur + meio de comunicação: sur Internet, sur le site.",
+          "Localizar: au-dessus de, au-dessous de, à côté de, au bord de, autour de, à proximité de."]}
+      ],
+      "items": [
+        {"id": "u02-01", "t": "mc", "q": "L'année prochaine, je vais travailler ___ Canada.", "a": "au", "w": ["en", "à", "dans le"], "c": "G2", "e": "Canada é masculino: au Canada."},
+        {"id": "u02-02", "t": "mc", "q": "Elle habite ___ Portugal, ___ Lisbonne.", "a": "au … à", "w": ["en … à", "au … en", "dans le … à"], "c": "G2", "e": "Portugal é masculino (au); cidade: à."},
+        {"id": "u02-03", "t": "mc", "q": "Mes cousins vivent ___ États-Unis.", "a": "aux", "w": ["en", "dans les", "à les"], "c": "G2", "e": "País no plural: aux."},
+        {"id": "u02-04", "t": "mc", "q": "Ce soir, on dîne ___ mes parents.", "a": "chez", "w": ["à", "dans", "avec"], "c": "G2", "e": "Na casa de alguém: chez."},
+        {"id": "u02-05", "t": "mc", "q": "Il revient ___ Mexique la semaine prochaine.", "a": "du", "w": ["de", "au", "en"], "c": "G2", "e": "Origem de país masculino: du Mexique."},
+        {"id": "u02-06", "t": "gap", "q": "Nous passons nos vacances ___ Italie.", "a": ["en"], "c": "G2", "e": "Italie é feminino: en Italie."},
+        {"id": "u02-07", "t": "gap", "q": "J'ai trouvé cette information ___ Internet.", "a": ["sur"], "c": "G2", "e": "Sur Internet, sur le site."},
+        {"id": "u02-08", "t": "gap", "q": "Le village se trouve ___ bord d'un lac.", "a": ["au"], "c": "G2", "e": "Au bord de: à beira de."},
+        {"id": "u02-09", "t": "fix", "q": "Je suis allé dans Paris pour un congrès.", "bad": "dans", "a": ["à"], "full": "Je suis allé à Paris pour un congrès.", "c": "G2", "e": "Cidade: à Paris."},
+        {"id": "u02-10", "t": "fix", "q": "Elle est née en Brésil, à Recife.", "bad": "en", "a": ["au"], "full": "Elle est née au Brésil, à Recife.", "c": "G2", "e": "Brésil é masculino: au Brésil."},
+        {"id": "u02-11", "t": "pairs", "p": [["le Japon", "au Japon"], ["la Chine", "en Chine"], ["les Pays-Bas", "aux Pays-Bas"], ["l'Argentine", "en Argentine"], ["Marseille", "à Marseille"]], "c": "G2", "e": "Masculino: au; feminino ou vogal: en; plural: aux; cidade: à."},
+        {"id": "u02-12", "t": "order", "a": "Nous habitons à deux pas de la gare", "x": ["en"], "c": "G2", "e": "À deux pas de = pertinho de."},
+        {"id": "u02-13", "t": "dict", "a": "Ils partent au Japon et ensuite en Corée.", "c": "G2", "e": "Au Japon (masc.), en Corée (fem.)."}
+      ]
+    },
+    {
+      "id": "u03", "n": 3, "phase": 1, "prio": 3, "theme": "familia",
+      "title": "Pronomes complemento: le, lui, y, en",
+      "goal": "Usar y e en espontaneamente e escolher entre le e lui.",
+      "rules": [
+        {"title": "Direto × indireto", "points": [
+          "Objeto direto: le, la, les. «Je l'aide.» (aider qqn)",
+          "Objeto indireto (à + pessoa): lui, leur. «Je lui parle.» (parler à qqn)",
+          "Atenção: o português do Brasil usa «ele» como objeto («vi ele»); em francês, «je l'ai vu»."]},
+        {"title": "Y e en", "points": [
+          "y = à + coisa ou lugar: «Tu penses à ton examen ? Oui, j'y pense.» «J'y vais.»",
+          "en = de + coisa, partitivo ou quantidade: «J'en ai besoin.» «Tu as des frères ? J'en ai deux.»",
+          "Sem y ou en, a frase fica incompleta: «Je vais.» sozinho não basta; diga «J'y vais.»"],
+         "ex": [["Des cafés ? J'en bois trois par jour.", "Cafés? Tomo três por dia."]]},
+        {"title": "Pessoas com pronome tônico", "points": [
+          "Alguns verbos pedem à + pronome tônico para pessoas: penser à lui, faire attention à elle, s'intéresser à eux, tenir à elle.",
+          "De + pessoa: «Je parle de lui», «J'ai besoin d'elle»."],
+         "trap": "Je pense à lui (e não «je lui pense»)."}
+      ],
+      "items": [
+        {"id": "u03-01", "t": "mc", "q": "— Tu as téléphoné à ta mère ? — Oui, je ___ ai téléphoné hier.", "a": "lui", "w": ["l'", "la", "y"], "c": "G3", "e": "Téléphoner à qqn: objeto indireto, lui."},
+        {"id": "u03-02", "t": "mc", "q": "— Tu vas à la réunion ? — Oui, j'___ vais.", "a": "y", "w": ["en", "le", "lui"], "c": "G3", "e": "À + lugar: y."},
+        {"id": "u03-03", "t": "mc", "q": "— Tu as des enfants ? — Oui, j'___ ai trois.", "a": "en", "w": ["les", "y", "leur"], "c": "G3", "e": "Quantidade sem o nome: en."},
+        {"id": "u03-04", "t": "mc", "q": "— Tu penses souvent à ton grand-père ? — Oui, je pense souvent ___.", "a": "à lui", "w": ["lui", "y", "à le"], "c": "G3", "e": "Penser à + pessoa: pronome tônico (à lui)."},
+        {"id": "u03-05", "t": "mc", "q": "— Tu as besoin de ce dossier ? — Oui, j'___ ai besoin.", "a": "en", "w": ["y", "le", "lui"], "c": "G3", "e": "Avoir besoin de + coisa: en."},
+        {"id": "u03-06", "t": "gap", "q": "Ces chaussures ? Je ___ ai achetées en solde.", "a": ["les"], "c": "G3", "e": "Objeto direto plural: les (e o particípio concorda: achetées)."},
+        {"id": "u03-07", "t": "gap", "q": "Mes voisins ? Je ___ dis bonjour tous les matins.", "a": ["leur"], "c": "G3", "e": "Dire bonjour à qqn: objeto indireto plural, leur (sem s)."},
+        {"id": "u03-08", "t": "gap", "q": "Ce problème est grave : il faut ___ réfléchir sérieusement.", "a": ["y"], "c": "G3", "e": "Réfléchir à qqch: y."},
+        {"id": "u03-09", "t": "fix", "q": "J'ai vu lui hier au supermarché.", "bad": "J'ai vu lui", "a": ["Je l'ai vu"], "full": "Je l'ai vu hier au supermarché.", "c": "G3", "e": "Objeto direto: le, antes do verbo (je l'ai vu)."},
+        {"id": "u03-10", "t": "fix", "q": "— Tu vas au cinéma ce soir ? — Oui, je vais.", "bad": "je vais.", "a": ["j'y vais"], "full": "Oui, j'y vais.", "c": "G3", "e": "Aller precisa de complemento: j'y vais."},
+        {"id": "u03-11", "t": "transform", "p": "Substitua a parte em destaque por um pronome.", "q": "Je parle souvent [de mes projets].", "a": ["J'en parle souvent"], "c": "G3", "e": "Parler de + coisa: en."},
+        {"id": "u03-12", "t": "transform", "p": "Substitua a parte em destaque por um pronome.", "q": "Elle fait confiance [à ses collègues].", "a": ["Elle leur fait confiance"], "c": "G3", "e": "Faire confiance à qqn: leur."},
+        {"id": "u03-13", "t": "order", "a": "Je ne lui en ai jamais parlé", "x": ["y"], "c": "G3", "e": "Ordem: lui antes de en; negação em volta do bloco."}
+      ]
+    },
+    {
+      "id": "u04", "n": 4, "phase": 1, "prio": 2, "theme": "consumo",
+      "title": "Pronomes duplos e imperativo",
+      "goal": "Encadear dois pronomes na ordem certa, também no imperativo.",
+      "rules": [
+        {"title": "A ordem fixa", "points": [
+          "me / te / se / nous / vous → le / la / les → lui / leur → y → en",
+          "«Il me l'a dit.» «Je le lui ai donné.» «Il y en a.» «Je vous en prie.»",
+          "No oral, «je le lui ai dit» soa «j'lui ai dit»: reconheça."],
+         "ex": [["Ton vélo ? Je te le rends demain.", "Sua bicicleta? Te devolvo amanhã."]]},
+        {"title": "Imperativo", "points": [
+          "Afirmativo: verbo-COD-COI, com hífen: «Donne-le-moi !», «Envoie-la-leur !», «Offre-lui-en !»",
+          "me/te viram moi/toi no fim: «Dis-moi.» Antes de en: «Donne-m'en.»",
+          "Negativo: volta a ordem normal: «Ne me le donne pas.»",
+          "Va / vas-y: o s volta diante de y e en."]}
+      ],
+      "items": [
+        {"id": "u04-01", "t": "mc", "q": "— Tu as rendu le livre à Paul ? — Oui, je ___ ai rendu.", "a": "le lui", "w": ["lui le", "le leur", "lui l'"], "c": "G3", "e": "Ordem: le antes de lui."},
+        {"id": "u04-02", "t": "mc", "q": "— Il t'a parlé de son projet ? — Oui, il ___ a parlé.", "a": "m'en", "w": ["me l'", "en m'", "m'y"], "c": "G3", "e": "Parler de qqch → en; me antes de en."},
+        {"id": "u04-03", "t": "mc", "q": "Ces documents, envoie-___ dès que possible !", "a": "les-moi", "w": ["moi-les", "me-les", "les-me"], "c": "G3", "e": "Imperativo afirmativo: COD antes de moi."},
+        {"id": "u04-04", "t": "mc", "q": "Ne ___ dis pas maintenant, c'est une surprise !", "a": "me le", "w": ["le-moi", "moi le", "le me"], "c": "G3", "e": "Imperativo negativo: ordem normal (me le)."},
+        {"id": "u04-05", "t": "mc", "q": "— Il reste du gâteau ? — Oui, il ___ reste un peu.", "a": "en", "w": ["y en", "le", "lui"], "c": "G3", "e": "Il en reste un peu (rester + quantidade)."},
+        {"id": "u04-06", "t": "gap", "q": "Des pommes ? Il ___ a plein au marché.", "a": ["y en"], "c": "G3", "e": "Il y a + quantidade: il y en a."},
+        {"id": "u04-07", "t": "gap", "q": "Tu veux du café ? Je ___ sers une tasse ?", "a": ["t'en", "vous en"], "c": "G3", "e": "Servir de qqch à qqn: t'en (te + en)."},
+        {"id": "u04-08", "t": "fix", "q": "Ce stylo, je lui le prête volontiers.", "bad": "lui le", "a": ["le lui"], "full": "Ce stylo, je le lui prête volontiers.", "c": "G3", "e": "Le vem antes de lui."},
+        {"id": "u04-09", "t": "fix", "q": "Donne-moi-le, s'il te plaît.", "bad": "Donne-moi-le,", "a": ["Donne-le-moi"], "full": "Donne-le-moi, s'il te plaît.", "c": "G3", "e": "Imperativo: COD (le) antes de moi."},
+        {"id": "u04-10", "t": "transform", "p": "Substitua os complementos por pronomes.", "q": "J'ai offert [des fleurs] [à ma mère].", "a": ["Je lui en ai offert"], "c": "G3", "e": "lui (à ma mère) antes de en (des fleurs)."},
+        {"id": "u04-11", "t": "transform", "p": "Ponha no imperativo afirmativo com pronomes.", "q": "Tu dois expliquer la règle aux élèves.", "a": ["Explique-la-leur", "Explique-la-leur !"], "c": "G3", "e": "Explique + la + leur, com hífens."},
+        {"id": "u04-12", "t": "order", "a": "Ne la lui montre pas", "x": ["moi"], "c": "G3", "e": "Negativo: ne + pronomes + verbo + pas."}
+      ]
+    },
+    {
+      "id": "u05", "n": 5, "phase": 1, "prio": 3, "theme": "viagem",
+      "title": "Passé composé, auxiliares e concordância",
+      "goal": "Escolher avoir ou être e fazer o particípio concordar.",
+      "rules": [
+        {"title": "Être ou avoir?", "points": [
+          "Com être: os verbos de movimento e mudança de estado (aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, passer…) e TODOS os pronominais.",
+          "Monter, descendre, sortir, rentrer, passer com objeto direto: avoir. «Elle a monté les valises.» × «Elle est montée.»",
+          "O português só tem «ter»: o erro típico é «j'ai allé»."]},
+        {"title": "Concordância do particípio", "points": [
+          "Com être: concorda com o sujeito. «Elles sont parties.»",
+          "Com avoir: só concorda quando o objeto direto vem ANTES. «Les lettres que j'ai écrites.» «Je les ai vues.»",
+          "Nunca concorda com en, y ou objeto indireto: «Je leur ai répondu.»",
+          "Pronominais: concorda se o pronome é objeto direto (elles se sont rencontrées), não se há outro objeto depois (elle s'est lavé les mains) ou se o pronome é indireto (ils se sont parlé)."],
+         "trap": "A concordância quase não se ouve (trouvé/trouvée), mas se escreve; e às vezes se ouve: écrit/écrite, pris/prise, mis/mise."}
+      ],
+      "items": [
+        {"id": "u05-01", "t": "mc", "q": "Hier, nous ___ au cinéma.", "a": "sommes allés", "w": ["avons allé", "sommes allé", "avons allés"], "c": "G5", "e": "Aller: auxiliar être; concorda com nous (allés)."},
+        {"id": "u05-02", "t": "mc", "q": "Elle ___ les valises au deuxième étage.", "a": "a monté", "w": ["est montée", "est monté", "a montée"], "c": "G5", "e": "Monter com objeto direto: avoir, sem concordância (o objeto vem depois)."},
+        {"id": "u05-03", "t": "mc", "q": "Les photos que tu as ___ sont magnifiques.", "a": "prises", "w": ["pris", "prise", "prit"], "c": "G4", "e": "Objeto direto (que = les photos) antes: concorda no feminino plural."},
+        {"id": "u05-04", "t": "mc", "q": "Elles se sont ___ les mains avant de manger.", "a": "lavé", "w": ["lavées", "lavés", "lavée"], "c": "G4", "e": "O objeto direto (les mains) vem depois: sem concordância."},
+        {"id": "u05-05", "t": "mc", "q": "Mes amies ? Je leur ai ___ hier.", "a": "téléphoné", "w": ["téléphonées", "téléphonés", "téléphonée"], "c": "G4", "e": "Leur é objeto indireto: não há concordância."},
+        {"id": "u05-06", "t": "gap", "q": "Ma grand-mère est ___ (naître) en 1940.", "a": ["née"], "c": "G4", "e": "Naître com être; sujeito feminino: née."},
+        {"id": "u05-07", "t": "gap", "q": "Ces chansons, je les ai ___ (entendre) mille fois.", "a": ["entendues"], "c": "G4", "e": "Les (chansons) vem antes: entendues."},
+        {"id": "u05-08", "t": "gap", "q": "Ils se sont ___ (rencontrer) à Lyon en 2015.", "a": ["rencontrés"], "c": "G4", "e": "Rencontrer qqn: se é objeto direto, concorda (rencontrés)."},
+        {"id": "u05-09", "t": "fix", "q": "Hier soir, j'ai resté à la maison.", "bad": "j'ai resté", "a": ["je suis resté", "je suis restée"], "full": "Hier soir, je suis resté(e) à la maison.", "c": "G5", "e": "Rester: auxiliar être."},
+        {"id": "u05-10", "t": "fix", "q": "Les clients qu'ils ont fréquenté pendant des années ne viennent plus.", "bad": "fréquenté", "a": ["fréquentés"], "full": "Les clients qu'ils ont fréquentés pendant des années ne viennent plus.", "c": "G4", "e": "Erro real comentado no Wattier: o objeto (que = les clients) vem antes, concorda."},
+        {"id": "u05-11", "t": "fix", "q": "Elles se sont parlées pendant des heures.", "bad": "parlées", "a": ["parlé"], "full": "Elles se sont parlé pendant des heures.", "c": "G4", "e": "Parler à qqn: se é indireto, sem concordância."},
+        {"id": "u05-12", "t": "transform", "p": "Passe para o passé composé.", "q": "Elle sort la poubelle, puis elle sort avec ses amies.", "a": ["Elle a sorti la poubelle, puis elle est sortie avec ses amies"], "c": "G5", "e": "Sortir + objeto (la poubelle): avoir. Sortir sem objeto: être + concordância."},
+        {"id": "u05-13", "t": "dict", "a": "Elles sont arrivées tard et se sont couchées tout de suite.", "c": "G4", "e": "Concordância com être e com os pronominais."}
+      ]
+    },
+    {
+      "id": "u06", "n": 6, "phase": 1, "prio": 3, "theme": "historia",
+      "title": "Passé composé, imparfait e plus-que-parfait",
+      "goal": "Narrar no passado sem misturar cenário e acontecimento.",
+      "rules": [
+        {"title": "Quem faz o quê", "points": [
+          "Imparfait: cenário, estado, hábito, ação em curso. «Il pleuvait. J'étais fatigué. Tous les étés, on allait à la mer.»",
+          "Passé composé: fato pontual que faz a história avançar. «Soudain, le téléphone a sonné.»",
+          "Plus-que-parfait: ação anterior a outra passada. «Quand je suis arrivé, le film avait commencé.»"],
+         "ex": [["Je dormais quand tu as appelé.", "Eu estava dormindo quando você ligou."]]},
+        {"title": "Armadilhas", "points": [
+          "Estado prolongado: imparfait. «Hier, j'étais malade toute la journée.» (e não «j'ai été»).",
+          "Venir de no imparfait = passado recente no passado: «Je venais de sortir quand il est arrivé.»",
+          "O português falado troca o mais-que-perfeito pelo perfeito; o francês escrito exige o plus-que-parfait."]}
+      ],
+      "items": [
+        {"id": "u06-01", "t": "mc", "q": "Quand j'étais petit, je ___ chez mes grands-parents tous les étés.", "a": "passais", "w": ["ai passé", "avais passé", "passai"], "c": "G5", "e": "Hábito no passado: imparfait."},
+        {"id": "u06-02", "t": "mc", "q": "Nous regardions un film quand l'électricité ___.", "a": "a été coupée", "w": ["était coupée", "avait été coupée", "est coupée"], "c": "G5", "e": "Acontecimento que interrompe a ação em curso: passé composé."},
+        {"id": "u06-03", "t": "mc", "q": "Quand je suis arrivé à la gare, le train ___.", "a": "était déjà parti", "w": ["est déjà parti", "partait déjà", "a déjà parti"], "c": "G5", "e": "Ação anterior a outra passada: plus-que-parfait."},
+        {"id": "u06-04", "t": "mc", "q": "Hier, il ___ fatigué toute la journée.", "a": "était", "w": ["a été", "avait été", "est"], "c": "G5", "e": "Estado que dura: imparfait."},
+        {"id": "u06-05", "t": "gap", "q": "Il faisait beau, les oiseaux ___ (chanter) et nous étions heureux.", "a": ["chantaient"], "c": "G5", "e": "Cenário: imparfait."},
+        {"id": "u06-06", "t": "gap", "q": "Soudain, quelqu'un ___ (frapper) à la porte.", "a": ["a frappé"], "c": "G5", "e": "Fato pontual, marcado por soudain: passé composé."},
+        {"id": "u06-07", "t": "gap", "q": "Elle a retrouvé le livre qu'elle ___ (perdre) la veille.", "a": ["avait perdu"], "c": "G5", "e": "Anterior à ação passada: plus-que-parfait."},
+        {"id": "u06-08", "t": "gap", "q": "Je ___ (venir) de rentrer quand le téléphone a sonné.", "a": ["venais"], "c": "G5", "e": "Venir de no imparfait: tinha acabado de."},
+        {"id": "u06-09", "t": "fix", "q": "Quand j'ai eu dix ans, nous habitions à Recife.", "bad": "j'ai eu", "a": ["j'avais"], "full": "Quand j'avais dix ans, nous habitions à Recife.", "c": "G5", "e": "Idade como cenário: imparfait."},
+        {"id": "u06-10", "t": "fix", "q": "Il m'a dit qu'il a déjà vu ce film.", "bad": "a déjà vu", "a": ["avait déjà vu"], "full": "Il m'a dit qu'il avait déjà vu ce film.", "c": "G5", "e": "Anterioridade no passado: plus-que-parfait."},
+        {"id": "u06-11", "t": "transform", "p": "Reescreva no passado (imparfait ou passé composé).", "q": "Il est minuit. Je lis tranquillement. Tout à coup, j'entends un bruit.", "a": ["Il était minuit. Je lisais tranquillement. Tout à coup, j'ai entendu un bruit"], "c": "G5", "e": "Hora e ação em curso: imparfait; evento repentino: passé composé."},
+        {"id": "u06-12", "t": "order", "a": "Quand nous sommes arrivés la fête avait commencé", "x": ["commençait"], "c": "G5", "e": "A festa começou antes da chegada: plus-que-parfait."}
+      ]
+    },
+    {
+      "id": "u07", "n": 7, "phase": 1, "prio": 3, "theme": "tradicoes",
+      "title": "Relativos: qui, que, où, dont, ce qui, ce que, ce dont",
+      "goal": "Usar dont e os relativos neutros em vez do «que» para tudo.",
+      "rules": [
+        {"title": "Os quatro básicos", "points": [
+          "qui = sujeito: «la femme qui parle».",
+          "que = objeto direto: «le livre que je lis».",
+          "où = lugar E tempo: «la ville où j'habite», «le jour où je t'ai vu».",
+          "dont = complemento com de: «le film dont je t'ai parlé» (parler de), «la maison dont le toit est rouge», «dix personnes, dont Marie»."],
+         "trap": "«O livro que te falei» vira, por engano, «le livre que je t'ai parlé». Parler de → dont."},
+        {"title": "Relativos neutros", "points": [
+          "ce qui (sujeito): «Ce qui m'intéresse, c'est l'histoire.»",
+          "ce que (objeto): «Dis-moi ce que tu veux.»",
+          "ce dont (de): «Ce dont j'ai besoin, c'est de calme.»",
+          "ce à quoi (à): «Ce à quoi je pense, c'est à partir.»"]}
+      ],
+      "items": [
+        {"id": "u07-01", "t": "mc", "q": "C'est le collègue ___ je t'ai parlé hier.", "a": "dont", "w": ["que", "qui", "où"], "c": "G3", "e": "Parler de qqn → dont."},
+        {"id": "u07-02", "t": "mc", "q": "Je me souviens du jour ___ nous nous sommes rencontrés.", "a": "où", "w": ["que", "dont", "quand"], "c": "G3", "e": "Où também marca tempo: le jour où."},
+        {"id": "u07-03", "t": "mc", "q": "La fête ___ je préfère, c'est le 14 Juillet.", "a": "que", "w": ["dont", "qui", "où"], "c": "G3", "e": "Préférer qqch: objeto direto, que."},
+        {"id": "u07-04", "t": "mc", "q": "Explique-moi ___ s'est passé.", "a": "ce qui", "w": ["ce que", "qu'est-ce qui", "qui"], "c": "G3", "e": "Pergunta indireta, sujeito do verbo: ce qui."},
+        {"id": "u07-05", "t": "mc", "q": "___ j'ai besoin, c'est d'un peu de repos.", "a": "Ce dont", "w": ["Ce que", "Ce qui", "Dont"], "c": "G3", "e": "Avoir besoin de → ce dont."},
+        {"id": "u07-06", "t": "gap", "q": "La Provence est une région ___ les traditions sont très vivantes.", "a": ["dont"], "c": "G3", "e": "Les traditions DE la région → dont."},
+        {"id": "u07-07", "t": "gap", "q": "Voici la liste des invités, ___ trois ministres.", "a": ["dont"], "c": "G3", "e": "Dont = entre os quais (inclusão)."},
+        {"id": "u07-08", "t": "gap", "q": "Je ne comprends pas ___ tu veux dire.", "a": ["ce que"], "c": "G3", "e": "Vouloir dire qqch: objeto, ce que."},
+        {"id": "u07-09", "t": "fix", "q": "C'est un sujet que je m'intéresse beaucoup.", "bad": "que", "a": ["auquel"], "full": "C'est un sujet auquel je m'intéresse beaucoup.", "c": "G3", "e": "S'intéresser à qqch → auquel (ver unidade 22). Que não serve."},
+        {"id": "u07-10", "t": "fix", "q": "Ce que les clients ont peur, c'est la hausse des prix.", "bad": "Ce que", "a": ["Ce dont"], "full": "Ce dont les clients ont peur, c'est la hausse des prix.", "c": "G3", "e": "Erro real (Wattier): avoir peur de → ce dont."},
+        {"id": "u07-11", "t": "transform", "p": "Junte as duas frases com um relativo.", "q": "J'ai lu un roman. L'auteur de ce roman est québécois.", "a": ["J'ai lu un roman dont l'auteur est québécois"], "c": "G3", "e": "L'auteur DU roman → dont."},
+        {"id": "u07-12", "t": "order", "a": "Voici le village où je suis né", "x": ["que"], "c": "G3", "e": "Lugar: où."}
+      ]
+    }
+  ]
+}

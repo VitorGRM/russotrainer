@@ -1,0 +1,225 @@
+{
+  "units": [
+    {
+      "id": "u24", "n": 24, "phase": 2, "prio": 3, "theme": "economia",
+      "title": "Nominalização",
+      "goal": "Transformar verbos e adjetivos em nomes para escrever títulos, objetos e frases densas.",
+      "rules": [
+        {"title": "Verbo → nome", "points": [
+          "augmenter → l'augmentation; baisser → la baisse; réduire → la réduction; développer → le développement; décider → la décision; choisir → le choix; vendre → la vente; fermer → la fermeture.",
+          "Adjetivo → nome: inquiet → l'inquiétude; instable → l'instabilité; pauvre → la pauvreté; précis → la précision.",
+          "Usos: manchete (Hausse des prix), objeto de carta (Demande de remboursement), frase de síntese."],
+         "trap": "Gênero: -age é masculino (le chômage, le message), -ion e -té são femininos, -ment é masculino."}
+      ],
+      "items": [
+        {"id": "u24-01", "t": "mc", "q": "Les prix augmentent → ___ des prix", "a": "Hausse", "w": ["Haussement", "Montée en", "Augmenté"], "c": "L2", "e": "Manchete: Hausse (ou Augmentation) des prix."},
+        {"id": "u24-02", "t": "mc", "q": "Objet : ___ de remboursement", "a": "Demande", "w": ["Demander", "Je demande", "Demandé"], "c": "R", "e": "O objeto de uma carta é sempre nominal."},
+        {"id": "u24-03", "t": "mc", "q": "La population est inquiète → l'___ de la population", "a": "inquiétude", "w": ["inquiétement", "inquiétance", "inquiétation"], "c": "L2", "e": "Inquiet → l'inquiétude."},
+        {"id": "u24-04", "t": "mc", "q": "L'usine ferme → la ___ de l'usine", "a": "fermeture", "w": ["fermement", "fermation", "fermage"], "c": "L2", "e": "Fermer → la fermeture."},
+        {"id": "u24-05", "t": "gap", "q": "On constate une forte ___ du chômage chez les jeunes. (baisser)", "a": ["baisse"], "c": "L2", "e": "Baisser → la baisse."},
+        {"id": "u24-06", "t": "gap", "q": "La ___ des transports publics est une priorité. (gratuit)", "a": ["gratuité"], "c": "L2", "e": "Gratuit → la gratuité."},
+        {"id": "u24-07", "t": "gap", "q": "Le ___ de la ville a été rapide. (développer)", "a": ["développement"], "c": "L2", "e": "Développer → le développement."},
+        {"id": "u24-08", "t": "fix", "q": "Objet : demander un rendez-vous", "bad": "demander", "a": ["demande de"], "full": "Objet : demande de rendez-vous", "c": "R", "e": "Objeto com nome, nunca com verbo (Wattier)."},
+        {"id": "u24-09", "t": "transform", "p": "Transforme em manchete (sem verbo conjugado).", "q": "Le gouvernement réforme les retraites.", "a": ["Réforme des retraites", "Réforme des retraites par le gouvernement"], "c": "L2", "e": "Réformer → la réforme."},
+        {"id": "u24-10", "t": "transform", "p": "Transforme a manchete em frase com verbo conjugado.", "q": "Faible participation des électeurs, selon un premier bilan.", "a": ["Selon un premier bilan, les électeurs ont peu participé", "Selon un premier bilan, peu d'électeurs ont participé", "Selon un premier bilan, les électeurs ont faiblement participé"], "c": "L2", "e": "Exercício do Réussir: do nome de volta ao verbo."},
+        {"id": "u24-11", "t": "pairs", "p": [["choisir", "le choix"], ["vendre", "la vente"], ["perdre", "la perte"], ["croître", "la croissance"], ["exiger", "l'exigence"]], "c": "L2", "e": "Nominalizações irregulares."},
+        {"id": "u24-12", "t": "order", "a": "La suppression des postes inquiète les syndicats", "x": ["supprimer"], "c": "L2", "e": "Nome (la suppression) como sujeito."}
+      ]
+    },
+    {
+      "id": "u25", "n": 25, "phase": 2, "prio": 2, "theme": "debate",
+      "title": "Mise en relief e deslocamentos",
+      "goal": "Pôr em destaque o que importa, por escrito e na fala.",
+      "rules": [
+        {"title": "No escrito", "points": [
+          "c'est… qui / c'est… que: «C'est la ministre qui a proposé la loi.» «C'est en 2015 que…»",
+          "c'est + preposição: «C'est à toi que je parle.» «C'est de ça que j'ai besoin.»",
+          "ce qui / ce que / ce dont / ce à quoi… c'est: «Ce dont j'ai besoin, c'est de repos.» (o de se repete)"]},
+        {"title": "No oral", "points": [
+          "Deslocar e retomar com pronome: «Mes clés, je les ai perdues.» «Elle est où, ta voiture ?» «Moi, je pense que…»",
+          "Use no oral e no e-mail informal; no ensaio, prefira c'est… qui/que."]}
+      ],
+      "items": [
+        {"id": "u25-01", "t": "mc", "q": "___ j'ai besoin, c'est de calme.", "a": "Ce dont", "w": ["Ce que", "Ce qui", "C'est que"], "c": "G3", "e": "Avoir besoin de → ce dont… c'est de."},
+        {"id": "u25-02", "t": "mc", "q": "C'est à toi ___ je m'adresse.", "a": "que", "w": ["qui", "dont", "à qui"], "c": "G3", "e": "C'est + preposição + que."},
+        {"id": "u25-03", "t": "mc", "q": "Ce ___ me plaît dans ce métier, c'est le contact humain.", "a": "qui", "w": ["que", "dont", "quoi"], "c": "G3", "e": "Plaire: a coisa é sujeito → ce qui."},
+        {"id": "u25-04", "t": "mc", "q": "Ce ___ je pense, c'est à partir à l'étranger.", "a": "à quoi", "w": ["que", "dont", "qui"], "c": "G3", "e": "Penser à → ce à quoi."},
+        {"id": "u25-05", "t": "gap", "q": "C'est en 1789 ___ la Révolution a commencé.", "a": ["que"], "c": "G3", "e": "C'est + complemento + que."},
+        {"id": "u25-06", "t": "gap", "q": "Ce que les employés souhaitent, ___ plus de liberté.", "a": ["c'est"], "c": "G3", "e": "Ce que… c'est (função «mettre en relief» do Wattier)."},
+        {"id": "u25-07", "t": "fix", "q": "Ce que j'ai besoin, c'est d'un ordinateur plus rapide.", "bad": "Ce que", "a": ["Ce dont"], "full": "Ce dont j'ai besoin, c'est d'un ordinateur plus rapide.", "c": "G3", "e": "Avoir besoin de → ce dont."},
+        {"id": "u25-08", "t": "transform", "p": "Ponha em destaque o sujeito com «c'est… qui».", "q": "Les ingénieurs ont conçu ce prototype.", "a": ["Ce sont les ingénieurs qui ont conçu ce prototype", "C'est les ingénieurs qui ont conçu ce prototype"], "c": "G3", "e": "Ce sont… qui (c'est é aceito no oral)."},
+        {"id": "u25-09", "t": "transform", "p": "Ponha em destaque com «ce qui… c'est».", "q": "Le bruit m'énerve.", "a": ["Ce qui m'énerve, c'est le bruit"], "start": "Ce qui ", "c": "G3", "e": "Ce qui + verbo, c'est + nome."},
+        {"id": "u25-10", "t": "register", "q": "Elle est où, ta voiture ?", "a": "familiar", "c": "R", "e": "Deslocamento e pergunta sem inversão: oral familiar."},
+        {"id": "u25-11", "t": "order", "a": "C'est dans ce quartier que j'ai grandi", "x": ["où"], "c": "G3", "e": "C'est + lugar + que (não où)."}
+      ]
+    },
+    {
+      "id": "u26", "n": 26, "phase": 2, "prio": 2, "theme": "lazer",
+      "title": "Gerúndio, particípio presente e adjetivo verbal",
+      "goal": "Usar o gerúndio com o sujeito certo e distinguir négligeant de négligent.",
+      "rules": [
+        {"title": "Gerúndio (en + -ant)", "points": [
+          "Mesmo sujeito da principal: simultaneidade, maneira, causa ou condição. «C'est en forgeant qu'on devient forgeron.»",
+          "ERRO clássico: gerúndio com sujeito diferente. «En signant le contrat, les prix baissent» (quem assinou?)."]},
+        {"title": "Particípio e adjetivo verbal", "points": [
+          "Particípio presente (escrito): «les candidats ayant réussi», invariável.",
+          "Particípio composto: «Ayant appris la nouvelle…», «Étant arrivée en retard…» (ayant com verbos de avoir!).",
+          "Adjetivo verbal concorda e às vezes muda a grafia: négligent/négligeant, fatigant/fatiguant, convaincant/convainquant, différent/différant, précédent/précédant."]}
+      ],
+      "items": [
+        {"id": "u26-01", "t": "mc", "q": "Il s'est cassé la jambe ___ du ski.", "a": "en faisant", "w": ["faisant", "en fait", "pour faire"], "c": "G5", "e": "Gerúndio: en faisant (simultaneidade)."},
+        {"id": "u26-02", "t": "mc", "q": "___ pris l'habitude de la voiture, il ne prend plus le bus.", "a": "Ayant", "w": ["Étant", "En ayant pas", "Avoir"], "c": "G5", "e": "Prendre usa avoir: ayant pris."},
+        {"id": "u26-03", "t": "mc", "q": "Ce travail est très ___.", "a": "fatigant", "w": ["fatiguant", "fatigué", "fatigants"], "c": "O", "e": "Adjetivo verbal: fatigant (sem u)."},
+        {"id": "u26-04", "t": "mc", "q": "Les arguments de l'avocat étaient très ___.", "a": "convaincants", "w": ["convainquants", "convaincant", "convaincus"], "c": "O", "e": "Adjetivo: convaincant(s)."},
+        {"id": "u26-05", "t": "gap", "q": "Les supermarchés se montrent souvent ___ sur l'origine des produits.", "a": ["négligents"], "c": "O", "e": "Adjetivo verbal: négligent (Wattier)."},
+        {"id": "u26-06", "t": "gap", "q": "J'ai été très déçu ___ apprenant la nouvelle.", "a": ["en"], "c": "G5", "e": "En apprenant: gerúndio."},
+        {"id": "u26-07", "t": "fix", "q": "En signant des partenariats avec les supermarchés, les produits locaux deviennent plus accessibles.", "bad": "les produits locaux deviennent", "a": ["les producteurs rendent leurs produits"], "full": "En signant des partenariats avec les supermarchés, les producteurs rendent leurs produits plus accessibles.", "c": "G5", "e": "Erro real (Wattier): o gerúndio precisa ter o mesmo sujeito da principal.", "h": "Quem assina os contratos? Esse deve ser o sujeito."},
+        {"id": "u26-08", "t": "fix", "q": "Étant pris l'habitude de fréquenter les supermarchés, les clients ne changent pas.", "bad": "Étant", "a": ["Ayant"], "full": "Ayant pris l'habitude de fréquenter les supermarchés, les clients ne changent pas.", "c": "G5", "e": "Erro real (Wattier): prendre usa avoir → ayant pris."},
+        {"id": "u26-09", "t": "transform", "p": "Use um gerúndio.", "q": "Il travaille et il écoute de la musique.", "a": ["Il travaille en écoutant de la musique"], "c": "G5", "e": "Simultaneidade com mesmo sujeito."},
+        {"id": "u26-10", "t": "pairs", "p": [["négligeant (part.)", "négligent (adj.)"], ["fatiguant (part.)", "fatigant (adj.)"], ["différant (part.)", "différent (adj.)"], ["précédant (part.)", "précédent (adj.)"]], "c": "O", "e": "Particípio × adjetivo verbal."},
+        {"id": "u26-11", "t": "order", "a": "Le travail terminé nous sommes partis en vacances", "x": ["terminant"], "c": "G5", "e": "Oração participial absoluta."}
+      ]
+    },
+    {
+      "id": "u27", "n": 27, "phase": 2, "prio": 3, "theme": "educacao",
+      "title": "Infinitivo e construções verbais",
+      "goal": "Acertar a preposição entre verbo e infinitivo.",
+      "rules": [
+        {"title": "Três famílias", "points": [
+          "Direto: vouloir, pouvoir, devoir, savoir, aimer, préférer, espérer, compter, sembler, aller, faire, laisser.",
+          "+ à: commencer, continuer, hésiter, réussir, arriver, chercher, s'habituer, apprendre, se mettre, aider qqn.",
+          "+ de: décider, essayer, oublier, refuser, accepter, éviter, cesser, finir, regretter, se souvenir, avoir envie/besoin/peur."]},
+        {"title": "Com objeto e adjetivos", "points": [
+          "verbo + à qqn + de + inf.: demander, conseiller, permettre, interdire, promettre, proposer, dire. «Je lui ai conseillé de partir.»",
+          "empêcher qqn de, remercier qqn de, inviter qqn à, obliger qqn à.",
+          "il est + adjetivo + de + inf. («Il est difficile de trouver») × c'est + adjetivo + à com o objeto antes («C'est difficile à trouver»).",
+          "Infinitivo passado: «Je regrette de ne pas être venu.» «Après avoir fini…»"],
+         "trap": "«Il est difficile à trouver un emploi» está errado: Il est difficile DE trouver un emploi."}
+      ],
+      "items": [
+        {"id": "u27-01", "t": "mc", "q": "Il a décidé ___ changer de carrière.", "a": "de", "w": ["à", "pour", "—"], "c": "G2", "e": "Décider de + inf."},
+        {"id": "u27-02", "t": "mc", "q": "Elle a réussi ___ convaincre le jury.", "a": "à", "w": ["de", "pour", "—"], "c": "G2", "e": "Réussir à + inf."},
+        {"id": "u27-03", "t": "mc", "q": "Le médecin lui a conseillé ___ arrêter de fumer.", "a": "d'", "w": ["à", "pour", "qu'il"], "c": "G2", "e": "Conseiller à qqn de faire."},
+        {"id": "u27-04", "t": "mc", "q": "J'espère ___ te revoir bientôt.", "a": "—", "w": ["de", "à", "pour"], "c": "G2", "e": "Espérer + infinitivo direto (— = sem preposição)."},
+        {"id": "u27-05", "t": "mc", "q": "Ce texte est facile ___ traduire.", "a": "à", "w": ["de", "pour", "—"], "c": "G2", "e": "Adjetivo + à quando o sujeito é o objeto do infinitivo."},
+        {"id": "u27-06", "t": "gap", "q": "Les élèves s'habituent ___ travailler en groupe.", "a": ["à"], "c": "G2", "e": "S'habituer à."},
+        {"id": "u27-07", "t": "gap", "q": "La pluie nous a empêchés ___ sortir.", "a": ["de"], "c": "G2", "e": "Empêcher qqn de."},
+        {"id": "u27-08", "t": "gap", "q": "Je regrette de ne pas ___ (venir) à ta fête.", "a": ["être venu", "être venue"], "c": "G5", "e": "Infinitivo passado com être."},
+        {"id": "u27-09", "t": "fix", "q": "Pour les consommateurs, il devient plus difficile à trouver des produits naturels.", "bad": "à", "a": ["de"], "full": "Pour les consommateurs, il devient plus difficile de trouver des produits naturels.", "c": "G2", "e": "Erro real (Wattier): il est/devient difficile de + inf."},
+        {"id": "u27-10", "t": "fix", "q": "Il a commencé de pleuvoir vers midi.", "bad": "de", "a": ["à"], "full": "Il a commencé à pleuvoir vers midi.", "c": "G2", "e": "Commencer à (de é literário/raro)."},
+        {"id": "u27-11", "t": "pairs", "p": [["essayer", "de + inf."], ["hésiter", "à + inf."], ["vouloir", "+ inf. direto"]], "c": "G2", "e": "Regência de verbo + infinitivo."},
+        {"id": "u27-12", "t": "order", "a": "Le professeur a fait lire le texte aux élèves", "x": ["à"], "c": "G2", "e": "Faire + infinitivo (causativo)."}
+      ]
+    },
+    {
+      "id": "u28", "n": 28, "phase": 2, "prio": 2, "theme": "historia",
+      "title": "Futuro do passado e coerência narrativa",
+      "goal": "Manter a âncora no passado: condicional como futuro do passado.",
+      "rules": [
+        {"title": "Futuro visto do passado", "points": [
+          "Condicional presente: «Il a promis qu'il viendrait.»",
+          "Condicional passado (anterior a esse futuro): «Il pensait qu'il aurait fini avant midi.»",
+          "aller no imparfait + infinitivo: «J'allais partir quand tu as appelé.» Être sur le point de: estar prestes a."]}
+      ],
+      "items": [
+        {"id": "u28-01", "t": "mc", "q": "Elle m'avait promis qu'elle ___ à l'heure.", "a": "arriverait", "w": ["arrivera", "arrivait", "soit arrivée"], "c": "G5", "e": "Futuro do passado: condicional."},
+        {"id": "u28-02", "t": "mc", "q": "J'___ sortir quand il s'est mis à pleuvoir.", "a": "allais", "w": ["vais", "suis allé", "irai"], "c": "G5", "e": "Aller (imparfait) + inf.: ia fazer."},
+        {"id": "u28-03", "t": "mc", "q": "Ils pensaient que les travaux ___ avant l'été.", "a": "seraient terminés", "w": ["seront terminés", "sont terminés", "soient terminés"], "c": "G5", "e": "Futuro do passado (passiva): seraient terminés."},
+        {"id": "u28-04", "t": "gap", "q": "Il savait qu'il ___ (devoir) partir un jour.", "a": ["devrait"], "c": "G5", "e": "Condicional como futuro do passado."},
+        {"id": "u28-05", "t": "gap", "q": "Nous étions sur le ___ de partir quand le téléphone a sonné.", "a": ["point"], "c": "L2", "e": "Être sur le point de."},
+        {"id": "u28-06", "t": "gap", "q": "Elle croyait qu'il ___ (partir) avant son retour.", "a": ["serait parti"], "c": "G5", "e": "Anterior ao futuro no passado: condicional passado."},
+        {"id": "u28-07", "t": "fix", "q": "En 1990, personne ne savait qu'Internet changera le monde.", "bad": "changera", "a": ["changerait", "allait changer"], "full": "En 1990, personne ne savait qu'Internet changerait le monde.", "c": "G5", "e": "Âncora no passado → condicional."},
+        {"id": "u28-08", "t": "transform", "p": "Passe para o passado: «Il a dit que…».", "q": "Il dit qu'il aura fini à cinq heures.", "a": ["Il a dit qu'il aurait fini à cinq heures"], "start": "Il a dit qu", "c": "G5", "e": "Futuro anterior → condicional passado."},
+        {"id": "u28-09", "t": "order", "a": "Je savais que tu réussirais", "x": ["réussiras"], "c": "G5", "e": "Futuro do passado."},
+        {"id": "u28-10", "t": "dict", "a": "Ils ignoraient encore que cette rencontre changerait leur vie.", "c": "G5", "e": "Condicional como futuro do passado."}
+      ]
+    },
+    {
+      "id": "u29", "n": 29, "phase": 2, "prio": 2, "theme": "sociedade",
+      "title": "Indefinidos e quantidade",
+      "goal": "Usar tout, chaque, chacun, aucun, la plupart com a concordância certa.",
+      "rules": [
+        {"title": "Os indefinidos", "points": [
+          "tout le monde + verbo no SINGULAR; tous les jours (cada dia) × toute la journée (o dia inteiro).",
+          "chaque (adjetivo: chaque élève) × chacun (pronome: chacun a son avis).",
+          "quelques (alguns) × quelques-uns (pronome); plusieurs; certains; aucun(e) é singular.",
+          "n'importe qui / quoi / où / comment / quel = qualquer.",
+          "quelqu'un / quelque chose / rien / personne + de + adjetivo."]},
+        {"title": "Quantidade + verbo", "points": [
+          "la plupart des + plural → verbo no plural.",
+          "la majorité / la moitié / un grand nombre des clients → verbo no singular ou plural (os dois são aceitos)."]}
+      ],
+      "items": [
+        {"id": "u29-01", "t": "mc", "q": "Tout le monde ___ d'accord avec cette décision.", "a": "est", "w": ["sont", "êtes", "soient"], "c": "G4", "e": "Tout le monde + singular."},
+        {"id": "u29-02", "t": "mc", "q": "___ a ses habitudes.", "a": "Chacun", "w": ["Chaque", "Tous", "Chaque un"], "c": "G3", "e": "Pronome: chacun."},
+        {"id": "u29-03", "t": "mc", "q": "J'ai lu tous ses romans, mais ___ ne m'a vraiment plu.", "a": "aucun", "w": ["aucuns", "pas un ne", "personne"], "c": "G4", "e": "Aucun (singular) + ne."},
+        {"id": "u29-04", "t": "mc", "q": "Ne parle pas à ___ ! Fais attention.", "a": "n'importe qui", "w": ["quelqu'un", "qui que ce", "chacun"], "c": "L2", "e": "N'importe qui = qualquer um."},
+        {"id": "u29-05", "t": "gap", "q": "Il a travaillé ___ la journée.", "a": ["toute"], "c": "G4", "e": "Toute la journée."},
+        {"id": "u29-06", "t": "gap", "q": "La plupart des Français ___ (partir) en vacances en été.", "a": ["partent"], "c": "G4", "e": "La plupart des + plural."},
+        {"id": "u29-07", "t": "gap", "q": "J'ai quelque chose ___ important à te dire.", "a": ["d'"], "c": "G1", "e": "Quelque chose de + adjetivo."},
+        {"id": "u29-08", "t": "fix", "q": "Chaque a le droit de s'exprimer.", "bad": "Chaque", "a": ["Chacun"], "full": "Chacun a le droit de s'exprimer.", "c": "G3", "e": "Pronome: chacun."},
+        {"id": "u29-09", "t": "fix", "q": "La plupart des consommateurs ne connaît pas les produits de leur région.", "bad": "connaît", "a": ["connaissent"], "full": "La plupart des consommateurs ne connaissent pas les produits de leur région.", "c": "G4", "e": "Erro real (Wattier)."},
+        {"id": "u29-10", "t": "transform", "p": "Substitua por «quelques-uns».", "q": "Certains étudiants sont venus.", "a": ["Quelques-uns sont venus", "Quelques-uns des étudiants sont venus"], "c": "G3", "e": "Pronome indefinido: quelques-uns."},
+        {"id": "u29-11", "t": "order", "a": "Tous les employés ont reçu une prime", "x": ["chaque"], "c": "G4", "e": "Tous les + plural."}
+      ]
+    },
+    {
+      "id": "u30", "n": 30, "phase": 2, "prio": 3, "theme": "debate",
+      "title": "Coesão: substituição, conectores e pontuação",
+      "goal": "Escrever um parágrafo sem repetições, com conectores e pontuação francesa.",
+      "rules": [
+        {"title": "Não repetir", "points": [
+          "Pronomes (il, le, celui-ci, ce dernier, celle de…), sinônimos e hiperônimos: la voiture → le véhicule → la Clio.",
+          "«Conceitos» que acrescentam informação: «la contrefaçon» → «cette activité illicite»."]},
+        {"title": "Conectores enumerativos", "points": [
+          "Início: d'abord, tout d'abord, en premier lieu, dans un premier temps.",
+          "Meio: ensuite, de plus, en outre, par ailleurs, d'une part… d'autre part.",
+          "Fim: enfin, pour terminer, en dernier lieu."]},
+        {"title": "Pontuação francesa", "points": [
+          "Espaço antes de ; : ! ? e aspas « » com espaço interno.",
+          "Vírgula antes de mais; nenhuma vírgula antes de que integrante."]}
+      ],
+      "items": [
+        {"id": "u30-01", "t": "mc", "q": "Deux voitures me suivaient, une Peugeot et une Audi. ___ a essayé de me doubler.", "a": "Cette dernière", "w": ["Ce dernier", "Celle-là qui", "Laquelle"], "c": "G3", "e": "Ce dernier / cette dernière: o último mencionado (Audi, fem.)."},
+        {"id": "u30-02", "t": "mc", "q": "___, nous verrons les avantages ; ensuite, les inconvénients.", "a": "Tout d'abord", "w": ["Enfin", "Par ailleurs", "En outre"], "c": "L2", "e": "Início de enumeração."},
+        {"id": "u30-03", "t": "mc", "q": "Le vélo est économique. ___, il est bon pour la santé.", "a": "De plus", "w": ["En revanche", "Pourtant", "Au contraire"], "c": "L2", "e": "Acrescentar argumento: de plus / en outre."},
+        {"id": "u30-04", "t": "gap", "q": "Mon avis est différent ___ de mon frère.", "a": ["de celui"], "c": "G3", "e": "Demonstrativo: celui de (avis, masc.)."},
+        {"id": "u30-05", "t": "fix", "q": "Le festival de cinéma attire des touristes. Le festival de cinéma crée aussi des emplois.", "bad": "Le festival de cinéma crée", "a": ["Il crée", "Cet événement crée", "Ce festival crée"], "full": "Le festival de cinéma attire des touristes. Cet événement crée aussi des emplois.", "c": "L2", "e": "Não repita: pronome ou hiperônimo (Wattier)."},
+        {"id": "u30-06", "t": "fix", "q": "Une aide a été accordée aux producteurs. Mais l'aide financière n'a pas suffi.", "bad": "l'aide financière", "a": ["cette aide", "celle-ci"], "full": "Une aide a été accordée aux producteurs. Mais cette aide n'a pas suffi.", "c": "L2", "e": "Retome com demonstrativo."},
+        {"id": "u30-07", "t": "pairs", "p": [["en premier lieu", "início"], ["par ailleurs", "acréscimo"], ["en revanche", "oposição"], ["en effet", "explicação"], ["en définitive", "conclusão"]], "c": "L2", "e": "Função dos conectores."},
+        {"id": "u30-08", "t": "transform", "p": "Junte as frases curtas numa frase com relativa.", "q": "Je suis étudiant. J'habite à Toulouse. Je suis intéressé par le poste d'assistant.", "a": ["Étudiant à Toulouse, je suis intéressé par le poste d'assistant", "Étudiant habitant à Toulouse, je suis intéressé par le poste d'assistant", "Je suis un étudiant qui habite à Toulouse et je suis intéressé par le poste d'assistant"], "c": "L2", "e": "Exercício do Wattier: evitar frases curtas e repetitivas."},
+        {"id": "u30-09", "t": "register", "q": "En outre, il convient de souligner que cette mesure a fait ses preuves.", "a": "formal", "c": "R", "e": "En outre, il convient de: escrito formal."},
+        {"id": "u30-10", "t": "order", "a": "D'une part le projet coûte cher d'autre part il manque de soutien", "x": ["enfin"], "c": "L2", "e": "D'une part… d'autre part."}
+      ]
+    },
+    {
+      "id": "x02", "n": 30.5, "phase": 2, "prio": 3, "theme": "administracao", "extra": true,
+      "title": "Extra · Carta formal e e-mail profissional",
+      "goal": "Usar sem erro as fórmulas fixas de abertura, pedido e despedida.",
+      "rules": [
+        {"title": "Estrutura", "points": [
+          "Objeto nominal (Objet : Demande de…). Vocativo: Madame, Monsieur, / Monsieur le Maire, / Madame la Directrice,",
+          "Abertura: «Je me permets de vous écrire au sujet de…», «Suite à votre article paru le…», «Comme suite à notre conversation…»",
+          "Pedido: «Je vous serais reconnaissant(e) de bien vouloir…», «Je vous prie de bien vouloir reconsidérer votre décision.»",
+          "Despedida que retoma o vocativo: «Je vous prie d'agréer, Monsieur le Maire, mes meilleures salutations.»"],
+         "trap": "Nunca «Bonjour» nem «Bien cordialement» numa carta; no e-mail profissional, sim."},
+        {"title": "Atenuar", "points": [
+          "Exigência seca → pedido cortês: «Je vous demande de régler immédiatement» → «Je vous saurais gré de bien vouloir régler ce problème dans les meilleurs délais.»"]}
+      ],
+      "items": [
+        {"id": "x02-01", "t": "mc", "q": "___, je me permets de vous écrire au sujet de votre décision.", "a": "Monsieur le Maire", "w": ["Bonjour Monsieur le Maire", "Cher Maire", "Salut"], "c": "R", "e": "Vocativo formal com o título."},
+        {"id": "x02-02", "t": "mc", "q": "Je vous ___ reconnaissant de bien vouloir examiner ma demande.", "a": "serais", "w": ["serai", "suis", "sois"], "c": "C", "e": "Condicional de polidez: je vous serais reconnaissant."},
+        {"id": "x02-03", "t": "mc", "q": "Je vous prie d'agréer, Madame la Directrice, l'___ de mes sentiments respectueux.", "a": "expression", "w": ["expressions", "assurance de", "impression"], "c": "R", "e": "Fórmula fixa: l'expression de mes sentiments respectueux."},
+        {"id": "x02-04", "t": "mc", "q": "___ à votre article paru le 28 novembre, je souhaite exprimer mon désaccord.", "a": "Suite", "w": ["Suivant", "Après", "Grâce"], "c": "R", "e": "Suite à / Comme suite à."},
+        {"id": "x02-05", "t": "gap", "q": "Je vous ___ de bien vouloir reconsidérer votre décision.", "a": ["prie"], "c": "R", "e": "Je vous prie de bien vouloir…"},
+        {"id": "x02-06", "t": "gap", "q": "Dans l'___ d'une réponse rapide, je vous prie d'agréer mes salutations distinguées.", "a": ["attente"], "c": "R", "e": "Dans l'attente de…"},
+        {"id": "x02-07", "t": "gap", "q": "Vous trouverez ci-___ une copie de ma facture.", "a": ["joint"], "c": "R", "e": "Ci-joint (invariável no início ou antes de nome sem determinante)."},
+        {"id": "x02-08", "t": "fix", "q": "Madame, Monsieur, je vous écris pour me plaindre du bruit. Bisous, Ana", "bad": "Bisous,", "a": ["Je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées", "Je vous prie d'agréer mes salutations distinguées", "Veuillez agréer, Madame, Monsieur, mes salutations distinguées", "Veuillez agréer mes salutations distinguées"], "full": "Madame, Monsieur, je vous écris pour me plaindre du bruit. Je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées. Ana", "c": "R", "e": "Registro: carta de reclamação pede fórmula formal."},
+        {"id": "x02-09", "t": "transform", "p": "Atenue o pedido (registro formal e cortês).", "q": "Remboursez-moi tout de suite !", "a": ["Je vous serais reconnaissant de bien vouloir me rembourser dans les meilleurs délais", "Je vous serais reconnaissante de bien vouloir me rembourser dans les meilleurs délais", "Je vous prie de bien vouloir me rembourser dans les meilleurs délais"], "c": "R", "e": "Atenuação (Réussir): condicional + bien vouloir + dans les meilleurs délais."},
+        {"id": "x02-10", "t": "register", "q": "Je reste à votre disposition pour tout renseignement complémentaire.", "a": "formal", "c": "R", "e": "Fórmula de encerramento formal."},
+        {"id": "x02-11", "t": "register", "q": "Merci pour ton message, je te rappelle demain !", "a": "neutro", "c": "R", "e": "Tutoiement cordial sem gíria: neutro."},
+        {"id": "x02-12", "t": "order", "a": "Je me permets de vous écrire au sujet de la fermeture du festival", "x": ["sur"], "c": "R", "e": "Abertura clássica."}
+      ]
+    }
+  ]
+}

@@ -12,6 +12,8 @@ datas = [
     (str(ROOT / "data" / "units"), "data/units"),
     (str(ROOT / "data" / "vocab_lessons"), "data/vocab_lessons"),
     (str(ROOT / "data" / "lessons"), "data/lessons"),
+    (str(ROOT / "data" / "fr"), "data/fr"),
+    (str(ROOT / "data" / "kz"), "data/kz"),
     (str(ROOT / "data" / "prefix_verbs.json"), "data"),
     (str(ROOT / "data" / "themes.json"), "data"),
     (str(ROOT / "data" / "lexicon.sqlite3.gz"), "data"),

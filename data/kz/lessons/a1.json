@@ -1,0 +1,3504 @@
+{
+ "lessons": [
+  {
+   "id": "k09",
+   "n": 9,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Сұрақ қою — perguntas e negação",
+   "kz": "Сұраулық шылау, емес",
+   "goal": "Fazer perguntas de sim ou não, negar com «емес» e usar as palavras interrogativas.",
+   "rules": [
+    {
+     "title": "A partícula de pergunta",
+     "points": [
+      "A pergunta de sim ou não leva uma partícula no fim, escrita separada: Сіз студентсіз бе? Бұл кітап па?",
+      "ма/ме depois de vogal e de л, р, у, й: Бұл қала ма? Ол дәрігер ме? Бұл үй ме?",
+      "ба/бе depois de м, н, ң, з, ж: Бұл қалам ба? Сіз қазақсыз ба?",
+      "па/пе depois de consoante surda: Бұл кітап па? Ол студент пе?"
+     ],
+     "ex": [
+      [
+       "Сіз мұғалімсіз бе?",
+       "O senhor é professor?"
+      ],
+      [
+       "Бұл мектеп пе?",
+       "Isto é uma escola?"
+      ]
+     ]
+    },
+    {
+     "title": "«Não sou»: емес",
+     "points": [
+      "Para negar um nome ou adjetivo, use емес depois dele; a terminação de pessoa vai para емес: Мен дәрігер емеспін (não sou médico).",
+      "Жоқ responde «não» e nega a existência («não há»); емес nega o «ser».",
+      "Palavras interrogativas: кім (quem), не (o quê), қайда (onde), қашан (quando), қалай (como), қандай (qual, que tipo), неге (por quê), неше / қанша (quantos)."
+     ],
+     "trap": "Com palavra interrogativa NÃO se usa ма/ме: «Бұл кім?», nunca «Бұл кім ба?»."
+    }
+   ],
+   "vocab": [
+    [
+     "емес",
+     "não é (negação de nomes)"
+    ],
+    [
+     "кім",
+     "quem"
+    ],
+    [
+     "не",
+     "o quê"
+    ],
+    [
+     "қайда",
+     "onde"
+    ],
+    [
+     "қашан",
+     "quando"
+    ],
+    [
+     "қалай",
+     "como"
+    ],
+    [
+     "қандай",
+     "qual, que tipo de"
+    ],
+    [
+     "неге",
+     "por quê"
+    ],
+    [
+     "әрине",
+     "claro, naturalmente"
+    ],
+    [
+     "мүмкін",
+     "talvez"
+    ],
+    [
+     "дұрыс",
+     "certo, correto"
+    ],
+    [
+     "қате",
+     "errado; erro"
+    ]
+   ],
+   "dialog": {
+    "title": "Engano de pessoa",
+    "lines": [
+     [
+      "A",
+      "Кешіріңіз, сіз Асқарсыз ба?",
+      "Desculpe, o senhor é o Asqar?"
+     ],
+     [
+      "B",
+      "Жоқ, мен Асқар емеспін. Мен Дәулетпін.",
+      "Não, não sou o Asqar. Sou o Daulet."
+     ],
+     [
+      "A",
+      "Кешіріңіз! Сіз студентсіз бе?",
+      "Desculpe! O senhor é estudante?"
+     ],
+     [
+      "B",
+      "Иә, студентпін. Ал сіз ше? Сіз де студентсіз бе?",
+      "Sim, sou estudante. E a senhora? Também é estudante?"
+     ],
+     [
+      "A",
+      "Жоқ, мен студент емеспін. Мен мұғаліммін.",
+      "Não, não sou estudante. Sou professora."
+     ],
+     [
+      "B",
+      "Сіз орыссыз ба?",
+      "A senhora é russa?"
+     ],
+     [
+      "A",
+      "Жоқ, мен бразилиялықпын.",
+      "Não, sou brasileira."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k09-01",
+     "t": "mc",
+     "q": "Бұл қала ___?",
+     "a": "ма",
+     "w": [
+      "ме",
+      "ба",
+      "па"
+     ],
+     "c": "H",
+     "e": "Vogal dura final → ма."
+    },
+    {
+     "id": "k09-02",
+     "t": "mc",
+     "q": "Бұл үй ___?",
+     "a": "ме",
+     "w": [
+      "ма",
+      "бе",
+      "пе"
+     ],
+     "c": "H",
+     "e": "Й + palavra branda → ме."
+    },
+    {
+     "id": "k09-03",
+     "t": "mc",
+     "q": "Бұл кітап ___?",
+     "a": "па",
+     "w": [
+      "ба",
+      "ма",
+      "пе"
+     ],
+     "c": "H",
+     "e": "П (surda) + dura → па."
+    },
+    {
+     "id": "k09-04",
+     "t": "mc",
+     "q": "Сіз студентсіз ___?",
+     "a": "бе",
+     "w": [
+      "ба",
+      "ме",
+      "пе"
+     ],
+     "c": "H",
+     "e": "З + branda → бе."
+    },
+    {
+     "id": "k09-05",
+     "t": "mc",
+     "q": "Бұл қалам ___?",
+     "a": "ба",
+     "w": [
+      "ма",
+      "па",
+      "бе"
+     ],
+     "c": "H",
+     "e": "М + dura → ба."
+    },
+    {
+     "id": "k09-06",
+     "t": "mc",
+     "q": "Ол дәрігер ___?",
+     "a": "ме",
+     "w": [
+      "ма",
+      "бе",
+      "пе"
+     ],
+     "c": "H",
+     "e": "Р + branda → ме."
+    },
+    {
+     "id": "k09-07",
+     "t": "gap",
+     "q": "Жоқ, мен дәрігер ___. (Não, não sou médico.)",
+     "a": [
+      "емеспін"
+     ],
+     "c": "P",
+     "e": "A terminação de pessoa vai para емес: емеспін."
+    },
+    {
+     "id": "k09-08",
+     "t": "transform",
+     "p": "Passe para a negativa.",
+     "q": "Ол — мұғалім.",
+     "a": [
+      "Ол мұғалім емес.",
+      "Ол — мұғалім емес."
+     ],
+     "c": "S",
+     "e": "Ол мұғалім емес."
+    },
+    {
+     "id": "k09-09",
+     "t": "listen",
+     "audio": "Сіз қазақсыз ба?",
+     "q": "O que perguntaram?",
+     "a": "O senhor é cazaque?",
+     "w": [
+      "O senhor é russo?",
+      "Onde o senhor mora?",
+      "Quem é o senhor?"
+     ],
+     "c": "L",
+     "e": "Қазақсыз ба? = é cazaque?"
+    },
+    {
+     "id": "k09-10",
+     "t": "pairs",
+     "p": [
+      [
+       "кім",
+       "quem"
+      ],
+      [
+       "не",
+       "o quê"
+      ],
+      [
+       "қайда",
+       "onde"
+      ],
+      [
+       "қашан",
+       "quando"
+      ],
+      [
+       "қалай",
+       "como"
+      ],
+      [
+       "неге",
+       "por quê"
+      ]
+     ],
+     "c": "L",
+     "e": "Palavras interrogativas."
+    },
+    {
+     "id": "k09-11",
+     "t": "mc",
+     "q": "Qual frase está CORRETA?",
+     "a": "Бұл кім?",
+     "w": [
+      "Бұл кім ба?",
+      "Бұл кім ме?",
+      "Кім бұл ма?"
+     ],
+     "c": "S",
+     "e": "Pergunta com кім/не/қайда dispensa ма/ме."
+    },
+    {
+     "id": "k09-12",
+     "t": "order",
+     "a": "Сіз мұғалімсіз бе",
+     "x": [
+      "ма"
+     ],
+     "c": "S",
+     "e": "Сіз мұғалімсіз бе? = O senhor é professor?"
+    },
+    {
+     "id": "k09-13",
+     "t": "dict",
+     "a": "Жоқ, мен студент емеспін.",
+     "c": "F",
+     "e": "Емеспін, junto."
+    }
+   ]
+  },
+  {
+   "id": "k10",
+   "n": 10,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Отбасы — a família",
+   "kz": "Тәуелдік жалғау. Бар / жоқ",
+   "goal": "Falar da família com os possessivos e dizer o que se tem (бар) e não se tem (жоқ).",
+   "rules": [
+    {
+     "title": "Possessivos são sufixos",
+     "points": [
+      "meu: -м depois de vogal (анам, әкем), -ым/-ім depois de consoante (досым, інім → іні+м).",
+      "seu (сен): -ң / -ың/-ің: анаң, досың. Seu (сіз): -ңыз/-ңіз / -ыңыз/-іңіз: анаңыз, досыңыз.",
+      "dele/dela: -сы/-сі depois de vogal (анасы, әкесі), -ы/-і depois de consoante (досы, кітабы).",
+      "nosso: -мыз/-міз / -ымыз/-іміз: анамыз, досымыз.",
+      "O pronome no genitivo pode vir junto ou não: (менің) анам = minha mãe."
+     ],
+     "ex": [
+      [
+       "менің әкем",
+       "meu pai"
+      ],
+      [
+       "сенің досың",
+       "seu amigo"
+      ],
+      [
+       "оның інісі",
+       "o irmão mais novo dele"
+      ]
+     ]
+    },
+    {
+     "title": "Ter: бар / жоқ",
+     "points": [
+      "«Eu tenho um irmão» = Менің ағам бар (literalmente «meu irmão existe»).",
+      "«Não tenho» = ... жоқ: Менің әпкем жоқ.",
+      "Pergunta: Сенің бауырың бар ма?"
+     ],
+     "trap": "Os irmãos têm nomes pela idade e pelo sexo: аға (irmão mais velho), іні (irmão mais novo de um homem), әпке (irmã mais velha), қарындас (irmã mais nova de um homem), сіңлі (irmã mais nova de uma mulher)."
+    }
+   ],
+   "vocab": [
+    [
+     "отбасы",
+     "família"
+    ],
+    [
+     "әке",
+     "pai"
+    ],
+    [
+     "ана / шеше",
+     "mãe"
+    ],
+    [
+     "аға",
+     "irmão mais velho"
+    ],
+    [
+     "іні",
+     "irmão mais novo (de homem)"
+    ],
+    [
+     "әпке",
+     "irmã mais velha"
+    ],
+    [
+     "қарындас",
+     "irmã mais nova (de homem)"
+    ],
+    [
+     "сіңлі",
+     "irmã mais nova (de mulher)"
+    ],
+    [
+     "бауыр",
+     "irmão(ã) mais novo(a)"
+    ],
+    [
+     "әйел",
+     "esposa; mulher"
+    ],
+    [
+     "күйеу",
+     "marido"
+    ],
+    [
+     "бар / жоқ",
+     "há, tem / não há, não tem"
+    ]
+   ],
+   "dialog": {
+    "title": "Fotos da família",
+    "lines": [
+     [
+      "A",
+      "Сенің отбасың үлкен бе?",
+      "Sua família é grande?"
+     ],
+     [
+      "B",
+      "Иә, үлкен. Менің әкем, анам, екі ағам және бір қарындасым бар.",
+      "Sim, é grande. Tenho pai, mãe, dois irmãos mais velhos e uma irmã mais nova."
+     ],
+     [
+      "A",
+      "Әкең кім?",
+      "O que o seu pai faz?"
+     ],
+     [
+      "B",
+      "Әкем — инженер, анам — мұғалім.",
+      "Meu pai é engenheiro, minha mãe é professora."
+     ],
+     [
+      "A",
+      "Сенің әпкең бар ма?",
+      "Você tem irmã mais velha?"
+     ],
+     [
+      "B",
+      "Жоқ, әпкем жоқ. Ал сенің ше?",
+      "Não, não tenho. E você?"
+     ],
+     [
+      "A",
+      "Менің бір інім бар.",
+      "Eu tenho um irmão mais novo."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k10-01",
+     "t": "mc",
+     "q": "менің + әке =",
+     "a": "әкем",
+     "w": [
+      "әкім",
+      "әкесі",
+      "әкең"
+     ],
+     "c": "P",
+     "e": "Depois de vogal: -м."
+    },
+    {
+     "id": "k10-02",
+     "t": "mc",
+     "q": "сенің + ана =",
+     "a": "анаң",
+     "w": [
+      "анам",
+      "анасы",
+      "анаңыз"
+     ],
+     "c": "P",
+     "e": "Сенің → -ң."
+    },
+    {
+     "id": "k10-03",
+     "t": "mc",
+     "q": "оның + іні =",
+     "a": "інісі",
+     "w": [
+      "іні",
+      "інім",
+      "інісы"
+     ],
+     "c": "P",
+     "e": "3ª pessoa depois de vogal: -сы/-сі."
+    },
+    {
+     "id": "k10-04",
+     "t": "mc",
+     "q": "менің + дос =",
+     "a": "досым",
+     "w": [
+      "досім",
+      "досм",
+      "досы"
+     ],
+     "c": "P",
+     "e": "Consoante + dura: -ым."
+    },
+    {
+     "id": "k10-05",
+     "t": "mc",
+     "q": "сіздің + аға =",
+     "a": "ағаңыз",
+     "w": [
+      "ағаңіз",
+      "ағаыңыз",
+      "ағасыз"
+     ],
+     "c": "P",
+     "e": "Vogal + dura: -ңыз."
+    },
+    {
+     "id": "k10-06",
+     "t": "mc",
+     "q": "менің + кітап =",
+     "a": "кітабым",
+     "w": [
+      "кітапым",
+      "кітапм",
+      "кітабім"
+     ],
+     "c": "P",
+     "e": "П vira б entre vogais: кітабым."
+    },
+    {
+     "id": "k10-07",
+     "t": "gap",
+     "q": "Менің екі ___ бар. (Tenho dois irmãos mais velhos.)",
+     "a": [
+      "ағам"
+     ],
+     "c": "P",
+     "e": "Com número, singular: екі ағам."
+    },
+    {
+     "id": "k10-08",
+     "t": "mc",
+     "q": "Сенің қарындасың бар ма? — Жоқ, қарындасым ___.",
+     "a": "жоқ",
+     "w": [
+      "емес",
+      "бар",
+      "емеспін"
+     ],
+     "c": "S",
+     "e": "Ausência = жоқ."
+    },
+    {
+     "id": "k10-09",
+     "t": "pairs",
+     "p": [
+      [
+       "аға",
+       "irmão mais velho"
+      ],
+      [
+       "әпке",
+       "irmã mais velha"
+      ],
+      [
+       "әке",
+       "pai"
+      ],
+      [
+       "күйеу",
+       "marido"
+      ],
+      [
+       "әйел",
+       "esposa"
+      ]
+     ],
+     "c": "L",
+     "e": "Família."
+    },
+    {
+     "id": "k10-10",
+     "t": "mc",
+     "q": "Uma mulher fala da irmã mais nova:",
+     "a": "сіңлім",
+     "w": [
+      "қарындасым",
+      "інім",
+      "әпкем"
+     ],
+     "c": "U",
+     "e": "Para a mulher, irmã mais nova = сіңлі."
+    },
+    {
+     "id": "k10-11",
+     "t": "listen",
+     "audio": "Менің әпкем жоқ.",
+     "q": "O que você ouviu?",
+     "a": "Não tenho irmã mais velha.",
+     "w": [
+      "Tenho uma irmã mais velha.",
+      "Minha mãe não está.",
+      "Não tenho irmão."
+     ],
+     "c": "L",
+     "e": "әпкем жоқ = não tenho irmã mais velha."
+    },
+    {
+     "id": "k10-12",
+     "t": "order",
+     "a": "Менің бір інім бар",
+     "x": [
+      "ма"
+     ],
+     "c": "S",
+     "e": "Менің бір інім бар."
+    },
+    {
+     "id": "k10-13",
+     "t": "dict",
+     "a": "Менің әкем — дәрігер.",
+     "c": "F",
+     "e": "Әкем com ә."
+    }
+   ]
+  },
+  {
+   "id": "k11",
+   "n": 11,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Сандар — números e idade",
+   "kz": "Сан есім. Жас",
+   "goal": "Contar até 1000, dizer a idade e o número de telefone.",
+   "rules": [
+    {
+     "title": "Dezenas",
+     "points": [
+      "20 жиырма, 30 отыз, 40 қырық, 50 елу, 60 алпыс, 70 жетпіс, 80 сексен, 90 тоқсан, 100 жүз, 1000 мың.",
+      "Os números se somam na ordem: 25 = жиырма бес; 148 = жүз қырық сегіз; 2026 = екі мың жиырма алты.",
+      "Неше? pergunta por coisas contáveis; Қанша? por quantidade e preço."
+     ],
+     "ex": [
+      [
+       "он бір",
+       "11"
+      ],
+      [
+       "отыз бес",
+       "35"
+      ],
+      [
+       "жүз жиырма",
+       "120"
+      ]
+     ]
+    },
+    {
+     "title": "Idade",
+     "points": [
+      "Мен жиырма бес жастамын = Tenho 25 anos (жас «idade» + та locativo + мын).",
+      "Сен неше жастасың? / Сіз неше жастасыз? = Quantos anos você tem?",
+      "Forma curta e frequente: Сен нешедесің? — Жиырмадамын."
+     ],
+     "trap": "Қырық (40) se escreve com қ e ы, e тоқсан (90) com қ: não use as letras russas к e и."
+    }
+   ],
+   "vocab": [
+    [
+     "жиырма",
+     "20"
+    ],
+    [
+     "отыз",
+     "30"
+    ],
+    [
+     "қырық",
+     "40"
+    ],
+    [
+     "елу",
+     "50"
+    ],
+    [
+     "алпыс",
+     "60"
+    ],
+    [
+     "жетпіс",
+     "70"
+    ],
+    [
+     "сексен",
+     "80"
+    ],
+    [
+     "тоқсан",
+     "90"
+    ],
+    [
+     "жүз",
+     "100"
+    ],
+    [
+     "жас",
+     "idade; jovem"
+    ],
+    [
+     "Неше жастасыз?",
+     "Quantos anos o senhor tem?"
+    ],
+    [
+     "телефон нөмірі",
+     "número de telefone"
+    ]
+   ],
+   "dialog": {
+    "title": "Ficha de inscrição",
+    "lines": [
+     [
+      "A",
+      "Атыңыз кім?",
+      "Seu nome?"
+     ],
+     [
+      "B",
+      "Педро.",
+      "Pedro."
+     ],
+     [
+      "A",
+      "Неше жастасыз?",
+      "Quantos anos o senhor tem?"
+     ],
+     [
+      "B",
+      "Отыз екі жастамын.",
+      "Tenho trinta e dois anos."
+     ],
+     [
+      "A",
+      "Телефон нөміріңіз қандай?",
+      "Qual é o seu telefone?"
+     ],
+     [
+      "B",
+      "Сегіз, жеті жүз жиырма бір, қырық бес, алпыс үш, он сегіз.",
+      "8 721 45 63 18."
+     ],
+     [
+      "A",
+      "Рақмет! Бәрі дұрыс.",
+      "Obrigada! Está tudo certo."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k11-01",
+     "t": "listen",
+     "audio": "қырық бес",
+     "q": "Que número você ouviu?",
+     "a": "45",
+     "w": [
+      "35",
+      "54",
+      "40"
+     ],
+     "c": "L",
+     "e": "Қырық бес = 45."
+    },
+    {
+     "id": "k11-02",
+     "t": "listen",
+     "audio": "жетпіс жеті",
+     "q": "Que número você ouviu?",
+     "a": "77",
+     "w": [
+      "70",
+      "17",
+      "67"
+     ],
+     "c": "L",
+     "e": "Жетпіс жеті = 77."
+    },
+    {
+     "id": "k11-03",
+     "t": "listen",
+     "audio": "тоқсан тоғыз",
+     "q": "Que número você ouviu?",
+     "a": "99",
+     "w": [
+      "90",
+      "19",
+      "89"
+     ],
+     "c": "L",
+     "e": "Тоқсан тоғыз = 99."
+    },
+    {
+     "id": "k11-04",
+     "t": "pairs",
+     "p": [
+      [
+       "жиырма",
+       "20"
+      ],
+      [
+       "отыз",
+       "30"
+      ],
+      [
+       "елу",
+       "50"
+      ],
+      [
+       "алпыс",
+       "60"
+      ],
+      [
+       "сексен",
+       "80"
+      ]
+     ],
+     "c": "L",
+     "e": "Dezenas."
+    },
+    {
+     "id": "k11-05",
+     "t": "mc",
+     "q": "Como se diz 2026?",
+     "a": "екі мың жиырма алты",
+     "w": [
+      "екі жүз жиырма алты",
+      "жиырма алты екі мың",
+      "екі мың алпыс екі"
+     ],
+     "c": "L",
+     "e": "мың = mil; жиырма алты = 26."
+    },
+    {
+     "id": "k11-06",
+     "t": "type",
+     "q": "Escreva por extenso: 50",
+     "a": [
+      "елу"
+     ],
+     "c": "L",
+     "e": "Елу = 50."
+    },
+    {
+     "id": "k11-07",
+     "t": "type",
+     "q": "Escreva por extenso: 100",
+     "a": [
+      "жүз"
+     ],
+     "c": "L",
+     "e": "Жүз = 100 (com ү)."
+    },
+    {
+     "id": "k11-08",
+     "t": "gap",
+     "q": "Мен жиырма жас___мын. (Tenho 20 anos.)",
+     "a": [
+      "та"
+     ],
+     "c": "C",
+     "e": "жас + та (locativo) + мын."
+    },
+    {
+     "id": "k11-09",
+     "t": "mc",
+     "q": "Pergunta formal sobre a idade:",
+     "a": "Неше жастасыз?",
+     "w": [
+      "Неше жастасың?",
+      "Қанша тұрады?",
+      "Сағат неше?"
+     ],
+     "c": "U",
+     "e": "-сыз = сіз."
+    },
+    {
+     "id": "k11-10",
+     "t": "mc",
+     "q": "«Quantos irmãos você tem?» Use:",
+     "a": "Неше",
+     "w": [
+      "Қанша тұрады",
+      "Қашан",
+      "Қайда"
+     ],
+     "c": "L",
+     "e": "Неше = quantos (contáveis): Неше бауырың бар?"
+    },
+    {
+     "id": "k11-11",
+     "t": "order",
+     "a": "Мен отыз екі жастамын",
+     "x": [
+      "жастасыз"
+     ],
+     "c": "S",
+     "e": "Tenho 32 anos."
+    },
+    {
+     "id": "k11-12",
+     "t": "dict",
+     "a": "Жүз қырық сегіз.",
+     "c": "F",
+     "e": "148."
+    }
+   ]
+  },
+  {
+   "id": "k12",
+   "n": 12,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Уақыт — horas, dias e meses",
+   "kz": "Уақыт, апта күндері, айлар",
+   "goal": "Dizer a hora, os dias da semana e os meses e marcar compromissos.",
+   "rules": [
+    {
+     "title": "Que horas são?",
+     "points": [
+      "Сағат неше? — Сағат бес. (São cinco horas.) Сағат екі жарым = duas e meia.",
+      "«Às cinco» = сағат бесте: o número recebe o locativo -да/-де/-та/-те.",
+      "бірде, екіде, үште, төртте, бесте, алтыда, жетіде, сегізде, тоғызда, онда."
+     ]
+    },
+    {
+     "title": "Dias e meses",
+     "points": [
+      "Dias: дүйсенбі (seg), сейсенбі (ter), сәрсенбі (qua), бейсенбі (qui), жұма (sex), сенбі (sáb), жексенбі (dom).",
+      "Meses: қаңтар, ақпан, наурыз, сәуір, мамыр, маусым, шілде, тамыз, қыркүйек, қазан, қараша, желтоқсан.",
+      "«Na segunda», «em maio»: locativo — дүйсенбіде, мамырда."
+     ],
+     "ex": [
+      [
+       "Бүгін қай күн?",
+       "Que dia é hoje?"
+      ],
+      [
+       "Бүгін жұма.",
+       "Hoje é sexta."
+      ],
+      [
+       "Туған күнім мамырда.",
+       "Meu aniversário é em maio."
+      ]
+     ],
+     "trap": "Наурыз (março) é também o nome da festa do ano novo, em 22 de março."
+    }
+   ],
+   "vocab": [
+    [
+     "сағат",
+     "hora; relógio"
+    ],
+    [
+     "Сағат неше?",
+     "Que horas são?"
+    ],
+    [
+     "жарым",
+     "meia (hora)"
+    ],
+    [
+     "бүгін",
+     "hoje"
+    ],
+    [
+     "ертең",
+     "amanhã"
+    ],
+    [
+     "кеше",
+     "ontem"
+    ],
+    [
+     "апта",
+     "semana"
+    ],
+    [
+     "ай",
+     "mês; lua"
+    ],
+    [
+     "жыл",
+     "ano"
+    ],
+    [
+     "дүйсенбі",
+     "segunda-feira"
+    ],
+    [
+     "жұма",
+     "sexta-feira"
+    ],
+    [
+     "жексенбі",
+     "domingo"
+    ],
+    [
+     "туған күн",
+     "aniversário"
+    ]
+   ],
+   "dialog": {
+    "title": "Marcando um encontro",
+    "lines": [
+     [
+      "A",
+      "Ертең бос боласың ба?",
+      "Você está livre amanhã?"
+     ],
+     [
+      "B",
+      "Ертең қай күн?",
+      "Amanhã é que dia?"
+     ],
+     [
+      "A",
+      "Ертең сенбі.",
+      "Amanhã é sábado."
+     ],
+     [
+      "B",
+      "Иә, сенбіде боспын.",
+      "Sim, no sábado estou livre."
+     ],
+     [
+      "A",
+      "Сағат нешеде кездесеміз?",
+      "A que horas nos encontramos?"
+     ],
+     [
+      "B",
+      "Сағат үште.",
+      "Às três."
+     ],
+     [
+      "A",
+      "Жарайды!",
+      "Combinado!"
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k12-01",
+     "t": "mc",
+     "q": "Сағат ___ (às sete)",
+     "a": "жетіде",
+     "w": [
+      "жеті",
+      "жетіге",
+      "жетіден"
+     ],
+     "c": "C",
+     "e": "«Às» = locativo: жетіде."
+    },
+    {
+     "id": "k12-02",
+     "t": "mc",
+     "q": "Сағат ___ (às cinco)",
+     "a": "бесте",
+     "w": [
+      "бесде",
+      "беста",
+      "бесда"
+     ],
+     "c": "H",
+     "e": "С surda → -те: бесте."
+    },
+    {
+     "id": "k12-03",
+     "t": "pairs",
+     "p": [
+      [
+       "дүйсенбі",
+       "segunda"
+      ],
+      [
+       "сейсенбі",
+       "terça"
+      ],
+      [
+       "сәрсенбі",
+       "quarta"
+      ],
+      [
+       "бейсенбі",
+       "quinta"
+      ],
+      [
+       "жұма",
+       "sexta"
+      ]
+     ],
+     "c": "L",
+     "e": "Dias úteis."
+    },
+    {
+     "id": "k12-04",
+     "t": "pairs",
+     "p": [
+      [
+       "қаңтар",
+       "janeiro"
+      ],
+      [
+       "наурыз",
+       "março"
+      ],
+      [
+       "мамыр",
+       "maio"
+      ],
+      [
+       "шілде",
+       "julho"
+      ],
+      [
+       "желтоқсан",
+       "dezembro"
+      ]
+     ],
+     "c": "L",
+     "e": "Meses."
+    },
+    {
+     "id": "k12-05",
+     "t": "listen",
+     "audio": "Сағат екі жарым.",
+     "q": "Que horas são?",
+     "a": "2h30",
+     "w": [
+      "2h00",
+      "12h00",
+      "1h30"
+     ],
+     "c": "L",
+     "e": "Жарым = meia."
+    },
+    {
+     "id": "k12-06",
+     "t": "mc",
+     "q": "«Ontem» em cazaque:",
+     "a": "кеше",
+     "w": [
+      "ертең",
+      "бүгін",
+      "кеш"
+     ],
+     "c": "L",
+     "e": "кеше = ontem; ертең = amanhã."
+    },
+    {
+     "id": "k12-07",
+     "t": "gap",
+     "q": "Туған күнім мамыр___. (Meu aniversário é em maio.)",
+     "a": [
+      "да"
+     ],
+     "c": "C",
+     "e": "Мамырда."
+    },
+    {
+     "id": "k12-08",
+     "t": "gap",
+     "q": "Сенбі___ боспын. (No sábado estou livre.)",
+     "a": [
+      "де"
+     ],
+     "c": "C",
+     "e": "Сенбі é branda → -де."
+    },
+    {
+     "id": "k12-09",
+     "t": "mc",
+     "q": "Que mês é «қыркүйек»?",
+     "a": "setembro",
+     "w": [
+      "outubro",
+      "agosto",
+      "novembro"
+     ],
+     "c": "L",
+     "e": "Қыркүйек = setembro; қазан = outubro."
+    },
+    {
+     "id": "k12-10",
+     "t": "order",
+     "a": "Сағат нешеде кездесеміз",
+     "x": [
+      "неше"
+     ],
+     "c": "S",
+     "e": "A que horas nos encontramos?"
+    },
+    {
+     "id": "k12-11",
+     "t": "type",
+     "q": "Escreva em cazaque: domingo",
+     "a": [
+      "жексенбі"
+     ],
+     "c": "L",
+     "e": "Жексенбі."
+    },
+    {
+     "id": "k12-12",
+     "t": "dict",
+     "a": "Бүгін жұма. Ертең сенбі.",
+     "c": "F",
+     "e": "Dias da semana."
+    }
+   ]
+  },
+  {
+   "id": "k13",
+   "n": 13,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Қайда? — onde está (locativo)",
+   "kz": "Жатыс септік",
+   "goal": "Dizer onde algo ou alguém está com o locativo -да/-де/-та/-те.",
+   "rules": [
+    {
+     "title": "Locativo: «em, no, na»",
+     "points": [
+      "-да/-де depois de vogal e de consoante sonora: үйде, қалада, Алматыда.",
+      "-та/-те depois de consoante surda: мектепте, жұмыста, кітапта.",
+      "-нда/-нде depois do possessivo de 3ª pessoa: үйінде (na casa dele), қаласында.",
+      "A terminação de pessoa entra depois: Мен үйдемін (estou em casa), Сен қайдасың? (onde você está?)."
+     ],
+     "ex": [
+      [
+       "Ол жұмыста.",
+       "Ele está no trabalho."
+      ],
+      [
+       "Біз Астанадамыз.",
+       "Estamos em Astana."
+      ],
+      [
+       "Кітап үстелде.",
+       "O livro está na mesa."
+      ]
+     ]
+    },
+    {
+     "title": "Há…: бар",
+     "points": [
+      "«Na cidade há um parque» = Қалада саябақ бар. A ordem é: lugar + coisa + бар."
+     ],
+     "trap": "Мектепте, não «мектепде»: depois de п surdo, -те."
+    }
+   ],
+   "vocab": [
+    [
+     "қайда",
+     "onde"
+    ],
+    [
+     "үй",
+     "casa"
+    ],
+    [
+     "пәтер",
+     "apartamento"
+    ],
+    [
+     "көше",
+     "rua"
+    ],
+    [
+     "дүкен",
+     "loja"
+    ],
+    [
+     "кітапхана",
+     "biblioteca"
+    ],
+    [
+     "аурухана",
+     "hospital"
+    ],
+    [
+     "мейрамхана",
+     "restaurante"
+    ],
+    [
+     "саябақ",
+     "parque"
+    ],
+    [
+     "базар",
+     "mercado"
+    ],
+    [
+     "әуежай",
+     "aeroporto"
+    ],
+    [
+     "бөлме",
+     "quarto, sala"
+    ]
+   ],
+   "dialog": {
+    "title": "Ao telefone",
+    "lines": [
+     [
+      "A",
+      "Алло, Дәулет, сен қайдасың?",
+      "Alô, Daulet, onde você está?"
+     ],
+     [
+      "B",
+      "Мен жұмыстамын. Ал сен ше?",
+      "Estou no trabalho. E você?"
+     ],
+     [
+      "A",
+      "Мен үйдемін. Анам қайда?",
+      "Estou em casa. Onde está a mamãe?"
+     ],
+     [
+      "B",
+      "Анам базарда.",
+      "A mamãe está no mercado."
+     ],
+     [
+      "A",
+      "Ал Айгүл ше?",
+      "E a Aigul?"
+     ],
+     [
+      "B",
+      "Айгүл кітапханада.",
+      "A Aigul está na biblioteca."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k13-01",
+     "t": "mc",
+     "q": "үй → «em casa»",
+     "a": "үйде",
+     "w": [
+      "үйда",
+      "үйте",
+      "үйге"
+     ],
+     "c": "C",
+     "e": "Branda + й → -де."
+    },
+    {
+     "id": "k13-02",
+     "t": "mc",
+     "q": "мектеп → «na escola»",
+     "a": "мектепте",
+     "w": [
+      "мектепде",
+      "мектепта",
+      "мектепке"
+     ],
+     "c": "C",
+     "e": "П surda + branda → -те."
+    },
+    {
+     "id": "k13-03",
+     "t": "mc",
+     "q": "жұмыс → «no trabalho»",
+     "a": "жұмыста",
+     "w": [
+      "жұмысда",
+      "жұмысте",
+      "жұмысқа"
+     ],
+     "c": "C",
+     "e": "С surda + dura → -та."
+    },
+    {
+     "id": "k13-04",
+     "t": "mc",
+     "q": "қала → «na cidade»",
+     "a": "қалада",
+     "w": [
+      "қалата",
+      "қаладе",
+      "қалаға"
+     ],
+     "c": "C",
+     "e": "Vogal dura → -да."
+    },
+    {
+     "id": "k13-05",
+     "t": "mc",
+     "q": "«Na casa dele»:",
+     "a": "үйінде",
+     "w": [
+      "үйіде",
+      "үйде",
+      "үйінда"
+     ],
+     "c": "C",
+     "e": "Depois do possessivo de 3ª pessoa: -нде."
+    },
+    {
+     "id": "k13-06",
+     "t": "gap",
+     "q": "Мен үй___мін. (Estou em casa.)",
+     "a": [
+      "де"
+     ],
+     "c": "C",
+     "e": "Үйдемін."
+    },
+    {
+     "id": "k13-07",
+     "t": "gap",
+     "q": "Біз Астана___мыз. (Estamos em Astana.)",
+     "a": [
+      "да"
+     ],
+     "c": "C",
+     "e": "Астанадамыз."
+    },
+    {
+     "id": "k13-08",
+     "t": "pairs",
+     "p": [
+      [
+       "кітапхана",
+       "biblioteca"
+      ],
+      [
+       "аурухана",
+       "hospital"
+      ],
+      [
+       "мейрамхана",
+       "restaurante"
+      ],
+      [
+       "әуежай",
+       "aeroporto"
+      ],
+      [
+       "саябақ",
+       "parque"
+      ]
+     ],
+     "c": "L",
+     "e": "-хана = «casa de»."
+    },
+    {
+     "id": "k13-09",
+     "t": "listen",
+     "audio": "Анам базарда.",
+     "q": "Onde está a mãe?",
+     "a": "no mercado",
+     "w": [
+      "na loja",
+      "em casa",
+      "no trabalho"
+     ],
+     "c": "L",
+     "e": "Базарда = no mercado."
+    },
+    {
+     "id": "k13-10",
+     "t": "order",
+     "a": "Қалада үлкен саябақ бар",
+     "x": [
+      "қалаға"
+     ],
+     "c": "S",
+     "e": "Lugar + coisa + бар."
+    },
+    {
+     "id": "k13-11",
+     "t": "transform",
+     "p": "Responda que está na biblioteca (eu).",
+     "q": "Сен қайдасың?",
+     "a": [
+      "Мен кітапханадамын.",
+      "Кітапханадамын."
+     ],
+     "c": "C",
+     "e": "Кітапхана + да + мын."
+    },
+    {
+     "id": "k13-12",
+     "t": "dict",
+     "a": "Кітап үстелде.",
+     "c": "F",
+     "e": "Үстелде, com -де."
+    }
+   ]
+  },
+  {
+   "id": "k14",
+   "n": 14,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Қайда барасың? — para onde (dativo)",
+   "kz": "Барыс септік",
+   "goal": "Dizer para onde se vai com o dativo -ға/-ге/-қа/-ке.",
+   "rules": [
+    {
+     "title": "Dativo: «para, a»",
+     "points": [
+      "-ға/-ге depois de vogal e de consoante sonora: қалаға, үйге, Алматыға, базарға.",
+      "-қа/-ке depois de consoante surda: мектепке, жұмысқа. Atenção: дүкен termina em н, que é sonora → дүкенге.",
+      "Depois do possessivo: 1ª e 2ª pessoa do singular → -а/-е (үйіме, үйіңе); 3ª pessoa → -на/-не (үйіне).",
+      "O dativo também indica o destinatário: маған (para mim), саған (para você), оған (para ele)."
+     ],
+     "ex": [
+      [
+       "Мен дүкенге барамын.",
+       "Vou à loja."
+      ],
+      [
+       "Ол жұмысқа барады.",
+       "Ele vai ao trabalho."
+      ],
+      [
+       "Үйге қайт!",
+       "Volte para casa!"
+      ]
+     ]
+    },
+    {
+     "title": "Ir e vir",
+     "points": [
+      "бару (ir): барамын, барасың, барасыз, барады, барамыз.",
+      "келу (vir): келемін, келесің, келесіз, келеді, келеміз.",
+      "қайту (voltar), ұшу (voar), жүру (andar, partir)."
+     ],
+     "trap": "Мектепке (não «мектепге»), жұмысқа (não «жұмысға»): depois de surda, к/қ."
+    }
+   ],
+   "vocab": [
+    [
+     "бару",
+     "ir"
+    ],
+    [
+     "келу",
+     "vir"
+    ],
+    [
+     "қайту",
+     "voltar"
+    ],
+    [
+     "барамын",
+     "vou"
+    ],
+    [
+     "келемін",
+     "venho"
+    ],
+    [
+     "маған",
+     "para mim"
+    ],
+    [
+     "саған",
+     "para você"
+    ],
+    [
+     "оған",
+     "para ele, ela"
+    ],
+    [
+     "Қайда барасың?",
+     "Aonde você vai?"
+    ],
+    [
+     "театр",
+     "teatro"
+    ],
+    [
+     "вокзал",
+     "estação de trem"
+    ],
+    [
+     "аялдама",
+     "ponto de ônibus"
+    ]
+   ],
+   "dialog": {
+    "title": "Saindo de casa",
+    "lines": [
+     [
+      "A",
+      "Қайда барасың?",
+      "Aonde você vai?"
+     ],
+     [
+      "B",
+      "Дүкенге барамын. Сен ше?",
+      "Vou à loja. E você?"
+     ],
+     [
+      "A",
+      "Мен жұмысқа барамын.",
+      "Vou para o trabalho."
+     ],
+     [
+      "B",
+      "Кешке үйге қашан келесің?",
+      "Quando você volta para casa à noite?"
+     ],
+     [
+      "A",
+      "Сағат алтыда келемін.",
+      "Chego às seis."
+     ],
+     [
+      "B",
+      "Жарайды, кешке дейін!",
+      "Certo, até a noite!"
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k14-01",
+     "t": "mc",
+     "q": "қала → «para a cidade»",
+     "a": "қалаға",
+     "w": [
+      "қалақа",
+      "қалаге",
+      "қалада"
+     ],
+     "c": "C",
+     "e": "Vogal dura → -ға."
+    },
+    {
+     "id": "k14-02",
+     "t": "mc",
+     "q": "мектеп → «para a escola»",
+     "a": "мектепке",
+     "w": [
+      "мектепге",
+      "мектепқа",
+      "мектепте"
+     ],
+     "c": "C",
+     "e": "П surda + branda → -ке."
+    },
+    {
+     "id": "k14-03",
+     "t": "mc",
+     "q": "жұмыс → «para o trabalho»",
+     "a": "жұмысқа",
+     "w": [
+      "жұмысға",
+      "жұмыске",
+      "жұмыста"
+     ],
+     "c": "C",
+     "e": "С surda + dura → -қа."
+    },
+    {
+     "id": "k14-04",
+     "t": "mc",
+     "q": "дүкен → «para a loja»",
+     "a": "дүкенге",
+     "w": [
+      "дүкенке",
+      "дүкенға",
+      "дүкенде"
+     ],
+     "c": "C",
+     "e": "Н sonora + branda → -ге."
+    },
+    {
+     "id": "k14-05",
+     "t": "mc",
+     "q": "«para a casa dele»:",
+     "a": "үйіне",
+     "w": [
+      "үйіге",
+      "үйге",
+      "үйіме"
+     ],
+     "c": "C",
+     "e": "Depois do possessivo de 3ª pessoa: -не."
+    },
+    {
+     "id": "k14-06",
+     "t": "mc",
+     "q": "«Para mim» =",
+     "a": "маған",
+     "w": [
+      "менге",
+      "мені",
+      "менде"
+     ],
+     "c": "C",
+     "e": "Мен + dativo = маған (irregular)."
+    },
+    {
+     "id": "k14-07",
+     "t": "gap",
+     "q": "Мен базар___ барамын. (Vou ao mercado.)",
+     "a": [
+      "ға"
+     ],
+     "c": "C",
+     "e": "Р + dura → -ға."
+    },
+    {
+     "id": "k14-08",
+     "t": "gap",
+     "q": "Ол Алматы___ ұшады. (Ele voa para Almaty.)",
+     "a": [
+      "ға"
+     ],
+     "c": "C",
+     "e": "Алматыға."
+    },
+    {
+     "id": "k14-09",
+     "t": "mc",
+     "q": "Ол үйге сағат алтыда ___ . (Ele vem para casa às seis.)",
+     "a": "келеді",
+     "w": [
+      "келемін",
+      "келесің",
+      "келеміз"
+     ],
+     "c": "V",
+     "e": "Ол → -ды/-ді: келеді."
+    },
+    {
+     "id": "k14-10",
+     "t": "listen",
+     "audio": "Қайда барасың?",
+     "q": "O que perguntaram?",
+     "a": "Aonde você vai?",
+     "w": [
+      "Onde você está?",
+      "De onde você é?",
+      "Quando você vem?"
+     ],
+     "c": "L",
+     "e": "Барасың = você vai."
+    },
+    {
+     "id": "k14-11",
+     "t": "order",
+     "a": "Мен жұмысқа барамын",
+     "x": [
+      "жұмыста"
+     ],
+     "c": "S",
+     "e": "Vou para o trabalho."
+    },
+    {
+     "id": "k14-12",
+     "t": "dict",
+     "a": "Біз театрға барамыз.",
+     "c": "F",
+     "e": "Театрға."
+    }
+   ]
+  },
+  {
+   "id": "k15",
+   "n": 15,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Қайдан? — de onde (ablativo)",
+   "kz": "Шығыс септік",
+   "goal": "Dizer de onde se vem e de que país se é com o ablativo.",
+   "rules": [
+    {
+     "title": "Ablativo: «de, desde»",
+     "points": [
+      "-дан/-ден depois de vogal e de л, р, у, й, з, ж: Алматыдан, үйден, Бразилиядан.",
+      "-тан/-тен depois de consoante surda: мектептен, жұмыстан.",
+      "-нан/-нен depois de м, н, ң e do possessivo de 3ª pessoa: Қазақстаннан, адамнан, үйінен.",
+      "Мен Бразилияданмын. = Sou do Brasil. Сіз қайдансыз? = De onde o senhor é?"
+     ],
+     "ex": [
+      [
+       "Мен жұмыстан келдім.",
+       "Vim do trabalho."
+      ],
+      [
+       "Ол Қытайдан.",
+       "Ele é da China."
+      ],
+      [
+       "Сабақ сағат тоғыздан басталады.",
+       "A aula começa às nove."
+      ]
+     ]
+    },
+    {
+     "title": "Países",
+     "points": [
+      "Бразилия, Португалия, Ресей (Rússia), Қытай (China), Түркия, Германия, Франция, Жапония, Америка, Өзбекстан, Қырғызстан.",
+      "Сіз қай елденсіз? = De que país o senhor é?"
+     ],
+     "trap": "Ресей é a Rússia; орыс é o russo (pessoa e língua)."
+    }
+   ],
+   "vocab": [
+    [
+     "қайдан",
+     "de onde"
+    ],
+    [
+     "ел",
+     "país, povo"
+    ],
+    [
+     "Ресей",
+     "Rússia"
+    ],
+    [
+     "Қытай",
+     "China"
+    ],
+    [
+     "Бразилия",
+     "Brasil"
+    ],
+    [
+     "Португалия",
+     "Portugal"
+    ],
+    [
+     "Германия",
+     "Alemanha"
+    ],
+    [
+     "Түркия",
+     "Turquia"
+    ],
+    [
+     "шетел",
+     "exterior"
+    ],
+    [
+     "шетелдік",
+     "estrangeiro"
+    ],
+    [
+     "Қай елденсіз?",
+     "De que país o senhor é?"
+    ],
+    [
+     "туу",
+     "nascer"
+    ]
+   ],
+   "dialog": {
+    "title": "No albergue",
+    "lines": [
+     [
+      "A",
+      "Сәлем! Сен қайдансың?",
+      "Oi! De onde você é?"
+     ],
+     [
+      "B",
+      "Мен Бразилияданмын. Ал сен ше?",
+      "Sou do Brasil. E você?"
+     ],
+     [
+      "A",
+      "Мен Қазақстаннанмын, Шымкенттенмін.",
+      "Sou do Cazaquistão, de Shymkent."
+     ],
+     [
+      "B",
+      "Мұнда жұмыстан келдің бе?",
+      "Você veio aqui a trabalho?"
+     ],
+     [
+      "A",
+      "Жоқ, мен университеттен келдім. Студентпін.",
+      "Não, vim da universidade. Sou estudante."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k15-01",
+     "t": "mc",
+     "q": "Алматы → «de Almaty»",
+     "a": "Алматыдан",
+     "w": [
+      "Алматытан",
+      "Алматыден",
+      "Алматынан"
+     ],
+     "c": "C",
+     "e": "Vogal → -дан."
+    },
+    {
+     "id": "k15-02",
+     "t": "mc",
+     "q": "мектеп → «da escola»",
+     "a": "мектептен",
+     "w": [
+      "мектепден",
+      "мектептан",
+      "мектепнен"
+     ],
+     "c": "C",
+     "e": "П surda + branda → -тен."
+    },
+    {
+     "id": "k15-03",
+     "t": "mc",
+     "q": "Қазақстан → «do Cazaquistão»",
+     "a": "Қазақстаннан",
+     "w": [
+      "Қазақстандан",
+      "Қазақстантан",
+      "Қазақстаннен"
+     ],
+     "c": "C",
+     "e": "Depois de н → -нан."
+    },
+    {
+     "id": "k15-04",
+     "t": "mc",
+     "q": "үй → «de casa»",
+     "a": "үйден",
+     "w": [
+      "үйдан",
+      "үйтен",
+      "үйнен"
+     ],
+     "c": "C",
+     "e": "Й + branda → -ден."
+    },
+    {
+     "id": "k15-05",
+     "t": "mc",
+     "q": "жұмыс → «do trabalho»",
+     "a": "жұмыстан",
+     "w": [
+      "жұмысдан",
+      "жұмыстен",
+      "жұмыснан"
+     ],
+     "c": "C",
+     "e": "С surda → -тан."
+    },
+    {
+     "id": "k15-06",
+     "t": "gap",
+     "q": "Мен Бразилия___мын. (Sou do Brasil.)",
+     "a": [
+      "дан"
+     ],
+     "c": "C",
+     "e": "Бразилияданмын."
+    },
+    {
+     "id": "k15-07",
+     "t": "mc",
+     "q": "Сіз қай ___? (De que país o senhor é?)",
+     "a": "елденсіз",
+     "w": [
+      "елдесіз",
+      "елгесіз",
+      "елсіз"
+     ],
+     "c": "C",
+     "e": "ел + ден + сіз."
+    },
+    {
+     "id": "k15-08",
+     "t": "pairs",
+     "p": [
+      [
+       "Ресей",
+       "Rússia"
+      ],
+      [
+       "Қытай",
+       "China"
+      ],
+      [
+       "Түркия",
+       "Turquia"
+      ],
+      [
+       "Германия",
+       "Alemanha"
+      ],
+      [
+       "шетел",
+       "exterior"
+      ]
+     ],
+     "c": "L",
+     "e": "Países."
+    },
+    {
+     "id": "k15-09",
+     "t": "listen",
+     "audio": "Мен жұмыстан келдім.",
+     "q": "O que você ouviu?",
+     "a": "Vim do trabalho.",
+     "w": [
+      "Vou para o trabalho.",
+      "Estou no trabalho.",
+      "Não tenho trabalho."
+     ],
+     "c": "L",
+     "e": "Жұмыстан = do trabalho."
+    },
+    {
+     "id": "k15-10",
+     "t": "mc",
+     "q": "Qual caso responde «Қайда?» (onde)?",
+     "a": "locativo -да/-де",
+     "w": [
+      "dativo -ға/-ге",
+      "ablativo -дан/-ден",
+      "nominativo"
+     ],
+     "c": "C",
+     "e": "Қайда? -да; Қайда (para onde)? -ға; Қайдан? -дан."
+    },
+    {
+     "id": "k15-11",
+     "t": "order",
+     "a": "Сабақ сағат тоғыздан басталады",
+     "x": [
+      "тоғызда"
+     ],
+     "c": "S",
+     "e": "A aula começa às nove (desde as nove)."
+    },
+    {
+     "id": "k15-12",
+     "t": "dict",
+     "a": "Сіз қайдансыз?",
+     "c": "F",
+     "e": "Қайдан + сыз."
+    }
+   ]
+  },
+  {
+   "id": "k16",
+   "n": 16,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Не істеп жатырсың? — o que você está fazendo",
+   "kz": "Нақ осы шақ",
+   "goal": "Descrever ações em andamento com -ып жатыр e os verbos de posição.",
+   "rules": [
+    {
+     "title": "O presente contínuo",
+     "points": [
+      "O verbo cazaque aparece no dicionário com -у: оқу (ler), жазу (escrever). Tire o -у e você tem o radical: оқы-, жаз-.",
+      "Radical + -ып/-іп (depois de consoante) ou -п (depois de vogal) + жатыр + pessoa.",
+      "Мен оқып жатырмын, сен оқып жатырсың, сіз оқып жатырсыз, ол оқып жатыр, біз оқып жатырмыз.",
+      "Жазу → жазып, ішу → ішіп, сөйлеу → сөйлеп, ойнау → ойнап, көру → көріп."
+     ],
+     "ex": [
+      [
+       "Не істеп жатырсың?",
+       "O que você está fazendo?"
+      ],
+      [
+       "Мен хат жазып жатырмын.",
+       "Estou escrevendo uma carta."
+      ]
+     ]
+    },
+    {
+     "title": "Отыр, тұр, жүр",
+     "points": [
+      "Em vez de жатыр (deitado), pode-se usar o verbo de posição: отыр (sentado), тұр (em pé), жүр (em movimento, ao longo de um período).",
+      "Ол кітап оқып отыр = está lendo (sentado). Ол Алматыда тұрады = mora em Almaty (тұру também é «morar»)."
+     ],
+     "trap": "Оқу → оқып (o ы do radical fica): оқы + п. Тыңдау → тыңдап: radical тыңда + п."
+    }
+   ],
+   "vocab": [
+    [
+     "оқу",
+     "ler; estudar"
+    ],
+    [
+     "жазу",
+     "escrever"
+    ],
+    [
+     "ішу",
+     "beber"
+    ],
+    [
+     "жеу",
+     "comer"
+    ],
+    [
+     "сөйлеу",
+     "falar"
+    ],
+    [
+     "тыңдау",
+     "escutar"
+    ],
+    [
+     "көру",
+     "ver"
+    ],
+    [
+     "ойнау",
+     "brincar, jogar"
+    ],
+    [
+     "демалу",
+     "descansar"
+    ],
+    [
+     "істеу",
+     "fazer"
+    ],
+    [
+     "жұмыс істеу",
+     "trabalhar"
+    ],
+    [
+     "тамақ",
+     "comida, refeição"
+    ]
+   ],
+   "dialog": {
+    "title": "Mensagem de voz",
+    "lines": [
+     [
+      "A",
+      "Сәлем! Не істеп жатырсың?",
+      "Oi! O que você está fazendo?"
+     ],
+     [
+      "B",
+      "Кітап оқып отырмын. Ал сен?",
+      "Estou lendo um livro. E você?"
+     ],
+     [
+      "A",
+      "Мен тамақ ішіп жатырмын. Балалар не істеп жатыр?",
+      "Estou comendo. O que as crianças estão fazendo?"
+     ],
+     [
+      "B",
+      "Олар саябақта ойнап жүр.",
+      "Estão brincando no parque."
+     ],
+     [
+      "A",
+      "Ал әкең ше?",
+      "E o seu pai?"
+     ],
+     [
+      "B",
+      "Әкем теледидар көріп отыр.",
+      "Meu pai está vendo TV."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k16-01",
+     "t": "mc",
+     "q": "оқу → «estou lendo»",
+     "a": "оқып жатырмын",
+     "w": [
+      "оқып жатыр",
+      "оқыжатырмын",
+      "оқып жатырсың"
+     ],
+     "c": "V",
+     "e": "оқы + п + жатыр + мын."
+    },
+    {
+     "id": "k16-02",
+     "t": "mc",
+     "q": "жазу → «ele está escrevendo»",
+     "a": "жазып жатыр",
+     "w": [
+      "жазып жатырмын",
+      "жазп жатыр",
+      "жазіп жатыр"
+     ],
+     "c": "V",
+     "e": "Consoante + dura: -ып; 3ª pessoa sem terminação."
+    },
+    {
+     "id": "k16-03",
+     "t": "mc",
+     "q": "ішу → «você está bebendo»",
+     "a": "ішіп жатырсың",
+     "w": [
+      "ішып жатырсың",
+      "ішіп жатырмын",
+      "ішп жатырсың"
+     ],
+     "c": "V",
+     "e": "Branda: -іп."
+    },
+    {
+     "id": "k16-04",
+     "t": "mc",
+     "q": "сөйлеу → «estamos falando»",
+     "a": "сөйлеп жатырмыз",
+     "w": [
+      "сөйлеіп жатырмыз",
+      "сөйлеп жатырсыз",
+      "сөйлеп жатыр"
+     ],
+     "c": "V",
+     "e": "Depois de vogal: -п."
+    },
+    {
+     "id": "k16-05",
+     "t": "gap",
+     "q": "Олар саябақта ойна___ жүр. (Estão brincando no parque.)",
+     "a": [
+      "п"
+     ],
+     "c": "V",
+     "e": "Ойна + п."
+    },
+    {
+     "id": "k16-06",
+     "t": "gap",
+     "q": "Мен хат жазып жатыр___. (Estou escrevendo uma carta.)",
+     "a": [
+      "мын"
+     ],
+     "c": "P",
+     "e": "Жатыр + мын."
+    },
+    {
+     "id": "k16-07",
+     "t": "pairs",
+     "p": [
+      [
+       "оқу",
+       "ler"
+      ],
+      [
+       "жазу",
+       "escrever"
+      ],
+      [
+       "тыңдау",
+       "escutar"
+      ],
+      [
+       "көру",
+       "ver"
+      ],
+      [
+       "демалу",
+       "descansar"
+      ]
+     ],
+     "c": "L",
+     "e": "Verbos."
+    },
+    {
+     "id": "k16-08",
+     "t": "listen",
+     "audio": "Әкем теледидар көріп отыр.",
+     "q": "O que o pai está fazendo?",
+     "a": "vendo TV",
+     "w": [
+      "lendo jornal",
+      "dormindo",
+      "trabalhando"
+     ],
+     "c": "L",
+     "e": "Теледидар көру = ver TV."
+    },
+    {
+     "id": "k16-09",
+     "t": "mc",
+     "q": "Ele está sentado lendo:",
+     "a": "Ол кітап оқып отыр.",
+     "w": [
+      "Ол кітап оқып тұр.",
+      "Ол кітап оқу отыр.",
+      "Ол кітап оқыды отыр."
+     ],
+     "c": "V",
+     "e": "Отыр = sentado."
+    },
+    {
+     "id": "k16-10",
+     "t": "order",
+     "a": "Не істеп жатырсың",
+     "x": [
+      "жатырмын"
+     ],
+     "c": "S",
+     "e": "O que você está fazendo?"
+    },
+    {
+     "id": "k16-11",
+     "t": "transform",
+     "p": "Diga que VOCÊ (мен) está fazendo isso.",
+     "q": "Ол музыка тыңдап жатыр.",
+     "a": [
+      "Мен музыка тыңдап жатырмын."
+     ],
+     "c": "P",
+     "e": "Жатыр + мын."
+    },
+    {
+     "id": "k16-12",
+     "t": "dict",
+     "a": "Біз қазақша сөйлеп жатырмыз.",
+     "c": "F",
+     "e": "Сөйлеп com ө."
+    }
+   ]
+  },
+  {
+   "id": "k17",
+   "n": 17,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Күнделікті өмір — a rotina (presente-futuro)",
+   "kz": "Ауыспалы осы/келер шақ",
+   "goal": "Falar do que se faz sempre e do que se vai fazer, no afirmativo e no negativo.",
+   "rules": [
+    {
+     "title": "Presente habitual e futuro próximo",
+     "points": [
+      "Radical + -а/-е (depois de consoante) ou -й (depois de vogal) + pessoa: бар-а-мын, кел-е-мін, оқи-мын (оқы + й).",
+      "Pessoas: -мын/-мін, -сың/-сің, -сыз/-сіз, -ды/-ді (ele), -мыз/-міз.",
+      "O mesmo tempo serve para hábito (Мен күнде жұмыс істеймін) e para futuro próximo (Ертең барамын)."
+     ],
+     "ex": [
+      [
+       "Мен сағат жетіде тұрамын.",
+       "Acordo às sete."
+      ],
+      [
+       "Ол кофе ішеді.",
+       "Ele bebe café."
+      ],
+      [
+       "Біз кешке демаламыз.",
+       "À noite descansamos."
+      ]
+     ]
+    },
+    {
+     "title": "Negação: -ма/-ме",
+     "points": [
+      "Radical + -ма/-ме (depois de vogal, л, р, у, й), -ба/-бе (depois de м, н, ң, з, ж), -па/-пе (depois de surda) + -й + pessoa.",
+      "бармаймын, келмеймін, жазбаймын, ішпеймін, оқымаймын.",
+      "Advérbios: күнде (todo dia), әдетте (normalmente), кейде (às vezes), ешқашан (nunca, com verbo negativo)."
+     ],
+     "trap": "Оқы + й = оқи: Мен оқимын (não «оқыймын»)."
+    }
+   ],
+   "vocab": [
+    [
+     "тұру",
+     "levantar-se; morar"
+    ],
+    [
+     "жуыну",
+     "lavar-se"
+    ],
+    [
+     "таңертең",
+     "de manhã"
+    ],
+    [
+     "түсте",
+     "ao meio-dia"
+    ],
+    [
+     "кешке",
+     "à noite"
+    ],
+    [
+     "күнде",
+     "todo dia"
+    ],
+    [
+     "әдетте",
+     "normalmente"
+    ],
+    [
+     "кейде",
+     "às vezes"
+    ],
+    [
+     "ешқашан",
+     "nunca"
+    ],
+    [
+     "таңғы ас",
+     "café da manhã"
+    ],
+    [
+     "түскі ас",
+     "almoço"
+    ],
+    [
+     "ұйықтау",
+     "dormir"
+    ]
+   ],
+   "dialog": {
+    "title": "Um dia de trabalho",
+    "lines": [
+     [
+      "A",
+      "Сен әдетте сағат нешеде тұрасың?",
+      "Normalmente a que horas você levanta?"
+     ],
+     [
+      "B",
+      "Сағат алтыда тұрамын. Жуынамын, таңғы ас ішемін.",
+      "Levanto às seis. Me lavo e tomo o café."
+     ],
+     [
+      "A",
+      "Жұмысқа қалай барасың?",
+      "Como você vai para o trabalho?"
+     ],
+     [
+      "B",
+      "Автобуспен барамын. Сағат тоғызда жұмыс істеймін.",
+      "Vou de ônibus. Às nove começo a trabalhar."
+     ],
+     [
+      "A",
+      "Кешке не істейсің?",
+      "O que você faz à noite?"
+     ],
+     [
+      "B",
+      "Кітап оқимын. Теледидар көрмеймін.",
+      "Leio. Não vejo TV."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k17-01",
+     "t": "mc",
+     "q": "бару → «eu vou»",
+     "a": "барамын",
+     "w": [
+      "бармын",
+      "барымын",
+      "барады"
+     ],
+     "c": "V",
+     "e": "бар + а + мын."
+    },
+    {
+     "id": "k17-02",
+     "t": "mc",
+     "q": "келу → «ele vem»",
+     "a": "келеді",
+     "w": [
+      "келді",
+      "келемін",
+      "келады"
+     ],
+     "c": "V",
+     "e": "кел + е + ді."
+    },
+    {
+     "id": "k17-03",
+     "t": "mc",
+     "q": "оқу → «eu leio»",
+     "a": "оқимын",
+     "w": [
+      "оқыймын",
+      "оқамын",
+      "оқымын"
+     ],
+     "c": "V",
+     "e": "оқы + й = оқи."
+    },
+    {
+     "id": "k17-04",
+     "t": "mc",
+     "q": "істеу → «eu faço»",
+     "a": "істеймін",
+     "w": [
+      "істемін",
+      "істейімін",
+      "істеймын"
+     ],
+     "c": "V",
+     "e": "Vogal + й + мін."
+    },
+    {
+     "id": "k17-05",
+     "t": "mc",
+     "q": "бару → «não vou»",
+     "a": "бармаймын",
+     "w": [
+      "баррмаймын",
+      "барамаймын",
+      "барбаймын"
+     ],
+     "c": "V",
+     "e": "бар + ма + й + мын."
+    },
+    {
+     "id": "k17-06",
+     "t": "mc",
+     "q": "ішу → «não bebo»",
+     "a": "ішпеймін",
+     "w": [
+      "ішмеймін",
+      "ішбеймін",
+      "ішемеймін"
+     ],
+     "c": "V",
+     "e": "Ш surda → -пе."
+    },
+    {
+     "id": "k17-07",
+     "t": "mc",
+     "q": "жазу → «não escrevo»",
+     "a": "жазбаймын",
+     "w": [
+      "жазмаймын",
+      "жазпаймын",
+      "жазамаймын"
+     ],
+     "c": "V",
+     "e": "З → -ба."
+    },
+    {
+     "id": "k17-08",
+     "t": "gap",
+     "q": "Мен сағат жетіде тұр___мын. (Levanto às sete.)",
+     "a": [
+      "а"
+     ],
+     "c": "V",
+     "e": "Тұрамын."
+    },
+    {
+     "id": "k17-09",
+     "t": "gap",
+     "q": "Ол ешқашан кофе іш___ді. (Ele nunca bebe café.)",
+     "a": [
+      "пей"
+     ],
+     "c": "V",
+     "e": "Ешқашан + negativo: ішпейді."
+    },
+    {
+     "id": "k17-10",
+     "t": "pairs",
+     "p": [
+      [
+       "таңертең",
+       "de manhã"
+      ],
+      [
+       "кешке",
+       "à noite"
+      ],
+      [
+       "күнде",
+       "todo dia"
+      ],
+      [
+       "кейде",
+       "às vezes"
+      ],
+      [
+       "ешқашан",
+       "nunca"
+      ]
+     ],
+     "c": "L",
+     "e": "Advérbios de tempo."
+    },
+    {
+     "id": "k17-11",
+     "t": "listen",
+     "audio": "Теледидар көрмеймін.",
+     "q": "O que você ouviu?",
+     "a": "Não vejo TV.",
+     "w": [
+      "Vejo TV.",
+      "Estou vendo TV.",
+      "Vi TV."
+     ],
+     "c": "L",
+     "e": "Көр + ме + й + мін."
+    },
+    {
+     "id": "k17-12",
+     "t": "order",
+     "a": "Біз кешке үйде демаламыз",
+     "x": [
+      "демалады"
+     ],
+     "c": "S",
+     "e": "Descansamos em casa à noite."
+    },
+    {
+     "id": "k17-13",
+     "t": "dict",
+     "a": "Мен күнде жұмыс істеймін.",
+     "c": "F",
+     "e": "Істеймін."
+    }
+   ]
+  },
+  {
+   "id": "k18",
+   "n": 18,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Дүкенде — nas compras (imperativo)",
+   "kz": "Бұйрық рай. Қанша тұрады?",
+   "goal": "Pedir, perguntar preços e comprar com o imperativo.",
+   "rules": [
+    {
+     "title": "O imperativo",
+     "points": [
+      "Informal (сен) = o radical puro: Бер! (dê), Кел! (venha), Ал! (pegue), Оқы! (leia).",
+      "Formal (сіз) = -ыңыз/-іңіз depois de consoante, -ңыз/-ңіз depois de vogal: беріңіз, келіңіз, алыңыз, оқыңыз.",
+      "-шы/-ші suaviza o pedido («por favor»): беріңізші, көрсетіңізші, айтыңызшы.",
+      "Negativo: -ма/-ме + ңыз: бармаңыз (não vá), кешікпеңіз (não se atrase)."
+     ],
+     "ex": [
+      [
+       "Мынаны көрсетіңізші.",
+       "Mostre-me isto, por favor."
+      ],
+      [
+       "Бір келі алма беріңізші.",
+       "Um quilo de maçã, por favor."
+      ]
+     ]
+    },
+    {
+     "title": "Preço",
+     "points": [
+      "Бұл қанша тұрады? = Quanto custa isto? (тұру «custar, valer»)",
+      "Қымбат (caro), арзан (barato), жеңілдік (desconto), теңге (moeda do Cazaquistão).",
+      "Мына / мынау = este aqui; ана / анау = aquele."
+     ],
+     "trap": "Қанша тұрады? pergunta o preço; Сағат неше? pergunta a hora. Não confunda қанша com неше."
+    }
+   ],
+   "vocab": [
+    [
+     "Қанша тұрады?",
+     "Quanto custa?"
+    ],
+    [
+     "қымбат",
+     "caro"
+    ],
+    [
+     "арзан",
+     "barato"
+    ],
+    [
+     "теңге",
+     "tenge"
+    ],
+    [
+     "ақша",
+     "dinheiro"
+    ],
+    [
+     "беріңізші",
+     "dê-me, por favor"
+    ],
+    [
+     "көрсетіңізші",
+     "mostre-me, por favor"
+    ],
+    [
+     "мынау",
+     "este aqui"
+    ],
+    [
+     "анау",
+     "aquele"
+    ],
+    [
+     "киім",
+     "roupa"
+    ],
+    [
+     "көйлек",
+     "vestido; camisa"
+    ],
+    [
+     "өлшем",
+     "tamanho"
+    ]
+   ],
+   "dialog": {
+    "title": "Na loja de roupas",
+    "lines": [
+     [
+      "A",
+      "Сәлеметсіз бе! Мына көйлекті көрсетіңізші.",
+      "Olá! Mostre-me este vestido, por favor."
+     ],
+     [
+      "B",
+      "Мінеки. Сіздің өлшеміңіз қандай?",
+      "Aqui está. Qual é o seu tamanho?"
+     ],
+     [
+      "A",
+      "Қырық екі. Бұл қанша тұрады?",
+      "Quarenta e dois. Quanto custa?"
+     ],
+     [
+      "B",
+      "Он бес мың теңге.",
+      "Quinze mil tenges."
+     ],
+     [
+      "A",
+      "Қымбат екен! Жеңілдік бар ма?",
+      "Que caro! Tem desconto?"
+     ],
+     [
+      "B",
+      "Иә, он пайыз.",
+      "Sim, dez por cento."
+     ],
+     [
+      "A",
+      "Жақсы, алайын.",
+      "Está bem, vou levar."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k18-01",
+     "t": "mc",
+     "q": "беру → imperativo formal",
+     "a": "беріңіз",
+     "w": [
+      "берыңыз",
+      "берңіз",
+      "беріныз"
+     ],
+     "c": "V",
+     "e": "Consoante + branda: -іңіз."
+    },
+    {
+     "id": "k18-02",
+     "t": "mc",
+     "q": "оқу → imperativo formal",
+     "a": "оқыңыз",
+     "w": [
+      "оқыыңыз",
+      "оқиңыз",
+      "оқыңіз"
+     ],
+     "c": "V",
+     "e": "Vogal + dura: -ңыз."
+    },
+    {
+     "id": "k18-03",
+     "t": "mc",
+     "q": "келу → imperativo informal",
+     "a": "кел",
+     "w": [
+      "келу",
+      "келіңіз",
+      "келе"
+     ],
+     "c": "V",
+     "e": "Informal = radical."
+    },
+    {
+     "id": "k18-04",
+     "t": "mc",
+     "q": "«Não vá» (formal):",
+     "a": "бармаңыз",
+     "w": [
+      "барыңызма",
+      "бармаңіз",
+      "бармайсыз"
+     ],
+     "c": "V",
+     "e": "бар + ма + ңыз."
+    },
+    {
+     "id": "k18-05",
+     "t": "gap",
+     "q": "Бір келі алма беріңіз___. (…, por favor.)",
+     "a": [
+      "ші"
+     ],
+     "c": "U",
+     "e": "Branda: -ші."
+    },
+    {
+     "id": "k18-06",
+     "t": "mc",
+     "q": "Como perguntar o preço?",
+     "a": "Бұл қанша тұрады?",
+     "w": [
+      "Бұл неше?",
+      "Бұл қайда?",
+      "Сағат неше?"
+     ],
+     "c": "U",
+     "e": "Қанша тұрады?"
+    },
+    {
+     "id": "k18-07",
+     "t": "pairs",
+     "p": [
+      [
+       "қымбат",
+       "caro"
+      ],
+      [
+       "арзан",
+       "barato"
+      ],
+      [
+       "ақша",
+       "dinheiro"
+      ],
+      [
+       "киім",
+       "roupa"
+      ],
+      [
+       "өлшем",
+       "tamanho"
+      ]
+     ],
+     "c": "L",
+     "e": "Compras."
+    },
+    {
+     "id": "k18-08",
+     "t": "listen",
+     "audio": "Он бес мың теңге.",
+     "q": "Qual é o preço?",
+     "a": "15.000 tenges",
+     "w": [
+      "5.000 tenges",
+      "1.500 tenges",
+      "50.000 tenges"
+     ],
+     "c": "L",
+     "e": "он бес мың = 15 mil."
+    },
+    {
+     "id": "k18-09",
+     "t": "transform",
+     "p": "Torne o pedido formal e educado (-ңызшы).",
+     "q": "Көрсет!",
+     "a": [
+      "Көрсетіңізші!",
+      "Көрсетіңізші"
+     ],
+     "c": "U",
+     "e": "Көрсет + іңіз + ші."
+    },
+    {
+     "id": "k18-10",
+     "t": "order",
+     "a": "Жеңілдік бар ма",
+     "x": [
+      "ме"
+     ],
+     "c": "S",
+     "e": "Tem desconto?"
+    },
+    {
+     "id": "k18-11",
+     "t": "dict",
+     "a": "Бұл қанша тұрады?",
+     "c": "F",
+     "e": "Қанша com қ."
+    }
+   ]
+  },
+  {
+   "id": "k19",
+   "n": 19,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Тамақ — comida, desejos e necessidades",
+   "kz": "-ғым келеді, керек",
+   "goal": "Dizer o que quer comer e beber, pedir num restaurante e usar керек.",
+   "rules": [
+    {
+     "title": "«Quero»: -ғым келеді",
+     "points": [
+      "Radical + -ғы/-гі (depois de vogal e sonora) ou -қы/-кі (depois de surda) + possessivo + келеді.",
+      "барғым келеді (quero ir), ішкім келеді (quero beber), жегім келеді (quero comer), оқығым келеді (quero ler).",
+      "Сенің не ішкің келеді? = O que você quer beber? Negativo: ішкім келмейді (não quero beber)."
+     ]
+    },
+    {
+     "title": "«Preciso»: керек",
+     "points": [
+      "Quem precisa vai no dativo: Маған су керек (preciso de água), Саған не керек? (do que você precisa?).",
+      "Керек емес = não é preciso."
+     ],
+     "ex": [
+      [
+       "Маған мәзір керек.",
+       "Preciso do cardápio."
+      ],
+      [
+       "Шай ішкім келеді.",
+       "Quero tomar chá."
+      ]
+     ],
+     "trap": "Шай ішу = tomar chá; тамақ ішу = comer uma refeição (literalmente «beber comida»)."
+    }
+   ],
+   "vocab": [
+    [
+     "нан",
+     "pão"
+    ],
+    [
+     "ет",
+     "carne"
+    ],
+    [
+     "сүт",
+     "leite"
+    ],
+    [
+     "шай",
+     "chá"
+    ],
+    [
+     "су",
+     "água"
+    ],
+    [
+     "жеміс",
+     "fruta"
+    ],
+    [
+     "көкөніс",
+     "verdura"
+    ],
+    [
+     "бешбармақ",
+     "beshbarmak (prato de carne e massa)"
+    ],
+    [
+     "бауырсақ",
+     "baursak (pão frito)"
+    ],
+    [
+     "қымыз",
+     "kumis (leite de égua fermentado)"
+    ],
+    [
+     "мәзір",
+     "cardápio"
+    ],
+    [
+     "есеп",
+     "conta"
+    ],
+    [
+     "дәмді",
+     "gostoso"
+    ]
+   ],
+   "dialog": {
+    "title": "No restaurante",
+    "lines": [
+     [
+      "B",
+      "Қош келдіңіз! Мінеки, мәзір.",
+      "Bem-vindos! Aqui está o cardápio."
+     ],
+     [
+      "A",
+      "Рақмет. Маған бешбармақ керек.",
+      "Obrigada. Quero um beshbarmak."
+     ],
+     [
+      "B",
+      "Не ішкіңіз келеді?",
+      "O que a senhora quer beber?"
+     ],
+     [
+      "A",
+      "Шай ішкім келеді. Сүтпен.",
+      "Quero chá. Com leite."
+     ],
+     [
+      "B",
+      "Бауырсақ та әкелейін бе?",
+      "Trago baursak também?"
+     ],
+     [
+      "A",
+      "Иә, әкеліңізші!",
+      "Sim, traga, por favor!"
+     ],
+     [
+      "A",
+      "Өте дәмді! Есепті әкеліңізші.",
+      "Muito gostoso! Traga a conta, por favor."
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k19-01",
+     "t": "mc",
+     "q": "бару → «quero ir»",
+     "a": "барғым келеді",
+     "w": [
+      "баргім келеді",
+      "барқым келеді",
+      "барамын келеді"
+     ],
+     "c": "V",
+     "e": "Р sonora + dura → -ғы."
+    },
+    {
+     "id": "k19-02",
+     "t": "mc",
+     "q": "ішу → «quero beber»",
+     "a": "ішкім келеді",
+     "w": [
+      "ішгім келеді",
+      "ішқым келеді",
+      "ішемін келеді"
+     ],
+     "c": "V",
+     "e": "Ш surda + branda → -кі."
+    },
+    {
+     "id": "k19-03",
+     "t": "mc",
+     "q": "жеу → «quero comer»",
+     "a": "жегім келеді",
+     "w": [
+      "жеғым келеді",
+      "жекім келеді",
+      "жеймін келеді"
+     ],
+     "c": "V",
+     "e": "Vogal branda → -гі."
+    },
+    {
+     "id": "k19-04",
+     "t": "mc",
+     "q": "Сенің не ішкің ___? (O que você quer beber?)",
+     "a": "келеді",
+     "w": [
+      "келемін",
+      "келесің",
+      "керек"
+     ],
+     "c": "V",
+     "e": "Келеді fica sempre na 3ª pessoa."
+    },
+    {
+     "id": "k19-05",
+     "t": "mc",
+     "q": "«Preciso de água» =",
+     "a": "Маған су керек.",
+     "w": [
+      "Мен су керек.",
+      "Менің су керек.",
+      "Маған су керекпін."
+     ],
+     "c": "C",
+     "e": "Quem precisa vai no dativo: маған."
+    },
+    {
+     "id": "k19-06",
+     "t": "gap",
+     "q": "Саған не ___? (Do que você precisa?)",
+     "a": [
+      "керек"
+     ],
+     "c": "L",
+     "e": "Керек."
+    },
+    {
+     "id": "k19-07",
+     "t": "gap",
+     "q": "Мен кофе ішкім кел___ді. (Não quero café.)",
+     "a": [
+      "мей"
+     ],
+     "c": "V",
+     "e": "Келмейді."
+    },
+    {
+     "id": "k19-08",
+     "t": "pairs",
+     "p": [
+      [
+       "нан",
+       "pão"
+      ],
+      [
+       "ет",
+       "carne"
+      ],
+      [
+       "сүт",
+       "leite"
+      ],
+      [
+       "жеміс",
+       "fruta"
+      ],
+      [
+       "көкөніс",
+       "verdura"
+      ]
+     ],
+     "c": "L",
+     "e": "Comida."
+    },
+    {
+     "id": "k19-09",
+     "t": "listen",
+     "audio": "Шай ішкім келеді.",
+     "q": "O que a pessoa quer?",
+     "a": "tomar chá",
+     "w": [
+      "tomar café",
+      "comer pão",
+      "a conta"
+     ],
+     "c": "L",
+     "e": "Шай ішкім келеді."
+    },
+    {
+     "id": "k19-10",
+     "t": "mc",
+     "q": "O que é «қымыз»?",
+     "a": "leite de égua fermentado",
+     "w": [
+      "pão frito",
+      "prato de carne",
+      "chá com leite"
+     ],
+     "c": "L",
+     "e": "Қымыз, bebida nacional."
+    },
+    {
+     "id": "k19-11",
+     "t": "order",
+     "a": "Маған бешбармақ керек",
+     "x": [
+      "мен"
+     ],
+     "c": "S",
+     "e": "Quero um beshbarmak (preciso)."
+    },
+    {
+     "id": "k19-12",
+     "t": "dict",
+     "a": "Өте дәмді! Рақмет!",
+     "c": "F",
+     "e": "Дәмді com ә."
+    }
+   ]
+  },
+  {
+   "id": "k20",
+   "n": 20,
+   "level": "A1",
+   "module": "A1 · Алғашқы қадам",
+   "title": "Кеше — ontem (passado)",
+   "kz": "Жедел өткен шақ",
+   "goal": "Contar o que aconteceu com o passado em -ды/-ді, afirmativo e negativo.",
+   "rules": [
+    {
+     "title": "Passado definido",
+     "points": [
+      "Radical + -ды/-ді (depois de vogal e sonora) ou -ты/-ті (depois de surda) + pessoa curta.",
+      "Pessoas: -м (eu), -ң (você), -ңыз/-ңіз (o senhor), — (ele), -қ/-к (nós).",
+      "бардым, бардың, бардыңыз, барды, бардық; келдім, келдік; іштім, іштік; оқыдым."
+     ],
+     "ex": [
+      [
+       "Кеше кинотеатрға бардым.",
+       "Ontem fui ao cinema."
+      ],
+      [
+       "Ол хат жазды.",
+       "Ele escreveu uma carta."
+      ],
+      [
+       "Біз көп сөйлестік.",
+       "Conversamos muito."
+      ]
+     ]
+    },
+    {
+     "title": "Negativo e pergunta",
+     "points": [
+      "Negativo: -ма/-ме/-ба/-бе/-па/-пе antes do sufixo: бармадым, келмедім, ішпедім, жазбадым.",
+      "Pergunta: Кеше не істедің? Сен Алматыға бардың ба?"
+     ],
+     "trap": "Depois de surda: іш → іштім (não «ішдім»); кет (partir) → кеттім."
+    }
+   ],
+   "vocab": [
+    [
+     "кеше",
+     "ontem"
+    ],
+    [
+     "өткен апта",
+     "semana passada"
+    ],
+    [
+     "былтыр",
+     "ano passado"
+    ],
+    [
+     "кинотеатр",
+     "cinema"
+    ],
+    [
+     "фильм",
+     "filme"
+    ],
+    [
+     "кездесу",
+     "encontrar-se"
+    ],
+    [
+     "сөйлесу",
+     "conversar"
+    ],
+    [
+     "кету",
+     "partir, ir embora"
+    ],
+    [
+     "қыдыру",
+     "passear"
+    ],
+    [
+     "шаршау",
+     "cansar-se"
+    ],
+    [
+     "ұнау",
+     "agradar"
+    ],
+    [
+     "қызық",
+     "interessante"
+    ]
+   ],
+   "dialog": {
+    "title": "Segunda de manhã",
+    "lines": [
+     [
+      "A",
+      "Сәлем! Кеше не істедің?",
+      "Oi! O que você fez ontem?"
+     ],
+     [
+      "B",
+      "Досыммен кездестім. Біз саябақта қыдырдық.",
+      "Encontrei meu amigo. Passeamos no parque."
+     ],
+     [
+      "A",
+      "Кинотеатрға бардыңдар ма?",
+      "Vocês foram ao cinema?"
+     ],
+     [
+      "B",
+      "Жоқ, бармадық. Мен шаршадым. Ал сен?",
+      "Não, não fomos. Eu estava cansado. E você?"
+     ],
+     [
+      "A",
+      "Мен үйде отырдым, жаңа фильм көрдім.",
+      "Fiquei em casa, vi um filme novo."
+     ],
+     [
+      "B",
+      "Қызық па?",
+      "É interessante?"
+     ],
+     [
+      "A",
+      "Иә, маған ұнады!",
+      "Sim, gostei!"
+     ]
+    ]
+   },
+   "items": [
+    {
+     "id": "k20-01",
+     "t": "mc",
+     "q": "бару → «fui»",
+     "a": "бардым",
+     "w": [
+      "бартым",
+      "бардім",
+      "барамын"
+     ],
+     "c": "V",
+     "e": "Р sonora + dura → -ды + м."
+    },
+    {
+     "id": "k20-02",
+     "t": "mc",
+     "q": "ішу → «bebi»",
+     "a": "іштім",
+     "w": [
+      "ішдім",
+      "іштым",
+      "ішемін"
+     ],
+     "c": "V",
+     "e": "Ш surda + branda → -ті + м."
+    },
+    {
+     "id": "k20-03",
+     "t": "mc",
+     "q": "келу → «nós viemos»",
+     "a": "келдік",
+     "w": [
+      "келдіқ",
+      "келдім",
+      "келдікпіз"
+     ],
+     "c": "V",
+     "e": "Nós: -қ/-к; branda → -к."
+    },
+    {
+     "id": "k20-04",
+     "t": "mc",
+     "q": "жазу → «ele escreveu»",
+     "a": "жазды",
+     "w": [
+      "жазты",
+      "жаздым",
+      "жазады"
+     ],
+     "c": "V",
+     "e": "З sonora → -ды."
+    },
+    {
+     "id": "k20-05",
+     "t": "mc",
+     "q": "бару → «não fui»",
+     "a": "бармадым",
+     "w": [
+      "бардымма",
+      "бармадім",
+      "бармаймын"
+     ],
+     "c": "V",
+     "e": "бар + ма + ды + м."
+    },
+    {
+     "id": "k20-06",
+     "t": "mc",
+     "q": "ішу → «não bebi»",
+     "a": "ішпедім",
+     "w": [
+      "ішмедім",
+      "іштімме",
+      "ішпеймін"
+     ],
+     "c": "V",
+     "e": "Ш surda → -пе."
+    },
+    {
+     "id": "k20-07",
+     "t": "gap",
+     "q": "Кеше не істе___? (O que você fez ontem?)",
+     "a": [
+      "дің"
+     ],
+     "c": "V",
+     "e": "Істе + ді + ң."
+    },
+    {
+     "id": "k20-08",
+     "t": "gap",
+     "q": "Біз саябақта қыдыр___. (Passeamos no parque.)",
+     "a": [
+      "дық"
+     ],
+     "c": "V",
+     "e": "Қыдыр + ды + қ."
+    },
+    {
+     "id": "k20-09",
+     "t": "pairs",
+     "p": [
+      [
+       "кеше",
+       "ontem"
+      ],
+      [
+       "былтыр",
+       "ano passado"
+      ],
+      [
+       "кездесу",
+       "encontrar-se"
+      ],
+      [
+       "шаршау",
+       "cansar-se"
+      ],
+      [
+       "қыдыру",
+       "passear"
+      ]
+     ],
+     "c": "L",
+     "e": "Vocabulário."
+    },
+    {
+     "id": "k20-10",
+     "t": "listen",
+     "audio": "Маған ұнады!",
+     "q": "O que a pessoa disse?",
+     "a": "Gostei!",
+     "w": [
+      "Não gostei!",
+      "Estou cansada!",
+      "Fui embora!"
+     ],
+     "c": "L",
+     "e": "Ұнау: quem gosta vai no dativo (маған)."
+    },
+    {
+     "id": "k20-11",
+     "t": "transform",
+     "p": "Passe para o passado.",
+     "q": "Мен кітап оқимын.",
+     "a": [
+      "Мен кітап оқыдым."
+     ],
+     "c": "V",
+     "e": "Оқы + ды + м."
+    },
+    {
+     "id": "k20-12",
+     "t": "order",
+     "a": "Кеше кинотеатрға бардым",
+     "x": [
+      "барамын"
+     ],
+     "c": "S",
+     "e": "Ontem fui ao cinema."
+    },
+    {
+     "id": "k20-13",
+     "t": "dict",
+     "a": "Мен шаршадым.",
+     "c": "F",
+     "e": "Шаршадым."
+    }
+   ]
+  }
+ ]
+}

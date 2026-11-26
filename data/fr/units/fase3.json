@@ -1,0 +1,308 @@
+{
+  "units": [
+    {
+      "id": "u31", "n": 31, "phase": 3, "prio": 2, "theme": "historia",
+      "title": "Passados avançados e passé simple (reconhecer)",
+      "goal": "Usar verbos de estado no passé composé com sentido de decisão e reconhecer o passé simple.",
+      "rules": [
+        {"title": "Estado no passé composé = mudança ou decisão", "points": [
+          "«Mon mari ne voulait pas sortir» (estado) × «Mon mari n'a pas voulu sortir» (recusou).",
+          "«J'ai su tout de suite que…» = percebi. «Ils ont été contents» = ficaram contentes. «J'ai eu peur» = levei um susto."]},
+        {"title": "Passé simple (só reconhecer)", "points": [
+          "Usado no escrito literário e histórico para os fatos principais; o imparfait continua para o cenário.",
+          "3ª pessoa: il fut, il eut, il fit, il vint, il prit, il mit, il dit, il vit, il naquit, il mourut; ils furent, ils eurent, ils firent, ils vinrent.",
+          "Passé antérieur: «Quand il eut fini, il sortit.»"]}
+      ],
+      "items": [
+        {"id": "u31-01", "t": "mc", "q": "Je voulais l'aider, mais il n'a pas ___ : il a refusé.", "a": "voulu", "w": ["voulait", "voudrait", "veuille"], "c": "G5", "e": "Recusa pontual: passé composé de vouloir."},
+        {"id": "u31-02", "t": "mc", "q": "Quand j'ai vu son visage, j'___ tout de suite qu'il mentait.", "a": "ai su", "w": ["savais", "saurais", "avais su"], "c": "G5", "e": "J'ai su = percebi naquele momento."},
+        {"id": "u31-03", "t": "mc", "q": "«Il fut élu en 1848.» Fut é o passé simple de…", "a": "être", "w": ["faire", "falloir", "fuir"], "c": "C", "e": "Fut = foi (être)."},
+        {"id": "u31-04", "t": "mc", "q": "«Ils vinrent à Paris en 1857.» Vinrent é…", "a": "venir, passé simple", "w": ["voir, passé simple", "vendre, présent", "venir, subjonctif"], "c": "C", "e": "Ils vinrent = eles vieram."},
+        {"id": "u31-05", "t": "mc", "q": "«Louis Pasteur naquit dans le Jura.» Em francês corrente:", "a": "Louis Pasteur est né dans le Jura.", "w": ["Louis Pasteur naissait dans le Jura.", "Louis Pasteur a né dans le Jura.", "Louis Pasteur était né dans le Jura."], "c": "G5", "e": "Naquit → est né (passé composé com être)."},
+        {"id": "u31-06", "t": "pairs", "p": [["il fit", "faire"], ["il eut", "avoir"], ["il prit", "prendre"], ["il mit", "mettre"], ["il vit", "voir"], ["il mourut", "mourir"]], "c": "C", "e": "Passé simple: reconhecer o infinitivo."},
+        {"id": "u31-07", "t": "gap", "q": "Quand ils ont appris la nouvelle, ils ___ (être) très contents.", "a": ["ont été"], "c": "G5", "e": "Reação desencadeada por um fato: passé composé."},
+        {"id": "u31-08", "t": "transform", "p": "Passe a frase para o passé composé (francês corrente).", "q": "Quand il eut refermé la porte, il nous raconta son voyage.", "a": ["Quand il a eu refermé la porte, il nous a raconté son voyage", "Après avoir refermé la porte, il nous a raconté son voyage", "Quand il avait refermé la porte, il nous a raconté son voyage"], "c": "G5", "e": "Passé antérieur → passé surcomposé (raro) ou après avoir…"},
+        {"id": "u31-09", "t": "fix", "q": "Hier, j'ai voulu sortir toute la soirée, mais il pleuvait.", "bad": "j'ai voulu", "a": ["je voulais", "j'avais envie de"], "full": "Hier, je voulais sortir toute la soirée, mais il pleuvait.", "c": "G5", "e": "Vontade que dura (estado): imparfait."},
+        {"id": "u31-10", "t": "dict", "a": "Ce jour-là, les députés décidèrent de donner une constitution à la France.", "c": "C", "e": "Passé simple em texto histórico (Écho L11)."}
+      ]
+    },
+    {
+      "id": "u32", "n": 32, "phase": 3, "prio": 2, "theme": "educacao",
+      "title": "Subjuntivo IV: relativas, indefinidas e à ce que",
+      "goal": "Usar o subjuntivo nos contextos finos do escrito cuidado.",
+      "rules": [
+        {"title": "Em relativas", "points": [
+          "Antecedente buscado ou negado: «Je cherche quelqu'un qui sache le russe.» «Il n'y a personne qui puisse m'aider.»",
+          "Depois de superlativo e de le seul, le premier, l'unique: «C'est le seul qui m'ait aidé.»"]},
+        {"title": "Indefinidas e à ce que", "points": [
+          "qui que, quoi que (≠ quoique), où que, quel(le)(s) que soit/soient, si + adjetivo + que: «Si difficile que ce soit…»",
+          "Verbos com à ce que: s'attendre à, tenir à, veiller à, s'opposer à, consentir à, contribuer à ce que + subjuntivo.",
+          "Ne expletivo: avant qu'il ne parte; à moins que… ne; de peur que… ne."]}
+      ],
+      "items": [
+        {"id": "u32-01", "t": "mc", "q": "Nous cherchons un candidat qui ___ parler trois langues.", "a": "sache", "w": ["sait", "saura", "savait"], "c": "G5", "e": "Antecedente buscado (ainda não existe): subjuntivo."},
+        {"id": "u32-02", "t": "mc", "q": "C'est le meilleur film que j'___ vu cette année.", "a": "aie", "w": ["ai", "aurais", "avais"], "c": "G5", "e": "Superlativo + relativa: subjuntivo passado (aie vu)."},
+        {"id": "u32-03", "t": "mc", "q": "___ que soient vos raisons, vous devez respecter le règlement.", "a": "Quelles", "w": ["Quelque", "Quels", "Quoi"], "c": "G4", "e": "Quel que soit: concorda com raisons (fem. pl.)."},
+        {"id": "u32-04", "t": "mc", "q": "Je tiens à ce que tout le monde ___ présent.", "a": "soit", "w": ["est", "sera", "être"], "c": "G5", "e": "Tenir à ce que + subjuntivo."},
+        {"id": "u32-05", "t": "mc", "q": "___ tu fasses, fais-le bien.", "a": "Quoi que", "w": ["Quoique", "Qui que", "Quel que"], "c": "O", "e": "Quoi que = o que quer que; quoique = embora."},
+        {"id": "u32-06", "t": "gap", "q": "Je ne m'attendais pas à ce qu'il ___ (réagir) si vite.", "a": ["réagisse"], "c": "G5", "e": "S'attendre à ce que + subjuntivo."},
+        {"id": "u32-07", "t": "gap", "q": "Il n'y a personne ici qui ___ (pouvoir) répondre à cette question.", "a": ["puisse"], "c": "G5", "e": "Antecedente negado: subjuntivo."},
+        {"id": "u32-08", "t": "gap", "q": "Je suis heureux que tu ___ (venir) hier.", "a": ["sois venu", "sois venue"], "c": "G5", "e": "Subjuntivo passado para fato anterior."},
+        {"id": "u32-09", "t": "fix", "q": "C'est la seule personne qui m'a vraiment compris.", "bad": "m'a", "a": ["m'ait"], "full": "C'est la seule personne qui m'ait vraiment compris.", "c": "G5", "e": "Le seul / la seule + relativa: subjuntivo no escrito cuidado."},
+        {"id": "u32-10", "t": "transform", "p": "Reescreva com «si… que» + subjuntivo.", "q": "Même si le problème est complexe, nous le résoudrons.", "a": ["Si complexe que soit le problème, nous le résoudrons", "Si complexe que le problème soit, nous le résoudrons"], "start": "Si complexe que ", "c": "G5", "e": "Si + adjetivo + que + subjuntivo (inversão opcional)."},
+        {"id": "u32-11", "t": "order", "a": "Veillez à ce que les portes soient fermées", "x": ["sont"], "c": "G5", "e": "Veiller à ce que + subjuntivo."}
+      ]
+    },
+    {
+      "id": "u33", "n": 33, "phase": 3, "prio": 3, "theme": "midia",
+      "title": "Modalização e atenuação",
+      "goal": "Graduar a certeza e suavizar críticas e pedidos.",
+      "rules": [
+        {"title": "Graduar a certeza", "points": [
+          "il est incontestable que > il est certain que > il est probable que > il se peut que > il est peu probable que.",
+          "SANS DOUTE = provavelmente; SANS AUCUN DOUTE = com certeza.",
+          "devoir / pouvoir epistêmicos: «Il a dû oublier» (deve ter esquecido); «Elle a pu se tromper.»",
+          "sembler, paraître, s'avérer, se révéler: «La mesure s'est révélée inefficace.»",
+          "Condicional jornalístico: «Le ministre aurait démissionné.»"],
+         "trap": "Sem dúvida (português) = certeza; sans doute (francês) = talvez/provavelmente."},
+        {"title": "Atenuar", "points": [
+          "«Il me semble que…», «Ne serait-il pas préférable de… ?», «Je me permets de vous signaler…», «Je ne suis pas tout à fait de votre avis.»"]}
+      ],
+      "items": [
+        {"id": "u33-01", "t": "mc", "q": "Il n'est pas là ? Il ___ oublier le rendez-vous.", "a": "a dû", "w": ["doit", "devrait", "aura"], "c": "G5", "e": "Devoir epistêmico no passado: deve ter esquecido."},
+        {"id": "u33-02", "t": "mc", "q": "Selon nos informations, l'entreprise ___ 300 postes.", "a": "supprimerait", "w": ["supprimera", "supprime sûrement", "supprimât"], "c": "G5", "e": "Condicional jornalístico (informação não confirmada)."},
+        {"id": "u33-03", "t": "mc", "q": "«Il viendra sans doute» significa…", "a": "provavelmente ele virá", "w": ["com certeza ele virá", "ele não virá", "ele virá sem atraso"], "c": "L1", "e": "Sans doute = provavelmente."},
+        {"id": "u33-04", "t": "mc", "q": "Cette solution ___ beaucoup plus coûteuse que prévu.", "a": "s'est révélée", "w": ["s'est révélé", "a révélé", "s'est révélées"], "c": "G4", "e": "Se révéler + adjetivo; concorda com solution."},
+        {"id": "u33-05", "t": "gap", "q": "Il ___ que vous ayez raison, mais vérifions.", "a": ["se peut"], "c": "G5", "e": "Il se peut que + subjuntivo."},
+        {"id": "u33-06", "t": "gap", "q": "Ne serait-il pas ___ de reporter la décision ?", "a": ["préférable"], "c": "R", "e": "Sugestão atenuada em forma de pergunta negativa."},
+        {"id": "u33-07", "t": "transform", "p": "Atenue a crítica.", "q": "Votre rapport est faux.", "a": ["Il me semble que votre rapport contient des erreurs", "Il me semble que votre rapport comporte quelques erreurs", "Je me permets de vous signaler quelques erreurs dans votre rapport"], "c": "R", "e": "Il me semble que / Je me permets de vous signaler."},
+        {"id": "u33-08", "t": "transform", "p": "Transforme em informação não confirmada (condicional).", "q": "Le président a démissionné.", "a": ["Le président aurait démissionné"], "c": "G5", "e": "Condicional passado jornalístico."},
+        {"id": "u33-09", "t": "register", "q": "Je ne suis pas tout à fait de votre avis, permettez-moi de nuancer.", "a": "formal", "c": "R", "e": "Desacordo cortês (Réussir)."},
+        {"id": "u33-10", "t": "pairs", "p": [["il est incontestable que", "certeza"], ["il est probable que", "probabilidade"], ["il se peut que", "possibilidade"], ["il est peu probable que", "dúvida"]], "c": "G5", "e": "Escala de certeza."}
+      ]
+    },
+    {
+      "id": "u34", "n": 34, "phase": 3, "prio": 2, "theme": "casa",
+      "title": "Caracterizar o nome: à, de, en; posição dos adjetivos",
+      "goal": "Escolher entre une tasse à café e une tasse de café, e entre un ancien élève e un château ancien.",
+      "rules": [
+        {"title": "À, de, en", "points": [
+          "à = característica, sabor, função: un enfant aux yeux bleus, une tarte aux pommes, une machine à laver, une tasse à café (para café).",
+          "de = conteúdo, origem, função de roupas: une tasse de café (com café), une salle de bains, des lunettes de soleil, une robe de mariée.",
+          "en = matéria: une table en bois, une statue en marbre (figurado com de: une volonté de fer)."]},
+        {"title": "Adjetivos que mudam de sentido", "points": [
+          "un ancien élève (ex-aluno) / un château ancien (antigo); un grand homme (grande) / un homme grand (alto).",
+          "ma propre voiture (minha) / une voiture propre (limpa); un pauvre homme (coitado) / un homme pauvre (sem dinheiro).",
+          "un seul ami (único) / un ami seul (sozinho); cher ami (querido) / un livre cher (caro); la dernière semaine (última de uma série) / la semaine dernière (passada)."]}
+      ],
+      "items": [
+        {"id": "u34-01", "t": "mc", "q": "Je voudrais une tasse ___ thé bien chaud, s'il vous plaît.", "a": "de", "w": ["à", "en", "du"], "c": "G2", "e": "Conteúdo: une tasse de thé."},
+        {"id": "u34-02", "t": "mc", "q": "J'ai acheté une table ___ bois massif.", "a": "en", "w": ["à", "de la", "au"], "c": "G2", "e": "Matéria: en."},
+        {"id": "u34-03", "t": "mc", "q": "C'est un ancien ___, il a quitté l'école il y a dix ans.", "a": "élève", "w": ["château", "meuble", "bâtiment"], "c": "L2", "e": "Ancien antes do nome = ex-."},
+        {"id": "u34-04", "t": "mc", "q": "Il a lavé la voiture : maintenant, c'est une voiture ___.", "a": "propre", "w": ["propre à elle", "sa propre", "propriétaire"], "c": "L2", "e": "Depois do nome, propre = limpo."},
+        {"id": "u34-05", "t": "mc", "q": "Le garçon ___ cheveux roux, c'est mon neveu.", "a": "aux", "w": ["avec des", "des", "en"], "c": "G2", "e": "Característica física: à (aux cheveux roux)."},
+        {"id": "u34-06", "t": "gap", "q": "Le train en provenance ___ Lyon entre en gare.", "a": ["de"], "c": "G2", "e": "En provenance de / à destination de."},
+        {"id": "u34-07", "t": "gap", "q": "Il me faut une machine ___ laver neuve.", "a": ["à"], "c": "G2", "e": "Função: une machine à laver."},
+        {"id": "u34-08", "t": "fix", "q": "Victor Hugo était un homme grand de la littérature française.", "bad": "un homme grand", "a": ["un grand homme"], "full": "Victor Hugo était un grand homme de la littérature française.", "c": "L2", "e": "Un grand homme = um grande homem; un homme grand = alto."},
+        {"id": "u34-09", "t": "pairs", "p": [["un pauvre homme", "um coitado"], ["un homme pauvre", "um homem sem dinheiro"], ["la semaine dernière", "a semana passada"], ["la dernière semaine", "a última semana (de uma série)"]], "c": "L2", "e": "A posição muda o sentido."},
+        {"id": "u34-10", "t": "order", "a": "Elle porte toujours une robe en soie", "x": ["à"], "c": "G2", "e": "Matéria: en soie."}
+      ]
+    },
+    {
+      "id": "u35", "n": 35, "phase": 3, "prio": 2, "theme": "cultura",
+      "title": "C'est / il est, ce / ça / cela, pronomes tônicos",
+      "goal": "Escolher c'est ou il est sem hesitar.",
+      "rules": [
+        {"title": "A regra", "points": [
+          "c'est + determinante + nome, nome próprio ou pronome tônico: c'est un film, c'est Marie, c'est lui.",
+          "il / elle est + adjetivo ou profissão sem artigo: il est grand, elle est avocate. Mas: c'est une avocate célèbre.",
+          "Comentário sobre uma situação: c'est. «Ils ont perdu leur chien. C'est triste.»",
+          "il est + adj + de + inf. (escrito) / c'est + adj + de + inf. (oral); c'est + adj + à quando o objeto vem antes: «C'est difficile à dire.»",
+          "cela (escrito) / ça (oral); soi: «chacun pour soi»."]}
+      ],
+      "items": [
+        {"id": "u35-01", "t": "mc", "q": "Tu connais Juliette Binoche ? ___ une actrice extraordinaire.", "a": "C'est", "w": ["Elle est", "Il est", "Ça est"], "c": "G3", "e": "Determinante + nome: c'est une actrice."},
+        {"id": "u35-02", "t": "mc", "q": "Son père ? ___ réalisateur.", "a": "Il est", "w": ["C'est", "C'est un", "Il est un"], "c": "G3", "e": "Profissão sem artigo: il est réalisateur."},
+        {"id": "u35-03", "t": "mc", "q": "Ce film a gagné trois prix. ___ impressionnant !", "a": "C'est", "w": ["Il est", "Elle est", "Ça est"], "c": "G3", "e": "Comentário sobre o fato: c'est."},
+        {"id": "u35-04", "t": "mc", "q": "Ce roman est difficile ___ comprendre.", "a": "à", "w": ["de", "pour", "—"], "c": "G2", "e": "Objeto (le roman) é sujeito: difficile à."},
+        {"id": "u35-05", "t": "gap", "q": "___ est important de voter. (registro escrito)", "a": ["Il"], "c": "R", "e": "Escrito: il est + adj + de + inf."},
+        {"id": "u35-06", "t": "gap", "q": "Qui a peint ce tableau ? — C'est ___. (ele)", "a": ["lui"], "c": "G3", "e": "C'est + pronome tônico."},
+        {"id": "u35-07", "t": "fix", "q": "Elle est une chanteuse très connue au Québec.", "bad": "Elle est une", "a": ["C'est une"], "full": "C'est une chanteuse très connue au Québec.", "c": "G3", "e": "Com artigo: c'est une…"},
+        {"id": "u35-08", "t": "register", "q": "Cela me paraît difficile à mettre en œuvre.", "a": "formal", "c": "R", "e": "Cela (escrito) e mettre en œuvre."},
+        {"id": "u35-09", "t": "order", "a": "C'est un écrivain que j'admire beaucoup", "x": ["il"], "c": "G3", "e": "C'est + un + nome."},
+        {"id": "u35-10", "t": "dict", "a": "C'est une pièce émouvante, et les acteurs sont excellents.", "c": "G3", "e": "C'est + nome; ils sont + adjetivo."}
+      ]
+    },
+    {
+      "id": "u36", "n": 36, "phase": 3, "prio": 1, "theme": "cultura",
+      "title": "Inversão do sujeito",
+      "goal": "Usar a inversão do escrito cuidado e reconhecê-la na literatura.",
+      "rules": [
+        {"title": "Onde aparece", "points": [
+          "Pergunta formal e retórica: «Le gouvernement va-t-il reculer ?» «Devra-t-on attendre la catastrophe pour agir ?»",
+          "Depois de peut-être, sans doute, aussi (= portanto), ainsi, à peine no início: «Peut-être a-t-il raison.»",
+          "Depois de citação: «Non », répondit-il. Depois de relativo: «le tableau qu'a peint Monet»."],
+         "trap": "Pergunta retórica mal construída (Réussir): «Continuera la proportion de chômeurs à augmenter… ?» → «La proportion de chômeurs continuera-t-elle d'augmenter… ?»"}
+      ],
+      "items": [
+        {"id": "u36-01", "t": "mc", "q": "Peut-être ___ raison, après tout.", "a": "a-t-il", "w": ["il a-t-il", "il-a", "a il"], "c": "G3", "e": "Peut-être no início → inversão com -t-."},
+        {"id": "u36-02", "t": "mc", "q": "La ministre ___ démissionner ?", "a": "va-t-elle", "w": ["va-elle", "elle va-t-elle", "vat-elle"], "c": "O", "e": "Inversão complexa com -t- entre vogais."},
+        {"id": "u36-03", "t": "mc", "q": "« Je ne sais pas », ___-t-elle.", "a": "répondit", "w": ["elle répondit", "a répondu", "répond-elle"], "c": "G3", "e": "Depois de citação: verbo + sujeito (répondit-elle)."},
+        {"id": "u36-04", "t": "gap", "q": "À peine ___-il arrivé qu'il a dû repartir.", "a": ["était", "fut"], "c": "G3", "e": "À peine + inversão."},
+        {"id": "u36-05", "t": "fix", "q": "Continuera la proportion de chômeurs à augmenter sans réforme ?", "bad": "Continuera la proportion de chômeurs", "a": ["La proportion de chômeurs continuera-t-elle"], "full": "La proportion de chômeurs continuera-t-elle à augmenter sans réforme ?", "c": "G3", "e": "Erro real (Réussir): sujeito nominal + inversão com pronome."},
+        {"id": "u36-06", "t": "transform", "p": "Transforme em pergunta retórica com inversão.", "q": "On doit vraiment attendre la catastrophe pour agir.", "a": ["Doit-on vraiment attendre la catastrophe pour agir", "Devons-nous vraiment attendre la catastrophe pour agir"], "c": "G3", "e": "Inversão simples com on: doit-on."},
+        {"id": "u36-07", "t": "transform", "p": "Comece por «Sans doute».", "q": "Il est déjà parti.", "a": ["Sans doute est-il déjà parti"], "start": "Sans doute ", "c": "G3", "e": "Sans doute no início → inversão."},
+        {"id": "u36-08", "t": "order", "a": "Ainsi se termine notre histoire", "x": ["elle"], "c": "G3", "e": "Ainsi + inversão."},
+        {"id": "u36-09", "t": "register", "q": "Votre fils est-il inscrit à la cantine ?", "a": "formal", "c": "R", "e": "Inversão complexa: escrito ou oral formal."}
+      ]
+    },
+    {
+      "id": "u37", "n": 37, "phase": 3, "prio": 2, "theme": "lingua",
+      "title": "Ordem das palavras, advérbios e ritmo",
+      "goal": "Pôr advérbios no lugar e escrever frases com ritmo francês.",
+      "rules": [
+        {"title": "Advérbios", "points": [
+          "-ment: évident → évidemment; constant → constamment; vrai → vraiment (sem e!).",
+          "Advérbio curto entre auxiliar e particípio: «Il a bien compris.» «J'ai beaucoup aimé.» «Il a toujours dit…»",
+          "Advérbio longo de modo depois do particípio: «Il a travaillé rapidement.»",
+          "Com infinitivo: «pour bien faire», «sans trop réfléchir»."]},
+        {"title": "Ritmo", "points": [
+          "Prefira 2 ou 3 frases bem ligadas a uma frase longa encadeada por «que» e gerúndios.",
+          "Ritmo ternário e informação importante no fim da frase."]}
+      ],
+      "items": [
+        {"id": "u37-01", "t": "mc", "q": "J'ai ___ ce film.", "a": "beaucoup aimé", "w": ["aimé beaucoup", "beaucoup aimée", "aimé très"], "c": "L2", "e": "Advérbio curto antes do particípio."},
+        {"id": "u37-02", "t": "mc", "q": "Il parle ___ des mêmes sujets.", "a": "constamment", "w": ["constantement", "constamement", "constantemment"], "c": "O", "e": "-ant → -amment."},
+        {"id": "u37-03", "t": "mc", "q": "L'abandon des pesticides constitue ___ une priorité.", "a": "vraiment", "w": ["vraiement", "vraimant", "vrai"], "c": "O", "e": "Erro real (Wattier): vraiment, sem e."},
+        {"id": "u37-04", "t": "gap", "q": "Il a ___ compris la consigne. (bien)", "a": ["bien"], "c": "L2", "e": "Il a bien compris."},
+        {"id": "u37-05", "t": "gap", "q": "La réponse est ___ fausse. (évident → advérbio)", "a": ["évidemment"], "c": "O", "e": "-ent → -emment."},
+        {"id": "u37-06", "t": "fix", "q": "Il a dit toujours la vérité.", "bad": "a dit toujours", "a": ["a toujours dit"], "full": "Il a toujours dit la vérité.", "c": "L2", "e": "Toujours entre auxiliar e particípio."},
+        {"id": "u37-07", "t": "pairs", "p": [["prudent", "prudemment"], ["courant", "couramment"], ["gentil", "gentiment"], ["vrai", "vraiment"], ["énorme", "énormément"]], "c": "O", "e": "Formação de advérbios."},
+        {"id": "u37-08", "t": "order", "a": "Pour bien comprendre il faut tout relire", "x": ["bon"], "c": "L2", "e": "Bien antes do infinitivo."},
+        {"id": "u37-09", "t": "transform", "p": "Ponha o advérbio no lugar certo.", "q": "J'ai fini déjà mon rapport.", "a": ["J'ai déjà fini mon rapport"], "c": "L2", "e": "Déjà entre auxiliar e particípio."}
+      ]
+    },
+    {
+      "id": "u38", "n": 38, "phase": 3, "prio": 3, "theme": "saude",
+      "title": "Locuções prepositivas e regências finas",
+      "goal": "Usar as locuções do escrito formal e as regências que todo mundo erra.",
+      "rules": [
+        {"title": "Locuções formais", "points": [
+          "à l'égard de, envers (para com), en matière de, en ce qui concerne, quant à, au sein de, à l'issue de, lors de.",
+          "faute de, à défaut de, en vue de, à l'instar de, au détriment de, au profit de, compte tenu de, vis-à-vis de, à l'encontre de."]},
+        {"title": "Regências", "points": [
+          "se souvenir de qqch / se rappeler qqch (direto); pallier qqch (direto) / remédier à qqch.",
+          "participer à (atividade) / adhérer à (associação); se servir de; jouir de; nuire à; obéir à; ressembler à; téléphoner à; aider qqn à."]}
+      ],
+      "items": [
+        {"id": "u38-01", "t": "mc", "q": "Il faut ___ ce manque de personnel.", "a": "pallier", "w": ["pallier à", "remédier", "pallier de"], "c": "G2", "e": "Pallier qqch (direto)."},
+        {"id": "u38-02", "t": "mc", "q": "Je me rappelle ___ vacances en Bretagne.", "a": "nos", "w": ["de nos", "à nos", "des nos"], "c": "G2", "e": "Se rappeler qqch (direto)."},
+        {"id": "u38-03", "t": "mc", "q": "La réunion aura lieu ___ du conseil d'administration.", "a": "au sein", "w": ["au milieu", "en sein", "dans le sein"], "c": "L2", "e": "Au sein de = no seio de, dentro de."},
+        {"id": "u38-04", "t": "mc", "q": "___ de la réunion, un communiqué sera publié.", "a": "À l'issue", "w": ["À la sortie", "En issue", "Au terme"], "c": "L2", "e": "À l'issue de = ao fim de (au terme de também serve, mas sem o artigo)."},
+        {"id": "u38-05", "t": "mc", "q": "Le tabac nuit ___ santé.", "a": "à la", "w": ["la", "de la", "contre la"], "c": "G2", "e": "Nuire à qqch."},
+        {"id": "u38-06", "t": "gap", "q": "___ matière de santé publique, la prévention est essentielle.", "a": ["En"], "c": "L2", "e": "En matière de."},
+        {"id": "u38-07", "t": "gap", "q": "Compte ___ de la situation, la séance est reportée.", "a": ["tenu"], "c": "L2", "e": "Compte tenu de."},
+        {"id": "u38-08", "t": "gap", "q": "Il a adhéré ___ une association de patients.", "a": ["à"], "c": "G2", "e": "Adhérer à."},
+        {"id": "u38-09", "t": "fix", "q": "Les grandes surfaces se montrent hostiles face au nouveau mode de consommation.", "bad": "face au", "a": ["au"], "full": "Les grandes surfaces se montrent hostiles au nouveau mode de consommation.", "c": "G2", "e": "Erro real (Wattier): hostile à."},
+        {"id": "u38-10", "t": "fix", "q": "Je me souviens très bien ce jour-là.", "bad": "ce", "a": ["de ce"], "full": "Je me souviens très bien de ce jour-là.", "c": "G2", "e": "Se souvenir de."},
+        {"id": "u38-11", "t": "pairs", "p": [["à l'instar de", "a exemplo de"], ["au détriment de", "em prejuízo de"], ["à défaut de", "na falta de"], ["quant à", "quanto a"], ["lors de", "por ocasião de"]], "c": "L2", "e": "Locuções do escrito formal."}
+      ]
+    },
+    {
+      "id": "u39", "n": 39, "phase": 3, "prio": 3, "theme": "debate",
+      "title": "Conectores e argumentação de nível C1",
+      "goal": "Articular um raciocínio nuançado com os conectores do escrito cuidado.",
+      "rules": [
+        {"title": "Conectores C1", "points": [
+          "or (introduz o dado que muda o raciocínio — não é «ou»), dès lors, en somme, somme toute, force est de constater que.",
+          "il n'en demeure pas moins que, a fortiori, du moins, voire, quitte à, non que + subjuntivo, d'autant plus que, loin de + inf., sans compter que, en l'occurrence, cela dit."]},
+        {"title": "Argumentar", "points": [
+          "Tipos de argumento: autoridade, exemplo, analogia, causa, consequência, valores.",
+          "Antecipar a objeção e refutá-la: «On objectera que… Or…»"]}
+      ],
+      "items": [
+        {"id": "u39-01", "t": "mc", "q": "Tous les candidats devaient parler anglais. ___, Paul ne le parle pas.", "a": "Or", "w": ["Ou", "Donc", "Ainsi"], "c": "L2", "e": "Or introduz o dado que muda o raciocínio."},
+        {"id": "u39-02", "t": "mc", "q": "Cette mesure est inutile, ___ dangereuse.", "a": "voire", "w": ["voir", "même si", "donc"], "c": "O", "e": "Voire = e até mesmo (não confundir com voir)."},
+        {"id": "u39-03", "t": "mc", "q": "Je partirai, ___ perdre mon emploi.", "a": "quitte à", "w": ["quitter", "faute de", "au lieu de"], "c": "L2", "e": "Quitte à = mesmo que isso implique."},
+        {"id": "u39-04", "t": "mc", "q": "___ de constater que les résultats sont décevants.", "a": "Force est", "w": ["Il faut force", "Forcé est", "Par force"], "c": "L2", "e": "Force est de constater que (fórmula fixa)."},
+        {"id": "u39-05", "t": "mc", "q": "Je refuse, non qu'il ___ tort, mais je n'ai pas le temps.", "a": "ait", "w": ["a", "aura", "avait"], "c": "G5", "e": "Non que + subjuntivo."},
+        {"id": "u39-06", "t": "gap", "q": "La réforme est coûteuse ; il n'en ___ pas moins qu'elle est nécessaire.", "a": ["demeure", "reste"], "c": "L2", "e": "Il n'en demeure pas moins que."},
+        {"id": "u39-07", "t": "gap", "q": "Le projet est risqué, d'___ plus que le budget est limité.", "a": ["autant"], "c": "L2", "e": "D'autant plus que = ainda mais porque."},
+        {"id": "u39-08", "t": "gap", "q": "___ de résoudre le problème, cette mesure l'aggrave.", "a": ["Loin"], "c": "L2", "e": "Loin de + infinitivo."},
+        {"id": "u39-09", "t": "register", "q": "Somme toute, cette expérience aura été bénéfique.", "a": "formal", "c": "R", "e": "Somme toute: conclusão em registro cuidado."},
+        {"id": "u39-10", "t": "pairs", "p": [["dès lors", "a partir daí, portanto"], ["a fortiori", "com mais razão"], ["en l'occurrence", "no caso"], ["cela dit", "dito isso"], ["en somme", "em suma"]], "c": "L2", "e": "Conectores C1."}
+      ]
+    },
+    {
+      "id": "u40", "n": 40, "phase": 3, "prio": 3, "theme": "debate",
+      "title": "Síntese de documentos (DALF C1)",
+      "goal": "Condensar e reformular vários textos sem opinar e sem citar.",
+      "rules": [
+        {"title": "Regras da síntese", "points": [
+          "Tema comum + problemática; plano próprio em 2 ou 3 partes; título.",
+          "SEM opinião pessoal, SEM citação, SEM «le document 1 dit». Cerca de 220 palavras.",
+          "Verbos de discurso neutros: souligner, rappeler, constater, mettre en évidence, s'interroger sur, dénoncer, plaider pour.",
+          "Condensar com nominalização e reformulação: «Les prix ont beaucoup augmenté» → «la forte hausse des prix»."]}
+      ],
+      "items": [
+        {"id": "u40-01", "t": "mc", "q": "Qual frase pode entrar numa síntese?", "a": "Plusieurs experts soulignent les effets du télétravail sur la santé.", "w": ["Je pense que le télétravail est une bonne chose.", "Le document 2 dit que le télétravail est fatigant.", "« Le télétravail tue le lien social », écrit l'auteur."], "c": "R", "e": "Sem opinião, sem «document X», sem citação."},
+        {"id": "u40-02", "t": "mc", "q": "Como condensar «Beaucoup de gens se déplacent à vélo maintenant»?", "a": "l'essor du vélo", "w": ["les gens qui vont à vélo", "le vélo que beaucoup prennent", "aller à vélo de plus en plus"], "c": "L2", "e": "Nominalização condensada: l'essor du vélo."},
+        {"id": "u40-03", "t": "mc", "q": "Verbo neutro para relatar uma crítica:", "a": "dénoncer", "w": ["crier", "dire mal", "attaquer verbalement"], "c": "L2", "e": "Dénoncer: verbo de discurso preciso."},
+        {"id": "u40-04", "t": "gap", "q": "Les auteurs ___ en évidence les limites du dispositif.", "a": ["mettent"], "c": "L2", "e": "Mettre en évidence."},
+        {"id": "u40-05", "t": "gap", "q": "Certains s'interrogent ___ l'efficacité de cette mesure.", "a": ["sur"], "c": "G2", "e": "S'interroger sur."},
+        {"id": "u40-06", "t": "transform", "p": "Condense numa frase nominal (máx. 6 palavras).", "q": "Les entreprises ont décidé de fermer plusieurs usines en Europe.", "a": ["La fermeture de plusieurs usines européennes", "La fermeture d'usines en Europe", "La fermeture de plusieurs usines en Europe"], "c": "L2", "e": "Fermer → la fermeture."},
+        {"id": "u40-07", "t": "transform", "p": "Reformule sem citar.", "q": "« Il faut taxer le kérosène », affirme la ministre.", "a": ["La ministre plaide pour une taxation du kérosène", "La ministre se prononce en faveur d'une taxe sur le kérosène", "La ministre préconise de taxer le kérosène"], "c": "L2", "e": "Plaider pour / préconiser: reformulação sem aspas."},
+        {"id": "u40-08", "t": "fix", "q": "Selon moi, les auteurs ont raison de dénoncer la précarité.", "bad": "Selon moi, les auteurs ont raison de dénoncer", "a": ["Les auteurs dénoncent"], "full": "Les auteurs dénoncent la précarité.", "c": "R", "e": "Na síntese não há opinião pessoal."},
+        {"id": "u40-09", "t": "pairs", "p": [["souligner", "sublinhar"], ["constater", "constatar"], ["plaider pour", "defender"], ["s'interroger sur", "questionar-se sobre"], ["mettre en garde contre", "alertar contra"]], "c": "L2", "e": "Verbos de discurso da síntese."}
+      ]
+    },
+    {
+      "id": "u41", "n": 41, "phase": 3, "prio": 2, "theme": "lingua",
+      "title": "Francês falado e variação",
+      "goal": "Entender o francês da rua e saber quando NÃO usá-lo.",
+      "rules": [
+        {"title": "Produzir com moderação", "points": [
+          "on = nós; perguntas por entonação; deslocamentos; du coup, en fait, bref, voilà."]},
+        {"title": "Só reconhecer", "points": [
+          "Queda do ne (je sais pas), elisões (t'es, y a, j'sais pas), ben, bah, quoi, genre, grave, trop (= muito).",
+          "Familiar: boulot, bouquin, bagnole, fric, truc, mec, nana, gosse, bouffer, bosser, piger, crevé, marrant, flic, fringues.",
+          "Verlan: relou, chelou, ouf, meuf, vénère. Bélgica e Suíça: septante, nonante; Québec: courriel, magasiner, char, blonde (namorada)."]}
+      ],
+      "items": [
+        {"id": "u41-01", "t": "mc", "q": "«J'ai trop de boulot cette semaine.» Boulot =", "a": "travail", "w": ["fatigue", "argent", "voiture"], "c": "R", "e": "Boulot (fam.) = travail."},
+        {"id": "u41-02", "t": "mc", "q": "«Ce mec est vraiment relou.» Relou =", "a": "lourd, chato", "w": ["simpático", "rico", "louco"], "c": "R", "e": "Verlan de lourd: chato, inconveniente."},
+        {"id": "u41-03", "t": "mc", "q": "«Il a pas pigé.» Em francês padrão:", "a": "Il n'a pas compris.", "w": ["Il n'a pas payé.", "Il n'est pas venu.", "Il n'a pas mangé."], "c": "R", "e": "Piger (fam.) = comprendre; e o ne caiu."},
+        {"id": "u41-04", "t": "mc", "q": "No Québec, «magasiner» significa…", "a": "fazer compras", "w": ["guardar no armazém", "ter uma loja", "trabalhar no comércio"], "c": "R", "e": "Québec: magasiner = faire du shopping."},
+        {"id": "u41-05", "t": "register", "q": "Du coup, on a pas pu venir, quoi.", "a": "familiar", "c": "R", "e": "Du coup, queda do ne, quoi final: familiar."},
+        {"id": "u41-06", "t": "register", "q": "Nous n'avons malheureusement pas pu nous déplacer.", "a": "formal", "c": "R", "e": "Nous, ne completo, malheureusement: formal."},
+        {"id": "u41-07", "t": "transform", "p": "Reescreva em francês padrão neutro.", "q": "J'sais pas, y a trop de monde, c'est chelou.", "a": ["Je ne sais pas, il y a trop de monde, c'est bizarre", "Je ne sais pas, il y a trop de monde, c'est étrange"], "c": "R", "e": "Restituir ne, il y a e trocar a gíria."},
+        {"id": "u41-08", "t": "pairs", "p": [["bagnole", "voiture"], ["fric", "argent"], ["bouquin", "livre"], ["bosser", "travailler"], ["crevé", "très fatigué"]], "c": "R", "e": "Familiar → neutro."},
+        {"id": "u41-09", "t": "dict", "a": "Bon, ben, du coup, on se retrouve demain, quoi.", "c": "R", "e": "Marcadores do oral."}
+      ]
+    },
+    {
+      "id": "u42", "n": 42, "phase": 3, "prio": 3, "theme": "debate",
+      "title": "Revisão integrada: a mesma ideia de três formas",
+      "goal": "Variar entre construção verbal, nominal e impessoal e caçar erros fossilizados.",
+      "rules": [
+        {"title": "Três formas para a mesma ideia", "points": [
+          "Verbal: «Les prix ont fortement augmenté.»",
+          "Nominal: «On observe une forte hausse des prix.»",
+          "Impessoal: «Il est indéniable que les prix ont fortement augmenté.»",
+          "Depois, releia com o seu caderno de erros: os 5 tipos que você mais erra."]}
+      ],
+      "items": [
+        {"id": "u42-01", "t": "mc", "q": "Versão nominal de «Le chômage a beaucoup baissé»:", "a": "On observe une nette baisse du chômage.", "w": ["Le chômage est beaucoup baissant.", "Il y a le chômage qui baisse beaucoup.", "On observe que le chômage baisse beaucoup de."], "c": "L2", "e": "Nominalização + colocação (une nette baisse)."},
+        {"id": "u42-02", "t": "mc", "q": "Versão impessoal de «Nous devons agir vite»:", "a": "Il est urgent d'agir.", "w": ["Il est urgent agir.", "C'est urgent que nous agissons.", "Il faut que nous agissons vite."], "c": "G5", "e": "Il est + adj + de + inf."},
+        {"id": "u42-03", "t": "transform", "p": "Reescreva em forma nominal (comece com «La»).", "q": "Les citoyens participent de moins en moins aux élections.", "a": ["La participation des citoyens aux élections diminue", "La participation électorale des citoyens diminue", "La participation des citoyens aux élections baisse"], "start": "La ", "c": "L2", "e": "Participer → la participation."},
+        {"id": "u42-04", "t": "transform", "p": "Reescreva em forma impessoal.", "q": "Nous devons protéger les espaces verts.", "a": ["Il faut protéger les espaces verts", "Il est nécessaire de protéger les espaces verts", "Il est indispensable de protéger les espaces verts", "Il convient de protéger les espaces verts"], "c": "L2", "e": "Il faut / il est nécessaire de / il convient de."},
+        {"id": "u42-05", "t": "fix", "q": "Si les gens auraient plus de temps, ils liraient plus de livres.", "bad": "auraient", "a": ["avaient"], "full": "Si les gens avaient plus de temps, ils liraient plus de livres.", "c": "G5", "e": "Revisão: nunca condicional depois de si."},
+        {"id": "u42-06", "t": "fix", "q": "J'espère que vous puissiez venir à la conférence.", "bad": "puissiez", "a": ["pourrez"], "full": "J'espère que vous pourrez venir à la conférence.", "c": "G5", "e": "Revisão: espérer + indicativo."},
+        {"id": "u42-07", "t": "fix", "q": "C'est le livre que je t'ai parlé hier.", "bad": "que", "a": ["dont"], "full": "C'est le livre dont je t'ai parlé hier.", "c": "G3", "e": "Revisão: parler de → dont."},
+        {"id": "u42-08", "t": "fix", "q": "Il y a beaucoup de gens qui pensent que la réforme est injuste.", "bad": "Il y a beaucoup de gens qui pensent", "a": ["Nombreux sont ceux qui pensent", "Beaucoup pensent"], "full": "Nombreux sont ceux qui pensent que la réforme est injuste.", "c": "L2", "e": "Evitar «il y a… qui» no escrito."},
+        {"id": "u42-09", "t": "fix", "q": "Elle s'est permise de critiquer le projet.", "bad": "permise", "a": ["permis"], "full": "Elle s'est permis de critiquer le projet.", "c": "G4", "e": "Se permettre de: o pronome é indireto, sem concordância."},
+        {"id": "u42-10", "t": "fix", "q": "Je vais parler sur la place des femmes en politique.", "bad": "sur", "a": ["de"], "full": "Je vais parler de la place des femmes en politique.", "c": "G2", "e": "Parler de (porter sur é que leva sur)."}
+      ]
+    }
+  ]
+}

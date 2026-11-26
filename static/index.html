@@ -11,6 +11,8 @@
     } catch (_) { /* armazenamento bloqueado: segue o sistema */ }
   </script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="french.css">
+  <link rel="stylesheet" href="kazakh.css">
 </head>
 <body>
   <header class="topbar">
@@ -18,11 +20,18 @@
       <span class="brand-mark" aria-hidden="true">Я</span>
       <span class="brand-name">LinguaLab <span class="ru">Русский</span></span>
     </button>
+    <div class="course-switch" id="course-switch" role="group" aria-label="Curso">
+      <button type="button" data-course="ru" aria-pressed="true">Русский</button>
+      <button type="button" data-course="fr" aria-pressed="false">Français</button>
+      <button type="button" data-course="kz" aria-pressed="false">Қазақша</button>
+    </div>
     <form class="search" id="search-form" role="search">
       <input id="search-input" type="search" placeholder="Procurar palavra em russo ou português" autocomplete="off" aria-label="Procurar palavra">
       <div class="search-results" id="search-results" hidden></div>
     </form>
     <div class="topbar-stats" id="topbar-stats" aria-live="polite"></div>
+    <div class="topbar-stats fr-topbar" id="fr-topbar-stats" aria-live="polite" hidden></div>
+    <div class="topbar-stats fr-topbar" id="kz-topbar-stats" aria-live="polite" hidden></div>
     <button class="icon-button" id="settings-button" type="button" aria-haspopup="dialog" aria-label="Preferências">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
     </button>
@@ -49,6 +58,28 @@
     <div class="stage" id="stage" aria-live="polite"></div>
   </main>
 
+  <main id="view-fr" class="fr-view" hidden>
+    <section class="fr-hero" id="fr-hero" aria-label="Seu progresso no francês"></section>
+    <nav class="fr-tabs" id="fr-tabs" aria-label="Seções do curso de francês"></nav>
+    <div class="fr-panel" id="fr-panel"></div>
+  </main>
+
+  <main id="view-kz" class="fr-view kz-view" hidden>
+    <section class="fr-hero" id="kz-hero" aria-label="Seu progresso no cazaque"></section>
+    <nav class="fr-tabs" id="kz-tabs" aria-label="Seções do curso de cazaque"></nav>
+    <div class="fr-panel" id="kz-panel"></div>
+  </main>
+
+  <main id="view-fr-session" class="session-view fr-session" hidden>
+    <div class="session-bar">
+      <button class="text-button" id="fr-session-close" type="button">Sair da sessão</button>
+      <div class="session-title" id="fr-session-title"></div>
+      <div class="session-progress" aria-hidden="true"><span id="fr-session-bar"></span></div>
+      <div class="fr-session-meta" id="fr-session-meta"></div>
+    </div>
+    <div class="stage" id="fr-stage" aria-live="polite"></div>
+  </main>
+
   <div class="modal" id="modal" hidden>
     <div class="modal-backdrop" data-close></div>
     <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -61,5 +92,7 @@
 
   <script src="app.js"></script>
   <script src="lesson.js"></script>
+  <script src="french.js"></script>
+  <script src="kazakh.js"></script>
 </body>
 </html>

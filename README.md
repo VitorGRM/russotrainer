@@ -21,6 +21,66 @@ Além dos dois modos, cada tema (exceto «Geral») tem uma **aula temática** co
 
 Os itens corrigíveis das aulas entram no progresso do tema nos aspectos **Expressões**, **Estruturas**, **Leitura**, **Escuta** e **Produção**, e os já vistos voltam no modo **Revisar** pela mesma revisão espaçada. A produção livre e o sombreamento não entram na revisão, porque dependem da autoavaliação.
 
+## O curso de francês (B1 → C1)
+
+O seletor **Русский | Français** no topo abre a página própria do curso de francês. O texto-base pedagógico, com método, fontes, trilha, erros e eixos, está na pasta `curso-frances/`, fora deste repositório. Aqui fica só a parte executável:
+
+- **Trilha gramatical:** 42 unidades em três fases (Consolidar, Argumentar, Refinar) e 2 unidades extras (falsos cognatos; carta formal). Cada unidade tem a regra com exemplos e armadilhas para lusófonos e de 9 a 14 exercícios.
+- **Dois modos por unidade:**
+  - **Aprender**: regra seguida de exercícios, do reconhecimento à produção.
+  - **Desafio**: todos os itens, sem aula. Dá até 3 estrelas pelo acerto de primeira, calculado no servidor.
+- **Tipos de exercício:** múltipla escolha, lacuna digitada, caça ao erro (localizar e corrigir), montagem com uma palavra intrusa, transformação, pares, registro (familiar, neutro ou formal) e ditado. Há um teclado de acentos em todos os campos.
+- **Eixos temáticos:** 28 eixos com 560 palavras e expressões, sempre com artigo, exemplo, tradução e áudio. Os exercícios são gerados: sentido, francês a partir do português, gênero, escuta, escrita com artigo e lacuna no exemplo.
+- **Verbos:** 63 verbos prioritários, conjugados por `french.conjugate()` a partir do presente, do radical do futuro e do particípio. O **sprint** dá 90 segundos contra o relógio, e o recorde é contado no servidor.
+- **Sem punição:**
+  - Um erro abre a escada de ajuda (sinal → pista → resposta) e permite tentar de novo.
+  - O acerto com ajuda vale menos XP, mas vale, e o XP nunca diminui.
+  - O item errado volta algumas telas depois; recuperá-lo rende +5 XP.
+  - Na revisão espaçada, o erro recua um só estágio, e o item recupera depressa o melhor estágio que já tinha alcançado.
+- **Caderno de erros:** cada resposta é classificada em uma de dez categorias, de G1 (determinantes) a O (ortografia). O caderno mostra os cinco pontos fracos dos últimos 30 dias e permite treinar cada categoria.
+- **Jogo:** XP, níveis com títulos (*Flâneur* → *Immortel*), meta diária, sequência de dias, fôlego dentro da sessão e conquistas.
+
+Código e dados: `french.py` (motor, progresso nas tabelas `fr_*` do mesmo banco, rotas `/api/fr/*`), `static/french.js` e `static/french.css` (página), `data/fr/` (unidades, eixos e verbos). Formato do conteúdo e validação:
+
+```powershell
+python tools/validate_french.py
+```
+
+O áudio usa as vozes francesas do Edge (`fr-FR-DeniseNeural`). Sem internet, usa a voz francesa do Windows, se estiver instalada.
+
+## O curso de cazaque (A1 → B1)
+
+O botão **Қазақша** no seletor de cursos abre um curso de 40 aulas, do som das letras ao B1, para quem fala português. O plano pedagógico, com as fontes analisadas, fica na pasta `curso-cazaque/`, fora deste repositório.
+
+- **Sequencial:** a trilha é um mapa, e cada aula abre quando a anterior é concluída, isto é, quando todos os exercícios dela foram respondidos. O **modo livre** (em "meta e modo livre") abre tudo de uma vez.
+- **Módulos:**
+  - Әліппе, aulas 1 a 6: o alfabeto, as vogais duras e brandas, қ e ғ, ң e һ, a harmonia vocálica, a assimilação e os números.
+  - A1, aulas 7 a 20: pronomes, terminações de pessoa, perguntas, possessivos, casos locativo, dativo e ablativo, presente, imperativo, «quero» e passado.
+  - A2, aulas 21 a 32: genitivo, acusativo, instrumental, futuro, comparação, posposições, «poder» e «dever», perfeito, votos e condicional.
+  - B1, aulas 33 a 40: converbos e verbos compostos, particípios, vozes, orações complexas, discurso relatado, registro formal, uma leitura sobre o Cazaquistão e outra sobre Abai e os provérbios.
+- **Cada aula** tem:
+  - explicação com narração em português;
+  - quadro de sons nas aulas 1 a 6;
+  - de 12 a 13 palavras com áudio e um treino rápido de reconhecimento;
+  - diálogo em duas vozes (Aigul e Daulet), que pode ser tocado inteiro ou fala por fala;
+  - texto de leitura nas aulas 39 e 40;
+  - de 11 a 14 exercícios: escolha, escuta, pares, montar a frase com uma palavra intrusa, lacuna, escrita, transformação e ditado.
+- **Desafio:** todos os exercícios da aula, sem a explicação. Dá até 3 estrelas.
+- **Sem punição:** o curso segue as mesmas regras do francês (escada de pistas, XP que nunca diminui, item errado que volta e revisão espaçada). Quando o aluno escreve uma letra russa no lugar da cazaque (к/қ, у/ү/ұ, и/і…), recebe uma pista específica em vez de um "errado". Um teclado com ә ғ қ ң ө ұ ү һ і aparece em todos os campos.
+- **Alfabeto:** as 42 letras, com as 9 próprias do cazaque em destaque e uma palavra para ouvir em cada uma.
+
+Código e dados: `kazakh.py` (motor; progresso nas tabelas `kz_*` do mesmo banco; rotas `/api/kz/*`), `static/kazakh.js` e `static/kazakh.css` (página; os exercícios usam o executor de sessão de `french.js`), `data/kz/lessons/*.json` (aulas). Para validar:
+
+```powershell
+python tools/validate_kazakh.py
+```
+
+O áudio usa as vozes cazaques do Edge (`kk-KZ-AigulNeural` e `kk-KZ-DauletNeural`), e a narração usa a voz `pt-BR-ThalitaMultilingualNeural`. O Windows não tem voz cazaque instalada, então sem internet só tocam os áudios que já estão no cache. Para gerar o curso inteiro de uma vez (cerca de 1.050 áudios):
+
+```powershell
+.venv\Scripts\python tools\pregenerate_kazakh_audio.py
+```
+
 ## Executar a partir do código
 
 No Windows, com Python 3.10 ou mais recente:

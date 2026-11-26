@@ -48,6 +48,8 @@ EDGE_ENDPOINTS = (
     "wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken={token}",
 )
 
+from french import FrenchCourse
+from kazakh import KazakhCourse, narration as kazakh_narration
 from lessons import LessonStore, grade_cloze, grade_match
 from updater import Updater, UpdateError
 
@@ -78,6 +80,8 @@ UNITS_DIR = DATA_DIR / "units"
 VOCAB_DIR = DATA_DIR / "vocab_lessons"
 PREFIX_PATH = DATA_DIR / "prefix_verbs.json"
 LESSONS_DIR = DATA_DIR / "lessons"
+FRENCH_DIR = DATA_DIR / "fr"
+KAZAKH_DIR = DATA_DIR / "kz"
 CACHE_DIR = USER_DIR / "data" / "cache"
 DB_PATH = Path(os.environ.get("RUSSO_DB_PATH", str(USER_DIR / "data" / "lingualab.sqlite3")))
 TTS_CACHE_DIR = USER_DIR / "data" / "tts_cache"
@@ -180,6 +184,13 @@ class TTSService:
     VOICE = "ru-RU-SvetlanaNeural"
     VOICES = {"f": ("ru-RU-SvetlanaNeural", "+0Hz"), "m": ("ru-RU-DmitryNeural", "+0Hz"),
               "f2": ("ru-RU-SvetlanaNeural", "-14Hz"), "m2": ("ru-RU-DmitryNeural", "+12Hz")}
+    # Curso de francês: a mesma lógica, com vozes da França.
+    FR_VOICE = "fr-FR-DeniseNeural"
+    FR_VOICES = {"f": ("fr-FR-DeniseNeural", "+0Hz"), "m": ("fr-FR-HenriNeural", "+0Hz")}
+    # Curso de cazaque: Aigul (feminina) e Daulet (masculina), um pouco mais devagar para quem começa.
+    KK_VOICE = "kk-KZ-AigulNeural"
+    KK_VOICES = {"f": ("kk-KZ-AigulNeural", "+0Hz"), "m": ("kk-KZ-DauletNeural", "+0Hz")}
+    OFFLINE_CULTURES = {"ru": "ru-RU", "fr": "fr-FR", "kk": "kk-KZ"}
     LESSON_VOICE = "pt-BR-ThalitaMultilingualNeural"
     EDGE_RETRY_SECONDS = 300
 
@@ -206,10 +217,16 @@ class TTSService:
             last_error = RuntimeError("O Edge não devolveu áudio.")
         raise last_error or RuntimeError("Nenhum endereço do Edge disponível.")
 
-    def audio_for(self, text: str, mode: str = "target", speaker: str = "") -> Path:
+    def audio_for(self, text: str, mode: str = "target", speaker: str = "", lang: str = "ru") -> Path:
         cleaned = re.sub(r"\s+", " ", text).strip()
         pitch = "+0Hz"
-        if mode == "lesson":
+        if lang == "fr":
+            voice, pitch = self.FR_VOICES.get(speaker, (self.FR_VOICE, "+0Hz"))
+            rate, limit = "-8%", 800
+        elif lang == "kk":
+            voice, pitch = self.KK_VOICES.get(speaker, (self.KK_VOICE, "+0Hz"))
+            rate, limit = "-12%", 1500
+        elif mode == "lesson":
             voice, rate, limit = self.LESSON_VOICE, "-6%", 7000
             cleaned = spoken_text(cleaned)
         elif speaker:
@@ -219,16 +236,17 @@ class TTSService:
             rate, limit = "-6%", 800
         else:
             voice, rate, limit = self.VOICE, "-12%", 800
-        if not cleaned or len(cleaned) > limit or not re.search(r"[A-Za-zÀ-žА-Яа-яЁё]", cleaned):
+        if not cleaned or len(cleaned) > limit or not re.search(r"[A-Za-zÀ-žЀ-ӿ]", cleaned):
             raise ValueError(f"O texto do áudio deve ter de 1 a {limit} caracteres.")
         key = f"{voice}|{rate}|{cleaned}" if pitch == "+0Hz" else f"{voice}|{rate}|{pitch}|{cleaned}"
         target = self.cache_dir / f"{hashlib.sha256(key.encode('utf-8')).hexdigest()}.mp3"
         if target.exists() and target.stat().st_size > 0:
             return target
         offline_ok = mode != "lesson" and sys.platform == "win32"
+        culture = self.OFFLINE_CULTURES.get(lang, "ru-RU")
         if edge_tts is None or (offline_ok and time.monotonic() < self._edge_down_until):
             if offline_ok:
-                return self._offline_audio(cleaned)
+                return self._offline_audio(cleaned, culture)
             raise RuntimeError("edge-tts não está instalado.")
         temporary = target.with_suffix(f".{secrets.token_hex(6)}.tmp")
         with self._lock:
@@ -242,34 +260,36 @@ class TTSService:
                 if not offline_ok:
                     raise
                 self._edge_down_until = time.monotonic() + self.EDGE_RETRY_SECONDS
-                return self._offline_audio(cleaned)
+                return self._offline_audio(cleaned, culture)
             finally:
                 temporary.unlink(missing_ok=True)
         return target
 
-    def _offline_audio(self, text: str) -> Path:
+    def _offline_audio(self, text: str, culture: str = "ru-RU") -> Path:
         folder = self.cache_dir.parent / "tts_offline"
         folder.mkdir(parents=True, exist_ok=True)
-        target = folder / f"{hashlib.sha256(text.encode('utf-8')).hexdigest()}.wav"
+        key = text if culture == "ru-RU" else f"{culture}|{text}"
+        target = folder / f"{hashlib.sha256(key.encode('utf-8')).hexdigest()}.wav"
         if target.exists() and target.stat().st_size > 0:
             return target
         temporary = target.with_suffix(f".{secrets.token_hex(6)}.tmp")
         script = (
             "Add-Type -AssemblyName System.Speech;"
             "$s = New-Object System.Speech.Synthesis.SpeechSynthesizer;"
-            "$v = $s.GetInstalledVoices() | Where-Object { $_.VoiceInfo.Culture.Name -eq 'ru-RU' } | Select-Object -First 1;"
+            "$v = $s.GetInstalledVoices() | Where-Object { $_.VoiceInfo.Culture.Name -eq $env:RUSSO_TTS_CULTURE } | Select-Object -First 1;"
             "if (-not $v) { exit 3 };"
             "$s.SelectVoice($v.VoiceInfo.Name); $s.Rate = -1;"
             "$s.SetOutputToWaveFile($env:RUSSO_TTS_OUT); $s.Speak($env:RUSSO_TTS_TEXT); $s.Dispose()"
         )
-        env = {**os.environ, "RUSSO_TTS_TEXT": text, "RUSSO_TTS_OUT": str(temporary)}
+        env = {**os.environ, "RUSSO_TTS_TEXT": text, "RUSSO_TTS_OUT": str(temporary), "RUSSO_TTS_CULTURE": culture}
         try:
             result = subprocess.run(
                 ["powershell.exe", "-NoProfile", "-NonInteractive", "-Command", script],
                 env=env, capture_output=True, timeout=30, creationflags=0x08000000,
             )
             if result.returncode == 3:
-                raise RuntimeError("O Windows não tem voz em russo instalada (Configurações > Hora e idioma > Fala).")
+                language = {"fr": "francês", "kk": "cazaque"}.get(culture[:2], "russo")
+                raise RuntimeError(f"O Windows não tem voz em {language} instalada (Configurações > Hora e idioma > Fala).")
             if result.returncode != 0 or not temporary.exists() or temporary.stat().st_size == 0:
                 raise RuntimeError("A voz offline do Windows falhou.")
             temporary.replace(target)
@@ -1226,6 +1246,25 @@ class AppHandler(BaseHTTPRequestHandler):
                 self.send_json({"ok": True})
             elif parsed.path == "/api/settings":
                 self.send_json(app.progress.save_settings(payload))
+            elif parsed.path == "/api/fr/answer":
+                self.send_json(app.french.answer(payload))
+            elif parsed.path == "/api/fr/seen":
+                self.send_json(app.french.mark_seen(str(payload.get("item_id", ""))))
+            elif parsed.path == "/api/fr/finish":
+                self.send_json(app.french.finish(payload))
+            elif parsed.path == "/api/fr/goal":
+                self.send_json(app.french.set_goal(int(payload.get("goal", 0) or 0)))
+            elif parsed.path == "/api/kz/answer":
+                self.send_json(app.kazakh.answer(payload))
+            elif parsed.path == "/api/kz/seen":
+                ids = payload.get("item_ids") or [payload.get("item_id", "")]
+                self.send_json(app.kazakh.mark_seen([str(i) for i in ids if i]))
+            elif parsed.path == "/api/kz/finish":
+                self.send_json(app.kazakh.finish(payload))
+            elif parsed.path == "/api/kz/goal":
+                self.send_json(app.kazakh.set_goal(int(payload.get("goal", 0) or 0)))
+            elif parsed.path == "/api/kz/free":
+                self.send_json(app.kazakh.set_free_mode(bool(payload.get("on"))))
             elif parsed.path == "/api/window/focus":
                 app.focus_window()
                 self.send_json({"ok": True, "window": app.window is not None})
@@ -1256,6 +1295,10 @@ class AppHandler(BaseHTTPRequestHandler):
             })
         elif path == "/api/themes":
             self.send_json(app.course.overview())
+        elif path.startswith("/api/fr/"):
+            self.handle_french(path[len("/api/fr/"):], q)
+        elif path.startswith("/api/kz/"):
+            self.handle_kazakh(path[len("/api/kz/"):], q)
         elif path == "/api/session":
             theme_id = q.get("theme", "")
             if theme_id not in app.lexicon.theme_ids:
@@ -1292,7 +1335,8 @@ class AppHandler(BaseHTTPRequestHandler):
         elif path in ("/api/tts", "/api/lesson-audio"):
             try:
                 if path == "/api/tts":
-                    audio = app.tts.audio_for(q.get("text", ""), speaker=q.get("voice", ""))
+                    lang = q.get("lang") if q.get("lang") in ("fr", "kk") else "ru"
+                    audio = app.tts.audio_for(q.get("text", ""), speaker=q.get("voice", ""), lang=lang)
                 else:
                     unit = app.content.units.get(q.get("unit_id", ""))
                     if not unit:
@@ -1310,6 +1354,67 @@ class AppHandler(BaseHTTPRequestHandler):
             self.send_json(app.updater.check(force=q.get("force") == "1"))
         elif path == "/api/update/status":
             self.send_json(app.updater.status())
+        else:
+            self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
+
+    def handle_french(self, route: str, q: dict[str, str]) -> None:
+        fr = self.app.french
+        if route == "overview":
+            self.send_json(fr.overview())
+        elif route == "session":
+            kind = q.get("kind", "")
+            if kind == "unit":
+                self.send_json(fr.unit_session(q.get("id", ""), q.get("mode", "learn")))
+            elif kind == "theme":
+                self.send_json(fr.theme_session(q.get("id", "")))
+            elif kind == "review":
+                self.send_json(fr.review_session(q.get("scope", "")))
+            elif kind == "notebook":
+                self.send_json(fr.notebook_session(q.get("category", "")))
+            elif kind == "diagnostic":
+                self.send_json(fr.diagnostic_session())
+            elif kind == "sprint":
+                tenses = [t for t in q.get("tenses", "").split(",") if t]
+                verbs = [v for v in q.get("verbs", "").split(",") if v]
+                self.send_json(fr.sprint_batch(tenses, verbs))
+            else:
+                raise ValueError("Tipo de sessão desconhecido.")
+        elif route == "verb":
+            self.send_json(fr.verb_table(q.get("inf", "")))
+        elif route == "unit":
+            self.send_json(fr.unit_detail(q.get("id", "")))
+        elif route == "theme":
+            self.send_json(fr.theme_detail(q.get("id", "")))
+        elif route == "again":
+            self.send_json(fr.again(q.get("item_id", "")))
+        elif route == "notebook":
+            self.send_json(fr.notebook())
+        else:
+            self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
+
+    def handle_kazakh(self, route: str, q: dict[str, str]) -> None:
+        kz = self.app.kazakh
+        if route == "overview":
+            self.send_json(kz.overview())
+        elif route == "session":
+            if q.get("kind") == "review":
+                self.send_json(kz.review_session())
+            else:
+                self.send_json(kz.lesson_session(q.get("id", ""), q.get("mode", "learn")))
+        elif route == "lesson":
+            self.send_json(kz.lesson_detail(q.get("id", "")))
+        elif route == "again":
+            self.send_json(kz.again(q.get("item_id", "")))
+        elif route == "narration":
+            lesson = kz.content.lessons.get(q.get("id", ""))
+            if not lesson:
+                raise ValueError("Aula desconhecida.")
+            try:
+                audio = self.app.tts.audio_for(kazakh_narration(lesson), mode="lesson")
+            except Exception as exc:  # noqa: BLE001
+                self.send_json({"error": f"Não foi possível gerar a narração: {exc}"}, HTTPStatus.SERVICE_UNAVAILABLE)
+                return
+            self.send_audio(audio)
         else:
             self.send_json({"error": "Endpoint não encontrado"}, HTTPStatus.NOT_FOUND)
 
@@ -1346,6 +1451,8 @@ class AppServer(ThreadingHTTPServer):
         self.progress = Progress(DB_PATH)
         self.lessons = LessonStore(LESSONS_DIR)
         self.course = Course(self.lexicon, self.content, self.progress, self.lessons)
+        self.french = FrenchCourse(FRENCH_DIR, DB_PATH)
+        self.kazakh = KazakhCourse(KAZAKH_DIR, DB_PATH)
         self.tts = TTSService(TTS_CACHE_DIR)
         self.window = None
         self.updater = Updater(APP_VERSION, USER_DIR, on_restart=self.request_quit)

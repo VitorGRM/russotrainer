@@ -1,0 +1,247 @@
+{
+  "units": [
+    {
+      "id": "u08", "n": 8, "phase": 1, "prio": 3, "theme": "ambiente",
+      "title": "Futuro simples, futuro próximo e futuro anterior",
+      "goal": "Usar o futuro depois de quand e o futuro anterior para o que estará concluído.",
+      "rules": [
+        {"title": "Três futuros", "points": [
+          "Futur proche (aller + inf.): intenção, iminência. «Je vais déménager.»",
+          "Futur simple: previsão, promessa, plano. «Il fera beau demain.»",
+          "Futur antérieur: o que estará concluído antes de outro momento futuro. «D'ici 2040, le pétrole aura disparu.»"]},
+        {"title": "Quand + futuro", "points": [
+          "Depois de quand, lorsque, dès que, aussitôt que, une fois que, o francês usa FUTURO (ou futuro anterior).",
+          "«Je t'appellerai quand j'arriverai.» «Dès que j'aurai fini, je sortirai.»",
+          "Dans = daqui a (dans deux jours); en = em quanto tempo (en deux jours); d'ici à = até."],
+         "trap": "O português usa o futuro do subjuntivo («quando eu chegar»), que puxa para «quand j'arrive»: errado no futuro."}
+      ],
+      "items": [
+        {"id": "u08-01", "t": "mc", "q": "Je te téléphonerai quand je ___ à Paris.", "a": "serai", "w": ["suis", "serais", "sois"], "c": "G5", "e": "Quand + futuro quando a ação principal é futura."},
+        {"id": "u08-02", "t": "mc", "q": "Dès que tu ___ tes devoirs, tu pourras jouer.", "a": "auras fini", "w": ["finis", "as fini", "finiras"], "c": "G5", "e": "Ação concluída antes da outra no futuro: futur antérieur."},
+        {"id": "u08-03", "t": "mc", "q": "D'ici dix ans, la population de la ville ___.", "a": "aura doublé", "w": ["double", "doublera déjà", "a doublé"], "c": "G5", "e": "Resultado concluído num momento futuro: futur antérieur."},
+        {"id": "u08-04", "t": "mc", "q": "Le train part ___ dix minutes, dépêche-toi !", "a": "dans", "w": ["en", "pendant", "il y a"], "c": "G2", "e": "Daqui a: dans."},
+        {"id": "u08-05", "t": "mc", "q": "Attention, le verre ___ tomber !", "a": "va", "w": ["ira", "sera", "est"], "c": "G5", "e": "Iminência: futur proche."},
+        {"id": "u08-06", "t": "gap", "q": "Nous ___ (voir) bien ce que l'avenir nous réserve.", "a": ["verrons"], "c": "C", "e": "Voir: radical verr- no futuro."},
+        {"id": "u08-07", "t": "gap", "q": "Si tout va bien, j'___ (avoir) mon diplôme en juin.", "a": ["aurai"], "c": "C", "e": "Avoir: radical aur-."},
+        {"id": "u08-08", "t": "gap", "q": "Il ___ (falloir) changer nos habitudes de consommation.", "a": ["faudra"], "c": "C", "e": "Falloir: il faudra."},
+        {"id": "u08-09", "t": "fix", "q": "Quand je finis mes études, je voyagerai en Asie.", "bad": "finis", "a": ["finirai", "aurai fini"], "full": "Quand j'aurai fini mes études, je voyagerai en Asie.", "c": "G5", "e": "Quand + futuro (ou futuro anterior)."},
+        {"id": "u08-10", "t": "fix", "q": "Je vous enverrerai le document demain.", "bad": "enverrerai", "a": ["enverrai"], "full": "Je vous enverrai le document demain.", "c": "C", "e": "Envoyer: futuro irregular, j'enverrai."},
+        {"id": "u08-11", "t": "transform", "p": "Ponha no futuro, mantendo a lógica.", "q": "Quand il arrive, nous commençons.", "a": ["Quand il arrivera, nous commencerons"], "c": "G5", "e": "Os dois verbos no futuro."},
+        {"id": "u08-12", "t": "order", "a": "Une fois que nous aurons trié nos déchets nous irons au parc", "x": ["triions"], "c": "G5", "e": "Une fois que + futur antérieur."},
+        {"id": "u08-13", "t": "dict", "a": "Dans vingt ans, les glaciers auront peut-être disparu.", "c": "G5", "e": "Futur antérieur: auront disparu."}
+      ]
+    },
+    {
+      "id": "u09", "n": 9, "phase": 1, "prio": 3, "theme": "trabalho",
+      "title": "Condicional presente e passado; si + imparfait",
+      "goal": "Usar o condicional para polidez, conselho e hipótese, sem pô-lo depois de si.",
+      "rules": [
+        {"title": "Usos do condicional", "points": [
+          "Polidez: «Je voudrais un renseignement.» «Pourriez-vous m'aider ?»",
+          "Conselho: «Tu devrais te reposer.» «À ta place, je partirais.»",
+          "Informação não confirmada (imprensa): «Le ministre serait favorable à la réforme.»",
+          "Censura e arrependimento (passado): «Tu aurais dû me prévenir.» «J'aurais aimé venir.»"]},
+        {"title": "Si hipotético", "points": [
+          "si + imparfait → condicional presente: «Si j'avais le temps, je viendrais.»",
+          "si + plus-que-parfait → condicional passado: «Si j'avais su, je serais venu.»",
+          "NUNCA condicional depois de si: «si j'aurais» está errado."],
+         "trap": "Serai (futuro) e serais (condicional) quase se confundem no oral; no escrito, confira a pessoa e o sentido."}
+      ],
+      "items": [
+        {"id": "u09-01", "t": "mc", "q": "Si j'___ plus de temps, j'apprendrais le piano.", "a": "avais", "w": ["aurais", "ai", "aurai"], "c": "G5", "e": "Si + imparfait."},
+        {"id": "u09-02", "t": "mc", "q": "Si tu m'avais prévenu, je ___ venu plus tôt.", "a": "serais", "w": ["serai", "étais", "aurais"], "c": "G5", "e": "Si + plus-que-parfait → condicional passado (venir com être)."},
+        {"id": "u09-03", "t": "mc", "q": "___-vous m'indiquer la sortie, s'il vous plaît ?", "a": "Pourriez", "w": ["Pourrez", "Pouvriez", "Puissiez"], "c": "C", "e": "Polidez: condicional de pouvoir (pourriez)."},
+        {"id": "u09-04", "t": "mc", "q": "Selon la presse, le directeur ___ sa démission.", "a": "aurait donné", "w": ["a donné sûrement", "donnerait déjà", "avait donné"], "c": "G5", "e": "Informação não confirmada no passado: condicional passado."},
+        {"id": "u09-05", "t": "gap", "q": "Tu es épuisé : tu ___ (devoir) prendre des vacances.", "a": ["devrais"], "c": "G5", "e": "Conselho: condicional de devoir."},
+        {"id": "u09-06", "t": "gap", "q": "J'___ (aimer) travailler à l'étranger un jour.", "a": ["aimerais"], "c": "C", "e": "Desejo: condicional (j'aimerais)."},
+        {"id": "u09-07", "t": "gap", "q": "Vous ___ (devoir) nous prévenir de votre retard !", "a": ["auriez dû"], "c": "G5", "e": "Censura no passado: condicional passado de devoir."},
+        {"id": "u09-08", "t": "fix", "q": "Si j'aurais su, je ne serais pas venu.", "bad": "j'aurais", "a": ["j'avais"], "full": "Si j'avais su, je ne serais pas venu.", "c": "G5", "e": "Depois de si: plus-que-parfait, nunca condicional."},
+        {"id": "u09-09", "t": "fix", "q": "Si les salaires augmentaient, les gens consommeront plus.", "bad": "consommeront", "a": ["consommeraient"], "full": "Si les salaires augmentaient, les gens consommeraient plus.", "c": "G5", "e": "Si + imparfait → condicional presente (erro real comentado no Wattier)."},
+        {"id": "u09-10", "t": "transform", "p": "Faça a hipótese sobre o passado.", "q": "Il n'a pas étudié, donc il a raté l'examen.", "a": ["S'il avait étudié, il n'aurait pas raté l'examen", "S'il avait étudié, il aurait réussi l'examen"], "start": "S'il ", "c": "G5", "e": "Si + plus-que-parfait → condicional passado."},
+        {"id": "u09-11", "t": "register", "q": "Je voudrais savoir s'il serait possible de reporter notre rendez-vous.", "a": "formal", "c": "R", "e": "Condicional de polidez e pergunta indireta: registro formal."},
+        {"id": "u09-12", "t": "order", "a": "À ta place je chercherais un autre emploi", "x": ["chercherai"], "c": "G5", "e": "À ta place + condicional."}
+      ]
+    },
+    {
+      "id": "u10", "n": 10, "phase": 1, "prio": 3, "theme": "familia",
+      "title": "Subjuntivo I: formas e gatilhos de vontade e emoção",
+      "goal": "Formar o subjuntivo sem hesitar e usá-lo depois de vontade, necessidade e emoção.",
+      "rules": [
+        {"title": "Formação", "points": [
+          "Radical do «ils» no presente + -e, -es, -e, -ions, -iez, -ent: ils finissent → que je finisse.",
+          "Nous/vous saem do radical do «nous»: que nous venions, que vous preniez.",
+          "Irregulares: être (sois), avoir (aie), aller (aille), faire (fasse), pouvoir (puisse), savoir (sache), vouloir (veuille), valoir (vaille), falloir (faille)."]},
+        {"title": "Gatilhos", "points": [
+          "Vontade: vouloir que, souhaiter que, exiger que, demander que, préférer que.",
+          "Necessidade: il faut que, il est nécessaire / important / essentiel que.",
+          "Emoção: être content / triste / surpris que, avoir peur que, regretter que.",
+          "MESMO sujeito → infinitivo: «Je veux partir» (e não «je veux que je parte»)."],
+         "ex": [["Il faut que tu viennes demain.", "É preciso que você venha amanhã."]]}
+      ],
+      "items": [
+        {"id": "u10-01", "t": "mc", "q": "Il faut que tu ___ ce dossier avant midi.", "a": "finisses", "w": ["finis", "finiras", "finirais"], "c": "G5", "e": "Il faut que + subjuntivo."},
+        {"id": "u10-02", "t": "mc", "q": "Mes parents veulent que je ___ médecin.", "a": "sois", "w": ["suis", "serai", "soit"], "c": "C", "e": "Que je sois (être, 1ª pessoa)."},
+        {"id": "u10-03", "t": "mc", "q": "Je suis content que vous ___ venir.", "a": "puissiez", "w": ["pouvez", "pourrez", "puissez"], "c": "C", "e": "Pouvoir: que vous puissiez."},
+        {"id": "u10-04", "t": "mc", "q": "Je voudrais ___ plus tôt ce soir.", "a": "partir", "w": ["que je parte", "que je pars", "partirais"], "c": "G5", "e": "Mesmo sujeito: infinitivo."},
+        {"id": "u10-05", "t": "gap", "q": "Il est important que nous ___ (faire) attention.", "a": ["fassions"], "c": "C", "e": "Faire: que nous fassions."},
+        {"id": "u10-06", "t": "gap", "q": "Ma mère a peur que je ___ (prendre) froid.", "a": ["prenne"], "c": "C", "e": "Prendre: que je prenne (radical prenn-)."},
+        {"id": "u10-07", "t": "gap", "q": "Le professeur exige que les élèves ___ (savoir) leurs leçons.", "a": ["sachent"], "c": "C", "e": "Savoir: qu'ils sachent."},
+        {"id": "u10-08", "t": "gap", "q": "Je regrette qu'il ___ (aller) si mal.", "a": ["aille"], "c": "C", "e": "Aller: qu'il aille."},
+        {"id": "u10-09", "t": "fix", "q": "Il faut que vous venez à la réunion.", "bad": "venez", "a": ["veniez"], "full": "Il faut que vous veniez à la réunion.", "c": "G5", "e": "Subjuntivo de venir, vous: veniez."},
+        {"id": "u10-10", "t": "fix", "q": "Je doute que les clients aillent envie de payer plus.", "bad": "aillent", "a": ["aient"], "full": "Je doute que les clients aient envie de payer plus.", "c": "C", "e": "Erro real (Wattier): avoir no subjuntivo é aient (aillent é de aller)."},
+        {"id": "u10-11", "t": "transform", "p": "Comece por «Il faut que…».", "q": "Tu dois être patient.", "a": ["Il faut que tu sois patient"], "start": "Il faut que ", "c": "G5", "e": "Devoir + inf. → il faut que + subjuntivo."},
+        {"id": "u10-12", "t": "order", "a": "Je souhaite que vous passiez de bonnes fêtes", "x": ["passez"], "c": "G5", "e": "Souhaiter que + subjuntivo."}
+      ]
+    },
+    {
+      "id": "u11", "n": 11, "phase": 1, "prio": 2, "theme": "consumo",
+      "title": "Comparação e superlativo",
+      "goal": "Comparar com precisão, sem «plus bon».",
+      "rules": [
+        {"title": "Comparar", "points": [
+          "plus / moins / aussi + adjetivo + que; autant de + nome + que; verbo + autant que.",
+          "bon → meilleur (adjetivo); bien → mieux (advérbio); mauvais → pire ou plus mauvais.",
+          "de plus en plus / de moins en moins; plus… plus: «Plus on lit, mieux on écrit.»"],
+         "trap": "Mais bom = meilleur (nunca «plus bon»)."},
+        {"title": "Superlativo", "points": [
+          "le / la / les plus + adjetivo + de: «la plus belle ville du pays».",
+          "Superlativo + relativa: subjuntivo no escrito formal: «C'est le meilleur film que j'aie vu.»"]}
+      ],
+      "items": [
+        {"id": "u11-01", "t": "mc", "q": "Ce restaurant est ___ que l'autre.", "a": "meilleur", "w": ["plus bon", "mieux", "plus meilleur"], "c": "G4", "e": "Bon → meilleur."},
+        {"id": "u11-02", "t": "mc", "q": "Elle parle anglais ___ que moi.", "a": "mieux", "w": ["meilleur", "plus bien", "plus bon"], "c": "G4", "e": "Bien (advérbio) → mieux."},
+        {"id": "u11-03", "t": "mc", "q": "Il y a ___ touristes cette année que l'an dernier.", "a": "autant de", "w": ["aussi", "aussi de", "autant"], "c": "G1", "e": "Com nome: autant de… que."},
+        {"id": "u11-04", "t": "mc", "q": "C'est ___ pire décision qu'il ait prise.", "a": "la", "w": ["le", "plus", "la plus"], "c": "G4", "e": "La pire (pire já é superlativo com o artigo)."},
+        {"id": "u11-05", "t": "gap", "q": "Les prix augmentent de ___ en plus.", "a": ["plus"], "c": "G4", "e": "De plus en plus."},
+        {"id": "u11-06", "t": "gap", "q": "C'est la ville la plus peuplée ___ pays.", "a": ["du"], "c": "G2", "e": "Superlativo + de (du pays)."},
+        {"id": "u11-07", "t": "fix", "q": "Les supermarchés vendent les plus mauvais produits du marché.", "bad": "plus mauvais", "a": ["pires"], "full": "Les supermarchés vendent les pires produits du marché.", "c": "L2", "e": "Correção do Wattier: les pires é mais natural."},
+        {"id": "u11-08", "t": "fix", "q": "Plus on pratique, plus on parle bien.", "bad": "plus on parle bien.", "a": ["mieux on parle"], "full": "Plus on pratique, mieux on parle.", "c": "G4", "e": "Plus… mieux: «plus bien» não existe."},
+        {"id": "u11-09", "t": "transform", "p": "Compare usando «moins… que».", "q": "Le train coûte 40 euros. L'avion coûte 120 euros.", "a": ["Le train coûte moins cher que l'avion", "Le train est moins cher que l'avion"], "c": "G4", "e": "Moins cher que."},
+        {"id": "u11-10", "t": "order", "a": "C'est le meilleur livre que j'aie lu", "x": ["mieux"], "c": "G5", "e": "Superlativo + relativa no subjuntivo (j'aie lu)."},
+        {"id": "u11-11", "t": "pairs", "p": [["bon", "meilleur"], ["bien", "mieux"], ["mauvais", "pire"], ["beaucoup", "plus"], ["peu", "moins"]], "c": "G4", "e": "Comparativos irregulares."}
+      ]
+    },
+    {
+      "id": "u12", "n": 12, "phase": 1, "prio": 3, "theme": "lazer",
+      "title": "Negação completa",
+      "goal": "Negar com ne… rien/personne/jamais/aucun sem acrescentar pas.",
+      "rules": [
+        {"title": "As negações", "points": [
+          "ne… plus (não mais), ne… jamais (nunca), ne… rien (nada), ne… personne (ninguém), ne… aucun(e) (nenhum), ne… nulle part (em lugar nenhum), ne… ni… ni (nem… nem), ne… que (só).",
+          "Com tempo composto: «Je n'ai rien vu» × «Je n'ai vu personne» (personne vem depois do particípio).",
+          "Com infinitivo: as duas partes juntas antes: «pour ne pas grossir», «ne rien dire».",
+          "Como sujeito: «Personne n'est venu.» «Rien n'a changé.» «Aucun élève n'a répondu.»"],
+         "trap": "O português faz dupla negação («ninguém não…»); em francês, personne/rien/aucun já negam: nunca acrescente pas."},
+        {"title": "Detalhes", "points": [
+          "rien / personne / quelque chose + de + adjetivo: «rien d'intéressant».",
+          "No oral o ne cai («je sais pas»): reconheça, mas escreva sempre o ne."]}
+      ],
+      "items": [
+        {"id": "u12-01", "t": "mc", "q": "Il n'y a ___ dans le frigo.", "a": "rien", "w": ["pas rien", "aucun", "personne"], "c": "G5", "e": "Nada: ne… rien."},
+        {"id": "u12-02", "t": "mc", "q": "Je n'ai vu ___ à la réception.", "a": "personne", "w": ["rien", "pas personne", "aucune"], "c": "G5", "e": "Ninguém: ne… personne, depois do particípio."},
+        {"id": "u12-03", "t": "mc", "q": "___ n'a compris la question.", "a": "Personne", "w": ["Personne ne", "Pas personne", "Aucun personne"], "c": "G5", "e": "Personne como sujeito + ne."},
+        {"id": "u12-04", "t": "mc", "q": "Il a décidé de ___ fumer.", "a": "ne plus", "w": ["ne fumer plus", "plus ne", "pas plus"], "c": "G5", "e": "Infinitivo: ne plus juntos antes."},
+        {"id": "u12-05", "t": "gap", "q": "Je n'ai ___ temps ni argent pour voyager.", "a": ["ni"], "c": "G5", "e": "Ne… ni… ni, sem artigo."},
+        {"id": "u12-06", "t": "gap", "q": "Elle n'a ___ amie dans cette ville.", "a": ["aucune"], "c": "G4", "e": "Aucune (feminino, singular)."},
+        {"id": "u12-07", "t": "gap", "q": "On n'a rien vu ___ intéressant à la télé.", "a": ["d'"], "c": "G1", "e": "Rien de + adjetivo (d' antes de vogal)."},
+        {"id": "u12-08", "t": "fix", "q": "Personne ne peut pas ignorer ce problème.", "bad": "ne peut pas", "a": ["ne peut"], "full": "Personne ne peut ignorer ce problème.", "c": "G5", "e": "Erro real (Wattier): personne já nega; tire o pas."},
+        {"id": "u12-09", "t": "fix", "q": "Je ne mange jamais pas de viande.", "bad": "jamais pas", "a": ["jamais"], "full": "Je ne mange jamais de viande.", "c": "G5", "e": "Jamais substitui pas."},
+        {"id": "u12-10", "t": "transform", "p": "Responda negativamente.", "q": "Tu as déjà vu quelqu'un dans le jardin ?", "a": ["Non, je n'ai jamais vu personne dans le jardin", "Non, je n'ai vu personne dans le jardin"], "start": "Non, ", "c": "G5", "e": "Quelqu'un → personne (depois do particípio)."},
+        {"id": "u12-11", "t": "order", "a": "Je ne connais personne dans ce quartier", "x": ["pas"], "c": "G5", "e": "Ne… personne, sem pas."},
+        {"id": "u12-12", "t": "dict", "a": "Rien n'a changé depuis ton départ.", "c": "G5", "e": "Rien como sujeito: rien n'a."}
+      ]
+    },
+    {
+      "id": "u13", "n": 13, "phase": 1, "prio": 2, "theme": "administracao",
+      "title": "Interrogação nos três registros",
+      "goal": "Fazer perguntas diretas e indiretas no registro certo.",
+      "rules": [
+        {"title": "Três registros", "points": [
+          "Familiar: entonação. «Tu viens ?» «Tu fais quoi ?»",
+          "Neutro: est-ce que. «Est-ce que tu viens ? Qu'est-ce que tu fais ?»",
+          "Formal (escrito, carta): inversão. «Viens-tu ? Que faites-vous ? Le directeur est-il là ?»"]},
+        {"title": "Pronomes e pergunta indireta", "points": [
+          "qui est-ce qui (pessoa sujeito), qu'est-ce qui (coisa sujeito), qui est-ce que (pessoa objeto), qu'est-ce que (coisa objeto).",
+          "Preposição + quoi / qui: «À quoi tu penses ?» «Avec qui ?» Lequel / laquelle para escolher.",
+          "Indireta, SEM est-ce que e sem inversão: «Je me demande ce qui s'est passé / s'il viendra / où il est.»"],
+         "trap": "«Je me demande qu'est-ce que tu veux» está errado: na indireta, ce que."}
+      ],
+      "items": [
+        {"id": "u13-01", "t": "mc", "q": "___ vous avez fait pendant les vacances ?", "a": "Qu'est-ce que", "w": ["Qu'est-ce qui", "Qui est-ce que", "Quoi est-ce que"], "c": "G3", "e": "Coisa, objeto: qu'est-ce que."},
+        {"id": "u13-02", "t": "mc", "q": "___ s'est passé ici ?", "a": "Qu'est-ce qui", "w": ["Qu'est-ce que", "Qui est-ce que", "Que"], "c": "G3", "e": "Coisa, sujeito: qu'est-ce qui."},
+        {"id": "u13-03", "t": "mc", "q": "Je voudrais savoir ___ le bureau ferme.", "a": "à quelle heure", "w": ["à quelle heure est-ce que", "quelle heure", "qu'à quelle heure"], "c": "G3", "e": "Pergunta indireta: sem est-ce que."},
+        {"id": "u13-04", "t": "mc", "q": "Dites-moi ___ vous intéresse dans ce poste.", "a": "ce qui", "w": ["qu'est-ce qui", "ce que", "quoi"], "c": "G3", "e": "Indireta, sujeito: ce qui."},
+        {"id": "u13-05", "t": "mc", "q": "Il y a deux formulaires. ___ dois-je remplir ?", "a": "Lequel", "w": ["Quel", "Qui", "Laquelle"], "c": "G3", "e": "Escolher entre formulários (masc.): lequel."},
+        {"id": "u13-06", "t": "gap", "q": "___ quoi servent ces documents ?", "a": ["À"], "c": "G2", "e": "Servir à qqch → à quoi."},
+        {"id": "u13-07", "t": "gap", "q": "Je me demande ___ il viendra à la réunion.", "a": ["s'"], "c": "G3", "e": "Pergunta sim/não indireta: si (s' antes de il)."},
+        {"id": "u13-08", "t": "fix", "q": "Je ne sais pas qu'est-ce que je dois faire.", "bad": "qu'est-ce que", "a": ["ce que"], "full": "Je ne sais pas ce que je dois faire.", "c": "G3", "e": "Indireta: ce que."},
+        {"id": "u13-09", "t": "transform", "p": "Passe para o registro formal (inversão).", "q": "Est-ce que vous pouvez m'envoyer le formulaire ?", "a": ["Pouvez-vous m'envoyer le formulaire"], "c": "R", "e": "Inversão sujeito-verbo com hífen."},
+        {"id": "u13-10", "t": "transform", "p": "Passe para o registro formal (inversão).", "q": "Est-ce que votre dossier est complet ?", "a": ["Votre dossier est-il complet"], "c": "R", "e": "Sujeito nominal: inversão complexa (dossier est-il)."},
+        {"id": "u13-11", "t": "register", "q": "Tu fais quoi ce soir ?", "a": "familiar", "c": "R", "e": "Pergunta por entonação com quoi no fim: familiar."},
+        {"id": "u13-12", "t": "order", "a": "À qui avez-vous envoyé votre candidature", "x": ["est-ce"], "c": "G3", "e": "Preposição + qui + inversão."}
+      ]
+    },
+    {
+      "id": "u14", "n": 14, "phase": 1, "prio": 3, "theme": "trabalho",
+      "title": "Tempo e duração",
+      "goal": "Escolher entre depuis, il y a, pendant, pour, en e dans.",
+      "rules": [
+        {"title": "Duração", "points": [
+          "depuis + duração/data com ação que CONTINUA (presente): «J'habite ici depuis 2019.»",
+          "il y a… que / ça fait… que / voilà… que: «Ça fait deux ans que je travaille ici.»",
+          "il y a = atrás: «Je suis arrivé il y a deux ans.»",
+          "pendant = duração fechada; pour = duração prevista; en = tempo gasto; dans = daqui a."],
+         "ex": [["Il a réparé la machine en dix minutes.", "Ele consertou a máquina em dez minutos (ficou pronta)."], ["Il a réparé la machine pendant dix minutes.", "Trabalhou dez minutos nela (talvez não tenha terminado)."]]},
+        {"title": "Antes, depois, ao mesmo tempo", "points": [
+          "avant de + inf.; avant que (ne) + subjuntivo.",
+          "après + infinitivo PASSADO: «après avoir mangé», «après être parti»; après que + INDICATIVO.",
+          "au moment où, au fur et à mesure que; tout en + gerúndio (simultaneidade)."]}
+      ],
+      "items": [
+        {"id": "u14-01", "t": "mc", "q": "J'apprends le français ___ trois ans.", "a": "depuis", "w": ["il y a", "pendant", "pour"], "c": "G2", "e": "Ação que continua: depuis."},
+        {"id": "u14-02", "t": "mc", "q": "Il a quitté l'entreprise ___ six mois.", "a": "il y a", "w": ["depuis", "dans", "pour"], "c": "G2", "e": "Atrás: il y a."},
+        {"id": "u14-03", "t": "mc", "q": "J'ai écrit ce rapport ___ deux heures : c'était rapide !", "a": "en", "w": ["pendant", "depuis", "dans"], "c": "G2", "e": "Tempo gasto para concluir: en."},
+        {"id": "u14-04", "t": "mc", "q": "Elle part au Japon ___ un an, avec un visa de travail.", "a": "pour", "w": ["pendant", "depuis", "en"], "c": "G2", "e": "Duração prevista: pour."},
+        {"id": "u14-05", "t": "mc", "q": "Après ___ ses études, il a trouvé un poste à Lyon.", "a": "avoir terminé", "w": ["terminer", "avoir terminer", "qu'il termine"], "c": "G5", "e": "Après + infinitivo passado."},
+        {"id": "u14-06", "t": "gap", "q": "Ça fait longtemps ___ je ne l'ai pas vu.", "a": ["que"], "c": "G3", "e": "Ça fait… que."},
+        {"id": "u14-07", "t": "gap", "q": "Range tes affaires avant ___ sortir.", "a": ["de"], "c": "G2", "e": "Avant de + infinitivo."},
+        {"id": "u14-08", "t": "gap", "q": "Après être ___ (rentrer) à la maison, elle s'est couchée.", "a": ["rentrée"], "c": "G4", "e": "Infinitivo passado com être: concorda (rentrée)."},
+        {"id": "u14-09", "t": "fix", "q": "Je travaille ici depuis il y a deux ans.", "bad": "depuis il y a", "a": ["depuis"], "full": "Je travaille ici depuis deux ans.", "c": "G2", "e": "Ou depuis, ou il y a… que, nunca os dois."},
+        {"id": "u14-10", "t": "fix", "q": "J'ai travaillé chez Renault depuis 2015 jusqu'à 2020.", "bad": "depuis", "a": ["de"], "full": "J'ai travaillé chez Renault de 2015 à 2020.", "c": "G2", "e": "Período fechado: de… à (depuis só para o que continua)."},
+        {"id": "u14-11", "t": "transform", "p": "Reescreva com «Ça fait… que».", "q": "Il cherche du travail depuis six mois.", "a": ["Ça fait six mois qu'il cherche du travail", "Ça fait six mois qu'il cherche un travail"], "start": "Ça fait ", "c": "G3", "e": "Ça fait + duração + que + presente."},
+        {"id": "u14-12", "t": "order", "a": "Il fait ses devoirs tout en écoutant de la musique", "x": ["pendant"], "c": "G5", "e": "Tout en + gerúndio: simultaneidade."}
+      ]
+    },
+    {
+      "id": "x01", "n": 14.5, "phase": 1, "prio": 3, "theme": "lingua", "extra": true,
+      "title": "Extra · Falsos cognatos e calques do português",
+      "goal": "Desarmar as palavras que parecem portuguesas e não são.",
+      "rules": [
+        {"title": "Os mais perigosos", "points": [
+          "attendre = esperar (atender = répondre, s'occuper de) · entendre = ouvir (entender = comprendre)",
+          "pourtant = no entanto (portanto = donc) · mais = mas (mais = plus)",
+          "prétendre = alegar sem provar (pretender = avoir l'intention de) · exquis = delicioso (esquisito = bizarre)",
+          "chercher = procurar (procurer = obter) · quitter = sair de (quitar = rembourser) · délai = prazo",
+          "surnom = apelido (sobrenome = nom de famille) · notice = bula, manual · roman = romance (livro)"]},
+        {"title": "Calques", "points": [
+          "fazer uma pergunta → poser une question · ficar doente → tomber malade",
+          "sinto sua falta → tu me manques (ordem invertida) · ficar bem em mim → ça me va bien",
+          "fazer 30 anos → avoir 30 ans · dar certo → marcher, réussir · dar uma olhada → jeter un coup d'œil"]}
+      ],
+      "items": [
+        {"id": "x01-01", "t": "mc", "q": "Je vous ___ devant la gare à 18 h.", "a": "attends", "w": ["entends", "assiste", "espère"], "c": "L1", "e": "Esperar alguém: attendre."},
+        {"id": "x01-02", "t": "mc", "q": "Parlez plus fort, je ne vous ___ pas bien.", "a": "entends", "w": ["comprends", "attends", "écoute pas"], "c": "L1", "e": "Ouvir: entendre."},
+        {"id": "x01-03", "t": "mc", "q": "Il a beaucoup travaillé ; ___, il a raté l'examen.", "a": "pourtant", "w": ["donc", "portant", "par conséquent"], "c": "L1", "e": "Pourtant = no entanto."},
+        {"id": "x01-04", "t": "mc", "q": "Ce gâteau est ___ ! Je peux en reprendre ?", "a": "exquis", "w": ["bizarre", "étrange", "esquisse"], "c": "L1", "e": "Exquis = delicioso."},
+        {"id": "x01-05", "t": "mc", "q": "Mon ___ est Silva, mon prénom est Ana.", "a": "nom de famille", "w": ["surnom", "prénom", "pronom"], "c": "L1", "e": "Sobrenome = nom (de famille); surnom = apelido."},
+        {"id": "x01-06", "t": "mc", "q": "Tu ___ beaucoup, tu sais.", "a": "me manques", "w": ["manques à moi", "je manque", "te manque"], "c": "L1", "e": "Sinto sua falta = tu me manques (quem faz falta é o sujeito)."},
+        {"id": "x01-07", "t": "gap", "q": "Puis-je vous ___ une question ?", "a": ["poser"], "c": "L1", "e": "Fazer uma pergunta = poser une question."},
+        {"id": "x01-08", "t": "gap", "q": "Il est ___ malade juste avant les vacances.", "a": ["tombé"], "c": "L1", "e": "Ficar doente = tomber malade."},
+        {"id": "x01-09", "t": "fix", "q": "Je cherche à me procurer un appartement, mais je n'en trouve pas.", "bad": "me procurer", "a": ["trouver", "chercher"], "full": "Je cherche un appartement, mais je n'en trouve pas.", "c": "L1", "e": "Procurer = obter; procurar = chercher."},
+        {"id": "x01-10", "t": "fix", "q": "Il prétend devenir avocat après ses études.", "bad": "prétend", "a": ["compte", "a l'intention de", "veut"], "full": "Il compte devenir avocat après ses études.", "c": "L1", "e": "Prétendre = alegar (sem provar). Pretender = compter, avoir l'intention de."},
+        {"id": "x01-11", "t": "pairs", "p": [["attendre", "esperar"], ["quitter", "deixar, sair de"], ["délai", "prazo"], ["notice", "manual, bula"], ["roman", "romance (livro)"]], "c": "L1", "e": "Falsos cognatos frequentes."},
+        {"id": "x01-12", "t": "pairs", "p": [["éventuellement", "possivelmente"], ["sensible", "sensível"], ["crier", "gritar"], ["casser", "quebrar"], ["salir", "sujar"]], "c": "L1", "e": "Mais falsos cognatos."}
+      ]
+    }
+  ]
+}

@@ -51,7 +51,10 @@ jobs:
           python -m pip install -r requirements.txt pyinstaller
 
       - name: Validar o conteúdo dos exercícios
-        run: python tools/validate_content.py
+        run: |
+          python tools/validate_content.py
+          python tools/validate_french.py
+          python tools/validate_kazakh.py
 
       - name: Compilar com PyInstaller
         run: python -m PyInstaller packaging/RussoTrainer.spec --noconfirm --distpath dist --workpath build
