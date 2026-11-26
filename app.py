@@ -53,7 +53,7 @@ from kazakh import KazakhCourse, narration as kazakh_narration
 from lessons import LessonStore, grade_cloze, grade_match
 from updater import Updater, UpdateError
 
-APP_VERSION = "1.6.4"
+APP_VERSION = "1.7.0"
 FROZEN = bool(getattr(sys, "frozen", False))
 BASE_DIR = Path(getattr(sys, "_MEIPASS", "") or Path(__file__).resolve().parent)
 
